@@ -6,9 +6,9 @@ badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v
 feature: Inbox Rendering, Monitoring, Email Rendering
 role: User
 exl-id: a3294e70-ac96-4e51-865f-b969624528ce
-source-git-commit: 9b93603a076b007d66aad52b05e560e17e316eeb
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '854'
+source-wordcount: '863'
 ht-degree: 7%
 
 ---
@@ -31,7 +31,7 @@ Litmus是一款功能丰富的电子邮件验证和预览应用程序。 它允�
 
 >[!NOTE]
 >
->测试投放中的个性化不需要收件箱呈现。 可以使用Adobe Campaign工具（如&#x200B;**[!UICONTROL Preview]**&#x200B;和[验证](steps-validating-the-delivery.md#sending-a-proof)）检查Personalization。
+>测试投放中的个性化不需要收件箱呈现。 可以使用Adobe Campaign工具（如&#x200B;**[!UICONTROL Preview]**&#x200B;和校样）检查Personalization。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/preview-and-proof.html){target="_blank"}。
 
 ## 正在激活收件箱呈现 {#activating-inbox-rendering}
 
@@ -41,7 +41,7 @@ Litmus是一款功能丰富的电子邮件验证和预览应用程序。 它允�
 
 对于内部部署，请按照以下步骤配置收件箱呈现。
 
-1. 通过&#x200B;**[!UICONTROL Tools]** > **[!UICONTROL Advanced]** > **[!UICONTROL Import package]**&#x200B;菜单安装&#x200B;**[!UICONTROL Inbox rendering (IR)]**&#x200B;包。 有关详细信息，请参阅[安装Campaign Classic标准包](../../installation/using/installing-campaign-standard-packages.md)。
+1. 通过&#x200B;**[!UICONTROL Inbox rendering (IR)]** > **[!UICONTROL Tools]** > **[!UICONTROL Advanced]**&#x200B;菜单安装&#x200B;**[!UICONTROL Import package]**&#x200B;包。 有关详细信息，请参阅[安装Campaign Classic标准包](../../installation/using/installing-campaign-standard-packages.md)。
 1. 通过&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL External Accounts]**&#x200B;节点配置HTTP类型的外部帐户。 有关详细信息，请参阅[创建外部帐户](../../installation/using/external-accounts.md#creating-an-external-account)。
 1. 按如下方式设置外部帐户参数：
    * **[!UICONTROL Label]**：可投放性服务器信息
@@ -107,7 +107,7 @@ Litmus是一款功能丰富的电子邮件验证和预览应用程序。 它允�
 
    ![](assets/s_tn_inbox_rendering_button.png)
 
-   已发送校样。 发送电子邮件后几分钟内，即可在该验证中访问渲染缩略图。 有关发送校样的更多信息，请参阅[此章节](steps-validating-the-delivery.md#sending-a-proof)。
+   已发送校样。 发送电子邮件后几分钟内，即可在该验证中访问渲染缩略图。 有关发送校样的更多信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/preview-and-proof.html){target="_blank"}。
 
 1. 发送后，验证会显示在投放列表中。 双击它。
 

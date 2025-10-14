@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 7fc24ef2-b021-440b-b1f2-8c77e2425328
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '735'
-ht-degree: 95%
+source-wordcount: '761'
+ht-degree: 84%
 
 ---
 
@@ -26,13 +26,13 @@ ht-degree: 95%
 
 投放分析是指计算目标群体以及准备投放内容的阶段。完成该阶段后便可发送投放内容了。查阅日志可确保所有事项都正确无误。
 
-[单击此处了解更多信息](../../delivery/using/steps-validating-the-delivery.md)。
+请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/delivery-analysis.html){target="_blank"}以了解详情。
 
 ### 为何要创建验证？ {#why-should-i-create-proofs-}
 
 Adobe 强烈建议您先创建校样邮件，在将邮件发送到主目标前先行在审批组上测试投放。然后可以确认邮件内容、个性化和投放参数。
 
-[单击此处了解更多信息](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof)。
+请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/preview-and-proof.html){target="_blank"}以了解详情。
 
 ### 如何在 Adobe Campaign 中使用种子地址？ {#how-to-use-seed-addresses-in-adobe-campaign-}
 
@@ -49,13 +49,13 @@ Adobe 强烈建议您先创建校样邮件，在将邮件发送到主目标前�
 
 为了检测邮件配置中可能出现的错误，Adobe 强烈建议您设置投放验证周期。反复向测试收件人发送校样，确保内容已获得批准。每次进行变更时都应发送校样，以批准内容。
 
-[单击此处了解更多信息](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof)。
+请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/preview-and-proof.html){target="_blank"}以了解详情。
 
 ### 什么是类型规则？ {#what-is-a-typology-rule-}
 
 为了避免营销活动之间发生冲突，Adobe Campaign 可以应用特定的限制规则来测试各种活动组合。这可确保在遵守公司通信政策的同时，发送最符合客户需求及期望的邮件。
 
-[单击此处了解更多信息](../../campaign-opt/using/about-campaign-typologies.md)。
+请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/campaign-optimization/campaign-typologies.html?lang=zh-Hans){target="_blank"}。
 
 ## 发送您的邮件 {#send-your-messages}
 
@@ -63,25 +63,25 @@ Adobe 强烈建议您先创建校样邮件，在将邮件发送到主目标前�
 
 ### 如何分批次发送电子邮件？ {#how-can-i-send-emails-in-waves-}
 
-向较大的群体发送投放内容前，您可以通过[配置批次](../../delivery/using/steps-sending-the-delivery.md#sending-using-multiple-waves)将邮件分为多个批次，从而平衡负载。
+在将投放发送到较大的群体之前，您可以配置批次以将消息划分为多个批次，从而平衡负载。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/configure-and-send.html#sending-using-multiple-waves){target="_blank"}。
 
 ### 在 Campaign 中创建电子邮件有哪些重要步骤？ {#which-are-the-key-steps-to-create-an-email-in-campaign-}
 
 创建并验证电子邮件投放内容后，您就可以发送它了。您可以决定立即将电子邮件发送给主要目标，还是计划好在以后进行投放。如有需要，也可以先估计目标群体规模。
 
-[单击此处了解更多信息](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof)。
+请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/preview-and-proof.html){target="_blank"}以了解详情。
 
 ### 如何计划一次投放？ {#how-to-schedule-a-delivery-}
 
 您可以推迟邮件的投放，以便计划内容的投放或管理销售压力并避免过度营销。
 
-[单击此处了解更多信息](../../delivery/using/steps-sending-the-delivery.md#scheduling-the-delivery-sending)。
+请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/configure-and-send.html#schedule-delivery-sending){target="_blank"}以了解详情。
 
 ### 我可以将附件添加到电子邮件吗？ {#can-i-add-an-attachment-to-emails-}
 
 使用 Campaign Classic，您可以在电子邮件中加入个性化的附件。
 
-[单击此处了解有关电子邮件附件的更多信息](../../delivery/using/attaching-files.md)。
+请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/attaching-files.html){target="_blank"}以了解有关电子邮件附件的更多信息。
 
 ## 跟踪邮件并衡量其的影响 {#track-your-messages-and-measure-their-impact}
 
@@ -97,7 +97,7 @@ Adobe 强烈建议您先创建校样邮件，在将邮件发送到主目标前�
 
 ### 我在哪里可以访问投放内容和跟踪日志？ {#where-can-i-access-delivery-and-tracking-logs-}
 
-通过此页面[&#128279;](../../delivery/using/delivery-dashboard.md)了解如何跟踪投放内容，并了解收件人的行为。
+通过此页面[了解如何跟踪投放内容，并了解收件人的行为](../../delivery/using/delivery-dashboard.md)。
 
 ### 从何处获得投放报告？ {#where-can-i-get-delivery-reports-}
 

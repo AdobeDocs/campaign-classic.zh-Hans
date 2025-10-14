@@ -5,7 +5,7 @@ description: 了解如何在Campaign中发送、监控和跟踪短信
 feature: SMS
 role: User
 exl-id: 442672ee-5037-49b7-a06f-3a99920ce2b6
-source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
 source-wordcount: '887'
 ht-degree: 1%
@@ -27,7 +27,7 @@ The detailed process when validating and sending a delivery is presented in the 
 
 ## 高级参数 {#advanced-parameters}
 
-通过&#x200B;**[!UICONTROL Properties]**&#x200B;按钮可访问高级投放参数。 专用于短信投放的参数位于&#x200B;**[!UICONTROL Delivery]**&#x200B;选项卡的&#x200B;**[!UICONTROL SMS parameters]**&#x200B;部分。
+通过&#x200B;**[!UICONTROL Properties]**&#x200B;按钮可访问高级投放参数。 专用于短信投放的参数位于&#x200B;**[!UICONTROL SMS parameters]**&#x200B;选项卡的&#x200B;**[!UICONTROL Delivery]**&#x200B;部分。
 
 可以使用以下选项：
 
@@ -81,8 +81,6 @@ After sending messages, you can monitor and track your deliveries. For more on t
   > * 短信帐户只能链接到单个外部帐户，以确保状态报表被归因于正确的帐户
 
 * **取消订阅**：希望停止接收短信投放的收件人可以返回包含STOP一词的消息。 如果提供商根据合同条款允许，则您可通过&#x200B;**入站SMS**&#x200B;工作流活动检索消息，然后创建查询以启用相关收件人的&#x200B;**不再联系此收件人**&#x200B;选项。
-
-  请参阅[工作流](../../workflow/using/architecture.md)指南。
 
 ## InSMS模式 {#insms-schema}
 
@@ -142,7 +140,7 @@ InSMS模式包含与传入的短信相关的信息。 这些字段的描述可�
    </autoreply>
    ```
 
-1. 对于&#x200B;**`<shortcode>`**&#x200B;标记的&#x200B;**name**&#x200B;属性，指定将在邮件发件人名称位置显示的短代码。
+1. 对于&#x200B;**标记的** name **`<shortcode>`**&#x200B;属性，指定将在邮件发件人名称位置显示的短代码。
 
    在每个&#x200B;**`<reply>`**&#x200B;标记中，输入带有关键字的&#x200B;**关键字**&#x200B;属性，以及带有要为该关键字发送的消息的&#x200B;**文本**&#x200B;属性。
 
@@ -169,4 +167,4 @@ InSMS模式包含与传入的短信相关的信息。 这些字段的描述可�
 >
 >这种自动消息不会留下历史。 因此，它们不会显示在投放仪表板中。 [了解详情](delivery-dashboard.md)。
 >
->商业压力规则不考虑这些报文。 [了解详情](../../campaign-opt/using/pressure-rules.md)。
+>商业压力规则不考虑这些报文。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/campaign-optimization/pressure-rules.html){target="_blank"}。

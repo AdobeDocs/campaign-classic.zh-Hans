@@ -8,9 +8,9 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: c0533148-b027-4158-9b95-8d2df769e963
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '496'
+source-wordcount: '511'
 ht-degree: 4%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 4%
 
 目标群体是关键：仔细构建列表，在常用的电子邮件客户端和移动设备上测试电子邮件，并确保电子邮件列表是最新的（不含未知或过时的地址）。 您还可以发送校样来帮助设置完整的验证周期。
 
-在本节[&#128279;](steps-defining-the-target-population.md)中了解有关目标群体的更多信息
+请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html){target="_blank"}本节以了解有关目标群体的更多信息。
 
 ## 定位正确的受众 {#target-the-right-audience}
 
@@ -29,30 +29,30 @@ ht-degree: 4%
 
 ## 目标映射 {#target-mappings}
 
-在Campaign Classic中，默认情况下，传递模板以&#x200B;**收件人**&#x200B;为目标。 Adobe Campaign为您的投放提供了其他目标映射，您可以根据需要更改这些映射。
+在Campaign Classic中，默认情况下，投放模板针对&#x200B;**收件人**。 Adobe Campaign为您的投放提供了其他目标映射，您可以根据需要更改这些映射。
 
 例如，您可以向通过社交网络收集用户档案的访客或订阅了信息服务的访客投放。
 
-此部分[&#128279;](steps-defining-the-target-population.md#select-a-target-mapping)中提供了这些映射。
+这些映射显示在[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/audience/add-profiles/target-mappings.html){target="_blank"}中。
 
 您还可以创建和使用自定义的目标映射。 如需详细信息，请参阅[此小节](../../configuration/using/target-mapping.md)。
 
 ## 外部收件人 {#external-recipients}
 
-您可以向存储在外部文件中而不是数据库中保存的收件人投放。 在本节[&#128279;](steps-defining-the-target-population.md#selecting-external-recipients)中了解更多。
+您可以向存储在外部文件中而不是数据库中保存的收件人投放。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#selecting-external-recipients){target="_blank"}以了解详情。
 
 ## 发送给订阅者 {#send-to-subscribers}
 
-要向新闻稿的订阅者发送消息，可以直接将订阅者定位到相应的信息服务。 在本节[&#128279;](managing-subscriptions.md#delivering-to-the-subscribers-of-a-service)中了解更多。
+要向新闻稿的订阅者发送消息，可以直接将订阅者定位到相应的信息服务。 在本节[中了解更多](managing-subscriptions.md#delivering-to-the-subscribers-of-a-service)。
 
 
 ## 测试收件人和种子地址 {#test-recipients-seed-addresses}
 
 要测试您的投放，请在发送到主目标之前使用验证。
 
-确保选择适当的校样收件人，因为他们验证消息的表单和内容。 在此部分[&#128279;](steps-defining-the-target-population.md#selecting-the-proof-target)中介绍了定义校样收件人的步骤。
+确保选择适当的校样收件人，因为他们验证消息的表单和内容。 有关定义校样收件人的步骤，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#select-the-proof-target){target="_blank"}。
 
-种子地址用于定向不符合所定义目标标准的收件人，以便在发送到主目标之前测试投放。 它们在本节[&#128279;](about-seed-addresses.md)中为呈现。
+种子地址用于定向不符合所定义目标标准的收件人，以便在发送到主目标之前测试投放。 它们在本节[中为](about-seed-addresses.md)呈现。
 
 ## 删除重复地址 {#deduplicate-addresses}
 
@@ -73,4 +73,4 @@ ht-degree: 4%
 
 为了优化应用程序中使用的SQL查询的性能，可以从数据架构的主元素声明索引。
 
-向电子邮件地址添加索引的步骤在本节[&#128279;](../../configuration/using/database-mapping.md#indexed-fields)中介绍。
+向电子邮件地址添加索引的步骤在本节[中介绍](../../configuration/using/database-mapping.md#indexed-fields)。

@@ -7,9 +7,9 @@ feature: Campaigns, Cross Channel Orchestration
 hide: true
 hidefromtoc: true
 exl-id: 1278bda1-f83c-4d38-8042-e6611755cf36
-source-git-commit: 4f809011a8b4cb3803c4e8151e358e5fd73634e4
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '1199'
+source-wordcount: '1202'
 ht-degree: 2%
 
 ---
@@ -30,7 +30,7 @@ Adobe Campaign允许您创建、配置、执行和分析营销活动。 所有�
 
 在&#x200B;**[!UICONTROL Campaigns]**&#x200B;选项卡中找到营销活动元素：您可以在此处查看营销项目、营销活动及其子集的概述。 营销策划由活动组成，活动由投放、任务、链接资源等组成。 在使用Campaign进行营销活动管理的情况下，有关投放、预算、审阅人和链接文档的信息可在营销活动中找到。
 
-**[!UICONTROL Campaigns]**&#x200B;选项卡的&#x200B;**[!UICONTROL Browsing]**&#x200B;块提供了各种条目，具体取决于实例上安装的模块。 例如，您可以访问：
+**[!UICONTROL Browsing]**&#x200B;选项卡的&#x200B;**[!UICONTROL Campaigns]**&#x200B;块提供了各种条目，具体取决于实例上安装的模块。 例如，您可以访问：
 
 * **营销活动日历**：计划、营销计划、投放和营销活动的日历。 请参阅[促销活动日历](#campaign-calendar)。
 * **营销活动**：访问所有营销计划中包含的营销活动。
@@ -41,11 +41,11 @@ Adobe Campaign允许您创建、配置、执行和分析营销活动。 所有�
 >
 >有关Adobe Campaign整体人机工程学、权限和配置文件管理功能的更多信息，请参阅[此章节](../../platform/using/adobe-campaign-workspace.md)。
 >
->[此部分](../../delivery/using/steps-about-delivery-creation-steps.md)中详细介绍了与渠道和投放相关的所有功能。
+>有关渠道和投放的所有功能的详情，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html){target="_blank"}。
 
 ### 营销活动日历 {#campaign-calendar}
 
-每个营销策划都属于一个项目，而该项目又属于一个计划。 可通过&#x200B;**营销活动**&#x200B;选项卡中的&#x200B;**[!UICONTROL Campaign calendar]**&#x200B;菜单访问计划、项目和营销活动。
+每个营销策划都属于一个项目，而该项目又属于一个计划。 可通过&#x200B;**[!UICONTROL Campaign calendar]**&#x200B;营销活动&#x200B;**选项卡中的**&#x200B;菜单访问计划、项目和营销活动。
 
 要编辑计划、项目、活动或投放，请在日历中单击其名称，然后单击&#x200B;**[!UICONTROL Open...]**。 然后，它将显示在新选项卡中，如下所示：
 
@@ -150,7 +150,7 @@ Adobe Campaign允许您创建、配置、执行和分析营销活动。 所有�
 
 >[!NOTE]
 >
->要访问Campaign配置并进行更改，请单击&#x200B;**[!UICONTROL Edit]**&#x200B;选项卡中的&#x200B;**[!UICONTROL Advanced campaign parameters...]**&#x200B;链接。
+>要访问Campaign配置并进行更改，请单击&#x200B;**[!UICONTROL Advanced campaign parameters...]**&#x200B;选项卡中的&#x200B;**[!UICONTROL Edit]**&#x200B;链接。
 
 ## 使用Web界面 {#using-the-web-interface-}
 
@@ -177,7 +177,7 @@ Adobe Campaign允许您创建、配置、执行和分析营销活动。 所有�
 | 营销活动 | 取消营销活动 |
 | 投放 | 批准投放内容和目标<br/>提交投放内容<br/>确认投放<br/>暂停并停止投放 |
 | Web 应用程序 | 创建Web应用程序<br/>编辑应用程序内容和属性<br/>将应用程序内容另存为模板<br/>发布应用程序 |
-| 优惠 | 批准选件内容和资格<br/>禁用联机选件 |
+| 产品建议 | 批准选件内容和资格<br/>禁用联机选件 |
 | 任务 | 完成任务<br/>取消任务 |
 | 营销资源 | 批准资源<br/>锁定并解锁资源 |
 | 营销活动包 | 提交程序包以供审批<br/>批准或拒绝程序包<br/>取消程序包 |

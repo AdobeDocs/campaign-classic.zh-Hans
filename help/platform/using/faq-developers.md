@@ -8,10 +8,10 @@ content-type: reference
 level: Intermediate, Experienced
 topic-tags: starting-with-adobe-campaign
 exl-id: 20552812-5c58-4d48-9636-d5135197685d
-source-git-commit: 2bfcec5eaa1145cfb88adfa9c8b2f72ee3cd9469
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '509'
-ht-degree: 90%
+source-wordcount: '511'
+ht-degree: 89%
 
 ---
 
@@ -55,7 +55,7 @@ Adobe Campaign 查询编辑器是一款功能强大的工具，可用于探索�
 
 使用所选表的字段或使用公式可以创建查询。[此页面](../../platform/using/about-queries-in-campaign.md)介绍了在 Campaign 数据库上创建查询的主要原则。
 
-[单击此处](../../workflow/using/query.md) ，了解 Campaign 查询编辑器。
+了解对[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html){target="_blank"}的查询。
 
 ## 如何导入数据包？ {#how-can-i-import-a-data-package-}
 

@@ -7,9 +7,9 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 exl-id: a979cd99-afa7-4ce6-ba0f-9495089cba08
-source-git-commit: 0fba6a2ad4ffa864e2f726f241aa9d7cd39072a6
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '3831'
+source-wordcount: '3834'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 1%
 
 >[!CAUTION]
 >
->* 此页面中未列出的选项仅供内部使用，不能修改&#x200B;**&#x200B;**。
+>* 此页面中未列出的选项仅供内部使用，不能修改&#x200B;****。
 >
 >* 修改或更新Adobe Campaign选项只能由专家用户执行。
 
@@ -57,8 +57,9 @@ ht-degree: 1%
   </tr>
   <tr> 
    <td> <span class="uicontrol">NMS_ActivateOwnerConfirmation</span> <br /> </td> 
-   <td><p> 允许您允许负责投放的操作员确认发送，如果指定了特定操作员或操作员组来在投放的属性中开始投放。</p><p> 要执行此操作，请通过输入“1”作为值激活选项。 要停用此选项，请输入“0”。</p><p> 然后，发送确认流程将默认运行：只有投放属性中为发送指定的操作员或操作员组（或管理员）才能确认并执行发送。 请参阅<a href="../../campaign/using/marketing-campaign-deliveries.md#starting-an-online-delivery">此小节</a>。</p> </td> 
-   <tr> 
+   <td><p> 允许您允许负责投放的操作员确认发送，如果指定了特定操作员或操作员组来在投放的属性中开始投放。</p><p> 要执行此操作，请通过输入“1”作为值激活选项。 要停用此选项，请输入“0”。</p><p> 然后，发送确认流程将默认运行：只有投放属性中为发送指定的操作员或操作员组（或管理员）才能确认并执行发送。 请参阅<a href="https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-deliveries.html#start-a-delivery" target="_blank">此小节</a>。</p> </td>
+
+<tr> 
    <td> <span class="uicontrol">Nms_DefaultRcpSchema</span> <br /> </td> 
    <td> Adobe Campaign使用“Nms_DefaultRcpSchema”全局变量与默认收件人数据库(nms：recipient)进行对话。<br />选项值必须对应于与外部收件人表匹配的架构的名称。<br /> </td> 
   </tr> 
@@ -208,7 +209,7 @@ ht-degree: 1%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsOperation_DeliveryPreparationWindow</span> <br /> </td> 
-   <td><p>此选项由<span class="uicontrol"><a href="../../workflow/using/about-technical-workflows.md">operationMgt</a></span>技术工作流在计数正在运行的投放数量时使用。</p>利用此功能，可定义天数，超过该天数后，状态不一致的投放将从运行的投放计数中排除。</p><p>默认情况下，该值设置为“7”，这意味着将排除超过7天的不一致投放。</p></td> 
+   <td><p>此选项由<span class="uicontrol"><a href="https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows.html" target="_blank">operationMgt</a></span>技术工作流在计数正在运行的投放数量时使用。</p>利用此功能，可定义天数，超过该天数后，状态不一致的投放将从运行的投放计数中排除。</p><p>默认情况下，该值设置为“7”，这意味着将排除超过7天的不一致投放。</p></td> 
   </tr>
   <tr> 
    <td> <span class="uicontrol">NmsPaper_SenderLine1</span> <br /> </td> 
@@ -364,7 +365,7 @@ ht-degree: 1%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsOperation_OperationMgtDebug</span> <br /> </td> 
-   <td> 允许您监视<a href="../../workflow/using/about-technical-workflows.md">operationMgt</a>技术工作流的执行。 激活后（值为“1”），执行信息将记录在工作流审核日志中。<br /> </td> 
+   <td> 允许您监视<a href="https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows.html" target="_blank">operationMgt</a>技术工作流的执行。 激活后（值为“1”），执行信息将记录在工作流审核日志中。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsOperation_TimeRange</span> <br /> </td> 
@@ -728,7 +729,7 @@ ht-degree: 1%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">nmsPipeline_config</span> <br /> </td> 
-   <td> 允许您配置Experience Cloud触发器。 数据类型是“长文本”，必须采用JSON格式。 请参阅<a class="anchorLink" href="https://helpx.adobe.com/campaign/kb/triggers-and-campaign.html#PipelineoptionNmsPipelineConfig" target="_blank">如何将Experience Cloud触发器与Adobe Campaign Classic</a>一起使用。<br /> </td> 
+   <td> 允许您配置Experience Cloud触发器。 数据类型是“长文本”，必须采用JSON格式。 请参阅<a class="anchorLink" href="https://helpx.adobe.com/campaign/kb/triggers-and-campaign.html#PipelineoptionNmsPipelineConfig" target="_blank">如何将Experience Cloud Triggers与Adobe Campaign Classic结合使用</a>。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">LASTIMPORT_&lt;%=instance.internalName%&gt;_&lt;%=activityName%&gt;</span> <br /> </td> 
@@ -756,7 +757,7 @@ ht-degree: 1%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">WdbcCapabilities_Teradata</span> <br /> </td> 
-   <td> teradata连接器选项。<br /> </td> 
+   <td> Teradata连接器选项。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">WdbcCapabilities_Hive</span> <br /> </td> 
@@ -765,7 +766,7 @@ ht-degree: 1%
  </tbody> 
 </table>
 
-## 优惠 {#offers}
+## 产品建议 {#offers}
 
 <table> 
  <thead> 
@@ -1022,7 +1023,7 @@ ht-degree: 1%
  </tbody> 
 </table>
 
-## Web窗体 {#web-forms}
+## Web 窗体 {#web-forms}
 
 <table> 
  <thead> 

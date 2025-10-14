@@ -3,9 +3,9 @@ keywords: Campaign Classic;home;popular topics
 product: campaign
 title: Adobe Campaign Classic v7 产品文档
 exl-id: 6b3f1689-80de-49fd-b7ee-7a2a1931d157
-source-git-commit: 4d8c4ba846148d3df00a76ecc29375b9047c2b20
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '340'
+source-wordcount: '341'
 ht-degree: 97%
 
 ---
@@ -60,7 +60,7 @@ Android Firebase Cloud Messaging (FCM) 服务的一些重要更改将于 2024 �
     <div><strong>使用工作流实现自动化</strong><br/>了解如何利用工作流设计流程，包括分段、活动执行、文件处理、人员参与等。
     </div></td>
     <td>
-    <a href="delivery/using/steps-about-delivery-creation-steps.md"><img src="assets/do-not-localize/start-deliveries.jpeg"></a>
+    <a href="delivery/using/communication-channels.md"><img src="assets/do-not-localize/start-deliveries.jpeg"></a>
     <div><strong>创建投放</strong><br/>了解如何跨各种渠道（如电子邮件、短信、推送通知等）发送消息。</div>
     </td>
   </tr>
@@ -68,7 +68,7 @@ Android Firebase Cloud Messaging (FCM) 服务的一些重要更改将于 2024 �
     <td align="center"><a href="platform/using/launching-adobe-campaign.md"><img src="assets/do-not-localize/learn-more-button.svg"></a></td>
     <td align="center"><a href="platform/using/about-profiles.md"><img src="assets/do-not-localize/learn-more-button.svg"></a></td>
     <td align="center"><a href="workflow/using/about-workflows.md"><img src="assets/do-not-localize/learn-more-button.svg"></a></td>
-    <td align="center"><a href="delivery/using/steps-about-delivery-creation-steps.md"><img src="assets/do-not-localize/learn-more-button.svg"></a></td>
+    <td align="center"><a href="delivery/using/communication-channels.md"><img src="assets/do-not-localize/learn-more-button.svg"></a></td>
     </tr>
 </table>
 
@@ -84,7 +84,7 @@ Android Firebase Cloud Messaging (FCM) 服务的一些重要更改将于 2024 �
     <td>
       <img src="assets/do-not-localize/icon-experience.svg" width="35px">
     <br/>
-      <strong>客户体验</strong><br/><a href="workflow/using/about-workflows.md">使用工作流实现自动化</a> - <a href="campaign/using/setting-up-marketing-campaigns.md">营销活动</a> - <a href="interaction/using/interaction-and-offer-management.md">互动和产品建议管理</a> - <a href="delivery/using/about-personalization.md">个性化</a> - <a href="reporting/using/about-adobe-campaign-reporting-tools.md">报告</a>
+      <strong>客户体验</strong><br/><a href="workflow/using/about-workflows.md">使用工作流实现自动化</a> - <a href="https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=zh-Hans" target="_blank">营销活动</a> - <a href="interaction/using/interaction-and-offer-management.md">互动和产品建议管理</a> - <a href="delivery/using/about-personalization.md">个性化</a> - <a href="reporting/using/about-adobe-campaign-reporting-tools.md">报告</a>
     </td>
     <td>
       <img src="assets/do-not-localize/icon-send.svg" width="35px">

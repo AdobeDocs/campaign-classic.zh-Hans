@@ -7,10 +7,10 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 424faf25-2fd5-40d1-a2fc-c715fc0b8190
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
 source-wordcount: '1211'
-ht-degree: 2%
+ht-degree: 1%
 
 ---
 
@@ -24,13 +24,13 @@ ht-degree: 2%
 
 为此，将与所发送电子邮件相对应的.eml文件传输到远程服务器，如SMTP电子邮件服务器。 存档目标是您必须指定的密送电子邮件地址（投放收件人不可见）。
 
-## Recommendations和限制 {#recommendations-and-limitations}
+## 建议和限制 {#recommendations-and-limitations}
 
 * 电子邮件密送功能是可选的。 请核实您的许可协议。
 * 对于&#x200B;**托管架构和混合架构**，请与您的客户经理联系以激活它。 您选择的密件抄送电子邮件地址必须提供给将为您配置该地址的Adobe团队。
 * 对于&#x200B;**内部部署**，请遵循以下准则来激活它 — 请参阅[激活电子邮件密件抄送（内部部署）](#activating-email-archiving--on-premise-)和[配置密件抄送电子邮件地址（内部部署）](#configuring-the-bcc-email-address--on-premise-)部分。
 * 您只能使用一个密件抄送电子邮件地址。
-* 配置电子邮件密送后，请确保在投放模板中或通过&#x200B;**[!UICONTROL Email BCC]**&#x200B;选项在投放中启用该功能。 有关更多信息，请参阅[此小节](../../delivery/using/sending-messages.md#archiving-emails)。
+* 配置电子邮件密送后，请确保在投放模板中或通过&#x200B;**[!UICONTROL Email BCC]**&#x200B;选项在投放中启用该功能。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/emails/email-bcc.html){target="_blank"}。
 * 仅考虑成功发送的电子邮件，不考虑退回。
 * 电子邮件归档系统随Adobe Campaign 17.2（内部版本8795）发生了更改。 如果您已经在使用电子邮件存档，则必须手动升级到新的电子邮件密件抄送系统。 有关此内容的更多信息，请参阅[移至新的电子邮件密送](#updated-email-archiving-system--bcc-)部分。
 
@@ -61,7 +61,7 @@ ht-degree: 2%
 C:\emails\2018-12-02\13h
 ```
 
-当电子邮件的状态不是&#x200B;**[!UICONTROL Sent]**&#x200B;时，存档文件名为&#x200B;**`<deliveryid>-<broadlogid>.eml`**。 一旦状态更改为&#x200B;**[!UICONTROL Sent]**，文件名将变为&#x200B;**`<deliveryid>-<broadlogid>-sent.eml`**。 例如：
+当电子邮件的状态不是&#x200B;**`<deliveryid>-<broadlogid>.eml`**&#x200B;时，存档文件名为&#x200B;**[!UICONTROL Sent]**。 一旦状态更改为&#x200B;**[!UICONTROL Sent]**，文件名将变为&#x200B;**`<deliveryid>-<broadlogid>-sent.eml`**。 例如：
 
 ```
 C:\emails\2018-12-02\13h\4012-8040-sent.eml
@@ -134,7 +134,7 @@ C:\emails\2018-12-02\13h\4012-8040-sent.eml
 <!--
 ## Moving to the new Email BCC {#updated-email-archiving-system--bcc-}
 
-[!BADGE On-premise & Hybrid]{type=Caution url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hans" tooltip="Applies to on-premise and hybrid deployments only"}
+[!BADGE On-premise & Hybrid]{type=Caution url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"}
 
 >[!IMPORTANT]
 >

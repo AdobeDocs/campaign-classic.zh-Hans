@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 9f1b0974-f8bd-430f-88fe-9c09b0074d3b
-source-git-commit: 0db6f107d2c161b07f42dcf7a932d319130b31e0
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '489'
-ht-degree: 82%
+source-wordcount: '493'
+ht-degree: 79%
 
 ---
 
@@ -52,7 +52,8 @@ Adobe Campaign 提供了一组仪表板和工具来监视电子邮件投放。
 
 ## 5.是否能监视工作流的执行？ {#can-i-monitor-workflow-execution}
 
-在[本页面](../../workflow/using/starting-a-workflow.md)中了解如何监视 Campaign 工作流执行情况。
+请参阅[Campaign v8文档]&#x200B;(https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution)以了解如何监测Campaign工作流的执行情况
+.html){target="_blank"}。
 
 ## 6.如何连接到Campaign Classic？ {#how-can-i-connect-to-campaign-classic-}
 

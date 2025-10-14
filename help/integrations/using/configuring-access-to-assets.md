@@ -8,9 +8,9 @@ audience: integrations
 content-type: reference
 topic-tags: asset-sharing
 exl-id: f3897a40-b080-47e5-9e31-4d861c1bacd5
-source-git-commit: b11185da8236d6100d98eabcc9dc1cf2cffa70af
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '501'
+source-wordcount: '499'
 ht-degree: 2%
 
 ---
@@ -23,16 +23,16 @@ ht-degree: 2%
 >
 >这些集成是并发的。 在进行任何配置之前，请仔细阅读以下信息。
 
-* 与&#x200B;**Experience CloudAssets**&#x200B;集成：此集成允许您从Adobe Experience Cloud库插入图像。 必须通过在Adobe Campaign中安装&#x200B;**[!UICONTROL Integration with the Adobe Experience Cloud]**&#x200B;内置包来设置此集成。
+* 与&#x200B;**Experience Cloud Assets**&#x200B;集成：此集成允许您从Adobe Experience Cloud库插入图像。 必须通过在Adobe Campaign中安装&#x200B;**[!UICONTROL Integration with the Adobe Experience Cloud]**&#x200B;内置包来设置此集成。
 * 与&#x200B;**AEM Assets**&#x200B;集成：此集成允许您从Adobe Experience Manager Assets库插入图像。 必须通过在Adobe Campaign中安装&#x200B;**[!UICONTROL AEM Integration]**&#x200B;内置包来设置此集成。 请注意，从Adobe Experience Manager 6.4开始，此集成不再可用。
 
 >[!NOTE]
 >
 >如果已安装两个包（**[!UICONTROL AEM Integration]**&#x200B;和&#x200B;**[!UICONTROL Integration with the Adobe Experience Cloud]** ），则只能使用Adobe Experience Cloud库中的可用资源。
 
-## 与Experience CloudAssets集成 {#integrating-with-experience-cloud-assets}
+## 与Experience Cloud Assets集成 {#integrating-with-experience-cloud-assets}
 
-要使用Adobe Campaign与Experience CloudAssets之间的集成，您必须具有：
+要使用Adobe Campaign与Experience Cloud Assets之间的集成，您必须具有：
 
 * Adobe Experience Cloud组织
 * 已启用Adobe IMS身份验证模式
@@ -51,7 +51,7 @@ ht-degree: 2%
 
 >[!CAUTION]
 >
->此功能已从Adobe Experience Manager 6.4开始停用。[了解详情](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/deprecated-removed-features.html?lang=zh-Hans#removed-features)
+>此功能已从Adobe Experience Manager 6.4开始停用。[了解详情](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/deprecated-removed-features.html#removed-features)
 
 要将AEM Assets与Adobe Campaign集成，您必须首先配置Adobe Experience Manager与Adobe Campaign之间的集成。 此配置主要需要：
 
@@ -62,7 +62,7 @@ ht-degree: 2%
 
 设置此集成后，您可以在Adobe Campaign中配置新的投放模板以使用AEM Assets库。 为此请执行以下操作步骤：
 
-1. 创建新投放模板 — 或复制现有模板。 有关投放模板的详细信息，请参阅[此页面](../../delivery/using/about-templates.md)。
+1. 创建新投放模板 — 或复制现有模板。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html){target="_blank"}。
 1. 编辑此模板的&#x200B;**属性**。
 1. 在&#x200B;**[!UICONTROL Advanced]**&#x200B;选项卡中，将&#x200B;**[!UICONTROL Content editing mode]**&#x200B;设置为&#x200B;**DCE**。
 1. 选择访问AEM Assets库所需的外部&#x200B;**[!UICONTROL AEM account]**。

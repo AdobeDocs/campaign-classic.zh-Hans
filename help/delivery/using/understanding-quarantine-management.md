@@ -6,9 +6,9 @@ badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v
 feature: Monitoring, Deliverability
 role: User
 exl-id: cfd8f5c9-f368-4a31-a1e2-1d77ceae5ced
-source-git-commit: 4d8c4ba846148d3df00a76ecc29375b9047c2b20
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '2984'
+source-wordcount: '3008'
 ht-degree: 7%
 
 ---
@@ -29,7 +29,7 @@ Adobe Campaign 管理了一个隔离地址列表。在投放分析时，默认�
 
 此外，隔离还可避免向错误的电话号码投放短信，有助于降低短信发送成本。
 
-有关安全防护和优化投放之最佳做法的更多信息，请参阅[此页面](delivery-best-practices.md)。
+有关安全防护和优化投放的最佳实践的更多信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/delivery-best-practices.html){target="_blank"}中的此页面。
 
 ### 隔离与阻止列表 {#quarantine-vs-denylist}
 
@@ -103,7 +103,7 @@ Adobe Campaign根据投放失败类型和错误消息鉴别期间分配的原因
 * **硬错误**：相应的电子邮件地址会立即添加到隔离。
 * **软错误**：软错误不会立即将地址添加到隔离，但会增加错误计数。有关此内容的详细信息，请参阅[软错误管理](#soft-error-management)。
 
-如果用户将电子邮件标记为垃圾邮件（[反馈循环](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=zh-Hans#feedback-loops)），则该邮件会自动重定向到由Adobe管理的技术邮箱。 随后，该用户的电子邮件地址会自动添加到隔离，并附加 **[!UICONTROL Denylisted]** 状态。此状态仅适用于地址，用户档案不在阻止列表上，因此用户可继续接收短信和推送通知。
+如果用户将电子邮件标记为垃圾邮件（[反馈循环](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#feedback-loops)），则该邮件会自动重定向到由Adobe管理的技术邮箱。 随后，该用户的电子邮件地址会自动添加到隔离，并附加 **[!UICONTROL Denylisted]** 状态。此状态仅适用于地址，用户档案不在阻止列表上，因此用户可继续接收短信和推送通知。
 
 >[!NOTE]
 >
@@ -117,14 +117,14 @@ Adobe Campaign根据投放失败类型和错误消息鉴别期间分配的原因
 
 与硬错误相反，软错误不会立即将地址添加到隔离，而是会增加错误计数。
 
-将在[投放持续时间](../../delivery/using/steps-sending-the-delivery.md#defining-validity-period)期间执行重试。 当错误计数达到限制阈值时，即会将地址添加到隔离。有关详细信息，请参阅投放临时失败后[重试](understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure)。
+将在投放持续期间执行重试。 查看[投放发送](communication-channels.md) > **下的此**&#x200B;页面&#x200B;**定义有效期**。 当错误计数达到限制阈值时，即会将地址添加到隔离。有关详细信息，请参阅投放临时失败后[重试](understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure)。
 
 如果最后一次重大错误发生在10天之前，则重新初始化错误计数器。 然后，地址状态更改为&#x200B;**有效**，并由[数据库清理](../../production/using/database-cleanup-workflow.md)工作流从隔离列表中将其删除。
 
 
 对于托管或混合安装，如果您已升级到[增强型MTA](sending-with-enhanced-mta.md)，则在&#x200B;**[!UICONTROL Erroneous]**&#x200B;状态的情况下要执行的最大重试次数和重试之间的最小延迟现在取决于IP在给定域名的历史和当前表现如何。
 
-对于使用旧版Campaign MTA的内部部署和托管/混合安装，您可以修改错误数以及两个错误之间的时间间隔。 为此，请更改[部署向导](../../installation/using/deploying-an-instance.md) (**[!UICONTROL Email channel]** > **[!UICONTROL Advanced parameters]**)或投放级别[的](../../delivery/using/steps-sending-the-delivery.md#configuring-retries)中的相应设置。
+对于使用旧版Campaign MTA的内部部署和托管/混合安装，您可以修改错误数以及两个错误之间的时间间隔。 为此，请在[部署向导](../../installation/using/deploying-an-instance.md) (**[!UICONTROL Email channel]** > **[!UICONTROL Advanced parameters]**)中或投放级别更改相应的设置。 在[投放发送](communication-channels.md) > **配置重试**&#x200B;下查看此&#x200B;**页面**。
 
 
 ## 从隔离中删除地址 {#removing-a-quarantined-address}
@@ -564,7 +564,7 @@ SMS消息的隔离机制在全局上与常规流程相同。 请参阅[关于隔
  </tbody> 
 </table>
 
-扩展通用SMPP连接器的&#x200B;**&#x200B;**
+扩展通用SMPP连接器的&#x200B;****
 
 使用SMPP协议发送短信消息时，错误管理的处理方式不同。 有关扩展通用SMPP连接器的详细信息，请参阅[此页面](sms-set-up.md#creating-an-smpp-external-account)。
 

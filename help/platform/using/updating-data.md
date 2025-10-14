@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: profile-management
 exl-id: f7dfbc22-4ac3-4b61-927f-34ecc4e35154
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '717'
-ht-degree: 23%
+source-wordcount: '720'
+ht-degree: 22%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 23%
 
 ## 设置自动更新 {#setting-up-an-automatic-update}
 
-可以通过工作流配置自动更新。 如需详细信息，请参阅[此小节](../../workflow/using/update-data.md)。
+可以通过工作流配置自动更新。 有关详细信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/update-data.html){target="_blank"}。
 
 ## 执行批量更新 {#performing-a-mass-update}
 
@@ -123,7 +123,7 @@ ht-degree: 23%
 
 如果取消选中&#x200B;**[!UICONTROL Do not keep a trace of this job in the database]**&#x200B;选项，则可以选择（或创建）将存储此进程信息的执行文件夹。
 
-要检查该流程，请转到此操作涉及的收件人配置文件上的&#x200B;**[!UICONTROL Subscriptions]**&#x200B;选项卡，或转到通过&#x200B;**[!UICONTROL Profiles and Targets > Services and Subscriptions]**&#x200B;节点访问的&#x200B;**[!UICONTROL Subscriptions]**&#x200B;选项卡。
+要检查该流程，请转到此操作涉及的收件人配置文件上的&#x200B;**[!UICONTROL Subscriptions]**&#x200B;选项卡，或转到通过&#x200B;**[!UICONTROL Subscriptions]**&#x200B;节点访问的&#x200B;**[!UICONTROL Profiles and Targets > Services and Subscriptions]**&#x200B;选项卡。
 
 ![](assets/s_ncs_user_selection_subscribe_service_4.png)
 

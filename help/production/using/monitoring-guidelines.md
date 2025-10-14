@@ -4,10 +4,10 @@ title: 监测准则
 description: 了解监控 Campaign 实例和流程的准则和最佳实践
 feature: Monitoring
 exl-id: ca0c33c5-7350-462a-bc65-4cab51e529d9
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '743'
-ht-degree: 18%
+source-wordcount: '758'
+ht-degree: 16%
 
 ---
 
@@ -64,7 +64,7 @@ ht-degree: 18%
 
 **工作流热图**
 
-工作流热图提供了实例上运行的所有工作流的可视化表示形式。 它允许您轻松监控实例的负载并相应地计划工作流。 [单击此处](../../workflow/using/heatmap.md)以了解更多信息。
+工作流热图提供了实例上运行的所有工作流的可视化表示形式。 它允许您轻松监控实例的负载并相应地计划工作流。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/heatmap.html?lang=zh-Hans){target="_blank"}。
 
 **审核记录**
 
@@ -76,13 +76,13 @@ ht-degree: 18%
 
 **工作流状态监控**
 
-除了热图之外，您还可以创建工作流，用于监视一组工作流的状态并向主管发送定期消息。 [单击此处](../../workflow/using/supervising-workflows.md)以了解更多信息。
+除了热图之外，您还可以创建工作流，用于监视一组工作流的状态并向主管发送定期消息。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/monitoring/workflow-supervision.html){target="_blank"}。
 
 **一般准则**
 
 使用工作流时，遵循以下准则和最佳实践有助于提高性能。 有关更多信息，请参阅以下章节：
-* [使用工作流时的最佳实践](../../workflow/using/workflow-best-practices.md)
-* [监控工作流执行](../../workflow/using/monitoring-workflow-execution.md)
+* [使用工作流时的最佳实践](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html){target="_blank"}
+* [监控工作流执行](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html){target="_blank"}
 
 ### 监控投放 {#monitoring-deliveries}
 
@@ -94,7 +94,7 @@ SMTP报告按域显示投放统计信息和SMTP错误。 [了解详情](../../pr
 
 **最佳做法**
 
-[投放发送和设计的最佳实践](../../delivery/using/delivery-best-practices.md)可以帮助您改进其性能。
+请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/delivery-best-practices.html){target="_blank"}，了解投放发送和设计的最佳实践，以提高性能。
 
 **传递疑难解答**
 遇到投放问题时，可以执行特定操作：

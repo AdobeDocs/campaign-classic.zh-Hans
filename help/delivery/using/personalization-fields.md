@@ -8,10 +8,10 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 67fd9a67-cb05-46cd-acd5-e42fde6f4d4f
-source-git-commit: a1e9fec0e9c85bf25b79e24a7432dfb45bd1a0cb
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '1024'
-ht-degree: 9%
+source-wordcount: '1027'
+ht-degree: 8%
 
 ---
 
@@ -87,7 +87,7 @@ ht-degree: 9%
 
 要使用此选项，请执行以下步骤：
 
-1. 创建营销策划。 如需详细信息，请参阅[此小节](../../campaign/using/setting-up-marketing-campaigns.md#creating-a-campaign)。
+1. 创建营销策划。 有关详细信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=zh-Hans){target=_blank}。
 1. 在营销活动的&#x200B;**[!UICONTROL Targeting and workflows]**&#x200B;选项卡中，将&#x200B;**查询**&#x200B;活动添加到您的工作流。 有关使用此活动的详细信息，请参阅[此部分](../../workflow/using/query.md)。
 1. 将&#x200B;**[!UICONTROL Email delivery]**&#x200B;活动添加到工作流并打开它。 有关使用此活动的详细信息，请参阅[此部分](../../workflow/using/delivery.md)。
 1. 转到&#x200B;**[!UICONTROL Analysis]**&#x200B;的&#x200B;**[!UICONTROL Delivery properties]**&#x200B;选项卡并选择&#x200B;**[!UICONTROL Prepare the personalization data with a workflow]**&#x200B;选项。
@@ -142,6 +142,6 @@ ht-degree: 9%
 
 了解如何在主题行中添加个性化字段，以及如何添加电子邮件投放的内容。
 
->[!VIDEO](https://video.tv.adobe.com/v/27467?quality=12&captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/24925?quality=12)
 
 [此处](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hans)提供了其他 Campaign Classic 操作方法视频。

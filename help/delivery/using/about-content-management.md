@@ -6,20 +6,20 @@ badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v
 feature: Landing Pages, Email Design
 role: User
 exl-id: 87434cc2-1636-4558-ab60-255b7f873c0c
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '258'
+source-wordcount: '261'
 ht-degree: 2%
 
 ---
 
 # 关于内容管理{#about-content-management}
 
-Adobe Campaign Content Manager模块是特定的Campaign Classic[内置包](../../installation/using/installing-campaign-standard-packages.md)，可以安装该模块以创建定期新闻稿或网站。 它可以帮助您创建、验证和发布消息。
+Adobe Campaign Content Manager模块是特定的Campaign Classic [内置包](../../installation/using/installing-campaign-standard-packages.md)，可以安装该包以创建定期新闻稿或网站。 它可以帮助您创建、验证和发布消息。
 
 >[!NOTE]
 >
->本节介绍内容管理模块。 有关如何设计电子邮件投放内容的更多信息，请参阅[此章节](defining-the-email-content.md)。
+>本节介绍内容管理模块。 有关如何设计电子邮件投放内容的更多信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html){target="_blank"}。
 
 内容管理模块结合了工作组、工作流和内容聚合功能。 这允许自动设置消息的格式：电子邮件、邮件、短信、Web等。
 
@@ -35,7 +35,7 @@ Adobe Campaign Content Manager模块是特定的Campaign Classic[内置包](../.
 
 * 通过输入界面进行结构化报文编辑，
 * 分离数据内容及其呈现方式（以XML格式生成），
-* 以多种格式（html、txt、XML等）生成文档 基于样式表，以确保符合图形字符的要求，
+* 基于样式表以多种格式（html、txt、XML等）生成文档，以确保符合图形字符、
 * 恢复和自动聚合外部内容流，
 * Collaboration具有用于数据验证和检查的工作流。
 

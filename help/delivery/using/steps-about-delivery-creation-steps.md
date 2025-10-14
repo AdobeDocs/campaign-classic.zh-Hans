@@ -7,10 +7,10 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 0188c3fe-8176-4904-8505-c47a72c20fcc
-source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '130'
-ht-degree: 22%
+source-wordcount: '144'
+ht-degree: 17%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 22%
 
 创建投放时的主要步骤如下：
 
-1. **创建并识别投放**。 [了解更多信息](steps-create-and-identify-the-delivery.md)
+1. **创建并识别投放**。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#create-the-delivery){target="_blank"}以了解详情。
 
 1. **定义投放内容**。投放内容定义特定于每个渠道。 有关更多信息，请参阅专门的部分：
 
@@ -27,7 +27,7 @@ ht-degree: 22%
    * [直邮渠道](defining-the-direct-mail-content.md)
    * [移动应用程序渠道](about-mobile-app-channel.md)
 
-1. **定义目标群体**。 [了解更多信息](steps-defining-the-target-population.md)
+1. **定义目标群体**。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message#target-population.html){target="_blank"}以了解详情。
 
 1. **发送投放**。 [了解更多信息](steps-sending-the-delivery.md)
 
@@ -35,4 +35,4 @@ ht-degree: 22%
 
 >[!NOTE]
 >
->本章介绍的步骤假定所有目标收件人及其用户档案都存储在数据库中，外部投放除外（请参阅[选择外部收件人](steps-defining-the-target-population.md#selecting-external-recipients)）。
+>本章中介绍的步骤假定所有目标收件人及其用户档案都存储在数据库中，外部投放除外（请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#selecting-external-recipients){target="_blank"}）。

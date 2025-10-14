@@ -8,9 +8,9 @@ audience: automating
 content-type: reference
 topic-tags: workflow-general-operation
 exl-id: 03d35202-d221-4136-aad4-00704aabb356
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '515'
+source-wordcount: '517'
 ht-degree: 2%
 
 ---
@@ -60,8 +60,8 @@ Durance;Allison;15/12/1978;allison.durance@example.com;120987
 
 **相关主题：**
 
-* [数据加载（文件）活动](../../workflow/using/data-loading-file.md)
-* [数据提取（文件）活动](../../workflow/using/extraction-file.md)
+* [数据加载（文件）活动](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/data-loading-file.html){target="_blank"}
+* [数据提取（文件）活动](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/extraction-file.html){target="_blank"}。
 
 ## 在增量模式下导入 {#importing-in-delta-mode}
 

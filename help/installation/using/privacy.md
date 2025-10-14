@@ -4,9 +4,9 @@ title: 个性化和隐私
 description: 了解隐私和个性化的安全最佳实践
 feature: Installation, Privacy, Privacy Tools, URL Personalization
 exl-id: 0a3473bf-0528-486d-a799-8db86fece522
-source-git-commit: 192505e1c4d387de55ca18b578b837d237cc0607
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '805'
+source-wordcount: '817'
 ht-degree: 2%
 
 ---
@@ -25,11 +25,11 @@ ht-degree: 2%
 
 ### 推荐
 
-要验证并确保您未使用以上内容，请通过[Campaign通用查询编辑器](../../platform/using/about-queries-in-campaign.md)对跟踪URL表运行查询，或在[查询活动](../../workflow/using/query.md)中创建具有筛选条件的工作流。
+要验证并确保您未使用上述功能，请通过[Campaign通用查询编辑器](../../platform/using/about-queries-in-campaign.md)对跟踪URL表运行查询，或在查询活动中创建具有筛选条件的工作流。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html){target="_blank"}。
 
 示例：
 
-1. 创建工作流并添加&#x200B;**查询**&#x200B;活动。 [了解详情](../../workflow/using/query.md)。
+1. 创建工作流并添加&#x200B;**查询**&#x200B;活动。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html){target="_blank"}。
 
 1. 打开&#x200B;**查询**&#x200B;活动并在`nmsTrackingUrl`表上创建筛选器，如下所示：
 

@@ -6,9 +6,9 @@ badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v
 feature: Monitoring
 role: User, Data Engineer
 exl-id: 44ecc8c6-6584-43eb-96b4-7d8463053123
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '1186'
+source-wordcount: '1193'
 ht-degree: 5%
 
 ---
@@ -35,7 +35,7 @@ ht-degree: 5%
 
 * [了解投放失败](understanding-delivery-failures.md)
 * [了解隔离管理](understanding-quarantine-management.md)
-* [投放最佳实践](delivery-best-practices.md)
+* [投放最佳实践](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/delivery-best-practices.html){target="_blank"}
 * [管理可投放性](about-deliverability.md)
 
 ## 投放摘要 {#delivery-summary}
@@ -44,7 +44,7 @@ ht-degree: 5%
 
 ## 投放报告 {#delivery-reports}
 
-可从&#x200B;**[!UICONTROL Summary]**&#x200B;选项卡访问的&#x200B;**[!UICONTROL Reports]**&#x200B;链接允许您查看与投放操作相关的一组报告：常规投放报告、详细报告、投放报告、失败消息的分发、打开率、点击数和交易数等。
+可从&#x200B;**[!UICONTROL Reports]**&#x200B;选项卡访问的&#x200B;**[!UICONTROL Summary]**&#x200B;链接允许您查看与投放操作相关的一组报告：常规投放报告、详细报告、投放报告、失败消息的分发、打开率、点击数和交易数等。
 
 可以根据您的要求配置此选项卡的内容。 有关投放报告的详细信息，请参阅[此章节](../../reporting/using/delivery-reports.md)。
 
@@ -58,13 +58,13 @@ ht-degree: 5%
 
 >[!NOTE]
 >
->可自定义显示投放日志的列表，如同Campaign Classic中的任何列表。 例如，您可以添加一列来了解在投放中发送了每封电子邮件的IP地址。 有关详细信息，请参阅[此部分](#use-case)中详述的用例。
+>显示投放日志的列表可与Campaign Classic中的任意列表一样进行自定义。 例如，您可以添加一列来了解在投放中发送了每封电子邮件的IP地址。 有关详细信息，请参阅[此部分](#use-case)中详述的用例。
 
 ![](assets/s_ncs_user_delivery_delivery_tab.png)
 
 **[!UICONTROL Display the mirror page for this message...]**&#x200B;链接允许您在新窗口中查看从列表中选择的投放内容的镜像页面。
 
-镜像页面仅适用于已为其定义HTML内容的投放。 有关详细信息，请参阅[生成镜像页面](sending-messages.md#generating-the-mirror-page)。
+镜像页面仅适用于已为其定义HTML内容的投放。 有关详细信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/mirror-page.html){target="_blank"}。
 
 ![](assets/s_ncs_user_wizard_miror_page_link.png)
 
@@ -98,7 +98,7 @@ ht-degree: 5%
 
 使用&#x200B;**[!UICONTROL Refresh]**&#x200B;按钮可更新数据。 使用&#x200B;**[!UICONTROL Filters]**&#x200B;按钮定义数据过滤器。
 
-使用特殊图标可以识别错误或警告。 请参阅[分析投放](steps-validating-the-delivery.md#analyzing-the-delivery)。
+使用特殊图标可以识别错误或警告。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/delivery-analysis.html){target="_blank"}中的此部分。
 
 **[!UICONTROL Proofs]**&#x200B;子选项卡允许您查看已发送的校样列表。
 
@@ -120,7 +120,7 @@ ht-degree: 5%
 
 * 如果您的投放计数器不是最新中间源部署，请检查&#x200B;**[!UICONTROL Mid-Sourcing (Delivery counters)]**&#x200B;技术工作流是否正在运行。 有关详细信息，请参见此 [ 页面](../../installation/using/mid-sourcing-deployment.md)。
 
-您还可以通过投放仪表板使用不同的报告跟踪您的投放。 有关更多信息，请参阅此[&#128279;](../../reporting/using/delivery-reports.md)章节。
+您还可以通过投放仪表板使用不同的报告跟踪您的投放。 有关更多信息，请参阅此](../../reporting/using/delivery-reports.md)章节[。
 
 ## 用例：将发件人的IP地址添加到日志 {#use-case}
 

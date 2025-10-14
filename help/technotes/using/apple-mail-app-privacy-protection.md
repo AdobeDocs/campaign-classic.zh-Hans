@@ -4,7 +4,7 @@ title: Apple邮件应用程序中的邮件隐私保护
 feature: Technote, Privacy, Privacy Tools
 description: 了解Apple的邮件隐私保护功能可能会对您的营销活动产生哪些影响
 exl-id: e044b35a-b49f-408a-900d-2afe8ff10212
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
 source-wordcount: '2064'
 ht-degree: 1%
@@ -82,7 +82,7 @@ Apple的新功能是未来行业在电子邮件隐私保护方面的发展方向
 
 您可以确定工作流，其中电子邮件打开次数用作分段、定位和重新定位的标准。
 
-为此，您可以使用跟踪链接URL (**[!UICONTROL url/@type]**)的&#x200B;**[!UICONTROL type]**&#x200B;属性。 对于电子邮件打开，此属性设置为&#x200B;**[!UICONTROL Open]**。 此属性可从查询编辑器、工作流中的&#x200B;**[!UICONTROL Query]**&#x200B;活动以及预定义过滤器中使用。 您可以将此属性用作营销活动的定位标准。
+为此，您可以使用跟踪链接URL (**[!UICONTROL type]**)的&#x200B;**[!UICONTROL url/@type]**&#x200B;属性。 对于电子邮件打开，此属性设置为&#x200B;**[!UICONTROL Open]**。 此属性可从查询编辑器、工作流中的&#x200B;**[!UICONTROL Query]**&#x200B;活动以及预定义过滤器中使用。 您可以将此属性用作营销活动的定位标准。
 
 ![](assets/identify-email-open-tracking-1.png)
 
@@ -94,7 +94,7 @@ Apple的新功能是未来行业在电子邮件隐私保护方面的发展方向
 
   ![](assets/identify-email-open-tracking-2.png)
 
-* 您可以使用预定义过滤器。 [了解详情](../../workflow/using/creating-a-filter.md)。
+* 您可以使用预定义过滤器。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/create-a-filter.html){target="_blank"}。
 
   ![](assets/identify-email-open-tracking-3.png)
 
@@ -131,7 +131,7 @@ Apple的新功能是未来行业在电子邮件隐私保护方面的发展方向
 
 >[!IMPORTANT]
 >
->该软件包仅作为示例提供，Adobe不支持将其作为产品功能。
+>此包仅作为示例提供，Adobe不支持将其作为产品功能。
 >
 >您可能需要根据促销活动实施调整示例代码。
 >
@@ -260,7 +260,7 @@ Apple的新功能是未来行业在电子邮件隐私保护方面的发展方向
 
    ![](assets/identify-email-open-tracking-20.png)
 
-   如果列表不为空，则会将其插入电子邮件通知的HTML表中。
+   如果列表不为空，则会将其插入到HTML表中以进行电子邮件通知。
 
    ![](assets/identify-email-open-tracking-21.png)
 
@@ -295,7 +295,7 @@ Apple的新功能是未来行业在电子邮件隐私保护方面的发展方向
    instance.vars.workflowList = sWorkflowList;
    ```
 
-1. HTML表即添加到通知模板中。
+1. HTML表将添加到通知模板。
 
    ```js
    <%= instance.vars.workflowLIst%>
@@ -346,11 +346,11 @@ Apple的新功能是未来行业在电子邮件隐私保护方面的发展方向
 
 默认情况下，`nms:Recipient`架构链接到必须导出的三个架构：
 
-| 模式 | 内容 |
+| 架构 | 内容 |
 | --- | --- |
-| nms：trackingLogRcp | 跟踪数据，对用户、时间和相关消息进行跟踪 |
-| nms：trackingUrl | 有关链接的详细信息，包括性质，例如打开的电子邮件或点进 |
-| nms：userAgent | 有关设备的信息 |
+| nms:trackingLogRcp | 跟踪数据，对用户、时间和相关消息进行跟踪 |
+| nms:trackingUrl | 有关链接的详细信息，包括性质，例如打开的电子邮件或点进 |
+| nms:userAgent | 有关设备的信息 |
 
 这些表在数据模型中链接。
 
@@ -362,10 +362,10 @@ Apple的新功能是未来行业在电子邮件隐私保护方面的发展方向
 
 您可以使用链接架构中的有用信息扩充此数据：
 
-| 模式 | 内容 |
+| 架构 | 内容 |
 | --- | --- |
-| nms：Recipient | 与用户档案相关的详细信息 |
-| nms：Deliver | 有关用户响应的消息的信息 |
+| nms:Recipient | 与用户档案相关的详细信息 |
+| nms:Delivery | 有关用户响应的消息的信息 |
 
 您可以将结果导出到Adobe Campaign支持的外部存储解决方案：
 
@@ -373,7 +373,7 @@ Apple的新功能是未来行业在电子邮件隐私保护方面的发展方向
 * S3
 * Azure Blob
 
-##### 实现
+##### 实施
 
 此示例说明如何从Adobe Campaign导出跟踪数据。
 
@@ -428,11 +428,11 @@ Apple的新功能是未来行业在电子邮件隐私保护方面的发展方向
    1. 初始&#x200B;**[!UICONTROL Query]**&#x200B;活动用于选择过去三个月打开的所有电子邮件。
    1. **[!UICONTROL Split]**&#x200B;活动用于按电子邮件应用程序、浏览器、操作系统和设备拆分选定内容。
 
-   1. 每个&#x200B;**[!UICONTROL Split]**&#x200B;活动后面都有一个&#x200B;**[!UICONTROL Deduplication]**&#x200B;活动。 **[!UICONTROL Deduplication]**&#x200B;活动用于删除重复的电子邮件地址。
+   1. 每个&#x200B;**[!UICONTROL Deduplication]**&#x200B;活动后面都有一个&#x200B;**[!UICONTROL Split]**&#x200B;活动。 **[!UICONTROL Deduplication]**&#x200B;活动用于删除重复的电子邮件地址。
 
       **[!UICONTROL Deduplication]**&#x200B;活动位于&#x200B;**[!UICONTROL Split]**&#x200B;活动之后，以避免丢失有关使用各种设备的收件人的信息。
 
-   1. 每个&#x200B;**[!UICONTROL Deduplication]**&#x200B;活动后面都有一个&#x200B;**[!UICONTROL End]**&#x200B;活动。
+   1. 每个&#x200B;**[!UICONTROL End]**&#x200B;活动后面都有一个&#x200B;**[!UICONTROL Deduplication]**&#x200B;活动。
 
   如果仅将收件人存储在现成可用的收件人表中以进行定位，则此类工作流非常有用。
 
@@ -447,7 +447,7 @@ Apple的新功能是未来行业在电子邮件隐私保护方面的发展方向
       * 在一个过渡中，**[!UICONTROL Change dimension]**&#x200B;活动用于查找跟踪日志引用的收件人。
       * 在另一个过渡中，**[!UICONTROL Split]**&#x200B;活动用于按电子邮件应用程序、浏览器、操作系统和设备拆分选择。
 
-   1. **[!UICONTROL Split]**&#x200B;活动之后的每个过渡都有&#x200B;**[!UICONTROL End]**&#x200B;活动。
+   1. **[!UICONTROL End]**&#x200B;活动之后的每个过渡都有&#x200B;**[!UICONTROL Split]**&#x200B;活动。
 
   如果您将收件人存储在现成收件人表以外的表中，则此类工作流会很有用。
 

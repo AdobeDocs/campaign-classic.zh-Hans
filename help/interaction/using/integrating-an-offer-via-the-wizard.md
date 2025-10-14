@@ -7,9 +7,9 @@ audience: interaction
 content-type: reference
 topic-tags: delivering-an-offer
 exl-id: 64aea8b9-7f06-4db0-a3e6-6a0e17c3ddcb
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '803'
+source-wordcount: '807'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ ht-degree: 0%
 
 ![](assets/offer_delivery_009.png)
 
-在本节[&#128279;](../../delivery/using/about-direct-mail-channel.md)中了解有关直邮投放[的更多信息。 在此部分](../../campaign/using/setting-up-marketing-campaigns.md)中了解有关营销活动的更多信息。
+在本节[中了解有关直邮投放](../../delivery/using/about-direct-mail-channel.md)的更多信息。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=zh-Hans){target=_blank}以了解有关营销活动的更多信息。
 
 ### 将选件插入投放的主要步骤 {#main-steps-for-inserting-an-offer-into-a-delivery}
 
@@ -53,11 +53,11 @@ ht-degree: 0%
 
    ![](assets/offer_delivery_005.png)
 
-1. 根据需要选择&#x200B;**[!UICONTROL Exclude non-eligible recipients]**&#x200B;选项。 有关详细信息，请参阅用于调用优惠引擎[&#128279;](#parameters-for-calling-offer-engine)的参数。
+1. 根据需要选择&#x200B;**[!UICONTROL Exclude non-eligible recipients]**&#x200B;选项。 有关详细信息，请参阅用于调用优惠引擎[的](#parameters-for-calling-offer-engine)参数。
 
    ![](assets/offer_delivery_006.png)
 
-1. 如有必要，请选择&#x200B;**[!UICONTROL Do not display anything if no offers are selected]**&#x200B;选项。 有关详细信息，请参阅用于调用优惠引擎[&#128279;](#parameters-for-calling-offer-engine)的参数。
+1. 如有必要，请选择&#x200B;**[!UICONTROL Do not display anything if no offers are selected]**&#x200B;选项。 有关详细信息，请参阅用于调用优惠引擎[的](#parameters-for-calling-offer-engine)参数。
 
    ![](assets/offer_delivery_007.png)
 
@@ -90,7 +90,7 @@ ht-degree: 0%
 
 您还可以使用投放大纲在投放中显示选件。
 
-有关投放概要的更多信息，请参阅[Campaign - MRM](../../campaign/using/marketing-campaign-deliveries.md#associating-and-structuring-resources-linked-via-a-delivery-outline)指南。
+有关投放概要的更多信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-assets#delivery-outlines.html){target="_blank"}。
 
 1. 创建新营销活动或访问现有营销活动。
 1. 通过营销活动的&#x200B;**[!UICONTROL Edit]** > **[!UICONTROL Documents]**&#x200B;选项卡访问投放概要。

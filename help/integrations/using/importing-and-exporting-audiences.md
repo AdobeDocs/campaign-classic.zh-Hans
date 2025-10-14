@@ -8,9 +8,9 @@ audience: integrations
 content-type: reference
 topic-tags: audience-sharing
 exl-id: c2293fc5-c9ba-4a73-8f39-fa7cdd06e8dd
-source-git-commit: b11185da8236d6100d98eabcc9dc1cf2cffa70af
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '589'
+source-wordcount: '592'
 ht-degree: 0%
 
 ---
@@ -48,15 +48,15 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->如果您要将受众从Adobe Analytics导入Adobe Campaign，则需要首先在Audience Manager中共享这些受众。 此过程需要12-24小时，必须将其添加到与Campaign的24-36小时同步中。
+>如果您要将受众从Adobe Analytics导入到Adobe Campaign，则需要首先在Audience Manager中共享这些受众。 此过程需要12-24小时，必须将其添加到与Campaign的24-36小时同步中。
 >
->在该特定情况下，受众共享时间范围最长可达60小时。 有关在Audience Manager中共享Adobe Analytics受众的更多信息，请参阅[Adobe Analytics文档](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-publish.html?lang=zh-Hans){target="_blank"}。
+>在该特定情况下，受众共享时间范围最长可达60小时。 有关在Audience Manager中共享Adobe Analytics受众的更多信息，请参阅[Adobe Analytics文档](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-publish.html){target="_blank"}。
 
 每次同步受众数据时，受众数据都会被完全替换。 只能导入区段。 不支持包含键值对、特征和规则的粒度数据。
 
 ## 导出受众 {#exporting-an-audience}
 
-您可以使用工作流将受众从Adobe Campaign导出到Audience Manager。 [本文档](../../workflow/using/building-a-workflow.md)中详细介绍了创建和使用工作流的过程。 导出的受众将另存为区段：
+您可以使用工作流将受众从Adobe Campaign导出到Audience Manager。 有关创建和使用工作流的详细流程，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html?lang=zh-Hans){target="_blank"}。 导出的受众将另存为区段：
 
 1. 创建新的定位工作流。
 1. 使用不同的可用活动，定位一组收件人。
@@ -80,7 +80,7 @@ ht-degree: 0%
 
 随后将导出受众。 保存受众活动有两个叫客过渡。 主过渡包含已成功导出的收件人。 额外的过渡包含无法映射为访客ID或声明的ID的收件人。
 
-解决方案之间的同步需要24 - 36个小时。 在此时段后，您将能够找到新受众，并在其他Adobe Experience Cloud解决方案中重复使用它。 有关使用Adobe Campaign共享受众的更多信息，请参阅此[文档](https://experienceleague.adobe.com/zh-hans/docs/core-services/interface/services/audiences/create){target="_blank"}。
+解决方案之间的同步需要24 - 36个小时。 在此时段后，您将能够找到新受众，并在其他Adobe Experience Cloud解决方案中重复使用它。 有关使用Adobe Campaign共享受众的更多信息，请参阅此[文档](https://experienceleague.adobe.com/en/docs/core-services/interface/services/audiences/create){target="_blank"}。
 
 >[!NOTE]
 >

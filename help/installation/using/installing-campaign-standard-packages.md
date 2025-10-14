@@ -5,10 +5,10 @@ description: 了解如何安装Campaign内置软件包
 feature: Installation, Application Settings
 badge-v7-prem: label="仅限内部部署/混合" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hans" tooltip="仅适用于内部部署和混合部署"
 exl-id: 2bc077c4-ed65-4157-bfc9-df5d0442f476
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '1264'
-ht-degree: 2%
+source-wordcount: '1270'
+ht-degree: 3%
 
 ---
 
@@ -66,12 +66,12 @@ ht-degree: 2%
   </tr> 
   <tr> 
    <td> 营销活动（营销活动）<br /> </td> 
-   <td> 定义、优化、执行和分析通信和营销活动。 <a href="../../campaign/using/designing-marketing-campaigns.md">了解更多</a><br /> </td> 
+   <td> 定义、优化、执行和分析通信和营销活动。 <a href="https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html" target="_blank">了解更多</a><br /> </td> 
    <td> 营销</td>
   </tr> 
   <tr> 
    <td> 营销资源(MRM)<br /> </td> 
-   <td> 通过提供对任务、预算和营销资源的管理和跟踪，在协作模式下控制营销活动。 <a href="../../mrm/using/about-marketing-resource-management.md">了解更多</a> <br /> </td> 
+   <td> 通过提供对任务、预算和营销资源的管理和跟踪，在协作模式下控制营销活动。 <a href="https://experienceleague.adobe.com/docs/campaign/automation/mrm/about-marketing-resource-management.html?lang=zh-Hans" target="_blank">了解更多</a> <br /> </td> 
    <td> 营销</td> 
   </tr> 
   <tr> 
@@ -97,7 +97,7 @@ ht-degree: 2%
   </tr--> 
   <tr> 
    <td> 社交网络（社交营销） <br /> </td> 
-   <td> 将Adobe Campaign与X(以前称为Twitter)和Facebook同步。 <a href="../../social/using/about-social-marketing.md">了解更多</a> <br /> </td> 
+   <td> 将Adobe Campaign与X（以前称为Twitter）和Facebook同步。 <a href="../../social/using/about-social-marketing.md">了解更多</a> <br /> </td> 
    <td> 全部</td> 
   </tr> 
   <tr> 
@@ -157,12 +157,12 @@ ht-degree: 2%
   </tr> 
   <tr> 
    <td> 访问外部数据（联合数据访问）<br /> </td> 
-   <td> 提供联合数据访问(FDA)选项，以处理存储在一个或多个外部数据库中的信息，以便您能够访问外部数据而不改变Adobe Campaign数据的结构。  可选。 <a href="../../workflow/using/accessing-an-external-database-fda.md">了解更多</a> <br /> </td> 
+   <td> 提供联合数据访问(FDA)选项，以处理存储在一个或多个外部数据库中的信息，以便您能够访问外部数据而不改变Adobe Campaign数据的结构。  可选。 <a href="https://experienceleague.adobe.com/docs/campaign/automation/workflows/advanced-management/accessing-an-external-database-fda.html" target="_blank">了解更多</a> <br /> </td> 
    <td> 所有<br /> </td> 
   </tr> 
   <tr> 
    <td> 营销活动优化<br /> </td> 
-   <td> 控制、过滤和监控投放的发送，以使发送的消息最符合客户的需要和期望，同时遵守公司的通信政策。 可选。 <a href="../../campaign-opt/using/about-campaign-typologies.md">了解更多</a> <br /> </td> 
+   <td> 控制、过滤和监控投放的发送，以使发送的消息最符合客户的需要和期望，同时遵守公司的通信政策。 可选。 <a href="https://experienceleague.adobe.com/docs/campaign/automation/campaign-optimization/campaign-typologies.html?lang=zh-Hans" target="_blank">了解更多</a> <br /> </td> 
    <td> 营销<br /> </td> 
   </tr> 
   <tr> 
@@ -182,7 +182,7 @@ ht-degree: 2%
   </tr> 
   <tr> 
    <td> 中央/本地营销（分布式营销）<br /> </td> 
-   <td> 实施中央实体（总部、营销部门等）与地方实体（销售点、区域机构等）之间的合作活动。 可选。 <a href="../../distributed/using/about-distributed-marketing.md">了解更多</a><br /> </td> 
+   <td> 实施中央实体（总部、营销部门等）与地方实体（销售点、区域机构等）之间的合作活动。 可选。 <a href="https://experienceleague.adobe.com/docs/campaign/automation/distributed-marketing/about-distributed-marketing.html?lang=zh-Hans" target="_blank">了解更多</a><br /> </td> 
    <td> 营销 </td> 
   </tr> 
   <tr> 
@@ -197,7 +197,7 @@ ht-degree: 2%
   </tr> 
   <tr> 
    <td> AEM集成<br /> </td> 
-   <td> 允许您直接在Adobe Experience Manager中管理电子邮件投放和表单的内容，以便从AEM的内容编辑功能以及Adobe Campaign的投放功能中受益。 <a href="../../integrations/using/about-adobe-experience-manager.md">了解更多</a> <br /> </td> 
+   <td> 允许您直接在Adobe Experience Manager中管理电子邮件投放的内容以及表单，以便从AEM的内容编辑功能以及Adobe Campaign的投放功能中受益。 <a href="../../integrations/using/about-adobe-experience-manager.md">了解更多</a> <br /> </td> 
    <td> 营销</td> 
   </tr> 
   <tr> 
@@ -212,7 +212,7 @@ ht-degree: 2%
   </tr> 
   <tr> 
    <td> 隐私数据保护条例<br /> </td> 
-   <td> 包含可帮助在Campaign Classic中遵守隐私规定的其他功能。 <a href="https://helpx.adobe.com/cn/campaign/kb/acc-privacy.html">了解更多</a> <br /> </td> 
+   <td> 包含可帮助在Campaign Classic中确保隐私合规性的其他功能。 <a href="https://helpx.adobe.com/cn/campaign/kb/acc-privacy.html">了解更多</a> <br /> </td> 
    <td> 全部</td> 
   </tr> 
   <tr> 
@@ -227,12 +227,12 @@ ht-degree: 2%
   </tr> 
   <tr> 
    <td> AMP支持<br /> </td> 
-   <td> 使您能够使用新的交互式AMP作为电子邮件格式，并发送动态电子邮件。 可选。 <a href="../../delivery/using/defining-interactive-content.md">了解更多</a> <br /> </td> 
+   <td> 使您能够使用新的交互式AMP作为电子邮件格式，并发送动态电子邮件。 可选。 <a href="https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-interactive-content.html" target="_blank">了解更多</a> <br /> </td> 
    <td> 全部 </td> 
   </tr> 
   <tr> 
    <td> ACS连接器（已弃用）<br /> </td> 
-   <td> 桥接器Adobe Campaign v7和Adobe Campaign Standard。 它是Campaign v7中的一项集成功能，可自动将数据复制到Campaign Standard，将两个应用程序的优点结合起来。 可选。<br /> </td> 
+   <td> 桥接器Adobe Campaign v7和Adobe Campaign Standard。 它是Campaign v7中的一项集成功能，可自动将数据复制到Campaign Standard，实现两个应用程序的最佳结合。 可选。<br /> </td> 
    <td> 营销 </td> 
   </tr> 
  </tbody> 
@@ -242,14 +242,14 @@ ht-degree: 2%
 
 在安装事务性消息（消息中心包）之前，必须安装投放渠道（电子邮件、移动渠道、移动应用程序渠道、LINE等）。 如果您已启动仅用于电子邮件的消息中心项目，并且以后需要添加新渠道，则必须执行以下步骤：
 
-1. 使用包导入助手(**[!UICONTROL Tools > Advanced > Import package > Adobe Campaign package]**)安装新频道，例如&#x200B;**Mobile频道**。
+1. 使用包导入助手(**)安装新频道，例如** Mobile频道&#x200B;**[!UICONTROL Tools > Advanced > Import package > Adobe Campaign package]**。
 1. 导入文件( **[!UICONTROL Tools > Advanced > Import package > File]**)，然后选择：
 
    ```
    \datakit\nms\[Your language]\package\messageCenter.xml
    ```
 
-1. 在&#x200B;**[!UICONTROL XML data content to import]**&#x200B;中，仅保留与相关渠道对应的消息中心投放模板。 例如，如果您已添加&#x200B;**移动渠道**，则仅保留与&#x200B;**[!UICONTROL Mobile transactional message]** (smsTriggerMessage)模板对应的&#x200B;**实体**&#x200B;元素。 如果您已添加&#x200B;**移动应用程序渠道**，请仅保留&#x200B;**iOS事务型消息**&#x200B;模板(iosTriggerMessage)和&#x200B;**Android事务型消息** (androidTriggerMessage)。
+1. 在&#x200B;**[!UICONTROL XML data content to import]**&#x200B;中，仅保留与相关渠道对应的消息中心投放模板。 例如，如果您已添加&#x200B;**移动渠道**，则仅保留与&#x200B;**(smsTriggerMessage)模板对应的**&#x200B;实体&#x200B;**[!UICONTROL Mobile transactional message]**&#x200B;元素。 如果您已添加&#x200B;**移动应用程序渠道**，请仅保留&#x200B;**iOS事务型消息**&#x200B;模板(iosTriggerMessage)和&#x200B;**Android事务型消息** (androidTriggerMessage)。
 
    ![](assets/messagecenter_install_channel.png)
 

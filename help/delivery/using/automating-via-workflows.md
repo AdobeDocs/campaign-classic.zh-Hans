@@ -6,9 +6,9 @@ badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v
 feature: Workflows
 role: User
 exl-id: bc6ebf5d-cc21-4750-9713-2bf259e7d6bf
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '1197'
+source-wordcount: '1201'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 可以使用通过Adobe Campaign客户端界面配置的工作流，自动创建、编辑和发布内容。
 
-通过工作流图的&#x200B;**[!UICONTROL Tools]**&#x200B;工具栏访问&#x200B;**内容管理**&#x200B;活动。
+通过工作流图的&#x200B;**工具栏访问**&#x200B;内容管理&#x200B;**[!UICONTROL Tools]**&#x200B;活动。
 
 活动属性分为四个步骤：
 
@@ -101,7 +101,7 @@ ht-degree: 0%
 </book>
 ```
 
-数据格式与发布模板中输入的数据架构不匹配（在本例中为&#x200B;**cus：book**）；**`<section>`**&#x200B;元素必须替换为&#x200B;**`<chapter>`**&#x200B;元素。 我们需要应用“cus：book-workflow.xsl”样式表以进行必要的更改。
+数据格式与发布模板中输入的数据架构不匹配（在本例中为&#x200B;**cus:book**）；**`<section>`**&#x200B;元素必须替换为&#x200B;**`<chapter>`**&#x200B;元素。 我们需要应用“cus:book-workflow.xsl”样式表以进行必要的更改。
 
 使用的XSLT样式表的Source代码：
 
@@ -150,7 +150,7 @@ ht-degree: 0%
 
 基于模板创建新的投放操作。
 
-活动的投放模板用于选择发布模板的转换模板。 内容生成将考虑所有不含投放模板的HTML和文本模板，或者使用与活动相同的模板引用的模板。
+活动的投放模板用于选择发布模板的转换模板。 内容生成将考虑所有不带投放模板的HTML和文本模板，或使用与活动相同的模板引用的模板。
 
 要投放的目标通过传入事件输入。
 
@@ -214,11 +214,13 @@ ht-degree: 0%
 
 ### 从FTP导入内容 {#importing-content-from-ftp}
 
-如果您的投放内容位于FTP或SFTP服务器上的HTML文件中，则可以轻松地将此内容加载到Adobe Campaign投放中。 请参阅[此示例](../../workflow/using/loading-delivery-content.md)。
+如果您的交付内容位于FTP或SFTP服务器上的HTML文件中，则可以轻松地将此内容加载到Adobe Campaign交付中。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/load-delivery-content.html){target="_blank"}。
+
 
 ### 从Amazon Simple Storage Service (S3)连接器导入内容 {#importing-content-from-amazon-simple-storage-service--s3--connector}
 
-如果您的投放内容位于Amazon Simple Storage Service (S3)存储桶中，则可以轻松地将此内容加载到Adobe Campaign投放中。 请参阅[此示例](../../workflow/using/loading-delivery-content.md)。
+如果您的投放内容位于Amazon Simple Storage Service (S3)存储桶中，则可以轻松地将此内容加载到Adobe Campaign投放中。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/load-delivery-content.html){target="_blank"}。
+
 
 ## 半自动更新 {#semi-automatic-update}
 
@@ -230,7 +232,7 @@ ht-degree: 0%
 
 通过编辑区域，可填充用于构造要检索的数据的XML馈送的URL的变量数据。
 
-按钮执行在&#x200B;**`<input>`**&#x200B;标记下填充的&#x200B;**GetAndTransform** SOAP方法。
+按钮执行在&#x200B;**标记下填充的** GetAndTransform **`<input>`** SOAP方法。
 
 表单中的控件声明如下：
 
@@ -246,11 +248,11 @@ ht-degree: 0%
 </input>
 ```
 
-必须在&#x200B;**`<input>`**&#x200B;标记的&#x200B;**`<enter>`**&#x200B;元素下声明&#x200B;**GetAndTransform**&#x200B;方法。 此标记会将从动态构建的表达式中恢复XML数据的URL作为参数。 函数的第二个参数是可选的，当传入的XML数据与内容的格式不同时，它会引用用于中间转换的样式表。
+必须在&#x200B;**标记的**&#x200B;元素下声明&#x200B;**`<enter>`** GetAndTransform **`<input>`**&#x200B;方法。 此标记会将从动态构建的表达式中恢复XML数据的URL作为参数。 函数的第二个参数是可选的，当传入的XML数据与内容的格式不同时，它会引用用于中间转换的样式表。
 
 输出根据在最后一个参数中输入的路径更新内容。
 
-**示例**：为说明此示例，我们从“cus：book”架构开始。
+**示例**：为说明此示例，我们从“cus:book”架构开始。
 
 添加了半自动更新编辑控件输入表单：
 
@@ -270,6 +272,6 @@ ht-degree: 0%
 
 编辑区域允许您输入要检索的文件的名称。 URL基于此名称构建，例如：https://myserver.adobe.com/incomin/data.xml
 
-要检索的数据的格式与工作流自动化的示例1中的相同。 我们将使用在此示例中看到的“cus：book-workflow.xsl”样式表。
+要检索的数据的格式与工作流自动化的示例1中的相同。 我们将使用在此示例中看到的“cus:book-workflow.xsl”样式表。
 
 作业执行的结果将从路径“。”更新内容实例。

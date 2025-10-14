@@ -7,9 +7,9 @@ audience: interaction
 content-type: reference
 topic-tags: delivering-an-offer
 exl-id: 33d318f3-1eb4-4c74-8c20-8b9f0442c7c3
-source-git-commit: de9ff0b50d819038c97e8515ddb7d6cfeb4547a1
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '1043'
+source-wordcount: '1044'
 ht-degree: 1%
 
 ---
@@ -22,8 +22,8 @@ ht-degree: 1%
 
 * 投放概要
 * 扩充
-* 优惠引擎
-* 单元格优惠
+* 产品建议引擎
+* 单元格产品建议
 
 ## 投放概要 {#delivery-outline}
 
@@ -32,7 +32,7 @@ ht-degree: 1%
 1. 在工作流中，添加投放概要活动，然后再添加投放活动。
 1. 在投放大纲活动中，指定要使用的大纲。
 
-   有关指定投放概要的更多信息，请参阅[Campaign - MRM](../../campaign/using/marketing-campaign-deliveries.md#associating-and-structuring-resources-linked-via-a-delivery-outline)指南。
+   有关指定投放概要的更多信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-assets#delivery-outlines.html){target="_blank"}。
 
 1. 根据投放完成可用的字段。
 1. 可能存在两种情况：
@@ -55,7 +55,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->有关扩充活动的详细信息，请参阅[工作流指南](../../workflow/using/enrichment.md)中的专用文档。
+>有关扩充活动的详细信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/enrichment.html){target="_blank"}。
 
 例如，您可以在投放之前扩充收件人查询的数据。
 
@@ -68,7 +68,7 @@ ht-degree: 1%
 
 ### 指定优惠或调用优惠引擎 {#specifying-an-offer-or-a-call-to-the-offer-engine}
 
-配置查询后（请参阅[工作流指南](../../workflow/using/query.md)）：
+配置查询后（请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html){target="_blank"}）：
 
 1. 添加并打开扩充活动。
 1. 在&#x200B;**[!UICONTROL Enrichment]**&#x200B;选项卡中，选择&#x200B;**[!UICONTROL Add data]**。
@@ -99,7 +99,7 @@ ht-degree: 1%
 
 为此，请使用以下流程：
 
-1. 在活动的&#x200B;**[!UICONTROL Enrichment]**&#x200B;选项卡中选择&#x200B;**[!UICONTROL Add data]**。
+1. 在活动的&#x200B;**[!UICONTROL Add data]**&#x200B;选项卡中选择&#x200B;**[!UICONTROL Enrichment]**。
 1. 在选择要添加的数据类型的窗口中，选择&#x200B;**[!UICONTROL A link]**。
 1. 选择要建立的链接类型及其目标。 在本例中，目标是选件架构。
 
@@ -138,7 +138,7 @@ ht-degree: 1%
 
 投放会自动存储优惠的排名和权重。 此信息在投放的&#x200B;**[!UICONTROL Offers]**&#x200B;选项卡中可见。
 
-## 优惠引擎 {#offer-engine}
+## 产品建议引擎 {#offer-engine}
 
 **[!UICONTROL Offer engine]**&#x200B;活动还允许您在投放之前指定对优惠引擎的调用。
 
@@ -159,7 +159,7 @@ ht-degree: 1%
 
 1. 然后，配置与您选择的渠道对应的投放活动。 有关更多信息，请参阅[将优惠建议插入投放](../../interaction/using/integrating-an-offer-via-the-wizard.md#inserting-an-offer-proposition-into-a-delivery)部分。
 
-## 单元格优惠 {#offers-by-cell}
+## 单元格产品建议 {#offers-by-cell}
 
 利用&#x200B;**[!UICONTROL Offers by cell]**&#x200B;活动，可将集客群体（例如从查询）分发到多个区段中，并指定要为每个区段呈现的选件。
 

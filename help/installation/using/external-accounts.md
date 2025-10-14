@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 exl-id: 4a17d5e8-c73f-42e7-b641-0fee6a52c5c0
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '1784'
-ht-degree: 8%
+source-wordcount: '1791'
+ht-degree: 6%
 
 ---
 
@@ -47,7 +47,7 @@ Adobe Campaign 提供了一组预定义的外部帐户。要设置与外部系�
 
 ### 退回电子邮件 {#bounce-mails-external-account}
 
-**退回邮件**&#x200B;外部帐户指定要用于连接到电子邮件服务的外部POP3帐户。 有关此外部帐户的详细信息，请参阅此[页面](../../workflow/using/inbound-emails.md)。
+**退回邮件**&#x200B;外部帐户指定要用于连接到电子邮件服务的外部POP3帐户。 有关此外部帐户的详细信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/inbound-emails.html){target="_blank"}。
 
 所有配置为POP3访问的服务器都可以接收回邮。
 
@@ -118,9 +118,8 @@ Adobe Campaign 提供了一组预定义的外部帐户。要设置与外部系�
 * [电话](../../delivery/using/communication-channels.md#other-channels)
 * [直邮](../../delivery/using/about-direct-mail-channel.md)
 * [代理](../../delivery/using/communication-channels.md#other-channels)
-* [X(以前称为Twitter)](../../social/using/about-social-marketing.md)
-* [iOS 渠道](../../delivery/using/configuring-the-mobile-application.md)
-* [Android 渠道](../../delivery/using/configuring-the-mobile-application-android.md)
+* [X（以前称为Twitter）](../../social/using/about-social-marketing.md)
+* [iOS和Android渠道](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push-settings.html){target="_blank"}
 
 ### 电子邮件路由 {#email-routing-external-account}
 
@@ -130,7 +129,7 @@ Adobe Campaign 提供了一组预定义的外部帐户。要设置与外部系�
 
 * 您可以使用&#x200B;**中间源**、**外部**&#x200B;路由或&#x200B;**批量**&#x200B;投放路由类型。
 
-* 对于&#x200B;**批量**&#x200B;和&#x200B;**中间源**&#x200B;交付模式，您可以在&#x200B;**品牌策略**&#x200B;选项卡中指定品牌策略参数。 这些参数用于使用特定于您品牌的设置覆盖&#x200B;**镜像页面URL**&#x200B;和&#x200B;**错误地址**&#x200B;的[默认参数](../../installation/using/deploying-an-instance.md#email-channel-parameters)。
+* 对于&#x200B;**批量**&#x200B;和&#x200B;**中间源**&#x200B;交付模式，您可以在&#x200B;**品牌策略**&#x200B;选项卡中指定品牌策略参数。 这些参数用于使用特定于您品牌的设置覆盖[镜像页面URL](../../installation/using/deploying-an-instance.md#email-channel-parameters)和&#x200B;**错误地址**&#x200B;的&#x200B;**默认参数**。
 
   ![](assets/ext-account-branding.png)
 
@@ -160,7 +159,7 @@ Adobe Campaign 提供了一组预定义的外部帐户。要设置与外部系�
 
 ### FTP {#ftp-external-account}
 
-FTP外部帐户允许您配置和测试对Adobe Campaign外部服务器的访问。 要与外部系统（如用于文件传输的FTP服务器898）建立连接，您可以创建自己的外部帐户。 有关详细信息，请参见此 [ 页面](../../workflow/using/file-transfer.md)。
+FTP外部帐户允许您配置和测试对Adobe Campaign外部服务器的访问。 要与外部系统（如用于文件传输的FTP服务器898）建立连接，您可以创建自己的外部帐户。 有关详细信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html){target="_blank"}。
 
 为此，请在此外部帐户中指定用于建立与FTP服务器连接的地址和凭据
 
@@ -190,7 +189,7 @@ FTP外部帐户允许您配置和测试对Adobe Campaign外部服务器的访问
 
 ### SFTP {#sftp-external-account}
 
-SFTP外部帐户允许您配置和测试对Adobe Campaign外部服务器的访问。 要与外部系统（如用于文件传输的SFTP）建立连接，您可以创建自己的外部帐户。 有关详细信息，请参见此 [ 页面](../../workflow/using/file-transfer.md)。
+SFTP外部帐户允许您配置和测试对Adobe Campaign外部服务器的访问。 要与外部系统（如用于文件传输的SFTP）建立连接，您可以创建自己的外部帐户。 有关详细信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html){target="_blank"}。
 
 ![](assets/ext_account_4.png)
 
@@ -229,10 +228,10 @@ SFTP外部帐户允许您配置和测试对Adobe Campaign外部服务器的访�
 
 外部帐户配置设置取决于数据库引擎。 请在以下部分中了解详情：
 
-* 配置对[Vertica analytics](../../installation/using/configure-fda-vertica.md)的访问权限
+* 配置对[Vertica Analytics](../../installation/using/configure-fda-vertica.md)的访问权限
 * 配置对[Snowflake](../../installation/using/configure-fda-snowflake.md)的访问权限
 * 配置对[Google BigQuery](../../installation/using/configure-fda-google-big-query.md)的访问权限
-* 配置对[Azure synapse](../../installation/using/configure-fda-synapse.md)的访问权限
+* 配置对[Azure Synapse](../../installation/using/configure-fda-synapse.md)的访问权限
 * 配置对[Hadoop](../../installation/using/configure-fda-hadoop.md)的访问权限
 * 配置对[Oracle](../../installation/using/configure-fda-oracle.md)的访问权限
 * 配置对[Netezza](../../installation/using/configure-fda-netezza.md)的访问权限
@@ -288,7 +287,7 @@ SFTP外部帐户允许您配置和测试对Adobe Campaign外部服务器的访�
 
 有关此配置的更多信息，请参阅[此页面](../../integrations/using/configuring-ims.md)。
 
-## Web 分析 {#web-analytics-external-account}
+## 网站分析 {#web-analytics-external-account}
 
 **[!UICONTROL Web Analytics]**&#x200B;外部帐户允许您以区段形式将数据从Adobe Analytics转发到Adobe Campaign。 反过来，它会将Adobe Campaign投放的电子邮件营销活动的指标和属性发送到Adobe Analytics连接器。
 
@@ -314,7 +313,7 @@ SFTP外部帐户允许您配置和测试对Adobe Campaign外部服务器的访�
 
   用于连接到Adobe Experience Manager创作实例的密码。
 
-有关更多信息，请参阅此[&#128279;](../../integrations/using/about-adobe-experience-manager.md)章节。
+有关更多信息，请参阅此](../../integrations/using/about-adobe-experience-manager.md)章节[。
 
 ## CRM连接器外部帐户
 
@@ -398,11 +397,11 @@ SFTP外部帐户允许您配置和测试对Adobe Campaign外部服务器的访�
 
 * **[!UICONTROL Client identifier]**
 
-  要了解在何处查找您的客户端标识符，请参阅此[页面](https://help.salesforce.com/articleView?id=000205876&amp;type=1)。
+  要了解在何处查找您的客户端标识符，请参阅此[页面](https://help.salesforce.com/articleView?id=000205876&type=1)。
 
 * **[!UICONTROL Security token]**
 
-  要了解在何处查找您的安全令牌，请参阅此[页面](https://help.salesforce.com/articleView?id=000205876&amp;type=1)。
+  要了解在何处查找您的安全令牌，请参阅此[页面](https://help.salesforce.com/articleView?id=000205876&type=1)。
 
 * **[!UICONTROL API version]**
 
@@ -416,7 +415,7 @@ SFTP外部帐户允许您配置和测试对Adobe Campaign外部服务器的访�
 
 ### Amazon Simple Storage Service (S3) {#amazon-simple-storage-service--s3--external-account}
 
-Amazon Simple Storage Service (S3)连接器可用于将数据导入或导出Adobe Campaign。 它可以在工作流活动中设置。 有关详细信息，请参见此 [ 页面](../../workflow/using/file-transfer.md)。
+Amazon Simple Storage Service (S3)连接器可用于将数据导入或导出Adobe Campaign。 它可以在工作流活动中设置。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html){target="_blank"}。
 
 ![](assets/ext_account_3.png)
 
@@ -448,7 +447,7 @@ Amazon Simple Storage Service (S3)连接器可用于将数据导入或导出Adob
 
 ### Azure Blob Storage {#azure-blob-external-account}
 
-**Azure Blob Storage**&#x200B;外部帐户可用于通过&#x200B;**[!UICONTROL Transfer file]**&#x200B;工作流活动将数据导入或导出到Adobe Campaign。 有关更多信息，请参阅此[&#128279;](../../workflow/using/file-transfer.md)章节。
+**Azure Blob Storage**&#x200B;外部帐户可用于通过&#x200B;**[!UICONTROL Transfer file]**&#x200B;工作流活动将数据导入或导出到Adobe Campaign。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html){target="_blank"}。
 
 ![](assets/ext_account_23.png)
 

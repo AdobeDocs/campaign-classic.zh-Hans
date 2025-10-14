@@ -8,10 +8,10 @@ level: Beginner
 hide: true
 hidefromtoc: true
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: b4059e43d98643f0f8b5b3f68f03e10b755e8ba3
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '3864'
-ht-degree: 100%
+source-wordcount: '3865'
+ht-degree: 99%
 
 ---
 
@@ -30,7 +30,7 @@ ht-degree: 100%
 * 编排营销活动：此指南已被替换为一个[登陆页面](../../campaign/using/about-marketing-campaigns.md)。
 * 营销资源管理：此指南已移除。
 * 分布式营销：此指南已移除。
-* 使用工作流实现自动化：此指南已替换为一个[登陆页面](../../workflow/using/about-workflow-automation.md)
+* 使用工作流实现自动化：此指南已替换为一个[登陆页面](../../workflow/using/about-workflows.md)
 
 ## 2024
 
@@ -419,7 +419,7 @@ Android 的推送通知改进 - [阅读更多](../../delivery/using/configuring-
 
 * [如何使用个性化字段个性化电子邮件](../../delivery/using/personalization-fields.md)
 
-* [如何在电子邮件中管理种子和校样](../../delivery/using/steps-defining-the-target-population.md)
+* [如何在电子邮件中管理种子和验证](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#target-population){target="_blank"}。
 
 * [如何设置循环投放](../../workflow/using/recurring-delivery.md)
 

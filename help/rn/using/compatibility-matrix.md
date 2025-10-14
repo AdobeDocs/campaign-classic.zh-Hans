@@ -6,10 +6,10 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
-source-git-commit: b8a6a0db27826309456c285c08d4f1d85de70283
-workflow-type: ht
-source-wordcount: '846'
-ht-degree: 100%
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
+workflow-type: tm+mt
+source-wordcount: '857'
+ht-degree: 97%
 
 ---
 
@@ -437,7 +437,7 @@ ht-degree: 100%
 
 Microsoft Edge WebView2 运行时最新版本是 Campaign 客户端控制台的必需版本。
 
-从 [Microsoft 开发人员网站](https://www.adobe.com/go/acc-ms-webview2-runtime-download_cn)下载 Microsoft Edge WebView2。
+从 [Microsoft 开发人员网站](https://www.adobe.com/go/acc-ms-webview2-runtime-download)下载 Microsoft Edge WebView2。
 
 
 ## Mobile SDK {#MobileSDK}
@@ -472,7 +472,7 @@ Microsoft Edge WebView2 运行时最新版本是 Campaign 客户端控制台的�
 
 ## 浏览器 {#Browsers}
 
-以下浏览器在其最新版本中与 Campaign [Web 访问](../../campaign/using/accessing-marketing-campaigns.md#using-the-web-interface-)兼容。
+以下浏览器的最新版本与Campaign兼容，可用于进行Web访问。 有关详细信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-create.html#use-the-web-interface-){target=_blank}。
 
 * Google Chrome
 * Microsoft Edge

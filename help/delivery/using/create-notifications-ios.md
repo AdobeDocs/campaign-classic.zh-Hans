@@ -7,16 +7,16 @@ role: User, Developer, Data Engineer
 hide: true
 hidefromtoc: true
 exl-id: 4520504a-0d9f-4ea7-a5a8-0c07948af4f0
-source-git-commit: 89e350c727fb9379d28916f79d9749f22fd4974f
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '971'
-ht-degree: 8%
+source-wordcount: '980'
+ht-degree: 7%
 
 ---
 
 # 为iOS创建通知{#create-notifications-ios}
 
-此部分详细介绍特定于iOS通知投放的元素。 有关投放创建的全局概念在[此部分](steps-about-delivery-creation-steps.md)中介绍。
+此部分详细介绍特定于iOS通知投放的元素。 有关投放创建的全局概念，请参见[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html){target="_blank"}。
 
 首先，创建新投放。
 
@@ -34,7 +34,7 @@ ht-degree: 8%
 
    >[!NOTE]
    >
-   >[此部分](steps-defining-the-target-population.md)中显示了选择投放目标群体的详细过程。
+   >有关选择投放目标群体的详细流程，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#target-population.){target="_blank"}中的此部分。
    >
    >有关个性化字段用法的详细信息，请参阅[本节](about-personalization.md)。
    >

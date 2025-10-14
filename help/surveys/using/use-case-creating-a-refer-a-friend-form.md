@@ -5,9 +5,9 @@ description: 了解创建“推荐朋友”表单的步骤
 badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v8"
 feature: Surveys
 exl-id: bd94c41a-813a-4ddb-a2bd-c3deab022482
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '628'
+source-wordcount: '630'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >只要收件人未表示同意，您就不能将它们与收件人一起存储在数据库中。 它们将临时存储在为病毒式营销活动设计的&#x200B;**访客**&#x200B;表(**nms：visitor**)中。 由于&#x200B;**清理**&#x200B;操作，将定期清除此表。
+   >只要收件人未表示同意，您就不能将它们与收件人一起存储在数据库中。 它们将临时存储在为病毒式营销活动设计的&#x200B;**访客**&#x200B;表(**nms:visitor**)中。 由于&#x200B;**清理**&#x200B;操作，将定期清除此表。
    >
    >在本例中，我们要定位收件人，以建议他们参加其反向链接所推荐的竞争。 但是，在本邮件中，我们还希望向他们提供我们的一个信息服务的订购。 如果它们订阅，则它们可以存储在数据库中。
 
@@ -88,7 +88,7 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >有关投放模板的详细信息，请参阅[此页面](../../delivery/using/about-templates.md)。
+   >有关投放模板的详细信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html){target="_blank"}。
 
 1. 创建用于投放订阅消息的第二个脚本。
 
@@ -117,7 +117,7 @@ ht-degree: 0%
     </delivery>)
    ```
 
-1. Publish竞争表，并向初始目标的收件人发送邀请。 当其中一个邀请朋友时，将创建基于&#x200B;**反向链接选件**&#x200B;模板的投放。
+1. 发布竞争表单并向初始目标的收件人发送邀请。 当其中一个邀请朋友时，将创建基于&#x200B;**反向链接选件**&#x200B;模板的投放。
 
    ![](assets/s_ncs_admin_survey_viral_sample_8.png)
 

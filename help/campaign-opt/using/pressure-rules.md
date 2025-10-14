@@ -7,9 +7,9 @@ feature: Fatigue Management, Typology Rules, Campaigns
 hide: true
 hidefromtoc: true
 exl-id: c23212f2-fdf8-4820-b389-546f7c84db27
-source-git-commit: 4f809011a8b4cb3803c4e8151e358e5fd73634e4
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '3336'
+source-wordcount: '3335'
 ht-degree: 6%
 
 ---
@@ -73,7 +73,7 @@ ht-degree: 6%
 
    ![](assets/campaign_opt_create_a_rule_03b.png)
 
-   要定义变量阈值，请在&#x200B;**[!UICONTROL Type of threshold]**&#x200B;字段中选择&#x200B;**[!UICONTROL Depends on the recipient]**&#x200B;值，然后使用右侧的图标打开表达式编辑器。
+   要定义变量阈值，请在&#x200B;**[!UICONTROL Depends on the recipient]**&#x200B;字段中选择&#x200B;**[!UICONTROL Type of threshold]**&#x200B;值，然后使用右侧的图标打开表达式编辑器。
 
    ![](assets/campaign_opt_create_a_rule_04.png)
 
@@ -92,7 +92,7 @@ ht-degree: 6%
 
    ![](assets/campaign_opt_create_a_rule_05.png)
 
-1. **[!UICONTROL Typologies]**&#x200B;选项卡允许您查看应用此规则的促销活动分类，或将规则链接到一个或多个现有分类。 有关详细信息，请参阅[应用分类](about-campaign-typologies.md#applying-typologies)。
+1. **[!UICONTROL Typologies]**&#x200B;选项卡允许您查看应用此规则的促销活动分类，或将规则链接到一个或多个现有分类。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/campaign-optimization/campaign-typologies.html?lang=zh-Hans){target="_blank"}。
 
 ## 定义阈值和权重 {#defining-thresholds-and-weights}
 
@@ -154,11 +154,11 @@ ht-degree: 6%
 
 要将考虑的投放限制在2周内，您可以：
 
-1. 在&#x200B;**[!UICONTROL Concerned period]**&#x200B;字段中输入&#x200B;**15d**：在计算中将考虑在应用规则的投放日期前两周发送的投放，
+1. 在&#x200B;**字段中输入** 15d **[!UICONTROL Concerned period]**：在计算中将考虑在应用规则的投放日期前两周发送的投放，
 
 或者
 
-1. 在&#x200B;**[!UICONTROL Period considered]**&#x200B;字段中输入&#x200B;**7d**&#x200B;并选中&#x200B;**[!UICONTROL Take the deliveries into account in the provisional calendar]**&#x200B;选项：在计算时，将考虑在投放日期之前7天内发送的投放以及在应用规则的投放日期之后7天内计划发送的投放。
+1. 在&#x200B;**字段中输入** 7d **[!UICONTROL Period considered]**&#x200B;并选中&#x200B;**[!UICONTROL Take the deliveries into account in the provisional calendar]**&#x200B;选项：在计算时，将考虑在投放日期之前7天内发送的投放以及在应用规则的投放日期之后7天内计划发送的投放。
 
 期间开始日期取决于数据库的配置方式。
 
@@ -224,7 +224,7 @@ ht-degree: 6%
 要创建规则，请应用以下步骤：
 
 1. 创建新的&#x200B;**Pressure**&#x200B;类型分类规则。
-1. 编辑&#x200B;**[!UICONTROL Pressure]**&#x200B;选项卡：在&#x200B;**[!UICONTROL Maximum number of messages]**&#x200B;部分中，我们要创建一个公式以根据每个收件人计算阈值。 在&#x200B;**[!UICONTROL Threshold type]**&#x200B;字段中选择&#x200B;**[!UICONTROL Depends on the recipient]**&#x200B;值，然后单击&#x200B;**[!UICONTROL Formula]**&#x200B;字段右侧的&#x200B;**[!UICONTROL Edit expression]**。
+1. 编辑&#x200B;**[!UICONTROL Pressure]**&#x200B;选项卡：在&#x200B;**[!UICONTROL Maximum number of messages]**&#x200B;部分中，我们要创建一个公式以根据每个收件人计算阈值。 在&#x200B;**[!UICONTROL Depends on the recipient]**&#x200B;字段中选择&#x200B;**[!UICONTROL Threshold type]**&#x200B;值，然后单击&#x200B;**[!UICONTROL Edit expression]**&#x200B;字段右侧的&#x200B;**[!UICONTROL Formula]**。
 
    单击&#x200B;**[!UICONTROL Advanced parameters]**&#x200B;按钮以定义计算公式。
 
@@ -234,9 +234,9 @@ ht-degree: 6%
 
    ![](assets/campaign_opt_pressure_sample_1_2.png)
 
-1. 在函数列表中，双击&#x200B;**[!UICONTROL Others]**&#x200B;节点中的&#x200B;**Iif**&#x200B;函数。
+1. 在函数列表中，双击&#x200B;**节点中的** Iif **[!UICONTROL Others]**&#x200B;函数。
 
-   然后在&#x200B;**[!UICONTROL Available fields]**&#x200B;部分中选择收件人的&#x200B;**状态**。
+   然后在&#x200B;**部分中选择收件人的**&#x200B;状态&#x200B;**[!UICONTROL Available fields]**。
 
    ![](assets/campaign_opt_pressure_sample_1_3.png)
 
@@ -296,7 +296,7 @@ ht-degree: 6%
 应用以下配置步骤：
 
 1. 创建新的&#x200B;**Pressure**&#x200B;类型分类规则。
-1. 编辑&#x200B;**[!UICONTROL Pressure]**&#x200B;选项卡。 我们要创建一个阈值公式，该公式将基于每个单独的收件人：单击&#x200B;**[!UICONTROL Weight formula]**&#x200B;字段右侧的&#x200B;**[!UICONTROL Edit expression]**&#x200B;图标。
+1. 编辑&#x200B;**[!UICONTROL Pressure]**&#x200B;选项卡。 我们要创建一个阈值公式，该公式将基于每个单独的收件人：单击&#x200B;**[!UICONTROL Edit expression]**&#x200B;字段右侧的&#x200B;**[!UICONTROL Weight formula]**&#x200B;图标。
 
    ![](assets/campaign_opt_pressure_sample_2_1.png)
 
@@ -341,11 +341,11 @@ ht-degree: 6%
 1. 创建营销策划。 如需详细信息，请参阅[此小节](../../campaign/using/setting-up-marketing-campaigns.md#creating-a-campaign)。
 1. 在营销活动的&#x200B;**[!UICONTROL Targeting and workflows]**&#x200B;选项卡中，将&#x200B;**查询**&#x200B;活动添加到您的工作流。 有关使用此活动的详细信息，请参阅[此部分](../../workflow/using/query.md)。
 1. 将&#x200B;**[!UICONTROL Email delivery]**&#x200B;活动添加到工作流并打开它。 有关使用此活动的详细信息，请参阅[此部分](../../workflow/using/delivery.md)。
-1. 转到&#x200B;**[!UICONTROL Delivery properties]**&#x200B;的&#x200B;**[!UICONTROL Approvals]**&#x200B;选项卡并禁用所有审批。
+1. 转到&#x200B;**[!UICONTROL Approvals]**&#x200B;的&#x200B;**[!UICONTROL Delivery properties]**&#x200B;选项卡并禁用所有审批。
 
    ![](assets/campaign_opt_pressure_example_2.png)
 
-1. 在&#x200B;**[!UICONTROL Delivery properties]**&#x200B;的&#x200B;**[!UICONTROL Typology]**&#x200B;选项卡中，引用要应用规则的营销活动类型。 定义投放的权重。
+1. 在&#x200B;**[!UICONTROL Typology]**&#x200B;的&#x200B;**[!UICONTROL Delivery properties]**&#x200B;选项卡中，引用要应用规则的营销活动类型。 定义投放的权重。
 
    ![](assets/campaign_opt_pressure_example_3.png)
 

@@ -8,9 +8,9 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 515adad2-6129-450a-bb9e-fc80127835af
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '3094'
+source-wordcount: '3096'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->某些配置只能由Adobe托管的部署的Adobe执行，例如访问服务器和实例配置文件。 要了解有关不同部署的更多信息，请参阅[托管模型](../../installation/using/hosting-models.md)部分或[此页面](../../installation/using/capability-matrix.md)。
+>对于由Adobe托管的部署，某些配置只能由Adobe执行，例如访问服务器和实例配置文件。 要了解有关不同部署的更多信息，请参阅[托管模型](../../installation/using/hosting-models.md)部分或[此页面](../../installation/using/capability-matrix.md)。
 
 有关与Adobe Campaign可投放性相关的概念和最佳实践的更多信息，请参阅此[部分](../../delivery/using/about-deliverability.md)。
 
@@ -214,7 +214,7 @@ user:~ user$ host -t a mta6.am0.yahoodns.net
 
 ### 配置MX管理 {#configuring-mx-management}
 
-在树的&#x200B;**[!UICONTROL Administration > Campaign Management > Non deliverables Management > Mail rule sets]**&#x200B;节点的&#x200B;**[!UICONTROL MX management]**&#x200B;文档中定义了MX要遵守的规则。
+在树的&#x200B;**[!UICONTROL MX management]**&#x200B;节点的&#x200B;**[!UICONTROL Administration > Campaign Management > Non deliverables Management > Mail rule sets]**&#x200B;文档中定义了MX要遵守的规则。
 
 如果节点中不存在&#x200B;**[!UICONTROL MX management]**&#x200B;文档，则可以手动创建它。 操作步骤：
 
@@ -223,7 +223,7 @@ user:~ user$ host -t a mta6.am0.yahoodns.net
 
    ![](assets/s_ncs_install_mx_mgt_rule.png)
 
-1. 在&#x200B;**[!UICONTROL Internal name]**&#x200B;字段中输入&#x200B;**defaultMXRules**。
+1. 在&#x200B;**字段中输入** defaultMXRules **[!UICONTROL Internal name]**。
 
 为了将更改考虑在内，您需要重新启动统计服务器。
 
@@ -314,9 +314,9 @@ user:~ user$ host -t a mta6.am0.yahoodns.net
 
 您可以定义已发送消息的格式，以便显示的内容可以根据每个收件人地址的域自动进行调整。
 
-为此，请转到位于&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Campaign management]** > **[!UICONTROL Non deliverables management]** > **[!UICONTROL Mail rule sets]**&#x200B;中的&#x200B;**[!UICONTROL Management of email formats]**&#x200B;文档。
+为此，请转到位于&#x200B;**[!UICONTROL Management of email formats]** > **[!UICONTROL Administration]** > **[!UICONTROL Campaign management]** > **[!UICONTROL Non deliverables management]**&#x200B;中的&#x200B;**[!UICONTROL Mail rule sets]**&#x200B;文档。
 
-本文档包含所有预定义域的列表，这些域对应于Adobe Campaign管理的日语格式。 有关详细信息，请参阅[本文档](../../delivery/using/defining-the-email-content.md#sending-emails-on-japanese-mobiles)。
+本文档包含所有预定义域的列表，这些域对应于Adobe Campaign管理的日语格式。 有关更多信息，请参阅 [Campaign v8 文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/sending-emails-on-japanese-mobiles.html){target="_blank"}。
 
 ![](assets/mail_rule_sets.png)
 
@@ -326,12 +326,12 @@ user:~ user$ host -t a mta6.am0.yahoodns.net
 
   默认情况下，多部分结构为&#x200B;**multipart/alternative**，但在向消息添加图像时，它会自动变为&#x200B;**multipart/related**。 默认情况下，某些提供程序需要&#x200B;**multipart/related**&#x200B;格式，即使未附加图像，**[!UICONTROL Force multipart/related]**&#x200B;选项也会强制采用此格式。
 
-* **HTML**：只发送HTML消息。 如果不接受HTML格式，则不会显示消息。
+* **HTML**：仅发送HTML消息。 如果不接受HTML格式，则不会显示消息。
 * **文本**：以纯文本格式发送消息。 文本格式消息的优点在于其非常小。
 
 如果启用了&#x200B;**[!UICONTROL Image inclusion]**&#x200B;选项，这些选项将直接显示在电子邮件的正文中。 然后，将上传图像，并将URL链接替换为其内容。
 
-日本市场特别使用此选项来处理&#x200B;**装饰邮件**、**装饰邮件**&#x200B;或&#x200B;**装饰邮件**。 有关详细信息，请参阅[本文档](../../delivery/using/defining-the-email-content.md#sending-emails-on-japanese-mobiles)。
+日本市场特别使用此选项来处理&#x200B;**装饰邮件**、**装饰邮件**&#x200B;或&#x200B;**装饰邮件**。 有关详细信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/sending-emails-on-japanese-mobiles.html){target="_blank"}。
 
 >[!IMPORTANT]
 >
@@ -371,7 +371,7 @@ user:~ user$ host -t a mta6.am0.yahoodns.net
 
 对于每个&#x200B;**IPAffinity**&#x200B;元素，您需要声明可用于计算机的IP地址。
 
-例如：
+示例：
 
 ```
 <IPAffinity localDomain="<domain>" name="default">

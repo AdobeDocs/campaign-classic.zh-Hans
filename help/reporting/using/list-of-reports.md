@@ -5,9 +5,9 @@ description: 报告列表
 badge: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 feature: Reporting, Monitoring
 exl-id: c01f4850-ab17-44ac-a5e0-ff082ec206b3
-source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '1018'
+source-wordcount: '1020'
 ht-degree: 2%
 
 ---
@@ -119,11 +119,11 @@ ht-degree: 2%
 
 ## 营销活动报表 {#reports-on-campaigns}
 
-营销活动报表涉及&#x200B;**nms：operation**&#x200B;表中的数据。
+营销活动报表与&#x200B;**nms:operation**&#x200B;表中的数据有关。
 
 下表显示了Adobe Campaign提供的内置报告。
 
-有关这些报告内容的详细信息，请参阅[此部分](../../campaign/using/designing-marketing-campaigns.md)。
+有关这些报告内容的更多信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html){target=_blank}。
 
 <table> 
  <tbody> 
@@ -180,7 +180,7 @@ ht-degree: 2%
 
 ## 服务报表 {#reports-on-services}
 
-服务报表涉及&#x200B;**nms：service**&#x200B;表中的数据。
+服务报表涉及&#x200B;**nms:service**&#x200B;表中的数据。
 
 下表显示了Adobe Campaign提供的内置报告。
 
@@ -219,7 +219,7 @@ ht-degree: 2%
 
 下表显示了Adobe Campaign提供的内置报告。
 
-有关这些报告内容的详细信息，请参阅[此部分](../../campaign/using/designing-marketing-campaigns.md)。
+有关这些报告内容的更多信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html){target=_blank}。
 
 <table> 
  <tbody> 
@@ -273,7 +273,7 @@ ht-degree: 2%
 
 ## 模拟报表 {#reports-on-simulations}
 
-模拟报告涉及&#x200B;**nms：simulation**&#x200B;表中的数据。
+模拟报表涉及&#x200B;**nms:simulation**&#x200B;表中的数据。
 
 下表显示了Adobe Campaign提供的内置报告。
 
@@ -310,7 +310,7 @@ ht-degree: 2%
 
 ## Web应用程序报表 {#reports-on-web-applications}
 
-有关Web应用程序的报表涉及&#x200B;**nms：WebApp**&#x200B;表中的数据。
+有关Web应用程序的报告涉及&#x200B;**nms:WebApp**&#x200B;表中的数据。
 
 下表显示了Adobe Campaign提供的内置报告。
 
@@ -360,7 +360,7 @@ ht-degree: 2%
   </tr> 
   <tr> 
    <td> 社交潜在客户获取的历史(socialVisitorStatistics)<br /> </td> 
-   <td> X(以前称为Twitter)和Facebook潜在客户收购的历史记录取决于Social营销附加产品。<br /> </td> 
+   <td> X（以前称为Twitter）和Facebook潜在客户收购的历史取决于Social营销加载项。<br /> </td> 
    <td> nms：visitor<br /> </td> 
   </tr> 
   <tr> 

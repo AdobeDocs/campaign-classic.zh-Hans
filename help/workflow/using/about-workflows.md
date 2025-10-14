@@ -3,78 +3,103 @@ product: campaign
 title: 关于工作流
 description: 利用工作流实现流程自动化、管理数据和受众、发送消息等
 feature: Workflows, Data Management
-hide: true
-hidefromtoc: true
-exl-id: 51be6b90-2a7a-4757-9754-d16c540a87ff
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
+exl-id: 024a7344-9376-4ff3-926a-003148229f9f
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '650'
-ht-degree: 37%
+source-wordcount: '232'
+ht-degree: 9%
 
 ---
 
-# 工作流入门{#gs-workflows}
+# 使用工作流实现自动化 {#gs-workflows}
+
+通过Adobe Campaign的工作流，您的团队可以简化和自动化整个平台的端到端业务流程。 借助直观的图形界面，您可以在一个位置设计和管理可协调任务（例如数据分段、活动执行、文件处理，甚至用户批准）的工作流。
+
+例如，您可以自动执行从远程服务器检索文件、提取其内容并将数据无缝加载到Adobe Campaign服务器的过程，从而减少手动工作并提高运营效率。 工作流引擎可确保可靠地执行每个步骤，并跟踪每个步骤以便进行可视化和控制。
+
+>[!BEGINTABS]
+
+>[!TAB 工作流文档]
+
+要了解有关工作流管理的更多信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html?lang=zh-Hans){target=_blank}。
+
+
+[![image](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html?lang=zh-Hans){target=_blank}
+
+
+>[!TAB 有用的链接]
+
+请参阅Campaign v8文档以了解与工作流管理相关的关键步骤：
+
+* [工作流活动](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/activities.html?lang=zh-Hans){target=_blank}：活动是任务模板。 工作流包括定位、流量控制、操作和事件活动。
+
+* [构建工作流](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html?lang=zh-Hans){target=_blank}：了解如何创建和运行定位、营销活动和技术工作流。
+
+* [最佳实践](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html){target=_blank}：了解优化活动工作流性能、改进工作流设计和定义正确设置的准则。
+
+* [监视工作流](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html){target=_blank}：了解如何监视工作流执行以确保所有内容正确运行。
+
+* [工作流用例](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/workflow-use-cases.html){target=_blank}：了解可在其中使用工作流的上下文以及如何通过端到端用例实施工作流。
+
+
+>[!ENDTABS]
 
 
 
-## 关于工作流{#about-workflows}
 
-Adobe Campaign 包含一个工作流模块，允许您在应用程序服务器的不同模块之间编排所有流程和任务。您可以利用这个全面的图形环境设计各式流程，包括部分划分、活动执行、文件处理、人员参与等。工作流引擎会执行并跟踪这些流程。
 
-例如，您可以使用某个工作流从服务器下载文件、解压缩，然后将其中包含的记录导入 Adobe Campaign 数据库。
+<!--
 
-此外，一个工作流也可能涉及到要通知一个或多个操作员，或者是可以作出决策和批准流程的相关人员。这样就可以创建一次投放行动，将内容相关任务指派给一位或多位操作员，指定目标并在开始投放前审批校样。
+Adobe Campaign uses workflows to:
 
-工作流在营销活动管理流程的不同上下文和阶段中出现。
+* Carry out targeting campaigns. [Learn more](building-a-workflow.md#implementation-steps-)
+* Build campaigns: for each campaign, the **[!UICONTROL Workflow]** tab lets you build the target and create the deliveries. [Learn more](building-a-workflow.md#campaign-workflows)
+* Perform technical processes: cleanup, collecting tracking information or provisional calculations. [Learn more](building-a-workflow.md#technical-workflows)
 
-Adobe Campaign使用工作流执行以下操作：
+A workflow can mean both a process definition (the workflow model, which is a representation of what is supposed to happen) and an instance of this process (a workflow instance, which is a representation of what is actually happening).
 
-* 开展定位活动。 [了解详情](building-a-workflow.md#implementation-steps-)
-* 构建营销活动：对于每个营销活动，**[!UICONTROL Workflow]**&#x200B;选项卡允许您构建目标和创建投放。 [了解详情](building-a-workflow.md#campaign-workflows)
-* 执行技术流程：清理、收集跟踪信息或临时计算。 [了解详情](building-a-workflow.md#technical-workflows)
-
-工作流可以是指流程定义（工作流模型，用于表示应该发生的情况）以及此流程的实例（工作流实例，用于表示实际发生的情况）。
-
-工作流模板描述了要执行的各种任务及其关联方式。任务模板称作活动并由图标表示。它们通过过渡关联起来。
+The workflow template describes the various tasks to be performed and how they are linked together. The task templates are called activities and are represented by icons. They are linked together by transitions.
 
 ![](assets/example1.png)
 
-每个工作流包含：
+Each workflow contains:
 
 * **[!UICONTROL Activities]**
 
-  活动描述了任务模板。 可用的各种活动在图中由图标表示。每种类型都有通用属性和特定属性。 例如，虽然所有活动都有名称和标签，但只有&#x200B;**[!UICONTROL Approval]**&#x200B;活动有分配。
+  An activity describes a task template. The various activities available are represented on the diagram by icons. Each type has common properties and specific properties. For example, while all activities have a name and label, only the **[!UICONTROL Approval]** activity has an assignment.
 
-  在工作流图中，给定活动可以生成多个任务，尤其是当存在循环或循环（定期）操作时。
+  In a workflow diagram, a given activity can produce multiple tasks, in particular when there is a loop or recurrent (periodic) actions.
 
-  [此部分](about-activities.md)列出了所有工作流活动，包括用例和示例。
+  All workflow activities are listed in [this section](about-activities.md), including use cases and samples.
 
 * **[!UICONTROL Transitions]**
 
-  利用过渡，可链接活动并定义其顺序。 过渡会将源活动链接到目标活动。 有多种类型的过渡，这取决于源活动。 某些过渡具有其他参数，如持续时间、条件或过滤器。
+  Transitions enable you to link activities and to define their sequence. A transition links a source activity to a destination activity. There are several sorts of transitions, which depend on the source activity. Some transitions have additional parameters such as a duration, a condition or a filter.
 
-  未链接到目标活动的过渡为橙色，并且箭头头显示为菱形。
+  A transition which is not linked to a destination activity is colored orange and the arrow head is shown as a diamond.
 
   >[!NOTE]
   >
-  >包含未终止过渡的工作流仍可以执行：将生成警告消息，工作流在到达过渡后将暂停，但不会生成错误。 因此，可以在不完成工作流的情况下启动该工作流，并在工作流中添加工作流。
+  >A workflow containing unterminated transitions can still be executed: a warning message will be generated and the workflow will pause once it reaches the transition but it will not generate an error. It is thus possible to start a workflow without it being finished and to add to it as you go along.
 
-  有关如何构建工作流的详细信息，请参阅[此部分](building-a-workflow.md)。
+  For more information about how to build a workflow, refer to [this section](building-a-workflow.md).
 
 * **[!UICONTROL Worktables]**
 
-  工作台包含由过渡承载的所有信息。 每个工作流均使用多个工作表。只要不清除这些表中的数据，就可以在整个工作流的生命周期中加速和使用这些数据。 实际上，每次工作流被钝化时以及可能在执行最大工作流期间，都会清除不需要的表，以避免服务器过载。
+  The worktable contains all the information carried by the transition. Each workflow uses several worktables. The data conveyed in these tables can be accelerated and used throughout the workflow's life cycle, as long as it is not purged. Indeed, unneeded tables are purged each time the workflow is passivated, and possibly during the execution of the largest workflows to avoid overloading the server.
 
-  在[本节](how-to-use-workflow-data.md)中了解关于工作流数据和表的更多信息。
+  Learn more on workflow data and tables in [this section](how-to-use-workflow-data.md).
 
-## 主要原则和最佳实践{#principles-workflows}
+## Key principles and best practices{#principles-workflows}
 
-请参阅以下部分，查找使用工作流自动化流程的指导和最佳实践：
+Refer to these sections to find guidance and best practices to automate processes with workflows:
 
-* 在[此页面](how-to-use-workflow-data.md)中了解有关工作流活动的更多信息。
-* 在[本节](building-a-workflow.md)中了解如何构建工作流。
-* 在[此部分](../../platform/using/import-export-workflows.md)中了解如何使用工作流导入Campaign中的数据。
-* [此页面](workflow-best-practices.md)中详细介绍了工作流最佳实践。
-* 在[此部分](starting-a-workflow.md)中查找有关工作流执行的指导。
-* 了解如何在[此页面](monitoring-workflow-execution.md)中监视工作流。
-* 在[此页面](managing-rights.md)中了解如何向用户授予使用工作流的访问权限。
+* Learn more about workflow activities in [this page](how-to-use-workflow-data.md).
+* Learn how to build a workflow in [this section](building-a-workflow.md).
+* Discover how to use workflows to import data in Campaign in [this section](../../platform/using/import-export-workflows.md).
+* Workflow best practices are detailed in [this page](workflow-best-practices.md).
+* Find guidance about workflow execution in [this section](starting-a-workflow.md).
+* Learn how to monitor workflows in [this page](monitoring-workflow-execution.md).
+* Learn how to grant access to users to use workflows in [this page](managing-rights.md).
+
+-->

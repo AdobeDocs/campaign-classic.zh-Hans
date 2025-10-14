@@ -4,10 +4,10 @@ title: 发送带有附件的事务性电子邮件
 description: 了解如何使用Adobe Campaign发送带有个人和/或个性化附件的事务性电子邮件
 feature: Transactional Messaging, Message Center
 exl-id: 755d2364-f6c4-4943-97e8-3ed52a0f2665
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '663'
-ht-degree: 2%
+source-wordcount: '667'
+ht-degree: 1%
 
 ---
 
@@ -21,23 +21,23 @@ ht-degree: 2%
 
 在此方案中，您将了解如何发送带有个人和/或个性化附件的事务性电子邮件。 附件不会预先上传到事务性消息服务器上：而是会动态生成。
 
-当您捕获客户交互或详细信息时，您可能需要在流程结束时将此信息发送回客户，例如在附加到电子邮件的PDF文件中发送。
+当您捕获客户交互或详细信息时，您可能需要在流程结束时将此信息发送回客户，例如在附加到电子邮件的PDF文件中。
 
 以下是此方案的主要步骤：
 
 1. 客户进入网站，找到要购买的产品。
 1. 客户选择产品并自定义某些选项。
 1. 客户完成交易。
-1. 向客户发送确认交易的电子邮件。 由于不建议在电子邮件中发送PII（个人身份信息），因此会生成一个安全PDF并将其附加到电子邮件中。
+1. 向客户发送确认交易的电子邮件。 由于不建议在电子邮件中发送PII（个人身份信息），因此会生成一个安全的PDF并将其附加到电子邮件中。
 1. 客户收到包含相关数据的电子邮件及其附件。
 
 在此方案中，不会预先创建附件，而是即时将其添加到叫客电子邮件，这样具有以下优势：
 
 * 这允许您个性化附件的内容。
 * 如果附件与交易相关联（如上述示例场景所示），则它可能包含客户流程中生成的动态数据。
-* 附加PDF文件可优化安全性，因为您可以对其进行加密并通过HTTPS发送它们。
+* 附加PDF文件可优化安全性，因为您可以对文件进行加密并通过HTTPS发送它们。
 
-## Recommendations和护栏 {#important-notes}
+## 建议和防护 {#important-notes}
 
 为避免性能问题，电子邮件中包含的图像不能超过100 KB。 默认设置的此限制可以从`NmsDelivery_MaxDownloadedImageSize`选项更改。 但是，Adobe强烈建议避免在电子邮件投放中使用大型图像。
 
@@ -48,15 +48,15 @@ Adobe还建议限制附加文件的大小和数量。 默认情况下，您只�
 在实施此方案之前，请仔细阅读以下准则：
 
 * 事务性消息实例不应用于存储、导出或上传文件或数据。 它们只能用于事件数据和相关信息。 不应将它们视为文件存储系统。
-* 由于不能直接访问事务性消息传递实例或Adobe之外的服务器，因此没有标准方法在这些服务器上推送此类文件（无FTP访问）。
+* 由于无法直接访问Adobe外部的事务性消息传递实例或服务器，因此没有标准方法在这些服务器上推送此类文件（无FTP访问）。
 * 从合同上讲，使用事务性消息传递实例上的磁盘空间存储任何类型的文件都是不正确的，即使是附件也是如此。
 * 您需要使用其他联机磁盘系统来托管这些文件。 您需要具有此系统的FTP访问权限，并且必须能够写入和删除文件。
 
 >[!NOTE]
 >
->为了避免出现性能问题，建议每封电子邮件不要包含多个附件。 可以从[Campaign Classic选项列表](../../installation/using/configuring-campaign-options.md#delivery)中配置建议的阈值。
+>为了避免出现性能问题，建议每封电子邮件不要包含多个附件。 可从[Campaign Classic选项列表](../../installation/using/configuring-campaign-options.md#delivery)中配置建议的阈值。
 
-## 实现 {#implementation}
+## 实施 {#implementation}
 
 下图显示了实施此方案时的不同步骤：
 
@@ -64,11 +64,11 @@ Adobe还建议限制附加文件的大小和数量。 默认情况下，您只�
 
 要即时向事务型消息添加电子邮件附件，请执行以下步骤：
 
-1. 从设计附件开始。 有关更多信息，请参阅[此小节](../../delivery/using/attaching-files.md#attach-a-personalized-file)。
+1. 从设计附件开始。 有关详细信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/attaching-files.html#attach-a-personalized-file){target="_blank"}。
 
    这样，您可以将文件附加到电子邮件，即使它们不是在执行实例上托管。
 
-1. 您可以通过SOAP消息触发器发送电子邮件。 在SOAP调用中有一个URL参数(attachmentURL)。
+1. 您可以通过SOAP消息触发器发送电子邮件。 在SOAP调用中，有一个URL参数(attachmentURL)。
 
    有关SOAP请求的更多信息，请参阅[事件描述](../../message-center/using/event-description.md)。
 
@@ -82,6 +82,6 @@ Adobe还建议限制附加文件的大小和数量。 默认情况下，您只�
 
 1. 处理消息时，系统会从远程位置（第三方服务器）获取文件，并将其附加到单个消息。
 
-   由于此参数可以是变量，因此它应该接受文件的格式完整的远程URL变量，该变量将通过SOAP调用发送。
+   由于此参数可以是变量，因此它应该接受文件的完全格式的远程URL变量，该变量通过SOAP调用发送。
 
    ![](assets/message-center-uc2.png)

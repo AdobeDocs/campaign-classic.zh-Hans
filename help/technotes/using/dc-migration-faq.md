@@ -1,14 +1,14 @@
 ---
 product: campaign
-title: 迁移到AdobeManaged Services (Public Cloud)常见问题解答
-description: Campaign Classic迁移到公共云常见问题解答
+title: 迁移到Adobe Managed Services (Public Cloud)常见问题解答
+description: Campaign Classic迁移到Public Cloud常见问题解答
 feature: Technote, Upgrade
 role: User
 level: Beginner
 exl-id: a9cd08b0-55c2-4405-9fb8-f0c623cd4ccb
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '2225'
+source-wordcount: '2226'
 ht-degree: 0%
 
 ---
@@ -17,11 +17,11 @@ ht-degree: 0%
 
 
 
-Adobe对旧版数据中心不再授权：必须将Campaign Classic实例转移到Public Cloud Amazon Web Services (AWS)。 [了解有关此计划的更多信息](dc-migration.md)。
+Adobe对旧版数据中心不再授权：Campaign Classic实例必须转移到Public Cloud Amazon Web Services (AWS)。 [了解有关此计划的更多信息](dc-migration.md)。
 
 以下是一组有关此项目的常见问题、对您的Campaign环境的影响以及其他有用资源。
 
-如有任何其他问题，请联系[Adobe客户关怀](https://experienceleague.adobe.com/zh-hans?support-solution=Campaign#support)。
+如有任何其他问题，您可以联系[Adobe客户关怀](https://experienceleague.adobe.com/?support-solution=Campaign#support)。
 
 ## 对基础架构的影响
 
@@ -31,9 +31,9 @@ Adobe对旧版数据中心不再授权：必须将Campaign Classic实例转移�
 
 * **数据库是否会更改？ 新数据库的版本是什么？ 将使用什么操作系统？**
 
-  Adobe保留选择和部署最合适的数据库管理引擎的权利，以便在最佳条件下为Adobe Campaign服务提供服务。
+  Adobe保留选择和部署最适合的数据库管理引擎的权利，以便在最佳条件下为Adobe Campaign服务服务。
 
-  此外，为了保持最佳安全级别，Adobe将不提供与基础架构相关的任何详细信息。
+  此外，为了保持最佳安全级别，Adobe将不提供与基础设施相关的任何详细信息。
 
 * **是否存在数据丢失的风险？**
 
@@ -45,13 +45,13 @@ Adobe对旧版数据中心不再授权：必须将Campaign Classic实例转移�
 
 * **内部版本号或营销活动版本是否会更改？**
 
-  第一步，我们将使用迁移来保持相同的Campaign Classic构建。
+  第一步，我们将通过迁移保留相同的Campaign Classic内部版本。
 
-  在后续步骤中，我们将继续升级到最新的Campaign ClassicGA内部版本。 有关详细信息，请参见[此页面](../../rn/using/rn-overview.md)。
+  在后续步骤中，我们将继续升级到最新的Campaign Classic GA内部版本。 有关详细信息，请参见[此页面](../../rn/using/rn-overview.md)。
 
 * **解决迁移后问题的计划是什么？**
 
-  在迁移生产系统之前，将执行大量测试。 但是，如果出现任何问题，[Adobe客户关怀](https://experienceleague.adobe.com/zh-hans?support-solution=Campaign#support)仍将是主要联系人。 Adobe已经成立了一个专家团队，在需要时提供高级支持。
+  在迁移生产系统之前，将执行大量测试。 但是，如果出现任何问题，[Adobe客户关怀](https://experienceleague.adobe.com/?support-solution=Campaign#support)将继续作为主要联系人。 Adobe已经成立了一个专家团队，在需要时提供高级支持。
 
 ## 可投放性影响
 
@@ -61,7 +61,7 @@ Adobe对旧版数据中心不再授权：必须将Campaign Classic实例转移�
 
 * 列入允许列表 **如何处理上的IP？ 客户是否需要将新的IP地址添加到Campaign传入流量的允许列表？**
 
-  Adobe服务器的IP地址将更改。 列入允许列表因此，客户可能需要在其系统的中添加这些新的IP地址。
+  Adobe服务器的IP地址将会更改。 列入允许列表因此，客户可能需要在其系统的中添加这些新的IP地址。
 
   列入允许列表 [了解有关上IP的详细信息](#config)。
 
@@ -71,7 +71,7 @@ Adobe对旧版数据中心不再授权：必须将Campaign Classic实例转移�
 
 * **我们是否在更改IP？**
 
-  Adobe服务器的IP地址将更改。 列入允许列表因此，客户可能需要将这些新的IP地址添加到其系统中的。
+  Adobe服务器的IP地址将会更改。 列入允许列表因此，客户可能需要将这些新的IP地址添加到其系统中的。
 
   列入允许列表 [了解有关上IP的详细信息](#config)。
 
@@ -97,11 +97,11 @@ Adobe对旧版数据中心不再授权：必须将Campaign Classic实例转移�
 
   首先，Adobe可交付性将评估平台的可交付性状态，并推荐切换到新IP的计划
 
-  迁移后不需要热身。 可能会出现异常，在这种情况下，[Adobe客户关怀](https://experienceleague.adobe.com/zh-hans?support-solution=Campaign#support)将与客户联系。
+  迁移后不需要热身。 可能会出现异常，在这种情况下，[Adobe客户关怀](https://experienceleague.adobe.com/?support-solution=Campaign#support)将与客户联系。
 
   不过，该计划旨在让这一业务运营变得透明，不同于在上线期间的最初升级。
 
-  迁移完成后，Campaign实例将具有不同的发送IP。 为确保顺利过渡，Adobe将通过逐步将流量从旧的IP切换到新的IP，对新的发送IP进行升级。
+  迁移完成后，Campaign实例将具有不同的发送IP。 为确保顺利过渡，Adobe将通过逐步将流量从旧的IP切换到新的IP，对新的发送IP进行增加。
 
 * **我们是否正在允许列表上移动URL？**
 
@@ -110,8 +110,8 @@ Adobe对旧版数据中心不再授权：必须将Campaign Classic实例转移�
 * **我们用来标记通信品牌的委派子域会有什么影响？**
 
   用于营销通信的子域保持不变。 但是，根据实施，需要在客户端执行操作：
-   * 如果子域委派给Adobe（默认），则Adobe会处理所有更改并确保无缝过渡。
-   * 如果设置了CNAME（例外），则请求客户端与Adobe协调实施更改。
+   * 如果将子域委派给Adobe（默认），则Adobe会处理所有更改并确保无缝过渡。
+   * 如果设置了CNAME（例外），则会请求客户端与Adobe协调实施更改。
 
 ## 配置和连接影响
 
@@ -119,7 +119,7 @@ Adobe对旧版数据中心不再授权：必须将Campaign Classic实例转移�
 
 ### 关于IP在允许列表上的说明{#config}
 
-迁移到公共云将为Adobe Campaign应用程序服务器提供新IP，因此更改IP可能会影响Adobe服务器和您的信息系统之间的连接。
+迁移到公共云将为Adobe Campaign应用程序服务器提供新IP，因此更改IP可能会影响Adobe服务器与您的信息系统之间的连接。
 
 ![](assets/migration.png)
 
@@ -143,7 +143,7 @@ Adobe对旧版数据中心不再授权：必须将Campaign Classic实例转移�
 
 * **迁移是否会影响与其他Adobe解决方案(AEM、Target等)的连接？**
 
-  集成是在允许列表和Web服务帐户配置中声明的IP地址的组合。 该帐户将由Adobe客户关怀团队负责和拥有。
+  集成是在允许列表和Web服务帐户配置中声明的IP地址的组合。 该资产将由Adobe客户关怀团队负责和拥有。
 
   列入允许列表由于Application Servers IP将发生变化，因此外部解决方案中需要上的IP地址。 将会提供此信息。 集成的其他部分基于IMS，应按原样工作。
 
@@ -157,7 +157,7 @@ Adobe对旧版数据中心不再授权：必须将Campaign Classic实例转移�
 
 * **API连接是否受迁移影响？**
 
-  Adobe服务器的IP地址将更改。 列入允许列表因此，客户可能需要将这些新的IP地址添加到其系统中的。
+  Adobe服务器的IP地址将会更改。 列入允许列表因此，客户可能需要将这些新的IP地址添加到其系统中的。
 
   列入允许列表 [了解有关IP on的更多信息](#config)。
 
@@ -173,7 +173,7 @@ Adobe对旧版数据中心不再授权：必须将Campaign Classic实例转移�
 
   它可能会根据新服务器的位置而更改。 但是，客户将能够保留其当前时区。
 
-  [了解有关Adobe Campaign Classic v7中时区管理的更多信息](../../workflow/using/managing-time-zones.md)。
+  在[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/advanced-management/managing-time-zones.html){target="_blank"}中了解有关时区管理的更多信息。
 
 
 ## 安全性和权限
@@ -194,7 +194,7 @@ Adobe对旧版数据中心不再授权：必须将Campaign Classic实例转移�
 
 * **我们需要向客户请求新的STP访问密钥吗？**
 
-  否，Adobe将像在新服务器上一样复制SFTP访问密钥。
+  不需要，Adobe将像在新服务器上一样复制SFTP访问密钥。
 
 * **如何处理SFTP权限？**
 
@@ -227,7 +227,7 @@ Adobe对旧版数据中心不再授权：必须将Campaign Classic实例转移�
 
 * **我们是否需要计划在迁移期间停止营销活动？**
 
-  Adobe建议在旧式数据中心上关闭应用程序之前放慢执行速度，最好是暂停所有执行：投放和工作流。 这将简化Cloud Server (AWS)上的重启过程，因为流程将有“正常”暂停的时间，并保存任何正在进行的执行状态。
+  Adobe建议在旧式数据中心上关闭应用程序之前放慢执行速度，并最好暂停所有执行：投放和工作流。 这将简化Cloud Server (AWS)上的重启过程，因为流程将有“正常”暂停的时间，并保存任何正在进行的执行状态。
 
 * **我们是否预计Adobe Campaign服务会停机？**
 
@@ -279,10 +279,10 @@ Adobe对旧版数据中心不再授权：必须将Campaign Classic实例转移�
 
 * 列入允许列表 **谁将处理向添加新IP？**
 
-  Adobe客户关怀团队将负责通过将新IP添加到允许列表来确保客户和任何第三方可以访问新系统。
+  Adobe客户关怀团队将负责通过将新IP添加到允许列表来确保客户和任何第三方能够访问新系统。
 
 ## 支持以及其他有用链接{#support}
 
-* [迁移到AdobeManaged Services (Public Cloud)](dc-migration.md)
+* [迁移到Adobe Managed Services (Public Cloud)](dc-migration.md)
 * [Campaign年度升级](../../rn/using/rn-overview.md#yeary-upgrade)
 * [内部版本升级常见问题解答](../../platform/using/faq-build-upgrade.md)

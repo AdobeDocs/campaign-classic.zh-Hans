@@ -1,18 +1,18 @@
 ---
 product: campaign
-title: 事务性消息传递入门
+title: 事务性消息传递快速入门
 description: 详细了解Adobe Campaign Classic事务型消息传递的工作原理和关键步骤
 feature: Transactional Messaging, Message Center
 exl-id: dc52e789-d0bf-4e8f-b448-9d69a2762cc1
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '640'
+source-wordcount: '641'
 ht-degree: 4%
 
 ---
 
 
-# 事务性消息传递入门 {#about-transactional-messaging}
+# 事务性消息传递快速入门 {#about-transactional-messaging}
 
 
 
@@ -44,7 +44,7 @@ Adobe Campaign事务性消息传递模块集成到一个信息系统中，该信
 
 >[!NOTE]
 >
->要为托管在Adobe云上的消息中心执行实例创建新用户，您需要联系[Adobe客户关怀](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。 消息中心用户是特定的操作员，需要专用权限才能访问&#x200B;**[!UICONTROL Real time events (nmsRtEvent)]**&#x200B;文件夹。
+>要为托管在Adobe Cloud上的消息中心执行实例创建新用户，您需要联系[Adobe客户关怀](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。 消息中心用户是特定的操作员，需要专用权限才能访问&#x200B;**[!UICONTROL Real time events (nmsRtEvent)]**&#x200B;文件夹。
 
 事务型消息传递的总体过程可描述如下：
 
@@ -71,7 +71,7 @@ Adobe Campaign允许您向将产品添加到购物车的客户发送通知电子
 1. [创建事件类型](../../message-center/using/creating-event-types.md)。
 1. [创建并设计消息模板](../../message-center/using/creating-the-message-template.md)。 在此步骤中，必须将事件链接到消息。
 1. [测试邮件](../../message-center/using/testing-message-templates.md)。
-1. [Publish消息模板](../../message-center/using/publishing-message-templates.md)。
+1. [发布消息模板](../../message-center/using/publishing-message-templates.md)。
 
 >[!NOTE]
 >
@@ -88,6 +88,6 @@ Adobe Campaign允许您向将产品添加到购物车的客户发送通知电子
 ## 相关主题 {#related-topics}
 
 * [通信渠道入门](../../delivery/using/communication-channels.md)
-* [投放创建关键步骤](../../delivery/using/steps-about-delivery-creation-steps.md)
+* [投放创建关键步骤](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html){target="_blank"}
 * [事务性消息传递架构](../../message-center/using/transactional-messaging-architecture.md)
 * [访问事务性消息传递报告](../../message-center/using/about-transactional-messaging-reports.md)

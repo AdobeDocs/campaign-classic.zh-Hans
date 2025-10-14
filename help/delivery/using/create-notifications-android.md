@@ -7,16 +7,16 @@ role: User, Developer, Data Engineer
 hide: true
 hidefromtoc: true
 exl-id: 13ccc5d6-4355-42ba-80dc-30a45d3b69a4
-source-git-commit: 89e350c727fb9379d28916f79d9749f22fd4974f
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '647'
+source-wordcount: '650'
 ht-degree: 0%
 
 ---
 
 # 为Android创建通知{#create-notificaations-android}
 
-使用Adobe Campaign在Android设备上发送推送通知。 有关投放创建的全局概念在[此部分](steps-about-delivery-creation-steps.md)中介绍。
+使用Adobe Campaign在Android设备上发送推送通知。 有关投放创建的全局概念，请参见[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html){target="_blank"}。
 
 首先，创建新投放。
 
@@ -50,7 +50,7 @@ ht-degree: 0%
 1. 在&#x200B;**[!UICONTROL Target type]**&#x200B;窗口中，选择&#x200B;**[!UICONTROL Subscribers of an Android mobile application]**&#x200B;并单击&#x200B;**[!UICONTROL Next]**。
 
 1. 在&#x200B;**[!UICONTROL Service]**&#x200B;下拉列表中，选择您之前创建的服务，然后选择应用程序，并单击&#x200B;**[!UICONTROL Finish]**。
-根据配置步骤中添加的内容，自动添加&#x200B;**[!UICONTROL Application variables]**。
+根据配置步骤中添加的内容，自动添加**[!UICONTROL Application variables]**。
 
    ![](assets/nmac_android_6.png)
 
@@ -70,7 +70,7 @@ ht-degree: 0%
 
 ## 创建通知消息 {#creating-notification-message}
 
-![](assets/do-not-localize/how-to-video.png) [了解如何在视频中创建Android推送通知](https://experienceleague.adobe.com/docs/campaign-classic-learn/getting-started-with-push-notifications-for-android/configuring-and-sending-push-notifications.html?lang=zh-Hans#additional-resources){target="_blank"}。
+![](assets/do-not-localize/how-to-video.png) [了解如何在视频中创建Android推送通知](https://experienceleague.adobe.com/docs/campaign-classic-learn/getting-started-with-push-notifications-for-android/configuring-and-sending-push-notifications.html#additional-resources){target="_blank"}。
 
 1. 转到&#x200B;**[!UICONTROL Campaign management]** > **[!UICONTROL Deliveries]**。
 

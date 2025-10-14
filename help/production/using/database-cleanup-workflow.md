@@ -7,9 +7,9 @@ audience: production
 content-type: reference
 topic-tags: data-processing
 exl-id: 75d3a0af-9a14-4083-b1da-2c1b22f57cbe
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '2827'
+source-wordcount: '2829'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 ## 简介 {#introduction}
 
-可通过&#x200B;**[!UICONTROL Administration > Production > Technical workflows]**&#x200B;节点访问的&#x200B;**[!UICONTROL Database cleanup]**&#x200B;工作流允许您删除过时的数据，以避免数据库呈指数增长。 工作流将自动触发，无需用户干预。
+可通过&#x200B;**[!UICONTROL Database cleanup]**&#x200B;节点访问的&#x200B;**[!UICONTROL Administration > Production > Technical workflows]**&#x200B;工作流允许您删除过时的数据，以避免数据库呈指数增长。 工作流将自动触发，无需用户干预。
 
 ![清理](assets/ncs_cleanup_workflow.png)
 
@@ -32,7 +32,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->有关调度程序的详细信息，请参阅[此部分](../../workflow/using/scheduler.md)。
+>有关调度程序的详细信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/flow-control-activities/scheduler.html){target="_blank"}。
 
 默认情况下，**[!UICONTROL Database cleanup]**&#x200B;工作流配置为每天凌晨4点启动。 调度程序允许您更改工作流触发频率。 可以使用以下频率：
 
@@ -49,7 +49,7 @@ ht-degree: 0%
 
 ### 部署向导 {#deployment-assistant}
 
-通过&#x200B;**[!UICONTROL Tools > Advanced]**&#x200B;菜单访问&#x200B;**[!UICONTROL deployment wizard]**，可配置保存数据的时间。 值以天为单位表示。 如果未更改这些值，工作流将使用默认值。
+通过&#x200B;**[!UICONTROL deployment wizard]**&#x200B;菜单访问&#x200B;**[!UICONTROL Tools > Advanced]**，可配置保存数据的时间。 值以天为单位表示。 如果未更改这些值，工作流将使用默认值。
 
 ![](assets/ncs_cleanup_deployment-wizard.png)
 
@@ -72,7 +72,7 @@ ht-degree: 0%
 
   >[!NOTE]
   >
-  >仅当安装了&#x200B;**消息中心**&#x200B;模块时，**[!UICONTROL Events]**&#x200B;和&#x200B;**[!UICONTROL Archived events]**&#x200B;字段才可用。
+  >仅当安装了&#x200B;**[!UICONTROL Events]**&#x200B;消息中心&#x200B;**[!UICONTROL Archived events]**&#x200B;模块时，**和**&#x200B;字段才可用。
 
 * 审核记录： **XtkCleanup_AuditTrailPurgeDelay** （请参阅[审核记录的清理](#cleanup-of-audit-trail)）
 
@@ -125,7 +125,7 @@ ht-degree: 0%
 
 此任务会清除要删除或回收的所有投放。
 
-1. **[!UICONTROL Database cleanup]**&#x200B;工作流会选择其值为&#x200B;**[!UICONTROL Yes]**&#x200B;或&#x200B;**[!UICONTROL Recycled]**&#x200B;的&#x200B;**deleteStatus**&#x200B;字段的所有投放，这些投放的删除日期早于部署向导的&#x200B;**[!UICONTROL Deleted deliveries]** (**NmsCleanup_RecycledDeliveryPurgeDelay**)字段中定义的时间段。 有关详细信息，请参阅[部署向导](#deployment-assistant)。 此时间段根据当前服务器日期计算。
+1. **[!UICONTROL Database cleanup]**&#x200B;工作流会选择其值为&#x200B;**或**&#x200B;的&#x200B;**[!UICONTROL Yes]** deleteStatus **[!UICONTROL Recycled]**&#x200B;字段的所有投放，这些投放的删除日期早于部署向导的&#x200B;**[!UICONTROL Deleted deliveries]** (**NmsCleanup_RecycledDeliveryPurgeDelay**)字段中定义的时间段。 有关详细信息，请参阅[部署向导](#deployment-assistant)。 此时间段根据当前服务器日期计算。
 1. 对于每个中间源服务器，该任务会选择要删除的投放列表。
 1. **[!UICONTROL Database cleanup]**&#x200B;工作流会删除投放日志、附件、镜像页面信息和所有其他相关数据。
 1. 永久删除投放之前，工作流会清除下表中的链接信息：
@@ -457,7 +457,7 @@ DELETE FROM NmsSubscription WHERE iDeleteStatus <>0
    SELECT distinct(sBroadLogSchema) FROM NmsDeliveryMapping WHERE sBroadLogSchema IS NOT NULL UNION SELECT distinct(sBroadLogExclSchema) FROM NmsDeliveryMapping WHERE sBroadLogExclSchema IS NOT NULL
    ```
 
-1. 使用中间源时，投放映射中未引用&#x200B;**NmsBroadLogMid**&#x200B;表。 **nms：broadLogMid**&#x200B;架构已添加到由上一个查询恢复的列表。
+1. 使用中间源时，投放映射中未引用&#x200B;**NmsBroadLogMid**&#x200B;表。 **nms:broadLogMid**&#x200B;架构已添加到上一个查询恢复的列表。
 1. 然后，**数据库清理**&#x200B;工作流会从以前恢复的表清除过时的数据。 使用以下查询：
 
    ```sql

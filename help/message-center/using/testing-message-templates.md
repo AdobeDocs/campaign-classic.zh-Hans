@@ -7,9 +7,9 @@ audience: message-center
 content-type: reference
 topic-tags: message-templates
 exl-id: 417004c9-ed96-4b98-a518-a3aa6123ee7b
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '560'
+source-wordcount: '568'
 ht-degree: 2%
 
 ---
@@ -38,7 +38,7 @@ ht-degree: 2%
 
    ![](assets/messagecenter_create_seedaddr_003.png)
 
-1. 输入外部标识符：此可选字段允许您输入业务密钥（唯一ID、名称+电子邮件等） 这是您网站上所有应用程序通用的功能，用于识别您的配置文件。 如果此字段也出现在Adobe Campaign营销数据库中，则之后可以将事件与数据库中的用户档案进行协调。
+1. 输入外部标识符：利用此可选字段，可输入您的网站上所有应用程序通用的业务键（唯一ID、姓名+电子邮件等），用于标识您的配置文件。 如果此字段也出现在Adobe Campaign营销数据库中，则之后可以将事件与数据库中的用户档案进行协调。
 
    ![](assets/messagecenter_create_seedaddr_003bis.png)
 
@@ -96,13 +96,13 @@ ht-degree: 2%
 
 使用种子地址，您还可以为各种Internet访问提供商显示消息的渲染。 有关此内容的详细信息，请参阅[收件箱呈现](../../delivery/using/inbox-rendering.md)。
 
-## 发送验证 {#sending-a-proof}
+## 发送校样 {#sending-a-proof}
 
 您可以通过向之前创建的种子地址发送校样来测试消息投放。
 
-发送校样的过程与[定期投放](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof)的过程相同。 但是，对于事务型消息传递，您需要预先执行以下操作：
+发送校样的过程与定期投放的过程相同。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/preview-and-proof.html){target="_blank"}。 但是，对于事务型消息传递，您需要预先执行以下操作：
 
-* 使用[个性化数据](#personalization-data)创建一个或多个[种子地址](#managing-seed-addresses-in-transactional-messages)。
+* 使用[个性化数据](#managing-seed-addresses-in-transactional-messages)创建一个或多个[种子地址](#personalization-data)。
 * [创建消息内容](../../message-center/using/creating-the-message-template.md#creating-message-content)。
 
 要发送证明：
@@ -117,7 +117,7 @@ ht-degree: 2%
 
    ![](assets/messagecenter_send_proof_002.png)
 
-可通过&#x200B;**[!UICONTROL Audit]**&#x200B;选项卡访问每个模板中的验证。 有关此内容的更多详细信息，请参阅[发送校样](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof)。
+可通过&#x200B;**[!UICONTROL Audit]**&#x200B;选项卡访问每个模板中的验证。 有关此内容的更多详细信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/preview-and-proof.html){target="_blank"}。
 
 ![](assets/messagecenter_send_proof_003.png)
 

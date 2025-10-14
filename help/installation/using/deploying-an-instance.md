@@ -8,9 +8,9 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: 8b07447c-9a86-4b56-8d29-e0b01357a6ec
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '3389'
+source-wordcount: '3397'
 ht-degree: 2%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->对于由Adobe托管的部署，只能由Adobe执行服务器端配置。 要了解有关不同部署的更多信息，请参阅[托管模型](../../installation/using/hosting-models.md)部分或[此页面](../../installation/using/capability-matrix.md)。
+>对于由Adobe托管的部署，服务器端配置只能由Adobe执行。 要了解有关不同部署的更多信息，请参阅[托管模型](../../installation/using/hosting-models.md)部分或[此页面](../../installation/using/capability-matrix.md)。
 
 ## 部署向导 {#deployment-assistant}
 
@@ -79,13 +79,12 @@ Adobe Campaign提供了一个图形助手(可在Adobe Campaign客户端控制台
 指示以下参数：
 
 * **[!UICONTROL Sender name]** ：输入发件人的名称。
-* **[!UICONTROL Sender address]** ：输入发件人的电子邮件地址。 从Adobe Campaign发送电子邮件时，不会监控&#x200B;**发件人地址**&#x200B;邮箱，因此营销用户无法访问此邮箱。 Adobe Campaign也不提供自动回复或自动转发此邮箱中接收的电子邮件的功能。 请参阅此文档[&#128279;](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/ac-starting-new-platform.html?lang=zh-Hans){_blank}以了解有关可投放性最佳实践的更多信息。
+* **[!UICONTROL Sender address]** ：输入发件人的电子邮件地址。 从Adobe Campaign发送电子邮件时，不会监控&#x200B;**发件人地址**&#x200B;邮箱，因此营销用户无法访问此邮箱。 Adobe Campaign也不提供自动回复或自动转发此邮箱中接收的电子邮件的功能。 请参阅此文档[以了解有关可投放性最佳实践的更多信息](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/ac-starting-new-platform.html){_blank}。
 
 * **[!UICONTROL Reply address text]** ：输入收件人单击&#x200B;**[!UICONTROL Reply]**&#x200B;按钮时使用的名称。
 * **[!UICONTROL Reply address]** ：输入收件人单击电子邮件客户端软件中的&#x200B;**[!UICONTROL Reply]**&#x200B;按钮时要使用的电子邮件地址。 **回复地址**&#x200B;字段的用途是您希望收件人回复到&#x200B;**发件人地址**&#x200B;以外的其他地址。  此地址必须是有效的电子邮件地址，链接到受监视的邮箱，并由客户托管。  它可以是支持邮箱，例如`customer-care@customer.com`，在其中读取和响应电子邮件。
 
-* **[!UICONTROL Error address]** ：输入包含错误的消息的电子邮件地址。 这是用于处理退回邮件的技术地址，包括Adobe Campaign服务器因目标地址不存在而收到的电子邮件。 此地址必须是有效的电子邮件地址，链接到受监视的邮箱，并由客户托管。 它可能是退回邮箱，例如`errors@customer.com`。 可以从投放/投放模板属性的&#x200B;**SMTP**&#x200B;选项卡，为投放或投放模板更改此地址。 [了解详情](../../delivery/using/email-parameters.md#managing-bounce-emails-managing-bounce-emails)。
-
+* **[!UICONTROL Error address]** ：输入包含错误的消息的电子邮件地址。 这是用于处理退回邮件的技术地址，包括Adobe Campaign服务器因目标地址不存在而收到的电子邮件。 此地址必须是有效的电子邮件地址，链接到受监视的邮箱，并由客户托管。 它可能是退回邮箱，例如`errors@customer.com`。 可以从投放/投放模板属性的&#x200B;**SMTP**&#x200B;选项卡，为投放或投放模板更改此地址。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/email-parameters.html#managing-bounce-emails){target="_blank"}以了解详情。
 
 此外，您还可以为发件人地址和错误地址指定授权的&#x200B;**掩码**。 如有必要，可以使用逗号分隔这些掩码。 此配置是可选的。 输入字段后，Adobe Campaign会在投放时（分析期间，如果地址不包含任何变量）检查地址是否有效。 此操作模式可确保不使用可能触发投放问题的地址。 必须在投放服务器上配置投放地址。
 
@@ -124,7 +123,7 @@ Adobe Campaign提供了一个图形助手(可在Adobe Campaign客户端控制台
 
 >[!NOTE]
 >
->对于托管或混合安装，如果您已升级到[增强型MTA](../../delivery/using/sending-with-enhanced-mta.md)，则只有在设置为&#x200B;**3.5天或更短的时间内**&#x200B;时才使用&#x200B;**[!UICONTROL Delivery duration of the messages]**。 如果定义的值超过3.5天，则不会将其考虑在内。
+>对于托管或混合安装，如果您已升级到[增强型MTA](../../delivery/using/sending-with-enhanced-mta.md)，则只有在设置为&#x200B;**[!UICONTROL Delivery duration of the messages]** 3.5天或更短的时间内&#x200B;**时才使用**。 如果定义的值超过3.5天，则不会将其考虑在内。
 
 ### 重试参数 {#retry-parameters}
 
@@ -166,7 +165,7 @@ Adobe Campaign提供了一个图形助手(可在Adobe Campaign客户端控制台
 
 ### 未处理的退回邮件 {#unprocessed-bounce-mails}
 
-退回由Adobe Campaign自动处理，应用&#x200B;**管理> Campaign Management >不可投放项管理>投放日志资格**&#x200B;节点中列出的规则。 有关详情，请参阅[退回邮件管理](../../delivery/using/understanding-delivery-failures.md#bounce-mail-management)。
+退回由Adobe Campaign自动处理，应用&#x200B;**管理>营销活动管理>不可投放项管理>投放日志资格**&#x200B;节点中列出的规则。 有关详情，请参阅[退回邮件管理](../../delivery/using/understanding-delivery-failures.md#bounce-mail-management)。
 
 未处理的退回不会显示在Adobe Campaign界面中。 除非使用以下字段将它们传输到第三方邮箱，否则会自动删除它们：
 
@@ -342,7 +341,7 @@ Adobe Campaign提供了一个图形助手(可在Adobe Campaign客户端控制台
 1. 访问应用程序服务器以获取Web上未公开的资源：表单、Intranet、确认页。
 1. 访问投放的镜像页面。
 
-   镜像页面是显示电子邮件内容的动态页面。 它可通过插入到发送给收件人的消息中的链接来访问，并可包含个性化元素。 利用镜像页面，收件人可以在Internet浏览器而不是电子邮件软件中读取消息，无论投放格式(文本或HTML)如何。 但是，仅当定义了所需的HTML内容时，才会为给定投放生成镜像页面。
+   镜像页面是显示电子邮件内容的动态页面。 它可通过插入到发送给收件人的消息中的链接来访问，并可包含个性化元素。 利用镜像页面，收件人可以在Internet浏览器而不是电子邮件软件中读取消息，这与投放格式(文本或HTML)无关。 但是，仅当定义了所需的HTML内容时，才会为给定投放生成镜像页面。
 
 Adobe Campaign允许您区分这三个URL，以将负载分散到多个平台上。
 
@@ -383,7 +382,7 @@ Adobe Campaign允许您区分这三个URL，以将负载分散到多个平台上
 
   每次投放都可以覆盖此值。
 
-* 对于公共资源，URL **https://** server **/res/** instance **&#x200B;**，其中&#x200B;**instance**&#x200B;是跟踪实例的名称。
+* 对于公共资源，URL **https://** server **/res/** instance ****，其中&#x200B;**instance**是跟踪实例的名称。
 
 ### 投放图像检测 {#delivery-image-detection}
 
@@ -395,7 +394,7 @@ Adobe Campaign允许您区分这三个URL，以将负载分散到多个平台上
 
 您可以使用逗号指定多个URL掩码来分隔每个URL掩码。
 
-* 有关在电子邮件中使用和管理图像的信息，请参阅[此章节](../../delivery/using/defining-the-email-content.md#adding-images)。
+* 有关在电子邮件中使用和管理图像的信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html#adding-images){target="_blank"}。
 * 在投放助手中，从这些URL调用的图像将具有“已忽略”状态。
 
 ### 发布模式 {#publication-modes}
@@ -469,7 +468,7 @@ Adobe Campaign允许您区分这三个URL，以将负载分散到多个平台上
 
 **配置**
 
-对于每个必须同步的公用资源，您必须向`<relay>`部分中的`<url>`元素添加一个状态属性：
+对于每个必须同步的公用资源，您必须向`<url>`部分中的`<relay>`元素添加一个状态属性：
 
 状态属性可以是以下三个值之一：
 

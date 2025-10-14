@@ -8,9 +8,9 @@ audience: campaign
 content-type: reference
 topic-tags: response-manager
 exl-id: 428c7677-454b-4618-bae7-0be7df6dfcaa
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '1387'
+source-wordcount: '1390'
 ht-degree: 2%
 
 ---
@@ -65,7 +65,7 @@ ht-degree: 2%
   >
   >如果模板配置为考虑对照组，但在假设涉及的投放中未定义组，则结果将仅基于目标收件人。
 
-  有关定义和配置控制组的详细信息，请参阅[此章节](../../campaign/using/marketing-campaign-deliveries.md#defining-a-control-group)。
+  有关定义和配置控制组的详细信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-target.html#add-a-control-group){target=_blank}。
 
 * **[!UICONTROL Channel]**：您可以通过选择下拉列表中的&#x200B;**[!UICONTROL All channels]**，选择特定的渠道或使假设验证模板可用于Adobe Campaign控制台中的所有渠道。 如果您为特定渠道配置模板，则可以在创建假设验证时，自动筛选每个渠道的投放。 [了解详情](creating-hypotheses.md)
 

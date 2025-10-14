@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: f3980859-2837-416b-a0ef-2b369d2d50bd
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '456'
-ht-degree: 7%
+source-wordcount: '463'
+ht-degree: 1%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 7%
 
 ## 使用外部数据优化电子邮件个性化 {#optimizing-email-personalization-with-external-data}
 
-您可以在专用工作流中预处理消息个性化。 要执行此操作，请使用投放属性的&#x200B;**[!UICONTROL Analysis]**&#x200B;选项卡中提供的&#x200B;**[!UICONTROL Prepare the personalization data with a workflow]**&#x200B;选项。
+您可以在专用工作流中预处理消息个性化。 要执行此操作，请使用投放属性的&#x200B;**[!UICONTROL Prepare the personalization data with a workflow]**&#x200B;选项卡中提供的&#x200B;**[!UICONTROL Analysis]**&#x200B;选项。
 
 在投放分析期间，此选项会自动创建并执行一个工作流，该工作流会将链接到目标的所有数据（包括链接至外部数据库的表中的数据）存储在临时表中。
 
@@ -30,13 +30,13 @@ ht-degree: 7%
 
 在多个Adobe Campaign工作流活动中，您可以使用存储在外部数据库中的数据。
 
-* **外部数据筛选** - [查询](../../workflow/using/targeting-data.md#selecting-data)活动允许您添加外部数据并将其用于定义的筛选配置。 有关详细信息，请参见[此页面](../../workflow/using/targeting-data.md#selecting-data)。
+* **外部数据筛选** — 查询活动允许您添加外部数据，并在定义的筛选配置中使用它。 有关更多信息，请参阅[Campaign v8文档]https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/targeting-workflows.html){target="_blank"}。
 
-* **创建子集** - [拆分](../../workflow/using/split.md)活动允许您创建子集。 您可以使用外部数据来定义要使用的筛选条件。 有关详细信息，请参见[此页面](../../workflow/using/split.md)。
+* **创建子集** — 拆分活动允许您创建子集。 您可以使用外部数据来定义要使用的筛选条件。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/split.html){target="_blank"}。
 
-* **加载外部数据库** — 您可以在[数据加载](../../workflow/using/data-loading-rdbms.md) (RDBMS)活动中使用外部数据。 请参阅[此页面](../../workflow/using/data-loading-rdbms.md)以了解详情。
+* **加载外部数据库** — 您可以在数据加载(RDBMS)活动中使用外部数据。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/data-loading-rdbms.html){target="_blank"}以了解详情。
 
-* **添加信息和链接** - [扩充](../../workflow/using/enrichment.md)活动允许您向工作流的工作表添加其他数据，以及指向外部表的链接。 在这种情况下，它可以使用来自外部数据库的数据。 请参阅[此页面](../../workflow/using/enrichment.md)以了解详情。
+* **添加信息和链接** — 扩充活动允许您向工作流的工作表添加其他数据，并链接到外部表。 在这种情况下，它可以使用来自外部数据库的数据。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/enrichment.html){target="_blank"}。
 
 ## 护栏和限制 {#fda-limitations}
 

@@ -6,9 +6,9 @@ badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v
 feature: Monitoring, Deliverability
 role: User
 exl-id: 86c7169a-2c71-4c43-8a1a-f39871b29856
-source-git-commit: 0fba6a2ad4ffa864e2f726f241aa9d7cd39072a6
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '2567'
+source-wordcount: '2578'
 ht-degree: 12%
 
 ---
@@ -90,7 +90,7 @@ ht-degree: 12%
    <td> 收件人的地址是控制组的一部分。<br /> </td> 
   </tr> 
   <tr> 
-   <td> 两次 </td> 
+   <td> 双精度 </td> 
    <td> 已忽略 </td> 
    <td> 10 </td> 
    <td> 收件人的地址已在此投放中。<br /> </td> 
@@ -117,13 +117,13 @@ ht-degree: 12%
    <td> 无效域 </td> 
    <td> 柔光 </td> 
    <td> 2 </td> 
-   <td> 电子邮件地址的域不正确或不再存在。 此用户档案将被重新定向，直到错误计数达到 5 为止。之后，该记录将设置为隔离状态，以后不会再重试。<br /> </td> 
+   <td> 电子邮件地址的域不正确或不再存在。 此轮廓将被重新定向，直到错误计数达到 5 为止。之后，该记录将设置为隔离状态，以后不会再重试。<br /> </td> 
   </tr> 
   <tr> 
    <td> 邮箱已满 </td> 
    <td> 柔光 </td> 
    <td> 5 </td> 
-   <td> 此用户的邮箱已满，无法接收更多邮件。 此用户档案将被重新定向，直到错误计数达到 5 为止。此后，该记录将设置为隔离状态，并且以后不会再进行重试。<br />此类错误由清理进程管理，地址在30天后设置为有效状态。<br />警告：为了自动从隔离地址列表中移除地址，必须启动数据库清理技术工作流。<br /> </td> 
+   <td> 此用户的邮箱已满，无法接收更多邮件。 此轮廓将被重新定向，直到错误计数达到 5 为止。此后，该记录将设置为隔离状态，并且以后不会再进行重试。<br />此类错误由清理进程管理，地址在30天后设置为有效状态。<br />警告：为了自动从隔离地址列表中移除地址，必须启动数据库清理技术工作流。<br /> </td> 
   </tr> 
   <tr> 
    <td> 未连接 </td> 
@@ -135,10 +135,10 @@ ht-degree: 12%
    <td> 未定义 </td> 
    <td> 未定义 </td> 
    <td> 0 </td> 
-   <td> 地址正在进行鉴别，因为错误尚未递增。 当服务器发送新错误消息时，会发生此类错误：它可能是孤立的错误，但如果再次发生，错误计数会增加，这会提醒技术团队。 然后，他们可以通过树结构中的<span class="uicontrol">管理</span> / <span class="uicontrol">Campaign Management</span> / <span class="uicontrol">不可交付结果管理</span>节点执行消息分析并限定此错误。<br /> </td> 
+   <td> 地址正在进行鉴别，因为错误尚未递增。 当服务器发送新错误消息时，会发生此类错误：它可能是孤立的错误，但如果再次发生，错误计数会增加，这会提醒技术团队。 然后，他们可以通过树结构中的<span class="uicontrol">管理</span> / <span class="uicontrol">促销活动管理</span> / <span class="uicontrol">不可交付结果管理</span>节点执行消息分析并限定此错误。<br /> </td> 
   </tr> 
   <tr> 
-   <td> 不符合优惠资格 </td> 
+   <td> 不符合产品建议资格 </td> 
    <td> 已忽略 </td> 
    <td> 16 </td> 
    <td> 收件人不符合投放优惠的条件。<br /> </td> 
@@ -188,22 +188,22 @@ ht-degree: 12%
 >
 >对于托管或混合安装，如果您已升级到[Enhanced MTA](sending-with-enhanced-mta.md)，Campaign将不再使用投放中的重试设置。 软退回重试次数以及它们之间的时间长度由Enhanced MTA根据从消息的电子邮件域返回的退回响应的类型和严重性确定。
 
-对于使用旧版Campaign MTA的内部部署和托管/混合安装，要修改投放的持续时间，请转至投放或投放模板的高级参数，并在相应的字段中指定所需的持续时间。 请参阅[定义有效期](steps-sending-the-delivery.md#defining-validity-period)。
+对于使用旧版Campaign MTA的内部部署和托管/混合安装，要修改投放的持续时间，请转至投放或投放模板的高级参数，并在相应的字段中指定所需的持续时间。 查看[投放发送](communication-channels.md) > **下的此**&#x200B;页面&#x200B;**定义有效期**。
 
-默认配置允许每小时间隔重试五次，然后每天重试一次，持续四天。 重试次数可以全局更改(请联系您的Adobe技术管理员)，也可以针对每个投放或投放模板进行更改。 请参阅[配置重试](steps-sending-the-delivery.md#configuring-retries)。
+默认配置允许每小时间隔重试五次，然后每天重试一次，持续四天。 重试次数可在全局范围内更改(请联系您的Adobe技术管理员)，也可以针对每个投放或投放模板进行更改。 在[投放发送](communication-channels.md) > **配置重试**&#x200B;下查看此&#x200B;**页面**。
 
 ## 同步和异步错误 {#synchronous-and-asynchronous-errors}
 
 消息在发送后可能会立即失败（同步错误），或稍后失败（异步错误）。
 
-* 同步错误：Adobe Campaign投放服务器联系的远程邮件服务器立即返回错误消息，不允许将投放发送到用户档案服务器。 Adobe Campaign会对每个错误进行鉴别，以确定是否应隔离相关的电子邮件地址。 请参阅[退回邮件鉴别](#bounce-mail-qualification)。
+* 同步错误：Adobe Campaign投放服务器联系的远程邮件服务器立即返回错误消息，不允许将投放发送到用户档案服务器。 Adobe Campaign会对每个错误进行鉴别，以确定是否应隔离相关的电子邮件地址。 请参阅[退回邮件鉴定](#bounce-mail-qualification)。
 * 异步错误：接收服务器稍后会重新发送退回邮件或重新发送SR。 此邮件已加载到应用程序用来标记有错误邮件的技术邮箱中。 最晚的异步错误，可能发生在发送投放的一周之后。
 
   >[!NOTE]
   >
   >[此部分](../../installation/using/deploying-an-instance.md#managing-bounced-emails)中详细描述了退回邮箱的配置。
 
-  [反馈循环](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=zh-Hans#feedback-loops)的运行方式与退回电子邮件类似。 当用户将电子邮件标记为垃圾邮件时，您可以在Adobe Campaign中配置电子邮件规则以阻止投放给此用户的所有邮件。 发送给确定电子邮件为垃圾邮件的用户的邮件会自动重定向到为此目的专门创建的电子邮件框。 这些用户的地址处于阻止列表状态，即使他们未单击退订链接。 地址在(**NmsAddress**)隔离表中阻止列表，而不是在(**NmsRecipient**)收件人表中。
+  [反馈循环](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#feedback-loops)的运行方式与退回电子邮件类似。 当用户将电子邮件标记为垃圾邮件时，您可以在Adobe Campaign中配置电子邮件规则以阻止投放给此用户的所有邮件。 发送给确定电子邮件为垃圾邮件的用户的邮件会自动重定向到为此目的专门创建的电子邮件框。 这些用户的地址处于阻止列表状态，即使他们未单击退订链接。 地址在(**NmsAddress**)隔离表中阻止列表，而不是在(**NmsRecipient**)收件人表中。
 
   >[!NOTE]
   >
@@ -239,11 +239,11 @@ Adobe Campaign平台允许您通过退回邮件功能管理电子邮件投放失
 
 ![](assets/tech_quarant_rules_qualif.png)
 
-远程服务器第一次出现此错误类型时返回的消息显示在&#x200B;**[!UICONTROL Delivery log qualification]**&#x200B;表的&#x200B;**[!UICONTROL First text]**&#x200B;列中。 如果未显示此列，请单击列表右下方的&#x200B;**[!UICONTROL Configure list]**&#x200B;按钮将其选定。
+远程服务器第一次出现此错误类型时返回的消息显示在&#x200B;**[!UICONTROL First text]**&#x200B;表的&#x200B;**[!UICONTROL Delivery log qualification]**&#x200B;列中。 如果未显示此列，请单击列表右下方的&#x200B;**[!UICONTROL Configure list]**&#x200B;按钮将其选定。
 
 ![](assets/tech_quarant_rules_qualif_text.png)
 
-Adobe Campaign过滤此消息以删除变量内容（如ID、日期、电子邮件地址、电话号码等） 并在&#x200B;**[!UICONTROL Text]**&#x200B;列中显示过滤的结果。 变量已替换为&#x200B;**`#xxx#`**，但地址已替换为&#x200B;**`*`**。
+Adobe Campaign过滤此消息以删除变量内容（如ID、日期、电子邮件地址、电话号码等），并在&#x200B;**[!UICONTROL Text]**&#x200B;列中显示过滤的结果。 变量已替换为&#x200B;**`#xxx#`**，但地址已替换为&#x200B;**`*`**。
 
 此流程允许汇总相同类型的所有故障，并避免投放日志鉴别表中出现多个类似错误条目。
 

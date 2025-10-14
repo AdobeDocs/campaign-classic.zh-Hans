@@ -8,9 +8,9 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 94fc473a-dc49-41e8-b572-51c162b09996
-source-git-commit: 9df46ed923831ffdfb28acddfbc371cecafb251c
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '947'
+source-wordcount: '950'
 ht-degree: 29%
 
 ---
@@ -74,7 +74,7 @@ ht-degree: 29%
 * 对于&#x200B;**[!UICONTROL Text]**&#x200B;格式，选择分隔符以分隔列（制表符、逗号、分号或自定义）和字符串（单引号、双引号或无）。
 * 对于&#x200B;**[!UICONTROL text]**&#x200B;和&#x200B;**[!UICONTROL CSV]**，您可以选择选项&#x200B;**[!UICONTROL Use first lines as column titles]**。
 * 指示日期格式和数字格式。 为此，请单击相关字段的&#x200B;**[!UICONTROL Edit]**&#x200B;按钮并使用编辑器。
-* 对于包含枚举值的字段，可以选择&#x200B;**[!UICONTROL Export labels instead of internal values of enumerations]**。 例如，标题可以以&#x200B;**1=Mr格式存储。**，**2=小姐**，**3=太太。**。 如果选择此选项，将导出 **Mr.**&#x200B;**、Miss** 和 **Mrs.**。
+* 对于包含枚举值的字段，可以选择&#x200B;**[!UICONTROL Export labels instead of internal values of enumerations]**。 例如，标题可以以&#x200B;**1=Mr格式存储。**，**2=小姐**，**3=太太。**。 如果选择此选项，将导出 **Mr.****、Miss** 和 **Mrs.**。
 
 ## 第 4 步 - 数据选择 {#step-4---data-selection}
 
@@ -95,7 +95,7 @@ ht-degree: 29%
 
 ## 第 6 步 - 筛选条件 {#step-6---filter-conditions-}
 
-可添加筛选条件以避免导出所有数据。 此筛选的配置与投放助手中的收件人定位相同。 请参见[此页面](../../delivery/using/steps-defining-the-target-population.md)。
+可添加筛选条件以避免导出所有数据。 此筛选的配置与投放助手中的收件人定位相同。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#target-population){target="_blank"}。
 
 ![](assets/s_ncs_user_export_wizard05_b.png)
 

@@ -7,9 +7,9 @@ feature: Campaigns, Resource Management, Cross Channel Orchestration
 hide: true
 hidefromtoc: true
 exl-id: 1dd3c080-444d-45f8-9562-d2d01a9d2860
-source-git-commit: 4f809011a8b4cb3803c4e8151e358e5fd73634e4
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '1485'
+source-wordcount: '1491'
 ht-degree: 1%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 1%
 
 从营销活动创建投放后，这些投放将链接到此营销活动，并在营销活动级别合并。
 
-![](assets/do-not-localize/how-to-video.png) [在视频中发现此功能](#create-email-video)
+![](assets/do-not-localize/how-to-video.png)[在视频中发现此功能](#create-email-video)
 
 ## 创建投放 {#creating-deliveries}
 
@@ -28,7 +28,7 @@ ht-degree: 1%
 
 ![](assets/campaign_op_add_delivery.png)
 
-建议的配置适用于不同类型的投放：直邮、电子邮件、移动渠道。 [了解详情](../../delivery/using/steps-about-delivery-creation-steps.md)。
+建议的配置适用于不同类型的投放：直邮、电子邮件、移动渠道。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html){target="_blank"}以了解详情。
 
 ## 开始投放 {#starting-a-delivery}
 
@@ -117,7 +117,7 @@ ht-degree: 1%
 
 ## 管理关联文档 {#managing-associated-documents}
 
-您可以将如报告、照片、网页、图表等各种文档与营销活动关联起来。这些文档可以是任何格式(Microsoft Word、PowerPoint、PNG、JPG、Acrobat PDF等)。 在本节[&#128279;](../../campaign/using/marketing-campaign-assets.md)中了解如何将文档与促销活动关联。
+您可以将如报告、照片、网页、图表等各种文档与营销活动关联起来。这些文档可以是任何格式(Microsoft Word、PowerPoint、PNG、JPG、Acrobat PDF等)。 在本节[中了解如何将文档与促销活动](../../campaign/using/marketing-campaign-assets.md)关联。
 
 >[!IMPORTANT]
 >
@@ -170,7 +170,7 @@ ht-degree: 1%
 
 #### 创建大纲 {#creating-an-outline}
 
-要创建大纲，请在相关营销活动的&#x200B;**[!UICONTROL Edit > Documents]**&#x200B;选项卡中单击&#x200B;**[!UICONTROL Delivery outlines]**&#x200B;子选项卡。
+要创建大纲，请在相关营销活动的&#x200B;**[!UICONTROL Delivery outlines]**&#x200B;选项卡中单击&#x200B;**[!UICONTROL Edit > Documents]**&#x200B;子选项卡。
 
 >[!NOTE]
 >
@@ -198,7 +198,7 @@ ht-degree: 1%
 
   ![](assets/s_ncs_user_op_add_composition_field_button.png)
 
-* 资源是在营销资源仪表板中生成的营销资源，可通过&#x200B;**[!UICONTROL Campaigns]**&#x200B;选项卡的&#x200B;**[!UICONTROL Resources]**&#x200B;链接访问。
+* 资源是在营销资源仪表板中生成的营销资源，可通过&#x200B;**[!UICONTROL Resources]**&#x200B;选项卡的&#x200B;**[!UICONTROL Campaigns]**&#x200B;链接访问。
 
   ![](assets/s_ncs_user_mkg_resource_ovv.png)
 
@@ -238,6 +238,6 @@ ht-degree: 1%
 
 此视频介绍如何在Adobe Campaign中创建活动和电子邮件。
 
->[!VIDEO](https://video.tv.adobe.com/v/27491?quality=12&captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/25604?quality=12)
 
 [此处](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hans)提供了其他Campaign操作方法视频。

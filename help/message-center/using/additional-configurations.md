@@ -7,9 +7,9 @@ audience: message-center
 content-type: reference
 topic-tags: instance-configuration
 exl-id: 4d25d740-db57-4d18-8cae-2dd49c4a786e
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '793'
+source-wordcount: '798'
 ht-degree: 6%
 
 ---
@@ -120,7 +120,7 @@ Once the control and execution modules are installed on the same instance, you m
    >
    >在[此部分](../../message-center/using/configuring-instances.md#control-instance)中了解如何创建执行实例类型外部帐户。
 
-1. 扩展nms：extAccount架构以添加跟踪URL：
+1. 扩展nms:extAccount架构以添加跟踪URL：
 
    ```
    <attribute advanced="true" desc="URL of the tracking servers" label="Tracking server URL"
@@ -131,7 +131,7 @@ Once the control and execution modules are installed on the same instance, you m
    >
    >在[扩展架构](../../configuration/using/extending-a-schema.md)部分中了解如何扩展现有架构。
 
-1. 修改nms：extAccount表单：
+1. 修改nms:extAccount表单：
 
    ```
    <container label="Message domain branding" type="frame">
@@ -169,6 +169,6 @@ Once the control and execution modules are installed on the same instance, you m
 
 1. 为每个品牌创建一个与[执行实例](#execution-instance)上定义的内部名称相同的外部帐户（步骤1）。
 
-1. 为每个品牌创建[投放模板](../../delivery/using/about-templates.md)。
+1. 为每个品牌创建投放模板。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html){target="_blank"}。
 
 1. 在投放模板的&#x200B;**[!UICONTROL Properties]**&#x200B;中，将路由设置为品牌的外部帐户。

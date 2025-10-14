@@ -8,9 +8,9 @@ audience: production
 content-type: reference
 topic-tags: database-maintenance
 exl-id: a586d70b-1b7f-47c2-a821-635098a70e45
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '1243'
+source-wordcount: '1235'
 ht-degree: 1%
 
 ---
@@ -84,7 +84,7 @@ ht-degree: 1%
 
 >[!IMPORTANT]
 >
->Adobe强烈建议不要在CampaignAdobe托管的数据库设置上运行VACUUM FULL。建议的维护仅适用于ON-PREMISE安装。 对于自定义表实施和架构，使用VACUUM FULL将自行承担风险，因为VACUUM — 无需监控 — 可以专门锁定导致查询停止的表，并且在某些情况下锁定整个数据库。
+>Adobe强烈建议不要在Campaign Adobe托管的数据库设置上运行VACUUM FULL。建议的维护仅作为内部部署安装的指南。 对于自定义表实施和架构，使用VACUUM FULL将自行承担风险，因为VACUUM — 无需监控 — 可以专门锁定导致查询停止的表，并且在某些情况下锁定整个数据库。
 
 在PostgreSQL中，您可以使用以下典型的关键字：
 
@@ -142,10 +142,10 @@ VACUUM (FULL, ANALYZE, VERBOSE) nmsmirrorpageinfo;
 >[!NOTE]
 >
 >* Adobe建议从较小的表开始：这样，如果流程在较大的表（失败风险最高的表）上失败，则至少部分维护已完成。
->* Adobe建议您添加特定于数据模型的表，这些表可能会进行重大更新。 如果您有大量的每日数据复制流程，则&#x200B;**NmsRecipient**&#x200B;可能也是如此。
+>* Adobe建议您添加特定于数据模型的表，这些表可能会发生重大更新。 如果您有大量的每日数据复制流程，则&#x200B;**NmsRecipient**&#x200B;可能也是如此。
 >* VACUUM语句将锁定表，在进行维护时会暂停某些进程。
 >* 对于非常大的表（通常大于5 Gb）， VACUUM FULL语句可能会变得非常低效，并且需要很长时间。 Adobe不建议将其用于&#x200B;**YyyyNmsBroadLogXxx**&#x200B;表。
->* 此维护操作可以使用&#x200B;**[!UICONTROL SQL]**&#x200B;活动通过Adobe Campaign工作流实现。 有关详细信息，请参阅[此部分](../../workflow/using/architecture.md)。 确保安排在活动时间较短时进行维护，以免与备份窗口发生冲突。
+>* 此维护操作可以使用&#x200B;**[!UICONTROL SQL]**&#x200B;活动通过Adobe Campaign工作流实现。 确保安排在活动时间较短时进行维护，以免与备份窗口发生冲突。
 >
 
 ### 重建数据库 {#rebuilding-a-database}
@@ -157,7 +157,7 @@ PostgreSQL不提供执行联机表重建的简单方法，因为VACUUM FULL语�
 
 以下是使用特定函数生成必要的DDL的表碎片整理示例。 以下SQL允许您创建两个新函数：**GenRebuildTablePart1**&#x200B;和&#x200B;**GenRebuildTablePart2**，它们可用于生成重建表所需的DDL。
 
-* 第一个函数允许您创建工作表(**_tmp**&#x200B;此处)，它是原始表格的副本。
+* 第一个函数允许您创建工作表(**_tmp**此处)，它是原始表格的副本。
 * 然后第二个函数删除原始表并重命名工作表及其索引。
 * 使用两个函数而不是一个函数意味着，如果第一个函数失败，则不会产生删除原始表格的风险。
 
@@ -406,7 +406,7 @@ function sqlGetMemo(strSql)
 
 ## Oracle {#oracle}
 
-请与数据库管理员联系，以了解最适合您的Oracle版本的过程。
+请联系您的数据库管理员，以了解最适合您的Oracle版本的过程。
 
 ## Microsoft SQL Server {#microsoft-sql-server}
 

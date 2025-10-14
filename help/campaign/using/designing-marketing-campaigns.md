@@ -7,9 +7,9 @@ feature: Campaigns
 hide: true
 hidefromtoc: true
 exl-id: 4e0df18f-3623-4dfb-a2f8-ad293dbc4dd5
-source-git-commit: 4f809011a8b4cb3803c4e8151e358e5fd73634e4
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '438'
+source-wordcount: '441'
 ht-degree: 22%
 
 ---
@@ -24,7 +24,7 @@ Adobe Campaign允许您定义、优化、执行和分析通信和营销活动。
 >[!NOTE]
 >
 >有关Adobe Campaign核心功能的详细信息，请参阅[此部分](../../platform/using/about-adobe-campaign-classic.md)部分。\
->[此部分](../../delivery/using/steps-about-delivery-creation-steps.md)中详细介绍了与各种渠道上的群体定位、消息个性化和消息投放相关的功能。
+>[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html){target="_blank"}详细介绍了与各种渠道上的群体定位、消息个性化和消息投放相关的功能。
 
 ![](assets/do-not-localize/how-to-video.png) [在视频中发现营销活动密钥概念](#video)
 
@@ -68,6 +68,6 @@ Adobe Campaign允许您定义、优化、执行和分析通信和营销活动。
 
 此视频介绍营销活动的主要概念。
 
->[!VIDEO](https://video.tv.adobe.com/v/326575?quality=12&captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/35131?quality=12)
 
 [此处](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hans)提供了其他 Campaign Classic 操作方法视频。

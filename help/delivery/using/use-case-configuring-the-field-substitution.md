@@ -1,14 +1,14 @@
 ---
 product: campaign
-title: “用例：配置字段替换”
-description: “用例：配置字段替换”
+title: 用例：配置字段替换
+description: 用例：配置字段替换
 badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v8"
 feature: Seed Address
 exl-id: 3f567b2d-6f98-4831-af84-7db17fd12c6e
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '457'
-ht-degree: 2%
+source-wordcount: '456'
+ht-degree: 5%
 
 ---
 
@@ -33,7 +33,7 @@ ht-degree: 2%
 
 ## 创建投放 {#step-1---creating-a-delivery}
 
-有关创建投放的详细步骤，请参见[创建电子邮件投放](creating-an-email-delivery.md)一节。
+有关创建投放的详细步骤，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/email.html){target="_blank"}。
 
 在本例中，投放经理已创建了新闻稿。
 
