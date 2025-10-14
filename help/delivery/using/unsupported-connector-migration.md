@@ -43,7 +43,7 @@ ht-degree: 1%
 
 >[!CAUTION]
 >
->即使您可以转换参数，配置&#x200B;**[!UICONTROL Extended Generic SMPP]**&#x200B;连接器也需要与提供商联系，提供商将为您提供填写其余参数所需的信息。 有关详细信息，请参见此 [ 页面](sms-protocol.md)。
+>即使您可以转换参数，配置&#x200B;**[!UICONTROL Extended Generic SMPP]**&#x200B;连接器也需要与提供商联系，提供商将为您提供填写其余参数所需的信息。 有关详细信息，请参见此 [&#x200B; 页面](sms-protocol.md)。
 
 首先，您需要创建一个新的&#x200B;**[!UICONTROL Extended Generic SMPP]**&#x200B;外部帐户，然后您可能能够转置某些参数。 您可以在此[页面](sms-set-up.md#creating-an-smpp-external-account)中找到详细步骤。
 

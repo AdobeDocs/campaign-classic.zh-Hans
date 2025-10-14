@@ -26,4 +26,4 @@ ht-degree: 8%
 >
 >以下配置需要由&#x200B;**技术管理员**&#x200B;执行。
 
-![](assets/do-not-localize/how-to-video.png)观看此[视频](https://helpx.adobe.com/campaign/classic/how-to/architecture-of-acs-v6.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/digital-marketers/explevel/intermediate/applaunch/get-started/collection.ccx.js&amp;ref=helpx.adobe.com)，了解Campaign交互的架构以及优惠引擎的工作方式。
+![](assets/do-not-localize/how-to-video.png)观看此[视频](https://helpx.adobe.com/campaign/classic/how-to/architecture-of-acs-v6.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/digital-marketers/explevel/intermediate/applaunch/get-started/collection.ccx.js&ref=helpx.adobe.com)，了解Campaign交互的架构以及优惠引擎的工作方式。

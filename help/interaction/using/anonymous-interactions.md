@@ -18,7 +18,7 @@ ht-degree: 1%
 
 
 
-![](assets/do-not-localize/how-to-video.png)观看此[视频](https://helpx.adobe.com/campaign/classic/how-to/indetified-and-anonymous-interaction-in-acv6.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/digital-marketers/explevel/intermediate/applaunch/get-started/collection.ccx.js&amp;ref=helpx.adobe.com)，大致了解如何将优惠提供给已识别和匿名目标。
+![](assets/do-not-localize/how-to-video.png)观看此[视频](https://helpx.adobe.com/campaign/classic/how-to/indetified-and-anonymous-interaction-in-acv6.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/digital-marketers/explevel/intermediate/applaunch/get-started/collection.ccx.js&ref=helpx.adobe.com)，大致了解如何将优惠提供给已识别和匿名目标。
 
 ## 为匿名交互定位和存储环境 {#targeting-and-storing-an-environment-for-anonymous-interactions}
 

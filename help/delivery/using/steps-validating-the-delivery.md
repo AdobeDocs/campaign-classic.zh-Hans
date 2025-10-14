@@ -146,7 +146,7 @@ ht-degree: 10%
 1. 开始消息分析。 请参阅[分析投放](steps-validating-the-delivery.md#analyzing-the-delivery)。
 1. 您现在可以发送投放（请参阅[发送投放](steps-sending-the-delivery.md)）。
 
-   发送投放后，验证将显示在投放列表中，并自动创建和编号。 如果要访问其内容和属性，可以对其进行编辑。 有关详细信息，请参见此 [ 页面](about-delivery-monitoring.md)。
+   发送投放后，验证将显示在投放列表中，并自动创建和编号。 如果要访问其内容和属性，可以对其进行编辑。 有关详细信息，请参见此 [&#x200B; 页面](about-delivery-monitoring.md)。
 
    ![](assets/s_ncs_user_delivery_validation_cycle_03a.png)
 

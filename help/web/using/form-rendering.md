@@ -147,7 +147,7 @@ ht-degree: 2%
 
 * 主树包含表单上下文的参数。 默认参数是Identifier（与收件人的加密标识符匹配）、Language和Origin。
 
-  有关详细信息，请参见此 [ 页面](defining-web-forms-properties.md#form-url-parameters)。
+  有关详细信息，请参见此 [&#x200B; 页面](defining-web-forms-properties.md#form-url-parameters)。
 
 * **[!UICONTROL Recipients]**&#x200B;子树包含插入到表单中并存储在数据库中的输入字段。
 
@@ -157,7 +157,7 @@ ht-degree: 2%
 
 有关详细信息，请参阅此处提供的用例： [根据所选的值显示不同的选项](use-cases-web-forms.md#displaying-different-options-depending-on-the-selected-values)。
 
-您还可以使用&#x200B;**[!UICONTROL Test]**&#x200B;对象来设置表单页面的显示条件。 有关详细信息，请参见此 [ 页面](defining-web-forms-page-sequencing.md#conditional-page-display)。
+您还可以使用&#x200B;**[!UICONTROL Test]**&#x200B;对象来设置表单页面的显示条件。 有关详细信息，请参见此 [&#x200B; 页面](defining-web-forms-page-sequencing.md#conditional-page-display)。
 
 ## 从现有表单导入元素 {#importing-elements-from-an-existing-form}
 

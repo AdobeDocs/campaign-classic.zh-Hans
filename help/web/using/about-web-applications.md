@@ -38,23 +38,23 @@ Adobe Campaign允许您创建和发布动态的交互式Web应用程序，其中
 
 Adobe Campaign中的Web应用程序提供对以下功能的访问：
 
-* 创建多页表单。 有关详细信息，请参见此 [ 页面](about-web-forms.md)。
-* 使用集成翻译工具进行多语言调查管理。 有关详细信息，请参见此 [ 页面](translating-a-web-application.md)。
-* 图形化页面管理界面，多列页面布局。 有关详细信息，请参见此 [ 页面](designing-a-web-application.md)。
-* 呈现个性化和字段位置。 有关详细信息，请参见此 [ 页面](editing-content.md#adding-personalization-content)。
-* 根据答案有条件地显示调查字段。 有关详细信息，请参见此 [ 页面](form-rendering.md#defining-fields-conditional-display)。
-* 随机显示问题。 有关详细信息，请参见此 [ 页面](../../surveys/using/building-a-survey.md#adding-questions)。
-* 条件性页面显示。 有关详细信息，请参见此 [ 页面](defining-web-forms-page-sequencing.md#conditional-page-display)。
-* 根据预期的数据类型（编号、电子邮件地址、日期等），在验证之前检查信息 和必填字段。 有关详细信息，请参见此 [ 页面](form-rendering.md#defining-control-settings)。
-* 电子邮件邀请或通知。 有关详细信息，请参见此 [ 页面](publishing-a-web-form.md#delivering-a-form-via-email)。
-* 包含错误和结束消息的Personalization。 有关详细信息，请参见此 [ 页面](defining-web-forms-properties.md#setting-up-an-error-page)。
-* 使用图像、视频、超文本链接、验证码等。 有关详细信息，请参见此 [ 页面](editing-content.md)。
-* 实时监控响应。 有关详细信息，请参见此 [ 页面](../../surveys/using/publish-track-and-use-collected-data.md#response-tracking)。
+* 创建多页表单。 有关详细信息，请参见此 [&#x200B; 页面](about-web-forms.md)。
+* 使用集成翻译工具进行多语言调查管理。 有关详细信息，请参见此 [&#x200B; 页面](translating-a-web-application.md)。
+* 图形化页面管理界面，多列页面布局。 有关详细信息，请参见此 [&#x200B; 页面](designing-a-web-application.md)。
+* 呈现个性化和字段位置。 有关详细信息，请参见此 [&#x200B; 页面](editing-content.md#adding-personalization-content)。
+* 根据答案有条件地显示调查字段。 有关详细信息，请参见此 [&#x200B; 页面](form-rendering.md#defining-fields-conditional-display)。
+* 随机显示问题。 有关详细信息，请参见此 [&#x200B; 页面](../../surveys/using/building-a-survey.md#adding-questions)。
+* 条件性页面显示。 有关详细信息，请参见此 [&#x200B; 页面](defining-web-forms-page-sequencing.md#conditional-page-display)。
+* 根据预期的数据类型（编号、电子邮件地址、日期等），在验证之前检查信息 和必填字段。 有关详细信息，请参见此 [&#x200B; 页面](form-rendering.md#defining-control-settings)。
+* 电子邮件邀请或通知。 有关详细信息，请参见此 [&#x200B; 页面](publishing-a-web-form.md#delivering-a-form-via-email)。
+* 包含错误和结束消息的Personalization。 有关详细信息，请参见此 [&#x200B; 页面](defining-web-forms-properties.md#setting-up-an-error-page)。
+* 使用图像、视频、超文本链接、验证码等。 有关详细信息，请参见此 [&#x200B; 页面](editing-content.md)。
+* 实时监控响应。 有关详细信息，请参见此 [&#x200B; 页面](../../surveys/using/publish-track-and-use-collected-data.md#response-tracking)。
 
 可选的&#x200B;**调查**&#x200B;创建模块提供了以下附加功能：
 
-* 数据库的动态扩展：创建未包含在初始数据模板中的响应。 有关详细信息，请参见此 [ 页面](../../surveys/using/managing-answers.md#storing-collected-answers)。
-* 生成专用报告。 有关详细信息，请参见此 [ 页面](../../surveys/using/publish-track-and-use-collected-data.md#reports-on-surveys)。
+* 数据库的动态扩展：创建未包含在初始数据模板中的响应。 有关详细信息，请参见此 [&#x200B; 页面](../../surveys/using/managing-answers.md#storing-collected-answers)。
+* 生成专用报告。 有关详细信息，请参见此 [&#x200B; 页面](../../surveys/using/publish-track-and-use-collected-data.md#reports-on-surveys)。
 
 与Web应用程序相比，调查具有简化的图形界面，而且编辑控制数量减少。
 

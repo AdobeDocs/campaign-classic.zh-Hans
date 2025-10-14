@@ -57,7 +57,7 @@ ht-degree: 5%
 
 对于&#x200B;**[!UICONTROL Campaign process ('operationMgt', 'deliveryMgt', ...)]**：
 
-1. 查看&#x200B;**[!UICONTROL Campaign process]**&#x200B;文件夹下的所有工作流。 有关详细信息，请参见此 [ 页面](about-technical-workflows.md)。
+1. 查看&#x200B;**[!UICONTROL Campaign process]**&#x200B;文件夹下的所有工作流。 有关详细信息，请参见此 [&#x200B; 页面](about-technical-workflows.md)。
 1. 检查工作流是否按计划运行，以及日记帐是否未突出显示重复出现的错误。
 
 ## 工作流监督 {#workflow-supervision}
