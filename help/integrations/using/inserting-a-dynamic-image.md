@@ -82,7 +82,7 @@ ht-degree: 3%
 
    ![](assets/target_6.png)
 
-1. 对其余重定向选件执行相同的过程。 有关详细信息，请参见此 [ 页面](https://experienceleague.adobe.com/docs/target/using/experiences/offers/offer-redirect.html)。
+1. 对其余重定向选件执行相同的过程。 有关详细信息，请参见此 [&#x200B; 页面](https://experienceleague.adobe.com/docs/target/using/experiences/offers/offer-redirect.html)。
 
 ## 创建受众 {#audiences-target}
 

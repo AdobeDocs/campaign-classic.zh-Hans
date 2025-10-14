@@ -20,7 +20,7 @@ ht-degree: 1%
 
 从营销活动创建投放后，这些投放将链接到此营销活动，并在营销活动级别合并。
 
-![](assets/do-not-localize/how-to-video.png)[在视频中发现此功能](#create-email-video)
+![](assets/do-not-localize/how-to-video.png) [在视频中发现此功能](#create-email-video)
 
 ## 创建投放 {#creating-deliveries}
 

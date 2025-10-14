@@ -97,7 +97,7 @@ ht-degree: 8%
 
    >[!WARNING]
    >
-   >分配&#x200B;**[!UICONTROL Internal name]**时，请确保遵循指定的命名约定：
+   >分配&#x200B;**[!UICONTROL Internal name]**&#x200B;时，请确保遵循指定的命名约定：
    > </br>`SMS Operator Name_Internal Name of the Marketing SMS external account`
 
    ![](assets/mid_external_account_6.png)
@@ -146,7 +146,7 @@ ht-degree: 8%
 
    但是，鉴于某些提供商需要使用“+”前缀，建议您与提供商进行核实，他们将会提供是否有必要启用此选项的建议。
 
-   **[!UICONTROL Enable TLS over SMPP]**&#x200B;复选框允许您加密SMPP通信。 有关详细信息，请参见此 [ 页面](sms-protocol.md)。
+   **[!UICONTROL Enable TLS over SMPP]**&#x200B;复选框允许您加密SMPP通信。 有关详细信息，请参见此 [&#x200B; 页面](sms-protocol.md)。
 
 1. 如果您正在配置&#x200B;**[!UICONTROL Extended generic SMPP]**&#x200B;连接器，则可以设置自动回复。
 

@@ -382,7 +382,7 @@ Adobe Campaign允许您区分这三个URL，以将负载分散到多个平台上
 
   每次投放都可以覆盖此值。
 
-* 对于公共资源，URL **https://** server **/res/** instance ****，其中&#x200B;**instance**是跟踪实例的名称。
+* 对于公共资源，URL **https://** server **/res/** instance **&#x200B;**，其中&#x200B;**instance**&#x200B;是跟踪实例的名称。
 
 ### 投放图像检测 {#delivery-image-detection}
 

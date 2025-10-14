@@ -45,7 +45,7 @@ ht-degree: 4%
 
 * **[!UICONTROL PREPARE DELIVERIES]**：有权创建、编辑和保存投放。 具有&#x200B;**[!UICONTROL PREPARE DELIVERIES]**&#x200B;权限的用户也可以启动投放分析流程。
 
-* **[!UICONTROL PRIVACY DATA RIGHT]**：有权收集和删除隐私数据。 有关详细信息，请参见此 [ 页面](https://helpx.adobe.com/cn/campaign/kb/acc-privacy.html)。
+* **[!UICONTROL PRIVACY DATA RIGHT]**：有权收集和删除隐私数据。 有关详细信息，请参见此 [&#x200B; 页面](https://helpx.adobe.com/cn/campaign/kb/acc-privacy.html)。
 
 * **[!UICONTROL PROGRAM EXECUTION]**：有权执行各种编程语言的命令。
 

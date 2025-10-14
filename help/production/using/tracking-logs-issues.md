@@ -20,7 +20,7 @@ ht-degree: 14%
 
 跟踪日志未转发可能有多种原因。 我们建议您检查以下信息：
 
-* ****&#x200B;跟踪&#x200B;**工作流是否有错误？**
+* **&#x200B;**&#x200B;跟踪&#x200B;**工作流是否有错误？**
 
 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-technical-workflows.html?lang=zh-Hans){target="_blank"}。
 

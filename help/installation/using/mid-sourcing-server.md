@@ -125,7 +125,7 @@ ht-degree: 1%
 
    ![](assets/mid_recette_user_restrictions.png)
 
-1. 使用以下命令重新启动Web模块： ** web**。
+1. 使用以下命令重新启动Web模块： **&#x200B; web**。
 
 您必须更改serverConf.xml文件中的中间源服务器设置。 必须将以下行添加到“使用IP地址管理关联性”部分的现有行下：
 
@@ -139,9 +139,9 @@ ht-degree: 1%
 
 “marketing_account_operator_name”与在中间源实例中声明的中间源帐户的内部名称相关。
 
-“affinity_name”与为关联指定的任意名称相关。 此名称必须是唯一的。 授权字符为`[a-z]``[A-Z]``[0-9]`。 目标是声明一组公共IP地址。
+“affinity_name”与为关联指定的任意名称相关。 此名称必须是唯一的。 授权字符为`[a-z]` `[A-Z]` `[0-9]`。 目标是声明一组公共IP地址。
 
-“affinity_group”与每个投放中使用的目标映射中声明的子关联相关联。 最后一部分包括“。” 如果没有Sub-affinity，则忽略。 授权字符为`[a-z]``[A-Z]``[0-9]`。
+“affinity_group”与每个投放中使用的目标映射中声明的子关联相关联。 最后一部分包括“。” 如果没有Sub-affinity，则忽略。 授权字符为`[a-z]` `[A-Z]` `[0-9]`。
 
 您必须停止然后重新启动服务器，以便考虑修改。
 

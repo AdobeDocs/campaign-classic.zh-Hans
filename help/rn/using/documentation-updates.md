@@ -524,7 +524,7 @@ Adobe Campaign 增强 MTA 文章已更新。现在只适用于 Campaign Classic�
 
 ## 2020 年 3 月 {#march-2020}
 
-数据模型最佳实践已更新新的部分，包括[序列](../../configuration/using/data-model-best-practices.md#sequences)性能[和](../../configuration/using/data-model-best-practices.md#performance) 大表 [](../../configuration/using/data-model-best-practices.md#large-tables)。[阅读更多](../../configuration/using/data-model-best-practices.md)
+数据模型最佳实践已更新新的部分，包括[序列](../../configuration/using/data-model-best-practices.md#sequences)性能[和](../../configuration/using/data-model-best-practices.md#performance) 大表 [&#128279;](../../configuration/using/data-model-best-practices.md#large-tables)。[阅读更多](../../configuration/using/data-model-best-practices.md)
 
 现在提供了描述 Adobe Campaign 内置数据模型和表之间交互的新部分。[阅读更多](../../configuration/using/data-model-description.md)
 
@@ -558,7 +558,7 @@ Hadoop FDA 连接器增强 - [阅读更多](../../installation/using/configure-f
 
 **随版本提供的其他文档更新**
 
-[安装、](../../installation/using/general-architecture.md) [生产](../../production/using/foreword.md)[和配置](../../configuration/using/additional-parameters.md)指南已更新，包含 nlserver 服务启动使用的新系统单元。您仍可以使用 /etc/init.d/nlserver6，但 Adobe 建议您现在使用 systemctl 命令与 nlserver 服务进行交互。
+[安装、](../../installation/using/general-architecture.md) [生产](../../production/using/foreword.md) [和配置](../../configuration/using/additional-parameters.md)指南已更新，包含 nlserver 服务启动使用的新系统单元。您仍可以使用 /etc/init.d/nlserver6，但 Adobe 建议您现在使用 systemctl 命令与 nlserver 服务进行交互。
 
 安装指南已更新并与最新版本的兼容性矩阵同步。新增了支持的系统。已弃用和不支持的系统的实例已被删除。[阅读更多](../../installation/using/general-architecture.md)
 

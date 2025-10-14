@@ -564,7 +564,7 @@ SMS消息的隔离机制在全局上与常规流程相同。 请参阅[关于隔
  </tbody> 
 </table>
 
-扩展通用SMPP连接器的&#x200B;****
+扩展通用SMPP连接器的&#x200B;**&#x200B;**
 
 使用SMPP协议发送短信消息时，错误管理的处理方式不同。 有关扩展通用SMPP连接器的详细信息，请参阅[此页面](sms-set-up.md#creating-an-smpp-external-account)。
 
