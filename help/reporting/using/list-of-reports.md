@@ -123,7 +123,7 @@ ht-degree: 2%
 
 下表显示了Adobe Campaign提供的内置报告。
 
-有关这些报告内容的更多信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html){target=_blank}。
+有关这些报告内容的更多信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html?lang=zh-Hans){target=_blank}。
 
 <table> 
  <tbody> 
@@ -219,7 +219,7 @@ ht-degree: 2%
 
 下表显示了Adobe Campaign提供的内置报告。
 
-有关这些报告内容的更多信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html){target=_blank}。
+有关这些报告内容的更多信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html?lang=zh-Hans){target=_blank}。
 
 <table> 
  <tbody> 

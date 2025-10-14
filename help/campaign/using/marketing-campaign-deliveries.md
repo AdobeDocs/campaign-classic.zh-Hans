@@ -28,7 +28,7 @@ ht-degree: 1%
 
 ![](assets/campaign_op_add_delivery.png)
 
-建议的配置适用于不同类型的投放：直邮、电子邮件、移动渠道。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html){target="_blank"}以了解详情。
+建议的配置适用于不同类型的投放：直邮、电子邮件、移动渠道。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=zh-Hans){target="_blank"}以了解详情。
 
 ## 开始投放 {#starting-a-delivery}
 

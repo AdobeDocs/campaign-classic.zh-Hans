@@ -31,7 +31,7 @@ ht-degree: 1%
 
 * 某些电子邮件提供商可能已将您的IP地址添加到阻止列表。 在这种情况下，请检查您的broadlog并查阅[此部分](about-deliverability.md)。
 
-* 您的投放可能太大，无法快速处理，这可能与高度的JavaScript个性化有关，或者如果您的投放超过60 KB。 请参阅Adobe Campaign v8 [投放最佳实践](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/delivery-best-practices.html){target="_blank"}。  以了解内容准则。
+* 您的投放可能太大，无法快速处理，这可能与高度的JavaScript个性化有关，或者如果您的投放超过60 KB。 请参阅Adobe Campaign v8 [投放最佳实践](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/delivery-best-practices.html?lang=zh-Hans){target="_blank"}。  以了解内容准则。
 
 * 在Adobe Campaign MTA中可能已发生限制。 这是由以下原因造成的：
 
@@ -73,7 +73,7 @@ ht-degree: 1%
 
   要解决此问题，我们建议对数据库执行真空并重新索引。 有关数据库维护的详细信息，请参阅[本节](../../production/using/recommendations.md)。
 
-  您还应该重新启动所有具有计划活动的工作流，以及所有处于失败状态的工作流。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/flow-control-activities/scheduler.html){target="_blank"}。
+  您还应该重新启动所有具有计划活动的工作流，以及所有处于失败状态的工作流。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/flow-control-activities/scheduler.html?lang=zh-Hans){target="_blank"}。
 
 * 投放失败时，投放日志中可能会显示以下错误：
 
@@ -83,7 +83,7 @@ ht-degree: 1%
 
   通常，此错误意味着电子邮件中存在为收件人具有多个值的个性化字段或块。 正在使用个性化块，并且正在为特定收件人获取多个记录。
 
-  要解决此问题，请检查使用的个性化数据，然后检查目标，以查找具有多个条目的收件人（用于其中任何字段）。 您还可以在投放活动之前的定位工作流中使用&#x200B;**[!UICONTROL Deduplication]**&#x200B;活动，以检查一次只有一个个性化字段。 有关重复数据删除的详细信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/deduplication.html){target="_blank"}。
+  要解决此问题，请检查使用的个性化数据，然后检查目标，以查找具有多个条目的收件人（用于其中任何字段）。 您还可以在投放活动之前的定位工作流中使用&#x200B;**[!UICONTROL Deduplication]**&#x200B;活动，以检查一次只有一个个性化字段。 有关重复数据删除的详细信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/deduplication.html?lang=zh-Hans){target="_blank"}。
 
 * 某些投放可能会失败，并出现“Unreachable”（无法访问）错误，并指出：
 

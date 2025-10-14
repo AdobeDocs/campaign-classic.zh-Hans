@@ -59,7 +59,7 @@ ht-degree: 4%
 
 **[!UICONTROL Target extension]** (targetData)类型个性化元素不可用于定位工作流。 必须在工作流中构建投放目标，并在投放的集客过渡中指定。
 
-如果要创建投放验证，则需要基于&#x200B;**[!UICONTROL Address substitution]**&#x200B;模式构建验证目标，以便输入个性化数据。 有关详细信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#target-population){target="_blank"}中的此部分。
+如果要创建投放验证，则需要基于&#x200B;**[!UICONTROL Address substitution]**&#x200B;模式构建验证目标，以便输入个性化数据。 有关详细信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=zh-Hans#target-population){target="_blank"}中的此部分。
 
 在以下示例中，我们将收集客户信息列表，以便在个性化电子邮件中使用。
 

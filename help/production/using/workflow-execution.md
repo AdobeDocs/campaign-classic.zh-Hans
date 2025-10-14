@@ -26,7 +26,7 @@ ht-degree: 3%
 * [关于工作流](../../workflow/using/about-workflows.md)
 * [正在启动工作流](https://experienceleague.adobe.com/docs/campaign/automation/workflows/executing-a-workflow/start-a-workflow.html?lang=zh-Hans){target="_blank"}。
 * [工作流生命周期](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html?lang=zh-Hans){target="_blank"}。
-* [使用工作流时的最佳实践](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html){target="_blank"}。
+* [使用工作流时的最佳实践](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html?lang=zh-Hans){target="_blank"}。
 
 ## 在活动中尽快开始 {#start-as-soon-as-possible-in-campaigns}
 
@@ -34,7 +34,7 @@ ht-degree: 3%
 
 此问题可能由多种原因引起，请按照以下步骤解决该问题：
 
-1. 检查&#x200B;[**[!UICONTROL operationMgt]**](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows.html){target="_blank"}技术工作流状态。 此工作流用于管理营销活动中的作业或工作流。 如果失败，这将导致工作流无法启动/停止。 重新启动工作流可继续运行活动工作流。
+1. 检查&#x200B;[**[!UICONTROL operationMgt]**](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows.html?lang=zh-Hans){target="_blank"}技术工作流状态。 此工作流用于管理营销活动中的作业或工作流。 如果失败，这将导致工作流无法启动/停止。 重新启动工作流可继续运行活动工作流。
 
    有关技术工作流监视的详细信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-technical-workflows.html?lang=zh-Hans){target="_blank"}。
 
@@ -73,13 +73,13 @@ ht-degree: 3%
 
    要解决此问题，请停止不需要的工作流并删除失败的投放。 如果达到此阈值，则将允许运行新进程。
 
-   要检查实例正在运行的工作流数量，我们建议使用预定义视图，默认情况下可在&#x200B;**[!UICONTROL Administration]** / **[!UICONTROL Audit]**&#x200B;文件夹中访问这些视图。 有关更多信息，请参阅 [Campaign v8 文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html){target="_blank"}。
+   要检查实例正在运行的工作流数量，我们建议使用预定义视图，默认情况下可在&#x200B;**[!UICONTROL Administration]** / **[!UICONTROL Audit]**&#x200B;文件夹中访问这些视图。 有关更多信息，请参阅 [Campaign v8 文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html?lang=zh-Hans){target="_blank"}。
 
    >[!IMPORTANT]
    >
    >提高&#x200B;**[!UICONTROL NmsOperation_LimitConcurrency]**&#x200B;选项阈值可能导致实例出现性能问题。 无论如何，请不要自行执行此操作，并联系您的Adobe Campaign联系人。
 
-有关如何监视工作流的详细信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html){target="_blank"}。
+有关如何监视工作流的详细信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html?lang=zh-Hans){target="_blank"}。
 
 ## 开始进行中 {#start-in-progress}
 
@@ -118,6 +118,6 @@ ht-degree: 3%
 
 如果工作流失败，请执行以下步骤：
 
-1. 检查工作流日志。 有关详细信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html){target="_blank"}。
+1. 检查工作流日志。 有关详细信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html?lang=zh-Hans){target="_blank"}。
 1. 监控技术工作流。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-technical-workflows.html?lang=zh-Hans){target="_blank"}。
 1. 查找单个工作流活动上的失败。

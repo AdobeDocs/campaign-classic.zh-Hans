@@ -32,7 +32,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->有关调度程序的详细信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/flow-control-activities/scheduler.html){target="_blank"}。
+>有关调度程序的详细信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/flow-control-activities/scheduler.html?lang=zh-Hans){target="_blank"}。
 
 默认情况下，**[!UICONTROL Database cleanup]**&#x200B;工作流配置为每天凌晨4点启动。 调度程序允许您更改工作流触发频率。 可以使用以下频率：
 

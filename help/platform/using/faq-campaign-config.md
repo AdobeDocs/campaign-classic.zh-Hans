@@ -51,7 +51,7 @@ Adobe Campaign 目前提供英语、法语、德语和日语共 4 种语言的�
 
 借助 Campaign，您能够以协作模式为营销活动的主要步骤设置审批流程。对于每个活动，您可以批准投放目标、内容和成本。负责批准工作的Adobe Campaign操作员收到电子邮件通知后，可通过控制台或Web连接批准或拒绝批准相关请求。
 
-请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-approval.html#review-and-approve-deliveries){target="_blank"}以了解如何实施投放内容的审批。
+请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-approval.html?lang=zh-Hans#review-and-approve-deliveries){target="_blank"}以了解如何实施投放内容的审批。
 
 ## 如何访问存储在外部数据库中的数据？ {#how-can-i-access-data-stored-in-an-external-database-}
 

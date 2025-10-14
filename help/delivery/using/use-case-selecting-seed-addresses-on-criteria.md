@@ -30,7 +30,7 @@ ht-degree: 3%
 
 ## 步骤1 — 创建投放 {#step-1---creating-a-delivery}
 
-有关创建投放的详细步骤，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/email.html){target="_blank"}。
+有关创建投放的详细步骤，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/email.html?lang=zh-Hans){target="_blank"}。
 
 在本例中，投放经理已创建新闻稿并选择收件人。
 

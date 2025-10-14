@@ -19,7 +19,7 @@ ht-degree: 4%
 
 目标群体是关键：仔细构建列表，在常用的电子邮件客户端和移动设备上测试电子邮件，并确保电子邮件列表是最新的（不含未知或过时的地址）。 您还可以发送校样来帮助设置完整的验证周期。
 
-请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html){target="_blank"}本节以了解有关目标群体的更多信息。
+请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=zh-Hans){target="_blank"}本节以了解有关目标群体的更多信息。
 
 ## 定位正确的受众 {#target-the-right-audience}
 
@@ -33,13 +33,13 @@ ht-degree: 4%
 
 例如，您可以向通过社交网络收集用户档案的访客或订阅了信息服务的访客投放。
 
-这些映射显示在[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/audience/add-profiles/target-mappings.html){target="_blank"}中。
+这些映射显示在[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/audience/add-profiles/target-mappings.html?lang=zh-Hans){target="_blank"}中。
 
 您还可以创建和使用自定义的目标映射。 如需详细信息，请参阅[此小节](../../configuration/using/target-mapping.md)。
 
 ## 外部收件人 {#external-recipients}
 
-您可以向存储在外部文件中而不是数据库中保存的收件人投放。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#selecting-external-recipients){target="_blank"}以了解详情。
+您可以向存储在外部文件中而不是数据库中保存的收件人投放。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=zh-Hans#selecting-external-recipients){target="_blank"}以了解详情。
 
 ## 发送给订阅者 {#send-to-subscribers}
 
@@ -50,7 +50,7 @@ ht-degree: 4%
 
 要测试您的投放，请在发送到主目标之前使用验证。
 
-确保选择适当的校样收件人，因为他们验证消息的表单和内容。 有关定义校样收件人的步骤，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#select-the-proof-target){target="_blank"}。
+确保选择适当的校样收件人，因为他们验证消息的表单和内容。 有关定义校样收件人的步骤，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=zh-Hans#select-the-proof-target){target="_blank"}。
 
 种子地址用于定向不符合所定义目标标准的收件人，以便在发送到主目标之前测试投放。 它们在本节[中为](about-seed-addresses.md)呈现。
 

@@ -55,7 +55,7 @@ Adobe Campaign 查询编辑器是一款功能强大的工具，可用于探索�
 
 使用所选表的字段或使用公式可以创建查询。[此页面](../../platform/using/about-queries-in-campaign.md)介绍了在 Campaign 数据库上创建查询的主要原则。
 
-了解对[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html){target="_blank"}的查询。
+了解对[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html?lang=zh-Hans){target="_blank"}的查询。
 
 ## 如何导入数据包？ {#how-can-i-import-a-data-package-}
 

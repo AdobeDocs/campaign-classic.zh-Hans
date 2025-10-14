@@ -16,7 +16,7 @@ ht-degree: 0%
 
 # 为Android创建通知{#create-notificaations-android}
 
-使用Adobe Campaign在Android设备上发送推送通知。 有关投放创建的全局概念，请参见[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html){target="_blank"}。
+使用Adobe Campaign在Android设备上发送推送通知。 有关投放创建的全局概念，请参见[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=zh-Hans){target="_blank"}。
 
 首先，创建新投放。
 
@@ -70,7 +70,7 @@ ht-degree: 0%
 
 ## 创建通知消息 {#creating-notification-message}
 
-![](assets/do-not-localize/how-to-video.png) [了解如何在视频中创建Android推送通知](https://experienceleague.adobe.com/docs/campaign-classic-learn/getting-started-with-push-notifications-for-android/configuring-and-sending-push-notifications.html#additional-resources){target="_blank"}。
+![](assets/do-not-localize/how-to-video.png) [了解如何在视频中创建Android推送通知](https://experienceleague.adobe.com/docs/campaign-classic-learn/getting-started-with-push-notifications-for-android/configuring-and-sending-push-notifications.html?lang=zh-Hans#additional-resources){target="_blank"}。
 
 1. 转到&#x200B;**[!UICONTROL Campaign management]** > **[!UICONTROL Deliveries]**。
 

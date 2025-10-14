@@ -31,7 +31,7 @@ Litmus是一款功能丰富的电子邮件验证和预览应用程序。 它允�
 
 >[!NOTE]
 >
->测试投放中的个性化不需要收件箱呈现。 可以使用Adobe Campaign工具（如&#x200B;**[!UICONTROL Preview]**&#x200B;和校样）检查Personalization。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/preview-and-proof.html){target="_blank"}。
+>测试投放中的个性化不需要收件箱呈现。 可以使用Adobe Campaign工具（如&#x200B;**[!UICONTROL Preview]**&#x200B;和校样）检查Personalization。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/preview-and-proof.html?lang=zh-Hans){target="_blank"}。
 
 ## 正在激活收件箱呈现 {#activating-inbox-rendering}
 
@@ -107,7 +107,7 @@ Litmus是一款功能丰富的电子邮件验证和预览应用程序。 它允�
 
    ![](assets/s_tn_inbox_rendering_button.png)
 
-   已发送校样。 发送电子邮件后几分钟内，即可在该验证中访问渲染缩略图。 有关发送校样的更多信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/preview-and-proof.html){target="_blank"}。
+   已发送校样。 发送电子邮件后几分钟内，即可在该验证中访问渲染缩略图。 有关发送校样的更多信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/preview-and-proof.html?lang=zh-Hans){target="_blank"}。
 
 1. 发送后，验证会显示在投放列表中。 双击它。
 

@@ -156,7 +156,7 @@ ht-degree: 3%
 
    >[!NOTE]
    >
-   >有关更多信息，请参阅 [Campaign v8 文档](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-target.html#add-a-control-group){target="_blank"}。
+   >有关更多信息，请参阅 [Campaign v8 文档](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-target.html?lang=zh-Hans#add-a-control-group){target="_blank"}。
 
 1. 打开&#x200B;**[!UICONTROL Direct mail delivery]**&#x200B;并单击&#x200B;**[!UICONTROL Delivery measurement]**&#x200B;图标，然后单击&#x200B;**[!UICONTROL Add]**。
 
@@ -178,7 +178,7 @@ ht-degree: 3%
 
    ![](assets/response_hypothesis_delivery_example_008.png)
 
-1. 启动定位工作流并运行必要的检查，直到营销活动完成。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-deliveries.html#start-a-delivery){target=_blank}。
+1. 启动定位工作流并运行必要的检查，直到营销活动完成。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-deliveries.html?lang=zh-Hans#start-a-delivery){target=_blank}。
 
    ![](assets/response_hypothesis_delivery_example_009.png)
 

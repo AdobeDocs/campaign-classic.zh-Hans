@@ -19,7 +19,7 @@ ht-degree: 8%
 
 >[!NOTE]
 >
->此窗口中还配置了电子邮件中的图像管理。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html#adding-images){target="_blank"}。
+>此窗口中还配置了电子邮件中的图像管理。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html?lang=zh-Hans#adding-images){target="_blank"}。
 
 ![](assets/s_ncs_user_email_del_tracking_ico.png)
 

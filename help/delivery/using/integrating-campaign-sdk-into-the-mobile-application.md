@@ -64,7 +64,7 @@ ht-degree: 3%
 
   >[!NOTE]
   >
-  >此集成密钥输入到Adobe Campaign控制台中，该控制台位于专用于移动应用程序的服务的&#x200B;**[!UICONTROL Information]**&#x200B;选项卡中。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push-settings.html){target="_blank"}。
+  >此集成密钥输入到Adobe Campaign控制台中，该控制台位于专用于移动应用程序的服务的&#x200B;**[!UICONTROL Information]**&#x200B;选项卡中。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push-settings.html?lang=zh-Hans){target="_blank"}。
 
 * **跟踪URL**：与Adobe Campaign跟踪服务器的地址匹配。
 * **营销URL**：启用订阅集合。

@@ -93,7 +93,7 @@ ajouter screenshot -->
 
 确认投放后，您可以看到投放状态为&#x200B;**[!UICONTROL Pending]**。 此状态表示执行进程正在等待某些资源的可用性。
 
-**[!UICONTROL Pending]**&#x200B;状态可能首先意味着您的投放已计划并处于待处理状态，直到给定日期为止。 有关详细信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/configure-and-send.html#schedule-delivery-sending){target="_blank"}
+**[!UICONTROL Pending]**&#x200B;状态可能首先意味着您的投放已计划并处于待处理状态，直到给定日期为止。 有关详细信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/configure-and-send.html?lang=zh-Hans#schedule-delivery-sending){target="_blank"}
 
 如果未发送您的投放且其状态仍为&#x200B;**[!UICONTROL Pending]**，则可能是以下原因所致：
 

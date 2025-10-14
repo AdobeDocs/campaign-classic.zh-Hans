@@ -52,7 +52,7 @@ ht-degree: 0%
 1. 从DCE模板创建投放 — [了解详情](use-case-creating-an-email-delivery.md)
 1. 选择现有内容或从[标准模板](template-management.md)创建内容
 1. 编辑和配置在线内容
-1. 发送投放 — 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html){target="_blank"}以了解详情
+1. 发送投放 — 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=zh-Hans){target="_blank"}以了解详情
 
 >[!NOTE]
 >

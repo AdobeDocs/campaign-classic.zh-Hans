@@ -15,7 +15,7 @@ ht-degree: 6%
 
 # AB测试：创建投放模板 {#step-3--creating-two-delivery-templates}
 
-现在，我们要创建两个投放模板。 每个模板都将在链接到&#x200B;**[!UICONTROL Email delivery]**&#x200B;活动的&#x200B;**[!UICONTROL Split]**&#x200B;活动中引用。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html){target="_blank"}。
+现在，我们要创建两个投放模板。 每个模板都将在链接到&#x200B;**[!UICONTROL Email delivery]**&#x200B;活动的&#x200B;**[!UICONTROL Split]**&#x200B;活动中引用。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html?lang=zh-Hans){target="_blank"}。
 
 1. 浏览到&#x200B;**[!UICONTROL Resources > Delivery template]**&#x200B;文件夹。
 1. 复制&#x200B;**[!UICONTROL Email]**&#x200B;投放模板。

@@ -100,7 +100,7 @@ ht-degree: 2%
 
 您可以通过向之前创建的种子地址发送校样来测试消息投放。
 
-发送校样的过程与定期投放的过程相同。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/preview-and-proof.html){target="_blank"}。 但是，对于事务型消息传递，您需要预先执行以下操作：
+发送校样的过程与定期投放的过程相同。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/preview-and-proof.html?lang=zh-Hans){target="_blank"}。 但是，对于事务型消息传递，您需要预先执行以下操作：
 
 * 使用[个性化数据](#managing-seed-addresses-in-transactional-messages)创建一个或多个[种子地址](#personalization-data)。
 * [创建消息内容](../../message-center/using/creating-the-message-template.md#creating-message-content)。
@@ -117,7 +117,7 @@ ht-degree: 2%
 
    ![](assets/messagecenter_send_proof_002.png)
 
-可通过&#x200B;**[!UICONTROL Audit]**&#x200B;选项卡访问每个模板中的验证。 有关此内容的更多详细信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/preview-and-proof.html){target="_blank"}。
+可通过&#x200B;**[!UICONTROL Audit]**&#x200B;选项卡访问每个模板中的验证。 有关此内容的更多详细信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/preview-and-proof.html?lang=zh-Hans){target="_blank"}。
 
 ![](assets/messagecenter_send_proof_003.png)
 

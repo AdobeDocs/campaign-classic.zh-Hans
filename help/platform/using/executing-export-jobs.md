@@ -95,7 +95,7 @@ ht-degree: 29%
 
 ## 第 6 步 - 筛选条件 {#step-6---filter-conditions-}
 
-可添加筛选条件以避免导出所有数据。 此筛选的配置与投放助手中的收件人定位相同。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#target-population){target="_blank"}。
+可添加筛选条件以避免导出所有数据。 此筛选的配置与投放助手中的收件人定位相同。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=zh-Hans#target-population){target="_blank"}。
 
 ![](assets/s_ncs_user_export_wizard05_b.png)
 

@@ -66,7 +66,7 @@ ht-degree: 3%
   </tr> 
   <tr> 
    <td> 营销活动（营销活动）<br /> </td> 
-   <td> 定义、优化、执行和分析通信和营销活动。 <a href="https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html" target="_blank">了解更多</a><br /> </td> 
+   <td> 定义、优化、执行和分析通信和营销活动。 <a href="https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html?lang=zh-Hans" target="_blank">了解更多</a><br /> </td> 
    <td> 营销</td>
   </tr> 
   <tr> 
@@ -157,7 +157,7 @@ ht-degree: 3%
   </tr> 
   <tr> 
    <td> 访问外部数据（联合数据访问）<br /> </td> 
-   <td> 提供联合数据访问(FDA)选项，以处理存储在一个或多个外部数据库中的信息，以便您能够访问外部数据而不改变Adobe Campaign数据的结构。  可选。 <a href="https://experienceleague.adobe.com/docs/campaign/automation/workflows/advanced-management/accessing-an-external-database-fda.html" target="_blank">了解更多</a> <br /> </td> 
+   <td> 提供联合数据访问(FDA)选项，以处理存储在一个或多个外部数据库中的信息，以便您能够访问外部数据而不改变Adobe Campaign数据的结构。  可选。 <a href="https://experienceleague.adobe.com/docs/campaign/automation/workflows/advanced-management/accessing-an-external-database-fda.html?lang=zh-Hans" target="_blank">了解更多</a> <br /> </td> 
    <td> 所有<br /> </td> 
   </tr> 
   <tr> 
@@ -227,7 +227,7 @@ ht-degree: 3%
   </tr> 
   <tr> 
    <td> AMP支持<br /> </td> 
-   <td> 使您能够使用新的交互式AMP作为电子邮件格式，并发送动态电子邮件。 可选。 <a href="https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-interactive-content.html" target="_blank">了解更多</a> <br /> </td> 
+   <td> 使您能够使用新的交互式AMP作为电子邮件格式，并发送动态电子邮件。 可选。 <a href="https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-interactive-content.html?lang=zh-Hans" target="_blank">了解更多</a> <br /> </td> 
    <td> 全部 </td> 
   </tr> 
   <tr> 

@@ -54,6 +54,6 @@ ht-degree: 1%
 * 检查投放模板中是否正确设置了[重试](understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure)（重试期间为30分钟，重试次数超过20次）。
 * 定期验证[退回](understanding-delivery-failures.md#bounce-mail-management)邮箱是否可访问，以及帐户是否即将过期。
 * 检查可从[投放仪表板](delivery-dashboard.md)访问的每个投放吞吐量，以确保其与投放内容的有效性一致（例如，“闪速销售”应以分钟而不是天投放）。
-* 使用波次时，请确保在触发下一个波次之前，每个波次都有足够的时间完成。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/configure-and-send.html#sending-using-multiple-waves){target="_blank"}。
+* 使用波次时，请确保在触发下一个波次之前，每个波次都有足够的时间完成。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/configure-and-send.html?lang=zh-Hans#sending-using-multiple-waves){target="_blank"}。
 * 检查错误数和新的[隔离](understanding-quarantine-management.md)与其他投放是否一致。
 * 列入阻止列表请仔细查阅[投放日志](delivery-dashboard.md#delivery-logs-and-history)以详细检查突出显示的错误类型（、DNS问题、反垃圾邮件规则等）。

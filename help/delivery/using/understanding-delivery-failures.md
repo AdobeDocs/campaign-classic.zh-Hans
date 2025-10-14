@@ -203,7 +203,7 @@ ht-degree: 12%
   >
   >[此部分](../../installation/using/deploying-an-instance.md#managing-bounced-emails)中详细描述了退回邮箱的配置。
 
-  [反馈循环](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#feedback-loops)的运行方式与退回电子邮件类似。 当用户将电子邮件标记为垃圾邮件时，您可以在Adobe Campaign中配置电子邮件规则以阻止投放给此用户的所有邮件。 发送给确定电子邮件为垃圾邮件的用户的邮件会自动重定向到为此目的专门创建的电子邮件框。 这些用户的地址处于阻止列表状态，即使他们未单击退订链接。 地址在(**NmsAddress**)隔离表中阻止列表，而不是在(**NmsRecipient**)收件人表中。
+  [反馈循环](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=zh-Hans#feedback-loops)的运行方式与退回电子邮件类似。 当用户将电子邮件标记为垃圾邮件时，您可以在Adobe Campaign中配置电子邮件规则以阻止投放给此用户的所有邮件。 发送给确定电子邮件为垃圾邮件的用户的邮件会自动重定向到为此目的专门创建的电子邮件框。 这些用户的地址处于阻止列表状态，即使他们未单击退订链接。 地址在(**NmsAddress**)隔离表中阻止列表，而不是在(**NmsRecipient**)收件人表中。
 
   >[!NOTE]
   >

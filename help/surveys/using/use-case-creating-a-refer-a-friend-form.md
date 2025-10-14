@@ -88,7 +88,7 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >有关投放模板的详细信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html){target="_blank"}。
+   >有关投放模板的详细信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html?lang=zh-Hans){target="_blank"}。
 
 1. 创建用于投放订阅消息的第二个脚本。
 

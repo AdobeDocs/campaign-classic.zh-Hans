@@ -353,7 +353,7 @@ CR：回车
 
 ## 更改投放模板 {#changing-the-delivery-template}
 
-Adobe Campaign为您提供了一个用于向移动设备交付内容的模板。 此模板在&#x200B;**[!UICONTROL Resources > Templates > Delivery templates]**&#x200B;节点中可用。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html){target="_blank"}。
+Adobe Campaign为您提供了一个用于向移动设备交付内容的模板。 此模板在&#x200B;**[!UICONTROL Resources > Templates > Delivery templates]**&#x200B;节点中可用。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html?lang=zh-Hans){target="_blank"}。
 
 要通过短信渠道进行投放，您必须创建引用渠道连接器的模板。
 

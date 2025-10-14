@@ -20,7 +20,7 @@ ht-degree: 16%
 
 Adobe Campaign不是专门用于报表的工具：在Adobe Campaign中创建的报表主要允许您查看汇总的数据。 专门用于分析和表示数据的Adobe Campaign报表不用于数据库导出。
 
-要从Adobe Campaign数据库导出数据，您需要创建工作流并使用数据导出活动。 有关详细信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/action-activities.html){target="_blank"}。
+要从Adobe Campaign数据库导出数据，您需要创建工作流并使用数据导出活动。 有关详细信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/action-activities.html?lang=zh-Hans){target="_blank"}。
 
 Adobe Campaign提供了多种报表工具：
 

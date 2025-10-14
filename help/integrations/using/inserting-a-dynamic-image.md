@@ -62,7 +62,7 @@ ht-degree: 3%
 * **[!UICONTROL Landing Page]**：如果您希望将默认图像重定向到默认登陆页面。 此URL仅适用于默认图像显示在最终电子邮件中的情况，并且是可选的。
 * **[!UICONTROL Additional decision parameters]**：指定在Adobe Target区段中定义的字段与Adobe Campaign字段之间的映射。 使用的Adobe Campaign字段必须在rawbox中指定。 在我们的示例中，我们添加了“国家/地区”字段。
 
-如果您在Adobe Target的设置中使用企业权限，请在此字段中添加相应的资产。 在[此页面](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/properties-overview.html)中了解有关Target企业权限的更多信息。
+如果您在Adobe Target的设置中使用企业权限，请在此字段中添加相应的资产。 在[此页面](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/properties-overview.html?lang=zh-Hans)中了解有关Target企业权限的更多信息。
 
 ![](assets/target_13.png)
 
@@ -82,7 +82,7 @@ ht-degree: 3%
 
    ![](assets/target_6.png)
 
-1. 对其余重定向选件执行相同的过程。 有关详细信息，请参见此 [&#x200B; 页面](https://experienceleague.adobe.com/docs/target/using/experiences/offers/offer-redirect.html)。
+1. 对其余重定向选件执行相同的过程。 有关详细信息，请参见此 [&#x200B; 页面](https://experienceleague.adobe.com/docs/target/using/experiences/offers/offer-redirect.html?lang=zh-Hans)。
 
 ## 创建受众 {#audiences-target}
 
@@ -154,7 +154,7 @@ ht-degree: 3%
 
 ## 预览并发送电子邮件 {#preview-send-email}
 
-在Adobe Campaign中，您现在可以预览电子邮件并测试其针对不同收件人的呈现方式。 您会注意到图像会根据创建的不同体验而发生更改。 要了解有关电子邮件创建的更多信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html){target="_blank"}。
+在Adobe Campaign中，您现在可以预览电子邮件并测试其针对不同收件人的呈现方式。 您会注意到图像会根据创建的不同体验而发生更改。 要了解有关电子邮件创建的更多信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html?lang=zh-Hans){target="_blank"}。
 
 您现在可以发送包含Target动态选件的电子邮件。
 

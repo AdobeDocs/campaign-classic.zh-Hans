@@ -30,13 +30,13 @@ ht-degree: 1%
 
 在多个Adobe Campaign工作流活动中，您可以使用存储在外部数据库中的数据。
 
-* **外部数据筛选** — 查询活动允许您添加外部数据，并在定义的筛选配置中使用它。 有关更多信息，请参阅[Campaign v8文档]https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/targeting-workflows.html){target="_blank"}。
+* **外部数据筛选** — 查询活动允许您添加外部数据，并在定义的筛选配置中使用它。 有关更多信息，请参阅[Campaign v8文档]https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/targeting-workflows.html?lang=zh-Hans){target="_blank"}。
 
-* **创建子集** — 拆分活动允许您创建子集。 您可以使用外部数据来定义要使用的筛选条件。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/split.html){target="_blank"}。
+* **创建子集** — 拆分活动允许您创建子集。 您可以使用外部数据来定义要使用的筛选条件。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/split.html?lang=zh-Hans){target="_blank"}。
 
-* **加载外部数据库** — 您可以在数据加载(RDBMS)活动中使用外部数据。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/data-loading-rdbms.html){target="_blank"}以了解详情。
+* **加载外部数据库** — 您可以在数据加载(RDBMS)活动中使用外部数据。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/data-loading-rdbms.html?lang=zh-Hans){target="_blank"}以了解详情。
 
-* **添加信息和链接** — 扩充活动允许您向工作流的工作表添加其他数据，并链接到外部表。 在这种情况下，它可以使用来自外部数据库的数据。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/enrichment.html){target="_blank"}。
+* **添加信息和链接** — 扩充活动允许您向工作流的工作表添加其他数据，并链接到外部表。 在这种情况下，它可以使用来自外部数据库的数据。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/enrichment.html?lang=zh-Hans){target="_blank"}。
 
 ## 护栏和限制 {#fda-limitations}
 

@@ -292,7 +292,7 @@ ht-degree: 34%
 
   可以使用列的源值并为它指定目标值。 此目标值将显示在新输出列中。
 
-  有关添加计算字段类型&#x200B;**[!UICONTROL Enumerations]**&#x200B;的示例，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/adding-enumeration-type-calculated-field.html){target="_blank"}。
+  有关添加计算字段类型&#x200B;**[!UICONTROL Enumerations]**&#x200B;的示例，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/adding-enumeration-type-calculated-field.html?lang=zh-Hans){target="_blank"}。
 
   ![](assets/query_editor_nveau_63.png)
 

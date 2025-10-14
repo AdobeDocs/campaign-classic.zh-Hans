@@ -24,7 +24,7 @@ Adobe Campaign允许您定义、优化、执行和分析通信和营销活动。
 >[!NOTE]
 >
 >有关Adobe Campaign核心功能的详细信息，请参阅[此部分](../../platform/using/about-adobe-campaign-classic.md)部分。\
->[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html){target="_blank"}详细介绍了与各种渠道上的群体定位、消息个性化和消息投放相关的功能。
+>[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=zh-Hans){target="_blank"}详细介绍了与各种渠道上的群体定位、消息个性化和消息投放相关的功能。
 
 ![](assets/do-not-localize/how-to-video.png) [在视频中发现营销活动密钥概念](#video)
 

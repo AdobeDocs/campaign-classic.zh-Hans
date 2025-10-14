@@ -28,7 +28,7 @@ ht-degree: 81%
 
 探索在数据库中[导入轮廓](../../platform/using/import-operations-samples.md)的轻松用例。
 
-![](assets/do-not-localize/how-to-video.png) [在视频中发现此功能](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/profile-management/importing-profiles.html)
+![](assets/do-not-localize/how-to-video.png) [在视频中发现此功能](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/profile-management/importing-profiles.html?lang=zh-Hans)
 
 ## 如何定义营销活动的目标群体？ {#how-can-i-define-the-target-population-of-a-marketing-campaign-}
 
@@ -40,13 +40,13 @@ ht-degree: 81%
 
 [单击此处了解更多信息](../../platform/using/creating-and-managing-lists.md#creating-a-profile-list-from-a-group)。
 
-![](assets/do-not-localize/how-to-video.png) [在此视频中](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/profile-management/creating-a-list-of-recipients-with-a-workflow.html)和[在其他视频中](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/profile-management/creating-a-list-of-recipients.html)发现此功能
+![](assets/do-not-localize/how-to-video.png) [在此视频中](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/profile-management/creating-a-list-of-recipients-with-a-workflow.html?lang=zh-Hans)和[在其他视频中](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/profile-management/creating-a-list-of-recipients.html?lang=zh-Hans)发现此功能
 
 ## 如何在发送邮件前删除重复的群体？ {#how-can-i-deduplicate-a-population-before-sending-a-message-}
 
 您可以使用工作流从投放目标中排除重复的群体，以免向收件人数次发送相同的邮件。
 
-请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/deduplication.html){target="_blank"}以了解详情。
+请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/deduplication.html?lang=zh-Hans){target="_blank"}以了解详情。
 
 ## 如何识别和定位新闻稿的订阅者？ {#how-to-identify-and-target-subscribers-to-a-newsletter-}
 
@@ -54,4 +54,4 @@ ht-degree: 81%
 
 ## 从目标群体中排除用户档案的最佳实践是什么？ {#what-is-the-best-practice-to-exclude-profiles-from-a-target-population-}
 
-请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/read-list.html){target="_blank"}以了解如何从目标群体中排除用户档案列表。
+请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/read-list.html?lang=zh-Hans){target="_blank"}以了解如何从目标群体中排除用户档案列表。

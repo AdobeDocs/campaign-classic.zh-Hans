@@ -41,7 +41,7 @@ Adobe Campaign允许您创建、配置、执行和分析营销活动。 所有�
 >
 >有关Adobe Campaign整体人机工程学、权限和配置文件管理功能的更多信息，请参阅[此章节](../../platform/using/adobe-campaign-workspace.md)。
 >
->有关渠道和投放的所有功能的详情，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html){target="_blank"}。
+>有关渠道和投放的所有功能的详情，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=zh-Hans){target="_blank"}。
 
 ### 营销活动日历 {#campaign-calendar}
 

@@ -31,11 +31,11 @@ ht-degree: 3%
 
 为此，请添加并配置：
 
-* 将目标数据提取到CSV文件中的&#x200B;**[!UICONTROL Data extraction (file)]**&#x200B;活动。 有关如何配置此活动的更多信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/extraction-file.html){target="_blank"}。
+* 将目标数据提取到CSV文件中的&#x200B;**[!UICONTROL Data extraction (file)]**&#x200B;活动。 有关如何配置此活动的更多信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/extraction-file.html?lang=zh-Hans){target="_blank"}。
 
   ![](assets/rtcdp-extract-file.png)
 
-* 用于将CSV文件传输到存储位置的&#x200B;**[!UICONTROL File transfer]**&#x200B;活动。 有关如何配置此活动的更多信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html){target="_blank"}。
+* 用于将CSV文件传输到存储位置的&#x200B;**[!UICONTROL File transfer]**&#x200B;活动。 有关如何配置此活动的更多信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html?lang=zh-Hans){target="_blank"}。
 
   ![](assets/rtcdp-file-transfer.png)
 
@@ -49,8 +49,8 @@ ht-degree: 3%
 
 1. 在Adobe Experience Platform **[!UICONTROL Sources]**&#x200B;菜单中，创建与存储位置的连接：
 
-   * [创建Amazon S3源连接](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/cloud-storage/s3.html)
-   * [Azure Blob连接器](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/cloud-storage/blob.html)
+   * [创建Amazon S3源连接](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/cloud-storage/s3.html?lang=zh-Hans)
+   * [Azure Blob连接器](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/cloud-storage/blob.html?lang=zh-Hans)
 
    >[!NOTE]
    >
@@ -60,7 +60,7 @@ ht-degree: 3%
 
 1. 为云存储批处理连接配置数据流。 数据流是一种计划任务，用于在存储位置检索数据并将其摄取到Adobe Experience Platform数据集。 此步骤允许您从存储位置配置数据摄取，包括数据选择和CSV字段到XDM架构的映射。
 
-   [此页面](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/dataflow/cloud-storage.html)中提供了详细信息。
+   [此页面](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/dataflow/cloud-storage.html?lang=zh-Hans)中提供了详细信息。
 
    ![](assets/rtcdp-map-xdm.png)
 

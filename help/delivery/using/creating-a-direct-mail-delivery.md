@@ -21,12 +21,12 @@ ht-degree: 9%
 
 >[!NOTE]
 >
->有关投放创建的全局概念，请参见[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html){target="_blank"}。
+>有关投放创建的全局概念，请参见[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=zh-Hans){target="_blank"}。
 
 1. 创建新投放，例如从投放仪表板。
 1. 选择投放模板&#x200B;**通过直邮（纸张）投放**。
 
    ![](assets/direct_mail.png)
 
-1. 使用标签、代码和描述标识投放。 有关详细信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#create-the-delivery){target="_blank"}中的此部分。
+1. 使用标签、代码和描述标识投放。 有关详细信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=zh-Hans#create-the-delivery){target="_blank"}中的此部分。
 1. 单击&#x200B;**继续**&#x200B;以确认此信息并显示消息配置窗口。

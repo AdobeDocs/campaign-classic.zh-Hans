@@ -88,6 +88,6 @@ Adobe Campaign允许您向将产品添加到购物车的客户发送通知电子
 ## 相关主题 {#related-topics}
 
 * [通信渠道入门](../../delivery/using/communication-channels.md)
-* [投放创建关键步骤](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html){target="_blank"}
+* [投放创建关键步骤](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=zh-Hans){target="_blank"}
 * [事务性消息传递架构](../../message-center/using/transactional-messaging-architecture.md)
 * [访问事务性消息传递报告](../../message-center/using/about-transactional-messaging-reports.md)

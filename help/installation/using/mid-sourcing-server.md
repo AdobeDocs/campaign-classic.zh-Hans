@@ -27,7 +27,7 @@ ht-degree: 1%
 
 >[!CAUTION]
 >
->设置中间源服务器并首次运行[同步工作流](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows.html){target="_blank"}后，请确保不更新中间源外部帐户的内部名称。
+>设置中间源服务器并首次运行[同步工作流](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows.html?lang=zh-Hans){target="_blank"}后，请确保不更新中间源外部帐户的内部名称。
 
 ## 安装和配置实例的步骤 {#steps-for-installing-and-configuring-an-instance}
 

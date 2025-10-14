@@ -51,7 +51,7 @@ ht-degree: 2%
 
 >[!CAUTION]
 >
->此功能已从Adobe Experience Manager 6.4开始停用。[了解详情](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/deprecated-removed-features.html#removed-features)
+>此功能已从Adobe Experience Manager 6.4开始停用。[了解详情](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/deprecated-removed-features.html?lang=zh-Hans#removed-features)
 
 要将AEM Assets与Adobe Campaign集成，您必须首先配置Adobe Experience Manager与Adobe Campaign之间的集成。 此配置主要需要：
 
@@ -62,7 +62,7 @@ ht-degree: 2%
 
 设置此集成后，您可以在Adobe Campaign中配置新的投放模板以使用AEM Assets库。 为此请执行以下操作步骤：
 
-1. 创建新投放模板 — 或复制现有模板。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html){target="_blank"}。
+1. 创建新投放模板 — 或复制现有模板。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html?lang=zh-Hans){target="_blank"}。
 1. 编辑此模板的&#x200B;**属性**。
 1. 在&#x200B;**[!UICONTROL Advanced]**&#x200B;选项卡中，将&#x200B;**[!UICONTROL Content editing mode]**&#x200B;设置为&#x200B;**DCE**。
 1. 选择访问AEM Assets库所需的外部&#x200B;**[!UICONTROL AEM account]**。
