@@ -22,13 +22,13 @@ Adobe Campaign允许您停止跟踪通过Cookie或Web信标选择退出行为跟
 
 >[!NOTE]
 >
->当脚本编写始终遵循[安全和隐私核对清单](https://helpx.adobe.com/campaign/kb/acc-security.html#dev)中所述的准则时。
+>当脚本编写始终遵循[安全和隐私核对清单](https://helpx.adobe.com/cn/campaign/kb/acc-security.html#dev)中所述的准则时。
 
 ## 配置横幅 {#configuring-the-banner-}
 
 要在Web应用程序或登陆页面中显示，需要配置横幅。
 
-Adobe Campaign附带一个横幅示例，您必须根据自己的需求进行调整。 此横幅版本在内容模型文件夹中显示为个性化块。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html){target="_blank"}。
+Adobe Campaign附带一个横幅示例，您必须根据自己的需求进行调整。 此横幅版本在内容模型文件夹中显示为个性化块。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html?lang=zh-Hans){target="_blank"}。
 
 >[!IMPORTANT]
 >
