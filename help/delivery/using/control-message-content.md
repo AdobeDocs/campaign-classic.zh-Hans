@@ -6,9 +6,9 @@ badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v
 feature: Deliverability
 role: User
 exl-id: dcd3a9f9-5fe9-4c28-a4a5-5aed67b036ab
-source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
+source-git-commit: 0507e0372a81351adc145dafdd3cbe5d5422dc00
 workflow-type: tm+mt
-source-wordcount: '760'
+source-wordcount: '765'
 ht-degree: 5%
 
 ---
@@ -25,11 +25,11 @@ ht-degree: 5%
 * [退订链接](#opt-out)和登陆页面：退订链接是必需的。 它必须可见且有效，并且表单必须有效。
 * 预览：使用Adobe Campaign提供的工具检查和优化电子邮件的内容（[收件箱呈现](#message-responsiveness)，[SpamAssassin](#spamassassin)）。
 
-有关在设计内容时优化可投放性的其他提示，请参阅[Adobe可投放性最佳实践指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/content-best-practices-for-optimal-delivery.html?lang=zh-Hans)。
+有关在设计内容时优化可投放性的其他提示，请参阅[Adobe可投放性最佳实践指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/content-best-practices-for-optimal-delivery.html)。
 
 >[!NOTE]
 >
->有关编辑电子邮件内容的更多信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html?lang=zh-Hans){target="_blank"}。
+>有关编辑电子邮件内容的更多信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html){target="_blank"}。
 
 ## 发件人地址 {#sender-address}
 
@@ -37,21 +37,21 @@ ht-degree: 5%
 
 您必须确保在实例级别（菜单&#x200B;**[!UICONTROL Tools > Advanced > deployment wizard...]**）或最常用的情况下提供了正确的地址。
 
-有关详细信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html?lang=zh-Hans){target="_blank"}。
+有关详细信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html){target="_blank"}。
 
 ## 个性化 {#personalization}
 
 为了改善收件人的体验并让他们打开您的电子邮件，Adobe Campaign允许您个性化您的消息。
 
-有关在Adobe Campaign中使用个性化字段的更多信息，请参阅[此部分](personalization-fields.md)。
+有关在Adobe Campaign中使用个性化字段的更多信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/personalize/personalization-fields){target="_blank"}。
 
 ## 选择退出链接和表单 {#opt-out}
 
-默认情况下，分析消息时，分类规则会检查是否包含选择退出链接，如果缺少该链接，则会生成警告。 您可以更改此规则，以便引发错误而不是简单的警告，并阻止投放在没有此链接的情况下退出。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/delivery-analysis.html?lang=zh-Hans){target="_blank"}。
+默认情况下，分析消息时，分类规则会检查是否包含选择退出链接，如果缺少该链接，则会生成警告。 您可以更改此规则，以便引发错误而不是简单的警告，并阻止投放在没有此链接的情况下退出。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/delivery-analysis.html){target="_blank"}。
 
 在每次发送之前，必须检查选择退出链接是否正常工作。 例如，在发送校样时，请确保链接有效，表单处于联机状态，并且验证此操作会将&#x200B;**[!UICONTROL No longer contact this recipient]**&#x200B;字段的值更改为&#x200B;**[!UICONTROL Yes]**。 您应该系统地进行此检查，因为输入链接或更改表单时始终可能存在人为错误。
 
-了解如何在此部分[中插入选择退出链接](personalization-blocks.md#personalization-blocks-example)。
+请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html){target="_blank"}以了解如何插入选择退出。
 
 如果在开始投放后检测到有关退订的问题，则仍然可以为单击选择退出链接的收件人手动执行退订（例如使用批量更新功能），即使他们无法确认自己的选择。
 

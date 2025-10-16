@@ -7,9 +7,9 @@ role: User, Developer, Data Engineer
 hide: true
 hidefromtoc: true
 exl-id: 1bb36e71-9f1a-4553-b266-eca3f48688e2
-source-git-commit: b353b562bd2f0b0bd2dfde22c6477ab66d499483
+source-git-commit: 0507e0372a81351adc145dafdd3cbe5d5422dc00
 workflow-type: tm+mt
-source-wordcount: '903'
+source-wordcount: '905'
 ht-degree: 10%
 
 ---
@@ -82,9 +82,9 @@ ht-degree: 10%
 
 镜像页面是可通过 Web 浏览器在线访问的 HTML 页面。其内容与电子邮件相同。
 
-默认情况下，如果将链接插入到邮件内容中，则会生成镜像页面。 有关个性化块插入的详细信息，请参阅[个性化块](personalization-blocks.md)。
+默认情况下，如果将链接插入到邮件内容中，则会生成镜像页面。 有关个性化块插入的更多信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html){target="_blank"}。
 
-在投放属性中，**[!UICONTROL Validity]**&#x200B;选项卡的&#x200B;**[!UICONTROL Mode]**&#x200B;字段允许您修改此页面的生成模式。
+在投放属性中，**[!UICONTROL Mode]**&#x200B;选项卡的&#x200B;**[!UICONTROL Validity]**&#x200B;字段允许您修改此页面的生成模式。
 
 ![](assets/s_ncs_user_wizard_miror_page_mode.png)
 
@@ -108,7 +108,7 @@ ht-degree: 10%
 
 例如，您希望发送包含日语字符的电子邮件。 为确保向日本的收件人正确显示所有字符，您可能需要使用支持日语字符的编码而不是标准UTF-8。
 
-为此，请选择&#x200B;**[!UICONTROL Character encoding]**&#x200B;部分中的&#x200B;**[!UICONTROL Force the encoding used for messages]**&#x200B;选项，然后从显示的下拉列表中选择编码。
+为此，请选择&#x200B;**[!UICONTROL Force the encoding used for messages]**&#x200B;部分中的&#x200B;**[!UICONTROL Character encoding]**&#x200B;选项，然后从显示的下拉列表中选择编码。
 
 ![](assets/s_ncs_user_email_del_properties_smtp_tab_encoding.png)
 
@@ -116,7 +116,7 @@ ht-degree: 10%
 
 投放参数的&#x200B;**[!UICONTROL SMTP]**&#x200B;选项卡允许您配置退回邮件的管理。
 
-默认情况下，平台[&#128279;](../../installation/using/deploying-an-instance.md#parameters-for-delivered-emails-parameters-for-delivered-emails)的默认错误框中会收到退回的电子邮件，但您可以为投放定义特定的错误地址。
+默认情况下，平台[的](../../installation/using/deploying-an-instance.md#parameters-for-delivered-emails-parameters-for-delivered-emails)默认错误框中会收到退回的电子邮件，但您可以为投放定义特定的错误地址。
 
 您还可以从此屏幕定义特定地址，以便调查应用程序无法自动限定这些邮件时退回邮件的原因。 对于每个字段，**添加个性化字段**&#x200B;图标允许您添加个性化参数。
 
@@ -128,7 +128,7 @@ ht-degree: 10%
 
 可以将SMTP标头添加到投放。 为此，请使用投放中&#x200B;**[!UICONTROL SMTP]**&#x200B;选项卡的相关部分。
 
-在此窗口中输入的脚本必须引用以下形式每行一个标头： **name：value**。
+在此窗口中输入的脚本必须引用以下形式每行一个标头： **name:value**。
 
 如有必要，将自动对值进行编码。
 

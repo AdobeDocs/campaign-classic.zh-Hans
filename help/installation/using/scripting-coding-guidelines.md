@@ -7,9 +7,9 @@ audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: 1f96c3df-0ef2-4f5f-9c36-988cbcc0769f
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: 0507e0372a81351adc145dafdd3cbe5d5422dc00
 workflow-type: tm+mt
-source-wordcount: '740'
+source-wordcount: '743'
 ht-degree: 4%
 
 ---
@@ -85,7 +85,7 @@ ht-degree: 4%
   </sysFilter>
   ```
 
-* 您还可以保护架构中定义的某些操作(SOAP方法)。 只需将具有相应命名权限的access属性设置为值即可。
+* 您还可以保护架构中定义的一些操作(SOAP方法)。 只需将具有相应命名权限的access属性设置为值即可。
 
   ```
   <method name="grantVIPAccess" access="myNewRole">
@@ -119,7 +119,7 @@ ht-degree: 4%
 
 1. 使用&#x200B;**[!UICONTROL Web application]**&#x200B;内容类型并检查&#x200B;**[!UICONTROL Visible in the customization menus]**。
 
-   有关详细信息，请参见[此页面](../../delivery/using/personalization-blocks.md)。
+   有关更多信息，请参阅 [Campaign v8 文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html){target="_blank"}。
 
    以下是&#x200B;**营销活动验证码**&#x200B;的示例：
 
@@ -148,7 +148,7 @@ ht-degree: 4%
 
      `<div class="g-recaptcha" data-sitekey="YOUR_SITE_KEY"></div>`
 
-   您应该能够禁用“验证”按钮，但由于我们没有任何标准按钮/链接，因此最好在HTML中禁用该按钮/链接。 要了解如何执行此操作，请参阅[此页面](https://developers.google.com/recaptcha/)。
+   您应该能够禁用“验证”按钮，但由于我们没有任何标准按钮/链接，因此最好在HTML中禁用该按钮。 要了解如何执行此操作，请参阅[此页面](https://developers.google.com/recaptcha/)。
 
 ### 更新Web应用程序
 
@@ -176,7 +176,7 @@ ht-degree: 4%
 
 >[!IMPORTANT]
 >
->对于reCAPTCHA集成，您必须在HTML中添加客户端JavaScript（在`<head>...</head>`中）：
+>要进行reCAPTCHA集成，您必须在HTML中添加客户端JavaScript（在`<head>...</head>`中）：
 >
 >`<script src="https://www.google.com/recaptcha/api.js" async defer></script>`
 

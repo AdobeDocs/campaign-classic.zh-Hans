@@ -5,7 +5,7 @@ description: 选择退出 Web 应用程序跟踪
 badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v8"
 feature: Web Apps
 exl-id: 4bff6b55-3335-433e-a2ff-5d8c83e8f0d3
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 0507e0372a81351adc145dafdd3cbe5d5422dc00
 workflow-type: tm+mt
 source-wordcount: '676'
 ht-degree: 2%
@@ -22,13 +22,13 @@ Adobe Campaign允许您停止跟踪通过Cookie或Web信标选择退出行为跟
 
 >[!NOTE]
 >
->当脚本编写始终遵循[安全和隐私核对清单](https://helpx.adobe.com/cn/campaign/kb/acc-security.html#dev)中所述的准则时。
+>当脚本编写始终遵循[安全和隐私核对清单](https://helpx.adobe.com/campaign/kb/acc-security.html#dev)中所述的准则时。
 
 ## 配置横幅 {#configuring-the-banner-}
 
 要在Web应用程序或登陆页面中显示，需要配置横幅。
 
-Adobe Campaign附带一个横幅示例，您必须根据自己的需求进行调整。 此横幅版本在内容模型文件夹中显示为个性化块。 请参见[此页面](../../delivery/using/personalization-blocks.md)。
+Adobe Campaign附带一个横幅示例，您必须根据自己的需求进行调整。 此横幅版本在内容模型文件夹中显示为个性化块。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html){target="_blank"}。
 
 >[!IMPORTANT]
 >
@@ -92,7 +92,7 @@ Cookie名称为&#x200B;**acoptout**。 通用值包括：
 
 * **NL.ServerWebTracking.generateOptOutBanner(escapeJs)**：为要插入到JSSP页面中的选择退出横幅生成标记
 
-  **escapeJs {Boolean}**：当生成的标记需要转义以便在JavaScript中使用时，则为true。
+  **escapeJs{Boolean}**：当生成的标记需要转义以便在JavaScript中使用时，则为true。
 
   它会返回需要在页面中打印的选择退出横幅标记的HTML。
 
@@ -108,7 +108,7 @@ Cookie名称为&#x200B;**acoptout**。 通用值包括：
 
   通过将选择退出横幅插入JSSP页面来呈现该横幅的标记。 此函数在Jssp中为&lt;% %>之间，按原样调用
 
-  **escapeJs {Boolean}**：当生成的标记需要转义以便在JavaScript中使用时，返回true
+  **escapeJs{Boolean}**：当生成的标记需要转义以便在JavaScript中使用时，返回true
 
 JSSP示例：
 

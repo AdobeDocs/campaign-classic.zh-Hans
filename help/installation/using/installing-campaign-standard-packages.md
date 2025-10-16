@@ -5,9 +5,9 @@ description: 了解如何安装Campaign内置软件包
 feature: Installation, Application Settings
 badge-v7-prem: label="仅限内部部署/混合" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hans" tooltip="仅适用于内部部署和混合部署"
 exl-id: 2bc077c4-ed65-4157-bfc9-df5d0442f476
-source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
+source-git-commit: 0507e0372a81351adc145dafdd3cbe5d5422dc00
 workflow-type: tm+mt
-source-wordcount: '1270'
+source-wordcount: '1271'
 ht-degree: 3%
 
 ---
@@ -66,7 +66,7 @@ ht-degree: 3%
   </tr> 
   <tr> 
    <td> 营销活动（营销活动）<br /> </td> 
-   <td> 定义、优化、执行和分析通信和营销活动。 <a href="https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html?lang=zh-Hans" target="_blank">了解更多</a><br /> </td> 
+   <td> 定义、优化、执行和分析通信和营销活动。 <a href="https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html" target="_blank">了解更多</a><br /> </td> 
    <td> 营销</td>
   </tr> 
   <tr> 
@@ -157,7 +157,7 @@ ht-degree: 3%
   </tr> 
   <tr> 
    <td> 访问外部数据（联合数据访问）<br /> </td> 
-   <td> 提供联合数据访问(FDA)选项，以处理存储在一个或多个外部数据库中的信息，以便您能够访问外部数据而不改变Adobe Campaign数据的结构。  可选。 <a href="https://experienceleague.adobe.com/docs/campaign/automation/workflows/advanced-management/accessing-an-external-database-fda.html?lang=zh-Hans" target="_blank">了解更多</a> <br /> </td> 
+   <td> 提供联合数据访问(FDA)选项，以处理存储在一个或多个外部数据库中的信息，以便您能够访问外部数据而不改变Adobe Campaign数据的结构。  可选。 <a href="https://experienceleague.adobe.com/docs/campaign/automation/workflows/advanced-management/accessing-an-external-database-fda.html" target="_blank">了解更多</a> <br /> </td> 
    <td> 所有<br /> </td> 
   </tr> 
   <tr> 
@@ -172,7 +172,7 @@ ht-degree: 3%
   </tr> 
   <tr> 
    <td> 优惠券管理<br /> </td> 
-   <td> 创建一组优惠券以添加到即将推出的营销优惠中。 可选。 <a href="../../delivery/using/personalized-coupons.md">了解更多</a> <br /> </td> 
+   <td> 创建一组优惠券以添加到即将推出的营销优惠中。 可选。 <a href="https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalized-coupons.html" target="_blank">了解更多</a> <br /> </td> 
    <td> 营销<br /> </td> 
   </tr> 
   <tr> 
@@ -227,7 +227,7 @@ ht-degree: 3%
   </tr> 
   <tr> 
    <td> AMP支持<br /> </td> 
-   <td> 使您能够使用新的交互式AMP作为电子邮件格式，并发送动态电子邮件。 可选。 <a href="https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-interactive-content.html?lang=zh-Hans" target="_blank">了解更多</a> <br /> </td> 
+   <td> 使您能够使用新的交互式AMP作为电子邮件格式，并发送动态电子邮件。 可选。 <a href="https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-interactive-content.html" target="_blank">了解更多</a> <br /> </td> 
    <td> 全部 </td> 
   </tr> 
   <tr> 

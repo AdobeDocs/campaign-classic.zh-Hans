@@ -1,25 +1,27 @@
 ---
 product: campaign
-title: 个性化优惠券
+title: 个性化产品建议券
 description: 了解如何创建和插入个性化优惠券
 badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v8"
 feature: Personalization
 role: User
+hide: true
+hidefromtoc: true
 exl-id: 182939bb-7aff-4667-bda9-c5d48be3b946
-source-git-commit: 8e5a328bee7701adfedec6a533cc21b4ce548187
+source-git-commit: 0507e0372a81351adc145dafdd3cbe5d5422dc00
 workflow-type: tm+mt
-source-wordcount: '911'
+source-wordcount: '910'
 ht-degree: 1%
 
 ---
 
-# 个性化优惠券{#personalized-coupons}
+# 个性化产品建议券{#personalized-coupons}
 
 向投放添加优惠券可增强收件人的产品和服务价值。 您可以使用Campaign优惠券模块创建一组优惠券，并预计将其添加到即将推出的营销优惠中。 当您准备好创建投放时，请分配适用的优惠券。 由于优惠券在特定时段内有效，因此分配的优惠券将唯一链接到其投放消息。 此外，Campaign会确认在发送投放之前有足够的邮件数优惠券。
 
 >[!AVAILABILITY]
 >
->优惠券管理在Campaign v8的企业(FFDA)部署上下文中不可用。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/config/architecture/ffda/enterprise-deployment){target="_blank"}以了解详情。
+>优惠券管理在Campaign v8的企业(FFDA)部署上下文中不可用。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/architecture/ffda/enterprise-deployment){target="_blank"}以了解详情。
 
 优惠券管理依赖于必须安装的包。 要确认您拥有优惠券管理，请选中&#x200B;**[!UICONTROL Administration > Configuration > Package management > Installed packages.]**
 
@@ -48,7 +50,7 @@ ht-degree: 1%
 
    **[!UICONTROL Anonymous coupons]** ：匿名优惠券对所有收件人都相同。 确认在&#x200B;**优惠券类型**&#x200B;菜单中选择匿名，然后单击&#x200B;**保存**&#x200B;以生成优惠券。
 
-   **[!UICONTROL Individual coupons]** ：可使用附加优惠券代码进一步个性化单个优惠券。 例如，为体育器材商店的销售创建单个优惠券。 然而，获奖者名单很长，而且他们对一项体育运动没有同样的热情。 您可以根据运动（例如，足球、足球、棒球等）为各个优惠券添加代码名称 并将每个代码发送给适用的收件人。
+   **[!UICONTROL Individual coupons]** ：可使用附加优惠券代码进一步个性化单个优惠券。 例如，为体育器材商店的销售创建单个优惠券。 然而，获奖者名单很长，而且他们对一项体育运动没有同样的热情。 您可以根据运动（例如足球、足球、棒球等）为各个优惠券添加代码名称，并将每个代码发送给适用的收件人。
 
    1. 选择“个人”时，左下方将显示一个新选项卡“优惠券”。 转到&#x200B;**[!UICONTROL Coupons]**&#x200B;选项卡并单击&#x200B;**[!UICONTROL Add]**。
    1. 在弹出窗口提示时，为各个优惠券输入唯一代码。
@@ -150,9 +152,9 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->默认情况下，优惠券管理模块使用&#x200B;**nms：recipient**&#x200B;表。 [了解详情](../../configuration/using/about-data-model.md#default-recipient-table)。
+>默认情况下，优惠券管理模块使用&#x200B;**nms:recipient**&#x200B;表。 [了解详情](../../configuration/using/about-data-model.md#default-recipient-table)。
 >
->在此页面[&#128279;](../../configuration/using/about-custom-recipient-table.md)中了解如何使用自定义收件人表。
+>在此页面[中了解如何使用自定义收件人表](../../configuration/using/about-custom-recipient-table.md)。
 
 ## 管理优惠券不足 {#managing-insufficient-coupons}
 

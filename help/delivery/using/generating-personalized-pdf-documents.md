@@ -5,8 +5,10 @@ description: 了解如何生成个性化的PDF文档
 badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v8"
 feature: Personalization
 role: User
+hide: true
+hidefromtoc: true
 exl-id: e5239d99-256b-412b-be20-f64f822da9c3
-source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
+source-git-commit: 0507e0372a81351adc145dafdd3cbe5d5422dc00
 workflow-type: tm+mt
 source-wordcount: '452'
 ht-degree: 1%
@@ -23,7 +25,7 @@ Adobe Campaign允许您从LibreOffice或Microsoft Word文档为电子邮件附�
 
 要个性化您的文档，可以使用与电子邮件个性化相同的JavaScript功能。
 
-您需要激活&#x200B;**[!UICONTROL "The content of the file is personalized and converted to PDF during the delivery of each message"]**&#x200B;选项。 将文件附加到投放电子邮件时，此选项可访问。 有关附加计算文件的详细信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/attaching-files.html?lang=zh-Hans){target="_blank"}。
+您需要激活&#x200B;**[!UICONTROL "The content of the file is personalized and converted to PDF during the delivery of each message"]**&#x200B;选项。 将文件附加到投放电子邮件时，此选项可访问。 有关附加计算文件的详细信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/attaching-files.html){target="_blank"}。
 
 发票标头个性化示例：
 

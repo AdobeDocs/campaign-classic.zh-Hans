@@ -5,9 +5,9 @@ description: Campaign DCE入门
 feature: Web Apps, Web Forms, Landing Pages, Email Design
 badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v8"
 exl-id: f5d65e89-6b18-482b-97d8-11ab94f6775e
-source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
+source-git-commit: 0507e0372a81351adc145dafdd3cbe5d5422dc00
 workflow-type: tm+mt
-source-wordcount: '271'
+source-wordcount: '276'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->如果需要添加服务器端JavaScript代码，请使用个性化块。 [了解详情](../../delivery/using/personalization-blocks.md)。
+>如果需要添加服务器端JavaScript代码，请使用个性化块。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html){target="_blank"}。
 
 >[!CAUTION]
 >
@@ -52,7 +52,7 @@ ht-degree: 0%
 1. 从DCE模板创建投放 — [了解详情](use-case-creating-an-email-delivery.md)
 1. 选择现有内容或从[标准模板](template-management.md)创建内容
 1. 编辑和配置在线内容
-1. 发送投放 — 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=zh-Hans){target="_blank"}以了解详情
+1. 发送投放 — 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html){target="_blank"}以了解详情
 
 >[!NOTE]
 >

@@ -5,9 +5,9 @@ description: 编辑内容
 badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v8"
 feature: Web Apps, Web Forms, Landing Pages, Email Design
 exl-id: 968430d6-b1dd-47f8-8b31-39aaa18bc05c
-source-git-commit: 9df46ed923831ffdfb28acddfbc371cecafb251c
+source-git-commit: 0507e0372a81351adc145dafdd3cbe5d5422dc00
 workflow-type: tm+mt
-source-wordcount: '1226'
+source-wordcount: '1229'
 ht-degree: 0%
 
 ---
@@ -259,4 +259,4 @@ ht-degree: 0%
 
 插入后，个性化块名称将显示在编辑器中，并以黄色突出显示。 当生成个性化时，它自动适应收件人用户档案。
 
-有关内置个性化块以及如何定义自定义个性化块的更多信息，请参阅[此页面](../../delivery/using/personalization-blocks.md)。
+有关内置个性化块以及如何定义自定义个性化块的更多信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html){target="_blank"}。

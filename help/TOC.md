@@ -6,9 +6,9 @@ title: Campaign Classic v7 指南
 user-guide-description: Adobe Campaign Classic v7 产品文档。
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
+source-git-commit: 0507e0372a81351adc145dafdd3cbe5d5422dc00
 workflow-type: tm+mt
-source-wordcount: '2739'
+source-wordcount: '2744'
 ht-degree: 72%
 
 ---
@@ -164,11 +164,11 @@ ht-degree: 72%
       + [从模板创建投放 — 隐藏](delivery/using/creating-a-delivery-from-a-template.md)
    + 个性化投放 {#personalizing-deliveries}
       + [关于个性化](delivery/using/about-personalization.md)
-      + [个性化字段](delivery/using/personalization-fields.md)
-      + [个性化块](delivery/using/personalization-blocks.md)
-      + [条件内容](delivery/using/conditional-content.md)
-      + [个性化产品建议券](delivery/using/personalized-coupons.md)
-      + [生成个性化 PDF 文档](delivery/using/generating-personalized-pdf-documents.md)
+      + [个性化字段 — 隐藏](delivery/using/personalization-fields.md)
+      + [个性化块 — 隐藏](delivery/using/personalization-blocks.md)
+      + [条件内容 — 隐藏](delivery/using/conditional-content.md)
+      + [个性化优惠券 — 隐藏](delivery/using/personalized-coupons.md)
+      + [生成个性化的PDF文档 — 隐藏](delivery/using/generating-personalized-pdf-documents.md)
       + [自定义表情符号列表](delivery/using/customizing-emoticon-list.md)
    + 使用种子地址 {#using-seed-addresses}
       + [关于种子地址](delivery/using/about-seed-addresses.md)
@@ -386,7 +386,7 @@ ht-degree: 72%
       + [同步用户档案 — 隐藏](integrations/using/synchronizing-profiles.md)
       + [同步受众 — 隐藏](integrations/using/synchronizing-audiences.md)
       + [同步Web应用程序 — 隐藏](integrations/using/synchronizing-web-applications.md)
-      + [&#x200B; [!DNL ACS Connector]  — 隐藏疑难解答](integrations/using/troubleshooting-the-acs-connector.md)
+      + [ [!DNL ACS Connector]  — 隐藏疑难解答](integrations/using/troubleshooting-the-acs-connector.md)
 + [使用工作流实现自动化](workflow/using/about-workflows.md)
 + 使用工作流实现自动化 {#automating-with-workflows}
    + 工作流快速入门 {#introduction}
