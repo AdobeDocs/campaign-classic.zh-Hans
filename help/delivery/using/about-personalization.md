@@ -17,7 +17,7 @@ ht-degree: 2%
 
 使用Adobe Campaign，个性化您的投放，以发送与每个收件人的用户档案和兴趣匹配的消息。
 
-Personalization可帮助您使消息更具相关性和吸引力。 您可以使用收件人数据根据条件调整内容、添加动态字段或显示不同信息。 请参阅[Adobe Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalize.html){target=_blank}以了解如何在投放中设置和使用个性化功能。
+Personalization可帮助您使消息更具相关性和吸引力。 您可以使用收件人数据根据条件调整内容、添加动态字段或显示不同信息。 请参阅[Adobe Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalize.html?lang=zh-Hans){target=_blank}以了解如何在投放中设置和使用个性化功能。
 
 作为从Campaign v7过渡到v8的一部分，Campaign Classic文档集已得到简化和重新组织。 现在，Campaign v8文档集中专门提供了常用功能。
 
@@ -25,20 +25,20 @@ Personalization可帮助您使消息更具相关性和吸引力。 您可以使�
 
 >[!TAB 内容个性化文档]
 
-要了解有关内容个性化的更多信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalize.html){target=_blank}。
+要了解有关内容个性化的更多信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalize.html?lang=zh-Hans){target=_blank}。
 
 
-[![image](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalize.html){target=_blank}
+[![image](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalize.html?lang=zh-Hans){target=_blank}
 
 
 >[!TAB Personalization和条件内容]
 
 在Campaign v8文档&#x200B;**中了解与条件内容和个性化**&#x200B;相关的关键步骤：
 
-* [Personalization数据](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-data.html){target="_blank"}：了解如何使用不同的数据源进行个性化以自定义您的投放。
-* [个性化字段](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-fields.html){target="_blank"}：了解如何插入和使用个性化字段，以便每个收件人可以在邮件的主题或正文中看到自己的数据。
-* [个性化块](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html){target="_blank"}：了解如何使用个性化块，根据收件人数据将动态的条件内容插入邮件。
-* [条件内容](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/conditions.html){target="_blank"}：了解如何插入基于收件人字段值的条件内容。
+* [Personalization数据](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-data.html?lang=zh-Hans){target="_blank"}：了解如何使用不同的数据源进行个性化以自定义您的投放。
+* [个性化字段](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-fields.html?lang=zh-Hans){target="_blank"}：了解如何插入和使用个性化字段，以便每个收件人可以在邮件的主题或正文中看到自己的数据。
+* [个性化块](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html?lang=zh-Hans){target="_blank"}：了解如何使用个性化块，根据收件人数据将动态的条件内容插入邮件。
+* [条件内容](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/conditions.html?lang=zh-Hans){target="_blank"}：了解如何插入基于收件人字段值的条件内容。
 
 >[!TAB 优惠券、PDF文档和表情符号]
 
@@ -61,7 +61,7 @@ Before starting sending emails:
 
 * Make sure recipient profiles contain at least an email address.
 * Learn more about the Adobe Campaign [Delivery best practices](delivery-best-practices.md).
-* Read out these sections to learn more about Deliverability: [Deliverability management in Campaign](about-deliverability.md) and [Deliverability best practices guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html).
+* Read out these sections to learn more about Deliverability: [Deliverability management in Campaign](about-deliverability.md) and [Deliverability best practices guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=zh-Hans).
 
 The key steps to send an email are as follows:
 
