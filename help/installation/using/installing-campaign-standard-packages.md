@@ -172,7 +172,7 @@ ht-degree: 3%
   </tr> 
   <tr> 
    <td> 优惠券管理<br /> </td> 
-   <td> 创建一组优惠券以添加到即将推出的营销优惠中。 可选。 <a href="https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalized-coupons.html" target="_blank">了解更多</a> <br /> </td> 
+   <td> 创建一组优惠券以添加到即将推出的营销优惠中。 可选。 <a href="https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalized-coupons.html?lang=zh-Hans" target="_blank">了解更多</a> <br /> </td> 
    <td> 营销<br /> </td> 
   </tr> 
   <tr> 

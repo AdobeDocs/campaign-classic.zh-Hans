@@ -45,8 +45,8 @@ Personalization可帮助您使消息更具相关性和吸引力。 您可以使�
 请参阅Campaign v8文档&#x200B;**中的这些页面，了解个性化优惠券、PDF文档和表情符号自定义**：
 
 * [个性化优惠券](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/ppersonalized-coupons.html){target="_blank"}：了解如何在电子邮件投放中创建和分配个性化或匿名优惠券。
-* [生成个性化的PDF文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/generating-personalized-pdf-documents.html){target="_blank"}：了解如何为每个收件人生成具有个性化内容的PDF附件。
-* [自定义表情符号列表](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/customizing-emoticon-list.html){target="_blank"}：了解如何添加和管理表情符号以增强电子邮件。
+* [生成个性化的PDF文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/generating-personalized-pdf-documents.html?lang=zh-Hans){target="_blank"}：了解如何为每个收件人生成具有个性化内容的PDF附件。
+* [自定义表情符号列表](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/customizing-emoticon-list.html?lang=zh-Hans){target="_blank"}：了解如何添加和管理表情符号以增强电子邮件。
 
 >[!ENDTABS]
 
