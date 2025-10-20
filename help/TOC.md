@@ -8,8 +8,8 @@ sub-product: adobe campaign classic
 type: Documentation
 source-git-commit: 0507e0372a81351adc145dafdd3cbe5d5422dc00
 workflow-type: tm+mt
-source-wordcount: '2744'
-ht-degree: 72%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -23,21 +23,21 @@ ht-degree: 72%
    + 之前版本  {#previous-releases}
       + [2024](rn/using/release-2024.md)
       + [2023](rn/using/release-2023.md)
-      + [2022 — 隐藏](rn/using/release-2022.md)
-      + [2021 — 隐藏](rn/using/release-2021.md)
+      + [2022 - 隐藏](rn/using/release-2022.md)
+      + [2021 - 隐藏](rn/using/release-2021.md)
       + [[!DNL Gold Standard - HIDDEN]](rn/using/gold-standard.md)
    + [已弃用的功能](rn/using/deprecated-features.md)
    + [兼容性矩阵](rn/using/compatibility-matrix.md)
-   + [文档更新 — 隐藏](rn/using/documentation-updates.md)
+   + [文档更新 - 隐藏](rn/using/documentation-updates.md)
 + 快速入门 {#getting-started}
    + [Adobe Campaign Classic 入门](platform/using/about-adobe-campaign-classic.md)
    + [启动 Adobe Campaign](platform/using/launching-adobe-campaign.md)
-   + [了解Campaign UI](platform/using/adobe-campaign-workspace.md)
-   + [使用Campaign Explorer — 隐藏](platform/using/adobe-campaign-explorer.md)
-   + [浏览和自定义列表 — 隐藏](platform/using/adobe-campaign-ui-lists.md)
-   + [枚举 — 隐藏](platform/using/managing-enumerations.md)
+   + [了解 Campaign UI](platform/using/adobe-campaign-workspace.md)
+   + [使用 Campaign 资源管理器 - 隐藏](platform/using/adobe-campaign-explorer.md)
+   + [浏览和自定义列表 - 隐藏](platform/using/adobe-campaign-ui-lists.md)
+   + [枚举 - 隐藏](platform/using/managing-enumerations.md)
    + [Campaign 连接器](platform/using/about-connectors.md)
-   + [在Campaign中创建查询](platform/using/about-queries-in-campaign.md)
+   + [在 Campaign 中创建查询](platform/using/about-queries-in-campaign.md)
    + 常见问题解答 {#faq}
       + [最常见问题](platform/using/common-questions.md)
       + [全局概念](platform/using/faq-key-concepts.md)
@@ -61,11 +61,11 @@ ht-degree: 72%
       + [选择禁用个人信息销售](platform/using/privacy-requests-ccpa.md)
    + 轮廓管理 {#profile-management}
       + [关于轮廓](platform/using/about-profiles.md)
-      + [编辑个人资料 — 隐藏](platform/using/editing-a-profile.md)
-      + [添加配置文件 — 隐藏](platform/using/adding-profiles.md)
-      + [管理配置文件 — 隐藏](platform/using/managing-profiles.md)
+      + [编辑轮廓 - 隐藏](platform/using/editing-a-profile.md)
+      + [添加配置文件 - 隐藏](platform/using/adding-profiles.md)
+      + [管理配置文件 - 隐藏](platform/using/managing-profiles.md)
       + [更新数据](platform/using/updating-data.md)
-      + [导入和导出用户档案 — 隐藏](platform/using/exporting-and-importing-profiles.md)
+      + [导入和导出配置文件 - 隐藏](platform/using/exporting-and-importing-profiles.md)
       + [创建和管理列表](platform/using/creating-and-managing-lists.md)
    + 导入和导出数据 {#importing-and-exporting-data}
       + [数据导入和导出入门](platform/using/get-started-data-import-export.md)
@@ -85,24 +85,24 @@ ht-degree: 72%
          + [导入和导出最佳实践](platform/using/import-export-best-practices.md)
          + [SFTP 服务器最佳实践和故障排除](platform/using/sftp-server-usage.md)
    + 筛选数据 {#filtering-data}
-      + [筛选选项 — 隐藏](platform/using/filtering-options.md)
-      + [创建过滤器 — 隐藏](platform/using/creating-filters.md)
-      + [用例 — 隐藏](platform/using/use-case.md)
-   + [创建查询的步骤 — 隐藏](platform/using/steps-to-create-a-query.md)
-   + [定义筛选条件 — 隐藏](platform/using/defining-filter-conditions.md)
+      + [筛选选项 - 隐藏](platform/using/filtering-options.md)
+      + [创建筛选条件 - 隐藏](platform/using/creating-filters.md)
+      + [用例 - 隐藏](platform/using/use-case.md)
+   + [创建查询的步骤 - 隐藏](platform/using/steps-to-create-a-query.md)
+   + [定义筛选条件 - 隐藏](platform/using/defining-filter-conditions.md)
    + 权限 {#permissions}
-      + [权限入门](platform/using/access-management.md)
+      + [权限快速入门](platform/using/access-management.md)
       + 本机身份验证（旧版） {#native}
          + [创建和管理操作员](platform/using/access-management-operators.md)
          + [创建和管理组](platform/using/access-management-groups.md)
       + [使用已命名权限设置权限](platform/using/access-management-named-rights.md)
-      + [管理对文件夹的访问 — 隐藏](platform/using/access-management-folders.md)
+      + [管理对文件夹的访问 - 隐藏](platform/using/access-management-folders.md)
    + CRM 连接器 {#connectors}
       + [CRM 连接器入门](platform/using/crm-connectors.md)
       + [与 Microsoft Dynamics 365 连接](platform/using/crm-ms-dynamics.md)
       + [与 Salesforce.com 连接](platform/using/crm-sfdc.md)
       + [与 CRM 同步数据](platform/using/crm-data-sync.md)
-   + [帮助和支持选项 — 隐藏](support.md)
+   + [帮助和支持选项 - 隐藏](support.md)
 + 创建和发送消息 {#sending-messages}
    + [消息功能快速入门](delivery/using/communication-channels.md)
    + [投放设置 — 隐藏](delivery/using/delivery-settings.md)
@@ -382,11 +382,11 @@ ht-degree: 72%
       + [配置与  [!DNL Adobe Target] 的集成](integrations/using/configuring-the-integration-with-adobe-target.md)
       + [插入动态图像](integrations/using/inserting-a-dynamic-image.md)
    + ACS 连接器 {#acs-connector}
-      + [开始使用 [!DNL ACS Connector]  — 隐藏](integrations/using/acs-connector-principles-and-data-cycle.md)
-      + [同步用户档案 — 隐藏](integrations/using/synchronizing-profiles.md)
-      + [同步受众 — 隐藏](integrations/using/synchronizing-audiences.md)
-      + [同步Web应用程序 — 隐藏](integrations/using/synchronizing-web-applications.md)
-      + [&#x200B; [!DNL ACS Connector]  — 隐藏疑难解答](integrations/using/troubleshooting-the-acs-connector.md)
+      + [ [!DNL ACS Connector] 快速入门 - 隐藏](integrations/using/acs-connector-principles-and-data-cycle.md)
+      + [同步配置文件 - 隐藏](integrations/using/synchronizing-profiles.md)
+      + [同步受众 - 隐藏](integrations/using/synchronizing-audiences.md)
+      + [同步 Web 应用程序 - 隐藏](integrations/using/synchronizing-web-applications.md)
+      + [ [!DNL ACS Connector]  故障排除 - 隐藏](integrations/using/troubleshooting-the-acs-connector.md)
 + [使用工作流实现自动化](workflow/using/about-workflows.md)
 + 使用工作流实现自动化 {#automating-with-workflows}
    + 工作流快速入门 {#introduction}

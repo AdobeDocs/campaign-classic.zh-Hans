@@ -5,8 +5,8 @@ title: Adobe Campaign Classic v7 产品文档
 exl-id: 6b3f1689-80de-49fd-b7ee-7a2a1931d157
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '341'
-ht-degree: 97%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -96,7 +96,7 @@ Android Firebase Cloud Messaging (FCM) 服务的一些重要更改将于 2024 �
     <td>
       <img src="assets/do-not-localize/icon_profile-audience.svg" width="35px">
       <br/>
-      <strong>个人资料和受众</strong><br/><a href="platform/using/creating-and-managing-lists.md">创建列表</a> - <a href="delivery/using/about-services-and-subscriptions.md">服务和订阅</a> - <a href="platform/using/privacy-management.md">隐私和同意</a>
+      <strong>轮廓和受众</strong><br/><a href="platform/using/creating-and-managing-lists.md">创建列表</a> - <a href="delivery/using/about-services-and-subscriptions.md">服务和订阅</a> - <a href="platform/using/privacy-management.md">隐私和同意</a>
     </td>
     <td>
       <img src="assets/do-not-localize/icon-configure.svg" width="35px">
