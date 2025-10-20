@@ -419,7 +419,7 @@ Android 的推送通知改进 - [阅读更多](../../delivery/using/configuring-
 
 * [如何使用个性化字段个性化电子邮件](../../delivery/using/personalization-fields.md)
 
-* [如何在电子邮件中管理种子和验证](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#target-population){target="_blank"}。
+* [如何在电子邮件中管理种子和验证](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=zh-Hans#target-population){target="_blank"}。
 
 * [如何设置循环投放](../../workflow/using/recurring-delivery.md)
 
