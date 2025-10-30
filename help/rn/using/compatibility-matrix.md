@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '857'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -472,7 +472,7 @@ Microsoft Edge WebView2 运行时最新版本是 Campaign 客户端控制台的�
 
 ## 浏览器 {#Browsers}
 
-以下浏览器的最新版本与Campaign兼容，可用于进行Web访问。 有关详细信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-create.html?lang=zh-Hans#use-the-web-interface-){target=_blank}。
+以下浏览器的最新版本与 Campaign Web 访问兼容。有关更多信息，请参阅 [Campaign v8 文档](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-create.html?lang=zh-Hans#use-the-web-interface-){target=_blank}。
 
 * Google Chrome
 * Microsoft Edge
