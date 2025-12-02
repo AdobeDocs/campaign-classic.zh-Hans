@@ -1,18 +1,18 @@
 ---
 product: campaign
-title: 筛选模式
-description: 筛选模式
+title: 筛选架构
+description: 筛选架构
 feature: Custom Resources
-role: Data Engineer, Developer
+role: Developer
 exl-id: 009bed25-cd35-437c-b789-5b58a6d2d7c6
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '413'
+source-wordcount: '382'
 ht-degree: 1%
 
 ---
 
-# 筛选模式{#filtering-schemas}
+# 筛选架构{#filtering-schemas}
 
 ## 系统筛选器 {#system-filters}
 
@@ -60,44 +60,44 @@ ht-degree: 1%
 >
 >如果未指定筛选器，则所有操作员都将具有架构的读写权限。
 
-## Protect内置架构 {#protecting-built-in-schemas}
+## 保护内置架构 {#protecting-built-in-schemas}
 
 默认情况下，只有具有ADMINISTRATION权限的操作员才可以通过WRITE权限访问内置架构：
 
-* ncm：publishing
-* nl：monitoring
-* nms：calendar
-* xtk：builder
-* xtk：连接
-* xtk：dbInit
-* xtk：entityBackupNew
-* xtk：entityBackupOriginal
-* xtk：entityOriginal
-* xtk：form
-* xtk：funcList
-* xtk：fusion
-* xtk：image
-* xtk：javascript
-* xtk：jssp
-* xtk：jst
-* xtk：navtree
-* xtk：operatorGroup
-* xtk：package
-* xtk：queryDef
-* xtk：resourceMenu
-* xtk：rights
-* xtk：schema
-* xtk：scriptContext
-* xtk：specFile
-* xtk：sql
-* xtk：sqlSchema
-* xtk：srcSchema
-* xtk：字符串
-* xtk：xslt
+* ncm:publishing
+* nl:monitoring
+* nms:calendar
+* xtk:builder
+* xtk:connections
+* xtk:dbInit
+* xtk:entityBackupNew
+* xtk:entityBackupOriginal
+* xtk:entityOriginal
+* xtk:form
+* xtk:funcList
+* xtk:fusion
+* xtk:image
+* xtk:javascript
+* xtk:jssp
+* xtk:jst
+* xtk:navtree
+* xtk:operatorGroup
+* xtk:package
+* xtk:queryDef
+* xtk:resourceMenu
+* xtk:rights
+* xtk:schema
+* xtk:scriptContext
+* xtk:specFile
+* xtk:sql
+* xtk:sqlSchema
+* xtk:srcSchema
+* xtk:strings
+* xtk:xslt
 
 >[!IMPORTANT]
 >
->**xtk：sessionInfo**&#x200B;架构的读取和写入权限只能由Adobe Campaign实例的内部帐户访问。
+>**xtk:sessionInfo**&#x200B;架构的读取和写入权限只能由Adobe Campaign实例的内部帐户访问。
 
 ## 修改内置模式的系统筛选器 {#modifying-system-filters-of-built-in-schemas}
 

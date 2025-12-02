@@ -3,12 +3,12 @@ product: campaign
 title: 窗体结构
 description: 窗体结构
 feature: Application Settings
-role: Data Engineer, Developer
+role: Developer
 badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v8"
 exl-id: e61f2b63-06d3-4b8c-867f-1c729176d2da
-source-git-commit: 0fba6a2ad4ffa864e2f726f241aa9d7cd39072a6
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '2398'
+source-wordcount: '2394'
 ht-degree: 0%
 
 ---
@@ -17,9 +17,9 @@ ht-degree: 0%
 
 
 
-表单的描述是遵循表单架构&#x200B;**xtk：form**&#x200B;语法的结构化XML文档。
+表单的描述是遵循表单架构&#x200B;**xtk:form**&#x200B;语法的结构化XML文档。
 
-输入表单的XML文档必须包含具有&#x200B;**名称**&#x200B;和&#x200B;**命名空间**&#x200B;属性的`<form>`根元素，才能填充表单名称和命名空间。
+输入表单的XML文档必须包含具有`<form>`名称&#x200B;**和**&#x200B;命名空间&#x200B;**属性的**&#x200B;根元素，才能填充表单名称和命名空间。
 
 ```xml
 <form name="form_name" namespace="name_space">
@@ -27,7 +27,7 @@ ht-degree: 0%
 </form>
 ```
 
-默认情况下，表单与具有相同名称和命名空间的数据架构关联。 要将表单与不同的名称关联，请将`<form>`元素的&#x200B;**entity-schema**&#x200B;属性设置为架构键的名称。 为了说明输入表单的结构，让我们使用“cus：recipient”示例模式描述一个接口：
+默认情况下，表单与具有相同名称和命名空间的数据架构关联。 要将表单与不同的名称关联，请将&#x200B;**元素的** entity-schema`<form>`属性设置为架构键的名称。 为了说明输入表单的结构，让我们使用“cus:recipient”示例架构描述一个接口：
 
 ```xml
 <srcSchema name="recipient" namespace="cus">
@@ -57,7 +57,7 @@ ht-degree: 0%
 </form>
 ```
 
-编辑控件的说明从`<form>`根元素开始。 在具有&#x200B;**xpath**&#x200B;属性的&#x200B;**`<input>`**&#x200B;元素中输入编辑控件，该属性包含其架构中的字段路径。
+编辑控件的说明从`<form>`根元素开始。 在具有&#x200B;**`<input>`** xpath **属性的**&#x200B;元素中输入编辑控件，该属性包含其架构中的字段路径。
 
 编辑控件会自动适应对应的数据类型，并使用架构中定义的标签。
 
@@ -70,7 +70,7 @@ ht-degree: 0%
 
 ## 格式化 {#formatting}
 
-控件的布局类似于HTML表中使用的布局，可以将控件划分为若干列、交错元素或指定可用空间的占用。 但是，请记住，格式设置仅允许您按比例划分区域；您不能为对象指定固定维度。
+控件的布局类似于HTML表中使用的布局，可以将控件划分为多个列、交错元素或指定可用空间的占用。 但是，请记住，格式设置仅允许您按比例划分区域；您不能为对象指定固定维度。
 
 要以两列显示上述示例的控件，请执行以下操作：
 
@@ -86,7 +86,7 @@ ht-degree: 0%
 </form>
 ```
 
-具有&#x200B;**colcount**&#x200B;属性的&#x200B;**`<container>`**&#x200B;元素允许您强制将子控件的显示强制到两列上。
+具有&#x200B;**`<container>`** colcount **属性的**&#x200B;元素允许您强制将子控件的显示强制到两列上。
 
 控件上的&#x200B;**colspan**&#x200B;属性将控件扩展为在其值中输入的列数：
 
@@ -130,7 +130,7 @@ ht-degree: 0%
 </form>
 ```
 
-具有&#x200B;**分隔符**&#x200B;类型的&#x200B;**`<static>`**&#x200B;标记允许您添加分隔条，该分隔条具有包含在&#x200B;**标签**&#x200B;属性中的标签。
+具有&#x200B;**`<static>`**&#x200B;分隔符&#x200B;**类型的**&#x200B;标记允许您添加分隔条，该分隔条具有包含在&#x200B;**标签**&#x200B;属性中的标签。
 
 已使用带有帮助类型的`<static>`标记添加帮助文本。 文本的内容在&#x200B;**标签**&#x200B;属性中输入。
 
@@ -138,7 +138,7 @@ ht-degree: 0%
 
 容器允许您对一组控件进行分组。 它们由&#x200B;**`<container>`**&#x200B;元素表示。 上面使用它们来格式化跨越多个列的控件。
 
-`<container>`上的&#x200B;**xpath**&#x200B;属性允许您简化子控件的引用。 然后，控件的引用相对于父`<container>`元素。
+**上的** xpath`<container>`属性允许您简化子控件的引用。 然后，控件的引用相对于父`<container>`元素。
 
 不带“xpath”的容器示例：
 
@@ -187,7 +187,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->**style=&quot;down|up**（默认情况下）**&quot;**&#x200B;功能强制将选项卡标签垂直定位在控件下方或上方。 此功能属于可选功能。
+>**style=&quot;down|up**（默认情况下）**&quot;**功能强制将选项卡标签垂直定位在控件下方或上方。 此功能为可选项。
 >`<container style="down" type="notebook">  … </container>`
 
 #### 图标列表 {#icon-list}
@@ -211,7 +211,7 @@ ht-degree: 0%
 
 主容器由&#x200B;**type=&quot;iconbox&quot;**&#x200B;属性定义。 在子容器中声明与图标关联的页面。 图标的标签由&#x200B;**标签**&#x200B;属性填充。
 
-页面的图标是从`img="<image>"`属性中填充的，其中`<image>`是与由名称和命名空间组成的键对应的图像名称（例如“xtk：properties.png”）。
+页面的图标是从`img="<image>"`属性中填充的，其中`<image>`是与由名称和命名空间组成的键对应的图像名称（例如，“xtk:properties.png”）。
 
 **[!UICONTROL Administration > Configuration > Images]**&#x200B;节点中的图像可用。
 
@@ -277,7 +277,7 @@ ht-degree: 0%
 
 ![](assets/d_ncs_integration_form_exemple10.png)
 
-**[!UICONTROL Edit link]** （放大镜）图标可启动链接元素的编辑表单。 默认情况下，使用的形式是在目标架构的键上推导的。 **表单**&#x200B;属性允许您强制使用编辑表单的名称（例如“cus：company2”）。
+**[!UICONTROL Edit link]** （放大镜）图标可启动链接元素的编辑表单。 默认情况下，使用的形式是在目标架构的键上推导的。 **表单**&#x200B;属性允许您强制使用编辑表单的名称（例如“cus:company2”）。
 
 您可以通过从输入表单中的链接定义添加&#x200B;**`<sysfilter>`**&#x200B;元素来限制目标元素的选择：
 
@@ -346,7 +346,7 @@ ht-degree: 0%
 
 通过&#x200B;**[!UICONTROL Add]**&#x200B;和&#x200B;**[!UICONTROL Delete]**&#x200B;按钮，您可以在链接中添加和删除收藏集元素。 默认情况下，添加元素会启动目标架构的编辑表单。
 
-在列表的&#x200B;**`<input>`**&#x200B;标记上完成&#x200B;**zoom=&quot;true&quot;**&#x200B;属性后，将自动添加&#x200B;**[!UICONTROL Detail]**&#x200B;按钮：它允许您启动所选行的编辑表单。
+在列表的&#x200B;**[!UICONTROL Detail]**&#x200B;标记上完成&#x200B;**zoom=&quot;true&quot;**&#x200B;属性后，将自动添加&#x200B;**`<input>`**&#x200B;按钮：它允许您启动所选行的编辑表单。
 
 在加载列表时可以应用筛选和排序：
 
@@ -378,7 +378,7 @@ ht-degree: 0%
 </srcSchema>
 ```
 
-例如，我们先从“cus：recipient”模式的输入表单开始。 该列表必须显示与服务订阅的关联，并且必须允许您通过选择现有服务来添加订阅。
+例如，我们从“cus:recipient”架构的输入表单开始。 该列表必须显示与服务订阅的关联，并且必须允许您通过选择现有服务来添加订阅。
 
 ![](assets/d_ncs_integration_form_exemple12.png)
 
@@ -464,7 +464,7 @@ ht-degree: 0%
 </input>
 ```
 
-编辑表单从列表定义下的`<form>`元素中完成。 其结构与输入表单的结构相同。 当在列表的&#x200B;**`<input>`**&#x200B;标记上完成&#x200B;**zoom=&quot;true&quot;**&#x200B;属性时，将自动添加&#x200B;**[!UICONTROL Detail]**&#x200B;按钮。 此属性允许您启动所选行的编辑表单。
+编辑表单从列表定义下的`<form>`元素中完成。 其结构与输入表单的结构相同。 当在列表的&#x200B;**[!UICONTROL Detail]**&#x200B;标记上完成&#x200B;**zoom=&quot;true&quot;**&#x200B;属性时，将自动添加&#x200B;**`<input>`**&#x200B;按钮。 此属性允许您启动所选行的编辑表单。
 
 >[!NOTE]
 >
@@ -483,7 +483,7 @@ ht-degree: 0%
 
 ## 不可编辑的字段 {#non-editable-fields}
 
-要显示字段并阻止对其进行编辑，请使用&#x200B;**`<value>`**&#x200B;标记或完成&#x200B;**`<input>`**&#x200B;标记上的&#x200B;**readOnly=&quot;true&quot;**&#x200B;属性。
+要显示字段并阻止对其进行编辑，请使用&#x200B;**`<value>`**&#x200B;标记或完成&#x200B;**标记上的** readOnly=&quot;true&quot;**`<input>`**&#x200B;属性。
 
 “性别”字段示例：
 
@@ -527,7 +527,7 @@ ht-degree: 0%
 
 此控件在要编辑的一组字段上构建树。
 
-要编辑的控件将分组到在树控件的&#x200B;**`<input>`**&#x200B;标记下输入的&#x200B;**`<container>`**&#x200B;中：
+要编辑的控件将分组到在树控件的&#x200B;**`<container>`**&#x200B;标记下输入的&#x200B;**`<input>`**&#x200B;中：
 
 ```xml
 <input nolabel="true" type="treeEdit">
@@ -599,7 +599,7 @@ ht-degree: 0%
 </if>
 ```
 
-与&#x200B;**`<error>`**&#x200B;标记结合使用的&#x200B;**`<check expr="<condition>" />`**&#x200B;标记阻止表单验证，如果不满足条件，则显示错误消息：
+与&#x200B;**`<check expr="<condition>" />`**&#x200B;标记结合使用的&#x200B;**`<error>`**&#x200B;标记阻止表单验证，如果不满足条件，则显示错误消息：
 
 ```xml
 <leave>
@@ -632,13 +632,13 @@ ht-degree: 0%
 
 ![](assets/d_ncs_integration_form_exemple19.png)
 
-`<form>`元素上存在&#x200B;**type=&quot;wizard&quot;**&#x200B;属性，允许您定义表单构建中的助理模式。 这些页面是从`<container>`元素完成的，这些元素是`<form>`元素的子元素。 使用标题和描述的标题属性填充页面的`<container>`元素，以在页面标题下显示描述。 已自动添加&#x200B;**[!UICONTROL Previous]**&#x200B;和&#x200B;**[!UICONTROL Next]**&#x200B;按钮，以允许在不同页面之间浏览。
+**元素上存在** type=&quot;wizard&quot;`<form>`属性，允许您定义表单构建中的助理模式。 这些页面是从`<container>`元素完成的，这些元素是`<form>`元素的子元素。 使用标题和描述的标题属性填充页面的`<container>`元素，以在页面标题下显示描述。 已自动添加&#x200B;**[!UICONTROL Previous]**&#x200B;和&#x200B;**[!UICONTROL Next]**&#x200B;按钮，以允许在不同页面之间浏览。
 
 “**[!UICONTROL Finish]**”按钮保存输入的数据并关闭表单。
 
 ### SOAP方法 {#soap-methods}
 
-SOAP方法执行可以从页面末尾填充的&#x200B;**`<leave>`**&#x200B;标记中启动。
+可以从页面末尾填充的&#x200B;**`<leave>`**&#x200B;标记启动SOAP方法执行。
 
 **`<soapcall>`**&#x200B;标记包含对方法的调用，并具有以下输入参数：
 
@@ -649,9 +649,9 @@ SOAP方法执行可以从页面末尾填充的&#x200B;**`<leave>`**&#x200B;标�
 </soapCall>
 ```
 
-服务的名称及其实现架构是通过&#x200B;**`<soapcall>`**&#x200B;标记的&#x200B;**name**&#x200B;和&#x200B;**service**&#x200B;属性输入的。
+服务的名称及其实现架构是通过&#x200B;**标记的** name **和** service **`<soapcall>`**&#x200B;属性输入的。
 
-输入参数在&#x200B;**`<soapcall>`**&#x200B;标记下的&#x200B;**`<param>`**&#x200B;元素中进行了描述。
+输入参数在&#x200B;**`<param>`**&#x200B;标记下的&#x200B;**`<soapcall>`**&#x200B;元素中进行了描述。
 
 必须通过&#x200B;**type**&#x200B;特性指定参数类型。 可能的类型如下所示：
 

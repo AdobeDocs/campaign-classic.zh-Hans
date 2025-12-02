@@ -3,11 +3,11 @@ product: campaign
 title: 其他Web跟踪参数
 description: 了解有关Web跟踪参数的更多信息
 feature: Configuration, Instance Settings
-role: Data Engineer, Developer
+role: Developer
 exl-id: d14d94fd-b078-4893-be84-31d37a1d50f5
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '352'
+source-wordcount: '351'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 * **amount**：表示交易金额，
 * **article**：表示事务中的项目数。
 
-这些参数在&#x200B;**nms：webTrackingLog**&#x200B;架构中定义，是报表中看到的一些指标。
+这些参数在&#x200B;**nms:webTrackingLog**&#x200B;架构中定义，是报表中看到的一些指标。
 
 要定义其他参数，必须扩展此架构。
 

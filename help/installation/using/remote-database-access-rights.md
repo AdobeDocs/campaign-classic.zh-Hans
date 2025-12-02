@@ -7,9 +7,9 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 3d43010e-53f8-4aa2-a651-c422a02191fe
-source-git-commit: f032ed3bdc0b402c8281bc34e6cb29f3c575aaf9
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '923'
+source-wordcount: '922'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 1. 在Adobe Campaign资源管理器中选择&#x200B;**[!UICONTROL Administration > Access Management > Named Rights]**&#x200B;节点。
 1. 通过指定您选择的标签来创建新的权限。
-1. **[!UICONTROL Name]**&#x200B;字段必须采用以下格式&#x200B;**user：base@server**，其中：
+1. **[!UICONTROL Name]**&#x200B;字段必须采用以下格式&#x200B;**用户:base@server**，其中：
 
    * **用户**&#x200B;对应于外部数据库中的用户名称。
    * **base**&#x200B;对应于外部数据库的名称。
@@ -30,7 +30,7 @@ ht-degree: 0%
 
      >[!NOTE]
      >
-     >**：base**&#x200B;部分在Oracle中是可选的。
+     >**:base**&#x200B;部分在Oracle中是可选的。
 
 1. 保存指明权限，然后将其从Adobe Campaign资源管理器的&#x200B;**[!UICONTROL Administration > Access Management > Operators]**&#x200B;节点链接到您选择的用户。
 
@@ -64,7 +64,7 @@ ht-degree: 0%
 | **正在访问客户端数据** | 选择（将来）表或视图权限 | SELECT权限 | 选择或选择任何表权限 | 选择权限 | SELECT权限 | SELECT权限 |
 | **正在访问元数据** | SELECT on INFORMATION_SCHEMA方案权限 | SELECT权限 | 使用DESCRIBE语句不需要特权 | 查看定义权限 | 使用“\d table”命令不需要权限 | SELECT权限 |
 
-|   | teradata | InfiniDB | sybase IQ/Sybase ASE | Netezza | AsterData |
+|   | Teradata | InfiniDB | Sybase IQ/Sybase ASE | Netezza | AsterData |
 |:-:|:-:|:-:|:-:|:-:|:-:|
 | **正在连接到远程数据库** | CONNECT权限 | 创建与具有ALL PRIVILEGES的远程主机绑定的用户 | 使用CONNECT语句无需权限 | 无需权限 | CONNECT权限 |
 | **正在创建表** | CREATE TABLE或TABLE关键字 | CREATE权限 | 资源权限和CREATE权限 | TABLE权限 | CREATE权限 |
@@ -75,5 +75,5 @@ ht-degree: 0%
 | **正在监视执行** | 使用EXPLAIN语句不需要特权 | SELECT权限 | 只有系统管理员可以执行sp_showplan | 使用EXPLAIN语句不需要特权 | 使用EXPLAIN语句不需要特权 |
 | **正在写入数据** | INSERT and UPDATE权限 | INSERT and UPDATE权限 | INSERT和UPDATE权限 | INSERT and UPDATE权限 | INSERT and UPDATE权限 |
 | **将数据加载到表中** | SELECT和INSERT权限分别使用COPY TO和COPY FROM语句 | FILE权限 | 是表的所有者或ALTER权限。 根据 — gl选项的不同，可能只有在用户具有DBA权限时才执行LOAD TABLE | SELECT和INSERT权限 | SELECT和INSERT权限 |
-| **正在访问客户端数据** | SELECT权限 | 选择权限 | SELECT权限 | SELECT权限 |
+| **正在访问客户端数据** | SELECT权限 | 选择权限 | SELECT权限 | SELECT权限 |  |
 | **正在访问元数据** | 显示权限 | SELECT权限 | 使用DESCRIBE语句无需权限 | 使用“\d table”命令不需要权限 | 使用SHOW命令不需要任何特权 |

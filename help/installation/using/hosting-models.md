@@ -3,13 +3,13 @@ product: campaign
 title: 托管模型
 description: 了解活动托管模型
 feature: Installation, Architecture, Deployment
-role: Architect
+role: Developer
 level: Beginner
 exl-id: a06b1365-d487-4df1-8f4a-7268b871a427
-source-git-commit: a38d53f4b37aadbc53446b5e399af2eae56c12af
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
 source-wordcount: '615'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -21,11 +21,11 @@ Adobe Campaign提供了三种托管模型供您选择，它们提供了灵活性
 
 >[!NOTE]
 >
->对于Adobe托管的环境，主要安装和配置步骤只能由Adobe执行，例如配置服务器和自定义实例配置文件。 要了解有关部署模式之间主要差异的更多信息，请参阅[此页面](../../installation/using/capability-matrix.md)。
+>对于Adobe托管环境，主要安装和配置步骤只能由Adobe执行，例如配置服务器和自定义实例配置文件。 要了解有关部署模式之间主要差异的更多信息，请参阅[此页面](../../installation/using/capability-matrix.md)。
 
 ## Managed Services/托管
 
-Adobe Campaign可以as a Managed Service部署：Adobe Campaign的所有组件（包括用户界面、执行管理引擎和客户的Campaign数据库）均完全由Adobe托管，包括电子邮件执行、镜像页面、跟踪服务器和面向外部的Web组件（例如取消订阅页面/首选项中心和登陆页面）。
+Adobe Campaign可部署到as a Managed Service：Adobe Campaign的所有组件（包括用户界面、执行管理引擎和客户的Campaign数据库）都完全由Adobe托管，包括电子邮件执行、镜像页面、跟踪服务器和面向外部的Web组件（如取消订阅页面/首选项中心和登陆页面）。
 
 ![](assets/deployment_hosted.png)
 
@@ -46,16 +46,16 @@ Adobe Campaign可以内部部署：Adobe Campaign的所有组件（包括用户�
 作为内部部署客户，在开始部署Campaign Classic之前，请注意以下先决条件和建议：
 
 * 阅读[兼容性矩阵](../../rn/using/compatibility-matrix.md)，其中列出了Adobe Campaign支持的所有系统和组件版本。
-* 根据您的环境，阅读Windows[&#128279;](../../installation/using/prerequisites-of-campaign-installation-in-windows.md)的[先决条件和Linux](../../installation/using/prerequisites-of-campaign-installation-in-linux.md)的先决条件。
-* 在此部分[&#128279;](../../installation/using/database.md)中了解与数据库引擎相关的建议。
+* 根据您的环境，阅读Windows[的](../../installation/using/prerequisites-of-campaign-installation-in-windows.md)先决条件和Linux[的](../../installation/using/prerequisites-of-campaign-installation-in-linux.md)先决条件。
+* 在此部分[中了解与数据库引擎](../../installation/using/database.md)相关的建议。
 * 检查服务器上是否安装了所需的数据库访问层，以及是否可从Adobe Campaign帐户访问。 [了解详情](../../installation/using/application-server.md)。
 * 根据某些进程需要与其他进程通信或访问LAN和Internet来配置网络。 这意味着这些进程需要打开某些TCP端口。 [了解有关](../../installation/using/network-configuration.md)网络配置要求的更多信息。
 * 阅读[Campaign安全和隐私检查清单](https://helpx.adobe.com/cn/campaign/kb/acc-security.html)。
-* 请参阅本文[&#128279;](https://helpx.adobe.com/cn/campaign/kb/hardware-sizing-guide.html)中有关估算内部部署的硬件要求的一般准则。
+* 请参阅本文[中有关估算内部部署](https://helpx.adobe.com/cn/campaign/kb/hardware-sizing-guide.html)的硬件要求的一般准则。
 
 ## 混合
 
-作为混合模型部署时，Adobe Campaign解决方案软件驻留在客户站点内，并以Adobe云服务的形式提供执行管理。 Adobe Campaign营销实例安装在客户的防火墙内，因此个人身份信息(PII)保留在公司内部，并且只有个性化电子邮件所需的数据才会发送到云以执行电子邮件。 在云中托管的执行实例接收来自内部部署实例的请求以投放电子邮件。 此实例可将所有电子邮件个性化并交付。 云中不会永久存储任何类型的数据。
+作为混合模型部署时，Adobe Campaign解决方案软件驻留在客户站点内，执行管理由Adobe以云服务的形式提供。 Adobe Campaign营销实例安装在客户的防火墙内，因此个人身份信息(PII)保留在公司内部，并且只有个性化电子邮件所需的数据才会发送到云以执行电子邮件。 在云中托管的执行实例接收来自内部部署实例的请求以投放电子邮件。 此实例可将所有电子邮件个性化并交付。 云中不会永久存储任何类型的数据。
 
 ![](assets/deployment_hybrid.png)
 

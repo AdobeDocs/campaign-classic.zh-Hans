@@ -3,13 +3,13 @@ product: campaign
 title: 了解Adobe Campaign中的架构结构
 description: 架构结构
 feature: Custom Resources
-role: Data Engineer, Developer
+role: Developer
 audience: configuration
 content-type: reference
 level: Intermediate, Experienced
 topic-tags: schema-reference
 exl-id: 3405efb8-a37c-4622-a271-63d7a4148751
-source-git-commit: 2bfcec5eaa1145cfb88adfa9c8b2f72ee3cd9469
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
 source-wordcount: '1511'
 ht-degree: 1%
@@ -20,7 +20,7 @@ ht-degree: 1%
 
 架构的基本结构如下所述。
 
-## 数据架构 {#data-schema}
+## 数据架构  {#data-schema}
 
 对于`<srcschema>`，结构如下：
 
@@ -65,7 +65,7 @@ ht-degree: 1%
 </srcSchema>
 ```
 
-数据架构的XML文档必须包含具有&#x200B;**名称**&#x200B;和&#x200B;**命名空间**&#x200B;属性的&#x200B;**`<srcschema>`**&#x200B;根元素，才能填充架构名称及其命名空间。
+数据架构的XML文档必须包含具有&#x200B;**`<srcschema>`**&#x200B;名称&#x200B;**和**&#x200B;命名空间&#x200B;**属性的**&#x200B;根元素，才能填充架构名称及其命名空间。
 
 ```sql
 <srcSchema name="schema_name" namespace="namespace">
@@ -133,7 +133,7 @@ ht-degree: 1%
 
 ## 数据类型 {#data-types}
 
-数据类型是通过&#x200B;**`<attribute>`**&#x200B;和&#x200B;**`<element>`**&#x200B;元素中的&#x200B;**type**&#x200B;属性输入的。
+数据类型是通过&#x200B;**和**&#x200B;元素中的&#x200B;**`<attribute>`** type **`<element>`**&#x200B;属性输入的。
 
 [`<attribute>`元素](../../configuration/using/schema/attribute.md)和[`<element>`元素](../../configuration/using/schema/element.md)的描述中提供了详细列表。
 

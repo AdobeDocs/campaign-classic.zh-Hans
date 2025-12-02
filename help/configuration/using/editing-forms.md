@@ -3,10 +3,10 @@ product: campaign
 title: 编辑表单
 description: 编辑表单
 feature: Configuration
-role: Data Engineer, Developer
+role: Developer
 badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v8"
 exl-id: 24604dc9-f675-4e37-a848-f1911be84f3e
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
 source-wordcount: '1707'
 ht-degree: 2%
@@ -151,11 +151,11 @@ Forms是`xtk:form`类型的实体。 您可以在`xtk:form`架构中查看输入
 
 若要查找图像，请从菜单中选择&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Configuration]** > **[!UICONTROL Images]**。
 
-要将图像与表单中的元素（例如图标）相关联，可以添加对图像的引用。 例如，在`<container>`元素中使用`img`特性。
+要将图像与表单中的元素（例如图标）相关联，可以添加对图像的引用。 例如，在`img`元素中使用`<container>`特性。
 
 语法： `img="`*`namespace`*`:`*`filename`*`.`*`extension`*`"`
 
-此示例显示对`ncm`命名空间中的`book.png`和`detail.png`图像的引用：
+此示例显示对`book.png`命名空间中的`detail.png`和`ncm`图像的引用：
 
 ```xml
 <container img="ncm:book.png" label="General">
@@ -254,7 +254,7 @@ Forms是`xtk:form`类型的实体。 您可以在`xtk:form`架构中查看输入
    | `<container>` | `type="visibleGroup" visibleIf="`*edit-expr*`"` | 有条件地显示一组字段 |
    | `<container>` | `type="enabledGroup" enabledIf="`*edit-expr*`"` | 有条件地启用一组字段 |
 
-   例如：
+   示例：
 
    ```xml
    <container type="enabledGroup" enabledIf="@gender=1">
@@ -292,7 +292,7 @@ Forms是`xtk:form`类型的实体。 您可以在`xtk:form`架构中查看输入
 
 要将现有表单的类型更改为`iconbox`，请执行以下步骤：
 
-1. 将`<form>`元素的`type`属性更改为`iconbox`：
+1. 将`type`元素的`<form>`属性更改为`iconbox`：
 
    ```xml
    <form […] type="iconbox">
@@ -320,7 +320,7 @@ Forms是`xtk:form`类型的实体。 您可以在`xtk:form`架构中查看输入
       </form>
       ```
 
-   或者，从现有`<container>`元素中删除`type="frame"`特性。
+   或者，从现有`type="frame"`元素中删除`<container>`特性。
 
 ### 创建笔记本表单
 
@@ -330,7 +330,7 @@ Forms是`xtk:form`类型的实体。 您可以在`xtk:form`架构中查看输入
 
 要将现有表单的类型更改为`notebook`，请执行以下步骤：
 
-1. 将`<form>`元素的`type`属性更改为`notebook`：
+1. 将`type`元素的`<form>`属性更改为`notebook`：
 
    ```xml
    <form […] type="notebook">
@@ -358,7 +358,7 @@ Forms是`xtk:form`类型的实体。 您可以在`xtk:form`架构中查看输入
      </form>
    ```
 
-   或者，从现有`<container>`元素中删除`type="frame"`特性。
+   或者，从现有`type="frame"`元素中删除`<container>`特性。
 
 ### 嵌套表单
 
@@ -463,7 +463,7 @@ Forms是`xtk:form`类型的实体。 您可以在`xtk:form`架构中查看输入
 
 要授予对字段的只读访问权限，请使用`readOnly="true"`属性。 例如，您可能希望显示记录的主键，但具有只读访问权限。 [了解更多信息](form-structure.md#non-editable-fields)。
 
-在此示例中，`nms:recipient`架构的主键(`iRecipientId`)以只读访问权限显示：
+在此示例中，`iRecipientId`架构的主键(`nms:recipient`)以只读访问权限显示：
 
 ```xml
 <value xpath="@iRecipientId" readOnly="true"/>
@@ -495,7 +495,7 @@ Forms是`xtk:form`类型的实体。 您可以在`xtk:form`架构中查看输入
 
 1. 在JS文件中创建验证函数。
 
-   例如：
+   示例：
 
    ```js
    function nms_recipient_checkValue(value)
@@ -509,13 +509,13 @@ Forms是`xtk:form`类型的实体。 您可以在`xtk:form`架构中查看输入
    }
    ```
 
-   在此示例中，函数名为`checkValue`。 此函数用于检查`nms`命名空间中的`recipient`数据类型。 将记录正在检查的值。 如果该值无效，则会记录一条错误消息。 如果该值有效，则返回值1。
+   在此示例中，函数名为`checkValue`。 此函数用于检查`recipient`命名空间中的`nms`数据类型。 将记录正在检查的值。 如果该值无效，则会记录一条错误消息。 如果该值有效，则返回值1。
 
    您可以使用返回值修改表单。
 
 1. 在表单中，将`<soapCall>`元素添加到`<leave>`元素。
 
-   在此示例中，SOAP调用用于验证`@valueToCheck`字符串：
+   在此示例中，使用SOAP调用来验证`@valueToCheck`字符串：
 
    ```xml
    <form name="recipient" (…)>

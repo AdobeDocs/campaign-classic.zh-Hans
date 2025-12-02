@@ -3,12 +3,12 @@ product: campaign
 title: Adobe Campaign Classic数据模型描述
 description: 本文档介绍了Adobe Campaign数据模型
 feature: Data Model
-role: Data Engineer, Developer
+role: Developer
 exl-id: fc0fd23c-f9ea-4e30-b47b-a84143d882ca
-source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
 source-wordcount: '2354'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -113,7 +113,7 @@ NmsRcpGrpRel关系表仅包含与iRecipientId和iGroupId链接表的标识符对
 
 ## 营销活动管理 {#campaign-management}
 
-这组表链接到&#x200B;**营销活动**&#x200B;模块，该模块允许定义、优化、执行和分析通信和营销活动。 有关详细信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html?lang=zh-Hans){target=_blank}。
+这组表链接到&#x200B;**营销活动**&#x200B;模块，该模块允许定义、优化、执行和分析通信和营销活动。 有关更多信息，请参阅 [Campaign v8 文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html){target=_blank}。
 
 ![](assets/data-model_campaign.png)
 

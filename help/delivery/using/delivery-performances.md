@@ -4,9 +4,9 @@ title: 投放性能最佳实践
 description: 了解有关投放性能和最佳实践的更多信息
 badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v8"
 feature: Deliverability
-role: User, Data Engineer
+role: User, Developer
 exl-id: cc793d7b-0a26-4a75-97ed-d79c87d9b3b8
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
 source-wordcount: '465'
 ht-degree: 5%
@@ -20,7 +20,7 @@ ht-degree: 5%
 **相关主题：**
 
 * [投放仪表板](delivery-dashboard.md)
-* [投放疑难解答](delivery-troubleshooting.md)
+* [投放故障排除](delivery-troubleshooting.md)
 * [关于可投放性](about-deliverability.md)
 
 ## 性能最佳实践 {#best-practices-performance}
@@ -51,6 +51,6 @@ ht-degree: 5%
 
 * **投放的大小**：大型投放可能需要更长的时间才能完成。 MTA子级配置为处理默认的批次大小，这适用于大多数实例，但在投放速度持续缓慢时需要检查。
 * **投放目标**：投放性能禁止受软退回错误的影响，软退回错误根据重试配置进行处理。 错误数越多，所需的重试次数就越多。
-* **整个平台负载**：发送多个大型投放时，整个平台可能会受到影响。 您还可以检查IP信誉和投放问题。 有关详细信息，请参阅[此部分](about-deliverability.md)和[Adobe可投放性最佳实践指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=zh-Hans)。
+* **整个平台负载**：发送多个大型投放时，整个平台可能会受到影响。 您还可以检查IP信誉和投放问题。 有关更多信息，请参阅[此章节](about-deliverability.md)和[Adobe可投放性最佳实践指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=zh-Hans)。
 
 平台和数据库维护也会影响投放发送性能。 有关详细信息，请参见[此页面](../../production/using/database-performances.md)。

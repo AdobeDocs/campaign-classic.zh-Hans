@@ -3,11 +3,11 @@ product: campaign
 title: 实施 SOAP 方法
 description: 实施 SOAP 方法
 feature: Configuration
-role: Data Engineer, Developer
+role: Developer
 exl-id: 441a0e5c-fa7f-46c8-a65a-5cca4c846d43
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '419'
+source-wordcount: '417'
 ht-degree: 3%
 
 ---
@@ -37,9 +37,9 @@ ht-degree: 3%
 
 此名称与“JavaScript代码”类型实体的名称（以及命名空间）一致。
 
-例如：
+示例：
 
-testLog(msg)方法在nms：recipient扩展中声明
+testLog(msg)方法在nms:recipient扩展中声明
 
 ```
 <method name="testLog" static="true" library="cus:test">
@@ -55,7 +55,7 @@ testLog(msg)方法在nms：recipient扩展中声明
 
 ### 条件 {#definition}
 
-SOAP方法以分组到表示库的脚本中的JavaScript函数的形式实现。
+SOAP方法以分组到表示库的脚本中的JavaScript函数的形式实施。
 
 >[!NOTE]
 >
@@ -71,9 +71,9 @@ SOAP方法以分组到表示库的脚本中的JavaScript函数的形式实现。
  <schema-namespace>_<schema-name>_<method-name>
 ```
 
-例如：
+示例：
 
-以下JavaScript函数是上述方法的实现。 应使用&quot;cus：test&quot;名称在&quot;JavaScript Code&quot;类型实体中定义。
+以下JavaScript函数是上述方法的实现。 应使用&quot;cus:test&quot;名称在&quot;JavaScript Code&quot;类型实体中定义。
 
 ```
 function nms_recipient_testLog(message)
@@ -107,7 +107,7 @@ function nms_recipient_setLastName(self, name)
 
 要返回多个值时，必须在表中显示它们。
 
-例如：
+示例：
 
 ```
 function nms_recipient_getKey(self)

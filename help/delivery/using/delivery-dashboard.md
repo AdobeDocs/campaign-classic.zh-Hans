@@ -4,12 +4,12 @@ title: 投放仪表板
 description: 详细了解如何使用投放仪表板监控投放
 badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v8"
 feature: Monitoring
-role: User, Data Engineer
+role: User, Developer
 exl-id: 44ecc8c6-6584-43eb-96b4-7d8463053123
-source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
 source-wordcount: '1193'
-ht-degree: 5%
+ht-degree: 6%
 
 ---
 
@@ -35,7 +35,7 @@ ht-degree: 5%
 
 * [了解投放失败](understanding-delivery-failures.md)
 * [了解隔离管理](understanding-quarantine-management.md)
-* [投放最佳实践](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/delivery-best-practices.html?lang=zh-Hans){target="_blank"}
+* [投放最佳实践](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/delivery-best-practices.html){target="_blank"}
 * [管理可投放性](about-deliverability.md)
 
 ## 投放摘要 {#delivery-summary}
@@ -64,7 +64,7 @@ ht-degree: 5%
 
 **[!UICONTROL Display the mirror page for this message...]**&#x200B;链接允许您在新窗口中查看从列表中选择的投放内容的镜像页面。
 
-镜像页面仅适用于已为其定义HTML内容的投放。 有关详细信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/mirror-page.html?lang=zh-Hans){target="_blank"}。
+镜像页面仅适用于已为其定义HTML内容的投放。 有关更多信息，请参阅 [Campaign v8 文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/mirror-page.html){target="_blank"}。
 
 ![](assets/s_ncs_user_wizard_miror_page_link.png)
 
@@ -98,7 +98,7 @@ ht-degree: 5%
 
 使用&#x200B;**[!UICONTROL Refresh]**&#x200B;按钮可更新数据。 使用&#x200B;**[!UICONTROL Filters]**&#x200B;按钮定义数据过滤器。
 
-使用特殊图标可以识别错误或警告。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/delivery-analysis.html?lang=zh-Hans){target="_blank"}中的此部分。
+使用特殊图标可以识别错误或警告。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/delivery-analysis.html){target="_blank"}中的此部分。
 
 **[!UICONTROL Proofs]**&#x200B;子选项卡允许您查看已发送的校样列表。
 
@@ -118,9 +118,9 @@ ht-degree: 5%
 
 * 如果投放计数器与您的投放不匹配，请尝试重新计算指示器，方法是在Adobe Campaign资源管理器中右键单击相关投放，然后选择&#x200B;**[!UICONTROL Actions]** > **[!UICONTROL Recompute delivery and tracking indicators]**&#x200B;以重新同步。 有关跟踪指示器的详细信息，请参阅此[部分](../../reporting/using/delivery-reports.md#tracking-indicators)。
 
-* 如果您的投放计数器不是最新中间源部署，请检查&#x200B;**[!UICONTROL Mid-Sourcing (Delivery counters)]**&#x200B;技术工作流是否正在运行。 有关详细信息，请参见此 [&#x200B; 页面](../../installation/using/mid-sourcing-deployment.md)。
+* 如果您的投放计数器不是最新中间源部署，请检查&#x200B;**[!UICONTROL Mid-Sourcing (Delivery counters)]**&#x200B;技术工作流是否正在运行。 有关详细信息，请参见此 [ 页面](../../installation/using/mid-sourcing-deployment.md)。
 
-您还可以通过投放仪表板使用不同的报告跟踪您的投放。 有关更多信息，请参阅此[&#128279;](../../reporting/using/delivery-reports.md)章节。
+您还可以通过投放仪表板使用不同的报告跟踪您的投放。 有关更多信息，请参阅此](../../reporting/using/delivery-reports.md)章节[。
 
 ## 用例：将发件人的IP地址添加到日志 {#use-case}
 

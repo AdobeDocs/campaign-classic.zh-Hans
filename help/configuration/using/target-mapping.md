@@ -3,12 +3,12 @@ product: campaign
 title: 目标映射
 description: 了解如何创建目标映射
 feature: Application Settings
-role: Data Engineer, Developer
+role: Developer
 badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v8"
 exl-id: 38333669-5598-4811-a121-b677c1413f56
-source-git-commit: f469689f9e8a4d805fb95a1ae120ccd35aba3731
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '499'
+source-wordcount: '497'
 ht-degree: 2%
 
 ---
@@ -30,11 +30,11 @@ ht-degree: 2%
 
 1. 创建新的数据架构，它将集成要使用的自定义表的字段。
 
-   有关详细信息，请参阅[架构引用(xtk：srcSchema)](../../configuration/using/about-schema-reference.md)。
+   有关详细信息，请参阅[架构引用(xtk:srcSchema)](../../configuration/using/about-schema-reference.md)。
 
    在我们的示例中，我们将创建一个客户模式，它是一个非常简单的表，包含以下字段：ID、名字、姓氏、电子邮件地址、手机号码。 目的是能够向存储在此表中的个人发送电子邮件或短信警报。
 
-   模式示例(cus：individual)
+   模式示例(cus:individual)
 
    ```
    <srcSchema name="individual" namespace="cus" label="Individuals">

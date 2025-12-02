@@ -1,18 +1,18 @@
 ---
 product: campaign
-title: 现有表的模式
-description: 现有表的模式
+title: 现有表的架构
+description: 现有表的架构
 feature: Custom Resources
-role: Data Engineer, Developer
+role: Developer
 exl-id: 964f1027-627c-4f12-91b5-f258e9ba458b
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
 source-wordcount: '216'
 ht-degree: 7%
 
 ---
 
-# 现有表的模式{#schema-of-an-existing-table}
+# 现有表的架构{#schema-of-an-existing-table}
 
 ## 概述 {#overview}
 
@@ -24,7 +24,7 @@ ht-degree: 7%
 * 字段及其在XML结构中的位置：仅填写应用程序中使用的字段，
 * 链接：如果与基的其他表有连接。
 
-## 实现 {#implementation}
+## 实施 {#implementation}
 
 要创建相应的方案，请应用以下阶段：
 

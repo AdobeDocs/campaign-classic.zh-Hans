@@ -2,12 +2,12 @@
 product: campaign
 title: 活动模拟
 description: Campaign模拟入门
-role: User, Data Engineer
+role: User, Developer
 feature: Campaigns
 hide: true
 hidefromtoc: true
 exl-id: 709c64a8-34bf-43fa-a820-238295fb26b8
-source-git-commit: 4f809011a8b4cb3803c4e8151e358e5fd73634e4
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
 source-wordcount: '1245'
 ht-degree: 2%
@@ -36,7 +36,7 @@ ht-degree: 2%
 
 要创建模拟，请应用以下步骤：
 
-1. 打开&#x200B;**[!UICONTROL Campaigns]**&#x200B;选项卡，单击&#x200B;**[!UICONTROL Create]**&#x200B;部分中的&#x200B;**[!UICONTROL More]**&#x200B;链接并选择&#x200B;**[!UICONTROL Simulation]**&#x200B;选项。
+1. 打开&#x200B;**[!UICONTROL Campaigns]**&#x200B;选项卡，单击&#x200B;**[!UICONTROL More]**&#x200B;部分中的&#x200B;**[!UICONTROL Create]**&#x200B;链接并选择&#x200B;**[!UICONTROL Simulation]**&#x200B;选项。
 
    ![](assets/simu_campaign_opti_01.png)
 
@@ -94,7 +94,7 @@ ht-degree: 2%
 
 * 根据所选的优先级级别，**[!UICONTROL Schedule execution for down-time]**&#x200B;选项将模拟启动延迟到不太繁忙的时间段。 模拟需要使用大量数据库资源，因此，例如非紧急模拟应安排在夜间运行。
 * **[!UICONTROL Priority]**&#x200B;是应用于模拟以延迟其触发的级别。
-* **[!UICONTROL Save SQL queries in the log]**。 SQL日志允许您诊断模拟是否以错误结束。 它们还可以帮助您了解为什么模拟速度太慢。 在&#x200B;**[!UICONTROL Audit]**&#x200B;选项卡的&#x200B;**[!UICONTROL SQL logs]**&#x200B;子选项卡中进行模拟后，将显示这些消息。
+* **[!UICONTROL Save SQL queries in the log]**。 SQL日志允许您诊断模拟是否以错误结束。 它们还可以帮助您了解为什么模拟速度太慢。 在&#x200B;**[!UICONTROL SQL logs]**&#x200B;选项卡的&#x200B;**[!UICONTROL Audit]**&#x200B;子选项卡中进行模拟后，将显示这些消息。
 
 ## 执行模拟 {#executing-a-simulation}
 
@@ -132,7 +132,7 @@ ht-degree: 2%
 
 #### 审核 {#audit}
 
-**[!UICONTROL Audit]**&#x200B;选项卡允许您监视模拟执行。 **[!UICONTROL SQL Logs]**&#x200B;子选项卡对专家用户很有用。 它以SQL格式列出执行日志。 仅当在模拟执行之前在&#x200B;**[!UICONTROL General]**&#x200B;选项卡中选择了&#x200B;**[!UICONTROL Save SQL queries in the log]**&#x200B;选项时，才会显示这些日志。
+**[!UICONTROL Audit]**&#x200B;选项卡允许您监视模拟执行。 **[!UICONTROL SQL Logs]**&#x200B;子选项卡对专家用户很有用。 它以SQL格式列出执行日志。 仅当在模拟执行之前在&#x200B;**[!UICONTROL Save SQL queries in the log]**&#x200B;选项卡中选择了&#x200B;**[!UICONTROL General]**&#x200B;选项时，才会显示这些日志。
 
 ![](assets/simu_campaign_opti_11.png)
 

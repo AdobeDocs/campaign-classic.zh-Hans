@@ -5,9 +5,9 @@ description: 了解使用Adobe Campaign Enhanced MTA发送电子邮件的范围�
 feature: Email
 role: User, Admin, Developer
 exl-id: 58cc23f4-9ab0-45c7-9aa2-b08487ec7e91
-source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '1380'
+source-wordcount: '1379'
 ht-degree: 1%
 
 ---
@@ -136,7 +136,7 @@ Campaign不再使用投放中的重试设置。 软退回重试次数以及它�
 ### DKIM-signing
 
 DKIM（域名识别邮件）电子邮件身份验证签名由Enhanced MTA完成。 作为增强MTA升级的一部分，本机Campaign MTA的DKIM签名将在域管理表中关闭。
-有关DKIM的更多信息，请参阅[Adobe可投放性最佳实践指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=zh-Hans#authentication)。
+有关DKIM的更多信息，请参阅[Adobe可投放性最佳实践指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#authentication)。
 
 ### 投放成功报告
 
@@ -146,7 +146,7 @@ DKIM（域名识别邮件）电子邮件身份验证签名由Enhanced MTA完成�
 
 当从增强型MTA报告硬退回邮件时，其状态从&#x200B;**[!UICONTROL Sent]**&#x200B;更改为&#x200B;**[!UICONTROL Failed]**，**[!UICONTROL Success]**&#x200B;百分比相应减少。
 
-从Enhanced MTA报告软退回邮件时，它们仍显示为&#x200B;**[!UICONTROL Sent]**，并且&#x200B;**[!UICONTROL Success]**&#x200B;百分比尚未更新。 然后，软退回邮件在投放有效期内将重试[&#128279;](understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure)：
+从Enhanced MTA报告软退回邮件时，它们仍显示为&#x200B;**[!UICONTROL Sent]**，并且&#x200B;**[!UICONTROL Success]**&#x200B;百分比尚未更新。 然后，软退回邮件在投放有效期内将重试[](understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure)：
 
 * 如果在有效期结束前重试成功，则消息状态将保留为&#x200B;**[!UICONTROL Sent]**，**[!UICONTROL Success]**&#x200B;百分比将保持不变。
 
@@ -161,6 +161,5 @@ DKIM（域名识别邮件）电子邮件身份验证签名由Enhanced MTA完成�
 | 消息已成功从Campaign中继到增强型MTA | **[!UICONTROL Success]**&#x200B;百分比从100%开始 | 已发送 |
 | 从Enhanced MTA返回硬退回消息 | **[!UICONTROL Success]**&#x200B;百分比将相应减少 | 失败 |
 | 从Enhanced MTA返回软退回消息 | **[!UICONTROL Success]**&#x200B;百分比无变化 | 已发送 |
-| 软退回消息重试成功 | **[!UICONTROL Success]**&#x200B;百分比无变化 | 已发送 | **[!UICONTROL Success]**&#x200B;百分比将相应增加 | 已发送 |
+| 软退回消息重试成功 | **[!UICONTROL Success]**&#x200B;百分比无变化\|  **[!UICONTROL Success]**&#x200B;百分比将相应增加 | 已发送 |
 | 软退回消息重试失败 | **[!UICONTROL Success]**&#x200B;百分比将相应减少 | 失败 |
-

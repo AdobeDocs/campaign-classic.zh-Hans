@@ -1,18 +1,18 @@
 ---
 product: campaign
-title: 新的外地助理
-description: 新的外地助理
+title: 新建字段助手
+description: 新建字段助手
 feature: Schema Extension
-role: Data Engineer, Developer
+role: Developer
 exl-id: 2350a531-7a26-4f26-90fe-8dac0cc26605
-source-git-commit: ec774cc10a69a694b3c2bf5a6f662afd12a1435a
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '200'
-ht-degree: 0%
+source-wordcount: '199'
+ht-degree: 4%
 
 ---
 
-# 新的外地助理{#new-field-wizard}
+# 新建字段助手{#new-field-wizard}
 
 
 通过&#x200B;**[!UICONTROL Tools > Advanced > Add new fields]**&#x200B;可访问的助理允许您向数据库中的表添加一个或多个字段。
@@ -35,7 +35,7 @@ ht-degree: 0%
 
 1. 要确认更改，请单击&#x200B;**[!UICONTROL Finish]**&#x200B;按钮。
 
-在本例中，我们将自动创建一个名为“cus：recipient”的扩展文件，并执行相应的SQL脚本：
+自动创建扩展文件（在我们的示例中称为“cus:recipient”），并执行相应的SQL脚本：
 
 ```
 <srcSchema extendedSchema="nms:recipient" label="Recipients" name="recipient"  namespace="cus">  

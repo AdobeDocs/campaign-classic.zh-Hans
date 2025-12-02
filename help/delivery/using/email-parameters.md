@@ -3,11 +3,11 @@ product: campaign
 title: 电子邮件参数
 description: 了解特定于电子邮件投放的选项和设置
 feature: Email
-role: User, Developer, Data Engineer
+role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 1bb36e71-9f1a-4553-b266-eca3f48688e2
-source-git-commit: 0507e0372a81351adc145dafdd3cbe5d5422dc00
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
 source-wordcount: '905'
 ht-degree: 10%
@@ -82,7 +82,7 @@ ht-degree: 10%
 
 镜像页面是可通过 Web 浏览器在线访问的 HTML 页面。其内容与电子邮件相同。
 
-默认情况下，如果将链接插入到邮件内容中，则会生成镜像页面。 有关个性化块插入的更多信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html?lang=zh-Hans){target="_blank"}。
+默认情况下，如果将链接插入到邮件内容中，则会生成镜像页面。 有关个性化块插入的更多信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html){target="_blank"}。
 
 在投放属性中，**[!UICONTROL Mode]**&#x200B;选项卡的&#x200B;**[!UICONTROL Validity]**&#x200B;字段允许您修改此页面的生成模式。
 

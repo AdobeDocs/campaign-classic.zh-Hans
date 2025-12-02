@@ -2,12 +2,12 @@
 product: campaign
 title: 应用分类规则
 description: 了解如何应用类型规则
-role: User, Data Engineer
+role: User, Developer
 feature: Typology Rules, Campaigns
 hide: true
 hidefromtoc: true
 exl-id: 09ec0fc0-76ed-4c73-8bdf-c931e2103aa9
-source-git-commit: 4f809011a8b4cb3803c4e8151e358e5fd73634e4
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
 source-wordcount: '987'
 ht-degree: 8%
@@ -45,7 +45,7 @@ ht-degree: 8%
 
 可以配置分类规则，使其仅涉及与之关联的特定投放，或投放目标中的特定收件人。
 
-要定义规则的应用条件，请单击&#x200B;**[!UICONTROL General]**&#x200B;选项卡中的&#x200B;**[!UICONTROL Edit the rule application conditions...]**&#x200B;链接。
+要定义规则的应用条件，请单击&#x200B;**[!UICONTROL Edit the rule application conditions...]**&#x200B;选项卡中的&#x200B;**[!UICONTROL General]**&#x200B;链接。
 
 然后，使用查询编辑器定义筛选条件。 在以下示例中，容量规则仅涉及标签中带有“offer”一词的投放或在2013年4月1日之前创建的投放。
 
@@ -61,7 +61,7 @@ ht-degree: 8%
 
 事实上，有些计算使用的值不会每天更改。 因此，每天重新计算数据并毫无意义地让数据库过载是无关紧要的。 例如，如果某个流程用客户倾向得分每周一次地丰富营销数据库并购买信息，则无需每天重新计算基于这些值的数据。
 
-为此，**[!UICONTROL General]**&#x200B;选项卡的&#x200B;**[!UICONTROL Frequency]**&#x200B;字段允许您定义保存定位的最长时段。 默认情况下，值&#x200B;**0**&#x200B;指示在下次执行每日重新仲裁之前计算保持有效。
+为此，**[!UICONTROL Frequency]**&#x200B;选项卡的&#x200B;**[!UICONTROL General]**&#x200B;字段允许您定义保存定位的最长时段。 默认情况下，值&#x200B;**0**&#x200B;指示在下次执行每日重新仲裁之前计算保持有效。
 
 若要保存超出此期限的结果，请在&#x200B;**[!UICONTROL Frequency]**&#x200B;字段中输入大于12的值：此期限过期后，将重新应用所有规则。
 
@@ -98,7 +98,7 @@ ht-degree: 8%
 
 ### 控制规则 {#control-rules}
 
-对于&#x200B;**[!UICONTROL Control]**&#x200B;规则，您可以决定应用规则的投放生命周期的哪个时间点（定位之前或之后、个性化开始时、分析结束时）。 在分类规则的&#x200B;**[!UICONTROL General]**&#x200B;选项卡的&#x200B;**[!UICONTROL Phase]**&#x200B;字段的下拉列表中选择要应用的值。
+对于&#x200B;**[!UICONTROL Control]**&#x200B;规则，您可以决定应用规则的投放生命周期的哪个时间点（定位之前或之后、个性化开始时、分析结束时）。 在分类规则的&#x200B;**[!UICONTROL Phase]**&#x200B;选项卡的&#x200B;**[!UICONTROL General]**&#x200B;字段的下拉列表中选择要应用的值。
 
 ![](assets/campaign_opt_define_control_phase.png)
 

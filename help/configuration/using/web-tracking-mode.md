@@ -3,11 +3,11 @@ product: campaign
 title: Web 跟踪模式
 description: 了解如何选择Web跟踪模式
 feature: Instance Settings
-role: Data Engineer, Developer
+role: Developer
 exl-id: b0f30c1f-cdc9-4ad2-8a6c-19d5aae4feb3
-source-git-commit: 0fba6a2ad4ffa864e2f726f241aa9d7cd39072a6
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '681'
+source-wordcount: '680'
 ht-degree: 1%
 
 ---
@@ -80,7 +80,7 @@ Adobe Campaign允许您选择Web跟踪模式，该模式定义在应用程序中
 
 >[!NOTE]
 >
->如果安装了&#x200B;**[!UICONTROL Leads]**&#x200B;程序包，则需要对活动表(**crm：incomingLead**)执行相同的操作
+>如果安装了&#x200B;**[!UICONTROL Leads]**&#x200B;包，则需要为活动表(**crm:incomingLead**)执行相同的操作
 
 以下架构总结了所有三种Web跟踪模式的功能：
 

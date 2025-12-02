@@ -3,9 +3,9 @@ product: campaign
 title: 配置Campaign Explorer导航树
 feature: Application Settings
 description: 了解如何配置Campaign Explorer导航树
-role: Data Engineer, Developer
+role: Developer
 exl-id: c7ae7240-0c12-4420-bbb3-4268c9ade3e7
-source-git-commit: d56038fc8baf766667d89bb73747c20ec041124c
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
 source-wordcount: '1183'
 ht-degree: 0%
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 作为专家级用户，您可以在资源管理器树中添加文件夹并对其进行自定义。
 
-请参阅[Adobe Campaign v8 （控制台）文档](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}以了解有关Campaign用户界面的更多信息。
+请参阅[Adobe Campaign v8 （控制台）文档](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}以了解有关Campaign用户界面的更多信息。
 
 导航列表使用的文件夹类型在遵循&#x200B;**xtk:navtree**&#x200B;架构语法的XML文档中进行了说明。
 

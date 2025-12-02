@@ -1,18 +1,18 @@
 ---
 product: campaign
-title: 关于模式版本
+title: 关于架构版本
 description: 架构版本入门
 feature: Schema Extension
-role: Data Engineer, Developer
+role: Developer
 exl-id: 9e10b24e-c4de-4e76-bbed-0d05f62120b7
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '1006'
+source-wordcount: '1005'
 ht-degree: 6%
 
 ---
 
-# 关于模式版本{#about-schema-edition}
+# 关于架构版本{#about-schema-edition}
 
 Adobe Campaign使用数据架构来：
 
@@ -24,7 +24,7 @@ Adobe Campaign使用数据架构来：
 
 ## 扩展或创建模式 {#extending-or-creating-schemas}
 
-要将字段或索引或其他元素添加到Campaign中的某个核心数据架构(如收件人表(nms：recipient))，您必须扩展该架构。 有关详细信息，请参阅[扩展架构](../../configuration/using/extending-a-schema.md)部分。
+要将字段或索引或其他元素添加到Campaign中的某个核心数据架构(如收件人表(nms:recipient)，您必须扩展该架构。 有关详细信息，请参阅[扩展架构](../../configuration/using/extending-a-schema.md)部分。
 
 要添加在Adobe Campaign中现成不存在的全新类型数据（例如合同表），您可以直接创建自定义架构。 有关详细信息，请参阅[数据架构](../../configuration/using/data-schemas.md)部分。
 
@@ -36,7 +36,7 @@ Adobe Campaign使用数据架构来：
 
 枚举先于架构的主元素之前定义。 它们允许您在列表中显示值，以限制用户对给定字段的选择。
 
-例如：
+示例：
 
 ```
 <enumeration basetype="byte" name="exTransactionTypeEnum" default="store">
@@ -94,7 +94,7 @@ type="string" enum="exTransactionTypeEnum"/>
 
 也可使用&#x200B;**internal**&#x200B;属性定义主键。
 
-例如：
+示例：
 
 ```
 <key name="householdId" internal="true">

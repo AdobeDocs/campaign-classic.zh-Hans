@@ -3,9 +3,9 @@ product: campaign
 title: 数据库映射
 description: 数据库映射
 feature: Configuration, Instance Settings
-role: Data Engineer, Developer
+role: Developer
 exl-id: 728b509f-2755-48df-8b12-449b7044e317
-source-git-commit: 517b85f5d7691acc2522bf4541f07c34c60c7fbf
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
 source-wordcount: '526'
 ht-degree: 3%
@@ -14,7 +14,7 @@ ht-degree: 3%
 
 # 数据库映射{#database-mapping}
 
-此页面[&#128279;](schema-structure.md)中描述的示例架构的SQL映射生成以下XML文档：
+此页面[中描述的示例架构](schema-structure.md)的SQL映射生成以下XML文档：
 
 ```sql
 <schema mappingType="sql" name="recipient" namespace="cus" xtkschema="xtk:schema">
@@ -53,7 +53,7 @@ SQL命名规则如下：
 
 * **字段**：前面有根据类型定义的前缀的元素名称：“i”表示整数，“d”表示双精度，“s”表示字符串，“ts”表示日期等。
 
-  字段名称通过每个键入的&#x200B;**`<attribute>`**&#x200B;和&#x200B;**`<element>`**&#x200B;的&#x200B;**sqlname**&#x200B;属性输入：
+  字段名称通过每个键入的&#x200B;**和**&#x200B;的&#x200B;**`<attribute>`** sqlname **`<element>`**&#x200B;属性输入：
 
   ```sql
   <attribute desc="Email address of recipient" label="Email" length="80" name="email" sqlname="sEmail" type="string"/> 
@@ -98,7 +98,7 @@ SQL字段约束如下：
   <element name="description" xml="true" type="html" label="Description"/>
   ```
 
-  通过“html”类型，您可以将HTML内容存储在CDATA标记中，并在Adobe Campaign客户端界面中显示特殊的HTML编辑检查。
+  “html”类型允许您将HTML内容存储在CDATA标记中，并在HTML客户端界面中显示特殊的Adobe Campaign编辑检查。
 
 使用XML字段添加新字段，而无需修改数据库的物理结构。 另一个优点是，您使用的资源较少（分配给SQL字段的大小、每个表的字段数限制等）。 但是，请注意，不能索引或过滤XML字段。
 
@@ -171,8 +171,8 @@ SQL字段约束如下：
 
 浏览以下链接以了解更多信息：
 
-* [模式入门](about-schema-reference.md)
-* [模式结构](schema-structure.md)
+* [架构入门](about-schema-reference.md)
+* [架构结构](schema-structure.md)
 * [密钥管理](database-keys.md)
 * [链接管理](database-links.md)
-* [Campaign数据模型](about-data-model.md)
+* [Campaign 数据模型](about-data-model.md)

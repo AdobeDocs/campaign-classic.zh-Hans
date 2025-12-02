@@ -3,10 +3,10 @@ product: campaign
 title: 关于自定义收件人表
 description: 关于自定义收件人表
 feature: Configuration, Custom Resources
-role: User, Data Engineer, Developer
+role: User, Developer
 badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v8"
 exl-id: d8cea496-b3f3-420a-bf6e-b7cbb321b30d
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
 source-wordcount: '676'
 ht-degree: 2%
@@ -32,7 +32,7 @@ ht-degree: 2%
 
 本节介绍可让您映射Adobe Campaign中现有表的关键点，以及根据任何表执行投放时要应用的配置。 最后，还介绍了如何为用户提供与内置收件人表一样实用的查询接口。 要了解本节中介绍的材料，需要很好地了解屏幕和模式设计的原则。
 
-## Recommendations和限制 {#recommendations-and-limitations}
+## 建议和限制 {#recommendations-and-limitations}
 
 使用自定义收件人表具有以下限制：
 

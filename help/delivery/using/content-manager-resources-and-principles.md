@@ -4,9 +4,9 @@ title: 内容管理者资源和原则
 description: 内容管理者资源和原则
 badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v8"
 feature: Templates
-role: User, Developer, Data Engineer
+role: User, Developer
 exl-id: ade3f1d1-2235-4148-9b6f-721d3f521a15
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
 source-wordcount: '247'
 ht-degree: 4%
@@ -20,7 +20,7 @@ ht-degree: 4%
 
 内容块在XML文档中构造用于数据存储。 编辑界面用于从Adobe Campaign客户端控制台或通过Web浏览器输入内容。 通过捕获XML流或聚合到数据库中的数据，也可以自动输入内容。
 
-将XML文档与XSL或JavaScript Template样式表组合在一起将自动生成各种格式(HTML、文本)的发布模板的投影。
+组合XML文档和XSL或JavaScript模板样式表将自动生成各种格式(HTML、文本)的发布模板的投影。
 
 ![](assets/d_ncs_content_process.png)
 

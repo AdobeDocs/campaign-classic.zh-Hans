@@ -3,11 +3,11 @@ product: campaign
 title: 数据架构中的密钥管理
 description: 了解数据架构中的密钥管理
 feature: Configuration, Instance Settings
-role: Data Engineer, Developer
+role: Developer
 exl-id: faf63c8f-9d10-43c1-a990-91361594af9f
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '619'
+source-wordcount: '617'
 ht-degree: 2%
 
 ---
@@ -130,7 +130,7 @@ ht-degree: 2%
 
 增量键的优点在于，它为表之间的连接提供了不可修改的技术键。 此外，此键不会占用太多内存，因为它使用双字节整数。
 
-您可以在源架构中指定要与&#x200B;**pkSequence**&#x200B;属性一起使用的序列的名称。 如果源架构中未提供此属性，则将使用&#x200B;**XtkNewId**&#x200B;默认序列。 应用程序对&#x200B;**nms：broadLog**&#x200B;和&#x200B;**nms：trackingLog**&#x200B;架构使用专用序列（分别为&#x200B;**NmsBroadLogId**&#x200B;和&#x200B;**NmsTrackingLogId**），因为这些是包含最多记录的表。
+您可以在源架构中指定要与&#x200B;**pkSequence**&#x200B;属性一起使用的序列的名称。 如果源架构中未提供此属性，则将使用&#x200B;**XtkNewId**&#x200B;默认序列。 应用程序对&#x200B;**nms:broadLog**&#x200B;和&#x200B;**nms:trackingLog**&#x200B;架构使用专用序列（分别为&#x200B;**NmsBroadLogId**&#x200B;和&#x200B;**NmsTrackingLogId**），因为这些是包含最多记录的表。
 
 从ACC 18.10开始，**XtkNewId**&#x200B;不再是现成架构中序列的默认值。 您现在可以使用专用序列构建模式或扩展现有模式。
 
@@ -138,7 +138,7 @@ ht-degree: 2%
 >
 >创建新架构或在架构扩展期间，您需要为整个架构保留相同的主键序列值(@pkSequence)。
 
-在Adobe Campaign架构中引用的序列（例如&#x200B;**NmsTrackingLogId**）必须与返回参数中ID数的SQL函数关联，并以逗号分隔。 此函数必须调用&#x200B;**GetNew** XXX **Ids**，其中&#x200B;**XXX**&#x200B;是序列的名称（例如&#x200B;**GetNewNmsTrackingLogIds**）。 查看&#x200B;**datakit/nms/eng/sql/**&#x200B;目录中随应用程序提供的&#x200B;**postgres-nms.sql**、**mssql-nms.sql**&#x200B;或&#x200B;**oracle-nms.sql**&#x200B;文件，以恢复为每个数据库引擎创建“NmsTrackingLogId”序列的示例。
+在Adobe Campaign架构中引用的序列（例如&#x200B;**NmsTrackingLogId**）必须与返回参数中ID数的SQL函数关联，并以逗号分隔。 此函数必须调用&#x200B;**GetNew** XXX **Ids**，其中&#x200B;**XXX**&#x200B;是序列的名称（例如&#x200B;**GetNewNmsTrackingLogIds**）。 查看随&#x200B;**datakit/nms/eng/sql/**&#x200B;目录中的应用程序提供的&#x200B;**postgres-nms.sql**、**mssql-nms.sql**&#x200B;或&#x200B;**oracle-nms.sql**&#x200B;文件，以恢复为每个数据库引擎创建“NmsTrackingLogId”序列的示例。
 
 要声明唯一键，请在数据架构的主元素中填充&#x200B;**autopk**&#x200B;属性（值为“true”）。
 
@@ -183,8 +183,8 @@ ht-degree: 2%
 
 浏览以下链接以了解更多信息：
 
-* [模式入门](about-schema-reference.md)
-* [模式结构](schema-structure.md)
+* [架构入门](about-schema-reference.md)
+* [架构结构](schema-structure.md)
 * [数据库映射](database-mapping.md)
 * [链接管理](database-links.md)
 * [Campaign 数据模型](about-data-model.md)

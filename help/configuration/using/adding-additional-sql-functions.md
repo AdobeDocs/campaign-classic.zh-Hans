@@ -3,9 +3,9 @@ product: campaign
 title: 添加其他 SQL 函数
 description: 了解如何定义其他SQL函数
 feature: Configuration, Instance Settings
-role: Data Engineer, Developer
+role: Developer
 exl-id: 04b0a0e5-d6df-447c-ac67-66adb1bdf717
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
 source-wordcount: '1034'
 ht-degree: 0%
@@ -122,7 +122,7 @@ Adobe Campaign允许用户定义&#x200B;**他们自己的函数**，这些函数
 * 最后，**providerPart**&#x200B;元素提供函数实现。
 
    * **provider**&#x200B;属性是必需的，它指定提供实现的数据库系统。 如示例所示，当表达式语法或基础函数不同时，可以根据数据库提供替代实现。
-   * **@body**&#x200B;属性包含函数实现。 请注意：此实现必须是数据库语言中的表达式（不是代码块）。 根据数据库的不同，表达式可以是只返回单个值的子查询(“（从表中选择列，其中……）”)。 例如，在Oracle中就是这种情况（查询必须用方括号编写）。
+   * **@body**&#x200B;属性包含函数实现。 请注意：此实现必须是数据库语言中的表达式（不是代码块）。 根据数据库的不同，表达式可以是只返回单个值的子查询(“（从表中选择列，其中……）”)。 例如，Oracle中就是这种情况（查询必须用方括号编写）。
 
   >[!NOTE]
   >

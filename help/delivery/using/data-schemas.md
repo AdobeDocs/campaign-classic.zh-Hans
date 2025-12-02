@@ -4,11 +4,11 @@ title: 在Campaign中使用数据架构
 description: 了解如何在Campaign中使用数据架构
 badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v8"
 feature: Data Model
-role: User, Developer, Data Engineer
+role: User, Developer
 exl-id: 3e28bfee-0321-40f4-9ef6-1bdb5b25041b
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '567'
+source-wordcount: '566'
 ht-degree: 1%
 
 ---
@@ -19,9 +19,9 @@ ht-degree: 1%
 
 有关在Adobe Campaign中创建和配置数据架构的更多信息，请参阅[此部分](../../configuration/using/about-schema-edition.md)。
 
-## 模式结构 {#schema-structure}
+## 架构结构 {#schema-structure}
 
-数据架构的XML文档必须包含具有&#x200B;**名称**&#x200B;和&#x200B;**命名空间**&#x200B;属性的&#x200B;**`<srcschema>`**&#x200B;根元素，才能填充架构名称及其命名空间。
+数据架构的XML文档必须包含具有&#x200B;**`<srcschema>`**&#x200B;名称&#x200B;**和**&#x200B;命名空间&#x200B;**属性的**&#x200B;根元素，才能填充架构名称及其命名空间。
 
 ```
 <srcSchema name="schema_name" namespace="namespace">
@@ -39,7 +39,7 @@ ht-degree: 1%
 
 在主元素中输入的&#x200B;**template**&#x200B;属性允许您使用通用属性将架构扩展到所有内容定义，例如名称、创建日期、作者、关联的字符串等。
 
-这些属性在&#x200B;**ncm：content**&#x200B;架构中进行了描述。
+这些属性在&#x200B;**ncm:content**&#x200B;架构中进行了描述。
 
 >[!NOTE]
 >
@@ -128,7 +128,7 @@ ht-degree: 1%
 
 要引用的元素上的&#x200B;**ref**&#x200B;属性必须使用引用元素的路径(XPath)来填写。
 
-**示例**：添加了结构与我们示例架构的&#x200B;**`<chapter>`**&#x200B;元素相同的&#x200B;**Appendix**&#x200B;节。
+**示例**：添加了结构与我们示例架构的&#x200B;**元素相同的** Appendix **`<chapter>`**&#x200B;节。
 
 ```
 <srcSchema name="book" namespace="cus">
@@ -165,7 +165,7 @@ ht-degree: 1%
 </srcSchema>
 ```
 
-## 编辑模式 {#editing-schemas}
+## 编辑架构 {#editing-schemas}
 
 编辑字段允许您输入源架构的XML内容：
 

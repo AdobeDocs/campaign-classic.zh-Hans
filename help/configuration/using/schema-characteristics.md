@@ -1,19 +1,19 @@
 ---
 product: campaign
-title: 模式特性
-description: 模式特性
+title: 架构特性
+description: 架构特性
 feature: Custom Resources
-role: Data Engineer, Developer
+role: Developer
 badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v8"
 exl-id: 099161b4-b4cb-433c-aed6-71157269a536
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
 source-wordcount: '389'
 ht-degree: 1%
 
 ---
 
-# 模式特性{#schema-characteristics}
+# 架构特性{#schema-characteristics}
 
 
 

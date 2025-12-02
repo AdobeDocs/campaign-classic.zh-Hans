@@ -1,11 +1,11 @@
 ---
 product: campaign
-title: 开始使用Campaign Classic数据模型
+title: Campaign Classic数据模型快速入门
 description: 了解如何扩展 Campaign 数据模型、编辑架构、使用 API 等
 feature: Data Model, Configuration
-role: Data Engineer, Developer
+role: Developer
 exl-id: 655b5928-b005-442f-b026-2f1b0c1abb99
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
 source-wordcount: '980'
 ht-degree: 5%

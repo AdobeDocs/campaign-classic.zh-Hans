@@ -3,13 +3,13 @@ product: campaign
 title: 关于 Campaign 中的查询
 description: 关于 Campaign 中的查询
 feature: Query Editor
-role: User, Data Architect
+role: User, Developer
 level: Beginner
 exl-id: 2db1034d-cad6-4fb0-8646-dd9099080ab0
-source-git-commit: 0bbe3bd199c664d30513a0c50203248d703451cd
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '207'
+ht-degree: 5%
 
 ---
 
@@ -28,23 +28,23 @@ ht-degree: 0%
 
 >[!TAB 查询数据库]
 
-创建查询的步骤详见&#x200B;**[Campaign v8 （控制台）文档](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/data/query/query-editor){target=_blank}**
+创建查询的步骤详见&#x200B;**[Campaign v8 （控制台）文档](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/data/query/query-editor){target=_blank}**
 
 
-[![image](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/data/query/query-editor){target=_blank}
+[![image](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/data/query/query-editor){target=_blank}
 
 
 >[!TAB 在工作流中添加查询]
 
-在&#x200B;**[Campaign v8文档](https://experienceleague.adobe.com/zh-hans/docs/campaign/automation/workflows/wf-activities/targeting-activities/query){target=_blank}**&#x200B;中了解与工作流上下文中的查询创建相关的关键步骤
+在&#x200B;**[Campaign v8文档](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/targeting-activities/query){target=_blank}**&#x200B;中了解与工作流上下文中的查询创建相关的关键步骤
 
-[![image](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/zh-hans/docs/campaign/automation/workflows/wf-activities/targeting-activities/query){target=_blank}
+[![image](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/targeting-activities/query){target=_blank}
 
 >[!TAB 筛选条件]
 
-要设计查询，必须在查询编辑器中选择筛选条件。 有关可用功能和用例的详情，请参阅&#x200B;**[Campaign v8文档](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/data/query/filter-conditions){target=_blank}**
+要设计查询，必须在查询编辑器中选择筛选条件。 有关可用功能和用例的详情，请参阅&#x200B;**[Campaign v8文档](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/data/query/filter-conditions){target=_blank}**
 
-[![image](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/data/query/filter-conditions){target=_blank}
+[![image](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/data/query/filter-conditions){target=_blank}
 
 >[!ENDTABS]
 

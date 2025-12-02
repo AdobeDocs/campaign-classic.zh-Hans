@@ -2,13 +2,13 @@
 product: campaign
 title: 扩展模式
 description: 了解如何扩展模式
-role: Data Engineer, Developer
+role: Developer
 feature: Schema Extension
 exl-id: 6e3e666d-6ab3-4346-93ca-fb0155a4660d
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '327'
-ht-degree: 4%
+source-wordcount: '302'
+ht-degree: 5%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 4%
 >
 >某些内置架构不得扩展：主要是那些定义了以下设置的架构：\
 >**dataSource=&quot;file&quot;**&#x200B;和&#x200B;**mappingType=&quot;xmlFile&quot;**。\
->不得扩展以下架构： **xtk：entityBackupNew**、**xtk：entityBackupOriginal**、**xtk：entityOriginal**、**xtk：form**、**xtk：srcSchema**、**ncm：publishing**、**nl：monitoring**、**nms：calendar**、**nms：remoteTracking**、**ms：userAgentRules**，**xtk：builder**，**xtk：connections**，**xtk：dbInit**，**xtk：funcList**，**xtk：fusion**，**xtk： jst**，**xtk：navtree**，**xtk：queryDef**，{3 6}xtk：resourceMenu **，** xtk：schema **，** xtk：scriptContext **，** xtk：session **，** xtk：sqlSchema **，** xtk：strings **。**
+>不得扩展以下架构： **xtk:entityBackupNew**、**xtk:entityBackupOriginal**、**xtk:entityOriginal**、**xtk:form**、**xtk:srcSchema**、**ncm:publishing**、**nl:monitoring**、**nms:calendar**、**nms:remoteTracking**、**nms:userAgentRules**、**xtk:builder**、**xtk:connections**， **xtk:dbInit**，**xtk:funcList**，**xtk:fusion**，**xtk： jst**，**xtk:navtree**，**xtk:queryDef**，**xtk:resourceMenu**，**xtk:schema**，**xtk:scriptContext**，**xtk:session**，**xtk:sqlSchema**， **xtk:strings**。
 >这份清单并非详尽无遗。
 
 扩展现有模式的方法有两种：
@@ -34,7 +34,7 @@ ht-degree: 4%
    >
    >您不得修改应用程序的内置架构，而不得修改架构扩展机制。 否则，修改后的架构将不会在应用程序未来升级时更新。 这可能会导致使用Adobe Campaign时出现问题。
 
-   **示例**： **nms：recipient**&#x200B;架构的扩展。
+   **示例**： **nms:recipient**&#x200B;架构的扩展。
 
    ```
    <srcSchema extendedSchema="nms:recipient" name="recipient" namespace="cus">
@@ -44,7 +44,7 @@ ht-degree: 4%
    </srcSchema>
    ```
 
-   **nms：recipient**&#x200B;扩展架构中填充了扩展架构中填充的字段：
+   **nms:recipient**&#x200B;扩展架构中填充了扩展架构中填充的字段：
 
    ```
    <schema dependingSchemas="cus:recipient" name="recipient" namespace="nms">

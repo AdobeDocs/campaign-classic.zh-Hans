@@ -2,12 +2,12 @@
 product: campaign
 title: 一致性规则
 description: 了解如何在Adobe Campaign中使用一致性规则
-role: User, Data Engineer
+role: User, Developer
 feature: Typology Rules, Campaigns
 hide: true
 hidefromtoc: true
 exl-id: 757328fa-4698-4f85-a5fa-074b5152ec45
-source-git-commit: 4f809011a8b4cb3803c4e8151e358e5fd73634e4
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
 source-wordcount: '773'
 ht-degree: 3%
@@ -116,7 +116,7 @@ Adobe Campaign通过营销活动类型中包含的一组规则，确保通信的
 
 默认情况下，容量规则仅用于指示用途。 选择&#x200B;**[!UICONTROL Exclude messages in excess of capacity from the target]**&#x200B;选项可防止超出定义的负载。 在这种情况下，使用此分类规则将自动从投放中排除多余的消息。
 
-要监视使用，请查看类型规则中&#x200B;**[!UICONTROL Capacity]**&#x200B;选项卡的&#x200B;**[!UICONTROL Consumed]**&#x200B;列中显示的值。
+要监视使用，请查看类型规则中&#x200B;**[!UICONTROL Consumed]**&#x200B;选项卡的&#x200B;**[!UICONTROL Capacity]**&#x200B;列中显示的值。
 
 ![](assets/campaign_opt_create_capacity_04.png)
 

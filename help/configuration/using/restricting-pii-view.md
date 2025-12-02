@@ -3,12 +3,12 @@ product: campaign
 title: 限制 PI 视图
 description: 了解如何限制PI视图
 feature: PI
-role: Data Engineer, Developer
+role: Developer
 exl-id: 0f32d62d-a10a-4feb-99fe-4679b98957d4
-source-git-commit: e198defd60f4b12681025b04b12a1498df015047
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
 source-wordcount: '439'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 1%
 
 某些客户需要营销用户能够访问数据记录，但不希望他们查看个人身份信息(PII)，如名字、姓氏或电子邮件地址。 Adobe Campaign提出了一种保护隐私并防止数据被常规营销活动操作员滥用的方法。
 
-## 实现 {#implementation}
+## 实施 {#implementation}
 
 架构中添加了可应用于任何元素或属性的新属性，它补充了现有属性&#x200B;**[!UICONTROL visibleIf]** 。 此属性是： **[!UICONTROL accessibleIf]** 。 当包含与当前用户上下文相关的XTK表达式时，它可以利用&#x200B;**[!UICONTROL HasNamedRight]**&#x200B;或&#x200B;**[!UICONTROL $(login)]**，例如。
 

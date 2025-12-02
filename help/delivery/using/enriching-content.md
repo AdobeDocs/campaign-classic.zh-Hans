@@ -4,11 +4,11 @@ title: 丰富内容
 description: 丰富内容
 badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v8"
 feature: Data Management
-role: User, Developer, Data Engineer
+role: User, Developer
 exl-id: a4472a7c-a16b-4d10-a8ca-f74ca5f62de4
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '670'
+source-wordcount: '666'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 检索的数据将通过其主元素扩充XML输出文档。
 
-从收件人模式(**nms：recipient**)上的查询返回的示例：
+从收件人模式(**nms:recipient**)上的查询返回的示例：
 
 ```
 <book name="Content Management">
@@ -78,7 +78,7 @@ ht-degree: 0%
 <element expandSchemaTarget="cus:chapter" label="Main chapter" name="mainChapter" type="string"/>
 ```
 
-链接的定义填充在&#x200B;**字符串**&#x200B;类型&#x200B;**`<element>`**&#x200B;上，**expandSchemaTarget**&#x200B;属性引用目标架构（在我们的示例中为“cus：chapter”）。 引用的架构必须是内容架构。
+链接的定义填充在&#x200B;**字符串**&#x200B;类型&#x200B;**`<element>`**&#x200B;上，**expandSchemaTarget**&#x200B;属性引用目标架构（在我们的示例中为“cus:chapter”）。 引用的架构必须是内容架构。
 
 目标元素的内容丰富了链接元素，即示例架构中的&#x200B;**`<chapter>`**&#x200B;元素：
 
@@ -136,13 +136,13 @@ ht-degree: 0%
 <element label="Main contact" name="mainContact" target="nms:recipient" type="link"/>
 ```
 
-链接的定义填充在&#x200B;**链接**&#x200B;类型&#x200B;**`<element>`**&#x200B;上，**target**&#x200B;属性引用目标架构（在我们的示例中为“nms：recipient”）。
+链接的定义填充在&#x200B;**链接**&#x200B;类型&#x200B;**`<element>`**&#x200B;上，**target**&#x200B;属性引用了目标架构（在我们的示例中为“nms:recipient”）。
 
 按照惯例，必须从数据架构的主元素声明链接。
 
 目标元素的&#x200B;**计算字符串**&#x200B;和键丰富了主元素上的&#x200B;**`<name>-id`**&#x200B;和&#x200B;**`<name>-cs`**&#x200B;属性。
 
-在我们的示例中，链接填充在“cus：book”模式中，链接数据的内容包含在“mainContact-id”和“mainContact-cs”属性中：
+在我们的示例中，链接填充在“cus:book”架构中，链接数据的内容包含在“mainContact-id”和“mainContact-cs”属性中：
 
 ```
 <book computeString="Content management" date="2006/06/08" id="6106" language="en" mainContact-cs="John Doe (john.doe@adobe.com)" mainContact-id="3012" name="Content management" xtkschema="cus:book">

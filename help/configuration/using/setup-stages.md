@@ -3,11 +3,11 @@ product: campaign
 title: 设置阶段
 description: 设置阶段
 feature: Configuration
-role: Data Engineer, Developer
+role: Developer
 exl-id: a5ae0b61-3377-46d9-a327-6c897eeda770
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '234'
+source-wordcount: '233'
 ht-degree: 2%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 2%
 应用以下步骤来设置这些标记：
 
 1. 标识要跟踪的页面并确定其类型（WEB或事务）。
-1. 确定要收集的其他信息，并使用这些信息描述扩展&#x200B;**nms：webTrackingLog**&#x200B;架构。 默认情况下，此架构可以存储每笔交易的交易金额和项目数。
+1. 确定要收集的其他信息，并使用这些信息描述扩展&#x200B;**nms:webTrackingLog**&#x200B;架构。 默认情况下，此架构可以存储每笔交易的交易金额和项目数。
 1. 创建Web跟踪标记。 可通过两种方式来做到这一点：
 
    * 在Adobe Campaign平台中插入与这些页面对应的URL，然后生成并提取关联的Web跟踪标记（从客户端控制台的&#x200B;**[!UICONTROL Campaign execution>Resources>Web tracking tags]**&#x200B;节点）。

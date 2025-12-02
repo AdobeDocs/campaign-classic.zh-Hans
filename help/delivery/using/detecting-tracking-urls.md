@@ -3,9 +3,9 @@ product: campaign
 title: 检测跟踪URL
 description: 详细了解推荐的跟踪URL模式
 feature: Monitoring
-role: User, Developer, Data Engineer
+role: User, Developer
 exl-id: 7611d6a1-6c55-4ba3-b905-58426c944991
-source-git-commit: 28638e76bf286f253bc7efd02db848b571ad88c4
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
 source-wordcount: '297'
 ht-degree: 2%
@@ -30,7 +30,7 @@ ht-degree: 2%
 
 >[!IMPORTANT]
 >
->Adobe不支持所有其他模式，应避免使用它们，以防止潜在的安全漏洞。
+>所有其他模式均不受Adobe支持，应避免使用，以防止潜在的安全漏洞。
 
 ## 不安全的模式
 

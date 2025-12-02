@@ -3,11 +3,11 @@ product: campaign
 title: 关于 Web 服务
 description: 关于 Web 服务
 feature: API
-role: Data Engineer, Developer
+role: Developer
 exl-id: 7aa2aef1-2eb6-48a6-82fa-4451bed66216
-source-git-commit: 517b85f5d7691acc2522bf4541f07c34c60c7fbf
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '645'
+source-wordcount: '644'
 ht-degree: 3%
 
 ---
@@ -18,12 +18,12 @@ ht-degree: 3%
 
 Adobe Campaign应用程序服务器旨在实现开放性，便于与日益多样化和复杂的公司信息系统集成。
 
-Adobe Campaign API在应用程序内的JavaScript中以及在应用程序外的SOAP中使用。 它们构成了可以扩充的通用函数库。 有关详细信息，请参阅[实现SOAP方法](../../configuration/using/implementing-soap-methods.md)。
+Adobe Campaign API在应用程序内的JavaScript以及应用程序外的SOAP中使用。 它们构成了可以扩充的通用函数库。 有关详细信息，请参阅[实现SOAP方法](../../configuration/using/implementing-soap-methods.md)。
 
 >[!IMPORTANT]
 >
 >每天授权引擎呼叫数因您的许可合同而异。 有关详细信息，请参见[此页面](https://helpx.adobe.com/cn/legal/product-descriptions/adobe-campaign-classic---product-description.html)。\
->[此专用文档](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=zh-Hans)中提供了所有API的列表，包括其完整说明。
+>[此专用文档]&#x200B;(https://experienceleague.adobe.com/developer/campaign-api/api/index.html)中提供了所有API的列表，包括其完整说明。
 
 ## 先决条件 {#prerequisites}
 
@@ -44,7 +44,7 @@ Adobe Campaign使用两种类型的API：
 
 ## SOAP 调用 {#soap-calls}
 
-SOAP协议允许您通过富客户端、使用Web服务的第三方应用程序或本地使用这些方法的JSP来调用API方法。
+SOAP协议允许您通过富客户端、使用Web服务的第三方应用程序或本机使用这些方法的JSP来调用API方法。
 
 ![](assets/s_ncs_configuration_architecture.png)
 
@@ -63,9 +63,9 @@ SOAP消息的结构如下所示：
 
 ## &#39;ExecuteQuery&#39;方法上的SOAP消息示例 {#example-of-a-soap-message-on-the--executequery--method--}
 
-在此示例中，SOAP查询调用“ExecuteQuery”方法，该方法将字符串作为用于身份验证（会话令牌）的参数，并将XML内容作为要执行的查询的说明。
+在此示例中，SOAP查询调用“ExecuteQuery”方法，该方法将字符串作为身份验证（会话令牌）的参数，并将XML内容作为要执行的查询的说明。
 
-有关详细信息，请参阅[ExecuteQuery (xtk：queryDef)](../../configuration/using/data-oriented-apis.md#executequery--xtk-querydef-)。
+有关详细信息，请参阅[ExecuteQuery (xtk:queryDef)](../../configuration/using/data-oriented-apis.md#executequery--xtk-querydef-)。
 
 >[!NOTE]
 >
@@ -116,7 +116,7 @@ SOAP消息的结构如下所示：
 
 ## 错误管理 {#error-management}
 
-示例SOAP错误响应：
+SOAP错误响应示例：
 
 ```
 <?xml version='1.0' encoding='ISO-8859-1'?>
@@ -136,7 +136,7 @@ SOAP消息正文中的`<soap-env:fault>`元素用于传递在处理Web服务期�
 
 * `<faultcode>` ：指示错误类型。 错误类型包括：
 
-   * 如果与所使用的SOAP版本不兼容，
+   * 如果与所使用的SOAP版本不兼容，则为“VersionMismatch”；
    * “MustUnderstand”表示如果邮件标头出现问题，
    * “客户端”在客户端丢失某些信息时，
    * “服务器”（如果服务器在执行处理时遇到问题）。

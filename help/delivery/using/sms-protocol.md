@@ -3,9 +3,9 @@ product: campaign
 title: 短信连接器协议和设置
 description: 了解关于短信连接器和配置方法的更多信息
 feature: SMS
-role: Developer, Data Engineer
+role: Developer
 exl-id: fded088a-11a2-4b87-a368-7b197334aca4
-source-git-commit: 41296a0acaee93d31874bf58287e51085c6c1261
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
 source-wordcount: '8457'
 ht-degree: 1%
@@ -101,7 +101,7 @@ SMPP传输单元（“数据包”）称为PDU。 **PDU**&#x200B;包含命令、
 
 ![](assets/do-not-localize/sms_protocol_1.png)
 
-在Adobe Campaign Classic中，要将SR与其对应的MT关联，SMSC将返回一个ID，其中包含`SUBMIT_SM_RESP`和`DELIVER_SM`步骤。 该标识符存储在`nms::providerMsgId`表的`providerId`字段中，并链接到`broadLogId`和`deliveryId`。 此匹配操作由SMS进程在写入数据库时完成。
+在Adobe Campaign Classic中，要将SR与其对应的MT关联，SMSC将返回一个ID，其中包含`SUBMIT_SM_RESP`和`DELIVER_SM`步骤。 该标识符存储在`providerId`表的`nms::providerMsgId`字段中，并链接到`broadLogId`和`deliveryId`。 此匹配操作由SMS进程在写入数据库时完成。
 
 成功的`SUBMIT_SM_RESP PDU`在发送日志中触发“已发送”消息状态，而成功的`DELIVER_SM (SR) PDU`触发“已接收”消息状态。
 
@@ -245,13 +245,13 @@ Adobe Campaign能够通过某些配置读取`receipted_message_id`可选字段�
 
 * **message_payload**：在单个`SUBMIT_SM PDU`中发送整个长消息的方式。 提供商必须拆分该部分，这意味着Adobe Campaign无法确切知道发送了多少个部件。 某些提供商需要此模式，但我们建议您仅在它们不支持UDH时才使用此模式。
 
-有关协议和格式的更多详细信息，请参阅[SUBMIT_SM PDU](sms-protocol.md#information-pdu)的`esm_class`、`short_message`和`message_payload`字段的说明。
+有关协议和格式的更多详细信息，请参阅`esm_class`SUBMIT_SM PDU`short_message`的`message_payload`、[和](sms-protocol.md#information-pdu)字段的说明。
 
 ### 吞吐量上限和窗口 {#throughput-capping}
 
 大多数提供商都要求为每个SMPP连接设置吞吐量限制。 通过在外部帐户中设置大量短信即可实现此目的。 请注意，吞吐量限制发生在每个连接上，总有效吞吐量是每个连接的限制乘以连接总数。 [同时连接](sms-protocol.md#connection-settings)部分中对此进行了详细说明。
 
-要达到最大可能的吞吐量，您需要微调最大发送窗口。 发送窗口是无需等待`SUBMIT_SM_RESP`即可发送的`SUBMIT_SM PDU`数。 有关更多详细信息，请参阅[发送窗口设置](sms-protocol.md#throughput-timeouts)部分。
+要达到最大可能的吞吐量，您需要微调最大发送窗口。 发送窗口是无需等待`SUBMIT_SM PDU`即可发送的`SUBMIT_SM_RESP`数。 有关更多详细信息，请参阅[发送窗口设置](sms-protocol.md#throughput-timeouts)部分。
 
 ### 服务请求和错误管理（“附录B”） {#sr-error-management}
 
@@ -446,7 +446,7 @@ Adobe Campaign Classic Extended SMPP连接器可以控制每个MTA子级的连�
 
 这些设置适用于处于发射器+接收器模式的接收器。 它们的工作方式与发射器部分类似，请参阅上面了解更多详细信息。
 
-### SMPP渠道设置 {#smpp-channel-settings}
+### SMPP 渠道设置 {#smpp-channel-settings}
 
 #### 允许字符音译 {#allow-character-transliteration}
 
@@ -472,7 +472,7 @@ Adobe Campaign Classic始终将所有MO存储在inSMS数据库中，因此此选
 
 Adobe Campaign Classic具有完全不同的KPI机制，因此此选项不可用。
 
-#### 来源编号 {#source-number}
+#### 源编号 {#source-number}
 
 定义消息的默认源地址。 此设置仅适用于投放中源编号留空的情况。
 
@@ -494,11 +494,11 @@ Adobe Campaign Classic具有完全不同的KPI机制，因此此选项不可用�
 
 TON（号码类型）和NPI（编号计划指示器）在[SMPP 3.4规范](https://smpp.org/SMPP_v3_4_Issue1_2.pdf)（第117页）的第5.2.5节中进行了说明。 这些值应该根据提供商的需求进行设置。
 
-它们在`SUBMIT_SM PDU`的`source_addr_ton`、`source_addr_npi`、`dest_addr_ton`和`dest_addr_npi`字段中按原样传输。
+它们在`source_addr_ton`的`source_addr_npi`、`dest_addr_ton`、`dest_addr_npi`和`SUBMIT_SM PDU`字段中按原样传输。
 
 #### 服务类型 {#service-type}
 
-此字段在`SUBMIT_SM PDU`的`service_type`字段中按原样传输。 根据提供商的需求进行设置。
+此字段在`service_type`的`SUBMIT_SM PDU`字段中按原样传输。 根据提供商的需求进行设置。
 
 ### 吞吐量和超时 {#throughput-timeouts}
 
@@ -506,7 +506,7 @@ TON（号码类型）和NPI（编号计划指示器）在[SMPP 3.4规范](https:
 
 #### 发送窗口 {#sending-window}
 
-窗口是无需等待匹配的`SUBMIT_SM_RESP`即可发送的`SUBMIT_SM PDU`数。
+窗口是无需等待匹配的`SUBMIT_SM PDU`即可发送的`SUBMIT_SM_RESP`数。
 
 最大窗口为4的传输示例：
 
@@ -589,7 +589,7 @@ MTA将尝试使用列表中的第一个编码进行编码。 如果失败，则�
 
 #### 发送完整的电话号码 {#send-full-phone-number}
 
-如果未选中此复选框，则仅向提供商发送电话号码的号码（`SUBMIT_SM`字段的`destination_addr`字段）。 这是默认行为，因为国际数字指示符（通常为+前缀）将替换为SMPP中的TON和NPI字段。
+如果未选中此复选框，则仅向提供商发送电话号码的号码（`destination_addr`字段的`SUBMIT_SM`字段）。 这是默认行为，因为国际数字指示符（通常为+前缀）将替换为SMPP中的TON和NPI字段。
 
 选中该复选框后，电话号码将按原样发送，不会进行预处理和添加可能的空格，+前缀或井号/井号/星号。
 
@@ -661,11 +661,11 @@ SMPP协议规范未严格强制实施SR格式。 它只是规范的[附录B](sms
 
 当遇到具有未知stat/err字段组合的消息时，这些正则表达式将应用于stat字段以确定SR是成功还是错误。 如果其stat值与这些正则表达式中的任何值都不匹配，则会忽略SR。
 
-默认情况下，以`DELIV`开头的stat值（如[附录B](sms-protocol.md#sr-error-management)中的`DELIVRD`）将被视为已成功交付，而所有与错误（如`REJECTED`、`UNDELIV`）匹配的stat值将被视为错误。
+默认情况下，以`DELIV`开头的stat值（如`DELIVRD`附录B[中的](sms-protocol.md#sr-error-management)）将被视为已成功交付，而所有与错误（如`REJECTED`、`UNDELIV`）匹配的stat值将被视为错误。
 
 #### MT确认中的ID格式 {#id-format-mt}
 
-这表示`SUBMIT_SM_RESP PDU`的`message_id`字段中返回的ID的格式。
+这表示`message_id`的`SUBMIT_SM_RESP PDU`字段中返回的ID的格式。
 
 * **请勿修改**：该ID在数据库中以ASCII编码文本的形式按原样存储。 不进行预处理或过滤。
 
@@ -747,7 +747,7 @@ SMPP协议规范未严格强制实施SR格式。 它只是规范的[附录B](sms
 
 ### 发件人字段 {#from-field}
 
-此字段为可选字段。 它允许覆盖发件人地址(oADC)。 此字段的内容放在`SUBMIT_SM PDU`的`source_addr`字段中。
+此字段为可选字段。 它允许覆盖发件人地址(oADC)。 此字段的内容放在`source_addr`的`SUBMIT_SM PDU`字段中。
 
 根据SMPP规范，字段限制为21个字符，但某些提供程序可能允许较长的值。 另请注意，在某些国家/地区可能会应用非常严格的限制，例如长度、内容、允许的字符。
 
@@ -765,7 +765,7 @@ SMS协议将SMS限制为255部分，但某些手机无法拼合长度超过10部
 
 此字段指示您要传输的SMS类型：普通消息或闪存消息，存储在移动设备或SIM卡上。
 
-此设置在`SUBMIT_SM PDU`的`dest_addr_subunit`可选字段中传输。
+此设置在`dest_addr_subunit`的`SUBMIT_SM PDU`可选字段中传输。
 
 * **未指定**&#x200B;在PDU中未发送任何可选字段。
 
@@ -779,7 +779,7 @@ SMS协议将SMS限制为255部分，但某些手机无法拼合长度超过10部
 
 #### 有效期 {#validity-period}
 
-有效期在`SUBMIT_SM PDU`的`validity_period`字段中传输。 日期始终采用绝对UTC时间格式，日期字段将以“00+”结尾。
+有效期在`validity_period`的`SUBMIT_SM PDU`字段中传输。 日期始终采用绝对UTC时间格式，日期字段将以“00+”结尾。
 
 ## 扩展的通用SMPP连接器 {#acc-extended-connector}
 
@@ -840,7 +840,7 @@ SMS进程仅处理SR，它连接到提供商并保持连接打开。 该进程�
 * **检查SR是否正确处理**
 在投放日志中，短信应标记为已接收。 投放日志应该成功，并且应该如下所示：
   `SR yourProvider stat=DELIVRD err=000|#MESSAGE`
-检查您是否更改了投放提供商名称。 在生产环境中，投放日志绝不应该包含&#x200B;**SR Generic**。
+检查您是否更改了投放提供商名称。 在生产环境中，投放日志绝不应该包含**SR Generic**。
 
 * **检查是否已处理MO**
 如果需要处理MO（自动回复、将MO存储在数据库中等），请尝试进行一些测试。 为所有自动回复关键字发送几条短信，并检查回复是否足够快，不超过几秒。

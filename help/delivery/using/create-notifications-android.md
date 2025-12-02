@@ -3,11 +3,11 @@ product: campaign
 title: 为Android设备创建推送通知
 description: 了解如何为Android创建推送通知
 feature: Push
-role: User, Developer, Data Engineer
+role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 13ccc5d6-4355-42ba-80dc-30a45d3b69a4
-source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
 source-wordcount: '650'
 ht-degree: 0%
@@ -50,7 +50,7 @@ ht-degree: 0%
 1. 在&#x200B;**[!UICONTROL Target type]**&#x200B;窗口中，选择&#x200B;**[!UICONTROL Subscribers of an Android mobile application]**&#x200B;并单击&#x200B;**[!UICONTROL Next]**。
 
 1. 在&#x200B;**[!UICONTROL Service]**&#x200B;下拉列表中，选择您之前创建的服务，然后选择应用程序，并单击&#x200B;**[!UICONTROL Finish]**。
-根据配置步骤中添加的内容，自动添加&#x200B;**[!UICONTROL Application variables]**。
+根据配置步骤中添加的内容，自动添加**[!UICONTROL Application variables]**。
 
    ![](assets/nmac_android_6.png)
 
@@ -70,7 +70,7 @@ ht-degree: 0%
 
 ## 创建通知消息 {#creating-notification-message}
 
-![](assets/do-not-localize/how-to-video.png) [了解如何在视频中创建Android推送通知](https://experienceleague.adobe.com/docs/campaign-classic-learn/getting-started-with-push-notifications-for-android/configuring-and-sending-push-notifications.html?lang=zh-Hans#additional-resources){target="_blank"}。
+![](assets/do-not-localize/how-to-video.png) [了解如何在视频中创建Android推送通知](https://experienceleague.adobe.com/docs/campaign-classic-learn/getting-started-with-push-notifications-for-android/configuring-and-sending-push-notifications.html#additional-resources){target="_blank"}。
 
 1. 转到&#x200B;**[!UICONTROL Campaign management]** > **[!UICONTROL Deliveries]**。
 

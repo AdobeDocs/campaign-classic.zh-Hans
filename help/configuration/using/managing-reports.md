@@ -3,12 +3,12 @@ product: campaign
 title: 管理报告
 description: 管理报告
 feature: Reporting, Configuration
-role: Data Engineer, Developer
+role: Developer
 badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v8"
 exl-id: 68908664-3cf6-4a6c-a327-c7f059c27aa3
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '153'
+source-wordcount: '152'
 ht-degree: 3%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 3%
 
 
 
-必须重新开发基于特定于默认Adobe Campaign收件人（nm：recipient或链接架构）的架构的报告，以便考虑来自自定义表及其通过目标映射链接的表的数据（请参阅[目标映射](../../configuration/using/target-mapping.md)部分）。
+必须重新开发基于特定于默认Adobe Campaign收件人（nm:recipient或架构链接）的架构的报告，以便考虑来自自定义表及其通过目标映射链接的表的数据（请参阅[目标映射](../../configuration/using/target-mapping.md)部分）。
 
 要创建新报告，请参阅[此章节](../../reporting/using/about-reports-creation-in-campaign.md)。
 

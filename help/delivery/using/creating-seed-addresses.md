@@ -4,11 +4,11 @@ title: 创建种子地址
 description: 了解如何创建和使用种子地址
 badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v8"
 feature: Seed Address
-role: User, Data Engineer
+role: User, Developer
 exl-id: f7dc97f0-3423-4b6f-88e2-08180f9adf8a
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '422'
+source-wordcount: '421'
 ht-degree: 1%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 1%
 要创建种子地址，请执行以下步骤：
 
 1. 单击种子地址列表上方的&#x200B;**[!UICONTROL New]**&#x200B;按钮。
-1. 在&#x200B;**[!UICONTROL Recipient]**&#x200B;选项卡的匹配字段中输入链接到地址的数据。 可用字段对应于投放收件人（nms：recipient表）用户档案中的标准字段：姓名、名字和电子邮件等。
+1. 在&#x200B;**[!UICONTROL Recipient]**&#x200B;选项卡的匹配字段中输入链接到地址的数据。 可用字段对应于投放收件人（nms:recipient表）的用户档案中的标准字段：姓名、名字和电子邮件等。
 
    >[!NOTE]
    >

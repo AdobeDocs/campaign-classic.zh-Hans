@@ -3,9 +3,9 @@ product: campaign
 title: 在站点中插入Web跟踪标记
 description: 了解如何在您的网站中插入Web跟踪标记
 feature: Configuration
-role: Data Engineer, Developer
+role: Developer
 exl-id: e7fcec75-82fe-45ff-8d45-7d6e95baeb14
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
 source-wordcount: '329'
 ht-degree: 0%
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 ## 简单方法 {#simple-method}
 
-此方法包括在要跟踪的网页的HTML源代码中插入&#x200B;**`<img>`** HTML，以向重定向服务器发送HTTP调用。
+此方法包括在要跟踪的网页的HTML源代码中插入&#x200B;**`<img>`** HTML标记，从而向重定向服务器发送HTTP调用。
 
 >[!IMPORTANT]
 >

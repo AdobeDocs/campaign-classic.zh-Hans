@@ -3,11 +3,11 @@ product: campaign
 title: 面向业务的 API
 description: 面向业务的 API
 feature: API
-role: Data Engineer, Developer
+role: Developer
 exl-id: e6638870-3141-4f12-b904-db436127c0d1
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '629'
+source-wordcount: '618'
 ht-degree: 2%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 2%
 
 * 投放：
 
-   * 创建投放操作，请参阅[SubmitDelivery (nms：delivery)](#submitdelivery--nms-delivery-)，
+   * 正在创建投放操作，请参阅[SubmitDelivery (nms:delivery)](#submitdelivery--nms-delivery-)，
    * 发送营销活动（开始、暂停、停止、发送校样），
    * 恢复投放日志。
 
@@ -27,10 +27,10 @@ ht-degree: 2%
    * 启动工作流，
    * 验证进程等。
 
-     请参阅JavaScript[&#128279;](../../configuration/using/soap-methods-in-javascript.md)中的SOAP方法。
+     请参阅JavaScript[中的](../../configuration/using/soap-methods-in-javascript.md)SOAP方法。
 
-* 内容管理
-* 订阅管理，请参阅[订阅(nms：subscription)](#subscribe--nms-subscription-)和[取消订阅(nms：subscription)](#unsubscribe--nms-subscription-)。
+* 内容管理 
+* 订阅管理，请参阅[订阅(nms:subscription)](#subscribe--nms-subscription-)和[取消订阅(nms:subscription)](#unsubscribe--nms-subscription-)。
 * 数据流程：导入、导出。
 
 本节详细说明了“Subscribe”、“Unsubscribe”和“SubmitDelivery”服务的使用。
@@ -39,7 +39,7 @@ ht-degree: 2%
 >
 >[Campaign JSAPI文档](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=zh-Hans)包含有关Adobe Campaign中的SOAP调用和使用Javascript的其他信息，以及对该应用程序中使用的所有方法和函数的完整引用。
 
-## 订阅(nms：subscription) {#subscribe--nms-subscription-}
+## 订阅(nms:subscription) {#subscribe--nms-subscription-}
 
 此服务允许您为收件人订阅信息服务并更新收件人配置文件。
 
@@ -47,10 +47,10 @@ ht-degree: 2%
 
 * 验证，
 * 订阅服务的内部名称，
-* 包含收件人信息的XML文档（来自“nms：recipient”模式），
+* 包含收件人信息的XML文档（来自“nms:recipient”架构），
 * 用于创建收件人的布尔值（如果尚无）。
 
-“nms：subscription”模式中“subscription”方法的描述：
+“nms:subscription”架构中“subscribe”方法的描述：
 
 ```
 <method name="Subscribe" static="true">
@@ -62,7 +62,7 @@ ht-degree: 2%
 </method>
 ```
 
-必须通过XML文档的`<recipient>`元素上的_&#x200B;**key**&#x200B;属性输入协调键的定义。 此属性的内容是以逗号分隔的XPath列表。
+必须通过XML文档的&#x200B;**元素上的_** key`<recipient>`属性输入协调键的定义。 此属性的内容是以逗号分隔的XPath列表。
 
 此调用不会返回任何数据，错误除外。
 
@@ -112,7 +112,7 @@ ht-degree: 2%
   </SOAP-ENV:Envelope>
   ```
 
-## 取消订阅(nms：subscription) {#unsubscribe--nms-subscription-}
+## 取消订阅(nms:subscription) {#unsubscribe--nms-subscription-}
 
 此服务允许您从信息服务中取消订阅收件人并更新收件人配置文件。
 
@@ -120,9 +120,9 @@ ht-degree: 2%
 
 * 验证，
 * 要取消订阅的服务的内部名称，
-* 包含收件人信息的XML文档（来自“nms：recipient”模式），
+* 包含收件人信息的XML文档（来自“nms:recipient”架构），
 
-“nms：subscription”模式中“Unsubscription”方法的描述：
+“nms:subscription”架构中“Unsubscribe”方法的描述：
 
 ```
 <method name="Unsubscribe" static="true">
@@ -173,7 +173,7 @@ ht-degree: 2%
 </SOAP-ENV:Envelope>
 ```
 
-## 提交投放(nms：delivery) {#submitdelivery--nms-delivery-}
+## SubmitDelivery (nms:delivery) {#submitdelivery--nms-delivery-}
 
 此服务允许您创建和提交投放操作。
 
@@ -198,7 +198,7 @@ ht-degree: 2%
 
 必须从Adobe Campaign客户端控制台创建投放模板。 它包含所有投放的通用参数（发件人地址或消息的有效期）。
 
-输入XML文档是符合“nms：delivery”模式结构的投放模板片段。 它将包含投放模板中无法静态定义的所有其他数据（例如，要定位的收件人列表）。
+输入XML文档是符合“nms:delivery”架构结构的投放模板片段。 它将包含投放模板中无法静态定义的所有其他数据（例如，要定位的收件人列表）。
 
 此调用不会返回任何数据，错误除外。
 

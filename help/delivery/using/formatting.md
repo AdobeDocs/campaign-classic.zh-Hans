@@ -4,11 +4,11 @@ title: 格式化
 description: 格式化
 badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v8"
 feature: Email Design
-role: User, Developer, Data Engineer
+role: User, Developer
 exl-id: d9688dc4-20c6-4a9a-990f-465f39b2faa2
-source-git-commit: 0fba6a2ad4ffa864e2f726f241aa9d7cd39072a6
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '1451'
+source-wordcount: '1446'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ JavaScript模板由其名称和命名空间进行标识，就像架构和表单�
 
 ### JavaScript模板的结构 {#structure-of-a-javascript-template}
 
-基于“cus：book”架构的JavaScriptHTML格式模板示例：
+基于“cus:book”架构的JavaScript HTML格式模板示例：
 
 ```
 <html>
@@ -79,7 +79,7 @@ JavaScript模板由其名称和命名空间进行标识，就像架构和表单�
 >
 >例如： `content.@['offer-id']`。
 
-编程语言的所有功能（变量、循环、条件测试、函数等） )可用于构造输出文档。 可以访问SOAP API以扩充输出文档。
+编程语言的所有功能（变量、循环、条件测试、函数等） )可用于构造输出文档。 可访问SOAP API以扩充输出文档。
 
 示例：
 
@@ -191,7 +191,7 @@ JavaScript模板由其名称和命名空间进行标识，就像架构和表单�
 
 此示例涉及以下步骤：
 
-1. 创建以下架构（在此例中： **neo：news**）：
+1. 创建以下架构（在此例中： **neo:news**）：
 
    ```
    <srcSchema _cs="Invitation (neo)"   entitySchema="xtk:srcSchema" img="xtk:schema.png" label="Invitation" mappingType="sql" name="news" namespace="neo" xtkschema="xtk:srcSchema">
@@ -230,7 +230,7 @@ JavaScript模板由其名称和命名空间进行标识，就像架构和表单�
    </srcSchema>
    ```
 
-1. 创建链接的&#x200B;**[!UICONTROL Content management]**&#x200B;类型表单(**neo：news**)
+1. 创建链接的&#x200B;**[!UICONTROL Content management]**&#x200B;类型表单(**neo:news**)
 
    ```
    <form _cs="News (neo)" entitySchema="xtk:form"  img="xtk:form.png" label="News"  name="news" namespace="neo" type="contentForm" xtkschema="xtk:form">
@@ -262,7 +262,7 @@ JavaScript模板由其名称和命名空间进行标识，就像架构和表单�
    </form>
    ```
 
-1. 创建JavaScript模板，其中包含HTML和文本格式的消息内容。
+1. 创建包含HTML和文本格式消息内容的JavaScript模板。
 
    * 在我们的示例中，对于HTML：
 
@@ -368,7 +368,7 @@ JavaScript模板由其名称和命名空间进行标识，就像架构和表单�
 
 ## XSL样式表 {#xsl-stylesheets}
 
-XSLT语言允许将XML文档更改为输出文档。 根据样式表的输出方法，生成的文档可以以HTML、纯文本或其他XML树生成。
+XSLT语言允许将XML文档更改为输出文档。 根据样式表的输出方法，可以在HTML、纯文本或其他XML树中生成生成的文档。
 
 此转换在称为样式表的文档中的XML中又进行了详细说明。
 
@@ -376,11 +376,11 @@ XSLT语言允许将XML文档更改为输出文档。 根据样式表的输出方
 
 样式表由其名称和命名空间标识，就像架构和表单一样。 但是，建议将&#x200B;**.xsl**&#x200B;扩展添加到样式表的名称中。
 
-样式表的标识键是由命名空间和用冒号分隔的名称组成的字符串；例如： **cus：book.xsl**。
+样式表的标识键是由命名空间和用冒号分隔的名称组成的字符串；例如： **cus:book.xsl**。
 
 ### 样式表的结构 {#structure-of-a-stylesheet}
 
-基于示例架构“cus：book”的HTML格式化样式表的示例：
+基于示例架构“cus:book”的HTML格式样式表示例：
 
 ```
 <?xml version="1.0" encoding="ISO-8859-1" ?>
@@ -444,7 +444,7 @@ XSLT语言允许将XML文档更改为输出文档。 根据样式表的输出方
 
 默认情况下，XSLT处理器会搜索应用于输入XML文档的根或主节点的&#x200B;**模板**。 输出文档的构造以此&#x200B;**模板**&#x200B;开始。
 
-在我们的示例中，通过显示书名和章节列表，从“cus：book”架构生成了HTML页。
+在我们的示例中，通过显示书名和章节列表，从“cus:book”架构生成了HTML页面。
 
 >[!NOTE]
 >
@@ -452,9 +452,9 @@ XSLT语言允许将XML文档更改为输出文档。 根据样式表的输出方
 
 ### 显示HTML/XML {#displaying-html-xml}
 
-要显示&#x200B;**html**&#x200B;字段，请使用&#x200B;**`<xsl:value-of>`**&#x200B;指令中的&#x200B;**disable-output-escaping=&quot;yes&quot;**&#x200B;选项。 这样可避免将字符替换为XML实体（例如，将&lt;替换为&lt;）。
+要显示&#x200B;**html**&#x200B;字段，请使用&#x200B;**指令中的** disable-output-escaping=&quot;yes&quot;**`<xsl:value-of>`**&#x200B;选项。 这样可避免将字符替换为XML实体（例如，将&lt;替换为&lt;）。
 
-带有&#x200B;**disable-output-escaping=&quot;yes&quot;**&#x200B;选项的&#x200B;**`<xsl:text>`**&#x200B;指令允许您为个性化字段或条件测试插入JavaScript标记。
+带有&#x200B;**`<xsl:text>`** disable-output-escaping=&quot;yes&quot;**选项的**&#x200B;指令允许您为个性化字段或条件测试插入JavaScript标记。
 
 示例：
 
@@ -503,7 +503,7 @@ XSLT语言允许将XML文档更改为输出文档。 根据样式表的输出方
 
 ![](assets/d_ncs_content_form14.png)
 
-要随时生成输出文档的预览，请选择内容实例和格式(HTML、文本、XML)，然后单击&#x200B;**[!UICONTROL Generate]**：
+要随时生成输出文档的预览，请选择一个内容实例和格式(HTML、文本、XML)，然后单击&#x200B;**[!UICONTROL Generate]**：
 
 ![](assets/d_ncs_content_form15.png)
 
@@ -515,7 +515,7 @@ XSLT语言允许将XML文档更改为输出文档。 根据样式表的输出方
 
 ### 图像引用 {#image-referencing}
 
-在HTML输出文档中输入的图像可以使用绝对或相对参照进行参照。
+在HTML输出文档中输入的图像可以使用绝对或相对引用进行引用。
 
 相对引用允许您输入包含&#x200B;**NcmResourcesDir**&#x200B;和&#x200B;**NcmResourcesDirPreview**&#x200B;选项中图像的服务器的URL。 这些选项包含要在Adobe Campaign客户端控制台中发布和预览的图像的位置。
 

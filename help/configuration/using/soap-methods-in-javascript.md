@@ -3,11 +3,11 @@ product: campaign
 title: JavaScript 中的 SOAP 方法
 feature: Configuration, Instance Settings
 description: JavaScript 中的 SOAP 方法
-role: Data Engineer, Developer
+role: Developer
 exl-id: 62020447-fe59-4363-994d-de4d8032bbd7
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '136'
+source-wordcount: '134'
 ht-degree: 9%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 9%
 
 静态SOAP方法可通过在表示模式的对象上调用方法来进行访问。 架构是“namespace”对象的属性。 这些命名空间是全局变量，因此，例如，xtk或nms变量表示相应的命名空间
 
-以下示例调用xtk：workflow模式的静态PostEvent方法：
+以下示例调用xtk:workflow架构的静态PostEvent方法：
 
 ```
 xtk.workflow.PostEvent("WKF1", "signal", "", $recipient-id='123', false) 
@@ -30,7 +30,7 @@ xtk.workflow.PostEvent("WKF1", "signal", "", $recipient-id='123', false)
 
 要使用非静态SOAP方法，必须首先在对应的架构上使用“get”或“create”方法检索实体。
 
-以下示例调用“xtk：queryDef”架构的ExecuteQuery方法：
+以下示例调用“xtk:queryDef”架构的ExecuteQuery方法：
 
 ```
 var query = xtk.queryDef.create(

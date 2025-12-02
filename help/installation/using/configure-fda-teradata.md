@@ -7,9 +7,9 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 3a5856c3-b642-4722-97ff-6ae7107efdbe
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '1629'
+source-wordcount: '1631'
 ht-degree: 0%
 
 ---
@@ -21,14 +21,14 @@ ht-degree: 0%
 使用Campaign [联合数据访问](../../installation/using/about-fda.md) (FDA)选项处理存储在外部数据库中的信息。 请按照以下步骤配置对Teradata的访问权限。
 
 1. 安装和配置[Teradata驱动程序](#teradata-config)
-1. 在Campaign中配置Teradata[外部帐户](#teradata-external)
+1. 在Campaign中配置Teradata [外部帐户](#teradata-external)
 1. 为Teradata和Campaign服务器设置[其他配置](#teradata-additional-configurations)
 
-## teradata配置 {#teradata-config}
+## Teradata配置 {#teradata-config}
 
-您需要安装驱动程序，以便实现Teradata与Campaign的连接。
+您需要安装用于Teradata的驱动程序，以便实现与Campaign的连接。
 
-1. 为Teradata[&#128279;](https://downloads.teradata.com/download/connectivity/odbc-driver/linux)安装ODBC驱动程序。
+1. 为Teradata[安装](https://downloads.teradata.com/download/connectivity/odbc-driver/linux)ODBC驱动程序。
 
    它由三个软件包组成，这些软件包可按以下顺序安装在Red Hat（或CentOS）/Suse上：
 
@@ -69,12 +69,12 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->连接到FDA中的Teradata外部数据库需要在Adobe Campaign服务器上执行其他配置步骤。 [了解详情](#teradata-additional-configurations)。
+>要在FDA中连接到Teradata外部数据库，需要在Adobe Campaign服务器上执行其他配置步骤。 [了解详情](#teradata-additional-configurations)。
 >
 
-## teradata外部帐户{#teradata-external}
+## Teradata外部帐户{#teradata-external}
 
-利用Teradata外部帐户，可将Campaign实例连接到Teradata外部数据库。
+Teradata外部帐户允许您将Campaign实例连接到Teradata外部数据库。
 
 1. 在营销活动&#x200B;**[!UICONTROL Explorer]**&#x200B;中，单击&#x200B;**[!UICONTROL Administration]** / **[!UICONTROL Platform]** / **[!UICONTROL External accounts]**。
 
@@ -86,7 +86,7 @@ ht-degree: 0%
 
    * **[!UICONTROL Type]**：选择&#x200B;**[!UICONTROL Teradata]**&#x200B;类型。
 
-   * **[!UICONTROL Server]**：Teradata服务器的URL或名称
+   * **[!UICONTROL Server]**： Teradata服务器的URL或名称
 
    * **[!UICONTROL Account]**：用于访问Teradata数据库的帐户的名称
 
@@ -96,13 +96,13 @@ ht-degree: 0%
 
    * **[!UICONTROL Options]**：要通过Teradata传递的选项。 使用以下格式： &#39;parameter=value&#39;。 使用分号作为值之间的分隔符。
 
-   * **[!UICONTROL Timezone]**：在Teradata中设置的时区。 [了解详情](#timezone)
+   * **[!UICONTROL Timezone]**： Teradata中设置的时区。 [了解详情](#timezone)
 
 连接器支持以下选项：
 
 | 选项 | 说明 |
 |---|---|
-| TD_MAX_SESSIONS | 指定Teradata并行传输程序可以为操作员作业获取的最大登录会话数。 |
+| TD_MAX_SESSIONS | 指定Teradata Parallel Transporter可以为操作员作业获取的最大登录会话数。 |
 | 时区名称 | 服务器时区的名称。 |
 | 字符集 | 用于配置Teradata字符集。 <br>有关详情，请参阅[本页](https://docs.teradata.com/r/ODBC-Driver-for-Teradata-User-Guide/May-2017/Configuration-of-odbc.ini-in-UNIX/Linux-and-Apple-OS-X/Teradata-DSN-Options#rub1478609534082__table_N102D3_N102B6_N102B3_N10001)。 |
 | IANAAppCodePage | ODBC应用程序代码页。 <br>有关详情，请参阅[本页](https://docs.teradata.com/r/ODBC-Driver-for-Teradata-User-Guide/May-2017/ODBC-Driver-for-Teradata-Application-Development/International-Character-Set-Support/Application-Code-Page) |
@@ -113,15 +113,15 @@ ht-degree: 0%
 >
 > 此选项不适用于低于7.3.1版本的内部版本。
 
-teradata驱动程序提供自己的ODBC库，但此库可能与其他ODBC外部帐户不兼容。
+Teradata驱动程序提供自己的ODBC库，但此库可能与其他ODBC外部帐户不兼容。
 
-如果要配置另一个也使用ODBC的外部帐户，例如Snowflake，则需要将一个ODBCLib选项集添加到默认ODBC库的路径中（ Debian上为`/usr/lib/x86_64-linux-gnu/libodbc.so`，RHEL/CentOS上为`/usr/lib64/libodbc.so`）。
+如果要配置另一个也使用ODBC的外部帐户，例如Snowflake，则需要将一个ODBCLib选项集添加到默认ODBC库的路径（ Debian上为`/usr/lib/x86_64-linux-gnu/libodbc.so`，RHEL/CentOS上为`/usr/lib64/libodbc.so`）。
 
 ![](assets/ext_account_24.png)
 
-### 查询分段
+### 查询带
 
-当多个Adobe Campaign用户连接到同一FDATeradata外部帐户时，**[!UICONTROL Query banding]**&#x200B;选项卡允许您在一个会话上设置查询范围，即一组键/值对。
+当多个Adobe Campaign用户连接到同一FDA Teradata外部帐户时，**[!UICONTROL Query banding]**&#x200B;选项卡允许您在一个会话上设置查询范围，即一组键/值对。
 
 ![](assets/ext_account_20.png)
 
@@ -143,9 +143,9 @@ teradata驱动程序提供自己的ODBC库，但此库可能与其他ODBC外部�
 
 如果在测试连接&#x200B;**TIM-030008日期“2”时出现以下错误：缺少字符(iRc=-53)**，请确保已正确安装ODBC驱动程序，并且已为Campaign服务器设置LD_LIBRARY_PATH (Linux) / PATH (Windows)。
 
-错误&#x200B;**ODB-240000 ODBC错误： [Microsoft][ODBC Driver Manager]未找到数据源名称，未指定默认驱动程序。如果使用16.X驱动程序，则Windows中会出现**。 Adobe Campaign要求odbcinst.ini中的teradata名为“{teradata}”。
+错误&#x200B;**ODB-240000 ODBC错误： \[Microsoft\]\[ODBC驱动程序管理器\]未找到数据源名称，未指定默认驱动程序。如果使用16.X驱动程序，则Windows中会出现**。 Adobe Campaign要求odbcinst.ini中的teradata命名为“{teradata}”。
 
-* 从Campaign 18.10开始，您可以在外部帐户的选项中添加ODBCDriverName=&quot;Teradata数据库ODBC驱动程序16.10&quot;。 版本号可以更改，通过运行odbcad32.exe并访问“驱动程序”选项卡，可以找到确切的名称。
+* 从Campaign 18.10开始，您可以在外部帐户的选项中添加ODBCDriverName=&quot;Teradata Database ODBC Driver 16.10&quot;。 版本号可以更改，通过运行odbcad32.exe并访问“驱动程序”选项卡，可以找到确切的名称。
 
 * 如果您使用的是较旧的Campaign版本，则必须将驱动程序安装创建的odbcinst.ini的Teradata部分复制到名为Teradata的新部分。 在这种情况下，可以使用Regedit。 如果您的基数是latin1，则必须在选项中添加&#x200B;**APICharSize=1**。
 
@@ -186,7 +186,7 @@ Adobe Campaign不会对其将在数据库中创建的对象设置保护模式（
 
 ### MD5安装 {#md5-installation}
 
-如果要在Adobe Campaign实例中使用md5函数，则必须从此[page](https://downloads.teradata.com/download/extensibility/md5-message-digest-udf) (md5_20080530.zip)在Teradata数据库上安装用户模式函数。
+如果要在Adobe Campaign实例中使用md5函数，则必须从此[页面](https://downloads.teradata.com/download/extensibility/md5-message-digest-udf) (md5_20080530.zip)在Teradata数据库上安装用户模式函数。
 
 下载文件的sha1如下所示：65cc0bb6935f72fcd84fef1ebcd64c00115dfd1e。
 
@@ -227,7 +227,7 @@ Adobe Campaign不会对其将在数据库中创建的对象设置保护模式（
 
 ### UDF_UTF16TO8安装 {#UDF-UTF16TO8-installation}
 
-如果要在Adobe Campaign实例中使用udf_utf16to8函数，请从&#x200B;**Teradataunicode工具包**&#x200B;在Teradata数据库上安装用户模式函数。
+如果要在Adobe Campaign实例中使用udf_utf16to8函数，请从&#x200B;**Teradata unicode工具包**&#x200B;在Teradata数据库上安装用户模式函数。
 
 下载的文件的sha1如下e58235f434f52c71316a577cb48e20b97d24f470。
 
@@ -235,7 +235,7 @@ Adobe Campaign不会对其将在数据库中创建的对象设置保护模式（
 
 1. 解压缩utk_release1.7.0.0.zip文件。
 
-1. 在提取的文件中查找udf_utf16to8.o，并导航到包含该文件的目录。 应将其命名为utk_release1.7.0.0/utk_release1.7.0.0/04 TranslationUDFs/01TeradataUDFs/suselinux-x8664/udf_installation/。
+1. 在提取的文件中查找udf_utf16to8.o，并导航到包含该文件的目录。 应将其命名为utk_release1.7.0.0/utk_release1.7.0.0/04 TranslationUDFs/01 Teradata UDFs/suselinux-x8664/udf_installation/。
 
 1. 使用bteq连接到Teradata数据库。
 
@@ -258,9 +258,9 @@ Adobe Campaign不会对其将在数据库中创建的对象设置保护模式（
 
 驱动程序安装需要以下内容：
 
-* 可在此[页](https://downloads.teradata.com/download/connectivity/odbc-driver/linux)中找到的ODBC驱动程序Teradata
+* 可在此[页](https://downloads.teradata.com/download/connectivity/odbc-driver/linux)中找到的Teradata ODBC驱动程序
 
-* 可在此[页](https://downloads.teradata.com/download/tools/teradata-tools-and-utilities-linux-installation-package-0)中找到的Teradata工具和实用工具（用于批量加载）
+* 可在此[页面](https://downloads.teradata.com/download/tools/teradata-tools-and-utilities-linux-installation-package-0)中找到的Teradata工具和实用程序（用于批量加载）
 
 文件名和sha1：
 
@@ -286,7 +286,7 @@ Adobe Campaign不会对其将在数据库中创建的对象设置保护模式（
 
 1. 运行setup_wrapper.sh。
 
-### teradata工具和实用程序安装 {#teradata-tools-installation}
+### Teradata工具和实用程序安装 {#teradata-tools-installation}
 
 要安装工具，请执行以下操作：
 
@@ -310,13 +310,13 @@ Adobe Campaign不会对其将在数据库中创建的对象设置保护模式（
 
 您首先需要下载适用于Windows的Teradata工具和实用程序。 您可以从此[页面](https://downloads.teradata.com/download/tools/teradata-tools-and-utilities-windows-installation-package)下载
 
-确保安装ODBC驱动程序和Teradata并行传输程序基础。 它将安装用于在Teradata数据库上进行批量加载的telapi.dll。
+确保安装ODBC驱动程序和Teradata Parallel Transporter Base。 它将安装用于在Teradata数据库上进行批量加载的telapi.dll。
 
 确保驱动程序和实用程序的路径位于nlserver在执行期间将具有的PATH变量中。 默认情况下，路径为C:\Program Files (x86) \Teradata\Client\15.10\bin （在Windows 32位上）或C:\Program Files\Teradata\Client\15.10\bin （在64位上）。
 
 ## 时区 {#timezone}
 
-teradata使用非标准的时区名称，您可以在[Teradata站点](https://docs.teradata.com/reader/rgAb27O_xRmMVc_aQq2VGw/oGKvgl7gCeBMTGrp59BnwA)上找到该列表。 Adobe Campaign将尝试将外部配置中给定的时区转换为Teradata能够理解的时区。 如果未找到通信，则会找到会话的最接近GMT+X（或GMT-X）时区，日志中会显示警告。
+Teradata使用非标准的时区名称，您可以在[Teradata网站](https://docs.teradata.com/reader/rgAb27O_xRmMVc_aQq2VGw/oGKvgl7gCeBMTGrp59BnwA)上找到该列表。 Adobe Campaign将尝试将外部配置中给定的时区转换为Teradata所了解的时区。 如果未找到通信，则会找到会话的最接近GMT+X（或GMT-X）时区，日志中会显示警告。
 
 完成转换后，将读取名为teradata_timezones.txt的文件，该文件应位于linux下的/usr/local/neolane/nl6/datakit目录下。 如果您编辑此文件，请确保联系Adobe Campaign团队以在源代码中进行更改，否则此文件将在下次Campaign更新时覆盖。
 

@@ -3,11 +3,11 @@ product: campaign
 title: Web 服务调用
 description: Web 服务调用
 feature: API
-role: Data Engineer, Developer
+role: Developer
 exl-id: ce94e7e7-b8f8-4c82-937f-e87d15e50c34
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '923'
+source-wordcount: '918'
 ht-degree: 1%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 1%
 
 ## 一般信息 {#general-information}
 
-所有API方法都以Web服务的形式提供。 这使您能够通过SOAP调用管理所有Adobe Campaign功能，这是Adobe Campaign应用程序服务器的本机入口点。 Adobe Campaign控制台本身仅使用SOAP调用。
+所有API方法都以Web服务的形式提供。 这使您能够通过SOAP调用管理所有Adobe Campaign函数，这是Adobe Campaign应用程序服务器的本机入口点。 Adobe Campaign控制台本身仅使用SOAP调用。
 
 通过Web服务，您可以从第三方系统创建许多应用程序：
 
@@ -45,15 +45,15 @@ Web服务在数据架构的语法中进行描述，可从&#x200B;**`<methods>`**
 
 下面是名为&#x200B;**GenerateForm**&#x200B;的方法的定义示例。
 
-服务的描述以`<method>`元素开头。 已从`<parameters>`元素完成方法的参数列表。 每个参数由名称、类型（布尔值、字符串、DOMElement等）指定 和描述。 值为“out”的“inout”属性允许您指定“result”参数位于SOAP调用输出中。
+服务的描述以`<method>`元素开头。 已从`<parameters>`元素完成方法的参数列表。 每个参数由名称、类型（布尔值、字符串、DOMElement等）和说明指定。 值为“out”的“inout”属性允许您指定“result”参数位于SOAP调用输出中。
 
 “static”属性（值为“true”）的存在将此方法描述为static，这意味着必须声明该方法的所有参数。
 
 “const”方法隐含地将XML文档格式为其关联架构作为输入。
 
-在[方法](../../configuration/using/schema/method.md)下的“架构引用”章节中，提供了Adobe Campaign架构的`<method>`元素的完整说明
+在`<method>`方法[下的“架构引用”章节中，提供了Adobe Campaign架构的](../../configuration/using/schema/method.md)元素的完整说明
 
-“xtk：queryDef”架构中的“const”类型“ExecuteQuery”方法的示例：
+“xtk:queryDef”架构中的“const”类型“ExecuteQuery”方法的示例：
 
 ```
 <method name="ExecuteQuery" const="true">
@@ -64,7 +64,7 @@ Web服务在数据架构的语法中进行描述，可从&#x200B;**`<methods>`**
 </method>
 ```
 
-此方法的输入参数是采用“xtk：queryDef”架构格式的XML文档。
+此方法的输入参数是采用“xtk:queryDef”架构格式的XML文档。
 
 ## Web服务描述：WSDL {#web-service-description--wsdl}
 
@@ -79,9 +79,9 @@ https://`<server>`/nl/jsp/schemawsdl.jsp？schema=`<schema>`
 替换为：
 
 * **`<server>`**： Adobe Campaign应用程序服务器(nlserver web)
-* **`<schema>`**：架构标识键(namespace：schema_name)
+* **`<schema>`**：架构标识键（命名空间:schema_name）
 
-### 架构“xtk：queryDef”的“ExecuteQuery”方法示例 {#example-on-the--executequery--method-of-schema--xtk-querydef-}
+### 架构“xtk:queryDef”的“ExecuteQuery”方法示例 {#example-on-the--executequery--method-of-schema--xtk-querydef-}
 
 WSDL文件是从URL生成的：
 
@@ -91,7 +91,7 @@ WSDL描述首先定义用于形成消息的类型，这些消息在“端口”�
 
 #### 类型 {#types}
 
-类型定义基于XML架构。 在我们的示例中，“ExecuteQuery”方法将“s：string”字符串和XML文档(`<s:complextype>`)作为参数。 方法(“ExecuteQueryResponse”)的返回值是XML文档(`<s:complextype>`)。
+类型定义基于XML架构。 在我们的示例中，“ExecuteQuery”方法将“s:string”字符串和XML文档(`<s:complextype>`)作为参数。 方法(“ExecuteQueryResponse”)的返回值是XML文档(`<s:complextype>`)。
 
 ```
 <types>
@@ -154,7 +154,7 @@ WSDL描述首先定义用于形成消息的类型，这些消息在“端口”�
 
 #### 绑定 {#binding}
 
-`<binding>`部分指定SOAP通信协议(`<soap:binding>`)、HTTP中的数据传输（“transport”属性的值）以及“ExecuteQuery”操作的数据格式。 SOAP信封的正文直接包含消息段，而不进行转换。
+`<binding>`部分指定SOAP通信协议(`<soap:binding>`)、HTTP中的数据传输（“传输”属性的值）以及“ExecuteQuery”操作的数据格式。 SOAP信封的正文直接包含消息区段，无需进行转换。
 
 ```
 <binding name="queryDefMethodsSoap" type="tns:queryDefMethodsSoap">
@@ -226,12 +226,12 @@ WSDL描述首先定义用于形成消息的类型，这些消息在“端口”�
 * 在登录响应中传输（在HTTP标头中）
 * 在每个查询中使用（在HTTP标头中）
 
-从POST和GETHTTP：
+从POST和GET HTTP：
 
 * 服务器使用令牌完成链接
 * 服务器向表单添加隐藏字段
 
-从SOAP调用：
+通过SOAP调用：
 
 * 将其添加到调用标头
 

@@ -3,11 +3,11 @@ product: campaign
 title: 面向数据的 API
 description: 面向数据的 API
 feature: API
-role: Data Engineer, Developer
+role: Developer
 exl-id: a392c55e-541a-40b1-a910-4a6dc79abd2d
-source-git-commit: 517b85f5d7691acc2522bf4541f07c34c60c7fbf
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '1813'
+source-wordcount: '1796'
 ht-degree: 0%
 
 ---
@@ -44,9 +44,9 @@ XML文档存储在数据库的MEMO类型字段中。
 
 这使您能够隔离基础SQL。 查询语言不依赖于底层引擎：某些函数将重新映射，这些函数可能会生成多个SELECT SQL顺序。
 
-有关详细信息，请参阅架构“xtk：queryDef”[&#128279;](../../configuration/using/web-service-calls.md#example-on-the--executequery--method-of-schema--xtk-querydef-)的“ExecuteQuery”方法的示例。
+有关详细信息，请参阅架构“xtk[”:queryDef的“ExecuteQuery”方法上的](../../configuration/using/web-service-calls.md#example-on-the--executequery--method-of-schema--xtk-querydef-)示例。
 
-**ExecuteQuery**&#x200B;方法出现在[ExecuteQuery (xtk：queryDef)](#executequery--xtk-querydef-)中。
+**ExecuteQuery**&#x200B;方法出现在[ExecuteQuery (xtk:queryDef)](#executequery--xtk-querydef-)中。
 
 ### 写入 {#write}
 
@@ -56,13 +56,13 @@ XML文档存储在数据库的MEMO类型字段中。
 
 XML结构提供了数据的逻辑视图，允许您绕过SQL表的物理结构。
 
-Write方法在[Write/WriteCollection (xtk：session)](#write---writecollection--xtk-session-)中显示。
+Write方法在[Write / WriteCollection (xtk:session)](#write---writecollection--xtk-session-)中显示。
 
-## ExecuteQuery (xtk：queryDef) {#executequery--xtk-querydef-}
+## ExecuteQuery (xtk:queryDef) {#executequery--xtk-querydef-}
 
 此方法允许您从与架构关联的数据执行查询。 它需要验证字符串（必须登录）和描述作为参数提交的查询的XML文档。 return参数是一个XML文档，它以查询所引用的架构格式包含查询的结果。
 
-“xtk：queryDef”架构中“ExecuteQuery”方法的定义：
+“xtk:queryDef”架构中“ExecuteQuery”方法的定义：
 
 ```xml
 <method name="ExecuteQuery" const="true">
@@ -74,11 +74,11 @@ Write方法在[Write/WriteCollection (xtk：session)](#write---writecollection--
 
 >[!NOTE]
 >
->这是“常量”方法。 输入参数以“xtk：queryDef”架构的格式包含在XML文档中。
+>这是“常量”方法。 输入参数以“xtk:queryDef”架构的格式包含在XML文档中。
 
 ### 输入查询的XML文档的格式 {#format-of-the-xml-document-of-the-input-query}
 
-查询的XML文档的结构在“xtk：queryDef”模式中描述。 本文档介绍了SQL查询的子句：“select”、“where”、“order by”、“group by”、“having”。
+查询的XML文档的结构在“xtk:queryDef”架构中描述。 本文档介绍了SQL查询的子句：“select”、“where”、“order by”、“group by”、“having”。
 
 ```xml
 <queryDef schema="schema_key" operation="operation_type">
@@ -110,7 +110,7 @@ Write方法在[Write/WriteCollection (xtk：session)](#write---writecollection--
 </queryDef>
 ```
 
-可以在`<condition> `元素中定义子查询(`<subquery>`)。 的语法   `<subquery> `   元素基于    `<querydef>`。
+可以在`<subquery>`元素中定义子查询(`<condition> `)。 的语法   `<subquery> `   元素基于    `<querydef>`。
 
 `<subquery>  : </subquery>`示例
 
@@ -141,7 +141,7 @@ Write方法在[Write/WriteCollection (xtk：session)](#write---writecollection--
 
 #### “获取”操作的示例 {#example-with-the--get--operation}
 
-检索在电子邮件上使用过滤器的收件人（“nms：recipient”架构）的姓氏和名字。
+检索在电子邮件上使用筛选器的收件人（“nms:recipient”架构）的姓氏和名字。
 
 ```xml
 <queryDef schema="nms:recipient" operation="get">
@@ -306,7 +306,7 @@ Write方法在[Write/WriteCollection (xtk：session)](#write---writecollection--
   </where>
   ```
 
-  要从“nms：recipient”模式中检索文件夹的字段，请执行以下操作：
+  要从“nms:recipient”架构中检索文件夹的字段，请执行以下操作：
 
   ```xml
   <select>
@@ -391,7 +391,7 @@ Write方法在[Write/WriteCollection (xtk：session)](#write---writecollection--
 
 返回参数是采用与查询关联的架构格式的XML文档。
 
-从“nms：recipient”模式返回“get”操作的示例：
+从“nms:recipient”架构对“get”操作返回的示例：
 
 ```
 <recipient email="john.doe@adobe.com" lastName"Doe" firstName="John"/>
@@ -484,7 +484,7 @@ Write方法在[Write/WriteCollection (xtk：session)](#write---writecollection--
   </SOAP-ENV:Envelope>
   ```
 
-## 写入/写入收集(xtk：session) {#write---writecollection--xtk-session-}
+## 写入/写入集合(xtk:session) {#write---writecollection--xtk-session-}
 
 这些服务用于插入、更新或删除实体（“写入”方法）或实体集合（“WriteCollection”方法）。
 
@@ -494,7 +494,7 @@ Write方法在[Write/WriteCollection (xtk：session)](#write---writecollection--
 
 调用不会返回任何数据，错误除外。
 
-“xtk：session”架构中“Write”和“WriteCollection”方法的定义：
+“xtk:session”架构中“Write”和“WriteCollection”方法的定义：
 
 ```xml
 <method name="Write" static="true">
@@ -575,7 +575,7 @@ Write方法在[Write/WriteCollection (xtk：session)](#write---writecollection--
 
 可以在链接的元素上输入“_key”和“_operation”属性。 此元素上的行为与输入架构的主元素上的行为相同。
 
-主实体(“nms：recipient”)的键的定义由链接表（元素`<folder>`架构“xtk：folder”）中的字段和电子邮件组成。
+主实体(“nms:recipient”)的键的定义由链接表（元素`<folder>`架构“xtk:folder”）中的字段和电子邮件组成。
 
 >[!NOTE]
 >
@@ -583,7 +583,7 @@ Write方法在[Write/WriteCollection (xtk：session)](#write---writecollection--
 
 #### 示例2 {#example-2}
 
-从收件人更新公司（在“cus：company”架构中链接的表）：
+正在从收件人更新公司（“cus:company”架构中的链接表）：
 
 ```xml
 <recipient _key="[folder/@name], @email" email="john.doe@adobe.net" lastName="Doe" firstName="John" xtkschema="nms:recipient">
@@ -593,7 +593,7 @@ Write方法在[Write/WriteCollection (xtk：session)](#write---writecollection--
 
 #### 示例3 {#example-3}
 
-使用组关系表(“nms：rcpGrpRel”)将收件人添加到组：
+使用组关系表(“nms:rcpGrpRel”)将收件人添加到组：
 
 ```xml
 <recipient _key="@email" email="martin.ledger@adobe.net" xtkschema="nms:recipient">
@@ -605,7 +605,7 @@ Write方法在[Write/WriteCollection (xtk：session)](#write---writecollection--
 
 >[!NOTE]
 >
->未在`<rcpgroup>`元素中输入键的定义，因为在“nms：group”架构中定义了基于组名称的隐式键。
+>未在`<rcpgroup>`元素中输入键的定义，因为在“nms:group”架构中定义了基于组名称的隐式键。
 
 ### XML收藏集元素 {#xml-collection-elements}
 
