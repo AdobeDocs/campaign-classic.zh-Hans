@@ -16,7 +16,7 @@ ht-degree: 0%
 
 作为专家级用户，您可以在资源管理器树中添加文件夹并对其进行自定义。
 
-请参阅[Adobe Campaign v8 （控制台）文档](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}以了解有关Campaign用户界面的更多信息。
+请参阅[Adobe Campaign v8 （控制台）文档](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}以了解有关Campaign用户界面的更多信息。
 
 导航列表使用的文件夹类型在遵循&#x200B;**xtk:navtree**&#x200B;架构语法的XML文档中进行了说明。
 

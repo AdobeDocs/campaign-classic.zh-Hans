@@ -34,7 +34,7 @@ ht-degree: 8%
 
    >[!NOTE]
    >
-   >有关选择投放目标群体的详细流程，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#target-population.){target="_blank"}中的此部分。
+   >有关选择投放目标群体的详细流程，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=zh-Hans#target-population.){target="_blank"}中的此部分。
    >
    >有关个性化字段用法的详细信息，请参阅[本节](about-personalization.md)。
    >

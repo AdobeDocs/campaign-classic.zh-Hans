@@ -35,7 +35,7 @@ ht-degree: 6%
 
 * [了解投放失败](understanding-delivery-failures.md)
 * [了解隔离管理](understanding-quarantine-management.md)
-* [投放最佳实践](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/delivery-best-practices.html){target="_blank"}
+* [投放最佳实践](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/delivery-best-practices.html?lang=zh-Hans){target="_blank"}
 * [管理可投放性](about-deliverability.md)
 
 ## 投放摘要 {#delivery-summary}
@@ -64,7 +64,7 @@ ht-degree: 6%
 
 **[!UICONTROL Display the mirror page for this message...]**&#x200B;链接允许您在新窗口中查看从列表中选择的投放内容的镜像页面。
 
-镜像页面仅适用于已为其定义HTML内容的投放。 有关更多信息，请参阅 [Campaign v8 文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/mirror-page.html){target="_blank"}。
+镜像页面仅适用于已为其定义HTML内容的投放。 有关更多信息，请参阅 [Campaign v8 文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/mirror-page.html?lang=zh-Hans){target="_blank"}。
 
 ![](assets/s_ncs_user_wizard_miror_page_link.png)
 
@@ -98,7 +98,7 @@ ht-degree: 6%
 
 使用&#x200B;**[!UICONTROL Refresh]**&#x200B;按钮可更新数据。 使用&#x200B;**[!UICONTROL Filters]**&#x200B;按钮定义数据过滤器。
 
-使用特殊图标可以识别错误或警告。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/delivery-analysis.html){target="_blank"}中的此部分。
+使用特殊图标可以识别错误或警告。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/delivery-analysis.html?lang=zh-Hans){target="_blank"}中的此部分。
 
 **[!UICONTROL Proofs]**&#x200B;子选项卡允许您查看已发送的校样列表。
 

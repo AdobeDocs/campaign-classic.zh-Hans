@@ -82,7 +82,7 @@ ht-degree: 10%
 
 镜像页面是可通过 Web 浏览器在线访问的 HTML 页面。其内容与电子邮件相同。
 
-默认情况下，如果将链接插入到邮件内容中，则会生成镜像页面。 有关个性化块插入的更多信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html){target="_blank"}。
+默认情况下，如果将链接插入到邮件内容中，则会生成镜像页面。 有关个性化块插入的更多信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html?lang=zh-Hans){target="_blank"}。
 
 在投放属性中，**[!UICONTROL Mode]**&#x200B;选项卡的&#x200B;**[!UICONTROL Validity]**&#x200B;字段允许您修改此页面的生成模式。
 

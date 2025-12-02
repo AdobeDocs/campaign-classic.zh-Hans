@@ -335,7 +335,7 @@ xtkschema="xtk:srcSchema">
 
 ## 相关主题
 
-* 在&#x200B;**Adobe Campaign v8 （控制台）文档**&#x200B;中了解如何[使用枚举](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}。
+* 在&#x200B;**Adobe Campaign v8 （控制台）文档**&#x200B;中了解如何[使用枚举](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}。
 
 * [Campaign模式入门](../../configuration/using/about-schema-edition.md)
 
