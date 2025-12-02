@@ -3,11 +3,12 @@ audience: end-user
 breadcrumb-title: Campaign Classic v7 文档
 product: campaign
 title: Campaign Classic v7 指南
+user-guide-titel: Campaign Classic v7 Guide
 user-guide-description: Adobe Campaign Classic v7 产品文档。
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 0507e0372a81351adc145dafdd3cbe5d5422dc00
-workflow-type: tm+mt
+source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
+workflow-type: ht
 source-wordcount: '2744'
 ht-degree: 100%
 
@@ -483,7 +484,7 @@ ht-degree: 100%
       + [设置定期导入工作流 - 隐藏](workflow/using/recurring-import-workflow.md)
    + 设计查询 {#designing-queries}
       + [使用增量查询每季度更新列表 - 隐藏](workflow/using/quarterly-list-update.md)
-   + 查询和筛选 {#designing-queries}
+   + 查询和筛选 {#query-and-filter-hidden}
       + [查询收件人表 - 隐藏](workflow/using/querying-recipient-table.md)
       + [查询投放信息 - 隐藏](workflow/using/querying-delivery-information.md)
       + [执行总计计算 - 隐藏](workflow/using/performing-aggregate-computing.md)
