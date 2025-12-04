@@ -102,7 +102,7 @@ Learn more about [Campaigns](../../campaign/using/designing-marketing-campaigns.
 
 Campaign是一个界面，用于协调、定义和执行营销活动。 营销策划可以将一个或多个工作流、投放、文档和其他相关数据点包含到一个简单易用的界面中。
 
-请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html){target=_blank}以了解有关营销活动的更多信息。
+请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html?lang=zh-Hans){target=_blank}以了解有关营销活动的更多信息。
 +++
 
 <!--
@@ -143,7 +143,7 @@ Campaign客户端控制台是一个富客户端，可让您连接到Campaign应�
 
 使用控制组通过排除部分控制组受众来衡量活动的影响。 操作员可以将收到消息的目标群体的行为与未作为目标的联系人的行为进行比较。 根据发送日志，操作员还可以在未来的活动中以控制组为目标。
 
-请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-target.html#add-a-control-group){target="_blank"}以了解有关控制组的更多信息。
+请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-target.html?lang=zh-Hans#add-a-control-group){target="_blank"}以了解有关控制组的更多信息。
 +++
 
 +++**控制面板**
@@ -215,7 +215,7 @@ Learn more about [Transactional Messaging](../../message-center/using/about-tran
 
 投放分析是投放的准备工作。 此过程会将内容与收件人用户档案数据相结合，生成收件人将收到的个性化电子邮件。 投放分析逻辑可以根据定义的逻辑，从目标中排除收件人或完全停止投放。 此过程还包括评估动态内容逻辑以及插入特定于单个收件人配置文件的选件。
 
-请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/delivery-analysis.html){target="_blank"}以了解有关投放分析的更多信息。
+请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/delivery-analysis.html?lang=zh-Hans){target="_blank"}以了解有关投放分析的更多信息。
 +++
 
 +++**投放日志**
@@ -339,14 +339,14 @@ An engine call is a server call that starts real-time processing on server side 
 
 扩充活动是一种高级工作流活动，它允许操作员扩充将在工作流中处理的已生成的工作表数据。 此活动通常用在定向活动或导入文件之后，以及使用定向数据的活动之前。 “增强”功能可以转换集客过渡数据并配置活动，以使用增强的数据完成输出过渡。 它允许运算符组合来自多个数据集的数据，或创建指向临时资源的链接。
 
-在[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/enrichment.html){target="_blank"}中了解有关扩充活动的更多信息。
+在[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/enrichment.html?lang=zh-Hans){target="_blank"}中了解有关扩充活动的更多信息。
 +++
 
 +++**明细列表**
 
 枚举是在架构中或在Platform级别定义的数据类型，用于定义字段的有效输入值。 枚举作为选取列表显示在用户界面和查询构建器中。
 
-在&#x200B;**Adobe Campaign v8 （控制台）文档**&#x200B;中了解如何[使用枚举](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}。
+在&#x200B;**Adobe Campaign v8 （控制台）文档**&#x200B;中了解如何[使用枚举](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}。
 +++
 
 +++**资源管理器视图**
@@ -354,7 +354,7 @@ An engine call is a server call that starts real-time processing on server side 
 资源管理器视图是包含Adobe Campaign工件和数据的文件夹的分层显示。 请注意，Adobe Campaign中的文件夹系统的功能与典型的树状视图不同，因为每个文件夹都包含特定类型的数据，例如投放、工作流或选件。
 
 
-请参阅[Adobe Campaign v8 （控制台）文档](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}以了解有关Campaign用户界面的更多信息。
+请参阅[Adobe Campaign v8 （控制台）文档](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}以了解有关Campaign用户界面的更多信息。
 
 +++
 
@@ -371,7 +371,7 @@ An engine call is a server call that starts real-time processing on server side 
 
 疲劳管理可帮助您控制消息的频率和数量，以避免过度招徕收件人，通常使用类型规则来应用疲劳管理功能。
 
-在[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/campaign-optimization/pressure-rules.html){target="_blank"}中了解有关疲劳管理的更多信息。
+在[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/campaign-optimization/pressure-rules.html?lang=zh-Hans){target="_blank"}中了解有关疲劳管理的更多信息。
 +++
 
 +++**联合数据访问(FDA)**
@@ -394,14 +394,14 @@ An engine call is a server call that starts real-time processing on server side 
 
 筛选维度是包含数据或属性的架构，查询使用这些数据或属性来筛选所需的行。 筛选维度架构必须直接链接到定义的定向维度，以便Adobe Campaign能够跨数据库联接并返回响应行。
 
-请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/targeting-workflows.html#targeting-and-filtering-dimensions){target="_blank"}以了解有关筛选维度的更多信息。
+请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/targeting-workflows.html?lang=zh-Hans#targeting-and-filtering-dimensions){target="_blank"}以了解有关筛选维度的更多信息。
 +++
 
 +++**文件夹**
 
 文件夹是一个Explorer视图项，它保存特定数据类型的数据库记录。 用作组织元素的Generic文件夹类型例外，它本身不包含任何数据，仅包含其他文件夹。
 
-请参阅[Adobe Campaign v8 （控制台）文档](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}以了解有关Campaign用户界面的更多信息。
+请参阅[Adobe Campaign v8 （控制台）文档](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}以了解有关Campaign用户界面的更多信息。
 
 +++
 
@@ -409,7 +409,7 @@ An engine call is a server call that starts real-time processing on server side 
 
 “文件夹”视图是一种特殊的“资源管理器”文件夹类型，用于显示选定数据类型的所有记录，无论它属于哪个文件夹。 文件夹视图用作管理工具，以管理分布在多个文件夹中的分区数据或数据。
 
-请参阅[Adobe Campaign v8 （控制台）文档](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}以了解有关Campaign用户界面的更多信息。
+请参阅[Adobe Campaign v8 （控制台）文档](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}以了解有关Campaign用户界面的更多信息。
 +++
 
 +++**Forms**
@@ -562,7 +562,7 @@ Learn more about [Navigation Bar](../../platform/using/adobe-campaign-workspace.
 
 导航树是Adobe Campaign资源管理器视图中的主导航。 导航树的工作方式与文件浏览器类似（例如Windows资源管理器）。 文件夹可能包含子文件夹。 选择某个节点将显示与该节点对应的视图。 显示的视图是与架构关联的列表和用于编辑所选行的输入表单。 您可以自定义导航树并设置文件夹权限。
 
-请参阅[Adobe Campaign v8 （控制台）文档](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}以了解有关Campaign用户界面的更多信息。
+请参阅[Adobe Campaign v8 （控制台）文档](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}以了解有关Campaign用户界面的更多信息。
 
 +++
 
@@ -572,7 +572,7 @@ Learn more about [Navigation Bar](../../platform/using/adobe-campaign-workspace.
 
 在营销活动、项目或计划内，操作员可以声明目标列表。 这些是可达到的量化值。 在营销活动、项目或计划结束时， MRM模块允许操作员在专用报告中比较目标和结果。
 
-请参阅[Adobe Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/mrm/creating-and-managing-tasks.html#expenses-and-revenues){target=_blank}以了解有关目标的更多信息。
+请参阅[Adobe Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/mrm/creating-and-managing-tasks.html?lang=zh-Hans#expenses-and-revenues){target=_blank}以了解有关目标的更多信息。
 +++
 
 +++**优惠目录**
@@ -754,7 +754,7 @@ Learn more about [Navigation Bar](../../platform/using/adobe-campaign-workspace.
 
 工作流面板显示了可添加到工作流的可用活动。 此组件以选项卡形式显示，其中工作流活动按其使用进行逻辑分组。 面板上可用的活动由已安装在Campaign实例中的加载项以及显示工作流的上下文决定。
 
-在[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html#add-and-link-activities){target="_blank"}中了解有关调色板的更多信息。
+在[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html?lang=zh-Hans#add-and-link-activities){target="_blank"}中了解有关调色板的更多信息。
 +++
 
 +++**性能监控**
@@ -768,14 +768,14 @@ Learn more about [Navigation Bar](../../platform/using/adobe-campaign-workspace.
 
 Adobe Campaign提供了可在投放中插入的内置个性化块。 它们是动态的、个性化的，并包含特定渲染。 例如，您可以添加徽标、问候语消息或指向镜像页面的链接。 默认情况下，可以使用多个个性化块。 您还可以定义自定义个性化块，以便优化投放个性化。 在投放的分析阶段，实际数据会插入到每个生成的消息中。
 
-请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html){target="_blank"}以了解有关个性化块的更多信息。
+请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html?lang=zh-Hans){target="_blank"}以了解有关个性化块的更多信息。
 +++
 
 +++**Personalization字段**
 
 个性化字段是对特定收件人的投放进行个性化时使用的单个数据字段引用。 实际数据值在投放分析阶段插入。
 
-在[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-fields.html){target="_blank"}中了解有关个性化字段的更多信息。
+在[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-fields.html?lang=zh-Hans){target="_blank"}中了解有关个性化字段的更多信息。
 +++
 
 +++**Personalization变量**
@@ -796,7 +796,7 @@ Personalization变量是投放中的代码段，可根据收件人信息向不�
 
 预定义过滤器是已保存以供重复使用的查询。 使用预定义过滤器可以提高生产效率（因为它们只创建一次），有助于建立一致性（因为所有营销人员都可以使用它们）并降低营销人员所需的技能，因为他们可以使用他们自己可能无法创建的代码或逻辑。
 
-有关筛选器的更多信息，请参阅[Campaign v8 （控制台）文档](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-filters){target=_blank}。
+有关筛选器的更多信息，请参阅[Campaign v8 （控制台）文档](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/audience/create-filters){target=_blank}。
 +++
 
 <!--
@@ -914,14 +914,14 @@ Adobe Campaign允许您创建和管理新闻稿或产品更新等信息服务，
 
 在控制面板中，您可以与连接到您有权访问的 Campaign 实例的所有 SFTP 服务器进行交互。控制面板允许您对SFTP服务器执行各种操作，如监视存储容量、管理IP地址允许列表和管理公共SSH密钥。
 
-了解有关[SFTP管理](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/about-sftp-management.html)的更多信息。
+了解有关[SFTP管理](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/about-sftp-management.html?lang=zh-Hans)的更多信息。
 +++
 
 +++**订阅服务活动**
 
 利用订阅服务工作流活动，可以为过渡中指定的群体创建或删除对信息服务的订阅。
 
-请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/subscription-services.html){target="_blank"}以了解有关订阅服务活动的更多信息。
+请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/subscription-services.html?lang=zh-Hans){target="_blank"}以了解有关订阅服务活动的更多信息。
 +++
 
 +++**目标审批**
@@ -930,21 +930,21 @@ Adobe Campaign允许您创建和管理新闻稿或产品更新等信息服务，
 
 目标批准是指在发送投放之前，由一个单独的操作员或一组操作员批准投放的最终目标（在分析阶段生成目标后）的过程。
 
-请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/flow-control-activities/approval.html){target="_blank"}以了解有关Target批准活动的更多信息。
+请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/flow-control-activities/approval.html?lang=zh-Hans){target="_blank"}以了解有关Target批准活动的更多信息。
 +++
 
 +++**目标数据**
 
 目标数据是存储在工作流的工作台（过渡）中的数据。 此数据可在投放内部使用，用于个性化投放内容或定义投放动态元素的逻辑。
 
-请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/use-workflow-data.html#target-data){target="_blank"}以了解有关目标数据的更多信息。
+请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/use-workflow-data.html?lang=zh-Hans#target-data){target="_blank"}以了解有关目标数据的更多信息。
 +++
 
 +++**目标映射**
 
 目标映射是投放渠道到特定数据类型的映射。 目标映射定义不同投放渠道如何链接到架构的数据字段。 它定义Campaign如何使用特定字段或表达式发送到该数据类型。
 
-请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/audience/add-profiles/target-mappings.html){target="_blank"}以了解有关目标映射的更多信息。
+请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/audience/add-profiles/target-mappings.html?lang=zh-Hans){target="_blank"}以了解有关目标映射的更多信息。
 +++
 
 +++**定位活动**
@@ -959,7 +959,7 @@ Adobe Campaign允许您创建和管理新闻稿或产品更新等信息服务，
 
 定位维度是由查询或其他工作流活动生成（返回）的数据类型。 请注意，无论使用什么查询获取响应数据库行，Adobe Campaign都只返回这些行的主键。
 
-请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/targeting-workflows.html){target="_blank"}以了解有关定向维度的更多信息。
+请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/targeting-workflows.html?lang=zh-Hans){target="_blank"}以了解有关定向维度的更多信息。
 +++
 
 +++**任务活动**
@@ -1025,7 +1025,7 @@ Learn more about [Total database storage](../../workflow/using/about-workflows.m
 
 触发的活动是在工作流中收到API请求时执行的活动。 API调用由启动工作流执行的工作流中的信号活动使用。
 
-请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/flow-control-activities/external-signal.html){target="_blank"}以了解有关触发式营销活动的更多信息。
+请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/flow-control-activities/external-signal.html?lang=zh-Hans){target="_blank"}以了解有关触发式营销活动的更多信息。
 +++
 
 <!--
@@ -1085,7 +1085,7 @@ Web应用程序是由Campaign实例托管的动态和交互式应用程序页面
 
 工作流日志是工作流的逐步执行日志。 它包含工作流的所有历史记录或审核跟踪。 它用于开发、故障诊断或调试。
 
-在[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html){target="_blank"}中了解有关工作流日志的更多信息。
+在[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html?lang=zh-Hans){target="_blank"}中了解有关工作流日志的更多信息。
 +++
 
 +++**工作表**

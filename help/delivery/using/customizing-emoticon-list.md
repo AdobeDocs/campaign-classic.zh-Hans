@@ -20,7 +20,7 @@ ht-degree: 3%
 弹出式窗口中显示的表情符号列表由枚举规则，允许您在列表中显示值，以限制用户对给定字段的选择。
 表情符号列表顺序可以自定义，您也可以向列表添加其他表情符号。
 
-请注意，表情符号仅可用于电子邮件和推送。 有关详细信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html#inserting-emoticons){target="_blank"}。
+请注意，表情符号仅可用于电子邮件和推送。 有关详细信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html?lang=zh-Hans#inserting-emoticons){target="_blank"}。
 
 
 ## 添加新表情符号 {#add-new-emoticon}
@@ -65,7 +65,7 @@ ht-degree: 3%
 
 1. 要考虑您的更改，请断开连接，然后重新与Adobe Campaign Classic连接。 如果新的表情符号仍未出现在&#x200B;**[!UICONTROL Insert emoticon]**&#x200B;弹出窗口中，您可能需要清除缓存。 有关更多信息，请参阅此[&#128279;](../../platform/using/faq-campaign-classic-v7.md#how-do-i-clear-console-cache)章节。
 
-1. 现在，您可以在投放的第61个位置的&#x200B;**[!UICONTROL Insert emoticon]**&#x200B;弹出窗口中找到新表情符号，如前面的步骤中所配置。 有关如何在投放中使用表情符号的更多信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html#inserting-emoticons){target="_blank"}。
+1. 现在，您可以在投放的第61个位置的&#x200B;**[!UICONTROL Insert emoticon]**&#x200B;弹出窗口中找到新表情符号，如前面的步骤中所配置。 有关如何在投放中使用表情符号的更多信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html?lang=zh-Hans#inserting-emoticons){target="_blank"}。
 
    ![](assets/emoticon_4.png)
 

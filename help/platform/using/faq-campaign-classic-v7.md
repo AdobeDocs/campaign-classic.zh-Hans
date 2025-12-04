@@ -33,7 +33,7 @@ Adobe Campaign Classic v7提供三种部署模型：
 
 [单击此处了解有关](../../installation/using/hosting-models.md)托管模型及其差异的更多信息。
 
-**注意：** Campaign v8仅作为托管云服务提供。 [了解Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/new/whats-new.html){target="_blank"}。
+**注意：** Campaign v8仅作为托管云服务提供。 [了解Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/new/whats-new.html?lang=zh-Hans){target="_blank"}。
 
 ### 在内部部署环境与托管环境中工作有何不同？ {#what-are-the-differences-when-working-on-premise-vs-in-a-hosted-environment}
 
@@ -240,7 +240,7 @@ Campaign v8是Adobe的战略平台，非常适合需要大量促销活动、现�
 
 了解详情：
 
-* [Campaign v8概述](https://experienceleague.adobe.com/docs/campaign/campaign-v8/new/whats-new.html){target="_blank"}
+* [Campaign v8概述](https://experienceleague.adobe.com/docs/campaign/campaign-v8/new/whats-new.html?lang=zh-Hans){target="_blank"}
 * [从Campaign Classic v7过渡到v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/start/v7-to-v8.html){target="_blank"}
 * [Campaign v8综合常见问题解答](https://experienceleague.adobe.com/docs/campaign/campaign-v8/start/campaign-faq-comprehensive.html){target="_blank"}
 
