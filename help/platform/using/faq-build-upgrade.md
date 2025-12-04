@@ -1,33 +1,38 @@
 ---
 product: campaign
 title: 内部版本升级常见问题解答
-description: 与Campaign内部版本升级相关的常见问题
+description: 与Campaign Classic v7内部版本升级相关的常见问题
 feature: Upgrade, Troubleshooting
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 85e2135d-a1a3-44f0-a4f9-de38db5c8726
-source-git-commit: f39dc6077a7ddc3fb9b53d4082c08e65e7683f10
+source-git-commit: 295e3596d9291cbcc55e2d264309141526c3806b
 workflow-type: tm+mt
-source-wordcount: '2026'
+source-wordcount: '2066'
 ht-degree: 0%
 
 ---
 
 # 内部版本升级常见问题解答 {#build-upgrade-faq}
 
+此常见问题解答解答解答了有关Campaign Classic v7内部版本升级的问题，尤其是对于内部部署和混合部署的问题。
+
+>[!NOTE]
+>
+>有关工作流、投放、受众等常见Campaign问题的全面答案，请参阅[Campaign v8全面常见问题解答](https://experienceleague.adobe.com/docs/campaign/campaign-v8/start/campaign-faq-comprehensive.html){target="_blank"}。
 
 Adobe Campaign 会定期更新。如果您熟悉我们发布的[发行说明](../../rn/using/rn-overview.md)，您可能会意识到每年平均会发布2/3个包含新功能、改进和修复的次要版本。 此外，我们还定期发布仅包含累积修复的内部版本。 这种定期更新的目的是为了让您掌握最新、最充分的信息，保持环境的完全安全，并明显改善您对我们产品的体验。
 
-我们的客户运行最新版本的Adobe Campaign这一点至关重要。 此外，它还允许Adobe在您遇到问题时更加高效地提供帮助 — 识别、再现和修复旧版本中的问题通常需要更多时间，更不用说您可能遇到的某些问题已在最近的版本中得到了修复。
+我们的客户运行最新版本的Adobe Campaign这一点至关重要。 Adobe它还允许您在发生问题时更高效地提供帮助 — 识别、再现和修复旧版本中的问题通常需要更多时间，更不用说您可能遇到的某些问题已在最近的版本中得到了修复。
 
 作为托管用户，您无需采取任何操作，即可通过最新稳定版本自动从Campaign年度升级中受益。 内部部署和混合型客户也可以从此版本受益。 如果您从旧内部版本进行迁移，我们建议您先升级到此版本。 [了解详情](../../rn/using/rn-overview.md)。
 
 ## 什么是内部版本升级？
 
-当将Adobe Campaign Classic软件更新到最新的安全内部版本号，但保持相同的主/次内部版本级别时，即进行内部版本升级。 例如：将v7内部版本9026Campaign Classic到Campaign v7内部版本9032。
+当将Adobe Campaign Classic软件更新到最新的安全内部版本号，但保持相同的主/次内部版本级别时，即进行内部版本升级。 例如：Campaign Classic v7内部版本9026到Campaign v7内部版本9032。
 
-在本节[&#128279;](../../rn/using/rn-overview.md)中了解更多。
+在本节[中了解更多](../../rn/using/rn-overview.md)。
 
 ## Adobe Campaign Classic的最新版本是什么？
 
@@ -37,13 +42,13 @@ Adobe Campaign 会定期更新。如果您熟悉我们发布的[发行说明](..
 
 从Adobe Campaign客户端控制台的&#x200B;**[!UICONTROL Help > About...]**&#x200B;菜单检查您的版本。 **[!UICONTROL About]**&#x200B;框包含有关控制台和服务器正在运行的版本和内部版本的详细信息。
 
-在本节[&#128279;](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)中了解更多。
+在本节[中了解更多](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)。
 
 ## 构建状态表示什么？
 
-从Campaign Classic19.2开始，状态与每个内部版本关联。
+从Campaign Classic 19.2开始，状态与每个内部版本关联。
 
-在本节[&#128279;](../../rn/using/rn-overview.md)中了解更多。
+在本节[中了解更多](../../rn/using/rn-overview.md)。
 
 ## 内部版本升级与版本升级是否相同？
 
@@ -59,7 +64,7 @@ Adobe Campaign 会定期更新。如果您熟悉我们发布的[发行说明](..
 
 ## 我是否应在进行这些更新之前备份数据？
 
-Adobe将在进行任何更改之前备份系统。 但是，如果您的非生产系统（开发服务器或暂存服务器）中存在关键的自定义工作，则强烈建议您在进行任何升级之前将该工作导出为资源包。
+Adobe将在进行任何更改之前备份您的系统。 但是，如果您的非生产系统（开发服务器或暂存服务器）中存在关键的自定义工作，则强烈建议您在进行任何升级之前将该工作导出为资源包。
 
 <!--
 ![](assets/do-not-localize/how-to-video.png) For more information, [watch this how to video](https://helpx.adobe.com/campaign/classic/how-to/generate-packages-in-acv6.html).-->
@@ -90,7 +95,7 @@ Adobe将在进行任何更改之前备份系统。 但是，如果您的非生�
 
 内部版本升级过程需要以下资源：
 
-* Adobe架构师 — 对于托管或云消息传递/混合架构，架构师必须与客户关怀团队协调。
+* Adobe Architect — 对于托管或云消息传递/混合架构，架构师必须与客户关怀团队协调。
 * 项目经理 — 托管：托管团队将与客户关怀团队和客户合作，协调所有实例的升级时间线。
 * Adobe Campaign管理员 — 托管：托管团队执行升级。
 * Adobe Campaign operator\marketing user — 该运算符针对开发、测试和生产实例运行测试。
@@ -135,11 +140,11 @@ Adobe将在进行任何更改之前备份系统。 但是，如果您的非生�
 
 ## 升级期间我的跟踪链接是否仍然有效？
 
-从Campaign Classicv7.3.5开始，在升级期间跟踪已发送电子邮件上的链接仍然有效。
+从Campaign Classic v7.3.5开始，在升级期间跟踪已发送的电子邮件链接仍然有效。
 
 ## 在内部版本升级过程中是否需要我可用？
 
-是的。 客户应在Adobe的生产实例升级期间或升级之后立即向其提供可用的联系点。  Adobe将通过电子邮件联系此人，除非另有安排。 这将确保顺利过渡并立即验证关键任务。 构建升级完成后，Adobe将联系客户进行确认。
+是的。 客户应在其生产实例升级期间或之后立即向Adobe提供可用的联系点。  Adobe将通过电子邮件联系此人，除非另有安排。 这将确保顺利过渡并立即验证关键任务。 构建升级完成后，Adobe将联系客户进行确认。
 
 ## 是否需要更新客户端控制台？
 
@@ -165,7 +170,7 @@ Adobe将在进行任何更改之前备份系统。 但是，如果您的非生�
 
 ## 必须多久执行一次内部版本升级？
 
-为确保系统的最佳性能、可用性和安全性，Adobe将与客户合作，确保系统每年至少升级一次。
+为确保系统获得最佳性能、可用性和安全性，Adobe将与客户合作，确保系统每年至少升级一次。
 
 ## 通过内部版本升级是否会关闭？
 
@@ -175,7 +180,7 @@ Adobe将在进行任何更改之前备份系统。 但是，如果您的非生�
 
 如果您在版本升级后遇到问题，请联系[Adobe客户关怀团队](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。 客户关怀团队会安排构建日期并打开与构建升级相关的票证。
 
-在[Campaign Classic的帮助和支持选项中了解详情](../../support.md)
+在Campaign Classic的[帮助和支持选项中了解详情](../../support.md)
 
 ## 构建升级核对清单 {#check-list}
 

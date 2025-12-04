@@ -8,10 +8,10 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 exl-id: fe69efda-a052-4f67-9c13-665f011d0a2b
-source-git-commit: 6803b6628313db9108a191fd143dac68ee799149
+source-git-commit: 8b38d825aa9b0595226a444e0e463362468d51b3
 workflow-type: tm+mt
 source-wordcount: '738'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 2%
 
 ## 硬件和基础架构 {#hardware-and-infrastructure}
 
-此[页面](https://helpx.adobe.com/cn/campaign/kb/hardware-sizing-guide.html)上详细说明了本地Campaign Classic的硬件要求的一般准则。
+此[页面](https://helpx.adobe.com/cn/campaign/kb/hardware-sizing-guide.html)上详细说明了本地Campaign Classic硬件要求的一般准则。
 
 咨询团队可以为托管客户提供一个工具，让您轻松查看数据库中各种类型的表使用的空间量以及SFTP站点上使用的空间。 此外，它还提供了一些工具，允许您清除不必要的数据。 如果您需要实施此工具，请联系[Adobe客户关怀](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。 以下是使用此工具需要检查的一些重要事项：
 
@@ -57,21 +57,21 @@ Adobe Campaign还提供了[工具](../../production/using/monitoring-processes.m
   >
   >可交付性团队的参与基于合同，客户应联系其Adobe代表以获取与可交付性参与相关的信息。
 
-* DKIM：为确保DKIM的安全级别，1024b是推荐的最佳实践加密大小。 大多数访问提供商不会将较低的DKIM密钥视为有效。 请参见[此页面](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=zh-Hans#authentication)。
+* DKIM：为确保DKIM的安全级别，1024b是推荐的最佳实践加密大小。 大多数访问提供商不会将较低级别的DKIM密钥视为有效。 请参见[此页面](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#authentication)。
 
 ## 可投放性问题 {#deliverability-issues}
 
 以下是与可投放性相关的最佳实践和文章列表：
 
-* IP信誉：如果IP信誉不够好，将会影响性能。 **可投放性监控**&#x200B;模块提供了多种工具来跟踪平台的可投放性性能。 请参阅此[页面](../../delivery/using/monitoring-deliverability.md)。
+* IP信誉：如果IP信誉不够好，将会影响性能。 **可投放性监控**&#x200B;模块提供了多种工具来跟踪平台的可投放性性能。 请参见[此页面](../../delivery/using/about-delivery-monitoring.md#deliverability-monitoring)。
 * IP预热： IP预热由可投放性团队执行。 这包括在几周内通过新IP逐渐增加电子邮件数量。
 
   >[!NOTE]
   >
   >可交付性团队的参与基于合同，客户应联系其Adobe代表以获取与可交付性参与相关的信息。
 
-* IP关联设置：错误的IP关联设置可能会完全停止电子邮件（配置中的运算符/关联名称不正确）或降低吞吐量（关联中的IP数量较少）。 请参阅此[页面](../../installation/using/email-deliverability.md#list-of-ip-addresses-to-use)。
-* 电子邮件大小：电子邮件大小在吞吐量中起着重要作用。 建议的最大电子邮件大小为60 KB。 请参阅此[页面](https://helpx.adobe.com/cn/legal/product-descriptions/campaign.html)。 在[投放吞吐量](../../reporting/using/global-reports.md#delivery-throughput)报告中，检查按小时传输的字节数。
+* IP关联设置：错误的IP关联设置可能会完全停止电子邮件（配置中的运算符/关联名称不正确）或降低吞吐量（关联中的IP数量较少）。 请参见[此页面](../../installation/using/email-deliverability.md#list-of-ip-addresses-to-use)。
+* 电子邮件大小：电子邮件大小在吞吐量中起着重要作用。 建议的最大电子邮件大小为60 KB。 请参阅此[页面](https://helpx.adobe.com/legal/product-descriptions/campaign.html)。 在[投放吞吐量](../../reporting/using/global-reports.md#delivery-throughput)报告中，检查按小时传输的字节数。
 * 大量无效收件人：当存在大量无效收件人时，可能会影响吞吐量。 MTA不断重试向无效收件人发送电子邮件。 请确保您的数据库得到了妥善维护。
 * 个性化程度：如果投放持续处于“Personalization正在进行中”状态，请检查个性化块中使用的JavaScript 。
 

@@ -7,10 +7,10 @@ user-guide-title: Campaign Classic v7 指南
 user-guide-description: Adobe Campaign Classic v7 产品文档。
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 3fc803ba8b7e367e199ba47ef05ba64d5f801506
+source-git-commit: 93f32cda33acc53fb0e497f619be35c1c76ff85e
 workflow-type: tm+mt
-source-wordcount: '2748'
-ht-degree: 100%
+source-wordcount: '2692'
+ht-degree: 99%
 
 ---
 
@@ -40,17 +40,8 @@ ht-degree: 100%
    + [Campaign 连接器](platform/using/about-connectors.md)
    + [在 Campaign 中创建查询](platform/using/about-queries-in-campaign.md)
    + 常见问题解答 {#faq}
-      + [最常见问题](platform/using/common-questions.md)
-      + [全局概念](platform/using/faq-key-concepts.md)
+      + [Campaign Classic 常见问题解答](platform/using/faq-campaign-classic-v7.md)
       + [内部版本升级](platform/using/faq-build-upgrade.md)
-      + [隐私](platform/using/privacy-faq.md)
-      + [受众](platform/using/faq-audiences.md)
-      + [设计各种邮件](platform/using/faq-designing.md)
-      + [发送邮件](platform/using/faq-messages.md)
-      + [工作流](platform/using/faq-workflows.md)
-      + [配置](platform/using/faq-campaign-config.md)
-      + [报告](platform/using/faq-reporting.md)
-      + [开发](platform/using/faq-developers.md)
    + [词汇表](platform/using/ac-glossary.md)
    + 隐私 {#privacy}
       + [隐私和同意](platform/using/privacy-and-recommendations.md)
@@ -120,7 +111,6 @@ ht-degree: 100%
       + [生成个性化内容 - 隐藏](delivery/using/design-and-personalize.md)
       + [定义正确的受众 - 隐藏](delivery/using/define-the-right-audience.md)
       + [发送前检查 - 隐藏](delivery/using/check-before-sending.md)
-      + [跟踪和监测 - 隐藏](delivery/using/track-and-monitor.md)
    + [发送电子邮件](delivery/using/about-email-channel.md)
    + 发送电子邮件 {#sending-emails}
       + [创建电子邮件投放 - 隐藏](delivery/using/creating-an-email-delivery.md)
@@ -197,28 +187,15 @@ ht-degree: 100%
       + [病毒式营销和社交媒体营销](delivery/using/viral-and-social-marketing.md)
    + 监测投放 {#monitoring-deliveries}
       + [投放监测入门](delivery/using/about-delivery-monitoring.md)
-      + [访问投放列表](delivery/using/list-of-deliveries.md)
-      + [投放仪表板](delivery/using/delivery-dashboard.md)
+      + [在Campaign UI中监控投放](delivery/using/delivery-dashboard.md)
       + [投放性能最佳实践](delivery/using/delivery-performances.md)
       + [投放故障排除](delivery/using/delivery-troubleshooting.md)
-      + [投放状态](delivery/using/delivery-statuses.md)
       + [了解投放失败](delivery/using/understanding-delivery-failures.md)
       + [了解隔离管理](delivery/using/understanding-quarantine-management.md)
-      + 跟踪消息 {#tracking-messages}
-         + [关于邮件跟踪](delivery/using/about-message-tracking.md)
-         + [如何配置跟踪的链接](delivery/using/how-to-configure-tracked-links.md)
-      + 跟踪个性化链接 {#tracking-personalized-links}
-         + [个性化链接跟踪入门](delivery/using/tracking-personalized-links.md)
-         + [检测跟踪 URL](delivery/using/detecting-tracking-urls.md)
-         + [用于跟踪的预处理指令](delivery/using/pre-processing-instructions.md)
-      + [配置 URL 跟踪选项](delivery/using/personalizing-url-tracking.md)
-      + [访问跟踪日志](delivery/using/accessing-the-tracking-logs.md)
-      + [测试跟踪](delivery/using/testing-tracking.md)
-      + [跟踪故障排除](delivery/using/tracking-troubleshooting.md)
+      + [消息跟踪](delivery/using/about-message-tracking.md)
    + 可投放性管理 {#deliverability-management}
       + [什么是可投放性](delivery/using/about-deliverability.md)
       + [控制消息内容](delivery/using/control-message-content.md)
-      + [监测可投放性](delivery/using/monitoring-deliverability.md)
       + [收件箱呈现](delivery/using/inbox-rendering.md)
       + [SpamAssassin](delivery/using/spamassassin.md)
       + [故障排除](delivery/using/deliverability-faq.md)

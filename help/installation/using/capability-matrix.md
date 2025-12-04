@@ -4,7 +4,7 @@ title: Campaign本地、混合和托管功能矩阵
 description: 了解托管部署和内部部署之间的主要差异
 feature: Installation, Architecture
 exl-id: a2c425a8-9bde-4259-9140-5ada5397ed5f
-source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
+source-git-commit: 8b38d825aa9b0595226a444e0e463362468d51b3
 workflow-type: tm+mt
 source-wordcount: '287'
 ht-degree: 26%
@@ -35,7 +35,7 @@ Adobe Campaign Classic 随附了一组模块和选项。这些模块的可用性
 | 压缩/解压缩文件 | On-demand | 可用 | 可用 | [了解详情](../../platform/using/unzip-decrypt.md) |
 | 域名委派 | On-demand | On-demand | 不可用 | [了解详情](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/setting-up-new-subdomain.html?lang=zh-Hans) |
 | 安装SpamAssassin | On-demand | 可用 | 可用 | [了解详情](../../delivery/using/spamassassin.md) |
-| 访问可投放性报告 | 可用 | On-demand | 可用 | [了解详情](../../delivery/using/monitoring-deliverability.md) |
+| 访问可投放性报告 | 可用 | On-demand | 可用 | [了解详情](../../delivery/using/about-delivery-monitoring.md#deliverability-monitoring) |
 | 配置LDAP身份验证 | 不可用 | 可用 | 可用 | [了解详情](../../installation/using/connecting-through-ldap.md) |
 
 

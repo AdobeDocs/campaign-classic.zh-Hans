@@ -6,9 +6,9 @@ feature: Troubleshooting
 hidefromtoc: true
 hide: true
 exl-id: 3a84236f-89e5-4b8b-9a98-afdc006fd6e0
-source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
+source-git-commit: 85bafbac26b5f127499f35f373e96ecfd12b1db8
 workflow-type: tm+mt
-source-wordcount: '656'
+source-wordcount: '631'
 ht-degree: 67%
 
 ---
@@ -33,28 +33,22 @@ ht-degree: 67%
 
 ### 常见问题解答
 
-如何升级到新版本？如何监测工作流执行？什么是数据库清理工作流？... [阅读前10个问题](platform/using/common-questions.md)。
-
 <table>
     <tr><td><strong>主题问答</strong></td><td><strong>常见问题</strong></td><td><strong>最佳实践</strong></td><td><strong>操作说明</strong></td></tr>
     <tr>
     <td valign="top">
         <ul>
-        <li><a href="platform/using/faq-key-concepts.md">重要概念</a></li>
-        <li><a href="platform/using/faq-campaign-config.md">营销活动设置</a></li>
-        <li><a href="platform/using/faq-reporting.md">报告</a></li>
+        <li><a href="platform/using/faq-campaign-classic-v7.md">Campaign Classic v7常见问题解答</a></li>
         <li><a href="platform/using/faq-build-upgrade.md">内部版本升级</a></li>
-        <li><a href="platform/using/faq-messages.md">测试、发送和跟踪消息</a></li>
-        <li><a href="platform/using/faq-workflows.md">工作流</a></li>
-        <li><a href="platform/using/faq-developers.md">开发人员</a></li>
-        <li><a href="delivery/using/monitoring-deliverability.md">可投放性</a></li>
+        <li><a href="https://experienceleague.adobe.com/docs/campaign/campaign-v8/start/campaign-faq-comprehensive.html" target="_blank">Campaign v8全面常见问题解答</a></li>
+        <li><a href="delivery/using/about-delivery-monitoring.md">投放监测</a></li>
         </ul>
     </td>
     <td valign="top">
         <ul>
         <li><a href="production/using/performance-and-throughput-issues.md">性能和吞吐量问题</a></li>
         <li><a href="delivery/using/delivery-performances.md">投放性能</a></li>
-        <li><a href="https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html?lang=zh-Hans" target="_blank">优化工作流性能</a></li>
+        <li><a href="https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html" target="_blank">优化工作流性能</a></li>
         <li><a href="workflow/using/monitoring-workflow-execution.md">工作流执行疑难解答</a></li>
         <li><a href="platform/using/sftp-server-usage.md">SFTP 服务器使用情况</a></li>
         <li><a href="delivery/using/understanding-delivery-failures.md">了解投放失败</a></li>
@@ -62,14 +56,14 @@ ht-degree: 67%
     </td>
    <td valign="top">
         <ul>
-        <li><a href="https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html?lang=zh-Hans" target="_blank">工作流最佳实践</a></li>
+        <li><a href="https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html" target="_blank">工作流最佳实践</a></li>
         <li><a href="workflow/using/monitoring-technical-workflows.md">技术工作流监测</a></li>
         <li><a href="delivery/using/about-message-tracking.md">了解跟踪管理</a></li>
         <li><a href="production/using/monitoring-guidelines.md">发现监控工具</a></li>
         <li><a href="platform/using/import-export-workflows.md">使用工作流导入数据</a></li>
         <li><a href="delivery/using/steps-sending-the-delivery.md">分多个批次发送消息</a></li>
         <li><a href="delivery/using/defining-the-email-content.md">设计电子邮件内容</a></li>
-        <li><a href="https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/delivery-best-practices.html?lang=zh-Hans" target="_blank">投放最佳实践</a></li>
+        <li><a href="https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/delivery-best-practices.html" target="_blank">投放最佳实践</a></li>
         </ul>
     </td>
     <td valign="top">
@@ -113,7 +107,7 @@ Campaign控制面板允许您管理每个实例的设置并跟踪使用情况，
 
 ### SFTP 管理
 
-在控制面板中，您可以与连接到您有权访问的 Campaign 实例的所有 SFTP 服务器进行交互。您可以监视其存储容量、管理允许列表上的IP地址和公共SSH密钥。 [单击此处](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/about-sftp-management.html?lang=zh-Hans)以了解更多信息。
+在控制面板中，您可以与连接到您有权访问的 Campaign 实例的所有 SFTP 服务器进行交互。您可以监视其存储容量、管理允许列表上的IP地址和公共SSH密钥。 [单击此处](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/about-sftp-management.html)以了解更多信息。
 
 ### 子域和证书
 

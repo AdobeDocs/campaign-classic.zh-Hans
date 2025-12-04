@@ -2,55 +2,61 @@
 product: campaign
 title: 投放性能最佳实践
 description: 了解有关投放性能和最佳实践的更多信息
-badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v8"
 feature: Deliverability
 role: User, Developer
 exl-id: cc793d7b-0a26-4a75-97ed-d79c87d9b3b8
-source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
+source-git-commit: eac670cd4e7371ca386cee5f1735dc201bf5410a
 workflow-type: tm+mt
-source-wordcount: '465'
-ht-degree: 5%
+source-wordcount: '362'
+ht-degree: 3%
 
 ---
 
 # 投放性能最佳实践 {#delivery-performances}
 
-我们建议遵循以下准则以确保您的交付正常运行，以及在遇到交付问题时对执行进行检查。
+>[!NOTE]
+>
+>有关投放性能和最佳实践的综合指南记录在[Campaign v8投放最佳实践](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/start/delivery-best-practices)页面中。 此内容适用于Campaign Classic v7和Campaign v8用户。
+>
+>本页介绍了针对混合部署和内部部署的特定于&#x200B;**Campaign Classic v7的性能配置**。
 
-**相关主题：**
+有关投放性能、平台优化、隔离管理、数据库维护和计划建议的全面最佳实践，请参阅[Campaign v8投放最佳实践文档](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/start/delivery-best-practices){target="_blank"}。
 
-* [投放仪表板](delivery-dashboard.md)
-* [投放故障排除](delivery-troubleshooting.md)
-* [关于可投放性](about-deliverability.md)
+## 性能调整 {#best-practices-performance}
 
-## 性能最佳实践 {#best-practices-performance}
+对于&#x200B;**Campaign Classic v7混合/内部部署**，以下数据库和基础架构优化可以提高投放性能：
 
-* 请勿将投放置于实例上的失败状态，因为这样可维护临时表并影响性能。
+### 数据库优化
 
-* 删除不再需要的投放。
+**索引地址**&#x200B;以优化应用程序中使用的SQL查询的性能。 可以从数据架构的主元素声明索引。 此优化需要直接访问数据库，并在内部部署中自定义架构。
 
-* 过去12个月内不活动的收件人，将从数据库中删除以保持地址质量。
+### 基础架构调整
 
-* 不要试图一起安排大型投放。 在5至10分钟的时间间隔内，载荷均匀分布在系统上。 与团队的其他成员协调投放计划以确保最佳性能。 当营销服务器同时处理许多不同的任务时，可能会降低性能。
-
-* 使您的电子邮件尽可能的小。 建议的最大电子邮件大小约为35KB。 电子邮件投放的大小会在发送服务器中生成一定数量的卷。
-
-* 大型投放（如投放100多万收件人）在发送队列中需要空格。 这本身对于服务器来说并不是问题，但是当与同时发送的大量其他大型投放一起发送时，可能会造成发送延迟。
-
-* 电子邮件中的Personalization会从数据库中提取每个收件人的数据。 如果存在许多个性化元素，这会增加准备投放所需的数据量。
-
-* 索引地址。 为了优化应用程序中使用的SQL查询的性能，可以从数据架构的主元素声明索引。
+**大型投放配置**：发送给超过100万名收件人的投放在发送队列中需要空间。 对于内部部署，可以将MTA子级配置为处理自定义批次大小。 请与系统管理员联系，以根据基础架构容量调整这些设置。
 
 >[!NOTE]
 >
->ISP会在一段时间不活动后将地址停用。 退回的消息将发送给发件人，以告知他们此新状态。
+>对于Campaign v8托管云服务用户，基础架构优化和MTA配置由Adobe管理。 请参阅[Campaign v8投放最佳实践](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/start/delivery-best-practices){target="_blank"}，以了解适用于您的部署的性能建议。
 
-## 性能问题核对清单 {#performance-issues}
+## 数据库维护 {#performance-issues}
 
-如果投放性能不佳，您可以检查：
+对于&#x200B;**Campaign Classic v7混合/内部部署**，平台和数据库维护会直接影响投放发送性能。
 
-* **投放的大小**：大型投放可能需要更长的时间才能完成。 MTA子级配置为处理默认的批次大小，这适用于大多数实例，但在投放速度持续缓慢时需要检查。
-* **投放目标**：投放性能禁止受软退回错误的影响，软退回错误根据重试配置进行处理。 错误数越多，所需的重试次数就越多。
-* **整个平台负载**：发送多个大型投放时，整个平台可能会受到影响。 您还可以检查IP信誉和投放问题。 有关更多信息，请参阅[此章节](about-deliverability.md)和[Adobe可投放性最佳实践指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=zh-Hans)。
+定期维护任务包括：
 
-平台和数据库维护也会影响投放发送性能。 有关详细信息，请参见[此页面](../../production/using/database-performances.md)。
+**数据库清理**：使用数据库清理工作流删除旧的投放日志、跟踪数据和临时表。 较差的数据库维护可能会减慢投放准备和发送的速度。
+
+**数据库性能监视**：监视查询性能、索引碎片和表统计信息。 有关详细指导，请参阅[此页面](../../production/using/database-performances.md)。
+
+**技术工作流监控**：确保所有技术工作流（尤其是清理、跟踪和可投放性更新工作流）都正常运行，并且没有错误。
+
+>[!NOTE]
+>
+>对于Campaign v8托管云服务用户，数据库维护和技术工作流由Adobe进行监控和管理。 如[Campaign v8监视器投放文档](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitoring-deliverability){target="_blank"}中所述，专注于特定于投放的监视。
+
+## 相关主题
+
+* [投放最佳实践](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/start/delivery-best-practices){target="_blank"}（Campaign v8文档）
+* [监测您的可投放性](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitoring-deliverability){target="_blank"}（Campaign v8文档）
+* [投放故障排除](delivery-troubleshooting.md)
+* [数据库性能](../../production/using/database-performances.md) （v7混合/内部部署）
