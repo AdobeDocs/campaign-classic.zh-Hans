@@ -7,7 +7,7 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: d0ed7be7-3147-4cb8-9ce7-ea51602e9048
-source-git-commit: 8817b485fd5b6d6aeb9d71c1106f16fbb6bc3c5b
+source-git-commit: 62ab16b206563aa25b8943e606d03a3184eb00db
 workflow-type: tm+mt
 source-wordcount: '1730'
 ht-degree: 23%
@@ -48,7 +48,7 @@ ht-degree: 23%
 
    默认情况下，提供以下目标类型：
 
-   * **[!UICONTROL Filtering conditions]** ：利用此选项可定义查询并显示结果。 有关筛选器的更多信息，请参阅[Campaign v8 （控制台）文档](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/audience/create-filters){target=_blank}。
+   * **[!UICONTROL Filtering conditions]** ：利用此选项可定义查询并显示结果。 有关筛选器的更多信息，请参阅[Campaign v8 （控制台）文档](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-filters){target=_blank}。
    * **[!UICONTROL Subscribers of an information service]**：通过此选项，可选择新闻稿，收件人必须订阅新闻稿才能成为所创建投放的目标。
 
      ![](assets/s_ncs_user_wizard_email02c.png)
@@ -72,7 +72,7 @@ ht-degree: 23%
    * **[!UICONTROL Recipients included in a folder]** ：利用此选项可定向树的特定文件夹中包含的配置文件。
    * **[!UICONTROL A recipient]** ：通过此选项，您可以从数据库中的用户档案中选择特定收件人。
    * **[!UICONTROL A list of recipients]** ：通过此选项可定向收件人列表。 列表显示在[此部分](../../platform/using/creating-and-managing-lists.md)中。
-   * **[!UICONTROL User filters]** ：利用此选项可访问预配置的筛选器，以将其用作数据库中用户档案的筛选条件。 有关筛选器的更多信息，请参阅[Campaign v8 （控制台）文档](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/audience/create-filters){target=_blank}。
+   * **[!UICONTROL User filters]** ：利用此选项可访问预配置的筛选器，以将其用作数据库中用户档案的筛选条件。 有关筛选器的更多信息，请参阅[Campaign v8 （控制台）文档](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-filters){target=_blank}。
    * 利用选项&#x200B;**[!UICONTROL Exclude recipients corresponding to this segment]**，可定向不符合所定义的目标条件的收件人。 要使用此选项，请选择相应的框，然后按照之前所述应用目标选择，以排除生成的用户档案。
 
      ![](assets/s_ncs_user_wizard_email02g.png)
@@ -149,7 +149,7 @@ ht-degree: 23%
 
   >[!NOTE]
   >
-  >有关隔离管理的详细信息，请参阅[了解隔离管理](understanding-quarantine-management.md)。
+  >有关隔离管理的详细信息，请参阅[了解隔离管理](delivery-failures-quarantine.md)。
 
 * 给定消息数的 **[!UICONTROL Limit delivery]**。使用此选项可输入要发送的最大消息数。如果目标的内容超过指示的消息数，则随机选择将应用于目标。
 
@@ -251,6 +251,6 @@ ht-degree: 23%
 
 在本视频中，您将了解如何向现有电子邮件添加种子和校样，以及如何进行发送。
 
->[!VIDEO](https://video.tv.adobe.com/v/35508?quality=12&captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/25606?quality=12)
 
 [此处](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hans)提供了其他 Campaign Classic 操作方法视频。

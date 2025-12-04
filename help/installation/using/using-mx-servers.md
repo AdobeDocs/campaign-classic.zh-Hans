@@ -9,9 +9,9 @@ content-type: reference
 topic-tags: additional-configurations
 hidefromtoc: true
 exl-id: 47f50bf5-4d5b-4c07-af71-de4390177cf5
-source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
+source-git-commit: 62ab16b206563aa25b8943e606d03a3184eb00db
 workflow-type: tm+mt
-source-wordcount: '824'
+source-wordcount: '823'
 ht-degree: 1%
 
 ---
@@ -64,7 +64,7 @@ Adobe Campaign通过匹配错误类型和原因来管理此过程：
 
 >[!NOTE]
 >
->要了解有关投放失败类型和原因的更多信息，请参阅此[部分](../../delivery/using/understanding-delivery-failures.md#delivery-failure-types-and-reasons)。
+>要了解有关投放失败类型和原因的更多信息，请参阅此[部分](../../delivery/using/delivery-failures-quarantine.md#delivery-failure-types-and-reasons)。
 
 ## 可投放性实例 {#deliveratbility-env}
 
@@ -80,7 +80,7 @@ MX规则具有6个不同的吞吐量级别，主要在启动过程中使用：
 
 ## 退回示例
 
-* **用户未知**（硬退回）： 550 5.1.1 ...用户未知{mx003}
+* **用户未知**（硬退回）： 550 5.1.1 ...用户未知 {mx003}
 * **邮箱已满** （软退回）：已超过550 5.2.2用户配额
 * **非活动邮箱**（软退回）： 550 5.7.1 ：收件人地址被拒绝：非活动邮箱，超过6个月未弹出
 * **域无效**（软退回）：“ourdan.com”的DNS查询失败
@@ -90,5 +90,5 @@ MX规则具有6个不同的吞吐量级别，主要在启动过程中使用：
 **相关主题：**
 * [MX配置](../../installation/using/email-deliverability.md#mx-configuration)
 * [技术电子邮件配置](../../installation/using/email-deliverability.md)
-* [了解投放失败](../../delivery/using/understanding-delivery-failures.md)
-* [Campaign Classic — 技术Recommendations](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html?lang=zh-Hans)
+* [了解投放失败](../../delivery/using/delivery-failures-quarantine.md)
+* [Campaign Classic — 技术建议](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html)

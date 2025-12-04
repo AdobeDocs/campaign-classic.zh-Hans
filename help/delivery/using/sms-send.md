@@ -5,7 +5,7 @@ description: 了解如何在Campaign中发送、监控和跟踪短信
 feature: SMS
 role: User
 exl-id: 442672ee-5037-49b7-a06f-3a99920ce2b6
-source-git-commit: a85d94e8ff66e8468b4fe2f071df48437393bbce
+source-git-commit: 62ab16b206563aa25b8943e606d03a3184eb00db
 workflow-type: tm+mt
 source-wordcount: '888'
 ht-degree: 1%
@@ -63,7 +63,7 @@ The detailed process when validating and sending a delivery is presented in the 
 After sending messages, you can monitor and track your deliveries. For more on this, refer to these sections:
 
 * [Monitor a delivery](about-delivery-monitoring.md)
-* [Understand delivery failures](understanding-delivery-failures.md)
+* [Understand delivery failures](delivery-failures-quarantine.md)
 * [About message tracking](about-message-tracking.md)
 -->
 
@@ -167,4 +167,4 @@ InSMS模式包含与传入的短信相关的信息。 这些字段的描述可�
 >
 >这种自动消息不会留下历史。 因此，它们不会显示在投放仪表板中。 [了解详情](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"}。
 >
->商业压力规则不考虑这些报文。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/campaign-optimization/pressure-rules.html?lang=zh-Hans){target="_blank"}。
+>商业压力规则不考虑这些报文。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/campaign-optimization/pressure-rules.html){target="_blank"}。

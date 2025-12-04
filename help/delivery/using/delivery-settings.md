@@ -7,7 +7,7 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 66250817-f829-4b8b-92dd-2daa92a97fe0
-source-git-commit: d3d731c64cb5a430de6adac3aeb326f74134c436
+source-git-commit: 62ab16b206563aa25b8943e606d03a3184eb00db
 workflow-type: tm+mt
 source-wordcount: '696'
 ht-degree: 12%
@@ -16,7 +16,7 @@ ht-degree: 12%
 
 # 投放设置 {#about-delivery-settings}
 
-以下设置特定于Campaign Classic。 有关其他投放设置，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/gs-message.html?lang=zh-Hans){target="_blank"}。
+以下设置特定于Campaign Classic。 有关其他投放设置，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/gs-message.html){target="_blank"}。
 
 ## 投放分析 {#delivery-analysis}
 
@@ -29,8 +29,8 @@ ht-degree: 12%
 目前，仅当满足以下条件时，此选项才可用：
 
 * 投放必须是电子邮件。 目前不支持其他渠道。
-* 您不得使用中间源或外部路由，只能使用批量投放路由类型。 您可以检查&#x200B;**[!UICONTROL Delivery properties]**&#x200B;的&#x200B;**[!UICONTROL General]**&#x200B;选项卡中使用的路由。
-* 无法定位来自外部文件的群体。 对于单个投放，请单击&#x200B;**[!UICONTROL Email parameters]**&#x200B;中的&#x200B;**[!UICONTROL To]**&#x200B;链接，并检查是否选择了&#x200B;**[!UICONTROL Defined in the database]**&#x200B;选项。 对于工作流中使用的投放，检查&#x200B;**[!UICONTROL Delivery]**&#x200B;选项卡中的收件人是否为&#x200B;**[!UICONTROL Specified by the inbound event(s)]**。
+* 您不得使用中间源或外部路由，只能使用批量投放路由类型。 您可以检查&#x200B;**[!UICONTROL General]**&#x200B;的&#x200B;**[!UICONTROL Delivery properties]**&#x200B;选项卡中使用的路由。
+* 无法定位来自外部文件的群体。 对于单个投放，请单击&#x200B;**[!UICONTROL To]**&#x200B;中的&#x200B;**[!UICONTROL Email parameters]**&#x200B;链接，并检查是否选择了&#x200B;**[!UICONTROL Defined in the database]**&#x200B;选项。 对于工作流中使用的投放，检查&#x200B;**[!UICONTROL Specified by the inbound event(s)]**&#x200B;选项卡中的收件人是否为&#x200B;**[!UICONTROL Delivery]**。
 * 您必须使用PostgreSQL数据库。
 
 ### 配置分析优先级 {#analysis-priority-}
@@ -53,7 +53,7 @@ ht-degree: 12%
 
 ### 配置重试 {#configuring-retries}
 
-由于&#x200B;**Soft**&#x200B;或&#x200B;**Ignored**&#x200B;错误而临时取消传递的邮件将会自动重试。 此[部分](understanding-delivery-failures.md#delivery-failure-types-and-reasons)中介绍了投放失败类型和原因。
+由于&#x200B;**Soft**&#x200B;或&#x200B;**Ignored**&#x200B;错误而临时取消传递的邮件将会自动重试。 此[部分](delivery-failures-quarantine.md#delivery-failure-types-and-reasons)中介绍了投放失败类型和原因。
 
 >[!IMPORTANT]
 >
@@ -77,7 +77,7 @@ ht-degree: 12%
 
   >[!IMPORTANT]
   >
-  >对于托管或混合安装，如果您已升级到[Enhanced MTA](sending-with-enhanced-mta.md)，则仅当设置为&#x200B;**3.5天或更短时间时**，才会使用Campaign电子邮件投放中的&#x200B;**[!UICONTROL Delivery duration]**&#x200B;设置。 如果定义的值超过3.5天，则不会将其考虑在内。
+  >对于托管或混合安装，如果您已升级到[Enhanced MTA](sending-with-enhanced-mta.md)，则仅当设置为&#x200B;**[!UICONTROL Delivery duration]** 3.5天或更短时间时&#x200B;**，才会使用Campaign电子邮件投放中的**&#x200B;设置。 如果定义的值超过3.5天，则不会将其考虑在内。
 
 * **资源的有效性限制**： **[!UICONTROL Validity limit]**&#x200B;字段用于已上传的资源，主要用于镜像页面和图像。 本页上的资源仅在限制时间内有效（以节省磁盘空间）。
 

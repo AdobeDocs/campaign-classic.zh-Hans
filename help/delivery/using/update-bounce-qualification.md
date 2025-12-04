@@ -5,14 +5,14 @@ description: 了解如何在Apple 2021年中断后更新退回鉴别
 badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v8"
 feature: Deliverability
 exl-id: 34be23f7-17fa-475e-9663-2e353d76b172
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 62ab16b206563aa25b8943e606d03a3184eb00db
 workflow-type: tm+mt
 source-wordcount: '450'
 ht-degree: 0%
 
 ---
 
-# 在Apple中断后更新不正确的硬退回{#update-bounce-qualification.md}
+# 在Apple中断后更新不正确的硬退回 {#update-bounce-qualification.md}
 
 ## 上下文
 
@@ -43,18 +43,18 @@ ht-degree: 0%
 * 对于隔离列表的&#x200B;**[!UICONTROL Error text]**&#x200B;字段中包含SMTP退回响应信息的Campaign实例：
 
    * **错误文本（隔离文本）**&#x200B;包含“用户查找成功但未找到用户记录”以及&#x200B;**错误文本（隔离文本）**&#x200B;包含“support.apple.com”
-   * 上午4/26/2021 07:00:00或之后的&#x200B;**更新状态(@lastModified)**
-   * 下午4/26/2021 01:00:00或之前&#x200B;**更新状态(@lastModified)**
+   * 上午4/26/2021 07 **00或之后的**&#x200B;更新状态(@lastModified):00:
+   * 下午4/26/2021 01 **00或之前**&#x200B;更新状态(@lastModified):00:
 
 * 对于在隔离列表的&#x200B;**[!UICONTROL Error text]**&#x200B;字段中包含入站电子邮件规则信息的Campaign实例：
 
    * **错误文本（隔离文本）**&#x200B;包含“Momen_Code10_InvalidRecipient”
    * **电子邮件域(@domain)**&#x200B;等于icloud.com或&#x200B;**电子邮件域(@domain)**&#x200B;等于me.com或&#x200B;**电子邮件域(@domain)**&#x200B;等于mac.com
-   * 上午4/26/2021 07:00:00或之后的&#x200B;**更新状态(@lastModified)**
-   * 下午4/26/2021 01:00:00或之前&#x200B;**更新状态(@lastModified)**
+   * 上午4/26/2021 07 **00或之后的**&#x200B;更新状态(@lastModified):00:
+   * 下午4/26/2021 01 **00或之前**&#x200B;更新状态(@lastModified):00:
 
 在获得受影响的收件人列表后，您可以将他们的状态设置为&#x200B;**[!UICONTROL Valid]**，以便通过&#x200B;**[!UICONTROL Database cleanup]**&#x200B;工作流将其从隔离列表中删除，或者只是从表中删除他们。
 
 **相关主题：**
-* [了解投放失败](understanding-delivery-failures.md)
-* [退回邮件鉴别](understanding-delivery-failures.md#bounce-mail-qualification)
+* [了解投放失败](delivery-failures-quarantine.md)
+* [退回邮件鉴别](delivery-failures-quarantine.md#bounce-mail-qualification)

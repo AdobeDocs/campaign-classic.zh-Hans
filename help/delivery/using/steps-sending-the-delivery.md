@@ -7,7 +7,7 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 0411686e-4f13-401e-9333-e14b05ebe9cd
-source-git-commit: a85d94e8ff66e8468b4fe2f071df48437393bbce
+source-git-commit: 62ab16b206563aa25b8943e606d03a3184eb00db
 workflow-type: tm+mt
 source-wordcount: '1518'
 ht-degree: 11%
@@ -61,7 +61,7 @@ ht-degree: 11%
 发送消息后，您可以监控和跟踪投放。 有关更多信息，请参阅一下章节。
 
 * [监测投放](about-delivery-monitoring.md)
-* [了解投放失败](understanding-delivery-failures.md)
+* [了解投放失败](delivery-failures-quarantine.md)
 * [关于邮件跟踪](about-message-tracking.md)
 
 ## 安排发送投放 {#scheduling-the-delivery-sending}
@@ -171,7 +171,7 @@ ht-degree: 11%
 
 ## 配置重试 {#configuring-retries}
 
-由于&#x200B;**Soft**&#x200B;或&#x200B;**Ignored**&#x200B;错误而临时取消传递的邮件将会自动重试。 此[部分](understanding-delivery-failures.md#delivery-failure-types-and-reasons)中介绍了投放失败类型和原因。
+由于&#x200B;**Soft**&#x200B;或&#x200B;**Ignored**&#x200B;错误而临时取消传递的邮件将会自动重试。 此[部分](delivery-failures-quarantine.md#delivery-failure-types-and-reasons)中介绍了投放失败类型和原因。
 
 >[!IMPORTANT]
 >

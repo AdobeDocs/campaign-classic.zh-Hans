@@ -7,7 +7,7 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 4520504a-0d9f-4ea7-a5a8-0c07948af4f0
-source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
+source-git-commit: 62ab16b206563aa25b8943e606d03a3184eb00db
 workflow-type: tm+mt
 source-wordcount: '980'
 ht-degree: 8%
@@ -34,7 +34,7 @@ ht-degree: 8%
 
    >[!NOTE]
    >
-   >有关选择投放目标群体的详细流程，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=zh-Hans#target-population.){target="_blank"}中的此部分。
+   >有关选择投放目标群体的详细流程，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#target-population.){target="_blank"}中的此部分。
    >
    >有关个性化字段用法的详细信息，请参阅[本节](about-personalization.md)。
    >
@@ -130,9 +130,9 @@ ht-degree: 8%
 
 发送消息后，您可以监控和跟踪投放。 有关更多信息，请参阅一下章节。
 
-* [推送通知隔离](understanding-quarantine-management.md#push-notification-quarantines)
+* [推送通知隔离](delivery-failures-quarantine.md#push-notification-quarantines)
 * [监测投放](about-delivery-monitoring.md)
-* [了解投放失败](understanding-delivery-failures.md)
+* [了解投放失败](delivery-failures-quarantine.md)
 
 ## 创建iOS富通知 {#creating-ios-delivery}
 
