@@ -8,7 +8,7 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 24b2ee47-bec7-43ce-81b3-0b2d1a5cebae
-source-git-commit: aa78a51ebea49f98ef7edad7e87a99a680f02b69
+source-git-commit: 0c639cc8b9636c190c868980ab5182a0eccb5f74
 workflow-type: tm+mt
 source-wordcount: '733'
 ht-degree: 4%
@@ -31,7 +31,7 @@ ht-degree: 4%
 
   **提示** — 要避免这种情况，请与团队的其他成员协调投放计划，以确保最佳性能。
 
-* 工作流执行：监测工作流对于避免平台性能问题至关重要。 遵循本文档[&#128279;](../../workflow/using/workflow-best-practices.md#execution-and-performance)中列出的准则。
+* 工作流执行：监测工作流对于避免平台性能问题至关重要。 遵循本文档[中列出的准则](../../workflow/using/workflow-best-practices.md#execution-and-performance)。
 
 * 如果您符合条件，则可以利用[Campaign控制面板功能](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=zh-Hans)，通过[性能监控](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/about-performance-monitoring.html?lang=zh-Hans)功能来监控您的平台。
 
@@ -51,7 +51,7 @@ ht-degree: 4%
 
    * 在检查电子邮件的可投放性时，您需要重点关注四个主要类别：数据质量、邮件和内容、发送基础架构和信誉。 有关此主题的更深入探讨，请参阅[此部分](about-deliverability.md)。
 
-* 应用此文档[&#128279;](about-deliverability.md)中详细的建议。
+* 应用此文档[中详细](about-deliverability.md)的建议。
 
 * 请联系您的Adobe代表寻求帮助。
 
@@ -63,11 +63,11 @@ ht-degree: 4%
 
 **提示**
 
-* 如果存在无效地址列表，Adobe建议通过&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Campaign Management]** > **[!UICONTROL Non deliverables Management]** > **[!UICONTROL Non deliverables and addresses]**&#x200B;将其导入隔离表。
+* 如果存在无效地址列表，Adobe建议通过&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Campaign Management]** > **[!UICONTROL Non deliverables Management]** > **[!UICONTROL Non deliverables and addresses]**，将其导入隔离表。
 
 * 在投放分析过程中，默认情况下会排除其地址被隔离的收件人：这些收件人未定位。 这样可加快投放速度，因为错误率对投放速度有显着的影响。 例如，当收件箱已满或地址不存在时，可以隔离电子邮件地址。 [了解详情](#identifying-quarantined-addresses-for-a-delivery)
 
-* Adobe Campaign会根据返回的错误类型管理错误地址。 如需详细信息，请参阅[此小节](understanding-quarantine-management.md)。
+* Adobe Campaign会根据返回的错误类型管理错误地址。 如需详细信息，请参阅[此小节](delivery-failures-quarantine.md)。
 
 
 * 如果无效地址率过高，某些互联网访问提供商会自动将电子邮件判断为垃圾邮件。因此，隔离可让您避免被这些提供商添加到阻止列表。
@@ -76,6 +76,6 @@ ht-degree: 4%
 
 ## 双重选择加入机制 {#double-opt-in}
 
-为避免将消息发送到无效地址、限制不当通信并提高发件人信誉，Adobe建议对订阅后确认实施双重选择加入机制。 这有助于确保收件人有意订阅。
+为避免向无效地址发送消息、限制不当通信并提高发件人信誉，Adobe建议对订阅后确认实施双重选择加入机制。 这有助于确保收件人有意订阅。
 
 [此部分](../../web/using/use-cases-web-forms.md)中概述了实现此机制的详细信息。

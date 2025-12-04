@@ -5,7 +5,7 @@ description: 了解在Adobe Campaign中管理可投放性时要检查的要点
 feature: Deliverability, Troubleshooting
 role: User
 exl-id: f94897c1-b44c-4100-ac50-a89b13fa6f2f
-source-git-commit: b353b562bd2f0b0bd2dfde22c6477ab66d499483
+source-git-commit: 0c639cc8b9636c190c868980ab5182a0eccb5f74
 workflow-type: tm+mt
 source-wordcount: '648'
 ht-degree: 1%
@@ -49,13 +49,13 @@ ht-degree: 1%
 
    * 状态&#x200B;**[!UICONTROL Quarantined]**&#x200B;是软退回或硬退回的结果。
 
-  有关更多信息，请参阅[此小节](understanding-quarantine-management.md#quarantine-vs-denylist)。
+  有关更多信息，请参阅[此小节](delivery-failures-quarantine.md#quarantine-vs-denylist)。
 
 * **不同的隔离错误原因意味着什么？**
 
   以下是10个可能的原因：未定义、用户未知、域无效、阻止列表时、被拒绝、错误被忽略、无法访问、帐户被禁用、邮箱已满、未连接。
 
-  有关此内容的详细信息，请参阅[了解隔离管理](understanding-quarantine-management.md)。
+  有关此内容的详细信息，请参阅[了解隔离管理](delivery-failures-quarantine.md)。
 
 ## 从阻止列表中删除 {#remove-from-denylist}
 

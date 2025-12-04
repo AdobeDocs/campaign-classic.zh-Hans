@@ -7,10 +7,10 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 exl-id: 78c65b31-e3d9-4a46-a101-26f35d00a4ee
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 0c639cc8b9636c190c868980ab5182a0eccb5f74
 workflow-type: tm+mt
 source-wordcount: '219'
-ht-degree: 12%
+ht-degree: 18%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 12%
 * 此[页](../../production/using/lost-password.md)详细说明了如何更改或恢复丢失的密码。
 * 此[页面](../../production/using/console-update.md)详细说明了如何在停用相应选项时重新激活控制台更新请求。
 
-## 投放疑难解答 {#delivery-troubleshooting}
+## 投放故障排除 {#delivery-troubleshooting}
 
 当投放遇到问题时，可以执行特定操作：
 * [可投放性问题](../../production/using/performance-and-throughput-issues.md#deliverability_issues)
@@ -37,7 +37,7 @@ ht-degree: 12%
 
 **相关主题**：
 
-[投放性能问题](../../delivery/using/delivery-performances.md)
+[投放性能问题](../../delivery/using/delivery-performance-troubleshooting.md)
 
 ## 使用日志 {#working-with-logs}
 
