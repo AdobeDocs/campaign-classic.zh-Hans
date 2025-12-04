@@ -3,10 +3,10 @@ keywords: Campaign Classic;home;popular topics
 product: campaign
 title: Adobe Campaign Classic v7 产品文档
 exl-id: 6b3f1689-80de-49fd-b7ee-7a2a1931d157
-source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
-workflow-type: ht
-source-wordcount: '341'
-ht-degree: 100%
+source-git-commit: 8a2a3239c08521765592491a6fe88c94d9db0640
+workflow-type: tm+mt
+source-wordcount: '342'
+ht-degree: 99%
 
 ---
 
@@ -89,7 +89,7 @@ Android Firebase Cloud Messaging (FCM) 服务的一些重要更改将于 2024 �
     <td>
       <img src="assets/do-not-localize/icon-send.svg" width="35px">
     <br/>
-      <strong>发送消息</strong><br/><a href="delivery/using/communication-channels.md">通信渠道</a> - <a href="delivery/using/steps-about-delivery-creation-steps.md#sending-a-proof">发送校样</a> - <a href="delivery/using/get-started-a-b-testing.md">A/B 测试</a> - <a href="delivery/using/about-message-tracking.md">消息跟踪</a> - <a href="delivery/using/about-deliverability.md">可投放性</a> - <a href="message-center/using/about-transactional-messaging.md">事务性消息传递</a>
+      <strong>发送消息</strong><br/><a href="delivery/using/communication-channels.md">通信渠道</a> - <a href="delivery/using/steps-about-delivery-creation-steps.md#sending-a-proof">发送校样</a> - <a href="delivery/using/get-started-a-b-testing.md">A/B 测试</a> - <a href="https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/tracking/tracking" target="_blank">消息跟踪</a> - <a href="delivery/using/about-deliverability.md">可投放性</a> - <a href="message-center/using/about-transactional-messaging.md">事务性消息传递</a>
     </td>
   </tr>
   <tr style="border: 0;">
