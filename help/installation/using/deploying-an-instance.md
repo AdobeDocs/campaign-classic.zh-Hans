@@ -79,12 +79,12 @@ Adobe Campaign提供了一个图形助手(可在Adobe Campaign客户端控制台
 指示以下参数：
 
 * **[!UICONTROL Sender name]** ：输入发件人的名称。
-* **[!UICONTROL Sender address]** ：输入发件人的电子邮件地址。 从Adobe Campaign发送电子邮件时，不会监控&#x200B;**发件人地址**&#x200B;邮箱，因此营销用户无法访问此邮箱。 Adobe Campaign也不提供自动回复或自动转发此邮箱中接收的电子邮件的功能。 请参阅此文档[以了解有关可投放性最佳实践的更多信息](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/ac-starting-new-platform.html){_blank}。
+* **[!UICONTROL Sender address]** ：输入发件人的电子邮件地址。 从Adobe Campaign发送电子邮件时，不会监控&#x200B;**发件人地址**&#x200B;邮箱，因此营销用户无法访问此邮箱。 Adobe Campaign也不提供自动回复或自动转发此邮箱中接收的电子邮件的功能。 请参阅此文档[以了解有关可投放性最佳实践的更多信息](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/ac-starting-new-platform.html?lang=zh-Hans){_blank}。
 
 * **[!UICONTROL Reply address text]** ：输入收件人单击&#x200B;**[!UICONTROL Reply]**&#x200B;按钮时使用的名称。
 * **[!UICONTROL Reply address]** ：输入收件人单击电子邮件客户端软件中的&#x200B;**[!UICONTROL Reply]**&#x200B;按钮时要使用的电子邮件地址。 **回复地址**&#x200B;字段的用途是您希望收件人回复到&#x200B;**发件人地址**&#x200B;以外的其他地址。  此地址必须是有效的电子邮件地址，链接到受监视的邮箱，并由客户托管。  它可以是支持邮箱，例如`customer-care@customer.com`，在其中读取和响应电子邮件。
 
-* **[!UICONTROL Error address]** ：输入包含错误的消息的电子邮件地址。 这是用于处理退回邮件的技术地址，包括Adobe Campaign服务器因目标地址不存在而收到的电子邮件。 此地址必须是有效的电子邮件地址，链接到受监视的邮箱，并由客户托管。 它可能是退回邮箱，例如`errors@customer.com`。 可以从投放/投放模板属性的&#x200B;**SMTP**&#x200B;选项卡，为投放或投放模板更改此地址。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/email-parameters.html#managing-bounce-emails){target="_blank"}以了解详情。
+* **[!UICONTROL Error address]** ：输入包含错误的消息的电子邮件地址。 这是用于处理退回邮件的技术地址，包括Adobe Campaign服务器因目标地址不存在而收到的电子邮件。 此地址必须是有效的电子邮件地址，链接到受监视的邮箱，并由客户托管。 它可能是退回邮箱，例如`errors@customer.com`。 可以从投放/投放模板属性的&#x200B;**SMTP**&#x200B;选项卡，为投放或投放模板更改此地址。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/email-parameters.html?lang=zh-Hans#managing-bounce-emails){target="_blank"}以了解详情。
 
 此外，您还可以为发件人地址和错误地址指定授权的&#x200B;**掩码**。 如有必要，可以使用逗号分隔这些掩码。 此配置是可选的。 输入字段后，Adobe Campaign会在投放时（分析期间，如果地址不包含任何变量）检查地址是否有效。 此操作模式可确保不使用可能触发投放问题的地址。 必须在投放服务器上配置投放地址。
 
@@ -394,7 +394,7 @@ Adobe Campaign允许您区分这三个URL，以将负载分散到多个平台上
 
 您可以使用逗号指定多个URL掩码来分隔每个URL掩码。
 
-* 有关在电子邮件中使用和管理图像的信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html#adding-images){target="_blank"}。
+* 有关在电子邮件中使用和管理图像的信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html?lang=zh-Hans#adding-images){target="_blank"}。
 * 在投放助手中，从这些URL调用的图像将具有“已忽略”状态。
 
 ### 发布模式 {#publication-modes}
