@@ -5,7 +5,7 @@ description: 详细了解Campaign Classic投放监测功能
 feature: Monitoring, Deliverability
 role: User
 exl-id: 9ce11da0-e37b-459e-8ec7-d2bddf59bdf7
-source-git-commit: a85d94e8ff66e8468b4fe2f071df48437393bbce
+source-git-commit: e60a8391416bc9899548971bddb61705467a80e5
 workflow-type: tm+mt
 source-wordcount: '814'
 ht-degree: 1%
@@ -86,7 +86,7 @@ ht-degree: 1%
 
 * [可投放性问题](../../production/using/performance-and-throughput-issues.md#deliverability_issues)
 * [图像显示问题](../../production/using/image-display-issues.md)
-* [投放性能问题](delivery-performances.md)
+* [投放性能问题](delivery-performance-troubleshooting.md)
 * [临时文件问题](../../production/using/temporary-files.md) — 仅&#x200B;*内部部署客户*
 
 ## 监测投放

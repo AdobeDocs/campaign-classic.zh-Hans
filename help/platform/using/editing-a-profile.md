@@ -9,7 +9,7 @@ topic-tags: profile-management
 exl-id: 0f3a5582-5c90-4393-bee8-d9e2f07e5982
 hide: true
 hidefromtoc: true
-source-git-commit: 471018f09e5a14635fcce07aeca1e2cf48d9144f
+source-git-commit: e60a8391416bc9899548971bddb61705467a80e5
 workflow-type: tm+mt
 source-wordcount: '115'
 ht-degree: 59%
@@ -38,7 +38,7 @@ ht-degree: 59%
 
 >[!NOTE]
 >
->要了解有关如何编辑配置文件以及访问这些配置文件的更多信息，请参阅有关[Campaign v8文档](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/audience/view-profiles){target=_blank}的详细文档。
+>要了解有关如何编辑配置文件以及访问这些配置文件的更多信息，请参阅有关[Campaign v8文档](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/view-profiles){target=_blank}的详细文档。
 
 
 
@@ -107,6 +107,6 @@ The list is configurable, and usually contains: the URL clicked, date and time o
 
 >[!NOTE]
 >
->For more on tracking functionality, please refer to [this page](../../delivery/using/delivery-dashboard.md).
+>For more on tracking functionality, please refer to [this page](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"}.
 
 -->
