@@ -5,10 +5,10 @@ description: 详细了解Campaign Classic投放监测功能
 feature: Monitoring, Deliverability
 role: User
 exl-id: 9ce11da0-e37b-459e-8ec7-d2bddf59bdf7
-source-git-commit: eac670cd4e7371ca386cee5f1735dc201bf5410a
+source-git-commit: 2ebae2b84741bf26dd44c872702dbf3b0ebfc453
 workflow-type: tm+mt
-source-wordcount: '698'
-ht-degree: 2%
+source-wordcount: '812'
+ht-degree: 1%
 
 ---
 
@@ -89,24 +89,37 @@ ht-degree: 2%
 * [投放性能问题](delivery-performances.md)
 * [临时文件问题](../../production/using/temporary-files.md) — 仅&#x200B;*内部部署客户*
 
-## 一般监控主题
+## 监测投放
 
-**监视您的投放：**
+以下资源将帮助您在Campaign Classic v7中监控和跟踪投放性能：
 
-* [在Campaign UI中监视投放](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"}（Campaign v8文档）
-* [投放性能和最佳实践](delivery-performances.md)
-* [了解投放失败](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"}（Campaign v8文档 — v7和v8的综合指南）
+### 访问投放仪表板
 
-特定于&#x200B;**v7的配置：**
+了解如何访问投放列表并使用投放仪表板监控发送活动：
 
-* [退回邮件管理配置](understanding-delivery-failures.md)（v7混合/内部部署）
-* [隔离管理](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/quarantines){target="_blank"}（Campaign v8文档 — v7和v8的综合指南）
-* [隔离配置](understanding-quarantine-management.md)（v7混合/内部部署）
-
-**跟踪邮件：**
-
-* [消息跟踪入门](about-message-tracking.md)
-
-## 相关主题
-
+* [在Campaign UI中监视投放](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"} （Campaign v8文档 — 适用于v7和v8）
 * [投放状态](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-statuses){target="_blank"}（Campaign v8文档）
+* [高级：自定义投放日志](customize-delivery-logs.md)（仅限v7混合/内部部署 — 架构扩展）
+
+### 跟踪消息交互
+
+跟踪投放的打开次数、点击次数和收件人交互情况：
+
+* [邮件跟踪文档](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/tracking/tracking){target="_blank"}（Campaign v8文档 — 适用于v7和v8）
+* [配置跟踪的链接](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/tracking/tracked-links){target="_blank"}（Campaign v8文档）
+* [访问跟踪日志](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/tracking/tracking-logs){target="_blank"}（Campaign v8文档）
+
+### 优化投放性能
+
+投放性能问题的最佳实践和疑难解答：
+
+* [投放最佳实践](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/start/delivery-best-practices){target="_blank"}（Campaign v8文档 — 适用于v7和v8）
+* [投放性能和故障排除](delivery-performance-troubleshooting.md)（v7混合/内部部署特定配置）
+
+### 了解失败和隔离
+
+管理投放失败、退回邮件和隔离地址：
+
+* [了解投放失败](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"}（Campaign v8文档 — v7和v8的综合指南）
+* [隔离管理](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/quarantines){target="_blank"}（Campaign v8文档 — v7和v8的综合指南）
+* [投放失败和隔离配置](delivery-failures-quarantine.md)（v7混合/内部部署特定的配置）
