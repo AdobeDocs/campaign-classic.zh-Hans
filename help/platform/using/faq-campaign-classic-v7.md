@@ -199,7 +199,7 @@ Security Zones自助服务界面可用于管理Adobe Campaign Classic v7部署�
 * [Campaign Classic兼容性矩阵](../../rn/using/compatibility-matrix.md) — 支持的系统和版本
 * [Campaign Classic教程](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hans){target="_blank"} — 视频教程
 
-有关Campaign的常见问题：****
+有关Campaign的常见问题：**&#x200B;**
 
 请参阅&#x200B;[**Campaign v8综合常见问题解答**](https://experienceleague.adobe.com/docs/campaign/campaign-v8/start/campaign-faq-comprehensive.html){target="_blank"}，其中提供了有关以下内容的详细答案：
 
