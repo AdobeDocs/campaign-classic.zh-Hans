@@ -6,7 +6,7 @@ feature: Workflows
 hide: true
 hidefromtoc: true
 exl-id: 9aed2665-cd4b-419c-b9f2-ea04fc1d8f01
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
+source-git-commit: 2186b8a30449cb023cb07305ba64d53f2c8adab1
 workflow-type: tm+mt
 source-wordcount: '1704'
 ht-degree: 1%
@@ -63,7 +63,7 @@ ht-degree: 1%
 | **MessageCenter完全聚合计算** (agg_messageCenter_full) | 事务性消息控制（消息中心 — 控制） | 此工作流可更新消息中心多维数据集的完全聚合。 默认情况下，此工作流于每日凌晨3点触发。 此聚合捕获以下维度：渠道、日期、状态和事件类型。 然后，使用消息中心多维数据集根据事件生成报告。 您可以在[本节](../../reporting/using/ac-cubes.md)中了解多维数据集的更多信息 |
 | **中间源（投放计数器）** (defaultMidSourcingDlv) | 传输到中间源 | 此工作流收集中间源服务器上投放的计数信息。 计数信息包括常规投放指标，如已发送的投放数量等。 不包括打开等跟踪信息。 默认情况下，每10分钟触发一次。 |
 | **中间源（投放日志）** (defaultMidSourcingLog) | 传输到中间源 | 此工作流在中间源服务器上收集投放日志。 默认情况下，每小时触发一次。 |
-| **NMAC选择退出管理** (mobileAppOptOutMgt) | 移动应用程序渠道 | 此工作流可更新移动设备上的取消订阅通知。 从凌晨1点到午夜，每6小时触发一次。 有关详细信息，请参阅[此部分](../../delivery/using/understanding-quarantine-management.md#push-notification-quarantines)。 |
+| **NMAC选择退出管理** (mobileAppOptOutMgt) | 移动应用程序渠道 | 此工作流可更新移动设备上的取消订阅通知。 从凌晨1点到午夜，每6小时触发一次。 有关详细信息，请参阅[此部分](../../delivery/using/delivery-failures-quarantine.md#push-notification-quarantines)。 |
 | **优惠通知** (offerMgt) | 投放 | 此工作流可将已批准的优惠以及优惠目录中包含的每个类别部署到在线环境中。 |
 | **暂停的工作流清理** (cleanupPausedWorkflows) | 投放 | 此工作流会分析严重性设置为正常的暂停工作流，并在暂停时间过长时触发警告和通知。 一个月后，暂停的技术工作流将无条件停止。 默认情况下，此工作流于每周一凌晨5点触发。 有关详细信息，请参阅[暂停工作流的处理](monitoring-workflow-execution.md#handling-of-paused-workflows)。 |
 | **隐私请求清理** (cleanupPrivacyRequests) | 隐私数据保护条例 | 此工作流会清除90天以前的访问请求文件。 |

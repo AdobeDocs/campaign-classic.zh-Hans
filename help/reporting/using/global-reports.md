@@ -5,7 +5,7 @@ description: 全局报告
 badge: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 feature: Reporting, Monitoring
 exl-id: 6839fd7e-ecf4-4504-90a8-0207bc3991e4
-source-git-commit: abaeef25b03a9699a4851786380d467bfa299c9f
+source-git-commit: 2186b8a30449cb023cb07305ba64d53f2c8adab1
 workflow-type: tm+mt
 source-wordcount: '2292'
 ht-degree: 7%
@@ -52,7 +52,7 @@ ht-degree: 7%
 
 >[!NOTE]
 >
->如果您的实例托管在AWS上，则还可以使用Campaign Classic[控制面板](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/sftp-storage-management.html?lang=zh-Hans)监控每小时发送的投放数量。 要检查您的实例是否托管在 AWS 上，请按照[此页面](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=zh-Hans)中详述的步骤操作。
+>如果您的实例托管在AWS上，则还可以使用Campaign Classic [控制面板](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/sftp-storage-management.html)监控每小时发送的投放数量。 要检查您的实例是否托管在 AWS 上，请按照[此页面](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=zh-Hans)中详述的步骤操作。
 >
 >所有管理员用户都可访问控制面板。[此页面](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=zh-Hans#discover-control-panel)详细介绍了授予用户管理员访问权限的步骤。
 >
@@ -82,7 +82,7 @@ ht-degree: 7%
 
 >[!NOTE]
 >
->此报告中显示的错误会触发隔离过程。 有关隔离管理的详细信息，请参阅[隔离管理](../../delivery/using/understanding-quarantine-management.md)。
+>此报告中显示的错误会触发隔离过程。 有关隔离管理的详细信息，请参阅[隔离管理](../../delivery/using/delivery-failures-quarantine.md)。
 
 此报表的第一部分以值表和图表的形式显示了无法投放的细分。
 
@@ -167,9 +167,9 @@ ht-degree: 7%
 
 ### 分享到社交网络 {#sharing-to-social-networks}
 
-病毒式营销允许投放收件人与其联系人网络共享信息：他们可以添加指向其用户档案(Facebook、X — 以前称为Twitter等)的链接 或者给朋友留言。 在投放中跟踪共享信息的每次共享和每次访问。 有关病毒式营销的详细信息，请参阅[此部分](../../delivery/using/viral-and-social-marketing.md)。
+病毒式营销允许投放收件人与其联系人网络共享信息：他们可以将链接添加到其个人资料（Facebook、X — 以前称为Twitter等）或向朋友发送消息。 在投放中跟踪共享信息的每次共享和每次访问。 有关病毒式营销的详细信息，请参阅[此部分](../../delivery/using/viral-and-social-marketing.md)。
 
-此报表可显示每个社交网络(Facebook、X等)的共享和打开消息细目 和/或每封电子邮件。
+此报表可显示每个社交网络（Facebook、X等）和/或每封电子邮件的共享和打开消息细目。
 
 ![](assets/s_ncs_user_social_report.png)
 
@@ -202,7 +202,7 @@ ht-degree: 7%
 
 ## 共享活动统计信息 {#statistics-on-sharing-activities}
 
-此报表显示了共享到社交网络(Facebook、X — 以前称为Twitter、电子邮件等)的演变 及时完成。
+此报表可及时显示共享到社交网络(Facebook、X（以前称为Twitter、电子邮件等）的演变。
 
 有关病毒式营销的详细信息，请参阅[此部分](../../delivery/using/viral-and-social-marketing.md)。
 
@@ -294,7 +294,7 @@ ht-degree: 7%
 
   >[!NOTE]
   >
-  >有关硬退信和软退信的详细信息，请参阅[隔离管理](../../delivery/using/understanding-quarantine-management.md)。
+  >有关硬退信和软退信的详细信息，请参阅[隔离管理](../../delivery/using/delivery-failures-quarantine.md)。
 
 * **[!UICONTROL Opens]** ：与成功处理的邮件数相比，至少打开过一次邮件的目标收件人数的百分比。
 * **[!UICONTROL Clicks]** ：与成功处理的消息数相比，至少点击一次投放的用户数的百分比。
