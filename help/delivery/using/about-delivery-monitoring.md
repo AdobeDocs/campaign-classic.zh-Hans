@@ -5,9 +5,9 @@ description: 详细了解Campaign Classic投放监测功能
 feature: Monitoring, Deliverability
 role: User
 exl-id: 9ce11da0-e37b-459e-8ec7-d2bddf59bdf7
-source-git-commit: 2ebae2b84741bf26dd44c872702dbf3b0ebfc453
+source-git-commit: a85d94e8ff66e8468b4fe2f071df48437393bbce
 workflow-type: tm+mt
-source-wordcount: '812'
+source-wordcount: '814'
 ht-degree: 1%
 
 ---
@@ -75,10 +75,10 @@ ht-degree: 1%
 * 定期检查整个平台的[投放吞吐量](../../reporting/using/global-reports.md#delivery-throughput)，以验证它是否与原始设置一致。
 * 检查投放模板中是否正确设置了[重试](understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure)（重试期间为30分钟，重试次数超过20次）。
 * 定期验证[退回](understanding-delivery-failures.md#bounce-mail-management)邮箱是否可访问，以及帐户是否即将过期。
-* 检查可从[投放仪表板](delivery-dashboard.md)访问的每个投放吞吐量，以确保其与投放内容的有效性一致（例如，“闪速销售”应以分钟而不是天投放）。
+* 检查可从[投放仪表板](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"}访问的每个投放吞吐量，以确保其与投放内容的有效性一致（例如，“闪速销售”应以分钟而不是天投放）。
 * 使用波次时，请确保在触发下一个波次之前，每个波次都有足够的时间完成。
 * 检查错误数和新的[隔离](understanding-quarantine-management.md)与其他投放是否一致。
-* 列入阻止列表请仔细查阅[投放日志](delivery-dashboard.md#delivery-logs-and-history)以详细检查突出显示的错误类型（、DNS问题、反垃圾邮件规则等）。
+* 列入阻止列表请仔细查阅[投放日志](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard#delivery-logs-and-history){target="_blank"}以详细检查突出显示的错误类型（、DNS问题、反垃圾邮件规则等）。
 
 ### 故障排除 {#delivery-troubleshooting}
 

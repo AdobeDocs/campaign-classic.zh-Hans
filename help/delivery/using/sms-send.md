@@ -5,9 +5,9 @@ description: 了解如何在Campaign中发送、监控和跟踪短信
 feature: SMS
 role: User
 exl-id: 442672ee-5037-49b7-a06f-3a99920ce2b6
-source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
+source-git-commit: a85d94e8ff66e8468b4fe2f071df48437393bbce
 workflow-type: tm+mt
-source-wordcount: '887'
+source-wordcount: '888'
 ht-degree: 1%
 
 ---
@@ -165,6 +165,6 @@ InSMS模式包含与传入的短信相关的信息。 这些字段的描述可�
 
 >[!IMPORTANT]
 >
->这种自动消息不会留下历史。 因此，它们不会显示在投放仪表板中。 [了解详情](delivery-dashboard.md)。
+>这种自动消息不会留下历史。 因此，它们不会显示在投放仪表板中。 [了解详情](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"}。
 >
->商业压力规则不考虑这些报文。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/campaign-optimization/pressure-rules.html?lang=zh-Hans){target="_blank"}。
+>商业压力规则不考虑这些报文。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/campaign-optimization/pressure-rules.html){target="_blank"}。
