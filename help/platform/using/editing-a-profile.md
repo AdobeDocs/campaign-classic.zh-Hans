@@ -38,7 +38,7 @@ ht-degree: 59%
 
 >[!NOTE]
 >
->要了解有关如何编辑配置文件以及访问这些配置文件的更多信息，请参阅有关[Campaign v8文档](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/view-profiles){target=_blank}的详细文档。
+>要了解有关如何编辑配置文件以及访问这些配置文件的更多信息，请参阅有关[Campaign v8文档](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/audience/view-profiles){target=_blank}的详细文档。
 
 
 
@@ -107,6 +107,6 @@ The list is configurable, and usually contains: the URL clicked, date and time o
 
 >[!NOTE]
 >
->For more on tracking functionality, please refer to [this page](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"}.
+>For more on tracking functionality, please refer to [this page](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"}.
 
 -->
