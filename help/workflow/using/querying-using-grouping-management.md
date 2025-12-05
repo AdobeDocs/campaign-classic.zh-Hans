@@ -6,7 +6,7 @@ feature: Query Editor, Workflows
 hide: true
 hidefromtoc: true
 exl-id: 23bccb48-60ab-46c9-be26-2fa35243d61e
-source-git-commit: 9df46ed923831ffdfb28acddfbc371cecafb251c
+source-git-commit: 354fc8fd5d030ed88e2b279ba1dd3eaf2f314d53
 workflow-type: tm+mt
 source-wordcount: '254'
 ht-degree: 3%
@@ -39,7 +39,7 @@ ht-degree: 3%
 
 1. 在&#x200B;**[!UICONTROL Data to extract]**&#x200B;窗口中，选择&#x200B;**[!UICONTROL Email domain]**&#x200B;和&#x200B;**[!UICONTROL Primary key]**&#x200B;字段。 对&#x200B;**[!UICONTROL Primary key]**&#x200B;字段运行计数。
 
-   有关主键计数的详细信息，请参阅[此部分](../../platform/using/about-queries-in-campaign.md)。
+   有关主键计数的详细信息，请参阅[此部分](../../platform/using/adobe-campaign-workspace.md#about-queries-in-campaign)。
 
 1. 选中&#x200B;**[!UICONTROL Handle groupings (GROUP BY + HAVING)]**&#x200B;框。
 

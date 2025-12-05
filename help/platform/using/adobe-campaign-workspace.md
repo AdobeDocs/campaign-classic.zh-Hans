@@ -6,10 +6,10 @@ feature: Overview
 role: Developer
 level: Beginner
 exl-id: 5f689679-7148-4abd-a9bf-185854c64b13
-source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
+source-git-commit: 354fc8fd5d030ed88e2b279ba1dd3eaf2f314d53
 workflow-type: tm+mt
-source-wordcount: '965'
-ht-degree: 16%
+source-wordcount: '1166'
+ht-degree: 11%
 
 ---
 
@@ -59,7 +59,7 @@ Web访问界面与控制台界面类似。 在浏览器中，您可以使用与�
 * 德语
 * 日语
 
-您为Adobe Campaign Classic实例选择的语言可能会影响日期和时间格式。 有关详细信息，请参阅[Campaign v8 （控制台）文档](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}。
+您为Adobe Campaign Classic实例选择的语言可能会影响日期和时间格式。 有关详细信息，请参阅[Campaign v8 （控制台）文档](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}。
 
 有关如何创建实例的详细信息，请参阅此[页面](../../installation/using/creating-an-instance-and-logging-on.md)。
 
@@ -69,13 +69,13 @@ Web访问界面与控制台界面类似。 在浏览器中，您可以使用与�
 
 ## 导览基本功能 {#navigation-basics}
 
-### 浏览页面 {#browsing-pages}
-
 该平台的各种功能可分为几大核心功能：可使用界面上方的链接来访问这些功能。
 
 ![](assets/overview_home.png)
 
 可以访问的核心功能列表将取决于您所安装的软件包和附加组件以及访问权。
+
+### 浏览页面 {#browsing-pages}
 
 每个功能包括一组基于任务相关需求和使用上下文的功能。 例如，通过&#x200B;**[!UICONTROL Profiles and targets]**&#x200B;链接，您可以访问收件人列表、订阅服务、现有的定位工作流以及创建这些元素的快捷方式。
 
@@ -106,42 +106,81 @@ Web访问界面与控制台界面类似。 在浏览器中，您可以使用与�
 
 ## 使用Adobe Campaign Explorer {#using-adobe-campaign-explorer}
 
-可通过工具栏图标访问Adobe Campaign资源管理器。 它可用于访问 Adobe Campaign、所有 Adobe Campaign 功能、配置屏幕以及部分平台元素的更详细视图。
+可通过工具栏图标访问Adobe Campaign资源管理器。 通过它，可访问所有Adobe Campaign功能、配置屏幕以及更加详细的某些平台元素视图。
 
 要了解有关Adobe Campaign Explorer的更多信息，请参阅&#x200B;**Campaign v8 （控制台）文档**&#x200B;中的以下页面：
 
-* [Campaign用户界面概述](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}
+* [Campaign用户界面概述](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}
 
 * [Campaign UI设置](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/configuration/ui-settings){target=_blank}
 
-* [在资源管理器中管理文件夹和视图](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/config/configuration/folders-and-views){target=_blank}。
+* [在资源管理器中管理文件夹和视图](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/config/configuration/folders-and-views){target=_blank}
 
 
-## 筛选数据 {#filters}
+## 使用数据 {#work-with-data}
+
+### 筛选数据 {#filters}
 
 数据过滤是将数据集缩小到仅符合特定条件的那些记录的过程。 然后，可将此子集用于目标操作（如更新或受众创建）或分析。
 
 浏览Campaign时，数据会显示在列表中。 您可以应用内置筛选器以快速访问定义的子集，如隔离的地址、未定向的收件人或特定年龄范围或创建日期内的记录。 此外，您还可以创建自定义过滤器，保存它们以供将来使用，并与其他Campaign用户共享它们。
 
-在&#x200B;**Campaign v8 （控制台）文档**&#x200B;中了解如何[访问、设计和共享过滤器](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/audience/create-filters){target=_blank}。
+在&#x200B;**Campaign v8 （控制台）文档**&#x200B;中了解如何[访问、设计和共享过滤器](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-filters){target=_blank}。
+
+### 查询数据库 {#about-queries-in-campaign}
+
+查询工具在应用程序的各个级别可用，可用于定义目标群体、细分客户、提取和过滤跟踪日志、创建过滤器等。
+
++++关于通用查询编辑器
+
+它提供了一个专用助手 — 通用查询编辑器 — 可从&#x200B;**[!UICONTROL Tools > Generic query editor...]**&#x200B;菜单访问。 此编辑器允许数据库查询提取、组织、分组和排序信息。 例如，它可以检索在给定时间段内点击新闻稿链接超过n次的收件人。
+
+通用查询编辑器集中了所有查询功能。 它允许创建和存储限制过滤器，这些过滤器随后可以在其他上下文中重复使用，例如定位工作流的“查询”框。
+
+![访问查询编辑器并选择表](assets/query_editor_nveau_21.png)
+
++++
+
+>[!BEGINTABS]
+
+>[!TAB 查询数据库]
+
+创建查询的步骤详见&#x200B;**[Campaign v8 （控制台）文档](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/data/query/query-editor){target=_blank}**
 
 
-## 使用列表 {#manage-and-customize-lists}
+[![image](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/data/query/query-editor){target=_blank}
+
+
+>[!TAB 在工作流中添加查询]
+
+在&#x200B;**[Campaign v8文档](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/targeting-activities/query){target=_blank}**&#x200B;中了解与工作流上下文中的查询创建相关的关键步骤
+
+[![image](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/targeting-activities/query){target=_blank}
+
+>[!TAB 筛选条件]
+
+要设计查询，必须在查询编辑器中选择筛选条件。 有关可用功能和用例的详情，请参阅&#x200B;**[Campaign v8文档](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/data/query/filter-conditions){target=_blank}**
+
+[![image](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/data/query/filter-conditions){target=_blank}
+
+>[!ENDTABS]
+
+### 管理列表 {#manage-and-customize-lists}
 
 在Campaign客户端控制台中，数据显示在列表中。 您可以根据自己的需求调整这些列表。 例如，您可以添加列、过滤数据、计算记录、保存和共享设置。
 
 在&#x200B;**Campaign v8 （控制台）文档**&#x200B;中了解如何[管理和自定义列表](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/configuration/ui-settings#customize-lists){target=_blank}。
 
-## 管理枚举{#managing-enumerations}
+### 管理枚举{#managing-enumerations}
 
 枚举（也称为明细列表）是预定义的值列表，可用于填写某些字段。 枚举有助于标准化字段值，使数据输入更加一致并简化查询。
 
 定义后，值将显示在下拉列表中。 可以直接选择值，也可以使用预测输入输入输入值，这将会建议并完成匹配条目。 某些字段包括预定义枚举，如果需要，可以创建其他枚举。
 
-在&#x200B;**Adobe Campaign v8 （控制台）文档**&#x200B;中了解如何[使用枚举](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}。
+在&#x200B;**Adobe Campaign v8 （控制台）文档**&#x200B;中了解如何[使用枚举](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}。
 
 ## 教程视频 {#video}
 
 本视频介绍Campaign Classic工作区。
 
->[!VIDEO](https://video.tv.adobe.com/v/39534?captions=chi_hans&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/35130?quality=12)

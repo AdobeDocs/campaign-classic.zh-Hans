@@ -8,7 +8,7 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 8e308a9f-14a4-4a25-9fd0-8d4bdbcf74ce
-source-git-commit: 8817b485fd5b6d6aeb9d71c1106f16fbb6bc3c5b
+source-git-commit: 354fc8fd5d030ed88e2b279ba1dd3eaf2f314d53
 workflow-type: tm+mt
 source-wordcount: '569'
 ht-degree: 94%
@@ -83,11 +83,11 @@ ht-degree: 94%
 
    ![](assets/privacy-ccpa-5.png)
 
-1. 配置收件人列表以显示选择退出列。要了解如何配置列表，请参阅[有详细说明的文档](../../platform/using/adobe-campaign-workspace.md#configuring-lists)。
+1. 配置收件人列表以显示选择退出列。要了解如何配置列表，请参阅[有详细说明的文档](../../platform/using/adobe-campaign-ui-lists.md#configuring-lists)。
 
    ![](assets/privacy-ccpa-6.png)
 
-1. 您可以单击该列，以根据选择退出信息对收件人进行排序。您还可以创建一个筛选器以仅显示已选择退出的收件人。有关筛选器的更多信息，请参阅[Campaign v8 （控制台）文档](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/audience/create-filters){target=_blank}。
+1. 您可以单击该列，以根据选择退出信息对收件人进行排序。您还可以创建一个筛选器以仅显示已选择退出的收件人。有关筛选器的更多信息，请参阅[Campaign v8 （控制台）文档](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-filters){target=_blank}。
 
 
    ![](assets/privacy-ccpa-7.png)

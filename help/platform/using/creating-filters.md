@@ -5,7 +5,7 @@ description: 创建过滤器
 hide: true
 hidefromtoc: true
 exl-id: 58e54f67-dc87-42f1-8426-6f801e8e4fb6
-source-git-commit: 8817b485fd5b6d6aeb9d71c1106f16fbb6bc3c5b
+source-git-commit: 354fc8fd5d030ed88e2b279ba1dd3eaf2f314d53
 workflow-type: tm+mt
 source-wordcount: '122'
 ht-degree: 4%
@@ -18,7 +18,7 @@ ht-degree: 4%
 
 在Adobe Campaign树中导航（从主页的&#x200B;**[!UICONTROL Explorer]**&#x200B;菜单）时，数据库中包含的数据将显示在列表中。 可以将这些列表配置为仅显示运算符所需的数据。 然后，可以对过滤的数据启动操作。 筛选器配置允许您从列表&#x200B;**[!UICONTROL dynamically]**&#x200B;中选择数据。 如果修改了数据，则更新过滤的数据。
 
-在&#x200B;**Campaign v8 （控制台）文档**&#x200B;中了解有关[筛选器及其使用方式的更多信息](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/audience/create-audiences/create-filters){target=_blank}。
+在&#x200B;**Campaign v8 （控制台）文档**&#x200B;中了解有关[筛选器及其使用方式的更多信息](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-audiences/create-filters){target=_blank}。
 
 
 <!--
@@ -63,7 +63,7 @@ The following filter types are available in Adobe Campaign:
 
   >[!NOTE]
   >
-  >For more on building queries in Adobe Campaign, refer to [this section](../../platform/using/about-queries-in-campaign.md).
+  >For more on building queries in Adobe Campaign, refer to [this section](../../platform/using/adobe-campaign-workspace.md#about-queries-in-campaign).
 
 * **User filters**
 

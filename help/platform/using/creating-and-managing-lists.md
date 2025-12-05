@@ -6,10 +6,10 @@ feature: Profiles
 role: User
 level: Beginner
 exl-id: 711b84cd-bac8-4f1a-9999-0124fbfc3a01
-source-git-commit: f188c9ce4c47d05638d9d28e2175cb4d32775ba2
+source-git-commit: 354fc8fd5d030ed88e2b279ba1dd3eaf2f314d53
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '89'
+ht-degree: 25%
 
 ---
 
@@ -21,13 +21,13 @@ ht-degree: 0%
 
 列表是一组静态用户档案，用于在投放操作期间提供定位目标，或在导入操作或工作流执行期间进行更新。 例如，通过查询从数据库中提取出的一组数据即可形成一个列表。
 
-通过&#x200B;**[!UICONTROL Profiles and targets]**&#x200B;选项卡中的&#x200B;**[!UICONTROL Lists]**&#x200B;链接创建和管理列表。
+通过&#x200B;**[!UICONTROL Lists]**&#x200B;选项卡中的&#x200B;**[!UICONTROL Profiles and targets]**&#x200B;链接创建和管理列表。
 
 ![](assets/s_ncs_user_interface_group_link.png)
 
 >[!NOTE]
 >
->要了解有关列表以及如何创建和管理它们的更多信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/audience/create-audiences/create-audiences){target=_blank}。
+>要了解有关列表以及如何创建和管理列表的更多信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-audiences/create-audiences){target=_blank}。
 
 <!--
 Two types of lists are available in Adobe Campaign:
@@ -74,7 +74,7 @@ You can create new profiles directly from the 'add profiles' window by clicking 
 
 ![](assets/s_ncs_user_new_recipient_from_group.png)
 
-The profile list can be configured just like other lists. See [this section](../../platform/using/adobe-campaign-workspace.md#configuring-lists).
+The profile list can be configured just like other lists. See [this section](../../platform/using/adobe-campaign-ui-lists.md#configuring-lists).
 
 ## Link data to a list {#linking-data-to-a-list}
 
@@ -139,14 +139,14 @@ A list is a static set of recipients that can be targeted in delivery actions or
 
 Learn how to create an audience by configuring a list of recipients from the Explorer.
 
->[!VIDEO](https://video.tv.adobe.com/v/27505?captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/25602/quality=12)
 
 ### How use a workflow to create a list of recipients {#create-list-in-a-wf-video}
 
 Learn how create a workflow in order to target recipients and how to make it recurring before using the list in an email target.
 
->[!VIDEO](https://video.tv.adobe.com/v/27496?quality=12&captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/25603?quality=12)
 
-Additional Campaign Classic how-to videos are available [here](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hans).
+Additional Campaign Classic how-to videos are available [here](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html).
 
 -->

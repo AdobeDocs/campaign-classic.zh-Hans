@@ -8,7 +8,7 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 94fc473a-dc49-41e8-b572-51c162b09996
-source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
+source-git-commit: 354fc8fd5d030ed88e2b279ba1dd3eaf2f314d53
 workflow-type: tm+mt
 source-wordcount: '950'
 ht-degree: 29%
@@ -74,7 +74,7 @@ ht-degree: 29%
 * 对于&#x200B;**[!UICONTROL Text]**&#x200B;格式，选择分隔符以分隔列（制表符、逗号、分号或自定义）和字符串（单引号、双引号或无）。
 * 对于&#x200B;**[!UICONTROL text]**&#x200B;和&#x200B;**[!UICONTROL CSV]**，您可以选择选项&#x200B;**[!UICONTROL Use first lines as column titles]**。
 * 指示日期格式和数字格式。 为此，请单击相关字段的&#x200B;**[!UICONTROL Edit]**&#x200B;按钮并使用编辑器。
-* 对于包含枚举值的字段，可以选择&#x200B;**[!UICONTROL Export labels instead of internal values of enumerations]**。 例如，标题可以以&#x200B;**1=Mr格式存储。**，**2=小姐**，**3=太太。**。 如果选择此选项，将导出 **Mr.**&#x200B;**、Miss** 和 **Mrs.**。
+* 对于包含枚举值的字段，可以选择&#x200B;**[!UICONTROL Export labels instead of internal values of enumerations]**。 例如，标题可以以&#x200B;**1=Mr格式存储。**，**2=小姐**，**3=太太。**。 如果选择此选项，将导出 **Mr.****、Miss** 和 **Mrs.**。
 
 ## 第 4 步 - 数据选择 {#step-4---data-selection}
 
@@ -85,7 +85,7 @@ ht-degree: 29%
 
    ![](assets/s_ncs_user_export_wizard04.png)
 
-1. 单击&#x200B;**[!UICONTROL Add]**&#x200B;按钮以调用函数。 有关详细信息，请参阅[函数列表](../../platform/using/about-queries-in-campaign.md)。
+1. 单击&#x200B;**[!UICONTROL Add]**&#x200B;按钮以调用函数。 有关详细信息，请参阅[函数列表](../../platform/using/adobe-campaign-workspace.md#about-queries-in-campaign)。
 
 ## 步骤5 — 对列排序 {#step-5---sorting-columns}
 

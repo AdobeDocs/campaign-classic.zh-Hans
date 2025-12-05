@@ -7,7 +7,7 @@ badge: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 hide: true
 hidefromtoc: true
 exl-id: 5f22fa2c-b648-4126-9a24-1798adfa8f34
-source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
+source-git-commit: 354fc8fd5d030ed88e2b279ba1dd3eaf2f314d53
 workflow-type: tm+mt
 source-wordcount: '1506'
 ht-degree: 1%
@@ -50,9 +50,9 @@ Adobe Campaign还提供了自动绑定的助手：可以将值划分为N组，�
 
 ![](assets/s_advuser_cube_class_03.png)
 
-可以使用SQL掩码将多个值组合到一个过滤器中。 为此，请检查&#x200B;**[!UICONTROL Use an SQL mask]**&#x200B;列中的&#x200B;**[!UICONTROL Yes]**&#x200B;并输入要应用于&#x200B;**[!UICONTROL Value or expression]**&#x200B;列的SQL筛选器。
+可以使用SQL掩码将多个值组合到一个过滤器中。 为此，请检查&#x200B;**[!UICONTROL Yes]**&#x200B;列中的&#x200B;**[!UICONTROL Use an SQL mask]**&#x200B;并输入要应用于&#x200B;**[!UICONTROL Value or expression]**&#x200B;列的SQL筛选器。
 
-在下面的示例中，所有以&#x200B;**yahoo**(yahoo.fr、yahoo.com、yahoo.be等)开头或以&#x200B;**ymail**(ymail.com、ymail.eu等)开头的电子邮件域 将分组到标签&#x200B;**YAHOO！下**&#x200B;以及具有&#x200B;**rocketmail.com**&#x200B;域的地址。
+在下面的示例中，所有以&#x200B;**yahoo**(yahoo.fr、yahoo.com、yahoo.be等)开头或以&#x200B;**ymail**(ymail.com、ymail.eu等)开头的电子邮件域都将分组到标签&#x200B;**YAHOO！**&#x200B;以及具有&#x200B;**rocketmail.com**&#x200B;域的地址。
 
 ![](assets/s_advuser_cube_class_03b.png)
 
@@ -171,7 +171,7 @@ Adobe Campaign还提供了域枚举，用于显示数据库中按ISP重组的所
 
 1. 如有必要，根据运算符选择操作涉及的表达式。
 
-   **[!UICONTROL Advanced selection]**&#x200B;按钮允许您创建复杂的计算公式。 如需详细信息，请参阅[此小节](../../platform/using/about-queries-in-campaign.md)。
+   **[!UICONTROL Advanced selection]**&#x200B;按钮允许您创建复杂的计算公式。 如需详细信息，请参阅[此小节](../../platform/using/adobe-campaign-workspace.md#about-queries-in-campaign)。
 
    ![](assets/s_advuser_cube_create_a_measure_01.png)
 

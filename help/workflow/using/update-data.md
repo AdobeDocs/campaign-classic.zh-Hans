@@ -6,7 +6,7 @@ feature: Workflows, Targeting Activity, Data Management
 hide: true
 hidefromtoc: true
 exl-id: 9f5735d2-73b8-469f-bc10-482c99cdd4a1
-source-git-commit: 9df46ed923831ffdfb28acddfbc371cecafb251c
+source-git-commit: 354fc8fd5d030ed88e2b279ba1dd3eaf2f314d53
 workflow-type: tm+mt
 source-wordcount: '852'
 ht-degree: 4%
@@ -102,7 +102,7 @@ ht-degree: 4%
 
 1. 选择要移动到主记录的收藏集和要更新的字段。
 
-   输入在标识一个或多个辅助记录后应用于这些记录的规则。 为此，您可以使用表达式生成器。 有关详细信息，请参阅此[部分](../../platform/using/about-queries-in-campaign.md)。 例如，通过指定该值是必须保留的所有不同记录中最近更新的值。
+   输入在标识一个或多个辅助记录后应用于这些记录的规则。 为此，您可以使用表达式生成器。 有关详细信息，请参阅此[部分](../../platform/using/adobe-campaign-workspace.md#about-queries-in-campaign)。 例如，通过指定该值是必须保留的所有不同记录中最近更新的值。
 
    然后，输入规则要考虑的条件。
 
