@@ -188,9 +188,9 @@ ht-degree: 0%
 
   有关更多信息，根据您的Campaign版本，请参阅以下章节：
 
-  ![](assets/do-not-localize/v7.jpeg)[Campaign v7文档](../../configuration/using/database-mapping.md)
+  ![](assets/do-not-localize/v7.jpeg) [Campaign v7文档](../../configuration/using/database-mapping.md)
 
-  ![](assets/do-not-localize/v8.png)[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/shemas-forms/database-mapping.html)
+  ![](assets/do-not-localize/v8.png) [Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/shemas-forms/database-mapping.html)
 
 ### 功能 {#functions}
 

@@ -32,7 +32,7 @@ ht-degree: 54%
 
 * 在[兼容性矩阵](../../rn/using/compatibility-matrix.md#ClientConsoleoperatingsystems)中检查您的系统和工具与Adobe Campaign客户端控制台的兼容性
 
-* 若要了解如何在此页面[上安装并登录Adobe Campaign ](launching-adobe-campaign.md)，请执行以下操作：
+* 若要了解如何在此页面[上安装并登录Adobe Campaign &#x200B;](launching-adobe-campaign.md)，请执行以下操作：
 
 >[!TAB 浏览Campaign UI]
 
