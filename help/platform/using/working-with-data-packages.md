@@ -29,7 +29,7 @@ ht-degree: 39%
 
 >[!NOTE]
 >
->若要了解有关数据包的更多信息，请参阅[Campaign v8文档。](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/packages){target=_blank}
+>若要了解有关数据包的更多信息，请参阅[Campaign v8文档。](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/developer/packages){target=_blank}
 
 
 <!--
