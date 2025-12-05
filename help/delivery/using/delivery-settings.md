@@ -7,16 +7,16 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 66250817-f829-4b8b-92dd-2daa92a97fe0
-source-git-commit: 62ab16b206563aa25b8943e606d03a3184eb00db
+source-git-commit: 2e3a14c97706a873f0791ef83708d704d2eed6c3
 workflow-type: tm+mt
-source-wordcount: '696'
+source-wordcount: '709'
 ht-degree: 12%
 
 ---
 
 # 投放设置 {#about-delivery-settings}
 
-以下设置特定于Campaign Classic。 有关其他投放设置，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/gs-message.html?lang=zh-Hans){target="_blank"}。
+以下设置特定于Campaign Classic。 有关其他投放设置，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/gs-message.html){target="_blank"}。
 
 ## 投放分析 {#delivery-analysis}
 
@@ -81,4 +81,4 @@ ht-degree: 12%
 
 * **资源的有效性限制**： **[!UICONTROL Validity limit]**&#x200B;字段用于已上传的资源，主要用于镜像页面和图像。 本页上的资源仅在限制时间内有效（以节省磁盘空间）。
 
-  此字段中的值可以用[此节](../../platform/using/adobe-campaign-workspace.md#default-units)中列出的单位表示。
+  此字段中的值可以用以下单位表示：**s**&#x200B;表示秒，**m**&#x200B;表示分钟，**h**&#x200B;表示小时，**d**&#x200B;表示天（默认值），**y**&#x200B;表示年。

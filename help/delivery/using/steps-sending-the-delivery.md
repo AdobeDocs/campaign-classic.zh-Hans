@@ -7,9 +7,9 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 0411686e-4f13-401e-9333-e14b05ebe9cd
-source-git-commit: 62ab16b206563aa25b8943e606d03a3184eb00db
+source-git-commit: 2e3a14c97706a873f0791ef83708d704d2eed6c3
 workflow-type: tm+mt
-source-wordcount: '1518'
+source-wordcount: '1531'
 ht-degree: 11%
 
 ---
@@ -143,7 +143,7 @@ ht-degree: 11%
    >
    >在配置最后批次时，还必须留出足够的时间进行重试。 请参阅[此小节](steps-sending-the-delivery.md#configuring-retries)。
 
-1. 要监控您的发送，请转到投放日志。 请参阅[此页](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/send/monitor/delivery-dashboard#delivery-logs-and-history){target="_blank"}。
+1. 要监控您的发送，请转到投放日志。 请参阅[此页](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard#delivery-logs-and-history){target="_blank"}。
 
    您可以看到已在已处理批次中发送的投放（**[!UICONTROL Sent]**&#x200B;状态）以及将在剩余批次中发送的投放（**[!UICONTROL Pending]**&#x200B;状态）。
 
@@ -199,4 +199,4 @@ ht-degree: 11%
 
 * **资源的有效性限制**： **[!UICONTROL Validity limit]**&#x200B;字段用于已上传的资源，主要用于镜像页面和图像。 本页上的资源仅在限制时间内有效（以节省磁盘空间）。
 
-  此字段中的值可以用[此节](../../platform/using/adobe-campaign-workspace.md#default-units)中列出的单位表示。
+  此字段中的值可以用以下单位表示：**s**&#x200B;表示秒，**m**&#x200B;表示分钟，**h**&#x200B;表示小时，**d**&#x200B;表示天（默认值），**y**&#x200B;表示年。
