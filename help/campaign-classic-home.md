@@ -3,10 +3,10 @@ keywords: Campaign Classic;home;popular topics
 product: campaign
 title: Adobe Campaign Classic v7 产品文档
 exl-id: 6b3f1689-80de-49fd-b7ee-7a2a1931d157
-source-git-commit: 8a2a3239c08521765592491a6fe88c94d9db0640
+source-git-commit: 7b3d34ddde08f0bfc8d35f4e17e9eef4eb640483
 workflow-type: tm+mt
-source-wordcount: '342'
-ht-degree: 99%
+source-wordcount: '341'
+ht-degree: 96%
 
 ---
 
@@ -78,8 +78,8 @@ Android Firebase Cloud Messaging (FCM) 服务的一些重要更改将于 2024 �
   <tr style="border: 0;">
     <td>
       <img src="assets/do-not-localize/icon-start.svg" width="35px">
-    <br/>
-      <strong>入门</strong><br/><a href="platform/using/adobe-campaign-workspace.md">用户界面</a> - <a href="platform/using/ac-glossary.md">术语表</a> - <a href="platform/using/launching-adobe-campaign.md">连接到 Campaign</a> - <a href="platform/using/get-started-data-import-export.md">导入和导出数据</a> - <a href="platform/using/access-management.md">权限</a>
+    <br/>
+      <strong>开始</strong><br/><a href="platform/using/adobe-campaign-workspace.md">用户界面</a> - <a href="platform/using/launching-adobe-campaign.md">连接到Campaign</a> - <a href="platform/using/get-started-data-import-export.md">导入和导出数据</a> - <a href="platform/using/access-management.md">权限</a>
     </td>
     <td>
       <img src="assets/do-not-localize/icon-experience.svg" width="35px">
