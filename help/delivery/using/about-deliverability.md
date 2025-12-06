@@ -79,8 +79,8 @@ Adobe Campaign管理着收集垃圾邮件投诉、硬退回和一致发生的软
 
 有关更多信息，请参阅以下章节：
 
-* [了解投放失败](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"}（Campaign v8文档 — 综合指南）
-* [了解隔离管理](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/quarantines){target="_blank"}（Campaign v8文档 — 综合指南）
+* [了解投放失败](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"}（Campaign v8文档 — 综合指南）
+* [了解隔离管理](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/send/monitor/quarantines){target="_blank"}（Campaign v8文档 — 综合指南）
 
 ### 使用监控和报告工具
 

@@ -18,14 +18,14 @@ ht-degree: 1%
 >
 >Campaign v8文档中记录了有关投放失败和隔离管理的全面指南。 此内容同时适用于Campaign Classic v7和Campaign v8用户：
 >
->* [了解投放失败](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"} — 涵盖失败类型、错误原因、同步/异步错误、重试管理和故障排除
->* [隔离管理](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/quarantines){target="_blank"} — 包括隔离与阻止列表、软错误阈值、隔离报告和地址删除
+>* [了解投放失败](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"} — 涵盖失败类型、错误原因、同步/异步错误、重试管理和故障排除
+>* [隔离管理](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/send/monitor/quarantines){target="_blank"} — 包括隔离与阻止列表、软错误阈值、隔离报告和地址删除
 >
 >此页面记录了在混合部署和内部部署中用于退回邮件和隔离管理的特定于&#x200B;**Campaign Classic v7的配置**。
 
 ## 了解投放失败
 
-有关常见的投放失败概念、错误类型和疑难解答指南，请参阅[Campaign v8了解投放失败文档](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"}。
+有关常见的投放失败概念、错误类型和疑难解答指南，请参阅[Campaign v8了解投放失败文档](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"}。
 
 ## 退回邮件配置 {#bounce-mail-config}
 
@@ -127,7 +127,7 @@ Adobe Campaign过滤此消息以删除变量内容（如ID、日期、电子邮�
 
 * **[!UICONTROL Limit]**：每个时段允许的最大消息数。
 
-* **[!UICONTROL Type]**：用于确定发送行为的错误类型（hard、soft或ignored）。 有关错误类型定义，请参阅[Campaign v8文档](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"}。
+* **[!UICONTROL Type]**：用于确定发送行为的错误类型（hard、soft或ignored）。 有关错误类型定义，请参阅[Campaign v8文档](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"}。
 
 有关MX管理的详细信息，请参阅[此部分](../../installation/using/email-deliverability.md#about-mx-rules)。
 
@@ -137,7 +137,7 @@ Adobe Campaign过滤此消息以删除变量内容（如ID、日期、电子邮�
 
 ## 隔离管理 {#quarantine-management}
 
-有关全面的隔离管理指南，请参阅[Campaign v8隔离管理文档](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/quarantines){target="_blank"}。
+有关全面的隔离管理指南，请参阅[Campaign v8隔离管理文档](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/send/monitor/quarantines){target="_blank"}。
 
 ## 隔离配置 {#quarantine-config}
 
@@ -189,7 +189,7 @@ Adobe Campaign过滤此消息以删除变量内容（如ID、日期、电子邮�
 
 对于&#x200B;**iOS**&#x200B;和&#x200B;**Android**&#x200B;推送通知，隔离机制使用设备令牌而不是电子邮件地址。 卸载或重新安装移动应用程序时，将隔离关联的令牌。
 
-有关推送通知隔离方案(iOS和Android错误类型、重试行为等)的详细信息，请参阅[了解投放失败](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"}文档，该文档包括全面的推送通知错误类型表。
+有关推送通知隔离方案(iOS和Android错误类型、重试行为等)的详细信息，请参阅[了解投放失败](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"}文档，该文档包括全面的推送通知错误类型表。
 
 ### SMS隔离详细信息 {#sms-quarantine-specifics}
 
@@ -201,14 +201,14 @@ SMS隔离机制会因所使用的连接器而异：
 
 * **扩展通用SMPP连接器**：使用正则表达式（正则表达式）以不同的方式处理错误管理，以解析SMSC提供程序返回的状态报告(SR)消息。
 
-有关SMS隔离方案和错误类型的详细信息，请参阅[了解投放失败](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"}文档，该文档包含全面的SMS错误类型表。
+有关SMS隔离方案和错误类型的详细信息，请参阅[了解投放失败](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"}文档，该文档包含全面的SMS错误类型表。
 
 ## 相关主题
 
-* [了解投放失败](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"}（Campaign v8文档）
-* [隔离管理](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/quarantines){target="_blank"}（Campaign v8文档）
+* [了解投放失败](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"}（Campaign v8文档）
+* [隔离管理](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/send/monitor/quarantines){target="_blank"}（Campaign v8文档）
 * [投放最佳实践](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/start/delivery-best-practices){target="_blank"}（Campaign v8文档）
-* [投放状态](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-statuses){target="_blank"}（Campaign v8文档）
+* [投放状态](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/send/monitor/delivery-statuses){target="_blank"}（Campaign v8文档）
 * [数据库清理工作流](../../production/using/database-cleanup-workflow.md) （v7混合/内部部署）
 * [配置投放重试](communication-channels.md) （v7混合/内部部署）
 * [更新退回资格](update-bounce-qualification.md)（v7混合/内部部署）
