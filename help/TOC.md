@@ -38,9 +38,9 @@ ht-degree: 99%
    + [浏览和自定义列表 - 隐藏](platform/using/adobe-campaign-ui-lists.md)
    + [枚举 - 隐藏](platform/using/managing-enumerations.md)
    + [Campaign 连接器](platform/using/about-connectors.md)
-   + 常见问题解答 {#faq}
-      + [Campaign Classic 常见问题解答](platform/using/faq-campaign-classic-v7.md)
-      + [内部版本升级](platform/using/faq-build-upgrade.md)
+   + 常见问题 {#faq}
+      + [Campaign Classic 常见问题](platform/using/faq-campaign-classic-v7.md)
+      + [版本升级](platform/using/faq-build-upgrade.md)
    + [词汇表 — 隐藏](platform/using/ac-glossary.md)
    + 隐私 {#privacy}
       + [隐私和同意](platform/using/privacy-and-recommendations.md)
@@ -185,10 +185,10 @@ ht-degree: 99%
       + [管理订阅](delivery/using/managing-subscriptions.md)
       + [病毒式营销和社交媒体营销](delivery/using/viral-and-social-marketing.md)
    + 监测投放 {#monitoring-deliveries}
-      + [监控投放性能](delivery/using/about-delivery-monitoring.md)
+      + [监控投放效果](delivery/using/about-delivery-monitoring.md)
       + [跟踪消息](delivery/using/about-message-tracking.md)
-      + [投放性能和故障排除](delivery/using/delivery-performance-troubleshooting.md)
-      + [投放失败和隔离管理](delivery/using/delivery-failures-quarantine.md)
+      + [投放效果和故障排除](delivery/using/delivery-performance-troubleshooting.md)
+      + [投放故障和隔离管理](delivery/using/delivery-failures-quarantine.md)
       + [高级：自定义投放日志](delivery/using/customize-delivery-logs.md)
    + 可投放性管理 {#deliverability-management}
       + [什么是可投放性](delivery/using/about-deliverability.md)
@@ -357,11 +357,11 @@ ht-degree: 99%
       + [配置与  [!DNL Adobe Target] 的集成](integrations/using/configuring-the-integration-with-adobe-target.md)
       + [插入动态图像](integrations/using/inserting-a-dynamic-image.md)
    + ACS 连接器 {#acs-connector}
-      + [&#x200B; [!DNL ACS Connector] 快速入门 - 隐藏](integrations/using/acs-connector-principles-and-data-cycle.md)
+      + [ [!DNL ACS Connector] 快速入门 - 隐藏](integrations/using/acs-connector-principles-and-data-cycle.md)
       + [同步配置文件 - 隐藏](integrations/using/synchronizing-profiles.md)
       + [同步受众 - 隐藏](integrations/using/synchronizing-audiences.md)
       + [同步 Web 应用程序 - 隐藏](integrations/using/synchronizing-web-applications.md)
-      + [&#x200B; [!DNL ACS Connector]  故障排除 - 隐藏](integrations/using/troubleshooting-the-acs-connector.md)
+      + [ [!DNL ACS Connector]  故障排除 - 隐藏](integrations/using/troubleshooting-the-acs-connector.md)
 + [使用工作流实现自动化](workflow/using/about-workflows.md)
 + 使用工作流实现自动化 {#automating-with-workflows}
    + 工作流快速入门 {#introduction}

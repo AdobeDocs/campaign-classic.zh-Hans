@@ -83,13 +83,13 @@ Android Firebase Cloud Messaging (FCM) 服务的一些重要更改将于 2024 �
     </td>
     <td>
       <img src="assets/do-not-localize/icon-experience.svg" width="35px">
-    <br/>
-      <strong>客户体验</strong><br/><a href="workflow/using/about-workflows.md">使用工作流实现自动化</a> - <a href="https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=zh-Hans" target="_blank">营销活动</a> - <a href="interaction/using/interaction-and-offer-management.md">互动和产品建议管理</a> - <a href="delivery/using/about-personalization.md">个性化</a> - <a href="reporting/using/about-adobe-campaign-reporting-tools.md">报告</a>
+    <br/>
+      <strong>客户体验</strong><br/><a href="workflow/using/about-workflows.md">使用工作流实现自动化</a> - <a href="https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=zh-Hans" target="_blank">营销活动</a> - <a href="interaction/using/interaction-and-offer-management.md">互动和产品建议管理</a> - <a href="delivery/using/about-personalization.md">个性化</a> - <a href="reporting/using/about-adobe-campaign-reporting-tools.md">报告</a>
     </td>
     <td>
       <img src="assets/do-not-localize/icon-send.svg" width="35px">
     <br/>
-      <strong>发送消息</strong><br/><a href="delivery/using/communication-channels.md">通信渠道</a> - <a href="delivery/using/steps-about-delivery-creation-steps.md#sending-a-proof">发送校样</a> - <a href="delivery/using/get-started-a-b-testing.md">A/B 测试</a> - <a href="https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/analytics/tracking/tracking" target="_blank">消息跟踪</a> - <a href="delivery/using/about-deliverability.md">可投放性</a> - <a href="message-center/using/about-transactional-messaging.md">事务性消息传递</a>
+      <strong>发送消息</strong><br/><a href="delivery/using/communication-channels.md">通信渠道</a> - <a href="delivery/using/steps-about-delivery-creation-steps.md#sending-a-proof">发送校样</a> - <a href="delivery/using/get-started-a-b-testing.md">A/B 测试</a> - <a href="https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/analytics/tracking/tracking" target="_blank">消息跟踪</a> - <a href="delivery/using/about-deliverability.md">可投放性</a> - <a href="message-center/using/about-transactional-messaging.md">事务性消息</a>
     </td>
   </tr>
   <tr style="border: 0;">
