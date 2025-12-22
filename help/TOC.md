@@ -8,9 +8,9 @@ user-guide-description: Adobe Campaign Classic v7 产品文档。
 sub-product: adobe campaign classic
 type: Documentation
 source-git-commit: 2e3a14c97706a873f0791ef83708d704d2eed6c3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2682'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -41,7 +41,7 @@ ht-degree: 99%
    + 常见问题 {#faq}
       + [Campaign Classic 常见问题](platform/using/faq-campaign-classic-v7.md)
       + [版本升级](platform/using/faq-build-upgrade.md)
-   + [词汇表 — 隐藏](platform/using/ac-glossary.md)
+   + [术语表 - 隐藏](platform/using/ac-glossary.md)
    + 隐私 {#privacy}
       + [隐私和同意](platform/using/privacy-and-recommendations.md)
       + [隐私管理](platform/using/privacy-management.md)
@@ -357,11 +357,11 @@ ht-degree: 99%
       + [配置与  [!DNL Adobe Target] 的集成](integrations/using/configuring-the-integration-with-adobe-target.md)
       + [插入动态图像](integrations/using/inserting-a-dynamic-image.md)
    + ACS 连接器 {#acs-connector}
-      + [&#x200B; [!DNL ACS Connector] 快速入门 - 隐藏](integrations/using/acs-connector-principles-and-data-cycle.md)
+      + [ [!DNL ACS Connector] 快速入门 - 隐藏](integrations/using/acs-connector-principles-and-data-cycle.md)
       + [同步配置文件 - 隐藏](integrations/using/synchronizing-profiles.md)
       + [同步受众 - 隐藏](integrations/using/synchronizing-audiences.md)
       + [同步 Web 应用程序 - 隐藏](integrations/using/synchronizing-web-applications.md)
-      + [&#x200B; [!DNL ACS Connector]  故障排除 - 隐藏](integrations/using/troubleshooting-the-acs-connector.md)
+      + [ [!DNL ACS Connector]  故障排除 - 隐藏](integrations/using/troubleshooting-the-acs-connector.md)
 + [使用工作流实现自动化](workflow/using/about-workflows.md)
 + 使用工作流实现自动化 {#automating-with-workflows}
    + 工作流快速入门 {#introduction}
