@@ -25,13 +25,13 @@ ht-degree: 3%
 
   >[!IMPORTANT]
   >
-  >**迁移到IMS后：**&#x200B;迁移到Adobe Identity Management System (IMS)后，任何名称中包含“管理员”字样的产品配置文件或命名权限（如“管理员”、“管理员”、“管理员”等）都将自动授予对Campaign控制面板的访问权限。 我们建议避免在命名权限或角色名称中使用“admin”，除非您希望这些用户具有控制面板访问权限。 了解有关[IMS迁移](../../technotes/using/migrate-users-to-ims.md)和[管理控制面板访问权限](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html){target="_blank"}的更多信息。
+  >**迁移到IMS后：**&#x200B;迁移到Adobe Identity Management System (IMS)后，任何名称中包含“管理员”字样的产品配置文件或命名权限（如“管理员”、“管理员”、“管理员”等）都将自动授予对Campaign控制面板的访问权限。 我们建议避免在命名权限或角色名称中使用“admin”，除非您希望这些用户具有控制面板访问权限。 了解有关[IMS迁移](../../technotes/using/migrate-users-to-ims.md)和[管理控制面板访问权限](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=zh-Hans){target="_blank"}的更多信息。
 
 * **[!UICONTROL APPROVAL ADMINISTRATION]**：您可以在工作流和投放中设置多个批准步骤，以确保当前状态已由分配的操作员或组批准。 具有&#x200B;**[!UICONTROL APPROVAL ADMINISTRATION]**&#x200B;权限的用户可以设置批准步骤，还可以分配应批准这些步骤的操作员或操作员组。
 
   >[!IMPORTANT]
   >
-  >**迁移到IMS后：**&#x200B;产品配置文件或包含“管理员”一词的已命名权限（如“审批管理员”）将授予对Campaign控制面板的访问权限。 了解有关[IMS迁移](../../technotes/using/migrate-users-to-ims.md)和[管理控制面板访问权限](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html){target="_blank"}的更多信息。
+  >**迁移到IMS后：**&#x200B;产品配置文件或包含“管理员”一词的已命名权限（如“审批管理员”）将授予对Campaign控制面板的访问权限。 了解有关[IMS迁移](../../technotes/using/migrate-users-to-ims.md)和[管理控制面板访问权限](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=zh-Hans){target="_blank"}的更多信息。
 
 * **[!UICONTROL CENTRAL]**：集中管理（分布式营销）权限。
 
@@ -63,7 +63,7 @@ ht-degree: 3%
 
 * **[!UICONTROL START DELIVERIES]**：有权批准以前分析的投放。 投放分析后，投放将在各种审批步骤暂停，并且需要获得审批才能恢复。 允许具有&#x200B;**[!UICONTROL START DELIVERIES]**&#x200B;权限的用户批准投放。
 
-* **[!UICONTROL USE SQL DATA MANAGEMENT ACTIVITY]**：有权使用SQL数据管理活动编写您自己的SQL脚本，以便创建和填充工作表。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/sql-data-management.html){target="_blank"}。
+* **[!UICONTROL USE SQL DATA MANAGEMENT ACTIVITY]**：有权使用SQL数据管理活动编写您自己的SQL脚本，以便创建和填充工作表。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/sql-data-management.html?lang=zh-Hans){target="_blank"}。
 
 * **[!UICONTROL WORKFLOW]**：有权执行工作流。 如果没有此权限，用户将无法启动、停止或重新启动工作流。
 
@@ -79,4 +79,4 @@ ht-degree: 3%
 
 [此处](/help/platform/using/assets/access-rights-matrix.pdf)提供Adobe Campaign访问权限矩阵。
 
-[![image](assets/do-not-localize/user_management.png)](https://experienceleague.adobe.com/docs/campaign-classic/assets/access-rights-matrix.pdf)
+[![image](assets/do-not-localize/user_management.png)](https://experienceleague.adobe.com/docs/campaign-classic/assets/access-rights-matrix.pdf?lang=zh-Hans)
