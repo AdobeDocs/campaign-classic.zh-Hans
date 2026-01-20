@@ -38,7 +38,7 @@ ht-degree: 100%
    + [浏览和自定义列表 - 隐藏](platform/using/adobe-campaign-ui-lists.md)
    + [枚举 - 隐藏](platform/using/managing-enumerations.md)
    + [Campaign 连接器](platform/using/about-connectors.md)
-   + 常见问题 {#faq}
+   + 常见问题解答 {#faq}
       + [Campaign Classic 常见问题](platform/using/faq-campaign-classic-v7.md)
       + [版本升级](platform/using/faq-build-upgrade.md)
    + [术语表 - 隐藏](platform/using/ac-glossary.md)
@@ -95,7 +95,7 @@ ht-degree: 100%
       + [与 CRM 同步数据](platform/using/crm-data-sync.md)
    + [帮助和支持选项 - 隐藏](support.md)
 + 创建和发送消息 {#sending-messages}
-   + [消息功能快速入门](delivery/using/communication-channels.md)
+   + [开始使用消息功能](delivery/using/communication-channels.md)
    + [投放设置 - 隐藏](delivery/using/delivery-settings.md)
    + 快速入门 {#key-steps-when-creating-a-delivery}
       + [投放快速入门 - 隐藏](delivery/using/steps-about-delivery-creation-steps.md)
@@ -364,7 +364,7 @@ ht-degree: 100%
       + [ [!DNL ACS Connector]  故障排除 - 隐藏](integrations/using/troubleshooting-the-acs-connector.md)
 + [使用工作流实现自动化](workflow/using/about-workflows.md)
 + 使用工作流实现自动化 {#automating-with-workflows}
-   + 工作流快速入门 {#introduction}
+   + 工作流入门 {#introduction}
       + [关于活动 - 隐藏](workflow/using/about-activities.md)
       + [构建工作流 - 隐藏](workflow/using/building-a-workflow.md)
       + [目标数据 - 隐藏](workflow/using/targeting-data.md)
@@ -676,7 +676,7 @@ ht-degree: 100%
       + [切换到 Unicode](production/using/switching-to-unicode.md)
       + [迁移过程](production/using/migration-procedures.md)
    + 数据库维护 {#database-maintenance}
-      + [建议](production/using/recommendations.md)
+      + [推荐做法](production/using/recommendations.md)
       + [要维护的表](production/using/tables-to-maintain.md)
       + [维护类型](production/using/types-of-maintenance.md)
       + [RDBMS 特定建议](production/using/rdbms-specific-recommendations.md)
