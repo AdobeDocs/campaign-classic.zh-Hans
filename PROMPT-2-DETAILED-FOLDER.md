@@ -9,7 +9,7 @@ ht-degree: 0%
 
 **Génere un rapport Markdown détaillé pour UN文件夹avec % de match**
 
----
+&#x200B;---
 
 ## 📋复印机CE提示
 
@@ -465,7 +465,7 @@ Include:
 Make all links clickable (v7 files + Experience League URLs).
 ```
 
----
+&#x200B;---
 
 ## 使用情况
 
@@ -475,12 +475,13 @@ Make all links clickable (v7 files + Experience League URLs).
    ```
    📁 **Analyze**: /Users/.../help/[YOUR-FOLDER]/using/
    ```
+
 3. **粘贴到游标中**
 4. **运行分析**
 5. **获取完整的Markdown报告**
 6. **另存为**： `[folder]-detailed-analysis.md`
 
----
+&#x200B;---
 
 ## 文件夹示例
 
@@ -490,7 +491,7 @@ Make all links clickable (v7 files + Experience League URLs).
 - `/help/platform/using/` （61个文件）
 - `/help/web/using/` （26个文件）
 
----
+&#x200B;---
 
 ## 输出预览
 

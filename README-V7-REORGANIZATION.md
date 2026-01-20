@@ -9,7 +9,7 @@ ht-degree: 0%
 
 **2提示pour analyzer et réorganizer la doc v7 → v8**
 
----
+&#x200B;---
 
 ## 📁个文件夹
 
@@ -20,7 +20,7 @@ ht-degree: 0%
 | `PROMPT-1-OVERVIEW-ALL-FOLDERS.md` | Vue d&#39;ensemble de TOUS les folders v7 | `v7-reorganization-overview.md` |
 | `PROMPT-2-DETAILED-FOLDER.md` | 分析联合国文件夹标题平均匹配百分比 | `[folder]-detailed-analysis.md` |
 
----
+&#x200B;---
 
 ## 🚀利用率
 
@@ -45,7 +45,7 @@ open PROMPT-1-OVERVIEW-ALL-FOLDERS.md
 
 **尾** ：~50-60页Markdown
 
----
+&#x200B;---
 
 ### ⃣2️分析动态文件夹
 
@@ -78,7 +78,7 @@ open PROMPT-2-DETAILED-FOLDER.md
 
 **尾** ：~30-40页Markdown
 
----
+&#x200B;---
 
 ## 📊示例输出
 
@@ -117,66 +117,35 @@ open PROMPT-2-DETAILED-FOLDER.md
 ...
 ```
 
----
+&#x200B;---
 
 ## 🎯工作流推荐
 
-### 塞梅因1：伦桑布尔值
-1. Exécuter **提示符1** → Obtenir `v7-reorganization-overview.md`
-2. 标识符作为文件夹优先级
-3. 合作伙伴平均利益相关者
+### 塞梅因1：伦桑布尔值1. Exécuter **提示符1** → Obtenir `v7-reorganization-overview.md`2. 标识符作为文件夹优先级3. 合作伙伴平均利益相关者
 
-### 瑟曼2-4 ：分析戴尔
-1. 优先置入沙克文件夹：
-   - Exécuter **提示2**
-   - obtenir `[folder]-detailed-analysis.md`
-   - 瓦利德莱迪西代
-   - 评论者行为
+### 瑟曼2-4 ：分析戴尔1. 优先置入沙克文件夹：   - Exécuter **提示2**   - obtenir `[folder]-detailed-analysis.md`   - 瓦利德莱迪西代   - 评论者行为
 
-### Semaine 5+ ：执行
-1. Supprimer les fichiers identifiers(DELETE)
-2. Badger les fichiers v7-only (KEEP)
-3. Migrer le contentu manquant (MOVE)
-4. 审阅者不确定(REVIEW)
+### Semaine 5+ ：执行1. Supprimer les fichiers identifiers(DELETE)2. Badger les fichiers v7-only (KEEP)3. Migrer le contentu manquant (MOVE)4. 审阅者不确定(REVIEW)
 
----
+&#x200B;---
 
 ## 💡个提示
 
-### 倾倒提示
-- ✅复印机/综合提示字典
-- ✅ Ne pas修饰符格式
-- ✅ Adapter seulement le chemin du文件夹（提示2）
+### 倾倒提示- ✅复印机/综合提示字典- ✅ Ne pas修饰符格式- ✅ Adapter seulement le chemin du文件夹（提示2）
 
-### 倒出少量输出
-- 📝 Output en Markdown (pas HTML)
-- 🔗联属可自定义项自动完成
-- ✅复选框用于进行跟踪
-- 📊统计和百分比
-- 🎨表情符号图标
+### 倒出少量输出- 📝 Output en Markdown (pas HTML)- 🔗联属可自定义项自动完成- ✅复选框用于进行跟踪- 📊统计和百分比- 🎨表情符号图标
 
-### Pour l&#39;analyze
-- 🎯 Commencer par组文件夹（投放、工作流）
-- ⚡优先赛快速获胜（95-100%匹配）
-- 🔍审核者手动处理不明确（&lt;70%匹配）
-- ✅验证器avec SME前卫隐藏大量
+### Pour l&#39;analyze- 🎯 Commencer par组文件夹（投放、工作流）- ⚡优先赛快速获胜（95-100%匹配）- 🔍审核者手动处理不明确（&lt;70%匹配）- ✅验证器avec SME前卫隐藏大量
 
----
+&#x200B;---
 
 ## ⚠️重要
 
-### 前锋超本
-1. ✅ Vérifier l&#39;équivalent v8
-2. ✅ Vérifier qu&#39;il n&#39;y a pas de contenu v7特定
-3. ✅ Mettre à jour `redirects.csv`
-4. ✅ Valider avec un expert (pour les premier)
+### 前锋超本1. ✅ Vérifier l&#39;équivalent v82. ✅ Vérifier qu&#39;il n&#39;y a pas de contenu v7特定3. ✅ Mettre à jour `redirects.csv`4. ✅ Valider avec un expert (pour les premier)
 
-### Pour les fichiers v7-only
-1. ✅ Ajouter un badge au début du fichier
-2. ✅ Expliquer pourquoi测试仅限v7
-3. ✅留存时间限制v8
+### Pour les fichiers v7-only1. ✅ Ajouter un badge au début du fichier2. ✅ Expliquer pourquoi测试仅限v73. ✅留存时间限制v8
 
----
+&#x200B;---
 
 ## 🆘支持
 
@@ -185,7 +154,7 @@ open PROMPT-2-DETAILED-FOLDER.md
 - →Demander un résumé输出长
 - 贝索因·德→德·平·莱奎普医生
 
----
+&#x200B;---
 
 **Derniere mise à jour** ： 2026-01-13
 
