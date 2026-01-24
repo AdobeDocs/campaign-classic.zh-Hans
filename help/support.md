@@ -132,7 +132,7 @@ Campaign控制面板允许您管理每个实例的设置并跟踪使用情况，
 
 ### 询问专家！
 
-加入 Campaign Classic 社区：在现有问题中搜索答案，或向社区提问。[加入对话](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community){_blank}。
+加入 Campaign Classic 社区：在现有问题中搜索答案，或向社区提问。[加入对话](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community?profile.language=zh-Hans){_blank}。
 
 ### 访问 Campaign 下载中心
 

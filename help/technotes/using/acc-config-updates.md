@@ -106,7 +106,7 @@ Adobe标识服务(IMS)将从2021年6月30日&#x200B;**起停止支持旧Internet
 
 ## 与Experience Cloud触发器集成 {#acc-triggers-updates}
 
-旧版oAuth身份验证服务的生命周期已终止。 最初基于oAUTH身份验证设置来访问管道的Triggers集成身份验证已移至Adobe I/O。营销活动[的旧版oAuth身份验证模式已于&#x200B;**2021年9月**&#x200B;停用](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411)。 托管环境的支持时间可延长至 **2022 年 2 月 23 日**。作为内部部署或混合型部署客户，请联系Adobe客户关怀团队，将支持延长至2022年2月。 您必须向 Adobe 提供 [OAuth 应用程序的 AppID](../../integrations/using/configuring-pipeline.md#step-optional)。
+旧版oAuth身份验证服务的生命周期已终止。 最初基于oAUTH身份验证设置来访问管道的Triggers集成身份验证已移至Adobe I/O。营销活动[的旧版oAuth身份验证模式已于&#x200B;**2021年9月**&#x200B;停用](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411?profile.language=zh-Hans)。 托管环境的支持时间可延长至 **2022 年 2 月 23 日**。作为内部部署或混合型部署客户，请联系Adobe客户关怀团队，将支持延长至2022年2月。 您必须向 Adobe 提供 [OAuth 应用程序的 AppID](../../integrations/using/configuring-pipeline.md#step-optional)。
 
 **您是否受影响？**
 
