@@ -19,7 +19,7 @@ ht-degree: 3%
 >
 >此常见问题解答解答解答了特定于Adobe Campaign Classic v7体系结构、部署模型和特定于v7的功能的问题。
 >
->**有关常见的Campaign问题**（工作流、投放、受众、报表、个性化等）的完整答案，请参阅&#x200B;[**Campaign v8全面常见问题解答**](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-faq-comprehensive){target="_blank"}，其中提供了按主题组织的详细答案。
+>**有关常见的Campaign问题**（工作流、投放、受众、报表、个性化等）的完整答案，请参阅&#x200B;[**Campaign v8全面常见问题解答**](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/new/campaign-faq-comprehensive){target="_blank"}，其中提供了按主题组织的详细答案。
 
 ## Campaign Classic v7架构和部署 {#v7-architecture}
 
@@ -37,7 +37,7 @@ Adobe Campaign Classic v7提供三种部署模型：
 
 [单击此处了解有关](../../installation/using/hosting-models.md)托管模型及其差异的更多信息。
 
-**注意：** Campaign v8仅作为托管云服务提供。 [了解Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/new/whats-new.html){target="_blank"}。
+**注意：** Campaign v8仅作为托管云服务提供。 [了解Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/new/whats-new.html?lang=zh-Hans){target="_blank"}。
 
 +++
 
@@ -68,7 +68,7 @@ Adobe Campaign Classic v7提供了一组模块和选项。 这些模块及其配
 
 **快速入门：**&#x200B;请联系您的Adobe代表以评估您的环境，并使用Adobe Professional Services制定详细的迁移计划。
 
-了解有关[迁移到Managed Services](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic-blogs/migrate-your-adobe-campaign-v7-onprem-hybrid-environment-to/ba-p/681605){target="_blank"}的更多信息。
+了解有关[迁移到Managed Services](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic-blogs/migrate-your-adobe-campaign-v7-onprem-hybrid-environment-to/ba-p/681605?profile.language=zh-Hans){target="_blank"}的更多信息。
 
 +++
 
@@ -94,7 +94,7 @@ Campaign v8是Adobe的战略平台，非常适合需要大量促销活动、现�
 
 了解详情：
 
-* [Campaign v8概述](https://experienceleague.adobe.com/docs/campaign/campaign-v8/new/whats-new.html){target="_blank"}
+* [Campaign v8概述](https://experienceleague.adobe.com/docs/campaign/campaign-v8/new/whats-new.html?lang=zh-Hans){target="_blank"}
 * [从Campaign Classic v7过渡到v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/start/v7-to-v8.html){target="_blank"}
 * [Campaign v8综合常见问题解答](https://experienceleague.adobe.com/docs/campaign/campaign-v8/start/campaign-faq-comprehensive.html){target="_blank"}
 
@@ -252,7 +252,7 @@ Security Zones自助服务界面可用于管理Adobe Campaign Classic v7部署�
 
 **社区和支持：**
 
-* [Campaign社区论坛](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community){target="_blank"}
+* [Campaign社区论坛](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community?profile.language=zh-Hans){target="_blank"}
 * [Adobe支持](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target="_blank"}
 
 +++
