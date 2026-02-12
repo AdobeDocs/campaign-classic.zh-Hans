@@ -7,26 +7,26 @@ feature: Campaigns
 hide: true
 hidefromtoc: true
 exl-id: 4e0df18f-3623-4dfb-a2f8-ad293dbc4dd5
-source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
+source-git-commit: 4a7ecd170bd27f43d515da71c212bbdaa306d602
 workflow-type: tm+mt
-source-wordcount: '441'
-ht-degree: 22%
+source-wordcount: '431'
+ht-degree: 19%
 
 ---
 
 # 设计和执行营销活动{#designing-marketing-campaigns}
 
 
-Adobe Campaign允许您定义、优化、执行和分析通信和营销活动。 Adobe Campaign就像一个营销策略的统一订单和执行中心。 有关详细信息，请参阅[访问营销活动](../../distributed/using/accessing-campaigns.md)和[创建营销活动](../../campaign/using/setting-up-marketing-campaigns.md)。
+[!DNL Adobe Campaign]允许您定义、优化、执行和分析通信和营销活动。 [!DNL Adobe Campaign]充当营销策略的统一订单和执行中心。 有关详细信息，请参阅[访问营销活动](../../distributed/using/accessing-campaigns.md)和[创建营销活动](../../campaign/using/setting-up-marketing-campaigns.md)。
 
-此外，**营销资源管理(MRM)**&#x200B;模块允许您在协作模式下控制营销操作，方法是提供所涉及的任务、预算和营销资源的完整管理和实时跟踪。 利用营销资源管理，您可以优化和规范对内部和外部流程、资源和营销活动以及第三方关系（代理、打印机等）的管理。 如需详细信息，请参阅[此小节](../../mrm/using/about-marketing-resource-management.md)。
+此外，**营销资源管理(MRM)**&#x200B;模块允许您在协作模式下控制营销操作，方法是提供所涉及的任务、预算和营销资源的完整管理和实时跟踪。 利用营销资源管理，您可以优化和规范对内部和外部流程、资源和营销活动的管理。 它还支持第三方关系（代理、打印机等）。 如需详细信息，请参阅[此小节](../../mrm/using/about-marketing-resource-management.md)。
 
 >[!NOTE]
 >
->有关Adobe Campaign核心功能的详细信息，请参阅[此部分](../../platform/using/about-adobe-campaign-classic.md)部分。\
->[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=zh-Hans){target="_blank"}详细介绍了与各种渠道上的群体定位、消息个性化和消息投放相关的功能。
+>有关[!DNL Adobe Campaign]核心功能的详细信息，请参阅[本节](../../platform/using/about-adobe-campaign-classic.md)。\
+>[!DNL Campaign v8 documentation](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=zh-Hans){target="_blank"}中详细介绍了与各种渠道上的群体定位、消息个性化和消息投放相关的功能。
 
-![](assets/do-not-localize/how-to-video.png) [在视频中发现营销活动密钥概念](#video)
+![操作方法视频缩略图](assets/do-not-localize/how-to-video.png) [在视频中发现营销活动关键概念](#video)
 
 ## 核心概念 {#core-concepts}
 
@@ -68,6 +68,6 @@ Adobe Campaign允许您定义、优化、执行和分析通信和营销活动。
 
 此视频介绍营销活动的主要概念。
 
->[!VIDEO](https://video.tv.adobe.com/v/326575?quality=12&captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/35131?quality=12)
 
-[此处](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hans)提供了其他 Campaign Classic 操作方法视频。
+[!DNL Campaign Classic]此处[提供了其他](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hans)操作方法视频。

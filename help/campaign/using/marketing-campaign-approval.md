@@ -1,76 +1,77 @@
 ---
-product: campaign
-title: 建立和管理审批流程
-description: 了解如何管理营销活动的批准
-role: User
-feature: Approvals, Campaigns
-hide: true
-hidefromtoc: true
-exl-id: 8cbb2445-f5e4-4a25-ba7e-56e39ca9d3ce
-source-git-commit: 4f809011a8b4cb3803c4e8151e358e5fd73634e4
+source-git-commit: 4a7ecd170bd27f43d515da71c212bbdaa306d602
 workflow-type: tm+mt
-source-wordcount: '2437'
-ht-degree: 1%
+source-wordcount: '2684'
+ht-degree: 0%
 
 ---
-
+—product： campaign
+标题：设置和管理审批流程
+description：了解如何管理营销活动的批准
+语言：en
+角色：用户
+功能：批准、营销活动
+隐藏：是
+hidefromtoc：是
+exl-id： 8cbb2445-f5e4-4a25-ba7e-56e39ca9d3ce
+---
 # 建立和管理审批流程 {#approving-marketing-campaigns}
 
 
-投放的每个步骤都可以获得批准，以确保完全监控和控制活动的各个流程：定位、内容、预算、提取和发送证明。
+投放的每个步骤都可以获得批准，以确保完全监控和控制活动流程。 这些功能包括定位、内容、预算、提取和发送验证。
 
-通知消息将发送给Adobe Campaign操作员，这些操作员被指定为审阅者，负责向他们通知批准请求。 检查审阅人是否具有批准所需的&#x200B;**适当权限**，以及是否正确定义了其安全区域。 [了解详情](#selecting-reviewers)。
+通知消息将发送给[!DNL Adobe Campaign]操作员，这些操作员是指定的审阅人，负责向其通知批准请求。 检查审阅人是否具有批准所需的&#x200B;**适当权限**，以及是否正确定义了其安全区域。 [了解有关选择审阅者的详细信息](#selecting-reviewers)。
 
-[本节](#checking-and-approving-deliveries)中介绍了审批程序。
+审批程序在[审批程序概述](#checking-and-approving-deliveries)中显示。
 
 >[!NOTE]
 >
 >只有投放所有者才能开始投放。 为使另一个操作员（或操作员组）能够开始投放，您必须将其添加为&#x200B;**[!UICONTROL Delivery start:]**&#x200B;字段中的审阅人。\
->[了解详情](#selecting-reviewers)。
+>[了解有关选择审阅者的详细信息](#selecting-reviewers)。
 
 ## 操作原则 {#operating-principle-}
 
 例如，用于预算审批的标准消息如下：
 
-![](assets/s_user_validation_link_in_mail.png)
+![带有验证链接的审批通知电子邮件](assets/s_user_validation_link_in_mail.png)
 
 之后，审核者操作员可以选择是否批准预算。
 
-![](assets/s_user_validation_page_confirm.png)
+![包含接受或拒绝选项的批准确认页面](assets/s_user_validation_page_confirm.png)
 
 操作员验证后，作业的批准或拒绝将被转发到投放仪表板。
 
-![](assets/s_user_validation_link_in_op_board.png)
+![显示作业审批链接的Campaign信息板](assets/s_user_validation_link_in_op_board.png)
 
-该信息也可在营销活动的审批日志中找到。这些日志可通过&#x200B;**[!UICONTROL Edit > Tracking > Approvals]**&#x200B;选项卡访问。
+该信息还可在营销策划的批准日志中找到。 这些日志通过&#x200B;**[!UICONTROL Edit > Tracking > Approvals]**&#x200B;选项卡访问。
 
-![](assets/s_user_validation_log_in_op_edit_tab.png)
+![显示审批日志的“营销活动编辑”选项卡](assets/s_user_validation_log_in_op_edit_tab.png)
 
 这些通知将发送给受影响的操作员，并发送给每个启用了批准的流程。
 
 可以为营销活动模板、单独为每个营销活动或投放启用批准。
 
-所有需要审批的作业都在营销活动模板（**[!UICONTROL Properties]** > **[!UICONTROL Advanced campaign settings...]** > **[!UICONTROL Approvals]**&#x200B;选项卡）中进行选择，负责审批的操作员也是如此（除非未启用此选项，否则他们将收到通知）。 如需详细信息，请参阅[此小节](#approving-processes)。
+在营销活动模板（**[!UICONTROL Properties]** > **[!UICONTROL Advanced campaign settings...]** > **[!UICONTROL Approvals]**&#x200B;选项卡）中选择了所有需要审批的作业。 除非禁用此选项，否则还将选择负责审批的操作员并接收通知。 有关详细信息，请参阅批准投放[的](#approving-processes)步骤。
 
 可以覆盖使用此模板创建的每个营销活动的这些设置，也可以覆盖每个营销活动投放的这些设置：单击&#x200B;**[!UICONTROL Properties]**&#x200B;按钮，然后单击&#x200B;**[!UICONTROL Approvals]**&#x200B;选项卡。
 
 在以下示例中，投放内容不需要审批：
 
-![](assets/s_user_validation_select_process_from_del.png)
+![包含进程选择的投放审批设置](assets/s_user_validation_select_process_from_del.png)
 
 ## 选择审阅人 {#selecting-reviewers}
 
 对于每种类型的批准，从投放的下拉列表中选择负责批准的操作员或操作员组。 可以使用&#x200B;**[!UICONTROL Edit...]**&#x200B;链接添加更多运算符。 此窗口还允许您编辑审批截止日期。
 
-![](assets/s_user_validation_add_operator.png)
+![为审批操作员添加审阅者对话框](assets/s_user_validation_add_operator.png)
 
 如果未指定审核者，则活动经理将负责审批并接收通知。 在营销活动的&#x200B;**[!UICONTROL Edit > Properties]**&#x200B;选项卡中指定营销活动管理员：
 
-![](assets/s_user_op_manager_field.png)
+![显示经理字段的营销活动属性](assets/s_user_op_manager_field.png)
 
 >[!NOTE]
 >
->所有其他具有&#x200B;**[!UICONTROL Administrator]**&#x200B;权限的Adobe Campaign操作员也可以批准作业，但他们不会收到通知。\
+>所有其他具有[!DNL Adobe Campaign]权限的&#x200B;**[!UICONTROL Administrator]**&#x200B;操作员也可以批准作业，但他们不会收到通知。\
 >默认情况下，如果定义了批准操作员，则活动经理无法执行批准或开始投放。 您可以修改此行为，并通过创建值为&#x200B;**1**&#x200B;的&#x200B;**NmsCampaign_Activate_OwnerConfirmation**&#x200B;选项来授权营销活动经理批准/开始投放。
 
 ## 审批模式 {#approval-modes}
@@ -79,7 +80,7 @@ ht-degree: 1%
 
 要通过控制台或Web界面批准作业，请单击活动仪表板上的相应链接。 也可以通过投放跟踪或投放仪表板审批作业。
 
-![](assets/s_user_validation_from_console.png)
+![控制台中的营销活动信息板批准操作](assets/s_user_validation_from_console.png)
 
 检查要批准的信息，选择是接受还是拒绝批准，并根据需要输入备注。 单击&#x200B;**[!UICONTROL Ok]**&#x200B;进行保存。
 
@@ -91,11 +92,11 @@ ht-degree: 1%
 
 单击通知消息中可用的链接（请参阅[通知](#notifications)）。 您需要登录，如下所示：
 
-![](assets/s_user_validation__log_in.png)
+通知链接的![审批登录页面](assets/s_user_validation__log_in.png)
 
 选择&#x200B;**[!UICONTROL Accept]**&#x200B;或&#x200B;**[!UICONTROL Reject]**，并根据需要输入评论。
 
-![](assets/s_user_validation_save_target_validation.png)
+带有接受或拒绝和评论的![审批页面](assets/s_user_validation_save_target_validation.png)
 
 单击 **[!UICONTROL Validate]**。
 
@@ -107,21 +108,21 @@ ht-degree: 1%
 
 该信息包括以下几个位置：
 
-* 在营销活动审批日志中，**[!UICONTROL Edit > Tracking]**&#x200B;选项卡的&#x200B;**[!UICONTROL Approvals]**&#x200B;子选项卡：
+* 在营销活动审批日志中，**[!UICONTROL Approvals]**&#x200B;选项卡的&#x200B;**[!UICONTROL Edit > Tracking]**&#x200B;子选项卡：
 
-  ![](assets/s_user_validation_log_from_op.png)
+  ![营销活动审批日志列表](assets/s_user_validation_log_from_op.png)
 
-* 在营销活动投放日志中，**[!UICONTROL Edit > Tracking]**&#x200B;选项卡的&#x200B;**[!UICONTROL Deliveries]**&#x200B;子选项卡：
+* 在营销活动投放日志中，**[!UICONTROL Deliveries]**&#x200B;选项卡的&#x200B;**[!UICONTROL Edit > Tracking]**&#x200B;子选项卡：
 
-  ![](assets/s_user_validation_log_from_delivery_list.png)
+  ![具有审批状态的投放日志列表](assets/s_user_validation_log_from_delivery_list.png)
 
-* 单击&#x200B;**[!UICONTROL Summary]**&#x200B;选项卡的&#x200B;**[!UICONTROL Hide/show log]**&#x200B;选项可查看每个投放的批准状态。
+* 单击&#x200B;**[!UICONTROL Hide/show log]**&#x200B;选项卡的&#x200B;**[!UICONTROL Summary]**&#x200B;选项可查看每个投放的批准状态。
 
-  ![](assets/s_user_validation_log_delivery.png)
+  ![显示审批日志的投放摘要](assets/s_user_validation_log_delivery.png)
 
 * 也可以通过每个投放的&#x200B;**[!UICONTROL Tracking > Approvals]**&#x200B;选项卡访问此信息：
 
-  ![](assets/s_user_validation_log_from_exe_tab.png)
+  ![投放跟踪审批选项卡](assets/s_user_validation_log_from_exe_tab.png)
 
 >[!NOTE]
 >
@@ -129,11 +130,11 @@ ht-degree: 1%
 
 ### 自动和手动审批 {#automatic-and-manual-approval}
 
-在创建定位工作流时，如果批准是自动的（默认模式），Adobe Campaign会显示批准链接，或者在需要批准时立即发送通知。
+在创建定位工作流时，如果批准是自动的（默认模式），[!DNL Adobe Campaign]会显示批准链接或在需要批准时立即发送通知。
 
 要选择审批模式（手动或自动），请单击营销活动或营销活动模板的&#x200B;**[!UICONTROL Edit > Properties]**&#x200B;选项卡，然后单击&#x200B;**[!UICONTROL Advanced campaign settings...]**，最后点击&#x200B;**[!UICONTROL Approvals]**&#x200B;选项卡。
 
-![](assets/s_user_validation_select_mode.png)
+![手动和自动模式的审批设置](assets/s_user_validation_select_mode.png)
 
 >[!NOTE]
 >
@@ -159,21 +160,21 @@ ht-degree: 1%
 
 为此，请编辑营销活动或营销活动模板的审批窗口（**[!UICONTROL Edit > Properties]** > **[!UICONTROL Advanced campaign settings...]** > **[!UICONTROL Approvals]**&#x200B;选项卡）并选择&#x200B;**[!UICONTROL Do not enable notification sending]**。
 
-![](assets/s_user_validation_notif_desactivate.png)
+![禁用通知的审批设置](assets/s_user_validation_notif_desactivate.png)
 
 ### 通知内容 {#notification-content}
 
-通知内容是在特定模板中定义的： **[!UICONTROL Notification of validations for the marketing campaign]**。 此模板保存在Adobe Campaign树的&#x200B;**[!UICONTROL Administration > Campaign management > Technical delivery templates]**&#x200B;文件夹中。
+通知内容是在特定模板中定义的： **[!UICONTROL Notification of validations for the marketing campaign]**。 此模板保存在&#x200B;**[!UICONTROL Administration > Campaign management > Technical delivery templates]**&#x200B;树的[!DNL Adobe Campaign]文件夹中。
 
 ## 审阅和批准投放 {#checking-and-approving-deliveries}
 
-Adobe Campaign允许您在协作模式下为营销活动的主要阶段设置审批流程。
+[!DNL Adobe Campaign]允许您在协作模式下为营销活动的主要阶段设置审批流程。
 
-对于直邮投放，Adobe Campaign操作员可以在提取文件发送到路由器之前查看该文件，如有必要，他们可以更改格式并重新执行提取。 请参阅[批准提取文件](#approving-an-extraction-file)。
+对于直邮投放，[!DNL Adobe Campaign]操作员可以在提取文件发送到路由器之前查看该文件，如有必要，他们还可以更改格式并重新启动提取。 请参阅[批准提取文件](#approving-an-extraction-file)。
 
-对于每个营销活动，您可以批准投放目标、内容（请参阅[批准内容](#approving-content)）和成本。 负责批准工作的Adobe Campaign操作员收到电子邮件通知后，可通过控制台或Web连接批准或拒绝批准相关请求。 查看批准投放的[步骤](#approving-processes)。
+对于每个营销活动，您可以批准投放目标、内容（请参阅[批准内容](#approving-content)）和成本。 负责审批的[!DNL Adobe Campaign]操作员会收到电子邮件通知，并可通过控制台或Web连接接受或拒绝审批。 查看批准投放的[步骤](#approving-processes)。
 
-完成这些验证阶段后，可以启动投放。 [了解详情](../../campaign/using/marketing-campaign-deliveries.md#starting-a-delivery)。
+完成这些验证阶段后，可以启动投放。 [了解有关开始投放的更多信息](../../campaign/using/marketing-campaign-deliveries.md#starting-a-delivery)。
 
 ### 批准投放的步骤 {#approving-processes}
 
@@ -186,13 +187,13 @@ Adobe Campaign允许您在协作模式下为营销活动的主要阶段设置审
 >要选择需要批准的流程，请修改活动模板。 有关详细信息，请参阅[营销活动模板](../../campaign/using/marketing-campaign-templates.md#campaign-templates)。
 >
 
-![](assets/s_ncs_user_edit_del_to_validate.png)
+![显示投放状态的Campaign信息板验证](assets/s_ncs_user_edit_del_to_validate.png)
 
 >[!NOTE]
 >
 >在定向工作流中，如果在消息准备期间发生链接到配置问题的错误，则仪表板上会显示&#x200B;**[!UICONTROL Restart message preparation]**&#x200B;链接。 更正错误，单击此链接在绕过定位阶段时重新启动消息准备。
 
-![](assets/s_user_validation_relaunch_message_preparation.png)
+![用于重新启动邮件准备的仪表板链接](assets/s_user_validation_relaunch_message_preparation.png)
 
 对于活动中的每个投放，您可以批准以下流程：
 
@@ -214,11 +215,11 @@ Adobe Campaign允许您在协作模式下为营销活动的主要阶段设置审
 
   营销活动信息板上提供了&#x200B;**[!UICONTROL Approve content]**&#x200B;链接，如下所示：
 
-  ![](assets/s_ncs_user_edit_file_valid.png)
+  ![审批仪表板显示审批内容链接](assets/s_ncs_user_edit_file_valid.png)
 
   可以通过审批框预览提取文件，然后接受或拒绝。
 
-  ![](assets/s_ncs_user_edit_file_valid_preview_file.png)
+  ![在审批对话框中预览提取文件](assets/s_ncs_user_edit_file_valid_preview_file.png)
 
   >[!NOTE]
   >
@@ -228,11 +229,11 @@ Adobe Campaign允许您在协作模式下为营销活动的主要阶段设置审
 
   **[!UICONTROL Enable individual approval of each associated delivery]**&#x200B;选项用于与辅助投放相关的一个主投放。 默认情况下，未选中此选项，因此可以对主投放执行整体审批。 如果选择此选项，则必须单独批准每个投放。
 
-  ![](assets/s_ncs_user_task_valid_associate.png)
+  ![用于启用相关投放的单独审批的选项](assets/s_ncs_user_task_valid_associate.png)
 
 ### 选择审批流程 {#choosing-the-processes-to-be-approved}
 
-使用与活动关联的模板定义审批阶段。 您必须从模板中选择要审批的元素，并指定负责这些审批的Adobe Campaign操作员。 有关营销活动模板的更多信息，请参阅[此章节](../../campaign/using/marketing-campaign-templates.md#campaign-templates)。
+使用与活动关联的模板定义审批阶段。 您必须从模板中选择要审批的元素，并指定负责这些审批的[!DNL Adobe Campaign]操作员。 有关活动模板的更多信息，请参阅[活动模板](../../campaign/using/marketing-campaign-templates.md#campaign-templates)。
 
 >[!NOTE]
 >
@@ -242,11 +243,11 @@ Adobe Campaign允许您在协作模式下为营销活动的主要阶段设置审
 
 对于营销活动，依次单击&#x200B;**[!UICONTROL Edit > Properties]**&#x200B;选项卡、**[!UICONTROL Advanced campaign settings...]**&#x200B;链接和&#x200B;**[!UICONTROL Approvals]**&#x200B;子选项卡以访问审批配置页面。
 
-您可以选择和取消选择流程以批准和指定负责批准的Adobe Campaign操作员。 这些可以是单个操作员、一组操作员或操作员列表。
+您可以选择和取消选择要批准和指定[!DNL Adobe Campaign]负责批准的操作员的进程。 这些可以是单个操作员、一组操作员或操作员列表。
 
 要选择运算符列表，请单击指定第一个审阅人的字段右侧的&#x200B;**[!UICONTROL Edit...]**&#x200B;链接，并根据需要添加任意数量的运算符，如下所示：
 
-![](assets/s_user_validation_add_operator.png)
+![为审批操作员添加审阅者对话框](assets/s_user_validation_add_operator.png)
 
 >[!NOTE]
 >
@@ -255,11 +256,11 @@ Adobe Campaign允许您在协作模式下为营销活动的主要阶段设置审
 >* 您可以从此分区添加提醒。
 >
 
-![](assets/s_ncs_user_edit_op_valid_calendar.png)
+![审批日历和提醒设置](assets/s_ncs_user_edit_op_valid_calendar.png)
 
 对于每个投放，单击&#x200B;**[!UICONTROL Audit]**&#x200B;按钮和&#x200B;**[!UICONTROL Approvals]**&#x200B;选项卡以查看和编辑批准日期及自动提醒。
 
-![](assets/s_ncs_user_edit_del_valid.png)
+![包含日期和提醒的投放审批选项卡](assets/s_ncs_user_edit_del_valid.png)
 
 >[!NOTE]
 >
@@ -269,7 +270,7 @@ Adobe Campaign允许您在协作模式下为营销活动的主要阶段设置审
 
 >[!CAUTION]
 >
->要批准内容，验证周期是必需的。 校样允许您批准显示信息和个性化数据，并检查链接是否正常工作。 在[本节](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof)中了解如何创建校对。
+>要批准内容，验证周期是必需的。 校样允许您批准显示信息和个性化数据，并检查链接是否正常工作。 了解如何在[创建验证](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof)中创建验证。
 >
 >下面详述的内容审批功能与验证投放相关。
 
@@ -277,7 +278,7 @@ Adobe Campaign允许您在协作模式下为营销活动的主要阶段设置审
 
 1. 创建新投放后，活动经理可单击活动仪表板上的&#x200B;**[!UICONTROL Submit content]**&#x200B;链接以开始内容审批周期。
 
-   ![](assets/s_ncs_user_validation_submit_content_validation.png)
+   ![提交内容以供审批的Campaign仪表板链接](assets/s_ncs_user_validation_submit_content_validation.png)
 
    >[!NOTE]
    >
@@ -287,7 +288,7 @@ Adobe Campaign允许您在协作模式下为营销活动的主要阶段设置审
 
    * 通过通知电子邮件：
 
-     ![](assets/s_ncs_user_del_content_valid_bat_notif.png)
+     ![验证的内容审批通知电子邮件](assets/s_ncs_user_del_content_valid_bat_notif.png)
 
      >[!NOTE]
      >
@@ -295,13 +296,13 @@ Adobe Campaign允许您在协作模式下为营销活动的主要阶段设置审
 
    * 通过控制台或web界面、投放跟踪、投放仪表板或活动仪表板：
 
-     ![](assets/s_ncs_user_validation_content_bat_op.png)
+     ![传递跟踪显示内容验证列表](assets/s_ncs_user_validation_content_bat_op.png)
 
      >[!NOTE]
      >
      >此营销活动信息板允许您通过单击&#x200B;**[!UICONTROL Inbox rendering...]**&#x200B;链接查看已发送的验证列表。 要查看其内容，请单击列表右侧的&#x200B;**[!UICONTROL Detail]**&#x200B;图标。
 
-     ![](assets/s_ncs_user_validation_content_BAT_details.png)
+     ![用于内容审批的校对详细信息视图](assets/s_ncs_user_validation_content_BAT_details.png)
 
 1. 将向营销策划负责人发送通知电子邮件，告知他们内容是否已被批准。
 
@@ -309,7 +310,7 @@ Adobe Campaign允许您在协作模式下为营销活动的主要阶段设置审
    >
    >活动负责人可以随时重新开始内容审批周期。 为此，请单击Campaign仪表板的&#x200B;**[!UICONTROL Content status]**&#x200B;行（在投放级别）上的链接，然后单击&#x200B;**[!UICONTROL Reset content approval to submit it again]**。
 
-   ![](assets/s_user_validation_relaunch_content_validation.png)
+   ![用于重新启动内容审批的Campaign仪表板链接](assets/s_user_validation_relaunch_content_validation.png)
 
 #### 分配内容编辑 {#assign-content-editing}
 
@@ -317,15 +318,15 @@ Adobe Campaign允许您在协作模式下为营销活动的主要阶段设置审
 
 1. 创建新投放后，营销活动负责人单击营销活动仪表板中的&#x200B;**[!UICONTROL Submit content editing]**&#x200B;链接以开始内容编辑周期。
 
-   ![](assets/s_ncs_user_validation_submit_content_edition.png)
+   ![用于提交内容编辑的Campaign仪表板链接](assets/s_ncs_user_validation_submit_content_edition.png)
 
 1. 负责内容编辑的人员将收到一封电子邮件，告知他们内容可用。
 
-   ![](assets/s_ncs_user_validation_submit_content_notif.png)
+   ![内容编辑通知电子邮件](assets/s_ncs_user_validation_submit_content_notif.png)
 
 1. 然后，他们可以登录到控制台，打开投放并使用简化的助手进行编辑，以更改主题、HTML和文本内容，并发送校样。
 
-   ![](assets/s_user_validation_content_edition.png)
+   ![用于编辑投放内容的简化助手](assets/s_user_validation_content_edition.png)
 
    >[!NOTE]
    >
@@ -335,21 +336,21 @@ Adobe Campaign允许您在协作模式下为营销活动的主要阶段设置审
 
    为此，他们可以：
 
-   * 通过Adobe Campaign控制台单击&#x200B;**[!UICONTROL Available content]**&#x200B;链接。
+   * 通过&#x200B;**[!UICONTROL Available content]**&#x200B;控制台单击[!DNL Adobe Campaign]链接。
 
-     ![](assets/s_ncs_user_validation_submit_content_available.png)
+     ![使内容可用的控制台链接](assets/s_ncs_user_validation_submit_content_available.png)
 
    * 单击通知消息中的链接，然后批准内容可用性。
 
-     ![](assets/s_ncs_user_validation_submit_content_available2.png)
+     ![用于批准内容可用性的通知链接](assets/s_ncs_user_validation_submit_content_available2.png)
 
      操作员可在将内容提交到活动负责人之前添加评论。
 
-     ![](assets/s_ncs_user_validation_submit_content_available3.png)
+     提交内容可用性之前![评论字段](assets/s_ncs_user_validation_submit_content_available3.png)
 
      通知消息允许审阅人批准或拒绝内容。
 
-     ![](assets/s_ncs_user_validation_submit_content_available4.png)
+     ![内容可用性的审批响应](assets/s_ncs_user_validation_submit_content_available4.png)
 
 #### 外部内容审批 {#external-content-approval}
 
@@ -362,19 +363,19 @@ Adobe Campaign允许您在协作模式下为营销活动的主要阶段设置审
    >
    >这些链接仅在发送了一个或多个验证后才可用。 否则，只能通过控制台或Web界面进行投放渲染。
 
-   ![](assets/s_user_validation_external_content.png)
+   ![包含证明链接的外部内容审批电子邮件](assets/s_user_validation_external_content.png)
 
 ### 批准提取文件 {#approving-an-extraction-file}
 
-对于离线投放，Adobe Campaign会生成一个提取文件，并根据其设置方式将其发送到路由器。 其内容取决于所使用的导出模板。
+对于离线投放，[!DNL Adobe Campaign]会生成一个提取文件，并根据其设置方式将其发送到路由器。 其内容取决于所使用的导出模板。
 
 内容、目标和预算获得批准后，投放将更改为&#x200B;**[!UICONTROL Extraction pending]**，直到启动营销活动的提取工作流为止。
 
-![](assets/s_ncs_user_waiting_file_extraction.png)
+![传递状态显示正在等待提取](assets/s_ncs_user_waiting_file_extraction.png)
 
 在提取请求日期创建提取文件，并且投放状态更改为&#x200B;**[!UICONTROL File to approve]**。
 
-![](assets/s_ncs_user_file_extract_to_valid.png)
+![传递状态显示要批准的文件](assets/s_ncs_user_file_extract_to_valid.png)
 
 您可以查看提取文件的内容（通过单击其名称）、批准该文件，或者在必要时使用功能板上的链接更改格式并重新开始提取。
 
