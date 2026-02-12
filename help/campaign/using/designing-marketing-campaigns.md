@@ -70,6 +70,6 @@ ht-degree: 19%
 
 此视频介绍营销活动的主要概念。
 
->[!VIDEO](https://video.tv.adobe.com/v/35131?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/326575?captions=chi_hans&quality=12)
 
 [!DNL Campaign Classic]此处[提供了其他](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hans)操作方法视频。
