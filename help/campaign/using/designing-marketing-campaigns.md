@@ -7,15 +7,15 @@ feature: Campaigns
 hide: true
 hidefromtoc: true
 exl-id: 4e0df18f-3623-4dfb-a2f8-ad293dbc4dd5
-source-git-commit: 4a7ecd170bd27f43d515da71c212bbdaa306d602
+source-git-commit: df014d3f3029a61176e5117e27f3d2e8228fc407
 workflow-type: tm+mt
-source-wordcount: '431'
+source-wordcount: '434'
 ht-degree: 19%
 
 ---
 
-# 设计和执行营销活动{#designing-marketing-campaigns}
 
+# 设计和执行营销活动{#designing-marketing-campaigns}
 
 [!DNL Adobe Campaign]允许您定义、优化、执行和分析通信和营销活动。 [!DNL Adobe Campaign]充当营销策略的统一订单和执行中心。 有关详细信息，请参阅[访问营销活动](../../distributed/using/accessing-campaigns.md)和[创建营销活动](../../campaign/using/setting-up-marketing-campaigns.md)。
 
@@ -23,8 +23,10 @@ ht-degree: 19%
 
 >[!NOTE]
 >
->有关[!DNL Adobe Campaign]核心功能的详细信息，请参阅[本节](../../platform/using/about-adobe-campaign-classic.md)。\
->[[!DNL Campaign v8 documentation]](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=zh-Hans){target="_blank"}中详细介绍了与各种渠道上的群体定位、消息个性化和消息投放相关的功能。
+>有关[!DNL Adobe Campaign]核心功能的详细信息，请参阅[本节](../../platform/using/about-adobe-campaign-classic.md)。
+>
+>[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=zh-Hans){target="_blank"}详细介绍了与各种渠道上的群体定位、消息个性化和消息投放相关的功能。
+
 
 ![操作方法视频缩略图](assets/do-not-localize/how-to-video.png) [在视频中发现营销活动关键概念](#video)
 
@@ -68,6 +70,6 @@ ht-degree: 19%
 
 此视频介绍营销活动的主要概念。
 
->[!VIDEO](https://video.tv.adobe.com/v/326575?captions=chi_hans&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/35131?quality=12)
 
 [!DNL Campaign Classic]此处[提供了其他](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hans)操作方法视频。

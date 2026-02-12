@@ -1,22 +1,22 @@
 ---
-source-git-commit: 4a7ecd170bd27f43d515da71c212bbdaa306d602
+product: campaign
+title: 建立和管理审批流程
+description: 了解如何管理营销活动的批准
+language: en
+role: User
+feature: Approvals, Campaigns
+hide: true
+hidefromtoc: true
+exl-id: 8cbb2445-f5e4-4a25-ba7e-56e39ca9d3ce
+source-git-commit: df014d3f3029a61176e5117e27f3d2e8228fc407
 workflow-type: tm+mt
-source-wordcount: '2684'
+source-wordcount: '2665'
 ht-degree: 0%
 
 ---
-—product： campaign
-标题：设置和管理审批流程
-description：了解如何管理营销活动的批准
-语言：en
-角色：用户
-功能：批准、营销活动
-隐藏：是
-hidefromtoc：是
-exl-id： 8cbb2445-f5e4-4a25-ba7e-56e39ca9d3ce
----
-# 建立和管理审批流程 {#approving-marketing-campaigns}
 
+
+# 建立和管理审批流程 {#approving-marketing-campaigns}
 
 投放的每个步骤都可以获得批准，以确保完全监控和控制活动流程。 这些功能包括定位、内容、预算、提取和发送验证。
 
