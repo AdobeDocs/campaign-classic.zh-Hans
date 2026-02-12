@@ -24,7 +24,7 @@ ht-degree: 19%
 >[!NOTE]
 >
 >有关[!DNL Adobe Campaign]核心功能的详细信息，请参阅[本节](../../platform/using/about-adobe-campaign-classic.md)。\
->[!DNL Campaign v8 documentation](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=zh-Hans){target="_blank"}中详细介绍了与各种渠道上的群体定位、消息个性化和消息投放相关的功能。
+>[[!DNL Campaign v8 documentation]](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=zh-Hans){target="_blank"}中详细介绍了与各种渠道上的群体定位、消息个性化和消息投放相关的功能。
 
 ![操作方法视频缩略图](assets/do-not-localize/how-to-video.png) [在视频中发现营销活动关键概念](#video)
 
