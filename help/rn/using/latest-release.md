@@ -6,9 +6,9 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: b10055781ff32fb30280adbea281ad9fbddb79e8
+source-git-commit: 66387e2e008051901fe3385f571d7fe798829100
 workflow-type: tm+mt
-source-wordcount: '276'
+source-wordcount: '281'
 ht-degree: 28%
 
 ---
@@ -29,7 +29,7 @@ _2026年3月16日_
 
 ### 安全性改进 {#security-7-4-3}
 
-* 为了保持最佳的安全性、稳定性和合规性，Debian已升级到版本13，PostgreSQL已升级到版本17。
+* 为了保持最佳的安全性、稳定性和合规性，Debian已升级到版本13，PostgreSQL已升级到版本17。 请参阅[兼容性矩阵](compatibility-matrix.md)。
 
 ### 修复 {#fixes-7-4-3}
 
