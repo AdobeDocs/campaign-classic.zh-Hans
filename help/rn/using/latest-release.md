@@ -6,7 +6,7 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: 66387e2e008051901fe3385f571d7fe798829100
+source-git-commit: b9a716f327b8fdd68c3bf36dbe864535308def30
 workflow-type: tm+mt
 source-wordcount: '281'
 ht-degree: 28%
@@ -17,7 +17,7 @@ ht-degree: 28%
 
 此页面列出了 **Campaign v7 最新版本**&#x200B;中的新增功能、改进和修复。每个新的内部版本都带有一个以颜色突出显示的状态。在[此页面](rn-overview.md)中了解有关 Campaign Classic v7 内部版本状态的更多信息。
 
-## 7.4.3 版 - 内部版本 9392 {#release-7-4-3}
+## 7.4.3 版 - 内部版本 9394 {#release-7-4-3}
 
 [!BADGE 正式发布版]{type=Positive url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=zh-Hans#rn-statuses" tooltip="正式发布版"}
 
