@@ -88,18 +88,18 @@ ht-degree: 7%
    <% if (language == "EN" ) { %>
    <DIV id=en-version>Hello <%= recipient.firstName %>,</DIV>
    <DIV>Discover your new offers!</DIV>
-   <DIV><a href="https://www.adobe.com/products/en">www.adobe.com/products/en</A></FONT></DIV><%
+   <DIV><a href="https://www.adobe.com/cn/products/en">www.adobe.com/products/en</A></FONT></DIV><%
     } %>
    <% if (language == "FR" ) { %>
    <DIV id=fr-version>Bonjour <%= recipient.firstName %>,</DIV>
    <DIV>Découvrez nos nouvelles offres !</DIV>
-   <DIV><a href="https://www.adobe.com/products/fr">www.adobe.com/products/fr</A></DIV><%
+   <DIV><a href="https://www.adobe.com/cn/products/fr">www.adobe.com/products/fr</A></DIV><%
     } %>
     <% if (language == "ES" ) { %>
    <DIV id=es-version><FONT face=Arial>
    <DIV>Olà <%= recipient.firstName %>,</DIV>
    <DIV>Descubra nuestros nuevas ofertas !</DIV>
-   <DIV><a href="https://www.adobe.com/products/es">www.adobe.com/products/es</A></DIV>
+   <DIV><a href="https://www.adobe.com/cn/products/es">www.adobe.com/products/es</A></DIV>
    <% } %>
    ```
 
