@@ -5,7 +5,7 @@ description: 发布 Web 窗体
 badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v8"
 feature: Web Forms
 exl-id: 1c66b8e8-7590-4767-9b2f-a9a509df4508
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: 647709dd4b0c70c342be03d3012bc02f10ff2c00
 workflow-type: tm+mt
 source-wordcount: '1284'
 ht-degree: 1%
@@ -136,7 +136,7 @@ ht-degree: 1%
 
 * 单击&#x200B;**[!UICONTROL Personalize the message displayed if the form is closed...]**&#x200B;链接以定义当用户尝试在表单无效时访问表单时显示的错误消息。
 
-  查看表单[&#128279;](defining-web-forms-properties.md#accessibility-of-the-form)的辅助功能。
+  查看表单[的](defining-web-forms-properties.md#accessibility-of-the-form)辅助功能。
 
 ### 通过电子邮件投放表单 {#delivering-a-form-via-email}
 
@@ -190,12 +190,13 @@ ht-degree: 1%
 
    * 如果在导入包的实例上新增Web窗体，则Web窗体将获得&#x200B;**[!UICONTROL Being edited]**&#x200B;状态。
 
-   * 如果新实例上已存在该Web表单，则这是对现有表单的修改。 如果表单的旧版本为&#x200B;**[!UICONTROL Online]**，则旧版本将保持联机状态，直到表单的新版本在新实例上再次发布为[&#128279;](#publishing-a-form)。
+   * 如果新实例上已存在该Web表单，则这是对现有表单的修改。 如果表单的旧版本为&#x200B;**[!UICONTROL Online]**，则旧版本将保持联机状态，直到表单的新版本在新实例上再次发布为[](#publishing-a-form)。
 
   >[!NOTE]
   >
   >您可以使用&#x200B;**[!UICONTROL Preview]**&#x200B;选项卡检查Web窗体的最新版本。
 
-<!--For RN:
+<!--
+For RN:
 * Now, when a web form has the **Pending publication** status, it must be published before it becomes **Online** and accessible through the web form URL in a web browser. [Read more](../../web/using/publishing-a-web-form.md#life-cycle-of-a-form)
 -->

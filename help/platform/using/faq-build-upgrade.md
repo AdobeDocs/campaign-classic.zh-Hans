@@ -7,7 +7,7 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 85e2135d-a1a3-44f0-a4f9-de38db5c8726
-source-git-commit: 295e3596d9291cbcc55e2d264309141526c3806b
+source-git-commit: 647709dd4b0c70c342be03d3012bc02f10ff2c00
 workflow-type: tm+mt
 source-wordcount: '2066'
 ht-degree: 0%
@@ -24,7 +24,7 @@ ht-degree: 0%
 
 Adobe Campaign 会定期更新。如果您熟悉我们发布的[发行说明](../../rn/using/rn-overview.md)，您可能会意识到每年平均会发布2/3个包含新功能、改进和修复的次要版本。 此外，我们还定期发布仅包含累积修复的内部版本。 这种定期更新的目的是为了让您掌握最新、最充分的信息，保持环境的完全安全，并明显改善您对我们产品的体验。
 
-我们的客户运行最新版本的Adobe Campaign这一点至关重要。 Adobe它还允许您在发生问题时更高效地提供帮助 — 识别、再现和修复旧版本中的问题通常需要更多时间，更不用说您可能遇到的某些问题已在最近的版本中得到了修复。
+我们的客户运行最新版本的Adobe Campaign这一点至关重要。 它还允许您在发生问题时更高效地提供帮助 — 识别、再现和修复旧版本中的问题通常需要更多时间，更不用说您可能遇到的某些问题已在最近的版本中得到了修复。
 
 作为托管用户，您无需采取任何操作，即可通过最新稳定版本自动从Campaign年度升级中受益。 内部部署和混合型客户也可以从此版本受益。 如果您从旧内部版本进行迁移，我们建议您先升级到此版本。 [了解详情](../../rn/using/rn-overview.md)。
 
@@ -67,7 +67,8 @@ Adobe Campaign 会定期更新。如果您熟悉我们发布的[发行说明](..
 Adobe将在进行任何更改之前备份您的系统。 但是，如果您的非生产系统（开发服务器或暂存服务器）中存在关键的自定义工作，则强烈建议您在进行任何升级之前将该工作导出为资源包。
 
 <!--
-![](assets/do-not-localize/how-to-video.png) For more information, [watch this how to video](https://helpx.adobe.com/campaign/classic/how-to/generate-packages-in-acv6.html).-->
+![](assets/do-not-localize/how-to-video.png) For more information, [watch this how to video](https://helpx.adobe.com/campaign/classic/how-to/generate-packages-in-acv6.html).
+-->
 
 ## 升级将于何时进行？
 

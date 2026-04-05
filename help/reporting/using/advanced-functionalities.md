@@ -5,7 +5,7 @@ description: 了解有关使用报告时高级功能的更多信息
 feature: Reporting, Monitoring
 badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v8"
 exl-id: 8b51d0fc-1692-41cd-9aa8-3bb8f4ee454e
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: 647709dd4b0c70c342be03d3012bc02f10ff2c00
 workflow-type: tm+mt
 source-wordcount: '610'
 ht-degree: 4%
@@ -66,7 +66,7 @@ if( ctx.@_historyId.toString().length == 0 )
 
 ## 添加URL参数 {#defining-additional-settings}
 
-[报告属性](../../reporting/using/properties-of-the-report.md)的&#x200B;**[!UICONTROL Parameters]**&#x200B;选项卡允许您为报告定义其他设置：这些设置将在调用期间传递到URL。
+**[!UICONTROL Parameters]**&#x200B;报告属性[的](../../reporting/using/properties-of-the-report.md)选项卡允许您为报告定义其他设置：这些设置将在调用期间传递到URL。
 
 >[!CAUTION]
 >
@@ -94,7 +94,7 @@ if( ctx.@_historyId.toString().length == 0 )
 
 * **[!UICONTROL None]**：报告将没有&#x200B;**[!UICONTROL X-Frame-options header]**。
 * **[!UICONTROL Same as origin]**：默认为新报告和重新发布的报告设置。 主机名将与报告的URL相同。
-* **[!UICONTROL Deny]**：该报告不能包含在使用iframe的HTML页中。
+* **[!UICONTROL Deny]**：该报告不能包含在使用iframe的HTML页面中。
 
 ![](assets/s_ncs_advuser_report_properties_09c.png)
 
@@ -113,7 +113,8 @@ if( ctx.@_historyId.toString().length == 0 )
 在下面的视频示例中，您将了解如何添加“_type”参数，以根据此属性的值创建报告的不同视图。
 
 <!--
-![](assets/do-not-localize/how-to-video.png) [Discover this feature in video](https://helpx.adobe.com/campaign/classic/how-to/add-url-parameter-in-acv6.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/business-practitioners/explevel/intermediate/applaunch/how-to-4/collection.ccx.js&ref=helpx.adobe.com)-->
+![](assets/do-not-localize/how-to-video.png) [Discover this feature in video](https://helpx.adobe.com/campaign/classic/how-to/add-url-parameter-in-acv6.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/business-practitioners/explevel/intermediate/applaunch/how-to-4/collection.ccx.js&ref=helpx.adobe.com)
+-->
 
 
 ## 调用另一报表 {#calling-up-another-report}

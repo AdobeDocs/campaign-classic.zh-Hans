@@ -7,7 +7,7 @@ audience: message-center
 content-type: reference
 topic-tags: event-processing
 exl-id: 930c6395-0c00-40ee-a925-3e0cae67c55f
-source-git-commit: e60a8391416bc9899548971bddb61705467a80e5
+source-git-commit: 647709dd4b0c70c342be03d3012bc02f10ff2c00
 workflow-type: tm+mt
 source-wordcount: '234'
 ht-degree: 1%
@@ -40,7 +40,7 @@ ht-degree: 1%
 
 ## 事务性消息监测 {#transactional-message-monitoring}
 
-要监视事务性消息，请检查[投放日志](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/send/monitor/delivery-dashboard#delivery-logs-and-history){target="_blank"}。
+要监视事务性消息，请检查[投放日志](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard#delivery-logs-and-history){target="_blank"}。
 
 通过每小时运行一次的技术工作流(**[!UICONTROL Message Center execution instance]**)，将从执行实例发送的事务性投放同步回控制实例。
 
@@ -48,7 +48,8 @@ ht-degree: 1%
 >
 >投放每周根据最新的事件更新而不是根据事件创建日期来累计事件。 因此，在从控制实例提取事务性消息投放日志时，与每个投放日志ID关联的投放ID可能会随着日志的更新（例如，当收到事件的入站退回时）而随着时间的推移而改变。
 
-<!--The transactional deliveries sent from the execution instance are synchronized back to the control instance as follows.
+<!--
+The transactional deliveries sent from the execution instance are synchronized back to the control instance as follows.
 
 Let's take a [delivery template](../../message-center/using/introduction.md) labelled *Template_1*.
 
@@ -73,6 +74,8 @@ Let's take a [delivery template](../../message-center/using/introduction.md) lab
 
 To summarize, the deliveries weekly accumulate the events based on the latest event update, and not on the event creation date.
 
-Therefore, when extracting transactional messaging delivery logs from the control instance, the delivery ID associated with each delivery log ID changes every week.-->
+Therefore, when extracting transactional messaging delivery logs from the control instance, the delivery ID associated with each delivery log ID changes every week.
+
+-->
 
 要监视执行实例的活动和运行情况，请参阅[事务性消息报告](../../message-center/using/about-transactional-messaging-reports.md)。

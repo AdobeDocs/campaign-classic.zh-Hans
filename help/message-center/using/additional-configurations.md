@@ -7,7 +7,7 @@ audience: message-center
 content-type: reference
 topic-tags: instance-configuration
 exl-id: 4d25d740-db57-4d18-8cae-2dd49c4a786e
-source-git-commit: bba3f23637dd67a1557203c5ed1b93a6cb044870
+source-git-commit: 647709dd4b0c70c342be03d3012bc02f10ff2c00
 workflow-type: tm+mt
 source-wordcount: '850'
 ht-degree: 6%
@@ -69,11 +69,13 @@ ht-degree: 6%
 
 然后，可以从&#x200B;**管理>生产>消息中心**&#x200B;文件夹访问这些工作流。 创建后，存档工作流将自动启动。
 
-<!--**Minimal architecture**
+<!--
+**Minimal architecture**
 
 Once the control and execution modules are installed on the same instance, you must create the archiving workflow using the deployment wizard. Click the **[!UICONTROL Create the archiving workflow]** button to create and start the workflow.
 
-![](assets/messagecenter_archiving_001.png)-->
+![](assets/messagecenter_archiving_001.png)
+-->
 
 ### 执行实例工作流 {#execution-instance-workflows}
 
@@ -104,7 +106,7 @@ Once the control and execution modules are installed on the same instance, you m
 
 ### 兼容性说明 {#compatibility-note}
 
-此旧版品牌策略配置与Campaign v8中引入的新[集中式品牌策略](https://experienceleague.adobe.com/docs/campaign-web/v8/conf/branding/branding-gs.html?lang=zh-Hans){target="_blank"}模型不兼容。
+此旧版品牌策略配置与Campaign v8中引入的新[集中式品牌策略](https://experienceleague.adobe.com/docs/campaign-web/v8/conf/branding/branding-gs.html){target="_blank"}模型不兼容。
 
 如果您的现有环境使用此旧版配置，则无法将其直接迁移到新的集中式品牌推广模型。 要采用新系统，必须全面重新实施品牌设置。
 
@@ -175,6 +177,6 @@ Once the control and execution modules are installed on the same instance, you m
 
 1. 为每个品牌创建一个与[执行实例](#execution-instance)上定义的内部名称相同的外部帐户（步骤1）。
 
-1. 为每个品牌创建投放模板。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html?lang=zh-Hans){target="_blank"}。
+1. 为每个品牌创建投放模板。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html){target="_blank"}。
 
 1. 在投放模板的&#x200B;**[!UICONTROL Properties]**&#x200B;中，将路由设置为品牌的外部帐户。

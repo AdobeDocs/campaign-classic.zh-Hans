@@ -1,24 +1,24 @@
 ---
 product: campaign
-title: 为Adobe Experience Cloud Triggers配置Developer Console
-description: 了解如何配置Developer Console Adobe Experience Cloud Triggers
+title: 为Adobe Experience Cloud触发器配置Developer Console
+description: 了解如何配置Developer Console Adobe Experience Cloud触发器
 feature: Triggers
 audience: integrations
 content-type: reference
-index: y
+index: true
 internal: n
 snippet: y
 exl-id: ab30f697-3022-4a29-bbdb-14ca12ec9c3e
 hide: true
 hidefromtoc: true
-source-git-commit: 8d15a5666b5768bc0f17a4391061c4fcb9f76811
+source-git-commit: d38e4e32bbbfc11d4cc6f985608b6bdf6ff53e92
 workflow-type: tm+mt
 source-wordcount: '312'
 ht-degree: 1%
 
 ---
 
-# 为Adobe Experience Cloud Triggers配置Developer Console {#configuring-adobe-io}
+# 为Adobe Experience Cloud触发器配置Developer Console {#configuring-adobe-io}
 
 <!--
 >[!CAUTION]
@@ -37,8 +37,8 @@ This integration only applies starting **Campaign Classic 20.2.4 and above, 19.1
 
 在开始此实施之前，请检查您是否拥有：
 
-* 有效的&#x200B;**组织标识符**：组织ID是Adobe Experience Cloud中的唯一标识符，用于VisitorID服务和IMS单点登录(SSO)。 [了解详情](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=zh-hans)
-* 您组织的&#x200B;**开发人员访问权限**。 组织的系统管理员需要遵循此页面[&#128279;](https://helpx.adobe.com/cn/enterprise/using/manage-developers.html)中详细的的&#x200B;**将开发人员添加到单个产品配置文件**&#x200B;过程，以便为与触发器关联的Adobe Analytics产品的`Analytics - {tenantID}`产品配置文件提供开发人员访问权限。
+* 有效的&#x200B;**组织标识符**：组织ID是Adobe Experience Cloud中的唯一标识符，用于VisitorID服务和IMS单点登录(SSO)。 [了解详情](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=zh-Hans)
+* 您组织的&#x200B;**开发人员访问权限**。 组织的系统管理员需要遵循此页面&#x200B;**中详细的**&#x200B;的[将开发人员添加到单个产品配置文件](https://helpx.adobe.com/enterprise/using/manage-developers.html)过程，以便为与触发器关联的Adobe Analytics产品的`Analytics - {tenantID}`产品配置文件提供开发人员访问权限。
 
 ## 步骤1：创建/更新OAuth项目 {#creating-adobe-io-project}
 

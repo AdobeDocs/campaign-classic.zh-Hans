@@ -5,7 +5,7 @@ description: 本文档介绍了Adobe Campaign数据模型
 feature: Data Model
 role: Developer
 exl-id: fc0fd23c-f9ea-4e30-b47b-a84143d882ca
-source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
+source-git-commit: 647709dd4b0c70c342be03d3012bc02f10ff2c00
 workflow-type: tm+mt
 source-wordcount: '2354'
 ht-degree: 2%
@@ -44,7 +44,7 @@ Adobe Campaign依赖于包含链接在一起的表的关系数据库。
 它是用于投放&#x200B;**的**&#x200B;收件人的默认表。 因此，它包含通过各种渠道投放所需的信息：
 
 * sEmail：电子邮件地址。
-* iEmailFormat：首选的电子邮件格式(1表示文本，2表示HTML，0表示未定义)。
+* iEmailFormat：首选的电子邮件格式（1表示文本，2表示HTML，0表示未定义）。
 * 邮政地址由sAddress1、sAddress2、sAddress3、sAddress4、sZipCode和sCity生成（符合1997年5月发布的XPZ 10-011 AFNOR标准）。
 * sPhone、sMobilePhone和sFax分别包含电话、手机和传真号码。
 * iBlackList是用于配置文件的默认选择退出标记（1表示“已取消订阅”，0表示）。
@@ -113,7 +113,7 @@ NmsRcpGrpRel关系表仅包含与iRecipientId和iGroupId链接表的标识符对
 
 ## 营销活动管理 {#campaign-management}
 
-这组表链接到&#x200B;**营销活动**&#x200B;模块，该模块允许定义、优化、执行和分析通信和营销活动。 有关更多信息，请参阅 [Campaign v8 文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html?lang=zh-Hans){target=_blank}。
+这组表链接到&#x200B;**营销活动**&#x200B;模块，该模块允许定义、优化、执行和分析通信和营销活动。 有关更多信息，请参阅 [Campaign v8 文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html){target=_blank}。
 
 ![](assets/data-model_campaign.png)
 
@@ -238,7 +238,8 @@ NmsRcpGrpRel关系表仅包含与iRecipientId和iGroupId链接表的标识符对
 
 此表与&#x200B;**nms:batchEvent**&#x200B;架构匹配。 它包含批量事件的定义。
 
-<!--## Microsites Module {#microsites-module}
+<!--
+## Microsites Module {#microsites-module}
 
 This set of tables is linked to the **Web applications** functionality, which allows to create and publish dynamic and interactive web applications with data from the database and content adapted to the rights of the connected user. For more on this, see [About web applications](../../web/using/about-web-applications.md).
 
@@ -246,7 +247,8 @@ This set of tables is linked to the **Web applications** functionality, which al
 
 * **NmsTrackingUrl**: This table matches the **nms:trackingUrl** schema.
 
-* **NmsPurl**: This table matches the **nms:purl** schema.-->
+* **NmsPurl**: This table matches the **nms:purl** schema.
+-->
 
 ## NMAC模块 {#nmac-module}
 

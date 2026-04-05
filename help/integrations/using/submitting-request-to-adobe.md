@@ -8,7 +8,7 @@ audience: integrations
 content-type: reference
 topic-tags: audience-sharing
 exl-id: f3c19fcd-12cb-4ca3-b4b7-7dc4be57f4ea
-source-git-commit: 7b4fbefe0f6bd26ee9260d15e8303f716af7ac96
+source-git-commit: 647709dd4b0c70c342be03d3012bc02f10ff2c00
 workflow-type: tm+mt
 source-wordcount: '130'
 ht-degree: 2%
@@ -19,9 +19,9 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->作为v7用户，为了能够继续下一步操作，请确保在您的系统上启用了AdobeIdentity Management System (IMS) 。 [了解详情](../../integrations/using/about-adobe-id.md)。
+>作为v7用户，为了能够继续下一步操作，请确保您的系统上启用了Adobe Identity Management System (IMS)。 [了解详情](../../integrations/using/about-adobe-id.md)。
 
-为您的组织启用AdobeIdentity Management服务(IMS)后，您可以请求配置[Experience Cloud受众](https://experienceleague.adobe.com/zh-hans/docs/core-services/interface/services/audiences/overview){target="_blank"}与Campaign的集成。 为此，请联系您的Adobe代表并提供以下信息：
+为您的组织启用Adobe Identity Management服务(IMS)后，您可以请求配置与Campaign的[Experience Cloud Audience](https://experienceleague.adobe.com/en/docs/core-services/interface/services/audiences/overview){target="_blank"}集成。 为此，请联系您的Adobe代表，并提供以下信息：
 
 <table> 
  <tbody> 
@@ -35,16 +35,18 @@ ht-degree: 2%
   </tr> 
   <tr> 
    <td> <strong>组织ID</strong><br /> </td> 
-   <td> 您的组织ID。 <br>要查找您的组织ID，请参阅<a href="https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=zh-hans">此页面</a></td> 
+   <td> 您的组织ID。 <br>要查找您的组织ID，请参阅<a href="https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=zh-Hans">此页面</a></td> 
   </tr> 
   <tr> 
    <td> <strong>环境</strong><br /> </td> 
    <td> 示例：生产 </td> 
   </tr> 
-  <!--tr> 
+  <!--
+  tr> 
    <td> <strong>AAM or People Service</strong><br /> </td> 
    <td> Example: Adobe Audience Manager. Make sure to mention whether or not you own Audience Manager license.</td> 
-  </tr--> 
+  </tr
+  --> 
   <tr> 
    <td> <strong>声明的ID或访客ID</strong><br /> </td> 
    <td> 示例：声明的ID </td> 
