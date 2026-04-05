@@ -410,7 +410,7 @@ Adobe Campaign的整体配置在&#x200B;**serverConf.xml**&#x200B;文件中定�
   </tr> 
   <tr> 
    <td> maxCnx<br /> </td> 
-   <td> 拒绝新连接之前允许的最大连接数。 查看此<a href="https://helpx.adobe.com/campaign/kb/how-to-increase-the-maximum-number-of-database-connections-from-.html">技术说明</a>.<br /> </td> 
+   <td> 拒绝新连接之前允许的最大连接数。 查看此<a href="https://helpx.adobe.com/cn/campaign/kb/how-to-increase-the-maximum-number-of-database-connections-from-.html">技术说明</a>.<br /> </td> 
    <td> 短<br /> </td> 
   </tr> 
   <tr> 
