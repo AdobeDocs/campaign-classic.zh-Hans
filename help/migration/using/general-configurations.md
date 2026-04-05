@@ -439,7 +439,7 @@ allowSQLInjection="false"
 
   如果警告与资源冲突有关，则操作员需要注意解决该冲突。
 
-* 后升级&#x200B;**.log`<server version number>`文件的`>`postupgrade_**_time包含同步结果。 默认情况下，它位于以下目录中： **安装目录/var/`<instance>`升级后**。 **错误**&#x200B;和&#x200B;**警告**&#x200B;属性指示错误和警告。
+* 后升级&#x200B;**.log`<server version number>`文件的`>`postupgrade_**&#x200B;_time包含同步结果。 默认情况下，它位于以下目录中： **安装目录/var/`<instance>`升级后**。 **错误**&#x200B;和&#x200B;**警告**&#x200B;属性指示错误和警告。
 
 ### 解决冲突 {#resolve-a-conflict}
 

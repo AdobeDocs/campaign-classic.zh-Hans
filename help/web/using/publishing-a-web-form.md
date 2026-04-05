@@ -190,7 +190,7 @@ ht-degree: 1%
 
    * 如果在导入包的实例上新增Web窗体，则Web窗体将获得&#x200B;**[!UICONTROL Being edited]**&#x200B;状态。
 
-   * 如果新实例上已存在该Web表单，则这是对现有表单的修改。 如果表单的旧版本为&#x200B;**[!UICONTROL Online]**，则旧版本将保持联机状态，直到表单的新版本在新实例上再次发布为[](#publishing-a-form)。
+   * 如果新实例上已存在该Web表单，则这是对现有表单的修改。 如果表单的旧版本为&#x200B;**[!UICONTROL Online]**，则旧版本将保持联机状态，直到表单的新版本在新实例上再次发布为[&#128279;](#publishing-a-form)。
 
   >[!NOTE]
   >
