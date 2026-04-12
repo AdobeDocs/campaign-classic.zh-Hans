@@ -19,7 +19,7 @@ ht-degree: 3%
 以下示例说明如何在工作流中使用JavaScript代码：
 
 * [写入数据库](#write-example)
-* [查询数据库 ](#read-example)
+* [查询数据库 &#x200B;](#read-example)
 * [使用静态SOAP方法触发工作流](#trigger-example)
 * [使用非静态SOAP方法与数据库交互](#interact-example)
 
