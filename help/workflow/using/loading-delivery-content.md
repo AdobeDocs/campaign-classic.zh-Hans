@@ -4,9 +4,8 @@ title: 加载投放内容
 description: 加载投放内容
 feature: Workflows
 hide: true
-hidefromtoc: true
 exl-id: a52baffd-402b-4b33-ab72-ac954e4dee85
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '317'
 ht-degree: 2%
@@ -44,7 +43,7 @@ ht-degree: 2%
 
    ![](assets/delivery_loadcontent_activityexample.png)
 
-1. 在&#x200B;**[!UICONTROL Delivery]**&#x200B;活动的&#x200B;**[!UICONTROL Script]**&#x200B;选项卡中，添加以下命令以加载投放中导入文件的内容：
+1. 在&#x200B;**[!UICONTROL Script]**&#x200B;活动的&#x200B;**[!UICONTROL Delivery]**&#x200B;选项卡中，添加以下命令以加载投放中导入文件的内容：
 
    ```
    delivery.content.html.source=loadFile(vars.filename)

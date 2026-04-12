@@ -4,11 +4,10 @@ title: 增量查询
 description: 了解有关增量查询工作流活动的更多信息
 feature: Workflows, Targeting Activity
 hide: true
-hidefromtoc: true
 exl-id: abc08232-1a92-41e8-90f1-02e0a673539b
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
-source-wordcount: '356'
+source-wordcount: '355'
 ht-degree: 3%
 
 ---
@@ -67,4 +66,4 @@ ht-degree: 3%
 * 架构
 * recCount
 
-这组三个值标识查询所定向的群体。 **[!UICONTROL tableName]**&#x200B;是记录目标标识符的表的名称，**[!UICONTROL schema]**&#x200B;是群体的架构（通常为nms：recipient），**[!UICONTROL recCount]**&#x200B;是表中的元素数。
+这组三个值标识查询所定向的群体。 **[!UICONTROL tableName]**&#x200B;是记录目标标识符的表的名称，**[!UICONTROL schema]**&#x200B;是群体的架构（通常为nms:recipient），**[!UICONTROL recCount]**&#x200B;是表中的元素数。

@@ -4,9 +4,8 @@ title: 开始和结束
 description: 了解有关开始和结束工作流活动的更多信息
 feature: Workflows
 hide: true
-hidefromtoc: true
 exl-id: 56dfbaf3-93de-4ade-b4ad-9b54d239c7a5
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '133'
 ht-degree: 4%

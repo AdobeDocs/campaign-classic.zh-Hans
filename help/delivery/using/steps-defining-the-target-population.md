@@ -5,9 +5,8 @@ description: 了解如何定义目标群体
 feature: Audiences, Proofs
 role: User
 hide: true
-hidefromtoc: true
 exl-id: d0ed7be7-3147-4cb8-9ce7-ea51602e9048
-source-git-commit: 62ab16b206563aa25b8943e606d03a3184eb00db
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '1730'
 ht-degree: 23%

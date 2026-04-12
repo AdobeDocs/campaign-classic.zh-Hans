@@ -3,10 +3,9 @@ product: campaign
 title: Campaign Classic的帮助和支持选项
 description: 需要对Campaign Classic的支持？ 您找到了正确的地方！
 feature: Troubleshooting
-hidefromtoc: true
 hide: true
 exl-id: 3a84236f-89e5-4b8b-9a98-afdc006fd6e0
-source-git-commit: 354fc8fd5d030ed88e2b279ba1dd3eaf2f314d53
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '632'
 ht-degree: 67%
@@ -39,7 +38,7 @@ ht-degree: 67%
     <td valign="top">
         <ul>
         <li><a href="platform/using/faq-campaign-classic-v7.md">Campaign Classic v7常见问题解答</a></li>
-        <li><a href="platform/using/faq-build-upgrade.md">内部版本升级</a></li>
+        <li><a href="platform/using/faq-build-upgrade.md">版本升级</a></li>
         <li><a href="https://experienceleague.adobe.com/docs/campaign/campaign-v8/start/campaign-faq-comprehensive.html" target="_blank">Campaign v8全面常见问题解答</a></li>
         <li><a href="delivery/using/about-delivery-monitoring.md">投放监测</a></li>
         </ul>
@@ -93,7 +92,7 @@ Campaign控制面板允许您管理每个实例的设置并跟踪使用情况，
 
 >[!NOTE]
 >
->所有管理员用户都可访问控制面板。[此部分](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=zh-Hans#discover-control-panel)将详细介绍授予用户管理员访问权限的步骤。
+>所有管理员用户都可访问控制面板。[此小节](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=zh-Hans#discover-control-panel)中详细介绍了授予用户管理员访问权限的步骤。
 >
 >请注意，您的实例必须托管在AWS上，并使用最新的[GA内部版本](rn/using/rn-overview.md)进行升级。 在[本节](platform/using/launching-adobe-campaign.md#getting-your-campaign-version)中了解如何确认您的版本。要检查您的实例是否托管在 AWS 上，请按照[此页面](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=zh-Hans)中详述的步骤操作。
 

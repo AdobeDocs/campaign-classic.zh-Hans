@@ -3,9 +3,8 @@ title: 使用外部重复数据删除活动的合并功能
 description: 了解如何使用重复数据删除活动的合并功能
 feature: Workflows, Data Management
 hide: true
-hidefromtoc: true
 exl-id: a6b10585-7bf9-4fef-b886-db081b6d3acc
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '570'
 ht-degree: 4%
@@ -18,7 +17,7 @@ ht-degree: 4%
 
 ## 关于此用例 {#about-this-use-case}
 
-此用例描述了如何在&#x200B;**[!UICONTROL Deduplication]**&#x200B;活动中使用&#x200B;**[!UICONTROL Merge]**&#x200B;功能。
+此用例描述了如何在&#x200B;**[!UICONTROL Merge]**&#x200B;活动中使用&#x200B;**[!UICONTROL Deduplication]**&#x200B;功能。
 
 有关此功能的详细信息，请参阅[此部分](deduplication.md#merging-fields-into-single-record)。
 

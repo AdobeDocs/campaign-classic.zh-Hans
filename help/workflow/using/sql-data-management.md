@@ -4,9 +4,8 @@ title: SQL 数据管理
 description: 了解有关SQL数据管理工作流活动的更多信息
 feature: Workflows
 hide: true
-hidefromtoc: true
 exl-id: cada78cb-658f-4b9e-8136-31c17cb1d82f
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '412'
 ht-degree: 4%

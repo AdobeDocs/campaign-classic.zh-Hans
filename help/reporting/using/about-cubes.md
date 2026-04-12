@@ -5,9 +5,8 @@ description: 多维数据集入门
 feature: Reporting, Monitoring
 badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v8"
 hide: true
-hidefromtoc: true
 exl-id: ade4c857-9233-4bc8-9ba1-2fec84b7c3e6
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '406'
 ht-degree: 2%
@@ -26,7 +25,7 @@ ht-degree: 2%
 
 * **事实表/架构** — 事实表（或事实架构）包含分析所依据的原始数据或基本数据。 这些表格主要是大型卷表（可能包含链接表），其计算时间可能会很长。 例如，事实表可以是：broadlog表、purchase表等。
 
-* **Dimension** — 通过Dimension，可将数据分组为多个组：创建维度后，这些维度将用作分析轴。 在大多数情况下，将为给定维度定义多个级别。 例如，对于临时维度，级别将为月、日、小时、分钟等。 这组级别表示维层次结构并启用各种级别的数据分析。
+* **Dimension** — 通过维度，可将数据分组为多个组：创建维度后，这些维度将用作分析轴。 在大多数情况下，将为给定维度定义多个级别。 例如，对于临时维度，级别将为月、日、小时、分钟等。 这组级别表示维层次结构并启用各种级别的数据分析。
 
 * **量化** — 对于某些字段，您可以定义量化以分组值，使其更易于读取信息。 量化应用于级别。 我们建议您在可能有许多不同值时定义量化。
 

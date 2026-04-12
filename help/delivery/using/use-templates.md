@@ -5,9 +5,8 @@ description: 使用投放模板
 badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v8"
 feature: Delivery Templates
 hide: true
-hidefromtoc: true
 exl-id: a5da3f29-5eab-428c-b7c3-d9e4243fe628
-source-git-commit: f469689f9e8a4d805fb95a1ae120ccd35aba3731
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '590'
 ht-degree: 1%
@@ -26,7 +25,7 @@ ht-degree: 1%
 
 [投放模板](about-templates.md)允许您定义一组技术和功能属性，这些属性既适合您的需求，又可用于将来投放。 然后，您可以节省时间并在需要时标准化交付。
 
-在Adobe Campaign中管理多个品牌时，Adobe建议每个品牌具有一个子域。 例如，银行可以具有与其每个区域机构对应的多个子域。 如果银行拥有bluebank.com域，则其子域可以是@ny.bluebank.com、@ma.bluebank.com、@ca.bluebank.com等。 每个子域拥有一个投放模板，让您能够始终为每个品牌使用正确的预配置参数，从而避免错误并节省您的时间。
+在Adobe Campaign中管理多个品牌时，Adobe建议为每个品牌拥有一个子域。 例如，银行可以具有与其每个区域机构对应的多个子域。 如果银行拥有bluebank.com域，则其子域可以是@ny.bluebank.com、@ma.bluebank.com、@ca.bluebank.com等。 每个子域拥有一个投放模板，让您能够始终为每个品牌使用正确的预配置参数，从而避免错误并节省您的时间。
 
 **提示**：为了避免配置错误，我们建议您复制本机模板并更改其属性，而不是创建新模板。
 

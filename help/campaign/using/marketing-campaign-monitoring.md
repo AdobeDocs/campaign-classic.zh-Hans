@@ -5,9 +5,8 @@ description: 监测营销活动
 role: User
 feature: Campaigns, Monitoring
 hide: true
-hidefromtoc: true
 exl-id: c2b523ac-e900-4db8-85b0-dafc6ddb3eca
-source-git-commit: 4f809011a8b4cb3803c4e8151e358e5fd73634e4
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '245'
 ht-degree: 2%

@@ -4,9 +4,8 @@ title: 审批
 description: 审批
 feature: Workflows, Approvals
 hide: true
-hidefromtoc: true
 exl-id: 7ff5da71-ef82-48a2-a608-06a4ca188bb9
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '546'
 ht-degree: 0%
@@ -25,7 +24,7 @@ ht-degree: 0%
 
 如有必要，您可以将审批任务分配给单个操作员或由过滤器定义的一组操作员。
 
-* 要选择单个运算符，请在&#x200B;**[!UICONTROL Assignment type]**&#x200B;字段中选择&#x200B;**[!UICONTROL Operator]**&#x200B;值，然后在&#x200B;**[!UICONTROL Assignee]**&#x200B;字段的下拉列表中选择相关运算符。
+* 要选择单个运算符，请在&#x200B;**[!UICONTROL Operator]**&#x200B;字段中选择&#x200B;**[!UICONTROL Assignment type]**&#x200B;值，然后在&#x200B;**[!UICONTROL Assignee]**&#x200B;字段的下拉列表中选择相关运算符。
 
   ![](assets/s_advuser_validation_box_assign.png)
 
@@ -33,7 +32,7 @@ ht-degree: 0%
   >
   >只有选定的操作员才有权批准任务。
 
-* 您可以定义用于筛选批准操作员的查询。 为此，请在&#x200B;**[!UICONTROL Assignment type]**&#x200B;字段中选择&#x200B;**[!UICONTROL Filter]**&#x200B;值，然后单击&#x200B;**[!UICONTROL Advanced parameters...]**&#x200B;链接以定义筛选条件，如以下示例所示：
+* 您可以定义用于筛选批准操作员的查询。 为此，请在&#x200B;**[!UICONTROL Filter]**&#x200B;字段中选择&#x200B;**[!UICONTROL Assignment type]**&#x200B;值，然后单击&#x200B;**[!UICONTROL Advanced parameters...]**&#x200B;链接以定义筛选条件，如以下示例所示：
 
   ![](assets/s_advuser_validation_box_filter.png)
 
@@ -47,7 +46,7 @@ ht-degree: 0%
 
 修改活动的标题或消息正文不会影响当前任务，但另一方面，修改可能的选项会直接影响当前任务，这会自动继承新的选项列表。
 
-可从&#x200B;**[!UICONTROL Administration > Production > Objects created automatically > Approvals pending]**&#x200B;节点访问&#x200B;**审批**&#x200B;类型任务：操作员可以直接通过此视图访问审批表单。
+可从&#x200B;**节点访问**&#x200B;审批&#x200B;**[!UICONTROL Administration > Production > Objects created automatically > Approvals pending]**&#x200B;类型任务：操作员可以直接通过此视图访问审批表单。
 
 ![](assets/s_advuser_validation_from_console.png)
 

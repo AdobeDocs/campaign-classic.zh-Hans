@@ -5,9 +5,8 @@ description: 了解如何验证投放
 feature: Deliverability, Email Rendering, Proofs
 role: User
 hide: true
-hidefromtoc: true
 exl-id: c2f4d8d0-f0fe-4d1a-92fd-91edaf9729f3
-source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '1653'
 ht-degree: 10%
@@ -107,8 +106,8 @@ ht-degree: 10%
 目前，仅当满足以下条件时，此选项才可用：
 
 * 投放必须是电子邮件。 目前不支持其他渠道。
-* 您不得使用中间源或外部路由，只能使用批量投放路由类型。 您可以检查&#x200B;**[!UICONTROL Delivery properties]**&#x200B;的&#x200B;**[!UICONTROL General]**&#x200B;选项卡中使用的路由。
-* 无法定位来自外部文件的群体。 对于单个投放，请单击&#x200B;**[!UICONTROL Email parameters]**&#x200B;中的&#x200B;**[!UICONTROL To]**&#x200B;链接，并检查是否选择了&#x200B;**[!UICONTROL Defined in the database]**&#x200B;选项。 对于工作流中使用的投放，检查&#x200B;**[!UICONTROL Delivery]**&#x200B;选项卡中的收件人是否为&#x200B;**[!UICONTROL Specified by the inbound event(s)]**。
+* 您不得使用中间源或外部路由，只能使用批量投放路由类型。 您可以检查&#x200B;**[!UICONTROL General]**&#x200B;的&#x200B;**[!UICONTROL Delivery properties]**&#x200B;选项卡中使用的路由。
+* 无法定位来自外部文件的群体。 对于单个投放，请单击&#x200B;**[!UICONTROL To]**&#x200B;中的&#x200B;**[!UICONTROL Email parameters]**&#x200B;链接，并检查是否选择了&#x200B;**[!UICONTROL Defined in the database]**&#x200B;选项。 对于工作流中使用的投放，检查&#x200B;**[!UICONTROL Specified by the inbound event(s)]**&#x200B;选项卡中的收件人是否为&#x200B;**[!UICONTROL Delivery]**。
 * 您必须使用PostgreSQL数据库。
 
 ### 配置分析优先级 {#analysis-priority-}
@@ -152,7 +151,7 @@ ht-degree: 10%
 
    >[!NOTE]
    >
-   >如果为投放创建了多种格式(HTML和文本)，则可以在窗口的下半部分选择要发送给验证收件人的消息格式。
+   >如果为投放创建了多种格式（HTML和文本），则可以在窗口的下半部分选择要发送给验证收件人的消息格式。
 
    ![](assets/s_ncs_user_email_del_send_proof_formats.png)
 
@@ -195,7 +194,7 @@ ht-degree: 10%
 
 有关分类规则的更多信息，请参阅[此页面](../../campaign-opt/using/about-campaign-typologies.md)。
 
-要编辑当前的分类，请单击&#x200B;**[!UICONTROL Typology]**&#x200B;字段右侧的&#x200B;**[!UICONTROL Edit link]**&#x200B;图标。
+要编辑当前的分类，请单击&#x200B;**[!UICONTROL Edit link]**&#x200B;字段右侧的&#x200B;**[!UICONTROL Typology]**&#x200B;图标。
 
 ![](assets/s_ncs_user_email_del_typo_tab.png)
 

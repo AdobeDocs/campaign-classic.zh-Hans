@@ -5,9 +5,8 @@ description: 了解如何定义营销活动的受众
 role: User
 feature: Campaigns, Audiences
 hide: true
-hidefromtoc: true
 exl-id: 04daa67c-4057-42a7-b993-a6eddf2b883d
-source-git-commit: 4f809011a8b4cb3803c4e8151e358e5fd73634e4
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '1492'
 ht-degree: 1%
@@ -205,7 +204,7 @@ ht-degree: 1%
 >
 >如果您为活动定义了控制组，并且还为链接到此活动的投放配置了该控制组，则只会应用为投放定义的控制组。
 
-1. 编辑相关的投放，然后单击&#x200B;**[!UICONTROL Email parameters]**&#x200B;部分中的&#x200B;**[!UICONTROL To]**&#x200B;链接。
+1. 编辑相关的投放，然后单击&#x200B;**[!UICONTROL To]**&#x200B;部分中的&#x200B;**[!UICONTROL Email parameters]**&#x200B;链接。
 
    ![](assets/s_ncs_user_edit_op_target_del.png)
 
@@ -246,6 +245,6 @@ ht-degree: 1%
 
 此视频介绍如何在Adobe Campaign中创建活动和电子邮件。
 
->[!VIDEO](https://video.tv.adobe.com/v/27491?quality=12&captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/27491?captions=chi_hans&quality=12)
 
 [此处](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hans)提供了其他Campaign操作方法视频。

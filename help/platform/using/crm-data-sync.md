@@ -5,8 +5,7 @@ description: 管理Campaign和您的CRM之间的数据
 feature: Microsoft CRM Integration, Salesforce Integration
 exl-id: 7f9eda15-76e8-40a1-8302-004cea085778
 hide: true
-hidefromtoc: true
-source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '1529'
 ht-degree: 1%
@@ -210,7 +209,7 @@ Adobe Campaign与CRM之间的数据同步是通过专用工作流活动执行的
 
 ### 错误处理 {#error-processing}
 
-在数据导入或导出的框架中，您可以将特定进程应用于错误和拒绝。 为此，请在&#x200B;**[!UICONTROL Behavior]**&#x200B;选项卡中选择&#x200B;**[!UICONTROL Process rejects]**&#x200B;和&#x200B;**[!UICONTROL Process errors]**&#x200B;选项。
+在数据导入或导出的框架中，您可以将特定进程应用于错误和拒绝。 为此，请在&#x200B;**[!UICONTROL Process rejects]**&#x200B;选项卡中选择&#x200B;**[!UICONTROL Process errors]**&#x200B;和&#x200B;**[!UICONTROL Behavior]**&#x200B;选项。
 
 ![](assets/crm_export_options.png)
 

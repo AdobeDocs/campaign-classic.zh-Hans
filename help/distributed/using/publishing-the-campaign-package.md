@@ -4,9 +4,8 @@ title: 发布活动包
 description: 发布活动包
 feature: Distributed Marketing
 hide: true
-hidefromtoc: true
 exl-id: e96add16-cbc8-43af-acff-06a95d5b7749
-source-git-commit: 36fe54cf6d4d762d96205bd637311a426c741427
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '459'
 ht-degree: 2%

@@ -4,9 +4,8 @@ title: 同步 Web 应用程序
 description: 了解如何将Web应用程序与ACS Connector同步
 feature: ACS Connector
 hide: true
-hidefromtoc: true
 exl-id: 975bdc94-5da4-45ae-a3bd-e8674b447098
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '796'
 ht-degree: 1%
@@ -17,9 +16,9 @@ ht-degree: 1%
 
 
 
-在此使用案例中，我们将使用Campaign Standard发送包含指向Campaign v7 Web应用程序链接的通信。 当收件人单击电子邮件中的链接时，Web应用程序会显示一个表单，其中包含多个预加载了收件人数据的字段以及一个指向新闻稿的订阅链接。 收件人可以更新其数据并订阅该服务。 此用户档案将在Campaign v7中更新，并且信息将在Campaign Standard中复制。
+在此使用案例中，我们将使用Campaign Standard发送包含指向Campaign v7 Web应用程序链接的通信。 当收件人单击电子邮件中的链接时，Web应用程序会显示一个表单，其中包含多个预加载了收件人数据的字段以及一个指向新闻稿的订阅链接。 收件人可以更新其数据并订阅该服务。 此用户档案将在Campaign v7中更新，并且此信息将在Campaign Standard中复制。
 
-如果您在Campaign v7中有许多服务和Web应用程序，您可以选择不以Campaign Standard重新创建它们。 ACS Connector允许您使用所有现有的Campaign v7 Web应用程序和服务，并将它们链接到Campaign Standard发送的投放。
+如果您在Campaign v7中有许多服务和Web应用程序，您可以选择不要在Campaign Standard中重新创建所有这些服务和Web应用程序。 ACS Connector允许您使用所有现有的Campaign v7 Web应用程序和服务，并将它们链接到Campaign Standard发送的投放。
 
 ## 先决条件 {#prerequisites}
 
@@ -27,7 +26,7 @@ ht-degree: 1%
 
 * 收件人存储在Campaign v7数据库中并与Campaign Standard同步。 请参阅[同步用户档案](../../integrations/using/synchronizing-profiles.md)部分。
 * 在Campaign v7中创建和发布的服务和Web应用程序。
-* Web应用程序必须包含使用&#x200B;**[!UICONTROL Adobe Campaign encryption]**&#x200B;标识方法的&#x200B;**[!UICONTROL Pre-loading]**&#x200B;活动。
+* Web应用程序必须包含使用&#x200B;**[!UICONTROL Pre-loading]**&#x200B;标识方法的&#x200B;**[!UICONTROL Adobe Campaign encryption]**&#x200B;活动。
 
 ## 创建Web应用程序和服务 {#creating-the-web-application-and-service}
 
@@ -60,11 +59,11 @@ ht-degree: 1%
 
 ## 复制数据 {#replicating-the-data}
 
-为了在Campaign v7和Campaign Standard之间复制所需的数据，提供了多个复制工作流模板。 **[!UICONTROL Profiles replication]**&#x200B;工作流会自动将所有Campaign v7收件人复制到Campaign Standard。 请参阅[技术和复制工作流](../../integrations/using/acs-connector-principles-and-data-cycle.md#technical-and-replication-workflows)。 **[!UICONTROL Landing pages replication]**&#x200B;工作流允许复制要在Campaign Standard中使用的Web应用程序。
+为了在Campaign v7和Campaign Standard之间复制所需的数据，提供了多个复制工作流模板。 **[!UICONTROL Profiles replication]**&#x200B;工作流会自动将所有Campaign v7收件人复制到Campaign Standard。 请参阅[技术和复制工作流](../../integrations/using/acs-connector-principles-and-data-cycle.md#technical-and-replication-workflows)。 **[!UICONTROL Landing pages replication]**&#x200B;工作流允许复制我们想要在Campaign Standard中使用的Web应用程序。
 
 ![](assets/acs_connect_lp_1.png)
 
-要检查是否已正确复制数据，请按照Campaign Standard中的以下步骤操作：
+要检查数据是否已正确复制，请在Campaign Standard中执行以下步骤：
 
 1. 在主屏幕中，单击&#x200B;**[!UICONTROL Customer profiles]**。
 
@@ -123,7 +122,7 @@ ht-degree: 1%
    ![](assets/acs_connect_lp_18.png)
 
 1. 请等待几分钟，以便运行配置文件复制工作流。
-1. 在Campaign Standard中，访问您的收件人配置文件，以检查更新数据是否已从Campaign v7正确复制。
+1. 在Campaign Standard中，访问您的收件人配置文件，以检查更新的数据是否已从Campaign v7正确复制。
 
    ![](assets/acs_connect_lp_19.png)
 

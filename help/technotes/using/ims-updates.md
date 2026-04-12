@@ -4,9 +4,8 @@ title: 技术说明 — 更新您的环境以使用IMS连接到Adobe Campaign
 description: Campaign - IMS更新
 feature: Technote, Upgrade
 hide: true
-hidefromtoc: true
 exl-id: ecb5a258-a150-46a3-8b83-2b2c06d873ee
-source-git-commit: 62fc46e45078fce56eadda3518251e61244bf5d0
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '562'
 ht-degree: 5%

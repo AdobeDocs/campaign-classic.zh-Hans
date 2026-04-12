@@ -4,9 +4,8 @@ title: 与Adobe Experience Cloud解决方案工作流的集成
 description: 详细了解与Adobe Experience Cloud解决方案工作流的集成
 feature: Workflows, Audiences
 hide: true
-hidefromtoc: true
 topic-tags: technical-workflows
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '109'
 ht-degree: 8%

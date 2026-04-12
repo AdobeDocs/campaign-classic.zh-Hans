@@ -6,9 +6,8 @@ badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v
 feature: Direct Mail
 role: User
 hide: true
-hidefromtoc: true
 exl-id: 585b2017-9408-4953-8505-2f6d9db8032f
-source-git-commit: 89e350c727fb9379d28916f79d9749f22fd4974f
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '176'
 ht-degree: 10%

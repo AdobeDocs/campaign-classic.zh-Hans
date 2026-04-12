@@ -4,9 +4,8 @@ title: 分叉
 description: 了解有关分支工作流活动的更多信息
 feature: Workflows
 hide: true
-hidefromtoc: true
 exl-id: 7a38653b-c15d-4ed8-85dc-f7214409f42b
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '417'
 ht-degree: 1%
@@ -80,6 +79,6 @@ ht-degree: 1%
 
 ## 相关主题
 
-* [”AND-join“ 活动](and-join.md)
+* [AND-join 活动](and-join.md)
 * [用例：生日电子邮件](sending-a-birthday-email.md)
 * [用例：内容创建和交付](../../delivery/using/automating-via-workflows.md#creating-the-delivery-and-its-content)

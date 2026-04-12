@@ -5,9 +5,8 @@ description: 了解如何使用Adobe Campaign中的筛选规则
 role: User, Developer
 feature: Typology Rules, Campaigns
 hide: true
-hidefromtoc: true
 exl-id: a4d12445-5680-4704-9c67-e43e0ea6631b
-source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '509'
 ht-degree: 2%
@@ -87,7 +86,7 @@ ht-degree: 2%
 
 默认情况下，有两个筛选规则可用： **[!UICONTROL Exclude addresses]** ( **[!UICONTROL addressExclusions]** )和&#x200B;**[!UICONTROL Exclude domains]** ( **[!UICONTROL domainExclusions]** )。 在电子邮件分析期间，这些规则将收件人电子邮件地址与包含在可投放性实例中管理的加密全局禁止列表中的禁止地址或域名进行比较。 如果存在匹配项，则不会将该消息发送给该收件人。
 
-列入阻止列表这是为了避免由于恶意活动（特别是使用Spamtrap）而添加到。 列入阻止列表例如，如果使用Spamtrap通过某个Web窗体进行订阅，则会自动向该Spamtrap发送确认电子邮件，这会导致您的地址自动添加到中。
+这是为了避免由于恶意活动（特别是使用Spamtrap）而添加到。 例如，如果使用Spamtrap通过某个Web窗体进行订阅，则会自动向该Spamtrap发送确认电子邮件，这会导致您的地址自动添加到中。
 
 >[!NOTE]
 >

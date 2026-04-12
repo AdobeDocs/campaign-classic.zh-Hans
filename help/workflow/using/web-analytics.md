@@ -1,11 +1,10 @@
 ---
 product: campaign
-title: Web 分析
+title: 网站分析
 description: 了解关于网站分析包的更多信息
 hide: true
-hidefromtoc: true
 feature: Workflows, Analytics Integration
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '178'
 ht-degree: 3%
@@ -13,7 +12,7 @@ ht-degree: 3%
 ---
 
 
-# Web 分析{#web-analytics}
+# 网站分析{#web-analytics}
 
 
 
@@ -29,7 +28,7 @@ ht-degree: 3%
   <tr> 
    <td> <span class="uicontrol">发送指标和营销活动属性</span> <br /> </td> 
    <td> <span class="uicontrol">webAnalyticsSendMetrics</span> <br /> </td> 
-   <td> 此工作流可让您通过Adobe® Analytics连接器，将电子邮件营销活动指标从Adobe Campaign发送到Adobe Experience Cloud Suite。 相关指标如下： <strong>已发送</strong> (iSent)、<strong>打开总计数</strong> (iTotalRecipientOpen)、<strong>点击的收件人总数</strong> (iTotalRecipientClick)、<strong>错误</strong> (iError)、<strong>选择退出</strong> （选择退出） (iOptOut)。<br /> </td> 
+   <td> 此工作流可让您通过® Analytics连接器，将电子邮件营销活动指标从Adobe Campaign发送到Adobe Experience Cloud Suite。 相关指标如下： <strong>已发送</strong> (iSent)、<strong>打开总计数</strong> (iTotalRecipientOpen)、<strong>点击的收件人总数</strong> (iTotalRecipientClick)、<strong>错误</strong> (iError)、<strong>选择退出</strong> （选择退出） (iOptOut)。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">已转换联系人的标识</span> <br /> </td> 

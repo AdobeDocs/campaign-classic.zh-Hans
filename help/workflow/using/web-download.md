@@ -4,9 +4,8 @@ title: Web 下载
 description: 了解有关Web下载工作流活动的更多信息
 feature: Workflows
 hide: true
-hidefromtoc: true
 exl-id: b6005eae-5fbc-4e22-ab3a-c9b7ed6506f6
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '483'
 ht-degree: 2%
@@ -47,7 +46,7 @@ ht-degree: 2%
 
    可以使用以下选项：
 
-   * **[!UICONTROL Use a default storage directory]**：始终在处理之前移动文件。 如果选中此选项，则文件将移至默认存储目录(Adobe Campaign安装文件夹的&#x200B;**vars**&#x200B;目录)中。 要指定存储目录，请取消选中该框并在&#x200B;**[!UICONTROL Storage directory]**&#x200B;字段中输入其路径
+   * **[!UICONTROL Use a default storage directory]**：始终在处理之前移动文件。 如果选中此选项，则文件将移至默认存储目录（Adobe Campaign安装文件夹的&#x200B;**vars**&#x200B;目录）中。 要指定存储目录，请取消选中该框并在&#x200B;**[!UICONTROL Storage directory]**&#x200B;字段中输入其路径
    * **[!UICONTROL Number of files]**：输入存储目录中要保留的最大文件数。
    * **[!UICONTROL Maximum size (in Mb)]**：输入存储目录的最大容量（以MB为单位）。
 

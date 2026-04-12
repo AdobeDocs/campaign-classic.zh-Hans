@@ -3,9 +3,8 @@ title: CRM 连接器
 description: 了解有关CRM连接器的更多信息并配置数据同步
 feature: Workflows, Data Management
 hide: true
-hidefromtoc: true
 exl-id: 41966f31-9f37-4ab7-919a-d4624f9d1178
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '113'
 ht-degree: 10%
@@ -33,4 +32,4 @@ ht-degree: 10%
 
 ![](assets/crm_task_select_obj.png)
 
-此活动的配置取决于执行的流程。 本页[&#128279;](../../platform/using/crm-data-sync.md)中详细介绍了的各种配置。
+此活动的配置取决于执行的流程。 本页[中详细介绍了](../../platform/using/crm-data-sync.md)的各种配置。

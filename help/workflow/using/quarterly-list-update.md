@@ -4,9 +4,8 @@ title: 使用增量查询每季度更新列表
 description: 在此使用案例中，增量查询用于自动更新收件人列表
 feature: Workflows
 hide: true
-hidefromtoc: true
 exl-id: 0d3e7046-313a-42a6-9155-3365e8d60bac
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '277'
 ht-degree: 5%
@@ -24,7 +23,7 @@ ht-degree: 5%
 ![](assets/incremental_query_example.png)
 
 1. 将增量查询和列表更新活动添加到新工作流中。
-1. 按照[创建查询](query.md#creating-a-query)中指定的方式配置活动的&#x200B;**[!UICONTROL Incremental query]**&#x200B;选项卡。
+1. 按照&#x200B;**[!UICONTROL Incremental query]**&#x200B;创建查询[中指定的方式配置活动的](query.md#creating-a-query)选项卡。
 1. 选择&#x200B;**[!UICONTROL Scheduling & History]**&#x200B;选项卡，然后指定270天的历史记录。 已定向的收件人在270天（即大约9个月）内将不再被定向。
 
    然后单击&#x200B;**[!UICONTROL Change...]**&#x200B;按钮。

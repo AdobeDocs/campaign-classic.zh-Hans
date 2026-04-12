@@ -4,11 +4,10 @@ title: 投放
 description: 了解有关投放类型工作流活动的更多信息
 feature: Workflows, Channels Activity
 hide: true
-hidefromtoc: true
 exl-id: 72fbdd1d-a105-4e9f-9e17-2e9d62d2bb80
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
-source-wordcount: '917'
+source-wordcount: '916'
 ht-degree: 1%
 
 ---
@@ -78,10 +77,10 @@ ht-degree: 1%
    选择要执行的操作的类型：
 
    * **[!UICONTROL Save]**：利用此选项可创建并保存投放。 它不会分析或提供它。
-   * **[!UICONTROL Estimate the target]**：此选项允许您计算投放目标以评估其潜力（第一个分析阶段）。 此操作等同于在通过&#x200B;**投放**&#x200B;向主目标发送投放时选择&#x200B;**[!UICONTROL Estimate the population to be targeted]**&#x200B;选项并单击&#x200B;**[!UICONTROL Analyze]**。
-   * **[!UICONTROL Prepare]**：此选项允许您运行完整的分析过程（目标计算和内容准备）。 不发送投放。 此操作等同于选择&#x200B;**[!UICONTROL Deliver as soon as possible]**&#x200B;选项，并在向具有&#x200B;**投放**&#x200B;的主目标发送投放时单击&#x200B;**[!UICONTROL Analyze]**。
-   * **[!UICONTROL Send a proof]**：此选项允许您发送投放的证明。 此操作等同于单击包含&#x200B;**投放**&#x200B;的投放工具栏中的&#x200B;**[!UICONTROL Send a proof]**&#x200B;按钮
-   * **[!UICONTROL Prepare and start]**：此选项将启动完整分析过程（目标计算和内容准备）并发送投放。 此操作等同于在使用&#x200B;**投放**&#x200B;向主目标发送投放时单击&#x200B;**[!UICONTROL Deliver as soon as possible]**、**[!UICONTROL Analyze]**&#x200B;和&#x200B;**[!UICONTROL Confirm delivery]**&#x200B;选项。
+   * **[!UICONTROL Estimate the target]**：此选项允许您计算投放目标以评估其潜力（第一个分析阶段）。 此操作等同于在通过&#x200B;**[!UICONTROL Estimate the population to be targeted]**&#x200B;投放&#x200B;**[!UICONTROL Analyze]**&#x200B;向主目标发送投放时选择&#x200B;**选项并单击**。
+   * **[!UICONTROL Prepare]**：此选项允许您运行完整的分析过程（目标计算和内容准备）。 不发送投放。 此操作等同于选择&#x200B;**[!UICONTROL Deliver as soon as possible]**&#x200B;选项，并在向具有&#x200B;**[!UICONTROL Analyze]**&#x200B;投放&#x200B;**的主目标发送投放时单击**。
+   * **[!UICONTROL Send a proof]**：此选项允许您发送投放的证明。 此操作等同于单击包含&#x200B;**[!UICONTROL Send a proof]**&#x200B;投放&#x200B;**的投放工具栏中的**&#x200B;按钮
+   * **[!UICONTROL Prepare and start]**：此选项将启动完整分析过程（目标计算和内容准备）并发送投放。 此操作等同于在使用&#x200B;**[!UICONTROL Deliver as soon as possible]**&#x200B;投放&#x200B;**[!UICONTROL Analyze]**&#x200B;向主目标发送投放时单击&#x200B;**[!UICONTROL Confirm delivery]**、**和**&#x200B;选项。
 
    在工作流中继续使用的&#x200B;**[!UICONTROL Act on a delivery]**&#x200B;活动允许您启动启动投放所需的所有剩余步骤（目标计算、内容准备、投放）。 有关详细信息，请参阅[投放控制](delivery-control.md)。
 
@@ -136,7 +135,7 @@ ht-degree: 1%
 
 ## 输入参数 {#input-parameters}
 
-如果在&#x200B;**[!UICONTROL Delivery]**&#x200B;部分中选择了&#x200B;**[!UICONTROL Specified in the transition]**&#x200B;选项，则为投放标识符。
+如果在&#x200B;**[!UICONTROL Specified in the transition]**&#x200B;部分中选择了&#x200B;**[!UICONTROL Delivery]**&#x200B;选项，则为投放标识符。
 
 * deliveryId
 * 表名
@@ -146,15 +145,15 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->此参数仅在&#x200B;**[!UICONTROL Recipients]**&#x200B;部分中选择&#x200B;**[!UICONTROL Specified by inbound event(s)]**&#x200B;选项时显示。
+>此参数仅在&#x200B;**[!UICONTROL Specified by inbound event(s)]**&#x200B;部分中选择&#x200B;**[!UICONTROL Recipients]**&#x200B;选项时显示。
 
 * 文件名
 
-  如果在&#x200B;**[!UICONTROL Recipients]**&#x200B;部分中选择了&#x200B;**[!UICONTROL File(s) specified by inbound event(s)]**&#x200B;选项，则生成的文件的全名。
+  如果在&#x200B;**[!UICONTROL File(s) specified by inbound event(s)]**&#x200B;部分中选择了&#x200B;**[!UICONTROL Recipients]**&#x200B;选项，则生成的文件的全名。
 
 * contentId
 
-  如果在&#x200B;**[!UICONTROL Content]**&#x200B;部分中选择了&#x200B;**[!UICONTROL Specified by inbound events]**&#x200B;选项，则为内容标识符。
+  如果在&#x200B;**[!UICONTROL Specified by inbound events]**&#x200B;部分中选择了&#x200B;**[!UICONTROL Content]**&#x200B;选项，则为内容标识符。
 
 ## 输出参数 {#output-parameters}
 
@@ -162,7 +161,7 @@ ht-degree: 1%
 * 架构
 * recCount
 
-这组三个值标识从投放产生的目标。 **[!UICONTROL tableName]**&#x200B;是存储目标标识符的表的名称，**[!UICONTROL schema]**&#x200B;是群体的架构（通常为nms：recipient），**[!UICONTROL recCount]**&#x200B;是表中的元素数。
+这组三个值标识从投放产生的目标。 **[!UICONTROL tableName]**&#x200B;是存储目标标识符的表的名称，**[!UICONTROL schema]**&#x200B;是群体的架构（通常为nms:recipient），**[!UICONTROL recCount]**&#x200B;是表中的元素数。
 
 与补充关联的转换具有相同的参数。
 

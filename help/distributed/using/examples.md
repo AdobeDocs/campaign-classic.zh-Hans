@@ -4,9 +4,8 @@ title: 分布式营销示例
 description: 分布式营销示例
 feature: Distributed Marketing
 hide: true
-hidefromtoc: true
 exl-id: 2bef6b5e-887e-4c56-bb4b-3583472ca333
-source-git-commit: 36fe54cf6d4d762d96205bd637311a426c741427
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '1296'
 ht-degree: 0%
@@ -27,7 +26,7 @@ ht-degree: 0%
 >
 >本示例中使用的Web应用程序不是随Adobe Campaign一起提供的现成Web应用程序。 要在营销策划中使用表单，您必须创建专用的Web应用程序。
 
-创建营销活动模板时，请单击&#x200B;**[!UICONTROL Advanced campaign settings...]**&#x200B;链接的&#x200B;**[!UICONTROL Web interface]**&#x200B;选项中的&#x200B;**[!UICONTROL Zoom]**&#x200B;图标以访问Web应用程序的详细信息。
+创建营销活动模板时，请单击&#x200B;**[!UICONTROL Zoom]**&#x200B;链接的&#x200B;**[!UICONTROL Web interface]**&#x200B;选项中的&#x200B;**[!UICONTROL Advanced campaign settings...]**&#x200B;图标以访问Web应用程序的详细信息。
 
 ![](assets/mkg_dist_local_op_form1.png)
 
@@ -120,7 +119,7 @@ ht-degree: 0%
 
 #### 创建数据分发活动 {#creating-a-data-distribution-activity}
 
-1. 要设置协作营销活动（通过目标审批），您必须首先创建&#x200B;**[!UICONTROL Data distribution activity]**。 单击&#x200B;**[!UICONTROL Resources > Campaign management > Data distribution]**&#x200B;节点中的&#x200B;**[!UICONTROL New]**&#x200B;图标。
+1. 要设置协作营销活动（通过目标审批），您必须首先创建&#x200B;**[!UICONTROL Data distribution activity]**。 单击&#x200B;**[!UICONTROL New]**&#x200B;节点中的&#x200B;**[!UICONTROL Resources > Campaign management > Data distribution]**&#x200B;图标。
 
    ![](assets/mkg_dist_use_case_target_valid3.png)
 
@@ -161,7 +160,7 @@ ht-degree: 0%
 
 #### 发布营销活动 {#publishing-the-campaign}
 
-您现在可以从&#x200B;**[!UICONTROL Campaigns]**&#x200B;选项卡添加&#x200B;**营销活动包**。
+您现在可以从&#x200B;**选项卡添加**&#x200B;营销活动包&#x200B;**[!UICONTROL Campaigns]**。
 
 1. 选择您的&#x200B;**[!UICONTROL Reference campaign]**。 在包的&#x200B;**[!UICONTROL Edit]**&#x200B;选项卡中，您可以选择要用于营销活动的&#x200B;**[!UICONTROL Approval mode]**：
 

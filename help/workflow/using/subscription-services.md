@@ -4,9 +4,8 @@ title: 订阅服务
 description: 了解有关订阅服务工作流活动的更多信息
 feature: Workflows, Targeting Activity, Subscription Services Activity
 hide: true
-hidefromtoc: true
 exl-id: 1b526d1c-4a33-45a1-98f4-dcb803c8d228
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '409'
 ht-degree: 3%

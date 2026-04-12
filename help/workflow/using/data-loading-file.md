@@ -4,9 +4,8 @@ title: 数据加载（文件）
 description: 了解有关数据加载（文件）工作流活动的更多信息
 feature: Workflows, Data Management Activity
 hide: true
-hidefromtoc: true
 exl-id: a380e486-a40c-4bf6-b7f4-7dcd76c34085
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '1140'
 ht-degree: 14%
@@ -45,7 +44,7 @@ ht-degree: 14%
 
 加载文件时，将自动检测列格式以及每种数据类型的默认参数。 您可以修改这些默认参数，以指定要应用于数据的特定进程，尤其是当存在错误或空值时。
 
-为此，请在&#x200B;**[!UICONTROL Data loading (file)]**&#x200B;活动的主窗口中选择&#x200B;**[!UICONTROL Click here to change the file format...]**。 随后将打开格式详细信息窗口。
+为此，请在&#x200B;**[!UICONTROL Click here to change the file format...]**&#x200B;活动的主窗口中选择&#x200B;**[!UICONTROL Data loading (file)]**。 随后将打开格式详细信息窗口。
 
 ![](assets/file_loading_columns_format.png)
 
@@ -98,7 +97,7 @@ ht-degree: 14%
 
    **[!UICONTROL Directory]**&#x200B;选项卡包含有关要恢复的文件的信息。 在我们的示例中，将恢复名称中包含“customers”一词且存储在服务器的tmp/Adobe/Data/files目录中的所有文本格式文件。
 
-   [文件收集器](file-collector.md)部分中详细介绍了使用&#x200B;**[!UICONTROL File collector]**&#x200B;的情况。
+   **[!UICONTROL File collector]**&#x200B;文件收集器[部分中详细介绍了使用](file-collector.md)的情况。
 
    ![](assets/s_advuser_load_file_sample_1.png)
 

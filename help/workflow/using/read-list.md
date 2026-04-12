@@ -4,9 +4,8 @@ title: 读取列表
 description: 了解有关读取列表工作流活动的更多信息
 feature: Workflows, Targeting Activity
 hide: true
-hidefromtoc: true
 exl-id: 99f82e91-45cd-4dff-b8a4-3ad87f2f9639
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '488'
 ht-degree: 0%
@@ -65,8 +64,8 @@ ht-degree: 0%
 
 1. 在&#x200B;**[!UICONTROL Exclusion set]**&#x200B;字段中，选择&#x200B;**[!UICONTROL Read list]**&#x200B;活动：将从主集中排除此活动中的数据。
 
-   在本例中，我们在连接上有一个排除项：列表中包含的数据将通过包含电子邮件地址的字段与主集的数据进行协调。 要配置加入，请在&#x200B;**[!UICONTROL Change dimension]**&#x200B;字段中选择&#x200B;**[!UICONTROL Joins]**。
+   在本例中，我们在连接上有一个排除项：列表中包含的数据将通过包含电子邮件地址的字段与主集的数据进行协调。 要配置加入，请在&#x200B;**[!UICONTROL Joins]**&#x200B;字段中选择&#x200B;**[!UICONTROL Change dimension]**。
 
    ![](assets/s_advuser_list_read_sample_4.png)
 
-1. 然后，选择与两组中的电子邮件地址对应的字段(Source和目标)。 随后将链接各列，并从目标中排除其电子邮件地址位于导入地址列表中的收件人。
+1. 然后，选择与两组中的电子邮件地址对应的字段（Source和目标）。 随后将链接各列，并从目标中排除其电子邮件地址位于导入地址列表中的收件人。

@@ -4,9 +4,8 @@ title: 跟踪活动
 description: 了解如何使用Campaign分布式营销跟踪营销活动
 feature: Distributed Marketing
 hide: true
-hidefromtoc: true
 exl-id: 87d1909c-d2eb-47ce-a860-0e78a64d2914
-source-git-commit: 36fe54cf6d4d762d96205bd637311a426c741427
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '416'
 ht-degree: 1%
@@ -62,7 +61,7 @@ ht-degree: 1%
 
 中央实体可随时取消营销活动包。
 
-在营销活动包&#x200B;**[!UICONTROL Dashboard]**&#x200B;中单击&#x200B;**[!UICONTROL Cancel]**。
+在营销活动包&#x200B;**[!UICONTROL Cancel]**&#x200B;中单击&#x200B;**[!UICONTROL Dashboard]**。
 
 ![](assets/mkg_dist_cancel_op_from_dashboard.png)
 

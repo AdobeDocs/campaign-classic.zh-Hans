@@ -4,9 +4,8 @@ title: 发送生日电子邮件
 description: 了解如何使用工作流发送生日电子邮件
 feature: Workflows
 hide: true
-hidefromtoc: true
 exl-id: 38006cca-e945-4b9d-8e2d-ed537b8541d9
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '878'
 ht-degree: 2%
@@ -132,7 +131,7 @@ ht-degree: 2%
 
 如果测试得到验证（该年不是闰年 — 没有2月29日 — 并且当前日期确实是3月1日），则启用&#x200B;**[!UICONTROL True]**&#x200B;过渡，并将在2月29日出生的收件人添加到3月1日投放。 否则，将启用&#x200B;**[!UICONTROL False]**&#x200B;过渡，并且只有生于当前日期的收件人才会收到投放。
 
-将下面的代码复制并粘贴到&#x200B;**[!UICONTROL Advanced]**&#x200B;选项卡的&#x200B;**[!UICONTROL Initialization script]**&#x200B;部分中。
+将下面的代码复制并粘贴到&#x200B;**[!UICONTROL Initialization script]**&#x200B;选项卡的&#x200B;**[!UICONTROL Advanced]**&#x200B;部分中。
 
 ```
 function isLeapYear(iYear)

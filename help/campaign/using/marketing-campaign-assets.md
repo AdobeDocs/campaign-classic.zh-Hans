@@ -5,9 +5,8 @@ description: 了解有关营销活动文档和投放概要的更多信息
 role: User
 feature: Campaigns
 hide: true
-hidefromtoc: true
 exl-id: 891252b0-4700-4a2a-a632-63aad5ce75d7
-source-git-commit: 4f809011a8b4cb3803c4e8151e358e5fd73634e4
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '755'
 ht-degree: 0%
@@ -16,7 +15,7 @@ ht-degree: 0%
 
 # 管理关联文档 {#managing-associated-documents}
 
-您可以将各种文档与营销活动关联：报表、照片、网页、图表等。 这些文档可以是任何格式(Microsoft Word、PowerPoint、PNG、JPG、Acrobat PDF等)。
+您可以将各种文档与营销活动关联：报表、照片、网页、图表等。 这些文档可以是任何格式（Microsoft Word、PowerPoint、PNG、JPG、Acrobat PDF等）。
 
 >[!IMPORTANT]
 >
@@ -69,7 +68,7 @@ ht-degree: 0%
 
 ### 创建大纲 {#creating-an-outline}
 
-要创建大纲，请在相关营销活动的&#x200B;**[!UICONTROL Edit > Documents]**&#x200B;选项卡中单击&#x200B;**[!UICONTROL Delivery outlines]**&#x200B;子选项卡。
+要创建大纲，请在相关营销活动的&#x200B;**[!UICONTROL Delivery outlines]**&#x200B;选项卡中单击&#x200B;**[!UICONTROL Edit > Documents]**&#x200B;子选项卡。
 
 >[!NOTE]
 >
@@ -97,7 +96,7 @@ ht-degree: 0%
 
   ![](assets/s_ncs_user_op_add_composition_field_button.png)
 
-* 资源是在营销资源仪表板中生成的营销资源，可通过&#x200B;**[!UICONTROL Campaigns]**&#x200B;选项卡的&#x200B;**[!UICONTROL Resources]**&#x200B;链接访问。
+* 资源是在营销资源仪表板中生成的营销资源，可通过&#x200B;**[!UICONTROL Resources]**&#x200B;选项卡的&#x200B;**[!UICONTROL Campaigns]**&#x200B;链接访问。
 
   ![](assets/s_ncs_user_mkg_resource_ovv.png)
 

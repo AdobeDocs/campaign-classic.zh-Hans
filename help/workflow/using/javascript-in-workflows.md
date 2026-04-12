@@ -4,9 +4,8 @@ title: 工作流中的 JavaScript 代码示例
 description: 这些示例说明如何在工作流中使用JavaScript代码
 feature: Workflows
 hide: true
-hidefromtoc: true
 exl-id: 7213ea64-3dec-4b16-9d93-4ae941ddfaa7
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '1695'
 ht-degree: 3%
@@ -20,7 +19,7 @@ ht-degree: 3%
 以下示例说明如何在工作流中使用JavaScript代码：
 
 * [写入数据库](#write-example)
-* [查询数据库](#read-example)
+* [查询数据库 &#x200B;](#read-example)
 * [使用静态SOAP方法触发工作流](#trigger-example)
 * [使用非静态SOAP方法与数据库交互](#interact-example)
 
@@ -45,16 +44,16 @@ ht-degree: 3%
 
 ## 示例1：写入数据库{#write-example}
 
-要写入数据库，可以在`xtk:session`架构上使用静态`Write`方法：
+要写入数据库，可以在`Write`架构上使用静态`xtk:session`方法：
 
 1. 以XML撰写写入请求。
 
 1. 写入记录：
 
-   1. 在`xtk:session`架构中调用`Write`方法。
+   1. 在`Write`架构中调用`xtk:session`方法。
 
       >[!IMPORTANT]
-      > 如果您使用Adobe Campaign v8，我们建议您在Snowflake表中对`Write`方法的&#x200B;**摄取**&#x200B;和&#x200B;**数据更新/删除** API使用暂存机制。 [了解更多信息](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/api/new-apis.html?lang=zh-Hans){target="_blank"}。
+      > 如果您使用Adobe Campaign v8，我们建议您在Snowflake表中对&#x200B;**方法的**&#x200B;摄取&#x200B;**和**&#x200B;数据更新/删除`Write` API使用暂存机制。 [了解更多信息](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/api/new-apis.html){target="_blank"}。
 
    1. 将XML代码作为写入请求的参数传递。
 
@@ -71,7 +70,7 @@ ht-degree: 3%
 * 要修改的表的模式
 * 要填充的表字段
 
-例如：
+示例：
 
 ```javascript
 var myXML = <recipient xtkschema="nms:recipient"
@@ -90,7 +89,7 @@ var myXML = <recipient xtkschema="nms:recipient"
 * 要更新的表字段
 * 标识要更新的记录所需的关键参数
 
-例如：
+示例：
 
 ```javascript
 var myXML = <recipient xtkschema="nms:recipient"
@@ -109,7 +108,7 @@ var myXML = <recipient xtkschema="nms:recipient"
 * 要修改的表的模式
 * 以XML元素的形式标识要更新的记录所需的`where`子句
 
-例如：
+示例：
 
 ```javascript
 xtk.session.DeleteCollection(
@@ -123,7 +122,7 @@ xtk.session.DeleteCollection(
 
 ### 第2步：写入记录
 
-在`xtk:session`架构上调用非静态`Write`方法：
+在`Write`架构上调用非静态`xtk:session`方法：
 
 ```javascript
 xtk.session.Write(myXML)
@@ -247,7 +246,7 @@ var query = xtk.queryDef.create(
 
 执行以下步骤：
 
-1. 在`queryDef`实体上调用`ExecuteQuery`方法：
+1. 在`ExecuteQuery`实体上调用`queryDef`方法：
 
    ```javascript
    var res = query.ExecuteQuery()
@@ -276,7 +275,7 @@ for each (var rcp in res:recipient)
     logInfo(rcp.@email)
 ```
 
-循环包括一个本地收件人变量。 对于收件人集合中返回的每个收件人，都会打印出收件人的电子邮件。 [了解有关`logInfo`函数的更多信息](https://experienceleague.adobe.com/developer/campaign-api/api/f-logInfo.html?lang=zh-Hans)。
+循环包括一个本地收件人变量。 对于收件人集合中返回的每个收件人，都会打印出收件人的电子邮件。 [了解有关](https://experienceleague.adobe.com/developer/campaign-api/api/f-logInfo.html?lang=zh-Hans)函数的更多信息`logInfo`。
 
 #### `getIfExists`操作的结果
 
@@ -436,7 +435,7 @@ xtk.workflow.PostEvent(
 
    使用`for each`循环检索结果。
 
-### 带有`select`子句的`queryDef`方法的语法
+### 带有`queryDef`子句的`select`方法的语法
 
 ```xml
 <queryDef schema="schema_key" operation="operation_type">
@@ -564,7 +563,7 @@ for each (var w in res.recipient)
 * `delete`操作
 
 >[!IMPORTANT]
-> 如果您使用Adobe Campaign v8，我们建议您在Snowflake表中对`Write`方法的&#x200B;**摄取**&#x200B;和&#x200B;**数据更新/删除** API使用暂存机制。 [了解更多信息](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/api/new-apis.html?lang=zh-Hans){target="_blank"}。
+> 如果您使用Adobe Campaign v8，我们建议您在Snowflake表中对&#x200B;**方法的**&#x200B;摄取&#x200B;**和**&#x200B;数据更新/删除`Write` API使用暂存机制。 [了解更多信息](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/api/new-apis.html){target="_blank"}。
 
 #### 示例1：插入或更新记录
 

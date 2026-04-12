@@ -7,9 +7,8 @@ audience: migration
 content-type: reference
 topic-tags: migrating-to-adobe-campaign-7
 hide: true
-hidefromtoc: true
 exl-id: 3743d018-3316-4ce3-ae1c-25760aaf5785
-source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '1088'
 ht-degree: 0%
@@ -259,7 +258,7 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >在报告从Adobe Campaign先前版本到Adobe Campaign v7的配置时，请确保物理目录的路径指向Adobe Campaign v7(而不是Neolane v5、Neolane v6或Adobe Campaign v6)。
+   >在报告从Adobe Campaign先前版本到Adobe Campaign v7的配置时，请确保物理目录的路径指向Adobe Campaign v7（而不是Neolane v5、Neolane v6或Adobe Campaign v6）。
 
 1. 使用以下命令重新加载Adobe Campaign v7配置：
 

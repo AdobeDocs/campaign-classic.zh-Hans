@@ -4,11 +4,10 @@ title: JavaScript 脚本和模板
 description: JavaScript 脚本和模板
 feature: Workflows
 hide: true
-hidefromtoc: true
 exl-id: 4a3647d1-cf8c-4867-871e-472287be7c6a
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
-source-wordcount: '1247'
+source-wordcount: '1243'
 ht-degree: 2%
 
 ---
@@ -32,10 +31,10 @@ ht-degree: 2%
 
 在工作流上下文中执行的JavaScripts访问一系列其他全局对象。
 
-* **实例**：表示正在执行的工作流。 此对象的架构为&#x200B;**xtk：workflow**。
-* **任务**：表示正在执行的任务。 此对象的架构是&#x200B;**xtk：workflowTask**。
-* **event**：表示激活正在执行的任务的事件。 此对象的架构是&#x200B;**xtk：workflowEvent**。 对于已从多个过渡激活的&#x200B;**AND-join**&#x200B;类型活动，此对象未初始化。
-* **事件**：表示激活当前任务的事件列表。 此对象的架构是&#x200B;**xtk：workflowEvent**。 此表通常包含一个元素，但可能包含多个&#x200B;**AND-join**&#x200B;类型的活动，这些活动已基于多个过渡激活。
+* **实例**：表示正在执行的工作流。 此对象的架构为&#x200B;**xtk:workflow**。
+* **任务**：表示正在执行的任务。 此对象的架构为&#x200B;**xtk:workflowTask**。
+* **event**：表示激活正在执行的任务的事件。 此对象的架构为&#x200B;**xtk:workflowEvent**。 对于已从多个过渡激活的&#x200B;**AND-join**&#x200B;类型活动，此对象未初始化。
+* **事件**：表示激活当前任务的事件列表。 此对象的架构为&#x200B;**xtk:workflowEvent**。 此表通常包含一个元素，但可能包含多个&#x200B;**AND-join**&#x200B;类型的活动，这些活动已基于多个过渡激活。
 * **活动**：表示正在执行的任务的模型。 此对象的架构取决于活动类型。 此对象可由初始化脚本修改，而在其他脚本中，修改具有不可确定的效果。
 
 通过单击脚本工具栏右侧的按钮，可以在下拉列表中查看这些对象可用的属性。

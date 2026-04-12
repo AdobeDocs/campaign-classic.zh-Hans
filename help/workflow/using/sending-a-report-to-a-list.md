@@ -4,9 +4,8 @@ title: 向列表发送报告
 description: 了解如何使用工作流将报告发送到列表
 feature: Workflows
 hide: true
-hidefromtoc: true
 exl-id: cb24aea5-f3c7-4b17-8899-1792ea18c235
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '632'
 ht-degree: 1%

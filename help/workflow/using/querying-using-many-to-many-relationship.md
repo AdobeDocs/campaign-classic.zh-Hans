@@ -4,11 +4,10 @@ title: 使用多对多关系进行查询
 description: 了解如何使用多对多关系执行查询
 feature: Query Editor, Workflows
 hide: true
-hidefromtoc: true
 exl-id: e1d40ba1-2493-45c1-bd54-af9cb332028d
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
-source-wordcount: '390'
+source-wordcount: '389'
 ht-degree: 1%
 
 ---
@@ -23,7 +22,7 @@ ht-degree: 1%
 
 * 需要选择哪个表？
 
-  收件人表(**nms：recipient**)
+  收件人表(**nms:recipient**)
 
 * 要为输出列选择的字段
 
@@ -47,7 +46,7 @@ ht-degree: 1%
 1. 在&#x200B;**[!UICONTROL Data filtering]**&#x200B;窗口中，选择&#x200B;**[!UICONTROL Filtering conditions]**。
 1. 在&#x200B;**[!UICONTROL Target element]**&#x200B;窗口中，用于提取过去7天没有跟踪日志的用户档案的过滤条件包括两个步骤。 您需要选择的元素是多对多链接。
 
-   * 首先，为前&#x200B;**[!UICONTROL Value]**&#x200B;列选择&#x200B;**[!UICONTROL Recipient delivery logs (broadlog)]**&#x200B;收藏集元素（橙色节点）。
+   * 首先，为前&#x200B;**[!UICONTROL Recipient delivery logs (broadlog)]**&#x200B;列选择&#x200B;**[!UICONTROL Value]**&#x200B;收藏集元素（橙色节点）。
 
      ![](assets/query_editor_nveau_67.png)
 
@@ -57,7 +56,7 @@ ht-degree: 1%
 
      ![](assets/query_editor_nveau_36.png)
 
-     选择包含&#x200B;**[!UICONTROL greater than or equal to]**&#x200B;运算符的&#x200B;**[!UICONTROL Event date]**。 选择&#x200B;**[!UICONTROL DaysAgo (7)]**&#x200B;值。 为此，请单击&#x200B;**[!UICONTROL Value]**&#x200B;字段中的&#x200B;**[!UICONTROL Edit expression]**。 在&#x200B;**[!UICONTROL Formula type]**&#x200B;窗口中，选择&#x200B;**[!UICONTROL Process on dates]**&#x200B;和&#x200B;**[!UICONTROL Current date minus n days]**，并提供“7”作为值。
+     选择包含&#x200B;**[!UICONTROL Event date]**&#x200B;运算符的&#x200B;**[!UICONTROL greater than or equal to]**。 选择&#x200B;**[!UICONTROL DaysAgo (7)]**&#x200B;值。 为此，请单击&#x200B;**[!UICONTROL Edit expression]**&#x200B;字段中的&#x200B;**[!UICONTROL Value]**。 在&#x200B;**[!UICONTROL Formula type]**&#x200B;窗口中，选择&#x200B;**[!UICONTROL Process on dates]**&#x200B;和&#x200B;**[!UICONTROL Current date minus n days]**，并提供“7”作为值。
 
      ![](assets/query_editor_nveau_37.png)
 
@@ -65,7 +64,7 @@ ht-degree: 1%
 
      ![](assets/query_editor_nveau_38.png)
 
-1. 在&#x200B;**[!UICONTROL Data formatting]**&#x200B;窗口中，将姓氏切换为大写。 单击&#x200B;**[!UICONTROL Transformation]**&#x200B;列中的&#x200B;**[!UICONTROL Last name]**&#x200B;行，然后在下拉菜单中选择&#x200B;**[!UICONTROL Switch to upper case]**。
+1. 在&#x200B;**[!UICONTROL Data formatting]**&#x200B;窗口中，将姓氏切换为大写。 单击&#x200B;**[!UICONTROL Last name]**&#x200B;列中的&#x200B;**[!UICONTROL Transformation]**&#x200B;行，然后在下拉菜单中选择&#x200B;**[!UICONTROL Switch to upper case]**。
 
    ![](assets/query_editor_nveau_39.png)
 

@@ -4,9 +4,8 @@ title: 监督工作流
 description: 了解如何监督活动工作流
 feature: Workflows
 hide: true
-hidefromtoc: true
 exl-id: ca6d4bf4-7b3a-4d36-9fc3-0b83531d0132
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '650'
 ht-degree: 0%

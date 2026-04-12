@@ -6,10 +6,9 @@ feature: Resource Management
 audience: campaign
 content-type: reference
 hide: true
-hidefromtoc: true
 topic-tags: tasks--resources-and-budgets
 exl-id: 6765e307-915a-44d2-a486-85c64e8ec52e
-source-git-commit: 942edcf028207eab2ea583949ebc99ab61539ea0
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '2488'
 ht-degree: 0%
@@ -228,7 +227,7 @@ ht-degree: 0%
 
 1. 通过&#x200B;**[!UICONTROL Campaign management > Budgets]**&#x200B;节点创建新预算。
 
-1. 在&#x200B;**[!UICONTROL Amounts]**&#x200B;部分的&#x200B;**[!UICONTROL Allocated]**&#x200B;字段中定义10,000欧元的预算。 在窗口的下半部分添加两个费用类别：
+1. 在&#x200B;**[!UICONTROL Allocated]**&#x200B;部分的&#x200B;**[!UICONTROL Amounts]**&#x200B;字段中定义10,000欧元的预算。 在窗口的下半部分添加两个费用类别：
 
 ![](assets/s_user_cost_mgmt_sample_1.png)
 
