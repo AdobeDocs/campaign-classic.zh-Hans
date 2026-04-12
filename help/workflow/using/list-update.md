@@ -4,9 +4,8 @@ title: 列表更新
 description: 列表更新
 feature: Workflows, Targeting Activity
 hide: true
-hidefromtoc: true
 exl-id: fcc51131-15d0-4d39-95cb-371d7044373b
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '461'
 ht-degree: 3%
@@ -73,6 +72,6 @@ ht-degree: 3%
 
 本视频说明如何从资源管理器创建收件人列表。
 
->[!VIDEO](https://video.tv.adobe.com/v/27505?captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/25602/quality=12)
 
 [此处](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hans)提供了其他 Campaign Classic 操作方法视频。

@@ -4,9 +4,8 @@ title: 具有自定义日期字段的电子邮件扩充
 description: 了解如何使用自定义日期字段丰富电子邮件
 feature: Workflows
 hide: true
-hidefromtoc: true
 exl-id: 85e0ec2a-b7cb-4d0b-a281-9ad72594403a
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '538'
 ht-degree: 3%
@@ -47,7 +46,7 @@ ht-degree: 3%
 
    ![](assets/uc_enrichment_4.png)
 
-1. 单击 **[!UICONTROL Finish]**。然后，在&#x200B;**[!UICONTROL Split]**&#x200B;活动的&#x200B;**[!UICONTROL General]**&#x200B;选项卡中，单击&#x200B;**[!UICONTROL Results]**&#x200B;类别中的&#x200B;**[!UICONTROL Generate complement]**。
+1. 单击 **[!UICONTROL Finish]**。然后，在&#x200B;**[!UICONTROL General]**&#x200B;活动的&#x200B;**[!UICONTROL Split]**&#x200B;选项卡中，单击&#x200B;**[!UICONTROL Generate complement]**&#x200B;类别中的&#x200B;**[!UICONTROL Results]**。
 
    利用&#x200B;**[!UICONTROL Complement]**&#x200B;结果，您可以添加投放活动或更新列表。 此处，我们刚刚添加了一个&#x200B;**[!UICONTROL End]**&#x200B;活动。
 
@@ -93,7 +92,7 @@ ht-degree: 3%
 1. 双击您的&#x200B;**[!UICONTROL Email delivery]**&#x200B;活动以开始个性化您的投放。
 1. 向投放添加&#x200B;**[!UICONTROL Label]**&#x200B;并单击&#x200B;**[!UICONTROL Continue]**。
 1. 单击&#x200B;**[!UICONTROL Save]**&#x200B;以创建您的电子邮件投放。
-1. 在电子邮件投放&#x200B;**[!UICONTROL Properties]**&#x200B;的&#x200B;**[!UICONTROL Approval]**&#x200B;选项卡中签入&#x200B;**[!UICONTROL Confirm delivery before sending option]**&#x200B;是否已选中。
+1. 在电子邮件投放&#x200B;**[!UICONTROL Approval]**&#x200B;的&#x200B;**[!UICONTROL Properties]**&#x200B;选项卡中签入&#x200B;**[!UICONTROL Confirm delivery before sending option]**&#x200B;是否已选中。
 
    然后，启动工作流以使用定向信息扩充叫客过渡。
 

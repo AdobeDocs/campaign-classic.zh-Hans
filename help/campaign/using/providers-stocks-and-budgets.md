@@ -5,9 +5,8 @@ description: 供应商、库存和预算
 role: User
 feature: Budget Management, Campaigns
 hide: true
-hidefromtoc: true
 exl-id: c60c4f86-a957-4c44-a0fe-39b6e3f0e5d6
-source-git-commit: 4f809011a8b4cb3803c4e8151e358e5fd73634e4
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '1918'
 ht-degree: 0%
@@ -205,7 +204,7 @@ Adobe Campaign允许您定义将参与在营销活动中执行的作业的服务
 
 ### 库存管理 {#stock-management}
 
-如果库存耗尽或达到最小阈值，Adobe Campaign可以提醒一组操作员。 库存水平可通过导航区域的&#x200B;**[!UICONTROL Other choices]**&#x200B;链接通过&#x200B;**[!UICONTROL Campaigns]**&#x200B;选项卡的&#x200B;**[!UICONTROL Stocks]**&#x200B;链接访问。
+如果库存耗尽或达到最小阈值，Adobe Campaign可以提醒一组操作员。 库存水平可通过导航区域的&#x200B;**[!UICONTROL Stocks]**&#x200B;链接通过&#x200B;**[!UICONTROL Campaigns]**&#x200B;选项卡的&#x200B;**[!UICONTROL Other choices]**&#x200B;链接访问。
 
 ![](assets/s_ncs_user_stocks_view.png)
 
@@ -284,7 +283,7 @@ Adobe Campaign允许您定义将参与在营销活动中执行的作业的服务
 
 营销活动的投放成本在营销活动级别进行合并，项目的所有营销活动的成本都会传递到与其关联的项目。 通过专用报告，您可以跟踪整个平台或每个计划和每个项目的预算。
 
-### 实现 {#implementation}
+### 实施 {#implementation}
 
 在市场活动中，当您选择预算时，必须输入初始金额。 计算成本将根据所输入金额（已产生、预期、已保留、已承诺）之承担水平自动更新。 请参阅[计算金额](../../mrm/using/controlling-costs.md#calculating-amounts)。
 

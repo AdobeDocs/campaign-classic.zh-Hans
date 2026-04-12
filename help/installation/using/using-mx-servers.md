@@ -7,9 +7,8 @@ badge-v7-prem: label="仅限内部部署/混合" type="Caution" url="https://exp
 audience: installation
 content-type: reference
 topic-tags: additional-configurations
-hidefromtoc: true
 exl-id: 47f50bf5-4d5b-4c07-af71-de4390177cf5
-source-git-commit: 62ab16b206563aa25b8943e606d03a3184eb00db
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '823'
 ht-degree: 1%
@@ -36,8 +35,8 @@ ht-degree: 1%
 
 在连接协议中，必须遵守规则以防止发送垃圾邮件和垄断服务器。 最重要的是：
 
-* 列入阻止列表 **允许的最大连接数**：如果超过此数目，则IP不在上，并且电子邮件不会由于额外的连接而被拒绝。
-* **最大消息数**：在连接过程中，必须定义允许发送的消息数。 如果未定义此数字，服务器将发送尽可能多的数据。 列入阻止列表这会导致被识别为垃圾邮件发送者，并由ISP添加到中。
+* **允许的最大连接数**：如果超过此数目，则IP不在上，并且电子邮件不会由于额外的连接而被拒绝。
+* **最大消息数**：在连接过程中，必须定义允许发送的消息数。 如果未定义此数字，服务器将发送尽可能多的数据。 这会导致被识别为垃圾邮件发送者，并由ISP添加到中。
 * 每小时&#x200B;**条消息**：为了与您的电子信誉相匹配，Adobe Campaign将控制您的IP每小时能够发送的电子邮件数量。 此系统将保护您免受电子邮件拒绝或/和阻止列表的侵害。
 
 ## 退回电子邮件
@@ -91,4 +90,4 @@ MX规则具有6个不同的吞吐量级别，主要在启动过程中使用：
 * [MX配置](../../installation/using/email-deliverability.md#mx-configuration)
 * [技术电子邮件配置](../../installation/using/email-deliverability.md)
 * [了解投放失败](../../delivery/using/delivery-failures-quarantine.md)
-* [Campaign Classic — 技术建议](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html?lang=zh-Hans)
+* [Campaign Classic — 技术建议](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html)

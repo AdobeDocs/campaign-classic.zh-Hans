@@ -4,11 +4,10 @@ title: 执行聚合计算
 description: 了解如何在查询中执行聚合计算
 feature: Workflows
 hide: true
-hidefromtoc: true
 exl-id: 5b05788f-498b-4a84-bdde-2852900f0129
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
-source-wordcount: '231'
+source-wordcount: '230'
 ht-degree: 0%
 
 ---
@@ -21,7 +20,7 @@ ht-degree: 0%
 
 * 需要选择哪个表？
 
-  收件人表(**nms：recipient**)
+  收件人表(**nms:recipient**)
 
 * 应在输出列中选择哪些字段？
 
@@ -33,7 +32,7 @@ ht-degree: 0%
 
 要创建此示例，请应用以下步骤：
 
-1. 在&#x200B;**[!UICONTROL Data to extract]**&#x200B;中，定义主键的计数（如上一个示例所示）。 在输出列中添加字段&#x200B;**[!UICONTROL Gender]**。 检查&#x200B;**[!UICONTROL Gender]**&#x200B;列中的&#x200B;**[!UICONTROL Group]**&#x200B;选项。 这样，收件人将按性别分组。
+1. 在&#x200B;**[!UICONTROL Data to extract]**&#x200B;中，定义主键的计数（如上一个示例所示）。 在输出列中添加字段&#x200B;**[!UICONTROL Gender]**。 检查&#x200B;**[!UICONTROL Group]**&#x200B;列中的&#x200B;**[!UICONTROL Gender]**&#x200B;选项。 这样，收件人将按性别分组。
 
    ![](assets/query_editor_nveau_27.png)
 

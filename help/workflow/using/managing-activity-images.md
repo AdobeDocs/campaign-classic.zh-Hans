@@ -4,9 +4,8 @@ title: 更改活动图像
 description: 了解如何更改活动图像
 feature: Workflows
 hide: true
-hidefromtoc: true
 exl-id: cafdbc10-9c10-4d42-a485-c9880df8d371
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '158'
 ht-degree: 3%
@@ -23,7 +22,7 @@ ht-degree: 3%
 
   ![](assets/s_user_segmentation_properties_tab.png)
 
-  要选择要使用的图像，请单击&#x200B;**[!UICONTROL Background image]**&#x200B;字段右侧的&#x200B;**[!UICONTROL Select link]**&#x200B;图标。
+  要选择要使用的图像，请单击&#x200B;**[!UICONTROL Select link]**&#x200B;字段右侧的&#x200B;**[!UICONTROL Background image]**&#x200B;图标。
 
   >[!NOTE]
   >
@@ -35,7 +34,7 @@ ht-degree: 3%
 
 * 要更改与活动关联的图像，请双击该对象，然后单击&#x200B;**[!UICONTROL Advanced]**&#x200B;选项卡。
 
-  要选择要使用的图像，请单击&#x200B;**[!UICONTROL Image]**&#x200B;字段右侧的&#x200B;**[!UICONTROL Select link]**&#x200B;图标。
+  要选择要使用的图像，请单击&#x200B;**[!UICONTROL Select link]**&#x200B;字段右侧的&#x200B;**[!UICONTROL Image]**&#x200B;图标。
 
   ![](assets/s_user_segmentation_activity_image.png)
 

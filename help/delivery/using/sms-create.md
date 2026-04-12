@@ -5,12 +5,11 @@ description: 了解如何使用Campaign创建短信
 feature: SMS
 role: User
 hide: true
-hidefromtoc: true
 exl-id: 94aa4628-d973-433d-b963-b078e2d6672b
-source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '446'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -29,7 +28,7 @@ ht-degree: 1%
 
    ![](assets/s_user_mobile_wizard.png)
 
-1. 使用标签、代码和描述标识投放。 有关详细信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=zh-Hans#create-the-delivery){target="_blank"}中的此部分。
+1. 使用标签、代码和描述标识投放。 有关详细信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#create-the-delivery){target="_blank"}中的此部分。
 1. 单击&#x200B;**[!UICONTROL Continue]**&#x200B;以确认此信息并显示消息配置窗口。
 
 ## 定义短信的内容 {#defining-the-sms-content}

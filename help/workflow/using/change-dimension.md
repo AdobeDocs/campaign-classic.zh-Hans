@@ -4,9 +4,8 @@ title: 更改维度
 description: 更改维度
 feature: Workflows, Targeting Activity
 hide: true
-hidefromtoc: true
 exl-id: c3de99f8-089f-4c7c-be11-f375a9463eaa
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '371'
 ht-degree: 2%
@@ -59,7 +58,7 @@ ht-degree: 2%
      >
      >有关创建和管理其他列的信息，请参阅[添加数据](query.md#adding-data)。
 
-   * 选择上一个定向维度（在轴切换之前），并在收件人的&#x200B;**[!UICONTROL Location]**&#x200B;子树中选择&#x200B;**[!UICONTROL Zip Code]**，然后单击&#x200B;**[!UICONTROL Edit expression]**。
+   * 选择上一个定向维度（在轴切换之前），并在收件人的&#x200B;**[!UICONTROL Zip Code]**&#x200B;子树中选择&#x200B;**[!UICONTROL Location]**，然后单击&#x200B;**[!UICONTROL Edit expression]**。
 
      ![](assets/wf_change-dimension_sample_02.png)
 

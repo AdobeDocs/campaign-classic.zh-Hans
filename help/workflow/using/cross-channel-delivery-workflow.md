@@ -4,9 +4,8 @@ title: 跨渠道投放工作流
 description: 了解有关跨渠道投放工作流的更多信息
 feature: Workflows, Channels Activity
 hide: true
-hidefromtoc: true
 exl-id: dfd36d2c-44ff-49a9-80b4-09eaf3377072
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '670'
 ht-degree: 3%
@@ -84,16 +83,16 @@ ht-degree: 3%
 
    ![](assets/wkf_cross-channel_9.png)
 
-1. 在筛选器设置中，从&#x200B;**[!UICONTROL Behavior]**&#x200B;下拉列表中选择&#x200B;**[!UICONTROL Recipients who have not opened or clicked (email)]**，然后从投放列表中选择包含要发送的优惠的电子邮件。 单击 **[!UICONTROL Finish]**。
+1. 在筛选器设置中，从&#x200B;**[!UICONTROL Recipients who have not opened or clicked (email)]**&#x200B;下拉列表中选择&#x200B;**[!UICONTROL Behavior]**，然后从投放列表中选择包含要发送的优惠的电子邮件。 单击 **[!UICONTROL Finish]**。
 
    ![](assets/wkf_cross-channel_10.png)
 
-1. 对第二个子集进行类似操作，并从&#x200B;**[!UICONTROL Behavior]**&#x200B;下拉列表中选择&#x200B;**[!UICONTROL Recipients who have not clicked (email)]**。
+1. 对第二个子集进行类似操作，并从&#x200B;**[!UICONTROL Recipients who have not clicked (email)]**&#x200B;下拉列表中选择&#x200B;**[!UICONTROL Behavior]**。
 
    ![](assets/wkf_cross-channel_11.png)
 
 1. 对于第三个子集，选择&#x200B;**[!UICONTROL Add a filtering condition on the inbound population]**&#x200B;并单击&#x200B;**[!UICONTROL Edit]**&#x200B;后，选择&#x200B;**[!UICONTROL Use a specific filtering dimension]**&#x200B;选项。
-1. 从&#x200B;**[!UICONTROL Filtering dimension]**&#x200B;下拉列表中选择&#x200B;**[!UICONTROL Recipient tracking log]**，从&#x200B;**[!UICONTROL List of restriction filters]**&#x200B;中突出显示&#x200B;**[!UICONTROL Filtering conditions]**&#x200B;并单击&#x200B;**[!UICONTROL Next]**。
+1. 从&#x200B;**[!UICONTROL Recipient tracking log]**&#x200B;下拉列表中选择&#x200B;**[!UICONTROL Filtering dimension]**，从&#x200B;**[!UICONTROL Filtering conditions]**&#x200B;中突出显示&#x200B;**[!UICONTROL List of restriction filters]**&#x200B;并单击&#x200B;**[!UICONTROL Next]**。
 
    ![](assets/wkf_cross-channel_12.png)
 

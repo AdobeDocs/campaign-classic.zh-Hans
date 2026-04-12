@@ -7,8 +7,7 @@ role: User
 level: Beginner
 exl-id: befa8948-ef2e-4f4d-a002-3f26d8516a0d
 hide: true
-hidefromtoc: true
-source-git-commit: 471018f09e5a14635fcce07aeca1e2cf48d9144f
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '61'
 ht-degree: 22%
@@ -25,7 +24,7 @@ ht-degree: 22%
 
 >[!NOTE]
 >
->要了解有关如何在Adobe Campaign控制台中创建配置文件的更多信息，请参阅[Campaign v8文档。](https://experienceleague.adobe.com/zh-hans/docs/campaign-classic/using/getting-started/profile-management/adding-profiles){target=_blank}
+>要了解有关如何在Adobe Campaign控制台中创建配置文件的更多信息，请参阅[Campaign v8文档。](https://experienceleague.adobe.com/en/docs/campaign-classic/using/getting-started/profile-management/adding-profiles){target=_blank}
 
 
 <!--

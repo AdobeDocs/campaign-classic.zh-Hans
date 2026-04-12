@@ -4,9 +4,8 @@ title: 技术说明 — Adobe Campaign配置更新
 description: Adobe Campaign配置更新
 feature: Technote, Upgrade
 hide: true
-hidefromtoc: true
 exl-id: 7db02123-2e2a-40d9-8385-728ff69985e4
-source-git-commit: 8de62db2499449fc9966b6464862748e2514a774
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '1103'
 ht-degree: 8%
@@ -19,7 +18,7 @@ ht-degree: 8%
 
 基础架构和设置应定期更新为最新的内部版本和产品修复。 为确保服务的连续性和安全性，这些修复是必需的。 此外，还需要升级以符合第三方更改。
 
-作为&#x200B;**托管客户或Managed Services客户**，Adobe将定期通知您版本升级。 您将需要根据建议进行升级以确保遵循相关建议。
+作为&#x200B;**托管客户或Managed Services客户**，Adobe将定期通知您内部版本升级。 您将需要根据建议进行升级以确保遵循相关建议。
 
 作为&#x200B;**内部部署或混合型客户**，您应该按照最新发布的内部版本，定期升级实施。
 
@@ -45,7 +44,7 @@ ht-degree: 8%
 * Campaign 19.2.4版本。
 * Campaign 19.1.8版本。
 
-在本节[&#128279;](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)中了解如何检查您的版本。
+在本节[中了解如何检查您的版本](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)。
 
 **如何更新？**
 
@@ -53,7 +52,7 @@ ht-degree: 8%
 
 * 作为混合型客户，Adobe将通知您中间源实例的计划升级日期。 Adobe强烈建议您也升级营销实例。
 
-  新版本向后兼容Campaign Classic17.9版本，但Adobe强烈建议升级所有实例以解决安全漏洞
+  新的内部版本向后兼容Campaign Classic 17.9版本，但Adobe强烈建议升级所有实例以解决安全漏洞
 
 * 作为内部部署客户，您需要将营销和中间源实例升级到最新内部版本。
 
@@ -71,15 +70,15 @@ ht-degree: 8%
 * Campaign 19.2.4版本。
 * Campaign 19.1.8版本。
 
-## AdobeIdentity Management System (IMS)更新
+## Adobe Identity Management System (IMS)更新
 
-Adobe标识服务(IMS)将从2021年6月30日&#x200B;**起停止支持旧Internet Explorer版本**。 [了解详情](https://helpx.adobe.com/cn/x-productkb/global/update-operating-system-and-browser.html)。
+Adobe Identity Service (IMS)将从2021年6月30日&#x200B;**起停止支持旧Internet Explorer版本**。 [了解详情](https://helpx.adobe.com/x-productkb/global/update-operating-system-and-browser.html)。
 
 需要升级Campaign客户端控制台，以确保与Adobe IMS兼容。
 
 **您是否受影响？**
 
-如果您要通过Adobe ID[&#128279;](../../integrations/using/about-adobe-id.md)和AdobeIdentity Management服务(IMS)连接到Campaign ，则必须升级到以下列出的新版本之一：
+如果您要通过Adobe ID[并通过Adobe Identity Management服务(IMS)连接到Campaign ](../../integrations/using/about-adobe-id.md)，则必须升级到以下列出的新版本之一：
 
 * Gold Standard 11。 [了解详情](../../rn/using/gold-standard.md)
 * Campaign 21.1.1版本。 [了解详情](../../rn/using/latest-release.md)
@@ -90,7 +89,7 @@ Adobe标识服务(IMS)将从2021年6月30日&#x200B;**起停止支持旧Internet
 
 这些版本附带新的连接协议：Campaign服务器和客户端控制台都必须升级，才能在&#x200B;**2021年6月30日**&#x200B;后连接到Campaign。
 
-在本节[&#128279;](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)中了解如何检查您的版本。
+在本节[中了解如何检查您的版本](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)。
 
 **如何更新？**
 
@@ -100,13 +99,13 @@ Adobe标识服务(IMS)将从2021年6月30日&#x200B;**起停止支持旧Internet
 
 升级所有实例后，客户端控制台也需要升级到此版本。
 
-* 了解如何访问[Adobe软件分发](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=zh-Hans)。
+* 了解如何访问[Adobe Software Distribution](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=zh-Hans)。
 
 * [了解如何安装Campaign客户端控制台](../../installation/using/installing-the-client-console.md)。
 
-## 与Experience Cloud触发器集成 {#acc-triggers-updates}
+## 与Experience Cloud Triggers集成 {#acc-triggers-updates}
 
-旧版oAuth身份验证服务的生命周期已终止。 最初基于oAUTH身份验证设置来访问管道的Triggers集成身份验证已移至Adobe I/O。营销活动[的旧版oAuth身份验证模式已于&#x200B;**2021年9月**&#x200B;停用](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411?profile.language=zh-Hans)。 托管环境的支持时间可延长至 **2022 年 2 月 23 日**。作为内部部署或混合型部署客户，请联系Adobe客户关怀团队，将支持延长至2022年2月。 您必须向 Adobe 提供 [OAuth 应用程序的 AppID](../../integrations/using/configuring-pipeline.md#step-optional)。
+旧版oAuth身份验证服务的生命周期已终止。 最初基于oAUTH身份验证设置来访问管道的Triggers集成身份验证已移至Adobe I/O。营销活动[的旧版oAuth身份验证模式已于](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411)2021年9月&#x200B;**停用**。 托管环境的支持时间可延长至 **2022 年 2 月 23 日**。作为内部部署或混合型部署客户，请联系Adobe客户关怀团队，将支持延长至2022年2月。 您必须向 Adobe 提供 [OAuth 应用程序的 AppID](../../integrations/using/configuring-pipeline.md#step-optional)。
 
 **您是否受影响？**
 
@@ -119,7 +118,7 @@ Adobe标识服务(IMS)将从2021年6月30日&#x200B;**起停止支持旧Internet
 * Campaign 20.2.5版本。
 * Campaign 19.1.8版本。
 
-在本节[&#128279;](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)中了解如何检查您的版本。
+在本节[中了解如何检查您的版本](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)。
 
 **如何更新？**
 
@@ -139,7 +138,7 @@ Adobe标识服务(IMS)将从2021年6月30日&#x200B;**起停止支持旧Internet
 
 如果您的实例在低于Campaign 21.1，**的**&#x200B;版本上运行，并且您使用旧版Apple二进制协议发送推送通知，则需要更新为基于HTTP/2的APNs提供程序API。
 
-在本节[&#128279;](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)中了解如何检查您的版本。
+在本节[中了解如何检查您的版本](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)。
 
 **如何更新？**
 
@@ -151,7 +150,7 @@ Adobe标识服务(IMS)将从2021年6月30日&#x200B;**起停止支持旧Internet
 
 2021年3月29日，Apple推送通知服务(APN)基础设施更新影响Adobe Campaign Classic iOS渠道。 操作系统配置更改是&#x200B;**必需的**，这样可避免iOS推送渠道中断。
 
-在此页面[&#128279;](https://developer.apple.com/news/?id=7gx0a2lp)中了解有关APN更改的更多信息。
+在此页面[中了解有关APN更改](https://developer.apple.com/news/?id=7gx0a2lp)的更多信息。
 
 **您是否受影响？**
 
@@ -161,7 +160,7 @@ Adobe标识服务(IMS)将从2021年6月30日&#x200B;**起停止支持旧Internet
 
 作为托管客户，无需执行任何操作：Adobe已将新的根证书并入您的环境。
 
-作为内部部署/混合部署客户，您需要更新配置以确保在2021年3月29日之前实现无缝过渡&#x200B;**&#x200B;**。
+作为内部部署/混合部署客户，您需要更新配置以确保在2021年3月29日之前实现无缝过渡&#x200B;****。
 
 [了解如何合并新证书](ios-certificate-update.md)。
 
@@ -169,5 +168,5 @@ Adobe标识服务(IMS)将从2021年6月30日&#x200B;**起停止支持旧Internet
 
 * [升级环境](../../production/using/build-upgrade.md)
 * [内部版本升级常见问题解答](../../platform/using/faq-build-upgrade.md)
-* [下载Campaign Classic内部版本](https://experience.adobe.com/#/downloads/content/software-distribution/cn/campaign.html)
+* [下载Campaign Classic内部版本](https://experience.adobe.com/#/downloads/content/software-distribution/zh-hans/campaign.html)
 * [使用户可以使用新的客户端控制台](../../installation/using/client-console-availability-for-windows.md)

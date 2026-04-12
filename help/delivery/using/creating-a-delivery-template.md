@@ -4,10 +4,9 @@ title: 创建投放模板
 description: 创建投放模板
 feature: Delivery Templates
 hide: true
-hidefromtoc: true
 role: User
 exl-id: 40a03e04-56c7-48c0-95b8-aa7bf1121048
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '378'
 ht-degree: 9%
@@ -74,18 +73,18 @@ ht-degree: 9%
 
 以下视频演示了如何为临时投放配置模板。
 
->[!VIDEO](https://video.tv.adobe.com/v/40849?quality=12&captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/24066?quality=12)
 
 ### 如何设置投放模板属性
 
 以下视频介绍了如何设置投放模板属性，并详细说明每个属性。
 
->[!VIDEO](https://video.tv.adobe.com/v/38011?quality=12&captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/24067?quality=12)
 
 ### 如何部署临时投放模板
 
 此视频介绍了如何部署临时电子邮件投放模板，并说明了电子邮件投放与投放工作流之间的区别。
 
->[!VIDEO](https://video.tv.adobe.com/v/27452?quality=12&captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/24065?quality=12)
 
 [此处](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hans)提供了其他 Campaign Classic 操作方法视频。

@@ -5,8 +5,7 @@ description: 了解如何连接Campaign和Microsoft Dynamics
 feature: Microsoft CRM Integration
 exl-id: 26737940-b3ce-425c-9604-f4cefd19afaa
 hide: true
-hidefromtoc: true
-source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '1104'
 ht-degree: 2%
@@ -52,7 +51,7 @@ ht-degree: 2%
 
 ## 配置Microsoft Dynamics CRM {#config-crm-microsoft}
 
-若要生成访问令牌和密钥以设置帐户，您需要使用&#x200B;**全局管理员**&#x200B;凭据登录到[Microsoft Azure目录](https://portal.azure.com)。 然后按照下面列出的步骤操作。
+若要生成访问令牌和密钥以设置帐户，您需要使用[全局管理员](https://portal.azure.com)凭据登录到&#x200B;**Microsoft Azure目录**。 然后按照下面列出的步骤操作。
 
 ### 获取Microsoft Dynamics客户端ID {#get-client-id-microsoft}
 
@@ -114,7 +113,7 @@ ht-degree: 2%
 
 1. 单击&#x200B;**授予管理员同意**。
 
-有关此内容的详细信息，请参阅[Azure文档](https://docs.microsoft.com/azure/active-directory/manage-apps/grant-admin-consent#grant-admin-consent-from-the-azure-portal)。
+有关详细信息，请参阅[Azure文档](https://docs.microsoft.com/azure/active-directory/manage-apps/grant-admin-consent#grant-admin-consent-from-the-azure-portal)。
 
 ### 创建应用程序用户 {#create-app-user-microsoft}
 
@@ -132,7 +131,7 @@ ht-degree: 2%
 
 **步骤2**：为创建的用户分配适当的许可证
 
-1. 从[Microsoft Azure](https://portal.azure.com)，单击&#x200B;**管理员应用**。
+1. 从[Microsoft Azure](https://portal.azure.com)，单击&#x200B;**管理员应用程序**。
 1. 转到&#x200B;**用户>活动用户**，然后单击新创建的用户。
 1. 单击&#x200B;**编辑产品许可证**&#x200B;并选择&#x200B;**Dynamics 365客户参与计划**。
 1. 单击&#x200B;**关闭**。
@@ -148,14 +147,14 @@ ht-degree: 2%
    >使用相同名称会引发重复键错误，因此在我们获得是否需要此步骤的确认之前，请使用其他用户名并继续。
    >
 
-1. 为您之前创建的[应用程序](#get-client-id-microsoft)分配&#x200B;**应用程序ID**。
+1. 为您之前创建的&#x200B;**应用程序**&#x200B;分配[应用程序ID](#get-client-id-microsoft)。
 1. 单击&#x200B;**管理角色**&#x200B;并为用户选择&#x200B;**系统管理员**&#x200B;角色。
 
-## 配置营销活动 {#configure-acc-for-microsoft}
+## 配置 Campaign {#configure-acc-for-microsoft}
 
 >[!NOTE]
 >
-> 从Microsoft[&#128279;](https://docs.microsoft.com/previous-versions/dynamicscrm-2016/developers-guide/dn281891%28v=crm.8%29#microsoft-dynamics-crm-2011-endpoint)停用RDS后，内部部署和Office 365类型的CRM部署不再与Campaign兼容。 Adobe Campaign现在仅支持CRM版本&#x200B;**Dynamic CRM 365**&#x200B;的Web API部署。 [了解详情](../../rn/using/deprecated-features.md#crm-connectors)。
+> 从Microsoft[停用](https://docs.microsoft.com/previous-versions/dynamicscrm-2016/developers-guide/dn281891%28v=crm.8%29#microsoft-dynamics-crm-2011-endpoint)RDS后，内部部署和Office 365类型的CRM部署不再与Campaign兼容。 Adobe Campaign现在仅支持CRM版本&#x200B;**Dynamic CRM 365**&#x200B;的Web API部署。 [了解详情](../../rn/using/deprecated-features.md#crm-connectors)。
 
 要连接Microsoft Dynamics 365和Campaign，您需要在Campaign中创建并配置专用的&#x200B;**[!UICONTROL External Account]**。
 
@@ -167,7 +166,7 @@ ht-degree: 2%
 
    >[!NOTE]
    >
-   >在此部分[&#128279;](../../installation/using/external-accounts.md#microsoft-dynamics-crm-external-account)中详细介绍了中每个&#x200B;**[!UICONTROL CRM O-Auth type]**&#x200B;的Microsoft Dynamics CRM外部帐户配置。
+   >在此部分&#x200B;**[!UICONTROL CRM O-Auth type]**&#x200B;中详细介绍了[中每个](../../installation/using/external-accounts.md#microsoft-dynamics-crm-external-account)的Microsoft Dynamics CRM外部帐户配置。
 
    ![](assets/crm-ms-dynamics-ext-account.png)
 

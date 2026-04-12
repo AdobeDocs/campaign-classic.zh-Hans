@@ -7,9 +7,8 @@ audience: migration
 content-type: reference
 topic-tags: migration-procedure
 hide: true
-hidefromtoc: true
 exl-id: 228ee9e4-46a0-4d82-b8ba-b019bc0e7cac
-source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '715'
 ht-degree: 0%
@@ -24,7 +23,7 @@ ht-degree: 0%
 
 根据您的配置，可通过多种方法来执行迁移测试。
 
-您应该有一个测试/开发环境来执行迁移测试。 Adobe Campaign环境受许可证约束：请检查您的许可证合同或联系您的Adobe代表。
+您应该有一个测试/开发环境来执行迁移测试。 Adobe Campaign环境受许可证的约束：请检查您的许可证合同或联系您的Adobe代表。
 
 1. 停止所有正在进行的开发并将其转移到生产环境。
 1. 备份开发环境数据库。
@@ -164,7 +163,7 @@ nlserver.exe config -postupgrade -check -instance:<instance-name>
    <td> CRM v1(mscrmWorkflow/sfdcWorkflow)<br /> </td> 
    <td> PU-0008<br /> </td> 
    <td> 错误<br /> </td> 
-   <td> Microsoft CRM、Salesforce、OracleCRM按需操作活动不再可用。 要配置Adobe Campaign与CRM系统之间的数据同步，您需要使用<a href="../../workflow/using/crm-connector.md" target="_blank">CRM连接器</a>定位活动。<br /> </td>
+   <td> Microsoft CRM、Salesforce、Oracle CRM On Demand操作活动不再可用。 要配置Adobe Campaign与CRM系统之间的数据同步，您需要使用<a href="../../workflow/using/crm-connector.md" target="_blank">CRM连接器</a>定位活动。<br /> </td>
   </tr> 
  </tbody> 
 </table>

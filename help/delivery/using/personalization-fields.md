@@ -6,12 +6,11 @@ badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v
 feature: Personalization
 role: User
 hide: true
-hidefromtoc: true
 exl-id: 67fd9a67-cb05-46cd-acd5-e42fde6f4d4f
-source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '1027'
-ht-degree: 8%
+ht-degree: 9%
 
 ---
 
@@ -19,7 +18,7 @@ ht-degree: 8%
 
 个性化字段用于投放消息内容的一级个性化。在主内容中插入的字段显示插入选定数据源中数据的位置。
 
-例如，语法为&#x200B;**&lt;%= recipient.LastName %>**&#x200B;的个性化字段告知Adobe Campaign将收件人的名称插入到数据库（收件人表）。
+例如，语法为&#x200B;**&lt;%= recipient.LastName %>**&#x200B;的个性化字段会告知Adobe Campaign将收件人的名称插入到数据库（收件人表）中。
 
 ![](assets/do-not-localize/how-to-video.png) [通过观看视频了解此功能](#personalization-fields-video)
 
@@ -87,7 +86,7 @@ ht-degree: 8%
 
 要使用此选项，请执行以下步骤：
 
-1. 创建营销策划。 有关详细信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=zh-Hans){target=_blank}。
+1. 创建营销策划。 有关更多信息，请参阅 [Campaign v8 文档](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=zh-Hans){target=_blank}。
 1. 在营销活动的&#x200B;**[!UICONTROL Targeting and workflows]**&#x200B;选项卡中，将&#x200B;**查询**&#x200B;活动添加到您的工作流。 有关使用此活动的详细信息，请参阅[此部分](../../workflow/using/query.md)。
 1. 将&#x200B;**[!UICONTROL Email delivery]**&#x200B;活动添加到工作流并打开它。 有关使用此活动的详细信息，请参阅[此部分](../../workflow/using/delivery.md)。
 1. 转到&#x200B;**[!UICONTROL Analysis]**&#x200B;的&#x200B;**[!UICONTROL Delivery properties]**&#x200B;选项卡并选择&#x200B;**[!UICONTROL Prepare the personalization data with a workflow]**&#x200B;选项。
@@ -142,6 +141,6 @@ ht-degree: 8%
 
 了解如何在主题行中添加个性化字段，以及如何添加电子邮件投放的内容。
 
->[!VIDEO](https://video.tv.adobe.com/v/27467?quality=12&captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/24925?quality=12)
 
 [此处](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hans)提供了其他 Campaign Classic 操作方法视频。

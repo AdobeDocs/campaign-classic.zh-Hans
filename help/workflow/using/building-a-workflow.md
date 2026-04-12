@@ -4,9 +4,8 @@ title: 构建工作流
 description: 了解如何构建工作流
 feature: Workflows
 hide: true
-hidefromtoc: true
 exl-id: 8ba20ccd-b03f-4c4f-87c1-a21e80d8e4be
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '1624'
 ht-degree: 4%
@@ -35,7 +34,7 @@ ht-degree: 4%
 
 ![](assets/create_a_wf_icon.png)
 
-或者，您也可以使用工作流概述（**[!UICONTROL Monitoring]** > **[!UICONTROL Workflow]**&#x200B;链接）中的&#x200B;**[!UICONTROL Create]**&#x200B;按钮。
+或者，您也可以使用工作流概述（**[!UICONTROL Create]** > **[!UICONTROL Monitoring]**&#x200B;链接）中的&#x200B;**[!UICONTROL Workflow]**&#x200B;按钮。
 
 ![](assets/create_a_wf.png)
 
@@ -153,7 +152,7 @@ ht-degree: 4%
 
 定位期间执行的所有扩充和所有处理的结果在个性化字段中存储和访问，尤其是在创建个性化消息时使用。 有关详细信息，请参阅[目标数据](data-life-cycle.md#target-data)
 
-### 定位和筛选维度 {#targeting-and-filtering-dimensions}
+### 目标选择与过滤维度 {#targeting-and-filtering-dimensions}
 
 在数据分段操作过程中，定位键将映射到筛选维度。定位维度可让您定义操作的目标人群：收件人、合同受益人、操作人员、订阅者等。筛选维度可让您根据特定标准选择人群：合同持有人、时事通讯订阅者等。
 

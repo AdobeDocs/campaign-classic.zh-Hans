@@ -3,9 +3,8 @@ product: campaign
 title: 不支持的短信连接器迁移
 description: 将不支持的SMS连接器迁移到扩展通用SMPP连接器
 feature: SMS, Upgrade
-hidefromtoc: true
 exl-id: 60acf80c-8506-410b-ab2c-4f67a5677b43
-source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '457'
 ht-degree: 1%
@@ -20,7 +19,7 @@ ht-degree: 1%
 
 >[!CAUTION]
 >
->此迁移不是强制性的，但由Adobe推荐，它将确保您在受支持的最新软件版本上运行。
+>此迁移不是强制性的，但由Adobe推荐，它将确保您在该软件的最新受支持版本上运行。
 
 ## 关于SMS连接器 {#about-sms-connectors}
 
@@ -43,11 +42,11 @@ ht-degree: 1%
 
 >[!CAUTION]
 >
->即使您可以转换参数，配置&#x200B;**[!UICONTROL Extended Generic SMPP]**&#x200B;连接器也需要与提供商联系，提供商将为您提供填写其余参数所需的信息。 有关详细信息，请参见此 [&#x200B; 页面](sms-protocol.md)。
+>即使您可以转换参数，配置&#x200B;**[!UICONTROL Extended Generic SMPP]**&#x200B;连接器也需要与提供商联系，提供商将为您提供填写其余参数所需的信息。 有关详细信息，请参见此 [ 页面](sms-protocol.md)。
 
 首先，您需要创建一个新的&#x200B;**[!UICONTROL Extended Generic SMPP]**&#x200B;外部帐户，然后您可能能够转置某些参数。 您可以在此[页面](sms-set-up.md#creating-an-smpp-external-account)中找到详细步骤。
 
-现在，您需要从新创建的&#x200B;**[!UICONTROL Extended Generic SMPP]**&#x200B;外部帐户的&#x200B;**[!UICONTROL Mobile]**&#x200B;选项卡中填写参数，具体取决于您之前的连接器。
+现在，您需要从新创建的&#x200B;**[!UICONTROL Mobile]**&#x200B;外部帐户的&#x200B;**[!UICONTROL Extended Generic SMPP]**&#x200B;选项卡中填写参数，具体取决于您之前的连接器。
 
 ### 从通用连接器 {#from-generic-connector}
 

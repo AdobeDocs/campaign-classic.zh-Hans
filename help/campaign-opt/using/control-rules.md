@@ -5,9 +5,8 @@ description: 了解如何使用Adobe Campaign中的控制规则
 role: User, Developer
 feature: Typology Rules, Campaigns
 hide: true
-hidefromtoc: true
 exl-id: 5a5f26f6-38da-4488-aadb-81fcb5359331
-source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '364'
 ht-degree: 2%
@@ -29,7 +28,7 @@ ht-degree: 2%
 * **[!UICONTROL Validity period check]** （电子邮件）：检查投放的有效期是否足以发送所有邮件。
 * **[!UICONTROL Proof size check]** （所有渠道）：如果验证目标群体超过100个收件人，则生成错误消息。
 * **[!UICONTROL Wave scheduling check]** （电子邮件）：如果投放被细分为多个阶段，则检查是否计划在有效期结束前开始最后一波投放。
-* **[!UICONTROL Unsubscription link approval]** （电子邮件）：检查每个内容(HTML和文本)中是否存在至少一个退订（选择退出）URL。
+* **[!UICONTROL Unsubscription link approval]** （电子邮件）：检查每个内容（HTML和文本）中是否存在至少一个退订（选择退出）URL。
 
 ## 创建控制规则 {#creating-a-control-rule}
 

@@ -3,9 +3,8 @@ product: campaign
 title: 消息中心（控制）
 description: 消息中心（控制）
 hide: true
-hidefromtoc: true
 feature: Workflows
-source-git-commit: 0d8cef312371192ee97f88eb33276df9d7fb11f6
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '145'
 ht-degree: 1%
@@ -22,9 +21,9 @@ ht-degree: 1%
 
 有关更多信息，根据您的Campaign版本，请参阅以下章节：
 
-![](assets/do-not-localize/v7.jpeg) [Campaign v7文档](../../message-center/using/about-transactional-messaging.md)
+![](assets/do-not-localize/v7.jpeg)[Campaign v7文档](../../message-center/using/about-transactional-messaging.md)
 
-![](assets/do-not-localize/v8.png) [Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/transactional.html)
+![](assets/do-not-localize/v8.png)[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/transactional.html)
 
 
 <table> 

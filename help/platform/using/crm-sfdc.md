@@ -5,8 +5,7 @@ description: 了解如何连接Campaign和Salesforce
 feature: Salesforce Integration
 exl-id: 94a1f00d-e952-4edd-9012-f71c87b897ca
 hide: true
-hidefromtoc: true
-source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '321'
 ht-degree: 0%
@@ -71,7 +70,7 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >您可以将Adobe Campaign枚举的所有值替换为CRM的值：要实现此目的，请在&#x200B;**[!UICONTROL Replace]**&#x200B;列中选择&#x200B;**[!UICONTROL Yes]**。
+   >您可以将Adobe Campaign枚举的所有值替换为CRM的值：要实现此目的，请在&#x200B;**[!UICONTROL Yes]**&#x200B;列中选择&#x200B;**[!UICONTROL Replace]**。
 
 
    单击&#x200B;**[!UICONTROL Next]**，然后单击&#x200B;**[!UICONTROL Start]**&#x200B;以开始导入列表。
@@ -90,4 +89,4 @@ Campaign和Salesforce.com现已连接。 您可以设置两个系统之间的数
 
 ![](assets/crm_connectors_sfdc_wf.png)
 
-在此页面[&#128279;](../../platform/using/crm-data-sync.md)中了解有关数据同步的更多信息。
+在此页面[中了解有关数据同步](../../platform/using/crm-data-sync.md)的更多信息。

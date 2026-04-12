@@ -5,12 +5,11 @@ description: 了解如何创建电子邮件投放
 feature: Email
 role: User
 hide: true
-hidefromtoc: true
 exl-id: 7f44e732-4257-4d2a-800c-bde847e20f52
-source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '107'
-ht-degree: 7%
+ht-degree: 8%
 
 ---
 
@@ -27,5 +26,5 @@ ht-degree: 7%
 
    ![](assets/s_ncs_user_wizard_email01_1.png)
 
-1. 使用标签、代码和描述标识投放。 有关详细信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=zh-Hans#create-the-delivery){target="_blank"}中的此部分。
+1. 使用标签、代码和描述标识投放。 有关详细信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#create-the-delivery){target="_blank"}中的此部分。
 1. 单击&#x200B;**继续**&#x200B;以确认此信息并显示消息配置窗口。

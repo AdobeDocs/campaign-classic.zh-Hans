@@ -5,9 +5,8 @@ description: 了解如何创建和执行营销活动
 role: User
 feature: Campaigns, Cross Channel Orchestration, Programs
 hide: true
-hidefromtoc: true
 exl-id: a8fce21f-ffe3-4819-87ca-ac0ad9f21e41
-source-git-commit: 4f809011a8b4cb3803c4e8151e358e5fd73634e4
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '1248'
 ht-degree: 5%
@@ -18,7 +17,7 @@ ht-degree: 5%
 
 活动包括操作（投放）和流程（导入或提取文件）以及资源（营销文档、投放概要）。 它们用于营销活动。活动是项目的一部分，项目包含在活动计划中。
 
-![](assets/do-not-localize/how-to-video.png)在视频[&#128279;](#video)中了解如何创建营销计划、项目和营销活动
+![](assets/do-not-localize/how-to-video.png)在视频[中了解如何创建营销计划、项目和营销活动](#video)
 
 要创建营销活动，请执行以下操作：
 
@@ -68,7 +67,7 @@ ht-degree: 5%
 
 ![](assets/s_ncs_user_new_op_wz_a.png)
 
-营销策划也可以通过项目创建。 为此，请单击相关程序&#x200B;**[!UICONTROL Schedule]**&#x200B;选项卡中的&#x200B;**[!UICONTROL Add]**&#x200B;按钮。
+营销策划也可以通过项目创建。 为此，请单击相关程序&#x200B;**[!UICONTROL Add]**&#x200B;选项卡中的&#x200B;**[!UICONTROL Schedule]**&#x200B;按钮。
 
 ![](assets/s_ncs_user_add_an_op.png)
 
@@ -137,7 +136,7 @@ ht-degree: 5%
 
    >[!NOTE]
    >
-   >此工作流必须另存为定期工作流模板。 为此，请编辑工作流属性并在&#x200B;**[!UICONTROL Execution]**&#x200B;选项卡中选择&#x200B;**[!UICONTROL Recurring workflow template]**&#x200B;选项。
+   >此工作流必须另存为定期工作流模板。 为此，请编辑工作流属性并在&#x200B;**[!UICONTROL Recurring workflow template]**&#x200B;选项卡中选择&#x200B;**[!UICONTROL Execution]**&#x200B;选项。
 
    ![](assets/s_ncs_user_op_template_recur_wf_option.png)
 
@@ -167,7 +166,7 @@ ht-degree: 5%
 
    定期工作流实例的标签由其模板标签和工作流编号组成，其中的#字符介于。
 
-   根据计划创建的工作流会自动在&#x200B;**[!UICONTROL Schedule]**&#x200B;选项卡的&#x200B;**[!UICONTROL Workflow]**&#x200B;列中与其关联。
+   根据计划创建的工作流会自动在&#x200B;**[!UICONTROL Workflow]**&#x200B;选项卡的&#x200B;**[!UICONTROL Schedule]**&#x200B;列中与其关联。
 
    ![](assets/s_ncs_user_op_recur_planning_wfs_1.png)
 
@@ -224,6 +223,6 @@ ht-degree: 5%
 
 本视频说明如何创建营销计划、项目和营销活动。
 
->[!VIDEO](https://video.tv.adobe.com/v/326559?quality=12&captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/35132?quality=12)
 
 [此处](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hans)提供了其他Campaign操作方法视频。

@@ -4,9 +4,8 @@ title: 查询
 description: 了解有关查询工作流活动的更多信息
 feature: Workflows, Targeting Activity, Query Editor
 hide: true
-hidefromtoc: true
 exl-id: 20d03627-cd56-46da-bc02-73b48a02a350
-source-git-commit: 354fc8fd5d030ed88e2b279ba1dd3eaf2f314d53
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '1630'
 ht-degree: 0%
@@ -188,9 +187,9 @@ ht-degree: 0%
 
   有关更多信息，根据您的Campaign版本，请参阅以下章节：
 
-  ![](assets/do-not-localize/v7.jpeg) [Campaign v7文档](../../configuration/using/database-mapping.md)
+  ![](assets/do-not-localize/v7.jpeg)[Campaign v7文档](../../configuration/using/database-mapping.md)
 
-  ![](assets/do-not-localize/v8.png) [Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/shemas-forms/database-mapping.html)
+  ![](assets/do-not-localize/v8.png)[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/shemas-forms/database-mapping.html)
 
 ### 功能 {#functions}
 

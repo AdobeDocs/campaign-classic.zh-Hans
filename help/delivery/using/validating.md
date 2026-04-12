@@ -5,9 +5,8 @@ description: 验证
 badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v8"
 feature: Direct Mail
 hide: true
-hidefromtoc: true
 exl-id: 42bb395b-b3fe-4d48-8720-5a4cae191984
-source-git-commit: 89e350c727fb9379d28916f79d9749f22fd4974f
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '250'
 ht-degree: 1%

@@ -8,9 +8,8 @@ audience: platform
 content-type: reference
 topic-tags: creating-queries
 hide: true
-hidefromtoc: true
 exl-id: b62e23e5-f1b7-44c4-82d9-95c6b3240352
-source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '3307'
 ht-degree: 34%
@@ -292,7 +291,7 @@ ht-degree: 34%
 
   可以使用列的源值并为它指定目标值。 此目标值将显示在新输出列中。
 
-  有关添加计算字段类型&#x200B;**[!UICONTROL Enumerations]**&#x200B;的示例，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/adding-enumeration-type-calculated-field.html?lang=zh-Hans){target="_blank"}。
+  有关添加计算字段类型&#x200B;**[!UICONTROL Enumerations]**&#x200B;的示例，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/adding-enumeration-type-calculated-field.html){target="_blank"}。
 
   ![](assets/query_editor_nveau_63.png)
 

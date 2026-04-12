@@ -5,9 +5,8 @@ description: 了解如何将Campaign SDK集成到您的移动应用程序
 feature: Mobile SDK Integration, Push
 role: User, Developer
 hide: true
-hidefromtoc: true
 exl-id: a5f6b82d-5561-4e56-b2ed-7fd6fd8c2b55
-source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '983'
 ht-degree: 3%
@@ -20,7 +19,7 @@ ht-degree: 3%
 >
 >Adobe强烈建议通过在数据收集UI中配置Adobe Experience Platform扩展来使用Adobe Campaign Mobile SDK。 Adobe Experience Platform Mobile SDK 有助于在移动设备应用程序中支持 Adobe 的 Experience Cloud 解决方案和服务。 SDK 配置通过数据收集 UI 进行管理，以实现灵活配置和基于规则的可扩展集成。 [请参阅Adobe Developer文档以了解详情](https://developer.adobe.com/client-sdks/documentation/adobe-campaign-classic){target="_blank"}。
 
-要获取Campaign SDK(以前称为Neolane SDK)，请联系[Adobe客户关怀](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target="_blank"}。
+要获取Campaign SDK（以前称为Neolane SDK），请联系[Adobe客户关怀](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target="_blank"}。
 
 要了解有关支持的其他Android和iOS版本的更多信息，请参阅[兼容性矩阵](../../rn/using/compatibility-matrix.md#MobileSDK)。
 
@@ -64,7 +63,7 @@ ht-degree: 3%
 
   >[!NOTE]
   >
-  >此集成密钥输入到Adobe Campaign控制台中，该控制台位于专用于移动应用程序的服务的&#x200B;**[!UICONTROL Information]**&#x200B;选项卡中。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push-settings.html?lang=zh-Hans){target="_blank"}。
+  >此集成密钥输入到Adobe Campaign控制台中，该控制台位于专用于移动应用程序的服务的&#x200B;**[!UICONTROL Information]**&#x200B;选项卡中。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push-settings.html){target="_blank"}。
 
 * **跟踪URL**：与Adobe Campaign跟踪服务器的地址匹配。
 * **营销URL**：启用订阅集合。
@@ -92,7 +91,7 @@ ht-degree: 3%
 
 注册功能使您能够：
 
-* 将通知ID或推送ID(iOS的deviceToken和Android的注册ID)发送到Adobe Campaign。
+* 将通知ID或推送ID（iOS的deviceToken和Android的注册ID）发送到Adobe Campaign。
 * 恢复协调密钥或userKey（例如，电子邮件或帐号）
 
 * 在Android **中**：
@@ -152,7 +151,7 @@ ht-degree: 3%
 
   利用跟踪函数，可跟踪通知激活（打开）和通知显示（屏幕快照）。
 
-  要跟踪通知显示(通过调用SDK的&#x200B;**notifyReceive**&#x200B;函数来完成)，请按照以下实现方式操作。 请注意，如果您使用FCM (Firebase Cloud Messaging)，我们建议您在Android系统调用&#x200B;**onMessageReceived**&#x200B;函数时使用&#x200B;**notifyReceive**&#x200B;函数。
+  要跟踪通知显示（通过调用SDK的&#x200B;**notifyReceive**&#x200B;函数来完成），请按照以下实现方式操作。 请注意，如果您使用FCM (Firebase Cloud Messaging)，我们建议您在Android系统调用&#x200B;**onMessageReceived**&#x200B;函数时使用&#x200B;**notifyReceive**&#x200B;函数。
 
   ```
   package com.android.YourApplication;
@@ -248,7 +247,7 @@ ht-degree: 3%
   }
   ```
 
-  以下是跟踪通知打开的实施示例(通过调用SDK的&#x200B;**notifyOpening**&#x200B;函数来执行)。 **NotificationActivity**&#x200B;类对应于上一个示例中用于创建&#x200B;**notifIntent**&#x200B;对象的类。
+  以下是跟踪通知打开的实施示例（通过调用SDK的&#x200B;**notifyOpening**&#x200B;函数来执行）。 **NotificationActivity**&#x200B;类对应于上一个示例中用于创建&#x200B;**notifIntent**&#x200B;对象的类。
 
   ```
   public class NotificationActivity extends Activity {
@@ -542,7 +541,7 @@ typedef NS_ENUM(NSUInteger, ACCRegisterDeviceStatus) {
 
 +++**变量**
 
-利用变量，可定义在收到通知后的移动应用程序行为。 必须在移动设备应用程序代码和Adobe Campaign控制台中，在专用移动设备应用程序的&#x200B;**[!UICONTROL Variables]**&#x200B;选项卡中定义这些变量(请参阅[在Adobe Campaign中配置移动设备应用程序](configuring-the-mobile-application.md))。 下面是一个代码示例，该代码允许移动应用程序收集通知中添加的任何变量。 在我们的示例中，我们使用“VAR”变量。
+利用变量，可定义在收到通知后的移动应用程序行为。 必须在移动设备应用程序代码和Adobe Campaign控制台中，在专用移动设备应用程序的&#x200B;**[!UICONTROL Variables]**&#x200B;选项卡中定义这些变量（请参阅[在Adobe Campaign中配置移动设备应用程序](configuring-the-mobile-application.md)）。 下面是一个代码示例，该代码允许移动应用程序收集通知中添加的任何变量。 在我们的示例中，我们使用“VAR”变量。
 
 * 在Android **中**：
 
@@ -592,7 +591,7 @@ typedef NS_ENUM(NSUInteger, ACCRegisterDeviceStatus) {
 
 +++**通知服务扩展**
 
-用于iOS的&#x200B;**&#x200B;**
+用于iOS的&#x200B;****
 
 介质必须在通知服务扩展级别下载。
 
@@ -628,7 +627,7 @@ typedef NS_ENUM(NSUInteger, ACCRegisterDeviceStatus) {
 
 +++**通知内容扩展**
 
-用于iOS的&#x200B;**&#x200B;**
+用于iOS的&#x200B;****
 
 在此级别，您需要：
 

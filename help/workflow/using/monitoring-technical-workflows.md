@@ -4,9 +4,8 @@ title: 监测技术工作流
 description: 监测技术工作流
 feature: Workflows
 hide: true
-hidefromtoc: true
 exl-id: 5e77d196-5c71-438e-8dae-10c6a6e4f29c
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '504'
 ht-degree: 5%
@@ -48,7 +47,7 @@ ht-degree: 5%
 
 对于&#x200B;**[!UICONTROL Tracking workflow (‘tracking’)]**：
 
-检查跟踪工作流是否按计划运行（默认情况下每小时运行一次），以及日记帐是否未高亮显示重复错误。 有关更多信息，请参阅此[&#128279;](delivery.md)章节。
+检查跟踪工作流是否按计划运行（默认情况下每小时运行一次），以及日记帐是否未高亮显示重复错误。 有关更多信息，请参阅此](delivery.md)章节[。
 
 对于&#x200B;**[!UICONTROL Refresh for Deliverability (deliverabilityUpdate)]**：
 
@@ -57,7 +56,7 @@ ht-degree: 5%
 
 对于&#x200B;**[!UICONTROL Campaign process ('operationMgt', 'deliveryMgt', ...)]**：
 
-1. 查看&#x200B;**[!UICONTROL Campaign process]**&#x200B;文件夹下的所有工作流。 有关详细信息，请参见此 [&#x200B; 页面](about-technical-workflows.md)。
+1. 查看&#x200B;**[!UICONTROL Campaign process]**&#x200B;文件夹下的所有工作流。 有关详细信息，请参见此 [ 页面](about-technical-workflows.md)。
 1. 检查工作流是否按计划运行，以及日记帐是否未突出显示重复出现的错误。
 
 ## 工作流监督 {#workflow-supervision}

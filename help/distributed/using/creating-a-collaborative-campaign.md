@@ -4,9 +4,8 @@ title: 创建协作活动
 description: 了解如何创建协作活动
 feature: Distributed Marketing
 hide: true
-hidefromtoc: true
 exl-id: 17313fe5-ad42-45ca-a35a-1e7aa89380ef
-source-git-commit: 36fe54cf6d4d762d96205bd637311a426c741427
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '915'
 ht-degree: 4%
@@ -61,7 +60,7 @@ ht-degree: 4%
 
 本地实体执行子营销活动。 中央实体执行父营销策划。
 
-中央实体可以从此仪表板（通过&#x200B;**[!UICONTROL List of associated campaigns]**&#x200B;链接）查看与&#x200B;**协作营销活动（按营销活动）**&#x200B;链接的所有子营销活动。
+中央实体可以从此仪表板（通过&#x200B;**链接）查看与**&#x200B;协作营销活动（按营销活动）**[!UICONTROL List of associated campaigns]**&#x200B;链接的所有子营销活动。
 
 ![](assets/mkg_dist_mutual_op_by_op.png)
 
@@ -111,7 +110,7 @@ ht-degree: 4%
 
 应用以下步骤：
 
-1. 在&#x200B;**营销活动**&#x200B;页面的&#x200B;**[!UICONTROL Navigation]**&#x200B;部分中，单击&#x200B;**[!UICONTROL Campaign packages]**&#x200B;链接。
+1. 在&#x200B;**[!UICONTROL Navigation]**&#x200B;营销活动&#x200B;**页面的**&#x200B;部分中，单击&#x200B;**[!UICONTROL Campaign packages]**&#x200B;链接。
 1. 单击 **[!UICONTROL Create]** 按钮。
 1. 窗口顶部的部分允许您选择&#x200B;**[!UICONTROL New collaborative package (mutualizedEmpty)]**&#x200B;模板。
 1. 选择引用营销活动。

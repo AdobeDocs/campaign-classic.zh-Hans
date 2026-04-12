@@ -4,9 +4,8 @@ title: 设置循环导入
 description: 了解如何为定期导入配置工作流模板
 feature: Workflows, Data Management
 hide: true
-hidefromtoc: true
 exl-id: e6e140cb-8de0-4ab9-bddc-95abe04124c6
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '1015'
 ht-degree: 0%
@@ -43,7 +42,7 @@ ht-degree: 0%
 
    * 在&#x200B;**[!UICONTROL Name of the file to load]**&#x200B;部分中，选择&#x200B;**[!UICONTROL Upload a file from the local machine]**&#x200B;并将字段留空。 每次从此模板创建新工作流时，只要该文件与定义的结构相对应，您就可以在此处指定所需的文件。
 
-     您可以使用任何选项，但必须相应地修改模板。 例如，如果选择&#x200B;**[!UICONTROL Specified in the transition]**，您可以先添加&#x200B;**[!UICONTROL File Transfer]**&#x200B;活动，然后检索要从FTP/SFTP服务器导入的文件。 通过S3或SFTP连接，您还可以将区段数据导入带有Adobe实时客户数据平台的Adobe Campaign。 有关详细信息，请参阅此[文档](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/email-marketing/adobe-campaign.html?lang=zh-Hans)。
+     您可以使用任何选项，但必须相应地修改模板。 例如，如果选择&#x200B;**[!UICONTROL Specified in the transition]**，您可以先添加&#x200B;**[!UICONTROL File Transfer]**&#x200B;活动，然后检索要从FTP/SFTP服务器导入的文件。 通过S3或SFTP连接，您还可以将区段数据导入带有Adobe实时客户数据平台的Adobe Campaign。 有关详细信息，请参阅此[文档](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/email-marketing/adobe-campaign.html)。
 
      ![](assets/import_template_example1.png)
 
@@ -76,7 +75,7 @@ ht-degree: 0%
 
    * 在前两个子集中未选择的所有记录都在&#x200B;**[!UICONTROL Complement]**&#x200B;中选择。
 
-1. 配置位于先前配置的&#x200B;**[!UICONTROL Split]**&#x200B;活动的第一个叫客过渡之后的&#x200B;**[!UICONTROL Update data]**&#x200B;活动。
+1. 配置位于先前配置的&#x200B;**[!UICONTROL Update data]**&#x200B;活动的第一个叫客过渡之后的&#x200B;**[!UICONTROL Split]**&#x200B;活动。
 
    * 选择&#x200B;**[!UICONTROL Update]**&#x200B;作为&#x200B;**[!UICONTROL Operation type]**，因为集客过渡仅包含数据库中已存在的收件人。
    * 在&#x200B;**[!UICONTROL Record identification]**&#x200B;部分中，选择&#x200B;**[!UICONTROL Using reconciliation keys]**&#x200B;并定义定向维度与在&#x200B;**[!UICONTROL Enrichment]**&#x200B;中创建的链接之间的键。 在此示例中，使用了&#x200B;**CRM ID**&#x200B;自定义字段。
@@ -95,7 +94,7 @@ ht-degree: 0%
 
    ![](assets/import_template_example7.png)
 
-1. 配置位于之前配置的&#x200B;**[!UICONTROL Deduplication]**&#x200B;活动之后的&#x200B;**[!UICONTROL Update data]**&#x200B;活动。
+1. 配置位于之前配置的&#x200B;**[!UICONTROL Update data]**&#x200B;活动之后的&#x200B;**[!UICONTROL Deduplication]**&#x200B;活动。
 
    * 选择&#x200B;**[!UICONTROL Insert]**&#x200B;作为&#x200B;**[!UICONTROL Operation type]**，因为集客过渡仅包含数据库中不存在的收件人。
    * 在&#x200B;**[!UICONTROL Record identification]**&#x200B;部分中，选择&#x200B;**[!UICONTROL Directly using the targeting dimension]**&#x200B;并选择&#x200B;**[!UICONTROL Recipients]**&#x200B;维度。

@@ -4,9 +4,8 @@ title: 单元格
 description: 单元格
 feature: Workflows, Targeting Activity
 hide: true
-hidefromtoc: true
 exl-id: 7b562dba-7e4b-40a7-91db-7b9379de44ca
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '127'
 ht-degree: 8%
@@ -25,7 +24,7 @@ ht-degree: 8%
 
 ![](assets/wf_split_cells_with_customization.png)
 
-对于此配置，已将以下信息添加到工作流表单(在Adobe Campaign树的&#x200B;**[!UICONTROL Administration > Configurations > Input forms]**&#x200B;节点中)：
+对于此配置，已将以下信息添加到工作流表单（在Adobe Campaign树的&#x200B;**[!UICONTROL Administration > Configurations > Input forms]**&#x200B;节点中）：
 
 ```
 <container img="nms:miniatures/mini-enrich.png" label="Data">
@@ -50,4 +49,4 @@ ht-degree: 8%
                 </container>
 ```
 
-Adobe Campaign中的登录表单个性化是为专家用户保留的。 有关更多信息，请参阅此[&#128279;](../../configuration/using/identifying-a-form.md)章节。
+Adobe Campaign中的登录表单个性化是为专家用户保留的。 有关更多信息，请参阅此](../../configuration/using/identifying-a-form.md)章节[。

@@ -4,9 +4,8 @@ title: 定位数据
 description: 了解有关在工作流中定位数据的更多信息
 feature: Query Editor, Data Management, Workflows
 hide: true
-hidefromtoc: true
 exl-id: 74b82019-bdab-4442-84cf-5ad18d0db788
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '1919'
 ht-degree: 4%
@@ -159,7 +158,7 @@ ht-degree: 4%
 
    ![](assets/split-subset-config-all-data.png)
 
-   [本节](cross-channel-delivery-workflow.md)介绍了如何在&#x200B;**[!UICONTROL Split]**&#x200B;活动中使用筛选条件将目标分段为不同群体的示例。
+   **[!UICONTROL Split]**&#x200B;本节[介绍了如何在](cross-channel-delivery-workflow.md)活动中使用筛选条件将目标分段为不同群体的示例。
 
    **[!UICONTROL Label]**&#x200B;字段允许您为新创建的子集提供一个名称，该名称将匹配叫客过渡。
 
@@ -179,9 +178,9 @@ ht-degree: 4%
 
    有关更多信息，根据您的Campaign版本，请参阅以下章节：
 
-   ![](assets/do-not-localize/v7.jpeg) [Campaign v7文档](../../installation/using/about-fda.md)
+   ![](assets/do-not-localize/v7.jpeg)[Campaign v7文档](../../installation/using/about-fda.md)
 
-   ![](assets/do-not-localize/v8.png) [Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/connect/fda.html?lang=zh-Hans)
+   ![](assets/do-not-localize/v8.png)[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/connect/fda.html?lang=zh-Hans)
 
 然后，我们需要添加新子集：
 

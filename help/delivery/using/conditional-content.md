@@ -6,9 +6,8 @@ badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v
 feature: Personalization, Multilingual Messages
 role: User
 hide: true
-hidefromtoc: true
 exl-id: 12595ee4-6a52-4e06-b80d-85fe633a5a11
-source-git-commit: a1e9fec0e9c85bf25b79e24a7432dfb45bd1a0cb
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '494'
 ht-degree: 7%
@@ -71,7 +70,7 @@ ht-degree: 7%
 
 >[!CAUTION]
 >
->为遵循JavaScript语法，添加&#x200B;**Else**&#x200B;和&#x200B;**Else if**&#x200B;条件后必须删除&#x200B;**%> &lt;%**&#x200B;字符。
+>为遵循JavaScript语法，在添加&#x200B;**Else**&#x200B;和&#x200B;**Else if**&#x200B;条件后，必须删除&#x200B;**%> &lt;%**&#x200B;字符。
 
 单击&#x200B;**[!UICONTROL Preview]**&#x200B;并选择收件人以查看条件内容。
 
@@ -88,18 +87,18 @@ ht-degree: 7%
    <% if (language == "EN" ) { %>
    <DIV id=en-version>Hello <%= recipient.firstName %>,</DIV>
    <DIV>Discover your new offers!</DIV>
-   <DIV><a href="https://www.adobe.com/cn/products/en">www.adobe.com/products/en</A></FONT></DIV><%
+   <DIV><a href="https://www.adobe.com/products/en">www.adobe.com/products/en</A></FONT></DIV><%
     } %>
    <% if (language == "FR" ) { %>
    <DIV id=fr-version>Bonjour <%= recipient.firstName %>,</DIV>
    <DIV>Découvrez nos nouvelles offres !</DIV>
-   <DIV><a href="https://www.adobe.com/cn/products/fr">www.adobe.com/products/fr</A></DIV><%
+   <DIV><a href="https://www.adobe.com/products/fr">www.adobe.com/products/fr</A></DIV><%
     } %>
     <% if (language == "ES" ) { %>
    <DIV id=es-version><FONT face=Arial>
    <DIV>Olà <%= recipient.firstName %>,</DIV>
    <DIV>Descubra nuestros nuevas ofertas !</DIV>
-   <DIV><a href="https://www.adobe.com/cn/products/es">www.adobe.com/products/es</A></DIV>
+   <DIV><a href="https://www.adobe.com/products/es">www.adobe.com/products/es</A></DIV>
    <% } %>
    ```
 
@@ -113,6 +112,6 @@ ht-degree: 7%
 
 了解如何在多语言新闻稿的示例中向投放添加条件内容。
 
->[!VIDEO](https://video.tv.adobe.com/v/41037?quality=12&captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/24926?quality=12)
 
 [此处](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hans)提供了其他 Campaign Classic 操作方法视频。

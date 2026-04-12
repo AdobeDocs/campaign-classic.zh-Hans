@@ -4,9 +4,8 @@ title: 入站短信
 description: 了解有关入站短信工作流活动的更多信息
 feature: Workflows, Channels Activity
 hide: true
-hidefromtoc: true
 exl-id: 94a9d50b-4ead-4815-8d12-942fa78b4e8a
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '106'
 ht-degree: 4%
@@ -33,4 +32,4 @@ ht-degree: 4%
 
 1. **[!UICONTROL Expiration]**
 
-[入站电子邮件](inbound-emails.md)中详细介绍了&#x200B;**[!UICONTROL Script]**、**[!UICONTROL Schedule]**&#x200B;和&#x200B;**[!UICONTROL Expiry]**&#x200B;选项卡。
+**[!UICONTROL Script]**&#x200B;入站电子邮件&#x200B;**[!UICONTROL Schedule]**&#x200B;中详细介绍了&#x200B;**[!UICONTROL Expiry]**、[和](inbound-emails.md)选项卡。

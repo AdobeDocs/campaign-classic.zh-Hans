@@ -4,9 +4,8 @@ title: 创建摘要列表
 description: 创建摘要列表
 feature: Workflows, Data Management
 hide: true
-hidefromtoc: true
 exl-id: 39cec42a-c7ac-41b1-8f61-799b559ce002
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '978'
 ht-degree: 2%
@@ -128,8 +127,8 @@ Phone;500;London 5
 
 在&#x200B;**更新数据**&#x200B;活动中，需要以下配置：
 
-1. 选择&#x200B;**[!UICONTROL Operation type]**&#x200B;字段中的&#x200B;**[!UICONTROL Insert or update]**&#x200B;选项，以避免每次收集文件时都创建新记录。
-1. 为&#x200B;**[!UICONTROL Record identification]**&#x200B;选项选择&#x200B;**[!UICONTROL By directly using the targeting dimension]**&#x200B;值。
+1. 选择&#x200B;**[!UICONTROL Insert or update]**&#x200B;字段中的&#x200B;**[!UICONTROL Operation type]**&#x200B;选项，以避免每次收集文件时都创建新记录。
+1. 为&#x200B;**[!UICONTROL By directly using the targeting dimension]**&#x200B;选项选择&#x200B;**[!UICONTROL Record identification]**&#x200B;值。
 1. 选择“购买”架构作为&#x200B;**[!UICONTROL Document type]**。
 1. 指定要更新的字段列表。 **[!UICONTROL Destination]**&#x200B;列允许您定义“购买”架构的字段。 **[!UICONTROL Expression]**&#x200B;列允许您选择工作表中的字段以执行映射。
 1. 单击&#x200B;**[!UICONTROL Generate an outbound transition]**&#x200B;选项。
@@ -146,12 +145,12 @@ Phone;500;London 5
 1. 添加&#x200B;**扩充**&#x200B;活动，然后选择从上一个查询生成的主集。
 1. 单击添加&#x200B;**[!UICONTROL Data]**。
 1. 单击&#x200B;**[!UICONTROL Data linked to the targeting dimension]**&#x200B;选项。
-1. 在&#x200B;**[!UICONTROL Select fields to add]**&#x200B;窗口中单击&#x200B;**[!UICONTROL Data linked to the filtering dimension]**&#x200B;选项。
+1. 在&#x200B;**[!UICONTROL Data linked to the filtering dimension]**&#x200B;窗口中单击&#x200B;**[!UICONTROL Select fields to add]**&#x200B;选项。
 1. 选择&#x200B;**[!UICONTROL Purchases]**&#x200B;节点，然后单击&#x200B;**[!UICONTROL Next]**。
 
    ![](assets/uc2_enrich_enrich9.png)
 
-1. 通过选择&#x200B;**[!UICONTROL Aggregates]**&#x200B;选项更改&#x200B;**[!UICONTROL Collected data]**&#x200B;字段。
+1. 通过选择&#x200B;**[!UICONTROL Collected data]**&#x200B;选项更改&#x200B;**[!UICONTROL Aggregates]**&#x200B;字段。
 
    ![](assets/uc2_enrich_enrich10.png)
 

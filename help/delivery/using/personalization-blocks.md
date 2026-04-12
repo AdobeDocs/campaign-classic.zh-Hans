@@ -6,9 +6,8 @@ badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v
 feature: Personalization
 role: User
 hide: true
-hidefromtoc: true
 exl-id: 8d155844-d18a-4165-9886-c3b144109f6e
-source-git-commit: a1e9fec0e9c85bf25b79e24a7432dfb45bd1a0cb
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '870'
 ht-degree: 3%
@@ -105,7 +104,7 @@ HTML源代码会插入到投放内容中。 例如，**[!UICONTROL Greetings]**&
   >有关生成镜像页面的详细信息，请参阅[生成镜像页面](sending-messages.md#generating-the-mirror-page)。
 
 * **[!UICONTROL Link to mirror page]** ：插入指向镜像页面的链接：“如果您无法正确查看此消息，请单击此处”。
-* 列入阻止列表 **[!UICONTROL Unsubscription link]** ：插入链接以取消订阅所有投放（订阅）。
+* **[!UICONTROL Unsubscription link]** ：插入链接以取消订阅所有投放（订阅）。
 * **[!UICONTROL Formatting function for proper nouns]** ：生成&#x200B;**[!UICONTROL toSmartCase]** Javascript函数，该函数将每个单词的第一个字母更改为大写。
 * **[!UICONTROL Registration page URL]** ：插入订阅URL（请参阅[关于服务和订阅](about-services-and-subscriptions.md)）。
 * **[!UICONTROL Registration link]** ：插入订阅链接。 ，该参数在配置实例时定义。
@@ -136,16 +135,16 @@ HTML源代码会插入到投放内容中。 例如，**[!UICONTROL Greetings]**&
    * 选择&#x200B;**[!UICONTROL Visible in the customization menus]**&#x200B;以通过个性化字段插入图标访问此块。
    * 如有必要，请选择&#x200B;**[!UICONTROL The content of the personalization block depends upon the format]**&#x200B;以为HTML格式和文本格式的电子邮件定义两个单独的块。
 
-     然后，此编辑器的下部将显示两个选项卡(HTML内容和文本内容)以定义相应的内容。
+     然后，此编辑器的下部将显示两个选项卡（HTML内容和文本内容）以定义相应的内容。
 
      ![](assets/s_ncs_user_personalized_block_b.png)
 
-   * 输入个性化块的内容(在HTML、文本、JavaScript等)并单击&#x200B;**[!UICONTROL Save]**。
+   * 输入个性化块的内容（在HTML、文本、JavaScript等）并单击&#x200B;**[!UICONTROL Save]**。
 
 ## 教程视频 {#personalization-blocks-video}
 
 了解如何创建动态内容块以及如何使用动态内容块将电子邮件投放内容个性化。
 
->[!VIDEO](https://video.tv.adobe.com/v/27462?quality=12&captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/24924?quality=12)
 
 [此处](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hans)提供了其他 Campaign Classic 操作方法视频。

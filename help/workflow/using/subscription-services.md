@@ -4,9 +4,8 @@ title: 订阅服务
 description: 了解有关订阅服务工作流活动的更多信息
 feature: Workflows, Targeting Activity, Subscription Services Activity
 hide: true
-hidefromtoc: true
 exl-id: 1b526d1c-4a33-45a1-98f4-dcb803c8d228
-source-git-commit: 776c664a99721063dce5fa003cf40c81d94f8c78
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '409'
 ht-degree: 3%
@@ -31,7 +30,7 @@ ht-degree: 3%
 1. 如果要订阅或取消订阅选定信息服务的指定群体，请单击&#x200B;**[!UICONTROL Subscription]**&#x200B;或&#x200B;**[!UICONTROL Unsubscription]**。
 1. 选择&#x200B;**[!UICONTROL Send a confirmation message]**&#x200B;以通知收件人已订阅或取消订阅服务。
 
-   在与信息服务相关的投放模板中指定此消息的内容。 有关更多信息，请参阅此[&#128279;](../../delivery/using/managing-subscriptions.md)章节。
+   在与信息服务相关的投放模板中指定此消息的内容。 有关更多信息，请参阅此](../../delivery/using/managing-subscriptions.md)章节[。
 
 ## 示例：为新闻稿订阅收件人列表 {#example--subscribe-a-list-of-recipients-to-a-newsletter}
 

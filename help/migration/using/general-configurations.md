@@ -7,9 +7,8 @@ audience: migration
 content-type: reference
 topic-tags: configuration
 hide: true
-hidefromtoc: true
 exl-id: 7aad0e49-8d9c-40c7-9d6a-42fee0ae5870
-source-git-commit: 647709dd4b0c70c342be03d3012bc02f10ff2c00
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '2517'
 ht-degree: 1%
@@ -439,7 +438,7 @@ allowSQLInjection="false"
 
   如果警告与资源冲突有关，则操作员需要注意解决该冲突。
 
-* 后升级&#x200B;**.log`<server version number>`文件的`>`postupgrade_**&#x200B;_time包含同步结果。 默认情况下，它位于以下目录中： **安装目录/var/`<instance>`升级后**。 **错误**&#x200B;和&#x200B;**警告**&#x200B;属性指示错误和警告。
+* 后升级&#x200B;**.log`<server version number>`文件的`>`postupgrade_**_time包含同步结果。 默认情况下，它位于以下目录中： **安装目录/var/`<instance>`升级后**。 **错误**&#x200B;和&#x200B;**警告**&#x200B;属性指示错误和警告。
 
 ### 解决冲突 {#resolve-a-conflict}
 

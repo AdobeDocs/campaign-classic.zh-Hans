@@ -6,12 +6,11 @@ feature: Resource Management
 audience: campaign
 content-type: reference
 hide: true
-hidefromtoc: true
 topic-tags: tasks--resources-and-budgets
 exl-id: cc1200fa-f6d8-4f41-aed1-d1a7f229447a
-source-git-commit: 942edcf028207eab2ea583949ebc99ab61539ea0
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
-source-wordcount: '3743'
+source-wordcount: '3741'
 ht-degree: 0%
 
 ---
@@ -58,7 +57,7 @@ Adobe Campaign允许您直接在应用程序中创建任务并管理其完整的
 
 ## 创建新任务 {#creating-a-new-task}
 
-要创建任务，请单击&#x200B;**[!UICONTROL Campaigns]**&#x200B;选项卡中的&#x200B;**[!UICONTROL Tasks]**&#x200B;链接，然后选择&#x200B;**[!UICONTROL Create]**。
+要创建任务，请单击&#x200B;**[!UICONTROL Tasks]**&#x200B;选项卡中的&#x200B;**[!UICONTROL Campaigns]**&#x200B;链接，然后选择&#x200B;**[!UICONTROL Create]**。
 
 ![](assets/s_ncs_user_task_create_new.png)
 
@@ -122,7 +121,7 @@ Adobe Campaign允许您直接在应用程序中创建任务并管理其完整的
 
 ### 审阅者 {#reviewers}
 
-除了参与者外，您还可以定义操作员，一旦任务负责人关闭任务，他们将审核任务。 为此，请单击&#x200B;**[!UICONTROL Resources]**&#x200B;窗口左下角的&#x200B;**[!UICONTROL Enable task approval]**&#x200B;选项。 这可以是单个操作员、一组操作员或操作员列表。
+除了参与者外，您还可以定义操作员，一旦任务负责人关闭任务，他们将审核任务。 为此，请单击&#x200B;**[!UICONTROL Enable task approval]**&#x200B;窗口左下角的&#x200B;**[!UICONTROL Resources]**&#x200B;选项。 这可以是单个操作员、一组操作员或操作员列表。
 
 ![](assets/s_ncs_user_task_edit_resource_validation.png)
 
@@ -260,7 +259,7 @@ Adobe Campaign允许您直接在应用程序中创建任务并管理其完整的
 
 ![](assets/mrm_task_in_workflow.png)
 
-在营销活动工作流中，可在&#x200B;**[!UICONTROL Flow control]**&#x200B;选项卡中找到&#x200B;**[!UICONTROL Task]**&#x200B;活动。
+在营销活动工作流中，可在&#x200B;**[!UICONTROL Task]**&#x200B;选项卡中找到&#x200B;**[!UICONTROL Flow control]**&#x200B;活动。
 
 ## 任务类型 {#types-of-task}
 
@@ -346,7 +345,7 @@ Adobe Campaign允许您直接在应用程序中创建任务并管理其完整的
 
 ![](assets/mrm_task_grouped_create.png)
 
-但是，如果您已创建要链接到分组任务的任务，则可以通过&#x200B;**[!UICONTROL Properties]**&#x200B;框的&#x200B;**[!UICONTROL Linked to]**&#x200B;字段执行此操作。
+但是，如果您已创建要链接到分组任务的任务，则可以通过&#x200B;**[!UICONTROL Linked to]**&#x200B;框的&#x200B;**[!UICONTROL Properties]**&#x200B;字段执行此操作。
 
 ![](assets/s_ncs_user_task_group_with.png)
 
@@ -409,7 +408,7 @@ Adobe Campaign允许您直接在应用程序中创建任务并管理其完整的
 
 ![](assets/s_ncs_user_task_dependencies_from_board.png)
 
-对于分组任务，Adobe Campaign会自动将父任务的结束日期作为开始日期分配给子任务。 例如，如果&#x200B;**创建邀请**&#x200B;任务于10月15日下午3:30结束，则&#x200B;**发送邀请电子邮件**&#x200B;子任务将于10月15日下午3:30开始。
+对于分组任务，Adobe Campaign会自动将父任务的结束日期作为开始日期分配给子任务。 例如，如果&#x200B;**创建邀请**&#x200B;任务于10月15日3:30PM结束，则&#x200B;**发送邀请电子邮件**&#x200B;子任务将于10月15日3:30PM开始。
 
 此外，如果延迟父任务的结束，其某些子任务可能会受到影响：这些是状态为&#x200B;**[!UICONTROL Scheduled]**&#x200B;且开始日期早于父任务的新结束日期的子任务。 任务的持续时间保持不变。 如果子任务的开始日期晚于父任务的新结束日期，则子任务不会受到影响。
 
@@ -430,7 +429,7 @@ Adobe Campaign允许您直接在应用程序中创建任务并管理其完整的
 * 创建任务时，如果开始日期为未来，则任务为&#x200B;**[!UICONTROL Scheduled]**。 它将保持此状态，直到达到开始日期。
 * 启动后，任务为&#x200B;**[!UICONTROL In progress]**。 任务负责人关闭任务后，任务将更改为&#x200B;**[!UICONTROL Finished]**。
 * 如果已定义审阅人，则一旦负责该任务的人员将其关闭，并在审阅人批准该任务之前，任务将为&#x200B;**[!UICONTROL Pending approval]**。 如果审核者拒绝，任务将为&#x200B;**[!UICONTROL Rejected]**。
-* 任务负责人可以通过仪表板或单击&#x200B;**[!UICONTROL Cancel]**&#x200B;按钮或&#x200B;**[!UICONTROL Task map]**&#x200B;取消该任务。
+* 任务负责人可以通过仪表板或单击&#x200B;**[!UICONTROL Task map]**&#x200B;按钮或&#x200B;**[!UICONTROL Cancel]**&#x200B;取消该任务。
 * 要计划任务，请输入将来的开始日期。 然后，您可以向参与执行任务的Adobe Campaign操作员发送第一个通知。 请参阅[完成任务生命周期](#complete-task-life-cycle)。
 
 >[!NOTE]
@@ -501,7 +500,7 @@ Adobe Campaign允许您直接在应用程序中创建任务并管理其完整的
 
    >[!NOTE]
    >
-   >仅当您在任务的&#x200B;**[!UICONTROL Resources]**&#x200B;窗口中启用了&#x200B;**[!UICONTROL Enable task validation]**&#x200B;选项时，任务状态才会更改为&#x200B;**[!UICONTROL To approve]**。\
+   >仅当您在任务的&#x200B;**[!UICONTROL To approve]**&#x200B;窗口中启用了&#x200B;**[!UICONTROL Enable task validation]**&#x200B;选项时，任务状态才会更改为&#x200B;**[!UICONTROL Resources]**。\
    >如果审核者拒绝任务，其状态将更改为&#x200B;**[!UICONTROL Rejected]**，任务生命周期将再次自动启动。
 
 1. 任务状态更改为&#x200B;**[!UICONTROL Finished]**。 向有关人员发送通知。

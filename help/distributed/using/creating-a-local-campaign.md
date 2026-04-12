@@ -4,9 +4,8 @@ title: 创建本地活动
 description: 创建本地活动
 feature: Distributed Marketing
 hide: true
-hidefromtoc: true
 exl-id: 17b5865a-5e04-4b3b-8b6a-12d5c1a9c1da
-source-git-commit: 36fe54cf6d4d762d96205bd637311a426c741427
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '1565'
 ht-degree: 1%
@@ -17,7 +16,7 @@ ht-degree: 1%
 
 
 
-本地营销活动是从包含&#x200B;**特定执行计划**&#x200B;的&#x200B;**[!UICONTROL campaign packages]**&#x200B;列表中引用的模板创建的实例。 其目标是使用由中央实体设置和配置的活动模板满足本地通信需求。 实施本地操作的主要阶段如下：
+本地营销活动是从包含&#x200B;**[!UICONTROL campaign packages]**&#x200B;特定执行计划&#x200B;**的**&#x200B;列表中引用的模板创建的实例。 其目标是使用由中央实体设置和配置的活动模板满足本地通信需求。 实施本地操作的主要阶段如下：
 
 中央实体&#x200B;**的**
 
@@ -33,7 +32,7 @@ ht-degree: 1%
 
 ## 创建本地活动模板 {#creating-a-local-campaign-template}
 
-要创建营销活动包，您必须首先通过&#x200B;**[!UICONTROL Resources > Templates]**&#x200B;节点创建&#x200B;**营销活动模板**。
+要创建营销活动包，您必须首先通过&#x200B;**节点创建**&#x200B;营销活动模板&#x200B;**[!UICONTROL Resources > Templates]**。
 
 要创建新的本地模板，请复制默认的&#x200B;**[!UICONTROL Local campaign (opLocal)]**&#x200B;模板。
 
@@ -67,7 +66,7 @@ Web界面对应于本地实体在订购营销活动时要填充的表单。
 
   ![](assets/mkt_distr_8.png)
 
-  提供的表单在Web应用程序中指定，必须从模板的&#x200B;**[!UICONTROL Advanced campaign settings...]**&#x200B;链接的&#x200B;**[!UICONTROL web Interface]**&#x200B;字段的下拉列表中选择该应用程序。 请参阅[创建本地营销活动（按表单）](examples.md#creating-a-local-campaign--by-form-)。
+  提供的表单在Web应用程序中指定，必须从模板的&#x200B;**[!UICONTROL web Interface]**&#x200B;链接的&#x200B;**[!UICONTROL Advanced campaign settings...]**&#x200B;字段的下拉列表中选择该应用程序。 请参阅[创建本地营销活动（按表单）](examples.md#creating-a-local-campaign--by-form-)。
 
   >[!NOTE]
   >
@@ -75,7 +74,7 @@ Web界面对应于本地实体在订购营销活动时要填充的表单。
 
   ![](assets/mkt_distr_7.png)
 
-* **[!UICONTROL By external form]** ：本地实体有权访问其外网(非Adobe Campaign)中的营销活动参数。 这些参数与&#x200B;**本地营销活动（按表单）**&#x200B;的参数相同。
+* **[!UICONTROL By external form]** ：本地实体有权访问其外网（非Adobe Campaign）中的营销活动参数。 这些参数与&#x200B;**本地营销活动（按表单）**&#x200B;的参数相同。
 * **[!UICONTROL Pre-set]** ：本地实体使用默认表单订购营销活动，而不进行本地化。
 
   ![](assets/mkt_distr_5.png)
@@ -115,17 +114,17 @@ Web界面对应于本地实体在订购营销活动时要填充的表单。
 
 ![](assets/s_advuser_mkg_dist_add_docs.png)
 
-如果您不想显示文档上载字段，请在&#x200B;**[!UICONTROL Number of documents]**&#x200B;字段中输入&#x200B;**[!UICONTROL 0]**。
+如果您不想显示文档上载字段，请在&#x200B;**[!UICONTROL 0]**&#x200B;字段中输入&#x200B;**[!UICONTROL Number of documents]**。
 
 >[!NOTE]
 >
->可以通过选中&#x200B;**[!UICONTROL Do not display the page used to enter the campaign parameters]**&#x200B;来停用&#x200B;**[!UICONTROL Advanced parameters for campaign entry]**。
+>可以通过选中&#x200B;**[!UICONTROL Advanced parameters for campaign entry]**&#x200B;来停用&#x200B;**[!UICONTROL Do not display the page used to enter the campaign parameters]**。
 
 ![](assets/s_advuser_mkg_dist_disable_op_parameters.png)
 
 ### 工作流 {#workflow}
 
-在&#x200B;**[!UICONTROL Targeting and workflows]**&#x200B;选项卡中，创建收集&#x200B;**[!UICONTROL Advanced campaign settings...]**&#x200B;中指定的&#x200B;**[!UICONTROL Default values]**&#x200B;并创建投放的营销活动工作流。
+在&#x200B;**[!UICONTROL Targeting and workflows]**&#x200B;选项卡中，创建收集&#x200B;**[!UICONTROL Default values]**&#x200B;中指定的&#x200B;**[!UICONTROL Advanced campaign settings...]**&#x200B;并创建投放的营销活动工作流。
 
 ![](assets/mkg_dist_local_op_creation4b.png)
 
@@ -151,7 +150,7 @@ Web界面对应于本地实体在订购营销活动时要填充的表单。
 
 ![](assets/mkt_dist_local_campaign_localize_html.png)
 
-保存您的活动模板。 您现在可以从&#x200B;**[!UICONTROL Campaigns]**&#x200B;选项卡的&#x200B;**[!UICONTROL Campaign packages]**&#x200B;视图中，通过单击&#x200B;**[!UICONTROL Create]**&#x200B;按钮来使用它。
+保存您的活动模板。 您现在可以从&#x200B;**[!UICONTROL Campaign packages]**&#x200B;选项卡的&#x200B;**[!UICONTROL Campaigns]**&#x200B;视图中，通过单击&#x200B;**[!UICONTROL Create]**&#x200B;按钮来使用它。
 
 ![](assets/mkt_distr_9.png)
 
@@ -165,7 +164,7 @@ Web界面对应于本地实体在订购营销活动时要填充的表单。
 
 应用以下步骤：
 
-1. 在&#x200B;**营销活动**&#x200B;页面的&#x200B;**[!UICONTROL Navigation]**&#x200B;部分中，单击&#x200B;**[!UICONTROL Campaign packages]**&#x200B;链接。
+1. 在&#x200B;**[!UICONTROL Navigation]**&#x200B;营销活动&#x200B;**页面的**&#x200B;部分中，单击&#x200B;**[!UICONTROL Campaign packages]**&#x200B;链接。
 1. 单击 **[!UICONTROL Create]** 按钮。
 
    ![](assets/mkg_dist_add_an_entry.png)
@@ -280,7 +279,7 @@ Web界面对应于本地实体在订购营销活动时要填充的表单。
 
 要确认促销活动订单，必须获得中心实体的批准。
 
-通过&#x200B;**促销活动**&#x200B;选项卡访问的&#x200B;**[!UICONTROL Campaign orders]**&#x200B;概述允许您查看并批准促销活动订单的状态。
+通过&#x200B;**[!UICONTROL Campaign orders]**&#x200B;促销活动&#x200B;**选项卡访问的**&#x200B;概述允许您查看并批准促销活动订单的状态。
 
 >[!NOTE]
 >

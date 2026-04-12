@@ -8,9 +8,8 @@ audience: integrations
 content-type: reference
 topic-tags: audience-sharing
 hide: true
-hidefromtoc: true
 exl-id: 61bb184e-affa-430c-8571-56e911cd5a3d
-source-git-commit: b11185da8236d6100d98eabcc9dc1cf2cffa70af
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '136'
 ht-degree: 3%
@@ -34,4 +33,4 @@ ht-degree: 3%
 
   在&#x200B;**[!UICONTROL Administration > Platform > AMC Data sources]**&#x200B;中，检查是否正确设置了AMC数据源。
 
-在通过Experience Cloud受众共享受众或导入受众时，可能会丢失某些数据。 只传输ID（“访客ID”或“声明的ID”）能够与用户档案维度协调的记录。 Adobe Campaign无法识别的区段中的ID将不会导入。
+在通过Experience Cloud Audience共享受众或导入受众时，可能会丢失某些数据。 只传输ID（“访客ID”或“声明的ID”）能够与用户档案维度协调的记录。 Adobe Campaign无法识别的区段中的ID将不会导入。

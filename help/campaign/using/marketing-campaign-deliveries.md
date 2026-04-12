@@ -5,9 +5,8 @@ description: 了解有关营销活动投放的更多信息
 role: User
 feature: Campaigns, Resource Management, Cross Channel Orchestration
 hide: true
-hidefromtoc: true
 exl-id: 1dd3c080-444d-45f8-9562-d2d01a9d2860
-source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
 source-wordcount: '1491'
 ht-degree: 1%
@@ -20,7 +19,7 @@ ht-degree: 1%
 
 从营销活动创建投放后，这些投放将链接到此营销活动，并在营销活动级别合并。
 
-![](assets/do-not-localize/how-to-video.png) [在视频中发现此功能](#create-email-video)
+![](assets/do-not-localize/how-to-video.png)[在视频中发现此功能](#create-email-video)
 
 ## 创建投放 {#creating-deliveries}
 
@@ -117,7 +116,7 @@ ht-degree: 1%
 
 ## 管理关联文档 {#managing-associated-documents}
 
-您可以将如报告、照片、网页、图表等各种文档与营销活动关联起来。这些文档可以是任何格式(Microsoft Word、PowerPoint、PNG、JPG、Acrobat PDF等)。 在本节[中了解如何将文档与促销活动](../../campaign/using/marketing-campaign-assets.md)关联。
+您可以将如报告、照片、网页、图表等各种文档与营销活动关联起来。这些文档可以是任何格式（Microsoft Word、PowerPoint、PNG、JPG、Acrobat PDF等）。 在本节[中了解如何将文档与促销活动](../../campaign/using/marketing-campaign-assets.md)关联。
 
 >[!IMPORTANT]
 >
@@ -238,6 +237,6 @@ ht-degree: 1%
 
 此视频介绍如何在Adobe Campaign中创建活动和电子邮件。
 
->[!VIDEO](https://video.tv.adobe.com/v/27491?quality=12&captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/25604?quality=12)
 
 [此处](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hans)提供了其他Campaign操作方法视频。

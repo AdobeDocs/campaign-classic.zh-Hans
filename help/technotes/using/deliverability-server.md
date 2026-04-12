@@ -4,20 +4,19 @@ title: 更新到新的可投放性服务器
 description: 了解如何更新到新的Campaign可投放性服务器
 feature: Technote, Deliverability
 hide: true
-hidefromtoc: true
 exl-id: bc62ddb9-beff-4861-91ab-dcd0fa1ed199
-source-git-commit: c42d4022587846081442a39d03546c0ef335c7a0
+source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '986'
+ht-degree: 1%
 
 ---
 
 # 更新到新的可投放性服务器 {#acc-deliverability}
 
-从[v7.2.2版本](../../rn/using/latest-release.md#release-7-2-2)开始，Adobe Campaign依赖新的可投放性服务器，该服务器可提供高可用性并解决安全性合规性问题。 Campaign Classic现在会将与之间的可投放性规则、broadlog和禁止地址同步到新的可投放性服务器。 旧的可交付性服务器将于2022年8月31日停用。
+从[v7.2.2版本](../../rn/using/latest-release.md#release-7-2-2)开始，Adobe Campaign依赖新的可投放性服务器，该服务器可提供高可用性并解决安全性合规性问题。 Campaign Classic现在会将可投放性规则、broadlog和禁止地址从和同步到新的可投放性服务器。 旧的可交付性服务器将于2022年8月31日停用。
 
-作为Campaign Classic客户，您必须在2022年8月31日之前实施新的可投放性服务器&#x200B;**&#x200B;**。
+作为Campaign Classic客户，您必须在2022年8月31日之前实施新的可投放性服务器&#x200B;****。
 
 >[!NOTE]
 >
@@ -38,7 +37,7 @@ ht-degree: 0%
 
 作为&#x200B;**托管客户**，Adobe将与您合作，将您的实例升级到新版本，并在Adobe Developer Console中创建项目。
 
-作为&#x200B;**内部部署/混合部署客户**，您需要升级到[Campaign v7.2.2](../../rn/using/latest-release.md#release-7-2-2)（或更多）以从新的可投放性服务器中获益。 升级所有实例后，您必须[实施新的集成](#implementation-steps)以Adobe可投放性服务器，并确保无缝过渡。
+作为&#x200B;**内部部署/混合部署客户**，您需要升级到[Campaign v7.2.2](../../rn/using/latest-release.md#release-7-2-2)（或更多）以从新的可投放性服务器中获益。 升级所有实例后，您必须[实施与Adobe可投放性服务器的新集成](#implementation-steps)，并确保无缝过渡。
 
 ## 实施步骤 {#implementation-steps}
 
@@ -46,7 +45,7 @@ ht-degree: 0%
 >
 >这些步骤只应针对混合和内部部署实施执行。
 
-作为新的可投放性服务器集成的一部分，Campaign需要通过基于Identity Management Service (IMS)的身份验证与AdobeShared Services进行通信。 首选方式是使用基于Adobe Developer的网关令牌(也称为技术帐户令牌或AdobeIO JWT)。
+作为新的可投放性服务器集成的一部分，Campaign需要通过基于Adobe Service (IMS)的身份验证与Identity Management Shared Services通信。 首选方式是使用基于Adobe Developer的网关令牌（也称为技术帐户令牌或Adobe IO JWT）。
 
 >[!AVAILABILITY]
 >
@@ -72,17 +71,17 @@ ht-degree: 0%
 作为内部部署客户，您还必须检查营销活动&#x200B;**[!UICONTROL Product profile]**&#x200B;是否可用于您的组织。 要执行此操作，请按照以下步骤进行：
 
 1. 作为管理员，连接到[Adobe Admin Console](https://adminconsole.adobe.com/){_blank}。
-1. 访问&#x200B;**产品和服务**&#x200B;部分，并检查&#x200B;**Adobe Campaign**&#x200B;是否已列出。
-如果您看不到&#x200B;**Adobe Campaign**，请联系[Adobe客户关怀](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){_blank}添加该产品。
-1. 单击&#x200B;**Adobe Campaign**&#x200B;并选择您的组织。
-   **警告**：如果您有多个组织，请确保选择正确的组织。 在此页面[&#128279;](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=zh-Hans#ims-org-id){_blank}中了解有关组织的更多信息。
+1. 访问&#x200B;**产品和服务**&#x200B;部分，并检查&#x200B;**Adobe Campaign**是否已列出。
+如果您看不到**Adobe Campaign**，请联系[Adobe客户关怀](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){_blank}添加该产品。
+1. 单击&#x200B;**Adobe Campaign**并选择您的组织。
+   **警告**：如果您有多个组织，请确保选择正确的组织。 在此页面[中了解有关组织](https://experienceleague.adobe.com/docs/control-panel/using/faq.html#ims-org-id){_blank}的更多信息。
 
 1. 检查&#x200B;**[!UICONTROL Product profile]**&#x200B;是否存在。 如果没有，请创建它。 此&#x200B;**[!UICONTROL Product profile]**&#x200B;不需要权限。
 
 
 >[!CAUTION]
 >
->列入允许列表作为内部部署客户，如果在您的一侧实施了防火墙，则必须将此url `https://deliverability-service.adobe.io`添加到您的。 [了解详情](../../installation/using/url-permissions.md)。
+>作为内部部署客户，如果在您的一侧实施了防火墙，则必须将此url `https://deliverability-service.adobe.io`添加到您的。 [了解详情](../../installation/using/url-permissions.md)。
 
 
 ### 步骤1：创建/更新您的Adobe Developer项目 {#adobe-io-project}
