@@ -78,7 +78,7 @@ Adobe Identity Service (IMS)将从2021年6月30日&#x200B;**起停止支持旧In
 
 **您是否受影响？**
 
-如果您要通过Adobe ID[并通过Adobe Identity Management服务(IMS)连接到Campaign ](../../integrations/using/about-adobe-id.md)，则必须升级到以下列出的新版本之一：
+如果您要通过Adobe ID[并通过Adobe Identity Management服务(IMS)连接到Campaign &#x200B;](../../integrations/using/about-adobe-id.md)，则必须升级到以下列出的新版本之一：
 
 * Gold Standard 11。 [了解详情](../../rn/using/gold-standard.md)
 * Campaign 21.1.1版本。 [了解详情](../../rn/using/latest-release.md)
@@ -160,7 +160,7 @@ Adobe Identity Service (IMS)将从2021年6月30日&#x200B;**起停止支持旧In
 
 作为托管客户，无需执行任何操作：Adobe已将新的根证书并入您的环境。
 
-作为内部部署/混合部署客户，您需要更新配置以确保在2021年3月29日之前实现无缝过渡&#x200B;****。
+作为内部部署/混合部署客户，您需要更新配置以确保在2021年3月29日之前实现无缝过渡&#x200B;**&#x200B;**。
 
 [了解如何合并新证书](ios-certificate-update.md)。
 
