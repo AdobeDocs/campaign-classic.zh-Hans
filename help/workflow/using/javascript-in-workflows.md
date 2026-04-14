@@ -23,7 +23,7 @@ ht-degree: 3%
 * [使用静态SOAP方法触发工作流](#trigger-example)
 * [使用非静态SOAP方法与数据库交互](#interact-example)
 
-[了解关于静态和非静态SOAP方法的更多信息](https://experienceleague.adobe.com/developer/campaign-api/api/p-14.html)。
+[了解关于静态和非静态SOAP方法的更多信息](https://experienceleague.adobe.com/developer/campaign-api/api/p-14.html?lang=zh-Hans)。
 
 在这些示例中，使用ECMAScript for XML (E4X)扩展。 使用此扩展，您可以在同一个脚本中组合JavaScript调用和XML基元。
 
@@ -101,7 +101,7 @@ var myXML = <recipient xtkschema="nms:recipient"
 
 #### 删除记录
 
-使用`DeleteCollection`方法。 [了解详情](https://experienceleague.adobe.com/developer/campaign-api/api/sm-session-DeleteCollection.html)。
+使用`DeleteCollection`方法。 [了解详情](https://experienceleague.adobe.com/developer/campaign-api/api/sm-session-DeleteCollection.html?lang=zh-Hans)。
 
 指定以下信息：
 
@@ -275,7 +275,7 @@ for each (var rcp in res:recipient)
     logInfo(rcp.@email)
 ```
 
-循环包括一个本地收件人变量。 对于收件人集合中返回的每个收件人，都会打印出收件人的电子邮件。 [了解有关](https://experienceleague.adobe.com/developer/campaign-api/api/f-logInfo.html)函数的更多信息`logInfo`。
+循环包括一个本地收件人变量。 对于收件人集合中返回的每个收件人，都会打印出收件人的电子邮件。 [了解有关](https://experienceleague.adobe.com/developer/campaign-api/api/f-logInfo.html?lang=zh-Hans)函数的更多信息`logInfo`。
 
 #### `getIfExists`操作的结果
 
@@ -361,7 +361,7 @@ for each (var rcp in res.recipient)
 
 工作流触发通过使用事件起作用。 您可以将这些功能用于事件：
 
-* 若要发布事件，您可以使用静态`PostEvent`方法。 [了解详情](https://experienceleague.adobe.com/developer/campaign-api/api/sm-workflow-PostEvent.html)。
+* 若要发布事件，您可以使用静态`PostEvent`方法。 [了解详情](https://experienceleague.adobe.com/developer/campaign-api/api/sm-workflow-PostEvent.html?lang=zh-Hans)。
 * 若要接收事件，您可以使用&#x200B;**[!UICONTROL External signal]**&#x200B;活动。 [了解详情](external-signal.md)。
 
 您可以通过不同方式触发工作流：
@@ -428,10 +428,10 @@ xtk.workflow.PostEvent(
 
 1. 定义查询：
 
-   * 在对应的架构上使用`create`方法检索实体，例如`xtk:workflow`架构。 [了解详情](https://experienceleague.adobe.com/developer/campaign-api/api/f-create.html)。
+   * 在对应的架构上使用`create`方法检索实体，例如`xtk:workflow`架构。 [了解详情](https://experienceleague.adobe.com/developer/campaign-api/api/f-create.html?lang=zh-Hans)。
    * 使用`queryDef`方法发出SQL查询。
 
-1. 使用`ExecuteQuery`方法运行查询。 [了解详情](https://experienceleague.adobe.com/developer/campaign-api/api/sm-queryDef-ExecuteQuery.html)。
+1. 使用`ExecuteQuery`方法运行查询。 [了解详情](https://experienceleague.adobe.com/developer/campaign-api/api/sm-queryDef-ExecuteQuery.html?lang=zh-Hans)。
 
    使用`for each`循环检索结果。
 
@@ -617,11 +617,11 @@ xtk.session.Write(
 
 ### API文档
 
-* [SOAP调用示例](https://experienceleague.adobe.com/developer/campaign-api/api/p-14.html)
+* [SOAP调用示例](https://experienceleague.adobe.com/developer/campaign-api/api/p-14.html?lang=zh-Hans)
 * 方法：
-   * [创建](https://experienceleague.adobe.com/developer/campaign-api/api/f-create.html)
-   * [DeleteCollection](https://experienceleague.adobe.com/developer/campaign-api/api/sm-session-DeleteCollection.html)
-   * [ExecuteQuery](https://experienceleague.adobe.com/developer/campaign-api/api/sm-queryDef-ExecuteQuery.html)
-   * [PostEvent](https://experienceleague.adobe.com/developer/campaign-api/api/sm-workflow-PostEvent.html)
-   * [写入](https://experienceleague.adobe.com/developer/campaign-api/api/sm-session-Write.html)
-* [logInfo函数](https://experienceleague.adobe.com/developer/campaign-api/api/f-logInfo.html)
+   * [创建](https://experienceleague.adobe.com/developer/campaign-api/api/f-create.html?lang=zh-Hans)
+   * [DeleteCollection](https://experienceleague.adobe.com/developer/campaign-api/api/sm-session-DeleteCollection.html?lang=zh-Hans)
+   * [ExecuteQuery](https://experienceleague.adobe.com/developer/campaign-api/api/sm-queryDef-ExecuteQuery.html?lang=zh-Hans)
+   * [PostEvent](https://experienceleague.adobe.com/developer/campaign-api/api/sm-workflow-PostEvent.html?lang=zh-Hans)
+   * [写入](https://experienceleague.adobe.com/developer/campaign-api/api/sm-session-Write.html?lang=zh-Hans)
+* [logInfo函数](https://experienceleague.adobe.com/developer/campaign-api/api/f-logInfo.html?lang=zh-Hans)
