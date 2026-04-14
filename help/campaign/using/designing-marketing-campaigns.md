@@ -6,7 +6,7 @@ role: User
 feature: Campaigns
 hide: true
 exl-id: 4e0df18f-3623-4dfb-a2f8-ad293dbc4dd5
-source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
+source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
 source-wordcount: '434'
 ht-degree: 19%
@@ -69,6 +69,6 @@ ht-degree: 19%
 
 此视频介绍营销活动的主要概念。
 
->[!VIDEO](https://video.tv.adobe.com/v/326575?captions=chi_hans&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/35131?quality=12)
 
 [!DNL Campaign Classic]此处[提供了其他](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hans)操作方法视频。

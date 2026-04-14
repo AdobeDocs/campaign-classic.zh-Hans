@@ -7,7 +7,7 @@ role: User, Developer
 level: Intermediate, Experienced
 hide: true
 exl-id: 67eee1c5-a918-46b9-875d-7c3c71c00635
-source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
+source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
 source-wordcount: '588'
 ht-degree: 3%
@@ -67,7 +67,7 @@ ht-degree: 3%
 
    ![](assets/nmac_service_2.png)
 
-1. 创建iOS开发和生产应用程序。 有关更多信息，请参阅此[&#128279;](configuring-the-mobile-application.md#creating-ios-app)章节。
+1. 创建iOS开发和生产应用程序。 有关更多信息，请参阅此](configuring-the-mobile-application.md#creating-ios-app)章节[。
 
 ## 创建iOS移动应用程序 {#creating-ios-app}
 
@@ -81,8 +81,8 @@ ht-degree: 3%
 
    ![](assets/nmac_ios_2.png)
 
-1. 作为一个选项，您可以根据需要使用大约&#x200B;**[!UICONTROL Application variables]**&#x200B;扩充推送消息内容。 这些都是完全可自定义的，并且是发送到移动设备的消息有效负载的一部分。
-在以下示例中，我们添加&#x200B;**mediaURl**&#x200B;和&#x200B;**mediaExt**&#x200B;以创建富推送通知，然后为应用程序提供要在通知中显示的图像。
+1. 作为一个选项，您可以根据需要使用大约&#x200B;**[!UICONTROL Application variables]**扩充推送消息内容。 这些都是完全可自定义的，并且是发送到移动设备的消息有效负载的一部分。
+在以下示例中，我们添加**mediaURl**&#x200B;和&#x200B;**mediaExt**&#x200B;以创建富推送通知，然后为应用程序提供要在通知中显示的图像。
 
    ![](assets/nmac_ios_3.png)
 

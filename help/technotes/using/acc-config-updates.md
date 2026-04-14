@@ -5,7 +5,7 @@ description: Adobe Campaign配置更新
 feature: Technote, Upgrade
 hide: true
 exl-id: 7db02123-2e2a-40d9-8385-728ff69985e4
-source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
+source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
 source-wordcount: '1103'
 ht-degree: 8%
@@ -72,13 +72,13 @@ ht-degree: 8%
 
 ## Adobe Identity Management System (IMS)更新
 
-Adobe Identity Service (IMS)将从2021年6月30日&#x200B;**起停止支持旧Internet Explorer版本**。 [了解详情](https://helpx.adobe.com/cn/x-productkb/global/update-operating-system-and-browser.html)。
+Adobe Identity Service (IMS)将从2021年6月30日&#x200B;**起停止支持旧Internet Explorer版本**。 [了解详情](https://helpx.adobe.com/x-productkb/global/update-operating-system-and-browser.html)。
 
 需要升级Campaign客户端控制台，以确保与Adobe IMS兼容。
 
 **您是否受影响？**
 
-如果您要通过Adobe ID[并通过Adobe Identity Management服务(IMS)连接到Campaign &#x200B;](../../integrations/using/about-adobe-id.md)，则必须升级到以下列出的新版本之一：
+如果您要通过Adobe ID[并通过Adobe Identity Management服务(IMS)连接到Campaign ](../../integrations/using/about-adobe-id.md)，则必须升级到以下列出的新版本之一：
 
 * Gold Standard 11。 [了解详情](../../rn/using/gold-standard.md)
 * Campaign 21.1.1版本。 [了解详情](../../rn/using/latest-release.md)
@@ -105,7 +105,7 @@ Adobe Identity Service (IMS)将从2021年6月30日&#x200B;**起停止支持旧In
 
 ## 与Experience Cloud Triggers集成 {#acc-triggers-updates}
 
-旧版oAuth身份验证服务的生命周期已终止。 最初基于oAUTH身份验证设置来访问管道的Triggers集成身份验证已移至Adobe I/O。营销活动[的旧版oAuth身份验证模式已于](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411?profile.language=zh-Hans)2021年9月&#x200B;**停用**。 托管环境的支持时间可延长至 **2022 年 2 月 23 日**。作为内部部署或混合型部署客户，请联系Adobe客户关怀团队，将支持延长至2022年2月。 您必须向 Adobe 提供 [OAuth 应用程序的 AppID](../../integrations/using/configuring-pipeline.md#step-optional)。
+旧版oAuth身份验证服务的生命周期已终止。 最初基于oAUTH身份验证设置来访问管道的Triggers集成身份验证已移至Adobe I/O。营销活动[的旧版oAuth身份验证模式已于](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411)2021年9月&#x200B;**停用**。 托管环境的支持时间可延长至 **2022 年 2 月 23 日**。作为内部部署或混合型部署客户，请联系Adobe客户关怀团队，将支持延长至2022年2月。 您必须向 Adobe 提供 [OAuth 应用程序的 AppID](../../integrations/using/configuring-pipeline.md#step-optional)。
 
 **您是否受影响？**
 
@@ -160,7 +160,7 @@ Adobe Identity Service (IMS)将从2021年6月30日&#x200B;**起停止支持旧In
 
 作为托管客户，无需执行任何操作：Adobe已将新的根证书并入您的环境。
 
-作为内部部署/混合部署客户，您需要更新配置以确保在2021年3月29日之前实现无缝过渡&#x200B;**&#x200B;**。
+作为内部部署/混合部署客户，您需要更新配置以确保在2021年3月29日之前实现无缝过渡&#x200B;****。
 
 [了解如何合并新证书](ios-certificate-update.md)。
 

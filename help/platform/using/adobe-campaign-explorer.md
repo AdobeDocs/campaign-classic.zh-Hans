@@ -8,7 +8,7 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: f91d69a4-b794-40f0-b450-de862d7333e2
 hide: true
-source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
+source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
 source-wordcount: '87'
 ht-degree: 29%
@@ -22,7 +22,7 @@ ht-degree: 29%
 
 >[!NOTE]
 >
->要了解有关Adobe Campaign资源管理器的更多信息，请参阅Campaign v8文档中的以下页面：要了解有关[用户界面](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/new/campaign-ui#ac-explorer-ui){target=_blank}、其[设置](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/configuration/ui-settings){target=_blank}或[如何在资源管理器中管理文件夹和视图](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/config/configuration/folders-and-views){target=_blank}的更多信息。
+>要了解有关Adobe Campaign资源管理器的更多信息，请参阅Campaign v8文档中的以下页面：要了解有关[用户界面](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui#ac-explorer-ui){target=_blank}、其[设置](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/configuration/ui-settings){target=_blank}或[如何在资源管理器中管理文件夹和视图](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/config/configuration/folders-and-views){target=_blank}的更多信息。
 
 
 <!--

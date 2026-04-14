@@ -5,7 +5,7 @@ description: 持续投放
 feature: Workflows, Channels Activity
 hide: true
 exl-id: 9c228cdb-331e-476e-a24c-3c7e23add3bf
-source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
+source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
 source-wordcount: '358'
 ht-degree: 12%
@@ -63,6 +63,6 @@ ht-degree: 12%
 
 本视频演示了如何使用增量查询配置连续投放。
 
->[!VIDEO](https://video.tv.adobe.com/v/27515?captions=chi_hans&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/25039?quality=12)
 
 [此处](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hans)提供了其他 Campaign Classic 操作方法视频。

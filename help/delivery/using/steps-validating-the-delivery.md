@@ -6,7 +6,7 @@ feature: Deliverability, Email Rendering, Proofs
 role: User
 hide: true
 exl-id: c2f4d8d0-f0fe-4d1a-92fd-91edaf9729f3
-source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
+source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
 source-wordcount: '1653'
 ht-degree: 10%
@@ -145,7 +145,7 @@ ht-degree: 10%
 1. 开始消息分析。 请参阅[分析投放](steps-validating-the-delivery.md#analyzing-the-delivery)。
 1. 您现在可以发送投放（请参阅[发送投放](steps-sending-the-delivery.md)）。
 
-   发送投放后，验证将显示在投放列表中，并自动创建和编号。 如果要访问其内容和属性，可以对其进行编辑。 有关详细信息，请参见此 [&#x200B; 页面](about-delivery-monitoring.md)。
+   发送投放后，验证将显示在投放列表中，并自动创建和编号。 如果要访问其内容和属性，可以对其进行编辑。 有关详细信息，请参见此 [ 页面](about-delivery-monitoring.md)。
 
    ![](assets/s_ncs_user_delivery_validation_cycle_03a.png)
 

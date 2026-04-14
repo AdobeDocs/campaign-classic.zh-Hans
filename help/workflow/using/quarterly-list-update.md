@@ -5,7 +5,7 @@ description: 在此使用案例中，增量查询用于自动更新收件人列�
 feature: Workflows
 hide: true
 exl-id: 0d3e7046-313a-42a6-9155-3365e8d60bac
-source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
+source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
 source-wordcount: '277'
 ht-degree: 5%

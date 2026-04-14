@@ -5,7 +5,7 @@ description: 了解如何使用工作流发送生日电子邮件
 feature: Workflows
 hide: true
 exl-id: 38006cca-e945-4b9d-8e2d-ed537b8541d9
-source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
+source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
 source-wordcount: '878'
 ht-degree: 2%
@@ -26,7 +26,7 @@ ht-degree: 2%
 
 此（每日运行）工作流会选择其生日为当前日期的所有收件人。
 
-![](assets/do-not-localize/how-to-video.png)此用例也可以以视频形式找到。 有关详细信息，请参阅[创建工作流](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/automating-with-workflows/creating-a-workflow.html?lang=zh-Hans)视频。
+![](assets/do-not-localize/how-to-video.png)此用例也可以以视频形式找到。 有关详细信息，请参阅[创建工作流](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/automating-with-workflows/creating-a-workflow.html)视频。
 
 为此，请创建一个营销活动，然后单击&#x200B;**[!UICONTROL Targeting and workflows]**&#x200B;选项卡。 有关更多信息，请参阅[在工作流中生成主目标](../../campaign/using/marketing-campaign-deliveries.md#building-the-main-target-in-a-workflow)部分。
 

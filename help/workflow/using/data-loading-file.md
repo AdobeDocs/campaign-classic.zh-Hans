@@ -5,7 +5,7 @@ description: 了解有关数据加载（文件）工作流活动的更多信息
 feature: Workflows, Data Management Activity
 hide: true
 exl-id: a380e486-a40c-4bf6-b7f4-7dcd76c34085
-source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
+source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
 source-wordcount: '1140'
 ht-degree: 14%
@@ -120,7 +120,7 @@ ht-degree: 14%
    * 第一列包含与事件一致的代码：购买（多或少于3,000欧元）、一次或多次购买不购买或退款。
    * 以下四列包含客户端的名字、姓氏、电子邮件和帐号。
 
-   要加载的文件的格式配置与Adobe Campaign中数据导入期间定义的配置一致。 有关更多信息，请参阅此[&#128279;](../../platform/using/executing-import-jobs.md#step-2---source-file-selection)章节。
+   要加载的文件的格式配置与Adobe Campaign中数据导入期间定义的配置一致。 有关更多信息，请参阅此](../../platform/using/executing-import-jobs.md#step-2---source-file-selection)章节[。
 
 1. 在拆分活动中，根据&#x200B;**Event**&#x200B;列值指定要创建的子集。
 

@@ -7,7 +7,7 @@ feature: Personalization
 role: User
 hide: true
 exl-id: 8d155844-d18a-4165-9886-c3b144109f6e
-source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
+source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
 source-wordcount: '870'
 ht-degree: 3%
@@ -145,6 +145,6 @@ HTML源代码会插入到投放内容中。 例如，**[!UICONTROL Greetings]**&
 
 了解如何创建动态内容块以及如何使用动态内容块将电子邮件投放内容个性化。
 
->[!VIDEO](https://video.tv.adobe.com/v/27462?captions=chi_hans&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/24924?quality=12)
 
 [此处](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hans)提供了其他 Campaign Classic 操作方法视频。

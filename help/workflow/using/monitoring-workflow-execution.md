@@ -5,7 +5,7 @@ description: 监测工作流执行
 feature: Workflows
 hide: true
 exl-id: d589180b-8e1d-4149-9b16-3f541018a41f
-source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
+source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
 source-wordcount: '2020'
 ht-degree: 2%
@@ -280,4 +280,4 @@ Campaign Classic界面允许您使用预定义的&#x200B;**视图**&#x200B;监�
 
 ![](assets/workflow-monitoring-filter.png)
 
-有关筛选器的更多信息，请参阅[Campaign v8 （控制台）文档](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/audience/create-filters){target=_blank}。
+有关筛选器的更多信息，请参阅[Campaign v8 （控制台）文档](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-filters){target=_blank}。

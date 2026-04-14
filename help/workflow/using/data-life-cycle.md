@@ -5,7 +5,7 @@ description: 了解有关工作流中数据生命周期的更多信息
 feature: Workflows, Data Management
 hide: true
 exl-id: 366acc1e-d769-4053-9fa1-f47182627c07
-source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
+source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
 source-wordcount: '516'
 ht-degree: 4%
@@ -38,7 +38,7 @@ ht-degree: 4%
 
   利用此菜单，可访问描述性分析助手，该助手可让您生成有关过渡数据的统计和报告。
 
-  有关更多信息，请参阅此[&#128279;](../../reporting/using/using-the-descriptive-analysis-wizard.md)章节。
+  有关更多信息，请参阅此](../../reporting/using/using-the-descriptive-analysis-wizard.md)章节[。
 
 在执行工作流时清除目标数据。 只能访问最后一个工作表。 您可以配置工作流以使所有工作表保持可访问状态：选中工作流属性中的&#x200B;**[!UICONTROL Keep the result of interim populations between two executions]**&#x200B;选项。
 

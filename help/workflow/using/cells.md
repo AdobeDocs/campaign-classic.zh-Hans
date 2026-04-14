@@ -5,7 +5,7 @@ description: 单元格
 feature: Workflows, Targeting Activity
 hide: true
 exl-id: 7b562dba-7e4b-40a7-91db-7b9379de44ca
-source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
+source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
 source-wordcount: '127'
 ht-degree: 8%
@@ -49,4 +49,4 @@ ht-degree: 8%
                 </container>
 ```
 
-Adobe Campaign中的登录表单个性化是为专家用户保留的。 有关更多信息，请参阅此[&#128279;](../../configuration/using/identifying-a-form.md)章节。
+Adobe Campaign中的登录表单个性化是为专家用户保留的。 有关更多信息，请参阅此](../../configuration/using/identifying-a-form.md)章节[。

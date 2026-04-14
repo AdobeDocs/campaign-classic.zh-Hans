@@ -5,7 +5,7 @@ description: 分布式营销入门
 feature: Distributed Marketing
 hide: true
 exl-id: c166409b-e040-491e-840a-a41310935d75
-source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
+source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
 source-wordcount: '136'
 ht-degree: 3%
@@ -26,7 +26,7 @@ Adobe Campaign提供&#x200B;**分布式营销**&#x200B;应用程序，用于在�
 
 >[!NOTE]
 >
->要了解有关Adobe Campaign的分布式营销及其使用方式的更多信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/zh-hans/docs/campaign/automation/distributed-marketing/about-distributed-marketing){target=_blank}。
+>要了解有关Adobe Campaign的分布式营销及其使用方式的更多信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/en/docs/campaign/automation/distributed-marketing/about-distributed-marketing){target=_blank}。
 
 <!--
 ## Terminology {#terminology}

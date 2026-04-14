@@ -5,7 +5,7 @@ description: 加载投放内容
 feature: Workflows
 hide: true
 exl-id: a52baffd-402b-4b33-ab72-ac954e4dee85
-source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
+source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
 source-wordcount: '317'
 ht-degree: 2%
@@ -55,4 +55,4 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->有关SFTP服务器使用情况的最佳实践和疑难解答详情，请参阅此页面[&#128279;](../../platform/using/sftp-server-usage.md)。
+>有关SFTP服务器使用情况的最佳实践和疑难解答详情，请参阅此页面[](../../platform/using/sftp-server-usage.md)。

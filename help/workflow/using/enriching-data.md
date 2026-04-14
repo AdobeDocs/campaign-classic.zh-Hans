@@ -5,7 +5,7 @@ description: 了解有关扩充工作流活动的更多信息
 feature: Workflows, Enrichment Activity
 hide: true
 exl-id: ab786cf1-74a4-4185-a63d-84e776a2f776
-source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
+source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
 source-wordcount: '752'
 ht-degree: 0%
