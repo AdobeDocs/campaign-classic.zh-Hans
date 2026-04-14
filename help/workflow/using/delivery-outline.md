@@ -5,7 +5,7 @@ description: 了解有关投放概要工作流活动的更多信息
 feature: Workflows, Targeting Activity
 hide: true
 exl-id: b4dee085-ccc4-43fd-850d-1501a99272aa
-source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
+source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
 source-wordcount: '267'
 ht-degree: 1%

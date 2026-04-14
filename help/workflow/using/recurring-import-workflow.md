@@ -5,7 +5,7 @@ description: 了解如何为定期导入配置工作流模板
 feature: Workflows, Data Management
 hide: true
 exl-id: e6e140cb-8de0-4ab9-bddc-95abe04124c6
-source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
+source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
 source-wordcount: '1015'
 ht-degree: 0%

@@ -4,7 +4,7 @@ title: 传输到中间源
 description: 了解有关传输到中间源工作流的更多信息
 hide: true
 feature: Workflows
-source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
+source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
 source-wordcount: '107'
 ht-degree: 1%
