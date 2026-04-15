@@ -7,7 +7,7 @@ role: User
 level: Beginner
 hide: true
 exl-id: 8ed11e96-9f23-4e2e-bae2-25c51cfb549a
-source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
+source-git-commit: 4cae5fdb2b78f446f84352046b523d8862e9060c
 workflow-type: tm+mt
 source-wordcount: '2336'
 ht-degree: 100%
@@ -227,3 +227,4 @@ _2022 年 11 月 21 日_
 * 修复了对 nmsDeliveryMapping 文件夹具有读取访问权限的用户尝试运行活动或工作流时会导致错误的问题。(NEO-48230)
 * 修复了会导致 `JSPContext.sqlExecWithOneParam` 功能无法正常运行的问题。(NEO-50066)
 * 修复了各种重定向错误。(NEO-50030)
+
