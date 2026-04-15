@@ -7,9 +7,9 @@ user-guide-title: Campaign Classic v7 指南
 user-guide-description: Adobe Campaign Classic v7 产品文档。
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
+source-git-commit: 4cae5fdb2b78f446f84352046b523d8862e9060c
 workflow-type: tm+mt
-source-wordcount: '2683'
+source-wordcount: '2684'
 ht-degree: 68%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 68%
    + 之前版本  {#previous-releases}
       + [2025](rn/using/release-2025.md)
       + [2024](rn/using/release-2024.md)
-      + {hide-from-toc}[2023](rn/using/release-2023.md)
+      + {hide-from-toc}[2023 - 隐藏](rn/using/release-2023.md)
       + {hide-from-toc}[2022 - 隐藏](rn/using/release-2022.md)
       + {hide-from-toc}[2021 - 隐藏](rn/using/release-2021.md)
       + {hide-from-toc}[[!DNL Gold Standard - HIDDEN]](rn/using/gold-standard.md)
@@ -137,8 +137,8 @@ ht-degree: 68%
       + {hide-from-toc}[将Campaign SDK集成到移动应用程序](delivery/using/integrating-campaign-sdk-into-the-mobile-application.md)
       + 配置移动应用程序{#configure-the-mobile-app}
          + {hide-from-toc}[开始使用应用程序配置 — 隐藏](delivery/using/get-started-app-config.md)
-         + {hide-from-toc}[iOS的配置步骤 — 隐藏](delivery/using/configuring-the-mobile-application.md)
-         + {hide-from-toc}[Android的配置步骤 — 隐藏](delivery/using/configuring-the-mobile-application-android.md)
+         + iOS的{hide-from-toc}[配置步骤 — 隐藏](delivery/using/configuring-the-mobile-application.md)
+         + Android的{hide-from-toc}[配置步骤 — 隐藏](delivery/using/configuring-the-mobile-application-android.md)
       + 创建推送通知{#create-a-push-msg}
          + {hide-from-toc}[为iOS创建推送消息 — 隐藏](delivery/using/create-notifications-ios.md)
          + {hide-from-toc}[为Android创建推送消息 — 隐藏](delivery/using/create-notifications-android.md)
@@ -458,7 +458,7 @@ ht-degree: 68%
       + {hide-from-toc}[使用重复数据删除活动的合并功能 — HIDDEN](workflow/using/deduplication-merge.md)
       + {hide-from-toc}[设置循环导入工作流 — 隐藏](workflow/using/recurring-import-workflow.md)
    + 设计查询 {#designing-queries}
-      + {hide-from-toc}[使用增量查询每季度更新列表 — HIDDEN](workflow/using/quarterly-list-update.md)
+      + 使用增量查询{hide-from-toc}[每季度更新列表 — HIDDEN](workflow/using/quarterly-list-update.md)
    + 查询和筛选 {#query-and-filter-hidden}
       + {hide-from-toc}[查询收件人表 — 隐藏](workflow/using/querying-recipient-table.md)
       + {hide-from-toc}[查询传递信息 — 隐藏](workflow/using/querying-delivery-information.md)
