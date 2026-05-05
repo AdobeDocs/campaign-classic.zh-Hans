@@ -8,10 +8,10 @@ audience: integrations
 content-type: reference
 topic-tags: connecting-via-an-adobe-id
 exl-id: 1ce89c3a-1fe6-4ed6-9547-2eb9713a0ec3
-source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
+source-git-commit: f7f88eac33921f60dfe72ce2200132c5ac6acf49
 workflow-type: tm+mt
-source-wordcount: '413'
-ht-degree: 1%
+source-wordcount: '501'
+ht-degree: 5%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 1%
 
 应该只存在具有以下设置的&#x200B;**一个**&#x200B;外部帐户：
 
-* **内部名称**：Adobe_Marketing_Cloud
+* **内部名称**： Adobe_Marketing_Cloud
 * **类型**： Adobe Marketing Cloud
 
 删除具有相同设置的任何重复外部帐户。
@@ -33,9 +33,9 @@ ht-degree: 1%
 
 如果外部帐户具有&#x200B;**产品上下文**&#x200B;字段，请检查其值是否设置为： **dma_campaign_classic**
 
-确保您的产品上下文与Campaign和Experience Cloud相同。
+确保Campaign和Experience Cloud的产品上下文相同。
 
-例如，如果未显示&#x200B;**产品上下文**，则促销活动和Experience Cloud中的默认产品上下文都应是&#x200B;**dma_campaign**。 如果出现&#x200B;**产品上下文**&#x200B;字段，则促销活动和Experience Cloud中的默认产品上下文都应是&#x200B;**dma_campaign_classic**。
+例如，如果未显示&#x200B;**产品上下文**，则Campaign和Experience Cloud中的默认产品上下文都应是&#x200B;**dma_campaign**。 如果出现&#x200B;**产品上下文**&#x200B;字段，则Campaign和Experience Cloud中的默认产品上下文都应是&#x200B;**dma_campaign_classic**。
 
 **[!UICONTROL IMS Server URL]**
 
@@ -58,7 +58,7 @@ ht-degree: 1%
 
 **回调URL**
 
-列入允许列表 **回调URL**&#x200B;应添加到并以“https://”开头。 检查&#x200B;**回调URL**&#x200B;是否链接到相应的实例。 例如，生产实例应重定向到生产URL。
+**回调URL**&#x200B;应添加到并以“https://”开头。 检查&#x200B;**回调URL**&#x200B;是否链接到相应的实例。 例如，生产实例应重定向到生产URL。
 
 **客户端ID和密码**
 
@@ -83,3 +83,16 @@ Campaign外部帐户与IMS设置的外部帐户之间的客户端ID匹配。
 * 用户无法访问Adobe ID登录页面：
 
   请参阅前面的步骤以检查作用域配置。
+
+**WebView2缓存问题**
+
+如果您在使用Adobe ID登录到&#x200B;**[!UICONTROL Client Console]**&#x200B;时遇到问题，请尝试清除本地WebView2缓存。 在大多数情况下，这可以解决问题。 按照下面的步骤进行操作：
+
+1. 关闭&#x200B;**[!UICONTROL Client Console]**&#x200B;并停止任何正在运行的`nlclient`进程。
+
+1. 从以下位置删除所有`webview2`和`webview2Cache`文件夹：
+
+   * `C:\ProgramData\Neolane\NL_5\nlclient\`
+   * `C:\Users\<username>\AppData\Roaming\Neolane\NL_5\nlclient\`
+
+1. 重新启动&#x200B;**[!UICONTROL Client Console]**&#x200B;并使用您的Adobe ID登录。 下次启动时将自动重新创建缓存文件夹。
