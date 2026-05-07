@@ -9,14 +9,14 @@ topic-tags: introduction
 exl-id: c8fd5f75-9386-42dd-bfb6-8086a86aa324
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '88'
-ht-degree: 7%
+source-wordcount: '99'
+ht-degree: 15%
 
 ---
 
 # 关于社交媒体营销{#about-social-marketing}
 
-用于管理社交网络的&#x200B;**管理社交网络** （社交营销）应用程序允许您通过X (以前称为Twitter)与客户和潜在客户进行交互。
+用于管理社交网络的&#x200B;**管理社交网络** （社交营销）应用程序允许您通过X（以前称为Twitter）与客户和潜在客户进行交互。
 
 在[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/connect/ac-tw.html?lang=zh-Hans){target="_blank"}中了解集成Campaign和X的关键步骤。
 

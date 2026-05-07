@@ -7,8 +7,8 @@ hide: true
 exl-id: 3a84236f-89e5-4b8b-9a98-afdc006fd6e0
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '632'
-ht-degree: 67%
+source-wordcount: '842'
+ht-degree: 70%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 67%
 
 需要对Campaign Classic的支持？ 您找到了正确的地方！
 
-使用我们的常见问题解答、最佳实践、在线资源和支持门户获取支持。您还可以加入 Campaign 社区、询问专家或登记问题。
+使用我们的常见问题解答、最佳实践、在线资源和支持门户获取支持。 您还可以加入 Campaign 社区、询问专家或登记问题。
 
 <table>
     <tr>
@@ -47,7 +47,7 @@ ht-degree: 67%
         <ul>
         <li><a href="production/using/performance-and-throughput-issues.md">性能和吞吐量问题</a></li>
         <li><a href="delivery/using/delivery-performance-troubleshooting.md">投放性能</a></li>
-        <li><a href="https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html?lang=zh-Hans" target="_blank">优化工作流性能</a></li>
+        <li><a href="https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html" target="_blank">优化工作流性能</a></li>
         <li><a href="workflow/using/monitoring-workflow-execution.md">工作流执行疑难解答</a></li>
         <li><a href="platform/using/sftp-server-usage.md">SFTP 服务器使用情况</a></li>
         <li><a href="delivery/using/delivery-failures-quarantine.md">了解投放失败</a></li>
@@ -55,14 +55,14 @@ ht-degree: 67%
     </td>
    <td valign="top">
         <ul>
-        <li><a href="https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html?lang=zh-Hans" target="_blank">工作流最佳实践</a></li>
+        <li><a href="https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html" target="_blank">工作流最佳实践</a></li>
         <li><a href="workflow/using/monitoring-technical-workflows.md">技术工作流监测</a></li>
         <li><a href="https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/analytics/tracking/tracking" target="_blank">了解跟踪管理</a></li>
         <li><a href="production/using/monitoring-guidelines.md">发现监控工具</a></li>
         <li><a href="platform/using/import-export-workflows.md">使用工作流导入数据</a></li>
         <li><a href="delivery/using/steps-sending-the-delivery.md">分多个批次发送消息</a></li>
         <li><a href="delivery/using/defining-the-email-content.md">设计电子邮件内容</a></li>
-        <li><a href="https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/delivery-best-practices.html?lang=zh-Hans" target="_blank">投放最佳实践</a></li>
+        <li><a href="https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/delivery-best-practices.html" target="_blank">投放最佳实践</a></li>
         </ul>
     </td>
     <td valign="top">
@@ -92,13 +92,13 @@ Campaign控制面板允许您管理每个实例的设置并跟踪使用情况，
 
 >[!NOTE]
 >
->所有管理员用户都可访问控制面板。[此小节](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=zh-Hans#discover-control-panel)中详细介绍了授予用户管理员访问权限的步骤。
+>所有管理员用户都可访问控制面板。 [此小节](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=zh-Hans#discover-control-panel)中详细介绍了授予用户管理员访问权限的步骤。
 >
->请注意，您的实例必须托管在AWS上，并使用最新的[GA内部版本](rn/using/rn-overview.md)进行升级。 在[本节](platform/using/launching-adobe-campaign.md#getting-your-campaign-version)中了解如何确认您的版本。要检查您的实例是否托管在 AWS 上，请按照[此页面](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=zh-Hans)中详述的步骤操作。
+>请注意，您的实例必须托管在AWS上，并使用最新的[GA内部版本](rn/using/rn-overview.md)进行升级。 在[本节](platform/using/launching-adobe-campaign.md#getting-your-campaign-version)中了解如何确认您的版本。 要检查您的实例是否托管在 AWS 上，请按照[此页面](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=zh-Hans)中详述的步骤操作。
 
 ### 如何访问控制面板？
 
-可直接从 Adobe Experience Cloud 访问控制面板。仅管理员用户可以访问。[单击此处](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/accessing-control-panel.html?lang=zh-Hans)以了解更多信息。
+可直接从 Adobe Experience Cloud 访问控制面板。 仅管理员用户可以访问。 [单击此处](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/accessing-control-panel.html?lang=zh-Hans)以了解更多信息。
 
 ### 控制面板常见问题解答
 
@@ -106,11 +106,11 @@ Campaign控制面板允许您管理每个实例的设置并跟踪使用情况，
 
 ### SFTP 管理
 
-在控制面板中，您可以与连接到您有权访问的 Campaign 实例的所有 SFTP 服务器进行交互。您可以监视其存储容量、管理允许列表上的IP地址和公共SSH密钥。 [单击此处](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/about-sftp-management.html?lang=zh-Hans)以了解更多信息。
+在控制面板中，您可以与连接到您有权访问的 Campaign 实例的所有 SFTP 服务器进行交互。 您可以监视其存储容量、管理允许列表上的IP地址和公共SSH密钥。 [单击此处](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/about-sftp-management.html)以了解更多信息。
 
 ### 子域和证书
 
-您可以监测您的子域及其证书。请参阅以下页面以了解详情：
+您可以监测您的子域及其证书。 请参阅以下页面以了解详情：
 * [子域品牌化](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/subdomains-branding.html?lang=zh-Hans)
 * [设置新子域](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/setting-up-new-subdomain.html?lang=zh-Hans)
 * [监测 SSL 证书](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/monitoring-ssl-certificates.html?lang=zh-Hans)
@@ -127,11 +127,11 @@ Campaign控制面板允许您管理每个实例的设置并跟踪使用情况，
 
 <img src="platform/using/assets/do-not-localize/icon-support.svg" width="60px">
 
-新票证系统已通过[Adobe Admin Console](https://adminconsole.adobe.com/overview){_blank}启动。 新系统要求每个用户都有新的个人帐户，并具有正确的权限。如果您发现无法使用 Adobe ID 登录，请通过 Experience League 提出访问请求，客户关怀团队将尽快为您进行设置。[了解详情](https://helpx.adobe.com/cn/enterprise/using/support-for-experience-cloud.html)
+新票证系统已通过[Adobe Admin Console](https://adminconsole.adobe.com/overview){_blank}启动。 新系统要求每个用户都有新的个人帐户，并具有正确的权限。 如果您发现无法使用 Adobe ID 登录，请通过 Experience League 提出访问请求，客户关怀团队将尽快为您进行设置。 [了解详情](https://helpx.adobe.com/cn/enterprise/using/support-for-experience-cloud.html)
 
 ### 询问专家！
 
-加入 Campaign Classic 社区：在现有问题中搜索答案，或向社区提问。[加入对话](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community?profile.language=zh-Hans){_blank}。
+加入 Campaign Classic 社区：在现有问题中搜索答案，或向社区提问。 [加入对话](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community){_blank}。
 
 ### 访问 Campaign 下载中心
 
@@ -139,6 +139,6 @@ Campaign控制面板允许您管理每个实例的设置并跟踪使用情况，
 
 ### 创建工单或开始聊天
 
-通过创建案例，您可以就您在使用 Adobe 产品的过程中遇到的任何问题联系 Adobe 客户支持团队。为帮助您解决问题或排除疑难，Adobe Admin Console 将支持您与 Adobe 客户支持团队聊天。
+通过创建案例，您可以就您在使用 Adobe 产品的过程中遇到的任何问题联系 Adobe 客户支持团队。 为帮助您解决问题或排除疑难，Adobe Admin Console 将支持您与 Adobe 客户支持团队聊天。
 
-如需在新系统中登记问题或开始聊天会话，请连接到 [Adobe Admin Console](https://adminconsole.adobe.com/overview){_blank}。请按照[本页面](https://helpx.adobe.com/cn/enterprise/using/support-for-experience-cloud.html){_blank}中所述的详细步骤进行操作。
+如需在新系统中登记问题或开始聊天会话，请连接到 [Adobe Admin Console](https://adminconsole.adobe.com/overview){_blank}。 请按照[本页面](https://helpx.adobe.com/cn/enterprise/using/support-for-experience-cloud.html){_blank}中所述的详细步骤进行操作。

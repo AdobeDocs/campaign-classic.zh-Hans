@@ -7,7 +7,7 @@ feature: Reporting, Monitoring
 exl-id: 74feb13f-0994-4a6a-ae4f-2538b07cc9c0
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '1470'
+source-wordcount: '1496'
 ht-degree: 9%
 
 ---
@@ -86,7 +86,7 @@ ht-degree: 9%
 
 >[!NOTE]
 >
->此报告中显示的域名在多维数据集级别使用的明细列表中定义。 要更改、添加或删除默认域，请编辑&#x200B;**[!UICONTROL Domains]**&#x200B;明细列表并修改值和别名。 在&#x200B;**Adobe Campaign v8 （控制台）文档**&#x200B;中了解如何[使用枚举](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}。 **[!UICONTROL Others]**&#x200B;类别包括不属于明细列表任何值的域名。
+>此报告中显示的域名在多维数据集级别使用的明细列表中定义。 要更改、添加或删除默认域，请编辑&#x200B;**[!UICONTROL Domains]**&#x200B;明细列表并修改值和别名。 在[Adobe Campaign v8 （控制台）文档](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}中了解如何&#x200B;**使用枚举**。 **[!UICONTROL Others]**&#x200B;类别包括不属于明细列表任何值的域名。
 
 **[!UICONTROL 4. Generated click streams]**
 
@@ -123,7 +123,7 @@ ht-degree: 9%
 
 ![](assets/s_ncs_user_url_report.png)
 
-您可以通过选择：要显示的得分图、时间过滤器（自操作启动以来、启动后的前6小时内等）和数据显示模式（按标签、按URL、按类别）来配置此报告的内容。 单击&#x200B;**[!UICONTROL Refresh]**&#x200B;确认您的选择。
+您可以通过选择：要显示的得分图表、时间过滤器（自操作启动以来、启动后的前6小时等）来配置此报告的内容 以及数据显示模式（按标签、按URL、按类别）。 单击 **[!UICONTROL Refresh]** 以确认您的选择。
 
 以下比率显示在报表的上半部分：
 
@@ -158,7 +158,7 @@ ht-degree: 9%
 此部分包含两个指标：
 
 * **[!UICONTROL Initial population]** ：投放定向的收件人总数。
-* **[!UICONTROL Messages rejected by the rule]** ：应用分类规则时在分析期间忽略的地址数：地址缺失、隔离、阻止列表时忽略等等。 有关类型规则的更多信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/delivery-analysis.html?lang=zh-Hans){target="_blank"}。
+* **[!UICONTROL Messages rejected by the rule]** ：应用分类规则时在分析期间忽略的地址数：地址缺失、隔离、阻止列表时忽略等等。有关类型规则的更多信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/delivery-analysis.html){target="_blank"}。
 
 **[!UICONTROL Causes of exclusion]**
 
@@ -175,7 +175,7 @@ ht-degree: 9%
 
 ## 热门点击 {#hot-clicks}
 
-此报告显示邮件内容（HTML 和/或文本）以及每个链接的点击百分比。个性化块退订链接、镜像页面链接和产品建议链接将计入总累计点击次数，但不会显示在报告中。
+此报告显示邮件内容（HTML 和/或文本）以及每个链接的点击百分比。 个性化块退订链接、镜像页面链接和产品建议链接将计入总累计点击次数，但不会显示在报告中。
 
 >[!NOTE]
 >
@@ -189,7 +189,7 @@ ht-degree: 9%
 
 ![](assets/s_ncs_user_stat_report.png)
 
-通过它，您可以跟踪投放的营销影响。 您可以通过更改时间刻度（1小时、3小时或24小时视图等）来配置值的显示方式。 单击&#x200B;**[!UICONTROL Refresh]**&#x200B;确认您的选择。
+通过它，您可以跟踪投放的营销影响。 您可以通过更改时间刻度（1小时、3小时或24小时视图等）来配置值的显示方式。 单击 **[!UICONTROL Refresh]** 以确认您的选择。
 
 此报告提供了一个值表和一个排列图，其中显示投放达到最大效率所需的时间。 使用以下指示器：
 

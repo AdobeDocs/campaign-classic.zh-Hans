@@ -10,8 +10,8 @@ topic-tags: production-procedures
 exl-id: c9d427da-6965-4945-90f0-d0770701d55e
 source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
 workflow-type: tm+mt
-source-wordcount: '445'
-ht-degree: 2%
+source-wordcount: '470'
+ht-degree: 6%
 
 ---
 
@@ -37,7 +37,7 @@ ht-degree: 2%
 
 | 文件 | 说明 |
 |---|---|
-| web.log | Web模块日志(客户端控制台、报表、SOAP API等) |
+| web.log | Web模块日志（客户端控制台、报表、SOAP API等） |
 | webmdl.log | 重定向模块的日志 |
 | watchdog.log | Adobe Campaign流程监控模块的日志 |
 | trackinglogd.log | 跟踪日志 |

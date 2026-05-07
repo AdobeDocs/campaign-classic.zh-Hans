@@ -9,7 +9,7 @@ hide: true
 exl-id: 182939bb-7aff-4667-bda9-c5d48be3b946
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '910'
+source-wordcount: '922'
 ht-degree: 1%
 
 ---
@@ -49,7 +49,7 @@ ht-degree: 1%
 
    **[!UICONTROL Anonymous coupons]** ：匿名优惠券对所有收件人都相同。 确认在&#x200B;**优惠券类型**&#x200B;菜单中选择匿名，然后单击&#x200B;**保存**&#x200B;以生成优惠券。
 
-   **[!UICONTROL Individual coupons]** ：可使用附加优惠券代码进一步个性化单个优惠券。 例如，为体育器材商店的销售创建单个优惠券。 然而，获奖者名单很长，而且他们对一项体育运动没有同样的热情。 您可以根据运动（例如足球、足球、棒球等）为各个优惠券添加代码名称，并将每个代码发送给适用的收件人。
+   **[!UICONTROL Individual coupons]** ：可使用附加优惠券代码进一步个性化单个优惠券。 例如，为体育器材商店的销售创建单个优惠券。 然而，获奖者名单很长，而且他们对一项体育运动没有同样的热情。 您可以根据运动（例如，足球、足球、棒球等）为各个优惠券添加代码名称 并将每个代码发送给适用的收件人。
 
    1. 选择“个人”时，左下方将显示一个新选项卡“优惠券”。 转到&#x200B;**[!UICONTROL Coupons]**&#x200B;选项卡并单击&#x200B;**[!UICONTROL Add]**。
    1. 在弹出窗口提示时，为各个优惠券输入唯一代码。
@@ -132,7 +132,7 @@ ht-degree: 1%
 
    ![](assets/deliv_coup_15.png)
 
-1. 单击 **[!UICONTROL Analyze]**。如果分析日志确认所有收件人有足够的赠券，请单击&#x200B;**[!UICONTROL Confirm delivery]**&#x200B;发送该赠券。
+1. 单击 **[!UICONTROL Analyze]**。 如果分析日志确认所有收件人有足够的赠券，请单击&#x200B;**[!UICONTROL Confirm delivery]**&#x200B;发送该赠券。
 
    ![](assets/deliv_coup_16.png)
 
@@ -153,7 +153,7 @@ ht-degree: 1%
 >
 >默认情况下，优惠券管理模块使用&#x200B;**nms:recipient**&#x200B;表。 [了解详情](../../configuration/using/about-data-model.md#default-recipient-table)。
 >
->在此页面[中了解如何使用自定义收件人表](../../configuration/using/about-custom-recipient-table.md)。
+>在此页面](../../configuration/using/about-custom-recipient-table.md)中了解如何使用自定义收件人表[。
 
 ## 管理优惠券不足 {#managing-insufficient-coupons}
 

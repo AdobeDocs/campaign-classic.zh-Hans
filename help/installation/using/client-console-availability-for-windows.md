@@ -10,8 +10,8 @@ topic-tags: installing-campaign-in-windows-
 exl-id: 57845eae-1f1a-42f4-b2ba-46d454677ae0
 source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
 workflow-type: tm+mt
-source-wordcount: '339'
-ht-degree: 4%
+source-wordcount: '359'
+ht-degree: 9%
 
 ---
 
@@ -42,7 +42,7 @@ https://<your Adobe Campaign server>:>port number>/nl/jsp/logon.jsp
 
 此页面要求应用程序中定义登录名和密码。
 
-在本节[&#128279;](../../installation/using/installing-the-client-console.md)中了解如何安装控制台。
+在本节](../../installation/using/installing-the-client-console.md)中了解如何安装控制台[。
 
 ## 建议最终用户升级其客户端控制台
 

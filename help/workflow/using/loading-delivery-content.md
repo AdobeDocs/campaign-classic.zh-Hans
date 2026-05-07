@@ -43,7 +43,7 @@ ht-degree: 2%
 
    ![](assets/delivery_loadcontent_activityexample.png)
 
-1. 在&#x200B;**[!UICONTROL Script]**&#x200B;活动的&#x200B;**[!UICONTROL Delivery]**&#x200B;选项卡中，添加以下命令以加载投放中导入文件的内容：
+1. 在&#x200B;**[!UICONTROL Delivery]**&#x200B;活动的&#x200B;**[!UICONTROL Script]**&#x200B;选项卡中，添加以下命令以加载投放中导入文件的内容：
 
    ```
    delivery.content.html.source=loadFile(vars.filename)
@@ -55,4 +55,4 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->有关SFTP服务器使用情况的最佳实践和疑难解答详情，请参阅此页面[&#128279;](../../platform/using/sftp-server-usage.md)。
+>有关SFTP服务器使用情况的最佳实践和疑难解答详情，请参阅此页面[](../../platform/using/sftp-server-usage.md)。

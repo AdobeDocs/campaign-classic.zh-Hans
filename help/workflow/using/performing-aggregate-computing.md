@@ -7,7 +7,7 @@ hide: true
 exl-id: 5b05788f-498b-4a84-bdde-2852900f0129
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '230'
+source-wordcount: '231'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ ht-degree: 0%
 
 要创建此示例，请应用以下步骤：
 
-1. 在&#x200B;**[!UICONTROL Data to extract]**&#x200B;中，定义主键的计数（如上一个示例所示）。 在输出列中添加字段&#x200B;**[!UICONTROL Gender]**。 检查&#x200B;**[!UICONTROL Group]**&#x200B;列中的&#x200B;**[!UICONTROL Gender]**&#x200B;选项。 这样，收件人将按性别分组。
+1. 在&#x200B;**[!UICONTROL Data to extract]**&#x200B;中，定义主键的计数（如上一个示例所示）。 在输出列中添加字段&#x200B;**[!UICONTROL Gender]**。 检查&#x200B;**[!UICONTROL Gender]**&#x200B;列中的&#x200B;**[!UICONTROL Group]**&#x200B;选项。 这样，收件人将按性别分组。
 
    ![](assets/query_editor_nveau_27.png)
 

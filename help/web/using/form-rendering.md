@@ -7,7 +7,7 @@ feature: Web Forms
 exl-id: 723a6c47-5323-4914-a014-58be493852cc
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '996'
+source-wordcount: '999'
 ht-degree: 2%
 
 ---
@@ -41,7 +41,7 @@ ht-degree: 2%
 
 ![](assets/s_ncs_admin_survey_render_edit_header.png)
 
-**[!UICONTROL Page headers]**&#x200B;和&#x200B;**[!UICONTROL Page footers]**&#x200B;部分的每一行都对应于HTML页中的一行。 单击&#x200B;**[!UICONTROL Add]**&#x200B;以创建新行。
+**[!UICONTROL Page headers]**&#x200B;和&#x200B;**[!UICONTROL Page footers]**&#x200B;部分的每一行都对应于HTML页面中的一行。 单击&#x200B;**[!UICONTROL Add]**&#x200B;以创建新行。
 
 选择现有行并单击&#x200B;**[!UICONTROL Detail]**&#x200B;按钮对其进行个性化。
 
@@ -147,7 +147,7 @@ ht-degree: 2%
 
 * 主树包含表单上下文的参数。 默认参数是Identifier（与收件人的加密标识符匹配）、Language和Origin。
 
-  有关详细信息，请参见此 [&#x200B; 页面](defining-web-forms-properties.md#form-url-parameters)。
+  有关详细信息，请参见此 [ 页面](defining-web-forms-properties.md#form-url-parameters)。
 
 * **[!UICONTROL Recipients]**&#x200B;子树包含插入到表单中并存储在数据库中的输入字段。
 
@@ -157,7 +157,7 @@ ht-degree: 2%
 
 有关详细信息，请参阅此处提供的用例： [根据所选的值显示不同的选项](use-cases-web-forms.md#displaying-different-options-depending-on-the-selected-values)。
 
-您还可以使用&#x200B;**[!UICONTROL Test]**&#x200B;对象来设置表单页面的显示条件。 有关详细信息，请参见此 [&#x200B; 页面](defining-web-forms-page-sequencing.md#conditional-page-display)。
+您还可以使用&#x200B;**[!UICONTROL Test]**&#x200B;对象来设置表单页面的显示条件。 有关详细信息，请参见此 [ 页面](defining-web-forms-page-sequencing.md#conditional-page-display)。
 
 ## 从现有表单导入元素 {#importing-elements-from-an-existing-form}
 

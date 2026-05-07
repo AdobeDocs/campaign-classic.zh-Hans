@@ -9,8 +9,8 @@ topic-tags: prerequisites-and-recommendations-
 exl-id: 1f96c3df-0ef2-4f5f-9c36-988cbcc0769f
 source-git-commit: 0507e0372a81351adc145dafdd3cbe5d5422dc00
 workflow-type: tm+mt
-source-wordcount: '743'
-ht-degree: 4%
+source-wordcount: '773'
+ht-degree: 6%
 
 ---
 
@@ -51,7 +51,7 @@ ht-degree: 4%
   cnx.dispose()
   ```
 
-列入允许列表要避免SQL注入，必须将SQL函数添加到要在Adobe Campaign中使用的。 将它们添加到允许列表后，您的操作员可在表达式编辑器中看到它们。 请参见[此页面](../../configuration/using/adding-additional-sql-functions.md)。
+要避免SQL注入，必须将SQL函数添加到要在Adobe Campaign中使用的。 将它们添加到允许列表后，您的操作员可在表达式编辑器中看到它们。 请参见[此页面](../../configuration/using/adding-additional-sql-functions.md)。
 
 >[!IMPORTANT]
 >
@@ -85,7 +85,7 @@ ht-degree: 4%
   </sysFilter>
   ```
 
-* 您还可以保护架构中定义的一些操作(SOAP方法)。 只需将具有相应命名权限的access属性设置为值即可。
+* 您还可以保护架构中定义的一些操作（SOAP方法）。 只需将具有相应命名权限的access属性设置为值即可。
 
   ```
   <method name="grantVIPAccess" access="myNewRole">
@@ -119,7 +119,7 @@ ht-degree: 4%
 
 1. 使用&#x200B;**[!UICONTROL Web application]**&#x200B;内容类型并检查&#x200B;**[!UICONTROL Visible in the customization menus]**。
 
-   有关更多信息，请参阅 [Campaign v8 文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html?lang=zh-Hans){target="_blank"}。
+   有关更多信息，请参阅 [Campaign v8 文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html){target="_blank"}。
 
    以下是&#x200B;**营销活动验证码**&#x200B;的示例：
 
@@ -230,6 +230,6 @@ if( ctx.vars.captchaValid == false ) {
 
 ![](assets/scripting-captcha6.png)
 
-列入允许列表自内部版本8797开始，要使用验证API URL，您必须通过在urlPermission节点中添加它来将其添加到serverConf文件中的：
+自内部版本8797开始，要使用验证API URL，您必须通过在urlPermission节点中添加它来将其添加到serverConf文件中的：
 
 `<url dnsSuffix="www.google.com" urlRegEx="https://www.google.com/recaptcha/api/siteverify"/>`

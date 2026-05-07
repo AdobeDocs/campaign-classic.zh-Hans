@@ -9,7 +9,7 @@ topic-tags: introduction
 exl-id: 9f7f4b6c-2ee8-4091-847d-f616d6abeb6b
 source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
 workflow-type: tm+mt
-source-wordcount: '749'
+source-wordcount: '758'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 0%
 
 此部分详细介绍与事务性消息模块架构关联的SOAP方法。
 
-两个&#x200B;**PushEvent**&#x200B;或&#x200B;**PushEvents** SOAP方法链接到两个&#x200B;**nms：rtEvent**&#x200B;和&#x200B;**nms：BatchEvent**&#x200B;数据架构。 它是确定事件是“批处理”还是“实时”类型的信息系统。
+两个&#x200B;**PushEvent**&#x200B;或&#x200B;**PushEvents** SOAP方法链接到两个&#x200B;**nms:rtEvent**&#x200B;和&#x200B;**nms:BatchEvent**&#x200B;数据架构。 它是确定事件是“批处理”还是“实时”类型的信息系统。
 
 * **PushEvent**&#x200B;允许您在消息中插入单个事件，
 * **PushEvents**&#x200B;允许您在消息中插入一系列事件。
@@ -40,7 +40,7 @@ ht-degree: 0%
 
 这两种方法都包含用于登录到事务性消息传递模块的&#x200B;**`<urn:sessiontoken>`**&#x200B;元素。 我们建议使用通过受信任的IP地址进行标识的方法。 要检索会话令牌，请执行登录SOAP调用，然后执行get令牌和注销。 对多个RT调用使用相同的令牌。 此部分中包含的示例正在使用会话令牌方法，建议使用此方法。
 
-如果您使用的是负载平衡服务器，则可以使用用户/密码身份验证（在RT消息的级别）。 例如：
+如果您使用的是负载平衡服务器，则可以使用用户/密码身份验证（在RT消息的级别）。 示例：
 
 ```
 <PushEvent xmlns="urn:nms:rtEvent">
@@ -128,7 +128,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->**nms：rtEvent**&#x200B;和&#x200B;**nms：BatchEvent**&#x200B;数据架构的描述中提供了所有授权属性及其值的详细说明。
+>**nms:rtEvent**&#x200B;和&#x200B;**nms:BatchEvent**&#x200B;数据架构的描述中提供了所有授权属性及其值的详细说明。
 
 **`<ctx>`**&#x200B;元素包含消息数据。 其XML内容是开放的，这意味着可以根据要交付的内容对其进行配置。
 

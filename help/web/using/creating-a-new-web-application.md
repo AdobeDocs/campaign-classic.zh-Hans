@@ -7,8 +7,8 @@ feature: Web Apps
 exl-id: 5ccf5a21-48aa-4c0d-8cc8-457eb07d9f74
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '365'
-ht-degree: 20%
+source-wordcount: '372'
+ht-degree: 19%
 
 ---
 
@@ -18,13 +18,13 @@ ht-degree: 20%
 
 在创建过程中选择Web应用程序类型。
 
-转到&#x200B;**营销活动**&#x200B;选项卡并选择&#x200B;**[!UICONTROL Web Applications]**&#x200B;菜单。 单击 **[!UICONTROL Create]** 按钮。选择要使用的Web应用程序模板：
+转到&#x200B;**营销活动**&#x200B;选项卡并选择&#x200B;**[!UICONTROL Web Applications]**&#x200B;菜单。 单击 **[!UICONTROL Create]** 按钮。 选择要使用的Web应用程序模板：
 
 ![](assets/webapp_create_from_campaign.png)
 
 >[!NOTE]
 >
->始终保护可能包含个人信息的页面。 请参阅[安全和隐私检查清单](https://helpx.adobe.com/cn/campaign/kb/acc-security.html#privacy)。
+>始终保护可能包含个人信息的页面。 请参阅[安全和隐私检查清单](https://helpx.adobe.com/campaign/kb/acc-security.html#privacy)。
 
 此模板确定Web应用程序的类型。 您可以创建：
 
@@ -48,7 +48,7 @@ ht-degree: 20%
    >
    >**调查管理器**&#x200B;是可选的Adobe Campaign模块。 请核实您的许可协议。
 
-1. facebook应用程序
+1. Facebook应用程序
 
    借助&#x200B;**社交营销**&#x200B;选项，Adobe Campaign允许您在Facebook应用程序中发布个性化内容。 如需详细信息，请参阅[此小节](../../social/using/about-social-marketing.md)。
 

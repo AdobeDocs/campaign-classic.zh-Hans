@@ -8,8 +8,8 @@ hide: true
 exl-id: c2f4d8d0-f0fe-4d1a-92fd-91edaf9729f3
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '1653'
-ht-degree: 10%
+source-wordcount: '1658'
+ht-degree: 9%
 
 ---
 
@@ -19,11 +19,11 @@ ht-degree: 10%
 
 操作步骤：
 
-1. **分析投放**：通过此步骤可准备要投放的消息。[了解详情](#analyzing-the-delivery)。
+1. **分析投放**：通过此步骤可准备要投放的消息。 [了解详情](#analyzing-the-delivery)。
 
    分析期间应用的规则在[此部分](#validation-process-with-typologies)中介绍。 有关可用验证模式的详情，请参阅[更改审批模式](#changing-the-approval-mode)一节。
 
-1. **发送校样**：通过此步骤可控制内容、URL、个性化等。请参阅[发送校样](steps-validating-the-delivery.md#sending-a-proof)和[定义特定校样目标](steps-defining-the-target-population.md#defining-a-specific-proof-target)以了解详情。
+1. **发送校样**：此步骤允许您控制内容、URL、个性化等。请参阅[发送校样](steps-validating-the-delivery.md#sending-a-proof)和[定义特定校样目标](steps-defining-the-target-population.md#defining-a-specific-proof-target)以了解详情。
 
 >[!IMPORTANT]
 >
@@ -62,7 +62,7 @@ ht-degree: 10%
 
 1. 等待分析完成。
 
-   分析完成后，窗口的上半部分将指示投放准备是否已完成或者是否发生任何错误。 这将列出所有验证步骤、警告和错误。彩色图标显示消息类型：
+   分析完成后，窗口的上半部分将指示投放准备是否已完成或者是否发生任何错误。 这将列出所有验证步骤、警告和错误。 彩色图标显示消息类型：
    * 蓝色图标表示信息性消息。
    * 黄色图标表示非关键处理错误。
    * 红色图标表示阻止发送投放的严重错误。
@@ -106,8 +106,8 @@ ht-degree: 10%
 目前，仅当满足以下条件时，此选项才可用：
 
 * 投放必须是电子邮件。 目前不支持其他渠道。
-* 您不得使用中间源或外部路由，只能使用批量投放路由类型。 您可以检查&#x200B;**[!UICONTROL General]**&#x200B;的&#x200B;**[!UICONTROL Delivery properties]**&#x200B;选项卡中使用的路由。
-* 无法定位来自外部文件的群体。 对于单个投放，请单击&#x200B;**[!UICONTROL To]**&#x200B;中的&#x200B;**[!UICONTROL Email parameters]**&#x200B;链接，并检查是否选择了&#x200B;**[!UICONTROL Defined in the database]**&#x200B;选项。 对于工作流中使用的投放，检查&#x200B;**[!UICONTROL Specified by the inbound event(s)]**&#x200B;选项卡中的收件人是否为&#x200B;**[!UICONTROL Delivery]**。
+* 您不得使用中间源或外部路由，只能使用批量投放路由类型。 您可以检查&#x200B;**[!UICONTROL Delivery properties]**&#x200B;的&#x200B;**[!UICONTROL General]**&#x200B;选项卡中使用的路由。
+* 无法定位来自外部文件的群体。 对于单个投放，请单击&#x200B;**[!UICONTROL Email parameters]**&#x200B;中的&#x200B;**[!UICONTROL To]**&#x200B;链接，并检查是否选择了&#x200B;**[!UICONTROL Defined in the database]**&#x200B;选项。 对于工作流中使用的投放，检查&#x200B;**[!UICONTROL Delivery]**&#x200B;选项卡中的收件人是否为&#x200B;**[!UICONTROL Specified by the inbound event(s)]**。
 * 您必须使用PostgreSQL数据库。
 
 ### 配置分析优先级 {#analysis-priority-}
@@ -128,7 +128,7 @@ ht-degree: 10%
 
 ## 发送校样 {#sending-a-proof}
 
-为了检测邮件配置中可能出现的错误，Adobe强烈建议设置投放验证周期。 反复向测试收件人发送校样，确保内容已获得批准。每次进行变更时都应发送校样，以批准内容。
+为了检测邮件配置中可能出现的错误，Adobe强烈建议设置投放验证周期。 反复向测试收件人发送校样，确保内容已获得批准。 每次进行变更时都应发送校样，以批准内容。
 
 >[!NOTE]
 >
@@ -145,7 +145,7 @@ ht-degree: 10%
 1. 开始消息分析。 请参阅[分析投放](steps-validating-the-delivery.md#analyzing-the-delivery)。
 1. 您现在可以发送投放（请参阅[发送投放](steps-sending-the-delivery.md)）。
 
-   发送投放后，验证将显示在投放列表中，并自动创建和编号。 如果要访问其内容和属性，可以对其进行编辑。 有关详细信息，请参见此 [&#x200B; 页面](about-delivery-monitoring.md)。
+   发送投放后，验证将显示在投放列表中，并自动创建和编号。 如果要访问其内容和属性，可以对其进行编辑。 有关详细信息，请参见此 [ 页面](about-delivery-monitoring.md)。
 
    ![](assets/s_ncs_user_delivery_validation_cycle_03a.png)
 
@@ -194,7 +194,7 @@ ht-degree: 10%
 
 有关分类规则的更多信息，请参阅[此页面](../../campaign-opt/using/about-campaign-typologies.md)。
 
-要编辑当前的分类，请单击&#x200B;**[!UICONTROL Edit link]**&#x200B;字段右侧的&#x200B;**[!UICONTROL Typology]**&#x200B;图标。
+要编辑当前的分类，请单击&#x200B;**[!UICONTROL Typology]**&#x200B;字段右侧的&#x200B;**[!UICONTROL Edit link]**&#x200B;图标。
 
 ![](assets/s_ncs_user_email_del_typo_tab.png)
 

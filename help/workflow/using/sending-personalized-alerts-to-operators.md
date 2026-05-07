@@ -7,7 +7,7 @@ hide: true
 exl-id: 21c97eb3-60cd-4d19-bc0f-5ba9ec17e70a
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '344'
+source-wordcount: '346'
 ht-degree: 2%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 2%
 1. 使用&#x200B;**[!UICONTROL Query]**&#x200B;活动来定位数据。
 1. 将&#x200B;**[!UICONTROL JavaScript code]**&#x200B;活动添加到工作流中，以将查询的填充保存到实例变量。
 1. 使用&#x200B;**[!UICONTROL Test]**&#x200B;活动检查群体计数。
-1. 根据&#x200B;**[!UICONTROL Alert]**&#x200B;活动结果，使用&#x200B;**[!UICONTROL Test]**&#x200B;活动向操作员发送警报。
+1. 根据&#x200B;**[!UICONTROL Test]**&#x200B;活动结果，使用&#x200B;**[!UICONTROL Alert]**&#x200B;活动向操作员发送警报。
 
 ![](assets/uc_operator_1.png)
 

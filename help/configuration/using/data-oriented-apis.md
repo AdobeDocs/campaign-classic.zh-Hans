@@ -7,7 +7,7 @@ role: Developer
 exl-id: a392c55e-541a-40b1-a910-4a6dc79abd2d
 source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '1796'
+source-wordcount: '1803'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ XML文档存储在数据库的MEMO类型字段中。
 
 ## 查询和编写器 {#query-and-writer}
 
-以下介绍模式详细介绍了数据库与客户(网页或Adobe Campaign客户端控制台)之间读取(ExecuteQuery)和写入(Writer)的低级交换。
+以下介绍模式详细介绍了数据库与客户（网页或Adobe Campaign客户端控制台）之间读取(ExecuteQuery)和写入(Writer)的低级交换。
 
 ![](assets/s_ncs_integration_webservices_schema_writer.png)
 
@@ -44,7 +44,7 @@ XML文档存储在数据库的MEMO类型字段中。
 
 这使您能够隔离基础SQL。 查询语言不依赖于底层引擎：某些函数将重新映射，这些函数可能会生成多个SELECT SQL顺序。
 
-有关详细信息，请参阅架构“xtk[”:queryDef的“ExecuteQuery”方法上的](../../configuration/using/web-service-calls.md#example-on-the--executequery--method-of-schema--xtk-querydef-)示例。
+有关详细信息，请参阅架构“xtk:queryDef”](../../configuration/using/web-service-calls.md#example-on-the--executequery--method-of-schema--xtk-querydef-)的“ExecuteQuery”方法上的[示例。
 
 **ExecuteQuery**&#x200B;方法出现在[ExecuteQuery (xtk:queryDef)](#executequery--xtk-querydef-)中。
 
@@ -110,7 +110,7 @@ Write方法在[Write / WriteCollection (xtk:session)](#write---writecollection--
 </queryDef>
 ```
 
-可以在`<subquery>`元素中定义子查询(`<condition> `)。 的语法   `<subquery> `   元素基于    `<querydef>`。
+可以在`<condition> `元素中定义子查询(`<subquery>`)。 `<subquery> `元素的语法基于`<querydef>`的语法。
 
 `<subquery>  : </subquery>`示例
 
@@ -369,7 +369,7 @@ Write方法在[Write / WriteCollection (xtk:session)](#write---writecollection--
 
 参数的绑定允许引擎设置查询中使用的参数的值。 这非常有用，因为引擎负责转义值，并且对于要检索的参数还有缓存的额外好处。
 
-当构建查询时，“绑定”值将替换为字符(？ 在ODBC中，`#[index]#`在SQL查询正文中。
+当构建查询时，“绑定”值将替换为字符(？ 在ODBC中，`#[index]#`在postgres中……) 在SQL查询正文中。
 
 ```xml
 <select>

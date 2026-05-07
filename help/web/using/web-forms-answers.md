@@ -7,7 +7,7 @@ feature: Web Forms
 exl-id: 5d48bb27-1884-47f1-acb7-dff5113565bc
 source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
 workflow-type: tm+mt
-source-wordcount: '869'
+source-wordcount: '875'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->默认参考文档是&#x200B;**nms：recipient**&#x200B;架构。 要查看它或选择新表单，请从列表中选择该表单，然后单击&#x200B;**[!UICONTROL Properties]**&#x200B;按钮。
+>默认参考文档是&#x200B;**nms:recipient**&#x200B;架构。 要查看它或选择新表单，请从列表中选择该表单，然后单击&#x200B;**[!UICONTROL Properties]**&#x200B;按钮。
 
 ### 将数据存储在局部变量中 {#storing-data-in-a-local-variable}
 
@@ -105,7 +105,7 @@ ht-degree: 0%
 
   >[!NOTE]
   >
-  >与其`<%=`字符被转义字符替换的其他字段不同，HTML内容使用`<%==`语法按原样保存。
+  >与其`<%=`字符被转义字符替换的其他字段不同，HTML内容是使用`<%==`语法按原样保存的。
 
 ## 保存Web窗体答案 {#saving-web-forms-answers}
 

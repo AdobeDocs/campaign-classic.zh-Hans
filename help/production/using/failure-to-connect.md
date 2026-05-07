@@ -10,8 +10,8 @@ topic-tags: troubleshooting
 exl-id: 3c793dc1-9654-4289-a3d2-30c3078fd848
 source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
 workflow-type: tm+mt
-source-wordcount: '371'
-ht-degree: 2%
+source-wordcount: '417'
+ht-degree: 9%
 
 ---
 
@@ -47,7 +47,7 @@ ht-degree: 2%
 </tr>
 <tr> 
 <td>Adobe Campaign是否已正确集成？</td> 
-<td>登录到<b>http(s)：//&lt;urlserver&gt;/r/test</b> URL。 服务器应返回以下类型的消息： &lt;redir status='OK' date='YYYY/MM/DD HH:MM:SS' build='XXXX' host='&lt;主机名&gt;' localHost='&lt;服务器&gt;'/&gt;
+<td>登录到<b>http(s)：//&lt;urlserver&gt;/r/test</b> URL。 服务器应返回以下类型的消息： &lt;redir status='OK' date='YYYY/MM/DD HH:MM:SS' build='XXXX' host='&lt;hostname&gt;' localHost='&lt;server&gt;'/&gt;
 如果没有获得此结果，请检查Web服务器配置，确认集成已考虑在内。</td>
 </tr>
 <tr> 
@@ -56,11 +56,11 @@ ht-degree: 2%
 </tr>
 <tr> 
 <td>连接到以下URL： <b>http(s)：//&lt;URLSERVER&gt;/nl/jsp/logon.jsp</b></td>
-<td>如果获得空白页面，请检查Adobe Campaign Web模块是否已启动。 命令nlserver pdump应返回DD/MM/YYYY的Adobe Campaign Classic Application Server (7.X YY.R内部版本XXX@SHA1)。 如果不能，请使用命令nlserver start web重新启动模块</td>
+<td>如果获得空白页面，请检查Adobe Campaign Web模块是否已启动。 命令nlserver pdump应返回DD/MM/YYYY的Adobe Campaign Classic Application Server （7.X YY.R内部版本XXX@SHA1）。 如果不能，请使用命令nlserver start web重新启动模块</td>
 </tr>
 <tr>
 <td>检查安全区域的常规配置。</td>
-<td>有关配置安全区域的详细信息，请参阅<a href="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/configuring-campaign-server.html?lang=zh-Hans#configuring-campaign-server"/>此部分。</a></td>
+<td>有关配置安全区域的详细信息，请参阅<a href="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/configuring-campaign-server.html#configuring-campaign-server"/>此部分。</a></td>
 </tr>
 <tr>
 <td>命令nlserver pdump返回<b>没有任务</b></td>

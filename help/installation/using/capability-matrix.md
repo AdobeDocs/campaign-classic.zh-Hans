@@ -6,8 +6,8 @@ feature: Installation, Architecture
 exl-id: a2c425a8-9bde-4259-9140-5ada5397ed5f
 source-git-commit: 8b38d825aa9b0595226a444e0e463362468d51b3
 workflow-type: tm+mt
-source-wordcount: '287'
-ht-degree: 26%
+source-wordcount: '323'
+ht-degree: 27%
 
 ---
 
@@ -15,11 +15,11 @@ ht-degree: 26%
 
 
 
-Adobe Campaign Classic 随附了一组模块和选项。这些模块的可用性及其使用取决于安装的部署类型。 本文详细介绍了完全托管(Managed Services)部署与内部部署之间在某些功能上存在的主要差异。
+Adobe Campaign Classic 随附了一组模块和选项。 这些模块的可用性及其使用取决于安装的部署类型。 本文详细介绍了完全托管(Managed Services)部署与内部部署之间在某些功能上存在的主要差异。
 
 本页显示托管(Managed Services)部署与内部部署之间的主要差异。 混合部署的具体情况取决于Adobe托管并在您的场所中托管的元素。
 
-在此部分[中引入了不同的托管模型](../../installation/using/hosting-models.md)。
+在此部分](../../installation/using/hosting-models.md)中引入了不同的托管模型[。
 
 ## 每个部署模型的可用性 {#capability-matrix}
 

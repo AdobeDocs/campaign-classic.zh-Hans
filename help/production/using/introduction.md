@@ -9,7 +9,7 @@ topic-tags: updating-adobe-campaign
 exl-id: 3e39a0d2-ff7e-4233-82bb-2b360f696a33
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '193'
+source-wordcount: '194'
 ht-degree: 1%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 1%
 >[!NOTE]
 >
 >对于托管/托管服务实例，您必须与Adobe管理员进行协调。\
->对于内部部署实例，您可以从Adobe顾问那里获得帮助。
+>对于内部部署实例，您可以从Adobe Consultants获得帮助。
 
 升级必须应用于安装了Adobe Campaign的所有服务器。
 

@@ -7,7 +7,7 @@ hide: true
 exl-id: 9959e22e-9aa0-410f-b22c-9ca1cac46b97
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '300'
+source-wordcount: '301'
 ht-degree: 4%
 
 ---
@@ -42,11 +42,11 @@ ht-degree: 4%
 
 1. 将&#x200B;**End**&#x200B;活动添加到&#x200B;**No**&#x200B;分支。 这样，如果工作流已经在执行，则不会执行任何操作。
 1. 将所需的活动添加到&#x200B;**是**&#x200B;分支。 在我们的示例中，**查询**&#x200B;和&#x200B;**更新数据**&#x200B;活动。
-1. 打开第一个活动，然后在&#x200B;**选项卡中添加** instance.vars.isRunning = true **[!UICONTROL Advanced]**&#x200B;命令。 这样，实例变量将设置为正在运行。
+1. 打开第一个活动，然后在&#x200B;**[!UICONTROL Advanced]**&#x200B;选项卡中添加&#x200B;**instance.vars.isRunning = true**&#x200B;命令。 这样，实例变量将设置为正在运行。
 
    ![](assets/uc_dataupdate_query.png)
 
-1. 在&#x200B;**分支的末尾添加** End **[!UICONTROL Yes]**&#x200B;活动，然后在&#x200B;**选项卡中添加** instance.vars.isRunning = false **[!UICONTROL Advanced]**&#x200B;命令。
+1. 在&#x200B;**[!UICONTROL Yes]**&#x200B;分支的末尾添加&#x200B;**End**&#x200B;活动，然后在&#x200B;**[!UICONTROL Advanced]**&#x200B;选项卡中添加&#x200B;**instance.vars.isRunning = false**&#x200B;命令。
 
    这样，只要正在执行工作流，就不会执行任何操作。
 

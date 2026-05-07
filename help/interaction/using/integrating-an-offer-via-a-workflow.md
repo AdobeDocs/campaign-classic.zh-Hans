@@ -9,7 +9,7 @@ topic-tags: delivering-an-offer
 exl-id: 33d318f3-1eb4-4c74-8c20-8b9f0442c7c3
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '1044'
+source-wordcount: '1077'
 ht-degree: 1%
 
 ---
@@ -55,7 +55,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->有关扩充活动的详细信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/enrichment.html?lang=zh-Hans){target="_blank"}。
+>有关扩充活动的详细信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/enrichment.html){target="_blank"}。
 
 例如，您可以在投放之前扩充收件人查询的数据。
 
@@ -68,7 +68,7 @@ ht-degree: 1%
 
 ### 指定优惠或调用优惠引擎 {#specifying-an-offer-or-a-call-to-the-offer-engine}
 
-配置查询后（请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html?lang=zh-Hans){target="_blank"}）：
+配置查询后（请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html){target="_blank"}）：
 
 1. 添加并打开扩充活动。
 1. 在&#x200B;**[!UICONTROL Enrichment]**&#x200B;选项卡中，选择&#x200B;**[!UICONTROL Add data]**。
@@ -99,7 +99,7 @@ ht-degree: 1%
 
 为此，请使用以下流程：
 
-1. 在活动的&#x200B;**[!UICONTROL Add data]**&#x200B;选项卡中选择&#x200B;**[!UICONTROL Enrichment]**。
+1. 在活动的&#x200B;**[!UICONTROL Enrichment]**&#x200B;选项卡中选择&#x200B;**[!UICONTROL Add data]**。
 1. 在选择要添加的数据类型的窗口中，选择&#x200B;**[!UICONTROL A link]**。
 1. 选择要建立的链接类型及其目标。 在本例中，目标是选件架构。
 

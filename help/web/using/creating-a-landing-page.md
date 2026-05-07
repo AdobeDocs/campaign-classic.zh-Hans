@@ -7,7 +7,7 @@ feature: Landing Pages
 exl-id: 71c737c2-b0d6-4ae8-a5df-28a08dff82d7
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '736'
+source-wordcount: '739'
 ht-degree: 2%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 2%
 
 此用例展示了如何使用数字编辑器从Adobe Campaign控制台创建登陆页面。
 
-在Adobe Campaign中开始配置登录页之前，请确保您具有&#x200B;**一个或多个用于表示HTML页的模板**。
+在Adobe Campaign中开始配置登陆页面之前，请确保您具有&#x200B;**一个或多个用于表示HTML页面的模板**。
 
 此用例的主要目的是使用DCE中的函数使登陆页面表单字段与Adobe Campaign中的内部字段相对应。
 
@@ -89,7 +89,7 @@ ht-degree: 2%
 
 >[!CAUTION]
 >
->**DCE为加载的HTML页执行JavaScript代码。HTML模板中可能出现**&#x200B;个JavaScript错误，这些错误会显示在Adobe Campaign界面中。 这些错误与编辑器无关。 要检查导入的文件中是否没有错误，建议在将文件导入DCE之前，在Web浏览器中测试它们。
+>**DCE为加载的HTML页面执行JavaScript代码。** HTML模板中可能出现的JavaScript错误，这些错误可能会显示在Adobe Campaign界面中。 这些错误与编辑器无关。 要检查导入的文件中是否没有错误，建议在将文件导入DCE之前，在Web浏览器中测试它们。
 
 ## 步骤2 — 配置内容 {#step-2---configuring-the-content}
 

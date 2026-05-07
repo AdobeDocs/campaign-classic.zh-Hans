@@ -7,7 +7,7 @@ badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v
 exl-id: afb11ab5-bd60-4262-9dd1-fcda19cdaca0
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '278'
+source-wordcount: '283'
 ht-degree: 0%
 
 ---
@@ -56,6 +56,6 @@ Adobe Campaign提供了多种类型的报表，可通过客户控制台或Intern
 
 ![](assets/reporting_on_a_delivery.png)
 
-对于列表、服务、选件等，此原则相同。 如下所示：
+列表、服务、选件等的原理相同，如下所示：
 
 ![](assets/reporting_on_an_offer.png)

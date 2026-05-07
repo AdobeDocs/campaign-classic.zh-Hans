@@ -1,17 +1,17 @@
 ---
 product: campaign
-title: 互动和优惠管理
+title: 互动和产品建议管理
 description: 了解如何根据资格规则将最佳优惠发送给您的联系人
 feature: Interaction, Offers
 exl-id: 62b8fdcd-8423-496c-8407-ab89a3a70721
 source-git-commit: de9ff0b50d819038c97e8515ddb7d6cfeb4547a1
 workflow-type: tm+mt
-source-wordcount: '268'
+source-wordcount: '293'
 ht-degree: 6%
 
 ---
 
-# 互动和优惠管理{#interaction-and-offer-management}
+# 互动和产品建议管理{#interaction-and-offer-management}
 
 
 
@@ -33,4 +33,4 @@ ht-degree: 6%
 |---|---|
 | [交互实施步骤](../../interaction/using/implementation-steps.md) | [正在测试选件分发](../../interaction/using/about-offers-simulation.md) |
 | [实时/设计环境](../../interaction/using/live-design-environments.md) | [在电子邮件中添加选件](../../interaction/using/integrating-an-offer-via-the-wizard.md) |
-| [创建优惠空间](../../interaction/using/creating-offer-spaces.md) | [用例：在网站中添加选件](../../interaction/using/offers-on-an-inbound-channel.md) |
+| [创建产品建议空间](../../interaction/using/creating-offer-spaces.md) | [用例：在网站中添加选件](../../interaction/using/offers-on-an-inbound-channel.md) |

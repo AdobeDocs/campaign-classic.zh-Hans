@@ -1,17 +1,17 @@
 ---
 product: campaign
-title: 关于优惠模拟
-description: 关于优惠模拟
+title: 关于产品建议模拟
+description: 关于产品建议模拟
 feature: Interaction, Offers
 exl-id: facaa88e-1fa2-4189-9d8f-348aaef3e235
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '237'
+source-wordcount: '264'
 ht-degree: 3%
 
 ---
 
-# 关于优惠模拟{#about-offers-simulation}
+# 关于产品建议模拟{#about-offers-simulation}
 
 
 
@@ -44,7 +44,7 @@ ht-degree: 3%
 
 1. 指定模拟范围。
 
-   有关详细信息，请参阅作用域[&#128279;](../../interaction/using/simulation-scope.md#definition-of-the-scope)的定义。
+   有关详细信息，请参阅作用域](../../interaction/using/simulation-scope.md#definition-of-the-scope)的[定义。
 
    ![](assets/offer_simulation_004.png)
 

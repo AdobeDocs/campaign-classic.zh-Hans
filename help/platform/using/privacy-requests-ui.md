@@ -9,7 +9,7 @@ topic-tags: starting-with-adobe-campaign
 exl-id: 73b90d79-88b6-4aaf-8103-4564de5e06be
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '774'
+source-wordcount: '781'
 ht-degree: 100%
 
 ---
@@ -22,17 +22,17 @@ ht-degree: 100%
 
 ## 创建隐私请求 {#create-privacy-request-ui}
 
-**Adobe Campaign 界面**&#x200B;允许您创建隐私请求并跟踪其演变。要创建新的隐私请求，请按照以下说明操作：
+**Adobe Campaign 界面**&#x200B;允许您创建隐私请求并跟踪其演变。 要创建新的隐私请求，请按照以下说明操作：
 
 1. 访问 **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Privacy Requests]** 下的隐私请求文件夹。
 
    ![](assets/privacy-requests-folder.png)
 
-1. 在此屏幕中，可以查看当前所有的隐私请求、其状态和日志。单击 **[!UICONTROL New]** 以创建隐私请求。
+1. 在此屏幕中，可以查看当前所有的隐私请求、其状态和日志。 单击 **[!UICONTROL New]** 以创建隐私请求。
 
    ![](assets/privacy-request-new.png)
 
-1. 选择 **[!UICONTROL Regulation]**（GDPR、CCPA、PDPA 或 LGPD）、**[!UICONTROL Request type]**（访问或删除），选择 **[!UICONTROL Namespace]** 并输入 **[!UICONTROL Reconciliation value]**。如果您使用电子邮件作为命名空间，请键入数据主体的电子邮件。
+1. 选择 **[!UICONTROL Regulation]**（GDPR、CCPA、PDPA 或 LGPD）、**[!UICONTROL Request type]**（访问或删除），选择 **[!UICONTROL Namespace]** 并输入 **[!UICONTROL Reconciliation value]**。 如果您使用电子邮件作为命名空间，请键入数据主体的电子邮件。
 
    ![](assets/privacy-request-properties.png)
 
@@ -54,20 +54,20 @@ ht-degree: 100%
 * 收件人跟踪日志 (trackingLogRcp)
 * 归档的事件投放日志 (broadLogEventHisto)
 * 收件人列表内容 (rcpGrpRel)
-* 访客优惠建议 (propositionVisitor)
+* 访客产品建议提议 (propositionVisitor)
 * 访客 (visitor)
 * 订阅历史记录 (subHisto)
 * 订阅 (subscription)
-* 收件人优惠建议 (propositionRcp)
+* 收件人产品建议提议 (propositionRcp)
 
-如果您创建的自定义表单具有指向收件人表（自有类型）的链接，则也会考虑这些资源。例如，如果您具有链接到收件人表的事务表和链接到该事务表的事务详细信息表，则这两个表都将被考虑在内。
+如果您创建的自定义表单具有指向收件人表（自有类型）的链接，则也会考虑这些资源。 例如，如果您具有链接到收件人表的事务表和链接到该事务表的事务详细信息表，则这两个表都将被考虑在内。
 
 >[!IMPORTANT]
 >
->如果使用用户档案删除工作流执行隐私批量请求，请考虑以下说明：
->* 通过工作流删除用户档案不会处理子表。
+>如果使用轮廓删除工作流执行隐私批量请求，请考虑以下说明：
+>* 通过工作流删除轮廓不会处理子表。
 >* 您需要处理所有子表的删除工作。
->* Adobe 建议您创建一个 ETL 工作流，该工作流会在“隐私访问”表中添加要删除的行，并让 **[!UICONTROL Delete privacy requests data]** 工作流执行删除工作。出于性能考虑，我们建议每天最多删除 200 个用户档案。
+>* Adobe 建议您创建一个 ETL 工作流，该工作流会在“隐私访问”表中添加要删除的行，并让 **[!UICONTROL Delete privacy requests data]** 工作流执行删除工作。 出于性能考虑，我们建议每天最多删除 200 个轮廓。
 
 ## 隐私请求状态 {#privacy-request-statuses}
 
@@ -77,25 +77,25 @@ ht-degree: 100%
 * **[!UICONTROL Processing]** / **[!UICONTROL Retry in progress]**：工作流正在处理请求。
 * **[!UICONTROL Delete pending]**：工作流已识别要删除的所有收件人数据。
 * **[!UICONTROL Delete in progress]**：工作流正在处理删除。
-* **[!UICONTROL Delete Confirmation Pending]**（在两步流程模式下删除请求）：工作流已处理访问请求。需要手动确认以执行删除。该按钮的可用期限为 15 天。
+* **[!UICONTROL Delete Confirmation Pending]**（在两步流程模式下删除请求）：工作流已处理访问请求。 需要手动确认以执行删除。 该按钮的可用期限为 15 天。
 * **[!UICONTROL Complete]**：请求的处理已完成，并且没有错误。
-* **[!UICONTROL Error]**：工作流遇到错误。原因显示在 **[!UICONTROL Request status]** 列的隐私请求列表中。例如，**[!UICONTROL Error data not found]** 表示在数据库中找不到与数据主体的 **[!UICONTROL Reconciliation value]** 匹配的收件人数据。
+* **[!UICONTROL Error]**：工作流遇到错误。 原因显示在 **[!UICONTROL Request status]** 列的隐私请求列表中。 例如，**[!UICONTROL Error data not found]** 表示在数据库中找不到与数据主体的 **[!UICONTROL Reconciliation value]** 匹配的收件人数据。
 
 ## 两步流程 {#two-step-process}
 
-默认情况下，将激活&#x200B;**两步流程**。使用此模式创建新的删除请求时，Adobe Campaign 始终会先执行访问请求。这样您可以在确认删除之前确认数据。
+默认情况下，将激活&#x200B;**两步流程**。 使用此模式创建新的删除请求时，Adobe Campaign 始终会先执行访问请求。 这样您可以在确认删除之前确认数据。
 
-您可以从隐私请求版本屏幕更改此模式。单击 **[!UICONTROL Advanced settings]**.
+您可以从隐私请求版本屏幕更改此模式。 单击 **[!UICONTROL Advanced settings]**。
 
 ![](assets/privacy-request-advanced-settings.png)
 
-激活两步流程模式后，新的删除请求的状态将更改为 **[!UICONTROL Confirm Delete Pending]**。从隐私请求屏幕下载生成的 XML 文件并确认数据。要确认清除数据，请单击 **[!UICONTROL Confirm delete data]** 按钮。
+激活两步流程模式后，新的删除请求的状态将更改为 **[!UICONTROL Confirm Delete Pending]**。 从隐私请求屏幕下载生成的 XML 文件并确认数据。 要确认清除数据，请单击 **[!UICONTROL Confirm delete data]** 按钮。
 
 ![](assets/privacy-request-delete-data.png)
 
 ## JSSP URL {#jspp-url}
 
-处理访问请求时，Adobe Campaign 会生成一个 JSSP，它会从数据库中检索收件人数据并将其导出到存储在本地计算机上的 XML 文件中。JSSP URL 定义如下：
+处理访问请求时，Adobe Campaign 会生成一个 JSSP，它会从数据库中检索收件人数据并将其导出到存储在本地计算机上的 XML 文件中。 JSSP URL 定义如下：
 
 ```
 "$(serverUrl)+'/nms/gdpr.jssp?id='+@id"
@@ -103,9 +103,9 @@ ht-degree: 100%
 
 其中 @id 是隐私请求 ID。
 
-此 URL 存储在 **[!UICONTROL Privacy Requests (gdprRequest)]** 模式的 **[!UICONTROL "File location" (@urlFile)]** 字段中。
+此 URL 存储在 **[!UICONTROL Privacy Requests (gdprRequest)]** 架构的 **[!UICONTROL "File location" (@urlFile)]** 字段中。
 
-这项信息在数据库中保存 90 天。技术工作流清理请求后，信息就会从数据库中删除，URL 就会过期。从网页下载数据之前，请检查 URL 是否仍然有效。
+这项信息在数据库中保存 90 天。 技术工作流清理请求后，信息就会从数据库中删除，URL 就会过期。 从网页下载数据之前，请检查 URL 是否仍然有效。
 
 以下是数据主体的数据文件示例：
 
@@ -151,4 +151,4 @@ ht-degree: 100%
 </body> </html>
 ```
 
-由于访问数据主体的数据文件受到限制，因此必须禁用网页匿名访问。只有拥有 **[!UICONTROL Privacy Data Right]** 指明权限的操作员才能登录页面并下载数据。
+由于访问数据主体的数据文件受到限制，因此必须禁用网页匿名访问。 只有拥有 **[!UICONTROL Privacy Data Right]** 指明权限的操作员才能登录页面并下载数据。

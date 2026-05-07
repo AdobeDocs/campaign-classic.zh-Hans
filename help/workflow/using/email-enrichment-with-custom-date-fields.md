@@ -7,7 +7,7 @@ hide: true
 exl-id: 85e0ec2a-b7cb-4d0b-a281-9ad72594403a
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '538'
+source-wordcount: '540'
 ht-degree: 3%
 
 ---
@@ -46,7 +46,7 @@ ht-degree: 3%
 
    ![](assets/uc_enrichment_4.png)
 
-1. 单击 **[!UICONTROL Finish]**。然后，在&#x200B;**[!UICONTROL General]**&#x200B;活动的&#x200B;**[!UICONTROL Split]**&#x200B;选项卡中，单击&#x200B;**[!UICONTROL Generate complement]**&#x200B;类别中的&#x200B;**[!UICONTROL Results]**。
+1. 单击 **[!UICONTROL Finish]**。 然后，在&#x200B;**[!UICONTROL Split]**&#x200B;活动的&#x200B;**[!UICONTROL General]**&#x200B;选项卡中，单击&#x200B;**[!UICONTROL Results]**&#x200B;类别中的&#x200B;**[!UICONTROL Generate complement]**。
 
    利用&#x200B;**[!UICONTROL Complement]**&#x200B;结果，您可以添加投放活动或更新列表。 此处，我们刚刚添加了一个&#x200B;**[!UICONTROL End]**&#x200B;活动。
 
@@ -81,7 +81,7 @@ ht-degree: 3%
 
    ![](assets/uc_enrichment_12.png)
 
-1. 单击 **[!UICONTROL Ok]**。您的扩充现已准备就绪。
+1. 单击 **[!UICONTROL Ok]**。 您的扩充现已准备就绪。
 
 在您的&#x200B;**[!UICONTROL Enrichment]**&#x200B;活动后，您可以添加投放。 在本例中，我们添加了电子邮件投放，以向收件人发送包含有效日期的特殊优惠，供本月庆祝其生日的客户使用。
 
@@ -92,7 +92,7 @@ ht-degree: 3%
 1. 双击您的&#x200B;**[!UICONTROL Email delivery]**&#x200B;活动以开始个性化您的投放。
 1. 向投放添加&#x200B;**[!UICONTROL Label]**&#x200B;并单击&#x200B;**[!UICONTROL Continue]**。
 1. 单击&#x200B;**[!UICONTROL Save]**&#x200B;以创建您的电子邮件投放。
-1. 在电子邮件投放&#x200B;**[!UICONTROL Approval]**&#x200B;的&#x200B;**[!UICONTROL Properties]**&#x200B;选项卡中签入&#x200B;**[!UICONTROL Confirm delivery before sending option]**&#x200B;是否已选中。
+1. 在电子邮件投放&#x200B;**[!UICONTROL Properties]**&#x200B;的&#x200B;**[!UICONTROL Approval]**&#x200B;选项卡中签入&#x200B;**[!UICONTROL Confirm delivery before sending option]**&#x200B;是否已选中。
 
    然后，启动工作流以使用定向信息扩充叫客过渡。
 

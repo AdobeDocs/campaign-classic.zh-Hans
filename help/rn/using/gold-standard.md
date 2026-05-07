@@ -9,8 +9,8 @@ hide: true
 exl-id: 9e3a11b1-3070-4d90-91d5-7c559bdd500e
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '1774'
-ht-degree: 100%
+source-wordcount: '2018'
+ht-degree: 98%
 
 ---
 
@@ -37,8 +37,8 @@ _2021 年 8 月 27 日_
 
 版本 9032@99a3894 包含以下修复：
 
-* 已对跟踪签名功能进行改进，以防止出现与第三方工具（电子邮件客户端、Internet 浏览器等）处理特殊字符的方式相关的错误。URL 参数现已经过编码。
-* 修复了日期选取器的问题，该问题可能导致控制台显示阻止程序错误消息。(NEO-36345)
+* 跟踪签名功能已得到改进，以防止与第三方工具（电子邮件客户端、Internet浏览器等）访问方式相关的错误 处理特殊字符。 URL 参数现已经过编码。
+* 修复了日期选取器的问题，该问题可能导致控制台显示阻止程序错误消息。 (NEO-36345)
 
 ### [!DNL Gold Standard] 11 版本{#gs-11}
 
@@ -51,13 +51,13 @@ _2021 年 4 月 14 日_
 * 修复了导致 IMS 连接屏幕上出现持续错误消息的客户端控制台回退问题。 (NEO-34821)
 * 需要安装此控制台版本来保持 [IMS 访问](../../technotes/using/ims-updates.md)。
 
-**必须执行仅控制台升级。无需升级服务器。**
+**必须执行仅控制台升级。 无需升级服务器。**
 
 >[!CAUTION]
 >
-> * 如果您要通过 Adobe Identity Management Service (IMS) 使用 Adobe ID 连接到 Campaign，则必须升级 Campaign 服务器和客户端控制台才能在 **2021 年 6 月 30 日**&#x200B;后连接到 Campaign。[了解详情](../../technotes/using/ims-updates.md)
+> * 如果您要通过 Adobe Identity Management Service (IMS) 使用 Adobe ID 连接到 Campaign，则必须升级 Campaign 服务器和客户端控制台才能在 **2021 年 6 月 30 日**&#x200B;后连接到 Campaign。 [了解详情](../../technotes/using/ims-updates.md)
 > * 此版本附带[安全修复](https://helpx.adobe.com/cn/security/products/campaign/apsb21-04.html)：必须升级以增强环境安全性。
-> * 如果是通过 OAuth 身份验证使用 Experience Cloud Triggers 集成，则需要按照[此页面](../../integrations/using/about-triggers.md#implement)中的说明移至 Adobe I/O。Campaign 的旧版 oAuth 身份验证模式已于 **2021 年 9 月**[停用](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411?profile.language=zh-Hans)。托管环境的支持时间可延长至 **2022 年 2 月 23 日**。作为内部部署或混合型部署客户，请联系 Adobe 客户关怀团队，将支持延长至 2022 年 2 月。您必须向 Adobe 提供 [OAuth 应用程序的 AppID](../../integrations/using/configuring-pipeline.md#step-optional)。
+> * 如果是通过 OAuth 身份验证使用 Experience Cloud Triggers 集成，则需要按照[此页面](../../integrations/using/about-triggers.md#implement)中的说明移至 Adobe I/O。 Campaign 的旧版 oAuth 身份验证模式已于 **2021 年 9 月**[停用](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411)。 托管环境的支持时间可延长至 **2022 年 2 月 23 日**。 作为内部部署或混合型部署客户，请联系 Adobe 客户关怀团队，将支持延长至 2022 年 2 月。 您必须向 Adobe 提供 [OAuth 应用程序的 AppID](../../integrations/using/configuring-pipeline.md#step-optional)。
 >
 >在[[!DNL Gold Standard] 本节](../../rn/using/gold-standard.md)中了解详情
 
@@ -65,9 +65,9 @@ _2021 年 3 月 2 日_
 
 内部版本 9032@10c2709 包含以下修复：
 
-* 修复了导致无法使用某些控制台组件（如投放中的日期选择器和图像管理）的回退问题。(NEO-31453, NEO-31454)
+* 修复了导致无法使用某些控制台组件（如投放中的日期选择器和图像管理）的回退问题。 (NEO-31453, NEO-31454)
 
-**必须执行仅控制台升级。无需升级服务器。**
+**必须执行仅控制台升级。 无需升级服务器。**
 
 >[!NOTE]
 >
@@ -83,9 +83,9 @@ _2020 年 12 月 22 日_
 
 * [终止支持 iOS APN 旧版二进制协议](https://developer.apple.com/news/?id=c88acm2b)之后，在升级后期间，所有使用此协议的实例都更新为 HTTP/2 协议。
 
-* 修复了一个安全问题，以加强针对服务器端请求伪造 (SSRF) 问题的防范。(NEO-27777)
+* 修复了一个安全问题，以加强针对服务器端请求伪造 (SSRF) 问题的防范。 (NEO-27777)
 
-* 修复了在运行&#x200B;**扩充**&#x200B;活动时可能导致工作流失败的问题。(NEO-17338)
+* 修复了在运行&#x200B;**扩充**&#x200B;活动时可能导致工作流失败的问题。 (NEO-17338)
 
 ### [!DNL Gold Standard] 10 版本{#gs-10}
 
@@ -95,11 +95,11 @@ _2020 年 7 月 7 日_
 
 内部版本 9032@efd8a94 包含以下修复：
 
-修复了在禁用签名功能时跟踪无法正常工作的问题。(NEO-26411)
+修复了在禁用签名功能时跟踪无法正常工作的问题。 (NEO-26411)
 
 >[!CAUTION]
 >
->我们建议您使用此版本中提供的客户端控制台进行升级。请参见[此页面](../../installation/using/installing-the-client-console.md)。
+>我们建议您使用此版本中提供的客户端控制台进行升级。 请参见[此页面](../../installation/using/installing-the-client-console.md)。
 
 ### [!DNL Gold Standard] 9 版本{#gs-9}
 
@@ -109,15 +109,15 @@ _2020 年 6 月 22 日_
 
 内部版本 9032@800be2e 包含以下修复：
 
-* iOS HTTP2 连接器已得到改进（第三方更新和错误管理）。(NEO-25904、NEO-25903、NEO-25799)
+* iOS HTTP2 连接器已得到改进（第三方更新和错误管理）。 (NEO-25904、NEO-25903、NEO-25799)
 
 以下修复与跟踪链接安全机制相关（在[安全和隐私核对清单](https://helpx.adobe.com/cn/campaign/kb/acc-security.html#signature-mechanism)中了解更多信息）：
 
-* 修复了跟踪“通知点击量”无法正常工作的问题（iOS 和 Android 推送通知）。(NEO-25965)
+* 修复了跟踪“通知点击量”无法正常工作的问题（iOS 和 Android 推送通知）。 (NEO-25965)
 * 修复了在使用某些旧版 Outlook 时可能导致无法打开/单击跟踪 URL 的问题。  (NEO-25688)
-* 修复了在使用个性化参数（带井号的锚点标记）中的片段跟踪 URL 时无法正常工作的问题。(NEO-25774)
-* 修复了反网络钓鱼服务的问题。(NEO-25283)
-* 修复了使用特定自定义跟踪公式时的跟踪问题。(NEO-25277)
+* 修复了在使用个性化参数（带井号的锚点标记）中的片段跟踪 URL 时无法正常工作的问题。 (NEO-25774)
+* 修复了反网络钓鱼服务的问题。 (NEO-25283)
+* 修复了使用特定自定义跟踪公式时的跟踪问题。 (NEO-25277)
 
 ### [!DNL Gold Standard] 8 版本{#gs-8}
 
@@ -127,17 +127,17 @@ _2020 年 4 月 29 日_
 
 内部版本 9032@3a9dc9c 包含以下修复：
 
-* 改进了电子邮件中跟踪链接的安全性。默认情况下，所有客户都启用此功能。另外还提供了增强的安全功能，可通过联系客户服务中心来启用此功能。有关此功能及非托管客户启用此功能的步骤的更多详细信息，请参阅[安全和隐私检查列表](https://helpx.adobe.com/cn/campaign/kb/acc-security.html#signature-mechanism)。
+* 改进了电子邮件中跟踪链接的安全性。 默认情况下，所有客户都启用此功能。 另外还提供了增强的安全功能，可通过联系客户服务中心来启用此功能。 有关此功能及非托管客户启用此功能的步骤的更多详细信息，请参阅[安全和隐私检查列表](https://helpx.adobe.com/cn/campaign/kb/acc-security.html#signature-mechanism)。
 
 >[!CAUTION]
 >
->如果您在使用跟踪链接时遇到推送通知问题，或在使用锚点标记时遇到投放问题，建议您禁用跟踪链接的新签名机制。[此页面中](https://helpx.adobe.com/cn/campaign/kb/acc-security.html#signature-mechanism)对该过程进行了详述
+>如果您在使用跟踪链接时遇到推送通知问题，或在使用锚点标记时遇到投放问题，建议您禁用跟踪链接的新签名机制。 [此页面中](https://helpx.adobe.com/cn/campaign/kb/acc-security.html#signature-mechanism)对该过程进行了详述
 
-* 修复了可能会导致图像无法在 Line 投放中显示的问题。(NEO-23207)
-* 修复了&#x200B;**文件传输**&#x200B;活动的问题，该问题导致基于 SFTP 密钥的身份验证无法在 Debian 9 上工作。(NEO-23183)
-* 修复了在以高频率发送时可能影响推送通知的问题。(NEO-20516)
-* 修复了产品建议响应管理中可能导致 Web 服务器崩溃的问题。(NEO-19482)
-* 修复了 LibreOffice 管理中阻止导出报告的错误。(NEO-20982)
+* 修复了可能会导致图像无法在 Line 投放中显示的问题。 (NEO-23207)
+* 修复了&#x200B;**文件传输**&#x200B;活动的问题，该问题导致基于 SFTP 密钥的身份验证无法在 Debian 9 上工作。 (NEO-23183)
+* 修复了在以高频率发送时可能影响推送通知的问题。 (NEO-20516)
+* 修复了产品建议响应管理中可能导致 Web 服务器崩溃的问题。 (NEO-19482)
+* 修复了 LibreOffice 管理中阻止导出报告的错误。 (NEO-20982)
 * 修复了使用调查活动升级大量工作流时导致错误的问题。
 * 改进了 LibreOffice 管理，以避免使用 .odt 文件进行电子邮件预览失败。
 * 改进了 Apache 连接的管理，以避免 Web 服务延迟。
@@ -154,7 +154,7 @@ _2020 年 3 月 9 日_
 
 内部版本 9032@19f73c5 包含以下修复：
 
-* 修复了外部帐户使用 FTP over SSL 时的问题。(NEO-20498)
+* 修复了外部帐户使用 FTP over SSL 时的问题。 (NEO-20498)
 
 ### [!DNL Gold Standard] 5 版本{#gs-5}
 
@@ -164,7 +164,7 @@ _2019 年 12 月 17 日_
 
 内部版本 9032@d6b8062 包含以下修复：
 
-* 修复了以下通信渠道上的跟踪问题：移动（短信或 MMS）、推送（iOS 或 Android）和社交网络（Facebook 或 X - 以前称为 Twitter）。(NEO-19595)
+* 修复了以下通信渠道上的跟踪问题：移动（短信或 MMS）、推送（iOS 或 Android）和社交网络（Facebook 或 X - 以前称为 Twitter）。 (NEO-19595)
 
 ### [!DNL Gold Standard] 4 版本{#gs-4}
 
@@ -174,7 +174,7 @@ _2019 年 12 月 11 日_
 
 内部版本 9032@bc4a935 包含以下修复：
 
-* 修复了使用 MSSQL 数据库发送消息时的性能问题。(NEO-17558)
+* 修复了使用 MSSQL 数据库发送消息时的性能问题。 (NEO-17558)
 
 ### [!DNL Gold Standard] 3 版本{#gs-3}
 
@@ -184,8 +184,8 @@ _2019 年 11 月 20 日_
 
 内部版本 9032@3468c7b 包含以下修复：
 
-* 修复了通过 IMS 身份验证进行登录的问题。(NEO-17312)
-* 修复了在多个投放中显示累积报告时的问题。(NEO-18165)
+* 修复了通过 IMS 身份验证进行登录的问题。 (NEO-17312)
+* 修复了在多个投放中显示累积报告时的问题。 (NEO-18165)
 * 修复了可能出现拦截或导致 Web 服务器崩溃的问题。
 
 ### [!DNL Gold Standard] 2 版本{#gs-2}
@@ -196,7 +196,7 @@ _2019 年 9 月 19 日_
 
 内部版本 9032@cee805c 包含以下修复：
 
-* 修复了使用 CRM Connector for Salesforce 时的问题。(NEO-17712)
+* 修复了使用 CRM Connector for Salesforce 时的问题。 (NEO-17712)
 * 修复了在发送事务性消息时可能导致性能问题的索引问题。
 
 ### 19.1.4 版 - 内部版本 9032{#release-19-1-4-build-9032}
@@ -207,21 +207,21 @@ _2019 年 8 月 13 日_
 
 初始 19.1.4 内部版本包含以下修复：
 
-* 修复了调度程序活动在助手配置期间生成不需要的错误消息的问题。NEO-11662 中的“还原更新”。(NEO-17097)
-* 修复了 NEO-12727 引起的回归，该回归可能导致在执行两次测试活动时停止工作流。(NEO-16835)
-* 修复了在 API 调用中使用无效或过期的会话令牌时导致返回错误的 HTTP 代码（HTTP 200 OK 而非 HTTP 403 Forbidden）的问题。(NEO-16826)
-* 修复了 DKIM 密钥的问题，该密钥不再嵌入到电子邮件中，从而导致投放能力问题。(NEO-16804)
-* 修复了工作流调度的各种问题。工作流已调度为每天执行一次，而不考虑调度程序配置。(NEO-16619, NEO-16426)
+* 修复了调度程序活动在助手配置期间生成不需要的错误消息的问题。 NEO-11662 中的“还原更新”。 (NEO-17097)
+* 修复了 NEO-12727 引起的回归，该回归可能导致在执行两次测试活动时停止工作流。 (NEO-16835)
+* 修复了在 API 调用中使用无效或过期的会话令牌时导致返回错误的 HTTP 代码（HTTP 200 OK 而非 HTTP 403 Forbidden）的问题。 (NEO-16826)
+* 修复了 DKIM 密钥的问题，该密钥不再嵌入到电子邮件中，从而导致投放能力问题。 (NEO-16804)
+* 修复了工作流调度的各种问题。 工作流已调度为每天执行一次，而不考虑调度程序配置。 (NEO-16619, NEO-16426)
 
 
 ## [!DNL Gold Standard] 兼容性矩阵{#compatibility-matrix-gs}
 
-本章节列出了 **Adobe Campaign Classic[!DNL Gold Standard]** 19.1 内部版本支持的所有系统和组件。此列表中未包含的产品和版本与此版本的 Adobe Campaign 不兼容。
+本章节列出了 **Adobe Campaign Classic[!DNL Gold Standard]** 19.1 内部版本支持的所有系统和组件。 此列表中未包含的产品和版本与此版本的 Adobe Campaign 不兼容。
 
 >[!CAUTION]
 >除非另有说明，否则支持所有次要版本。
 >
->Adobe Campaign Classic 与本页中列出的所有系统和工具都兼容。随着这些第三方系统和工具的特定版本到达其各自创建者设定的终止生命周期 (EOL)，Adobe Campaign 将不再与这些版本兼容，并将在后续产品发布中从兼容性矩阵中移除。请确保您使用兼容性矩阵中列出的任何系统的受支持版本，以避免出现任何问题。
+>Adobe Campaign Classic 与本页中列出的所有系统和工具都兼容。 随着这些第三方系统和工具的特定版本到达其各自创建者设定的终止生命周期 (EOL)，Adobe Campaign 将不再与这些版本兼容，并将在后续产品发布中从兼容性矩阵中移除。 请确保您使用兼容性矩阵中列出的任何系统的受支持版本，以避免出现任何问题。
 >
 
 ### 操作系统{#OperatingSystems-gs}

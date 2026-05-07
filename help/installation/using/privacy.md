@@ -6,8 +6,8 @@ feature: Installation, Privacy, Privacy Tools, URL Personalization
 exl-id: 0a3473bf-0528-486d-a799-8db86fece522
 source-git-commit: 354fc8fd5d030ed88e2b279ba1dd3eaf2f314d53
 workflow-type: tm+mt
-source-wordcount: '817'
-ht-degree: 2%
+source-wordcount: '896'
+ht-degree: 4%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 2%
 
 ## URL PERSONALIZATION {#url-personalization}
 
-向内容添加个性化链接时，请始终避免在URL的主机名部分进行任何个性化设置，以避免潜在的安全缺口。 绝不应该在所有URL属性&lt;`a href="">`或`<img src="">`中使用以下示例：
+向内容添加个性化链接时，请始终避免在URL的主机名部分进行任何个性化设置，以避免潜在的安全缺口。 绝不应该在所有&lt;`a href="">`或`<img src="">`的URL属性中使用以下示例：
 
 * `<%= url >`
 * `https://<%= url >`
@@ -25,11 +25,11 @@ ht-degree: 2%
 
 ### 推荐
 
-要验证并确保您未使用上述功能，请通过[Campaign通用查询编辑器](../../platform/using/adobe-campaign-workspace.md#about-queries-in-campaign)对跟踪URL表运行查询，或在查询活动中创建具有筛选条件的工作流。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html?lang=zh-Hans){target="_blank"}。
+要验证并确保您未使用上述功能，请通过[Campaign通用查询编辑器](../../platform/using/adobe-campaign-workspace.md#about-queries-in-campaign)对跟踪URL表运行查询，或在查询活动中创建具有筛选条件的工作流。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html){target="_blank"}。
 
 示例：
 
-1. 创建工作流并添加&#x200B;**查询**&#x200B;活动。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html?lang=zh-Hans){target="_blank"}。
+1. 创建工作流并添加&#x200B;**查询**&#x200B;活动。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html){target="_blank"}。
 
 1. 打开&#x200B;**查询**&#x200B;活动并在`nmsTrackingUrl`表上创建筛选器，如下所示：
 
@@ -44,7 +44,7 @@ ht-degree: 2%
 
 ### URL签名
 
-为了提高安全性，引入了一种用于跟踪电子邮件中链接的签名机制。 它从19.1.4版(9032@3a9dc9c)和20.2版开始提供。此功能默认处于启用状态。
+为了提高安全性，引入了一种用于跟踪电子邮件中链接的签名机制。 它从19.1.4版(9032@3a9dc9c)和20.2版开始提供。 此功能默认处于启用状态。
 
 >[!NOTE]
 >

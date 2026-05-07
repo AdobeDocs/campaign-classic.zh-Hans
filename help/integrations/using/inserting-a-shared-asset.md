@@ -9,7 +9,7 @@ topic-tags: asset-sharing
 exl-id: 30a94bce-6d96-4a6d-a62f-7451c822f0e3
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '220'
+source-wordcount: '233'
 ht-degree: 1%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 1%
 
 1. 在编辑窗口中，选择要添加图像的选项：
 
-   * 如果您使用[标准编辑模式](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html?lang=zh-Hans#adding-images){target="_blank"}，请选择&#x200B;**[!UICONTROL Image]** > **[!UICONTROL Select a shared asset]**。
+   * 如果您使用[标准编辑模式](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html#adding-images){target="_blank"}，请选择&#x200B;**[!UICONTROL Image]** > **[!UICONTROL Select a shared asset]**。
 
      ![](assets/dam_insert_image_standard.png)
 

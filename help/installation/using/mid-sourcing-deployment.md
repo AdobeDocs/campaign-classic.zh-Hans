@@ -9,7 +9,7 @@ topic-tags: deployment-types-
 exl-id: 8a4d7ef1-de5b-4aee-a527-1b74d987ba61
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '356'
+source-wordcount: '380'
 ht-degree: 2%
 
 ---
@@ -48,7 +48,7 @@ ht-degree: 2%
 
 ### 推荐的设备 {#recommended-equipment}
 
-* 应用程序服务器：2 Ghz四核CPU、4 GB RAM、软件RAID 1 80 GB SATA硬盘。
+* 应用服务器：2 Ghz四核CPU、4 GB RAM、软件RAID 1 80 GB SATA硬盘。
 * 数据库服务器：3 GHz双四核CPU、最低4 GB RAM、硬件RAID 10 15000RPM SAS硬盘，数量取决于数据库的大小和预期性能。
 
 >[!NOTE]

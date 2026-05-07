@@ -9,7 +9,7 @@ topic-tags: event-processing
 exl-id: 930c6395-0c00-40ee-a925-3e0cae67c55f
 source-git-commit: 647709dd4b0c70c342be03d3012bc02f10ff2c00
 workflow-type: tm+mt
-source-wordcount: '234'
+source-wordcount: '249'
 ht-degree: 1%
 
 ---
@@ -40,7 +40,7 @@ ht-degree: 1%
 
 ## 事务性消息监测 {#transactional-message-monitoring}
 
-要监视事务性消息，请检查[投放日志](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/send/monitor/delivery-dashboard#delivery-logs-and-history){target="_blank"}。
+要监视事务性消息，请检查[投放日志](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard#delivery-logs-and-history){target="_blank"}。
 
 通过每小时运行一次的技术工作流(**[!UICONTROL Message Center execution instance]**)，将从执行实例发送的事务性投放同步回控制实例。
 

@@ -10,8 +10,8 @@ topic-tags: production-procedures
 exl-id: 472ccc04-e68e-4ccb-90e9-7d626a4e794f
 source-git-commit: b8a6a0db27826309456c285c08d4f1d85de70283
 workflow-type: tm+mt
-source-wordcount: '439'
-ht-degree: 4%
+source-wordcount: '458'
+ht-degree: 7%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 4%
 
 命令&#x200B;**nlserver**&#x200B;是整个Adobe Campaign应用程序的输入命令。
 
-此命令具有以下语法： **nlserver &#x200B;**`<command>`**&#x200B;**`<arguments>`**&#x200B;**
+此命令具有以下语法： **nlserver **`<command>`****`<arguments>`****
 
 参数&#x200B;**`<command>`**&#x200B;对应于模块。
 
@@ -61,7 +61,7 @@ Datasource Server Provider Login
 default xxxxx myserver myprovider test400
 ```
 
-另一个有用的命令是&#x200B;**nlserver monitor**。 它列出了监视XML文件(通过Adobe Campaign客户端或通过&#x200B;**monitor.jsp**&#x200B;网页获取)。
+另一个有用的命令是&#x200B;**nlserver monitor**。 它列出了监视XML文件（通过Adobe Campaign客户端或通过&#x200B;**monitor.jsp**&#x200B;网页获取）。
 
 您可以添加参数&#x200B;**-missing**&#x200B;以列出缺席的模块（模块、模块关闭等中出错）
 
@@ -160,7 +160,7 @@ nlserver config -setdblogin:PostgreSQL:<accountName>:test6@dbserver
 >[!NOTE]
 >
 >* 通常，您可以使用&#x200B;**config**&#x200B;命令，而不是手动修改配置文件
->* 若要获取参数列表，请使用&#x200B;**-？**&#x200B;参数： **nlserver配置 — ？**
+>* 要获取参数列表，请使用&#x200B;**-？** 参数： **nlserver配置 — ？**
 >* 对于Oracle数据库，不得指定帐户。 语法如下所示：
 >
 >  `nlserver config -setdblogin:Oracle:test6@dbserver`
@@ -172,6 +172,6 @@ nlserver config -setdblogin:PostgreSQL:<accountName>:test6@dbserver
 nlserver config -setdblogin:mssql:<login>/"<password>"@<server> -instance:<instance_name> 
 ```
 
-* 登录（例如，account：user）和服务器可以在config-&lt;instance_name>.xml文件的dataSource节点中找到。
+* 登录（例如，帐户:user）和服务器可以在config-&lt;instance_name>.xml文件的dataSource节点中找到。
 * 密码必须用引号“”括起来。
 

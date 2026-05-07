@@ -7,7 +7,7 @@ feature: Surveys
 exl-id: 22e14b24-59ba-4a92-8ffb-f5336793d64f
 source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
-source-wordcount: '939'
+source-wordcount: '945'
 ht-degree: 1%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 1%
 1. [步骤3 — 生成调查](#step-3---building-the-survey)，
 1. [步骤4 — 创建页面内容](#step-4---creating-the-page-content)，
 1. [步骤5 — 存储调查数据](#step-5---storing-the-survey-data-)，
-1. [步骤6 - Publish页面](#step-6---publishing-the-pages)，
+1. [步骤6 — 发布页面](#step-6---publishing-the-pages)，
 1. [步骤7 — 共享您的在线调查](#step-7---sharing-your-online-survey)。
 
 ## 第1步 — 创建调查 {#step-1---creating-a-survey}
@@ -81,7 +81,7 @@ ht-degree: 1%
 
   ![](assets/s_ncs_admin_survey_change_label.png)
 
-  现在，为用户帐户号创建条目字段。 重复操作并选择“帐户编号”。 字段。
+  现在，为用户帐户号创建条目字段。 重复此操作，然后选择“帐户编号”字段。
 
   应用相同的过程添加字段以方便用户输入电子邮件地址。
 
@@ -125,9 +125,9 @@ ht-degree: 1%
 
 单击&#x200B;**[!UICONTROL OK]**&#x200B;确认，然后单击&#x200B;**[!UICONTROL Save]**&#x200B;保存调查
 
-## 步骤6 -Publish页面 {#step-6---publishing-the-pages}
+## 步骤6 — 发布页面 {#step-6---publishing-the-pages}
 
-要使用户能够访问HTML页，应用程序必须可用。 它必须不再处于编辑阶段，而是处于生产阶段。 要将调查置于生产环境中，必须发布它。 操作步骤：
+用户要能够访问HTML页面，应用程序必须可用。 它必须不再处于编辑阶段，而是处于生产阶段。 要将调查置于生产环境中，必须发布它。 操作步骤：
 
 * 单击位于调查仪表板上方的&#x200B;**[!UICONTROL Publish]**&#x200B;按钮。
 * 单击&#x200B;**[!UICONTROL Start]**&#x200B;启动发布并关闭助手。

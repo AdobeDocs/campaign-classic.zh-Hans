@@ -8,7 +8,7 @@ role: User
 exl-id: 87434cc2-1636-4558-ab60-255b7f873c0c
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '261'
+source-wordcount: '273'
 ht-degree: 2%
 
 ---
@@ -19,7 +19,7 @@ Adobe Campaign Content Manager模块是特定的Campaign Classic [内置包](../
 
 >[!NOTE]
 >
->本节介绍内容管理模块。 有关如何设计电子邮件投放内容的更多信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html?lang=zh-Hans){target="_blank"}。
+>本节介绍内容管理模块。 有关如何设计电子邮件投放内容的更多信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html){target="_blank"}。
 
 内容管理模块结合了工作组、工作流和内容聚合功能。 这允许自动设置消息的格式：电子邮件、邮件、短信、Web等。
 
@@ -35,7 +35,7 @@ Adobe Campaign Content Manager模块是特定的Campaign Classic [内置包](../
 
 * 通过输入界面进行结构化报文编辑，
 * 分离数据内容及其呈现方式（以XML格式生成），
-* 基于样式表以多种格式（html、txt、XML等）生成文档，以确保符合图形字符、
+* 以多种格式（html、txt、XML等）生成文档 基于样式表，以确保符合图形字符的要求，
 * 恢复和自动聚合外部内容流，
 * Collaboration具有用于数据验证和检查的工作流。
 

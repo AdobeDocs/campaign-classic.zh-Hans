@@ -1,23 +1,23 @@
 ---
 title: 在IMS迁移后更新Campaign界面
-description: 了解如何激活AdobeIdentity Management系统迁移界面影响
+description: 了解如何激活Adobe Identity Management系统迁移界面影响
 exl-id: 8b13fe4d-d8d3-43b3-bbe4-c8c5574f585a
 source-git-commit: 8eadea9f9cc0a44522726024bfbc825e3b4cad98
 workflow-type: tm+mt
-source-wordcount: '445'
+source-wordcount: '463'
 ht-degree: 1%
 
 ---
 
 # 在IMS迁移后更新Campaign界面 {#impact-ims-migration}
 
-在将Campaign技术操作员[迁移到Developer Console](ims-migration.md)并过渡到IMS以进行最终用户身份验证[&#128279;](migrate-users-to-ims.md)后，最后一步是启用用户界面和API限制，以删除特定于本机身份验证的选项和功能。 从Campaign v7.4.1开始提供此更新。
+在将Campaign技术操作员[迁移到Developer Console](ims-migration.md)并过渡到IMS以进行最终用户身份验证](migrate-users-to-ims.md)后，最后一步是启用用户界面和API限制，以删除特定于本机身份验证的选项和功能。 [从Campaign v7.4.1开始提供此更新。
 
 ## 启用IMS限制 {#ims-restrictions}
 
-要完成向Adobe标识管理系统(IMS)的迁移，必须阻止本机操作员创建新的本机用户、本机用户登录和API访问。 然后，您的环境将得到保护和标准化。
+要完成向Adobe Identify Management System (IMS)的迁移，必须阻止本机操作员的新本机用户创建、本机用户登录和API访问。 然后，您的环境将得到保护和标准化。
 
-作为托管Cloud Service/托管用户，请与Adobe联系以启用此限制，并在产品用户界面中启用关联的更新。
+作为托管Cloud Service/托管用户，请联系Adobe以启用此限制，并在产品用户界面中启用相关的更新。
 
 对于内部部署/混合部署用户，请执行以下步骤：
 
@@ -94,7 +94,7 @@ ht-degree: 1%
 
 因此，客户端控制台中已禁用这些操作。
 
-操作员的管理集中在Adobe Admin Console中，以下任务现在只能通过此控制台进行管理。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/admin/permissions/manage-permissions){target="_blank"}以了解如何创建用户和分配权限。
+操作员的管理集中在Adobe Admin Console中，以下任务现在只能通过此控制台进行管理。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/admin/permissions/manage-permissions){target="_blank"}以了解如何创建用户和分配权限。
 
 ### 不可用选项 {#unavailable-migration}
 
@@ -120,4 +120,4 @@ ht-degree: 1%
 >* [最终用户迁移到IMS](migrate-users-to-ims.md)
 >* [将技术操作员迁移到Adobe Developer控制台](ims-migration.md)
 >* [Adobe Campaign Classic v7最新发行说明](../../rn/using/latest-release.md)
->* [什么是AdobeIdentity Management System (IMS)](https://helpx.adobe.com/cn/enterprise/using/identity.html){target="_blank"}
+>* [什么是Adobe Identity Management System (IMS)](https://helpx.adobe.com/cn/enterprise/using/identity.html){target="_blank"}

@@ -10,8 +10,8 @@ topic-tags: data-processing
 exl-id: 2c933fc5-1c0a-4c2f-9ff2-90d09a79c55a
 source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
 workflow-type: tm+mt
-source-wordcount: '1311'
-ht-degree: 1%
+source-wordcount: '1333'
+ht-degree: 3%
 
 ---
 
@@ -37,7 +37,7 @@ ht-degree: 1%
 
 1. 在源环境中的所有实例上创建数据库副本，
 1. 在目标环境的所有实例上恢复这些副本，
-1. 在目标环境中运行&#x200B;**nms：freezeInstance.js**&#x200B;烧灼脚本，然后再启动它。
+1. 先在目标环境中运行&#x200B;**nms:freezeInstance.js**&#x200B;烧灼脚本，然后再启动它。
 
    此过程不会影响服务器及其配置。
 
@@ -59,7 +59,7 @@ ht-degree: 1%
 
 为了使此过程正常工作，源环境和目标环境必须具有相同的实例数、相同的用途（营销实例、投放实例）和类似的配置。 技术配置必须符合软件先决条件。 必须在两个环境中安装相同的组件。
 
-## 实现 {#implementation}
+## 实施 {#implementation}
 
 ### 传输过程 {#transfer-procedure}
 
@@ -69,7 +69,7 @@ ht-degree: 1%
 
 >[!IMPORTANT]
 >
->* 以下过程在PostgreSQL语言中有效。 如果SQL语言不同(例如Oracle)，则必须调整SQL查询。
+>* 以下过程在PostgreSQL语言中有效。 如果SQL语言不同（例如Oracle），则必须调整SQL查询。
 >* 以下命令适用于PostgreSQL下的&#x200B;**prod**&#x200B;实例和&#x200B;**dev**&#x200B;实例的上下文。
 >
 
@@ -95,8 +95,8 @@ pg_dump mydatabase > mydatabase.sql
 
 为此，请为以下两个元素执行资源包导出：
 
-* 将&#x200B;**xtk：option**&#x200B;表导出到“options_dev.xml”文件，而不包含具有以下内部名称的记录：“WdbcTimeZone”、“NmsServer_LastPostUpgrade”和“NmsBroadcast_RegexRules”。
-* 在“extaccount_dev.xml”文件中，导出ID不为0 (@id &lt;> 0)的所有记录的&#x200B;**nms：extAccount**&#x200B;表。
+* 将&#x200B;**xtk:option**&#x200B;表导出到“options_dev.xml”文件中，不包含具有以下内部名称的记录：“WdbcTimeZone”、“NmsServer_LastPostUpgrade”和“NmsBroadcast_RegexRules”。
+* 在“extaccount_dev.xml”文件中，导出ID不是0 (@id &lt;> 0)的所有记录的&#x200B;**nms:extAccount**&#x200B;表。
 
 检查导出的选项/帐户数是否等于每个文件中要导出的行数。
 
@@ -220,7 +220,7 @@ nlserver pdump
 
 要从目标环境数据库(dev)导入配置，请执行以下操作：
 
-1. 打开数据库的Admin Console并清除ID不是0 (@id &lt;> 0)的外部帐户（表nms：extAccount）。
+1. 打开数据库的Admin Console并清除ID不是0 (@id &lt;> 0)的外部帐户（表nms:extAccount）。
 1. 在Adobe Campaign控制台中，导入之前通过导入包功能创建的options_dev.xml包。
 
    检查&#x200B;**[!UICONTROL Administration > Platform > Options]**&#x200B;节点中的选项是否确实已更新。

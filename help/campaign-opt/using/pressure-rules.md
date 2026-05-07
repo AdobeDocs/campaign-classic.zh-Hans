@@ -8,7 +8,7 @@ hide: true
 exl-id: c23212f2-fdf8-4820-b389-546f7c84db27
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '3335'
+source-wordcount: '3362'
 ht-degree: 6%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 6%
 根据定义的阈值和消息权重选择营销活动。
 
 * 阈值是在给定时段内为给定收件人授权的最大投放数量。 它可以为set或variable。 在分类规则设置中对其进行设置或计算。 请参阅[最大消息数](#maximum-number-of-messages)。
-* 利用投放权重，您可以确定压力管理框架内的优先级最高的投放。具有最高权重的消息具有优先级。 请参阅[消息权重](#message-weight)。
+* 利用投放权重，您可以确定压力管理框架内的优先级最高的投放。 具有最高权重的消息优先。 请参阅[消息权重](#message-weight)。
 
 仲裁包括确保权重大于正在进行的营销活动的计划营销活动不会导致过多的用户档案请求：如果是这种情况，则将从投放中排除用户档案。
 
@@ -72,7 +72,7 @@ ht-degree: 6%
 
    ![](assets/campaign_opt_create_a_rule_03b.png)
 
-   要定义变量阈值，请在&#x200B;**[!UICONTROL Depends on the recipient]**&#x200B;字段中选择&#x200B;**[!UICONTROL Type of threshold]**&#x200B;值，然后使用右侧的图标打开表达式编辑器。
+   要定义变量阈值，请在&#x200B;**[!UICONTROL Type of threshold]**&#x200B;字段中选择&#x200B;**[!UICONTROL Depends on the recipient]**&#x200B;值，然后使用右侧的图标打开表达式编辑器。
 
    ![](assets/campaign_opt_create_a_rule_04.png)
 
@@ -82,7 +82,7 @@ ht-degree: 6%
 
    每个投放都有一个权重，即表示其优先级的值：这支持在营销活动之间进行仲裁。 权重是使用分类规则和/或其属性中定义的公式来计算的。 有关详情，请参阅[消息权重](#message-weight)。
 
-1. 默认情况下，所有消息都会考虑阈值计算式。通过&#x200B;**[!UICONTROL Restriction]**&#x200B;选项卡，可筛选分类规则关注的消息：
+1. 默认情况下，所有消息都会考虑阈值计算式。 通过&#x200B;**[!UICONTROL Restriction]**&#x200B;选项卡，可筛选分类规则关注的消息：
 
    * 利用此选项卡的上半部分，可限制相关的收件人。
    * 利用此选项卡的下半部分，可筛选要计数的消息。
@@ -97,7 +97,7 @@ ht-degree: 6%
 
 ### 最大消息数 {#maximum-number-of-messages}
 
-每个压力规则定义一个阈值，即在给定时间段内可以向一个收件人发送的最大消息数。 达到此阈值后，只有在所考虑的时段结束后，才会再进行投放。通过此流程，您可以在消息数量超过设置的阈值时自动将收件人从投放中排除，从而避免过度通信。
+每个压力规则定义一个阈值，即在给定时间段内可以向一个收件人发送的最大消息数。 达到此阈值后，只有在所考虑的时段结束后，才会再进行投放。 通过此流程，您可以在消息数量超过设置的阈值时自动将收件人从投放中排除，从而避免过度通信。
 
 阈值可以是常量，也可以通过带有变量的公式来计算。 这意味着在给定的时间段内，阈值可能因收件人而异，甚至对于同一收件人也可能有所不同。
 
@@ -119,9 +119,9 @@ ht-degree: 6%
 
 ### 消息权重 {#message-weight}
 
-每个投放都有一个代表其优先级的权重。默认情况下，投放权重设置为 5。压力规则允许您定义将应用这些规则的投放的权重。
+每个投放都有一个代表其优先级的权重。 默认情况下，投放权重设置为 5。 压力规则允许您定义将应用这些规则的投放的权重。
 
-可以通过公式设置或计算权重以满足收件人的需求。例如，您可以根据收件人兴趣来定义投放权重。
+可以通过公式设置或计算权重以满足收件人的需求。 例如，您可以根据收件人兴趣来定义投放权重。
 
 >[!CAUTION]
 >
@@ -137,7 +137,7 @@ ht-degree: 6%
 
    ![](assets/campaign_opt_pressure_weight_sample.png)
 
-1. 将此规则应用于包含以下主题的消息：新闻稿、特殊优惠等。 这些投放的权重，因此其优先级将取决于每个收件人的倾向分数。
+1. 将此规则应用于包含以下主题的消息：新闻稿、特殊优惠等。这些投放的权重，因此其优先级将取决于每个收件人的倾向分数。
 
 ## 设置期间 {#setting-the-period}
 
@@ -153,11 +153,11 @@ ht-degree: 6%
 
 要将考虑的投放限制在2周内，您可以：
 
-1. 在&#x200B;**字段中输入** 15d **[!UICONTROL Concerned period]**：在计算中将考虑在应用规则的投放日期前两周发送的投放，
+1. 在&#x200B;**[!UICONTROL Concerned period]**&#x200B;字段中输入&#x200B;**15d**：在计算中将考虑在应用规则的投放日期前两周发送的投放，
 
 或者
 
-1. 在&#x200B;**字段中输入** 7d **[!UICONTROL Period considered]**&#x200B;并选中&#x200B;**[!UICONTROL Take the deliveries into account in the provisional calendar]**&#x200B;选项：在计算时，将考虑在投放日期之前7天内发送的投放以及在应用规则的投放日期之后7天内计划发送的投放。
+1. 在&#x200B;**[!UICONTROL Period considered]**&#x200B;字段中输入&#x200B;**7d**&#x200B;并选中&#x200B;**[!UICONTROL Take the deliveries into account in the provisional calendar]**&#x200B;选项：在计算时，将考虑在投放日期之前7天内发送的投放以及在应用规则的投放日期之后7天内计划发送的投放。
 
 期间开始日期取决于数据库的配置方式。
 
@@ -223,7 +223,7 @@ ht-degree: 6%
 要创建规则，请应用以下步骤：
 
 1. 创建新的&#x200B;**Pressure**&#x200B;类型分类规则。
-1. 编辑&#x200B;**[!UICONTROL Pressure]**&#x200B;选项卡：在&#x200B;**[!UICONTROL Maximum number of messages]**&#x200B;部分中，我们要创建一个公式以根据每个收件人计算阈值。 在&#x200B;**[!UICONTROL Depends on the recipient]**&#x200B;字段中选择&#x200B;**[!UICONTROL Threshold type]**&#x200B;值，然后单击&#x200B;**[!UICONTROL Edit expression]**&#x200B;字段右侧的&#x200B;**[!UICONTROL Formula]**。
+1. 编辑&#x200B;**[!UICONTROL Pressure]**&#x200B;选项卡：在&#x200B;**[!UICONTROL Maximum number of messages]**&#x200B;部分中，我们要创建一个公式以根据每个收件人计算阈值。 在&#x200B;**[!UICONTROL Threshold type]**&#x200B;字段中选择&#x200B;**[!UICONTROL Depends on the recipient]**&#x200B;值，然后单击&#x200B;**[!UICONTROL Formula]**&#x200B;字段右侧的&#x200B;**[!UICONTROL Edit expression]**。
 
    单击&#x200B;**[!UICONTROL Advanced parameters]**&#x200B;按钮以定义计算公式。
 
@@ -233,9 +233,9 @@ ht-degree: 6%
 
    ![](assets/campaign_opt_pressure_sample_1_2.png)
 
-1. 在函数列表中，双击&#x200B;**节点中的** Iif **[!UICONTROL Others]**&#x200B;函数。
+1. 在函数列表中，双击&#x200B;**[!UICONTROL Others]**&#x200B;节点中的&#x200B;**Iif**&#x200B;函数。
 
-   然后在&#x200B;**部分中选择收件人的**&#x200B;状态&#x200B;**[!UICONTROL Available fields]**。
+   然后在&#x200B;**[!UICONTROL Available fields]**&#x200B;部分中选择收件人的&#x200B;**状态**。
 
    ![](assets/campaign_opt_pressure_sample_1_3.png)
 
@@ -295,7 +295,7 @@ ht-degree: 6%
 应用以下配置步骤：
 
 1. 创建新的&#x200B;**Pressure**&#x200B;类型分类规则。
-1. 编辑&#x200B;**[!UICONTROL Pressure]**&#x200B;选项卡。 我们要创建一个阈值公式，该公式将基于每个单独的收件人：单击&#x200B;**[!UICONTROL Edit expression]**&#x200B;字段右侧的&#x200B;**[!UICONTROL Weight formula]**&#x200B;图标。
+1. 编辑&#x200B;**[!UICONTROL Pressure]**&#x200B;选项卡。 我们要创建一个阈值公式，该公式将基于每个单独的收件人：单击&#x200B;**[!UICONTROL Weight formula]**&#x200B;字段右侧的&#x200B;**[!UICONTROL Edit expression]**&#x200B;图标。
 
    ![](assets/campaign_opt_pressure_sample_2_1.png)
 
@@ -340,11 +340,11 @@ ht-degree: 6%
 1. 创建营销策划。 如需详细信息，请参阅[此小节](../../campaign/using/setting-up-marketing-campaigns.md#creating-a-campaign)。
 1. 在营销活动的&#x200B;**[!UICONTROL Targeting and workflows]**&#x200B;选项卡中，将&#x200B;**查询**&#x200B;活动添加到您的工作流。 有关使用此活动的详细信息，请参阅[此部分](../../workflow/using/query.md)。
 1. 将&#x200B;**[!UICONTROL Email delivery]**&#x200B;活动添加到工作流并打开它。 有关使用此活动的详细信息，请参阅[此部分](../../workflow/using/delivery.md)。
-1. 转到&#x200B;**[!UICONTROL Approvals]**&#x200B;的&#x200B;**[!UICONTROL Delivery properties]**&#x200B;选项卡并禁用所有审批。
+1. 转到&#x200B;**[!UICONTROL Delivery properties]**&#x200B;的&#x200B;**[!UICONTROL Approvals]**&#x200B;选项卡并禁用所有审批。
 
    ![](assets/campaign_opt_pressure_example_2.png)
 
-1. 在&#x200B;**[!UICONTROL Typology]**&#x200B;的&#x200B;**[!UICONTROL Delivery properties]**&#x200B;选项卡中，引用要应用规则的营销活动类型。 定义投放的权重。
+1. 在&#x200B;**[!UICONTROL Delivery properties]**&#x200B;的&#x200B;**[!UICONTROL Typology]**&#x200B;选项卡中，引用要应用规则的营销活动类型。 定义投放的权重。
 
    ![](assets/campaign_opt_pressure_example_3.png)
 

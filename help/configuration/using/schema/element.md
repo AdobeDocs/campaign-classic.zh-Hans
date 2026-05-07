@@ -6,8 +6,8 @@ feature: Schema Extension
 exl-id: 60f15ae5-b2bd-48f9-aa45-8f795a3071aa
 source-git-commit: 254c89490fefa5d405bcecd2f1781df46450a873
 workflow-type: tm+mt
-source-wordcount: '2029'
-ht-degree: 0%
+source-wordcount: '2035'
+ht-degree: 1%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 ## 内容模型 {#content-model-4}
 
-元素：==(属性 | 计算字符串 | dbindex | 默认 | 元素 | 帮助 | 加入 | 键 | sysFilter | translateddefault)
+元素：==(属性 |计算字符串 | dbindex |默认 |元素 |帮助 |加入 |键 | sysFilter |已翻译默认值)
 
 ## 属性 {#attributes-4}
 
@@ -46,7 +46,7 @@ _operation (string)、advanced (boolean)、aggregate (string)、applicateIf (str
 Adobe Campaign中有四种类型的`<element>`元素：
 
 * 根`<element>` ：定义与架构匹配的SQL表的名称。
-* 结构`<element>` ：定义一组`<element>`   或   `<attribute>`    元素。
+* 结构`<element>` ：定义由`<element>`或`<attribute>`个元素组成的组。
 * 链接`<element>` ：定义链接。 此元素必须包含“@type=link”属性。
 * XML `<element>` ：定义文本类型“mData”字段。 此元素必须包含“@type=xml”属性。
 
@@ -65,7 +65,7 @@ Adobe Campaign中有四种类型的`<element>`元素：
    * &quot;delete&quot;：删除。 这意味着Adobe Campaign将恢复和删除元素。
 
 * **高级（布尔值）**：激活此选项(@advanced=&quot;true&quot;)后，您可以在可用于配置表单列表的可用字段列表中隐藏该属性。
-* **聚合（字符串）**：允许您通过其他架构复制`<element>`的定义。 此属性接收格式为“namespace：name”的架构声明。
+* **聚合（字符串）**：允许您通过其他架构复制`<element>`的定义。 此属性接收格式为“namespace:name”的架构声明。
 * **applicableIf （字符串）**：应用索引的条件。 此属性接收XTK表达式。
 * **autopk （布尔值）**：如果激活此选项(autopk=&quot;true&quot;)，将自动定义唯一键。 此选项只能用于架构的主元素。 警告，Adobe Campaign仅保证生成的键是唯一的。 不能保证键值是连续和增量的。
 * **dataPolicy （字符串）**：允许您对SQL字段中允许的值指定批准约束。 此属性的值为：
@@ -80,7 +80,7 @@ Adobe Campaign中有四种类型的`<element>`元素：
    * &quot;resIdentifier&quot;：文件名
 
 * **dbEnum （字符串）**：接收“已关闭”枚举的内部名称。 必须在`<srcschema>`中定义枚举值。
-* **defOnDuplicate （布尔值）**：如果激活此属性，则在复制记录时，默认值(在@default中定义)将自动重新应用于记录。
+* **defOnDuplicate （布尔值）**：如果激活此属性，则在复制记录时，默认值（在@default中定义）将自动重新应用于记录。
 * **默认（字符串）**：用于定义元素行为（调用函数，默认值）。 此属性接收XTK表达式。
 * **desc （字符串）**：允许您插入元素的说明。 此描述用于了解元素的含义及其用途。 您可以在表单中显示它。
 * **displayAsField （布尔值）**：如果激活此属性，则“链接”类型`<element>`将作为字段显示在架构的树视图中（“结构”选项卡）。 这样，便可以将链接显示为本地字段，并在查询期间更改其行为。 当在查询的SELECT中找到元素时，将使用链接目标的值。 在查询的WHERE中找到元素时，将使用链接的基础键。
@@ -108,7 +108,7 @@ Adobe Campaign中有四种类型的`<element>`元素：
 * **folderModel （字符串）**：定义启用实体存储的文件夹类型。 此属性仅在存在“@folderLink”时才定义。
 * **folderProcess (string)**：定义实体模型实例的存储链接。 此属性仅在存在“@folderLink”时才定义。
 * **fullLoad （布尔值）**：在表单中选择字段时，此属性强制显示表中的所有记录。
-* **img （字符串）**：接收链接到元素的图像的路径。 此属性的值为“namespace：image name”类型。 例如：img=&quot;cus：myImage.jpg&quot;。 在物理上，必须将映像导入到应用程序服务器。
+* **img （字符串）**：接收链接到元素的图像的路径。 此属性的值为“namespace:image name”类型。 例如：img=&quot;cus:myImage.jpg&quot;。 在物理上，必须将映像导入到应用程序服务器。
 * **完整性（字符串）**：指向目标表的源表出现的参照完整性。
 
   可访问值包括：
@@ -182,7 +182,7 @@ Adobe Campaign中有四种类型的`<element>`元素：
    * CDATA
    * datetime
    * datetimetz
-   * datetimenotz
+   * 时间戳
    * 日期
    * double
    * 枚举
@@ -191,7 +191,7 @@ Adobe Campaign中有四种类型的`<element>`元素：
    * int64
    * 链接
    * 长
-   * 备忘
+   * 备忘录
    * MNTOKEN
    * 百分比
    * 主密钥

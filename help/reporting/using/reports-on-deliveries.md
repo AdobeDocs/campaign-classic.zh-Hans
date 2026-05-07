@@ -8,7 +8,7 @@ exl-id: dcbf280c-3040-4218-a453-1497662fef2e
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
 source-wordcount: '220'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
@@ -37,7 +37,7 @@ Adobe Campaign提供了多种类型的报表，可通过客户控制台或Intern
 
 您可以：
 
-* 将报表导出为Excel、PDF或打开文档，
+* 将报表导出到Excel、PDF或Open Document。
 * 打印报表，
 * 创建报告历史记录，
 * 显示不同的报表历史记录，
@@ -45,6 +45,6 @@ Adobe Campaign提供了多种类型的报表，可通过客户控制台或Intern
 
 >[!NOTE]
 >
->有些报告提供特征图表（曲线、条形、漏斗等）。 将光标移动到图表上以显示其值。
+>某些报表具有图表（曲线、条形图、funnel等）功能。 将光标移动到图表上以显示其值。
 
 有关这些选项的更多信息，请参阅[此章节](../../reporting/using/about-adobe-campaign-reporting-tools.md)。

@@ -1,13 +1,13 @@
 ---
 product: campaign
-title: “用例：Web窗体”
-description: “用例：Web窗体”
+title: 用例：Web 窗体
+description: 用例：Web 窗体
 badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v8"
 feature: Web Forms
 exl-id: 7aa4646d-1325-47c2-b553-6fe375c48973
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '970'
+source-wordcount: '978'
 ht-degree: 1%
 
 ---
@@ -166,7 +166,7 @@ Web窗体工作流将包含以下活动：
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_8d.png)
 
-   该用户已添加到&#x200B;**[!UICONTROL Temp]**&#x200B;文件夹中的Adobe Campaign列入阻止列表数据库，并且其配置文件将处于订阅状态，直到他们通过电子邮件确认订阅为止。
+   该用户已添加到&#x200B;**[!UICONTROL Temp]**&#x200B;文件夹中的Adobe Campaign数据库，并且其配置文件将处于订阅状态，直到他们通过电子邮件确认订阅为止。
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_8f.png)
 

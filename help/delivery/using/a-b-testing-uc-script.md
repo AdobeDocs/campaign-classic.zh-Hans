@@ -8,8 +8,8 @@ role: User
 exl-id: 4143d1b7-0e2b-4672-ad57-e4d7f8fea028
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '341'
-ht-degree: 3%
+source-wordcount: '342'
+ht-degree: 4%
 
 ---
 
@@ -68,7 +68,7 @@ ht-degree: 3%
 
 有关脚本的详细说明，请参阅[此部分](#details-of-the-script)。
 
-## 实现 {#implementation}
+## 实施 {#implementation}
 
 1. 打开您的&#x200B;**[!UICONTROL JavaScript code]**&#x200B;活动。
 1. 将[脚本示例](#example-of-a-script)中提供的脚本复制到&#x200B;**[!UICONTROL JavaScript code]**&#x200B;窗口中。

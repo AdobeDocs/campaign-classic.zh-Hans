@@ -8,7 +8,7 @@ level: Intermediate, Experienced
 exl-id: a1ac3aab-dc81-4533-9207-26d5dc5e1c88
 source-git-commit: 2bfcec5eaa1145cfb88adfa9c8b2f72ee3cd9469
 workflow-type: tm+mt
-source-wordcount: '957'
+source-wordcount: '959'
 ht-degree: 0%
 
 ---
@@ -93,9 +93,9 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >**nms：webApp**&#x200B;与Web应用程序架构一致。
+   >**nms:webApp**&#x200B;与Web应用程序架构一致。
    >
-   >**nms：newWebApp**&#x200B;与新的Web应用程序创建助手一致。
+   >**nms:newWebApp**&#x200B;与新的Web应用程序创建助手一致。
 
 1. 选择以在同一窗口中显示URL。
 1. 在图像字段中添加Web应用程序图标： **/nms/img/webApp.png**。

@@ -8,14 +8,14 @@ hide: true
 exl-id: 66250817-f829-4b8b-92dd-2daa92a97fe0
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '709'
+source-wordcount: '719'
 ht-degree: 12%
 
 ---
 
 # 投放设置 {#about-delivery-settings}
 
-以下设置特定于Campaign Classic。 有关其他投放设置，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/gs-message.html?lang=zh-Hans){target="_blank"}。
+以下设置特定于Campaign Classic。 有关其他投放设置，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/gs-message.html){target="_blank"}。
 
 ## 投放分析 {#delivery-analysis}
 
@@ -28,8 +28,8 @@ ht-degree: 12%
 目前，仅当满足以下条件时，此选项才可用：
 
 * 投放必须是电子邮件。 目前不支持其他渠道。
-* 您不得使用中间源或外部路由，只能使用批量投放路由类型。 您可以检查&#x200B;**[!UICONTROL General]**&#x200B;的&#x200B;**[!UICONTROL Delivery properties]**&#x200B;选项卡中使用的路由。
-* 无法定位来自外部文件的群体。 对于单个投放，请单击&#x200B;**[!UICONTROL To]**&#x200B;中的&#x200B;**[!UICONTROL Email parameters]**&#x200B;链接，并检查是否选择了&#x200B;**[!UICONTROL Defined in the database]**&#x200B;选项。 对于工作流中使用的投放，检查&#x200B;**[!UICONTROL Specified by the inbound event(s)]**&#x200B;选项卡中的收件人是否为&#x200B;**[!UICONTROL Delivery]**。
+* 您不得使用中间源或外部路由，只能使用批量投放路由类型。 您可以检查&#x200B;**[!UICONTROL Delivery properties]**&#x200B;的&#x200B;**[!UICONTROL General]**&#x200B;选项卡中使用的路由。
+* 无法定位来自外部文件的群体。 对于单个投放，请单击&#x200B;**[!UICONTROL Email parameters]**&#x200B;中的&#x200B;**[!UICONTROL To]**&#x200B;链接，并检查是否选择了&#x200B;**[!UICONTROL Defined in the database]**&#x200B;选项。 对于工作流中使用的投放，检查&#x200B;**[!UICONTROL Delivery]**&#x200B;选项卡中的收件人是否为&#x200B;**[!UICONTROL Specified by the inbound event(s)]**。
 * 您必须使用PostgreSQL数据库。
 
 ### 配置分析优先级 {#analysis-priority-}
@@ -72,11 +72,11 @@ ht-degree: 12%
 
 * **[!UICONTROL Delivery duration]**&#x200B;字段允许您输入全局投放重试限制。 这意味着，Adobe Campaign 从开始日期开始发送消息，然后对于仅返回错误的消息，将执行定期、可配置的重试，直至达到有效期限。
 
-  您也可以选择指定日期。为此，请选择&#x200B;**[!UICONTROL Explicitly set validity dates]**。 在此情况下，也可以使用投放和有效期限日期指定时间。默认情况下使用当前时间，但您可以直接在输入字段中修改此项。
+  您也可以选择指定日期。 为此，请选择&#x200B;**[!UICONTROL Explicitly set validity dates]**。 在此情况下，也可以使用投放和有效期限日期指定时间。 默认情况下使用当前时间，但您可以直接在输入字段中修改此项。
 
   >[!IMPORTANT]
   >
-  >对于托管或混合安装，如果您已升级到[Enhanced MTA](sending-with-enhanced-mta.md)，则仅当设置为&#x200B;**[!UICONTROL Delivery duration]** 3.5天或更短时间时&#x200B;**，才会使用Campaign电子邮件投放中的**&#x200B;设置。 如果定义的值超过3.5天，则不会将其考虑在内。
+  >对于托管或混合安装，如果您已升级到[Enhanced MTA](sending-with-enhanced-mta.md)，则仅当设置为&#x200B;**3.5天或更短时间时**，才会使用Campaign电子邮件投放中的&#x200B;**[!UICONTROL Delivery duration]**&#x200B;设置。 如果定义的值超过3.5天，则不会将其考虑在内。
 
 * **资源的有效性限制**： **[!UICONTROL Validity limit]**&#x200B;字段用于已上传的资源，主要用于镜像页面和图像。 本页上的资源仅在限制时间内有效（以节省磁盘空间）。
 

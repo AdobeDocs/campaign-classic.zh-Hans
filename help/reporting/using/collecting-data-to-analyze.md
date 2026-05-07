@@ -24,7 +24,7 @@ ht-degree: 5%
 1. 处理列表中包含的数据。
 1. 使用现有多维数据集中包含的数据。
 
-方法的选择取决于计算类型、数据量及其耐久性等。 必须仔细检查所有这些参数，以避免Adobe Campaign数据库过载并优化所创建报告的生成和操作。 有关详细信息，请参见[此页面](../../reporting/using/best-practices.md#optimizing-report-creation)。
+方法的选择取决于计算类型、数据量及其耐久性等。必须仔细检查所有这些参数，以避免Adobe Campaign数据库过载并优化所创建报告的生成和操作。 有关详细信息，请参见[此页面](../../reporting/using/best-practices.md#optimizing-report-creation)。
 
 在所有情况下，都是通过&#x200B;**[!UICONTROL Query]**&#x200B;类型活动收集数据。
 

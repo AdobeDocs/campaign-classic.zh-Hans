@@ -10,7 +10,7 @@ topic-tags: response-manager
 exl-id: e0b3bc9f-5e81-463f-a59e-cd972a47109b
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '1025'
+source-wordcount: '1063'
 ht-degree: 3%
 
 ---
@@ -116,7 +116,7 @@ ht-degree: 3%
 
 创建关于优惠建议的假设与创建即时投放假设类似。 只要选件处于活动状态，就可以执行假设验证。 计算期间基于优惠建议日期。 当假设验证允许您将收件人链接到购买时，可能会被接受的优惠建议状态可以自动更改。 [了解详情](hypothesis-templates.md#transactions)
 
-1. 按照&#x200B;**[!UICONTROL Offer]**&#x200B;此部分[中的说明创建一个或多个](hypothesis-templates.md#creating-a-hypothesis-model)类型模型。
+1. 按照[此部分](hypothesis-templates.md#creating-a-hypothesis-model)中的说明创建一个或多个&#x200B;**[!UICONTROL Offer]**&#x200B;类型模型。
 1. 转到&#x200B;**[!UICONTROL Campaign management > Measurement hypotheses]**&#x200B;节点。
 1. 通过选择之前创建的模型来创建&#x200B;**[!UICONTROL Offers]**&#x200B;类型假设验证。
 
@@ -156,7 +156,7 @@ ht-degree: 3%
 
    >[!NOTE]
    >
-   >有关更多信息，请参阅 [Campaign v8 文档](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-target.html?lang=zh-Hans#add-a-control-group){target="_blank"}。
+   >有关更多信息，请参阅 [Campaign v8 文档](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-target.html#add-a-control-group){target="_blank"}。
 
 1. 打开&#x200B;**[!UICONTROL Direct mail delivery]**&#x200B;并单击&#x200B;**[!UICONTROL Delivery measurement]**&#x200B;图标，然后单击&#x200B;**[!UICONTROL Add]**。
 
@@ -178,7 +178,7 @@ ht-degree: 3%
 
    ![](assets/response_hypothesis_delivery_example_008.png)
 
-1. 启动定位工作流并运行必要的检查，直到营销活动完成。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-deliveries.html?lang=zh-Hans#start-a-delivery){target=_blank}。
+1. 启动定位工作流并运行必要的检查，直到营销活动完成。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-deliveries.html#start-a-delivery){target=_blank}。
 
    ![](assets/response_hypothesis_delivery_example_009.png)
 

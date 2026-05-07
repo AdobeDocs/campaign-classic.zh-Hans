@@ -32,4 +32,4 @@ ht-degree: 4%
 
 1. **[!UICONTROL Expiration]**
 
-**[!UICONTROL Script]**&#x200B;入站电子邮件&#x200B;**[!UICONTROL Schedule]**&#x200B;中详细介绍了&#x200B;**[!UICONTROL Expiry]**、[和](inbound-emails.md)选项卡。
+[入站电子邮件](inbound-emails.md)中详细介绍了&#x200B;**[!UICONTROL Script]**、**[!UICONTROL Schedule]**&#x200B;和&#x200B;**[!UICONTROL Expiry]**&#x200B;选项卡。

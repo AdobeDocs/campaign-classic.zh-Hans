@@ -7,8 +7,8 @@ hide: true
 exl-id: 38add4fe-6238-45de-863e-895ebca189b7
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '1114'
-ht-degree: 9%
+source-wordcount: '1134'
+ht-degree: 14%
 
 ---
 
@@ -81,7 +81,7 @@ ht-degree: 9%
    可以使用以下方法：
 
    * **[!UICONTROL Choose for me]**：随机选择要保留的重复项记录。
-   * **[!UICONTROL Following a list of values]**：用于为一个或多个字段定义值优先级。要定义该值，请选择一个字段或创建表达式，然后将值添加到相应的表格中。要定义新字段，请单击位于值列表上方的 **[!UICONTROL Add]** 按钮。
+   * **[!UICONTROL Following a list of values]**：用于为一个或多个字段定义值优先级。 要定义该值，请选择一个字段或创建表达式，然后将值添加到相应的表格中。 要定义新字段，请单击位于值列表上方的 **[!UICONTROL Add]** 按钮。
 
      ![](assets/s_user_segmentation_dedup_param5.png)
 
@@ -95,7 +95,7 @@ ht-degree: 9%
 
    >[!NOTE]
    >
-   >通过&#x200B;**[!UICONTROL Merge]**&#x200B;链接访问的&#x200B;**[!UICONTROL Advanced parameters]**&#x200B;功能允许您配置一组规则，以便将字段或字段组合并到单个结果数据记录中。 有关详细信息，请参阅[将字段合并到单个记录中](#merging-fields-into-single-record)。
+   >通过&#x200B;**[!UICONTROL Advanced parameters]**&#x200B;链接访问的&#x200B;**[!UICONTROL Merge]**&#x200B;功能允许您配置一组规则，以便将字段或字段组合并到单个结果数据记录中。 有关详细信息，请参阅[将字段合并到单个记录中](#merging-fields-into-single-record)。
 
 1. 单击&#x200B;**[!UICONTROL Finish]**&#x200B;以批准选定的重复数据删除方法。
 

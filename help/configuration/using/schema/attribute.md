@@ -73,7 +73,7 @@ _operation (string)、advanced (boolean)、applicableIf (string)、autoIncrement
    * &quot;resIdentifier&quot;：文件名
 
 * **dbEnum （字符串）**：接收“已关闭”枚举的内部名称。 必须在`<srcschema>`中定义枚举值。
-* **defOnDuplicate （布尔值）**：如果激活此属性，则在复制记录时，默认值(在@default中定义)将自动重新应用于记录。
+* **defOnDuplicate （布尔值）**：如果激活此属性，则在复制记录时，默认值（在@default中定义）将自动重新应用于记录。
 * **默认（字符串）**：用于定义默认字段的值（调用函数，默认值）。 此属性接收XTK表达式。
 * **desc （字符串）**：允许您插入属性的描述。 此描述用于了解元素的含义及其用途。 您可以在表单中显示它。
 * **编辑（字符串）**：此属性指定将在链接到架构的表单中使用的输入类型。
@@ -94,7 +94,7 @@ _operation (string)、advanced (boolean)、applicableIf (string)、autoIncrement
   在架构中定义特征时，此架构必须具有基于单个字段的主键（复合键未授权）。
 
 * **featureDate （布尔值）**：链接到“@feature”特性字段的属性。 如果其值为“true”，则可让您了解该值的上次更新时间。
-* **img （字符串）**：用于定义链接到字段的图像的路径（命名空间+图像名称）（例如：img=&quot;cus：mypicture.jpg&quot;）。 在物理上，必须将映像导入到应用程序服务器。
+* **img （字符串）**：用于定义链接到字段的图像的路径（命名空间+图像名称）（示例： img=&quot;cus:mypicture.jpg&quot;）。 在物理上，必须将映像导入到应用程序服务器。
 * **标签（字符串）**：链接到字段的标签，主要用于界面中的用户。 它可让您避免命名约束。
 * **长度（字符串）**：最大值。 “字符串”类型SQL字段值的字符数。 如果未指定“@length”属性，Adobe Campaign会自动创建一个包含255个字符的字段。
 * **可本地化（布尔值）**：如果激活此属性，则此属性会告知收集工具恢复“@label”属性的值以进行翻译（内部使用）。
@@ -138,7 +138,7 @@ _operation (string)、advanced (boolean)、applicableIf (string)、autoIncrement
    * CDATA
    * datetime
    * datetimetz
-   * datetimenotz
+   * 时间戳
    * 日期
    * double
    * 枚举
@@ -147,7 +147,7 @@ _operation (string)、advanced (boolean)、applicableIf (string)、autoIncrement
    * int64
    * 链接
    * 长
-   * 备忘
+   * 备忘录
    * MNTOKEN
    * 百分比
    * 主密钥

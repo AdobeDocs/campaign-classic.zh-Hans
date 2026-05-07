@@ -7,7 +7,7 @@ feature: Web Apps, Web Forms, Landing Pages, Email Design
 exl-id: e2679f12-459b-466d-9c82-60a28363b104
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '747'
+source-wordcount: '755'
 ht-degree: 1%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->在开始之前，您必须至少配置一个&#x200B;**HTML模板**&#x200B;来承载未来投放的内容。
+>在开始之前，您必须至少配置一个&#x200B;**HTML模板**&#x200B;来托管未来投放的内容。
 >
 >在投放&#x200B;**[!UICONTROL Properties]**&#x200B;中，确保&#x200B;**[!UICONTROL Content editing mode]**（在&#x200B;**[!UICONTROL Advanced]**&#x200B;选项卡中）设置为&#x200B;**[!UICONTROL DCE]**。 要确保编辑器的最佳操作，请参阅[内容编辑最佳实践](content-editing-best-practices.md)。
 
@@ -51,7 +51,7 @@ ht-degree: 1%
 
 ![](assets/dce_select_model.png)
 
-您还可以通过选择&#x200B;**[!UICONTROL From a file]**&#x200B;导入在Adobe Campaign之外创建的HTML内容。
+您还可以通过选择&#x200B;**[!UICONTROL From a file]**，导入在Adobe Campaign之外创建的HTML内容。
 
 ![](assets/dce_select_from_file_template.png)
 
@@ -59,7 +59,7 @@ ht-degree: 1%
 
 >[!CAUTION]
 >
->如果您使用的是&#x200B;**Adobe Campaign Web界面**，则必须导入包含HTML内容和相关图像的.zip文件。
+>如果您使用&#x200B;**Adobe Campaign Web界面**，则必须导入包含HTML内容和相关图像的.zip文件。
 
 ## 第4步 — 设计报文 {#step-4---designing-the-message}
 

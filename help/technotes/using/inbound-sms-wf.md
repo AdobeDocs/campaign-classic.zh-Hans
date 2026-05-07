@@ -6,8 +6,8 @@ feature: Technote, SMS
 exl-id: 756039b2-5f57-4dc5-8166-a421206b886b
 source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
-source-wordcount: '423'
-ht-degree: 5%
+source-wordcount: '440'
+ht-degree: 6%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 5%
 * 请勿在中间源实例上实施此用例。
 * 每个外部中间源帐户只有一个自定义工作流。
 
-## 实现 {#implementation}
+## 实施 {#implementation}
 
 1. 向营销实例上的`nms:inSMS`架构添加扩展。 该扩展将向`nms:inSMS`架构添加新属性，并跟踪来自中间源实例的inSMS记录主键。
 
@@ -41,7 +41,7 @@ ht-degree: 5%
 
    使用以下格式备份对应的选项指针`SMS_MO_INDEX_{internal name of the workflow}_{name of the insms workflow activity}_{internal name of the external account to access the mid}`。
 
-[了解有关备份的详细信息](../../production/using/backup.md)
+   [了解有关备份的详细信息](../../production/using/backup.md)
 
 1. （**可选**）如果您已在使用调度程序活动，请打开工作流并按如下方式重新配置它：
 

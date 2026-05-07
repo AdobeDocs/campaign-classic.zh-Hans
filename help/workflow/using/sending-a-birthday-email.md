@@ -7,7 +7,7 @@ hide: true
 exl-id: 38006cca-e945-4b9d-8e2d-ed537b8541d9
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '878'
+source-wordcount: '896'
 ht-degree: 2%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 2%
 
 此（每日运行）工作流会选择其生日为当前日期的所有收件人。
 
-![](assets/do-not-localize/how-to-video.png)此用例也可以以视频形式找到。 有关详细信息，请参阅[创建工作流](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/automating-with-workflows/creating-a-workflow.html?lang=zh-Hans)视频。
+![](assets/do-not-localize/how-to-video.png)此用例也可以以视频形式找到。 有关详细信息，请参阅[创建工作流](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/automating-with-workflows/creating-a-workflow.html)视频。
 
 为此，请创建一个营销活动，然后单击&#x200B;**[!UICONTROL Targeting and workflows]**&#x200B;选项卡。 有关更多信息，请参阅[在工作流中生成主目标](../../campaign/using/marketing-campaign-deliveries.md#building-the-main-target-in-a-workflow)部分。
 
@@ -131,7 +131,7 @@ ht-degree: 2%
 
 如果测试得到验证（该年不是闰年 — 没有2月29日 — 并且当前日期确实是3月1日），则启用&#x200B;**[!UICONTROL True]**&#x200B;过渡，并将在2月29日出生的收件人添加到3月1日投放。 否则，将启用&#x200B;**[!UICONTROL False]**&#x200B;过渡，并且只有生于当前日期的收件人才会收到投放。
 
-将下面的代码复制并粘贴到&#x200B;**[!UICONTROL Initialization script]**&#x200B;选项卡的&#x200B;**[!UICONTROL Advanced]**&#x200B;部分中。
+将下面的代码复制并粘贴到&#x200B;**[!UICONTROL Advanced]**&#x200B;选项卡的&#x200B;**[!UICONTROL Initialization script]**&#x200B;部分中。
 
 ```
 function isLeapYear(iYear)

@@ -7,7 +7,7 @@ feature: Surveys
 exl-id: bd94c41a-813a-4ddb-a2bd-c3deab022482
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '630'
+source-wordcount: '639'
 ht-degree: 0%
 
 ---
@@ -88,7 +88,7 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >有关投放模板的详细信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html?lang=zh-Hans){target="_blank"}。
+   >有关投放模板的详细信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html){target="_blank"}。
 
 1. 创建用于投放订阅消息的第二个脚本。
 

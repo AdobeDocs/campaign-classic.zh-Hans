@@ -9,8 +9,8 @@ hide: true
 exl-id: 964cc600-19b8-449e-bac6-dc9da2b5ea12
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '105'
-ht-degree: 10%
+source-wordcount: '124'
+ht-degree: 15%
 
 ---
 
@@ -27,5 +27,5 @@ ht-degree: 10%
 
    ![](assets/direct_mail.png)
 
-1. 使用标签、代码和描述标识投放。 有关详细信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=zh-Hans#create-the-delivery){target="_blank"}中的此部分。
+1. 使用标签、代码和描述标识投放。 有关详细信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#create-the-delivery){target="_blank"}中的此部分。
 1. 单击&#x200B;**继续**&#x200B;以确认此信息并显示消息配置窗口。

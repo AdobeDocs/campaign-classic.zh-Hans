@@ -7,7 +7,7 @@ hide: true
 exl-id: bc64ca11-2c50-4896-b6c6-ae42c0315924
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '418'
+source-wordcount: '436'
 ht-degree: 1%
 
 ---
@@ -42,7 +42,7 @@ ht-degree: 1%
    ![](assets/subworkflow_selection.png)
 
 1. 您还可以添加配置脚本以更改引用的工作流。
-1. 单击 **[!UICONTROL Ok]**。它会从所选工作流中自动创建标签为&#x200B;**[!UICONTROL Jump (start point)]**&#x200B;活动的叫客过渡。
+1. 单击 **[!UICONTROL Ok]**。 它会从所选工作流中自动创建标签为&#x200B;**[!UICONTROL Jump (start point)]**&#x200B;活动的叫客过渡。
 
    ![](assets/subworkflow_outbound.png)
 

@@ -10,8 +10,8 @@ topic-tags: additional-configurations
 exl-id: 47f50bf5-4d5b-4c07-af71-de4390177cf5
 source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
 workflow-type: tm+mt
-source-wordcount: '823'
-ht-degree: 1%
+source-wordcount: '855'
+ht-degree: 3%
 
 ---
 
@@ -90,4 +90,4 @@ MX规则具有6个不同的吞吐量级别，主要在启动过程中使用：
 * [MX配置](../../installation/using/email-deliverability.md#mx-configuration)
 * [技术电子邮件配置](../../installation/using/email-deliverability.md)
 * [了解投放失败](../../delivery/using/delivery-failures-quarantine.md)
-* [Campaign Classic — 技术建议](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html?lang=zh-Hans)
+* [Campaign Classic — 技术建议](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/acc-technical-recommendations.html)

@@ -41,7 +41,7 @@ ht-degree: 5%
 
 >[!NOTE]
 >
->当使用的收件人表不是默认的&#x200B;**nms：recipient**&#x200B;表，并且您使用的是Adobe Campaign **[!UICONTROL Deliverability]**&#x200B;模块提供的收件箱呈现功能时，将使用此选项。
+>当使用的收件人表不是默认的&#x200B;**nms:recipient**&#x200B;表，并且您使用的是Adobe Campaign **[!UICONTROL Deliverability]**&#x200B;模块提供的收件箱呈现功能时，将使用此选项。
 >
 >有关详细信息，请参阅[使用外部收件人表](using-an-external-recipient-table.md)和有关[收件箱呈现](inbox-rendering.md)的文档。
 

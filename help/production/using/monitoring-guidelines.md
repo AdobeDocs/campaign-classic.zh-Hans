@@ -6,8 +6,8 @@ feature: Monitoring
 exl-id: ca0c33c5-7350-462a-bc65-4cab51e529d9
 source-git-commit: e60a8391416bc9899548971bddb61705467a80e5
 workflow-type: tm+mt
-source-wordcount: '758'
-ht-degree: 16%
+source-wordcount: '835'
+ht-degree: 19%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 16%
 
 ## 实例监视仪表板 {#instance-monitoring-dashboard}
 
-**[!UICONTROL Monitoring]**&#x200B;选项卡(可从Campaign Classic主页访问)是帮助您监视实例的主要入口点。
+**[!UICONTROL Monitoring]**&#x200B;选项卡（可从Campaign Classic主页访问）是帮助您监视实例的主要入口点。
 
 它提供实例上所发生情况的仪表板：其状态（内部版本号、已安装的包等）、系统指示器、日志、当前运行的工作流、上次发送投放的状态等。
 
@@ -42,7 +42,7 @@ ht-degree: 16%
 
 **自动监视工具**
 
-可以使用几种自动方法。 以帮助您监控实例。 例如，您可以设置包含检测到的异常的电子邮件报表，以XML格式检索指示器列表等。 [单击此处](../../production/using/monitoring-processes.md#automatic-monitoring)以了解更多信息。
+可以使用几种自动方法。 以帮助您监控实例。 例如，您可以设置包含检测到的异常的电子邮件报表，检索XML格式的指示器列表等。[单击此处](../../production/using/monitoring-processes.md#automatic-monitoring)以了解更多信息。
 
 **审核记录**
 
@@ -50,13 +50,13 @@ ht-degree: 16%
 
 **控制面板**
 
-控制面板允许您管理实例的多个设置：管理URL权限、检查实例详细信息（如服务器的内部版本等）。 它还允许您监视连接到实例的SFTP服务器上的可用空间。 [单击此处](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=zh-Hans)以了解更多信息。
+控制面板允许您管理实例的多个设置：管理URL权限、检查实例详细信息（如服务器的内部版本等）。它还允许您监视连接到实例的SFTP服务器上的可用空间。 [单击此处](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=zh-Hans)以了解更多信息。
 
 >[!NOTE]
 >
->所有管理员用户都可访问控制面板。[此页面](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=zh-Hans#discover-control-panel)详细介绍了授予用户管理员访问权限的步骤。
+>所有管理员用户都可访问控制面板。 [此页面](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=zh-Hans#discover-control-panel)详细介绍了授予用户管理员访问权限的步骤。
 >
->请注意，您的实例必须托管在AWS上，并使用[最新GA内部版本](../../rn/using/rn-overview.md)进行升级。 在[本节](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)中了解如何确认您的版本。要检查您的实例是否托管在 AWS 上，请按照[此页面](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=zh-Hans)中详述的步骤操作。
+>请注意，您的实例必须托管在AWS上，并使用[最新GA内部版本](../../rn/using/rn-overview.md)进行升级。 在[本节](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)中了解如何确认您的版本。 要检查您的实例是否托管在 AWS 上，请按照[此页面](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=zh-Hans)中详述的步骤操作。
 
 ### 监控工作流 {#monitoring-workflows}
 
@@ -76,13 +76,13 @@ ht-degree: 16%
 
 **工作流状态监控**
 
-除了热图之外，您还可以创建工作流，用于监视一组工作流的状态并向主管发送定期消息。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/monitoring/workflow-supervision.html?lang=zh-Hans){target="_blank"}。
+除了热图之外，您还可以创建工作流，用于监视一组工作流的状态并向主管发送定期消息。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/monitoring/workflow-supervision.html){target="_blank"}。
 
 **一般准则**
 
 使用工作流时，遵循以下准则和最佳实践有助于提高性能。 有关更多信息，请参阅以下章节：
-* [使用工作流时的最佳实践](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html?lang=zh-Hans){target="_blank"}
-* [监控工作流执行](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html?lang=zh-Hans){target="_blank"}
+* [使用工作流时的最佳实践](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html){target="_blank"}
+* [监控工作流执行](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html){target="_blank"}
 
 ### 监控投放 {#monitoring-deliveries}
 
@@ -94,7 +94,7 @@ SMTP报告按域显示投放统计信息和SMTP错误。 [了解详情](../../pr
 
 **最佳做法**
 
-请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/delivery-best-practices.html?lang=zh-Hans){target="_blank"}，了解投放发送和设计的最佳实践，以提高性能。
+请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/delivery-best-practices.html){target="_blank"}，了解投放发送和设计的最佳实践，以提高性能。
 
 **传递疑难解答**
 遇到投放问题时，可以执行特定操作：
@@ -125,7 +125,7 @@ SMTP报告按域显示投放统计信息和SMTP错误。 [了解详情](../../pr
 
 *仅限内部部署和混合托管模型*
 
-为了避免在机器上发生问题（无论是物理问题还是系统相关问题）时丢失数据，备份是必不可少的。 [单击此处](../../production/using/backup.md)以了解详细信息。 [本节](../../production/using/restoration.md)中介绍了还原过程。
+为了避免在机器上发生问题（无论是物理问题还是系统相关问题）时丢失数据，备份是必不可少的。 [单击此处](../../production/using/backup.md)以了解更多信息。 [本节](../../production/using/restoration.md)中介绍了还原过程。
 
 ## Campaign Classic技术原则 {#campaign-classic-technical-principles}
 

@@ -7,7 +7,7 @@ feature: Seed Address
 exl-id: 091648b8-bf2d-4595-8be3-287f1ac48edd
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '850'
+source-wordcount: '860'
 ht-degree: 3%
 
 ---
@@ -30,7 +30,7 @@ ht-degree: 3%
 
 ## 步骤1 — 创建投放 {#step-1---creating-a-delivery}
 
-有关创建投放的详细步骤，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/email.html?lang=zh-Hans){target="_blank"}。
+有关创建投放的详细步骤，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/email.html){target="_blank"}。
 
 在本例中，投放经理已创建新闻稿并选择收件人。
 
@@ -99,7 +99,7 @@ ht-degree: 3%
 
 种子地址数据模式可以使用链接到收件人数据模式 — 收件人(nms)的表中的值。
 
-例如，用户希望集成在链接到收件人架构的&#x200B;**[!UICONTROL Internet Extension]**&#x200B;表中找到的&#x200B;**[!UICONTROL Country]**。
+例如，用户希望集成在链接到收件人架构的&#x200B;**[!UICONTROL Country]**&#x200B;表中找到的&#x200B;**[!UICONTROL Internet Extension]**。
 
 ![](assets/dlv_seeds_usecase_06.png)
 
@@ -150,7 +150,7 @@ ht-degree: 3%
 
    ![](assets/dlv_seeds_usecase_22.png)
 
-1. 编辑要用于投放的种子地址，并在&#x200B;**字段中输入** Purchasing **[!UICONTROL Department]**&#x200B;作为值。
+1. 编辑要用于投放的种子地址，并在&#x200B;**[!UICONTROL Department]**&#x200B;字段中输入&#x200B;**Purchasing**&#x200B;作为值。
 
 ## 步骤3 — 定义条件 {#step-3---defining-the-condition}
 

@@ -9,7 +9,7 @@ hide: true
 exl-id: 8cbb2445-f5e4-4a25-ba7e-56e39ca9d3ce
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '2665'
+source-wordcount: '2672'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,7 @@ ht-degree: 0%
 
 可以为营销活动模板、单独为每个营销活动或投放启用批准。
 
-在营销活动模板（**[!UICONTROL Properties]** > **[!UICONTROL Advanced campaign settings...]** > **[!UICONTROL Approvals]**&#x200B;选项卡）中选择了所有需要审批的作业。 除非禁用此选项，否则还将选择负责审批的操作员并接收通知。 有关详细信息，请参阅批准投放[的](#approving-processes)步骤。
+在营销活动模板（**[!UICONTROL Properties]** > **[!UICONTROL Advanced campaign settings...]** > **[!UICONTROL Approvals]**&#x200B;选项卡）中选择了所有需要审批的作业。 除非禁用此选项，否则还将选择负责审批的操作员并接收通知。 有关详细信息，请参阅批准投放](#approving-processes)的[步骤。
 
 可以覆盖使用此模板创建的每个营销活动的这些设置，也可以覆盖每个营销活动投放的这些设置：单击&#x200B;**[!UICONTROL Properties]**&#x200B;按钮，然后单击&#x200B;**[!UICONTROL Approvals]**&#x200B;选项卡。
 
@@ -70,7 +70,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->所有其他具有[!DNL Adobe Campaign]权限的&#x200B;**[!UICONTROL Administrator]**&#x200B;操作员也可以批准作业，但他们不会收到通知。\
+>所有其他具有&#x200B;**[!UICONTROL Administrator]**&#x200B;权限的[!DNL Adobe Campaign]操作员也可以批准作业，但他们不会收到通知。\
 >默认情况下，如果定义了批准操作员，则活动经理无法执行批准或开始投放。 您可以修改此行为，并通过创建值为&#x200B;**1**&#x200B;的&#x200B;**NmsCampaign_Activate_OwnerConfirmation**&#x200B;选项来授权营销活动经理批准/开始投放。
 
 ## 审批模式 {#approval-modes}
@@ -107,15 +107,15 @@ ht-degree: 0%
 
 该信息包括以下几个位置：
 
-* 在营销活动审批日志中，**[!UICONTROL Approvals]**&#x200B;选项卡的&#x200B;**[!UICONTROL Edit > Tracking]**&#x200B;子选项卡：
+* 在营销活动审批日志中，**[!UICONTROL Edit > Tracking]**&#x200B;选项卡的&#x200B;**[!UICONTROL Approvals]**&#x200B;子选项卡：
 
   ![营销活动审批日志列表](assets/s_user_validation_log_from_op.png)
 
-* 在营销活动投放日志中，**[!UICONTROL Deliveries]**&#x200B;选项卡的&#x200B;**[!UICONTROL Edit > Tracking]**&#x200B;子选项卡：
+* 在营销活动投放日志中，**[!UICONTROL Edit > Tracking]**&#x200B;选项卡的&#x200B;**[!UICONTROL Deliveries]**&#x200B;子选项卡：
 
   ![具有审批状态的投放日志列表](assets/s_user_validation_log_from_delivery_list.png)
 
-* 单击&#x200B;**[!UICONTROL Hide/show log]**&#x200B;选项卡的&#x200B;**[!UICONTROL Summary]**&#x200B;选项可查看每个投放的批准状态。
+* 单击&#x200B;**[!UICONTROL Summary]**&#x200B;选项卡的&#x200B;**[!UICONTROL Hide/show log]**&#x200B;选项可查看每个投放的批准状态。
 
   ![显示审批日志的投放摘要](assets/s_user_validation_log_delivery.png)
 
@@ -163,7 +163,7 @@ ht-degree: 0%
 
 ### 通知内容 {#notification-content}
 
-通知内容是在特定模板中定义的： **[!UICONTROL Notification of validations for the marketing campaign]**。 此模板保存在&#x200B;**[!UICONTROL Administration > Campaign management > Technical delivery templates]**&#x200B;树的[!DNL Adobe Campaign]文件夹中。
+通知内容是在特定模板中定义的： **[!UICONTROL Notification of validations for the marketing campaign]**。 此模板保存在[!DNL Adobe Campaign]树的&#x200B;**[!UICONTROL Administration > Campaign management > Technical delivery templates]**&#x200B;文件夹中。
 
 ## 审阅和批准投放 {#checking-and-approving-deliveries}
 
@@ -335,7 +335,7 @@ ht-degree: 0%
 
    为此，他们可以：
 
-   * 通过&#x200B;**[!UICONTROL Available content]**&#x200B;控制台单击[!DNL Adobe Campaign]链接。
+   * 通过[!DNL Adobe Campaign]控制台单击&#x200B;**[!UICONTROL Available content]**&#x200B;链接。
 
      ![使内容可用的控制台链接](assets/s_ncs_user_validation_submit_content_available.png)
 
@@ -353,7 +353,7 @@ ht-degree: 0%
 
 #### 外部内容审批 {#external-content-approval}
 
-利用此选项，可定义负责审批投放呈现的外部操作员，如品牌通信一致性、费率等。 在审批设置窗口中选择&#x200B;**[!UICONTROL External content approval]**&#x200B;选项后，在内容审批和将通知交付给活动负责人之间会添加多个审批步骤：
+利用此选项，可定义负责审批投放呈现的外部操作员，如品牌通信一致性、费率等。在审批设置窗口中选择&#x200B;**[!UICONTROL External content approval]**&#x200B;选项后，在内容审批和将通知交付给活动负责人之间会添加多个审批步骤：
 
 1. 外部内容经理会收到通知电子邮件，告知他们内容已获批准并请求外部批准。
 1. 通知电子邮件包含指向已发送校样的链接（允许您查看投放渲染），以及一个用于批准或拒绝投放内容的按钮。

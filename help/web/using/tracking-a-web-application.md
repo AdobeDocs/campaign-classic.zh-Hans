@@ -7,7 +7,7 @@ feature: Web Apps, Reporting, Monitoring
 exl-id: 07bd36ce-c701-4998-974f-81fd4fac22a0
 source-git-commit: 0fba6a2ad4ffa864e2f726f241aa9d7cd39072a6
 workflow-type: tm+mt
-source-wordcount: '410'
+source-wordcount: '411'
 ht-degree: 4%
 
 ---
@@ -35,7 +35,7 @@ Adobe Campaign允许您通过插入跟踪标记来跟踪和测量Web应用程序
 
    * **转化率**：显示导航路径所有步骤的人数。
    * **跳出率**：仅显示第一步的人数
-   * **转化漏斗**：每一步之间的丢失率。
+   * **转换funnel**：每一步的丢失率。
 
   此外，**扇区**&#x200B;类型图表根据源显示群体。
 

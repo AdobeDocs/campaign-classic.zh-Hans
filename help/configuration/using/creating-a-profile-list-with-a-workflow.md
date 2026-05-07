@@ -1,6 +1,6 @@
 ---
 product: campaign
-title: 使用工作流创建用户档案列表
+title: 使用工作流创建轮廓列表
 description: 了解如何在工作流中创建用户档案列表
 badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v8"
 feature: Workflows, Profiles
@@ -8,12 +8,12 @@ role: User
 exl-id: 6b308299-4d07-4c9e-bd2f-a0860c41cf02
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '192'
+source-wordcount: '194'
 ht-degree: 11%
 
 ---
 
-# 使用工作流创建用户档案列表{#creating-a-profile-list-with-a-workflow}
+# 使用工作流创建轮廓列表{#creating-a-profile-list-with-a-workflow}
 
 
 要基于新的收件人表创建&#x200B;**[!UICONTROL List]**&#x200B;类型列表，您需要创建将生成该列表的定向工作流。

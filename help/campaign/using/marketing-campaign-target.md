@@ -8,8 +8,8 @@ hide: true
 exl-id: 04daa67c-4057-42a7-b993-a6eddf2b883d
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '1492'
-ht-degree: 1%
+source-wordcount: '1508'
+ht-degree: 2%
 
 ---
 
@@ -92,7 +92,7 @@ ht-degree: 1%
 
 可以编程该定位以根据计划（调度器）或事件（外部信号、文件导入等）自动执行。
 
-与执行定位工作流相关的操作（启动、停止、暂停等）是&#x200B;**异步**&#x200B;进程：命令已保存，一旦服务器可以应用它就会生效。
+与执行定位工作流相关的操作（启动、停止、暂停等） 是&#x200B;**异步**&#x200B;进程：该命令已保存，一旦服务器可供应用，该命令将立即生效。
 
 利用工具栏图标，可采取有关执行定向工作流的操作。
 
@@ -204,7 +204,7 @@ ht-degree: 1%
 >
 >如果您为活动定义了控制组，并且还为链接到此活动的投放配置了该控制组，则只会应用为投放定义的控制组。
 
-1. 编辑相关的投放，然后单击&#x200B;**[!UICONTROL To]**&#x200B;部分中的&#x200B;**[!UICONTROL Email parameters]**&#x200B;链接。
+1. 编辑相关的投放，然后单击&#x200B;**[!UICONTROL Email parameters]**&#x200B;部分中的&#x200B;**[!UICONTROL To]**&#x200B;链接。
 
    ![](assets/s_ncs_user_edit_op_target_del.png)
 
@@ -245,6 +245,6 @@ ht-degree: 1%
 
 此视频介绍如何在Adobe Campaign中创建活动和电子邮件。
 
->[!VIDEO](https://video.tv.adobe.com/v/27491?captions=chi_hans&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/25604?quality=12)
 
 [此处](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hans)提供了其他Campaign操作方法视频。

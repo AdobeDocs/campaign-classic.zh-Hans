@@ -8,7 +8,7 @@ role: User, Developer
 exl-id: 8ec52c96-44a2-4544-93b6-9ba251510682
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '841'
+source-wordcount: '843'
 ht-degree: 2%
 
 ---
@@ -31,7 +31,7 @@ ht-degree: 2%
 
 默认情况下，表单与具有相同名称和命名空间的数据架构关联。 若要将表单与其他名称关联，请在&#x200B;**`<form>`**&#x200B;元素的&#x200B;**entity-schema**&#x200B;属性中输入架构键。
 
-为了说明输入表单的结构，我们基于示例模式“cus：book”描述了一个接口：
+为了说明输入表单的结构，我们描述了一个基于示例模式“cus:book”的接口：
 
 ![](assets/d_ncs_content_form1.png)
 
@@ -73,7 +73,7 @@ XPath是一种语法，允许您在XML文档的树中查找节点。
 
 ## 格式化 {#formatting}
 
-控制项相对于彼此的排列方式与HTML表中使用的排列方式相似，有可能将控制项划分为若干列、交错元素或指定可用空间的占用。 但是，请记住，格式设置仅授权分配比例；您不能为对象指定固定维度。
+控件彼此相对的排列方式类似于HTML表格中使用的排列方式，可以将控件划分为若干列、交错元素或指定可用空间的占用。 但是，请记住，格式设置仅授权分配比例；您不能为对象指定固定维度。
 
 如需详细信息，请参阅[此小节](../../configuration/using/form-structure.md#formatting)。
 

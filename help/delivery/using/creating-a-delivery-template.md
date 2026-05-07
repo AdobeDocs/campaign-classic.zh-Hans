@@ -8,8 +8,8 @@ role: User
 exl-id: 40a03e04-56c7-48c0-95b8-aa7bf1121048
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '378'
-ht-degree: 9%
+source-wordcount: '391'
+ht-degree: 11%
 
 ---
 
@@ -73,18 +73,18 @@ ht-degree: 9%
 
 以下视频演示了如何为临时投放配置模板。
 
->[!VIDEO](https://video.tv.adobe.com/v/40849?captions=chi_hans&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/24066?quality=12)
 
 ### 如何设置投放模板属性
 
 以下视频介绍了如何设置投放模板属性，并详细说明每个属性。
 
->[!VIDEO](https://video.tv.adobe.com/v/38011?captions=chi_hans&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/24067?quality=12)
 
 ### 如何部署临时投放模板
 
 此视频介绍了如何部署临时电子邮件投放模板，并说明了电子邮件投放与投放工作流之间的区别。
 
->[!VIDEO](https://video.tv.adobe.com/v/27452?captions=chi_hans&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/24065?quality=12)
 
 [此处](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hans)提供了其他 Campaign Classic 操作方法视频。

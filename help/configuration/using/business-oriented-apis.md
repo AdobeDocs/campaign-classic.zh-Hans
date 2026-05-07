@@ -7,8 +7,8 @@ role: Developer
 exl-id: e6638870-3141-4f12-b904-db436127c0d1
 source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '618'
-ht-degree: 2%
+source-wordcount: '625'
+ht-degree: 3%
 
 ---
 
@@ -27,9 +27,9 @@ ht-degree: 2%
    * 启动工作流，
    * 验证进程等。
 
-     请参阅JavaScript[中的](../../configuration/using/soap-methods-in-javascript.md)SOAP方法。
+     请参阅JavaScript](../../configuration/using/soap-methods-in-javascript.md)中的[SOAP方法。
 
-* 内容管理 
+* 内容管理
 * 订阅管理，请参阅[订阅(nms:subscription)](#subscribe--nms-subscription-)和[取消订阅(nms:subscription)](#unsubscribe--nms-subscription-)。
 * 数据流程：导入、导出。
 
@@ -62,7 +62,7 @@ ht-degree: 2%
 </method>
 ```
 
-必须通过XML文档的&#x200B;**元素上的_** key`<recipient>`属性输入协调键的定义。 此属性的内容是以逗号分隔的XPath列表。
+必须通过XML文档的`<recipient>`元素上的_**key**&#x200B;属性输入协调键的定义。 此属性的内容是以逗号分隔的XPath列表。
 
 此调用不会返回任何数据，错误除外。
 

@@ -8,7 +8,7 @@ hide: true
 exl-id: 4520504a-0d9f-4ea7-a5a8-0c07948af4f0
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '980'
+source-wordcount: '1000'
 ht-degree: 8%
 
 ---
@@ -33,7 +33,7 @@ ht-degree: 8%
 
    >[!NOTE]
    >
-   >有关选择投放目标群体的详细流程，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=zh-Hans#target-population.){target="_blank"}中的此部分。
+   >有关选择投放目标群体的详细流程，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#target-population.){target="_blank"}中的此部分。
    >
    >有关个性化字段用法的详细信息，请参阅[本节](about-personalization.md)。
    >
@@ -43,13 +43,13 @@ ht-degree: 8%
 
    ![](assets/nmac_delivery_ios_3.png)
 
-1. 选择介于&#x200B;**[!UICONTROL Notification type]**&#x200B;或&#x200B;**[!UICONTROL General notification (Alert, Sound, Badge)]**&#x200B;之间的&#x200B;**[!UICONTROL Silent notification]**。
+1. 选择介于&#x200B;**[!UICONTROL General notification (Alert, Sound, Badge)]**&#x200B;或&#x200B;**[!UICONTROL Silent notification]**&#x200B;之间的&#x200B;**[!UICONTROL Notification type]**。
 
    ![](assets/nmac_delivery_ios_4.png)
 
    >[!NOTE]
    >
-   >**静默推送**&#x200B;模式允许将“静默”通知发送到移动应用程序。 其中并不通知用户已送达通知。而是直接将通知传送到应用程序。
+   >**静默推送**&#x200B;模式允许将“静默”通知发送到移动应用程序。 其中并不通知用户已送达通知。 而是直接将通知传送到应用程序。
 
 1. 在&#x200B;**[!UICONTROL Title]**&#x200B;字段中，输入要显示在通知中心可用通知列表中的标题标签。
 
@@ -101,7 +101,7 @@ ht-degree: 8%
 
    * **[!UICONTROL Launch image]**：要显示的启动图像文件的名称。 如果用户选择启动您的应用程序，则会显示选定的图像而不是应用程序的启动屏幕。
 
-   * **[!UICONTROL Interruption level]**：
+   * **[!UICONTROL Interruption level]**:
 
       * **[!UICONTROL Active]**：默认设置，系统立即显示通知，在屏幕上亮起，可以播放声音。 通知不会突破焦点模式。
 
@@ -145,7 +145,7 @@ ht-degree: 8%
 
    ![](assets/nmac_android_3.png)
 
-1. 在&#x200B;**[!UICONTROL Deliver on iOS (ios)]**&#x200B;下拉列表中选择&#x200B;**[!UICONTROL Delivery template]**。 向投放添加&#x200B;**[!UICONTROL Label]**。
+1. 在&#x200B;**[!UICONTROL Delivery template]**&#x200B;下拉列表中选择&#x200B;**[!UICONTROL Deliver on iOS (ios)]**。 向投放添加&#x200B;**[!UICONTROL Label]**。
 
 1. 单击&#x200B;**[!UICONTROL To]**&#x200B;以定义要定位的群体。 默认情况下，应用&#x200B;**[!UICONTROL Subscriber application]**&#x200B;目标映射。 单击&#x200B;**[!UICONTROL Add]**&#x200B;以选择我们之前创建的服务。
 

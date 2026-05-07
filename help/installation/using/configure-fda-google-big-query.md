@@ -9,7 +9,7 @@ topic-tags: connectors
 exl-id: ebaad59f-0607-4090-92d0-e457fbf9a348
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '960'
+source-wordcount: '1042'
 ht-degree: 2%
 
 ---
@@ -34,7 +34,7 @@ ht-degree: 2%
 
 ### 在Windows上设置的驱动程序 {#driver-window}
 
-1. 下载适用于Windows[&#128279;](https://cloud.google.com/bigquery/docs/reference/odbc-jdbc-drivers)的ODBC驱动程序。
+1. 下载适用于Windows](https://cloud.google.com/bigquery/docs/reference/odbc-jdbc-drivers)的[ODBC驱动程序。
 
 1. 在Windows中配置ODBC驱动程序。 有关详细信息，请参见[此页面](https://storage.googleapis.com/simba-bq-release/jdbc/Simba%20JDBC%20Driver%20for%20Google%20BigQuery%20Install%20and%20Configuration%20Guide.pdf)。
 
@@ -66,7 +66,7 @@ ht-degree: 2%
 >
 >我们建议使用Python3，请查看此[页面](https://www.python.org/downloads/)。
 
-批量加载实用程序可实现更快的传输，这一点可通过Google Cloud SDK实现。
+批量加载实用程序允许更快地传输，这是通过Google Cloud SDK实现的。
 
 1. 从此[页面](https://cloud.google.com/sdk/docs/downloads-versioned-archives)下载Windows 64位(x86_64)存档，并将其解压缩到相应的目录中。
 
@@ -86,7 +86,7 @@ ht-degree: 2%
 
 ### 在Linux上设置的驱动程序 {#driver-linux}
 
-在设置驱动程序之前，请注意，脚本和命令必须由root用户运行。 此外，建议在运行脚本时使用Google DNS 8.8.8.8。
+在设置驱动程序之前，请注意，脚本和命令必须由root用户运行。 还建议在运行脚本时使用Google DNS 8.8.8.8。
 
 要在Linux上配置[!DNL Google BigQuery]，请执行以下步骤：
 
@@ -146,7 +146,7 @@ ht-degree: 2%
 >
 >我们建议使用Python3，请查看此[页面](https://www.python.org/downloads/)。
 
-批量加载实用程序可实现更快的传输，这一点可通过Google Cloud SDK实现。
+批量加载实用程序允许更快地传输，这是通过Google Cloud SDK实现的。
 
 1. 在ODBC安装之前，请检查在Linux分发服务器上是否安装了以下软件包：
 
@@ -185,13 +185,13 @@ ht-degree: 2%
 
 1. 配置[!DNL Google BigQuery]外部帐户，您必须指定：
 
-   * **[!UICONTROL Type]**： [!DNL Google BigQuery]
+   * **[!UICONTROL Type]**: [!DNL Google BigQuery]
 
    * **[!UICONTROL Service account]**：**[!UICONTROL Service account]**&#x200B;的电子邮件。 有关详细信息，请参阅[Google Cloud文档](https://cloud.google.com/iam/docs/creating-managing-service-accounts)。
 
    * **[!UICONTROL Project]**： **[!UICONTROL Project]**&#x200B;的名称。 有关详细信息，请参阅[Google Cloud文档](https://cloud.google.com/resource-manager/docs/creating-managing-projects)。
 
-   * **[!UICONTROL Key file Path]**：
+   * **[!UICONTROL Key file Path]**:
       * **[!UICONTROL Upload key file to the server]**：如果您选择通过Adobe Campaign Classic上传密钥，请选择&#x200B;**[!UICONTROL Click here to upload]**。
 
       * **[!UICONTROL Enter manually the key file path]**：如果您选择使用预先存在的密钥，请在此字段中复制/粘贴您的绝对路径。
@@ -209,8 +209,8 @@ ht-degree: 2%
 | 代理端口 | 代理正在运行的端口号，如8080 |
 | ProxyUid | 用于经过身份验证的代理的用户名 |
 | ProxyPdw | ProxyUid密码 |
-| bqpath | 请注意，这仅适用于批量加载工具(Cloud SDK)。 </br>为避免使用PATH变量或必须将google-cloud-sdk目录移动到其他位置，您可以使用此选项指定服务器上云sdk bin目录的精确路径。 |
+| bqpath | 请注意，这仅适用于批量加载工具(Cloud SDK)。</br> 要避免使用PATH变量或必须将google-cloud-sdk目录移动到其他位置，您可以使用此选项指定服务器上云sdk bin目录的精确路径。 |
 | GCloudConfigName | 请注意，这从7.3.4版本开始适用，并且仅适用于批量加载工具(Cloud SDK)。</br> Google Cloud SDK使用配置将数据加载到BigQuery表中。 名为`accfda`的配置存储用于加载数据的参数。 但是，此选项允许用户为配置指定不同的名称。 |
-| GCloudDefaultConfigName | 请注意，这从7.3.4版本开始适用，并且仅适用于批量加载工具(Cloud SDK)。</br>必须先将活动标记转移到新配置，然后才能删除活动的Google Cloud SDK配置。 此临时配置是重新创建用于加载数据的主配置所必需的。 临时配置的默认名称为`default`，如果需要，可以更改此名称。 |
-| GCloudRecreateConfig | 请注意，这从7.3.4版本开始适用，并且仅适用于批量加载工具(Cloud SDK)。</br>设置为`false`时，批量加载机制不会尝试重新创建、删除或修改Google Cloud SDK配置。 相反，它会使用计算机上的现有配置继续加载数据。 当其他操作依赖于Google Cloud SDK配置时，此功能很有价值。 </br>如果用户在没有适当配置的情况下启用此引擎选项，则批量加载机制将发出警告消息： `No active configuration found. Please either create it manually or remove the GCloudRecreateConfig option`。 为了防止进一步的错误，它随后将恢复为使用默认的ODBC数组插入批量加载机制。 |
+| GCloudDefaultConfigName | 请注意，这从7.3.4版本开始适用，并且仅适用于批量加载工具(Cloud SDK)。</br> 必须先将活动标记转移到新配置，然后才能删除活动的Google Cloud SDK配置。 此临时配置是重新创建用于加载数据的主配置所必需的。 临时配置的默认名称为`default`，如果需要，可以更改此名称。 |
+| GCloudRecreateConfig | 请注意，这从7.3.4版本开始适用，并且仅适用于批量加载工具(Cloud SDK)。</br> 当设置为`false`时，批量加载机制不会尝试重新创建、删除或修改Google Cloud SDK配置。 相反，它会使用计算机上的现有配置继续加载数据。 当其他操作依赖于Google Cloud SDK配置时，此功能很有价值。</br> 如果用户在没有正确配置的情况下启用此引擎选项，则批量加载机制将发出警告消息： `No active configuration found. Please either create it manually or remove the GCloudRecreateConfig option`。 为了防止进一步的错误，它随后将恢复为使用默认的ODBC数组插入批量加载机制。 |
 

@@ -9,7 +9,7 @@ topic-tags: connectors
 exl-id: 3d43010e-53f8-4aa2-a651-c422a02191fe
 source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '922'
+source-wordcount: '923'
 ht-degree: 0%
 
 ---
@@ -42,7 +42,7 @@ ht-degree: 0%
 * **读取数据**：对包含客户数据的表的只读访问权限，
 * **读取&#39;MetaData&#39;**：访问服务器数据目录以获取表结构，
 * **LOAD**：在工作表中成批加载（处理集合和连接时需要），
-* 为&#x200B;**TABLE/INDEX/PROCEDURE/FUNCTION**&#x200B;创建/删除&#x200B;**CREATE/DROP**(仅适用于Adobe Campaign生成的工作表)，
+* 为&#x200B;**TABLE/INDEX/PROCEDURE/FUNCTION**&#x200B;创建/删除&#x200B;**CREATE/DROP**（仅适用于Adobe Campaign生成的工作表），
 * **EXPLAIN**（推荐）：用于监视出现问题的性能，
 * **写入数据**（取决于集成方案）。
 

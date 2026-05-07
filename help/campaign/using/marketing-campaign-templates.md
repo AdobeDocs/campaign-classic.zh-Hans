@@ -8,7 +8,7 @@ hide: true
 exl-id: d272d4b9-f1b2-4fb2-9ed9-91a4aea7eca3
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '1131'
+source-wordcount: '1147'
 ht-degree: 3%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 3%
 >
 >单击主页上的&#x200B;**[!UICONTROL Explorer]**&#x200B;图标时，将显示树。
 
-提供了内置模板以用于创建尚未定义特定配置的活动。您可以创建和配置活动模板，然后从这些模板创建活动。
+提供了内置模板以用于创建尚未定义特定配置的活动。 您可以创建和配置活动模板，然后从这些模板创建活动。
 
 ![](assets/do-not-localize/how-to-video.png)有关营销活动创建的更多信息，请参阅[此视频](../../campaign/using/marketing-campaign-deliveries.md#create-email-video)。
 
@@ -67,7 +67,7 @@ ht-degree: 3%
 
 ![](assets/s_ncs_user_op_template_tab1.3.png)
 
-如果未选择功能，则与流程相关的元素（菜单、图标、选项、选项卡、子选项卡等）将不会显示在模板的界面中或基于此模板的营销策划中。 营销活动详细信息左侧的选项卡通常与模板中选择的流程一致。 例如，如果未选择&#x200B;**费用和目标**，则相应的&#x200B;**[!UICONTROL Budget]**&#x200B;选项卡将不会显示在基于此模板的营销活动中。
+如果未选择某个功能，则将与流程相关的元素（菜单、图标、选项、选项卡、子选项卡等） 将不会显示在模板的界面中或基于此模板的营销活动中。 营销活动详细信息左侧的选项卡通常与模板中选择的流程一致。 例如，如果未选择&#x200B;**费用和目标**，则相应的&#x200B;**[!UICONTROL Budget]**&#x200B;选项卡将不会显示在基于此模板的营销活动中。
 
 此外，配置窗口的快捷方式已添加到营销活动仪表板。 启用某个功能后，可通过直接链接从Campaign仪表板访问该功能。
 
@@ -113,13 +113,13 @@ ht-degree: 3%
 
 * **大纲**
 
-  选择此模块后，将在&#x200B;**[!UICONTROL Delivery outlines]**&#x200B;选项卡中添加一个&#x200B;**[!UICONTROL Documents]**&#x200B;子选项卡，以定义营销活动的投放大纲。 在[本节](../../campaign/using/marketing-campaign-deliveries.md#associating-and-structuring-resources-linked-via-a-delivery-outline)中了解有关投放概要的更多信息。
+  选择此模块后，将在&#x200B;**[!UICONTROL Documents]**&#x200B;选项卡中添加一个&#x200B;**[!UICONTROL Delivery outlines]**&#x200B;子选项卡，以定义营销活动的投放大纲。 在[本节](../../campaign/using/marketing-campaign-deliveries.md#associating-and-structuring-resources-linked-via-a-delivery-outline)中了解有关投放概要的更多信息。
 
   ![](assets/s_ncs_user_op_template_activate_4.png)
 
 * **定位和工作流**
 
-  选择&#x200B;**[!UICONTROL Targeting and workflows]**&#x200B;模块后，将添加一个选项卡，允许您基于此模板为营销活动创建一个或多个工作流。 还可以基于此模板为每个营销活动单独配置工作流。请参阅[本节](../../campaign/using/marketing-campaign-deliveries.md#building-the-main-target-in-a-workflow)以了解有关营销活动工作流的详细信息。
+  选择&#x200B;**[!UICONTROL Targeting and workflows]**&#x200B;模块后，将添加一个选项卡，允许您基于此模板为营销活动创建一个或多个工作流。 还可以根据此模板为每个营销活动单独配置工作流。在[本节](../../campaign/using/marketing-campaign-deliveries.md#building-the-main-target-in-a-workflow)中了解有关营销活动工作流的更多信息。
 
   ![](assets/s_ncs_user_op_template_activate_5.png)
 
@@ -156,7 +156,7 @@ ht-degree: 3%
 
   >[!NOTE]
   >
-  >在&#x200B;**Adobe Campaign v8 （控制台）文档**&#x200B;中了解如何[使用枚举](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}。
+  >在[Adobe Campaign v8 （控制台）文档](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}中了解如何&#x200B;**使用枚举**。
 
 * 选择&#x200B;**类型的营销活动**：唯一、定期或定期。 默认情况下，营销活动模板适用于独特营销活动。 [此部分](../../campaign/using/setting-up-marketing-campaigns.md#recurring-and-periodic-campaigns)中详细介绍了循环和定期营销活动。
 * 指定营销活动的持续时间，即营销活动将发生的天数。 基于此模板创建营销活动时，将自动填充营销活动开始和结束日期。
@@ -167,7 +167,7 @@ ht-degree: 3%
 
 ### 模板执行参数 {#template-execution-parameters}
 
-通过&#x200B;**[!UICONTROL Advanced campaign settings...]**&#x200B;链接，可配置用于处理投放目标（控制组、种子地址等）的模板的高级选项，以及营销活动测量和工作流执行的配置。
+通过&#x200B;**[!UICONTROL Advanced campaign settings...]**&#x200B;链接，可配置用于处理投放目标（控制组、种子地址等）的模板的高级选项 以及活动测量和工作流执行的配置。
 
 ![](assets/s_ncs_user_op_template_tab1.2.png)
 

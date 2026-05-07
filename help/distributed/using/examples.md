@@ -7,7 +7,7 @@ hide: true
 exl-id: 2bef6b5e-887e-4c56-bb4b-3583472ca333
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '1296'
+source-wordcount: '1300'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 ## 创建本地活动（按表单） {#creating-a-local-campaign--by-form-}
 
-**By表单**&#x200B;类型Web界面涉及使用&#x200B;**Web应用程序**。 根据配置，此Web应用程序可以包含任何类型的已定义个性化元素。 例如，您可以建议用于评估目标、预算、内容等的链接。 通过专用API。
+**By表单**&#x200B;类型Web界面涉及使用&#x200B;**Web应用程序**。 根据配置，此Web应用程序可以包含任何类型的已定义个性化元素。 例如，您可以通过专用API建议用于评估目标、预算、内容等的链接。
 
 >[!NOTE]
 >
@@ -26,7 +26,7 @@ ht-degree: 0%
 >
 >本示例中使用的Web应用程序不是随Adobe Campaign一起提供的现成Web应用程序。 要在营销策划中使用表单，您必须创建专用的Web应用程序。
 
-创建营销活动模板时，请单击&#x200B;**[!UICONTROL Zoom]**&#x200B;链接的&#x200B;**[!UICONTROL Web interface]**&#x200B;选项中的&#x200B;**[!UICONTROL Advanced campaign settings...]**&#x200B;图标以访问Web应用程序的详细信息。
+创建营销活动模板时，请单击&#x200B;**[!UICONTROL Advanced campaign settings...]**&#x200B;链接的&#x200B;**[!UICONTROL Web interface]**&#x200B;选项中的&#x200B;**[!UICONTROL Zoom]**&#x200B;图标以访问Web应用程序的详细信息。
 
 ![](assets/mkg_dist_local_op_form1.png)
 
@@ -119,7 +119,7 @@ ht-degree: 0%
 
 #### 创建数据分发活动 {#creating-a-data-distribution-activity}
 
-1. 要设置协作营销活动（通过目标审批），您必须首先创建&#x200B;**[!UICONTROL Data distribution activity]**。 单击&#x200B;**[!UICONTROL New]**&#x200B;节点中的&#x200B;**[!UICONTROL Resources > Campaign management > Data distribution]**&#x200B;图标。
+1. 要设置协作营销活动（通过目标审批），您必须首先创建&#x200B;**[!UICONTROL Data distribution activity]**。 单击&#x200B;**[!UICONTROL Resources > Campaign management > Data distribution]**&#x200B;节点中的&#x200B;**[!UICONTROL New]**&#x200B;图标。
 
    ![](assets/mkg_dist_use_case_target_valid3.png)
 
@@ -160,7 +160,7 @@ ht-degree: 0%
 
 #### 发布营销活动 {#publishing-the-campaign}
 
-您现在可以从&#x200B;**选项卡添加**&#x200B;营销活动包&#x200B;**[!UICONTROL Campaigns]**。
+您现在可以从&#x200B;**[!UICONTROL Campaigns]**&#x200B;选项卡添加&#x200B;**营销活动包**。
 
 1. 选择您的&#x200B;**[!UICONTROL Reference campaign]**。 在包的&#x200B;**[!UICONTROL Edit]**&#x200B;选项卡中，您可以选择要用于营销活动的&#x200B;**[!UICONTROL Approval mode]**：
 

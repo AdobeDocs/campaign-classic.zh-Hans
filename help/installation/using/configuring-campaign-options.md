@@ -9,7 +9,7 @@ topic-tags: appendices
 exl-id: a979cd99-afa7-4ce6-ba0f-9495089cba08
 source-git-commit: 647709dd4b0c70c342be03d3012bc02f10ff2c00
 workflow-type: tm+mt
-source-wordcount: '3834'
+source-wordcount: '3898'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 1%
 
 >[!CAUTION]
 >
->* 此页面中未列出的选项仅供内部使用，不能修改&#x200B;**&#x200B;**。
+>* 此页面中未列出的选项仅供内部使用，不能修改&#x200B;****。
 >
 >* 修改或更新Adobe Campaign选项只能由专家用户执行。
 
@@ -57,11 +57,11 @@ ht-degree: 1%
   </tr>
   <tr> 
    <td> <span class="uicontrol">NMS_ActivateOwnerConfirmation</span> <br /> </td> 
-   <td><p> 允许您允许负责投放的操作员确认发送，如果指定了特定操作员或操作员组来在投放的属性中开始投放。</p><p> 要执行此操作，请通过输入“1”作为值激活选项。 要停用此选项，请输入“0”。</p><p> 然后，发送确认流程将默认运行：只有投放属性中为发送指定的操作员或操作员组（或管理员）才能确认并执行发送。 请参阅<a href="https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-deliveries.html?lang=zh-Hans#start-a-delivery" target="_blank">此小节</a>。</p> </td>
+   <td><p> 允许您允许负责投放的操作员确认发送，如果指定了特定操作员或操作员组来在投放的属性中开始投放。</p><p> 要执行此操作，请通过输入“1”作为值激活选项。 要停用此选项，请输入“0”。</p><p> 然后，发送确认流程将默认运行：只有投放属性中为发送指定的操作员或操作员组（或管理员）才能确认并执行发送。 请参阅<a href="https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-deliveries.html#start-a-delivery" target="_blank">此小节</a>。</p> </td>
 
 <tr> 
    <td> <span class="uicontrol">Nms_DefaultRcpSchema</span> <br /> </td> 
-   <td> Adobe Campaign使用“Nms_DefaultRcpSchema”全局变量与默认收件人数据库(nms：recipient)进行对话。<br />选项值必须对应于与外部收件人表匹配的架构的名称。<br /> </td> 
+   <td> Adobe Campaign使用“Nms_DefaultRcpSchema”全局变量与默认收件人数据库(nms：recipient)进行对话。<br /> 选项值必须对应于与外部收件人表匹配的架构的名称。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsBilling_MainActionThreshold</span> <br /> </td> 
@@ -149,7 +149,7 @@ ht-degree: 1%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsEmail_ExpOrganization</span> <br /> </td> 
-   <td> 客户的公用名称。 用于向收件人显示的某些警告消息中。<br /> “您收到此邮件是因为您与‘组织’或关联公司有联系。 不再接收来自“组织”的消息<br /> </td> 
+   <td> 客户的公用名称。 用于向收件人显示的某些警告消息。<br /> “您收到此消息是因为您与‘组织’或关联公司有联系。 不再接收来自“组织”的消息<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsEmail_FromName</span> <br /> </td> 
@@ -173,7 +173,7 @@ ht-degree: 1%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsInmail_AllowlistEmails</span> <br /> </td> 
-   <td> 授权转发电子邮件地址列表（来自入站邮件处理模块）。 地址必须以逗号分隔（或*表示允许全部使用）。 例如xyz@abc.com，pqr@abc.com.<br /> </td> 
+   <td> 授权转发电子邮件地址列表（来自入站邮件处理模块）。 地址必须以逗号分隔（或*表示允许全部使用）。 E.g. xyz@abc.com，pqr@abc.com.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsLine_AESKey</span> <br /> </td> 
@@ -197,7 +197,7 @@ ht-degree: 1%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsMidSourcing_LogsPeriodHour</span> <br /> </td>
-   <td> 允许指定最大时段（以小时为单位）以限制每次执行同步工作流时恢复的broadlog的数量。</a>.<br /> </td> 
+   <td> 允许指定最大时段（以小时表示）以限制每次执行同步工作流时恢复的broadlog数。</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsMidSourcing_PrepareFlow</span> <br /> </td> 
@@ -209,7 +209,7 @@ ht-degree: 1%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsOperation_DeliveryPreparationWindow</span> <br /> </td> 
-   <td><p>此选项由<span class="uicontrol"><a href="https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows.html?lang=zh-Hans" target="_blank">operationMgt</a></span>技术工作流在计数正在运行的投放数量时使用。</p>利用此功能，可定义天数，超过该天数后，状态不一致的投放将从运行的投放计数中排除。</p><p>默认情况下，该值设置为“7”，这意味着将排除超过7天的不一致投放。</p></td> 
+   <td><p>此选项由<span class="uicontrol"><a href="https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows.html" target="_blank">operationMgt</a></span>技术工作流在计数正在运行的投放数量时使用。</p>利用此功能，可定义天数，超过该天数后，状态不一致的投放将从运行的投放计数中排除。</p><p>默认情况下，该值设置为“7”，这意味着将排除超过7天的不一致投放。</p></td> 
   </tr>
   <tr> 
    <td> <span class="uicontrol">NmsPaper_SenderLine1</span> <br /> </td> 
@@ -233,7 +233,7 @@ ht-degree: 1%
   </tr>
   <tr> 
    <td> <span class="uicontrol">NmsServer_MirrorPageUrl</span> <br /> </td> 
-   <td> 镜像页面服务器的URL（默认情况下，应与NmsTracking_ServerUrl相同）。<br />如果未在路由定义中指定URL，则它是电子邮件投放的默认值。<br /> </td> 
+   <td> 镜像页面服务器的URL（默认情况下，应与NmsTracking_ServerUrl相同）。<br /> 如果未在路由定义中指定URL，则它是电子邮件投放的默认值。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsSMS_Priority</span> <br /> </td> 
@@ -313,11 +313,11 @@ ht-degree: 1%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NcmPublishingDir</span> <br /> </td> 
-   <td> 出版物的根文件夹。<br />有关HTML和文本内容生成的详细信息，请参阅<a href="../../delivery/using/using-a-content-template.md">此部分</a>。<br /> </td> 
+   <td> 发布的根文件夹。<br /> 有关HTML和文本内容生成的详细信息，请参阅<a href="../../delivery/using/using-a-content-template.md">此部分</a>。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkImageUrl</span> <br /> </td> 
-   <td> 用于定义存储投放中使用的图像的服务器，以便浏览器获取这些图像。<br />对于内部版本&lt;= 5098，我们使用上载到实例的图像的URL。<br />对于内部版本&gt; 5098，我们改用投放的公共URL或<span class="uicontrol">XtkFileRes_Public_URL</span>选项的URL。<br /> </td> 
+   <td> 允许您定义存储投放中使用的图像的服务器，以便浏览器获取这些图像。<br /> 对于内部版本&lt;= 5098，我们使用上载到实例的图像的URL。<br /> 对于内部版本&gt; 5098，我们改用投放的公共URL或<span class="uicontrol">XtkFileRes_Public_URL</span>选项的URL。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsDelivery_MediaInstance</span> <br /> </td> 
@@ -366,7 +366,7 @@ ht-degree: 1%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsOperation_OperationMgtDebug</span> <br /> </td> 
-   <td> 允许您监视<a href="https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows.html?lang=zh-Hans" target="_blank">operationMgt</a>技术工作流的执行。 激活后（值为“1”），执行信息将记录在工作流审核日志中。<br /> </td> 
+   <td> 允许您监视<a href="https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows.html" target="_blank">operationMgt</a>技术工作流的执行。 激活后（值为“1”），执行信息将记录在工作流审核日志中。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsOperation_TimeRange</span> <br /> </td> 
@@ -657,7 +657,7 @@ ht-degree: 1%
   </tr> 
     <tr> 
    <td> <span class="uicontrol">WdbcOptions_TempDbName</span> <br /> </td> 
-   <td> 允许您为Microsoft SQL Server上的工作表配置单独的数据库，以优化备份和复制。 该选项对应于临时数据库的名称：如果指定，将在此数据库中写入工作表。 示例： 'tempdb.dbo.' （请注意，名称必须以点结尾）。 <a href="../../production/using/rdbms-specific-recommendations.md#microsoft-sql-server">了解更多</a> <br /> </td> 
+   <td> 允许您为Microsoft SQL Server上的工作表配置单独的数据库，以优化备份和复制。 该选项对应于临时数据库的名称：如果指定，将在此数据库中写入工作表。 示例：“tempdb.dbo.”（请注意，名称必须以点结尾）。 <a href="../../production/using/rdbms-specific-recommendations.md#microsoft-sql-server">了解更多</a> <br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">WdbcTimeZone</span> <br /> </td> 
@@ -693,7 +693,7 @@ ht-degree: 1%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NlMigration_KeepFolderStructure</span> <br /> </td> 
-   <td> 在迁移期间，将根据新版本标准自动重新组织树结构。<br />此选项允许您禁用导航树的自动迁移。 如果使用它，迁移后必须删除过时的文件夹，添加新文件夹并运行所有必要的检查。<br /> 
+   <td> 在迁移过程中，树结构会根据新版本标准自动重新组织。<br /> 使用此选项可禁用导航树的自动迁移。 如果使用它，迁移后必须删除过时的文件夹，添加新文件夹并运行所有必要的检查。<br /> 
     <ul> 
      <li> <p> <span class="uicontrol">数据类型：</span>整数</p> </li> 
      <li> <p> <span class="uicontrol">值（文本）</span>： 1 </p> </li> 
@@ -742,11 +742,11 @@ ht-degree: 1%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">TNT_EdgeServer</span> <br /> </td> 
-   <td> 用于集成的Adobe Target服务器。 默认情况下已选中此选项。 此值对应于Adobe Target Domain Server，后跟值/m2。 例如：tt.omtrdc.net/m2。<br />请参阅<a href="../../integrations/using/configuring-the-integration-with-adobe-target.md">此部分</a>。<br /> </td> 
+   <td> 用于集成的Adobe Target服务器。 默认情况下已选中此选项。 此值对应于Adobe Target Domain Server，后跟值/m2。 例如： tt.omtrdc.net/m2.<br /> 请参阅<a href="../../integrations/using/configuring-the-integration-with-adobe-target.md">此部分</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">TNT_TenantName</span> <br /> </td> 
-   <td> Adobe Target组织名称。 此值对应于Adobe Target客户端的名称。<br />请参阅<a href="../../integrations/using/configuring-the-integration-with-adobe-target.md">此部分</a>。<br /> </td> 
+   <td> Adobe Target组织名称。 此值对应于Adobe Target客户端的名称。<br /> 请参阅<a href="../../integrations/using/configuring-the-integration-with-adobe-target.md">此部分</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">AAM_DataSourceId</span> <br /> </td> 
@@ -783,11 +783,11 @@ ht-degree: 1%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsInteraction_LastPropositionSynchControl_</span> <br /> </td> 
-   <td> '+ [建议架构] + "_" + extAccountSource。@executionInstanceId + [建议架构] + "_" + vars.executionInstanceIdFilter<br /> </td> 
+   <td> '+ [建议架构] + "_" + extAccountSource.@executionInstanceId + [建议架构] + "_" + vars.executionInstanceIdFilter<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsInteraction_LastPropositionSynchExec_</span> <br /> </td> 
-   <td> “+ [建议架构] + "_" + extAccountSource。@executionInstanceId + "_" + extAccountTarget.@executionInstanceId<br /> </td> 
+   <td> '+ [建议架构] + "_" + extAccountSource.@executionInstanceId + "_" + extAccountTarget.@executionInstanceId<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsInteraction_SynchWorkflowIds</span> <br /> </td> 

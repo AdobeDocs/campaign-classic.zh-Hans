@@ -8,7 +8,7 @@ level: Beginner
 exl-id: a9cd08b0-55c2-4405-9fb8-f0c623cd4ccb
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '2226'
+source-wordcount: '2269'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ Adobe对旧版数据中心不再授权：Campaign Classic实例必须转移到Pu
 
 以下是一组有关此项目的常见问题、对您的Campaign环境的影响以及其他有用资源。
 
-如有任何其他问题，您可以联系[Adobe客户关怀](https://experienceleague.adobe.com/zh-hans?support-solution=Campaign#support)。
+如有任何其他问题，您可以联系[Adobe客户关怀](https://experienceleague.adobe.com/?support-solution=Campaign#support)。
 
 ## 对基础架构的影响
 
@@ -41,7 +41,7 @@ Adobe对旧版数据中心不再授权：Campaign Classic实例必须转移到Pu
 
 * **旧版数据中心与公共云之间的包大小是否有任何差异？**
 
-  我们正在公共云(AWS)中根据当前数据库大小、磁盘大小等使用新包定义进行配置。 例如，如果客户在旧版数据中心拥有一台应用程序服务器，则根据包定义，他们可以在公共云(AWS)拥有两台应用程序服务器。
+  我们正在公共云(AWS)中根据当前数据库大小、磁盘大小等使用新包定义进行配置。例如，如果客户在旧版数据中心拥有一台应用程序服务器，则根据包定义，他们可以在公共云(AWS)拥有两台应用程序服务器。
 
 * **内部版本号或营销活动版本是否会更改？**
 
@@ -51,7 +51,7 @@ Adobe对旧版数据中心不再授权：Campaign Classic实例必须转移到Pu
 
 * **解决迁移后问题的计划是什么？**
 
-  在迁移生产系统之前，将执行大量测试。 但是，如果出现任何问题，[Adobe客户关怀](https://experienceleague.adobe.com/zh-hans?support-solution=Campaign#support)将继续作为主要联系人。 Adobe已经成立了一个专家团队，在需要时提供高级支持。
+  在迁移生产系统之前，将执行大量测试。 但是，如果出现任何问题，[Adobe客户关怀](https://experienceleague.adobe.com/?support-solution=Campaign#support)将继续作为主要联系人。 Adobe已经成立了一个专家团队，在需要时提供高级支持。
 
 ## 可投放性影响
 
@@ -59,21 +59,21 @@ Adobe对旧版数据中心不再授权：Campaign Classic实例必须转移到Pu
 
 下面列出了对IP、阻止列表、子域和URL的全局影响。
 
-* 列入允许列表 **如何处理上的IP？ 客户是否需要将新的IP地址添加到Campaign传入流量的允许列表？**
+* **如何处理上的IP？ 客户是否需要将新的IP地址添加到Campaign传入流量的允许列表？**
 
-  Adobe服务器的IP地址将会更改。 列入允许列表因此，客户可能需要在其系统的中添加这些新的IP地址。
+  Adobe服务器的IP地址将会更改。 因此，客户可能需要在其系统的中添加这些新的IP地址。
 
-  列入允许列表 [了解有关上IP的详细信息](#config)。
+  [了解有关上IP的详细信息](#config)。
 
 * **我们将如何处理添加到SFTP/FTP访问允许列表的端口？**
 
-  SFTP配置(公钥+允许列表上的IP)也将从旧版数据中心移至公共云(AWS)。 客户不需要执行任何操作。
+  SFTP配置（公钥+允许列表上的IP）也将从旧版数据中心移至公共云(AWS)。 客户不需要执行任何操作。
 
 * **我们是否在更改IP？**
 
-  Adobe服务器的IP地址将会更改。 列入允许列表因此，客户可能需要将这些新的IP地址添加到其系统中的。
+  Adobe服务器的IP地址将会更改。 因此，客户可能需要将这些新的IP地址添加到其系统中的。
 
-  列入允许列表 [了解有关上IP的详细信息](#config)。
+  [了解有关上IP的详细信息](#config)。
 
 * **如何处理子域委派？**
 
@@ -97,7 +97,7 @@ Adobe对旧版数据中心不再授权：Campaign Classic实例必须转移到Pu
 
   首先，Adobe可交付性将评估平台的可交付性状态，并推荐切换到新IP的计划
 
-  迁移后不需要热身。 可能会出现异常，在这种情况下，[Adobe客户关怀](https://experienceleague.adobe.com/zh-hans?support-solution=Campaign#support)将与客户联系。
+  迁移后不需要热身。 可能会出现异常，在这种情况下，[Adobe客户关怀](https://experienceleague.adobe.com/?support-solution=Campaign#support)将与客户联系。
 
   不过，该计划旨在让这一业务运营变得透明，不同于在上线期间的最初升级。
 
@@ -135,17 +135,17 @@ Adobe对旧版数据中心不再授权：Campaign Classic实例必须转移到Pu
 
 * **迁移是否会影响与外部帐户的连接？**
 
-  是的。 例如，第三方集成（短信提供商）应将新的Adobe Campaign列入允许列表应用程序服务器IP地址添加到。
+  是的。 例如，第三方集成（短信提供商）应将新的Adobe Campaign应用程序服务器IP地址添加到。
 
-* **迁移是否会影响使用Genesis连接器的Adobe Analytics连接？ 列入允许列表如何将Campaign IP地址添加到Adobe Analytics端的？**
+* **迁移是否会影响使用Genesis连接器的Adobe Analytics连接？ 如何将Campaign IP地址添加到Adobe Analytics端的？**
 
   Adobe Campaign应用程序服务器IP地址将会更改。 此步骤将在迁移后由Adobe客户关怀团队处理。
 
-* **迁移是否会影响与其他Adobe解决方案(AEM、Target等)的连接？**
+* **迁移是否会影响与其他Adobe解决方案（AEM、Target等）的连接？**
 
   集成是在允许列表和Web服务帐户配置中声明的IP地址的组合。 该资产将由Adobe客户关怀团队负责和拥有。
 
-  列入允许列表由于Application Servers IP将发生变化，因此外部解决方案中需要上的IP地址。 将会提供此信息。 集成的其他部分基于IMS，应按原样工作。
+  由于Application Servers IP将发生变化，因此外部解决方案中需要上的IP地址。 将会提供此信息。 集成的其他部分基于IMS，应按原样工作。
 
 * **对于IMS集成，未附加到组织ID的客户怎么样？**
 
@@ -157,9 +157,9 @@ Adobe对旧版数据中心不再授权：Campaign Classic实例必须转移到Pu
 
 * **API连接是否受迁移影响？**
 
-  Adobe服务器的IP地址将会更改。 列入允许列表因此，客户可能需要将这些新的IP地址添加到其系统中的。
+  Adobe服务器的IP地址将会更改。 因此，客户可能需要将这些新的IP地址添加到其系统中的。
 
-  列入允许列表 [了解有关IP on的更多信息](#config)。
+  [了解有关IP on的更多信息](#config)。
 
 * **我们会确保在迁移后正确设置所有JavaScript内存配置参数吗？**
 
@@ -173,7 +173,7 @@ Adobe对旧版数据中心不再授权：Campaign Classic实例必须转移到Pu
 
   它可能会根据新服务器的位置而更改。 但是，客户将能够保留其当前时区。
 
-  在[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/advanced-management/managing-time-zones.html?lang=zh-Hans){target="_blank"}中了解有关时区管理的更多信息。
+  在[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/advanced-management/managing-time-zones.html){target="_blank"}中了解有关时区管理的更多信息。
 
 
 ## 安全性和权限
@@ -204,7 +204,7 @@ Adobe对旧版数据中心不再授权：Campaign Classic实例必须转移到Pu
 
   唯一可能出现的连接问题与客户方的允许列表有关。 客户应在非生产环境中添加此测试，以确保它在移至生产环境之前正常工作。
 
-* 列入允许列表 **是否有任何数据中心特定的配置需要迁移？**
+* **是否有任何数据中心特定的配置需要迁移？**
 
   没有，没有数据中心特定的允许列表配置需要管理。
 
@@ -277,7 +277,7 @@ Adobe对旧版数据中心不再授权：Campaign Classic实例必须转移到Pu
 
   根据客户的复杂性，阶段环境与生产环境迁移之间需要至少1周的备份时间。
 
-* 列入允许列表 **谁将处理向添加新IP？**
+* **谁将处理向添加新IP？**
 
   Adobe客户关怀团队将负责通过将新IP添加到允许列表来确保客户和任何第三方能够访问新系统。
 

@@ -10,14 +10,14 @@ topic-tags: initial-configuration
 exl-id: a2126458-2ae5-47c6-ad13-925f0e067ecf
 source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
 workflow-type: tm+mt
-source-wordcount: '325'
-ht-degree: 1%
+source-wordcount: '352'
+ht-degree: 5%
 
 ---
 
 # 配置Apache Tomcat {#configuring-tomcat}
 
-Adobe Campaign使用名为Apache Tomcat **的**&#x200B;嵌入式Web servlet处理应用程序和任何外部接口(包括客户端控制台、跟踪的URL链接、SOAP调用等)之间的HTTP/HTTPS请求。 对于任何面向外部的Adobe Campaign实例，它前面通常有一个外部Web服务器（通常是IIS或Apache）。
+Adobe Campaign使用名为Apache Tomcat **的**&#x200B;嵌入式Web servlet处理应用程序和任何外部接口（包括客户端控制台、跟踪的URL链接、SOAP调用等）之间的HTTP/HTTPS请求。 对于任何面向外部的Adobe Campaign实例，它前面通常有一个外部Web服务器（通常是IIS或Apache）。
 
 在[此页面](../../production/using/locate-tomcat-version.md)中了解有关Campaign中的Tomcat以及如何找到您的Tomcat版本的更多信息。
 

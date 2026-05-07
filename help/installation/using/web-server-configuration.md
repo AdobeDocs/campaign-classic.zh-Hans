@@ -9,7 +9,7 @@ topic-tags: prerequisites-and-recommendations-
 exl-id: fc0d3f16-5f62-473d-a1de-aab574eff734
 source-git-commit: dba90a154e08400ae6ab6478623a50d48d72207c
 workflow-type: tm+mt
-source-wordcount: '285'
+source-wordcount: '332'
 ht-degree: 0%
 
 ---
@@ -51,7 +51,7 @@ ht-degree: 0%
   **在IIS**&#x200B;上（请参阅[文档](https://www.iis.net/configreference/system.webserver/security/requestfiltering/verbs)），执行以下配置：
 
    * 确保已安装&#x200B;**请求筛选**&#x200B;角色服务或功能。
-   * 在&#x200B;**请求筛选**&#x200B;窗格中，单击“HTTP动词”选项卡，然后单击“拒绝动词”。 在“操作”窗格中，在打开的对话框中输入TRACE。
+   * 在&#x200B;**请求筛选**&#x200B;窗格中，单击“HTTP动词”选项卡，然后单击“拒绝动词”。 在“操作”窗格中，在打开的对话框中输入TRACE 。
 
 * 删除横幅：
 
@@ -81,5 +81,5 @@ ht-degree: 0%
 
 相关主题：
 
-* [Adobe Marketing Cloud合规性概述](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/landing/governance-privacy-security/overview#privacy)
-* [Adobe Campaign安全概述](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/landing/governance-privacy-security/overview#security)
+* [Adobe Marketing Cloud合规性概述](https://experienceleague.adobe.com/en/docs/experience-platform/landing/governance-privacy-security/overview#privacy)
+* [Adobe Campaign安全概述](https://experienceleague.adobe.com/en/docs/experience-platform/landing/governance-privacy-security/overview#security)

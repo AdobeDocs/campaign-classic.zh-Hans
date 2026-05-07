@@ -7,7 +7,7 @@ role: Developer
 exl-id: 441a0e5c-fa7f-46c8-a65a-5cca4c846d43
 source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '417'
+source-wordcount: '418'
 ht-degree: 3%
 
 ---
@@ -82,7 +82,7 @@ function nms_recipient_testLog(message)
  }
 ```
 
-**2。 签名**
+**2. 签名**
 
 函数的签名必须为声明的每个“in”或“inout”参数包含一个参数。
 
@@ -91,7 +91,7 @@ function nms_recipient_testLog(message)
 * **非静态方法**：函数必须首先包含一个附加参数，这与以“xml”(E4X)类型对象的形式传递的XML实体一致。
 * **“仅键”类型方法**：函数必须首先包含一个附加参数，该参数应与以字符串形式传递的键一致。
 
-**3。 返回的值**
+**3. 返回的值**
 
 该函数必须为每个“out”或“inout”类型参数返回一个值。 特定案例：如果在声明方法时未使用任何“static”、“key only”或“const”属性，则第一个返回值必须与修改的实体一致。 可以返回新对象或返回第一个修改的参数。
 

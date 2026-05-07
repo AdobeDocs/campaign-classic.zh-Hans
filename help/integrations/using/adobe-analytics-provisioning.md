@@ -9,8 +9,8 @@ level: Beginner
 exl-id: 24e002aa-4e86-406b-92c7-74f242ee4b86
 source-git-commit: 84e6b2fad97f0ca5d6621cff4648e0be0bef7521
 workflow-type: tm+mt
-source-wordcount: '630'
-ht-degree: 1%
+source-wordcount: '702'
+ht-degree: 5%
 
 ---
 
@@ -114,4 +114,4 @@ Adobe Campaign Classic与Adobe Analytics身份验证之间的集成支持Adobe I
 
 ## 配置和使用情况 {#adobe-analytics-connector-usage}
 
-请参阅[Adobe Campaign v8文档](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/connect/ac-aa){target="_blank"}以了解如何使用Adobe Campaign和Adobe Analytics。
+请参阅[Adobe Campaign v8文档](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/connect/ac-aa){target="_blank"}以了解如何使用Adobe Campaign和Adobe Analytics。

@@ -7,8 +7,8 @@ hide: true
 exl-id: cada78cb-658f-4b9e-8136-31c17cb1d82f
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '412'
-ht-degree: 4%
+source-wordcount: '420'
+ht-degree: 5%
 
 ---
 
@@ -26,9 +26,9 @@ ht-degree: 4%
 
   有关更多信息，根据您的Campaign版本，请参阅以下章节：
 
-  ![](assets/do-not-localize/v7.jpeg) [Campaign v7文档](../../installation/using/about-fda.md)
+  ![](assets/do-not-localize/v7.jpeg)[Campaign v7文档](../../installation/using/about-fda.md)
 
-  ![](assets/do-not-localize/v8.png) [Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/connect/fda.html?lang=zh-Hans)
+  ![](assets/do-not-localize/v8.png)[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/connect/fda.html?lang=zh-Hans)
 
 * 出站模式必须存在于数据库中并链接到FDA数据库。
 * 执行工作流的运算符必须具有&#x200B;**[!UICONTROL USE SQL DATA MANAGEMENT ACTIVITY (useSqlDmActivity)]**&#x200B;命名权限。 [了解详情](../../platform/using/access-management-named-rights.md)。
@@ -46,7 +46,7 @@ ht-degree: 4%
 
    >[!CAUTION]
    >
-   >SQL脚本编写者负责确保SQL脚本正常运行，并且其引用（字段名称等）与出站架构一致。
+   >SQL脚本编写者负责确保SQL脚本正常工作及其引用（字段名称等） 符合出站模式。
 
    如果要加载现有SQL代码，请选择&#x200B;**[!UICONTROL The SQL script is contained in an entity stored in the database]**&#x200B;选项。 必须在&#x200B;**[!UICONTROL Administration]** / **[!UICONTROL Configuration]** / **[!UICONTROL SQL scripts]**&#x200B;菜单中创建和存储SQL脚本。
 
@@ -66,7 +66,7 @@ ht-degree: 4%
 1. 如果SQL脚本已包含用于创建出站工作表的命令，请取消选择&#x200B;**[!UICONTROL Automatically create work table]**&#x200B;选项。 否则，工作流执行后将自动创建工作表。
 1. 单击&#x200B;**[!UICONTROL Ok]**&#x200B;以确认活动配置。
 
-现已配置该活动。工作流中可以随时执行该操作。
+现已配置该活动。 工作流中可以随时执行该操作。
 
 >[!CAUTION]
 >

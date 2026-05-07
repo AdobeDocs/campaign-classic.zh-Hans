@@ -7,7 +7,7 @@ role: Developer
 exl-id: 009bed25-cd35-437c-b789-5b58a6d2d7c6
 source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '382'
+source-wordcount: '387'
 ht-degree: 1%
 
 ---
@@ -42,7 +42,7 @@ ht-degree: 1%
 
 * 限制读取和写入权限：
 
-  此处，该过滤器用于禁止所有操作员在架构上同时具有“读取”和“写入”权限。 仅限由表达式“$(loginId)”表示的&#x200B;**internal**&#x200B;帐户！=0”，具有这些权限。
+  此处，该过滤器用于禁止所有操作员在架构上同时具有“读取”和“写入”权限。 只有由表达式“$(loginId){0”表示的&#x200B;**internal{1!=帐户具有这些权限。**
 
   ```
   <sysFilter name="readAccess"> 

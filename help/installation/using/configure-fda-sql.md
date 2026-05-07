@@ -6,7 +6,7 @@ feature: Installation, Federated Data Access
 exl-id: 65ab4577-3126-4579-8fcc-e93772ebd1e8
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '464'
+source-wordcount: '527'
 ht-degree: 1%
 
 ---
@@ -112,6 +112,6 @@ ht-degree: 1%
 
 | 选项 | 说明 |
 |---|---|
-| 身份验证 | 连接器支持的身份验证类型。 当前支持的值： ActiveDirectoryMSI。 <br>有关更多信息，请参阅[Microsoft文档](https://docs.microsoft.com/en-us/sql/connect/odbc/using-azure-active-directory?view=sql-server-ver15#example-connection-strings)的示例8。 |
+| 身份验证 | 连接器支持的身份验证类型。 当前支持的值： ActiveDirectoryMSI。<br> 有关详细信息，请参阅[Microsoft文档](https://docs.microsoft.com/en-us/sql/connect/odbc/using-azure-active-directory?view=sql-server-ver15#example-connection-strings)的示例8。 |
 | 加密 | 指定连接是否通过网络使用TLS加密。 可能的值为&#x200B;**yes/mandatory （18.0及更高版本）**、**no/optional （18.0及更高版本）**&#x200B;和&#x200B;**strict （18.0及更高版本）**。 在版本18.0及更高版本中，默认值设置为&#x200B;**是**；在早期版本中，默认值设置为&#x200B;**否**。 <br>有关详细信息，请参阅[Microsoft文档](https://docs.microsoft.com/en-us/sql/connect/odbc/dsn-connection-string-attribute?view=azure-sqldw-latest#encrypt)。 |
 | TrustserverCertificate | 与&#x200B;**Encrypt**&#x200B;一起使用时，启用使用自签名服务器证书的加密。 <br>接受值： **是**&#x200B;或&#x200B;**否**（默认值，表示将验证服务器证书）。 |

@@ -10,8 +10,8 @@ topic-tags: additional-configurations
 exl-id: 46c8ed46-0947-47fb-abda-6541b12b6f0c
 source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
 workflow-type: tm+mt
-source-wordcount: '1569'
-ht-degree: 1%
+source-wordcount: '1630'
+ht-degree: 4%
 
 ---
 
@@ -25,13 +25,13 @@ ht-degree: 1%
 
 这些过程仅限于&#x200B;**内部部署**/**混合**&#x200B;部署，需要管理权限。
 
-对于&#x200B;**托管**&#x200B;部署，只能由Adobe配置服务器端设置。 但是，某些设置可以在[Campaign控制面板](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=zh-Hans)中进行设置，例如IP允许列表管理或URL权限。 [了解详情](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html?lang=zh-Hans)。
+对于&#x200B;**托管**&#x200B;部署，服务器端设置只能由Adobe配置。 但是，某些设置可以在[Campaign控制面板](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=zh-Hans)中进行设置，例如IP允许列表管理或URL权限。 [了解详情](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html?lang=zh-Hans)。
 
 有关更多信息，请参阅以下章节：
 
 * [控制面板文档](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=zh-Hans)
 * [托管模型](../../installation/using/hosting-models.md)
-* [Campaign Classic本地和托管功能表](../../installation/using/capability-matrix.md)
+* [Campaign Classic本地和托管功能矩阵](../../installation/using/capability-matrix.md)
 
 ## 配置文件
 

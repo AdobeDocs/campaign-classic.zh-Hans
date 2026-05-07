@@ -7,8 +7,8 @@ hide: true
 exl-id: 78949d94-60b3-44f1-8e5a-d61b5b723e87
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '502'
-ht-degree: 4%
+source-wordcount: '529'
+ht-degree: 9%
 
 ---
 
@@ -24,7 +24,7 @@ Campaign基础架构依赖于第三方系统，这些系统必须定期使用最
 
 >[!NOTE]
 >
->有关这些更改的任何问题，请联系[Adobe客户关怀](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。 另请参阅[内部版本升级常见问题解答](../../platform/using/faq-build-upgrade.md)。
+>有关这些更改的任何问题，请联系 [Adobe 客户关怀](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。 另请参阅[内部版本升级常见问题解答](../../platform/using/faq-build-upgrade.md)。
 >
 
 ## Campaign内部版本升级 {#ac-upgrade}

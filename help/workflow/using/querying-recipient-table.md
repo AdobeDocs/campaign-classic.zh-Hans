@@ -48,7 +48,7 @@ ht-degree: 3%
 1. 在&#x200B;**[!UICONTROL Data filtering]**&#x200B;窗口中，优化您的搜索：选择&#x200B;**[!UICONTROL Filtering conditions]**&#x200B;并单击&#x200B;**[!UICONTROL Next]**。
 1. **[!UICONTROL Target element]**&#x200B;窗口允许您输入筛选器设置。
 
-   定义以下筛选条件：电子邮件域等于“orange.co.uk”的收件人。 为此，请在&#x200B;**列中选择**&#x200B;电子邮件域(@email)**[!UICONTROL Expression]**，在&#x200B;**列中选择**&#x200B;等于&#x200B;**[!UICONTROL Operator]**，并在&#x200B;**[!UICONTROL Value]**&#x200B;列中输入“orange.co.uk”。
+   定义以下筛选条件：电子邮件域等于“orange.co.uk”的收件人。 为此，请在&#x200B;**[!UICONTROL Expression]**&#x200B;列中选择&#x200B;**电子邮件域(@email)**，在&#x200B;**[!UICONTROL Operator]**&#x200B;列中选择&#x200B;**等于**，并在&#x200B;**[!UICONTROL Value]**&#x200B;列中输入“orange.co.uk”。
 
    ![](assets/query_editor_05.png)
 
@@ -62,7 +62,7 @@ ht-degree: 3%
 
 1. 现在，我们将更改查询以查找不住在伦敦的联系人。
 
-   选择&#x200B;**[!UICONTROL City (location/@city)]**&#x200B;列中的&#x200B;**[!UICONTROL Expression]**，选择&#x200B;**[!UICONTROL different from]**&#x200B;作为运算符，并在&#x200B;**[!UICONTROL London]**&#x200B;列中输入&#x200B;**[!UICONTROL Value]**。
+   选择&#x200B;**[!UICONTROL Expression]**&#x200B;列中的&#x200B;**[!UICONTROL City (location/@city)]**，选择&#x200B;**[!UICONTROL different from]**&#x200B;作为运算符，并在&#x200B;**[!UICONTROL Value]**&#x200B;列中输入&#x200B;**[!UICONTROL London]**。
 
    ![](assets/query_editor_08.png)
 

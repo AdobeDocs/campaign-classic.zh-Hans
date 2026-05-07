@@ -9,7 +9,7 @@ topic-tags: prerequisites-and-recommendations-
 exl-id: ec40498e-e673-4792-8dcf-8bb7e852b532
 source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
 workflow-type: tm+mt
-source-wordcount: '445'
+source-wordcount: '450'
 ht-degree: 7%
 
 ---
@@ -26,10 +26,10 @@ ht-degree: 7%
 
 隐私配置和强化是安全优化的关键元素。 以下是有关隐私的一些可遵循的最佳实践：
 
-* 使用HTTPS而不是HTTPProtect您的客户PII
+* 使用HTTPS而不是HTTP保护您的客户PII
 * 使用PII视图限制保护隐私并防止数据被滥用。
 * 确保加密密码受到限制。
-* Protect可能包含个人信息的页面，如镜像页面、Web应用程序等。
+* 保护可能包含个人信息的页面，如镜像页面、Web应用程序等。
 
 [了解更多信息](../../installation/using/privacy.md)
 
@@ -51,7 +51,7 @@ ht-degree: 7%
 
 在Adobe Campaign（工作流、Javascript、JSSP等）中进行开发时，请始终遵循以下准则：
 
-* 列入允许列表 **脚本编写**：尝试避免SQL语句，使用参数化函数而不是字符串连接，通过添加要用到的SQL函数来避免SQL注入。
+* **脚本编写**：尝试避免SQL语句，使用参数化函数而不是字符串连接，通过添加要用到的SQL函数来避免SQL注入。
 
 * **保护数据模型**：使用已命名权限限制操作员操作，添加系统筛选器(sysFilter)
 
@@ -84,7 +84,7 @@ ht-degree: 7%
 
 * **传出连接保护**&#x200B;和&#x200B;**命令限制**（服务器端）
 
-* 您还可以添加额外的HTTP标头、激活checkIPConsistent、enableTLS、sessionTimeOutSec等。 有关详细信息，请参阅[Campaign服务器配置文档](../../installation/using/configuring-campaign-server.md)和[服务器配置文件描述](../../installation/using/the-server-configuration-file.md)。
+* 您还可以添加额外的HTTP标头、激活checkIPConsistent、enableTLS、sessionTimeOutSec等。有关详细信息，请参阅[Campaign服务器配置文档](../../installation/using/configuring-campaign-server.md)和[服务器配置文件描述](../../installation/using/the-server-configuration-file.md)。
 
 [了解更多信息](../../installation/using/server-configuration.md)
 

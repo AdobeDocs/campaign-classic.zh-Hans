@@ -20,7 +20,7 @@ ht-degree: 4%
 
 内容块在XML文档中构造用于数据存储。 编辑界面用于从Adobe Campaign客户端控制台或通过Web浏览器输入内容。 通过捕获XML流或聚合到数据库中的数据，也可以自动输入内容。
 
-组合XML文档和XSL或JavaScript模板样式表将自动生成各种格式(HTML、文本)的发布模板的投影。
+组合XML文档和XSL或JavaScript模板样式表将自动生成各种格式（HTML、文本）的发布模板的投影。
 
 ![](assets/d_ncs_content_process.png)
 

@@ -7,7 +7,7 @@ hide: true
 exl-id: 30a9bd2a-afb1-481c-ab5f-5acebd9cbb5a
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '333'
+source-wordcount: '335'
 ht-degree: 10%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 10%
 
 **计划程序**&#x200B;是一个永久性任务，它会在计划指定的时间激活其转换。
 
-**[!UICONTROL Scheduler]** 活动应视为排程开始的时间。图表中的活动定向规则与 **[!UICONTROL Start]** 活动相同。此活动不得包含集客过渡。
+**[!UICONTROL Scheduler]** 活动应视为排程开始的时间。 图表中的活动定向规则与 **[!UICONTROL Start]** 活动相同。 此活动不得包含集客过渡。
 
 ## 最佳实践 {#best-practices}
 

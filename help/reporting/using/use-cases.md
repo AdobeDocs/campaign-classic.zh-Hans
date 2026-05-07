@@ -1,18 +1,18 @@
 ---
 product: campaign
-title: Analysis报告用例
-description: Analysis报告用例
+title: 分析报告用例
+description: 分析报告用例
 badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v8"
 feature: Reporting, Monitoring
 exl-id: e326e32e-7bb0-46ff-9ba5-94ccd1169af2
 source-git-commit: 5e062f9dbdf6c148e442ac10dbb12cf72ba0179b
 workflow-type: tm+mt
-source-wordcount: '1331'
-ht-degree: 0%
+source-wordcount: '1338'
+ht-degree: 1%
 
 ---
 
-# Analysis报告用例 {#use-cases}
+# 分析报告用例 {#use-cases}
 
 ## 分析人群 {#analyzing-a-population}
 

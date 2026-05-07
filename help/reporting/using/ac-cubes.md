@@ -6,8 +6,8 @@ feature: Reporting, Monitoring
 exl-id: 71d24f03-d41d-49bc-b9a5-8237902f7d6a
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '336'
-ht-degree: 25%
+source-wordcount: '350'
+ht-degree: 27%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 25%
 
 您可以扩展数据库探索和分析能力，同时使最终用户更容易配置报告和表：他们只需在创建其报告或表时选择现有（已经过完全配置）多维数据集，以处理计算、度量和统计。
 
-创建和配置多维数据集后，报告查询框和 Web 应用程序中即会使用这些多维数据集。它们可以在数据透视表中使用和操作。
+创建和配置多维数据集后，报告查询框和 Web 应用程序中即会使用这些多维数据集。 它们可以在数据透视表中使用和操作。
 
 >[!CAUTION]
 >

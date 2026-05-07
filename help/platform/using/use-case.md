@@ -10,7 +10,7 @@ exl-id: 85ded096-7d27-41b3-8ef2-93f5ca8def82
 hide: true
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '264'
+source-wordcount: '274'
 ht-degree: 3%
 
 ---
@@ -46,7 +46,7 @@ ht-degree: 3%
 
    ![](assets/s_ncs_user_filter_view_schema.png)
 
-   您可以访问这些字段，以便在过滤器编辑器的正文中定义过滤器条件。 应用程序过滤器的定义方式与高级过滤器的定义方式完全相同。 有关筛选器的更多信息，请参阅[Campaign v8 （控制台）文档](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/audience/create-filters){target=_blank}。
+   您可以访问这些字段，以便在过滤器编辑器的正文中定义过滤器条件。 应用程序过滤器的定义方式与高级过滤器的定义方式完全相同。 有关筛选器的更多信息，请参阅[Campaign v8 （控制台）文档](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-filters){target=_blank}。
 
 
 1. 在订阅上创建一个新的筛选器，以仅显示具有未定义电子邮件格式的订阅：

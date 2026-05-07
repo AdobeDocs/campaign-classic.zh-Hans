@@ -7,8 +7,8 @@ badge: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 exl-id: 0c7f00f3-b16d-41c5-a7b1-f5a59201bf8c
 source-git-commit: 517b85f5d7691acc2522bf4541f07c34c60c7fbf
 workflow-type: tm+mt
-source-wordcount: '852'
-ht-degree: 5%
+source-wordcount: '857'
+ht-degree: 6%
 
 ---
 
@@ -33,7 +33,7 @@ ht-degree: 5%
    * 浏览数据库中的数据并定义测量。 可在[此小节](../../reporting/using/ac-cubes.md)中了解详情。
    * 向现有报告添加指标。 可在[此小节](../../reporting/using/about-reports-creation-in-campaign.md)中了解详情。
    * 查看数据库中的数据。 可在[此小节](../../reporting/using/about-descriptive-analysis.md)中了解详情。
-   * 创建新的投放报告。 在本节[&#128279;](../../reporting/using/about-reports-creation-in-campaign.md)中了解更多，
+   * 创建新的投放报告。 在本节](../../reporting/using/about-reports-creation-in-campaign.md)中了解更多[，
    * 从Adobe Campaign数据库导出数据(通过工作流，请参阅[此部分](../../workflow/using/about-workflows.md)
    * 创建数据透视表。 可在[此小节](../../reporting/using/creating-a-table.md#creating-a-breakdown-or-pivot-table)中了解详情。
    * 浏览汇总的数据。 可在[此小节](../../reporting/using/ac-cubes.md)中了解详情。
@@ -42,7 +42,7 @@ ht-degree: 5%
 
 1. 确定目标人群
 
-   然后，您需要确定要创建的报告将定位谁，了解查看该报告的公众类型以及报告显示模式(在浏览器中、在Adobe Campaign中、针对特定对象、针对整个平台等)。
+   然后，您需要确定要创建的报告将定位谁，了解查看该报告的公众类型以及报告显示模式（在浏览器中、在Adobe Campaign中、针对特定对象、针对整个平台等）。
 
    您还可以为以下项创建报告：
 
@@ -57,7 +57,7 @@ ht-degree: 5%
 
    然后，您需要找到要显示的数据类型：投放指标、数据库用户档案报告等。
 
-   您还需要了解此数据的性质（简单、由计算产生、重要程度等）、其位置(在Adobe Campaign中，位于第三方系统中)、用于定义计算周期的更新频率（每日、每周、实时）及其数量。
+   您还需要了解此数据的性质（简单、由计算产生、重要程度等）、其位置（在Adobe Campaign中，位于第三方系统中）、用于定义计算周期的更新频率（每日、每周、实时）及其数量。
 
    与数据量和更新相关联的问题需要仔细研究，以避免报告显示问题，尤其是时间方面的问题。 因此，我们建议创建聚合，以便在报表之外预计算某些数据。 包含跟踪和投放日志的表可以包含数百万条记录：这意味着需要通过工作流聚合数据，才能在报表中使用这些数据。
 
@@ -113,4 +113,4 @@ if(string(ctx@_historyId)!==""))
 
 ### 导出您的报告 {#exporting-reports}
 
-[此部分](../../reporting/using/actions-on-reports.md#exporting-a-report)中详细介绍了特定于导出报告的Recommendations。
+有关导出报告的特定建议，请参见[此部分](../../reporting/using/actions-on-reports.md#exporting-a-report)。

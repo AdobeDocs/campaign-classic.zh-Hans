@@ -6,7 +6,7 @@ feature: Transactional Messaging, Message Center, Templates
 exl-id: a52bc140-072e-4f81-b6da-f1b38662bce5
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '498'
+source-wordcount: '500'
 ht-degree: 0%
 
 ---
@@ -71,7 +71,7 @@ ht-degree: 0%
 
 要在电子邮件正文中插入个性化标记，请应用以下步骤：
 
-1. 在消息模板中，单击与电子邮件格式(HTML或文本)匹配的选项卡。
+1. 在消息模板中，单击与电子邮件格式（HTML或文本）匹配的选项卡。
 
 1. 输入消息正文。
 
@@ -79,7 +79,7 @@ ht-degree: 0%
 
    ![](assets/messagecenter_create_custo_002.png)
 
-1. 使用以下语法填写标记： **element name**。@**属性名称**，如下所示。
+1. 使用以下语法填写标记： **element name**.@**attribute name**，如下所示。
 
    ![](assets/messagecenter_create_custo_003.png)
 

@@ -9,7 +9,7 @@ topic-tags: deployment-types-
 exl-id: 38c14010-203a-47ab-b23d-6f431dab9a88
 source-git-commit: 1be1528d657537786c430ea9c8bdb3aad58ba20d
 workflow-type: tm+mt
-source-wordcount: '1218'
+source-wordcount: '1251'
 ht-degree: 3%
 
 ---
@@ -42,7 +42,7 @@ ht-degree: 3%
 
 ### 推荐的设备 {#recommended-equipment}
 
-* 应用程序服务器：2 Ghz四核CPU、4 GB RAM、软件RAID 1 80 GB SATA硬盘。
+* 应用服务器：2 Ghz四核CPU、4 GB RAM、软件RAID 1 80 GB SATA硬盘。
 * 重定向服务器：2 Ghz四核CPU、4 GB RAM、软件RAID 1 80 GB SATA硬盘。
 
 >[!NOTE]
@@ -59,10 +59,10 @@ ht-degree: 3%
 * 通过POP3可访问的退回邮箱，
 * 在负载平衡器上创建两个DNS别名：
 
-   * 第一台服务器向公众开放，用于跟踪和指向虚拟IP地址(VIP)上的负载平衡器，然后将其分发到两个前端服务器，
-   * 第二个通过控制台向内部用户公开，用于访问，并指向虚拟IP地址(VIP)上的负载平衡器，然后将其分发到两个应用程序服务器。
+   * 第一组应用程序向公众开放，用于跟踪和指向虚拟IP地址上的负载平衡器(VIP)，然后将其分发到两个前端服务器，
+   * 第二个应用程序通过控制台向内部用户公开，用于访问，并指向虚拟IP地址(VIP)上的负载平衡器，然后将其分发到两个应用程序服务器。
 
-* 防火墙配置为打开STMP (25)、DNS (53)、HTTP (80)、HTTPS (443)、SQL (1521(Oracle)、5432(PostgreSQL)等) 端口。 有关详细信息，请参阅[数据库访问](../../installation/using/network-configuration.md#database-access)部分。
+* 防火墙配置为打开STMP (25)、DNS (53)、HTTP (80)、HTTPS (443)、SQL （1521 for Oracle、5432 for PostgreSQL等） 端口。 有关详细信息，请参阅[数据库访问](../../installation/using/network-configuration.md#database-access)部分。
 
 >[!CAUTION]
 >
@@ -79,7 +79,7 @@ ht-degree: 3%
 * 实例名称：演示
 * DNS掩码： tracking.campaign.net&#42;， console.campaign.net&#42; （应用程序服务器处理客户端控制台连接和报告以及镜像页面和退订页面的URL）
 * 语言：英语
-* 数据库： campaign：demo@dbsrv
+* 数据库： campaign:demo@dbsrv
 
 安装第一台服务器的步骤如下：
 
@@ -168,7 +168,7 @@ ht-degree: 3%
 
 1. 将客户端控制台安装程序&#x200B;**setup-client-7.XX**、**YYYY.exe**&#x200B;复制到&#x200B;**/datakit/nl/eng/jsp**&#x200B;文件夹。 [了解详情](../../installation/using/client-console-availability-for-windows.md)。
 
-1. 启动Adobe Campaign服务器(在Windows中为&#x200B;**net start nlserver6**，在Linux中为&#x200B;**/etc/init.d/nlserver6 start**)，然后再次运行命令&#x200B;**nlserver pdump**&#x200B;以检查是否存在所有启用的模块。
+1. 启动Adobe Campaign服务器（在Windows中为&#x200B;**net start nlserver6**，在Linux中为&#x200B;**/etc/init.d/nlserver6 start**），然后再次运行命令&#x200B;**nlserver pdump**&#x200B;以检查是否存在所有启用的模块。
 
    >[!NOTE]
    >

@@ -9,7 +9,7 @@ topic-tags: connectors
 exl-id: ef2b98bd-441e-4e59-bb41-4e835e250663
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '248'
+source-wordcount: '253'
 ht-degree: 1%
 
 ---
@@ -57,7 +57,7 @@ ht-degree: 1%
      ./redshift_odbc-setup.sh
    ```
 
-1. 安装ODBC驱动程序后，需要重新启动Campaign Classic。 为此，请运行以下命令：
+1. 安装ODBC驱动程序后，您需要重新启动Campaign Classic。 为此，请运行以下命令：
 
    ```
    systemctl stop nlserver.service

@@ -18,16 +18,16 @@ ht-degree: 0%
 
 
 
-使用Campaign [联合数据访问](../../installation/using/about-fda.md) (FDA)选项处理存储在外部数据库中的信息。 按照以下步骤配置对SAP HANA的访问权限。
+使用Campaign [联合数据访问](../../installation/using/about-fda.md) (FDA)选项处理存储在外部数据库中的信息。 请按照以下步骤配置对SAP HANA的访问权限。
 
 1. 配置[SAP HANA数据库](#sap-config)
-1. 在Campaign中配置SAP HANA[外部帐户](#sap-external)
+1. 在Campaign中配置SAP HANA [外部帐户](#sap-external)
 
 ## SAP HANA驱动程序 {#sap-config}
 
 连接到FDA中的SAP HANA外部数据库需要Adobe Campaign服务器上的某些其他配置：
 
-1. 根据您使用的操作系统安装用于SAP HANA的ODBC驱动程序：
+1. 根据您使用的操作系统为SAP HANA安装ODBC驱动程序：
 
    * 适用于Linux的&#x200B;**hdb_client_linux.tgz**。 解压后，启动hdbinst命令并按照说明完成驱动程序的安装。
    * 适用于Windows的&#x200B;**hdb_client_windows.zip**。 解压缩文件并启动可执行文件： **hdbinst.exe**。 按照助理说明完成驱动程序的安装。
@@ -59,7 +59,7 @@ ht-degree: 0%
 1. 指定Adobe Campaign服务器的环境变量：
 
    * **LD_LIBRARY_PATH**：默认情况下，它应包含指向您的SAP Hana客户端的链接(/usr/sap/hdbclient/libodbcHDB.so)。
-   * **ODBCINI**： odbc.ini文件的位置(例如/etc/odbc.ini)。
+   * **ODBCINI**： odbc.ini文件的位置（例如/etc/odbc.ini）。
 
 ## SAP HANA外部帐户{#sap-external}
 

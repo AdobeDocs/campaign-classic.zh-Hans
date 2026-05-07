@@ -8,7 +8,7 @@ hide: true
 exl-id: 1dd3c080-444d-45f8-9562-d2d01a9d2860
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '1491'
+source-wordcount: '1511'
 ht-degree: 1%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 1%
 
 从营销活动创建投放后，这些投放将链接到此营销活动，并在营销活动级别合并。
 
-![](assets/do-not-localize/how-to-video.png) [在视频中发现此功能](#create-email-video)
+![](assets/do-not-localize/how-to-video.png)[在视频中发现此功能](#create-email-video)
 
 ## 创建投放 {#creating-deliveries}
 
@@ -116,13 +116,13 @@ ht-degree: 1%
 
 ## 管理关联文档 {#managing-associated-documents}
 
-您可以将如报告、照片、网页、图表等各种文档与营销活动关联起来。这些文档可以是任何格式（Microsoft Word、PowerPoint、PNG、JPG、Acrobat PDF等）。 在本节[中了解如何将文档与促销活动](../../campaign/using/marketing-campaign-assets.md)关联。
+您可以将各种文档与活动关联：报表、照片、网页、图表等。这些文档可以是任何格式（Microsoft Word、PowerPoint、PNG、JPG、Acrobat PDF等）。 在本节](../../campaign/using/marketing-campaign-assets.md)中了解如何将文档与促销活动[关联。
 
 >[!IMPORTANT]
 >
 >此模式为小文档保留。
 
-在营销策划中，您还可以参考其他项目，如促销优惠券、与特定分支或商店相关的特殊优惠等。 当这些元素包含在大纲中时，它们可以与直邮投放相关联。 [了解详情](#associating-and-structuring-resources-linked-via-a-delivery-outline)。
+在营销策划中，您还可以参考其他项目，如促销优惠券、与特定分支或商店相关的特殊优惠等。当这些元素包含在大纲中时，它们可以与直邮投放相关联。 [了解详情](#associating-and-structuring-resources-linked-via-a-delivery-outline)。
 
 >[!NOTE]
 >
@@ -134,7 +134,7 @@ ht-degree: 1%
 
 **[!UICONTROL Documents]**&#x200B;选项卡包含：
 
-* 具有适当权限的Adobe Campaign操作员可本地下载的内容（模板、图像等）所需的所有文档列表，
+* 内容所需的所有文档（模板、图像等）的列表 Adobe Campaign操作员通过适当权限可本地下载的广告文件、
 * 包含路由器信息的文档（如果有）。
 
 这些文档通过&#x200B;**[!UICONTROL Edit > Documents]**&#x200B;选项卡链接到项目或营销策划。
@@ -161,7 +161,7 @@ ht-degree: 1%
 >
 >投放大纲仅用于直邮营销活动的上下文。
 
-投放概要表示在公司中为特定营销活动创建的结构化元素集（文档、分支/商店、促销优惠券等）。
+投放概要表示一组结构化元素（文档、分支/商店、促销优惠券等） 在公司中为特定营销活动创建。
 
 这些元素在投放概要中分组，并且特定的投放概要将与投放关联；在发送到&#x200B;**服务提供商**&#x200B;的提取文件中将引用该投放概要，以便将其附加到投放。 例如，您可以创建一个投放概要，其中引用分支及其使用的营销小册子。
 
@@ -169,7 +169,7 @@ ht-degree: 1%
 
 #### 创建大纲 {#creating-an-outline}
 
-要创建大纲，请在相关营销活动的&#x200B;**[!UICONTROL Delivery outlines]**&#x200B;选项卡中单击&#x200B;**[!UICONTROL Edit > Documents]**&#x200B;子选项卡。
+要创建大纲，请在相关营销活动的&#x200B;**[!UICONTROL Edit > Documents]**&#x200B;选项卡中单击&#x200B;**[!UICONTROL Delivery outlines]**&#x200B;子选项卡。
 
 >[!NOTE]
 >
@@ -197,7 +197,7 @@ ht-degree: 1%
 
   ![](assets/s_ncs_user_op_add_composition_field_button.png)
 
-* 资源是在营销资源仪表板中生成的营销资源，可通过&#x200B;**[!UICONTROL Resources]**&#x200B;选项卡的&#x200B;**[!UICONTROL Campaigns]**&#x200B;链接访问。
+* 资源是在营销资源仪表板中生成的营销资源，可通过&#x200B;**[!UICONTROL Campaigns]**&#x200B;选项卡的&#x200B;**[!UICONTROL Resources]**&#x200B;链接访问。
 
   ![](assets/s_ncs_user_mkg_resource_ovv.png)
 
@@ -221,7 +221,7 @@ ht-degree: 1%
 
 #### 提取结果 {#extraction-result}
 
-在提取并发送到服务提供商的文件中，根据与服务提供商相关的导出模板中的信息将大纲的名称以及适当时其特征（成本、描述等）添加到内容中。
+在提取并发送到服务提供商的文件中，大纲的名称以及适当时其特征（成本、描述等） 根据与服务提供商关联的导出模板中的信息添加到内容。
 
 在以下示例中，与投放关联的大纲的标签、预计成本和描述将添加到提取文件中。
 
@@ -237,6 +237,6 @@ ht-degree: 1%
 
 此视频介绍如何在Adobe Campaign中创建活动和电子邮件。
 
->[!VIDEO](https://video.tv.adobe.com/v/27491?captions=chi_hans&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/25604?quality=12)
 
 [此处](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hans)提供了其他Campaign操作方法视频。

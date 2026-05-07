@@ -15,10 +15,10 @@ ht-degree: 22%
 
 
 
-以下是Campaign Classic中使用的各种端点。
+以下是Campaign Classic中使用的不同端点。
 
 | 上下文 | URL |
 |--- |--- |
-| 浏览器端点 | `https://*.experiencecloud.adobe.com` （SSO提供程序）<br>`https://*.campaign.adobe.com` （Campaign实例）<br>`https://adobeid-na1.services.adobe.com` (Adobe登录) |
+| 浏览器端点 | `https://*.experiencecloud.adobe.com` （SSO提供程序）<br>`https://*.campaign.adobe.com` （Campaign实例）<br>`https://adobeid-na1.services.adobe.com` （Adobe登录） |
 | 收件箱呈现(Litmus) | `https://deliverability-app.neolane.net/deliverability` |
 | 品牌URL、镜像页面、跟踪、fileref（部署向导） | 检查已为您配置的URL。 |

@@ -8,7 +8,7 @@ hide: true
 exl-id: 0411686e-4f13-401e-9333-e14b05ebe9cd
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '1531'
+source-wordcount: '1551'
 ht-degree: 11%
 
 ---
@@ -142,7 +142,7 @@ ht-degree: 11%
    >
    >在配置最后批次时，还必须留出足够的时间进行重试。 请参阅[此小节](steps-sending-the-delivery.md#configuring-retries)。
 
-1. 要监控您的发送，请转到投放日志。 请参阅[此页](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/send/monitor/delivery-dashboard#delivery-logs-and-history){target="_blank"}。
+1. 要监控您的发送，请转到投放日志。 请参阅[此页](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard#delivery-logs-and-history){target="_blank"}。
 
    您可以看到已在已处理批次中发送的投放（**[!UICONTROL Sent]**&#x200B;状态）以及将在剩余批次中发送的投放（**[!UICONTROL Pending]**&#x200B;状态）。
 
@@ -164,7 +164,7 @@ ht-degree: 11%
 
   使用批次，您可以将消息数量限制为每天20条，例如，考虑呼叫中心的每日处理能力。
 
-  为此，请选择&#x200B;**[!UICONTROL Schedule multiple waves of the same size]**&#x200B;选项。 输入&#x200B;**[!UICONTROL 20]**&#x200B;作为波次大小，并在&#x200B;**[!UICONTROL 1d]**&#x200B;字段中输入&#x200B;**[!UICONTROL Period]**。
+  为此，请选择&#x200B;**[!UICONTROL Schedule multiple waves of the same size]**&#x200B;选项。 输入&#x200B;**[!UICONTROL 20]**&#x200B;作为波次大小，并在&#x200B;**[!UICONTROL Period]**&#x200B;字段中输入&#x200B;**[!UICONTROL 1d]**。
 
   ![](assets/s_ncs_user_wizard_waves_call_center.png)
 
@@ -190,11 +190,11 @@ ht-degree: 11%
 
 * **[!UICONTROL Delivery duration]**&#x200B;字段允许您输入全局投放重试限制。 这意味着，Adobe Campaign 从开始日期开始发送消息，然后对于仅返回错误的消息，将执行定期、可配置的重试，直至达到有效期限。
 
-  您也可以选择指定日期。为此，请选择&#x200B;**[!UICONTROL Explicitly set validity dates]**。 在此情况下，也可以使用投放和有效期限日期指定时间。默认情况下使用当前时间，但您可以直接在输入字段中修改此项。
+  您也可以选择指定日期。 为此，请选择&#x200B;**[!UICONTROL Explicitly set validity dates]**。 在此情况下，也可以使用投放和有效期限日期指定时间。 默认情况下使用当前时间，但您可以直接在输入字段中修改此项。
 
   >[!IMPORTANT]
   >
-  >对于托管或混合安装，如果您已升级到[Enhanced MTA](sending-with-enhanced-mta.md)，则仅当设置为&#x200B;**[!UICONTROL Delivery duration]** 3.5天或更短时间时&#x200B;**，才会使用Campaign电子邮件投放中的**&#x200B;设置。 如果定义的值超过3.5天，则不会将其考虑在内。
+  >对于托管或混合安装，如果您已升级到[Enhanced MTA](sending-with-enhanced-mta.md)，则仅当设置为&#x200B;**3.5天或更短时间时**，才会使用Campaign电子邮件投放中的&#x200B;**[!UICONTROL Delivery duration]**&#x200B;设置。 如果定义的值超过3.5天，则不会将其考虑在内。
 
 * **资源的有效性限制**： **[!UICONTROL Validity limit]**&#x200B;字段用于已上传的资源，主要用于镜像页面和图像。 本页上的资源仅在限制时间内有效（以节省磁盘空间）。
 

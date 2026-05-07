@@ -7,7 +7,7 @@ hide: true
 exl-id: d345ba62-c2fb-43df-a2a1-e9e4292d301a
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '1179'
+source-wordcount: '1187'
 ht-degree: 1%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 1%
 
 工作流始终以手动方式启动。 但是，在启动时，它会根据通过调度程序（请参阅[调度程序](scheduler.md)）或活动计划指定的信息来保持非活动状态。
 
-与定向工作流执行（启动、停止、暂停等）相关的操作是&#x200B;**异步**&#x200B;进程：顺序已记录，一旦服务器可供应用时，顺序将生效。
+与定向工作流执行（启动、停止、暂停等）相关的操作 是&#x200B;**异步**&#x200B;进程：已记录此顺序，一旦服务器可以应用此顺序，此顺序将立即生效。
 
 利用工具栏，您可以启动和跟踪工作流的执行情况。
 
@@ -64,7 +64,7 @@ ht-degree: 1%
 
   此操作将停止，然后重新启动工作流。 在大多数情况下，它可以更快地重新启动。 当停止需要一定时间时，自动重新启动也很有用：这是因为在工作流停止时，“Stop”命令不可用。
 
-  **[!UICONTROL Start / Pause / Stop / Restart]**&#x200B;操作也可通过工具栏中的执行图标使用。 有关更多信息，请参阅此[&#128279;](../../campaign/using/marketing-campaign-deliveries.md#creating-a-targeting-workflow)章节。
+  **[!UICONTROL Start / Pause / Stop / Restart]**&#x200B;操作也可通过工具栏中的执行图标使用。 有关更多信息，请参阅此](../../campaign/using/marketing-campaign-deliveries.md#creating-a-targeting-workflow)章节[。
 
   请注意，**重新启动**&#x200B;操作不会清除与&#x200B;**执行**、**停止**&#x200B;和&#x200B;**启动**&#x200B;操作（实例变量在启动操作时正在清除）相比较的工作流实例变量。 重新启动工作流时，实例变量仍可用于保留值。 要清除它们，您可以：
    * 执行&#x200B;**停止**&#x200B;和&#x200B;**启动**&#x200B;操作。
@@ -82,7 +82,7 @@ ht-degree: 1%
 
 * **[!UICONTROL Start in simulation mode]**
 
-  使用此选项，您可以在模拟模式下而不是实际模式下启动工作流。 这意味着在启用此模式时，将只执行不影响数据库或文件系统的活动（例如&#x200B;**[!UICONTROL Query]**、**[!UICONTROL Union]**、**[!UICONTROL Intersection]**&#x200B;等）。 不执行具有影响的活动（例如&#x200B;**[!UICONTROL Export]**、**[!UICONTROL Import]**&#x200B;等）及其后的活动（在同一分支中）。
+  使用此选项，您可以在模拟模式下而不是实际模式下启动工作流。 这意味着在启用此模式时，将只执行不影响数据库或文件系统的活动（例如&#x200B;**[!UICONTROL Query]**、**[!UICONTROL Union]**、**[!UICONTROL Intersection]**&#x200B;等）。 有影响的活动（例如&#x200B;**[!UICONTROL Export]**、**[!UICONTROL Import]**&#x200B;等） 以及执行它们之后的那些操作（在同一分支中）不会被执行。
 
 * **[!UICONTROL Execute pending tasks now]**
 
@@ -92,7 +92,7 @@ ht-degree: 1%
 
   此操作基于所选工作流创建新的工作流模板。 您需要指定保存该文件的文件夹（在&#x200B;**[!UICONTROL Folder]**&#x200B;字段中）。
 
-  **[!UICONTROL Mass update of selected lines]**&#x200B;和&#x200B;**[!UICONTROL Merge selected lines]**&#x200B;选项是所有&#x200B;**[!UICONTROL Actions]**&#x200B;菜单中均可用的通用平台选项。 有关更多信息，请参阅此[&#128279;](../../platform/using/updating-data.md)章节。
+  **[!UICONTROL Mass update of selected lines]**&#x200B;和&#x200B;**[!UICONTROL Merge selected lines]**&#x200B;选项是所有&#x200B;**[!UICONTROL Actions]**&#x200B;菜单中均可用的通用平台选项。 有关更多信息，请参阅此](../../platform/using/updating-data.md)章节[。
 
 
 ## 工作流执行最佳实践 {#workflow-execution-best-practices}

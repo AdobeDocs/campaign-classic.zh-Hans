@@ -8,7 +8,7 @@ exl-id: 12b173e9-5068-4d45-9e1e-2aecc9866e9c
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
 source-wordcount: '615'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -34,11 +34,11 @@ ht-degree: 1%
 1. 创建查询。 在本例中，目标是计算数据库中所有收件人的上次已知创建日期。 因此，查询不包含过滤器。
 1. 选择 **[!UICONTROL Add data]**。
 1. 在打开的窗口中，依次选择&#x200B;**[!UICONTROL Data linked to the filtering dimension]**&#x200B;和&#x200B;**[!UICONTROL Filtering dimension data]**。
-1. 在&#x200B;**[!UICONTROL Data to add]**&#x200B;窗口中，添加计算收件人表中&#x200B;**创建日期**&#x200B;字段最大值的列。 您可以使用表达式编辑器或直接在&#x200B;**列中的字段中输入** max(@created)**[!UICONTROL Expression]**。 然后单击&#x200B;**[!UICONTROL Finish]**&#x200B;按钮。
+1. 在&#x200B;**[!UICONTROL Data to add]**&#x200B;窗口中，添加计算收件人表中&#x200B;**创建日期**&#x200B;字段最大值的列。 您可以使用表达式编辑器或直接在&#x200B;**[!UICONTROL Expression]**&#x200B;列中的字段中输入&#x200B;**max(@created)**。 然后单击&#x200B;**[!UICONTROL Finish]**&#x200B;按钮。
 
    ![](assets/datamanagement_usecase_2.png)
 
-1. 单击&#x200B;**[!UICONTROL Edit additional data]**，然后单击&#x200B;**[!UICONTROL Advanced parameters...]**。 勾选 **[!UICONTROL Disable automatic adding of the primary keys of the targeting dimension]** 选项。
+1. 单击 **[!UICONTROL Edit additional data]**，然后单击 **[!UICONTROL Advanced parameters...]**。 勾选 **[!UICONTROL Disable automatic adding of the primary keys of the targeting dimension]** 选项。
 
    此选项确保不会显示所有收件人，并且不会保留明确添加的数据。 在这种情况下，该日期是指上次创建收件人的日期。
 
@@ -73,7 +73,7 @@ ht-degree: 1%
 
    因此，用于标准的表达式为：
 
-   * **[!UICONTROL Expression]**： `toDate([target/@created])`。
+   * **[!UICONTROL Expression]**: `toDate([target/@created])`.
    * **[!UICONTROL Value]**： `toDate([datemax/expr####])`，其中expr####与聚合函数查询中指定的聚合相关。
 
    ![](assets/datamanagement_usecase_4.png)

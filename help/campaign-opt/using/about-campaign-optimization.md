@@ -8,14 +8,14 @@ hide: true
 exl-id: b500bde4-6c81-4420-b1bf-e8eff1c53877
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '104'
-ht-degree: 50%
+source-wordcount: '113'
+ht-degree: 53%
 
 ---
 
 # 关于活动类型{#about-campaign-typologies}
 
-Campaign Optimization是一个Adobe Campaign模块，可让您控制、过滤和监控投放的发送。 为了避免活动之间发生冲突，Adobe Campaign 可以应用特定的限制规则来测试各种活动组合。这可确保所发送的邮件符合客户的需求与期望以及公司的通信政策。
+Campaign Optimization是一个Adobe Campaign模块，可让您控制、过滤和监控投放的发送。 为了避免活动之间发生冲突，Adobe Campaign 可以应用特定的限制规则来测试各种活动组合。 这可确保所发送的邮件符合客户的需求与期望以及公司的通信政策。
 
 ![](assets/do-not-localize/how-to-video.png) [通过观看视频了解此功能](#typologies-video)
 
@@ -71,7 +71,7 @@ During delivery preparation, recipients are excluded when criterion is met. You 
 
 This video explains how to implement fatigue management in Adobe Campaign by leveraging typology rules.
 
->[!VIDEO](https://video.tv.adobe.com/v/27520?captions=chi_hans&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/25090?quality=12)
 
 ### How to set up fatigue management using predefined filters
 
@@ -80,7 +80,7 @@ This video explains how to implement fatigue management in Adobe Campaign Classi
 
 >[!VIDEO](https://video.tv.adobe.com/v/25091?quality=12)
 
-Additional Campaign how-to videos are available [here](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hans).
+Additional Campaign how-to videos are available [here](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html).
 
 **Related topic**
 

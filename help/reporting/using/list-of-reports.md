@@ -7,7 +7,7 @@ feature: Reporting, Monitoring
 exl-id: c01f4850-ab17-44ac-a5e0-ff082ec206b3
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '1020'
+source-wordcount: '1024'
 ht-degree: 2%
 
 ---
@@ -123,7 +123,7 @@ ht-degree: 2%
 
 下表显示了Adobe Campaign提供的内置报告。
 
-有关这些报告内容的更多信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html?lang=zh-Hans){target=_blank}。
+有关这些报告内容的更多信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html){target=_blank}。
 
 <table> 
  <tbody> 
@@ -219,7 +219,7 @@ ht-degree: 2%
 
 下表显示了Adobe Campaign提供的内置报告。
 
-有关这些报告内容的更多信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html?lang=zh-Hans){target=_blank}。
+有关这些报告内容的更多信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html){target=_blank}。
 
 <table> 
  <tbody> 

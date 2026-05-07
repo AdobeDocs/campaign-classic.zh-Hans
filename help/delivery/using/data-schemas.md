@@ -21,7 +21,7 @@ ht-degree: 1%
 
 ## 架构结构 {#schema-structure}
 
-数据架构的XML文档必须包含具有&#x200B;**`<srcschema>`**&#x200B;名称&#x200B;**和**&#x200B;命名空间&#x200B;**属性的**&#x200B;根元素，才能填充架构名称及其命名空间。
+数据架构的XML文档必须包含具有&#x200B;**名称**&#x200B;和&#x200B;**命名空间**&#x200B;属性的&#x200B;**`<srcschema>`**&#x200B;根元素，才能填充架构名称及其命名空间。
 
 ```
 <srcSchema name="schema_name" namespace="namespace">
@@ -128,7 +128,7 @@ ht-degree: 1%
 
 要引用的元素上的&#x200B;**ref**&#x200B;属性必须使用引用元素的路径(XPath)来填写。
 
-**示例**：添加了结构与我们示例架构的&#x200B;**元素相同的** Appendix **`<chapter>`**&#x200B;节。
+**示例**：添加了结构与我们示例架构的&#x200B;**`<chapter>`**&#x200B;元素相同的&#x200B;**Appendix**&#x200B;节。
 
 ```
 <srcSchema name="book" namespace="cus">

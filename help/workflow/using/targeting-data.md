@@ -7,7 +7,7 @@ hide: true
 exl-id: 74b82019-bdab-4442-84cf-5ad18d0db788
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '1919'
+source-wordcount: '1931'
 ht-degree: 4%
 
 ---
@@ -66,7 +66,7 @@ ht-degree: 4%
 
 ### 与其他数据进行协调 {#reconciliation-with-additional-data}
 
-在数据协调阶段(**[!UICONTROL Union]**、**[!UICONTROL Intersection]**&#x200B;等 活动)，您可以从其他列中选择用于数据协调的列。 要实现此目的，请在所选列上配置协调并指定主集。 然后，选择窗口下方的列中的列，如以下示例所示：
+在数据协调阶段（**[!UICONTROL Union]**、**[!UICONTROL Intersection]**&#x200B;等活动）中，您可以从其他列中选择用于数据协调的列。 要实现此目的，请在所选列上配置协调并指定主集。 然后，选择窗口下方的列中的列，如以下示例所示：
 
 ![](assets/select-column-and-join.png)
 
@@ -132,7 +132,7 @@ ht-degree: 4%
 
 利用排除活动，可从其他目标群体中排除目标的元素。 此活动的输出定向维度将是主集的输出定向维度。
 
-必要时，可以处理入站表。 事实上，要从另一个维度排除一个目标，必须将该目标返回到与主目标相同的目标维度。为此，请单击&#x200B;**[!UICONTROL Add]**&#x200B;按钮并指定维度更改条件。
+必要时，可以处理入站表。 事实上，要从另一个维度排除一个目标，必须将该目标返回到与主目标相同的目标维度。 为此，请单击&#x200B;**[!UICONTROL Add]**&#x200B;按钮并指定维度更改条件。
 
 数据协调是通过标识符、更改轴或连接执行的。 在[使用来自列表的数据中提供了示例：读取列表](../../platform/using/import-export-workflows.md#using-data-from-a-list--read-list)。
 
@@ -158,7 +158,7 @@ ht-degree: 4%
 
    ![](assets/split-subset-config-all-data.png)
 
-   **[!UICONTROL Split]**&#x200B;本节[介绍了如何在](cross-channel-delivery-workflow.md)活动中使用筛选条件将目标分段为不同群体的示例。
+   [本节](cross-channel-delivery-workflow.md)介绍了如何在&#x200B;**[!UICONTROL Split]**&#x200B;活动中使用筛选条件将目标分段为不同群体的示例。
 
    **[!UICONTROL Label]**&#x200B;字段允许您为新创建的子集提供一个名称，该名称将匹配叫客过渡。
 
@@ -178,9 +178,9 @@ ht-degree: 4%
 
    有关更多信息，根据您的Campaign版本，请参阅以下章节：
 
-   ![](assets/do-not-localize/v7.jpeg) [Campaign v7文档](../../installation/using/about-fda.md)
+   ![](assets/do-not-localize/v7.jpeg)[Campaign v7文档](../../installation/using/about-fda.md)
 
-   ![](assets/do-not-localize/v8.png) [Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/connect/fda.html?lang=zh-Hans)
+   ![](assets/do-not-localize/v8.png)[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/connect/fda.html?lang=zh-Hans)
 
 然后，我们需要添加新子集：
 
@@ -232,7 +232,7 @@ ht-degree: 4%
 
 ## 数据管理 {#data-management}
 
-在Adobe Campaign中，数据管理通过提供更高效且灵活的工具，将一系列用于解决复杂定位问题的活动整合在一起。 这样，您就可以使用与合约、订阅、对投放的反应等相关信息，对与联系人的所有通信实施一致的管理。 通过数据管理，您可以在分段操作期间跟踪数据生命周期，特别是：
+在Adobe Campaign中，数据管理通过提供更高效且灵活的工具，将一系列用于解决复杂定位问题的活动整合在一起。 这样，您就可以使用与合约、订阅、对投放的反应等相关信息，对与联系人的所有通信实施一致的管理。通过数据管理，您可以在分段操作期间跟踪数据生命周期，特别是：
 
 * 通过包括未在数据集市中建模的数据，简化及优化定位流程（创建新表：根据设定，对每个定位工作流进行本地扩展）。
 * 保留和传送缓冲区计算内容，尤其是在目标建构阶段或进行数据库管理时。

@@ -9,7 +9,7 @@ topic-tags: additional-configurations
 exl-id: 7250b885-0606-466a-bfc2-6dd3cc5a012d
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '299'
+source-wordcount: '301'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 0%
 
 它只涉及入站交互，无论是通过呼叫（包含或不包含呼叫数据）还是状态更新(updateStatus)。
 
-在写入与收件人相关的建议时，为避免出现队列，新进程生成一个&#x200B;**数据缓冲区**，允许建议&#x200B;**异步写入**。 定期读取和清空此数据缓冲区。 默认时段大约在一秒内。因此，建议书撰写将被分组。
+在写入与收件人相关的建议时，为避免出现队列，新进程生成一个&#x200B;**数据缓冲区**，允许建议&#x200B;**异步写入**。 定期读取和清空此数据缓冲区。 默认时段大约为一秒钟。因此，建议书的编写工作被归入不同的类别。
 
 >[!NOTE]
 >
@@ -36,7 +36,7 @@ ht-degree: 0%
 >
 >对于由Adobe托管的部署，某些配置只能由Adobe执行。 例如，访问服务器和实例配置文件。 要了解有关不同部署的更多信息，请参阅[托管模型](../../installation/using/hosting-models.md)部分或[此页面](../../installation/using/capability-matrix.md)。
 >
->对配置所做的任何更改都需要重新启动Web服务器(Apache：IIS)和Adobe Campaign进程。\
+>对配置所做的任何更改都需要重新启动Web服务器(Apache:IIS)和Adobe Campaign进程。\
 >配置数据缓冲区后，请确保有合适的硬件配置可用。 （存在的内存量）。
 
 

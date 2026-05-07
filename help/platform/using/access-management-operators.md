@@ -9,8 +9,8 @@ level: Beginner
 exl-id: 580282ce-ee30-422a-8724-9c328637cc39
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '1237'
-ht-degree: 2%
+source-wordcount: '1274'
+ht-degree: 5%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->这些步骤仅适用于使用本机身份验证连接到Campaign的操作员。 有关Adobe IMS身份验证，请参阅[此文档](https://helpx.adobe.com/cn/enterprise/using/manage-users-individually.html#_blank)。
+>这些步骤仅适用于使用本机身份验证连接到Campaign的操作员。 有关Adobe IMS身份验证，请参阅[此文档](https://helpx.adobe.com/enterprise/using/manage-users-individually.html#_blank)。
 
 操作员是具有登录和执行操作权限的Adobe Campaign用户。
 
@@ -44,7 +44,7 @@ ht-degree: 2%
 >
 >操作员需要链接到安全区域才能登录到实例。 有关Adobe Campaign中安全区域的详细信息，请参阅[此页面](../../installation/using/security-zones.md)。
 
-用户还可以使用其Adobe ID直接连接到Adobe Campaign。 有关详细信息，请参见此 [&#x200B; 页面](../../integrations/using/about-adobe-id.md)。
+用户还可以使用其Adobe ID直接连接到Adobe Campaign。 有关详细信息，请参见此 [ 页面](../../integrations/using/about-adobe-id.md)。
 
 ## 创建运算符 {#creating-an-operator}
 
@@ -56,7 +56,7 @@ ht-degree: 2%
 
 1. 指定用户的&#x200B;**[!UICONTROL Identification parameters]**：其登录名、密码和名称。 操作员将使用登录名和密码登录到Adobe Campaign。 用户登录后，可通过&#x200B;**[!UICONTROL Tools > Change password]**&#x200B;菜单更改密码。 操作员的电子邮件至关重要，因为它使操作员能够接收通知，例如，在处理审批时。
 
-   利用此部分，还可以将操作员链接到组织实体。 有关详细信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/distributed-marketing/about-distributed-marketing.html?lang=zh-Hans){target="_blank"}。
+   利用此部分，还可以将操作员链接到组织实体。 有关更多信息，请参阅 [Campaign v8 文档](https://experienceleague.adobe.com/docs/campaign/automation/distributed-marketing/about-distributed-marketing.html?lang=zh-Hans){target="_blank"}。
 
 1. 在&#x200B;**[!UICONTROL Operator access rights]**&#x200B;部分中选择授予操作员的权限。
 
@@ -160,7 +160,7 @@ ht-degree: 2%
 
 ## 默认运算符 {#default-operators}
 
-Adobe Campaign使用具有默认配置的用户档案的技术操作员：管理员（“管理员”）、计费（“计费”）、监控、Web应用程序代理(“webapp”)等。 其中一些取决于平台上安装的应用程序和选项：例如，“central”和“local”运算符仅在安装了“Distributed Marketing”（分布式营销）选项时才可见。
+Adobe Campaign使用具有默认配置的用户档案的技术操作员：管理员（“管理员”）、计费（“计费”）、监控、Web应用程序代理(“webapp”)等。其中一些取决于平台上安装的应用程序和选项：例如，“central”和“local”运算符仅在安装了“Distributed Marketing”（分布式营销）选项时才可见。
 
 >[!IMPORTANT]
 >

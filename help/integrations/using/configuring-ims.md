@@ -10,8 +10,8 @@ topic-tags: connecting-via-an-adobe-id
 exl-id: b70ca220-1c81-4b23-b07a-a2cd694877fe
 source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
 workflow-type: tm+mt
-source-wordcount: '329'
-ht-degree: 1%
+source-wordcount: '380'
+ht-degree: 11%
 
 ---
 
@@ -24,8 +24,8 @@ ht-degree: 1%
 
 ## 先决条件 {#prerequisites}
 
-* 您必须具有Adobe Experience Cloud组织名称和ID。 要查找您的组织ID，请参阅[此页面](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=zh-hans){_blank}。
-* 您必须在Experience Cloud中添加用户。 有关详细信息，请参阅[此页面](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html?lang=zh-Hans){_blank}。
+* 您必须具有Adobe Experience Cloud组织名称和ID。 要查找您的组织ID，请参阅[此页面](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=zh-Hans){_blank}。
+* 您必须在Experience Cloud中添加用户。 有关详细信息，请参见[此页面](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html){_blank}。
 
 >[!NOTE]
 >
@@ -49,11 +49,11 @@ ht-degree: 1%
 
 输入以下信息：
 
-* 使用的IMS服务器的连接信息（ID和密码）。 此信息由Adobe客户关怀团队提供。 有关详细信息，请参阅[Adobe Experience Cloud管理员常见问题解答](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/faq.html?lang=zh-Hans)。
+* 使用的IMS服务器的连接信息（ID和密码）。 此信息由Adobe客户关怀团队提供。 有关详细信息，请参阅[Adobe Experience Cloud管理员常见问题解答](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/faq.html)。
 
   必须在&#x200B;**https**&#x200B;中指定&#x200B;**[!UICONTROL Callback server]**&#x200B;地址。 此字段对应于Adobe Campaign实例的访问URL。
 
-* 组织ID：要查找您的组织ID，请参阅[此页面](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=zh-hans){_blank}。
+* 组织ID：若要查找您的组织ID，请参阅[此页面](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=zh-Hans){_blank}。
 
 * 关联掩码：此字段允许您定义语法，以允许将Enterprise Dashboard中的配置名称与Adobe Campaign中的组同步。 如果您使用语法“Campaign - tenant_id - (.&#42;)”，则在Adobe Campaign中创建的安全组将链接到Enterprise Dashboard中的配置名称“Campaign - tenant_id - internal_name”。
 

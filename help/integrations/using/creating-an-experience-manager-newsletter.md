@@ -9,7 +9,7 @@ content-type: reference
 exl-id: 9fa3ce08-3007-4c65-9841-bad339428b7c
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '284'
+source-wordcount: '288'
 ht-degree: 1%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 1%
 
 来自Adobe Experience Manager的&#x200B;**：**
 
-1. 在您的AEM创作实例中，单击页面左上角的&#x200B;**AdobeExperience**&#x200B;徽标，然后选择&#x200B;**[!UICONTROL Sites]**。
+1. 从您的AEM创作实例中，单击页面左上角的&#x200B;**Adobe Experience**&#x200B;徽标，然后选择&#x200B;**[!UICONTROL Sites]**。
 
    ![](assets/aem_uc_1.png)
 
@@ -40,7 +40,7 @@ ht-degree: 1%
 
    ![](assets/aem_uc_4.png)
 
-1. 通过添加组件(例如Adobe Campaign中的个性化字段)编辑电子邮件内容。
+1. 通过添加组件（例如Adobe Campaign中的个性化字段）编辑电子邮件内容。
 1. 当您的电子邮件准备就绪时，访问&#x200B;**[!UICONTROL Page information]**&#x200B;菜单并单击&#x200B;**[!UICONTROL Start workflow]**。
 
    ![](assets/aem_uc_5.png)

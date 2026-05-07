@@ -9,8 +9,8 @@ level: Beginner
 exl-id: d5833d3d-e8ef-4f2b-8084-4ba825c79525
 source-git-commit: a5bbd2e6c102a8afa4cd5931b77b0c83705a7bfa
 workflow-type: tm+mt
-source-wordcount: '574'
-ht-degree: 1%
+source-wordcount: '589'
+ht-degree: 4%
 
 ---
 
@@ -67,7 +67,7 @@ ht-degree: 1%
 
 1. **[!UICONTROL Campaign managers]**
 
-   此组中的操作员可以管理营销活动：通过此组，您可以访问&#x200B;**[!UICONTROL Campaign]**(可选Adobe Campaign模块)框架内链接到营销活动的对象（计划、项目、工作流、预算等）。
+   此组中的操作员可以管理营销活动：通过此组，您可以访问链接到营销活动的对象（计划、项目、工作流、预算等） 在&#x200B;**[!UICONTROL Campaign]**&#x200B;的框架内（可选Adobe Campaign模块）。
 
    此组包含以下已命名权限：
 
@@ -80,7 +80,7 @@ ht-degree: 1%
 
 1. **[!UICONTROL Content contributors]**
 
-   此组中的操作员可以在&#x200B;**[!UICONTROL Content management]**&#x200B;的框架内访问内容文件夹(可选Adobe Campaign模块)。 此组不授予任何其他权限。
+   此组中的操作员可以在&#x200B;**[!UICONTROL Content management]**&#x200B;的框架内访问内容文件夹（可选Adobe Campaign模块）。 此组不授予任何其他权限。
 
 1. **[!UICONTROL Access to reports]**
 
@@ -96,7 +96,7 @@ ht-degree: 1%
 
 1. 本地/中央管理
 
-   这些组允许您使用&#x200B;**[!UICONTROL Distributed marketing]**(可选Adobe Campaign模块)。
+   这些组允许您使用&#x200B;**[!UICONTROL Distributed marketing]**（可选Adobe Campaign模块）。
 
 1. **[!UICONTROL Offer managers]**
 

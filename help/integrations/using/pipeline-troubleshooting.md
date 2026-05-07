@@ -9,8 +9,8 @@ content-type: reference
 exl-id: 76645a6f-9536-49d6-b12a-fdd6113d31fa
 source-git-commit: 8de62db2499449fc9966b6464862748e2514a774
 workflow-type: tm+mt
-source-wordcount: '713'
-ht-degree: 0%
+source-wordcount: '722'
+ht-degree: 1%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 
 
-**管道化失败，错误为“没有任务对应到掩码管道化@&lt;实例>”**
+**管道化失败，错误为“没有任务对应于管道化的@&lt;实例>”**
 
 您的Adobe Campaign Classic版本不支持该管道。
 
@@ -27,8 +27,8 @@ ht-degree: 0%
 
 **管道化失败，出现“ aurait du commencer par `[` ou `{` (iRc=16384)”**
 
-未设置&#x200B;**NmsPipeline_Config**&#x200B;选项。 这实际上是一个JSON解析错误。
-在选项&#x200B;**NmsPipeline_Config**&#x200B;中设置JSON配置。 请参阅本页的“路由选项”。
+未设置&#x200B;**NmsPipeline_Config**选项。 这实际上是一个JSON解析错误。
+在选项**NmsPipeline_Config**&#x200B;中设置JSON配置。 请参阅本页的“路由选项”。
 
 **管道化失败，原因是“主题必须是有效的组织或客户端”**
 
@@ -36,7 +36,7 @@ ht-degree: 0%
 
 1. 检查在serverConf.xml中是否设置了组织ID (ImsOrgId)。
 1. 检查实例配置文件中的空组织ID是否可以覆盖默认组织ID。 如果是，请删除它。
-1. 检查组织ID是否正确。 要查找您的组织ID，请参阅[此页面](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=zh-hans){_blank}
+1. 检查组织ID是否正确。 要查找您的组织ID，请参阅[此页面](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=zh-Hans){_blank}
 
 **管道化失败，出现“无效键”**
 
@@ -69,7 +69,7 @@ ht-degree: 0%
 2021-05-31T08:43:09.160Z        66462   66501   1       error   log     Error while authenticating: '{"error":"This client: df73c224e5-triggers-test is no longer allowed to get access token."}' (iRc=16384)
 ```
 
-此错误消息表示使用旧版Omniture基本OAuth配置身份验证。 请参阅[为Adobe Experience Cloud Triggers配置Adobe I/O](../../integrations/using/about-triggers.md#implement)文档以升级您的身份验证。
+此错误消息表示使用旧版Omniture基本OAuth配置身份验证。 请参阅[为Adobe Experience Cloud触发器配置Adobe I/O](../../integrations/using/about-triggers.md#implement)文档以升级您的身份验证。
 
 **未检索到任何触发器**
 
@@ -102,8 +102,8 @@ ht-degree: 0%
 1. 检查[!DNL pipelined]状态页面以了解队列大小。 如果队列大小很大，则提高JS的性能。
 1. 由于延迟似乎随着流量而增加，请在Analytics上使用较少的消息配置触发器。
 
-**正在将阶段实例从旧身份验证升级到AdobeIO身份验证**
+**正在将阶段实例从旧身份验证升级到Adobe IO身份验证**
 
-更改暂存实例上的集成身份验证不会影响生产实例的配置。 您可以选择升级暂存实例，然后更新身份验证以AdobeIO，并在暂存实例上测试触发器。
+更改暂存实例上的集成身份验证不会影响生产实例的配置。 您可以选择升级暂存实例，然后将身份验证更新为Adobe IO，并在暂存实例上测试触发器。
 
 您的生产实例将继续使用旧版身份验证，并且不会受到此更改的影响。

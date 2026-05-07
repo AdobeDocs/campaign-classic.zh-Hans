@@ -10,8 +10,8 @@ topic-tags: prerequisites-and-recommendations-
 exl-id: b86236ae-95e9-4406-b60f-6d90ad0d4a01
 source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
 workflow-type: tm+mt
-source-wordcount: '704'
-ht-degree: 1%
+source-wordcount: '725'
+ht-degree: 4%
 
 ---
 
@@ -192,7 +192,7 @@ ht-degree: 1%
 
 ### 外部Web服务器 {#external-web-server}
 
-此服务器托管Web窗体、镜像页面等。 需要打开以下端口：
+此服务器托管Web窗体、镜像页面等。需要打开以下端口：
 
 <table> 
  <tbody> 
@@ -238,7 +238,7 @@ ht-degree: 1%
   </tr> 
   <tr> 
    <td><p> 4502</p><p> 4503</p><br /> </td> 
-   <td> Adobe Campaign与AEM“创作”和“发布”实例的连接。 要打开的端口可能与默认端口不同，具体取决于您的AEM配置。<br /> </td> 
+   <td> Adobe Campaign与AEM的“创作”和“发布”实例的连接。 要打开的端口可能与默认端口不同，具体取决于您的AEM配置。<br /> </td> 
   </tr> 
  </tbody> 
 </table>

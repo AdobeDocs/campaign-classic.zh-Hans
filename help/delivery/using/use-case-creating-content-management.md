@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: "用例：创建内容管理"
-description: "用例：创建内容管理"
+title: 用例：创建内容管理
+description: 用例：创建内容管理
 badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v8"
 feature: Delivery Templates
 exl-id: b0d1cf0e-656e-4d24-9a31-16fef4cd40d0
@@ -27,9 +27,9 @@ ht-degree: 0%
 
 ## 步骤1 — 分析要生成的内容 {#step-1---analyzing-the-content-to-be-produced}
 
-在开始之前，您需要对要生成的内容进行精确分析：标识要显示的元素，研究与其关联的约束，为每个元素定义类型等。 您还需要区分静态元素和变量元素。
+在开始之前，您需要对要生成的内容进行精确分析：标识要显示的元素，研究与其关联的约束，为每个元素定义类型等。您还需要区分静态元素和变量元素。
 
-例如，创建包含以下内容类型的新闻稿HTML：
+例如，要在HTML中创建具有以下内容类型的新闻稿，请执行以下操作：
 
 ![](assets/s_ncs_content_newsletter.png)
 
@@ -136,7 +136,7 @@ ht-degree: 0%
    <td> 作者<br /> </td> 
   </tr> 
   <tr> 
-   <td> 标题徽标(存储在Adobe Campaign公共资源中)<br /> </td> 
+   <td> 标题徽标（存储在Adobe Campaign公共资源中）<br /> </td> 
    <td> 属性<br /> </td> 
    <td> 链接<br /> </td> 
    <td> 图像<br /> </td> 
@@ -165,7 +165,7 @@ ht-degree: 0%
 
 输入表单允许您通过Adobe Campaign客户端控制台中的输入界面编辑内容实例。
 
-表单的描述是一种结构化XML文档，遵循“xtk：form”表单架构的语法。
+表单的描述是一个结构化XML文档，它遵循“xtk:form”表单架构的语法。
 
 >[!NOTE]
 >
@@ -221,7 +221,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->[格式](formatting.md)中详细介绍了链接到文档生成(JavaScript或XSL模板)的约束。
+>[格式](formatting.md)中详细介绍了链接到文档生成（JavaScript或XSL模板）的约束。
 
 要在Adobe Campaign中使用JavaScript模板，请应用以下步骤：
 

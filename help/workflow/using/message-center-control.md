@@ -6,7 +6,7 @@ hide: true
 feature: Workflows
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '145'
+source-wordcount: '152'
 ht-degree: 1%
 
 ---
@@ -21,9 +21,9 @@ ht-degree: 1%
 
 有关更多信息，根据您的Campaign版本，请参阅以下章节：
 
-![](assets/do-not-localize/v7.jpeg) [Campaign v7文档](../../message-center/using/about-transactional-messaging.md)
+![](assets/do-not-localize/v7.jpeg)[Campaign v7文档](../../message-center/using/about-transactional-messaging.md)
 
-![](assets/do-not-localize/v8.png) [Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/transactional.html)
+![](assets/do-not-localize/v8.png)[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/transactional.html)
 
 
 <table> 

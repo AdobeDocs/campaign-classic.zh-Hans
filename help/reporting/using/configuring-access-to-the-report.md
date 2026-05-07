@@ -7,7 +7,7 @@ badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v
 exl-id: 1e5ab922-481c-4dce-a05e-a58408002e24
 source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
-source-wordcount: '769'
+source-wordcount: '770'
 ht-degree: 2%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 2%
 
 ### 选择类型 {#selection-type}
 
-可将报表的访问限制为特定上下文或选件空间，例如投放、收件人、选定的收件人等。 此访问在&#x200B;**[!UICONTROL Display]**&#x200B;选项卡的&#x200B;**[!UICONTROL Selection type]**&#x200B;部分中配置。
+可将报表的访问限制为特定上下文或选件空间，例如投放、收件人、选定的收件人等。此访问在&#x200B;**[!UICONTROL Display]**&#x200B;选项卡的&#x200B;**[!UICONTROL Selection type]**&#x200B;部分中配置。
 
 ![](assets/s_ncs_advuser_report_visibility_4.png)
 
@@ -30,7 +30,7 @@ ht-degree: 2%
 * **[!UICONTROL Multiple selection]** ：在选择了多个实体时访问报告。
 * **[!UICONTROL Global]** ：通过&#x200B;**[!UICONTROL Reports]**&#x200B;选项卡中的可用报告列表访问该报告。
 
-### 显示序列  {#display-sequence}
+### 显示序列 {#display-sequence}
 
 **[!UICONTROL Sequence]**&#x200B;字段允许您输入数字值，该值指定报表在列表中的显示顺序。
 
@@ -78,7 +78,7 @@ ht-degree: 2%
 
 ## 创建指向报告的链接 {#creating-a-link-to-a-report-}
 
-可以通过树的特定节点（如列表、收件人、投放等）访问报告。 要实现此目的，只需创建指向相关报告的链接，并指定您想在其中提供该链接的实体。
+可以通过树的特定节点（如列表、收件人、投放等）访问报告。要实现此目的，只需创建指向相关报告的链接，并指定您想在其中提供该链接的实体。
 
 例如，我们将创建指向报告的链接，以便通过收件人列表访问该链接。
 
@@ -101,7 +101,7 @@ ht-degree: 2%
 
    ![](assets/s_ncs_advuser_report_wizard_link_04.png)
 
-1. Publish您的报表。
+1. 发布报表。
 1. 转到您的某个收件人列表并单击&#x200B;**[!UICONTROL Reports]**&#x200B;链接：您刚刚创建的报告可供访问。
 
    ![](assets/s_ncs_advuser_report_wizard_link_05.png)
@@ -122,7 +122,7 @@ ht-degree: 2%
 
 要了解有关这些设置的更多信息，请参阅[Web窗体](../../web/using/about-web-forms.md)章节的&#x200B;**定义Web窗体属性**&#x200B;部分。
 
-## Publish报表 {#publishing-the-report}
+## 发布报告 {#publishing-the-report}
 
 必须发布报告，以便与其他操作员共享报告并在可用报告列表中显示它们（另请参阅[报告显示上下文](#report-display-context)）。 每次更改报告时必须再次执行此操作。
 

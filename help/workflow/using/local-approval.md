@@ -7,7 +7,7 @@ hide: true
 exl-id: 2d9cbfc8-1f99-4b38-8460-77c7c986e9ca
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '643'
+source-wordcount: '645'
 ht-degree: 3%
 
 ---
@@ -48,7 +48,7 @@ ht-degree: 3%
 
 ![](assets/local_validation_3.png)
 
-* **[!UICONTROL Distribution context]**：如果您使用&#x200B;**[!UICONTROL Specified in the transition]**&#x200B;类型活动来限制目标群体，请选择&#x200B;**[!UICONTROL Split]**&#x200B;选项。 在这种情况下，在拆分活动中输入分发模板。 如果不限制定向群体，请在此处选择&#x200B;**[!UICONTROL Explicit]**&#x200B;选项，然后在&#x200B;**[!UICONTROL Data distribution]**&#x200B;字段中输入分发模板。
+* **[!UICONTROL Distribution context]**：如果您使用&#x200B;**[!UICONTROL Split]**&#x200B;类型活动来限制目标群体，请选择&#x200B;**[!UICONTROL Specified in the transition]**&#x200B;选项。 在这种情况下，在拆分活动中输入分发模板。 如果不限制定向群体，请在此处选择&#x200B;**[!UICONTROL Explicit]**&#x200B;选项，然后在&#x200B;**[!UICONTROL Data distribution]**&#x200B;字段中输入分发模板。
 
   有关创建数据分发模板的详细信息，请参阅[限制每个数据分发的子集记录数](split.md#limiting-the-number-of-subset-records-per-data-distribution)。
 

@@ -8,8 +8,8 @@ level: Beginner
 exl-id: 05080d7f-f2d6-4ffe-b112-05b26a3a8a1d
 source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '199'
-ht-degree: 9%
+source-wordcount: '202'
+ht-degree: 7%
 
 ---
 
@@ -25,7 +25,7 @@ Adobe Campaign提供了多个连接器，可让您与外部应用程序通信、
 
 您还可以将Campaign与多个其他系统集成，例如：
 
-* Adobe Experience Cloud解决方案：Adobe Experience Manager、Adobe Target、Adobe Audience Manager、Experience Cloud触发器等。 [了解详情](../../integrations/using/about-campaign-integrations.md)
+* Adobe Experience Cloud解决方案：Adobe Experience Manager、Adobe Target、Adobe Audience Manager、Experience Cloud触发器等。[了解详情](../../integrations/using/about-campaign-integrations.md)
 * 用于单点登录(SSO)的Adobe Identity Management System (IMS)可保护对Campaign实例的访问，并使用与其他Adobe Campaign解决方案相同的Adobe ID连接到Adobe Experience Cloud。 [了解详情](../../integrations/using/about-adobe-id.md)。
 * LDAP目录，统一访问管理。 [了解详情](../../installation/using/connecting-through-ldap.md)。
 

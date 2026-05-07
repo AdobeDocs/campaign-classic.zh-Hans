@@ -8,8 +8,8 @@ level: Beginner
 exl-id: 54f1ad6c-54b0-4448-8c38-806dd75c1dae
 source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '357'
-ht-degree: 24%
+source-wordcount: '443'
+ht-degree: 20%
 
 ---
 
@@ -17,40 +17,40 @@ ht-degree: 24%
 
 
 
-用户档案集中存储在Adobe Campaign数据库中。 有许多可能的机制可获取轮廓并创建此数据库：通过 Web 窗体在线收集、手动或自动导入文本文件、复制公司数据库或其他信息系统的内容。借助Adobe Campaign，您可以将营销历史、购买信息、偏好、CRM数据和任何相关的PI数据整合到一个整合视图中，以便进行分析并采取行动。
+用户档案集中存储在Adobe Campaign数据库中。 有许多可能的机制可获取轮廓并创建此数据库：通过 Web 窗体在线收集、手动或自动导入文本文件、复制公司数据库或其他信息系统的内容。 借助Adobe Campaign，您可以将营销历史、购买信息、偏好、CRM数据和任何相关的PI数据整合到一个整合视图中，以便进行分析并采取行动。
 
 **用户档案**”是指代表最终客户、潜在客户或潜在客户的信息记录（例如：nmsRecipient表或外部表中的记录，包含cookie ID、客户ID、移动标识符或与特定渠道相关的其他信息）。
 
-在 Adobe　Campaign 中，收件人是发送投放内容（电子邮件、短信等）所定位的默认轮廓。通过存储在数据库中的收件人数据，您可以筛选将接收任何给定投放的目标，并在投放内容中添加个性化数据。 数据库中还有其他类型的轮廓。这些用户档案是针对不同用途而设计的。例如，种子轮廓用于在将投放内容发送给最终目标前测试该投放内容。
+在 Adobe　Campaign 中，收件人是发送投放内容（电子邮件、短信等）所定位的默认轮廓。 通过存储在数据库中的收件人数据，您可以筛选将接收任何给定投放的目标，并在投放内容中添加个性化数据。 数据库中还有其他类型的轮廓。 这些用户档案是针对不同用途而设计的。 例如，种子轮廓用于在将投放内容发送给最终目标前测试该投放内容。
 
 ![显示哪些配置文件及其工作方式的视频](assets/do-not-localize/how-to-video.png) [了解视频中配置文件的概念](#create-profiles-video)
 
 >[!NOTE]
 >
->要了解有关用户档案以及如何创建和编辑它们的更多信息，请参阅有关[Campaign v8文档](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/audience/gs-audiences){target=_blank}的详细文档。
+>要了解有关用户档案以及如何创建和编辑它们的更多信息，请参阅有关[Campaign v8文档](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/gs-audiences){target=_blank}的详细文档。
 
 >[!BEGINTABS]
 
 >[!TAB 配置文件文档]
 
-要了解有关用户档案以及如何创建和编辑它们的更多信息，请参阅有关&#x200B;**[Campaign v8文档](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/audience/gs-audiences){target=_blank}**&#x200B;的详细文档。
+要了解有关用户档案以及如何创建和编辑它们的更多信息，请参阅有关&#x200B;**[Campaign v8文档](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/gs-audiences){target=_blank}**&#x200B;的详细文档。
 
-[![image](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/audience/gs-audiences){target=_blank}
+[![image](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/gs-audiences){target=_blank}
 
 >[!TAB 创建和编辑用户档案]
 
 请参阅&#x200B;**Campaign v8文档**&#x200B;以了解如何编辑、管理和添加用户档案：
 
-* [添加配置文件](https://experienceleague.adobe.com/zh-hans/docs/campaign-classic/using/getting-started/profile-management/adding-profiles){target=_blank}：了解添加和创建新配置文件的关键步骤。
-* [编辑配置文件](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/audience/view-profiles?lang=en#_blank){target=_blank}：查看和编辑现有配置文件。
+* [添加配置文件](https://experienceleague.adobe.com/en/docs/campaign-classic/using/getting-started/profile-management/adding-profiles){target=_blank}：了解添加和创建新配置文件的关键步骤。
+* [编辑配置文件](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/view-profiles?lang=en#_blank){target=_blank}：查看和编辑现有配置文件。
 * [管理配置文件](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/configuration/folders-and-views?lang=en#_blank){target=_blank}：使用文件夹管理工具访问和管理现有配置文件。
 
 >[!TAB 导入/导出用户档案]
 
 请参阅&#x200B;**Campaign v8文档**&#x200B;以了解如何导入和导出用户档案和数据：
 
-* [导入用户档案](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/audience/add-profiles/import-profiles){target=_blank}：您可以使用工作流导入用户档案。
-* [导入/导出数据](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/data/import){target=_blank}：了解如何使用通用导入/导出功能导入或导出数据和配置文件。
+* [导入用户档案](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/add-profiles/import-profiles){target=_blank}：您可以使用工作流导入用户档案。
+* [导入/导出数据](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/data/import){target=_blank}：了解如何使用通用导入/导出功能导入或导出数据和配置文件。
 
 >[!ENDTABS]
 
@@ -121,9 +121,9 @@ The general layout of the Adobe Campaign explorer is presented in [this page](..
 
 An active profile is a profile that customer has attempted to communicate with during the past 12 months via any channel.
 
-According to your contract, each of your Campaign instances is provisioned with a specific amount of active profiles that are counted for billing purposes. Please refer to your latest contract for reference on number of purchased active profiles. Learn more in [Adobe Campaign product description](https://helpx.adobe.com/cn/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"}.
+According to your contract, each of your Campaign instances is provisioned with a specific amount of active profiles that are counted for billing purposes. Please refer to your latest contract for reference on number of purchased active profiles. Learn more in [Adobe Campaign product description](https://helpx.adobe.com/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"}.
 
-You can monitor the number of active profiles on your instance directly from Campaign Control Panel. For more on this, refer to the [Control Panel documentation](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/active-profiles-monitoring.html?lang=zh-Hans){target="_blank"}.
+You can monitor the number of active profiles on your instance directly from Campaign Control Panel. For more on this, refer to the [Control Panel documentation](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/active-profiles-monitoring.html){target="_blank"}.
 
 The following guardrails and limitations apply:
 
@@ -139,13 +139,13 @@ Learn how to access profile data, sort and filter profiles and manually create a
 
 This video also explains the compliance of Adobe Campaign Classic with General Data Protection Regulations. 
 
->[!VIDEO](https://video.tv.adobe.com/v/326753?captions=chi_hans&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/35611?quality=12)
 
-Additional Campaign Classic how-to videos are available [here](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hans).
+Additional Campaign Classic how-to videos are available [here](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html).
 
 **See also**
 
-* [Privacy management in Campaign](https://helpx.adobe.com/cn/campaign/kb/acc-privacy.html)
+* [Privacy management in Campaign](https://helpx.adobe.com/campaign/kb/acc-privacy.html)
 
 * [Create queries and segment data in workflows](../../workflow/using/targeting-data.md)
 

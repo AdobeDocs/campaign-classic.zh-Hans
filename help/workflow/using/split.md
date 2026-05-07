@@ -7,7 +7,7 @@ hide: true
 exl-id: 4204350a-c2d2-4033-9bdf-87b49d8211b9
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '1970'
+source-wordcount: '1974'
 ht-degree: 3%
 
 ---
@@ -49,7 +49,7 @@ ht-degree: 3%
 
    ![](assets/s_user_segmentation_partage4.png)
 
-1. 如果您愿意，可以使用&#x200B;**按钮**&#x200B;添加其他子集&#x200B;**[!UICONTROL Add]**。
+1. 如果您愿意，可以使用&#x200B;**[!UICONTROL Add]**&#x200B;按钮&#x200B;**添加其他子集**。
 
    ![](assets/s_user_segmentation_partage_add.png)
 
@@ -61,7 +61,7 @@ ht-degree: 3%
 
    ![](assets/s_user_segmentation_partage_add2.png)
 
-   您可以选择生成单个叫客过渡（例如使用段代码标识集）：为此，请在&#x200B;**[!UICONTROL Generate subsets in the same table]**&#x200B;选项卡中选择&#x200B;**[!UICONTROL General]**&#x200B;选项。
+   您可以选择生成单个叫客过渡（例如使用段代码标识集）：为此，请在&#x200B;**[!UICONTROL General]**&#x200B;选项卡中选择&#x200B;**[!UICONTROL Generate subsets in the same table]**&#x200B;选项。
 
    完成后，每个子集的段码将自动存储在一个附加的列中。 可在投放级别的个性化字段中访问此列。
 
@@ -188,7 +188,7 @@ ht-degree: 3%
    * **[!UICONTROL Value]**：输入分布值。
    * **[!UICONTROL Percentage / Set]**：输入链接到每个值的记录限制（固定或百分比）。
 
-     此列由&#x200B;**[!UICONTROL Distribution type]**&#x200B;选项卡中的&#x200B;**[!UICONTROL General]**&#x200B;字段定义。
+     此列由&#x200B;**[!UICONTROL General]**&#x200B;选项卡中的&#x200B;**[!UICONTROL Distribution type]**&#x200B;字段定义。
 
    * **[!UICONTROL Label]**：输入链接到每个值的标签。
    * **[!UICONTROL Group or operator]**：如果您使用的是&#x200B;**[!UICONTROL Local approval]**&#x200B;活动（请参阅[本地审批](local-approval.md)），请选择分配给每个分发值的运算符或运算符组。
@@ -219,8 +219,8 @@ ht-degree: 3%
 
 通过&#x200B;**[!UICONTROL Enable overlapping of output populations]**&#x200B;选项，可管理属于多个子集的群体：
 
-* 当未选中该框时，拆分活动将确保收件人不会出现在多个输出转换中，即使它满足多个子集的标准。它们将位于第一个选项卡的目标中，并带有匹配条件。
-* 选中此框后，如果收件人符合筛选条件，则可以在多个子集中找到他们。Adobe Campaign 建议使用专属标准。
+* 当未选中该框时，拆分活动将确保收件人不会出现在多个输出转换中，即使它满足多个子集的标准。 它们将位于符合条件的第一个选项卡的目标中。
+* 选中此框后，如果收件人符合筛选条件，则可以在多个子集中找到他们。 Adobe Campaign 建议使用专属标准。
 
 ## 输入参数 {#input-parameters}
 
