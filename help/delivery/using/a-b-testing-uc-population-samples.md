@@ -8,8 +8,8 @@ role: User
 exl-id: 1ca01cab-734a-4299-b112-04eec51222fb
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '183'
-ht-degree: 4%
+source-wordcount: '185'
+ht-degree: 8%
 
 ---
 
@@ -29,7 +29,7 @@ ht-degree: 4%
 
   ![](assets/use_case_abtesting_createrecipients_003.png)
 
-## 配置“拆分”活动 {#configuring-the-split-activity}
+## 配置拆分活动 {#configuring-the-split-activity}
 
 利用此活动，可创建多个群体：接收投放A的群体、接收投放B的群体和其余群体。 通过使用随机选择，您可以只定向每次投放的部分群体。
 
@@ -43,7 +43,7 @@ ht-degree: 4%
 
      ![](assets/use_case_abtesting_createrecipients_005.png)
 
-   * 选择&#x200B;**[!UICONTROL Limit the selected records]**&#x200B;选项。
+   * 选择 **[!UICONTROL Limit the selected records]** 选项。
 
      ![](assets/use_case_abtesting_createrecipients_006.png)
 
@@ -67,7 +67,7 @@ ht-degree: 4%
 
 1. 创建剩余群体：
 
-   * 转到&#x200B;**[!UICONTROL General]**&#x200B;选项卡。
+   * 转到 **[!UICONTROL General]** 选项卡。
 
      ![](assets/use_case_abtesting_createrecipients_011.png)
 

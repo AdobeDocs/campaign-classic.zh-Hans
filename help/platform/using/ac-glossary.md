@@ -9,8 +9,8 @@ hide: true
 exl-id: 81f207a0-bb72-450b-abe4-0b229b6b1f3a
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '6200'
-ht-degree: 2%
+source-wordcount: '6654'
+ht-degree: 5%
 
 ---
 
@@ -53,7 +53,7 @@ Learn more about [ACS Connector](../../integrations/using/acs-connector-principl
 
 +++**活动配置文件**
 
-如果用户档案在过去12个月中通过任何渠道被定向或与其联系，则视为处于活动状态。 根据您的合同，您的每个Campaign实例都会配置特定数量的活动用户档案，并对这些活动用户档案进行计数以计费。
+如果轮廓在过去 12 个月中通过任何渠道被定向或与其联系，则视为处于活动状态。 根据您的合同，您的每个Campaign实例都会配置特定数量的活动用户档案，并对这些活动用户档案进行计数以计费。
 
 了解有关[活动用户档案](../../platform/using/about-profiles.md#active-profiles)的详细信息。
 +++
@@ -242,7 +242,7 @@ Learn more about [Deliverability](../../delivery/using/about-deliverability.md).
 
 *上下文：直邮*
 
-投放概要是由公司为特定营销活动创建的一组结构化元素（文档、商店、促销优惠券等）。 它在直邮投放的上下文中使用。
+投放概要是一组结构化的元素（文档、商店、促销优惠券等） 由公司创建，并用于特定营销活动。 它在直邮投放的上下文中使用。
 
 了解有关[直邮](../../delivery/using/about-direct-mail-channel.md)的更多信息。
 +++
@@ -265,7 +265,7 @@ Learn more about [Deliverability](../../delivery/using/about-deliverability.md).
 
 *上下文：分布式营销*
 
-分布式营销附加组件为Campaign操作员提供了一个协作工作区，用于在中央实体（总部、营销部门等）和地方实体（销售点、区域机构等）之间实施营销活动。 此合作基于称为&#x200B;**Campaign包列表**&#x200B;的共享工作区，在该工作区中，集中创建的活动模板和实例将提供给本地实体。
+分布式营销附加组件为Campaign操作员提供了一个协作工作区，用于在中央实体（总部、营销部门等）和本地实体（商店、区域代理等）之间 以及地方实体（销售点、地区代理等）的合规性。 此合作基于称为&#x200B;**Campaign包列表**&#x200B;的共享工作区，在该工作区中，集中创建的活动模板和实例将提供给本地实体。
 
 在[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/distributed-marketing/about-distributed-marketing.html?lang=zh-Hans){target="_blank"}中了解有关分布式营销的更多信息。
 +++
@@ -279,7 +279,7 @@ Learn more about [Deliverability](../../delivery/using/about-deliverability.md).
 
 +++**域委派**
 
-子域配置允许您配置域的子部分（技术上称为“DNS区域”）以与Adobe Campaign一起使用。
+子域委派允许您委派域的子部分（技术上称为“DNS 区域”）以与 Adobe Campaign 配合使用。
 域委派使Adobe能够控制和维护发送、渲染和跟踪电子邮件营销活动所需的DNS的各个方面。
 
 了解有关[域委派](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/setting-up-new-subdomain.html?lang=zh-Hans)的更多信息
@@ -348,7 +348,7 @@ An engine call is a server call that starts real-time processing on server side 
 
 枚举是在架构中或在Platform级别定义的数据类型，用于定义字段的有效输入值。 枚举作为选取列表显示在用户界面和查询构建器中。
 
-在&#x200B;**Adobe Campaign v8 （控制台）文档**&#x200B;中了解如何[使用枚举](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}。
+在[Adobe Campaign v8 （控制台）文档](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}中了解如何&#x200B;**使用枚举**。
 +++
 
 +++**资源管理器视图**
@@ -683,7 +683,7 @@ Learn more about [Navigation Bar](../../platform/using/adobe-campaign-workspace.
 
 *上下文： Campaign交互*
 
-通过选件模拟，操作员可在实际发送选件之前测试定义范围（投放日期、目标区段、选件数量、主题等）内的选件分发。 它可用于调整优惠优先级和资格规则，以最大限度地提高优惠有效性。
+通过优惠模拟，操作员可以测试定义范围（投放日期、目标区段、优惠数量、主题等）内的优惠分发 才实际发送选件。 它可用于调整优惠优先级和资格规则，以最大限度地提高优惠有效性。
 
 了解有关[优惠模拟](../../interaction/using/about-offers-simulation.md)的详细信息。
 +++
@@ -852,7 +852,7 @@ Adobe Campaign中的公共资源文件夹包含由应用程序服务器托管的
 
 +++**收件人**
 
-在Adobe Campaign中，收件人是指向客户发送投放内容（电子邮件、短信等）所定位的默认用户档案。 通过存储在数据库中的收件人数据，可筛选目标并添加个性化数据。 通常，这些信息包括个人、联系人、人口统计和事务性信息，但也可以是支持营销和分析的任何类型的信息。
+在Adobe Campaign中，收件人是发送投放内容（电子邮件、短信等）所定位的默认用户档案 给您的客户。 通过存储在数据库中的收件人数据，可筛选目标并添加个性化数据。 通常，这些信息包括个人、联系人、人口统计和事务性信息，但也可以是支持营销和分析的任何类型的信息。
 
 了解有关[收件人](../../configuration/using/about-data-model.md)的更多信息。
 +++
@@ -890,7 +890,7 @@ Campaigns that re-target the recipients of a previous delivery or deliveries.
 
 +++**种子地址**
 
-种子地址用于定位不符合既定目标标准的收件人。这样，超出投放范围的收件人可以像任何其他目标收件人一样接收投放。 可以将测试用户档案添加到消息的受众，以检测收件人数据库是否用于任何欺诈行为，或确保投放。
+种子地址用于定位不符合既定目标标准的收件人。 这样，超出投放范围的收件人可以像任何其他目标收件人一样接收投放。 可以将测试用户档案添加到消息的受众，以检测收件人数据库是否用于任何欺诈行为，或确保投放。
 
 了解有关[种子地址](../../delivery/using/about-seed-addresses.md)的更多信息。
 +++
@@ -914,7 +914,7 @@ Adobe Campaign允许您创建和管理新闻稿或产品更新等信息服务，
 
 +++**SFTP管理**
 
-在控制面板中，您可以与连接到您有权访问的 Campaign 实例的所有 SFTP 服务器进行交互。控制面板允许您对SFTP服务器执行各种操作，如监视存储容量、管理IP地址允许列表和管理公共SSH密钥。
+在控制面板中，您可以与连接到您有权访问的 Campaign 实例的所有 SFTP 服务器进行交互。 控制面板允许您对SFTP服务器执行各种操作，如监视存储容量、管理IP地址允许列表和管理公共SSH密钥。
 
 了解有关[SFTP管理](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/about-sftp-management.html?lang=zh-Hans)的更多信息。
 +++
@@ -1012,7 +1012,7 @@ Learn more about [Total database storage](../../workflow/using/about-workflows.m
 
 在发送投放并激活跟踪后，跟踪技术工作流会检索跟踪数据。 此数据可在投放的“跟踪”选项卡中找到。 您可以查找有关打开数的信息，以及电子邮件或其他与收件人所收到邮件交互的点击数。
 
-了解有关Campaign v8[中](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/tracking-logs){target="_blank"}跟踪日志的更多信息。
+了解有关Campaign v8[&#128279;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/tracking-logs){target="_blank"}中跟踪日志的更多信息。
 +++
 
 +++**交易型消息传递**
@@ -1071,7 +1071,7 @@ Learn more about [Triggers](../../workflow/using/about-workflows.md).
 
 +++**Web应用程序**
 
-Web应用程序是由Campaign实例托管的动态和交互式应用程序页面。 它们包含来自数据库的数据和适应所连接用户的权限的内容。 例如，可在外联网上创建编辑表单，或创建通知表单，包括来自具有表、图表、输入表单等内容的数据库的数据。 此功能允许您设计和发布网页，用户可以在其中查找或输入信息。
+Web应用程序是由Campaign实例托管的动态和交互式应用程序页面。 它们包含来自数据库的数据和适应所连接用户的权限的内容。 例如，可在外联网上创建编辑表单，或创建通知表单，包括来自具有表、图表、输入表单等内容的数据库的数据。此功能允许您设计和发布网页，用户可以在其中查找或输入信息。
 
 了解有关[Web应用程序](../../web/using/about-web-applications.md)的详细信息。
 +++
@@ -1092,7 +1092,7 @@ Web应用程序是由Campaign实例托管的动态和交互式应用程序页面
 
 +++**工作表**
 
-工作台包含工作流过渡所携带的所有信息。 每个工作流均使用多个工作表。工作表保存了其原始活动的结果，其内容用作工作流中下一个（已连接）活动的输入。  操作（扩展、自定义）工作表是Adobe Campaign运算符的主要技能之一。
+工作台包含工作流过渡所携带的所有信息。 每个工作流均使用多个工作表。 工作表保存了其原始活动的结果，其内容用作工作流中下一个（已连接）活动的输入。  操作（扩展、自定义）工作表是Adobe Campaign运算符的主要技能之一。
 
 了解有关[工作表](../../workflow/using/about-workflows.md)的详细信息。
 +++

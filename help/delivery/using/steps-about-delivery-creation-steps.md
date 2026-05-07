@@ -8,8 +8,8 @@ hide: true
 exl-id: 0188c3fe-8176-4904-8505-c47a72c20fcc
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '145'
-ht-degree: 17%
+source-wordcount: '186'
+ht-degree: 18%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 17%
 
 1. **创建并识别投放**。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=zh-Hans#create-the-delivery){target="_blank"}以了解详情。
 
-1. **定义投放内容**。投放内容定义特定于每个渠道。 有关更多信息，请参阅专门的部分：
+1. **定义投放内容**。 投放内容定义特定于每个渠道。 有关更多信息，请参阅专门的部分：
 
    * [电子邮件渠道](defining-the-email-content.md)
    * [短信渠道](sms-create.md#defining-the-sms-content)

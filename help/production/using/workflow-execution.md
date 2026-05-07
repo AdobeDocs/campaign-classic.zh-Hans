@@ -10,8 +10,8 @@ topic-tags: troubleshooting
 exl-id: b5aa5663-1902-4f50-9202-783e73a28838
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '652'
-ht-degree: 3%
+source-wordcount: '762'
+ht-degree: 11%
 
 ---
 
@@ -44,7 +44,7 @@ ht-degree: 3%
 
    如果工作流仍然失败，请检查审核日志中的特定错误，进行相应的故障诊断，然后再次重新启动工作流。
 
-1. 检查&#x200B;**[!UICONTROL wfserver]**&#x200B;选项卡中的&#x200B;**[!UICONTROL Monitoring]**&#x200B;模块状态，可从Campaign Classic主页访问（请参阅[监控进程](../../production/using/monitoring-processes.md)）。 此进程负责运行所有工作流。
+1. 检查&#x200B;**[!UICONTROL Monitoring]**&#x200B;选项卡中的&#x200B;**[!UICONTROL wfserver]**&#x200B;模块状态，可从Campaign Classic主页访问（请参阅[监控进程](../../production/using/monitoring-processes.md)）。 此进程负责运行所有工作流。
 
    管理员用户还可以使用以下命令检查是否已在主应用程序服务器上启动&#x200B;**wfserver@`<instance>`**&#x200B;模块。
 
@@ -87,7 +87,7 @@ ht-degree: 3%
 
 要选中此复选框，并在必要时启动模块，请应用以下步骤：
 
-1. 检查&#x200B;**[!UICONTROL wfserver]**&#x200B;选项卡中的&#x200B;**[!UICONTROL Monitoring]**&#x200B;模块状态，可从Campaign Classic主页访问（请参阅[监控进程](../../production/using/monitoring-processes.md)）。
+1. 检查&#x200B;**[!UICONTROL Monitoring]**&#x200B;选项卡中的&#x200B;**[!UICONTROL wfserver]**&#x200B;模块状态，可从Campaign Classic主页访问（请参阅[监控进程](../../production/using/monitoring-processes.md)）。
 
    管理员用户还可以使用以下命令检查是否已在主应用程序服务器上启动&#x200B;**wfserver@`<instance>`**&#x200B;模块。
 
@@ -118,6 +118,6 @@ ht-degree: 3%
 
 如果工作流失败，请执行以下步骤：
 
-1. 检查工作流日志。 有关详细信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html?lang=zh-Hans){target="_blank"}。
+1. 检查工作流日志。 有关更多信息，请参阅 [Campaign v8 文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html?lang=zh-Hans){target="_blank"}。
 1. 监控技术工作流。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-technical-workflows.html?lang=zh-Hans){target="_blank"}。
 1. 查找单个工作流活动上的失败。

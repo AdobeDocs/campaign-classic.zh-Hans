@@ -7,8 +7,8 @@ feature: Web Forms, Landing Pages
 exl-id: 827b6575-7206-4dfc-b2c6-b95a6d5730b1
 source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
-source-wordcount: '2373'
-ht-degree: 0%
+source-wordcount: '2397'
+ht-degree: 1%
 
 ---
 
@@ -94,7 +94,7 @@ ht-degree: 0%
   >多行文本字段是可以包含回车符的特定字段。 它们的存储空间必须与映射到XML元素的字段关联，而不是XML属性。
   >   
 
-* **丰富的多行文本**：允许用户输入布局为以HTML格式存储的文本。
+* **扩充的多行文本**：允许用户输入布局为将以HTML格式存储的文本。
 
   ![](assets/s_ncs_admin_survey_txthtmli_ex.png)
 

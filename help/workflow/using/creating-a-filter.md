@@ -7,7 +7,7 @@ hide: true
 exl-id: 297ea1e1-39ef-4b99-aaaa-9e88611fb1bf
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '213'
+source-wordcount: '211'
 ht-degree: 2%
 
 ---
@@ -28,7 +28,7 @@ Adobe Campaign中可用的过滤器是通过使用与查询相同的操作模式
 
 ![](assets/query_editor_filter_sample_1.png)
 
-匹配筛选器包含对&#x200B;**[!UICONTROL Account disabled]**&#x200B;架构的&#x200B;**[!UICONTROL Operators]**&#x200B;值的查询：
+匹配筛选器包含对&#x200B;**[!UICONTROL Operators]**&#x200B;架构的&#x200B;**[!UICONTROL Account disabled]**&#x200B;值的查询：
 
 ![](assets/query_editor_filter_sample_2.png)
 
@@ -56,4 +56,4 @@ Adobe Campaign中可用的过滤器是通过使用与查询相同的操作模式
 
 此处，**$(/tmp/@text)=&#39;代理&#39;**
 
-**$(/tmp/@text)！=“**”表达式在输入字段不为空时应用每个条件。
+当输入字段不为空时，**$(/tmp/@text)!=“**”表达式应用每个条件。

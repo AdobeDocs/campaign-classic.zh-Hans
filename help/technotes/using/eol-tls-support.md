@@ -10,7 +10,7 @@ hide: true
 exl-id: e18d43b6-2a77-4881-85e7-ca36248d4634
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '860'
+source-wordcount: '880'
 ht-degree: 4%
 
 ---
@@ -29,7 +29,7 @@ Adobe已弃用对较低版本的TLS（包括TLS 1.0和1.1）的支持。 有关T
 
 ## 怎样才能恢复该服务？
 
-现代Web浏览器支持TLS 1.2。升级浏览器可让您访问这些应用程序和服务。
+现代Web浏览器支持TLS 1.2。 升级浏览器可让您访问这些应用程序和服务。
 
 您可以下载并安装以下常用浏览器之一：
 
@@ -40,7 +40,7 @@ Adobe已弃用对较低版本的TLS（包括TLS 1.0和1.1）的支持。 有关T
 
 如果您使用的是其他浏览器，请确保其支持TLS 1.2。
 
-您的操作系统和应用程序框架还必须支持TLS 1.2。如果升级浏览器不能解决您的问题，请确保您的计算机符合[Campaign兼容性矩阵](../../rn/using/compatibility-matrix.md)中列出的系统要求。
+您的操作系统和应用程序框架还必须支持TLS 1.2。 如果升级浏览器不能解决您的问题，请确保您的计算机符合[Campaign兼容性矩阵](../../rn/using/compatibility-matrix.md)中列出的系统要求。
 
 ## 常见问题{#faq}
 
@@ -66,7 +66,7 @@ Adobe已弃用对较低版本的TLS（包括TLS 1.0和1.1）的支持。 有关T
 
 * **TLS是否易受黑客攻击？**
 
-  已记录使用旧版加密方法对TLS 1.0的攻击，并且旧版比TLS 1.2更易受攻击。有关更多信息，请参阅针对TLS/SSL的攻击。
+  已记录使用旧版加密方法对TLS 1.0的攻击，并且旧版比TLS 1.2更易受攻击。 有关更多信息，请参阅针对TLS/SSL的攻击。
 
 * **为什么Adobe禁用对TLS 1.0和1.1的支持？**
 
@@ -86,7 +86,7 @@ Adobe已弃用对较低版本的TLS（包括TLS 1.0和1.1）的支持。 有关T
 
 * **如果我使用的浏览器未针对TLS 1.2进行配置，会出现什么错误消息？**
 
-  这取决于您使用的浏览器。 [Campaign兼容性矩阵](../../rn/using/compatibility-matrix.md)中提到的所有浏览器均配置为使用TLS 1.2。如果您使用的浏览器或版本未出现在列表中，请更新浏览器。
+  这取决于您使用的浏览器。 [Campaign兼容性矩阵](../../rn/using/compatibility-matrix.md)中提到的所有浏览器均配置为使用TLS 1.2。 如果您使用的浏览器或版本未出现在列表中，请更新浏览器。
 
   Adobe不控制SSL通信层生成的错误消息。 浏览器在连接到Adobe应用程序和服务之前生成这些消息。 以下是Windows 7上的Internet Explorer 11可能发生的错误示例：
 

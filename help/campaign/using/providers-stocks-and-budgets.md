@@ -8,7 +8,7 @@ hide: true
 exl-id: c60c4f86-a957-4c44-a0fe-39b6e3f0e5d6
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '1918'
+source-wordcount: '1924'
 ht-degree: 0%
 
 ---
@@ -62,7 +62,7 @@ Adobe Campaign允许您定义将参与在营销活动中执行的作业的服务
 >
 >有关详情，请参阅[定义成本结构](#defining-the-cost-structure)。
 
-成本类别是一个实体，其中包含一组符合投放类型（电子邮件、直邮等）或任务条件的成本。 成本类别在与服务提供者相关联的服务的模板中分组。 每个服务提供商可以引用一个或多个服务模板。
+成本类别是一个实体，其中包含一组符合投放类型（电子邮件、直邮等）条件的成本 或执行任务。 成本类别在与服务提供者相关联的服务的模板中分组。 每个服务提供商可以引用一个或多个服务模板。
 
 要创建服务模板并定义其内容，请应用以下步骤：
 
@@ -70,7 +70,7 @@ Adobe Campaign允许您定义将参与在营销活动中执行的作业的服务
 
    ![](assets/s_ncs_user_supplier_node_create_template.png)
 
-1. 为每种流程类型（通过直邮/电子邮件/等传递）创建成本类别。 或任务)。 为此，请单击&#x200B;**[!UICONTROL Cost categories]**&#x200B;选项卡，然后单击&#x200B;**[!UICONTROL Add]**&#x200B;按钮，然后输入每个成本类别的参数。
+1. 为每种流程类型（通过直邮/电子邮件/等或任务投放）创建成本类别。 为此，请单击&#x200B;**[!UICONTROL Cost categories]**&#x200B;选项卡，然后单击&#x200B;**[!UICONTROL Add]**&#x200B;按钮，然后输入每个成本类别的参数。
 
    ![](assets/s_ncs_user_supplier_node_03.png)
 
@@ -159,7 +159,7 @@ Adobe Campaign允许您定义将参与在营销活动中执行的作业的服务
 
 服务通过投放或任务与活动关联。 服务提供商将链接到投放模板，以在通过此模板创建的投放中提供其服务。
 
-选择服务后，与投放类型（直邮、电子邮件等）对应的成本类别以及已定义的处理选项会自动在中心表中指示。
+选择服务后，与投放类型（直邮、电子邮件等）对应的成本类别 将自动在中心表中与已定义的处理选项一起指示。
 
 >[!NOTE]
 >
@@ -204,7 +204,7 @@ Adobe Campaign允许您定义将参与在营销活动中执行的作业的服务
 
 ### 库存管理 {#stock-management}
 
-如果库存耗尽或达到最小阈值，Adobe Campaign可以提醒一组操作员。 库存水平可通过导航区域的&#x200B;**[!UICONTROL Stocks]**&#x200B;链接通过&#x200B;**[!UICONTROL Campaigns]**&#x200B;选项卡的&#x200B;**[!UICONTROL Other choices]**&#x200B;链接访问。
+如果库存耗尽或达到最小阈值，Adobe Campaign可以提醒一组操作员。 库存水平可通过导航区域的&#x200B;**[!UICONTROL Other choices]**&#x200B;链接通过&#x200B;**[!UICONTROL Campaigns]**&#x200B;选项卡的&#x200B;**[!UICONTROL Stocks]**&#x200B;链接访问。
 
 ![](assets/s_ncs_user_stocks_view.png)
 

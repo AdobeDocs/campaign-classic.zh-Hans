@@ -9,8 +9,8 @@ content-type: reference
 exl-id: 54ee88b2-e646-4fb9-abec-957f0096f15f
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '506'
-ht-degree: 2%
+source-wordcount: '556'
+ht-degree: 4%
 
 ---
 
@@ -54,7 +54,7 @@ ht-degree: 2%
 
 >[!CAUTION]
 >
->我们强烈建议创建专用于AEM的安全区域，以避免任何安全问题。 有关详细信息，请参阅安装[指南](../../installation/using/security-zones.md)。
+>我们强烈建议为AEM创建一个安全区域，以避免任何安全问题。 有关详细信息，请参阅安装[指南](../../installation/using/security-zones.md)。
 
 如果Campaign实例由Adobe托管，请联系[Adobe客户关怀](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)团队。 如果您使用的是内部部署Campaign，请按照以下步骤操作：
 
@@ -121,7 +121,7 @@ ht-degree: 2%
 
    要了解如何配置复制，请参阅Adobe Experience Manager [文档](https://helpx.adobe.com/cn/experience-manager/6-5/sites/deploying/using/replication.html)。
 
-1. 通过配置专用的&#x200B;**Cloud Service**&#x200B;将Adobe Experience Manager连接到Adobe Campaign。
+1. 通过配置专用的&#x200B;**Adobe Experience Manager**&#x200B;将Cloud Service连接到Adobe Campaign。
 
    要了解如何通过Cloud Service连接两个解决方案，请参阅Adobe Experience Manager [文档](https://helpx.adobe.com/cn/experience-manager/6-5/sites/administering/using/campaignonpremise.html#ConfiguringAdobeExperienceManager) 。
 

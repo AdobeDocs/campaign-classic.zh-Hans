@@ -10,7 +10,7 @@ topic-tags: response-manager
 exl-id: e0b3bc9f-5e81-463f-a59e-cd972a47109b
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '1025'
+source-wordcount: '1063'
 ht-degree: 3%
 
 ---
@@ -116,7 +116,7 @@ ht-degree: 3%
 
 创建关于优惠建议的假设与创建即时投放假设类似。 只要选件处于活动状态，就可以执行假设验证。 计算期间基于优惠建议日期。 当假设验证允许您将收件人链接到购买时，可能会被接受的优惠建议状态可以自动更改。 [了解详情](hypothesis-templates.md#transactions)
 
-1. 按照&#x200B;**[!UICONTROL Offer]**&#x200B;此部分[中的说明创建一个或多个](hypothesis-templates.md#creating-a-hypothesis-model)类型模型。
+1. 按照[此部分](hypothesis-templates.md#creating-a-hypothesis-model)中的说明创建一个或多个&#x200B;**[!UICONTROL Offer]**&#x200B;类型模型。
 1. 转到&#x200B;**[!UICONTROL Campaign management > Measurement hypotheses]**&#x200B;节点。
 1. 通过选择之前创建的模型来创建&#x200B;**[!UICONTROL Offers]**&#x200B;类型假设验证。
 

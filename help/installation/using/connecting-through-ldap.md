@@ -10,8 +10,8 @@ topic-tags: additional-configurations
 exl-id: 0533cd50-3aa4-4160-9152-e916e149e77f
 source-git-commit: 0fba6a2ad4ffa864e2f726f241aa9d7cd39072a6
 workflow-type: tm+mt
-source-wordcount: '1045'
-ht-degree: 0%
+source-wordcount: '1070'
+ht-degree: 1%
 
 ---
 
@@ -118,15 +118,15 @@ LDAP配置在部署向导中执行。 必须在第一个配置步骤中选择&#x
 
   ![](assets/s_ncs_install_deployment_wiz_ldap_03.png)
 
-   1. **[!UICONTROL Recursive (default mode)]**。
+   1. **[!UICONTROL Recursive (default mode)]**.
 
       从给定级别开始完全搜索LDAP目录。
 
-   1. **[!UICONTROL Limited to the base]**。
+   1. **[!UICONTROL Limited to the base]**.
 
       所有属性都包含在搜索中。
 
-   1. **[!UICONTROL Limited to the first sub-level of the base]**。
+   1. **[!UICONTROL Limited to the first sub-level of the base]**.
 
       对目录的所有属性执行搜索，并从属性的第一级开始。
 
@@ -182,4 +182,4 @@ LDAP配置在部署向导中执行。 必须在第一个配置步骤中选择&#x
 
    无论通过Adobe Campaign还是LDAP，组都不会动态创建。 它们需要在Adobe Campaign和LDAP目录中单独创建。
 
-   LDAP目录中的组名称需要与Adobe Campaign组的名称一致。 它们的关联掩码是在部署向导的最后一个配置阶段定义的： Adobe Campaign_(。&#42;)，例如。
+   LDAP目录中的组名称需要与Adobe Campaign组的名称一致。 例如，它们的关联掩码是在部署向导的最后一个配置阶段定义的：Adobe Campaign_(.&#42;)。

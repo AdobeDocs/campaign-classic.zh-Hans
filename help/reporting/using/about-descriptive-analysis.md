@@ -8,7 +8,7 @@ exl-id: 19920058-e8e8-4e17-9cc3-24ddf9f96d04
 source-git-commit: 5e062f9dbdf6c148e442ac10dbb12cf72ba0179b
 workflow-type: tm+mt
 source-wordcount: '209'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
@@ -36,7 +36,7 @@ ht-degree: 0%
 
 ![](assets/reporting_descriptive_quantitative_sample.png)
 
-这些报告通过描述性分析助手创建，该助手基于各种步骤，可让您选择要创建的报告类型以及数据和布局。 报表将显示在最后一步。 如有必要，可以发布报告并与其他操作员共享，以Excel、PDF或OpenDocument格式打印、导出。
+这些报告通过描述性分析助手创建，该助手基于各种步骤，可让您选择要创建的报告类型以及数据和布局。 报表将显示在最后一步。 如有必要，可以以Excel、PDF或OpenDocument格式打印、导出报告并与其他操作员发布和共享。
 
 描述性分析向导不如Adobe Campaign报表强大，但它们可以快速概述数据库内容或数据选择。
 

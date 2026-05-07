@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: 操作员用户档案
-description: 操作员用户档案
+title: 操作员轮廓
+description: 操作员轮廓
 feature: Interaction, Offers
 audience: interaction
 content-type: reference
@@ -10,11 +10,11 @@ exl-id: e11fb28c-d530-45a2-862a-ff1c20975577
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
 source-wordcount: '384'
-ht-degree: 2%
+ht-degree: 4%
 
 ---
 
-# 操作员用户档案{#operator-profiles}
+# 操作员轮廓{#operator-profiles}
 
 
 
@@ -23,7 +23,7 @@ ht-degree: 2%
 * **[!UICONTROL Offer manager]** ：创建和维护优惠。 请注意，如果在工作流中使用选件，则运算符需要位于&#x200B;**[!UICONTROL Administrator]**&#x200B;或&#x200B;**[!UICONTROL Offer managers]**&#x200B;运算符组中才能执行工作流。
 * **[!UICONTROL Delivery manager]** ：批准和使用优惠
 
-创建特定于交互的运算符的步骤与创建平台上所有其他运算符的步骤相同。 有关详细信息，请参阅[此部分](../../platform/using/access-management.md)。 权限是在创建操作员期间配置的。
+创建特定于交互的运算符的步骤与创建平台上所有其他运算符的步骤相同。 如需详细信息，请参阅[此小节](../../platform/using/access-management.md)。 权限是在创建操作员期间配置的。
 
 ## 选件管理器 {#offer-manager}
 

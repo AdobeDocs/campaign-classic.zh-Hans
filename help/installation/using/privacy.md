@@ -6,8 +6,8 @@ feature: Installation, Privacy, Privacy Tools, URL Personalization
 exl-id: 0a3473bf-0528-486d-a799-8db86fece522
 source-git-commit: 354fc8fd5d030ed88e2b279ba1dd3eaf2f314d53
 workflow-type: tm+mt
-source-wordcount: '817'
-ht-degree: 2%
+source-wordcount: '896'
+ht-degree: 4%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 2%
 
 ## URL PERSONALIZATION {#url-personalization}
 
-向内容添加个性化链接时，请始终避免在URL的主机名部分进行任何个性化设置，以避免潜在的安全缺口。 绝不应该在所有URL属性&lt;`a href="">`或`<img src="">`中使用以下示例：
+向内容添加个性化链接时，请始终避免在URL的主机名部分进行任何个性化设置，以避免潜在的安全缺口。 绝不应该在所有&lt;`a href="">`或`<img src="">`的URL属性中使用以下示例：
 
 * `<%= url >`
 * `https://<%= url >`
@@ -44,7 +44,7 @@ ht-degree: 2%
 
 ### URL签名
 
-为了提高安全性，引入了一种用于跟踪电子邮件中链接的签名机制。 它从19.1.4版(9032@3a9dc9c)和20.2版开始提供。此功能默认处于启用状态。
+为了提高安全性，引入了一种用于跟踪电子邮件中链接的签名机制。 它从19.1.4版(9032@3a9dc9c)和20.2版开始提供。 此功能默认处于启用状态。
 
 >[!NOTE]
 >

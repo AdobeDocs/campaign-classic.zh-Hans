@@ -6,10 +6,11 @@ feature: Overview, Troubleshooting
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
-source-git-commit: 8d9bb9d2ff4450646bbf218804b8c8b4459b5a91
+exl-id: 89356b5a-d99c-43d1-892b-5a1d003e76cc
+source-git-commit: c1796e5f827b79f72a07eb07886d345d3b897f86
 workflow-type: tm+mt
-source-wordcount: '1345'
-ht-degree: 3%
+source-wordcount: '1517'
+ht-degree: 6%
 
 ---
 
@@ -96,7 +97,7 @@ Campaign v8是Adobe的战略平台，非常适合需要大量促销活动、现�
 
 * [Campaign v8概述](https://experienceleague.adobe.com/docs/campaign/campaign-v8/new/whats-new.html?lang=zh-Hans){target="_blank"}
 * [从Campaign Classic v7过渡到v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/start/v7-to-v8.html){target="_blank"}
-* [Campaign v8综合常见问题解答](https://experienceleague.adobe.com/docs/campaign/campaign-v8/start/campaign-faq-comprehensive.html){target="_blank"}
+* [Campaign v8全面常见问题解答](https://experienceleague.adobe.com/docs/campaign/campaign-v8/start/campaign-faq-comprehensive.html){target="_blank"}
 
 **有关工作流、投放、受众、报表、个性化等常见营销活动问题的详细答案**，请访问[Campaign v8全面常见问题解答](https://experienceleague.adobe.com/docs/campaign/campaign-v8/start/campaign-faq-comprehensive.html){target="_blank"}。
 
@@ -253,6 +254,6 @@ Security Zones自助服务界面可用于管理Adobe Campaign Classic v7部署�
 **社区和支持：**
 
 * [Campaign社区论坛](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community?profile.language=zh-Hans){target="_blank"}
-* [Adobe支持](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target="_blank"}
+* [Adobe 支持](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target="_blank"}
 
 +++

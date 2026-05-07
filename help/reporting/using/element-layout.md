@@ -7,7 +7,7 @@ feature: Reporting, Monitoring
 exl-id: 79d5c901-905b-4a0e-adb9-91fd6acb186f
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '424'
+source-wordcount: '425'
 ht-degree: 1%
 
 ---
@@ -38,7 +38,7 @@ ht-degree: 1%
 
 ## 添加页眉和页脚 {#adding-a-header-and-a-footer}
 
-您还可以通过报表属性窗口定义布局元素，例如：窗口的标题、页眉和页脚的HTML内容。
+通过报表属性窗口，您还可以定义布局元素，例如：窗口的标题、页眉和页脚的HTML内容。
 
 要访问属性窗口，请单击报表的&#x200B;**[!UICONTROL Properties]**&#x200B;按钮。
 
@@ -56,10 +56,10 @@ ht-degree: 1%
 
 ![](assets/s_ncs_advuser_report_properties_04a.png)
 
-然后，将这些标识符插入到报表的HTML内容中：
+然后，将这些标识符插入报表的HTML内容中：
 
 ![](assets/s_ncs_advuser_report_properties_04b.png)
 
 在显示报告时，它们将自动替换为相应的内容。
 
-与HTML文本类似，该操作模式使您能够集中报告中使用的文本并管理其翻译。 在此选项卡中创建的文本由Adobe Campaign集成翻译工具自动收集。
+与HTML文本类似，该操作模式允许您集中报告中使用的文本并管理其翻译。 在此选项卡中创建的文本由Adobe Campaign集成翻译工具自动收集。

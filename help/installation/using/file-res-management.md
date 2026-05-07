@@ -10,8 +10,8 @@ topic-tags: initial-configuration
 exl-id: 236afdfe-fb23-4ebb-b000-76e14bf01d9e
 source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
 workflow-type: tm+mt
-source-wordcount: '653'
-ht-degree: 1%
+source-wordcount: '675'
+ht-degree: 3%
 
 ---
 
@@ -25,11 +25,11 @@ ht-degree: 1%
 
 此属性在&#x200B;**serverConf.xml**&#x200B;文件的&#x200B;**dataStore**&#x200B;元素中可用。 **serverConf.xml**&#x200B;中的所有可用参数都列在此[部分](../../installation/using/the-server-configuration-file.md)中。
 
-此属性的默认值为&#x200B;**。+**&#x200B;并允许您上传任何文件类型。
+此属性的默认值为&#x200B;**.+**，允许您上传任何文件类型。
 
 要限制可能的格式，请使用有效的Java正则表达式替换属性值。 您可以输入多个值，方法是以逗号分隔。
 
-例如：**uploadWhiteList=&quot;。&#42;.png，。&#42;.jpg“**”将允许您在服务器上传PNG和JPG格式。 将不接受任何其他格式。
+例如： **uploadWhiteList=&quot;。&#42;.png，.&#42;.jpg&quot;**&#x200B;将允许您在服务器上传PNG和JPG格式。 将不接受任何其他格式。
 
 您还可以通过配置Web服务器来阻止上载重要文件。 [了解详情](web-server-configuration.md)
 

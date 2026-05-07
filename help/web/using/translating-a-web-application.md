@@ -30,7 +30,7 @@ ht-degree: 5%
 
    ![](assets/dce_translation_3.png)
 
-1. 选择HTML块。
+1. 选择一个HTML块。
 1. 在右侧的参数块中，**[!UICONTROL Localization]**&#x200B;选项允许您标记所选块的内容。 默认情况下，只翻译页面标题。
 
    ![](assets/dce_translation_1.png)
@@ -41,7 +41,7 @@ ht-degree: 5%
 
    具体有三种情况：
 
-   * 如果所选块包含多个字符串/块，则会将其标记为要翻译的单个字符串。 该字符串包含此块中元素的HTML代码。
+   * 如果所选块包含多个字符串/块，则会将其标记为要翻译的单个字符串。 该字符串随后包含此块中元素的HTML代码。
    * 如果要标记包含多个字符串的块，并且其中至少有一个字符串已标记，则会显示警告。 然后，您可以从隔离字符串中删除标记并添加整个块。
 
      ![](assets/dce_translation_4.png)
@@ -51,7 +51,7 @@ ht-degree: 5%
      ![](assets/dce_translation_2.png)
 
 1. 完成字符串的标记后，返回到Web应用程序并选择&#x200B;**[!UICONTROL Translations]**&#x200B;选项卡。
-1. 选择 **[!UICONTROL Collect the strings to translate]**。在DCE中标记的字符串将添加到Web应用程序的字符串中。
+1. 选择 **[!UICONTROL Collect the strings to translate]**。 在DCE中标记的字符串将添加到Web应用程序的字符串中。
 
    >[!NOTE]
    >

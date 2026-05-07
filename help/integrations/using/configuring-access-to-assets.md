@@ -10,7 +10,7 @@ topic-tags: asset-sharing
 exl-id: f3897a40-b080-47e5-9e31-4d861c1bacd5
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '499'
+source-wordcount: '522'
 ht-degree: 2%
 
 ---
@@ -37,7 +37,7 @@ ht-degree: 2%
 * Adobe Experience Cloud组织
 * 已启用Adobe IMS身份验证模式
 
-要启用Adobe Campaign与Adobe Experience Cloud之间的连接，请通过IMS(Adobe ID连接服务)配置连接。 有关该配置的详情，请参阅[通过Adobe ID连接](../../integrations/using/about-adobe-id.md)文档。 它涉及：
+要启用Adobe Campaign与Adobe Experience Cloud之间的连接，请通过IMS（Adobe ID连接服务）配置连接。 有关该配置的详情，请参阅[通过Adobe ID连接](../../integrations/using/about-adobe-id.md)文档。 它涉及：
 
 * 正在安装&#x200B;**[!UICONTROL Integration with the Adobe Experience Cloud]**&#x200B;包。
 * 配置Adobe Experience Cloud外部帐户。
@@ -51,7 +51,7 @@ ht-degree: 2%
 
 >[!CAUTION]
 >
->此功能已从Adobe Experience Manager 6.4开始停用。[了解详情](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/deprecated-removed-features.html?lang=zh-Hans#removed-features)
+>此功能已从Adobe Experience Manager 6.4开始停用。 [了解详情](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/deprecated-removed-features.html?lang=zh-Hans#removed-features)
 
 要将AEM Assets与Adobe Campaign集成，您必须首先配置Adobe Experience Manager与Adobe Campaign之间的集成。 此配置主要需要：
 

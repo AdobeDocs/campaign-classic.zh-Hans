@@ -7,8 +7,8 @@ role: Developer
 exl-id: 7aa2aef1-2eb6-48a6-82fa-4451bed66216
 source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '644'
-ht-degree: 3%
+source-wordcount: '665'
+ht-degree: 4%
 
 ---
 
@@ -38,7 +38,7 @@ Adobe Campaign API在应用程序内的JavaScript以及应用程序外的SOAP中
 Adobe Campaign使用两种类型的API：
 
 * 用于查询数据模型数据的通用数据访问API。 请参阅[面向数据的API](../../configuration/using/data-oriented-apis.md)。
-* 允许您对每个对象执行操作的特定于业务的API：投放、工作流、订阅等。 请参阅[面向业务的API](../../configuration/using/business-oriented-apis.md)。
+* 允许您对每个对象执行操作的特定于业务的API：投放、工作流、订阅等。请参阅[面向业务的API](../../configuration/using/business-oriented-apis.md)。
 
 为了开发API并与Adobe Campaign交互，您需要熟悉您的数据模型。 Adobe Campaign允许您生成对基础的完整描述。 请参阅[模型](../../configuration/using/data-oriented-apis.md#description-of-the-model)的说明。
 

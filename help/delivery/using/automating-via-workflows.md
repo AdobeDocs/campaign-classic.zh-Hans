@@ -8,7 +8,7 @@ role: User
 exl-id: bc6ebf5d-cc21-4750-9713-2bf259e7d6bf
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '1201'
+source-wordcount: '1229'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 可以使用通过Adobe Campaign客户端界面配置的工作流，自动创建、编辑和发布内容。
 
-通过工作流图的&#x200B;**工具栏访问**&#x200B;内容管理&#x200B;**[!UICONTROL Tools]**&#x200B;活动。
+通过工作流图的&#x200B;**[!UICONTROL Tools]**&#x200B;工具栏访问&#x200B;**内容管理**&#x200B;活动。
 
 活动属性分为四个步骤：
 
@@ -232,7 +232,7 @@ ht-degree: 0%
 
 通过编辑区域，可填充用于构造要检索的数据的XML馈送的URL的变量数据。
 
-按钮执行在&#x200B;**标记下填充的** GetAndTransform **`<input>`** SOAP方法。
+按钮执行在&#x200B;**`<input>`**&#x200B;标记下填充的&#x200B;**GetAndTransform** SOAP方法。
 
 表单中的控件声明如下：
 
@@ -248,7 +248,7 @@ ht-degree: 0%
 </input>
 ```
 
-必须在&#x200B;**标记的**&#x200B;元素下声明&#x200B;**`<enter>`** GetAndTransform **`<input>`**&#x200B;方法。 此标记会将从动态构建的表达式中恢复XML数据的URL作为参数。 函数的第二个参数是可选的，当传入的XML数据与内容的格式不同时，它会引用用于中间转换的样式表。
+必须在&#x200B;**`<input>`**&#x200B;标记的&#x200B;**`<enter>`**&#x200B;元素下声明&#x200B;**GetAndTransform**&#x200B;方法。 此标记会将从动态构建的表达式中恢复XML数据的URL作为参数。 函数的第二个参数是可选的，当传入的XML数据与内容的格式不同时，它会引用用于中间转换的样式表。
 
 输出根据在最后一个参数中输入的路径更新内容。
 

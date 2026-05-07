@@ -7,7 +7,7 @@ hide: true
 exl-id: 0d3e7046-313a-42a6-9155-3365e8d60bac
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '277'
+source-wordcount: '278'
 ht-degree: 5%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 5%
 ![](assets/incremental_query_example.png)
 
 1. 将增量查询和列表更新活动添加到新工作流中。
-1. 按照&#x200B;**[!UICONTROL Incremental query]**&#x200B;创建查询[中指定的方式配置活动的](query.md#creating-a-query)选项卡。
+1. 按照[创建查询](query.md#creating-a-query)中指定的方式配置活动的&#x200B;**[!UICONTROL Incremental query]**&#x200B;选项卡。
 1. 选择&#x200B;**[!UICONTROL Scheduling & History]**&#x200B;选项卡，然后指定270天的历史记录。 已定向的收件人在270天（即大约9个月）内将不再被定向。
 
    然后单击&#x200B;**[!UICONTROL Change...]**&#x200B;按钮。

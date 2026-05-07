@@ -8,7 +8,7 @@ exl-id: 9f5735d2-73b8-469f-bc10-482c99cdd4a1
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
 source-wordcount: '852'
-ht-degree: 4%
+ht-degree: 5%
 
 ---
 
@@ -54,7 +54,7 @@ ht-degree: 4%
 
 ![](assets/s_advuser_update_data_3.png)
 
-选择要更新的所有字段，并根据需要添加条件。 要实现此目的，请使用 **[!UICONTROL Taken into account if]** 列。条件逐个应用，并与列表中的顺序一致。 使用右侧的箭头可更改更新的顺序。
+选择要更新的所有字段，并根据需要添加条件。 要实现此目的，请使用 **[!UICONTROL Taken into account if]** 列。 条件逐个应用，并与列表中的顺序一致。 使用右侧的箭头可更改更新的顺序。
 
 您可以多次使用同一目标字段。
 
@@ -68,10 +68,10 @@ ht-degree: 4%
 
 **[!UICONTROL Advanced parameters]**&#x200B;链接允许您指定其他选项以处理数据更新和管理重复项。 您还可以：
 
-* **[!UICONTROL Disable automatic key management]**。
-* **[!UICONTROL Disable audit]**。
-* **[!UICONTROL Empty the destination value if the source value is empty (NULL)]**。 此选项默认处于自动选中状态。
-* **[!UICONTROL Update all columns with matching names]**。
+* **[!UICONTROL Disable automatic key management]**.
+* **[!UICONTROL Disable audit]**.
+* **[!UICONTROL Empty the destination value if the source value is empty (NULL)]**. 此选项默认处于自动选中状态。
+* **[!UICONTROL Update all columns with matching names]**.
 * 在&#x200B;**[!UICONTROL Enabled if]**&#x200B;字段中指定考虑源元素的条件。
 * 使用表达式指定考虑重复项的条件。 如果选中&#x200B;**[!UICONTROL Ignore records which concern the same target]**&#x200B;选项，则只考虑表达式列表中的第一个表达式。
 
@@ -101,7 +101,7 @@ ht-degree: 4%
 
 1. 选择要移动到主记录的收藏集和要更新的字段。
 
-   输入在标识一个或多个辅助记录后应用于这些记录的规则。 为此，您可以使用表达式生成器。 有关详细信息，请参阅此[部分](../../platform/using/adobe-campaign-workspace.md#about-queries-in-campaign)。 例如，通过指定该值是必须保留的所有不同记录中最近更新的值。
+   输入在标识一个或多个辅助记录后应用于这些记录的规则。 为此，您可以使用表达式生成器。 有关更多信息，请参阅此[&#128279;](../../platform/using/adobe-campaign-workspace.md#about-queries-in-campaign)章节。 例如，通过指定该值是必须保留的所有不同记录中最近更新的值。
 
    然后，输入规则要考虑的条件。
 

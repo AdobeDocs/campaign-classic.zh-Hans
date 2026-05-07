@@ -7,7 +7,7 @@ hide: true
 exl-id: c166409b-e040-491e-840a-a41310935d75
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '136'
+source-wordcount: '146'
 ht-degree: 3%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 3%
 
 
 
-Adobe Campaign提供&#x200B;**分布式营销**&#x200B;应用程序，用于在中央实体（总部、营销部门等）与本地实体（销售点、区域机构等）之间实施合作活动。 此合作基于称为&#x200B;**[!UICONTROL list of campaign packages]**&#x200B;的共享工作区，在该工作区中，集中创建的活动模板和实例将提供给本地实体。
+Adobe Campaign提供了一个&#x200B;**分布式营销**&#x200B;应用程序，用于在中心实体（总部、营销部门等）和本地实体（商店、区域代理等）之间 以及地方实体（销售点、地区代理等）的合规性。 此合作基于称为&#x200B;**[!UICONTROL list of campaign packages]**&#x200B;的共享工作区，在该工作区中，集中创建的活动模板和实例将提供给本地实体。
 
 中央实体提供本地实体可以使用的营销策划。 营销活动由表示本地或协作营销活动的包实现。 要使用营销活动，必须由本地实体对其进行订购，并且订单必须获得批准。
 

@@ -8,7 +8,7 @@ role: User
 exl-id: 16dddd4a-2e1a-4c78-8168-f656657bb9b8
 source-git-commit: 0507e0372a81351adc145dafdd3cbe5d5422dc00
 workflow-type: tm+mt
-source-wordcount: '1106'
+source-wordcount: '1122'
 ht-degree: 2%
 
 ---
@@ -70,7 +70,7 @@ ht-degree: 2%
 
 ![](assets/s_ncs_user_services_modify.png)
 
-在仪表板上，单击&#x200B;**[!UICONTROL Reports]**&#x200B;选项卡以跟踪订阅：订阅级别更改、订阅者总数等。 您可以存档报告并查看此选项卡中的历史记录。
+在仪表板上，单击&#x200B;**[!UICONTROL Reports]**&#x200B;选项卡以跟踪订阅：订阅级别更改、订阅者总数等。您可以存档报告并查看此选项卡中的历史记录。
 
 ## 添加和删除订阅者 {#adding-and-deleting-subscribers}
 

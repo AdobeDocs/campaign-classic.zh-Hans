@@ -8,7 +8,7 @@ hide: true
 exl-id: 7a9afe0a-0219-40f1-9fe2-6374db8d555c
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '490'
+source-wordcount: '501'
 ht-degree: 3%
 
 ---
@@ -55,7 +55,7 @@ ht-degree: 3%
    * **错误文本（隔离文本）**&#x200B;包含“Momen_Code10_InvalidRecipient”
    * **电子邮件域(@domain)**&#x200B;等于domain1.com或&#x200B;**电子邮件域(@domain)**&#x200B;等于domain2.com或&#x200B;**电子邮件域(@domain)**&#x200B;等于domain3.com
    * **更新状态(@lastModified)**&#x200B;在`MM/DD/YYYY HH:MM:SS AM`或之后
-   * **在**&#x200B;或之前更新状态(@lastModified)`MM/DD/YYYY HH:MM:SS PM`
+   * **在`MM/DD/YYYY HH:MM:SS PM`或之前更新状态(@lastModified)**
 
 * 对于隔离列表的&#x200B;**[!UICONTROL Error text]**&#x200B;字段中包含SMTP退回响应信息的Campaign环境：
 
@@ -64,7 +64,7 @@ ht-degree: 3%
      其中“support.ISP.com”可以是：例如“support.apple.com”或“support.google.com”
 
    * **更新状态(@lastModified)**&#x200B;在`MM/DD/YYYY HH:MM:SS AM`或之后
-   * **在**&#x200B;或之前更新状态(@lastModified)`MM/DD/YYYY HH:MM:SS PM`
+   * **在`MM/DD/YYYY HH:MM:SS PM`或之前更新状态(@lastModified)**
 
 
 在获得受影响的收件人列表后，您可以将他们的状态设置为&#x200B;**[!UICONTROL Valid]**，以便通过&#x200B;**[!UICONTROL Database cleanup]**&#x200B;工作流将其从隔离列表中删除，或者只是从表中删除他们。

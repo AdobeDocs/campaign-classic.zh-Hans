@@ -10,7 +10,7 @@ topic-tags: importing-and-exporting-data
 exl-id: 4582b524-2b6d-484c-bace-29d2e69f60e9
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '1011'
+source-wordcount: '1010'
 ht-degree: 55%
 
 ---
@@ -73,7 +73,7 @@ ht-degree: 55%
 
 1. 协调
 
-   * 转到 **Recipients (nms:recipient)** 表。
+   * 转到&#x200B;**收件人(nms:recipient)**&#x200B;表。
    * 选择&#x200B;**[!UICONTROL Insertion]**&#x200B;操作，并将默认值保留在其他字段中。
 
      ![](assets/s_ncs_user_import_example04_01.png)

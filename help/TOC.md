@@ -9,7 +9,7 @@ sub-product: adobe campaign classic
 type: Documentation
 source-git-commit: 4cae5fdb2b78f446f84352046b523d8862e9060c
 workflow-type: tm+mt
-source-wordcount: '2684'
+source-wordcount: '2710'
 ht-degree: 68%
 
 ---
@@ -21,12 +21,12 @@ ht-degree: 68%
 + 发行说明 {#release-notes}
    + [升级入门](rn/using/rn-overview.md)
    + [最新版本](rn/using/latest-release.md)
-   + 之前版本  {#previous-releases}
+   + 之前版本 {#previous-releases}
       + [2025](rn/using/release-2025.md)
       + [2024](rn/using/release-2024.md)
-      + {hide-from-toc}[2023 - 隐藏](rn/using/release-2023.md)
+      + {hide-from-toc}[2023 — 隐藏](rn/using/release-2023.md)
       + {hide-from-toc}[2022 - 隐藏](rn/using/release-2022.md)
-      + {hide-from-toc}[2021 - 隐藏](rn/using/release-2021.md)
+      + {hide-from-toc}[2021 — 隐藏](rn/using/release-2021.md)
       + {hide-from-toc}[[!DNL Gold Standard - HIDDEN]](rn/using/gold-standard.md)
    + [已弃用的功能](rn/using/deprecated-features.md)
    + [兼容性矩阵](rn/using/compatibility-matrix.md)

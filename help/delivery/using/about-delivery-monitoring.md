@@ -7,8 +7,8 @@ role: User
 exl-id: 9ce11da0-e37b-459e-8ec7-d2bddf59bdf7
 source-git-commit: 62ab16b206563aa25b8943e606d03a3184eb00db
 workflow-type: tm+mt
-source-wordcount: '814'
-ht-degree: 1%
+source-wordcount: '931'
+ht-degree: 2%
 
 ---
 
@@ -46,7 +46,7 @@ ht-degree: 1%
 
 * 对于托管和混合客户端，Adobe技术支持和顾问已在实例上配置了&#x200B;**可投放性监控**。 有关更多信息，请与您的Adobe客户经理联系。
 
-* 对于内部部署，必须通过&#x200B;**[!UICONTROL Deliverability monitoring (Email Deliverability)]** > **[!UICONTROL Tools]** > **[!UICONTROL Advanced]**&#x200B;菜单安装&#x200B;**[!UICONTROL Import package]**&#x200B;包。 有关详细信息，请参阅[安装Campaign Classic标准包](../../installation/using/installing-campaign-standard-packages.md)。
+* 对于内部部署，必须通过&#x200B;**[!UICONTROL Tools]** > **[!UICONTROL Advanced]** > **[!UICONTROL Import package]**&#x200B;菜单安装&#x200B;**[!UICONTROL Deliverability monitoring (Email Deliverability)]**&#x200B;包。 有关详细信息，请参阅[安装Campaign Classic标准包](../../installation/using/installing-campaign-standard-packages.md)。
 
 #### 可投放性工作流 {#deliverability-workflow}
 
@@ -78,7 +78,7 @@ ht-degree: 1%
 * 检查可从[投放仪表板](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"}访问的每个投放吞吐量，以确保其与投放内容的有效性一致（例如，“闪速销售”应以分钟而不是天投放）。
 * 使用波次时，请确保在触发下一个波次之前，每个波次都有足够的时间完成。
 * 检查错误数和新的[隔离](delivery-failures-quarantine.md)与其他投放是否一致。
-* 列入阻止列表请仔细查阅[投放日志](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/send/monitor/delivery-dashboard#delivery-logs-and-history){target="_blank"}以详细检查突出显示的错误类型（、DNS问题、反垃圾邮件规则等）。
+* 请仔细查阅[投放日志](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/send/monitor/delivery-dashboard#delivery-logs-and-history){target="_blank"}以详细检查突出显示的错误类型（、DNS问题、反垃圾邮件规则等）。
 
 ### 故障排除 {#delivery-troubleshooting}
 

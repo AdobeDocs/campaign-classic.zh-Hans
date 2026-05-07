@@ -8,16 +8,16 @@ level: Beginner
 exl-id: 8febceb0-9694-4045-a630-a7ff2fd18943
 source-git-commit: 354fc8fd5d030ed88e2b279ba1dd3eaf2f314d53
 workflow-type: tm+mt
-source-wordcount: '181'
-ht-degree: 54%
+source-wordcount: '208'
+ht-degree: 51%
 
 ---
 
 # Campaign Classic入门{#about-adobe-campaign-classic}
 
-为了实现高水准的客户交互和优秀的客户体验，企业必须确保客户在所有接触点上的历程是一致且连续的。现在，营销人员能够高效的设计、计划、执行、管理，并且优化跨渠道营销活动，从而创造更高的市场营销投资回报，并且提高客户忠诚度。
+为了实现高水准的客户交互和优秀的客户体验，企业必须确保客户在所有接触点上的历程是一致且连续的。 现在，营销人员能够高效的设计、计划、执行、管理，并且优化跨渠道营销活动，从而创造更高的市场营销投资回报，并且提高客户忠诚度。
 
-您能够利用 Adobe Campaign 制作对话式的营销活动。Adobe Campaign 提供了大量创新功能，帮助企业实现营销活动和客户交互流程的模式化、流程化和自动化。
+您能够利用 Adobe Campaign 制作对话式的营销活动。 Adobe Campaign 提供了大量创新功能，帮助企业实现营销活动和客户交互流程的模式化、流程化和自动化。
 
 
 >[!BEGINTABS]
@@ -32,11 +32,11 @@ ht-degree: 54%
 
 * 在[兼容性矩阵](../../rn/using/compatibility-matrix.md#ClientConsoleoperatingsystems)中检查您的系统和工具与Adobe Campaign客户端控制台的兼容性
 
-* 若要了解如何在此页面[上安装并登录Adobe Campaign &#x200B;](launching-adobe-campaign.md)，请执行以下操作：
+* 若要了解如何在此页面[&#128279;](launching-adobe-campaign.md)上安装并登录Adobe Campaign ，请执行以下操作：
 
 >[!TAB 浏览Campaign UI]
 
-* 在此页面[上发现Adobe Campaign用户界面](adobe-campaign-workspace.md)。
+* 在此页面[&#128279;](adobe-campaign-workspace.md)上发现Adobe Campaign用户界面。
 
 * 了解如何使用[Campaign资源管理器](adobe-campaign-workspace.md#using-adobe-campaign-explorer)。
 

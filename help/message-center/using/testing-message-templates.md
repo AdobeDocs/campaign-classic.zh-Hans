@@ -9,7 +9,7 @@ topic-tags: message-templates
 exl-id: 417004c9-ed96-4b98-a518-a3aa6123ee7b
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '568'
+source-wordcount: '589'
 ht-degree: 2%
 
 ---
@@ -38,11 +38,11 @@ ht-degree: 2%
 
    ![](assets/messagecenter_create_seedaddr_003.png)
 
-1. 输入外部标识符：利用此可选字段，可输入您的网站上所有应用程序通用的业务键（唯一ID、姓名+电子邮件等），用于标识您的配置文件。 如果此字段也出现在Adobe Campaign营销数据库中，则之后可以将事件与数据库中的用户档案进行协调。
+1. 输入外部标识符：此可选字段允许您输入业务密钥（唯一ID、名称+电子邮件等） 这是您网站上所有应用程序通用的功能，用于识别您的配置文件。 如果此字段也出现在Adobe Campaign营销数据库中，则之后可以将事件与数据库中的用户档案进行协调。
 
    ![](assets/messagecenter_create_seedaddr_003bis.png)
 
-1. 插入测试数据(请参阅[Personalization数据](#personalization-data))。
+1. 插入测试数据（请参阅[Personalization数据](#personalization-data)）。
 
    ![](assets/messagecenter_create_custo_001.png)
 
@@ -102,7 +102,7 @@ ht-degree: 2%
 
 发送校样的过程与定期投放的过程相同。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/preview-and-proof.html?lang=zh-Hans){target="_blank"}。 但是，对于事务型消息传递，您需要预先执行以下操作：
 
-* 使用[个性化数据](#managing-seed-addresses-in-transactional-messages)创建一个或多个[种子地址](#personalization-data)。
+* 使用[个性化数据](#personalization-data)创建一个或多个[种子地址](#managing-seed-addresses-in-transactional-messages)。
 * [创建消息内容](../../message-center/using/creating-the-message-template.md#creating-message-content)。
 
 要发送证明：

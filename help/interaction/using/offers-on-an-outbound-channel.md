@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: 出站渠道优惠
-description: 出站渠道优惠
+title: 出站渠道产品建议
+description: 出站渠道产品建议
 feature: Interaction, Offers
 badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v8"
 audience: interaction
@@ -10,12 +10,12 @@ topic-tags: case-study
 exl-id: 77fee343-09d1-4d60-be43-efe02953a70c
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '457'
+source-wordcount: '458'
 ht-degree: 3%
 
 ---
 
-# 出站渠道优惠{#offers-on-an-outbound-channel}
+# 出站渠道产品建议{#offers-on-an-outbound-channel}
 
 
 
@@ -47,7 +47,7 @@ ht-degree: 3%
 
    ![](assets/offer_delivery_example_006.png)
 
-1. 使用菜单插入第一个优惠建议并选择HTML渲染功能。
+1. 使用菜单插入第一个优惠建议并选择HTML渲染函数。
 
    ![](assets/offer_delivery_example_007.png)
 

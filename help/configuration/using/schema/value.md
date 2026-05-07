@@ -9,8 +9,8 @@ topic-tags: schema-reference
 exl-id: bad7fb4b-43d9-4033-ae0d-cf191d89114b
 source-git-commit: 254c89490fefa5d405bcecd2f1781df46450a873
 workflow-type: tm+mt
-source-wordcount: '148'
-ht-degree: 2%
+source-wordcount: '147'
+ht-degree: 4%
 
 ---
 
@@ -48,7 +48,7 @@ value：==help
 * **applicableIf （字符串）**：此属性允许您将枚举值设为可选。 它接收一个XTK表达式。
 * **desc （字符串）**：枚举值的说明。
 * **enabledIf （字符串）**：激活枚举值的条件。
-* **img （字符串）**：链接到“namespace：image_name”表单中枚举的图像。 必须将映像导入应用程序服务器。
+* **img （字符串）**：链接到“namespace:image_name”表单中枚举的图像。 必须将映像导入应用程序服务器。
 * **标签（字符串）**：枚举值的标签。
 * **name （字符串）**：枚举值的内部名称。
 * **值（字符串）**：枚举值的值。 根据枚举的类型定义值的类型。 如果枚举为字符串类型，则只能包含字符串类型的值。

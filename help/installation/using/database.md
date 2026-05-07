@@ -10,8 +10,8 @@ topic-tags: prerequisites-and-recommendations-
 exl-id: 8a0426c1-9e8d-4053-bc2b-6a550e2eed2f
 source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
 workflow-type: tm+mt
-source-wordcount: '282'
-ht-degree: 2%
+source-wordcount: '310'
+ht-degree: 7%
 
 ---
 
@@ -68,7 +68,7 @@ SELECT * FROM nls_database_parameters ;
   NLS_CHARACTERSET WE8MSWIN1252
 ```
 
-要登录到&#x200B;**sqlplus**，请使用Oracle的用户配置文件：
+要登录到&#x200B;**sqlplus**，请使用Oracle用户配置文件：
 
 ```
 su - oracle 
@@ -76,7 +76,7 @@ sqlplus
 [login] [password]
 ```
 
-您也可以引用Linux中的[Oracle客户端](../../installation/using/installing-packages-with-linux.md#oracle-client-in-linux)。
+您也可以参考Linux中的[Oracle客户端](../../installation/using/installing-packages-with-linux.md#oracle-client-in-linux)。
 
 ## PostgresSQL {#postgressql}
 
@@ -84,4 +84,4 @@ sqlplus
 
 **相关主题**
 
-* Adobe Campaign Classic表格中的[Unlogged选项](https://helpx.adobe.com/campaign/kb/unlogged-tables-classic.html)
+* [Adobe Campaign Classic表格中的Unlogged选项](https://helpx.adobe.com/campaign/kb/unlogged-tables-classic.html)

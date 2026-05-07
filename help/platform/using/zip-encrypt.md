@@ -10,8 +10,8 @@ topic-tags: importing-and-exporting-data
 exl-id: 4596638c-d75a-4e07-a2d8-5befcaad3430
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '520'
-ht-degree: 5%
+source-wordcount: '617'
+ht-degree: 9%
 
 ---
 
@@ -91,6 +91,6 @@ Adobe Campaign允许您导出压缩或加密文件。 在通过&#x200B;**[!UICON
 
 以下视频介绍了如何使用GPG密钥加密数据，该视频还包含以下内容
 
->[!VIDEO](https://video.tv.adobe.com/v/41331?quality=12&captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/41331?captions=chi_hans&quality=12)
 
 [此处](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hans)提供了其他 Campaign Classic 操作方法视频。

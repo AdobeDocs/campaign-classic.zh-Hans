@@ -8,8 +8,8 @@ content-type: reference
 exl-id: 8d1404c5-030b-47fe-a4c3-e72f15f09bbb
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '476'
-ht-degree: 3%
+source-wordcount: '536'
+ht-degree: 4%
 
 ---
 
@@ -23,11 +23,11 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->请注意，我们建议仅将Campaign生成的数据（例如发送、打开、点击等）导出到Adobe Experience Platform。 从第三方源（如您的CRM）摄取的数据应直接导入Adobe Experience Platform。
+>请注意，我们建议仅导出Campaign生成的数据（例如，发送、打开、点击等） Adobe Experience Platform。 从第三方源（如您的CRM）摄取的数据应直接导入Adobe Experience Platform。
 
 ## 在Campaign Classic中创建导出工作流
 
-要将数据从Campaign Classic导出到S3或Azure Blob存储位置，您需要构建一个工作流以定向要导出的数据，并将其发送到您的存储位置。
+要将数据从Campaign Classic导出到S3或Azure Blob存储位置，您需要构建一个工作流来定向要导出的数据，并将其发送到您的存储位置。
 
 为此，请添加并配置：
 

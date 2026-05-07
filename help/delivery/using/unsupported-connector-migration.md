@@ -46,7 +46,7 @@ ht-degree: 1%
 
 首先，您需要创建一个新的&#x200B;**[!UICONTROL Extended Generic SMPP]**&#x200B;外部帐户，然后您可能能够转置某些参数。 您可以在此[页面](sms-set-up.md#creating-an-smpp-external-account)中找到详细步骤。
 
-现在，您需要从新创建的&#x200B;**[!UICONTROL Mobile]**&#x200B;外部帐户的&#x200B;**[!UICONTROL Extended Generic SMPP]**&#x200B;选项卡中填写参数，具体取决于您之前的连接器。
+现在，您需要从新创建的&#x200B;**[!UICONTROL Extended Generic SMPP]**&#x200B;外部帐户的&#x200B;**[!UICONTROL Mobile]**&#x200B;选项卡中填写参数，具体取决于您之前的连接器。
 
 ### 从通用连接器 {#from-generic-connector}
 

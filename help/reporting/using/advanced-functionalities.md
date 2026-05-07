@@ -7,7 +7,7 @@ badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v
 exl-id: 8b51d0fc-1692-41cd-9aa8-3bb8f4ee454e
 source-git-commit: 647709dd4b0c70c342be03d3012bc02f10ff2c00
 workflow-type: tm+mt
-source-wordcount: '610'
+source-wordcount: '609'
 ht-degree: 4%
 
 ---
@@ -66,7 +66,7 @@ if( ctx.@_historyId.toString().length == 0 )
 
 ## 添加URL参数 {#defining-additional-settings}
 
-**[!UICONTROL Parameters]**&#x200B;报告属性[的](../../reporting/using/properties-of-the-report.md)选项卡允许您为报告定义其他设置：这些设置将在调用期间传递到URL。
+[报告属性](../../reporting/using/properties-of-the-report.md)的&#x200B;**[!UICONTROL Parameters]**&#x200B;选项卡允许您为报告定义其他设置：这些设置将在调用期间传递到URL。
 
 >[!CAUTION]
 >

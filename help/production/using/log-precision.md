@@ -10,8 +10,8 @@ topic-tags: troubleshooting
 exl-id: c2470098-62f3-4fee-b1c5-800ed0e91f75
 source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
 workflow-type: tm+mt
-source-wordcount: '327'
-ht-degree: 2%
+source-wordcount: '346'
+ht-degree: 6%
 
 ---
 
@@ -50,8 +50,8 @@ Adobe Campaign可以使用两个级别的日志进行操作：
    >[!NOTE]
    >
    >如果您使用&#x200B;**tracefilter：&#42;**，则会激活所有日志类型：ncm、rdr、nms、jst、timing、wdbc、ldap、soap、xtk、xtkquery、session、xtkwriter、network、pop3、inmail\
-   >最有用的日志类型是： **wdbc** （显示所有SQL查询）、**soap** (显示所有SOAP调用)、**ldap** （在验证后显示所有LDAP查询）、**xtkquery** （显示所有querydef的列表）。\
-   >您可以单独使用它们（例如&#x200B;**tracefilter：soap，wdbc**）。 您还可以全部激活它们，并选择排除某些其他项： **-tracefilter：&#42;，！soap**
+   >最有用的日志类型是： **wdbc** （显示所有SQL查询）、**soap** （显示所有SOAP调用）、**ldap** （在验证后显示所有LDAP查询）、**xtkquery** （显示所有querydef的列表）。\
+   >您可以单独使用它们（例如&#x200B;**tracefilter:soap，wdbc**）。 您还可以全部激活它们，并选择排除某些其他项： **-tracefilter：&#42;，！soap**
 
    检查是否确实发生了错误，然后以正常方式重新启动该过程：
 

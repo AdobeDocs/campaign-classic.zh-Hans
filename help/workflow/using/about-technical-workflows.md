@@ -7,8 +7,8 @@ hide: true
 exl-id: 9aed2665-cd4b-419c-b9f2-ea04fc1d8f01
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '1704'
-ht-degree: 1%
+source-wordcount: '1723'
+ht-degree: 2%
 
 ---
 
@@ -48,7 +48,7 @@ ht-degree: 1%
 | **讨论论坛进程** (newsgroupMgt) | 营销资源(MRM) | 此工作流用于管理来自讨论论坛的通知投放。 在收到批准信号时触发 |
 | **分布式营销流程** (centralLocalMgt) | 中央/本地营销（分布式营销） | 此工作流开始处理与使用分布式营销模块相关。 它可启动本地营销策划的创建，并管理与订单和营销策划包可用性相关的通知。 |
 | **事件清除** (webAnalyticsPurgeWebEvents) | 网站分析连接器 | 利用此工作流，可根据生命周期字段中配置的时段，从数据库字段删除每个事件。 |
-| **将受众导出到Adobe Experience Cloud** (exportSharedAudience) | 与Adobe Experience Cloud集成 | 此工作流可将受众作为共享受众/区段导出。 这些受众可在您使用的其他Adobe Experience Cloud解决方案中使用。 |
+| **将受众导出到Adobe Experience Cloud** (exportSharedAudience) | 与Adobe Experience Cloud集成 | 此工作流可将受众作为共享受众/区段导出。 您可在所用的不同 Adobe Experience Cloud 解决方案中使用这些受众。 |
 | **预测** （预测） | 投放 | 此工作流会分析保存在临时日历中的投放（创建临时日志）。 默认情况下，此工作流于每日凌晨1点触发。 |
 | **完全聚合计算（propositionrcp多维数据集）** (agg_nmspropositionrcp_full) | 优惠引擎（交互） | 此工作流可更新优惠建议多维数据集的完全聚合。 默认情况下，此工作流于每日早上6点触发。 此聚合可捕获以下维度：渠道、投放、营销选件和日期。 然后，使用优惠建议多维数据集根据优惠生成报表。 您可以在[本节](../../reporting/using/ac-cubes.md)中了解多维数据集的更多信息。 |
 | **已转换联系人的标识** (webAnalyticsFindConverted) | 网站分析连接器 | 此工作流对再营销活动后完成购买的网站访客编制索引。 可以在再营销效率报表中访问通过此工作流恢复的数据（请参阅此页面）。 |
@@ -60,7 +60,7 @@ ht-degree: 1%
 | **营销资源通知** (assetMgt) | 营销资源(MRM) | 此工作流可管理链接到营销资源审批和发布的通知。 |
 | **消息中心&lt;外部帐户名称>** （mcSynch_&lt;外部帐户名称>） | 事务性消息控制（消息中心 — 控制） | 此工作流： <ul><li>恢复操作处理的事件列表。</li><li>与NmsBroadLogMsg表同步，以恢复投放消息资格。</li><li>与NmsBroadLogMsg表的同步完成后，立即恢复事件投放日志。</li><li>与NmsTrackingUrl表同步，以恢复对投放URL的跟踪。</li><li>与NmsTrackingUrl表的同步完成后，立即恢复事件跟踪URL。</li><li>用于在发送投放后，每三小时恢复一次所有被隔离的电子邮件地址。</li></ul> |
 | **MessageCenter完全聚合计算** (agg_messageCenter_full) | 事务性消息控制（消息中心 — 控制） | 此工作流可更新消息中心多维数据集的完全聚合。 默认情况下，此工作流于每日凌晨3点触发。 此聚合捕获以下维度：渠道、日期、状态和事件类型。 然后，使用消息中心多维数据集根据事件生成报告。 您可以在[本节](../../reporting/using/ac-cubes.md)中了解多维数据集的更多信息 |
-| **中间源（投放计数器）** (defaultMidSourcingDlv) | 传输到中间源 | 此工作流收集中间源服务器上投放的计数信息。 计数信息包括常规投放指标，如已发送的投放数量等。 不包括打开等跟踪信息。 默认情况下，每10分钟触发一次。 |
+| **中间源（投放计数器）** (defaultMidSourcingDlv) | 传输到中间源 | 此工作流收集中间源服务器上投放的计数信息。 计数信息包括常规投放指标，如已发送的投放数量等。不包括打开等跟踪信息。 默认情况下，每10分钟触发一次。 |
 | **中间源（投放日志）** (defaultMidSourcingLog) | 传输到中间源 | 此工作流在中间源服务器上收集投放日志。 默认情况下，每小时触发一次。 |
 | **NMAC选择退出管理** (mobileAppOptOutMgt) | 移动应用程序渠道 | 此工作流可更新移动设备上的取消订阅通知。 从凌晨1点到午夜，每6小时触发一次。 有关详细信息，请参阅[此部分](../../delivery/using/delivery-failures-quarantine.md#push-notification-quarantines)。 |
 | **优惠通知** (offerMgt) | 投放 | 此工作流可将已批准的优惠以及优惠目录中包含的每个类别部署到在线环境中。 |

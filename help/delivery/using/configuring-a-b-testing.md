@@ -8,7 +8,7 @@ role: User
 exl-id: 6adf2e75-63b1-44ad-8925-03beb3bc0bdd
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '236'
+source-wordcount: '260'
 ht-degree: 3%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 3%
 
    ![](assets/ab-testing-split.png)
 
-1. 添加过渡，以便向其余群体发送包含当前主题的新闻稿。 为此，请从&#x200B;**[!UICONTROL Generate complement]**&#x200B;选项卡激活&#x200B;**[!UICONTROL General]**&#x200B;选项。
+1. 添加过渡，以便向其余群体发送包含当前主题的新闻稿。 为此，请从&#x200B;**[!UICONTROL General]**&#x200B;选项卡激活&#x200B;**[!UICONTROL Generate complement]**&#x200B;选项。
 
    ![](assets/ab-testing-complement.png)
 

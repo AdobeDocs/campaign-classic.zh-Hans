@@ -10,8 +10,8 @@ topic-tags: additional-configurations
 exl-id: 3e55d7f5-2858-4390-bba9-8fb5be0c3d98
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '1006'
-ht-degree: 1%
+source-wordcount: '1084'
+ht-degree: 2%
 
 ---
 
@@ -135,13 +135,13 @@ ht-degree: 1%
 
 “@name”属性必须遵循以下规则：
 
-**&#39;marketing_account_operator_name&#39;.&#39;affinity_name&#39;.&#39;地缘组“**”
+**&#39;marketing_account_operator_name&#39;.&#39;affinity_name&#39;.&#39;affinity_group&#39;**
 
 “marketing_account_operator_name”与在中间源实例中声明的中间源帐户的内部名称相关。
 
 “affinity_name”与为关联指定的任意名称相关。 此名称必须是唯一的。 授权字符为`[a-z]` `[A-Z]` `[0-9]`。 目标是声明一组公共IP地址。
 
-“affinity_group”与每个投放中使用的目标映射中声明的子关联相关联。 最后一部分包括“。” 如果没有Sub-affinity，则忽略。 授权字符为`[a-z]` `[A-Z]` `[0-9]`。
+“affinity_group”与每个投放中使用的目标映射中声明的子关联相关联。 如果没有Sub-affinity，则忽略包含“。”的最后一部分。 授权字符为`[a-z]` `[A-Z]` `[0-9]`。
 
 您必须停止然后重新启动服务器，以便考虑修改。
 

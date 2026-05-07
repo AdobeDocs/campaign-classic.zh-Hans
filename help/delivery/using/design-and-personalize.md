@@ -9,8 +9,8 @@ hide: true
 exl-id: 5bf727d2-83b1-4a99-be25-041eee8d234c
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '1304'
-ht-degree: 3%
+source-wordcount: '1390'
+ht-degree: 6%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 3%
 
 确保消息内容设计正确，以避免出现任何错误，这些错误通常与个性化相关。
 
-**提示**：在来自第三方供应商提供的外部文件的个性化字段中，外部HTML内容可能有误。 要避免此问题，请检查语法、标记的使用和字符等。 例如，Adobe Campaign个性化标记始终具有以下形式： &lt;%=table.field%>。 有关更多信息，请参阅[此小节](about-personalization.md)。
+**提示**：在来自第三方供应商提供的外部文件的个性化字段中，外部HTML内容可能有误。 要避免此问题，请检查语法、标记的使用和字符等。例如，Adobe Campaign个性化标记始终具有以下形式： &lt;%=table.field%>。 有关更多信息，请参阅[此小节](about-personalization.md)。
 
 在个性化块中错误使用参数可能是个问题。 例如，JavaScript中的变量应按以下方式使用：
 
@@ -77,7 +77,7 @@ ht-degree: 3%
 
 **提示**：由于人为错误始终存在，因此请在每次发送前检查选择退出链接是否正常工作。 例如，在发送校样时，确保链接有效，表单处于联机状态且“不再联系此收件人”字段已更改为“是”。
 
-了解如何在此部分[中插入选择退出链接](personalization-blocks.md#personalization-blocks-example)。
+了解如何在此部分[&#128279;](personalization-blocks.md#personalization-blocks-example)中插入选择退出链接。
 
 ### 电子邮件大小
 
@@ -95,10 +95,10 @@ ht-degree: 3%
 
 ### 短信长度
 
-默认情况下，短信的字符数应符合GSM（全球移动通信系统）标准。 使用 GSM 编码的短信消息长度上限为 160 个字符，而对于分段发送的消息，每段短信的长度上限为 153 个字符。
+默认情况下，短信的字符数应符合 GSM（全球移动通信系统）标准。 使用 GSM 编码的短信消息长度上限为 160 个字符，而对于分段发送的消息，每段短信的长度上限为 153 个字符。
 
-音译指的是，如果GSM标准无法识别某个短信字符，则会用另一个字符替换该字符。 请注意，将个性化字段插入短信消息内容，可能会引入GSM编码无法识别的字符。 您可以通过选中对应&#x200B;**[!UICONTROL External account]**&#x200B;的SMPP渠道设置选项卡中的对应框来授权字符音译。
-在本节[中了解更多](sms-set-up.md#creating-an-smpp-external-account)。
+音译指的是，如果 GSM 标准无法识别某个短信字符，则会用另一个字符替换该字符。 请注意，将个性化字段插入短信消息内容，可能会引入GSM编码无法识别的字符。 您可以通过选中对应&#x200B;**[!UICONTROL External account]**&#x200B;的SMPP渠道设置选项卡中的对应框来授权字符音译。
+在本节[&#128279;](sms-set-up.md#creating-an-smpp-external-account)中了解更多。
 
 **提示**：
 
@@ -106,7 +106,7 @@ ht-degree: 3%
 
 * 但是，如果短信消息包含许多GSM标准无法识别的字符，请启用音译以限制发送消息的成本。
 
-在本节[中了解更多](sms-set-up.md#about-character-transliteration)。
+在本节[&#128279;](sms-set-up.md#about-character-transliteration)中了解更多。
 
 ## 处理格式设置 {#formatting}
 
@@ -114,7 +114,7 @@ ht-degree: 3%
 
 * 更正&#x200B;**日期格式**： Adobe Campaign为JavaScript模板和XSL样式表提供了日期格式功能。 [了解详情](formatting.md#date-display)
 
-* 在电子邮件中使用&#x200B;**授权字符**：电子邮件地址的有效字符列表在“XtkEmail_Characters”选项中定义。 在本节[中了解如何访问Campaign选项](../../installation/using/configuring-campaign-options.md)。 要正确处理特殊字符，需要使用Unicode安装Adobe Campaign。
+* 在电子邮件中使用&#x200B;**授权字符**：电子邮件地址的有效字符列表在“XtkEmail_Characters”选项中定义。 在本节[&#128279;](../../installation/using/configuring-campaign-options.md)中了解如何访问Campaign选项。 要正确处理特殊字符，需要使用Unicode安装Adobe Campaign。
 
 * **电子邮件身份验证**&#x200B;的配置：确保电子邮件标头包含DKIM签名。 通过DKIM (Domain Keys Identified Mail)身份验证，接收电子邮件服务器可以验证邮件是否确实由它声明发送该邮件的人员或实体发送，以及邮件内容在最初发送时间（和DKIM“签名”）与接收时间之间是否进行了更改。 此标准通常使用发件人或发件人标头中的域。 有关详细信息，请参阅[Adobe可投放性最佳实践指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=zh-Hans#authentication)。
 

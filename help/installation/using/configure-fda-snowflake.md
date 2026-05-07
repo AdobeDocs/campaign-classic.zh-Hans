@@ -9,7 +9,7 @@ topic-tags: connectors
 exl-id: bdb5e422-ecfe-42eb-bd15-39fe5ec0ff1d
 source-git-commit: 22420452d4df2e8161c91a42ad0d20ceb4796e82
 workflow-type: tm+mt
-source-wordcount: '503'
+source-wordcount: '534'
 ht-degree: 2%
 
 ---
@@ -66,7 +66,7 @@ ht-degree: 2%
    ./snowflake_odbc-setup.sh
    ```
 
-1. 安装ODBC驱动程序后，需要重新启动Campaign Classic。 为此，请运行以下命令：
+1. 安装ODBC驱动程序后，您需要重新启动Campaign Classic。 为此，请运行以下命令：
 
    ```
    systemctl stop nlserver.service

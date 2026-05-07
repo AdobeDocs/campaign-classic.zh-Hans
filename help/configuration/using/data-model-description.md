@@ -7,7 +7,7 @@ role: Developer
 exl-id: fc0fd23c-f9ea-4e30-b47b-a84143d882ca
 source-git-commit: 647709dd4b0c70c342be03d3012bc02f10ff2c00
 workflow-type: tm+mt
-source-wordcount: '2354'
+source-wordcount: '2376'
 ht-degree: 2%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 2%
 # Campaign数据模型说明{#data-model-description}
 
 
-Adobe Campaign 提供了预定义的数据模型。本节提供了有关Adobe Campaign数据模型的内置表及其交互的一些详细信息。
+Adobe Campaign 提供了预定义的数据模型。 本节提供了有关Adobe Campaign数据模型的内置表及其交互的一些详细信息。
 
 要访问每个表的说明，请转到&#x200B;**[!UICONTROL Admin > Configuration > Data schemas]**，从列表中选择资源，然后单击&#x200B;**[!UICONTROL Documentation]**&#x200B;选项卡。
 
@@ -23,7 +23,7 @@ Adobe Campaign 提供了预定义的数据模型。本节提供了有关Adobe Ca
 
 >[!NOTE]
 >
->应用中所承载数据的物理和逻辑结构以 XML 格式进行描述。它遵循 Adobe Campaign 特有的语法，称为架构。有关Adobe Campaign架构的详细信息，请阅读[此部分](../../configuration/using/about-schema-reference.md)。
+>应用中所承载数据的物理和逻辑结构以 XML 格式进行描述。 它遵循 Adobe Campaign 特有的语法，称为架构。 有关Adobe Campaign架构的详细信息，请阅读[此部分](../../configuration/using/about-schema-reference.md)。
 
 ## 主表的说明 {#description-main-tables}
 

@@ -1,18 +1,18 @@
 ---
 product: campaign
-title: 投放性能和故障排除
+title: 投放效果和故障排除
 description: 了解如何优化Campaign Classic v7中的投放性能并排查问题
 feature: Monitoring, Deliverability, Troubleshooting
 role: User, Developer
 exl-id: cc793d7b-0a26-4a75-97ed-d79c87d9b3b8
 source-git-commit: 2ebae2b84741bf26dd44c872702dbf3b0ebfc453
 workflow-type: tm+mt
-source-wordcount: '665'
-ht-degree: 0%
+source-wordcount: '791'
+ht-degree: 2%
 
 ---
 
-# 投放性能和故障排除 {#delivery-performance-troubleshooting}
+# 投放效果和故障排除 {#delivery-performance-troubleshooting}
 
 >[!NOTE]
 >

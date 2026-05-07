@@ -8,8 +8,8 @@ hide: true
 exl-id: 4e0df18f-3623-4dfb-a2f8-ad293dbc4dd5
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '434'
-ht-degree: 19%
+source-wordcount: '453'
+ht-degree: 17%
 
 ---
 
@@ -35,13 +35,13 @@ ht-degree: 19%
 
 * **营销活动**
 
-  营销策划可集中与营销策划相关的所有元素：投放、定位规则、成本、导出文件、相关文档等。 每个活动都附属于项目。
+  营销策划可集中与营销策划相关的所有元素：投放、定位规则、成本、导出文件、相关文档等。每个营销策划都附属于一个项目。
 
   有关详情，请参阅[添加营销活动](../../campaign/using/setting-up-marketing-campaigns.md#adding-a-campaign)。
 
 * **项目**
 
-  项目允许您定义日历期间的营销行动：发布、游说、忠诚度等。 每个项目都包含链接到日历的活动，日历提供了概览。
+  项目允许您定义日历期间的营销行动：发布、游说、忠诚度等。每个项目都包含链接到日历的营销活动，日历提供了概览。
 
 * **计划**
 
@@ -71,4 +71,4 @@ ht-degree: 19%
 
 >[!VIDEO](https://video.tv.adobe.com/v/326575?captions=chi_hans&quality=12)
 
-[!DNL Campaign Classic]此处[提供了其他](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hans)操作方法视频。
+[此处](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hans)提供了其他[!DNL Campaign Classic]操作方法视频。

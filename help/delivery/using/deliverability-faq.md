@@ -7,8 +7,8 @@ role: User
 exl-id: f94897c1-b44c-4100-ac50-a89b13fa6f2f
 source-git-commit: 0c639cc8b9636c190c868980ab5182a0eccb5f74
 workflow-type: tm+mt
-source-wordcount: '648'
-ht-degree: 1%
+source-wordcount: '660'
+ht-degree: 2%
 
 ---
 
@@ -36,7 +36,7 @@ ht-degree: 1%
 
 如果您总是收到与ISP相同的错误消息，则您的电子邮件或IP可能被ISP检测到为故障。 执行以下建议：
 * 检查您是否收到大量与不存在电子邮件地址关联的故障（**用户未知**&#x200B;个故障）。
-* 更新您的订阅表单，以检测输入的域名中是否有任何错误(例如：gmaul.com或yaho.com)。
+* 更新您的订阅表单，以检测输入的域名中是否有任何错误（例如：gmaul.com或yaho.com）。
 * 如果您发现错误，指出您的邮件被声明为垃圾邮件，或您的邮件被持续阻止，请尝试排除过去12个月内未打开或单击您邮件之一的收件人，使其离开目标。
 
 如果问题仍然存在，请联系商业或可投放性服务，[Adobe客户关怀](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。
@@ -65,15 +65,15 @@ ht-degree: 1%
    * 在对应的记录的详细信息中，将&#x200B;**[!UICONTROL Status]**&#x200B;字段的值设置为&#x200B;**[!UICONTROL Valid]**。
    * 保存记录。
 
-* 列入阻止列表 **如何确定我的IP是否位于上？ 如何从阻止列表中删除我的IP？**
+* **如何确定我的IP是否位于上？ 如何从阻止列表中删除我的IP？**
 
   要检查您的IP地址是否位于阻止列表上，您可以使用各种网站对其进行验证，例如：
-   * [MX工具箱](https://mxtoolbox.com/)
+   * [MX Toolbox](https://mxtoolbox.com/)
    * [我的IP地址是什么](https://whatismyipaddress.com)
 
-  列入阻止列表通常，IP地址检查的结果将返回一个列表，其中包含IP地址的详细信息，以及拒绝IP地址的网站的名称。
+  通常，IP地址检查的结果将返回一个列表，其中包含IP地址的详细信息，以及拒绝IP地址的网站的名称。
 
-  通过单击相应的链接，您可以访问网站详细信息。 列入阻止列表然后，您可以请求将您的网站从将IP地址添加到其的网站中除名。
+  通过单击相应的链接，您可以访问网站详细信息。 然后，您可以请求将您的网站从将IP地址添加到其的网站中除名。
 
   >[!NOTE]
   >

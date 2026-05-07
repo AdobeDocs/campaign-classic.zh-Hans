@@ -8,8 +8,8 @@ level: Experienced
 exl-id: a2783a5e-6d38-41a1-b5c6-24ab489116f8
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '1736'
-ht-degree: 27%
+source-wordcount: '1740'
+ht-degree: 31%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 27%
 
 1. 指定连接器和消息类型的外部帐户。
 
-   请注意，旧版连接器现已弃用。 已弃用的功能仍然可用，但不会进一步增强或支持这些功能。请参阅[此页面](../../rn/using/deprecated-features.md)以了解详情。
+   请注意，旧版连接器现已弃用。 已弃用的功能仍然可用，但不会进一步增强或支持这些功能。 请参阅[此页面](../../rn/using/deprecated-features.md)以了解详情。
 
 1. 引用此外部帐户的投放模板。
 
@@ -44,7 +44,7 @@ ht-degree: 27%
    ![](assets/extended_smpp_create_account.png)
 
 1. 选中&#x200B;**[!UICONTROL Enabled]**&#x200B;框。
-1. 在&#x200B;**[!UICONTROL Mobile]**&#x200B;选项卡中，从&#x200B;**[!UICONTROL Extended generic SMPP]**&#x200B;下拉列表中选择&#x200B;**[!UICONTROL Connector]**。
+1. 在&#x200B;**[!UICONTROL Mobile]**&#x200B;选项卡中，从&#x200B;**[!UICONTROL Connector]**&#x200B;下拉列表中选择&#x200B;**[!UICONTROL Extended generic SMPP]**。
 
    ![](assets/extended_smpp_connector.png)
 
@@ -100,18 +100,18 @@ ht-degree: 27%
 
 音译指的是，如果 GSM 标准无法识别某个短信字符，则会用另一个字符替换该字符。
 
-* 如果音译为&#x200B;**[!UICONTROL authorized]**，则在发送消息时，未考虑的每个字符都将被替换为GSM字符。 例如，字母“ë”会被替换为“e”。因此，消息会有些微变化，但字符限制将保持不变。
-* 当音译为&#x200B;**[!UICONTROL not authorized]**&#x200B;时，包含无法识别的字符的每条消息都将以二进制格式(Unicode)发送：因此，所有字符都将按原样发送。 但是，使用 Unicode 的短信消息长度上限为 70 个字符（对于分段发送的消息，每段短信的长度上限为 67 个字符）。如果超过最大字符数，则会分段发送多条消息，这可能会产生额外的费用。
+* 如果音译为&#x200B;**[!UICONTROL authorized]**，则在发送消息时，未考虑的每个字符都将被替换为GSM字符。 例如，字母“ë”会被替换为“e”。 因此，消息会有些微变化，但字符限制将保持不变。
+* 当音译为&#x200B;**[!UICONTROL not authorized]**&#x200B;时，包含无法识别的字符的每条消息都将以二进制格式(Unicode)发送：因此，所有字符都将按原样发送。 但是，使用 Unicode 的短信消息长度上限为 70 个字符（对于分段发送的消息，每段短信的长度上限为 67 个字符）。 如果超过最大字符数，则会分段发送多条消息，这可能会产生额外的费用。
 
 >[!IMPORTANT]
 >
->将个性化字段插入短信消息内容，可能会引入GSM编码无法识别的字符。
+>将个性化字段插入短信消息内容，可能会引入 GSM 编码无法识别的字符。
 
-默认情况下，字符音译处于禁用状态。如果您希望将短信消息中的所有字符都按原样保留，以免名称等内容被错误地更改，我们建议您不要启用此选项。
+默认情况下，字符音译处于禁用状态。 如果您希望将短信消息中的所有字符都按原样保留，以免名称等内容被错误地更改，我们建议您不要启用此选项。
 
 但是，如果短信消息包含大量会生成 Unicode 消息的字符，则可以选择加入此选项以限制发送消息的成本。
 
-下表列出了GSM标准可识别的字符。 除下面提及的字符外，插入消息正文的所有其他字符都会将整个消息转换为二进制格式(Unicode)，因此将其限制为70个字符。
+下表列出了GSM标准可识别的字符。 除下方所列的字符外，插入消息正文的所有其他字符都会导致整个消息被转换为二进制格式 (Unicode)，从而使其长度限制变成 70 个字符。
 
 **基本字符**
 
@@ -130,7 +130,7 @@ ht-degree: 27%
   <tr> 
    <td> £ </td> 
    <td> _ </td> 
-   <td> ！ </td> 
+   <td> ! </td> 
    <td> 1 </td> 
    <td> A </td> 
    <td> Q </td> 
@@ -140,7 +140,7 @@ ht-degree: 27%
   <tr> 
    <td> $ </td> 
    <td> <img height="21px" src="assets/phi.png" /> </td> 
-   <td> ” </td> 
+   <td> " </td> 
    <td> 2 </td> 
    <td> B </td> 
    <td> R </td> 
@@ -180,7 +180,7 @@ ht-degree: 27%
   <tr> 
    <td> u </td> 
    <td> <img height="21px" src="assets/pi.png" /> </td> 
-   <td> 和 </td> 
+   <td> &amp; </td> 
    <td> 6 </td> 
    <td> F </td> 
    <td> V </td> 
@@ -190,7 +190,7 @@ ht-degree: 27%
   <tr> 
    <td> i </td> 
    <td> <img height="21px" src="assets/psi.png" /> </td> 
-   <td> ’ </td> 
+   <td> ' </td> 
    <td> 7 </td> 
    <td> G </td> 
    <td> W </td> 
@@ -221,7 +221,7 @@ ht-degree: 27%
    <td> 换行 </td> 
    <td> <img height="21px" src="assets/xi.png" /> </td> 
    <td> * </td> 
-   <td> ： </td> 
+   <td> : </td> 
    <td> J </td> 
    <td> Z </td> 
    <td> j </td> 
@@ -231,7 +231,7 @@ ht-degree: 27%
    <td> Ø </td> 
    <td> ESC </td> 
    <td> + </td> 
-   <td> ； </td> 
+   <td> ; </td> 
    <td> K </td> 
    <td> 一 </td> 
    <td> k </td> 
@@ -240,7 +240,7 @@ ht-degree: 27%
   <tr> 
    <td> ø </td> 
    <td> AE </td> 
-   <td> ， </td> 
+   <td> , </td> 
    <td> &lt; </td> 
    <td> L </td> 
    <td> Ö </td> 
@@ -260,7 +260,7 @@ ht-degree: 27%
   <tr> 
    <td> Å </td> 
    <td> ß </td> 
-   <td> 。 </td> 
+   <td> . </td> 
    <td> &gt; </td> 
    <td> N </td> 
    <td> U </td> 
@@ -294,13 +294,13 @@ CR：回车
 
 ## 文本编码 {#about-text-encodings}
 
-发送短信消息时，Adobe Campaign 可以使用一个或多个文本编码。每个编码都有属于自己的特定字符集，可确定其适合短信消息的字符数。
+发送短信消息时，Adobe Campaign 可以使用一个或多个文本编码。 每个编码都有属于自己的特定字符集，可确定其适合短信消息的字符数。
 
-配置新的SMPP移动投放外部帐户时，您可以在&#x200B;**[!UICONTROL Mapping of encodings]**&#x200B;选项卡中定义&#x200B;**[!UICONTROL Mobile]**：**[!UICONTROL data_coding]**&#x200B;字段允许Adobe Campaign将使用的编码传输给SMSC。
+配置新的SMPP移动投放外部帐户时，您可以在&#x200B;**[!UICONTROL Mobile]**&#x200B;选项卡中定义&#x200B;**[!UICONTROL Mapping of encodings]**：**[!UICONTROL data_coding]**&#x200B;字段允许Adobe Campaign将使用的编码传输给SMSC。
 
 >[!NOTE]
 >
->**Data_coding** 值与实际使用的编码之间的映射，经过标准化处理。但是，某些SMSC具有属于自己的特定映射：在这种情况下，您的&#x200B;**Adobe Campaign**&#x200B;管理员需要声明此映射。 有关更多信息，请咨询您的提供商。
+>**Data_coding** 值与实际使用的编码之间的映射，经过标准化处理。 但是，某些SMSC具有属于自己的特定映射：在这种情况下，您的&#x200B;**Adobe Campaign**&#x200B;管理员需要声明此映射。 有关更多信息，请咨询您的提供商。
 
 您可以声明&#x200B;**data_codings**，并在必要时强制进行编码：为此，请在表中指定一种编码。
 
@@ -315,7 +315,7 @@ CR：回车
 >
 >声明的顺序很重要：建议您按照&#x200B;**成本**&#x200B;的升序方式排列编码列表，以选出可尽量减少短信消息发送条数的编码。
 >
->仅声明您要使用的编码。如果SMSC提供的某些编码不符合您的使用目的，请不要在列表中声明这些编码。
+>仅声明您要使用的编码。 如果SMSC提供的某些编码不符合您的使用目的，请不要在列表中声明这些编码。
 
 ## 自动回复 {#automatic-reply}
 
@@ -335,7 +335,7 @@ CR：回车
 
 如果将&#x200B;**[!UICONTROL Remove from quarantine]**&#x200B;操作链接到自动响应，则发送相应关键字的收件人会自动从隔离中删除。
 
-收件人列在可通过&#x200B;**[!UICONTROL Non deliverables and addresses]** > **[!UICONTROL Administration]** > **[!UICONTROL Campaign Management]**&#x200B;菜单访问的&#x200B;**[!UICONTROL Non deliverables Management]**&#x200B;表中。
+收件人列在可通过&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Campaign Management]** > **[!UICONTROL Non deliverables Management]**&#x200B;菜单访问的&#x200B;**[!UICONTROL Non deliverables and addresses]**&#x200B;表中。
 
 * 若要无论短代码是什么，都发送相同的回复，请将&#x200B;**[!UICONTROL Short code]**&#x200B;列留空。
 * 无论关键字是什么，要发送相同的回复，请将&#x200B;**[!UICONTROL Keyword]**&#x200B;列留空。
@@ -345,7 +345,7 @@ CR：回车
 要避免这种情况，请根据您使用的提供商，应用以下解决方案之一：
 
 * 为每个外部帐户创建一个提供程序帐户。
-* 使用&#x200B;**[!UICONTROL System type]** > **[!UICONTROL Mobile]**&#x200B;选项卡中的&#x200B;**[!UICONTROL Connection settings]**&#x200B;字段区分每个短代码。 请向您的提供商询问每个帐户的不同值。
+* 使用&#x200B;**[!UICONTROL Mobile]** > **[!UICONTROL Connection settings]**&#x200B;选项卡中的&#x200B;**[!UICONTROL System type]**&#x200B;字段区分每个短代码。 请向您的提供商询问每个帐户的不同值。
 
   ![](assets/extended_smpp_system-type.png)
 

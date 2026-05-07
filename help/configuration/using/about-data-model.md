@@ -7,14 +7,14 @@ role: Developer
 exl-id: 655b5928-b005-442f-b026-2f1b0c1abb99
 source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '980'
-ht-degree: 5%
+source-wordcount: '997'
+ht-degree: 6%
 
 ---
 
 # 开始使用 Campaign 数据模型{#about-data-model}
 
-Adobe Campaign 数据库的概念数据模型由一组内置表及它们之间的交互组成。本页中列出了主要表格和概念。
+Adobe Campaign 数据库的概念数据模型由一组内置表及它们之间的交互组成。 本页中列出了主要表格和概念。
 
 ## 概述 {#data-model-overview}
 
@@ -115,6 +115,6 @@ Adobe Campaign中内置的收件人表为构建数据模型提供了一个良好
   ![](assets/data-model_documentation-tab.png)
 
 
-* **Campaign架构** — 应用程序中承载的数据的物理和逻辑结构以XML形式描述。 它遵循 Adobe Campaign 特有的语法，称为架构。有关Adobe Campaign架构的详细信息，请阅读[此部分](../../configuration/using/about-schema-reference.md)。
+* **Campaign架构** — 应用程序中承载的数据的物理和逻辑结构以XML形式描述。 它遵循 Adobe Campaign 特有的语法，称为架构。 有关Adobe Campaign架构的详细信息，请阅读[此部分](../../configuration/using/about-schema-reference.md)。
 
 * **数据模型最佳实践** — 在[此部分](../../configuration/using/data-model-best-practices.md#data-model-architecture)中了解Campaign数据模型架构和相关最佳实践。

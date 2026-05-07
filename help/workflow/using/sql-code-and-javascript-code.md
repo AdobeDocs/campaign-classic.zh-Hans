@@ -39,7 +39,7 @@ ht-degree: 13%
 
 ### 执行延迟 {#exec-delay}
 
-从20.2版本开始，向&#x200B;**[!UICONTROL JavaScript code]**&#x200B;和&#x200B;**[!UICONTROL Advanced JavaScript code]**&#x200B;活动添加了执行延迟。 默认情况下，执行阶段不能超过 1 小时。在此延迟后，进程将中止，并显示一条错误消息，活动执行将失败。
+从20.2版本开始，向&#x200B;**[!UICONTROL JavaScript code]**&#x200B;和&#x200B;**[!UICONTROL Advanced JavaScript code]**&#x200B;活动添加了执行延迟。 默认情况下，执行阶段不能超过 1 小时。 在此延迟后，进程将中止，并显示一条错误消息，活动执行将失败。
 
 您可在这些活动中可用的&#x200B;**[!UICONTROL Stop execution after]**&#x200B;字段中更改此延迟。
 
@@ -62,7 +62,7 @@ ht-degree: 13%
 * **[!UICONTROL Transitions]**：您可以定义多个活动输出过渡。
 * **[!UICONTROL Schedule]**： **[!UICONTROL Schedule]**&#x200B;选项卡允许您计划何时触发活动。
 
-高级JavaScript是一项持续性的任务，如果未标记为已完成，则会定期召回。 要终止任务并防止将来出现调用，您必须使用&#x200B;**部分中的** task.setCompleted()**[!UICONTROL Next calls]**&#x200B;方法：
+高级JavaScript是一项持续性的任务，如果未标记为已完成，则会定期召回。 要终止任务并防止将来出现调用，您必须使用&#x200B;**[!UICONTROL Next calls]**&#x200B;部分中的&#x200B;**task.setCompleted()**&#x200B;方法：
 
 ```
 task.postEvent(task.transitionByName("ok")); // to transition to Ok branch

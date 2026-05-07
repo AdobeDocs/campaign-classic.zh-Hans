@@ -7,7 +7,7 @@ hide: true
 exl-id: e4806bb8-de9d-47e4-8b37-d6c0565b7f5a
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '715'
+source-wordcount: '716'
 ht-degree: 2%
 
 ---
@@ -120,7 +120,7 @@ ht-degree: 2%
 
 操作步骤：
 
-1. 单击&#x200B;**[!UICONTROL Create]**&#x200B;选项卡的&#x200B;**[!UICONTROL Reports]**&#x200B;按钮，然后选择刚刚创建的多维数据集。
+1. 单击&#x200B;**[!UICONTROL Reports]**&#x200B;选项卡的&#x200B;**[!UICONTROL Create]**&#x200B;按钮，然后选择刚刚创建的多维数据集。
 
    ![](assets/s_advuser_cube_wz_14.png)
 
@@ -130,7 +130,7 @@ ht-degree: 2%
 
    ![](assets/s_advuser_cube_wz_15.png)
 
-1. 可以切换尺寸的轴、删除它们、添加新测量等。 在[此页面](../../reporting/using/using-cubes-to-explore-data.md)中详细描述了可能的操作。
+1. 可以切换尺寸的轴、删除它们、添加新测量等。在[此页面](../../reporting/using/using-cubes-to-explore-data.md)中详细描述了可能的操作。
 
    要实现此目的，请使用相应的图标。
 

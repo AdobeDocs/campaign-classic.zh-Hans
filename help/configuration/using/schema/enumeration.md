@@ -7,7 +7,7 @@ exl-id: 4cd67278-2623-4508-9a9f-9007c6a5f8ac
 source-git-commit: 254c89490fefa5d405bcecd2f1781df46450a873
 workflow-type: tm+mt
 source-wordcount: '198'
-ht-degree: 8%
+ht-degree: 11%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 8%
 
 ## 内容模型 {#content-model-5}
 
-明细列表：==(help| value)
+枚举：==（help|值）
 
 ## 属性 {#attributes-5}
 
@@ -58,7 +58,7 @@ ht-degree: 8%
    * CDATA
    * datetime
    * datetimetz
-   * datetimenotz
+   * 时间戳
    * 日期
    * DOMDocument
    * 圆顶元素
@@ -69,7 +69,7 @@ ht-degree: 8%
    * int64
    * 链接
    * 长
-   * 备忘
+   * 备忘录
    * MNTOKEN
    * 百分比
    * 主密钥

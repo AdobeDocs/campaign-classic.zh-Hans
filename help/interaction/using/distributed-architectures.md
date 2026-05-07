@@ -9,7 +9,7 @@ topic-tags: advanced-parameters
 exl-id: 083be073-aad4-4c81-aff2-77f5ef3e80db
 source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
 workflow-type: tm+mt
-source-wordcount: '1014'
+source-wordcount: '1016'
 ht-degree: 1%
 
 ---
@@ -57,13 +57,13 @@ ht-degree: 1%
 
 ## 包配置 {#packages-configuration}
 
-必须在执行实例上部署直接链接到&#x200B;**交互**&#x200B;的任何架构扩展（选件、建议、收件人等）。
+直接链接到&#x200B;**交互**&#x200B;的任何架构扩展（优惠、建议、收件人等） 必须在执行实例上部署。
 
 必须在所有实例（控制和执行）上安装交互包。 另外提供了两个软件包：一个软件包将安装在控制实例上，另一个软件包将安装在每个执行实例上。
 
 >[!NOTE]
 >
->在安装包时，**nms：proposition**&#x200B;表的&#x200B;**long**&#x200B;类型字段（如建议ID）将变为&#x200B;**int64**&#x200B;类型字段。 此类型的数据在[此部分](../../configuration/using/schema-structure.md#mapping-the-types-of-adobe-campaign-dbms-data)中有详细说明。
+>在安装包时，**nms:proposition**&#x200B;表的&#x200B;**long**&#x200B;类型字段（如建议ID）将变为&#x200B;**int64**&#x200B;类型字段。 此类型的数据在[此部分](../../configuration/using/schema-structure.md#mapping-the-types-of-adobe-campaign-dbms-data)中有详细说明。
 
 必须在每个实例上配置数据保留持续时间（通过部署向导中的&#x200B;**[!UICONTROL Data purge]**&#x200B;窗口）。 在执行实例上，此期间必须对应于要计算的分类规则（滑动期间）和资格规则所需的历史深度。
 

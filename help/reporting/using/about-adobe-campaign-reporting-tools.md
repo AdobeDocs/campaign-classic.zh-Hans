@@ -7,8 +7,8 @@ badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v
 exl-id: 1ef30004-e1b0-4dde-8104-0ee9e8aa9d8b
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '347'
-ht-degree: 16%
+source-wordcount: '362'
+ht-degree: 19%
 
 ---
 
@@ -20,11 +20,11 @@ ht-degree: 16%
 
 Adobe Campaign不是专门用于报表的工具：在Adobe Campaign中创建的报表主要允许您查看汇总的数据。 专门用于分析和表示数据的Adobe Campaign报表不用于数据库导出。
 
-要从Adobe Campaign数据库导出数据，您需要创建工作流并使用数据导出活动。 有关详细信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/action-activities.html?lang=zh-Hans){target="_blank"}。
+要从Adobe Campaign数据库导出数据，您需要创建工作流并使用数据导出活动。 有关更多信息，请参阅 [Campaign v8 文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/action-activities.html?lang=zh-Hans){target="_blank"}。
 
 Adobe Campaign提供了多种报表工具：
 
-1. **内置报告**： Adobe Campaign提供了一组关于投放、营销策划、平台活动、可选功能等的报告。 这些报告可通过它们相关的各种功能获取。 它们可以根据您的特定需求进行调整。
+1. **内置报告**： Adobe Campaign提供了一组关于投放、营销策划、平台活动、可选功能等的报告。这些报告可通过它们相关的各种功能获取。 它们可以根据您的特定需求进行调整。
 
    如需详细信息，请参阅[此小节](../../reporting/using/about-campaign-built-in-reports.md)。
 

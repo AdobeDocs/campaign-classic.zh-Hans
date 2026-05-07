@@ -8,7 +8,7 @@ role: User
 exl-id: 87434cc2-1636-4558-ab60-255b7f873c0c
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '261'
+source-wordcount: '273'
 ht-degree: 2%
 
 ---
@@ -35,7 +35,7 @@ Adobe Campaign Content Manager模块是特定的Campaign Classic [内置包](../
 
 * 通过输入界面进行结构化报文编辑，
 * 分离数据内容及其呈现方式（以XML格式生成），
-* 基于样式表以多种格式（html、txt、XML等）生成文档，以确保符合图形字符、
+* 以多种格式（html、txt、XML等）生成文档 基于样式表，以确保符合图形字符的要求，
 * 恢复和自动聚合外部内容流，
 * Collaboration具有用于数据验证和检查的工作流。
 

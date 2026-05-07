@@ -7,7 +7,7 @@ feature: Web Apps, Web Forms, Landing Pages, Email Design
 exl-id: 968430d6-b1dd-47f8-8b31-39aaa18bc05c
 source-git-commit: 354fc8fd5d030ed88e2b279ba1dd3eaf2f314d53
 workflow-type: tm+mt
-source-wordcount: '1229'
+source-wordcount: '1250'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ ht-degree: 0%
 
 ![](assets/dce_popup_visibilitycondition.png)
 
-这些条件采用XTK表达式语法（例如&#x200B;**ctx.recipient）。@email！=“**”或&#x200B;**ctx.recipient。@status==&quot;0&quot;**)。 默认情况下，所有字段均可见。
+这些条件采用XTK表达式语法（例如&#x200B;**ctx.recipient.@email !=“**”或&#x200B;**ctx.recipient.@status==“0”**）。 默认情况下，所有字段均可见。
 
 >[!NOTE]
 >
@@ -82,13 +82,13 @@ ht-degree: 0%
 
 ### 修改表单字段 {#modifying-form-fields}
 
-表单字段，例如单选按钮、输入区域、下拉列表等。 可以从其工具栏进行修改。
+单选按钮、输入区域、下拉列表等表单字段可以从其工具栏进行修改。
 
 这意味着您可以：
 
 * 使用&#x200B;**[!UICONTROL Delete]**&#x200B;图标删除包含表单字段的块。
 * 通过使用&#x200B;**[!UICONTROL Duplicate]**&#x200B;图标创建新块来复制所选字段。
-* 使用&#x200B;**[!UICONTROL Form data]**&#x200B;图标编辑&#x200B;**[!UICONTROL Edit]**&#x200B;窗口以将数据库字段链接到表单区域。
+* 使用&#x200B;**[!UICONTROL Edit]**&#x200B;图标编辑&#x200B;**[!UICONTROL Form data]**&#x200B;窗口以将数据库字段链接到表单区域。
 
   ![](assets/dce_toolbar_formblock_edition.png)
 
@@ -232,7 +232,7 @@ ht-degree: 0%
 
 当您选择包含图像的块时，您可以访问以下属性：
 
-* **题注**&#x200B;允许您定义链接到图像的题注(对应于&#x200B;**alt** HTML属性)。
+* **题注**&#x200B;允许您定义链接到图像的题注（对应于&#x200B;**alt** HTML属性）。
 * **尺寸**&#x200B;允许您指定图像大小（像素）。
 
   ![](assets/dce_popup_imgsize.png)

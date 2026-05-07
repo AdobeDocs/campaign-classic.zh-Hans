@@ -8,7 +8,7 @@ badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v
 exl-id: 38333669-5598-4811-a121-b677c1413f56
 source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '497'
+source-wordcount: '500'
 ht-degree: 2%
 
 ---
@@ -104,7 +104,7 @@ ht-degree: 2%
    >
    >Adobe Campaign不支持链接到同一broadlog和/或trackinglog架构的多个收件人架构（也称为定位架构）。 否则，这可能会导致以后数据协调出现异常。 有关此内容的详细信息，请参阅[推荐和限制](../../configuration/using/about-custom-recipient-table.md)页面。
 
-1. 在&#x200B;**扩展**&#x200B;窗口中，选择要生成的可选架构(可用架构列表取决于Adobe Campaign平台上安装的模块)。
+1. 在&#x200B;**扩展**&#x200B;窗口中，选择要生成的可选架构（可用架构列表取决于Adobe Campaign平台上安装的模块）。
 
    ![](assets/mapping_diffusion_wizard_4.png)
 

@@ -8,20 +8,20 @@ hide: true
 exl-id: 891252b0-4700-4a2a-a632-63aad5ce75d7
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '755'
+source-wordcount: '759'
 ht-degree: 0%
 
 ---
 
 # 管理关联文档 {#managing-associated-documents}
 
-您可以将各种文档与营销活动关联：报表、照片、网页、图表等。 这些文档可以是任何格式（Microsoft Word、PowerPoint、PNG、JPG、Acrobat PDF等）。
+您可以将各种文档与营销活动关联：报表、照片、网页、图表等。这些文档可以是任何格式（Microsoft Word、PowerPoint、PNG、JPG、Acrobat PDF等）。
 
 >[!IMPORTANT]
 >
 >此功能专为小型资产和文档保留。
 
-在营销策划中，您还可以参考其他项目，如促销优惠券、与特定品牌或商店相关的特殊优惠等。 当这些元素包含在大纲中时，它们可以与直邮投放相关联。 查看[关联和构造通过投放大纲](#associating-and-structuring-resources-linked-via-a-delivery-outline)链接的资源。
+在营销策划中，您还可以参考其他项目，如促销优惠券、与特定品牌或商店相关的特殊优惠等。当这些元素包含在大纲中时，它们可以与直邮投放相关联。 查看[关联和构造通过投放大纲](#associating-and-structuring-resources-linked-via-a-delivery-outline)链接的资源。
 
 >[!NOTE]
 >
@@ -33,7 +33,7 @@ ht-degree: 0%
 
 **[!UICONTROL Documents]**&#x200B;选项卡包含：
 
-* 具有适当权限的Adobe Campaign操作员可本地下载的内容（模板、图像等）所需的所有文档列表，
+* 内容所需的所有文档（模板、图像等）的列表 Adobe Campaign操作员通过适当权限可本地下载的广告文件、
 * 包含路由器信息的文档（如果有）。
 
 这些文档通过&#x200B;**[!UICONTROL Edit > Documents]**&#x200B;选项卡链接到项目或营销策划。
@@ -60,7 +60,7 @@ ht-degree: 0%
 >
 >投放大纲仅用于直邮营销活动的上下文。
 
-投放概要表示由公司为特定营销活动创建的结构化元素（文档、商店、促销优惠券等）集。
+投放概要表示一组结构化元素（文档、商店、促销优惠券等） 由公司创建，并用于特定营销活动。
 
 这些元素在投放概要中进行分组，每个投放概要都将与投放关联；在发送到&#x200B;**服务提供商**&#x200B;的提取文件中将引用这些元素，以便将其附加到投放。 例如，您可以创建一个投放概要，其中引用分支及其使用的营销小册子。
 
@@ -68,7 +68,7 @@ ht-degree: 0%
 
 ### 创建大纲 {#creating-an-outline}
 
-要创建大纲，请在相关营销活动的&#x200B;**[!UICONTROL Delivery outlines]**&#x200B;选项卡中单击&#x200B;**[!UICONTROL Edit > Documents]**&#x200B;子选项卡。
+要创建大纲，请在相关营销活动的&#x200B;**[!UICONTROL Edit > Documents]**&#x200B;选项卡中单击&#x200B;**[!UICONTROL Delivery outlines]**&#x200B;子选项卡。
 
 >[!NOTE]
 >
@@ -96,7 +96,7 @@ ht-degree: 0%
 
   ![](assets/s_ncs_user_op_add_composition_field_button.png)
 
-* 资源是在营销资源仪表板中生成的营销资源，可通过&#x200B;**[!UICONTROL Resources]**&#x200B;选项卡的&#x200B;**[!UICONTROL Campaigns]**&#x200B;链接访问。
+* 资源是在营销资源仪表板中生成的营销资源，可通过&#x200B;**[!UICONTROL Campaigns]**&#x200B;选项卡的&#x200B;**[!UICONTROL Resources]**&#x200B;链接访问。
 
   ![](assets/s_ncs_user_mkg_resource_ovv.png)
 
@@ -120,7 +120,7 @@ ht-degree: 0%
 
 ### 提取结果 {#extraction-result}
 
-在提取并发送到服务提供商的文件中，根据与服务提供商相关的导出模板中的信息将大纲的名称以及适当时其特征（成本、描述等）添加到内容中。
+在提取并发送到服务提供商的文件中，大纲的名称以及适当时其特征（成本、描述等） 根据与服务提供商关联的导出模板中的信息添加到内容。
 
 在以下示例中，与投放关联的大纲的标签、预计成本和描述将添加到提取文件中。
 

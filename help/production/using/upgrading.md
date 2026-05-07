@@ -10,8 +10,8 @@ topic-tags: updating-adobe-campaign
 exl-id: 4aaa6256-256a-441d-80c9-430f8e427875
 source-git-commit: 0da7fb912a909af222d796652efba4b30e39dc1c
 workflow-type: tm+mt
-source-wordcount: '1220'
-ht-degree: 2%
+source-wordcount: '1281'
+ht-degree: 6%
 
 ---
 
@@ -69,7 +69,7 @@ ht-degree: 2%
 
 1. 运行&#x200B;**setup.exe**。
 
-   若要下载此文件，请使用用户凭据连接到[软件分发门户](https://experience.adobe.com/#/downloads/content/software-distribution/cn/campaign.html)。 在[此页面](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=zh-Hans)中了解有关软件分发的更多信息。
+   若要下载此文件，请使用用户凭据连接到[软件分发门户](https://experience.adobe.com/#/downloads/content/software-distribution/zh-hans/campaign.html)。 在[此页面](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=zh-Hans)中了解有关软件分发的更多信息。
 
 1. 选择安装模式：选择&#x200B;**[!UICONTROL Update or repair]**
 1. 单击&#x200B;**[!UICONTROL Next]** 。
@@ -119,13 +119,13 @@ ht-degree: 2%
 
 ### 安装更新的包 {#obtain-updated-packages}
 
-首先恢复Adobe Campaign的两个更新包：使用您的用户凭据连接到[软件分发门户](https://experience.adobe.com/#/downloads/content/software-distribution/cn/campaign.html)。 在[此页面](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=zh-Hans)中了解有关软件分发的更多信息。
+首先恢复Adobe Campaign的两个更新包：使用您的用户凭据连接到[软件分发门户](https://experience.adobe.com/#/downloads/content/software-distribution/zh-hans/campaign.html)。 在[此页面](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=zh-Hans)中了解有关软件分发的更多信息。
 
 文件为&#x200B;**nlserver6-v7-XXX.rpm**
 
 >[!AVAILABILITY]
 >
->从 v7.4.1 开始，Campaign 中不再包含 RPM Linux 包的 XML 库。您必须安装这些库。
+>从 v7.4.1 开始，Campaign 中不再包含 RPM Linux 包的 XML 库。 您必须安装这些库。
 > 
 
 然后，您可以安装所需的包，如下所述：

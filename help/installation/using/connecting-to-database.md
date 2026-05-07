@@ -9,8 +9,8 @@ topic-tags: connectors
 exl-id: 240d7e11-da3a-4d64-8986-1f1c8ebcea3c
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '645'
-ht-degree: 0%
+source-wordcount: '644'
+ht-degree: 1%
 
 ---
 
@@ -58,7 +58,7 @@ ht-degree: 0%
 例如，在查询活动中，创建与外部数据库的定期连接的步骤如下所示：
 
 1. 单击&#x200B;**[!UICONTROL Add data...]**&#x200B;并选择&#x200B;**[!UICONTROL External data]**&#x200B;选项。
-1. 选择&#x200B;**[!UICONTROL Locally defining the data source]**&#x200B;选项。
+1. 选择 **[!UICONTROL Locally defining the data source]** 选项。
 
    ![](assets/wf_add_data_local_external_data.png)
 
@@ -95,7 +95,7 @@ ht-degree: 0%
 
 配置外部FDA帐户时，您可以保护对外部数据库的访问。
 
-为此，请在所用端口的服务器地址和地址后添加“**：ssl**”。 例如：**192.168.0.52:4501:ssl**。
+为此，请在所用端口的服务器地址和地址后添加“**:ssl**”。 例如：**192.168.0.52:4501:ssl**。
 
 然后，将通过安全SSL协议发送数据。
 

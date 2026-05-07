@@ -7,8 +7,8 @@ feature: Web Forms
 exl-id: 364d90af-4b18-4104-8b6a-be80cfde3b0b
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '1036'
-ht-degree: 2%
+source-wordcount: '1049'
+ht-degree: 3%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 2%
 
 
 
-您可以在表单页面中包含用户不会与之交互的元素；这些是静态元素，例如图像、HTML内容、水平条形图或超文本链接。 这些元素是通过工具栏中的第一个按钮创建的，方法是选择&#x200B;**[!UICONTROL Static elements]**。
+您可以在表单的页面中包含用户不会与之交互的元素；这些是静态元素，例如图像、HTML内容、水平条形图或超文本链接。 这些元素是通过工具栏中的第一个按钮创建的，方法是选择&#x200B;**[!UICONTROL Static elements]**。
 
 ![](assets/s_ncs_admin_survey_add_static_element.png)
 
@@ -35,7 +35,7 @@ ht-degree: 2%
 
 您可以在表单页面中包含HTML内容：超文本链接、图像、带格式的段落、视频等。
 
-HTML编辑器允许您输入要插入到表单页面中的内容。 要打开编辑器，请单击&#x200B;**[!UICONTROL Static elements]** > **[!UICONTROL HTML]** 。
+通过HTML编辑器，可输入要插入到表单页面中的内容。 要打开编辑器，请单击&#x200B;**[!UICONTROL Static elements]** > **[!UICONTROL HTML]** 。
 
 您可以直接输入内容并设置其格式，也可以显示源代码窗口以粘贴某些外部内容。 要切换到“源代码”模式，请单击工具栏中的第一个图标：
 
@@ -86,7 +86,7 @@ HTML编辑器允许您输入要插入到表单页面中的内容。 要打开编
 
   ![](assets/s_ncs_admin_survey_link_next.png)
 
-  如果要将&#x200B;**[!UICONTROL Next]**&#x200B;和/或&#x200B;**[!UICONTROL Back]**&#x200B;按钮替换为链接，则可以隐藏这些按钮。 请参阅此[页面](defining-web-forms-page-sequencing.md)。
+  如果要将&#x200B;**[!UICONTROL Next]**&#x200B;和/或&#x200B;**[!UICONTROL Back]**&#x200B;按钮替换为链接，则可以隐藏这些按钮。 请参见[此页面](defining-web-forms-page-sequencing.md)。
 
   该链接将替换默认使用的&#x200B;**[!UICONTROL Next]**&#x200B;按钮。
 
@@ -137,7 +137,7 @@ HTML编辑器允许您输入要插入到表单页面中的内容。 要打开编
 
 ### 使用文本变量 {#using-text-variables}
 
-**[!UICONTROL Text]**&#x200B;选项卡允许您创建变量字段，这些字段可在&lt;%=和%>字符之间的HTML中使用，语法如下： **$(IDENTIFIER)**。
+**[!UICONTROL Text]**&#x200B;选项卡允许您创建可在HTML中使用的&lt;%=和%>字符之间的变量字段，其语法如下： **$(IDENTIFIER)**。
 
 使用此方法可轻松本地化字符串。 请参阅[翻译Web窗体](translating-a-web-form.md)
 
@@ -158,7 +158,7 @@ HTML编辑器允许您输入要插入到表单页面中的内容。 要打开编
    >
    >如果在HTML编辑器中输入这些字符，**&lt;**&#x200B;和&#x200B;**>**&#x200B;字段将替换为其转义字符。 在这种情况下，您需要通过单击HTML文本编辑器的&#x200B;**[!UICONTROL Display source code]**&#x200B;图标来更正源代码。
 
-1. 打开窗体的&#x200B;**[!UICONTROL Preview]**&#x200B;标签以查看在HTML中输入的值：
+1. 打开表单的&#x200B;**[!UICONTROL Preview]**&#x200B;标签以查看在HTML中输入的值：
 
    ![](assets/s_ncs_admin_survey_html_content_preview.png)
 
@@ -174,6 +174,6 @@ HTML编辑器允许您输入要插入到表单页面中的内容。 要打开编
 
 ![](assets/s_ncs_admin_survey_add_img.png)
 
-如果这是库中的图像，请在字段的组合框中选择它；如果它位于外部文件中，请输入访问路径。 通过将光标置于图像上来显示标签(与HTML中的ALT字段一致)，或者在图像未显示时显示标签。
+如果这是库中的图像，请在字段的组合框中选择它；如果它位于外部文件中，请输入访问路径。 通过将光标悬停在图像上来显示标签（与HTML中的ALT字段一致），或者在图像未显示时显示标签。
 
 可以在编辑器的中心部分查看图像。

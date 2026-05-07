@@ -7,7 +7,7 @@ feature: Web Forms
 exl-id: 1c66b8e8-7590-4767-9b2f-a9a509df4508
 source-git-commit: 647709dd4b0c70c342be03d3012bc02f10ff2c00
 workflow-type: tm+mt
-source-wordcount: '1284'
+source-wordcount: '1289'
 ht-degree: 1%
 
 ---
@@ -136,7 +136,7 @@ ht-degree: 1%
 
 * 单击&#x200B;**[!UICONTROL Personalize the message displayed if the form is closed...]**&#x200B;链接以定义当用户尝试在表单无效时访问表单时显示的错误消息。
 
-  查看表单[的](defining-web-forms-properties.md#accessibility-of-the-form)辅助功能。
+  查看表单[&#128279;](defining-web-forms-properties.md#accessibility-of-the-form)的辅助功能。
 
 ### 通过电子邮件投放表单 {#delivering-a-form-via-email}
 

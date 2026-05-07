@@ -11,7 +11,7 @@ topic-tags: schema-reference
 exl-id: 3405efb8-a37c-4622-a271-63d7a4148751
 source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '1511'
+source-wordcount: '1519'
 ht-degree: 1%
 
 ---
@@ -65,7 +65,7 @@ ht-degree: 1%
 </srcSchema>
 ```
 
-数据架构的XML文档必须包含具有&#x200B;**`<srcschema>`**&#x200B;名称&#x200B;**和**&#x200B;命名空间&#x200B;**属性的**&#x200B;根元素，才能填充架构名称及其命名空间。
+数据架构的XML文档必须包含具有&#x200B;**名称**&#x200B;和&#x200B;**命名空间**&#x200B;属性的&#x200B;**`<srcschema>`**&#x200B;根元素，才能填充架构名称及其命名空间。
 
 ```sql
 <srcSchema name="schema_name" namespace="namespace">
@@ -133,7 +133,7 @@ ht-degree: 1%
 
 ## 数据类型 {#data-types}
 
-数据类型是通过&#x200B;**和**&#x200B;元素中的&#x200B;**`<attribute>`** type **`<element>`**&#x200B;属性输入的。
+数据类型是通过&#x200B;**`<attribute>`**&#x200B;和&#x200B;**`<element>`**&#x200B;元素中的&#x200B;**type**&#x200B;属性输入的。
 
 [`<attribute>`元素](../../configuration/using/schema/attribute.md)和[`<element>`元素](../../configuration/using/schema/element.md)的描述中提供了详细列表。
 
@@ -152,7 +152,7 @@ ht-degree: 1%
 * **datetimenotz**：没有时区数据的日期+时间。
 * **时间跨度**：持续时间。 例如：资历。
 * **备注**：长文本字段（多行）。 示例：描述、评论等。
-* **uuid**：“uniqueidentifier”字段支持GUID(仅在Microsoft SQL Server中受支持)。
+* **uuid**：“uniqueidentifier”字段支持GUID（仅在Microsoft SQL Server中受支持）。
 
   >[!NOTE]
   >
@@ -310,7 +310,7 @@ ht-degree: 1%
   >
   >在Adobe Campaign客户端控制台中，浏览到资源管理器的&#x200B;**[!UICONTROL Administration > Counters]**&#x200B;文件夹以管理计数器。
 
-要将默认值链接到字段，您可以使用`<default>`或`<sqldefault>`   字段。
+要将默认值链接到字段，您可以使用`<default>`或`<sqldefault>`字段。
 
 `<default>` ：允许您在创建实体时使用默认值预填充字段。 该值将不会是默认的SQL值。
 

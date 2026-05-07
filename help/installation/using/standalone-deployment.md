@@ -9,7 +9,7 @@ topic-tags: deployment-types-
 exl-id: 194366ab-fd9f-4431-9163-ae16c1f96db2
 source-git-commit: 0fba6a2ad4ffa864e2f726f241aa9d7cd39072a6
 workflow-type: tm+mt
-source-wordcount: '1077'
+source-wordcount: '1094'
 ht-degree: 3%
 
 ---
@@ -71,13 +71,13 @@ ht-degree: 3%
    * 第一张公开给公众使用公共IP进行跟踪和指向计算机；
    * 向内部用户公开的第二个别名用于控制台访问并指向同一台计算机。
 
-* 防火墙配置为打开SMTP (25)、DNS (53)、HTTP (80)、HTTPS (443)、SQL (1521(Oracle)、5432(PostgreSQL)等) 端口。 有关详细信息，请参阅[网络配置](../../installation/using/network-configuration.md)。
+* 防火墙配置为打开SMTP (25)、DNS (53)、HTTP (80)、HTTPS (443)、SQL （1521 for Oracle、5432 for PostgreSQL等） 端口。 有关详细信息，请参阅[网络配置](../../installation/using/network-configuration.md)。
 
 在以下示例中，实例的参数包括：
 
 * 实例的名称： **演示**
 * DNS掩码： **console.campaign.net&#42;** （仅适用于客户端控制台连接和报表）
-* 数据库： **campaign：demo@dbsrv**
+* 数据库： **营销活动:demo@dbsrv**
 
 ### 安装和配置（单机） {#installing-and-configuring--single-machine-}
 
@@ -185,7 +185,7 @@ ht-degree: 3%
    * 对于Linux： [正在启动Web服务器并测试配置](../../installation/using/integration-into-a-web-server-for-linux.md#launching-the-web-server-and-testing-the-configuration)
    * 对于Windows： [正在启动Web服务器并测试配置](../../installation/using/integration-into-a-web-server-for-windows.md#launching-the-web-server-and-testing-the-configuration)
 
-1. 启动Adobe Campaign服务器(在Windows中为&#x200B;**net start nlserver6**，在Linux中为&#x200B;**/etc/init.d/nlserver6 start**)，然后再次运行命令&#x200B;**nlserver pdump**&#x200B;以检查是否存在所有启用的模块。
+1. 启动Adobe Campaign服务器（在Windows中为&#x200B;**net start nlserver6**，在Linux中为&#x200B;**/etc/init.d/nlserver6 start**），然后再次运行命令&#x200B;**nlserver pdump**&#x200B;以检查是否存在所有启用的模块。
 
    >[!NOTE]
    >
@@ -239,7 +239,7 @@ ht-degree: 3%
 
      ![](assets/s_ncs_install_deployment_wiz_09.png)
 
-     由于Adobe Campaign服务器同时用作应用程序服务器和重定向服务器，因此用于收集跟踪日志和传输URL的内部URL是与Tomcat的直接内部连接(https://localhost:8080)。
+     由于Adobe Campaign服务器同时用作应用程序服务器和重定向服务器，因此用于收集跟踪日志和传输URL的内部URL是与Tomcat (https://localhost:8080)的直接内部连接。
 
    * 退回管理：输入用于处理退回邮件的参数（不考虑&#x200B;**未处理的退回邮件**&#x200B;部分）。
    * 访问自：为报表、Web窗体以及镜像页面提供两个URL。

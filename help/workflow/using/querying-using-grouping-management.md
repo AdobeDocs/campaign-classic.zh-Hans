@@ -8,7 +8,7 @@ exl-id: 23bccb48-60ab-46c9-be26-2fa35243d61e
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
 source-wordcount: '254'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
@@ -44,12 +44,12 @@ ht-degree: 3%
 
    ![](assets/query_editor_nveau_29.png)
 
-1. 在&#x200B;**[!UICONTROL Sorting]**&#x200B;窗口中，按降序对电子邮件域进行排序。 为此，请检查&#x200B;**[!UICONTROL Yes]**&#x200B;列中的&#x200B;**[!UICONTROL Descending sort]**。 单击 **[!UICONTROL Next]**。
+1. 在&#x200B;**[!UICONTROL Sorting]**&#x200B;窗口中，按降序对电子邮件域进行排序。 为此，请检查&#x200B;**[!UICONTROL Descending sort]**&#x200B;列中的&#x200B;**[!UICONTROL Yes]**。 单击 **[!UICONTROL Next]**。
 
    ![](assets/query_editor_nveau_70.png)
 
-1. 在&#x200B;**[!UICONTROL Data filtering]**&#x200B;中，选择&#x200B;**[!UICONTROL Filtering conditions]**。 转到&#x200B;**[!UICONTROL Target elements]**&#x200B;窗口并单击&#x200B;**[!UICONTROL Next]**。
-1. 在&#x200B;**[!UICONTROL Data grouping]**&#x200B;窗口中，单击&#x200B;**[!UICONTROL Email domain]**&#x200B;以选择&#x200B;**[!UICONTROL Add]**。
+1. 在 **[!UICONTROL Data filtering]** 中，选择 **[!UICONTROL Filtering conditions]**。 转到&#x200B;**[!UICONTROL Target elements]**&#x200B;窗口并单击&#x200B;**[!UICONTROL Next]**。
+1. 在&#x200B;**[!UICONTROL Data grouping]**&#x200B;窗口中，单击&#x200B;**[!UICONTROL Add]**&#x200B;以选择&#x200B;**[!UICONTROL Email domain]**。
 
    此数据分组窗口仅在选中&#x200B;**[!UICONTROL Handle groupings (GROUP BY + HAVING])**&#x200B;框时显示。
 

@@ -6,7 +6,7 @@ feature: Reporting, Monitoring
 exl-id: 4c2aad47-0e2d-4d0b-8898-b437f4a05e11
 source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
-source-wordcount: '923'
+source-wordcount: '929'
 ht-degree: 1%
 
 ---
@@ -107,7 +107,7 @@ ht-degree: 1%
 
 >[!CAUTION]
 >
->如果报告预定以Excel格式导出，我们建议不要使用复杂的HTML格式。 有关详细信息，请参阅[导出报告](../../reporting/using/actions-on-reports.md#exporting-a-report)。
+>如果报告打算以Excel格式导出，我们建议不要使用复杂的HTML格式。 有关详细信息，请参阅[导出报告](../../reporting/using/actions-on-reports.md#exporting-a-report)。
 
 **[!UICONTROL Page]**&#x200B;可以包含以下元素：
 

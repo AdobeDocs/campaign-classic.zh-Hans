@@ -7,8 +7,8 @@ hide: true
 exl-id: bc62ddb9-beff-4861-91ab-dcd0fa1ed199
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '986'
-ht-degree: 1%
+source-wordcount: '1052'
+ht-degree: 4%
 
 ---
 
@@ -74,7 +74,7 @@ ht-degree: 1%
 1. 访问&#x200B;**产品和服务**&#x200B;部分，并检查&#x200B;**Adobe Campaign**&#x200B;是否已列出。
 如果您看不到&#x200B;**Adobe Campaign**，请联系[Adobe客户关怀](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){_blank}添加该产品。
 1. 单击&#x200B;**Adobe Campaign**&#x200B;并选择您的组织。
-   **警告**：如果您有多个组织，请确保选择正确的组织。 在此页面[中了解有关组织](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=zh-Hans#ims-org-id){_blank}的更多信息。
+   **警告**：如果您有多个组织，请确保选择正确的组织。 在此页面[&#128279;](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=zh-Hans#ims-org-id){_blank}中了解有关组织的更多信息。
 
 1. 检查&#x200B;**[!UICONTROL Product profile]**&#x200B;是否存在。 如果没有，请创建它。 此&#x200B;**[!UICONTROL Product profile]**&#x200B;不需要权限。
 

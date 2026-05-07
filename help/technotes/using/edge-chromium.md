@@ -6,8 +6,8 @@ feature: Technote, Upgrade
 exl-id: 22f4cbaf-ca37-47b9-b7dd-1ee73d5b348d
 source-git-commit: 8734e6ef26a7342042a5242d54854b7d3a5e6244
 workflow-type: tm+mt
-source-wordcount: '263'
-ht-degree: 6%
+source-wordcount: '274'
+ht-degree: 10%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 6%
 
 ## 更改了哪些内容？
 
-在Microsoft Internet Explorer 11的生命周期终止后，客户端控制台中功能板的HTML渲染引擎使用的是Edge Chromium，从Campaign Classicv7.3开始。
+在Microsoft Internet Explorer 11的生命周期终止后，客户端控制台中功能板的HTML渲染引擎从Campaign Classic v7.3开始使用Edge Chromium。
 
 除了安装Microsoft Edge Webview 2运行时（现在任何客户端控制台安装[&#128279;](../../installation/using/installing-the-client-console.md#webview)都需要）之外，必须在实例上启用Microsoft Edge Chromium。
 
@@ -25,7 +25,7 @@ ht-degree: 6%
 
 ## 您是否受影响？
 
-如果您的环境已升级到Campaign Classicv7.3（或更高版本），则您将受到影响。
+如果您的环境已升级到Campaign Classic v7.3（或更高版本），则您将受到影响。
 
 ## 如何更新？
 

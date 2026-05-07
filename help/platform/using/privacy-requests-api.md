@@ -9,8 +9,8 @@ topic-tags: starting-with-adobe-campaign
 exl-id: a93bac61-f615-4178-bc12-0f056e48687d
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '655'
-ht-degree: 100%
+source-wordcount: '662'
+ht-degree: 91%
 
 ---
 
@@ -20,9 +20,9 @@ ht-degree: 100%
 
 Adobe Campaign 提供了一个 **API**，您可使用它设置一个自动隐私请求流程。
 
-使用 API 时，一般隐私处理流程与[使用 ](privacy-requests-ui.md) 界面的流程相同。唯一的区别是创建隐私请求。会向 Campaign 发送包含请求信息的 POST，而不是在 Adobe Campaign 中创建请求。对于每个请求，将在 **[!UICONTROL Privacy Requests]** 屏幕中添加一个新条目。然后，隐私技术工作流会处理该请求，与处理使用界面添加的请求的方式相同。
+使用 API 时，一般隐私处理流程与[使用 &#x200B;](privacy-requests-ui.md) 界面的流程相同。 唯一的区别是创建隐私请求。 会向 Campaign 发送包含请求信息的 POST，而不是在 Adobe Campaign 中创建请求。 对于每个请求，将在 **[!UICONTROL Privacy Requests]** 屏幕中添加一个新条目。 然后，隐私技术工作流会处理该请求，与处理使用界面添加的请求的方式相同。
 
-如果您使用 API 提交隐私请求，我们建议您在第一次删除请求时，使&#x200B;**两步流程**&#x200B;保持激活状态，以便测试返回的数据。测试完成后，您可以取消激活两步流程，以便自动运行删除请求进程。
+如果您使用 API 提交隐私请求，我们建议您在第一次删除请求时，使&#x200B;**两步流程**&#x200B;保持激活状态，以便测试返回的数据。 测试完成后，您可以取消激活两步流程，以便自动运行删除请求进程。
 
 **[!UICONTROL CreateRequestByName]** JS API 的定义如下。
 
@@ -52,37 +52,37 @@ Adobe Campaign 提供了一个 **API**，您可使用它设置一个自动隐私
 >
 >“regulation”字段仅在您使用 Campaign Classic 20.2（内部版本 9178+）时可用。
 >
->如果您要迁移到 20.2，并且您已经在使用这个 API，则必须添加如上所示的“regulation”字段。如果您使用的是以前的版本，则可以继续使用这个 API，而无须添加“regulation”字段。
+>如果您要迁移到 20.2，并且您已经在使用这个 API，则必须添加如上所示的“regulation”字段。 如果您使用的是以前的版本，则可以继续使用这个 API，而无须添加“regulation”字段。
 
 ## 从外部调用 API {#invoking-api-externally}
 
-下方是一个示例，说明如何从外部调用 API（通过 API 进行身份验证，并具体说明隐私 API 的详细信息）。有关隐私 API 的更多信息，请查阅 [API 文档](https://experienceleague.adobe.com/developer/campaign-api/api/s-nms-privacyRequest.html?lang=zh-Hans)。您还可以查阅 [Web 服务调用文档](../../configuration/using/web-service-calls.md)。
+下方是一个示例，说明如何从外部调用 API（通过 API 进行身份验证，并具体说明隐私 API 的详细信息）。 有关隐私 API 的更多信息，请查阅 [API 文档](https://experienceleague.adobe.com/developer/campaign-api/api/s-nms-privacyRequest.html?lang=zh-Hans)。 您还可以查阅 [Web 服务调用文档](../../configuration/using/web-service-calls.md)。
 
 首先，您需要通过 API 执行身份验证：
 
-1. 通过以下 URL 下载 **xtk:session** WSDL：**`<server url>`/nl/jsp/schemawsdl.jsp?schema=xtk:session**。
+1. 通过以下URL下载&#x200B;**xtk:session** WSDL： **`<server url>`/nl/jsp/schemawsdl.jsp?schema=xtk:session**。
 
-1. 使用“登录”方法，将用户名和密码作为请求中的参数传递。您会获得一个包含会话令牌的响应。以下是使用 SoapUI 的示例。
+1. 使用“登录”方法，将用户名和密码作为请求中的参数传递。 您会获得一个包含会话令牌的响应。 以下是使用 SoapUI 的示例。
 
    ![](assets/do-not-localize/privacy-api.png)
 
-1. 使用返回的会话令牌作为所有子序列 API 调用的身份验证。令牌会在 24 小时后失效。
+1. 使用返回的会话令牌作为所有子序列 API 调用的身份验证。 令牌会在 24 小时后失效。
 
 然后调用隐私 API：
 
-1. 从以下 URL 下载 WSDL：**`<server url>`/nl/jsp/schemawsdl.jsp?schema=nms:privacyRequest**。
+1. 从以下URL下载WSDL： **`<server url>`/nl/jsp/schemawsdl.jsp?schema=nms:privacyRequest**。
 
 1. 使用 **[!UICONTROL CreateRequestByName]** 创建特定的隐私请求。
 
-   以下是使用 **[!UICONTROL CreateRequestByName]** 的示例。请注意，我们使用上述会话令牌作为身份验证的方式。响应是已创建请求的 ID。
+   以下是使用 **[!UICONTROL CreateRequestByName]** 的示例。 请注意，我们使用上述会话令牌作为身份验证的方式。 响应是已创建请求的 ID。
 
    ![](assets/do-not-localize/privacy-api-2.png)
 
    为了帮助您执行上述步骤，请考虑以下事项：
 
-   * 您可以使用 **nms:gdprRequest** 模式上的 **queryDef** 来查看访问请求的状态。
-   * 您可以使用 **nms:gdprRequestData** 模式上的 **queryDef** 来获取访问请求的结果。
-   * 为了能够从 **&quot;$(serverUrl)&#39;/nms/gdpr.jssp?id=&#39;@id&quot;** 下载 XML 文件，您必须登录并从已列入允许列表的 IP 访问它。为此，请创建一个允许您访问 JSSP 生成的文件的 Web 应用程序。
+   * 您可以在&#x200B;**nms:gdprRequest**&#x200B;架构上使用&#x200B;**queryDef**&#x200B;来检查访问请求的状态。
+   * 您可以在&#x200B;**nms:gdprRequestData**&#x200B;架构上使用&#x200B;**queryDef**&#x200B;来获取访问请求的结果。
+   * 为了能够从 **&quot;$(serverUrl)&#39;/nms/gdpr.jssp?id=&#39;@id&quot;** 下载 XML 文件，您必须登录并从已列入允许列表的 IP 访问它。 为此，请创建一个允许您访问 JSSP 生成的文件的 Web 应用程序。
 
 ## 从 JS 调用 API {#invoking-api-from-js}
 
@@ -92,7 +92,7 @@ Adobe Campaign 提供了一个 **API**，您可使用它设置一个自动隐私
 >
 >“regulation”字段仅在您使用 Campaign Classic 20.2（内部版本 9178+）时可用。
 >
->如果您要迁移到 20.2，并且您已经在使用这个 API，则必须添加“regulation”字段。如果您使用的是以前的版本，则可以继续使用这个 API，而无须添加“regulation”字段。
+>如果您要迁移到 20.2，并且您已经在使用这个 API，则必须添加“regulation”字段。 如果您使用的是以前的版本，则可以继续使用这个 API，而无须添加“regulation”字段。
 
 * 如果您&#x200B;**使用的是以前的版本（带有 GDPR 包）**，则可以继续使用 API 而无须添加如下所述的“regulation”字段：
 

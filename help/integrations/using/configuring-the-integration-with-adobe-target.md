@@ -9,7 +9,7 @@ topic-tags: adobe-target
 exl-id: ae8c680f-52a6-4d00-91cd-44d1c3807546
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '195'
+source-wordcount: '198'
 ht-degree: 2%
 
 ---
@@ -34,7 +34,7 @@ ht-degree: 2%
 
    通过此包，您可以通过Digital Asset Manager访问共享资产。
 
-1. 启用通过IMS(Adobe ID连接服务)的连接，以在您的电子邮件中使用通过Adobe Experience Cloud共享的图像。 [了解详情](../../integrations/using/about-adobe-id.md)
+1. 启用通过IMS（Adobe ID连接服务）的连接，以在您的电子邮件中使用通过Adobe Experience Cloud共享的图像。 [了解详情](../../integrations/using/about-adobe-id.md)
 1. 浏览到&#x200B;**[!UICONTROL Administration > Platform > Options]**&#x200B;以配置Adobe Target的服务器和组织（租户）选项：
 
    ![](assets/tar_options.png)

@@ -7,7 +7,7 @@ badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v
 exl-id: d32b614f-82c1-4363-816c-4ebedaa5cfe9
 source-git-commit: f90df5a5e5b3a2317d86ff2919560ded38f44f44
 workflow-type: tm+mt
-source-wordcount: '538'
+source-wordcount: '541'
 ht-degree: 2%
 
 ---
@@ -114,7 +114,7 @@ Adobe Campaign提供各种类型的图形表示。 详情见下文。
 
 如有必要，您可以反转值显示顺序。 为此，请选择&#x200B;**[!UICONTROL Reverse stacking]**&#x200B;选项。
 
-### 转化：漏斗 {#conversion--funnel}
+### 转化：funnel {#conversion--funnel}
 
 通过此类图表，您可以跟踪测量元素的对话率。
 

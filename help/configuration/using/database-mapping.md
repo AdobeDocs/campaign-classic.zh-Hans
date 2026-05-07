@@ -7,14 +7,14 @@ role: Developer
 exl-id: 728b509f-2755-48df-8b12-449b7044e317
 source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '526'
+source-wordcount: '527'
 ht-degree: 3%
 
 ---
 
 # 数据库映射{#database-mapping}
 
-此页面[中描述的示例架构](schema-structure.md)的SQL映射生成以下XML文档：
+此页面[&#128279;](schema-structure.md)中描述的示例架构的SQL映射生成以下XML文档：
 
 ```sql
 <schema mappingType="sql" name="recipient" namespace="cus" xtkschema="xtk:schema">
@@ -53,7 +53,7 @@ SQL命名规则如下：
 
 * **字段**：前面有根据类型定义的前缀的元素名称：“i”表示整数，“d”表示双精度，“s”表示字符串，“ts”表示日期等。
 
-  字段名称通过每个键入的&#x200B;**和**&#x200B;的&#x200B;**`<attribute>`** sqlname **`<element>`**&#x200B;属性输入：
+  字段名称通过每个键入的&#x200B;**`<attribute>`**&#x200B;和&#x200B;**`<element>`**&#x200B;的&#x200B;**sqlname**&#x200B;属性输入：
 
   ```sql
   <attribute desc="Email address of recipient" label="Email" length="80" name="email" sqlname="sEmail" type="string"/> 

@@ -8,8 +8,8 @@ level: Experienced
 exl-id: 6987cb5e-8821-4619-b0e4-f0fad3355bfb
 source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
 workflow-type: tm+mt
-source-wordcount: '982'
-ht-degree: 8%
+source-wordcount: '1008'
+ht-degree: 11%
 
 ---
 
@@ -71,7 +71,7 @@ ht-degree: 8%
 
 1. 在&#x200B;**[!UICONTROL Mid-Sourcing]**&#x200B;选项卡中，指定中间源服务器连接参数。
 
-   在[和](#create-sms-operator)字段中输入&#x200B;**[!UICONTROL Account]**&#x200B;之前创建的SMS连接器&#x200B;**[!UICONTROL Password]**&#x200B;的详细信息。
+   在&#x200B;**[!UICONTROL Account]**&#x200B;和&#x200B;**[!UICONTROL Password]**&#x200B;字段中输入[之前创建的SMS连接器](#create-sms-operator)的详细信息。
 
    ![](assets/mid_external_account_7.png)
 
@@ -108,7 +108,7 @@ ht-degree: 8%
 
 1. 选中&#x200B;**[!UICONTROL Enabled]**&#x200B;框。
 
-1. 在&#x200B;**[!UICONTROL Mobile]**&#x200B;选项卡中，从&#x200B;**[!UICONTROL Extended generic SMPP]**&#x200B;下拉列表中选择&#x200B;**[!UICONTROL Connector]**。
+1. 在&#x200B;**[!UICONTROL Mobile]**&#x200B;选项卡中，从&#x200B;**[!UICONTROL Connector]**&#x200B;下拉列表中选择&#x200B;**[!UICONTROL Extended generic SMPP]**。
 
    ![](assets/mid_external_account_4.png)
 
@@ -154,7 +154,7 @@ ht-degree: 8%
 
 ## 更改投放模板 {#changing-the-delivery-template}
 
-Adobe Campaign提供了一个位于&#x200B;**[!UICONTROL Resources > Templates > Delivery templates]**&#x200B;节点中的移动投放模板。 有关详细信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html?lang=zh-Hans){target="_blank"}。
+Adobe Campaign提供了一个位于&#x200B;**[!UICONTROL Resources > Templates > Delivery templates]**&#x200B;节点中的移动投放模板。 有关更多信息，请参阅 [Campaign v8 文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html?lang=zh-Hans){target="_blank"}。
 
 要通过短信渠道发送消息，您必须创建包含渠道连接器引用的模板。
 

@@ -10,8 +10,8 @@ topic-tags: updating-adobe-campaign
 exl-id: c5a9c99a-4078-45d8-847b-6df9047a2fe2
 source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
 workflow-type: tm+mt
-source-wordcount: '2324'
-ht-degree: 1%
+source-wordcount: '2422'
+ht-degree: 4%
 
 ---
 
@@ -53,7 +53,7 @@ ht-degree: 1%
 
 1. 至少保留2个小时进行升级。
 1. 为Adobe和客户员工分发联系人详细信息。
-1. 对于托管实例：Adobe和客户员工将协调升级时间和执行人员。
+1. 对于托管实例：Adobe和客户员工将协调升级时间以及执行人员。
 1. 对于内部部署实例：客户员工管理整个流程 — 如果需要测试自定义工作流和交付逻辑方面的帮助，则应引入咨询服务。
 1. 确定并确认要升级到哪个Adobe Campaign版本 — 请参阅[Adobe Campaign Classic发行说明](../../rn/using/rn-overview.md)。
 1. 确认拥有升级可执行文件。
@@ -86,7 +86,7 @@ ht-degree: 1%
 
 1. 获取[服务器配置文件](../../installation/using/the-server-configuration-file.md)的最新版本。
 
-1. [下载最新的内部版本](https://experience.adobe.com/#/downloads/content/software-distribution/cn/campaign.html)。 [了解详情](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=zh-Hans)。
+1. [下载最新的内部版本](https://experience.adobe.com/#/downloads/content/software-distribution/zh-hans/campaign.html)。 [了解详情](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=zh-Hans)。
 
 在开始内部版本升级之前，您还需要了解所有[有用的命令行](../../installation/using/command-lines.md)：
 
@@ -115,7 +115,7 @@ ht-degree: 1%
 
 1. 在目标环境的所有实例上恢复这些副本。
 
-1. 在目标环境中运行&#x200B;**nms：freezeInstance.js**&#x200B;烧灼脚本，然后再启动它。 这将停止与外界交互的所有进程：日志、跟踪、投放、活动工作流等。
+1. 先在目标环境中运行&#x200B;**nms:freezeInstance.js**&#x200B;烧灼脚本，然后再启动它。 这将停止与外界交互的所有进程：日志、跟踪、投放、活动工作流等。
 
    ```
    nlserverjavacsriptnms:freezeInstance.js–instance:<dev> -arg:run
@@ -166,7 +166,7 @@ ht-degree: 1%
 
 ### 升级Adobe Campaign Server应用程序
 
-1. 运行&#x200B;**Setup.exe**&#x200B;文件。 如果需要下载此文件，请访问[下载中心](https://experience.adobe.com/#/downloads/content/software-distribution/cn/campaign.html)。
+1. 运行&#x200B;**Setup.exe**&#x200B;文件。 如果需要下载此文件，请访问[下载中心](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html)。
 
 1. 选择安装模式： **更新**&#x200B;或&#x200B;**修复**。
 
@@ -222,7 +222,7 @@ Setup-client-7.xxxx.exe in [path of the application]\datakit\nl\en\jsp
 
 某些配置需要特定的其他任务才能更新到新内部版本。
 
-#### 事务性消息传递
+#### 交易型消息传递
 
 在Campaign实例上启用事务性消息传递（消息中心）后，您需要执行以下附加步骤以进行升级：
 
@@ -242,7 +242,7 @@ Setup-client-7.xxxx.exe in [path of the application]\datakit\nl\en\jsp
    * 断开并重新连接
    * 对工作流执行快速健康检查
 
-1. Publish消息中心模板，以确保服务器和消息中心实例之间的界面正常工作。
+1. 发布消息中心模板，以确保服务器与消息中心实例之间的接口正常工作。
 1. 运行测试以确保通过消息中心生产实例成功接收电子邮件。
 1. 在生产环境中运行工作流测试以确保接收投放。
 
@@ -289,7 +289,7 @@ YYYY-MM-DD HH:MM:SS.750Z 00002E7A 1 warning log Document of identifier 'nms:incl
 
 在相关服务器上的postupgrade.log或Campaign客户端界面（“管理”>“配置”>“包管理”>“编辑冲突”）中，可能会发现冲突。
 
-标识符为“stockOverview”且类型为“nms：webApp”的文档与新版本冲突。
+标识符为“stockOverview”且类型为“nms:webApp”的文档与新版本冲突。
 
 如果发现冲突，请检查以下条件是否匹配：
 
@@ -369,8 +369,8 @@ YYYY-MM-DD HH:MM:SS.750Z 00002E7A 1 warning log Document of identifier 'nms:incl
 #### 在哪里查找代码？
 
 1. 内置代码存储在datakit文件夹的XML文件中。 查找与冲突对象匹配的XML文件。 示例： installationDirectory\datakit\nms\fra\form\recipient.xml
-1. 检索原始版本：通过[下载中心](https://experience.adobe.com/#/downloads/content/software-distribution/cn/campaign.html)或其他未升级的产品安装。
-1. 检索新版本：通过[下载中心](https://experience.adobe.com/#/downloads/content/software-distribution/cn/campaign.html)或客户安装的文件。
+1. 检索原始版本：通过[下载中心](https://experience.adobe.com/#/downloads/content/software-distribution/zh-hans/campaign.html)或其他未升级的产品安装。
+1. 检索新版本：通过[下载中心](https://experience.adobe.com/#/downloads/content/software-distribution/zh-hans/campaign.html)或客户安装的文件。
 1. 检索自定义版本：从Campaign客户端中检索对象的源代码。
 
 ### 如何进行区分？

@@ -7,7 +7,7 @@ hide: true
 exl-id: ab786cf1-74a4-4185-a63d-84e776a2f776
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '752'
+source-wordcount: '756'
 ht-degree: 0%
 
 ---
@@ -61,7 +61,7 @@ ht-degree: 0%
 
 ## 步骤2：扩充 {#step-2--enrichment}
 
-在本例中，我们要根据存储在&#x200B;**[!UICONTROL Score]**&#x200B;表中的&#x200B;**[!UICONTROL Competition results]**&#x200B;字段对投放进行个性化设置。 此表与收件人表具有1-n类型的关系。 通过&#x200B;**[!UICONTROL Enrichment]**&#x200B;活动，可将链接到筛选维度的表中的数据添加到工作流的工作表。
+在本例中，我们要根据存储在&#x200B;**[!UICONTROL Competition results]**&#x200B;表中的&#x200B;**[!UICONTROL Score]**&#x200B;字段对投放进行个性化设置。 此表与收件人表具有1-n类型的关系。 通过&#x200B;**[!UICONTROL Enrichment]**&#x200B;活动，可将链接到筛选维度的表中的数据添加到工作流的工作表。
 
 1. 在扩充活动的编辑屏幕中，依次选择&#x200B;**[!UICONTROL Add data]**&#x200B;和&#x200B;**[!UICONTROL Data linked to the filtering dimension]**&#x200B;并单击&#x200B;**[!UICONTROL Next]**。
 
@@ -71,7 +71,7 @@ ht-degree: 0%
 
    ![](assets/uc1_enrich_7.png)
 
-1. 输入ID和标签，然后在&#x200B;**[!UICONTROL Limit the line count]**&#x200B;字段中选择&#x200B;**[!UICONTROL Data collected]**&#x200B;选项。 在&#x200B;**[!UICONTROL Lines to retrieve]**&#x200B;字段中，选择“1”作为值。 对于每个收件人，扩充活动将向&#x200B;**[!UICONTROL Competition results]**&#x200B;工作表中的工作流工作表添加一行。 单击 **[!UICONTROL Next]**。
+1. 输入ID和标签，然后在&#x200B;**[!UICONTROL Data collected]**&#x200B;字段中选择&#x200B;**[!UICONTROL Limit the line count]**&#x200B;选项。 在&#x200B;**[!UICONTROL Lines to retrieve]**&#x200B;字段中，选择“1”作为值。 对于每个收件人，扩充活动将向&#x200B;**[!UICONTROL Competition results]**&#x200B;工作表中的工作流工作表添加一行。 单击 **[!UICONTROL Next]**。
 
    ![](assets/uc1_enrich_8.png)
 

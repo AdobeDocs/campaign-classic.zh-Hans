@@ -10,8 +10,8 @@ topic-tags: initial-configuration
 exl-id: 2968d8db-2b4b-48e6-a22e-daba5ffe0576
 source-git-commit: 28279c6ec0eab7f914cf6107cd1ec1cebd05113d
 workflow-type: tm+mt
-source-wordcount: '484'
-ht-degree: 5%
+source-wordcount: '514'
+ht-degree: 8%
 
 ---
 
@@ -37,7 +37,7 @@ ht-degree: 5%
 
 MTA模块充当用于SMTP广播（端口25）的本机邮件传输代理。
 
-但是，如果您的安全策略要求使用中继服务器，则可以将其替换。 在这种情况下，全局吞吐量将是中继服务器吞吐量(前提是中继服务器吞吐量低于Adobe Campaign吞吐量)。
+但是，如果您的安全策略要求使用中继服务器，则可以将其替换。 在这种情况下，全局吞吐量将是中继服务器吞吐量（前提是中继服务器吞吐量低于Adobe Campaign吞吐量）。
 
 在这种情况下，这些参数是通过在&#x200B;**`<relay>`**&#x200B;部分中配置SMTP服务器来设置的。 必须指定用于传输邮件及其关联端口（默认为25）的SMTP服务器的IP地址（或主机）。
 
@@ -69,7 +69,7 @@ MTA模块充当用于SMTP广播（端口25）的本机邮件传输代理。
 
 要执行此操作，请应用以下步骤：
 
-1. 在&#x200B;**`<ipaffinity>`** serverConf.xml **文件的**&#x200B;部分中输入相关性。
+1. 在&#x200B;**serverConf.xml**&#x200B;文件的&#x200B;**`<ipaffinity>`**&#x200B;部分中输入相关性。
 
    一个关联可以有多个不同的名称：要分隔它们，请使用&#x200B;**；**&#x200B;字符。
 
@@ -88,7 +88,7 @@ MTA模块充当用于SMTP广播（端口25）的本机邮件传输代理。
 
    >[!NOTE]
    >
-   >在&#x200B;**Adobe Campaign v8 （控制台）文档**&#x200B;中了解如何[使用枚举](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}。
+   >在[Adobe Campaign v8 （控制台）文档](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}中了解如何&#x200B;**使用枚举**。
 
 
    然后，您可以选择要使用的关联，如下面的分类所示：

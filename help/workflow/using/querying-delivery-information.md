@@ -7,7 +7,7 @@ hide: true
 exl-id: b699b064-1287-41c9-8d94-1c1aa2c145ab
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '1252'
+source-wordcount: '1260'
 ht-degree: 1%
 
 ---
@@ -42,13 +42,13 @@ ht-degree: 1%
 
    操作步骤：
 
-   * 单击&#x200B;**[!UICONTROL Add]**&#x200B;字段右侧的&#x200B;**[!UICONTROL Output columns]**&#x200B;图标。 在&#x200B;**[!UICONTROL Formula type]**&#x200B;窗口中，选择&#x200B;**[!UICONTROL Edit the formula using an expression]**&#x200B;选项并单击&#x200B;**[!UICONTROL Next]**。 在&#x200B;**[!UICONTROL Field to select]**&#x200B;窗口中，单击&#x200B;**[!UICONTROL Advanced selection]**。
+   * 单击&#x200B;**[!UICONTROL Output columns]**&#x200B;字段右侧的&#x200B;**[!UICONTROL Add]**&#x200B;图标。 在&#x200B;**[!UICONTROL Formula type]**&#x200B;窗口中，选择&#x200B;**[!UICONTROL Edit the formula using an expression]**&#x200B;选项并单击&#x200B;**[!UICONTROL Next]**。 在&#x200B;**[!UICONTROL Field to select]**&#x200B;窗口中，单击&#x200B;**[!UICONTROL Advanced selection]**。
 
      ![](assets/query_editor_tracklog_06.png)
 
    * 在&#x200B;**[!UICONTROL Formula type]**&#x200B;窗口中，对聚合函数运行进程。 此过程将为主键计数。
 
-     在&#x200B;**[!UICONTROL Process on an aggregate function]**&#x200B;部分中选择&#x200B;**[!UICONTROL Aggregate]**&#x200B;并单击&#x200B;**[!UICONTROL Count]**。
+     在&#x200B;**[!UICONTROL Aggregate]**&#x200B;部分中选择&#x200B;**[!UICONTROL Process on an aggregate function]**&#x200B;并单击&#x200B;**[!UICONTROL Count]**。
 
      ![](assets/query_editor_nveau_18.png)
 
@@ -58,11 +58,11 @@ ht-degree: 1%
 
      ![](assets/query_editor_nveau_19.png)
 
-1. 选择要显示在输出列中的其他字段。 在&#x200B;**[!UICONTROL Available fields]**&#x200B;列中，打开&#x200B;**[!UICONTROL Recipient]**&#x200B;节点并选择&#x200B;**[!UICONTROL Email]**。 选中&#x200B;**[!UICONTROL Group]**&#x200B;的&#x200B;**[!UICONTROL Yes]**&#x200B;框以按电子邮件地址将跟踪日志分组：此组将每个日志链接到其收件人。
+1. 选择要显示在输出列中的其他字段。 在&#x200B;**[!UICONTROL Available fields]**&#x200B;列中，打开&#x200B;**[!UICONTROL Recipient]**&#x200B;节点并选择&#x200B;**[!UICONTROL Email]**。 选中&#x200B;**[!UICONTROL Yes]**&#x200B;的&#x200B;**[!UICONTROL Group]**&#x200B;框以按电子邮件地址将跟踪日志分组：此组将每个日志链接到其收件人。
 
    ![](assets/query_editor_nveau_20.png)
 
-1. 配置列排序，以便最先显示最活跃的收件人（具有最多的跟踪日志）。 检查&#x200B;**[!UICONTROL Yes]**&#x200B;列中的&#x200B;**[!UICONTROL Descending sort]**。
+1. 配置列排序，以便最先显示最活跃的收件人（具有最多的跟踪日志）。 检查&#x200B;**[!UICONTROL Descending sort]**&#x200B;列中的&#x200B;**[!UICONTROL Yes]**。
 
    ![](assets/query_editor_nveau_64.png)
 
@@ -76,7 +76,7 @@ ht-degree: 1%
 
    * 在特定投放的给定时间段内恢复跟踪日志。 需要三个过滤条件：两个日期条件，用于将搜索时段设置在当前日期之前的2周和当前日期之前的1天之间；另一个条件，用于将搜索限制到特定投放。
 
-     在&#x200B;**[!UICONTROL Target element]**&#x200B;窗口中，配置将考虑跟踪日志的开始日期。 单击 **[!UICONTROL Add]**。将显示条件行。 通过单击&#x200B;**[!UICONTROL Expression]**&#x200B;函数编辑&#x200B;**[!UICONTROL Edit expression]**&#x200B;列。 在&#x200B;**[!UICONTROL Field to select]**&#x200B;窗口中，选择&#x200B;**[!UICONTROL Date (@logDate)]**。
+     在&#x200B;**[!UICONTROL Target element]**&#x200B;窗口中，配置将考虑跟踪日志的开始日期。 单击 **[!UICONTROL Add]**。 将显示条件行。 通过单击&#x200B;**[!UICONTROL Edit expression]**&#x200B;函数编辑&#x200B;**[!UICONTROL Expression]**&#x200B;列。 在&#x200B;**[!UICONTROL Field to select]**&#x200B;窗口中，选择&#x200B;**[!UICONTROL Date (@logDate)]**。
 
      ![](assets/query_editor_nveau_23.png)
 
@@ -96,7 +96,7 @@ ht-degree: 1%
 
      现在，我们要配置第三个筛选条件，即查询涉及的投放标签。
 
-   * 单击&#x200B;**[!UICONTROL Add]**&#x200B;函数以创建另一个筛选条件。 在&#x200B;**[!UICONTROL Expression]**&#x200B;列中，单击&#x200B;**[!UICONTROL Edit expression]**。 在&#x200B;**[!UICONTROL Field to select]**&#x200B;窗口中，选择&#x200B;**[!UICONTROL Label]**&#x200B;节点中的&#x200B;**[!UICONTROL Delivery]**。
+   * 单击&#x200B;**[!UICONTROL Add]**&#x200B;函数以创建另一个筛选条件。 在&#x200B;**[!UICONTROL Expression]**&#x200B;列中，单击&#x200B;**[!UICONTROL Edit expression]**。 在&#x200B;**[!UICONTROL Field to select]**&#x200B;窗口中，选择&#x200B;**[!UICONTROL Delivery]**&#x200B;节点中的&#x200B;**[!UICONTROL Label]**。
 
      单击 **[!UICONTROL Finish]**。
 
@@ -128,11 +128,11 @@ ht-degree: 1%
 
 1. 选择&#x200B;**[!UICONTROL Filtering conditions]**，然后单击&#x200B;**[!UICONTROL Next]**。
 1. 单击&#x200B;**[!UICONTROL Add]**&#x200B;按钮并选择&#x200B;**[!UICONTROL Tracking logs]**。
-1. 将&#x200B;**[!UICONTROL Operator]**&#x200B;表达式的&#x200B;**[!UICONTROL Tracking logs]**&#x200B;设置为&#x200B;**[!UICONTROL Do not exist such as]**。
+1. 将&#x200B;**[!UICONTROL Tracking logs]**&#x200B;表达式的&#x200B;**[!UICONTROL Operator]**&#x200B;设置为&#x200B;**[!UICONTROL Do not exist such as]**。
 
    ![](assets/query_open_1.png)
 
-1. 添加另一个表达式。 选择&#x200B;**[!UICONTROL Type]**&#x200B;类别中的&#x200B;**[!UICONTROL URL]**。
+1. 添加另一个表达式。 选择&#x200B;**[!UICONTROL URL]**&#x200B;类别中的&#x200B;**[!UICONTROL Type]**。
 1. 然后，将其&#x200B;**[!UICONTROL Operator]**&#x200B;设置为&#x200B;**[!UICONTROL equal to]**，将其&#x200B;**[!UICONTROL Value]**&#x200B;设置为&#x200B;**[!UICONTROL Open]**。
 
    ![](assets/query_open_2.png)
@@ -141,7 +141,7 @@ ht-degree: 1%
 
    ![](assets/query_open_3.png)
 
-1. 若要设置该值最近7天，请单击&#x200B;**[!UICONTROL Edit expression]**&#x200B;字段中的&#x200B;**[!UICONTROL Value]**&#x200B;按钮。
+1. 若要设置该值最近7天，请单击&#x200B;**[!UICONTROL Value]**&#x200B;字段中的&#x200B;**[!UICONTROL Edit expression]**&#x200B;按钮。
 1. 在&#x200B;**[!UICONTROL Function]**&#x200B;类别中，选择&#x200B;**[!UICONTROL Current date minus n days]**&#x200B;并添加要定位的天数。 这里，我们要定位过去7天。
 
    ![](assets/query_open_4.png)
@@ -170,7 +170,7 @@ ht-degree: 1%
 
    ![](assets/s_advuser_query_sample1.4.png)
 
-   然后单击&#x200B;**[!UICONTROL Edit expression]**&#x200B;列中的&#x200B;**[!UICONTROL Value]**&#x200B;图标以定义要应用的计算公式。 选择&#x200B;**[!UICONTROL Current date minus n days]**&#x200B;公式并在相关字段中输入15。
+   然后单击&#x200B;**[!UICONTROL Value]**&#x200B;列中的&#x200B;**[!UICONTROL Edit expression]**&#x200B;图标以定义要应用的计算公式。 选择&#x200B;**[!UICONTROL Current date minus n days]**&#x200B;公式并在相关字段中输入15。
 
    ![](assets/s_advuser_query_sample1.5.png)
 
@@ -203,7 +203,7 @@ ht-degree: 1%
    ![](assets/query_editor_ex_04.png)
 
 1. 在&#x200B;**[!UICONTROL Subsets]**&#x200B;选项卡中，定义第一个拆分分支。 例如，输入此分支的&#x200B;**Clicked**&#x200B;标签。
-1. 选择&#x200B;**[!UICONTROL Add a filtering condition on the incoming population]**&#x200B;选项。 单击 **[!UICONTROL Edit]**。
+1. 选择 **[!UICONTROL Add a filtering condition on the incoming population]** 选项。 单击 **[!UICONTROL Edit]**。
 1. 在&#x200B;**[!UICONTROL Targeting and filtering dimension]**&#x200B;窗口中，双击&#x200B;**[!UICONTROL Recipients of a delivery]**&#x200B;筛选器。
 
    ![](assets/query_editor_ex_05.png)
@@ -221,11 +221,11 @@ ht-degree: 1%
    ![](assets/query_editor_ex_06.png)
 
 1. 将显示另一个子选项卡。 将其命名为“**未单击**”。
-1. 单击 **[!UICONTROL Add a filtering condition for the incoming population]**。然后单击 **[!UICONTROL Edit...]**。
+1. 单击 **[!UICONTROL Add a filtering condition for the incoming population]**。 然后单击 **[!UICONTROL Edit...]**。
 
    ![](assets/query_editor_ex_07.png)
 
-1. 在&#x200B;**[!UICONTROL Delivery recipients]**&#x200B;窗口中单击&#x200B;**[!UICONTROL Targeting and filtering dimension]**。
+1. 在&#x200B;**[!UICONTROL Targeting and filtering dimension]**&#x200B;窗口中单击&#x200B;**[!UICONTROL Delivery recipients]**。
 1. 在&#x200B;**[!UICONTROL Target element]**&#x200B;窗口中，选择&#x200B;**[!UICONTROL Recipients who did not click (email)]**&#x200B;行为。 为最后一个分支选择所示的&#x200B;**[!UICONTROL Delivery specified by the transition]**&#x200B;选项。
 
    **[!UICONTROL Split]**&#x200B;框现已完全配置。

@@ -7,7 +7,7 @@ hide: true
 exl-id: a380e486-a40c-4bf6-b7f4-7dcd76c34085
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '1140'
+source-wordcount: '1150'
 ht-degree: 14%
 
 ---
@@ -44,7 +44,7 @@ ht-degree: 14%
 
 加载文件时，将自动检测列格式以及每种数据类型的默认参数。 您可以修改这些默认参数，以指定要应用于数据的特定进程，尤其是当存在错误或空值时。
 
-为此，请在&#x200B;**[!UICONTROL Click here to change the file format...]**&#x200B;活动的主窗口中选择&#x200B;**[!UICONTROL Data loading (file)]**。 随后将打开格式详细信息窗口。
+为此，请在&#x200B;**[!UICONTROL Data loading (file)]**&#x200B;活动的主窗口中选择&#x200B;**[!UICONTROL Click here to change the file format...]**。 随后将打开格式详细信息窗口。
 
 ![](assets/file_loading_columns_format.png)
 
@@ -63,7 +63,7 @@ ht-degree: 14%
 * **[!UICONTROL Allow NULLs]**：指定如何管理空值。
 
    * **[!UICONTROL Adobe Campaign default]**：仅为数字字段生成错误，否则插入 NULL 值。
-   * **[!UICONTROL Empty value allowed]**：授权空值。因此，会插入 NULL 值。
+   * **[!UICONTROL Empty value allowed]**：授权空值。 因此，会插入 NULL 值。
    * **[!UICONTROL Always populated]**：如果值为空，则生成错误。
 
 * **[!UICONTROL Length]**：指定&#x200B;**字符串**&#x200B;数据类型的最大字符数。
@@ -78,7 +78,7 @@ ht-degree: 14%
 * **[!UICONTROL White space management]**：指定字符串中是否需要忽略某些空格。 **[!UICONTROL Ignore spaces]**&#x200B;值只允许忽略字符串开头和结尾的空格。
 * **[!UICONTROL Error processings]**：定义遇到错误时的行为。
 
-   * **[!UICONTROL Ignore the value]**：忽略值。工作流执行日志中会生成警告。
+   * **[!UICONTROL Ignore the value]**：忽略值。 工作流执行日志中会生成警告。
    * **[!UICONTROL Reject line]**：不处理整个行。
    * **[!UICONTROL Use a default value in case of error]**：将导致错误的值替换为在 **[!UICONTROL Default value]** 字段中定义的默认值。
    * **[!UICONTROL Reject the line when there is no remapping value]**：除非为错误值定义了映射，否则不会处理整行（请参阅下面的&#x200B;**[!UICONTROL Mapping]**&#x200B;选项）。
@@ -97,7 +97,7 @@ ht-degree: 14%
 
    **[!UICONTROL Directory]**&#x200B;选项卡包含有关要恢复的文件的信息。 在我们的示例中，将恢复名称中包含“customers”一词且存储在服务器的tmp/Adobe/Data/files目录中的所有文本格式文件。
 
-   **[!UICONTROL File collector]**&#x200B;文件收集器[部分中详细介绍了使用](file-collector.md)的情况。
+   [文件收集器](file-collector.md)部分中详细介绍了使用&#x200B;**[!UICONTROL File collector]**&#x200B;的情况。
 
    ![](assets/s_advuser_load_file_sample_1.png)
 

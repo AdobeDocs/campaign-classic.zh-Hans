@@ -9,7 +9,7 @@ topic-tags: appendices
 exl-id: 5cd4abb0-2bd2-4b23-902c-41b08a1d2f7a
 source-git-commit: f032ed3bdc0b402c8281bc34e6cb29f3c575aaf9
 workflow-type: tm+mt
-source-wordcount: '145'
+source-wordcount: '144'
 ht-degree: 4%
 
 ---
@@ -30,7 +30,7 @@ nlserver config -addinstance:instance/masques DNS[/lang]
 
 （其中&#x200B;**eng**&#x200B;和&#x200B;**fra**&#x200B;是`[lang]`参数的可能值）
 
-命令&#x200B;**nlserver config -addinstance：instance1/demo&#42;/eng**&#x200B;允许您使用DNS掩码演示&#42;创建名为&#x200B;**instance1**&#x200B;的英文实例。
+命令&#x200B;**nlserver config -addinstance:instance1/demo&#42;/eng**&#x200B;允许您使用DNS掩码演示&#42;创建名为&#x200B;**instance1**&#x200B;的英文实例。
 
 ## 声明数据库 {#declaring-a-database}
 

@@ -9,7 +9,7 @@ topic-tags: advanced-parameters
 exl-id: 01adb584-5308-4d41-a6f1-223a97efa10f
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '717'
+source-wordcount: '711'
 ht-degree: 1%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 1%
 
 ## 其他数据配置 {#additional-data-configuration}
 
-您必须扩展链接到环境的&#x200B;**nms：interaction**&#x200B;架构，并声明将在调用交互引擎期间使用的其他字段列表。 在创建资格规则或个性化优惠时，这些字段将可以从&#x200B;**交互**&#x200B;节点访问（请参阅[使用其他数据](#using-additional-data)）。
+您必须扩展链接到环境的&#x200B;**nms:interaction**&#x200B;架构，并声明将在调用交互引擎期间使用的其他字段列表。 在创建资格规则或个性化优惠时，这些字段将可以从&#x200B;**交互**&#x200B;节点访问（请参阅[使用其他数据](#using-additional-data)）。
 
 对于入站渠道，必须将呼叫数据字段添加到&#x200B;**交互**&#x200B;节点中。
 
@@ -54,7 +54,7 @@ ht-degree: 1%
 >
 >出站渠道不支持收藏集。 但是，您可以创建指向其他架构的链接。
 
-如果要将此数据存储在建议表中，还必须扩展&#x200B;**nms：propositionRcp**&#x200B;架构并声明这些字段。
+如果要在建议表中存储此数据，还必须扩展&#x200B;**nms:propositionRcp**&#x200B;架构并声明这些字段。
 
 ```
 <element label="Recipient offer propositions" labelSingular="Recipient offer proposition" name="propositionRcp">
@@ -67,7 +67,7 @@ ht-degree: 1%
 
 ### 输入渠道（网页） {#input-channel--web-page-}
 
-要在调用引擎时传输其他数据，必须将&#x200B;**interactionGlobalCtx**&#x200B;变量添加到网页的JavaScript代码中。 将包含调用数据的&#x200B;**交互**&#x200B;节点插入此变量。 您必须遵循&#x200B;**nms：interaction**&#x200B;架构中的相同xml结构。 请参阅：[其他数据配置](#additional-data-configuration)。
+要在调用引擎时传输其他数据，必须将&#x200B;**interactionGlobalCtx**&#x200B;变量添加到网页的JavaScript代码中。 将包含调用数据的&#x200B;**交互**&#x200B;节点插入此变量。 您必须遵守&#x200B;**nms:interaction**&#x200B;架构中的相同xml结构。 请参阅：[其他数据配置](#additional-data-configuration)。
 
 ```
 interactionGlobalCtx = "<interaction navigationLanguage='"+myLanguage+"'/>";
@@ -75,7 +75,7 @@ interactionGlobalCtx = "<interaction navigationLanguage='"+myLanguage+"'/>";
 
 ### 输出通道 {#output-channel}
 
-您必须创建一个定向工作流，通过遵循与&#x200B;**nms：interaction**&#x200B;架构相同的xml结构和相同的内部名称，在工作表中加载其他数据。 请参阅：[其他数据配置](#additional-data-configuration)。
+您必须创建一个定向工作流，通过遵循与&#x200B;**nms:interaction**&#x200B;架构相同的xml结构和相同的内部名称，在工作表中加载其他数据。 请参阅：[其他数据配置](#additional-data-configuration)。
 
 ## 使用其他数据 {#using-additional-data}
 
@@ -101,7 +101,7 @@ interactionGlobalCtx = "<interaction navigationLanguage='"+myLanguage+"'/>";
 >
 >您必须限制定义数据的渠道上的个性化。 在我们的示例中，我们将限制入站Web渠道上的规则。
 
-如果您使用附加数据对优惠进行了个性化，则默认情况下，此数据不会显示在预览中，因为它在数据库中不可用。 在环境的&#x200B;**[!UICONTROL Example of call data]**&#x200B;选项卡中，必须添加要在预览中使用的值示例。 请遵循&#x200B;**nms：interaction**&#x200B;架构扩展中的相同xml结构。 有关详细信息，请参阅[其他数据配置](#additional-data-configuration)。
+如果您使用附加数据对优惠进行了个性化，则默认情况下，此数据不会显示在预览中，因为它在数据库中不可用。 在环境的&#x200B;**[!UICONTROL Example of call data]**&#x200B;选项卡中，必须添加要在预览中使用的值示例。 请遵循&#x200B;**nms:interaction**&#x200B;架构扩展中的相同xml结构。 有关详细信息，请参阅[其他数据配置](#additional-data-configuration)。
 
 ![](assets/ita_calldata_preview.png)
 
@@ -115,7 +115,7 @@ interactionGlobalCtx = "<interaction navigationLanguage='"+myLanguage+"'/>";
 
 >[!NOTE]
 >
->您必须扩展了&#x200B;**nms：propositionRcp**&#x200B;架构并声明了将包含要存储的数据的字段。 有关此内容的更多信息： [其他数据配置](#additional-data-configuration)。
+>您必须扩展了&#x200B;**nms:propositionRcp**&#x200B;架构并声明了包含要存储的数据的字段。 有关此内容的更多信息： [其他数据配置](#additional-data-configuration)。
 
 在选件空间中，转到&#x200B;**[!UICONTROL Storage]**&#x200B;选项卡并单击&#x200B;**[!UICONTROL Add]**&#x200B;按钮。
 

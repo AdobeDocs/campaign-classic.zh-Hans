@@ -7,7 +7,7 @@ hide: true
 exl-id: c3de99f8-089f-4c7c-be11-f375a9463eaa
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '371'
+source-wordcount: '372'
 ht-degree: 2%
 
 ---
@@ -58,7 +58,7 @@ ht-degree: 2%
      >
      >有关创建和管理其他列的信息，请参阅[添加数据](query.md#adding-data)。
 
-   * 选择上一个定向维度（在轴切换之前），并在收件人的&#x200B;**[!UICONTROL Zip Code]**&#x200B;子树中选择&#x200B;**[!UICONTROL Location]**，然后单击&#x200B;**[!UICONTROL Edit expression]**。
+   * 选择上一个定向维度（在轴切换之前），并在收件人的&#x200B;**[!UICONTROL Location]**&#x200B;子树中选择&#x200B;**[!UICONTROL Zip Code]**，然后单击&#x200B;**[!UICONTROL Edit expression]**。
 
      ![](assets/wf_change-dimension_sample_02.png)
 

@@ -9,7 +9,7 @@ topic-tags: connectors
 exl-id: 0fdf8259-5cab-4a9d-adb3-6c55ec5c8851
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '313'
+source-wordcount: '314'
 ht-degree: 0%
 
 ---
@@ -21,9 +21,9 @@ ht-degree: 0%
 使用Campaign **联合数据访问** (FDA)选项处理存储在外部数据库中的信息。 请按照以下步骤配置对Sybase IQ的访问权限。
 
 1. 配置[Sybase IQ数据库](#configuring-sybase)
-1. 在Campaign中配置Sybase IQ[外部帐户](#sybase-external)
+1. 在Campaign中配置Sybase IQ [外部帐户](#sybase-external)
 
-## sybase IQ配置 {#configuring-sybase}
+## Sybase IQ配置 {#configuring-sybase}
 
 连接到FDA中的Sybase IQ外部数据库需要在Adobe Campaign服务器上进行以下其他配置。
 
@@ -67,9 +67,9 @@ ht-degree: 0%
    * 如果使用customer.sh文件声明路径：为LD_LIBRARY_PATH变量添加路径/opt/sybase/IQ-16_0/lib64 。
    * 否则，使用Unix命令。
 
-## sybase IQ外部帐户 {#sybase-external}
+## Sybase IQ外部帐户 {#sybase-external}
 
-利用Sybase IQ外部帐户，可将Campaign实例连接到Sybase IQ外部数据库。
+Sybase IQ外部帐户允许您将Campaign实例连接到Sybase IQ外部数据库。
 
 1. 在营销活动&#x200B;**[!UICONTROL Explorer]**&#x200B;中，单击&#x200B;**[!UICONTROL Administration]**“>”**[!UICONTROL Platform]**“>”**[!UICONTROL External accounts]**。
 
@@ -77,7 +77,7 @@ ht-degree: 0%
 
 1. 要配置&#x200B;**[!UICONTROL Sybase IQ]**&#x200B;外部帐户，您必须指定：
 
-   * **[!UICONTROL Type]**： ODBC (Sybase ASE，Sybase IQ)
+   * **[!UICONTROL Type]**： ODBC (Sybase ASE， Sybase IQ)
 
    * **[!UICONTROL Server]**：对应于步骤5中定义的ODBC连接(`<server_alias>`)。 不一定是服务器本身的名称。
 

@@ -9,7 +9,7 @@ topic-tags: managing-environments
 exl-id: bdda98f7-a083-4f3b-b691-c28ec79af780
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '986'
+source-wordcount: '987'
 ht-degree: 0%
 
 ---
@@ -61,7 +61,7 @@ HTML或XML渲染是通过渲染函数创建的。 渲染函数中定义的字段
 
 1. 单击&#x200B;**[!UICONTROL Edit functions]**&#x200B;以创建渲染函数。
 
-   这些函数用于在优惠空间上生成优惠呈现。 有多种可能的格式：出站交互的HTML或文本，以及入站交互的XML。
+   这些函数用于在优惠空间上生成优惠呈现。 有多种可能的格式：用于出站交互的HTML或文本，以及用于入站交互的XML。
 
    ![](assets/offer_space_create_006.png)
 
@@ -84,12 +84,12 @@ HTML或XML渲染是通过渲染函数创建的。 渲染函数中定义的字段
 
 交互附带以下值，这些值可用于确定优惠建议的状态：
 
-* **[!UICONTROL Accepted]**。
-* **[!UICONTROL Scheduled]**。
-* **[!UICONTROL Generated]**。
-* **[!UICONTROL Interested]**。
-* **[!UICONTROL Presented]**。
-* **[!UICONTROL Rejected]**。
+* **[!UICONTROL Accepted]**.
+* **[!UICONTROL Scheduled]**.
+* **[!UICONTROL Generated]**.
+* **[!UICONTROL Interested]**.
+* **[!UICONTROL Presented]**.
+* **[!UICONTROL Rejected]**.
 
 默认情况下不应用这些值：必须配置这些值。
 

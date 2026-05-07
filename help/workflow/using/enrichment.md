@@ -7,7 +7,7 @@ hide: true
 exl-id: 4c7bc0f3-5877-47dc-bd72-dc94fb7bd479
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '1297'
+source-wordcount: '1301'
 ht-degree: 1%
 
 ---
@@ -41,13 +41,13 @@ ht-degree: 1%
 
 * **[!UICONTROL Define a collection]**：用于定义表之间具有1-N基数的链接。
 * **[!UICONTROL Define a link whose target is still available]**：用于定义表之间具有1-1基数的链接。 连接条件必须由目标表中的单个记录定义。
-* **[!UICONTROL Define a link whose target does not necessarily exist in the base]**：用于定义表之间具有0-1基数的链接。 连接条件必须由目标表中的0或1（最大）记录定义。
+* **[!UICONTROL Define a link whose target does not necessarily exist in the base]**：用于定义表之间具有0-1基数的链接。 连接条件必须由0或1（最大值）定义 记录。
 
-  此选项在&#x200B;**[!UICONTROL Simple Join]**&#x200B;选项卡中配置，可以通过&#x200B;**[!UICONTROL Edit additional data]**&#x200B;活动的&#x200B;**[!UICONTROL Enrichment]**&#x200B;链接访问。
+  此选项在&#x200B;**[!UICONTROL Simple Join]**&#x200B;选项卡中配置，可以通过&#x200B;**[!UICONTROL Enrichment]**&#x200B;活动的&#x200B;**[!UICONTROL Edit additional data]**&#x200B;链接访问。
 
 * **[!UICONTROL Define a link by searching for a reference among several options]**：此类型的链接定义对唯一记录的协调。 Adobe Campaign通过在目标表中添加用于存储唯一记录引用的外键来创建指向目标表的链接。
 
-  此选项在&#x200B;**[!UICONTROL Reconciliation and deduplication]**&#x200B;选项卡中配置，可以通过&#x200B;**[!UICONTROL Edit additional data]**&#x200B;活动的&#x200B;**[!UICONTROL Enrichment]**&#x200B;链接访问。
+  此选项在&#x200B;**[!UICONTROL Reconciliation and deduplication]**&#x200B;选项卡中配置，可以通过&#x200B;**[!UICONTROL Enrichment]**&#x200B;活动的&#x200B;**[!UICONTROL Edit additional data]**&#x200B;链接访问。
 
 以下章节还提供了详细介绍扩充活动在其上下文中运作的用例：
 
@@ -124,7 +124,7 @@ ht-degree: 1%
 
    ![](assets/enrichment_edit_after_file_box.png)
 
-1. 选择&#x200B;**[!UICONTROL Link definition]**&#x200B;选项并单击&#x200B;**[!UICONTROL Next]**&#x200B;按钮。 指定要创建的链接类型。 在本例中，我们希望将文件收件人的国家/地区与数据库专用表中可用国家/地区列表中的国家/地区进行协调。 选择&#x200B;**[!UICONTROL Define a link by searching for a reference among several options]**&#x200B;选项。 在&#x200B;**[!UICONTROL Target schema]**&#x200B;字段中选择国家/地区表。
+1. 选择&#x200B;**[!UICONTROL Link definition]**&#x200B;选项并单击&#x200B;**[!UICONTROL Next]**&#x200B;按钮。 指定要创建的链接类型。 在本例中，我们希望将文件收件人的国家/地区与数据库专用表中可用国家/地区列表中的国家/地区进行协调。 选择 **[!UICONTROL Define a link by searching for a reference among several options]** 选项。 在&#x200B;**[!UICONTROL Target schema]**&#x200B;字段中选择国家/地区表。
 
    ![](assets/enrichment_add_a_link_select_option4.png)
 
@@ -189,7 +189,7 @@ ht-degree: 1%
 
 操作步骤：
 
-1. 在活动的&#x200B;**[!UICONTROL Add data]**&#x200B;选项卡中选择&#x200B;**[!UICONTROL Enrichment]**。
+1. 在活动的&#x200B;**[!UICONTROL Enrichment]**&#x200B;选项卡中选择&#x200B;**[!UICONTROL Add data]**。
 1. 在选择要添加的数据类型的窗口中，选择&#x200B;**[!UICONTROL A link]**。
 1. 选择要建立的链接类型及其目标。 在本例中，目标是选件架构。
 

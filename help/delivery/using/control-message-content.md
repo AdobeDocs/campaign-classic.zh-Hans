@@ -8,7 +8,7 @@ role: User
 exl-id: dcd3a9f9-5fe9-4c28-a4a5-5aed67b036ab
 source-git-commit: 0507e0372a81351adc145dafdd3cbe5d5422dc00
 workflow-type: tm+mt
-source-wordcount: '765'
+source-wordcount: '842'
 ht-degree: 5%
 
 ---
@@ -37,7 +37,7 @@ ht-degree: 5%
 
 您必须确保在实例级别（菜单&#x200B;**[!UICONTROL Tools > Advanced > deployment wizard...]**）或最常用的情况下提供了正确的地址。
 
-有关详细信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html?lang=zh-Hans){target="_blank"}。
+有关更多信息，请参阅 [Campaign v8 文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html?lang=zh-Hans){target="_blank"}。
 
 ## 个性化 {#personalization}
 
@@ -57,13 +57,13 @@ ht-degree: 5%
 
 通常，不要试图通过要求希望选择退出的收件人（例如，填写其电子邮件地址或姓名等字段）来妨碍他们。 表单应只有一个验证按钮，并且只应对加密的标识符执行协调。
 
-请求额外确认不可靠：用户可能有两个电子邮件地址被重定向到同一个框(例如：firstname.lastname@club.com和firstname.lastname@internet-club.com)。 如果收件人只能记住第一个地址，并希望通过发送给另一个地址的邮件取消订阅，则表单将拒绝此操作，因为加密标识符和输入的电子邮件地址不匹配。
+请求额外确认不可靠：用户可能有两个电子邮件地址被重定向到同一个框（例如：firstname.lastname@club.com和firstname.lastname@internet-club.com）。 如果收件人只能记住第一个地址，并希望通过发送给另一个地址的邮件取消订阅，则表单将拒绝此操作，因为加密标识符和输入的电子邮件地址不匹配。
 
 ## 收件箱呈现 {#message-responsiveness}
 
 在发送消息之前，您可以通过检查消息在不同设备上的外观来测试消息的响应能力。 这是为了确保以最佳方式在各种Web客户端、Web邮件和设备上显示该内容。
 
-为了实现此功能，Adobe Campaign 会捕捉渲染状态并提供在专用报告中。这样，您就可以预览不同消息接收环境下所收到之消息的显示情况。
+为了实现此功能，Adobe Campaign 会捕捉渲染状态并提供在专用报告中。 这样，您就可以预览不同消息接收环境下所收到之消息的显示情况。
 
 有关此内容的详细信息，请参阅[收件箱呈现](inbox-rendering.md)。
 

@@ -8,8 +8,8 @@ role: User
 exl-id: 8be6836d-f7dc-4199-b2b2-b6a9cac9d162
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '263'
-ht-degree: 4%
+source-wordcount: '273'
+ht-degree: 6%
 
 ---
 
@@ -37,7 +37,7 @@ SpamAssassin利用多种垃圾邮件检测技术，包括：
 
 有关创建和设计投放的更多信息，请参阅[此章节](about-email-channel.md)。
 
-1. 转到&#x200B;**[!UICONTROL Preview]**&#x200B;选项卡。
+1. 转到 **[!UICONTROL Preview]** 选项卡。
 1. 选择一个收件人以预览您的投放。
 
    ![](assets/s_tn_del_preview_spamassassin_recipient.png)

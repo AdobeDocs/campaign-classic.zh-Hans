@@ -9,7 +9,7 @@ topic-tags: deployment-types-
 exl-id: 08628efb-9186-4b67-9431-310d4bc276b4
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '136'
+source-wordcount: '137'
 ht-degree: 6%
 
 ---
@@ -24,6 +24,6 @@ Adobe Campaign的模块化设计支持范围广泛的部署配置，从独立设
 
 >[!NOTE]
 >
->主安装配置步骤只能由Adobe针对由Adobe托管的部署执行，以配置服务器和实例配置文件。
+>对于Adobe托管的部署，主要安装配置步骤只能由Adobe执行，以配置服务器和实例配置文件，例如。
 >
 >要了解有关部署之间主要差异的更多信息，请参阅[托管模型](../../installation/using/hosting-models.md)部分或托管部署和内部部署的[功能差异](../../installation/using/capability-matrix.md)。

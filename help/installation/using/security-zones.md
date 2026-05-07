@@ -10,8 +10,8 @@ topic-tags: additional-configurations
 exl-id: 67dda58f-97d1-4df5-9648-5f8a1453b814
 source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
 workflow-type: tm+mt
-source-wordcount: '1452'
-ht-degree: 0%
+source-wordcount: '1511'
+ht-degree: 2%
 
 ---
 
@@ -29,7 +29,7 @@ ht-degree: 0%
 >
 >作为&#x200B;**托管**&#x200B;客户，如果您可以访问[Campaign控制面板](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=zh-Hans)，则可以使用Security Zone自助服务界面。 [了解详情](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html?lang=zh-Hans)
 >
->其他&#x200B;**混合/托管**&#x200B;客户需要联系Adobe列入允许列表支持团队以将IP添加到。
+>其他&#x200B;**混合/托管**&#x200B;客户需要联系Adobe支持团队以将IP添加到。
 >
 
 ## 创建安全区域 {#creating-security-zones}
@@ -46,7 +46,7 @@ ht-degree: 0%
 每个区域都定义了权限，例如：
 
 * HTTP连接，而不是HTTPS
-* 错误显示(Java错误、JavaScript、C++等)
+* 错误显示（Java错误、JavaScript、C++等）
 * 报表和WebApp预览
 * 通过登录/密码进行身份验证
 * 非安全连接模式
@@ -143,7 +143,7 @@ ht-degree: 0%
 >
 >如果配置了代理并且可以覆盖它（如果不存在，则覆盖它），则将测试的IP地址将能够被伪造。
 >
->此外，中继现在像代理一样生成。 因此，您可以将IP地址127.0.0.1添加到安全区域配置的代理列表中。
+>此外，中继现在像代理一样生成。 因此，您可以将IP地址127.0.0.1添加到安全区域配置中的代理列表中。
 >
 >例如：“`<subnetwork label="Lan 1" mask="192.168.0.0/16" name="lan1" proxy="127.0.0.1,10.100.2.135" />`”。
 
@@ -161,7 +161,7 @@ ht-degree: 0%
 
   ![](assets/8101_proxy3.png)
 
-可能访问Adobe Campaign服务器的代理的IP地址必须在相关&#x200B;**`<subnetwork>`**&#x200B;和第一级子网&#x200B;**`<subnetwork name="all"/>`**&#x200B;中输入。 例如，下面是指IP地址为10.131.146.102的代理：
+可能访问Adobe Campaign服务器的代理的IP地址必须在相关&#x200B;**`<subnetwork>`**&#x200B;和第一级子网&#x200B;**`<subnetwork name="all"/>`**&#x200B;中输入。 例如，此处为IP地址为10.131.146.102的代理：
 
 ```
 <securityZone allowDebug="false" allowHTTP="false" label="Public Network" 
@@ -257,7 +257,7 @@ ht-degree: 0%
 
    * **allowUserPassword**&#x200B;允许操作员发送其凭据作为参数（以便由apache/IIS/proxy记录它们）。 此功能以前用于简化API的使用。 您可以签入指南（或规范）中是否某些第三方应用程序使用此功能。 如果是这样，您必须通知他们更改使用我们的API的方式，并尽快删除此功能。
 
-   * **allowSQLInjection**&#x200B;允许用户使用旧语法执行SQL注入。 此属性应设置为false。 您可以使用/nl/jsp/ping.jsp？zones=true检查安全区域配置。 此页显示当前IP的安全措施（使用这些安全标志计算）的活动状态。
+   * **allowSQLInjection**&#x200B;允许用户使用旧语法执行SQL注入。 此属性应设置为false。 您可以使用/nl/jsp/ping.jsp?zones=true检查安全区域配置。 此页显示当前IP的安全措施（使用这些安全标志计算）的活动状态。
 
 * HttpOnly Cookie/useSecurityToken：请参阅&#x200B;**sessionTokenOnly**&#x200B;标志。
 

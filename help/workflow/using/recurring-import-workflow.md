@@ -7,7 +7,7 @@ hide: true
 exl-id: e6e140cb-8de0-4ab9-bddc-95abe04124c6
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '1015'
+source-wordcount: '1027'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ ht-degree: 0%
 
 1. 配置&#x200B;**[!UICONTROL Data Loading (file)]**&#x200B;活动：
 
-   * 通过上传样例文件来定义预期的结构。 样例文件应仅包含几行，但应包含导入所需的所有列。 检查并编辑文件格式，确保正确设置了每列的类型：文本、日期、整数等。 例如：
+   * 通过上传样例文件来定义预期的结构。 样例文件应仅包含几行，但应包含导入所需的所有列。 检查并编辑文件格式，确保正确设置了每列的类型：文本、日期、整数等。例如：
 
      ```
      lastname;firstname;birthdate;email;crmID
@@ -75,7 +75,7 @@ ht-degree: 0%
 
    * 在前两个子集中未选择的所有记录都在&#x200B;**[!UICONTROL Complement]**&#x200B;中选择。
 
-1. 配置位于先前配置的&#x200B;**[!UICONTROL Update data]**&#x200B;活动的第一个叫客过渡之后的&#x200B;**[!UICONTROL Split]**&#x200B;活动。
+1. 配置位于先前配置的&#x200B;**[!UICONTROL Split]**&#x200B;活动的第一个叫客过渡之后的&#x200B;**[!UICONTROL Update data]**&#x200B;活动。
 
    * 选择&#x200B;**[!UICONTROL Update]**&#x200B;作为&#x200B;**[!UICONTROL Operation type]**，因为集客过渡仅包含数据库中已存在的收件人。
    * 在&#x200B;**[!UICONTROL Record identification]**&#x200B;部分中，选择&#x200B;**[!UICONTROL Using reconciliation keys]**&#x200B;并定义定向维度与在&#x200B;**[!UICONTROL Enrichment]**&#x200B;中创建的链接之间的键。 在此示例中，使用了&#x200B;**CRM ID**&#x200B;自定义字段。
@@ -94,7 +94,7 @@ ht-degree: 0%
 
    ![](assets/import_template_example7.png)
 
-1. 配置位于之前配置的&#x200B;**[!UICONTROL Update data]**&#x200B;活动之后的&#x200B;**[!UICONTROL Deduplication]**&#x200B;活动。
+1. 配置位于之前配置的&#x200B;**[!UICONTROL Deduplication]**&#x200B;活动之后的&#x200B;**[!UICONTROL Update data]**&#x200B;活动。
 
    * 选择&#x200B;**[!UICONTROL Insert]**&#x200B;作为&#x200B;**[!UICONTROL Operation type]**，因为集客过渡仅包含数据库中不存在的收件人。
    * 在&#x200B;**[!UICONTROL Record identification]**&#x200B;部分中，选择&#x200B;**[!UICONTROL Directly using the targeting dimension]**&#x200B;并选择&#x200B;**[!UICONTROL Recipients]**&#x200B;维度。

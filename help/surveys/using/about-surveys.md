@@ -7,18 +7,18 @@ feature: Surveys
 exl-id: 7061a4f1-006f-4f19-8761-918d8930d885
 source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
 workflow-type: tm+mt
-source-wordcount: '554'
+source-wordcount: '572'
 ht-degree: 3%
 
 ---
 
 # 调查入门{#about-surveys}
 
-Adobe Campaign包括一个用于定义和发布Web应用程序的图形模块。 这用于创建页面，例如外部网上的编辑表单或通知表单，其中包含来自具有表、图表、输入表单等数据库的数据。 使用此功能可以设计和发布用户可以在其中查找或输入信息的网页。
+Adobe Campaign包括一个用于定义和发布Web应用程序的图形模块。 这用于创建页面，例如外部网上的编辑表单或通知表单，其中包含来自具有表、图表、输入表单等数据库的数据。使用此功能可以设计和发布用户可以在其中查找或输入信息的网页。
 
 >[!AVAILABILITY]
 >
->在企业(FFDA)部署的Campaign v8中，调查管理不可用。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/config/architecture/ffda/enterprise-deployment){target="_blank"}以了解详情。
+>在企业(FFDA)部署的Campaign v8中，调查管理不可用。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/architecture/ffda/enterprise-deployment){target="_blank"}以了解详情。
 
 
 可选的&#x200B;**调查**&#x200B;加载项允许您创建新的类型的Web应用程序来创建和管理联机调查表，例如用于添加或修改配置文件信息、订阅或取消订阅信息服务或竞争登录表单的表单。 收集完答案后，它们会存储在数据库中或本地变量中。 数据模型可以通过问卷回答进行动态扩展。 您可以实时查看结果、筛选响应并使用专用图表分析它们。
@@ -43,7 +43,7 @@ Adobe Campaign包括一个用于定义和发布Web应用程序的图形模块。
 * 添加个性化和定义字段位置，
 * 根据答案显示调查字段的条件，
 * 条件页面显示，
-* 在批准之前检查信息，具体取决于预期的数据类型（数字、电子邮件地址、日期等）和必填字段，
+* 在批准之前检查信息，具体取决于预期的数据类型（数字、电子邮件地址、日期等） 和必填字段，
 * 发送电子邮件邀请/通知，
 * 个性化错误和结束页面，
 * 在表单中添加图像、视频、超文本链接、验证码等
@@ -63,7 +63,7 @@ Adobe Campaign包括一个用于定义和发布Web应用程序的图形模块。
 
 1. 创建调查的页面及其内容（输入字段、下拉列表、问题等）。
 1. 定义应如何保存答案。 可以插入数据预加载步骤，以便使用数据库中已存在的数据预加载表单。 您还可以添加测试框。
-1. 然后，在Publish中将调查交付给收件人（例如，在交付或网站中包含链接）。
+1. 发布，然后将调查提交给收件人（例如，在投放或网站中包含链接）。
 1. 监视响应并查看报告。
 
 有关这些步骤的配置和顺序的更多信息，请参阅[本文档](../../web/using/about-web-forms.md)。 本章只详细介绍了特定于调查的配置。

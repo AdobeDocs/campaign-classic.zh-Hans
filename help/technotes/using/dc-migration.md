@@ -1,14 +1,14 @@
 ---
 product: campaign
 title: 迁移到公共云
-description: 了解有关Campaign Classic迁移到公共云的更多信息
+description: 详细了解Campaign Classic迁移到公共云
 feature: Technote, Upgrade
 role: User
 level: Beginner
 exl-id: 2b282221-d048-4f6e-b52e-f8e584af2c0e
 source-git-commit: 0ed70b3c57714ad6c3926181334f57ed3b409d98
 workflow-type: tm+mt
-source-wordcount: '1533'
+source-wordcount: '1557'
 ht-degree: 2%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 2%
 
 ## 上下文
 
-作为尊贵的Adobe Campaign Classic客户，我们致力于为您提供最佳的体验和价值。 多年来，我们认识到在云中托管客户的价值和可靠性。  作为我们[年度升级计划](../../rn/using/rn-overview.md#yearly-upgrade)的一部分，我们正在将所有客户转移到AdobeManaged Services (AWS上的公共云)以提供更好、更可靠的服务。
+作为尊贵的Adobe Campaign Classic客户，我们致力于为您提供最佳的体验和价值。 多年来，我们认识到在云中托管客户的价值和可靠性。  作为我们[年度升级计划](../../rn/using/rn-overview.md#yearly-upgrade)的一部分，我们正在将所有客户转移到Adobe Managed Services （AWS上的公共云），以提供更好、更可靠的服务。
 
 该计划有三个主要目标：
 
@@ -30,14 +30,14 @@ ht-degree: 2%
 ### 词汇表
 
 * **内部版本升级** — 当Adobe Campaign Classic软件更新到最新的安全内部版本号时，但仍保留相同的主/次内部版本级别。 例如：Campaign v7 20.2.3内部版本9182到Campaign v7 21.2.5内部版本9188。 [了解详情](../../platform/using/faq-build-upgrade.md)。
-* **MID/RT** — 托管在Adobe云上的消息执行服务器（MID用于批处理活动，RT用于实时单一消息）
+* **MID/RT** — 托管在Adobe Cloud上的消息执行服务器（MID用于批处理活动，RT用于实时单一消息）
 * **年度升级计划** — 此计划提供了改进的安全性、改进的支持、增强的维护和稳定性。 它还可以使未来的升级更轻松，并允许访问Campaign中的新功能。  [了解详情](../../rn/using/rn-overview.md#yearly-upgrade)。
 * **AWS** - Amazon Web Services (Amazon Public Cloud)
 * **SFTP** — 安全文件传输协议。 [了解详情](../../platform/using/sftp-server-usage.md)。
 
 
 >[!NOTE]
->将Campaign Classicv7迁移到公共云仅会影响使用&#x200B;**AdobeManaged Services**&#x200B;的客户。
+>Campaign Classic v7迁移到公共云仅会影响使用&#x200B;**Adobe Managed Services**&#x200B;的客户。
 
 
 ## 好处
@@ -76,7 +76,7 @@ ht-degree: 2%
 
 ## 关于迁移
 
-为了开始这一工作，需要此迁移的帐户将收到Adobe的电子邮件通信，其中提供了时间表和文档访问权限。 这将通知您计划迁移您的帐户。
+要开始此工作，需要此迁移的帐户将收到来自Adobe的电子邮件通信，其中提供了时间表和文档访问权限。 这将通知您计划迁移您的帐户。
 
 可以通过[打开新的客户关怀支持票证](https://experienceleague.adobe.com/zh-hans?support-solution=Campaign#support)来启动迁移。 使用主题行“迁移到AWS”。
 
@@ -84,9 +84,9 @@ ht-degree: 2%
 
 向云的迁移是&#x200B;**执行Adobe Campaign实例的[年度升级计划](../../rn/using/rn-overview.md#yearly-upgrade)**&#x200B;的第一步。 如果您托管的数据中心不是公共云(AWS)，则必须进行此迁移。
 
-Managed Services云Adobe托管在Amazon Web Services (AWS)上，它是一个现代化、安全和优化的环境。 [进一步了解AWS](https://aws.amazon.com/application-hosting/benefits/)。
+Adobe Managed Services云托管在Amazon Web Services (AWS)上，它是一个现代化、安全和优化的环境。 [进一步了解AWS](https://aws.amazon.com/application-hosting/benefits/)。
 
-Adobe计划停用旧式数据中心，在该数据中心运行的Adobe Campaign实例必须转移到新的参考数据中心AWS。
+Adobe计划停用旧式数据中心，因此必须在其中运行的Adobe Campaign实例转移到新的参考数据中心AWS。
 
 这是向前发展的关键途径，因为当前位置可能会出现&#x200B;**安全和性能漏洞**。
 
@@ -124,7 +124,7 @@ Adobe处理大多数操作。 我们需要你确认并签发。
 
 **电子邮件发送IP**
 
-迁移完成后，Campaign实例将具有不同的发送IP。 为确保平稳过渡，Adobe将通过逐步将流量从旧的IP切换到新的IP，实现新发送IP的升级。
+迁移完成后，Campaign实例将具有不同的发送IP。 为确保顺利过渡，Adobe将逐步将流量从旧的IP切换至新的IP，以实施新发送IP的升级。
 
 **数据集成IP**
 
@@ -135,7 +135,7 @@ Adobe处理大多数操作。 我们需要你确认并签发。
 * HTTP，可能是双向的
 * SMPP（与短信提供商的连接）、Campaign作为客户端、更改源IP
 
-通常，这意味着客户端应检查其防火墙上可能设置的IP限制，并相应地调整它们。*
+通常，这意味着客户端应检查其防火墙上可能设置的IP限制，并相应地对其进行调整。*
 
 **Campaign服务器**
 
@@ -202,11 +202,11 @@ Adobe将在新数据中心上配置相同数量的IP。
 
 **DNS委派**
 
-通常，用于从Campaign发送电子邮件（错误地址中@签名右侧的一部分）的域已委派给Adobe。 可以针对AWS DNS服务器更改并实施委派。
+通常，用于从Campaign发送电子邮件的域（错误地址中@登录右侧的一部分）已委派给Adobe。 可以针对AWS DNS服务器更改并实施委派。
 
 
 ## 支持以及其他有用链接{#support}
 
-* [迁移到AdobeManaged Services (Public Cloud)常见问题解答](dc-migration-faq.md)
+* [迁移到Adobe Managed Services (Public Cloud)常见问题解答](dc-migration-faq.md)
 * [Campaign年度升级](../../rn/using/rn-overview.md)
 * [内部版本升级常见问题解答](../../platform/using/faq-build-upgrade.md)

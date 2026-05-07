@@ -10,7 +10,7 @@ level: Intermediate, Experienced
 exl-id: 2d214c36-8429-4b2b-b1f5-fe2730581bba
 source-git-commit: 2bfcec5eaa1145cfb88adfa9c8b2f72ee3cd9469
 workflow-type: tm+mt
-source-wordcount: '832'
+source-wordcount: '854'
 ht-degree: 1%
 
 ---
@@ -126,9 +126,9 @@ ht-degree: 1%
 | dumpStatePeriodSec | ```var/INSTANCE/pipelined.json.``` <br>中内部状态进程的两个转储之间的周期也可以在此按需访问： ```http://INSTANCE:7781/pipelined/status``` |
 | forcedPipelineEndpoint | 禁用检测PipelineServicesEndpoint以强制执行该操作 |
 | monitorServerPort | 管道化进程将侦听此端口，在此提供内部状态进程： ```http://INSTANCE:PORT/pipelined/status```。 <br>默认值为7781 |
-| pointerFlushMessageCount | 当处理此数量的消息时，偏移将保存在数据库中。 <br>默认值为1000 |
+| pointerFlushMessageCount | 当处理此数量的消息时，偏移将保存在数据库中。<br> 默认值为1000 |
 | pointerFlushperiodSec | 在此时段之后，偏移将保存在数据库中。 <br>默认值为5（秒） |
-| processingJSThreads | 使用自定义JS连接器处理消息的专用线程数。 <br>默认为4 |
+| processingJSThreads | 使用自定义JS连接器处理消息的专用线程数。<br> 默认为4 |
 | processingThreads | 使用内置代码处理消息的专用线程数。 <br>默认值为4 |
 | retryPeriodSec | 发生处理错误时重试之间的延迟。 <br>默认值为30（秒） |
 | retryValidSec | 如果在此时段后未成功处理消息（重试次数过多），则放弃该消息。 <br>默认值为300（秒） |

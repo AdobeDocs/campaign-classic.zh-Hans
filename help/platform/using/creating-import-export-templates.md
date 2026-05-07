@@ -23,7 +23,7 @@ ht-degree: 7%
 
 默认情况下，此目录中存在三个导入模板和一个导出模板。 不得更改它们。
 
-* 列入阻止列表本机模板&#x200B;**[!UICONTROL Import denylist]**&#x200B;已配置为导入添加到的电子邮件地址列表。
+* 本机模板&#x200B;**[!UICONTROL Import denylist]**&#x200B;已配置为导入添加到的电子邮件地址列表。
 
 * **[!UICONTROL New text import]**&#x200B;和&#x200B;**[!UICONTROL New text export]**&#x200B;模板允许您从头开始配置导入或导出。
 

@@ -9,8 +9,8 @@ topic-tags: starting-with-adobe-campaign
 exl-id: c7688c2a-f0a7-4c51-a4cf-bf96fe8bf9b6
 source-git-commit: 42cec0e9bede94a2995a5ad442822512bda14f2b
 workflow-type: tm+mt
-source-wordcount: '189'
-ht-degree: 92%
+source-wordcount: '198'
+ht-degree: 88%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 92%
 
 有关隐私管理的一般演示文稿，请参阅[此部分](privacy-management.md)。
 
-此信息适用于 GDPR、CCPA、PDPA 和 LGPD。有关这些法规的更多信息，请参阅[此部分](privacy-management.md#privacy-management-regulations)。
+此信息适用于 GDPR、CCPA、PDPA 和 LGPD。 有关这些法规的更多信息，请参阅[此部分](privacy-management.md#privacy-management-regulations)。
 
 >[!NOTE]
 >
@@ -28,16 +28,16 @@ ht-degree: 92%
 
 <!--Installation procedures described in this document are applicable starting Campaign Classic 18.4 (build 8931+). If you are running on a previous version, refer to this [technote](https://helpx.adobe.com/campaign/kb/how-to-install-gdpr-package-on-legacy-versions.html).-->
 
-为了帮助您促进隐私就绪，Adobe Campaign 允许您处理访问和删除请求。**访问权**&#x200B;和&#x200B;**被遗忘权**（删除请求）在[此部分](privacy-management.md#right-access-forgotten)中进行了描述。
+为了帮助您促进隐私就绪，Adobe Campaign 允许您处理访问和删除请求。 **访问权**&#x200B;和&#x200B;**被遗忘权**（删除请求）在[此部分](privacy-management.md#right-access-forgotten)中进行了描述。
 
 Adobe Campaign 为数据控制者提供两种执行隐私访问和删除请求的方法：
 
-* 通过 **Adobe Campaign 界面**：数据控制者在 Adobe Campaign 中为每项隐私请求创建新的隐私请求。请参阅[此小节](privacy-requests-ui.md)。
-* 通过 **API**：Adobe Campaign 提供一个 API，允许使用 SOAP 自动处理隐私请求。请参阅[此小节](privacy-requests-api.md)。
+* 通过 **Adobe Campaign 界面**：数据控制者在 Adobe Campaign 中为每项隐私请求创建新的隐私请求。 请参阅[此小节](privacy-requests-ui.md)。
+* 通过 **API**：Adobe Campaign 提供一个 API，允许使用 SOAP 自动处理隐私请求。 请参阅[此小节](privacy-requests-api.md)。
 
 >[!NOTE]
 >
->* 有关个人数据以及管理数据的不同实体（数据控制者、数据处理方和数据主体）的更多信息，请参阅[个人数据和角色](privacy-and-recommendations.md#personal-data)。
+>* 有关个人数据以及管理数据的不同实体（数据控制者、数据处理者和数据主体）的更多信息，请参阅[个人数据和角色](privacy-and-recommendations.md#personal-data)。
 >* 要了解有关隐私请求的更多信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/privacy/privacy){target=_blank}。
 
 <!--

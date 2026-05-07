@@ -8,8 +8,8 @@ level: Beginner
 exl-id: 711b84cd-bac8-4f1a-9999-0124fbfc3a01
 source-git-commit: 354fc8fd5d030ed88e2b279ba1dd3eaf2f314d53
 workflow-type: tm+mt
-source-wordcount: '89'
-ht-degree: 25%
+source-wordcount: '100'
+ht-degree: 23%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 25%
 
 列表是一组静态用户档案，用于在投放操作期间提供定位目标，或在导入操作或工作流执行期间进行更新。 例如，通过查询从数据库中提取出的一组数据即可形成一个列表。
 
-通过&#x200B;**[!UICONTROL Lists]**&#x200B;选项卡中的&#x200B;**[!UICONTROL Profiles and targets]**&#x200B;链接创建和管理列表。
+通过&#x200B;**[!UICONTROL Profiles and targets]**&#x200B;选项卡中的&#x200B;**[!UICONTROL Lists]**&#x200B;链接创建和管理列表。
 
 ![](assets/s_ncs_user_interface_group_link.png)
 

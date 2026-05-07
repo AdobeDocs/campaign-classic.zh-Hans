@@ -10,15 +10,15 @@ topic-tags: audience-sharing
 exl-id: a3e26cff-9609-4d91-8976-9213a30c3fd2
 source-git-commit: b11185da8236d6100d98eabcc9dc1cf2cffa70af
 workflow-type: tm+mt
-source-wordcount: '551'
-ht-degree: 0%
+source-wordcount: '617'
+ht-degree: 5%
 
 ---
 
 # 在Adobe Campaign中配置共享受众集成{#configuring-shared-audiences-integration-in-adobe-campaign}
 
 
-提交此请求后，Adobe将继续为您预配集成，并联系您以提供完成配置所需的详细信息和信息：
+在提交此请求后，Adobe将继续为您配置集成，并联系您以提供完成配置所需的详细信息和信息：
 
 1. [步骤1：在Adobe Campaign中配置或检查外部帐户](#step-1--configure-or-check-the-external-accounts-in-adobe-campaign)
 1. [步骤2：配置数据Source](#step-2--configure-the-data-source)
@@ -38,7 +38,7 @@ ht-degree: 0%
 首先，我们需要在Adobe Campaign中配置或检查外部帐户，如下所示：
 
 1. 单击&#x200B;**[!UICONTROL Explorer]**&#x200B;图标。
-1. 转到&#x200B;**[!UICONTROL Administration > Platform > External accounts]**。 上述SFTP帐户应已由Adobe配置，且必要信息应已传达给您。
+1. 转到&#x200B;**[!UICONTROL Administration > Platform > External accounts]**。 上述SFTP帐户应已由Adobe配置，并且已向您传达了必要的信息。
 
    * **[!UICONTROL importSharedAudience]**：专用于导入受众的帐户。
    * **[!UICONTROL exportSharedAudience]**：专用于导出受众的帐户。
@@ -99,6 +99,6 @@ ht-degree: 0%
 
 如果从未在您的Web属性或网站上配置过您的访客ID服务，请参阅以下[文档](https://experienceleague.adobe.com/docs/id-service/using/implementation/setup-aam-analytics.html?lang=zh-Hans)以了解如何配置您的服务或以下[视频](https://helpx.adobe.com/cn/marketing-cloud/how-to/email-marketing.html#step-two)。
 
-使用带有集成代码的Experience CloudID服务中的`setCustomerID`函数将客户标识符与声明的ID同步： `AdobeCampaignID`。 `AdobeCampaignID`应与[步骤2：配置数据源](#step-2--configure-the-data-sources)中配置的收件人数据Source中设置的协调键值匹配。
+使用集成代码`AdobeCampaignID`在Experience Cloud ID服务中使用`setCustomerID`函数将客户标识符与声明的ID同步。 `AdobeCampaignID`应与[步骤2：配置数据源](#step-2--configure-the-data-sources)中配置的收件人数据Source中设置的协调键值匹配。
 
 您的配置和配置已完成，集成现在可用于导入和导出受众或区段。

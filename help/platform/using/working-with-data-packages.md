@@ -10,8 +10,8 @@ topic-tags: administration-basics
 exl-id: d3369b63-a29b-43b7-b2ad-d36d4f46c82e
 source-git-commit: 647709dd4b0c70c342be03d3012bc02f10ff2c00
 workflow-type: tm+mt
-source-wordcount: '127'
-ht-degree: 39%
+source-wordcount: '135'
+ht-degree: 37%
 
 ---
 
@@ -21,9 +21,9 @@ ht-degree: 39%
 
 ## 关于数据包 {#about-data-packages}
 
-使用 Adobe Campaign，您可以通过数据包系统导出或导入平台配置和数据。包可以包含不同类型的配置、元素，无论是否过滤。
+使用 Adobe Campaign，您可以通过数据包系统导出或导入平台配置和数据。 包可以包含不同类型的配置、元素，无论是否过滤。
 
-数据包支持以 XML 格式文件的形式显示 Adobe Campaign 数据库的实体。数据包中包含的每个实体由其全部数据表示。
+数据包支持以 XML 格式文件的形式显示 Adobe Campaign 数据库的实体。 数据包中包含的每个实体由其全部数据表示。
 
 **数据包**&#x200B;的原理是导出数据配置并将其集成到另一个Adobe Campaign系统中。 在此[部分](#data-package-best-practices)中了解如何维护一致的数据包集。
 

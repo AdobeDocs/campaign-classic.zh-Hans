@@ -7,8 +7,8 @@ feature: Reporting, Monitoring
 exl-id: d133efec-33e1-4711-a90f-e40385059386
 source-git-commit: 5e062f9dbdf6c148e442ac10dbb12cf72ba0179b
 workflow-type: tm+mt
-source-wordcount: '831'
-ht-degree: 1%
+source-wordcount: '845'
+ht-degree: 4%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 1%
 
 ## 保存分析报告 {#saving-an-analysis-report}
 
-如果您具有相应的权限，则可以保存从模板创建的分析报告，或将其导出为Excel、PDF或OpenOffice格式。
+如果您具有相应的权限，则可以保存从模板创建的分析报表，或将其导出为Excel、PDF或OpenOffice格式。
 
 要保存报告，请单击&#x200B;**[!UICONTROL Save]**&#x200B;并为报告设置标签。
 

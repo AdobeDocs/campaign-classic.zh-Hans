@@ -7,7 +7,7 @@ exl-id: 7f9eda15-76e8-40a1-8302-004cea085778
 hide: true
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '1529'
+source-wordcount: '1537'
 ht-degree: 1%
 
 ---
@@ -209,7 +209,7 @@ Adobe Campaign与CRM之间的数据同步是通过专用工作流活动执行的
 
 ### 错误处理 {#error-processing}
 
-在数据导入或导出的框架中，您可以将特定进程应用于错误和拒绝。 为此，请在&#x200B;**[!UICONTROL Process rejects]**&#x200B;选项卡中选择&#x200B;**[!UICONTROL Process errors]**&#x200B;和&#x200B;**[!UICONTROL Behavior]**&#x200B;选项。
+在数据导入或导出的框架中，您可以将特定进程应用于错误和拒绝。 为此，请在&#x200B;**[!UICONTROL Behavior]**&#x200B;选项卡中选择&#x200B;**[!UICONTROL Process rejects]**&#x200B;和&#x200B;**[!UICONTROL Process errors]**&#x200B;选项。
 
 ![](assets/crm_export_options.png)
 

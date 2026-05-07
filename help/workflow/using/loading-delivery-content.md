@@ -43,7 +43,7 @@ ht-degree: 2%
 
    ![](assets/delivery_loadcontent_activityexample.png)
 
-1. 在&#x200B;**[!UICONTROL Script]**&#x200B;活动的&#x200B;**[!UICONTROL Delivery]**&#x200B;选项卡中，添加以下命令以加载投放中导入文件的内容：
+1. 在&#x200B;**[!UICONTROL Delivery]**&#x200B;活动的&#x200B;**[!UICONTROL Script]**&#x200B;选项卡中，添加以下命令以加载投放中导入文件的内容：
 
    ```
    delivery.content.html.source=loadFile(vars.filename)

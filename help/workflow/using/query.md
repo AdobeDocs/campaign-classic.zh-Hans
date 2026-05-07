@@ -7,7 +7,7 @@ hide: true
 exl-id: 20d03627-cd56-46da-bc02-73b48a02a350
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '1630'
+source-wordcount: '1647'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ ht-degree: 0%
 
 **[!UICONTROL Edit query...]**&#x200B;链接允许您按以下方式定义群体的定位类型、限制和选择标准：
 
-1. 选择定位和筛选维度。 默认情况下，目标是从收件人中选择的。限制过滤器的列表与用于投放定位的筛选器相同。
+1. 选择定位和筛选维度。 默认情况下，目标是从收件人中选择的。 限制过滤器的列表与用于投放定位的筛选器相同。
 
    定向维度与我们将处理的元素类型（例如，操作定向的群体）一致。
 
@@ -94,7 +94,7 @@ ht-degree: 0%
    * 根据从目标群体或聚合（上个月内的待定购买次数、收据平均金额等）中获得的数据计算的字段。 例如，转到[选择数据](targeting-data.md#selecting-data)。
    * 使用输出列列表右侧的&#x200B;**[!UICONTROL Add]**&#x200B;按钮创建的新字段。
 
-     您还可以添加信息集合，例如合同列表、最近5次投放等。 收藏集与字段一致，这些字段可以为同一用户档案具有多个值（1-N关系）。 有关详细信息，请参阅[编辑其他数据](targeting-data.md#editing-additional-data)。
+     您还可以添加信息集合，例如合同列表、最近5次投放等。收藏集与字段一致，这些字段可以为同一用户档案具有多个值（1-N关系）。 有关详细信息，请参阅[编辑其他数据](targeting-data.md#editing-additional-data)。
 
 要添加链接到目标群体的信息集合，请执行以下操作：
 
@@ -105,7 +105,7 @@ ht-degree: 0%
 
 1. 如有必要，请在&#x200B;**[!UICONTROL Data collected]**&#x200B;字段中选择一个值，以指定要保留的集合的元素数。 默认情况下，将恢复集合中的所有行，然后根据在以下步骤中指定的条件进行筛选。
 
-   * 如果集合的单个元素与此集合的过滤条件一致，请在&#x200B;**[!UICONTROL Single row]**&#x200B;字段中选择&#x200B;**[!UICONTROL Data collected]**。
+   * 如果集合的单个元素与此集合的过滤条件一致，请在&#x200B;**[!UICONTROL Data collected]**&#x200B;字段中选择&#x200B;**[!UICONTROL Single row]**。
 
      >[!IMPORTANT]
      >
@@ -114,7 +114,7 @@ ht-degree: 0%
      >如果不满足初始条件，则结果可能有缺陷（缺少线或线重叠）。
 
    * 如果选择恢复多行(**[!UICONTROL Limit the line count]**)，则可以指定要收集的行数。
-   * 如果收集的列包含聚合，例如声明的失败次数、网站的平均支出等等 您可以使用&#x200B;**[!UICONTROL Aggregates]**&#x200B;值。
+   * 如果收集的列包含聚合，例如声明的失败次数、网站上的平均支出等等，则可以使用&#x200B;**[!UICONTROL Aggregates]**&#x200B;值。
 
    ![](assets/query_add_collection_param.png)
 

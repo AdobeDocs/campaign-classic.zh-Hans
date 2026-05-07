@@ -10,7 +10,7 @@ topic-tags: response-manager
 exl-id: 1a115ca9-2532-4bd3-be77-814e43250c51
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '759'
+source-wordcount: '760'
 ht-degree: 0%
 
 ---
@@ -49,7 +49,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->如果要保留描述假设中预期行为的接收标识符，则可以扩展nms：remaMatchRcp表模板以向其添加标识符（在这种情况下，不会将ROI计算链接到这些字段）。
+>如果要保留描述假设中预期行为的接收标识符，则可以扩展nms:remaMatchRcp表模板以向其添加标识符（在这种情况下，不会将ROI计算链接到这些字段）。
 
 我们强烈建议添加事件日期。
 
@@ -61,7 +61,7 @@ ht-degree: 0%
 
 在本例中，我们将使用Adobe Campaign内置的收件人表&#x200B;**[!UICONTROL nms:recipient]**&#x200B;在响应管理模块中集成购买表。
 
-**[!UICONTROL nms:remaMatchRcp]**&#x200B;收件人上的响应日志表已扩展，以添加指向购买表架构的链接。 在以下示例中，购买表名为&#x200B;**demo：purchase**。
+**[!UICONTROL nms:remaMatchRcp]**&#x200B;收件人上的响应日志表已扩展，以添加指向购买表架构的链接。 在以下示例中，购买表名为&#x200B;**demo:purchase**。
 
 1. 通过Adobe Campaign资源管理器，选择&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Campaign management]** > **[!UICONTROL Target mappings]**。
 1. 右键单击&#x200B;**收件人**，然后选择&#x200B;**[!UICONTROL Actions]**&#x200B;和&#x200B;**[!UICONTROL Modify the options of the targeting dimensions]**。
@@ -74,7 +74,7 @@ ht-degree: 0%
 
 1. 在&#x200B;**[!UICONTROL Response management]**&#x200B;类别中，确保选中&#x200B;**[!UICONTROL Generate a storage schema for reactions]**&#x200B;框。
 
-   然后单击&#x200B;**[!UICONTROL Define additional fields...]**&#x200B;选择相关事务表并将所需字段添加到nms：remaMatchRcp架构的扩展中。
+   然后单击&#x200B;**[!UICONTROL Define additional fields...]**&#x200B;选择相关的事务表并将所需字段添加到nms:remaMatchRcp架构的扩展中。
 
    ![](assets/delivery_mapping3.png)
 
@@ -110,7 +110,7 @@ name="remaMatchRcp" namespace="cus">
 
   由于个人表与Adobe Campaign收件人表不同，因此需要基于&#x200B;**[!UICONTROL nms:remaMatch]**&#x200B;架构创建响应日志的新架构。 然后填写指向投放日志和购买表的链接。
 
-  在以下示例中，我们将使用&#x200B;**demo：broadLogPers**&#x200B;架构和&#x200B;**demo：purchase**&#x200B;事务表：
+  在以下示例中，我们将使用&#x200B;**demo:broadLogPers**&#x200B;架构和&#x200B;**demo:purchase**&#x200B;事务表：
 
   ```
   <srcSchema desc="Linking of a recipient transaction to a hypothesis"    

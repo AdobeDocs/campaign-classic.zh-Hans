@@ -7,7 +7,7 @@ role: Developer
 exl-id: e05dcd81-bbca-4767-8da3-ea064f7f6c8e
 source-git-commit: 9f5205ced6b8d81639d4d0cb6a76905a753cddac
 workflow-type: tm+mt
-source-wordcount: '924'
+source-wordcount: '935'
 ht-degree: 2%
 
 ---
@@ -176,7 +176,7 @@ ht-degree: 2%
 
 ## 示例：在链接上创建键 {#example-5}
 
-在此示例中，我们在包含:companyxlink **属性的链接（“company”到“cus**”架构）上创建了一个键，并创建了(“email”)表的字段：
+在此示例中，我们在包含&#x200B;**xlink**&#x200B;属性的链接（“company”到“cus:company”架构）上创建了一个键，并创建了(“email”)表的字段：
 
 ```sql
 <srcSchema name="recipient" namespace="cus">

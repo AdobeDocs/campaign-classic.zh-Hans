@@ -1,13 +1,13 @@
 ---
 product: campaign
-title: “用例：显示在线调查的答案报告”
-description: “用例：显示在线调查的答案报告”
+title: 用例：显示在线调查的答案报告
+description: 用例：显示在线调查的答案报告
 badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v8"
 feature: Surveys
 exl-id: 6be12518-86d1-4a13-bbc2-b2ec5141b505
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '487'
+source-wordcount: '489'
 ht-degree: 1%
 
 ---

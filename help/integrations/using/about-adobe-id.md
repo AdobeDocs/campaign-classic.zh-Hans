@@ -9,14 +9,14 @@ topic-tags: connecting-via-an-adobe-id
 exl-id: 8dad8fa9-674c-433c-af30-8c6d0aadf525
 source-git-commit: ffab91fc9fa7e60973fdda930239f5836671a341
 workflow-type: tm+mt
-source-wordcount: '180'
-ht-degree: 15%
+source-wordcount: '194'
+ht-degree: 16%
 
 ---
 
 # 关于Adobe ID {#about-adobe-id}
 
-AdobeIdentity Management System (IMS)可帮助管理员创建和管理用户对应用程序和服务的访问。 有关不同类型的AdobeID的详细信息，请参阅[此页面](https://helpx.adobe.com/cn/enterprise/using/identity.html)。
+Adobe Identity Management System (IMS)可帮助管理员创建和管理用户对应用程序和服务的访问。 有关不同类型的Adobe ID的详细信息，请参阅[此页面](https://helpx.adobe.com/cn/enterprise/using/identity.html)。
 
 Campaign用户可以使用其Adobe ID连接到Adobe Campaign控制台，而不是[本机用户/密码身份验证](../../platform/using/access-management-operators.md)。 此实施具有以下优势：
 

@@ -8,8 +8,8 @@ hide: true
 exl-id: 13ccc5d6-4355-42ba-80dc-30a45d3b69a4
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '650'
-ht-degree: 0%
+source-wordcount: '720'
+ht-degree: 1%
 
 ---
 
@@ -40,7 +40,7 @@ ht-degree: 0%
 
    ![](assets/nmac_android_3.png)
 
-1. 在&#x200B;**[!UICONTROL Deliver on Android (android)]**&#x200B;下拉列表中选择&#x200B;**[!UICONTROL Delivery template]**。 向投放添加&#x200B;**[!UICONTROL Label]**。
+1. 在&#x200B;**[!UICONTROL Delivery template]**&#x200B;下拉列表中选择&#x200B;**[!UICONTROL Deliver on Android (android)]**。 向投放添加&#x200B;**[!UICONTROL Label]**。
 
 1. 单击&#x200B;**[!UICONTROL To]**&#x200B;以定义要定位的群体。 默认情况下，应用&#x200B;**[!UICONTROL Subscriber application]**&#x200B;目标映射。 单击&#x200B;**[!UICONTROL Add]**&#x200B;以选择您的服务。
 
@@ -77,7 +77,7 @@ ht-degree: 0%
 
    ![](assets/nmac_android_3.png)
 
-1. 在&#x200B;**[!UICONTROL Deliver on Android (android)]**&#x200B;下拉列表中选择&#x200B;**[!UICONTROL Delivery template]**。 向投放添加&#x200B;**[!UICONTROL Label]**。
+1. 在&#x200B;**[!UICONTROL Delivery template]**&#x200B;下拉列表中选择&#x200B;**[!UICONTROL Deliver on Android (android)]**。 向投放添加&#x200B;**[!UICONTROL Label]**。
 
 1. 单击&#x200B;**[!UICONTROL To]**&#x200B;以定义要定位的群体。 默认情况下，应用&#x200B;**[!UICONTROL Subscriber application]**&#x200B;目标映射。 单击&#x200B;**[!UICONTROL Add]**&#x200B;以选择您的服务。
 

@@ -8,7 +8,7 @@ role: User
 exl-id: eb72f19a-7669-4596-bf9b-8c0ce22b67bf
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '167'
+source-wordcount: '168'
 ht-degree: 4%
 
 ---
@@ -21,4 +21,4 @@ ht-degree: 4%
 
 >[!NOTE]
 >
->此功能作为Adobe Campaign的标准功能提供。 通过可选的社交营销应用程序，您可以通过Facebook和X(以前称为Twitter)联系客户和潜在客户。
+>此功能作为Adobe Campaign的标准功能提供。 可选的社交营销应用程序允许您通过Facebook和X（以前称为Twitter）联系客户和潜在客户。

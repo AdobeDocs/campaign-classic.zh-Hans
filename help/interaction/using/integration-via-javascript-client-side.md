@@ -32,7 +32,7 @@ Adobe建议使用JavaScript集成方法。
 
 “**env**”参数接收专用于匿名交互的实时环境的内部名称。
 
-要呈现选件，我们需要在Adobe Campaign中创建环境和选件空间，然后配置“HTML”页面。
+要呈现选件，我们需要在Adobe Campaign中创建环境和选件空间，然后配置HTML页面。
 
 以下用例详细说明了通过JavaScript集成选件的可能选项。
 
@@ -48,9 +48,9 @@ Adobe建议使用JavaScript集成方法。
 
    创建优惠及其链接到优惠空间的表示形式。
 
-1. **HTML页的内容**
+1. **HTML页面的内容**
 
-   HTML页必须包含
+   HTML页面必须包含
 
    元素的@id属性，其值为创建的选件空间的内部名称（“i_internal名称空间”）。 选件将插入此
 元素。
@@ -75,9 +75,9 @@ Adobe建议使用JavaScript集成方法。
 
    通过此行为，您可以在同一页面上使用多个选件空间，以便通过调用引擎来管理。
 
-1. HTML页中的&#x200B;**个结果**
+1. HTML页面中的&#x200B;**个结果**
 
-   选件呈现的内容由交互引擎返回到“HTML”页面：
+   优惠呈现的内容由交互引擎返回到HTML页面：
 
    ```
    <div id="banner_header">
@@ -129,7 +129,7 @@ Adobe建议使用JavaScript集成方法。
 
 ### 使用HTML渲染函数 {#using-an-html-rendering-function}
 
-要自动生成HTML选件表示，可以使用渲染功能。
+要自动生成HTML选件呈现，您可以使用渲染函数。
 
 1. 转到优惠空间，然后单击&#x200B;**[!UICONTROL Edit functions]**&#x200B;链接。
 1. 选择 **[!UICONTROL Overload the HTML rendering function]**。
@@ -143,7 +143,7 @@ Adobe建议使用JavaScript集成方法。
 
 ### 呈现优惠 {#presenting-an-offer}
 
-通过交互，您可以将XML节点返回到调用优惠引擎的HTML页。 该XML节点可以通过客户端开发的函数进行处理。
+通过交互，您可以将XML节点返回到调用优惠引擎的HTML页面。 该XML节点可以通过客户端开发的函数进行处理。
 
 对交互引擎的调用如下所示：
 
@@ -174,7 +174,7 @@ Adobe建议使用JavaScript集成方法。
 </propositions>
 ```
 
-以下用例详细说明了要在Adobe Campaign中执行以启用XML模式的配置，然后在“HTML”页面中显示调用引擎的结果。
+以下用例详细说明了要在Adobe Campaign中执行以启用XML模式的配置，然后在HTML页面中显示调用引擎的结果。
 
 1. **创建环境和优惠空间**
 
@@ -186,7 +186,7 @@ Adobe建议使用JavaScript集成方法。
 
    此架构将定义以下字段：标题编号2和价格。
 
-   示例中架构的名称为&#x200B;**cus：offer**
+   示例中架构的名称为&#x200B;**cus:offer**
 
    ```
    <srcSchema _cs="Marketing offers (cus)" created="2 AAAA-MM-DD HH:MM:SS.762Z" createdBy-id="0"
@@ -219,7 +219,7 @@ Adobe建议使用JavaScript集成方法。
 
    >[!NOTE]
    >
-   >您可以扩展选件架构，以批处理模式和单一模式以及任何格式(文本、HTML和XML)添加新字段。
+   >您可以扩展选件架构，以批处理模式和单一模式以及任何格式（文本、HTML和XML）添加新字段。
 
 1. **扩展优惠公式以编辑新字段并修改现有字段**
 
@@ -271,7 +271,7 @@ Adobe建议使用JavaScript集成方法。
 
    已添加&#x200B;**[!UICONTROL Title 2]**&#x200B;和&#x200B;**[!UICONTROL Price]**&#x200B;字段，并且不再显示&#x200B;**[!UICONTROL Destination URL]**&#x200B;字段。
 
-1. **创建优惠**
+1. **创建产品建议**
 
    有关创建选件的详细信息，请参阅[创建选件](../../interaction/using/creating-an-offer.md)。
 
@@ -312,7 +312,7 @@ Adobe建议使用JavaScript集成方法。
 
 ### 使用渲染函数 {#using-a-rendering-function-}
 
-可以使用XML渲染函数来创建优惠演示。 此函数将修改在调用引擎期间返回到HTML页的XML节点。
+可以使用XML渲染函数来创建优惠演示。 此函数将修改在调用引擎期间返回到HTML页面的XML节点。
 
 1. 转到优惠空间，然后单击&#x200B;**[!UICONTROL Edit functions]**&#x200B;链接。
 1. 选择 **[!UICONTROL Overload the XML rendering function]**。

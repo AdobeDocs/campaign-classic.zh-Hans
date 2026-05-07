@@ -8,8 +8,8 @@ level: Beginner
 exl-id: 07470a91-d8d2-4c41-9555-05522c8068f0
 source-git-commit: 02ecc0e6bb3bd361f512baeefc9e0f2271063387
 workflow-type: tm+mt
-source-wordcount: '606'
-ht-degree: 3%
+source-wordcount: '652'
+ht-degree: 4%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 3%
 
   >[!IMPORTANT]
   >
-  >**迁移到IMS后：**&#x200B;迁移到Adobe Identity Management System (IMS)后，任何名称中包含“管理员”字样的产品配置文件或命名权限（如“管理员”、“管理员”、“管理员”等）都将自动授予对Campaign控制面板的访问权限。 我们建议避免在命名权限或角色名称中使用“admin”，除非您希望这些用户具有控制面板访问权限。 了解有关[IMS迁移](../../technotes/using/migrate-users-to-ims.md)和[管理控制面板访问权限](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=zh-Hans){target="_blank"}的更多信息。
+  >**迁移到IMS后：**&#x200B;迁移到Adobe Identity Management System (IMS)后，任何产品配置文件或命名权限在其名称中包含“管理员”一词（如“管理员”、“管理员”、“管理员”等） 将自动授予对Campaign控制面板的访问权限。 我们建议避免在命名权限或角色名称中使用“admin”，除非您希望这些用户具有控制面板访问权限。 了解有关[IMS迁移](../../technotes/using/migrate-users-to-ims.md)和[管理控制面板访问权限](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=zh-Hans){target="_blank"}的更多信息。
 
 * **[!UICONTROL APPROVAL ADMINISTRATION]**：您可以在工作流和投放中设置多个批准步骤，以确保当前状态已由分配的操作员或组批准。 具有&#x200B;**[!UICONTROL APPROVAL ADMINISTRATION]**&#x200B;权限的用户可以设置批准步骤，还可以分配应批准这些步骤的操作员或操作员组。
 

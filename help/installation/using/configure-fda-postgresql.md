@@ -6,8 +6,8 @@ feature: Installation, Instance Settings
 exl-id: 2c678f45-2555-4647-9885-bd002db7df37
 source-git-commit: b666535f7f82d1b8c2da4fbce1bc25cf8d39d187
 workflow-type: tm+mt
-source-wordcount: '336'
-ht-degree: 2%
+source-wordcount: '379'
+ht-degree: 1%
 
 ---
 
@@ -75,7 +75,7 @@ ht-degree: 2%
 
 | 选项 | 说明 |
 |:-:|:-:|
-| PGSQL_CONNECT_超时 | 最长等待连接时间（以秒为单位）。 <br>有关详细信息，请参阅[PostgreSQL文档](https://www.postgresql.org/docs/12/libpq-connect.html#LIBPQ-CONNECT-CONNECT-TIMEOUT)。 |
+| PGSQL_CONNECT_TIMEOUT | 最长等待连接时间（以秒为单位）。 <br>有关详细信息，请参阅[PostgreSQL文档](https://www.postgresql.org/docs/12/libpq-connect.html#LIBPQ-CONNECT-CONNECT-TIMEOUT)。 |
 | PGSQL_KEEPALIVES_IDLE | TCP应该向服务器发送keepalive消息之后处于非活动状态的秒数。 <br>有关详细信息，请参阅[PostgreSQL文档](https://www.postgresql.org/docs/12/libpq-connect.html#LIBPQ-KEEPALIVES-IDLE)。 |
 | PGSQL_KEEPALIVES_INTVL | 服务器未确认的TCP keepalive消息应重新传输的秒数。  <br>有关详细信息，请参阅[PostgreSQL文档](https://www.postgresql.org/docs/12/libpq-connect.html#LIBPQ-KEEPALIVES-INTERVAL)。 |
 | PGSQL_KEEPALIVES_CNT | 在客户端与服务器的连接被视为失效之前可以丢失的TCP keepalive数。 <br>有关详细信息，请参阅[PostgreSQL文档](https://www.postgresql.org/docs/12/libpq-connect.html#LIBPQ-KEEPALIVES-COUNT)。 |

@@ -9,8 +9,8 @@ hide: true
 exl-id: 67eee1c5-a918-46b9-875d-7c3c71c00635
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '588'
-ht-degree: 3%
+source-wordcount: '600'
+ht-degree: 4%
 
 ---
 
@@ -96,7 +96,7 @@ ht-degree: 3%
 
 1. 单击&#x200B;**[!UICONTROL Next]**&#x200B;开始配置开发应用程序。
 
-1. 确保通过SDK在Adobe Campaign和应用程序代码中定义相同的&#x200B;**[!UICONTROL Integration key]**。 <!--For more on this, refer to [this page](integrating-campaign-sdk-into-the-mobile-application.md).-->此集成密钥（特定于每个应用程序）允许您将移动应用程序链接到Adobe Campaign平台。
+1. 确保通过SDK在Adobe Campaign和应用程序代码中定义了相同的&#x200B;**[!UICONTROL Integration key]**。<!--For more on this, refer to [this page](integrating-campaign-sdk-into-the-mobile-application.md).--> 此集成键特定于每个应用程序，允许您将移动应用程序链接到Adobe Campaign平台。
 
    >[!NOTE]
    >

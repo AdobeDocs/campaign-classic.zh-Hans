@@ -9,7 +9,7 @@ content-type: reference
 exl-id: e9756046-fc67-4afd-b7a9-c8d73614f02e
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '135'
+source-wordcount: '147'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ Adobe Campaign与Adobe Experience Manager之间的集成允许您直接在Adobe 
 
 在Adobe Campaign中编辑电子邮件或登陆页面时，您也可以直接从AEM Assets库插入资源。 [Assets](../../integrations/using/sharing-assets-with-adobe-experience-cloud.md)一章中详细介绍了该功能。
 
-这意味着您可以充分利用AEM的内容编辑功能和Adobe Campaign的交付能力。
+这意味着您可以充分利用AEM的内容编辑功能和Adobe Campaign的交付功能。
 
 **先决条件**
 

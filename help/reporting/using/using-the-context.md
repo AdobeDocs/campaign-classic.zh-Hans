@@ -7,7 +7,7 @@ feature: Reporting, Monitoring
 exl-id: a19e2843-d3f9-48c3-af72-cc1bc54f6360
 source-git-commit: 354fc8fd5d030ed88e2b279ba1dd3eaf2f314d53
 workflow-type: tm+mt
-source-wordcount: '506'
+source-wordcount: '507'
 ht-degree: 1%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 1%
 
 这使您能够通过报表的&#x200B;**[!UICONTROL Page]**&#x200B;活动直接选择要显示在报表中的数据。
 
-为此，请单击&#x200B;**[!UICONTROL Filter data...]**&#x200B;选项卡中的&#x200B;**[!UICONTROL Data]**&#x200B;链接：此链接允许您访问表达式编辑器以定义有关待分析数据的查询。
+为此，请单击&#x200B;**[!UICONTROL Data]**&#x200B;选项卡中的&#x200B;**[!UICONTROL Filter data...]**&#x200B;链接：此链接允许您访问表达式编辑器以定义有关待分析数据的查询。
 
 ![](assets/reporting_filter_data_from_page.png)
 
@@ -72,7 +72,7 @@ ht-degree: 1%
 ![](assets/s_ncs_advuser_report_datasource_3.png)
 
 * **[!UICONTROL New query]**&#x200B;选项允许您生成查询以收集数据。 有关详细信息，请参阅[定义数据的直接筛选器](#defining-a-direct-filter-on-data)。
-* 利用&#x200B;**[!UICONTROL Context data]**&#x200B;选项，您可以使用输入数据：报表的上下文与包含图表或表格的页面的集客过渡中包含的信息一致。 例如，此上下文可能包含通过放置在&#x200B;**[!UICONTROL Query]**&#x200B;活动之前的&#x200B;**[!UICONTROL Page]**&#x200B;活动收集的数据，您需要为其指定表和报告涉及的字段。
+* 利用&#x200B;**[!UICONTROL Context data]**&#x200B;选项，您可以使用输入数据：报表的上下文与包含图表或表格的页面的集客过渡中包含的信息一致。 例如，此上下文可能包含通过放置在&#x200B;**[!UICONTROL Page]**&#x200B;活动之前的&#x200B;**[!UICONTROL Query]**&#x200B;活动收集的数据，您需要为其指定表和报告涉及的字段。
 
 例如，在查询框中，为收件人生成以下查询：
 

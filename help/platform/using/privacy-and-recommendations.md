@@ -10,8 +10,8 @@ topic-tags: starting-with-adobe-campaign
 exl-id: d2451b62-bddf-4dee-8789-35aaae8348e1
 source-git-commit: 933f67d594d343dc15b6e8a9c89d2413cb0ea2ac
 workflow-type: tm+mt
-source-wordcount: '143'
-ht-degree: 80%
+source-wordcount: '151'
+ht-degree: 76%
 
 ---
 
@@ -20,11 +20,11 @@ ht-degree: 80%
 
 ## 一般建议 {#general-recommendations}
 
-Adobe Campaign 是一款用于收集和处理超大量数据（包括个人信息和敏感数据）的强大工具。为此需要谨慎管理隐私。
+Adobe Campaign 是一款用于收集和处理超大量数据（包括个人信息和敏感数据）的强大工具。 为此需要谨慎管理隐私。
 
 * 始终以负责任和道德的方式使用个人信息。
 
-* 避免发送未经请求的电子邮件、推送通知和短信（“垃圾邮件”）。为了实现客户终生价值并提高客户忠诚度，Adobe 坚信许可营销原则，并因此严格禁止使用 Adobe Campaign 发送未经请求的消息。
+* 避免发送未经请求的电子邮件、推送通知和短信（“垃圾邮件”）。 为了实现客户终生价值并提高客户忠诚度，Adobe 坚信许可营销原则，并因此严格禁止使用 Adobe Campaign 发送未经请求的消息。
 
 请查看[安全和隐私检查列表](../../installation/using/get-started-security-privacy.md)，了解有关安全和隐私方面需要检查的核心元素。
 

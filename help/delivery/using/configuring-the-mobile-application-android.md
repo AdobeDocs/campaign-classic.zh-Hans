@@ -9,8 +9,8 @@ hide: true
 exl-id: 32c35e61-d0a3-478f-b73b-396e2becf7f9
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '843'
-ht-degree: 9%
+source-wordcount: '930'
+ht-degree: 12%
 
 ---
 
@@ -29,7 +29,7 @@ ht-degree: 9%
 
 >[!IMPORTANT]
 >
->Android Firebase Cloud Messaging (FCM) 服务的一些重要更改将于 2024 年发布，并将影响您的 Adobe Campaign 实施。您可能需要更新 Android 推送消息的订阅服务配置，才能支持此更改。您已经可以检查并执行操作。 在此[Adobe Campaign v8技术说明](https://experienceleague.adobe.com/docs/campaign/technotes-ac/tn-new/push-technote.html?lang=zh-Hans){target="_blank"}中了解详情。
+>Android Firebase Cloud Messaging (FCM) 服务的一些重要更改将于 2024 年发布，并将影响您的 Adobe Campaign 实施。 您可能需要更新 Android 推送消息的订阅服务配置，才能支持此更改。 您已经可以检查并执行操作。 在此[Adobe Campaign v8技术说明](https://experienceleague.adobe.com/docs/campaign/technotes-ac/tn-new/push-technote.html?lang=zh-Hans){target="_blank"}中了解详情。
 
 
 ## 配置Android外部帐户 {#configuring-external-account-android}
@@ -102,21 +102,21 @@ ht-degree: 9%
 
 1. 填写&#x200B;**[!UICONTROL Firebase Cloud Messaging the Android connection settings]**&#x200B;字段。
 
-1. 单击&#x200B;**[!UICONTROL Finish]**，然后单击&#x200B;**[!UICONTROL Save]**。 您的Android应用程序现在可以在Campaign Classic中使用。
+1. 单击 **[!UICONTROL Finish]**，然后单击 **[!UICONTROL Save]**。 您的Android应用程序现在可以在Campaign Classic中使用。
 
-默认情况下，Adobe Campaign会在&#x200B;**[!UICONTROL User identifier]**)**[!UICONTROL Subscriber applications (nms:appSubscriptionRcp表的]** (@userKey)字段中保存一个键。 利用此密钥，可将订阅链接到收件人。 要收集其他数据（如复杂的协调密钥），您需要应用以下配置：
+默认情况下，Adobe Campaign会在&#x200B;**[!UICONTROL Subscriber applications (nms:appSubscriptionRcp)]**&#x200B;表的&#x200B;**[!UICONTROL User identifier]** (@userKey)字段中保存一个键。 利用此密钥，可将订阅链接到收件人。 要收集其他数据（如复杂的协调密钥），您需要应用以下配置：
 
 ### 配置API版本{#select-api-version}
 
 >[!IMPORTANT]
 >
->Android Firebase Cloud Messaging (FCM) 服务的一些重要更改将于 2024 年发布，并将影响您的 Adobe Campaign 实施。作为Google不断努力改进其服务的一部分，旧版FCM API将于2024年6月20日&#x200B;**终止**。 在此[Adobe Campaign v8技术说明](https://experienceleague.adobe.com/docs/campaign/technotes-ac/tn-new/push-technote.html?lang=zh-Hans){target="_blank"}中了解详情。
+>Android Firebase Cloud Messaging (FCM) 服务的一些重要更改将于 2024 年发布，并将影响您的 Adobe Campaign 实施。 作为Google不断努力改进其服务的一部分，旧版FCM API将于2024年6月20日&#x200B;**终止**。 在此[Adobe Campaign v8技术说明](https://experienceleague.adobe.com/docs/campaign/technotes-ac/tn-new/push-technote.html?lang=zh-Hans){target="_blank"}中了解详情。
 
 在创建服务和新的移动应用程序后，您需要配置移动应用程序。 不应选择&#x200B;**HTTP（旧版）** API，因为它已被Google弃用。
 
 要配置HTTP v1 API版本，请执行以下步骤：
 
-1. 在您的&#x200B;**[!UICONTROL Mobile application creation wizard]**&#x200B;窗口中，从&#x200B;**[!UICONTROL HTTPV1]**&#x200B;下拉菜单中选择&#x200B;**[!UICONTROL API version]**。
+1. 在您的&#x200B;**[!UICONTROL Mobile application creation wizard]**&#x200B;窗口中，从&#x200B;**[!UICONTROL API version]**&#x200B;下拉菜单中选择&#x200B;**[!UICONTROL HTTPV1]**。
 
 1. 单击&#x200B;**[!UICONTROL Load project json file to extract project details...]**&#x200B;直接加载您的JSON密钥文件。 有关如何提取JSON文件的详细信息，请参阅[此页面](https://firebase.google.com/docs/admin/setup#initialize-sdk)。
 
@@ -137,7 +137,7 @@ ht-degree: 9%
 
 1. 作为一个选项，您可以根据需要使用大约&#x200B;**[!UICONTROL Application variables]**&#x200B;扩充推送消息内容。 这些都是完全可自定义的，并且是发送到移动设备的消息有效负载的一部分。
 
-1. 单击&#x200B;**[!UICONTROL Finish]**，然后单击&#x200B;**[!UICONTROL Save]**。 您的Android应用程序现在可以在Campaign Classic中使用。
+1. 单击 **[!UICONTROL Finish]**，然后单击 **[!UICONTROL Save]**。 您的Android应用程序现在可以在Campaign Classic中使用。
 
 以下是FCM有效负荷名称，用于进一步个性化您的推送通知：
 

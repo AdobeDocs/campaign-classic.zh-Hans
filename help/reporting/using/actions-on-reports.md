@@ -7,7 +7,7 @@ badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v
 exl-id: b30cdeaf-4ad6-473d-bdbc-91984755b609
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '551'
+source-wordcount: '554'
 ht-degree: 3%
 
 ---
@@ -32,7 +32,7 @@ ht-degree: 3%
 
 当报表包含多个页面时，您需要为每个页面重复此操作。
 
-您可以配置报表，以将其导出为PDF、Excel或OpenOffice格式。 打开Adobe Campaign资源管理器并选择相关的报表。
+您可以配置报表以将其导出为PDF、Excel或OpenOffice格式。 打开Adobe Campaign资源管理器并选择相关的报表。
 
 导出选项可通过报告的&#x200B;**[!UICONTROL Page]**&#x200B;活动（在&#x200B;**[!UICONTROL Advanced]**&#x200B;选项卡中）访问。
 
@@ -54,7 +54,7 @@ ht-degree: 3%
 
 * 报表不必使用在单元格级别定义的特定格式。 最好使用&#x200B;**[!UICONTROL Form rendering]**&#x200B;来定义表中单元格的格式。 可以通过&#x200B;**[!UICONTROL Administration > Configuration > Form rendering]**&#x200B;访问&#x200B;**[!UICONTROL Form rendering]**。
 * 我们不建议插入HTML内容。
-* 如果报告包含多个表格、图表等， 键入元素，它们将被一个导出到另一个下。
+* 如果报表包含多个表、图表等类型元素，则将导出一个元素下的这些元素。
 * 您可以在单元格中强制回车：此配置将保留在Excel中。 如需详细信息，请参阅[此小节](../../reporting/using/creating-a-table.md#defining-cell-format)。
 
 ### 延迟导出 {#postpone-the-export}
@@ -65,7 +65,7 @@ ht-degree: 3%
 document.nl_waitBeforeRender = true;
 ```
 
-要激活导出并开始转换为PDF，请使用不带任何参数的&#x200B;**document.nl_renderToPdf()**&#x200B;函数。
+要激活导出并开始转换为PDF，请使用不含任何参数的&#x200B;**document.nl_renderToPdf()**&#x200B;函数。
 
 ### 内存分配 {#memory-allocation}
 

@@ -7,8 +7,8 @@ feature: Web Apps, Web Forms, Landing Pages, Email Design
 exl-id: c1eccb48-59bf-412f-9c18-9cda2a022096
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '563'
-ht-degree: 3%
+source-wordcount: '571'
+ht-degree: 4%
 
 ---
 
@@ -18,8 +18,8 @@ ht-degree: 3%
 
 为确保编辑器获得最佳操作，我们建议遵循以下准则：
 
-* 在Adobe Campaign中&#x200B;**导入HTML页模板**&#x200B;之前，请确保该模板打开并在各种浏览器中正确显示。
-* 如果HTML页包含&#x200B;**JavaScript脚本**，则需要在编辑器外执行&#x200B;**且无错误**。
+* 在Adobe Campaign中&#x200B;**导入HTML页面模板**&#x200B;之前，请确保该模板打开并在各种浏览器中正确显示。
+* 如果HTML页面包含&#x200B;**JavaScript脚本**，则需要在编辑器外执行&#x200B;**且无错误**。
 * 在构建模板时，我们建议将&#x200B;**&#39;type&#39;**&#x200B;属性添加到`<input>`标记。 配置Web应用程序时，编辑器将处理此信息，并帮助用户将数据库的字段链接到表单的字段。
 
   模板中的 HTML 代码示例：
@@ -68,7 +68,7 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->HTML代码页必须在meta标签(HTML4或HTML5)或BOM中定义。 如果没有可用的代码页，请使用latin1打开文件。
+>HTML代码页必须在Meta标记（HTML 4或HTML 5）或BOM中定义。 如果没有可用的代码页，请使用latin1打开文件。
 
 ## HTML内容状态 {#html-content-statuses}
 

@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: 优惠建议历史
-description: 优惠建议历史
+title: 产品建议提议历史
+description: 产品建议提议历史
 feature: Interaction, Offers
 audience: interaction
 content-type: reference
@@ -14,7 +14,7 @@ ht-degree: 15%
 
 ---
 
-# 优惠建议历史{#offer-proposition-history}
+# 产品建议提议历史{#offer-proposition-history}
 
 
 

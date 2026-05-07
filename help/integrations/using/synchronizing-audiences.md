@@ -7,7 +7,7 @@ hide: true
 exl-id: 88e581cf-43cd-4c43-9347-d016c62fdf42
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '1109'
+source-wordcount: '1161'
 ht-degree: 1%
 
 ---
@@ -70,7 +70,7 @@ ht-degree: 1%
 
    ![](assets/acs_connect_query4.png)
 
-1. 在&#x200B;**[!UICONTROL Aggregates]**&#x200B;字段中选择&#x200B;**[!UICONTROL Data collected]**&#x200B;并单击&#x200B;**[!UICONTROL Next]**。
+1. 在&#x200B;**[!UICONTROL Data collected]**&#x200B;字段中选择&#x200B;**[!UICONTROL Aggregates]**&#x200B;并单击&#x200B;**[!UICONTROL Next]**。
 
    ![](assets/acs_connect_query5.png)
 
@@ -124,7 +124,7 @@ ht-degree: 1%
 
 1. 添加&#x200B;**[!UICONTROL Email delivery]**&#x200B;活动，并将其配置为任何其他[电子邮件投放活动](https://experienceleague.adobe.com/docs/campaign-standard/using/managing-processes-and-data/channel-activities/email-delivery.html?lang=zh-Hans)。
 1. 打开投放内容。
-1. 添加个性化字段。从弹出窗口中，找到&#x200B;**[!UICONTROL Additional data (targetData)]**&#x200B;节点。 此节点包含在初始定位工作流中计算的受众附加数据。 您可以像使用任何其他个性化字段一样使用它们。
+1. 添加个性化字段。 从弹出窗口中，找到&#x200B;**[!UICONTROL Additional data (targetData)]**&#x200B;节点。 此节点包含在初始定位工作流中计算的受众附加数据。 您可以像使用任何其他个性化字段一样使用它们。
 
    在本例中，来自原始定位工作流的附加数据是最近365天内发送给每个收件人的投放数量。 此处显示定向工作流中指定的NBdeliveries别名。
 

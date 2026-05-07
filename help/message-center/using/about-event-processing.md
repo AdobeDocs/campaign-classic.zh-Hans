@@ -9,8 +9,8 @@ topic-tags: event-processing
 exl-id: 3d85866a-6339-458c-807a-b267cce772b8
 source-git-commit: 221e2ccdaadf793212fcacdf5e13823f1505f4dc
 workflow-type: tm+mt
-source-wordcount: '697'
-ht-degree: 2%
+source-wordcount: '708'
+ht-degree: 3%
 
 ---
 
@@ -34,7 +34,7 @@ ht-degree: 2%
 1. [事件传输到消息模板](#routing-towards-a-template)
 1. 使用个性化数据扩充事件
 1. [投放执行](../../message-center/using/delivery-execution.md)
-1. [回收链接投放失败的事件](#event-recycling)(通过Adobe Campaign工作流)
+1. [回收链接投放失败的事件](#event-recycling)（通过Adobe Campaign工作流）
 
 一旦通过执行实例执行上述所有步骤后，每个目标收件人都会收到个性化消息。
 
@@ -81,7 +81,7 @@ ht-degree: 2%
 
 ## 事件状态 {#event-statuses}
 
-在&#x200B;**>**&#x200B;下的&#x200B;**[!UICONTROL Message Center]**&#x200B;事件历史记录&#x200B;**[!UICONTROL Event history]**&#x200B;将所有已处理的事件分组到一个视图中。 它们可以按事件类型或&#x200B;**状态**&#x200B;分类。 这些状态为：
+在&#x200B;**[!UICONTROL Message Center]** > **[!UICONTROL Event history]**&#x200B;下的&#x200B;**事件历史记录**&#x200B;将所有已处理的事件分组到一个视图中。 它们可以按事件类型或&#x200B;**状态**&#x200B;分类。 这些状态为：
 
 * **挂起**：事件可以是：
 

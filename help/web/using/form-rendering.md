@@ -7,7 +7,7 @@ feature: Web Forms
 exl-id: 723a6c47-5323-4914-a014-58be493852cc
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '996'
+source-wordcount: '999'
 ht-degree: 2%
 
 ---
@@ -41,7 +41,7 @@ ht-degree: 2%
 
 ![](assets/s_ncs_admin_survey_render_edit_header.png)
 
-**[!UICONTROL Page headers]**&#x200B;和&#x200B;**[!UICONTROL Page footers]**&#x200B;部分的每一行都对应于HTML页中的一行。 单击&#x200B;**[!UICONTROL Add]**&#x200B;以创建新行。
+**[!UICONTROL Page headers]**&#x200B;和&#x200B;**[!UICONTROL Page footers]**&#x200B;部分的每一行都对应于HTML页面中的一行。 单击&#x200B;**[!UICONTROL Add]**&#x200B;以创建新行。
 
 选择现有行并单击&#x200B;**[!UICONTROL Detail]**&#x200B;按钮对其进行个性化。
 

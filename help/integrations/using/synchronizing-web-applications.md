@@ -7,7 +7,7 @@ hide: true
 exl-id: 975bdc94-5da4-45ae-a3bd-e8674b447098
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '796'
+source-wordcount: '804'
 ht-degree: 1%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 1%
 
 * 收件人存储在Campaign v7数据库中并与Campaign Standard同步。 请参阅[同步用户档案](../../integrations/using/synchronizing-profiles.md)部分。
 * 在Campaign v7中创建和发布的服务和Web应用程序。
-* Web应用程序必须包含使用&#x200B;**[!UICONTROL Pre-loading]**&#x200B;标识方法的&#x200B;**[!UICONTROL Adobe Campaign encryption]**&#x200B;活动。
+* Web应用程序必须包含使用&#x200B;**[!UICONTROL Adobe Campaign encryption]**&#x200B;标识方法的&#x200B;**[!UICONTROL Pre-loading]**&#x200B;活动。
 
 ## 创建Web应用程序和服务 {#creating-the-web-application-and-service}
 

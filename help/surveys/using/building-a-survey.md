@@ -7,7 +7,7 @@ feature: Surveys
 exl-id: 8d83dfd5-70ec-4656-965b-f6b5e6f9eec1
 source-git-commit: c262c27e75869ae2e4bd45642f5a22adec4a5f1e
 workflow-type: tm+mt
-source-wordcount: '793'
+source-wordcount: '798'
 ht-degree: 2%
 
 ---
@@ -26,7 +26,7 @@ Web窗体通过树的&#x200B;**[!UICONTROL Resources > Online > Web applications
 
 ![](assets/s_ncs_admin_survey_select_template.png)
 
-表单页面是使用特殊编辑器创建的，允许您定义和配置（文本）输入字段、选择字段（列表、复选框等） 和静态元素(图像、HTML内容等)之间的关联。 它们可以在“容器”中收集，并根据要求进行布局。 [了解详情](#adding-questions))。
+表单页面是使用特殊编辑器创建的，允许您定义和配置（文本）输入字段、选择字段（列表、复选框等） 和静态元素（图像、HTML内容等）。 它们可以在“容器”中收集，并根据要求进行布局。 [了解详情](#adding-questions))。
 
 >[!NOTE]
 >
@@ -104,11 +104,11 @@ Web窗体通过树的&#x200B;**[!UICONTROL Resources > Online > Web applications
 
 ![](assets/s_ncs_admin_question_label.png)
 
-在标签字段中输入问题的标签。 在这种情况下，将应用表单样式表中的样式。 选择&#x200B;**[!UICONTROL Enter the title in HTML format]**&#x200B;选项以对其进行个性化。 这将授予您访问HTML编辑器的权限。
+在标签字段中输入问题的标签。 在这种情况下，将应用表单样式表中的样式。 选择&#x200B;**[!UICONTROL Enter the title in HTML format]**&#x200B;选项以对其进行个性化。 这将为您提供HTML编辑器的访问权限。
 
 >[!NOTE]
 >
->有关使用HTML编辑器的详细信息，请参阅[本文档](../../web/using/about-web-forms.md)。
+>有关使用HTML编辑器的更多信息，请参阅[本文档](../../web/using/about-web-forms.md)。
 
 例如：
 

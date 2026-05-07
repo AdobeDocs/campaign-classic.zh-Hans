@@ -7,8 +7,8 @@ badge-v7-prem: label="仅限内部部署/混合" type="Caution" url="https://exp
 exl-id: 2bc077c4-ed65-4157-bfc9-df5d0442f476
 source-git-commit: 647709dd4b0c70c342be03d3012bc02f10ff2c00
 workflow-type: tm+mt
-source-wordcount: '1271'
-ht-degree: 3%
+source-wordcount: '1381'
+ht-degree: 6%
 
 ---
 
@@ -184,7 +184,7 @@ ht-degree: 3%
   </tr> 
   <tr> 
    <td> 中央/本地营销（分布式营销）<br /> </td> 
-   <td> 实施中央实体（总部、营销部门等）与地方实体（销售点、区域机构等）之间的合作活动。 可选。 <a href="https://experienceleague.adobe.com/docs/campaign/automation/distributed-marketing/about-distributed-marketing.html?lang=zh-Hans" target="_blank">了解更多</a><br /> </td> 
+   <td> 在中央实体（总部、营销部门等）之间实施合作活动 以及地方实体（销售点、地区代理等）的合规性。 可选。 <a href="https://experienceleague.adobe.com/docs/campaign/automation/distributed-marketing/about-distributed-marketing.html?lang=zh-Hans" target="_blank">了解更多</a><br /> </td> 
    <td> 营销 </td> 
   </tr> 
   <tr> 
@@ -242,16 +242,16 @@ ht-degree: 3%
 
 ### 消息中心包 {#message-center-package}
 
-在安装事务性消息（消息中心包）之前，必须安装投放渠道（电子邮件、移动渠道、移动应用程序渠道、LINE等）。 如果您已启动仅用于电子邮件的消息中心项目，并且以后需要添加新渠道，则必须执行以下步骤：
+您必须安装投放渠道（电子邮件、移动设备渠道、移动设备应用程序渠道、LINE等） 安装事务性消息（消息中心包）之前。 如果您已启动仅用于电子邮件的消息中心项目，并且以后需要添加新渠道，则必须执行以下步骤：
 
-1. 使用包导入助手(**)安装新频道，例如** Mobile频道&#x200B;**[!UICONTROL Tools > Advanced > Import package > Adobe Campaign package]**。
+1. 使用包导入助手(**[!UICONTROL Tools > Advanced > Import package > Adobe Campaign package]**)安装新频道，例如&#x200B;**Mobile频道**。
 1. 导入文件( **[!UICONTROL Tools > Advanced > Import package > File]**)，然后选择：
 
    ```
    \datakit\nms\[Your language]\package\messageCenter.xml
    ```
 
-1. 在&#x200B;**[!UICONTROL XML data content to import]**&#x200B;中，仅保留与相关渠道对应的消息中心投放模板。 例如，如果您已添加&#x200B;**移动渠道**，则仅保留与&#x200B;**(smsTriggerMessage)模板对应的**&#x200B;实体&#x200B;**[!UICONTROL Mobile transactional message]**&#x200B;元素。 如果您已添加&#x200B;**移动应用程序渠道**，请仅保留&#x200B;**iOS事务型消息**&#x200B;模板(iosTriggerMessage)和&#x200B;**Android事务型消息** (androidTriggerMessage)。
+1. 在&#x200B;**[!UICONTROL XML data content to import]**&#x200B;中，仅保留与相关渠道对应的消息中心投放模板。 例如，如果您已添加&#x200B;**移动渠道**，则仅保留与&#x200B;**[!UICONTROL Mobile transactional message]** (smsTriggerMessage)模板对应的&#x200B;**实体**&#x200B;元素。 如果您已添加&#x200B;**移动应用程序渠道**，请仅保留&#x200B;**iOS事务型消息**&#x200B;模板(iosTriggerMessage)和&#x200B;**Android事务型消息** (androidTriggerMessage)。
 
    ![](assets/messagecenter_install_channel.png)
 

@@ -10,8 +10,8 @@ topic-tags: troubleshooting
 exl-id: dbd50178-0a16-46ed-bfad-47beb3c2a420
 source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
 workflow-type: tm+mt
-source-wordcount: '267'
-ht-degree: 7%
+source-wordcount: '288'
+ht-degree: 12%
 
 ---
 
@@ -77,7 +77,7 @@ ht-degree: 7%
   </tr> 
   <tr> 
    <td> Web </td> 
-   <td> 应用程序服务器(HTTP和SOAP)<br /> </td> 
+   <td> 应用程序服务器（HTTP和SOAP）<br /> </td> 
    <td> 如果控制台和Web连接不起作用并触发<strong>xtk：session</strong>类型错误，则检查此模块<br /> </td> 
   </tr> 
   <tr> 

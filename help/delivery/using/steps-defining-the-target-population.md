@@ -8,8 +8,8 @@ hide: true
 exl-id: d0ed7be7-3147-4cb8-9ce7-ea51602e9048
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '1730'
-ht-degree: 23%
+source-wordcount: '1763'
+ht-degree: 24%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 23%
 
 ## 选择投放的主要收件人 {#selecting-the-main-target}
 
-在大多数情况下，会从 Adobe Campaign 数据库中提取主要目标（默认模式）。但是，收件人也可以存储在外部文件中。 可在[此部分](steps-defining-the-target-population.md#selecting-external-recipients)中了解详情。
+在大多数情况下，会从 Adobe Campaign 数据库中提取主要目标（默认模式）。 但是，收件人也可以存储在外部文件中。 可在[此部分](steps-defining-the-target-population.md#selecting-external-recipients)中了解详情。
 
 要选择投放的收件人，请执行以下步骤：
 
@@ -79,7 +79,7 @@ ht-degree: 23%
 1. 在 **[!UICONTROL Label]** 字段中输入此目标的名称。 默认情况下，标签将是第一个定位标准的标签。 对于组合，最好使用显式名称。
 1. 单击&#x200B;**[!UICONTROL Finish]**&#x200B;以验证配置的定位。
 
-   在“主要目标配置”选项卡的中心部分中概述了定义的目标选择标准。单击标准可查看其内容（配置和预览）。要删除某个标准，请单击其标签后面的十字线。
+   在“主要目标配置”选项卡的中心部分中概述了定义的目标选择标准。 单击标准可查看其内容（配置和预览）。 要删除某个标准，请单击其标签后面的十字线。
 
    ![](assets/s_ncs_user_wizard_email02h.png)
 
@@ -122,7 +122,7 @@ ht-degree: 23%
 
 >[!NOTE]
 >
->建议使用默认参数，但您可以根据需要调整设置。但是，这些选项只应由专家用户更改，以避免误用和错误。
+>建议使用默认参数，但您可以根据需要调整设置。 但是，这些选项只应由专家用户更改，以避免误用和错误。
 
 单击&#x200B;**[!UICONTROL Edit...]**&#x200B;链接以修改默认配置。
 
@@ -130,7 +130,7 @@ ht-degree: 23%
 
 可以使用以下选项：
 
-* **[!UICONTROL Exclude duplicate addresses during delivery]**。 此选项默认处于活动状态：它允许您在投放期间消除重复的电子邮件地址。 所应用的策略可能会因如何使用Adobe Campaign以及数据库中的数据类型而有所不同。
+* **[!UICONTROL Exclude duplicate addresses during delivery]**. 此选项默认处于活动状态：它允许您在投放期间消除重复的电子邮件地址。 所应用的策略可能会因使用 Adobe Campaign 的方式以及数据库中的数据类型而有所不同。
 
   可以为每个投放模板配置选项的默认值。
 
@@ -143,14 +143,14 @@ ht-degree: 23%
 
      ![](assets/s_ncs_user_wizard_email02j.png)
 
-* **[!UICONTROL Exclude recipients who no longer want to be contacted]**，即电子邮件地址处于拒绝列表状态（选择退出）的收件人。必须继续选择这一选项，以遵守电子营销的职业道德和电子商务相关法律。
-* **[!UICONTROL Exclude quarantined recipients]**。 利用此选项，可从目标中排除其地址未响应的任何用户档案。 我们强烈建议保持选中此选项。
+* **[!UICONTROL Exclude recipients who no longer want to be contacted]**，即电子邮件地址处于拒绝列表状态（选择退出）的收件人。 必须继续选择这一选项，以遵守电子营销的职业道德和电子商务相关法律。
+* **[!UICONTROL Exclude quarantined recipients]**. 利用此选项，可从目标中排除其地址未响应的任何用户档案。 我们强烈建议保持选中此选项。
 
   >[!NOTE]
   >
   >有关隔离管理的详细信息，请参阅[了解隔离管理](delivery-failures-quarantine.md)。
 
-* 给定消息数的 **[!UICONTROL Limit delivery]**。使用此选项可输入要发送的最大消息数。如果目标的内容超过指示的消息数，则随机选择将应用于目标。
+* 给定消息数的 **[!UICONTROL Limit delivery]**。 使用此选项可输入要发送的最大消息数。 如果目标的内容超过指示的消息数，则随机选择将应用于目标。
 
 ### 缩小目标群体大小 {#reducing-the-size-of-the-target-population}
 
@@ -199,7 +199,7 @@ ht-degree: 23%
 
 1. 单击&#x200B;**[!UICONTROL Add]**&#x200B;图标以定义替换。
 1. 输入要使用的收件人地址，或从列表中选择此地址。
-1. 选择要在验证中使用的配置文件：保存&#x200B;**[!UICONTROL Random]**&#x200B;列中的&#x200B;**[!UICONTROL Profile to use]**&#x200B;值以使用验证中目标的任意配置文件的数据。
+1. 选择要在验证中使用的配置文件：保存&#x200B;**[!UICONTROL Profile to use]**&#x200B;列中的&#x200B;**[!UICONTROL Random]**&#x200B;值以使用验证中目标的任意配置文件的数据。
 
    ![](assets/s_ncs_user_wizard_email_bat_substitute_choose.png)
 

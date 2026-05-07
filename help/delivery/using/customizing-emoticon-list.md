@@ -9,7 +9,7 @@ hide: true
 exl-id: b8642df3-1960-4f2c-8273-c3988a3e85f0
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '454'
+source-wordcount: '507'
 ht-degree: 3%
 
 ---
@@ -68,6 +68,6 @@ ht-degree: 3%
 
    ![](assets/emoticon_4.png)
 
-1. 如果&#x200B;**[!UICONTROL Insert emoticon]**&#x200B;弹出窗口中显示以下表情符号，则表示未正确配置这些表情符号。 检查&#x200B;**[!UICONTROL U+]**&#x200B;中您的&#x200B;**[!UICONTROL Display order]**&#x200B;代码或&#x200B;**[!UICONTROL Emoticon list]**&#x200B;是否正确。
+1. 如果&#x200B;**[!UICONTROL Insert emoticon]**&#x200B;弹出窗口中显示以下表情符号，则表示未正确配置这些表情符号。 检查&#x200B;**[!UICONTROL Emoticon list]**&#x200B;中您的&#x200B;**[!UICONTROL U+]**&#x200B;代码或&#x200B;**[!UICONTROL Display order]**&#x200B;是否正确。
 
    ![](assets/emoticon_6.png)

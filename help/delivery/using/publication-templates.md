@@ -8,7 +8,7 @@ role: User
 exl-id: 3b6e4974-4551-4da2-8eca-577c4f9cbd91
 source-git-commit: a94774daa4005fe95066b85f921d9baa981b2a7c
 workflow-type: tm+mt
-source-wordcount: '823'
+source-wordcount: '822'
 ht-degree: 1%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 1%
 
 发布模板由其名称和命名空间标识。
 
-样式表的标识键是由命名空间和名称组成的字符串，名称用冒号分隔；例如： **cus：newsletter**。
+样式表的标识键是由命名空间和名称组成的字符串，以冒号分隔；例如： **cus:newsletter**。
 
 >[!NOTE]
 >
@@ -56,7 +56,7 @@ ht-degree: 1%
 在&#x200B;**[!UICONTROL Rendering]**&#x200B;选项卡中，选择：
 
 * 用于投影输出文档的渲染类型：XSL样式表或JavaScript模板，
-* 输出文档的格式：HTML、文本、XML或RTF，
+* 输出文档的格式：HTML、文本、XML或RTF、
 * 包含构造数据的模板，即要使用的样式表或JavaScript模板。
 
 ### 发布 {#publication}
@@ -89,7 +89,7 @@ ht-degree: 1%
 
 ### 投放 {#delivery}
 
-利用此选项卡，可选择场景以直接在内容上启动投放。 将根据输出格式(HTML或文本)自动填充电子邮件的内容。
+利用此选项卡，可选择场景以直接在内容上启动投放。 将根据输出格式（HTML或文本）自动填充电子邮件的内容。
 
 ![](assets/d_ncs_content_model3.png)
 
@@ -109,13 +109,13 @@ ht-degree: 1%
 
 **`<xsl:comment> #nl:output_replace(<name_of_file>) </xsl:comment>`**，其中&#x200B;**`<name_of_file>`**&#x200B;是要生成的页面的文件名。
 
-**示例：**&#x200B;使用“cus：book”架构生成多个文件。
+**示例：**&#x200B;使用“cus:book”架构生成多个文件。
 
 其原理是生成一个列出章节的主页，并可能在外部页面中显示章节的详细信息。
 
 ![](assets/d_ncs_content_chunk.png)
 
-相应的样式表(“cus：book.xsl”)如下所示：
+相应的样式表(“cus:book.xsl”)如下所示：
 
 ```xml
 <?xml version="1.0" encoding="ISO-8859-1" ?>
@@ -138,7 +138,7 @@ ht-degree: 1%
 </xsl:stylesheet>
 ```
 
-需要第二个样式表(“cus：chapter.xsl”)来生成章节的详细信息：
+需要第二个样式表(“cus:chapter.xsl”)来生成章节的详细信息：
 
 ```xml
 <?xml version="1.0" encoding="ISO-8859-1" ?>
@@ -173,7 +173,7 @@ ht-degree: 1%
 
 文件名是使用&#x200B;**$(path)**&#x200B;变量构造的，该变量包含发布路径和&#x200B;**`<xsl:value-of select="@id" />`**，并与输入文档中的章节标识符匹配。
 
-必须使用两个样式表“cus：book.xsl”和“cus：chapter.xsl”填充发布模型。
+必须使用两个样式表“cus:book.xsl”和“cus:chapter.xsl”填充发布模型。
 
 **[!UICONTROL Multi-file generation]**&#x200B;选项必须在章节转换模型上处于活动状态：
 
