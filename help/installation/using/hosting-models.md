@@ -46,12 +46,12 @@ Adobe Campaign可以内部部署：Adobe Campaign的所有组件（包括用户�
 作为内部部署客户，在开始部署Campaign Classic之前，请注意以下先决条件和建议：
 
 * 阅读[兼容性矩阵](../../rn/using/compatibility-matrix.md)，其中列出了Adobe Campaign支持的所有系统和组件版本。
-* 根据您的环境，阅读Windows](../../installation/using/prerequisites-of-campaign-installation-in-windows.md)的[先决条件和Linux](../../installation/using/prerequisites-of-campaign-installation-in-linux.md)的[先决条件。
-* 在此部分](../../installation/using/database.md)中了解与数据库引擎[相关的建议。
+* 根据您的环境，阅读Windows[&#128279;](../../installation/using/prerequisites-of-campaign-installation-in-windows.md)的[先决条件和Linux](../../installation/using/prerequisites-of-campaign-installation-in-linux.md)的先决条件。
+* 在此部分[&#128279;](../../installation/using/database.md)中了解与数据库引擎相关的建议。
 * 检查服务器上是否安装了所需的数据库访问层，以及是否可从Adobe Campaign帐户访问。 [了解详情](../../installation/using/application-server.md)。
 * 根据某些进程需要与其他进程通信或访问LAN和Internet来配置网络。 这意味着这些进程需要打开某些TCP端口。 [了解有关](../../installation/using/network-configuration.md)网络配置要求的更多信息。
 * 阅读[Campaign安全和隐私检查清单](https://helpx.adobe.com/cn/campaign/kb/acc-security.html)。
-* 请参阅本文](https://helpx.adobe.com/cn/campaign/kb/hardware-sizing-guide.html)中有关估算内部部署[的硬件要求的一般准则。
+* 请参阅本文[&#128279;](https://helpx.adobe.com/cn/campaign/kb/hardware-sizing-guide.html)中有关估算内部部署的硬件要求的一般准则。
 
 ## 混合
 

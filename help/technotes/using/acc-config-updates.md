@@ -44,7 +44,7 @@ ht-degree: 12%
 * Campaign 19.2.4版本。
 * Campaign 19.1.8版本。
 
-在本节](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)中了解如何检查您的版本[。
+在本节[&#128279;](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)中了解如何检查您的版本。
 
 **如何更新？**
 
@@ -78,7 +78,7 @@ Adobe Identity Service (IMS)将从2021年6月30日&#x200B;**起停止支持旧In
 
 **您是否受影响？**
 
-如果您要通过Adobe ID](../../integrations/using/about-adobe-id.md)并通过Adobe Identity Management服务(IMS)连接到Campaign [，则必须升级到以下列出的新版本之一：
+如果您要通过Adobe ID[&#128279;](../../integrations/using/about-adobe-id.md)并通过Adobe Identity Management服务(IMS)连接到Campaign ，则必须升级到以下列出的新版本之一：
 
 * Gold Standard 11。 [了解详情](../../rn/using/gold-standard.md)
 * Campaign 21.1.1版本。 [了解详情](../../rn/using/latest-release.md)
@@ -89,7 +89,7 @@ Adobe Identity Service (IMS)将从2021年6月30日&#x200B;**起停止支持旧In
 
 这些版本附带新的连接协议：Campaign服务器和客户端控制台都必须升级，才能在&#x200B;**2021年6月30日**&#x200B;后连接到Campaign。
 
-在本节](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)中了解如何检查您的版本[。
+在本节[&#128279;](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)中了解如何检查您的版本。
 
 **如何更新？**
 
@@ -118,7 +118,7 @@ Adobe Identity Service (IMS)将从2021年6月30日&#x200B;**起停止支持旧In
 * Campaign 20.2.5版本。
 * Campaign 19.1.8版本。
 
-在本节](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)中了解如何检查您的版本[。
+在本节[&#128279;](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)中了解如何检查您的版本。
 
 **如何更新？**
 
@@ -138,7 +138,7 @@ Adobe Identity Service (IMS)将从2021年6月30日&#x200B;**起停止支持旧In
 
 如果您的实例在低于Campaign 21.1，**的**&#x200B;版本上运行，并且您使用旧版Apple二进制协议发送推送通知，则需要更新为基于HTTP/2的APNs提供程序API。
 
-在本节](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)中了解如何检查您的版本[。
+在本节[&#128279;](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)中了解如何检查您的版本。
 
 **如何更新？**
 
@@ -150,7 +150,7 @@ Adobe Identity Service (IMS)将从2021年6月30日&#x200B;**起停止支持旧In
 
 2021年3月29日，Apple推送通知服务(APN)基础设施更新影响Adobe Campaign Classic iOS渠道。 操作系统配置更改是&#x200B;**必需的**，这样可避免iOS推送渠道中断。
 
-在此页面](https://developer.apple.com/news/?id=7gx0a2lp)中了解有关APN更改[的更多信息。
+在此页面[&#128279;](https://developer.apple.com/news/?id=7gx0a2lp)中了解有关APN更改的更多信息。
 
 **您是否受影响？**
 
@@ -160,7 +160,7 @@ Adobe Identity Service (IMS)将从2021年6月30日&#x200B;**起停止支持旧In
 
 作为托管客户，无需执行任何操作：Adobe已将新的根证书并入您的环境。
 
-作为内部部署/混合部署客户，您需要更新配置以确保在2021年3月29日之前实现无缝过渡&#x200B;****。
+作为内部部署/混合部署客户，您需要更新配置以确保在2021年3月29日之前实现无缝过渡&#x200B;**&#x200B;**。
 
 [了解如何合并新证书](ios-certificate-update.md)。
 

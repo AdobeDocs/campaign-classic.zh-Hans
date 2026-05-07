@@ -108,17 +108,17 @@ Web跟踪URL的格式如下： **https://`<name_of_redirection_server>`：`<port
 
 * 收集业务量数据
 
-  **https://myserver.adobe.com/r/4567?tagid=command&amp;amount=100&amp;article=2l**
+  **https://myserver.adobe.com/r/4567?tagid=command&amount=100&article=2l**
 
 * 指定字段以查找收件人
 
-  **https://myserver.adobe.com/r/2353?tagid=home&amp;rcpid=saccount%3D10**
+  **https://myserver.adobe.com/r/2353?tagid=home&rcpid=saccount%3D10**
 
   帐号为10的收件人将被发送到主页。
 
 * 使用默认投放
 
-  **https://myserver.adobe.com/r/2456?tagid=home&amp;jobid=e6**
+  **https://myserver.adobe.com/r/2456?tagid=home&jobid=e6**
 
   收件人将被发送到主页。 此信息将使用标识符230（数据库16中的e6）存储在投放中，除非随此查询发送包含投放标识符的会话Cookie。
 

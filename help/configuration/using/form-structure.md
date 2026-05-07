@@ -187,7 +187,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->**style=&quot;down|up**（默认情况下）**&quot;**功能强制将选项卡标签垂直定位在控件下方或上方。 此功能为可选项。
+>**style=&quot;down|up**（默认情况下）**&quot;**&#x200B;功能强制将选项卡标签垂直定位在控件下方或上方。 此功能为可选项。
 >`<container style="down" type="notebook">  … </container>`
 
 #### 图标列表 {#icon-list}

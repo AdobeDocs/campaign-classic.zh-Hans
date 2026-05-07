@@ -294,7 +294,7 @@ To add SSH keys on Windows:
 
 ![](assets/ext_account_10.png)
 
-对于此外部帐户，必须扩充跟踪URL的计算公式，并且必须批准两个解决方案之间的连接。 有关详细信息，请参见此 [ 页面](../../integrations/using/gs-aa.md)。
+对于此外部帐户，必须扩充跟踪URL的计算公式，并且必须批准两个解决方案之间的连接。 有关详细信息，请参见此 [&#x200B; 页面](../../integrations/using/gs-aa.md)。
 
 ### Adobe Experience Manager {#adobe-experience-manager-external-account}
 
@@ -314,7 +314,7 @@ To add SSH keys on Windows:
 
   用于连接到Adobe Experience Manager创作实例的密码。
 
-有关更多信息，请参阅此](../../integrations/using/about-adobe-experience-manager.md)章节[。
+有关更多信息，请参阅此[&#128279;](../../integrations/using/about-adobe-experience-manager.md)章节。
 
 ## CRM连接器外部帐户
 

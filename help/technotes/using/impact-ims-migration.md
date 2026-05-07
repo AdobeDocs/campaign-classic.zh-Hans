@@ -11,7 +11,7 @@ ht-degree: 1%
 
 # 在IMS迁移后更新Campaign界面 {#impact-ims-migration}
 
-在将Campaign技术操作员[迁移到Developer Console](ims-migration.md)并过渡到IMS以进行最终用户身份验证](migrate-users-to-ims.md)后，最后一步是启用用户界面和API限制，以删除特定于本机身份验证的选项和功能。 [从Campaign v7.4.1开始提供此更新。
+在将Campaign技术操作员[迁移到Developer Console](ims-migration.md)并过渡到IMS以进行最终用户身份验证[&#128279;](migrate-users-to-ims.md)后，最后一步是启用用户界面和API限制，以删除特定于本机身份验证的选项和功能。 从Campaign v7.4.1开始提供此更新。
 
 ## 启用IMS限制 {#ims-restrictions}
 

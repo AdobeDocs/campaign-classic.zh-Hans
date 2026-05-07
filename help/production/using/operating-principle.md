@@ -33,7 +33,7 @@ Adobe Campaign模块有很多。 有些是连续运行的，而有些则偶尔�
 
 **nlserver**&#x200B;工具的一般语法如下：
 
-**nlserver `<command>``<command arguments>`**
+**nlserver `<command>` `<command arguments>`**
 
 要获取可用模块的列表，请使用&#x200B;**nlserver**&#x200B;命令。
 

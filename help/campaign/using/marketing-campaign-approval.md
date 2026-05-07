@@ -50,7 +50,7 @@ ht-degree: 0%
 
 可以为营销活动模板、单独为每个营销活动或投放启用批准。
 
-在营销活动模板（**[!UICONTROL Properties]** > **[!UICONTROL Advanced campaign settings...]** > **[!UICONTROL Approvals]**&#x200B;选项卡）中选择了所有需要审批的作业。 除非禁用此选项，否则还将选择负责审批的操作员并接收通知。 有关详细信息，请参阅批准投放](#approving-processes)的[步骤。
+在营销活动模板（**[!UICONTROL Properties]** > **[!UICONTROL Advanced campaign settings...]** > **[!UICONTROL Approvals]**&#x200B;选项卡）中选择了所有需要审批的作业。 除非禁用此选项，否则还将选择负责审批的操作员并接收通知。 有关详细信息，请参阅批准投放[&#128279;](#approving-processes)的步骤。
 
 可以覆盖使用此模板创建的每个营销活动的这些设置，也可以覆盖每个营销活动投放的这些设置：单击&#x200B;**[!UICONTROL Properties]**&#x200B;按钮，然后单击&#x200B;**[!UICONTROL Approvals]**&#x200B;选项卡。
 

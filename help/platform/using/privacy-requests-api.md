@@ -20,7 +20,7 @@ ht-degree: 91%
 
 Adobe Campaign 提供了一个 **API**，您可使用它设置一个自动隐私请求流程。
 
-使用 API 时，一般隐私处理流程与[使用 ](privacy-requests-ui.md) 界面的流程相同。 唯一的区别是创建隐私请求。 会向 Campaign 发送包含请求信息的 POST，而不是在 Adobe Campaign 中创建请求。 对于每个请求，将在 **[!UICONTROL Privacy Requests]** 屏幕中添加一个新条目。 然后，隐私技术工作流会处理该请求，与处理使用界面添加的请求的方式相同。
+使用 API 时，一般隐私处理流程与[使用 &#x200B;](privacy-requests-ui.md) 界面的流程相同。 唯一的区别是创建隐私请求。 会向 Campaign 发送包含请求信息的 POST，而不是在 Adobe Campaign 中创建请求。 对于每个请求，将在 **[!UICONTROL Privacy Requests]** 屏幕中添加一个新条目。 然后，隐私技术工作流会处理该请求，与处理使用界面添加的请求的方式相同。
 
 如果您使用 API 提交隐私请求，我们建议您在第一次删除请求时，使&#x200B;**两步流程**&#x200B;保持激活状态，以便测试返回的数据。 测试完成后，您可以取消激活两步流程，以便自动运行删除请求进程。
 

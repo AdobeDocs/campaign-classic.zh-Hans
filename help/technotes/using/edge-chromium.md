@@ -17,7 +17,7 @@ ht-degree: 10%
 
 在Microsoft Internet Explorer 11的生命周期终止后，客户端控制台中功能板的HTML渲染引擎从Campaign Classic v7.3开始使用Edge Chromium。
 
-除了安装Microsoft Edge Webview 2运行时（现在任何客户端控制台安装](../../installation/using/installing-the-client-console.md#webview)都需要[）之外，必须在实例上启用Microsoft Edge Chromium。
+除了安装Microsoft Edge Webview 2运行时（现在任何客户端控制台安装[&#128279;](../../installation/using/installing-the-client-console.md#webview)都需要）之外，必须在实例上启用Microsoft Edge Chromium。
 
 >[!NOTE]
 >

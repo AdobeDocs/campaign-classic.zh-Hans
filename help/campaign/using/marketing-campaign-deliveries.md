@@ -19,7 +19,7 @@ ht-degree: 1%
 
 从营销活动创建投放后，这些投放将链接到此营销活动，并在营销活动级别合并。
 
-![](assets/do-not-localize/how-to-video.png)[在视频中发现此功能](#create-email-video)
+![](assets/do-not-localize/how-to-video.png) [在视频中发现此功能](#create-email-video)
 
 ## 创建投放 {#creating-deliveries}
 
@@ -116,7 +116,7 @@ ht-degree: 1%
 
 ## 管理关联文档 {#managing-associated-documents}
 
-您可以将各种文档与活动关联：报表、照片、网页、图表等。这些文档可以是任何格式（Microsoft Word、PowerPoint、PNG、JPG、Acrobat PDF等）。 在本节](../../campaign/using/marketing-campaign-assets.md)中了解如何将文档与促销活动[关联。
+您可以将各种文档与活动关联：报表、照片、网页、图表等。这些文档可以是任何格式（Microsoft Word、PowerPoint、PNG、JPG、Acrobat PDF等）。 在本节[&#128279;](../../campaign/using/marketing-campaign-assets.md)中了解如何将文档与促销活动关联。
 
 >[!IMPORTANT]
 >

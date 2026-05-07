@@ -42,7 +42,7 @@ https://<your Adobe Campaign server>:>port number>/nl/jsp/logon.jsp
 
 此页面要求应用程序中定义登录名和密码。
 
-在本节](../../installation/using/installing-the-client-console.md)中了解如何安装控制台[。
+在本节[&#128279;](../../installation/using/installing-the-client-console.md)中了解如何安装控制台。
 
 ## 建议最终用户升级其客户端控制台
 

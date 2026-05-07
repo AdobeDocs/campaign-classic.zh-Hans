@@ -1012,7 +1012,7 @@ Learn more about [Total database storage](../../workflow/using/about-workflows.m
 
 在发送投放并激活跟踪后，跟踪技术工作流会检索跟踪数据。 此数据可在投放的“跟踪”选项卡中找到。 您可以查找有关打开数的信息，以及电子邮件或其他与收件人所收到邮件交互的点击数。
 
-了解有关Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/tracking-logs){target="_blank"}中[跟踪日志的更多信息。
+了解有关Campaign v8[&#128279;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/tracking-logs){target="_blank"}中跟踪日志的更多信息。
 +++
 
 +++**交易型消息传递**

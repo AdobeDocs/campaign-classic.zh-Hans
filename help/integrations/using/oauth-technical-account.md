@@ -20,7 +20,7 @@ ht-degree: 2%
 
 Adobe将弃用服务帐户(JWT)凭据。 Campaign与Adobe解决方案和应用程序的集成现在必须依赖OAuth服务器到服务器凭据。
 
-如果您在2024年6月之前实施了Campaign入站或出站集成，则必须将Campaign环境升级到v7.4.1，并将技术帐户迁移到oAuth，如本文档](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration){target="_blank"}中所述。 [现有服务帐户(JWT)凭据将继续工作，直到&#x200B;**2025年6月30日**。
+如果您在2024年6月之前实施了Campaign入站或出站集成，则必须将Campaign环境升级到v7.4.1，并将技术帐户迁移到oAuth，如本文档[&#128279;](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration){target="_blank"}中所述。 现有服务帐户(JWT)凭据将继续工作，直到&#x200B;**2025年6月30日**。
 
 迁移完成后，您必须按照[此部分](#add-credentials)中的说明将新凭据关联到Campaign。
 

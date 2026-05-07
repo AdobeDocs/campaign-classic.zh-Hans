@@ -44,7 +44,7 @@ Adobe Campaign将外部帐户视为不相关的实体。
    * 某些外部帐户共享相同的登录/密码组合。
 提供程序无法辨别`BIND PDU`来自哪个外部帐户，因此他们将来自多个帐户的所有连接视为单个连接。 他们可能已将MO和SR随机路由到两个帐户，从而导致出现问题。
 如果提供程序支持同一登录/密码组合使用多个短代码，则必须询问他们将短代码放在`BIND PDU`中的什么位置。 请注意，此信息必须放在`BIND PDU`中，而不是放在`SUBMIT_SM`中，因为`BIND PDU`是唯一允许正确路由MO的位置。
-请参阅上面各种PDU](sms-protocol.md#information-pdu)部分中的[信息以了解`BIND PDU`中可用的字段，通常是在`address_range`中添加短代码，但这需要提供程序的特别支持。 联系他们，了解他们希望如何独立路由多个短代码。
+请参阅上面各种PDU[&#128279;](sms-protocol.md#information-pdu)部分中的信息以了解`BIND PDU`中可用的字段，通常是在`address_range`中添加短代码，但这需要提供程序的特别支持。 联系他们，了解他们希望如何独立路由多个短代码。
 Adobe Campaign支持在同一外部帐户上处理多个短代码。
 
 ## 外部帐户一般问题 {#external-account-issues}
