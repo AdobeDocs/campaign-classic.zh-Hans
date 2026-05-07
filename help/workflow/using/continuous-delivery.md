@@ -63,6 +63,6 @@ ht-degree: 14%
 
 本视频演示了如何使用增量查询配置连续投放。
 
->[!VIDEO](https://video.tv.adobe.com/v/25039?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/27515?captions=chi_hans&quality=12)
 
 [此处](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hans)提供了其他 Campaign Classic 操作方法视频。
