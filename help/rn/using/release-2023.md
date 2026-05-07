@@ -8,9 +8,9 @@ level: Beginner
 hide: true
 exl-id: 8ed11e96-9f23-4e2e-bae2-25c51cfb549a
 source-git-commit: 4cae5fdb2b78f446f84352046b523d8862e9060c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2391'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -42,7 +42,7 @@ _2023 年 12 月 5 日_
 * 修复了在 Campaign 报告中单击 `Back` 按钮时请求用户重新进行身份验证的问题。 (NEO-65087)
 * 修复了数据库清理工作流中发生的错误，在投放校对前删除投放时会发生该错误。 (NEO-48114)
 * 修复了连接到客户端控制台时的问题：最近对 TLS 验证的更新导致连接错误。 (NEO-50488)
-* 修复了Campaign升级到7.3.1后HTTP代理身份验证的问题。 营销活动工作流中的HTTP请求失败，出现`error 407 – proxy auth required is returned`。 (NEO-49624)
+* 修复了 Campaign 升级到 7.3.1 后 HTTP 代理身份验证的问题。活动工作流中的 HTTP 请求失败，并出现`error 407 – proxy auth required is returned`。(NEO-49624)
 * 修复了&#x200B;**脚本**&#x200B;工作流活动中 GPG 解密的间歇性故障。 相关的错误消息为：`gpg: decryption failed: No secret key`。 (NEO-50257)
   <!--* Workflow temporary tables now have a primary index in Teradata with a Federated Data Access (FDA) connection. (NEO-62575)-->
 
@@ -108,11 +108,11 @@ _2023 年 9 月 7 日_
 * 修复了可能影响投放性能的查询管理问题。 (NEO-49991)
 * 修复了在营销活动工作流投放活动中使用外部帐户时，可能导致外部帐户配置错误的问题。 (NEO-49959)
 * 修复了发送推送通知时的性能问题。 (NEO-49953)
-修复了在导出报表时可能导致日语字符显示错误的问题(NEO-49308)。
+修复了在导出报告时可能导致日语字符错误显示的问题 (NEO-49308)。
 * 修复了导致 Tomcat 错误报告显示过多错误详细信息的问题。 (NEO-49029)
 * 修复了在使用大量产品建议时可能导致投放错误的问题。 (NEO-48807)
 * 修复了可能导致&#x200B;**更新数据**&#x200B;工作流活动无法正常工作的问题。 (NEO-48140)
-* 修复了可能导致无法使用电子邮件以外的外部帐户同步投放的点击跟踪数据的问题。(NEO-47277)
+* 修复了可能导致无法使用电子邮件以外的外部帐户为投放同步点击跟踪数据的问题。(NEO-47277)
 * 修复了可能导致实时跟踪日志无法在消息中心营销实例上同步的问题。 (NEO-42540)
 * 修复了 Snowflake 数据库表的工作区前缀无法显示在架构的发现窗口中的问题。 (NEO-40297)
 * 修复了导致 `<img-amp>` 标记无法在电子邮件内容中正常工作的问题。 (NEO-38685)
