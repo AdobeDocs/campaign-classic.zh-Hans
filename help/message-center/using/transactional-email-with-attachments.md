@@ -64,7 +64,7 @@ Adobe还建议限制附加文件的大小和数量。 默认情况下，您只�
 
 要即时向事务型消息添加电子邮件附件，请执行以下步骤：
 
-1. 从设计附件开始。 有关详细信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/attaching-files.html#attach-a-personalized-file){target="_blank"}。
+1. 从设计附件开始。 有关详细信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/attaching-files.html?lang=zh-Hans#attach-a-personalized-file){target="_blank"}。
 
    这样，您可以将文件附加到电子邮件，即使它们不是在执行实例上托管。
 

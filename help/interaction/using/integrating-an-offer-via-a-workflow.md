@@ -55,7 +55,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->有关扩充活动的详细信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/enrichment.html){target="_blank"}。
+>有关扩充活动的详细信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/enrichment.html?lang=zh-Hans){target="_blank"}。
 
 例如，您可以在投放之前扩充收件人查询的数据。
 
@@ -68,7 +68,7 @@ ht-degree: 1%
 
 ### 指定优惠或调用优惠引擎 {#specifying-an-offer-or-a-call-to-the-offer-engine}
 
-配置查询后（请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html){target="_blank"}）：
+配置查询后（请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html?lang=zh-Hans){target="_blank"}）：
 
 1. 添加并打开扩充活动。
 1. 在&#x200B;**[!UICONTROL Enrichment]**&#x200B;选项卡中，选择&#x200B;**[!UICONTROL Add data]**。

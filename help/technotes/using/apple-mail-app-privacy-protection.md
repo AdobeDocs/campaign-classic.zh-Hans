@@ -94,7 +94,7 @@ Apple的新功能是未来行业在电子邮件隐私保护方面的发展方向
 
   ![](assets/identify-email-open-tracking-2.png)
 
-* 您可以使用预定义过滤器。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/create-a-filter.html){target="_blank"}。
+* 您可以使用预定义过滤器。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/create-a-filter.html?lang=zh-Hans){target="_blank"}。
 
   ![](assets/identify-email-open-tracking-3.png)
 

@@ -214,12 +214,12 @@ ht-degree: 0%
 
 ### 从FTP导入内容 {#importing-content-from-ftp}
 
-如果您的交付内容位于FTP或SFTP服务器上的HTML文件中，则可以轻松地将此内容加载到Adobe Campaign交付中。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/load-delivery-content.html){target="_blank"}。
+如果您的交付内容位于FTP或SFTP服务器上的HTML文件中，则可以轻松地将此内容加载到Adobe Campaign交付中。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/load-delivery-content.html?lang=zh-Hans){target="_blank"}。
 
 
 ### 从Amazon Simple Storage Service (S3)连接器导入内容 {#importing-content-from-amazon-simple-storage-service--s3--connector}
 
-如果您的投放内容位于Amazon Simple Storage Service (S3)存储桶中，则可以轻松地将此内容加载到Adobe Campaign投放中。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/load-delivery-content.html){target="_blank"}。
+如果您的投放内容位于Amazon Simple Storage Service (S3)存储桶中，则可以轻松地将此内容加载到Adobe Campaign投放中。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/load-delivery-content.html?lang=zh-Hans){target="_blank"}。
 
 
 ## 半自动更新 {#semi-automatic-update}

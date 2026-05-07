@@ -19,7 +19,7 @@ Adobe Campaign Content Manager模块是特定的Campaign Classic [内置包](../
 
 >[!NOTE]
 >
->本节介绍内容管理模块。 有关如何设计电子邮件投放内容的更多信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html){target="_blank"}。
+>本节介绍内容管理模块。 有关如何设计电子邮件投放内容的更多信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html?lang=zh-Hans){target="_blank"}。
 
 内容管理模块结合了工作组、工作流和内容聚合功能。 这允许自动设置消息的格式：电子邮件、邮件、短信、Web等。
 

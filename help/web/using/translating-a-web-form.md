@@ -70,7 +70,7 @@ Adobe Campaign收集在所有静态元素的&#x200B;**[!UICONTROL Texts]**&#x200
 
 ### 筛选字符串 {#filtering-strings}
 
-默认情况下，将显示Web应用程序的每种翻译语言。 有两种默认筛选器：语言和状态。 单击&#x200B;**[!UICONTROL Filters]**&#x200B;按钮，然后单击&#x200B;**[!UICONTROL By language or status]**&#x200B;以显示匹配的下拉框。 您还可以创建高级过滤器。 有关筛选器的更多信息，请参阅[Campaign v8 （控制台）文档](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-filters){target=_blank}。
+默认情况下，将显示Web应用程序的每种翻译语言。 有两种默认筛选器：语言和状态。 单击&#x200B;**[!UICONTROL Filters]**&#x200B;按钮，然后单击&#x200B;**[!UICONTROL By language or status]**&#x200B;以显示匹配的下拉框。 您还可以创建高级过滤器。 有关筛选器的更多信息，请参阅[Campaign v8 （控制台）文档](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/audience/create-filters){target=_blank}。
 
 ![](assets/s_ncs_admin_survey_trad_tab_en.png)
 

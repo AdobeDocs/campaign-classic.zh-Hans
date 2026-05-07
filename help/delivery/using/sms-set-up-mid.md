@@ -154,7 +154,7 @@ ht-degree: 11%
 
 ## 更改投放模板 {#changing-the-delivery-template}
 
-Adobe Campaign提供了一个位于&#x200B;**[!UICONTROL Resources > Templates > Delivery templates]**&#x200B;节点中的移动投放模板。 有关更多信息，请参阅 [Campaign v8 文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html){target="_blank"}。
+Adobe Campaign提供了一个位于&#x200B;**[!UICONTROL Resources > Templates > Delivery templates]**&#x200B;节点中的移动投放模板。 有关更多信息，请参阅 [Campaign v8 文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html?lang=zh-Hans){target="_blank"}。
 
 要通过短信渠道发送消息，您必须创建包含渠道连接器引用的模板。
 

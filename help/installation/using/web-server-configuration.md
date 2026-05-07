@@ -81,5 +81,5 @@ ht-degree: 0%
 
 相关主题：
 
-* [Adobe Marketing Cloud合规性概述](https://experienceleague.adobe.com/en/docs/experience-platform/landing/governance-privacy-security/overview#privacy)
-* [Adobe Campaign安全概述](https://experienceleague.adobe.com/en/docs/experience-platform/landing/governance-privacy-security/overview#security)
+* [Adobe Marketing Cloud合规性概述](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/landing/governance-privacy-security/overview#privacy)
+* [Adobe Campaign安全概述](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/landing/governance-privacy-security/overview#security)
