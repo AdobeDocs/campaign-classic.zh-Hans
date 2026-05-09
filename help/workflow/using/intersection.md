@@ -5,7 +5,7 @@ description: 交集
 feature: Workflows, Targeting Activity
 hide: true
 exl-id: f426bf02-9899-49eb-b699-728d51b57c64
-source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
+source-git-commit: 036c937224135f7b372010736f2040a8a6c69b4c
 workflow-type: tm+mt
 source-wordcount: '432'
 ht-degree: 15%
@@ -63,3 +63,4 @@ ht-degree: 15%
 * recCount
 
 这组三个值标识从交叉点生成的目标。 **[!UICONTROL tableName]**&#x200B;是记录目标标识符的表的名称，**[!UICONTROL schema]**&#x200B;是群体的架构（通常为&#x200B;**[!UICONTROL nms:recipient]**），**[!UICONTROL recCount]**&#x200B;是表中的元素数。
+
