@@ -6,10 +6,10 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: b9a716f327b8fdd68c3bf36dbe864535308def30
-workflow-type: ht
-source-wordcount: '294'
-ht-degree: 100%
+source-git-commit: 2296c1a7f6b818991d1620281077547d9250f16d
+workflow-type: tm+mt
+source-wordcount: '376'
+ht-degree: 76%
 
 ---
 
@@ -21,24 +21,47 @@ ht-degree: 100%
 
 [!BADGE 正式发布版]{type=Positive url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=zh-Hans#rn-statuses" tooltip="正式发布版"}
 
-_2026 年 3 月 16 日_
-
 >[!CAUTION]
 >
 > 必须升级客户端控制台。
 
+_2026年3月31日_
+
 ### 安全性改进 {#security-7-4-3}
 
-* 为了保持最佳的安全性、稳定性和合规性，Debian 已升级到版本13，PostgreSQL 已升级到版本 17。请参阅[兼容性矩阵](compatibility-matrix.md)。
+* 为了保持最佳的安全性、稳定性和合规性，Debian 已升级到版本13，PostgreSQL 已升级到版本 17。 请参阅[兼容性矩阵](compatibility-matrix.md)。
 
 ### 修复 {#fixes-7-4-3}
 
-* 修复了条形码组件允许使用无限制高度参数的问题，该问题可能导致安全漏洞。(NEO-89984)
-* 修复了通过工作流创建的列表中的枚举字段缺少临时名称属性，导致界面中显示不正确或空白枚举标签的问题。(NEO-91158)
-* 修复了未完全重新计算某些投放的投放统计信息的问题，尤其是会影响成功指标的问题。(NEO-88106)
-* 修复了在包含重复数据删除活动的工作流中使用 targetData 字段时投放准备失败并出现个性化错误的问题。(NEO-87693)
-* 修复了在 PostgreSQL 15 中，由于类型转换要求而使单字符字符串字段与其他字符串连接失败的问题。(NEO-88028)
-* 修复了由于父投放与子投放 ID 不匹配，分布式营销中的协作营销活动的跟踪日志未写入数据库的问题。(NEO-86836)
-* 修复了投放日志显示消息已取消的问题（即使消息已成功发送），尤其是影响具有波次调度的投放。(NEO-78933)
-* 修复了数据库清理工作流无法有效清除数据，从而可能影响性能的问题。(NEO-76439)
+>[!NOTE]
+>
+> 以下列出的修复已在后续的7.4.3内部版本中逐步推出。 导航到&#x200B;**[!UICONTROL Help > About...]** [菜单](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)以检查您是否拥有最新的9394@28aaec9内部版本。 有关更多信息，请与Adobe代表联系。
+
+* 修复了条形码组件允许使用无限制高度参数的问题，该问题可能导致安全漏洞。 (NEO-89984)
+* 修复了通过工作流创建的列表中的枚举字段缺少临时名称属性，导致界面中显示不正确或空白枚举标签的问题。 (NEO-91158)
+* 修复了在包含重复数据删除活动的工作流中使用 targetData 字段时投放准备失败并出现个性化错误的问题。 (NEO-87693)
+* 修复了在 PostgreSQL 15 中，由于类型转换要求而使单字符字符串字段与其他字符串连接失败的问题。 (NEO-88028)
+* 修复了由于父投放与子投放 ID 不匹配，分布式营销中的协作营销活动的跟踪日志未写入数据库的问题。 (NEO-86836)
+* 修复了投放日志显示消息已取消的问题（即使消息已成功发送），尤其是影响具有波次调度的投放。 (NEO-78933)
+* 修复了数据库清理工作流无法有效清除数据，从而可能影响性能的问题。 (NEO-76439)
+
+<!-- BUILD 7.0.9394.28aaec9 -->
+
+* 修复了未完全重新计算某些投放的投放统计信息的问题，尤其是会影响成功指标的问题。 (NEO-88106) <!-- moved from original 7.4.3 GA Fixes section -->
+* 修复了客户端控制台在打开引用缺少的上游定位架构的特定工作流时可能会崩溃的问题。 (NEO-28727)
+* 修复了在启动失败后无法识别客户端控制台版本的问题，因为安装包中缺少版本文件。 (NEO-94798)
+
+<!--
+other fixes - ommitted from release notes
+
+Internal/non-customer-facing:
+
+* Fixed an internal DevOps build race condition when copying the `teradata_timezones.txt` file during build packaging. (NEO-66532) — internal only; the Jira description states "No impact for customers: either it builds (99.9% of the time) or it does not."
+* Fixed an internal CI/CD issue where AWS CodeBuild jobs could fail randomly on EC2 Docker containers when copying files during build. (NEO-90823) — internal CI/CD infrastructure only
+
+Customer-specific hotfixes:
+
+* Fixed an issue where coupon assignment could fail during delivery message preparation due to a SQL syntax error when looking up coupon codes. (NEO-92857) — Verizon only
+* Fixed an issue where the error count and status in the `nms:address` table were not consistently updated on the marketing server after recurring soft bounces, causing recipients to not be quarantined as expected even though they were correctly flagged on the mid-sourcing server. (NEO-94422) — Walgreens only
+-->
 
