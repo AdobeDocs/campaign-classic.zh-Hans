@@ -38,15 +38,15 @@ ht-degree: 20%
 
 >[!NOTE]
 >
->要了解有关用户档案以及如何创建和编辑它们的更多信息，请参阅有关[Campaign v8文档](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/gs-audiences){target=_blank}的详细文档。
+>要了解有关用户档案以及如何创建和编辑它们的更多信息，请参阅有关[Campaign v8文档](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/audience/gs-audiences){target=_blank}的详细文档。
 
 >[!BEGINTABS]
 
 >[!TAB 配置文件文档]
 
-要了解有关用户档案以及如何创建和编辑它们的更多信息，请参阅有关&#x200B;**[Campaign v8文档](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/gs-audiences){target=_blank}**&#x200B;的详细文档。
+要了解有关用户档案以及如何创建和编辑它们的更多信息，请参阅有关&#x200B;**[Campaign v8文档](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/audience/gs-audiences){target=_blank}**&#x200B;的详细文档。
 
-[![image](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/gs-audiences){target=_blank}
+[![image](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/audience/gs-audiences){target=_blank}
 
 >[!TAB 创建和编辑用户档案]
 

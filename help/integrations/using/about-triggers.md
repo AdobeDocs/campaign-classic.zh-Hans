@@ -40,7 +40,7 @@ ht-degree: 8%
 由于配置很少且没有第三方参与，因此它允许更敏捷的集成。
 它还支持高流量而不影响营销活动的性能。 例如，集成每小时可处理100万个触发器。
 
-![](assets/do-not-localize/book.png)了解如何[创建Experience Cloud触发器](https://experienceleague.adobe.com/docs/experience-cloud/triggers/create.html)，识别、定义并监视关键客户行为。
+![](assets/do-not-localize/book.png)了解如何[创建Experience Cloud触发器](https://experienceleague.adobe.com/docs/experience-cloud/triggers/create.html?lang=zh-Hans)，识别、定义并监视关键客户行为。
 
 ## [!DNL Triggers]架构 {#triggers-architecture}
 

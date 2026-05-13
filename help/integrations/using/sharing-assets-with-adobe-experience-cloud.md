@@ -22,7 +22,7 @@ ht-degree: 0%
 
 # 与Adobe Experience Cloud共享资源{#sharing-assets-with-adobe-experience-cloud}
 
-[Experience Cloud Assets](https://experienceleague.adobe.com/en/docs/core-services/interface/services/audiences/overview){target="_blank"}为可在解决方案间共享的营销就绪型资源提供了一个集中的存储库。 资产是数字文档、图像、视频或音频文件。
+[Experience Cloud Assets](https://experienceleague.adobe.com/zh-hans/docs/core-services/interface/services/audiences/overview){target="_blank"}为可在解决方案间共享的营销就绪型资源提供了一个集中的存储库。 资产是数字文档、图像、视频或音频文件。
 
 资源服务包括：
 

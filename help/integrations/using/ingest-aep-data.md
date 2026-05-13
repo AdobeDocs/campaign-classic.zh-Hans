@@ -42,7 +42,7 @@ ht-degree: 0%
 
 将Campaign Classic配置为目标后，您需要构建一个专用工作流来导入Adobe Experience Platform已导出的文件。
 
-为此，您需要添加和配置&#x200B;**[!UICONTROL File transfer]**&#x200B;活动。 有关如何配置此活动的更多信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html){target="_blank"}。
+为此，您需要添加和配置&#x200B;**[!UICONTROL File transfer]**&#x200B;活动。 有关如何配置此活动的更多信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html?lang=zh-Hans){target="_blank"}。
 
 ![](assets/rtcdp-file-transfer.png)
 

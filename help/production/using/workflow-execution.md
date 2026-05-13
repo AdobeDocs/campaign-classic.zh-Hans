@@ -42,7 +42,7 @@ ht-degree: 11%
 
 此问题可能由多种原因引起，请按照以下步骤解决该问题：
 
-1. 检查&#x200B;[**[!UICONTROL operationMgt]**](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows.html){target="_blank"}技术工作流状态。 此工作流用于管理营销活动中的作业或工作流。 如果失败，这将导致工作流无法启动/停止。 重新启动工作流可继续运行活动工作流。
+1. 检查&#x200B;[**[!UICONTROL operationMgt]**](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows.html?lang=zh-Hans){target="_blank"}技术工作流状态。 此工作流用于管理营销活动中的作业或工作流。 如果失败，这将导致工作流无法启动/停止。 重新启动工作流可继续运行活动工作流。
 
    有关技术工作流监视的详细信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-technical-workflows.html?lang=zh-Hans){target="_blank"}。
 

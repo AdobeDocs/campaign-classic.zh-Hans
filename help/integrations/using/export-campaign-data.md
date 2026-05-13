@@ -38,7 +38,7 @@ ht-degree: 4%
 
 为此，请添加并配置：
 
-* 将目标数据提取到CSV文件中的&#x200B;**[!UICONTROL Data extraction (file)]**&#x200B;活动。 有关如何配置此活动的更多信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/extraction-file.html){target="_blank"}。
+* 将目标数据提取到CSV文件中的&#x200B;**[!UICONTROL Data extraction (file)]**&#x200B;活动。 有关如何配置此活动的更多信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/extraction-file.html?lang=zh-Hans){target="_blank"}。
 
   ![](assets/rtcdp-extract-file.png)
 
@@ -56,7 +56,7 @@ ht-degree: 4%
 
 1. 在Adobe Experience Platform **[!UICONTROL Sources]**&#x200B;菜单中，创建与存储位置的连接：
 
-   * [创建Amazon S3源连接](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/cloud-storage/s3.html)
+   * [创建Amazon S3源连接](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/cloud-storage/s3.html?lang=zh-Hans)
    * [Azure Blob连接器](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/cloud-storage/blob.html)
 
    >[!NOTE]
