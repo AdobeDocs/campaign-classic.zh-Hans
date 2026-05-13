@@ -5,9 +5,12 @@ description: 了解有关报表属性设置的更多信息
 badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v8"
 feature: Reporting, Monitoring
 exl-id: dfa9d329-1086-4f6d-9d03-df159cad5495
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+TQID: https://experienceleague.adobe.com/NAcXKBNoDJRopQf-QpqnFhwxFRvvScp7xShJotE0s1A
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: cc72dcf1-72e1-48cc-b434-e7c27d62d67c
+source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
 workflow-type: tm+mt
-source-wordcount: '440'
+source-wordcount: 440
 ht-degree: 3%
 
 ---
@@ -20,7 +23,7 @@ ht-degree: 3%
 
 ![](assets/s_ncs_advuser_report_properties_01.png)
 
-常规属性如下所述。 此部分[&#128279;](../../reporting/using/advanced-functionalities.md)中介绍了&#x200B;**[!UICONTROL Parameters]**、**[!UICONTROL Variables]**&#x200B;和&#x200B;**[!UICONTROL Scripts]**&#x200B;选项卡中配置的高级功能。
+常规属性如下所述。 此部分](../../reporting/using/advanced-functionalities.md)中介绍了&#x200B;**[!UICONTROL Parameters]**、**[!UICONTROL Variables]**&#x200B;和&#x200B;**[!UICONTROL Scripts]**&#x200B;选项卡中配置的高级功能[。
 
 ## 常规属性 {#overall-properties}
 
@@ -46,7 +49,7 @@ ht-degree: 3%
 
 * **[!UICONTROL Anonymous access]**：此选项启用对报告的无限制访问。 但是，操作是不可能的。
 
-  “webapp”技术操作员的权限用于显示报表元素。 在本节[&#128279;](../../platform/using/access-management-operators.md)中了解更多。
+  “webapp”技术操作员的权限用于显示报表元素。 在本节](../../platform/using/access-management-operators.md)中了解更多[。
 
 * **[!UICONTROL Access control]**：此选项允许Adobe Campaign操作员在登录后访问它。
 * **[!UICONTROL Specific account]**：此选项允许您使用在&#x200B;**[!UICONTROL Operator]**&#x200B;字段中选择的操作员的权限执行报告。

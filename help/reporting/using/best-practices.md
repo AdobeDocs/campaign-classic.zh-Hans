@@ -5,9 +5,14 @@ description: Campaign报告最佳实践
 feature: Reporting, Monitoring
 badge: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 exl-id: 0c7f00f3-b16d-41c5-a7b1-f5a59201bf8c
-source-git-commit: 517b85f5d7691acc2522bf4541f07c34c60c7fbf
+TQID: https://experienceleague.adobe.com/0NZ2bS4K-X1okyD-snv-pBDekzNqmFV5soF-qUOOVKo
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: a658c786-869b-4194-a780-2594d663adda
+subfeature_v2: id: af6750fd-3c1b-4ad2-9fe3-99e81510998did: fcb46c0f-76e1-48bc-9dd0-fcf9d97526cf
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: c2be0313-b3ae-45e0-b454-d20bf54b23f2id: d095671a-1355-40aa-8b5f-06c33c68080bid: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
 workflow-type: tm+mt
-source-wordcount: '857'
+source-wordcount: 857
 ht-degree: 6%
 
 ---
@@ -33,7 +38,7 @@ ht-degree: 6%
    * 浏览数据库中的数据并定义测量。 可在[此小节](../../reporting/using/ac-cubes.md)中了解详情。
    * 向现有报告添加指标。 可在[此小节](../../reporting/using/about-reports-creation-in-campaign.md)中了解详情。
    * 查看数据库中的数据。 可在[此小节](../../reporting/using/about-descriptive-analysis.md)中了解详情。
-   * 创建新的投放报告。 在本节[&#128279;](../../reporting/using/about-reports-creation-in-campaign.md)中了解更多，
+   * 创建新的投放报告。 在本节](../../reporting/using/about-reports-creation-in-campaign.md)中了解更多[，
    * 从Adobe Campaign数据库导出数据(通过工作流，请参阅[此部分](../../workflow/using/about-workflows.md)
    * 创建数据透视表。 可在[此小节](../../reporting/using/creating-a-table.md#creating-a-breakdown-or-pivot-table)中了解详情。
    * 浏览汇总的数据。 可在[此小节](../../reporting/using/ac-cubes.md)中了解详情。

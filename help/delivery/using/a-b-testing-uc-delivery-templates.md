@@ -6,16 +6,19 @@ role: User
 badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v8"
 feature: A/B Testing
 exl-id: 77b3a906-b76e-49e1-b524-b6f1ae537259
-source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
+TQID: https://experienceleague.adobe.com/eble-fTf8Rk7fFGnKNh5pLUhMaLdZlJrG-vjrhbHx1I
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
 workflow-type: tm+mt
-source-wordcount: '104'
+source-wordcount: 104
 ht-degree: 5%
 
 ---
 
 # AB测试：创建投放模板 {#step-3--creating-two-delivery-templates}
 
-现在，我们要创建两个投放模板。 每个模板都将在链接到&#x200B;**[!UICONTROL Split]**&#x200B;活动的&#x200B;**[!UICONTROL Email delivery]**&#x200B;活动中引用。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html?lang=zh-Hans){target="_blank"}。
+现在，我们要创建两个投放模板。 每个模板都将在链接到&#x200B;**[!UICONTROL Split]**&#x200B;活动的&#x200B;**[!UICONTROL Email delivery]**&#x200B;活动中引用。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html){target="_blank"}。
 
 1. 浏览到&#x200B;**[!UICONTROL Resources > Delivery template]**&#x200B;文件夹。
 1. 复制&#x200B;**[!UICONTROL Email]**&#x200B;投放模板。

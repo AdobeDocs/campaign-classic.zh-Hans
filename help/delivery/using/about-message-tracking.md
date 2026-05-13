@@ -5,9 +5,15 @@ description: 了解更多Adobe Campaign中跟踪的一般准则
 feature: Monitoring, Email
 role: User
 exl-id: 43779505-9917-4e99-af25-b00a9d29a645
-source-git-commit: ba53107ce06c0484070cbe0943ba439d33d5f710
+TQID: https://experienceleague.adobe.com/nuJsXyGxw2iGUoxFn03ui0DPPxoZ7qW7Ba26BZn7-eY
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: b82389f8-9b5e-4083-8e3b-3cef299fb8b9id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+subfeature_v2: id: a39dbcf0-89cb-4765-9bcb-cf9dfbe2875fid: cfc95e9b-b035-4403-a6a9-b27a8a053a37id: e3988c18-3cfa-4f16-b812-ac2d2b1056faid: e656c701-3899-4db3-989c-de0980ddfffa
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: c1579802-ddd4-4214-8a91-97b2066abe11id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
 workflow-type: tm+mt
-source-wordcount: '1364'
+source-wordcount: 1364
 ht-degree: 3%
 
 ---
@@ -18,10 +24,10 @@ ht-degree: 3%
 >
 >有关同时适用于Campaign Classic v7和Campaign v8的&#x200B;**常规跟踪指南**，请参阅[Campaign v8消息跟踪文档](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/analytics/tracking/tracking){target="_blank"}：
 >
->* [配置跟踪的链接](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/analytics/tracking/tracked-links){target="_blank"}
->* [配置 URL 跟踪选项](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/analytics/tracking/url-tracking){target="_blank"}
->* [跟踪个性化链接](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/analytics/tracking/personalized-links){target="_blank"}
->* [访问跟踪日志](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/analytics/tracking/tracking-logs){target="_blank"}
+>* [配置跟踪的链接](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/tracking/tracked-links){target="_blank"}
+>* [配置 URL 跟踪选项](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/tracking/url-tracking){target="_blank"}
+>* [跟踪个性化链接](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/tracking/personalized-links){target="_blank"}
+>* [访问跟踪日志](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/tracking/tracking-logs){target="_blank"}
 >* [测试跟踪](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/testing-tracking){target="_blank"}
 >* [跟踪报告](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/reporting/delivery-reports#tracking-indicators){target="_blank"}
 >
@@ -82,7 +88,7 @@ ht-degree: 3%
 
 以下故障排除提示适用于&#x200B;**Campaign Classic v7混合/内部部署**。 某些信息也可能适用于Campaign v8内部部署。 对于Campaign v8托管云服务，请联系您的Adobe代表寻求帮助。
 
-有关Campaign v8中的基本跟踪故障排除步骤，请参阅Campaign v8中的[跟踪故障排除文档](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/analytics/tracking/tracking-logs#troubleshooting){target="_blank"}。
+有关Campaign v8中的基本跟踪故障排除步骤，请参阅Campaign v8中的[跟踪故障排除文档](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/tracking/tracking-logs#troubleshooting){target="_blank"}。
 
 ### 基本检查 {#basic-checks}
 

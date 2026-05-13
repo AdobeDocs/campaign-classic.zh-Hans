@@ -7,9 +7,13 @@ audience: interaction
 content-type: reference
 topic-tags: delivering-an-offer
 exl-id: 64aea8b9-7f06-4db0-a3e6-6a0e17c3ddcb
-source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
+TQID: https://experienceleague.adobe.com/-Q0o3Wq57hsb8ApehXe-CD2MbzkIftqPq21DWKDuauE
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: a075b2c1-7748-4328-b7f6-343aa314616a
+topic_v2: id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
 workflow-type: tm+mt
-source-wordcount: '828'
+source-wordcount: 828
 ht-degree: 1%
 
 ---
@@ -29,7 +33,7 @@ ht-degree: 1%
 
 ![](assets/offer_delivery_009.png)
 
-在本节[&#128279;](../../delivery/using/about-direct-mail-channel.md)中了解有关直邮投放的更多信息。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=zh-Hans){target=_blank}以了解有关营销活动的更多信息。
+在本节](../../delivery/using/about-direct-mail-channel.md)中了解有关直邮投放[的更多信息。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=zh-Hans){target=_blank}以了解有关营销活动的更多信息。
 
 ### 将选件插入投放的主要步骤 {#main-steps-for-inserting-an-offer-into-a-delivery}
 
@@ -53,11 +57,11 @@ ht-degree: 1%
 
    ![](assets/offer_delivery_005.png)
 
-1. 根据需要选择&#x200B;**[!UICONTROL Exclude non-eligible recipients]**&#x200B;选项。 有关详细信息，请参阅用于调用优惠引擎[&#128279;](#parameters-for-calling-offer-engine)的参数。
+1. 根据需要选择&#x200B;**[!UICONTROL Exclude non-eligible recipients]**&#x200B;选项。 有关详细信息，请参阅用于调用优惠引擎](#parameters-for-calling-offer-engine)的[参数。
 
    ![](assets/offer_delivery_006.png)
 
-1. 如有必要，请选择&#x200B;**[!UICONTROL Do not display anything if no offers are selected]**&#x200B;选项。 有关详细信息，请参阅用于调用优惠引擎[&#128279;](#parameters-for-calling-offer-engine)的参数。
+1. 如有必要，请选择&#x200B;**[!UICONTROL Do not display anything if no offers are selected]**&#x200B;选项。 有关详细信息，请参阅用于调用优惠引擎](#parameters-for-calling-offer-engine)的[参数。
 
    ![](assets/offer_delivery_007.png)
 

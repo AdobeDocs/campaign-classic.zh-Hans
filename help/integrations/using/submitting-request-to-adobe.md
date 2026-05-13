@@ -8,9 +8,13 @@ audience: integrations
 content-type: reference
 topic-tags: audience-sharing
 exl-id: f3c19fcd-12cb-4ca3-b4b7-7dc4be57f4ea
-source-git-commit: 647709dd4b0c70c342be03d3012bc02f10ff2c00
+TQID: https://experienceleague.adobe.com/IIiDeR9teIgEBsbUb70DP-PA56Ux2MmpmBZuVIVF0M0
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: d5ef99fa-df0c-4153-bf94-105ad0724167
+topic_v2: id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
 workflow-type: tm+mt
-source-wordcount: '146'
+source-wordcount: 146
 ht-degree: 6%
 
 ---
@@ -21,7 +25,7 @@ ht-degree: 6%
 >
 >作为v7用户，为了能够继续下一步操作，请确保您的系统上启用了Adobe Identity Management System (IMS)。 [了解详情](../../integrations/using/about-adobe-id.md)。
 
-为您的组织启用Adobe Identity Management服务(IMS)后，您可以请求配置与Campaign的[Experience Cloud Audience](https://experienceleague.adobe.com/zh-hans/docs/core-services/interface/services/audiences/overview){target="_blank"}集成。 为此，请联系您的Adobe代表，并提供以下信息：
+为您的组织启用Adobe Identity Management服务(IMS)后，您可以请求配置与Campaign的[Experience Cloud Audience](https://experienceleague.adobe.com/en/docs/core-services/interface/services/audiences/overview){target="_blank"}集成。 为此，请联系您的Adobe代表，并提供以下信息：
 
 <table> 
  <tbody> 

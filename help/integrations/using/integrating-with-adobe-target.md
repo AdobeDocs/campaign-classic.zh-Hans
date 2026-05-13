@@ -8,9 +8,13 @@ audience: integrations
 content-type: reference
 topic-tags: adobe-target
 exl-id: 2e29d090-b87b-4cff-a703-58e1da082f04
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+TQID: https://experienceleague.adobe.com/f58vs0ePAH-7bcfJ8u1GKLzcz0-fHnrwFyOVUWOFW-o
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: d5ef99fa-df0c-4153-bf94-105ad0724167
+subfeature_v2: id: b1fd1501-3105-4d6b-b4d4-9af53126df75
+source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
 workflow-type: tm+mt
-source-wordcount: '209'
+source-wordcount: 209
 ht-degree: 0%
 
 ---
@@ -23,7 +27,7 @@ ht-degree: 0%
 
 要优化电子邮件内容，您可以在Adobe Target中创建重定向选件，然后使用Adobe Campaign管理电子邮件选件。 例如，您可以为男性收件人和女性收件人显示不同的选件。
 
-该集成在电子邮件打开时发生。 客户打开电子邮件时，会对Target发起调用，并显示内容的动态版本。 内容包含所有浏览器都支持的静态图像。 Target会跟踪受众或会话级别对选件的反应，并且这些数据会在Target报表中可用。 [请参阅Adobe Target文档以了解详情](https://experienceleague.adobe.com/docs/target/using/integrate/campaign-and-target.html?lang=zh-Hans)。
+该集成在电子邮件打开时发生。 客户打开电子邮件时，会对Target发起调用，并显示内容的动态版本。 内容包含所有浏览器都支持的静态图像。 Target会跟踪受众或会话级别对选件的反应，并且这些数据会在Target报表中可用。 [请参阅Adobe Target文档以了解详情](https://experienceleague.adobe.com/docs/target/using/integrate/campaign-and-target.html)。
 
 
 >[!NOTE]

@@ -5,9 +5,12 @@ description: 了解有关定期投放工作流活动的更多信息
 feature: Workflows
 hide: true
 exl-id: efd2cdfb-2e5f-4672-8be8-a424481b11ed
-source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
+TQID: https://experienceleague.adobe.com/a33apxZWE9H0Y3ukmFMQMrep1aY95iswu40y-ZjOd0U
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+topic_v2: id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
 workflow-type: tm+mt
-source-wordcount: '289'
+source-wordcount: 289
 ht-degree: 14%
 
 ---
@@ -28,7 +31,7 @@ ht-degree: 14%
 
 1. 配置投放模板。
 
-此活动的配置过程与根据可用选项创建投放模板的过程类似。 有关更多信息，请参阅此[&#128279;](../../delivery/using/about-templates.md)章节。
+此活动的配置过程与根据可用选项创建投放模板的过程类似。 有关更多信息，请参阅此](../../delivery/using/about-templates.md)章节[。
 
 >[!CAUTION]
 >
@@ -54,6 +57,6 @@ ht-degree: 14%
 
 此视频介绍如何配置循环投放和调度程序活动。
 
->[!VIDEO](https://video.tv.adobe.com/v/27510?captions=chi_hans&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/25040?quality=12)
 
 [此处](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hans)提供了其他 Campaign Classic 操作方法视频。

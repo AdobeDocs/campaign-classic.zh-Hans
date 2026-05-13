@@ -6,9 +6,16 @@ feature: Release Notes
 role: User
 level: Beginner
 exl-id: 0cd6bf20-da72-4cf0-9f5d-d4e8acdd324d
-source-git-commit: 76f483dcda9f8a5ed93355d68bb1d1a589d55722
-workflow-type: ht
-source-wordcount: '2670'
+TQID: https://experienceleague.adobe.com/AmqYU4ywJ6B6sus7q6BAHsG7cPGLZRH4m12hoqw68as
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: b82389f8-9b5e-4083-8e3b-3cef299fb8b9
+subfeature_v2: id: cfc95e9b-b035-4403-a6a9-b27a8a053a37
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+level_v2: id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: d095671a-1355-40aa-8b5f-06c33c68080bid: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
+workflow-type: tm+mt
+source-wordcount: 2670
 ht-degree: 100%
 
 ---
@@ -49,7 +56,7 @@ _2021 年 9 月 7 日_
 
 * Flash 生命周期结束后，已从所有相关的 Campaign 功能和组件中删除，并替换为 HTML5。 已删除&#x200B;**量规**&#x200B;类型的图表。 (NEO-30330) [阅读更多](../../reporting/using/creating-a-chart.md)
 * 现在，在 Windows 上安装客户端控制台时，安装程序会检查是否存在父注册表节点，如果缺少该节点，则会创建一个。 这可防止在启动控制台时出现潜在问题。 (NEO-34854)
-* 已对跟踪签名功能进行改进，以防止出现与第三方工具（电子邮件客户端、Internet 浏览器等）处理特殊字符的方式相关的错误。URL 参数现已经过编码。
+* 已对跟踪签名功能进行改进，以防止出现与第三方工具（电子邮件客户端、Internet 浏览器等） 处理特殊字符的方式相关的错误。 URL 参数现已经过编码。
 
 **其他变更**
 
@@ -168,7 +175,7 @@ _2021 年 6 月 5 日_
 
 **安全性增强**
 
-* 现在，仅管理员用户可使用 **xtk:session#GetCnxInfo** API 方法，该方法会返回完整的数据库连接详细信息。(NEO-27779)
+* 现在，仅管理员用户可使用 **xtk:session#GetCnxInfo** API 方法，该方法会返回完整的数据库连接详细信息。 (NEO-27779)
 * 在 CRM 相关的 JavaScript 文件中，已弃用的 decryptString 函数已替换为 decryptPassword 函数。
 * 跟踪签名功能已得到改进，以降低第三方工具（电子邮件客户端、互联网浏览器、安全链接安全工具）修改跟踪链接时发生跟踪重定向错误的风险。
 * 修复了在包含大写字符时，可能会导致跟踪 URL 无法正常工作的问题。 跟踪 URL 签名机制现在区分大小写。 (NEO-28414)
@@ -218,7 +225,7 @@ Campaign 现在支持以下系统：
 * 修复了导致 SAP HANA FDA 索引创建失败的问题。 (NEO-29664)
 * 修复了在执行包含标头的 SOAP 调用时，可能会使事务性消息处于&#x200B;**等待**&#x200B;状态的问题。 (NEO-28737)
 * 修复了使用 Teradata FDA 连接器时出现的问题：所有临时表都在集群的一个节点上创建，这最终会消耗整个后台处理空间并导致 Teradata 崩溃。 现在，临时表会在许多节点上生成。 (NEO-28230)
-* 修复了使用 Web 应用程序时导致跟踪标记在 **nms:trackingURL** 架构中生成不正确的主键的问题。(NEO-27931)
+* 修复了使用 Web 应用程序时导致跟踪标记在 **nms:trackingURL** 架构中生成不正确的主键的问题。 (NEO-27931)
 * 对 ODBC 3.x 的兼容性已得到增强，以确保错误消息的准确性。
 * 修复了在电子邮件投放中使用自定义内容模板时可能导致控制台崩溃的问题。 (NEO-31547)
 * 修复了由于连接速度缓慢或响应内容过大，Tomcat 无法发送有效响应的问题。 (NEO-30858)

@@ -5,9 +5,13 @@ description: 详细了解如何对短信渠道进行故障排除
 feature: SMS, Troubleshooting
 role: User
 exl-id: 841f0c2f-90ef-4db0-860a-75fc7c48804a
-source-git-commit: f660dcbb111e73f12737d96ebf9be2aeccbca8ee
+TQID: https://experienceleague.adobe.com/h0vsbqdwW-21Ay-v8v8eUQzHyDkCVZoxXWHx5m1Qd7g
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
 workflow-type: tm+mt
-source-wordcount: '3072'
+source-wordcount: 3072
 ht-degree: 0%
 
 ---
@@ -44,7 +48,7 @@ Adobe Campaign将外部帐户视为不相关的实体。
    * 某些外部帐户共享相同的登录/密码组合。
 提供程序无法辨别`BIND PDU`来自哪个外部帐户，因此他们将来自多个帐户的所有连接视为单个连接。 他们可能已将MO和SR随机路由到两个帐户，从而导致出现问题。
 如果提供程序支持同一登录/密码组合使用多个短代码，则必须询问他们将短代码放在`BIND PDU`中的什么位置。 请注意，此信息必须放在`BIND PDU`中，而不是放在`SUBMIT_SM`中，因为`BIND PDU`是唯一允许正确路由MO的位置。
-请参阅上面各种PDU[&#128279;](sms-protocol.md#information-pdu)部分中的信息以了解`BIND PDU`中可用的字段，通常是在`address_range`中添加短代码，但这需要提供程序的特别支持。 联系他们，了解他们希望如何独立路由多个短代码。
+请参阅上面各种PDU](sms-protocol.md#information-pdu)部分中的[信息以了解`BIND PDU`中可用的字段，通常是在`address_range`中添加短代码，但这需要提供程序的特别支持。 联系他们，了解他们希望如何独立路由多个短代码。
 Adobe Campaign支持在同一外部帐户上处理多个短代码。
 
 ## 外部帐户一般问题 {#external-account-issues}

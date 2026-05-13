@@ -5,9 +5,12 @@ description: 了解如何为定期导入配置工作流模板
 feature: Workflows, Data Management
 hide: true
 exl-id: e6e140cb-8de0-4ab9-bddc-95abe04124c6
-source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
+TQID: https://experienceleague.adobe.com/hxHxtxZ7OVO1ODamW1dvMbnuKE0d3t1X7EZnHJTPKSc
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+topic_v2: id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
 workflow-type: tm+mt
-source-wordcount: '1027'
+source-wordcount: 1027
 ht-degree: 0%
 
 ---
@@ -42,7 +45,7 @@ ht-degree: 0%
 
    * 在&#x200B;**[!UICONTROL Name of the file to load]**&#x200B;部分中，选择&#x200B;**[!UICONTROL Upload a file from the local machine]**&#x200B;并将字段留空。 每次从此模板创建新工作流时，只要该文件与定义的结构相对应，您就可以在此处指定所需的文件。
 
-     您可以使用任何选项，但必须相应地修改模板。 例如，如果选择&#x200B;**[!UICONTROL Specified in the transition]**，您可以先添加&#x200B;**[!UICONTROL File Transfer]**&#x200B;活动，然后检索要从FTP/SFTP服务器导入的文件。 通过S3或SFTP连接，您还可以将区段数据导入带有Adobe实时客户数据平台的Adobe Campaign。 有关详细信息，请参阅此[文档](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/email-marketing/adobe-campaign.html?lang=zh-Hans)。
+     您可以使用任何选项，但必须相应地修改模板。 例如，如果选择&#x200B;**[!UICONTROL Specified in the transition]**，您可以先添加&#x200B;**[!UICONTROL File Transfer]**&#x200B;活动，然后检索要从FTP/SFTP服务器导入的文件。 通过S3或SFTP连接，您还可以将区段数据导入带有Adobe实时客户数据平台的Adobe Campaign。 有关详细信息，请参阅此[文档](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/email-marketing/adobe-campaign.html)。
 
      ![](assets/import_template_example1.png)
 
