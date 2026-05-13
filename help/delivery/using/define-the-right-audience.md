@@ -8,8 +8,10 @@ role: User
 hide: true
 exl-id: c0533148-b027-4158-9b95-8d2df769e963
 TQID: https://experienceleague.adobe.com/bA0bwsoCEGaC0-R64f08j8vLzGFDI7hhN3rFYnKdRWA
-product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+product_v2:
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
 source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
 workflow-type: tm+mt
 source-wordcount: 554
@@ -45,7 +47,7 @@ ht-degree: 7%
 
 ## 发送给订阅者 {#send-to-subscribers}
 
-要向新闻稿的订阅者发送消息，可以直接将订阅者定位到相应的信息服务。 在本节](managing-subscriptions.md#delivering-to-the-subscribers-of-a-service)中了解更多[。
+要向新闻稿的订阅者发送消息，可以直接将订阅者定位到相应的信息服务。 在本节[&#128279;](managing-subscriptions.md#delivering-to-the-subscribers-of-a-service)中了解更多。
 
 
 ## 测试收件人和种子地址 {#test-recipients-seed-addresses}
@@ -54,7 +56,7 @@ ht-degree: 7%
 
 确保选择适当的校样收件人，因为他们验证消息的表单和内容。 有关定义校样收件人的步骤，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#select-the-proof-target){target="_blank"}。
 
-种子地址用于定向不符合所定义目标标准的收件人，以便在发送到主目标之前测试投放。 它们在本节](about-seed-addresses.md)中为[呈现。
+种子地址用于定向不符合所定义目标标准的收件人，以便在发送到主目标之前测试投放。 它们在本节[&#128279;](about-seed-addresses.md)中为呈现。
 
 ## 删除重复地址 {#deduplicate-addresses}
 
@@ -75,4 +77,4 @@ ht-degree: 7%
 
 为了优化应用程序中使用的SQL查询的性能，可以从数据架构的主元素声明索引。
 
-向电子邮件地址添加索引的步骤在本节](../../configuration/using/database-mapping.md#indexed-fields)中介绍[。
+向电子邮件地址添加索引的步骤在本节[&#128279;](../../configuration/using/database-mapping.md#indexed-fields)中介绍。

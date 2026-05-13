@@ -8,8 +8,12 @@ content-type: reference
 topic-tags: connectors
 exl-id: 0b53b165-a6d8-4604-b3f0-3fa6fce35146
 TQID: https://experienceleague.adobe.com/F1-F9k9cn7jFb-xmYCQUq5h1-3A6-bajr1cfxeHNPf0
-product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
-topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: e0eb8757-182f-49f3-94a4-1587d16f5094
+product_v2:
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
 source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
 workflow-type: tm+mt
 source-wordcount: 355
@@ -34,7 +38,7 @@ ht-degree: 4%
 
 要使用FDA设置对外部数据库的访问权限，配置步骤如下：
 
-1. 安装驱动程序，并设置与Adobe Campaign服务器上的数据库对应的外部帐户。 请参阅下面列出的特定于数据库的页面[](#fda-specific-configuration)
+1. 安装驱动程序，并设置与Adobe Campaign服务器上的数据库对应的外部帐户。 请参阅下面列出的特定于数据库的页面[&#128279;](#fda-specific-configuration)
 1. 测试外部帐户或在Adobe Campaign与外部数据库之间创建临时连接。 [了解详情](../../installation/using/connecting-to-database.md)
 1. 在Adobe Campaign中创建外部数据库的模式。 这允许您标识外部数据库的数据结构。 [了解详情](../../installation/using/creating-data-schema.md)
 1. 如果需要，请从之前创建的模式创建新的目标映射。 如果投放的收件人来自外部数据库，则需要此字段。 此实施附带与消息个性化相关的限制。 [了解详情](../../installation/using/defining-data-mapping.md)
