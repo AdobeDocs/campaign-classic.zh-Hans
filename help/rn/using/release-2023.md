@@ -7,9 +7,25 @@ role: User
 level: Beginner
 hide: true
 exl-id: 8ed11e96-9f23-4e2e-bae2-25c51cfb549a
-source-git-commit: 4cae5fdb2b78f446f84352046b523d8862e9060c
-workflow-type: ht
-source-wordcount: '2391'
+TQID: https://experienceleague.adobe.com/77yWdkBQIi4XnEr8ZqBuz-2Vm0vg07AQxgI2wh6B150
+product_v2:
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2:
+  - id: a075b2c1-7748-4328-b7f6-343aa314616a
+  - id: b12f6872-9271-4369-85e5-86969a0b99a2
+  - id: b82389f8-9b5e-4083-8e3b-3cef299fb8b9
+subfeature_v2:
+  - id: cfc95e9b-b035-4403-a6a9-b27a8a053a37
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2:
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
+workflow-type: tm+mt
+source-wordcount: 2391
 ht-degree: 100%
 
 ---
@@ -42,7 +58,7 @@ _2023 年 12 月 5 日_
 * 修复了在 Campaign 报告中单击 `Back` 按钮时请求用户重新进行身份验证的问题。 (NEO-65087)
 * 修复了数据库清理工作流中发生的错误，在投放校对前删除投放时会发生该错误。 (NEO-48114)
 * 修复了连接到客户端控制台时的问题：最近对 TLS 验证的更新导致连接错误。 (NEO-50488)
-* 修复了 Campaign 升级到 7.3.1 后 HTTP 代理身份验证的问题。活动工作流中的 HTTP 请求失败，并出现`error 407 – proxy auth required is returned`。(NEO-49624)
+* 修复了 Campaign 升级到 7.3.1 后 HTTP 代理身份验证的问题。 活动工作流中的 HTTP 请求失败，并出现`error 407 – proxy auth required is returned`。 (NEO-49624)
 * 修复了&#x200B;**脚本**&#x200B;工作流活动中 GPG 解密的间歇性故障。 相关的错误消息为：`gpg: decryption failed: No secret key`。 (NEO-50257)
   <!--* Workflow temporary tables now have a primary index in Teradata with a Federated Data Access (FDA) connection. (NEO-62575)-->
 

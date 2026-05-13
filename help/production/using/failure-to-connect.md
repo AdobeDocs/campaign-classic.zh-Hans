@@ -8,9 +8,15 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 exl-id: 3c793dc1-9654-4289-a3d2-30c3078fd848
-source-git-commit: 14ba450ebff9bba6a36c0df07d715b7279604222
+TQID: https://experienceleague.adobe.com/zQXUUtLQveDPTu8blS48gCzTl8lv09vlJXAtjAjgtW4
+product_v2:
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+topic_v2:
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
 workflow-type: tm+mt
-source-wordcount: '417'
+source-wordcount: 417
 ht-degree: 9%
 
 ---
@@ -60,7 +66,7 @@ ht-degree: 9%
 </tr>
 <tr>
 <td>检查安全区域的常规配置。</td>
-<td>有关配置安全区域的详细信息，请参阅<a href="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/configuring-campaign-server.html?lang=zh-Hans#configuring-campaign-server"/>此部分。</a></td>
+<td>有关配置安全区域的详细信息，请参阅<a href="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/configuring-campaign-server.html#configuring-campaign-server"/>此部分。</a></td>
 </tr>
 <tr>
 <td>命令nlserver pdump返回<b>没有任务</b></td>

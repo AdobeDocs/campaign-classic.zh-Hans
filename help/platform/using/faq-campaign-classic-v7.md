@@ -7,9 +7,23 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 89356b5a-d99c-43d1-892b-5a1d003e76cc
-source-git-commit: c1796e5f827b79f72a07eb07886d345d3b897f86
+TQID: https://experienceleague.adobe.com/FL-v5m07U-OzscVIiQONAa-RMu323ZpTuBrL29ukMc4
+product_v2:
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2:
+  - id: a075b2c1-7748-4328-b7f6-343aa314616a
+  - id: d5ef99fa-df0c-4153-bf94-105ad0724167
+subfeature_v2:
+  - id: eb007b6d-6e57-46ab-9485-3f24d6102304
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
 workflow-type: tm+mt
-source-wordcount: '1517'
+source-wordcount: 1517
 ht-degree: 6%
 
 ---
@@ -20,7 +34,7 @@ ht-degree: 6%
 >
 >此常见问题解答解答解答了特定于Adobe Campaign Classic v7体系结构、部署模型和特定于v7的功能的问题。
 >
->**有关常见的Campaign问题**（工作流、投放、受众、报表、个性化等）的完整答案，请参阅&#x200B;[**Campaign v8全面常见问题解答**](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/new/campaign-faq-comprehensive){target="_blank"}，其中提供了按主题组织的详细答案。
+>**有关常见的Campaign问题**（工作流、投放、受众、报表、个性化等）的完整答案，请参阅&#x200B;[**Campaign v8全面常见问题解答**](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-faq-comprehensive){target="_blank"}，其中提供了按主题组织的详细答案。
 
 ## Campaign Classic v7架构和部署 {#v7-architecture}
 

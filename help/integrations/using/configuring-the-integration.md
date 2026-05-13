@@ -7,9 +7,22 @@ badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v
 audience: integrations
 content-type: reference
 exl-id: 54ee88b2-e646-4fb9-abec-957f0096f15f
-source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
+TQID: https://experienceleague.adobe.com/9IREhm2ZwMGCGIMbTQYOpSA4PiLxoJOVPQty4WreUWY
+product_v2:
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2:
+  - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+  - id: d5ef99fa-df0c-4153-bf94-105ad0724167
+subfeature_v2:
+  - id: df0d6518-6f49-46e2-b46e-3bcc513f553f
+  - id: e656c701-3899-4db3-989c-de0980ddfffa
+topic_v2:
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
 workflow-type: tm+mt
-source-wordcount: '556'
+source-wordcount: 556
 ht-degree: 4%
 
 ---
@@ -123,7 +136,7 @@ ht-degree: 4%
 
 1. 通过配置专用的&#x200B;**Adobe Experience Manager**&#x200B;将Cloud Service连接到Adobe Campaign。
 
-   要了解如何通过Cloud Service连接两个解决方案，请参阅Adobe Experience Manager [文档](https://helpx.adobe.com/cn/experience-manager/6-5/sites/administering/using/campaignonpremise.html#ConfiguringAdobeExperienceManager) 。
+   要了解如何通过Cloud Service连接两个解决方案，请参阅Adobe Experience Manager [文档](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/campaignonpremise.html#ConfiguringAdobeExperienceManager) 。
 
 1. 配置&#x200B;**外部化器服务**。
 

@@ -7,9 +7,19 @@ feature: Personalization
 role: User
 hide: true
 exl-id: 67fd9a67-cb05-46cd-acd5-e42fde6f4d4f
-source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
+TQID: https://experienceleague.adobe.com/OLbxTTT7EiAqXlQIwou9t-s62Z3TWibfiG7fPg-9KfE
+product_v2:
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2:
+  - id: a075b2c1-7748-4328-b7f6-343aa314616a
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2:
+  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
 workflow-type: tm+mt
-source-wordcount: '1047'
+source-wordcount: 1047
 ht-degree: 10%
 
 ---
@@ -18,7 +28,7 @@ ht-degree: 10%
 
 个性化字段用于投放消息内容的一级个性化。 在主内容中插入的字段显示插入选定数据源中数据的位置。
 
-例如，语法为&#x200B;**&lt;%= recipient.LastName %>**&#x200B;的个性化字段会告知Adobe Campaign将收件人的名称插入到数据库（收件人表）中。
+例如，语法为&#x200B;**&lt;%= recipient.LastName %>**&#x200B;的个性化字段告知Adobe Campaign将收件人的名称插入到数据库（收件人表）。
 
 ![](assets/do-not-localize/how-to-video.png) [通过观看视频了解此功能](#personalization-fields-video)
 
