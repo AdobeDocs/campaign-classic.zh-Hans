@@ -5,29 +5,18 @@ feature: Technote, Privacy, Privacy Tools
 description: 了解Apple的邮件隐私保护功能可能会对您的营销活动产生哪些影响
 exl-id: e044b35a-b49f-408a-900d-2afe8ff10212
 TQID: https://experienceleague.adobe.com/i3aMiL43o3Sj7aR1u2KJmlMVe3UiS6j-tLc5augCryk
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2:
-  - id: a075b2c1-7748-4328-b7f6-343aa314616a
-  - id: b82389f8-9b5e-4083-8e3b-3cef299fb8b9
-subfeature_v2:
-  - id: cfc95e9b-b035-4403-a6a9-b27a8a053a37
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: a075b2c1-7748-4328-b7f6-343aa314616aid: b82389f8-9b5e-4083-8e3b-3cef299fb8b9
+subfeature_v2: id: cfc95e9b-b035-4403-a6a9-b27a8a053a37
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: e1e0219c-f879-479f-8427-888ed2a6e9c2id: eddd9b14-83bd-4ff4-9072-54a4a484abb7id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: f5b6a90cde6c348f0561026dbf18dc55499ef588
 workflow-type: tm+mt
-source-wordcount: 2099
+source-wordcount: 2094
 ht-degree: 1%
 
 ---
 
 # Apple邮件应用程序中的邮件隐私保护
-
-![适用于v7和v8](../../assets/common.svg)
 
 ## 更改了哪些内容？
 
@@ -108,7 +97,7 @@ Apple的新功能是未来行业在电子邮件隐私保护方面的发展方向
 
   ![](assets/identify-email-open-tracking-2.png)
 
-* 您可以使用预定义过滤器。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/create-a-filter.html?lang=zh-Hans){target="_blank"}。
+* 您可以使用预定义过滤器。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/create-a-filter.html){target="_blank"}。
 
   ![](assets/identify-email-open-tracking-3.png)
 
