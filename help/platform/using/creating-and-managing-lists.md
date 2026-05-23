@@ -34,7 +34,7 @@ ht-degree: 23%
 
 >[!NOTE]
 >
->要了解有关列表以及如何创建和管理列表的更多信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-audiences/create-audiences){target=_blank}。
+>要了解有关列表以及如何创建和管理列表的更多信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/audience/create-audiences/create-audiences){target=_blank}。
 
 <!--
 Two types of lists are available in Adobe Campaign:
@@ -154,6 +154,6 @@ Learn how create a workflow in order to target recipients and how to make it rec
 
 >[!VIDEO](https://video.tv.adobe.com/v/27496?captions=chi_hans&quality=12)
 
-Additional Campaign Classic how-to videos are available [here](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html).
+Additional Campaign Classic how-to videos are available [here](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hans).
 
 -->

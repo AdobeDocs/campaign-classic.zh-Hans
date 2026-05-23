@@ -41,7 +41,7 @@ Adobe Campaign允许您导出压缩或加密文件。 在通过&#x200B;**[!UICON
 **相关主题：**
 
 * [在处理之前解压缩或解密文件](../../platform/using/unzip-decrypt.md)
-* [数据提取（文件）活动](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/extraction-file.html){target="_blank"}
+* [数据提取（文件）活动](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/extraction-file.html?lang=zh-Hans){target="_blank"}
 
 ## 用例：使用安装在控制面板上的密钥加密和导出数据 {#use-case-gpg-encrypt}
 
@@ -64,7 +64,7 @@ Adobe Campaign允许您导出压缩或加密文件。 在通过&#x200B;**[!UICON
 
 1. 配置&#x200B;**[!UICONTROL Query]**&#x200B;活动以定位数据库中的所需数据。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html?lang=zh-Hans){target="_blank"}。
 
-1. 打开&#x200B;**[!UICONTROL Data extraction (file)]**&#x200B;活动，然后根据需要进行配置。 有关如何配置活动的全局概念，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/extraction-file.html){target="_blank"}。
+1. 打开&#x200B;**[!UICONTROL Data extraction (file)]**&#x200B;活动，然后根据需要进行配置。 有关如何配置活动的全局概念，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/extraction-file.html?lang=zh-Hans){target="_blank"}。
 
    ![](assets/gpg-data-extraction.png)
 
