@@ -34,7 +34,7 @@ ht-degree: 6%
 >
 >此常见问题解答解答解答了特定于Adobe Campaign Classic v7体系结构、部署模型和特定于v7的功能的问题。
 >
->**有关常见的Campaign问题**（工作流、投放、受众、报表、个性化等）的完整答案，请参阅&#x200B;[**Campaign v8全面常见问题解答**](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-faq-comprehensive){target="_blank"}，其中提供了按主题组织的详细答案。
+>**有关常见的Campaign问题**（工作流、投放、受众、报表、个性化等）的完整答案，请参阅&#x200B;[**Campaign v8全面常见问题解答**](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/new/campaign-faq-comprehensive){target="_blank"}，其中提供了按主题组织的详细答案。
 
 ## Campaign Classic v7架构和部署 {#v7-architecture}
 
