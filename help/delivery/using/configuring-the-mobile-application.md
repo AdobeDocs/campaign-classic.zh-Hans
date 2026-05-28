@@ -8,11 +8,17 @@ level: Intermediate, Experienced
 hide: true
 exl-id: 67eee1c5-a918-46b9-875d-7c3c71c00635
 TQID: https://experienceleague.adobe.com/GupiG2H4tr3aUKc265ABDhVXpiZBFr9IzG-0s4pxwmU
-product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2: id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-topic_v2: id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+product_v2:
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2:
+  - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2:
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: 8f9e8344b77e50bd2823cc7fa3922466e515327f
 workflow-type: tm+mt
 source-wordcount: 600
@@ -73,7 +79,7 @@ ht-degree: 4%
 
    ![](assets/nmac_service_2.png)
 
-1. 创建iOS开发和生产应用程序。 有关更多信息，请参阅此](configuring-the-mobile-application.md#creating-ios-app)章节[。
+1. 创建iOS开发和生产应用程序。 有关更多信息，请参阅此[&#128279;](configuring-the-mobile-application.md#creating-ios-app)章节。
 
 ## 创建iOS移动应用程序 {#creating-ios-app}
 
@@ -87,8 +93,8 @@ ht-degree: 4%
 
    ![](assets/nmac_ios_2.png)
 
-1. 作为一个选项，您可以根据需要使用大约&#x200B;**[!UICONTROL Application variables]**扩充推送消息内容。 这些都是完全可自定义的，并且是发送到移动设备的消息有效负载的一部分。
-在以下示例中，我们添加**mediaURl**&#x200B;和&#x200B;**mediaExt**&#x200B;以创建富推送通知，然后为应用程序提供要在通知中显示的图像。
+1. 作为一个选项，您可以根据需要使用大约&#x200B;**[!UICONTROL Application variables]**&#x200B;扩充推送消息内容。 这些都是完全可自定义的，并且是发送到移动设备的消息有效负载的一部分。
+在以下示例中，我们添加&#x200B;**mediaURl**&#x200B;和&#x200B;**mediaExt**&#x200B;以创建富推送通知，然后为应用程序提供要在通知中显示的图像。
 
    ![](assets/nmac_ios_3.png)
 
