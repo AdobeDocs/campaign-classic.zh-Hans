@@ -20,7 +20,7 @@ level_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
+source-git-commit: 8f9e8344b77e50bd2823cc7fa3922466e515327f
 workflow-type: tm+mt
 source-wordcount: 854
 ht-degree: 1%
@@ -131,13 +131,13 @@ ht-degree: 1%
 | 选项 | 说明 |
 |:-:|:-:|
 | appName（旧版） | 在上传公钥的旧版Oath应用程序中注册的OAuth应用程序的AppID。 有关更多信息，请参阅此[页面](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md) |
-| authGatewayEndpoint（旧版） | 用于获取网关令牌的URL。 默认： ```https://api.omniture.com``` |
-| authPrivateKey（旧版） | 旧版Oath应用程序中上传的私钥、公共部分，使用XtkKey选项加密的AES： ```cryptString("PRIVATE_KEY")``` |
+| authGatewayEndpoint（旧版） | 用于获取网关令牌的URL。 默认： `https://api.omniture.com` |
+| authPrivateKey（旧版） | 旧版Oath应用程序中上传的私钥、公共部分，使用XtkKey选项加密的AES： `cryptString("PRIVATE_KEY")` |
 | disableAuth（旧版） | 禁用身份验证，只有某些开发管道端点接受不使用网关令牌进行连接。 |
-| discoverPipelineEndpoint | 用于查找要用于此租户的管道服务端点的URL。 默认： ```https://producer-pipeline-pnw.adobe.net``` |
-| dumpStatePeriodSec | ```var/INSTANCE/pipelined.json.``` <br>中内部状态进程的两个转储之间的周期也可以在此按需访问： ```http://INSTANCE:7781/pipelined/status``` |
+| discoverPipelineEndpoint | 用于查找要用于此租户的管道服务端点的URL。 默认： `https://producer-pipeline-pnw.adobe.net` |
+| dumpStatePeriodSec | `var/INSTANCE/pipelined.json.` <br>中内部状态进程的两个转储之间的周期也可以在此按需访问： `http://INSTANCE:7781/pipelined/status` |
 | forcedPipelineEndpoint | 禁用检测PipelineServicesEndpoint以强制执行该操作 |
-| monitorServerPort | 管道化进程将侦听此端口，在此提供内部状态进程： ```http://INSTANCE:PORT/pipelined/status```。 <br>默认值为7781 |
+| monitorServerPort | 管道化进程将侦听此端口，在此提供内部状态进程： `http://INSTANCE:PORT/pipelined/status`。 <br>默认值为7781 |
 | pointerFlushMessageCount | 当处理此数量的消息时，偏移将保存在数据库中。<br> 默认值为1000 |
 | pointerFlushperiodSec | 在此时段之后，偏移将保存在数据库中。 <br>默认值为5（秒） |
 | processingJSThreads | 使用自定义JS连接器处理消息的专用线程数。<br> 默认为4 |
