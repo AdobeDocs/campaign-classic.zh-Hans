@@ -9,18 +9,12 @@ content-type: reference
 level: Intermediate, Experienced
 exl-id: 2d214c36-8429-4b2b-b1f5-fe2730581bba
 TQID: https://experienceleague.adobe.com/0Sv4efbYyu1kT-sDs4CYjDBP3RphjlqPTerDrNxN93I
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2:
-  - id: d5ef99fa-df0c-4153-bf94-105ad0724167
-subfeature_v2:
-  - id: c3bf7e1e-1db5-4c72-9293-e2f0b1ab73d0
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: d5ef99fa-df0c-4153-bf94-105ad0724167
+subfeature_v2: id: c3bf7e1e-1db5-4c72-9293-e2f0b1ab73d0
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: 8f9e8344b77e50bd2823cc7fa3922466e515327f
 workflow-type: tm+mt
 source-wordcount: 854
 ht-degree: 1%
@@ -40,7 +34,7 @@ ht-degree: 1%
 在开始此配置之前，请检查您是否拥有：
 
 * Adobe Developer项目
-* 有效的组织ID — 要查找您的组织ID，请参阅[此页面](https://experienceleague.adobe.com/zh-hans/docs/core-services/interface/administration/organizations#concept_EA8AEE5B02CF46ACBDAD6A8508646255){_blank}
+* 有效的组织ID — 要查找您的组织ID，请参阅[此页面](https://experienceleague.adobe.com/en/docs/core-services/interface/administration/organizations#concept_EA8AEE5B02CF46ACBDAD6A8508646255){_blank}
 * 具有组织访问权限的开发人员
 * Adobe Analytics中的有效触发器配置
 
@@ -131,13 +125,13 @@ ht-degree: 1%
 | 选项 | 说明 |
 |:-:|:-:|
 | appName（旧版） | 在上传公钥的旧版Oath应用程序中注册的OAuth应用程序的AppID。 有关更多信息，请参阅此[页面](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md) |
-| authGatewayEndpoint（旧版） | 用于获取网关令牌的URL。 默认： ```https://api.omniture.com``` |
-| authPrivateKey（旧版） | 旧版Oath应用程序中上传的私钥、公共部分，使用XtkKey选项加密的AES： ```cryptString("PRIVATE_KEY")``` |
+| authGatewayEndpoint（旧版） | 用于获取网关令牌的URL。 默认： `https://api.omniture.com` |
+| authPrivateKey（旧版） | 旧版Oath应用程序中上传的私钥、公共部分，使用XtkKey选项加密的AES： `cryptString("PRIVATE_KEY")` |
 | disableAuth（旧版） | 禁用身份验证，只有某些开发管道端点接受不使用网关令牌进行连接。 |
-| discoverPipelineEndpoint | 用于查找要用于此租户的管道服务端点的URL。 默认： ```https://producer-pipeline-pnw.adobe.net``` |
-| dumpStatePeriodSec | ```var/INSTANCE/pipelined.json.``` <br>中内部状态进程的两个转储之间的周期也可以在此按需访问： ```http://INSTANCE:7781/pipelined/status``` |
+| discoverPipelineEndpoint | 用于查找要用于此租户的管道服务端点的URL。 默认： `https://producer-pipeline-pnw.adobe.net` |
+| dumpStatePeriodSec | `var/INSTANCE/pipelined.json.` <br>中内部状态进程的两个转储之间的周期也可以在此按需访问： `http://INSTANCE:7781/pipelined/status` |
 | forcedPipelineEndpoint | 禁用检测PipelineServicesEndpoint以强制执行该操作 |
-| monitorServerPort | 管道化进程将侦听此端口，在此提供内部状态进程： ```http://INSTANCE:PORT/pipelined/status```。 <br>默认值为7781 |
+| monitorServerPort | 管道化进程将侦听此端口，在此提供内部状态进程： `http://INSTANCE:PORT/pipelined/status`。 <br>默认值为7781 |
 | pointerFlushMessageCount | 当处理此数量的消息时，偏移将保存在数据库中。<br> 默认值为1000 |
 | pointerFlushperiodSec | 在此时段之后，偏移将保存在数据库中。 <br>默认值为5（秒） |
 | processingJSThreads | 使用自定义JS连接器处理消息的专用线程数。<br> 默认为4 |
