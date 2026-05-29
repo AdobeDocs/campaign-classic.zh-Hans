@@ -6,9 +6,13 @@ feature: Workflows, Targeting Activity, Subscription Services Activity
 hide: true
 exl-id: 1b526d1c-4a33-45a1-98f4-dcb803c8d228
 TQID: https://experienceleague.adobe.com/-qfMiHLzlE5uJIV5-ba1MNymo0SHuMYxC6EnurLexI8
-product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+product_v2:
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
 feature_v2: []
-subfeature_v2: id: ee25c34b-ea50-427b-9369-ba0a160f7d70id: b5f0aaf4-1e48-400d-95ac-6eb3078cf22fid: d1110311-2ca4-442b-be37-088a6db845ee
+subfeature_v2:
+  - id: ee25c34b-ea50-427b-9369-ba0a160f7d70
+  - id: b5f0aaf4-1e48-400d-95ac-6eb3078cf22f
+  - id: d1110311-2ca4-442b-be37-088a6db845ee
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
 source-wordcount: 411
@@ -34,7 +38,7 @@ ht-degree: 3%
 1. 如果要订阅或取消订阅选定信息服务的指定群体，请单击&#x200B;**[!UICONTROL Subscription]**&#x200B;或&#x200B;**[!UICONTROL Unsubscription]**。
 1. 选择&#x200B;**[!UICONTROL Send a confirmation message]**&#x200B;以通知收件人已订阅或取消订阅服务。
 
-   在与信息服务相关的投放模板中指定此消息的内容。 有关更多信息，请参阅此](../../delivery/using/managing-subscriptions.md)章节[。
+   在与信息服务相关的投放模板中指定此消息的内容。 有关更多信息，请参阅此[&#128279;](../../delivery/using/managing-subscriptions.md)章节。
 
 ## 示例：为新闻稿订阅收件人列表 {#example--subscribe-a-list-of-recipients-to-a-newsletter}
 

@@ -6,10 +6,17 @@ badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v
 feature: Reporting, Monitoring
 exl-id: dfa9d329-1086-4f6d-9d03-df159cad5495
 TQID: https://experienceleague.adobe.com/NAcXKBNoDJRopQf-QpqnFhwxFRvvScp7xShJotE0s1A
-product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
-topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: cc72dcf1-72e1-48cc-b434-e7c27d62d67c
-feature_v2: id: c309ee4e-82e4-4f7e-b608-ef345678c34e
-subfeature_v2: id: b3a4149f-2b3a-44d1-894e-e3ac4c77fb47id: cfda811a-e413-43a4-adf0-7370888f5cfcid: afe938ea-bc18-44a4-a3fb-03e1031466cb
+product_v2:
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: cc72dcf1-72e1-48cc-b434-e7c27d62d67c
+feature_v2:
+  - id: c309ee4e-82e4-4f7e-b608-ef345678c34e
+subfeature_v2:
+  - id: b3a4149f-2b3a-44d1-894e-e3ac4c77fb47
+  - id: cfda811a-e413-43a4-adf0-7370888f5cfc
+  - id: afe938ea-bc18-44a4-a3fb-03e1031466cb
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
 source-wordcount: 440
@@ -25,7 +32,7 @@ ht-degree: 3%
 
 ![](assets/s_ncs_advuser_report_properties_01.png)
 
-常规属性如下所述。 此部分](../../reporting/using/advanced-functionalities.md)中介绍了&#x200B;**[!UICONTROL Parameters]**、**[!UICONTROL Variables]**&#x200B;和&#x200B;**[!UICONTROL Scripts]**&#x200B;选项卡中配置的高级功能[。
+常规属性如下所述。 此部分[&#128279;](../../reporting/using/advanced-functionalities.md)中介绍了&#x200B;**[!UICONTROL Parameters]**、**[!UICONTROL Variables]**&#x200B;和&#x200B;**[!UICONTROL Scripts]**&#x200B;选项卡中配置的高级功能。
 
 ## 常规属性 {#overall-properties}
 
@@ -51,7 +58,7 @@ ht-degree: 3%
 
 * **[!UICONTROL Anonymous access]**：此选项启用对报告的无限制访问。 但是，操作是不可能的。
 
-  “webapp”技术操作员的权限用于显示报表元素。 在本节](../../platform/using/access-management-operators.md)中了解更多[。
+  “webapp”技术操作员的权限用于显示报表元素。 在本节[&#128279;](../../platform/using/access-management-operators.md)中了解更多。
 
 * **[!UICONTROL Access control]**：此选项允许Adobe Campaign操作员在登录后访问它。
 * **[!UICONTROL Specific account]**：此选项允许您使用在&#x200B;**[!UICONTROL Operator]**&#x200B;字段中选择的操作员的权限执行报告。

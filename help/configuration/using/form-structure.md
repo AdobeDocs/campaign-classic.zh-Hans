@@ -7,10 +7,15 @@ role: Developer
 badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v8"
 exl-id: e61f2b63-06d3-4b8c-867f-1c729176d2da
 TQID: https://experienceleague.adobe.com/zLWHKhH-T-g54pQDAhbOC4v7JvrX-LM-Vn8lCXE-aYI
-product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2: id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
-role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+product_v2:
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2:
+  - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 subfeature_v2: []
 source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
 workflow-type: tm+mt
@@ -193,7 +198,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->**style=&quot;down|up**（默认情况下）**&quot;**功能强制将选项卡标签垂直定位在控件下方或上方。此功能是可选的。
+>**style=&quot;down|up**（默认情况下）**&quot;**&#x200B;功能强制将选项卡标签垂直定位在控件下方或上方。此功能是可选的。
 >`<container style="down" type="notebook">  … </container>`
 
 #### 图标列表 {#icon-list}

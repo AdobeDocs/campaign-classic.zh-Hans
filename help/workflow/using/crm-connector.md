@@ -5,10 +5,15 @@ feature: Workflows, Data Management
 hide: true
 exl-id: 41966f31-9f37-4ab7-919a-d4624f9d1178
 TQID: https://experienceleague.adobe.com/z5ARPIDVgVIqW--lwx0UEoVYJlITGb8Mke9sLDaTJI8
-product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
-topic_v2: id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+product_v2:
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+topic_v2:
+  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
 feature_v2: []
-subfeature_v2: id: ee25c34b-ea50-427b-9369-ba0a160f7d70id: b5f0aaf4-1e48-400d-95ac-6eb3078cf22fid: d1110311-2ca4-442b-be37-088a6db845ee
+subfeature_v2:
+  - id: ee25c34b-ea50-427b-9369-ba0a160f7d70
+  - id: b5f0aaf4-1e48-400d-95ac-6eb3078cf22f
+  - id: d1110311-2ca4-442b-be37-088a6db845ee
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
 source-wordcount: 113
@@ -37,4 +42,4 @@ ht-degree: 10%
 
 ![](assets/crm_task_select_obj.png)
 
-此活动的配置取决于执行的流程。 本页](../../platform/using/crm-data-sync.md)中详细介绍了[的各种配置。
+此活动的配置取决于执行的流程。 本页[&#128279;](../../platform/using/crm-data-sync.md)中详细介绍了的各种配置。

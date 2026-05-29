@@ -6,10 +6,15 @@ feature: Workflows
 hide: true
 exl-id: 5e77d196-5c71-438e-8dae-10c6a6e4f29c
 TQID: https://experienceleague.adobe.com/Zil5DwLklAKHSiHbsO6m71Lekcy4f8UYQA53uUzkqRg
-product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
-topic_v2: id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+product_v2:
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+topic_v2:
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 feature_v2: []
-subfeature_v2: id: ee25c34b-ea50-427b-9369-ba0a160f7d70id: b5f0aaf4-1e48-400d-95ac-6eb3078cf22fid: d1110311-2ca4-442b-be37-088a6db845ee
+subfeature_v2:
+  - id: ee25c34b-ea50-427b-9369-ba0a160f7d70
+  - id: b5f0aaf4-1e48-400d-95ac-6eb3078cf22f
+  - id: d1110311-2ca4-442b-be37-088a6db845ee
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
 source-wordcount: 504
@@ -52,7 +57,7 @@ ht-degree: 5%
 
 对于&#x200B;**[!UICONTROL Tracking workflow (‘tracking’)]**：
 
-检查跟踪工作流是否按计划运行（默认情况下每小时运行一次），以及日记帐是否未高亮显示重复错误。 有关更多信息，请参阅此](delivery.md)章节[。
+检查跟踪工作流是否按计划运行（默认情况下每小时运行一次），以及日记帐是否未高亮显示重复错误。 有关更多信息，请参阅此[&#128279;](delivery.md)章节。
 
 对于&#x200B;**[!UICONTROL Refresh for Deliverability (deliverabilityUpdate)]**：
 
@@ -61,7 +66,7 @@ ht-degree: 5%
 
 对于&#x200B;**[!UICONTROL Campaign process ('operationMgt', 'deliveryMgt', ...)]**：
 
-1. 查看&#x200B;**[!UICONTROL Campaign process]**&#x200B;文件夹下的所有工作流。 有关详细信息，请参见此 [ 页面](about-technical-workflows.md)。
+1. 查看&#x200B;**[!UICONTROL Campaign process]**&#x200B;文件夹下的所有工作流。 有关详细信息，请参见此 [&#x200B; 页面](about-technical-workflows.md)。
 1. 检查工作流是否按计划运行，以及日记帐是否未突出显示重复出现的错误。
 
 ## 工作流监督 {#workflow-supervision}

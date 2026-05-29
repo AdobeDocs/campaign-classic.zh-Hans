@@ -8,9 +8,12 @@ content-type: reference
 topic-tags: administration-basics
 exl-id: 4a17d5e8-c73f-42e7-b641-0fee6a52c5c0
 TQID: https://experienceleague.adobe.com/-dvlEuumTaNU2K-AHysUyUmwDay9oaZGLerkpR4pzzw
-product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+product_v2:
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
 feature_v2: []
-topic_v2: id: d095671a-1355-40aa-8b5f-06c33c68080bid: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+topic_v2:
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 subfeature_v2: []
 source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
 workflow-type: tm+mt
@@ -299,7 +302,7 @@ To add SSH keys on Windows:
 
 ![](assets/ext_account_10.png)
 
-对于此外部帐户，必须扩充跟踪URL的计算公式，并且必须批准两个解决方案之间的连接。 有关详细信息，请参见此 [ 页面](../../integrations/using/gs-aa.md)。
+对于此外部帐户，必须扩充跟踪URL的计算公式，并且必须批准两个解决方案之间的连接。 有关详细信息，请参见此 [&#x200B; 页面](../../integrations/using/gs-aa.md)。
 
 ### Adobe Experience Manager {#adobe-experience-manager-external-account}
 
@@ -319,7 +322,7 @@ To add SSH keys on Windows:
 
   用于连接到Adobe Experience Manager创作实例的密码。
 
-有关更多信息，请参阅此](../../integrations/using/about-adobe-experience-manager.md)章节[。
+有关更多信息，请参阅此[&#128279;](../../integrations/using/about-adobe-experience-manager.md)章节。
 
 ## CRM连接器外部帐户
 

@@ -7,12 +7,23 @@ role: User
 level: Beginner
 exl-id: 0cd6bf20-da72-4cf0-9f5d-d4e8acdd324d
 TQID: https://experienceleague.adobe.com/AmqYU4ywJ6B6sus7q6BAHsG7cPGLZRH4m12hoqw68as
-product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2: id: b82389f8-9b5e-4083-8e3b-3cef299fb8b9
-subfeature_v2: id: cfc95e9b-b035-4403-a6a9-b27a8a053a37id: e5e477db-ebc7-4368-ab0f-4d8fc2aed405id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
-level_v2: id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: d095671a-1355-40aa-8b5f-06c33c68080bid: e0eb8757-182f-49f3-94a4-1587d16f5094
+product_v2:
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2:
+  - id: b82389f8-9b5e-4083-8e3b-3cef299fb8b9
+subfeature_v2:
+  - id: cfc95e9b-b035-4403-a6a9-b27a8a053a37
+  - id: e5e477db-ebc7-4368-ab0f-4d8fc2aed405
+  - id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
 source-wordcount: 2661
@@ -217,7 +228,7 @@ Campaign 现在支持以下系统：
 * 修复了向电子邮件添加链接时，显示带有 Adobe Campaign Classic 标题的电子邮件文本版本的错误。 (NEO-29211
 * 使用 FDA 通过 HTTPs 连接时，**中间源（投放日志）** (defaultMidSourcingLog) 工作流在 **NmsMidSourcing_LogsPeriodHour** 选项设置的时间范围内停滞。 这将导致无法使用发生在这个设定的时间范围之后的数据更新记录。 (NEO-30833)
 * 修复了执行消息中心同步工作流后出现的问题。 每次将投放对象文件夹移动到自定义文件夹时，工作流都会将投放移回通用的&#x200B;**事务性消息历史记录**&#x200B;文件夹。 (NEO-27445)
-* 修复了在尝试显示&#x200B;**广播统计信息**、跟踪指标&#x200B;****&#x200B;和共享活动统计信息&#x200B;****&#x200B;报表时显示错误消息的问题。
+* 修复了在尝试显示&#x200B;**广播统计信息**、跟踪指标&#x200B;**&#x200B;**&#x200B;和共享活动统计信息&#x200B;**&#x200B;**&#x200B;报表时显示错误消息的问题。
 * **Oracle On Demand** 工作流活动已在弃用 OracleCRM 连接器后从界面中删除。
 * 修复了在每日重新启动工作流服务器 (wfserver) 模块后停止执行处理工作流的问题。 (NEO-30047)
 * 修复了导致 MX 管理文档无法更新的问题，该问题可能会对 IP 声誉造成负面影响。 (NEO-29897)

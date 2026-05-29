@@ -7,12 +7,22 @@ role: User
 level: Beginner
 exl-id: 8febceb0-9694-4045-a630-a7ff2fd18943
 TQID: https://experienceleague.adobe.com/qngVGmYzQ0Qrr1erTTlSEO7FX6djL-mfax-N4ypchy8
-product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2: id: afa4204e-6d08-4e29-bc35-26aafb656d48
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
-level_v2: id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2: id: b5520579-b31f-4df7-9281-f0d9f91e2edcid: d00e9f03-e50b-4162-b143-0c0817c937c2
-subfeature_v2: id: f529d0bd-1401-4c88-9833-43228cc1d40fid: d6330382-c886-4f7a-a4f7-74e3f36c0d9cid: f5293531-9312-4099-bfa3-9e67df6a8750id: efa38731-2723-4334-8d8b-a778af834835
+product_v2:
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2:
+  - id: afa4204e-6d08-4e29-bc35-26aafb656d48
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2:
+  - id: b5520579-b31f-4df7-9281-f0d9f91e2edc
+  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+subfeature_v2:
+  - id: f529d0bd-1401-4c88-9833-43228cc1d40f
+  - id: d6330382-c886-4f7a-a4f7-74e3f36c0d9c
+  - id: f5293531-9312-4099-bfa3-9e67df6a8750
+  - id: efa38731-2723-4334-8d8b-a778af834835
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
 source-wordcount: 208
@@ -39,11 +49,11 @@ ht-degree: 51%
 
 * 在[兼容性矩阵](../../rn/using/compatibility-matrix.md#ClientConsoleoperatingsystems)中检查您的系统和工具与Adobe Campaign客户端控制台的兼容性
 
-* 若要了解如何在此页面](launching-adobe-campaign.md)上安装并登录Adobe Campaign [，请执行以下操作：
+* 若要了解如何在此页面[&#128279;](launching-adobe-campaign.md)上安装并登录Adobe Campaign ，请执行以下操作：
 
 >[!TAB 浏览Campaign UI]
 
-* 在此页面](adobe-campaign-workspace.md)上发现Adobe Campaign用户界面[。
+* 在此页面[&#128279;](adobe-campaign-workspace.md)上发现Adobe Campaign用户界面。
 
 * 了解如何使用[Campaign资源管理器](adobe-campaign-workspace.md#using-adobe-campaign-explorer)。
 
