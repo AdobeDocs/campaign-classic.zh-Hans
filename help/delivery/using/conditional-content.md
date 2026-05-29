@@ -8,13 +8,12 @@ role: User
 hide: true
 exl-id: 12595ee4-6a52-4e06-b80d-85fe633a5a11
 TQID: https://experienceleague.adobe.com/S8pQz1eOVkbkBKFzhPwzEfj50cPnBBOeYNGFg-R6EZ4
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: e0eb8757-182f-49f3-94a4-1587d16f5094
+feature_v2: id: b631758a-142d-425f-b9aa-f756d85cb979id: c858a28b-ea19-49b0-8d48-828717fad89c
+subfeature_v2: id: e95a583b-fcfa-4524-8666-46a29c828119id: c8da4fdd-eb94-4751-a43c-f82733fb2d6eid: d5bbe3da-ba85-4242-817e-54f7c4b943e0id: f4da0e76-df77-451e-ad61-21afb7bd8810
+source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
 source-wordcount: 502
 ht-degree: 9%
@@ -94,18 +93,18 @@ ht-degree: 9%
    <% if (language == "EN" ) { %>
    <DIV id=en-version>Hello <%= recipient.firstName %>,</DIV>
    <DIV>Discover your new offers!</DIV>
-   <DIV><a href="https://www.adobe.com/cn/products/en">www.adobe.com/products/en</A></FONT></DIV><%
+   <DIV><a href="https://www.adobe.com/products/en">www.adobe.com/products/en</A></FONT></DIV><%
     } %>
    <% if (language == "FR" ) { %>
    <DIV id=fr-version>Bonjour <%= recipient.firstName %>,</DIV>
    <DIV>Découvrez nos nouvelles offres !</DIV>
-   <DIV><a href="https://www.adobe.com/cn/products/fr">www.adobe.com/products/fr</A></DIV><%
+   <DIV><a href="https://www.adobe.com/products/fr">www.adobe.com/products/fr</A></DIV><%
     } %>
     <% if (language == "ES" ) { %>
    <DIV id=es-version><FONT face=Arial>
    <DIV>Olà <%= recipient.firstName %>,</DIV>
    <DIV>Descubra nuestros nuevas ofertas !</DIV>
-   <DIV><a href="https://www.adobe.com/cn/products/es">www.adobe.com/products/es</A></DIV>
+   <DIV><a href="https://www.adobe.com/products/es">www.adobe.com/products/es</A></DIV>
    <% } %>
    ```
 
@@ -119,6 +118,6 @@ ht-degree: 9%
 
 了解如何在多语言新闻稿的示例中向投放添加条件内容。
 
->[!VIDEO](https://video.tv.adobe.com/v/41037?captions=chi_hans&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/24926?quality=12)
 
 [此处](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hans)提供了其他 Campaign Classic 操作方法视频。

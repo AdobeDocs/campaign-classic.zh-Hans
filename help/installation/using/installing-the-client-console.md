@@ -8,13 +8,13 @@ content-type: reference
 topic-tags: installing-campaign-in-windows-
 exl-id: 7cc78214-92b8-4b1f-a307-96ec6af818d1
 TQID: https://experienceleague.adobe.com/TSJbp95dm2tysQBxN7E7JktnHmMJndR1hXVvKkLzRIg
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+feature_v2: []
+subfeature_v2: []
+source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
 workflow-type: tm+mt
-source-wordcount: 1159
+source-wordcount: 1146
 ht-degree: 18%
 
 ---
@@ -178,6 +178,6 @@ Adobe建议取消选择选项&#x200B;**[!UICONTROL No longer ask this question]*
 
 本视频说明如何安装和设置Adobe Campaign客户端。
 
->[!VIDEO](https://video.tv.adobe.com/v/38266?captions=chi_hans&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/35124?quality=12)
 
 [此处](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hans)提供了其他 Campaign Classic 操作方法视频。

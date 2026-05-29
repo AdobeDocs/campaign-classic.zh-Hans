@@ -8,12 +8,11 @@ content-type: reference
 topic-tags: connectors
 exl-id: 3a5856c3-b642-4722-97ff-6ae7107efdbe
 TQID: https://experienceleague.adobe.com/tsmDBbWBQljV8wF-75sSzrF6v7kO3YeTLqk8L4-ifag
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-topic_v2:
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 8f9e8344b77e50bd2823cc7fa3922466e515327f
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+feature_v2: []
+subfeature_v2: []
+source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
 workflow-type: tm+mt
 source-wordcount: 1761
 ht-degree: 0%
@@ -34,7 +33,7 @@ ht-degree: 0%
 
 您需要安装用于Teradata的驱动程序，以便实现与Campaign的连接。
 
-1. 为Teradata[&#128279;](https://downloads.teradata.com/download/connectivity/odbc-driver/linux)安装ODBC驱动程序。
+1. 为Teradata](https://downloads.teradata.com/download/connectivity/odbc-driver/linux)安装[ODBC驱动程序。
 
    它由三个软件包组成，这些软件包可按以下顺序安装在Red Hat（或CentOS）/Suse上：
 

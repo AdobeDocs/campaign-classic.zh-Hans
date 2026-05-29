@@ -8,15 +8,12 @@ role: User
 hide: true
 exl-id: 24b2ee47-bec7-43ce-81b3-0b2d1a5cebae
 TQID: https://experienceleague.adobe.com/XiK0I9mZTlGWACRL-TTdDO5pByzBg-6oFdfcTNfhX44
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: b4dd41a7-ccf8-4e9d-918e-acaab534a307
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: b4dd41a7-ccf8-4e9d-918e-acaab534a307id: e0eb8757-182f-49f3-94a4-1587d16f5094id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+feature_v2: id: b631758a-142d-425f-b9aa-f756d85cb979id: c858a28b-ea19-49b0-8d48-828717fad89c
+subfeature_v2: id: e95a583b-fcfa-4524-8666-46a29c828119id: c8da4fdd-eb94-4751-a43c-f82733fb2d6eid: d5bbe3da-ba85-4242-817e-54f7c4b943e0id: f4da0e76-df77-451e-ad61-21afb7bd8810
+source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
 source-wordcount: 758
 ht-degree: 9%
@@ -39,7 +36,7 @@ ht-degree: 9%
 
   **提示** — 要避免这种情况，请与团队的其他成员协调投放计划，以确保最佳性能。
 
-* 工作流执行：监测工作流对于避免平台性能问题至关重要。 遵循本文档[&#128279;](../../workflow/using/workflow-best-practices.md#execution-and-performance)中列出的准则。
+* 工作流执行：监测工作流对于避免平台性能问题至关重要。 遵循本文档](../../workflow/using/workflow-best-practices.md#execution-and-performance)中列出的准则[。
 
 * 如果您符合条件，则可以利用[Campaign控制面板功能](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=zh-Hans)，通过[性能监控](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/about-performance-monitoring.html?lang=zh-Hans)功能来监控您的平台。
 
@@ -59,7 +56,7 @@ ht-degree: 9%
 
    * 在检查电子邮件的可投放性时，您需要重点关注四个主要类别：数据质量、邮件和内容、发送基础架构和信誉。 有关此主题的更深入探讨，请参阅[此部分](about-deliverability.md)。
 
-* 应用此文档[&#128279;](about-deliverability.md)中详细的建议。
+* 应用此文档](about-deliverability.md)中详细[的建议。
 
 * 请联系您的Adobe代表寻求帮助。
 

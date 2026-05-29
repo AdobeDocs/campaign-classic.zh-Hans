@@ -9,11 +9,11 @@ content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 4596638c-d75a-4e07-a2d8-5befcaad3430
 TQID: https://experienceleague.adobe.com/mnkVYu3ibG6yFi1Zd5q1b1-CnzdheG8xvmM8q92-8vQ
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-topic_v2:
-  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+topic_v2: id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+feature_v2: id: afa4204e-6d08-4e29-bc35-26aafb656d48
+subfeature_v2: id: f529d0bd-1401-4c88-9833-43228cc1d40fid: d6330382-c886-4f7a-a4f7-74e3f36c0d9cid: f5293531-9312-4099-bfa3-9e67df6a8750id: efa38731-2723-4334-8d8b-a778af834835
+source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
 source-wordcount: 617
 ht-degree: 9%
@@ -26,7 +26,7 @@ Adobe Campaign允许您导出压缩或加密文件。 在通过&#x200B;**[!UICON
 
 要做到这一点，请执行以下操作：
 
-1. 使用[控制面板](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html?lang=zh-Hans#encrypting-data)为实例安装GPG密钥对。
+1. 使用[控制面板](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html#encrypting-data)为实例安装GPG密钥对。
 
    >[!NOTE]
    >
@@ -41,7 +41,7 @@ Adobe Campaign允许您导出压缩或加密文件。 在通过&#x200B;**[!UICON
 **相关主题：**
 
 * [在处理之前解压缩或解密文件](../../platform/using/unzip-decrypt.md)
-* [数据提取（文件）活动](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/extraction-file.html?lang=zh-Hans){target="_blank"}
+* [数据提取（文件）活动](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/extraction-file.html){target="_blank"}
 
 ## 用例：使用安装在控制面板上的密钥加密和导出数据 {#use-case-gpg-encrypt}
 
@@ -51,7 +51,7 @@ Adobe Campaign允许您导出压缩或加密文件。 在通过&#x200B;**[!UICON
 
 执行此用例的步骤如下：
 
-1. 使用GPG实用程序生成GPG密钥对（公共/私有），然后将公共密钥安装到控制面板上。 [控制面板文档](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html?lang=zh-Hans#encrypting-data)中提供了详细步骤。
+1. 使用GPG实用程序生成GPG密钥对（公共/私有），然后将公共密钥安装到控制面板上。 [控制面板文档](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html#encrypting-data)中提供了详细步骤。
 
 1. 在Campaign Classic中，构建一个工作流以导出数据，并使用已通过控制面板安装的私钥对其进行加密。 为此，我们将构建一个工作流，如下所示：
 
@@ -62,9 +62,9 @@ Adobe Campaign允许您导出压缩或加密文件。 在通过&#x200B;**[!UICON
    * **[!UICONTROL JavaScript code]**&#x200B;活动：加密要提取的数据。
    * **[!UICONTROL File transfer]**&#x200B;活动：将数据发送到外部源（在此示例中为SFTP服务器）。
 
-1. 配置&#x200B;**[!UICONTROL Query]**&#x200B;活动以定位数据库中的所需数据。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html?lang=zh-Hans){target="_blank"}。
+1. 配置&#x200B;**[!UICONTROL Query]**&#x200B;活动以定位数据库中的所需数据。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html){target="_blank"}。
 
-1. 打开&#x200B;**[!UICONTROL Data extraction (file)]**&#x200B;活动，然后根据需要进行配置。 有关如何配置活动的全局概念，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/extraction-file.html?lang=zh-Hans){target="_blank"}。
+1. 打开&#x200B;**[!UICONTROL Data extraction (file)]**&#x200B;活动，然后根据需要进行配置。 有关如何配置活动的全局概念，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/extraction-file.html){target="_blank"}。
 
    ![](assets/gpg-data-extraction.png)
 
@@ -86,7 +86,7 @@ Adobe Campaign允许您导出压缩或加密文件。 在通过&#x200B;**[!UICON
 
    ![](assets/gpg-script.png)
 
-1. 打开&#x200B;**[!UICONTROL File transfer]**&#x200B;活动，然后指定要将文件发送到的SFTP服务器。 有关如何配置活动的全局概念，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html?lang=zh-Hans){target="_blank"}。
+1. 打开&#x200B;**[!UICONTROL File transfer]**&#x200B;活动，然后指定要将文件发送到的SFTP服务器。 有关如何配置活动的全局概念，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html){target="_blank"}。
 
    ![](assets/gpg-file-transfer.png)
 
@@ -96,6 +96,6 @@ Adobe Campaign允许您导出压缩或加密文件。 在通过&#x200B;**[!UICON
 
 以下视频介绍了如何使用GPG密钥加密数据，该视频还包含以下内容
 
->[!VIDEO](https://video.tv.adobe.com/v/41331?captions=chi_hans&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/36399?quality=12)
 
 [此处](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hans)提供了其他 Campaign Classic 操作方法视频。

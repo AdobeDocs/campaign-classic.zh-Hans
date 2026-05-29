@@ -6,11 +6,11 @@ feature: Data Management
 exl-id: 2ece058d-b493-4fea-b3db-322cf7ea7f4f
 hide: true
 TQID: https://experienceleague.adobe.com/nc2PkzENnuWHVqSlKprqQU0xT9YTrUY8VF1JHI4nA8k
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-topic_v2:
-  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+topic_v2: id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+feature_v2: id: afa4204e-6d08-4e29-bc35-26aafb656d48
+subfeature_v2: id: f529d0bd-1401-4c88-9833-43228cc1d40fid: d6330382-c886-4f7a-a4f7-74e3f36c0d9cid: f5293531-9312-4099-bfa3-9e67df6a8750id: efa38731-2723-4334-8d8b-a778af834835
+source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
 source-wordcount: 103
 ht-degree: 1%
@@ -23,5 +23,5 @@ ht-degree: 1%
 
 定义后，值将显示在下拉列表中。 可以直接选择值，也可以使用预测输入输入输入值，这将会建议并完成匹配条目。 某些字段包括预定义枚举，如果需要，可以创建其他枚举。
 
-在[Adobe Campaign v8 （控制台）文档](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}中了解如何&#x200B;**使用枚举**。
+在[Adobe Campaign v8 （控制台）文档](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}中了解如何&#x200B;**使用枚举**。
 

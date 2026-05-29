@@ -7,18 +7,12 @@ role: User, Developer
 hide: true
 exl-id: a5f6b82d-5561-4e56-b2ed-7fd6fd8c2b55
 TQID: https://experienceleague.adobe.com/-WrV4RTfV-NAowbLBcfEDXJrWMu9j8OjnIZcCSvSquY
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2:
-  - id: d5ef99fa-df0c-4153-bf94-105ad0724167
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: d5ef99fa-df0c-4153-bf94-105ad0724167id: b631758a-142d-425f-b9aa-f756d85cb979id: c858a28b-ea19-49b0-8d48-828717fad89c
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: d095671a-1355-40aa-8b5f-06c33c68080bid: d3cdead0-685a-4489-9250-4bb709942f66
+subfeature_v2: id: e95a583b-fcfa-4524-8666-46a29c828119id: c8da4fdd-eb94-4751-a43c-f82733fb2d6eid: d5bbe3da-ba85-4242-817e-54f7c4b943e0id: f4da0e76-df77-451e-ad61-21afb7bd8810
+source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
 source-wordcount: 1007
 ht-degree: 4%
@@ -75,7 +69,7 @@ ht-degree: 4%
 
   >[!NOTE]
   >
-  >此集成密钥输入到Adobe Campaign控制台中，该控制台位于专用于移动应用程序的服务的&#x200B;**[!UICONTROL Information]**&#x200B;选项卡中。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push-settings.html?lang=zh-Hans){target="_blank"}。
+  >此集成密钥输入到Adobe Campaign控制台中，该控制台位于专用于移动应用程序的服务的&#x200B;**[!UICONTROL Information]**&#x200B;选项卡中。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push-settings.html){target="_blank"}。
 
 * **跟踪URL**：与Adobe Campaign跟踪服务器的地址匹配。
 * **营销URL**：启用订阅集合。
@@ -603,7 +597,7 @@ typedef NS_ENUM(NSUInteger, ACCRegisterDeviceStatus) {
 
 +++**通知服务扩展**
 
-用于iOS的&#x200B;**&#x200B;**
+用于iOS的&#x200B;****
 
 介质必须在通知服务扩展级别下载。
 
@@ -639,7 +633,7 @@ typedef NS_ENUM(NSUInteger, ACCRegisterDeviceStatus) {
 
 +++**通知内容扩展**
 
-用于iOS的&#x200B;**&#x200B;**
+用于iOS的&#x200B;****
 
 在此级别，您需要：
 

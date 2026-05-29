@@ -3,18 +3,11 @@ title: 在IMS迁移后更新Campaign界面
 description: 了解如何激活Adobe Identity Management系统迁移界面影响
 exl-id: 8b13fe4d-d8d3-43b3-bbe4-c8c5574f585a
 TQID: https://experienceleague.adobe.com/RkgX2M0BnO5pjgI7oAp7NlycXY551manwFHhcA1LMjw
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2:
-  - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
-subfeature_v2:
-  - id: a39dbcf0-89cb-4765-9bcb-cf9dfbe2875f
-  - id: e3988c18-3cfa-4f16-b812-ac2d2b1056fa
-  - id: e5e477db-ebc7-4368-ab0f-4d8fc2aed405
-topic_v2:
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+subfeature_v2: id: a39dbcf0-89cb-4765-9bcb-cf9dfbe2875fid: cbcf4d90-26be-46e2-b16a-aebc529dc41e
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
 source-wordcount: 463
 ht-degree: 1%
@@ -23,7 +16,7 @@ ht-degree: 1%
 
 # 在IMS迁移后更新Campaign界面 {#impact-ims-migration}
 
-在将Campaign技术操作员[迁移到Developer Console](ims-migration.md)并过渡到IMS以进行最终用户身份验证[&#128279;](migrate-users-to-ims.md)后，最后一步是启用用户界面和API限制，以删除特定于本机身份验证的选项和功能。 从Campaign v7.4.1开始提供此更新。
+在将Campaign技术操作员[迁移到Developer Console](ims-migration.md)并过渡到IMS以进行最终用户身份验证](migrate-users-to-ims.md)后，最后一步是启用用户界面和API限制，以删除特定于本机身份验证的选项和功能。 [从Campaign v7.4.1开始提供此更新。
 
 ## 启用IMS限制 {#ims-restrictions}
 

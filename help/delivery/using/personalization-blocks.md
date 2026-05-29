@@ -8,13 +8,12 @@ role: User
 hide: true
 exl-id: 8d155844-d18a-4165-9886-c3b144109f6e
 TQID: https://experienceleague.adobe.com/KfD6zudZg8B6r8ftdINuXjWAqRiHLP9dtGi--H-E6RU
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: e0eb8757-182f-49f3-94a4-1587d16f5094
+feature_v2: id: b631758a-142d-425f-b9aa-f756d85cb979id: c858a28b-ea19-49b0-8d48-828717fad89c
+subfeature_v2: id: e95a583b-fcfa-4524-8666-46a29c828119id: c8da4fdd-eb94-4751-a43c-f82733fb2d6eid: d5bbe3da-ba85-4242-817e-54f7c4b943e0id: f4da0e76-df77-451e-ad61-21afb7bd8810
+source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
 source-wordcount: 894
 ht-degree: 3%
@@ -25,7 +24,7 @@ ht-degree: 3%
 
 个性化块是动态的、个性化的，并包含您可以插入到投放中的特定渲染。 例如，您可以添加徽标、问候语消息或指向镜像页面的链接。 请参阅[插入个性化块](#inserting-personalization-blocks)。
 
-![](assets/do-not-localize/how-to-video.png)在视频[&#128279;](#personalization-blocks-video)中发现此功能
+![](assets/do-not-localize/how-to-video.png)在视频](#personalization-blocks-video)中发现此功能[
 
 通过Adobe Campaign资源管理器的&#x200B;**[!UICONTROL Resources > Campaign Management > Personalization blocks]**&#x200B;节点访问个性化块。 默认情况下，有多个块可用（请参阅[现成的个性化块](#out-of-the-box-personalization-blocks)）。
 
@@ -152,6 +151,6 @@ HTML源代码会插入到投放内容中。 例如，**[!UICONTROL Greetings]**&
 
 了解如何创建动态内容块以及如何使用动态内容块将电子邮件投放内容个性化。
 
->[!VIDEO](https://video.tv.adobe.com/v/27462?captions=chi_hans&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/24924?quality=12)
 
 [此处](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hans)提供了其他 Campaign Classic 操作方法视频。

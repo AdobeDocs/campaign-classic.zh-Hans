@@ -6,11 +6,12 @@ feature: Workflows, Targeting Activity, Query Editor
 hide: true
 exl-id: 20d03627-cd56-46da-bc02-73b48a02a350
 TQID: https://experienceleague.adobe.com/Htrpo3hCrbp9H7cQD4KWTnMbA-rjgM0K1PFHh-Fak1M
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: []
+subfeature_v2: id: ee25c34b-ea50-427b-9369-ba0a160f7d70id: b5f0aaf4-1e48-400d-95ac-6eb3078cf22fid: d1110311-2ca4-442b-be37-088a6db845ee
+source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 1647
+source-wordcount: 1620
 ht-degree: 0%
 
 ---
@@ -21,7 +22,7 @@ ht-degree: 0%
 
 ## 创建查询 {#creating-a-query}
 
-通过查询，您可以根据条件选择目标。 您可以将区段代码关联到查询结果并在其中插入附加数据。
+通过查询，您可以根据条件选择目标。您可以将区段代码关联到查询结果并在其中插入附加数据。
 有关查询示例的详细信息，请参阅此[此部分](querying-recipient-table.md)。
 
 >[!NOTE]
@@ -190,9 +191,9 @@ ht-degree: 0%
 
   有关更多信息，根据您的Campaign版本，请参阅以下章节：
 
-  ![](assets/do-not-localize/v7.jpeg) [Campaign v7文档](../../configuration/using/database-mapping.md)
+  ![](assets/do-not-localize/v7.jpeg)[Campaign v7文档](../../configuration/using/database-mapping.md)
 
-  ![](assets/do-not-localize/v8.png) [Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/shemas-forms/database-mapping.html)
+  ![](assets/do-not-localize/v8.png)[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/shemas-forms/database-mapping.html)
 
 ### 功能 {#functions}
 

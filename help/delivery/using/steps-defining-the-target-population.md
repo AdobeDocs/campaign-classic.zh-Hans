@@ -7,13 +7,11 @@ role: User
 hide: true
 exl-id: d0ed7be7-3147-4cb8-9ce7-ea51602e9048
 TQID: https://experienceleague.adobe.com/0x1K997AEHhX-ozmIJH5I6NZPb388PKFkrXaK-EgoTY
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2:
-  - id: a075b2c1-7748-4328-b7f6-343aa314616a
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: a075b2c1-7748-4328-b7f6-343aa314616aid: b631758a-142d-425f-b9aa-f756d85cb979id: c858a28b-ea19-49b0-8d48-828717fad89c
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+subfeature_v2: id: e95a583b-fcfa-4524-8666-46a29c828119id: c8da4fdd-eb94-4751-a43c-f82733fb2d6eid: d5bbe3da-ba85-4242-817e-54f7c4b943e0id: f4da0e76-df77-451e-ad61-21afb7bd8810
+source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
 source-wordcount: 1763
 ht-degree: 24%
@@ -54,7 +52,7 @@ ht-degree: 24%
 
    默认情况下，提供以下目标类型：
 
-   * **[!UICONTROL Filtering conditions]** ：利用此选项可定义查询并显示结果。 有关筛选器的更多信息，请参阅[Campaign v8 （控制台）文档](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/audience/create-filters){target=_blank}。
+   * **[!UICONTROL Filtering conditions]** ：利用此选项可定义查询并显示结果。 有关筛选器的更多信息，请参阅[Campaign v8 （控制台）文档](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-filters){target=_blank}。
    * **[!UICONTROL Subscribers of an information service]**：通过此选项，可选择新闻稿，收件人必须订阅新闻稿才能成为所创建投放的目标。
 
      ![](assets/s_ncs_user_wizard_email02c.png)
@@ -78,7 +76,7 @@ ht-degree: 24%
    * **[!UICONTROL Recipients included in a folder]** ：利用此选项可定向树的特定文件夹中包含的配置文件。
    * **[!UICONTROL A recipient]** ：通过此选项，您可以从数据库中的用户档案中选择特定收件人。
    * **[!UICONTROL A list of recipients]** ：通过此选项可定向收件人列表。 列表显示在[此部分](../../platform/using/creating-and-managing-lists.md)中。
-   * **[!UICONTROL User filters]** ：利用此选项可访问预配置的筛选器，以将其用作数据库中用户档案的筛选条件。 有关筛选器的更多信息，请参阅[Campaign v8 （控制台）文档](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/audience/create-filters){target=_blank}。
+   * **[!UICONTROL User filters]** ：利用此选项可访问预配置的筛选器，以将其用作数据库中用户档案的筛选条件。 有关筛选器的更多信息，请参阅[Campaign v8 （控制台）文档](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-filters){target=_blank}。
    * 利用选项&#x200B;**[!UICONTROL Exclude recipients corresponding to this segment]**，可定向不符合所定义的目标条件的收件人。 要使用此选项，请选择相应的框，然后按照之前所述应用目标选择，以排除生成的用户档案。
 
      ![](assets/s_ncs_user_wizard_email02g.png)
@@ -257,6 +255,6 @@ ht-degree: 24%
 
 在本视频中，您将了解如何向现有电子邮件添加种子和校样，以及如何进行发送。
 
->[!VIDEO](https://video.tv.adobe.com/v/35508?captions=chi_hans&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/25606?quality=12)
 
 [此处](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hans)提供了其他 Campaign Classic 操作方法视频。

@@ -7,19 +7,13 @@ role: User
 level: Beginner
 exl-id: a9cd08b0-55c2-4405-9fb8-f0c623cd4ccb
 TQID: https://experienceleague.adobe.com/r3qtW9ZsCD85N9qAnN1EOje-VMhDoyPuqea2xZnBWLs
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2:
-  - id: b12f6872-9271-4369-85e5-86969a0b99a2
-  - id: d5ef99fa-df0c-4153-bf94-105ad0724167
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-level_v2:
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: b12f6872-9271-4369-85e5-86969a0b99a2id: d5ef99fa-df0c-4153-bf94-105ad0724167
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+level_v2: id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: d095671a-1355-40aa-8b5f-06c33c68080b
+subfeature_v2: id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
+source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
 source-wordcount: 2269
 ht-degree: 0%
@@ -34,7 +28,7 @@ Adobe对旧版数据中心不再授权：Campaign Classic实例必须转移到Pu
 
 以下是一组有关此项目的常见问题、对您的Campaign环境的影响以及其他有用资源。
 
-如有任何其他问题，您可以联系[Adobe客户关怀](https://experienceleague.adobe.com/zh-hans?support-solution=Campaign#support)。
+如有任何其他问题，您可以联系[Adobe客户关怀](https://experienceleague.adobe.com/?support-solution=Campaign#support)。
 
 ## 对基础架构的影响
 
@@ -64,7 +58,7 @@ Adobe对旧版数据中心不再授权：Campaign Classic实例必须转移到Pu
 
 * **解决迁移后问题的计划是什么？**
 
-  在迁移生产系统之前，将执行大量测试。 但是，如果出现任何问题，[Adobe客户关怀](https://experienceleague.adobe.com/zh-hans?support-solution=Campaign#support)将继续作为主要联系人。 Adobe已经成立了一个专家团队，在需要时提供高级支持。
+  在迁移生产系统之前，将执行大量测试。 但是，如果出现任何问题，[Adobe客户关怀](https://experienceleague.adobe.com/?support-solution=Campaign#support)将继续作为主要联系人。 Adobe已经成立了一个专家团队，在需要时提供高级支持。
 
 ## 可投放性影响
 
@@ -110,7 +104,7 @@ Adobe对旧版数据中心不再授权：Campaign Classic实例必须转移到Pu
 
   首先，Adobe可交付性将评估平台的可交付性状态，并推荐切换到新IP的计划
 
-  迁移后不需要热身。 可能会出现异常，在这种情况下，[Adobe客户关怀](https://experienceleague.adobe.com/zh-hans?support-solution=Campaign#support)将与客户联系。
+  迁移后不需要热身。 可能会出现异常，在这种情况下，[Adobe客户关怀](https://experienceleague.adobe.com/?support-solution=Campaign#support)将与客户联系。
 
   不过，该计划旨在让这一业务运营变得透明，不同于在上线期间的最初升级。
 
@@ -186,7 +180,7 @@ Adobe对旧版数据中心不再授权：Campaign Classic实例必须转移到Pu
 
   它可能会根据新服务器的位置而更改。 但是，客户将能够保留其当前时区。
 
-  在[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/advanced-management/managing-time-zones.html?lang=zh-Hans){target="_blank"}中了解有关时区管理的更多信息。
+  在[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/advanced-management/managing-time-zones.html){target="_blank"}中了解有关时区管理的更多信息。
 
 
 ## 安全性和权限

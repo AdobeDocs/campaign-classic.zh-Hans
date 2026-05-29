@@ -7,16 +7,12 @@ feature: Campaigns, Templates
 hide: true
 exl-id: d272d4b9-f1b2-4fb2-9ed9-91a4aea7eca3
 TQID: https://experienceleague.adobe.com/mFkyDINneoodiL3Liiao0u3uZQsGaZCG1-BEu6Vqjos
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2:
-  - id: a075b2c1-7748-4328-b7f6-343aa314616a
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
-source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: a075b2c1-7748-4328-b7f6-343aa314616aid: afa4204e-6d08-4e29-bc35-26aafb656d48
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+subfeature_v2: id: f863efa9-030c-4466-a2b8-a52aea6b722c
+source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
 source-wordcount: 1147
 ht-degree: 3%
@@ -166,7 +162,7 @@ ht-degree: 3%
 
   >[!NOTE]
   >
-  >在[Adobe Campaign v8 （控制台）文档](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}中了解如何&#x200B;**使用枚举**。
+  >在[Adobe Campaign v8 （控制台）文档](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}中了解如何&#x200B;**使用枚举**。
 
 * 选择&#x200B;**类型的营销活动**：唯一、定期或定期。 默认情况下，营销活动模板适用于独特营销活动。 [此部分](../../campaign/using/setting-up-marketing-campaigns.md#recurring-and-periodic-campaigns)中详细介绍了循环和定期营销活动。
 * 指定营销活动的持续时间，即营销活动将发生的天数。 基于此模板创建营销活动时，将自动填充营销活动开始和结束日期。

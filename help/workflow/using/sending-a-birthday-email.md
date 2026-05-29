@@ -6,13 +6,11 @@ feature: Workflows
 hide: true
 exl-id: 38006cca-e945-4b9d-8e2d-ed537b8541d9
 TQID: https://experienceleague.adobe.com/RxcAtCrK97YWE-UZuuxRkNN-spUvC0yRJZdY1WW-MBo
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2:
-  - id: a075b2c1-7748-4328-b7f6-343aa314616a
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: []
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+subfeature_v2: id: ee25c34b-ea50-427b-9369-ba0a160f7d70id: b5f0aaf4-1e48-400d-95ac-6eb3078cf22fid: d1110311-2ca4-442b-be37-088a6db845ee
+source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
 source-wordcount: 896
 ht-degree: 2%
@@ -33,7 +31,7 @@ ht-degree: 2%
 
 此（每日运行）工作流会选择其生日为当前日期的所有收件人。
 
-![](assets/do-not-localize/how-to-video.png)此用例也可以以视频形式找到。 有关详细信息，请参阅[创建工作流](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/automating-with-workflows/creating-a-workflow.html?lang=zh-Hans)视频。
+![](assets/do-not-localize/how-to-video.png)此用例也可以以视频形式找到。 有关详细信息，请参阅[创建工作流](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/automating-with-workflows/creating-a-workflow.html)视频。
 
 为此，请创建一个营销活动，然后单击&#x200B;**[!UICONTROL Targeting and workflows]**&#x200B;选项卡。 有关更多信息，请参阅[在工作流中生成主目标](../../campaign/using/marketing-campaign-deliveries.md#building-the-main-target-in-a-workflow)部分。
 

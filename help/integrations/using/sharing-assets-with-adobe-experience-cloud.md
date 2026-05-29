@@ -9,11 +9,10 @@ content-type: reference
 topic-tags: asset-sharing
 exl-id: b28aa5a5-afba-458b-8a85-375493c6c836
 TQID: https://experienceleague.adobe.com/VW9504KkK6NcdZ0MmF-9Cgh-14XciporDhUUBz3NyU0
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2:
-  - id: d5ef99fa-df0c-4153-bf94-105ad0724167
-source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: d5ef99fa-df0c-4153-bf94-105ad0724167
+subfeature_v2: id: cbcf4d90-26be-46e2-b16a-aebc529dc41eid: df0d6518-6f49-46e2-b46e-3bcc513f553fid: eb007b6d-6e57-46ab-9485-3f24d6102304id: b1fd1501-3105-4d6b-b4d4-9af53126df75
+source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
 source-wordcount: 190
 ht-degree: 0%
@@ -22,7 +21,7 @@ ht-degree: 0%
 
 # 与Adobe Experience Cloud共享资源{#sharing-assets-with-adobe-experience-cloud}
 
-[Experience Cloud Assets](https://experienceleague.adobe.com/zh-hans/docs/core-services/interface/services/audiences/overview){target="_blank"}为可在解决方案间共享的营销就绪型资源提供了一个集中的存储库。 资产是数字文档、图像、视频或音频文件。
+[Experience Cloud Assets](https://experienceleague.adobe.com/en/docs/core-services/interface/services/audiences/overview){target="_blank"}为可在解决方案间共享的营销就绪型资源提供了一个集中的存储库。 资产是数字文档、图像、视频或音频文件。
 
 资源服务包括：
 
@@ -31,7 +30,7 @@ ht-degree: 0%
 
 在Adobe Campaign中编辑电子邮件投放或登陆页面时，您可以放置Adobe Experience Cloud库中的资源。 根据您使用的解决方案，这些资源可以存储在Assets或Adobe Experience Manager Assets中。
 
-[此文档](https://experienceleague.adobe.com/zh-hans/docs/core-services/interface/services/assets/experience-cloud-assets){target="_blank"}中详细介绍了各种可用库。
+[此文档](https://experienceleague.adobe.com/en/docs/core-services/interface/services/assets/experience-cloud-assets){target="_blank"}中详细介绍了各种可用库。
 
 请参阅[配置对Assets的访问权限](../../integrations/using/configuring-access-to-assets.md)部分，了解有关链接到每个库的详细信息。
 

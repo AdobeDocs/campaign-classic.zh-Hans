@@ -7,16 +7,12 @@ feature: Deliverability
 role: User
 exl-id: f301b34c-244c-4279-b23f-8224ea8eedbe
 TQID: https://experienceleague.adobe.com/UuHzMhIx2zL3VxZXxnKM3UHBlN4Mkr7qy47Ttk-43d0
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2:
-  - id: a075b2c1-7748-4328-b7f6-343aa314616a
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: beb7a3c1-66ab-4786-b879-7621375b3c40
-source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: a075b2c1-7748-4328-b7f6-343aa314616aid: b631758a-142d-425f-b9aa-f756d85cb979id: c858a28b-ea19-49b0-8d48-828717fad89c
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: beb7a3c1-66ab-4786-b879-7621375b3c40
+subfeature_v2: id: e95a583b-fcfa-4524-8666-46a29c828119id: c8da4fdd-eb94-4751-a43c-f82733fb2d6eid: d5bbe3da-ba85-4242-817e-54f7c4b943e0id: f4da0e76-df77-451e-ad61-21afb7bd8810
+source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
 source-wordcount: 851
 ht-degree: 6%
@@ -25,7 +21,7 @@ ht-degree: 6%
 
 # 什么是可投放性{#about-deliverability}
 
-通过可投放性，您可以衡量营销活动在到达收件人的收件箱时成功与否，而不会出现退回或标记为垃圾邮件的情况。 [了解可投放性重要的原因](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/deliverability-strategy-and-definition.html?lang=zh-Hans#why-deliverability-matters)。
+通过可投放性，您可以衡量营销活动在到达收件人的收件箱时成功与否，而不会出现退回或标记为垃圾邮件的情况。 [了解可投放性重要的原因](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/deliverability-strategy-and-definition.html#why-deliverability-matters)。
 
 更准确地说，电子邮件可投放性指一组特征，这些特征决定消息在短时间内通过个人电子邮件地址到达其目的地的能力，以及在内容和格式方面达到预期质量。
 
@@ -35,7 +31,7 @@ ht-degree: 6%
 
 可投放性问题通常与Internet服务提供商和邮件服务器管理员实施的垃圾邮件防护措施有关。
 
-* 有关如何设计成功的电子邮件营销活动的一般建议，请参阅[可投放性策略和定义](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/deliverability-strategy-and-definition.html?lang=zh-Hans)。
+* 有关如何设计成功的电子邮件营销活动的一般建议，请参阅[可投放性策略和定义](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/deliverability-strategy-and-definition.html)。
 
 * 有关如何优化Adobe Campaign电子邮件投放能力的更具体建议，Adobe建议使用本节中列出的最佳实践。
 
@@ -50,12 +46,12 @@ ht-degree: 6%
 使用Adobe Campaign时，可投放性比率取决于多种因素，特别是：
 
 * 正确的实例配置：请联系您的Adobe代表寻求帮助。
-* 合法的网络配置：请参阅[域设置和策略](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=zh-Hans#domain-setup-and-strategy)。
-* 您的IP地址信誉：请参阅[IP策略](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=zh-Hans#ip-strategy)。
-* 低[投诉](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/metrics-for-deliverability/complaints.html?lang=zh-Hans)和[硬退回](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/metrics-for-deliverability/bounces.html?lang=zh-Hans#hard-bounces)率。
+* 合法的网络配置：请参阅[域设置和策略](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#domain-setup-and-strategy)。
+* 您的IP地址信誉：请参阅[IP策略](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#ip-strategy)。
+* 低[投诉](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/metrics-for-deliverability/complaints.html)和[硬退回](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/metrics-for-deliverability/bounces.html#hard-bounces)率。
 * 您的邮件内容：请参阅[控制电子邮件内容](control-message-content.md)。
-* 消息身份验证(SPF、DKIM、DMARC)：请参阅[此部分](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=zh-Hans#authentication)。
-* 发件人信誉：要了解主要ISP如何评估发件人信誉，请参阅[此部分](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/internet-service-provider-specifics/overview.html?lang=zh-Hans)。
+* 消息身份验证(SPF、DKIM、DMARC)：请参阅[此部分](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#authentication)。
+* 发件人信誉：要了解主要ISP如何评估发件人信誉，请参阅[此部分](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/internet-service-provider-specifics/overview.html)。
 
 ## Campaign投放工具 {#deliverability-tools}
 
@@ -66,10 +62,10 @@ Adobe Campaign提供了多种工具来跟踪和改进平台的可投放性性能
 
 配置、设计和测试消息时，请确保遵循以下部分中提到的最佳实践。 利用Adobe Campaign提供的所有功能可帮助您提高可投放性。
 
-* [投放最佳实践](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/delivery-best-practices.html?lang=zh-Hans){target="_blank"}。
+* [投放最佳实践](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/delivery-best-practices.html){target="_blank"}。
 * [控制电子邮件内容](control-message-content.md)
 * [收件箱呈现](inbox-rendering.md)
-* [发送校样](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/preview-and-proof.html?lang=zh-Hans){target="_blank"}
+* [发送校样](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/validate/preview-and-proof.html){target="_blank"}
 
 ### 通过双重选择加入验证同意 {#double-opt-in}
 
@@ -77,7 +73,7 @@ Adobe Campaign提供了多种工具来跟踪和改进平台的可投放性性能
 
 有关此内容的更多信息，请参阅[使用双重选择加入创建订阅表单](../../web/using/use-cases-web-forms.md#create-a-subscription--form-with-double-opt-in)。
 
-有关从客户收集数据时的最佳实践的更多信息，请参阅[Adobe可投放性最佳实践指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/first-impressions/address-collection-and-list-growth.html?lang=zh-Hans#data-quality-and-hygiene)。
+有关从客户收集数据时的最佳实践的更多信息，请参阅[Adobe可投放性最佳实践指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/first-impressions/address-collection-and-list-growth.html#data-quality-and-hygiene)。
 
 ### 利用隔离管理
 
@@ -89,8 +85,8 @@ Adobe Campaign管理着收集垃圾邮件投诉、硬退回和一致发生的软
 
 有关更多信息，请参阅以下章节：
 
-* [了解投放失败](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"}（Campaign v8文档 — 综合指南）
-* [了解隔离管理](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/send/monitor/quarantines){target="_blank"}（Campaign v8文档 — 综合指南）
+* [了解投放失败](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"}（Campaign v8文档 — 综合指南）
+* [了解隔离管理](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/quarantines){target="_blank"}（Campaign v8文档 — 综合指南）
 
 ### 使用监控和报告工具
 

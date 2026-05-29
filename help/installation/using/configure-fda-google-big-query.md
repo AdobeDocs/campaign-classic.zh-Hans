@@ -8,13 +8,11 @@ content-type: reference
 topic-tags: connectors
 exl-id: ebaad59f-0607-4090-92d0-e457fbf9a348
 TQID: https://experienceleague.adobe.com/jmeyOWDTkOmCKOVGlNAdYzNHfaK1QeSxnIjDDnl8yj0
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2:
-  - id: b12f6872-9271-4369-85e5-86969a0b99a2
-topic_v2:
-  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: b12f6872-9271-4369-85e5-86969a0b99a2
+topic_v2: id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+subfeature_v2: []
+source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
 workflow-type: tm+mt
 source-wordcount: 1042
 ht-degree: 2%
@@ -41,7 +39,7 @@ ht-degree: 2%
 
 ### 在Windows上设置的驱动程序 {#driver-window}
 
-1. 下载适用于Windows[&#128279;](https://cloud.google.com/bigquery/docs/reference/odbc-jdbc-drivers)的ODBC驱动程序。
+1. 下载适用于Windows](https://cloud.google.com/bigquery/docs/reference/odbc-jdbc-drivers)的[ODBC驱动程序。
 
 1. 在Windows中配置ODBC驱动程序。 有关详细信息，请参见[此页面](https://storage.googleapis.com/simba-bq-release/jdbc/Simba%20JDBC%20Driver%20for%20Google%20BigQuery%20Install%20and%20Configuration%20Guide.pdf)。
 

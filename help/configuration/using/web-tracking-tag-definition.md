@@ -6,13 +6,13 @@ feature: Application Settings
 role: Developer
 exl-id: 0b5575be-57e7-4eee-9c0a-e9ef4b0931bf
 TQID: https://experienceleague.adobe.com/UkA0XyCzaDt2qlxpODQ-zoyC0YdKs3K5qg4UacvT8ck
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-role_v2:
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+feature_v2: []
+subfeature_v2: []
+source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
 workflow-type: tm+mt
-source-wordcount: 362
+source-wordcount: 324
 ht-degree: 2%
 
 ---
@@ -83,7 +83,7 @@ Web跟踪URL的格式如下： **https://`<name_of_redirection_server>`：`<port
                               <p>URL parameter</p> 
                            </td>
                            <td>
-                              <p>如果没有会话Cookie时要使用的投放标识符。 此值将为
+                              <p>如果没有会话Cookie时要使用的投放标识符。此值将为
                                  以十六进制表示。
                               </p> 
                            </td> 
@@ -96,8 +96,8 @@ Web跟踪URL的格式如下： **https://`<name_of_redirection_server>`：`<port
                               <p>URL parameter</p> 
                            </td>
                            <td>
-                              <p>用于标识Internet用户的参数。 此参数的格式为“name=value”，
-                                 其中，名称是收件人模式的字段。 此参数的优先级高于
+                              <p>用于标识Internet用户的参数。此参数的格式为“name=value”，
+                                 其中，名称是收件人模式的字段。此参数的优先级高于
                                  会话Cookie中包含的标识符。
                               </p> 
                            </td> 
@@ -113,17 +113,17 @@ Web跟踪URL的格式如下： **https://`<name_of_redirection_server>`：`<port
 
 * 收集业务量数据
 
-  **https://myserver.adobe.com/r/4567?tagid=command&amount=100&article=2l**
+  **https://myserver.adobe.com/r/4567?tagid=command&amp;amount=100&amp;article=2l**
 
 * 指定字段以查找收件人
 
-  **https://myserver.adobe.com/r/2353?tagid=home&rcpid=saccount%3D10**
+  **https://myserver.adobe.com/r/2353?tagid=home&amp;rcpid=saccount%3D10**
 
   帐号为10的收件人将被发送到主页。
 
 * 使用默认投放
 
-  **https://myserver.adobe.com/r/2456?tagid=home&jobid=e6**
+  **https://myserver.adobe.com/r/2456?tagid=home&amp;jobid=e6**
 
   收件人将被发送到主页。 此信息将使用标识符230（数据库16中的e6）存储在投放中，除非随此查询发送包含投放标识符的会话Cookie。
 

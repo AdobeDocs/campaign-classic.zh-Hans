@@ -6,9 +6,10 @@ feature: Workflows, Audiences, Targeting Activity
 hide: true
 exl-id: 5028ad4c-e427-4e78-962d-c5ea54390db5
 TQID: https://experienceleague.adobe.com/gwDuL3a9gnCKW07SnGjZ113cvwbxmOMIp6-Zy-HveRo
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: []
+subfeature_v2: id: ee25c34b-ea50-427b-9369-ba0a160f7d70id: b5f0aaf4-1e48-400d-95ac-6eb3078cf22fid: d1110311-2ca4-442b-be37-088a6db845ee
+source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
 source-wordcount: 438
 ht-degree: 8%
@@ -30,7 +31,7 @@ ht-degree: 8%
 * **拆分**：用于将目标拆分为多个子集。 请参阅[拆分](split.md)部分。
 * **单元格**：以数据列的形式提供各种子集的视图，当存在许多子集时，这些子集便于操作。 有关详细信息，请参阅[单元格](cells.md)部分。
 * **按单元格列出的选件**：允许您将不同的选件链接到群体的每个子集。 请参阅[按单元格](offers-by-cell.md)列出的选件。
-* **调查答案**：用于恢复调查期间收集的信息。 有关更多信息，请参阅此[&#128279;](../../surveys/using/getting-started-with-surveys.md)章节。
+* **调查答案**：用于恢复调查期间收集的信息。 有关更多信息，请参阅此](../../surveys/using/getting-started-with-surveys.md)章节[。
 * **投放概要**：允许您添加投放概要。 请参阅[投放概要](../../workflow/using/delivery-outline.md)部分。
 * **扩充**：允许您将列添加到工作表或工作流。 请参阅[扩充](../../workflow/using/enrichment.md)部分。
 * **编辑架构**：允许您转换、标准化数据，并在必要时扩充数据。 有关详细信息，请参阅[编辑架构](../../workflow/using/edit-schema.md)部分。
