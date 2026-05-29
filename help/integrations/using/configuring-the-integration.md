@@ -43,7 +43,7 @@ ht-degree: 4%
 1. [配置外部帐户](#configure-the-external-account)
 1. [配置AEM资源筛选](#configure-aem-resources-filtering)
 
-用于高级配置，例如管理个性化字段和块。 请参阅Adobe Experience Manager [文档](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/campaignonpremise.html)。
+用于高级配置，例如管理个性化字段和块。 请参阅Adobe Experience Manager [文档](https://helpx.adobe.com/cn/experience-manager/6-5/sites/administering/using/campaignonpremise.html)。
 
 ### 在Adobe Campaign中安装AEM集成包 {#install-the-aem-integration-package-in-adobe-campaign}
 

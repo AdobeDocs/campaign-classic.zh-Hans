@@ -57,7 +57,7 @@ ht-degree: 2%
 
   有关工作流的详细信息，请参阅此[页面](../../workflow/using/about-workflows.md)。
 
-  有关如何监视工作流的详细信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html){target="_blank"}。
+  有关如何监视工作流的详细信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html?lang=zh-Hans){target="_blank"}。
 
 
 * **选项审核记录**&#x200B;允许您检查活动和对选项所做的最后修改。

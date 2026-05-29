@@ -37,7 +37,7 @@ ht-degree: 1%
 
 在多个Adobe Campaign工作流活动中，您可以使用存储在外部数据库中的数据。
 
-* **外部数据筛选** — 查询活动允许您添加外部数据，并在定义的筛选配置中使用它。 有关更多信息，请参阅[Campaign v8文档]https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/targeting-workflows.html){target="_blank"}。
+* **外部数据筛选** — 查询活动允许您添加外部数据，并在定义的筛选配置中使用它。 有关更多信息，请参阅[Campaign v8文档]https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/targeting-workflows.html?lang=zh-Hans){target="_blank"}。
 
 * **创建子集** — 拆分活动允许您创建子集。 您可以使用外部数据来定义要使用的筛选条件。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/split.html){target="_blank"}。
 

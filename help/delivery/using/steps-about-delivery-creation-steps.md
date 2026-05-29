@@ -47,4 +47,4 @@ ht-degree: 18%
 
 >[!NOTE]
 >
->本章中介绍的步骤假定所有目标收件人及其用户档案都存储在数据库中，外部投放除外（请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#selecting-external-recipients){target="_blank"}）。
+>本章中介绍的步骤假定所有目标收件人及其用户档案都存储在数据库中，外部投放除外（请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=zh-Hans#selecting-external-recipients){target="_blank"}）。
