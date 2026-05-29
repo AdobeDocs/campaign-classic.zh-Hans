@@ -235,6 +235,6 @@ ht-degree: 6%
 
 本视频说明如何创建营销计划、项目和营销活动。
 
->[!VIDEO](https://video.tv.adobe.com/v/35132?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/326559?captions=chi_hans&quality=12)
 
 [此处](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hans)提供了其他Campaign操作方法视频。
