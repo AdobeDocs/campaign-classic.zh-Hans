@@ -10,9 +10,11 @@ product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
+feature_v2: []
+subfeature_v2: []
+source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
 workflow-type: tm+mt
-source-wordcount: 362
+source-wordcount: 324
 ht-degree: 2%
 
 ---
@@ -83,7 +85,7 @@ Web跟踪URL的格式如下： **https://`<name_of_redirection_server>`：`<port
                               <p>URL parameter</p> 
                            </td>
                            <td>
-                              <p>如果没有会话Cookie时要使用的投放标识符。 此值将为
+                              <p>如果没有会话Cookie时要使用的投放标识符。此值将为
                                  以十六进制表示。
                               </p> 
                            </td> 
@@ -96,8 +98,8 @@ Web跟踪URL的格式如下： **https://`<name_of_redirection_server>`：`<port
                               <p>URL parameter</p> 
                            </td>
                            <td>
-                              <p>用于标识Internet用户的参数。 此参数的格式为“name=value”，
-                                 其中，名称是收件人模式的字段。 此参数的优先级高于
+                              <p>用于标识Internet用户的参数。此参数的格式为“name=value”，
+                                 其中，名称是收件人模式的字段。此参数的优先级高于
                                  会话Cookie中包含的标识符。
                               </p> 
                            </td> 

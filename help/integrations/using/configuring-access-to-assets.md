@@ -14,8 +14,11 @@ product_v2:
 feature_v2:
   - id: d5ef99fa-df0c-4153-bf94-105ad0724167
 subfeature_v2:
+  - id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
   - id: df0d6518-6f49-46e2-b46e-3bcc513f553f
-source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
+  - id: eb007b6d-6e57-46ab-9485-3f24d6102304
+  - id: b1fd1501-3105-4d6b-b4d4-9af53126df75
+source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
 source-wordcount: 522
 ht-degree: 2%
@@ -69,7 +72,7 @@ ht-degree: 2%
 
 设置此集成后，您可以在Adobe Campaign中配置新的投放模板以使用AEM Assets库。 为此请执行以下操作步骤：
 
-1. 创建新投放模板 — 或复制现有模板。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html?lang=zh-Hans){target="_blank"}。
+1. 创建新投放模板 — 或复制现有模板。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html){target="_blank"}。
 1. 编辑此模板的&#x200B;**属性**。
 1. 在&#x200B;**[!UICONTROL Advanced]**&#x200B;选项卡中，将&#x200B;**[!UICONTROL Content editing mode]**&#x200B;设置为&#x200B;**DCE**。
 1. 选择访问AEM Assets库所需的外部&#x200B;**[!UICONTROL AEM account]**。

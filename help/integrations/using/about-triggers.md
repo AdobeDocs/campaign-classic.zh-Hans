@@ -14,16 +14,19 @@ product_v2:
 feature_v2:
   - id: d5ef99fa-df0c-4153-bf94-105ad0724167
 subfeature_v2:
-  - id: c3bf7e1e-1db5-4c72-9293-e2f0b1ab73d0
+  - id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
+  - id: df0d6518-6f49-46e2-b46e-3bcc513f553f
+  - id: eb007b6d-6e57-46ab-9485-3f24d6102304
+  - id: b1fd1501-3105-4d6b-b4d4-9af53126df75
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
+source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 418
-ht-degree: 8%
+source-wordcount: 392
+ht-degree: 9%
 
 ---
 
@@ -38,7 +41,7 @@ ht-degree: 8%
 [!DNL Triggers]在用户操作后的短时间内运行营销操作。 典型响应时间不到一小时。
 
 由于配置很少且没有第三方参与，因此它允许更敏捷的集成。
-它还支持高流量而不影响营销活动的性能。 例如，集成每小时可处理100万个触发器。
+它还支持高流量而不影响营销活动的性能。例如，集成每小时可处理100万个触发器。
 
 ![](assets/do-not-localize/book.png)了解如何[创建Experience Cloud触发器](https://experienceleague.adobe.com/docs/experience-cloud/triggers/create.html?lang=zh-Hans)，识别、定义并监视关键客户行为。
 

@@ -15,9 +15,17 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
+feature_v2:
+  - id: b631758a-142d-425f-b9aa-f756d85cb979
+  - id: c858a28b-ea19-49b0-8d48-828717fad89c
+subfeature_v2:
+  - id: e95a583b-fcfa-4524-8666-46a29c828119
+  - id: c8da4fdd-eb94-4751-a43c-f82733fb2d6e
+  - id: d5bbe3da-ba85-4242-817e-54f7c4b943e0
+  - id: f4da0e76-df77-451e-ad61-21afb7bd8810
+source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 507
+source-wordcount: 450
 ht-degree: 3%
 
 ---
@@ -50,7 +58,7 @@ ht-degree: 3%
 
 1. 填写以下字段：
 
-   * **[!UICONTROL U+]**：您的新表情符号的代码。 您可以在此[页面](https://unicode.org/emoji/charts/full-emoji-list.html)中找到表情符号代码列表。
+   * **[!UICONTROL U+]**：您的新表情符号的代码。您可以在此[页面](https://unicode.org/emoji/charts/full-emoji-list.html)中找到表情符号代码列表。
 为避免出现兼容性问题，我们建议您选择在浏览器和每个操作系统上支持的表情符号。
 
    * **[!UICONTROL Label]**：您新表情符号的标签。

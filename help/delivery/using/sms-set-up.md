@@ -18,9 +18,17 @@ topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
+feature_v2:
+  - id: b631758a-142d-425f-b9aa-f756d85cb979
+  - id: c858a28b-ea19-49b0-8d48-828717fad89c
+subfeature_v2:
+  - id: e95a583b-fcfa-4524-8666-46a29c828119
+  - id: c8da4fdd-eb94-4751-a43c-f82733fb2d6e
+  - id: d5bbe3da-ba85-4242-817e-54f7c4b943e0
+  - id: f4da0e76-df77-451e-ad61-21afb7bd8810
+source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 1740
+source-wordcount: 1699
 ht-degree: 31%
 
 ---
@@ -353,7 +361,7 @@ CR：回车
 * 无论关键字是什么，要发送相同的回复，请将&#x200B;**[!UICONTROL Keyword]**&#x200B;列留空。
 * 要执行操作而不发送响应，请将&#x200B;**[!UICONTROL Response]**&#x200B;列留空。 例如，这允许您从隔离中删除回复消息不是“STOP”的用户。
 
-如果您有多个外部帐户使用具有同一提供商帐户的扩展通用SMPP连接器，则可能会发生以下问题：在发送对短代码的回复时，可能会通过任何外部帐户连接收到该回复。 因此，发送的自动回复不能是预期的消息。
+如果您有多个外部帐户使用具有同一提供商帐户的扩展通用SMPP连接器，则可能会发生以下问题：在发送对短代码的回复时，可能会通过任何外部帐户连接收到该回复。因此，发送的自动回复不能是预期的消息。
 要避免这种情况，请根据您使用的提供商，应用以下解决方案之一：
 
 * 为每个外部帐户创建一个提供程序帐户。

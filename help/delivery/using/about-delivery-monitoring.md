@@ -15,9 +15,17 @@ topic_v2:
   - id: b4dd41a7-ccf8-4e9d-918e-acaab534a307
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
+feature_v2:
+  - id: b631758a-142d-425f-b9aa-f756d85cb979
+  - id: c858a28b-ea19-49b0-8d48-828717fad89c
+subfeature_v2:
+  - id: e95a583b-fcfa-4524-8666-46a29c828119
+  - id: c8da4fdd-eb94-4751-a43c-f82733fb2d6e
+  - id: d5bbe3da-ba85-4242-817e-54f7c4b943e0
+  - id: f4da0e76-df77-451e-ad61-21afb7bd8810
+source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 931
+source-wordcount: 885
 ht-degree: 2%
 
 ---
@@ -38,11 +46,11 @@ ht-degree: 2%
 
 如果未发送投放且其状态仍为&#x200B;**待处理**，该怎么办？
 
-* 执行过程正在等待某些资源的可用性。 MTA可能尚未启动。
-检查您的mta@instance模块是否已在MTA服务器上启动，并根据需要启动MTA模块。 [了解详情](../../production/using/administration.md)。
+* 执行过程正在等待某些资源的可用性。MTA可能尚未启动。
+检查您的mta@instance模块是否已在MTA服务器上启动，并根据需要启动MTA模块。[了解更多](../../production/using/administration.md)。
 
 * 投放可能使用未在发送实例上配置的关联性。
-提示：检查流量管理（IP关联）的配置。 有关详细信息，请参阅控制传出SMTP流量。
+提示：检查流量管理（IP关联）的配置。有关详细信息，请参阅控制传出SMTP流量。
 
 >[!NOTE]
 >

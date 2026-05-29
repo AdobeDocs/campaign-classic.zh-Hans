@@ -8,9 +8,11 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 3e55d7f5-2858-4390-bba9-8fb5be0c3d98
-source-git-commit: ad6f3f2cf242d28de9e6da5cec100e096c5cbec2
+feature_v2: []
+subfeature_v2: []
+source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
 workflow-type: tm+mt
-source-wordcount: '1084'
+source-wordcount: 1084
 ht-degree: 2%
 
 ---
@@ -27,7 +29,7 @@ ht-degree: 2%
 
 >[!CAUTION]
 >
->设置中间源服务器并首次运行[同步工作流](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows.html?lang=zh-Hans){target="_blank"}后，请确保不更新中间源外部帐户的内部名称。
+>设置中间源服务器并首次运行[同步工作流](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows.html){target="_blank"}后，请确保不更新中间源外部帐户的内部名称。
 
 ## 安装和配置实例的步骤 {#steps-for-installing-and-configuring-an-instance}
 

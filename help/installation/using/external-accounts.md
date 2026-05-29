@@ -10,12 +10,12 @@ exl-id: 4a17d5e8-c73f-42e7-b641-0fee6a52c5c0
 TQID: https://experienceleague.adobe.com/-dvlEuumTaNU2K-AHysUyUmwDay9oaZGLerkpR4pzzw
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2:
-  - id: a075b2c1-7748-4328-b7f6-343aa314616a
+feature_v2: []
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
+subfeature_v2: []
+source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
 workflow-type: tm+mt
 source-wordcount: 1959
 ht-degree: 7%
@@ -127,7 +127,7 @@ Adobe Campaign 提供了一组预定义的外部帐户。 要设置与外部系�
 * [直邮](../../delivery/using/about-direct-mail-channel.md)
 * [代理](../../delivery/using/communication-channels.md#other-channels)
 * [X（以前称为Twitter）](../../social/using/about-social-marketing.md)
-* [iOS和Android渠道](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push-settings.html?lang=zh-Hans){target="_blank"}
+* [iOS和Android渠道](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push-settings.html){target="_blank"}
 
 ### 电子邮件路由 {#email-routing-external-account}
 
