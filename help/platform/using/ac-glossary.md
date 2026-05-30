@@ -244,7 +244,7 @@ Learn more about [Transactional Messaging](../../message-center/using/about-tran
 
 投放日志包含发送消息时生成的信息。 这些日志显示发送的详细信息，其中消息已准备、忽略、发送或失败。 可直接从投放仪表板访问它们。
 
-了解有关[投放日志](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard#delivery-logs-and-history){target="_blank"}的更多信息。
+了解有关[投放日志](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/send/monitor/delivery-dashboard#delivery-logs-and-history){target="_blank"}的更多信息。
 +++
 
 <!--
@@ -369,7 +369,7 @@ An engine call is a server call that starts real-time processing on server side 
 
 枚举是在架构中或在Platform级别定义的数据类型，用于定义字段的有效输入值。 枚举作为选取列表显示在用户界面和查询构建器中。
 
-在[Adobe Campaign v8 （控制台）文档](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}中了解如何&#x200B;**使用枚举**。
+在[Adobe Campaign v8 （控制台）文档](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}中了解如何&#x200B;**使用枚举**。
 +++
 
 +++**资源管理器视图**
@@ -394,7 +394,7 @@ An engine call is a server call that starts real-time processing on server side 
 
 疲劳管理可帮助您控制消息的频率和数量，以避免过度招徕收件人，通常使用类型规则来应用疲劳管理功能。
 
-在[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/campaign-optimization/pressure-rules.html){target="_blank"}中了解有关疲劳管理的更多信息。
+在[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/campaign-optimization/pressure-rules.html?lang=zh-Hans){target="_blank"}中了解有关疲劳管理的更多信息。
 +++
 
 +++**联合数据访问(FDA)**
@@ -595,7 +595,7 @@ Learn more about [Navigation Bar](../../platform/using/adobe-campaign-workspace.
 
 在营销活动、项目或计划内，操作员可以声明目标列表。 这些是可达到的量化值。 在营销活动、项目或计划结束时， MRM模块允许操作员在专用报告中比较目标和结果。
 
-请参阅[Adobe Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/mrm/creating-and-managing-tasks.html#expenses-and-revenues){target=_blank}以了解有关目标的更多信息。
+请参阅[Adobe Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/mrm/creating-and-managing-tasks.html?lang=zh-Hans#expenses-and-revenues){target=_blank}以了解有关目标的更多信息。
 +++
 
 +++**优惠目录**
@@ -777,7 +777,7 @@ Learn more about [Navigation Bar](../../platform/using/adobe-campaign-workspace.
 
 工作流面板显示了可添加到工作流的可用活动。 此组件以选项卡形式显示，其中工作流活动按其使用进行逻辑分组。 面板上可用的活动由已安装在Campaign实例中的加载项以及显示工作流的上下文决定。
 
-在[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html#add-and-link-activities){target="_blank"}中了解有关调色板的更多信息。
+在[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html?lang=zh-Hans#add-and-link-activities){target="_blank"}中了解有关调色板的更多信息。
 +++
 
 +++**性能监控**
@@ -791,7 +791,7 @@ Learn more about [Navigation Bar](../../platform/using/adobe-campaign-workspace.
 
 Adobe Campaign提供了可在投放中插入的内置个性化块。 它们是动态的、个性化的，并包含特定渲染。 例如，您可以添加徽标、问候语消息或指向镜像页面的链接。 默认情况下，可以使用多个个性化块。 您还可以定义自定义个性化块，以便优化投放个性化。 在投放的分析阶段，实际数据会插入到每个生成的消息中。
 
-请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html){target="_blank"}以了解有关个性化块的更多信息。
+请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html?lang=zh-Hans){target="_blank"}以了解有关个性化块的更多信息。
 +++
 
 +++**Personalization字段**
@@ -944,7 +944,7 @@ Adobe Campaign允许您创建和管理新闻稿或产品更新等信息服务，
 
 利用订阅服务工作流活动，可以为过渡中指定的群体创建或删除对信息服务的订阅。
 
-请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/subscription-services.html){target="_blank"}以了解有关订阅服务活动的更多信息。
+请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/subscription-services.html?lang=zh-Hans){target="_blank"}以了解有关订阅服务活动的更多信息。
 +++
 
 +++**目标审批**
@@ -953,14 +953,14 @@ Adobe Campaign允许您创建和管理新闻稿或产品更新等信息服务，
 
 目标批准是指在发送投放之前，由一个单独的操作员或一组操作员批准投放的最终目标（在分析阶段生成目标后）的过程。
 
-请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/flow-control-activities/approval.html){target="_blank"}以了解有关Target批准活动的更多信息。
+请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/flow-control-activities/approval.html?lang=zh-Hans){target="_blank"}以了解有关Target批准活动的更多信息。
 +++
 
 +++**目标数据**
 
 目标数据是存储在工作流的工作台（过渡）中的数据。 此数据可在投放内部使用，用于个性化投放内容或定义投放动态元素的逻辑。
 
-请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/use-workflow-data.html#target-data){target="_blank"}以了解有关目标数据的更多信息。
+请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/use-workflow-data.html?lang=zh-Hans#target-data){target="_blank"}以了解有关目标数据的更多信息。
 +++
 
 +++**目标映射**
@@ -982,7 +982,7 @@ Adobe Campaign允许您创建和管理新闻稿或产品更新等信息服务，
 
 定位维度是由查询或其他工作流活动生成（返回）的数据类型。 请注意，无论使用什么查询获取响应数据库行，Adobe Campaign都只返回这些行的主键。
 
-请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/targeting-workflows.html){target="_blank"}以了解有关定向维度的更多信息。
+请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/targeting-workflows.html?lang=zh-Hans){target="_blank"}以了解有关定向维度的更多信息。
 +++
 
 +++**任务活动**
