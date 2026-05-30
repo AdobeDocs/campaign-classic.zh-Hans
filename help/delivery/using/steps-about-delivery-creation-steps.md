@@ -30,7 +30,7 @@ ht-degree: 18%
 
 创建投放时的主要步骤如下：
 
-1. **创建并识别投放**。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#create-the-delivery){target="_blank"}以了解详情。
+1. **创建并识别投放**。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=zh-Hans#create-the-delivery){target="_blank"}以了解详情。
 
 1. **定义投放内容**。 投放内容定义特定于每个渠道。 有关更多信息，请参阅专门的部分：
 

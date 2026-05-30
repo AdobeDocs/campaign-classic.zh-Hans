@@ -134,12 +134,12 @@ ht-degree: 4%
 
 1. 将&#x200B;**replication**&#x200B;配置为从AEM创作实例复制到AEM发布实例。
 
-   要了解如何配置复制，请参阅Adobe Experience Manager [文档](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/replication.html)。
+   要了解如何配置复制，请参阅Adobe Experience Manager [文档](https://helpx.adobe.com/cn/experience-manager/6-5/sites/deploying/using/replication.html)。
 
 1. 通过配置专用的&#x200B;**Adobe Experience Manager**&#x200B;将Cloud Service连接到Adobe Campaign。
 
-   要了解如何通过Cloud Service连接两个解决方案，请参阅Adobe Experience Manager [文档](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/campaignonpremise.html#ConfiguringAdobeExperienceManager) 。
+   要了解如何通过Cloud Service连接两个解决方案，请参阅Adobe Experience Manager [文档](https://helpx.adobe.com/cn/experience-manager/6-5/sites/administering/using/campaignonpremise.html#ConfiguringAdobeExperienceManager) 。
 
 1. 配置&#x200B;**外部化器服务**。
 
-   要了解如何配置它，请参阅Adobe Experience Manager [文档](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/externalizer.html)。
+   要了解如何配置它，请参阅Adobe Experience Manager [文档](https://helpx.adobe.com/cn/experience-manager/6-5/sites/developing/using/externalizer.html)。
