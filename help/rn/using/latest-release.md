@@ -22,9 +22,9 @@ subfeature_v2:
   - id: e5e477db-ebc7-4368-ab0f-4d8fc2aed405
   - id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 376
-ht-degree: 76%
+ht-degree: 100%
 
 ---
 
@@ -40,7 +40,7 @@ ht-degree: 76%
 >
 > 必须升级客户端控制台。
 
-_2026年3月31日_
+_2026 年 3 月 31 日_
 
 ### 安全性改进 {#security-7-4-3}
 
@@ -50,7 +50,7 @@ _2026年3月31日_
 
 >[!NOTE]
 >
-> 以下列出的修复已在后续的7.4.3内部版本中逐步推出。 导航到&#x200B;**[!UICONTROL Help > About...]** [菜单](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)以检查您是否拥有最新的9394@28aaec9内部版本。 有关更多信息，请与Adobe代表联系。
+> 以下列出的修复已在后续的 7.4.3 内部版本中逐步推出。导航到&#x200B;**[!UICONTROL Help > About...]**[&#x200B;菜单](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)以检查您是否拥有最新的 9394@28aaec9 内部版本。有关更多信息，请与 Adobe 代表联系。
 
 * 修复了条形码组件允许使用无限制高度参数的问题，该问题可能导致安全漏洞。 (NEO-89984)
 * 修复了通过工作流创建的列表中的枚举字段缺少临时名称属性，导致界面中显示不正确或空白枚举标签的问题。 (NEO-91158)
@@ -62,9 +62,9 @@ _2026年3月31日_
 
 <!-- BUILD 7.0.9394.28aaec9 -->
 
-* 修复了未完全重新计算某些投放的投放统计信息的问题，尤其是会影响成功指标的问题。 (NEO-88106) <!-- moved from original 7.4.3 GA Fixes section -->
-* 修复了客户端控制台在打开引用缺少的上游定位架构的特定工作流时可能会崩溃的问题。 (NEO-28727)
-* 修复了在启动失败后无法识别客户端控制台版本的问题，因为安装包中缺少版本文件。 (NEO-94798)
+* 修复了未完全重新计算某些投放的投放统计信息的问题，尤其是会影响成功指标的问题。 (NEO-88106)<!-- moved from original 7.4.3 GA Fixes section -->
+* 修复了客户端控制台在打开引用缺少的上游定位架构的特定工作流时可能会崩溃的问题。(NEO-28727)
+* 修复了在启动失败后无法识别客户端控制台版本的问题，因为安装包中缺少版本文件。(NEO-94798)
 
 <!--
 other fixes - ommitted from release notes
