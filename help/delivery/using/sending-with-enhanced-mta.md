@@ -25,9 +25,9 @@ subfeature_v2:
   - id: c8da4fdd-eb94-4751-a43c-f82733fb2d6e
   - id: d5bbe3da-ba85-4242-817e-54f7c4b943e0
   - id: f4da0e76-df77-451e-ad61-21afb7bd8810
-source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
+source-git-commit: c8d13469884744554fd504fed8842dd0c9ab5feb
 workflow-type: tm+mt
-source-wordcount: 1400
+source-wordcount: 1393
 ht-degree: 1%
 
 ---
@@ -56,9 +56,9 @@ ht-degree: 1%
 
 **什么是增强型MTA？**
 
-Adobe Campaign现在可以升级，以使用新的MTA（邮件传输代理），该代理运行SparkPost的商业电子邮件MTA，称为&#x200B;**Momentum**。
+Adobe Campaign现在可以升级，以便使用&#x200B;**Enhanced MTA** （邮件传输代理），这是一个高性能的电子邮件投放引擎。
 
-Momentum代表创新的高性能MTA技术，其中包括更智能的退回处理和自动化可投放性优化功能，可帮助发件人实现并保持最佳收件箱投放率。<!--More than 37% of the world's business email is sent using SparkPost's MTA technology.-->
+增强的MTA包括更智能的退回处理和自动投放能力优化功能，可帮助发件人实现并维持最佳的收件箱投放率。
 
 **有哪些好处？**
 
