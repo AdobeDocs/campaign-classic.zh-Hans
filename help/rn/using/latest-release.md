@@ -21,10 +21,10 @@ feature_v2: []
 subfeature_v2:
   - id: e5e477db-ebc7-4368-ab0f-4d8fc2aed405
   - id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
-source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: ht
-source-wordcount: 376
-ht-degree: 100%
+source-git-commit: a35dcdddded4483beefc126ee3d603bab36bf9c9
+workflow-type: tm+mt
+source-wordcount: 415
+ht-degree: 93%
 
 ---
 
@@ -32,9 +32,19 @@ ht-degree: 100%
 
 此页面列出了 **Campaign v7 最新版本**&#x200B;中的新增功能、改进和修复。 每个新的内部版本都带有一个以颜色突出显示的状态。 在[此页面](rn-overview.md)中了解有关 Campaign Classic v7 内部版本状态的更多信息。
 
-## 7.4.3 版 - 版本 9394 {#release-7-4-3}
+## 7.4.3版 {#release-7-4-3}
+
+### 版本9396 {#build-9396}
 
 [!BADGE 正式发布版]{type=Positive url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=zh-Hans#rn-statuses" tooltip="正式发布版"}
+
+_2026年6月9日_
+
+此内部版本包含安全修复。 它是推荐的通用版本，取代之前的Campaign Classic v7版本。
+
+### 版本9394 {#build-9394}
+
+[!BADGE 已弃用]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=zh-Hans#rn-statuses" tooltip="已弃用"}
 
 >[!CAUTION]
 >
@@ -42,15 +52,15 @@ ht-degree: 100%
 
 _2026 年 3 月 31 日_
 
-### 安全性改进 {#security-7-4-3}
+#### 安全性改进 {#security-7-4-3}
 
 * 为了保持最佳的安全性、稳定性和合规性，Debian 已升级到版本13，PostgreSQL 已升级到版本 17。 请参阅[兼容性矩阵](compatibility-matrix.md)。
 
-### 修复 {#fixes-7-4-3}
+#### 修复 {#fixes-7-4-3}
 
 >[!NOTE]
 >
-> 以下列出的修复已在后续的 7.4.3 内部版本中逐步推出。导航到&#x200B;**[!UICONTROL Help > About...]**[&#x200B;菜单](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)以检查您是否拥有最新的 9394@28aaec9 内部版本。有关更多信息，请与 Adobe 代表联系。
+> 以下列出的修复已在后续的 7.4.3 内部版本中逐步推出。 导航到&#x200B;**[!UICONTROL Help > About...]**&#x200B;[&#x200B;菜单](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)以检查您是否拥有最新的 9394@28aaec9 内部版本。 有关更多信息，请与 Adobe 代表联系。
 
 * 修复了条形码组件允许使用无限制高度参数的问题，该问题可能导致安全漏洞。 (NEO-89984)
 * 修复了通过工作流创建的列表中的枚举字段缺少临时名称属性，导致界面中显示不正确或空白枚举标签的问题。 (NEO-91158)
@@ -63,8 +73,8 @@ _2026 年 3 月 31 日_
 <!-- BUILD 7.0.9394.28aaec9 -->
 
 * 修复了未完全重新计算某些投放的投放统计信息的问题，尤其是会影响成功指标的问题。 (NEO-88106)<!-- moved from original 7.4.3 GA Fixes section -->
-* 修复了客户端控制台在打开引用缺少的上游定位架构的特定工作流时可能会崩溃的问题。(NEO-28727)
-* 修复了在启动失败后无法识别客户端控制台版本的问题，因为安装包中缺少版本文件。(NEO-94798)
+* 修复了客户端控制台在打开引用缺少的上游定位架构的特定工作流时可能会崩溃的问题。 (NEO-28727)
+* 修复了在启动失败后无法识别客户端控制台版本的问题，因为安装包中缺少版本文件。 (NEO-94798)
 
 <!--
 other fixes - ommitted from release notes
