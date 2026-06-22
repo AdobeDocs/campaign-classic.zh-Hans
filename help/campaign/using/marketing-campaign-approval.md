@@ -23,7 +23,7 @@ topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
+source-git-commit: c35995a47788db080636c66827a4bd6dc98806cf
 workflow-type: tm+mt
 source-wordcount: 2672
 ht-degree: 0%
@@ -394,3 +394,4 @@ ht-degree: 0%
 您可以查看提取文件的内容（通过单击其名称）、批准该文件，或者在必要时使用功能板上的链接更改格式并重新开始提取。
 
 文件获得批准后，即可向路由器发送通知电子邮件。 有关详细信息，请参阅[开始离线投放](../../campaign/using/marketing-campaign-deliveries.md#starting-an-offline-delivery)。
+

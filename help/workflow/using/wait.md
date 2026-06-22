@@ -13,7 +13,7 @@ subfeature_v2:
   - id: ee25c34b-ea50-427b-9369-ba0a160f7d70
   - id: b5f0aaf4-1e48-400d-95ac-6eb3078cf22f
   - id: d1110311-2ca4-442b-be37-088a6db845ee
-source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
+source-git-commit: c35995a47788db080636c66827a4bd6dc98806cf
 workflow-type: tm+mt
 source-wordcount: 192
 ht-degree: 1%
@@ -39,3 +39,4 @@ ht-degree: 1%
 * 例如，如果将区域设置设置为“Français”，则&#x200B;**s**&#x200B;表示秒，**mn**&#x200B;表示分钟，**h**&#x200B;表示小时，**j**&#x200B;表示天，**m**&#x200B;表示月，**a**&#x200B;表示年。 在批准时，该值将自动转换为最可读的单位，如上例中的&#x200B;**90s**&#x200B;转换为&#x200B;**1mn 30s**。
 
   默认单位为天(**d**)。
+

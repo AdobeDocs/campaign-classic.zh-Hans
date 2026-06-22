@@ -19,7 +19,7 @@ topic_v2:
   - id: d3cdead0-685a-4489-9250-4bb709942f66
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
+source-git-commit: c35995a47788db080636c66827a4bd6dc98806cf
 workflow-type: tm+mt
 source-wordcount: 1931
 ht-degree: 4%
@@ -273,3 +273,4 @@ ht-degree: 4%
 * **[!UICONTROL Enrichment]**&#x200B;活动允许您暂时向架构添加列，以及向特定元素添加信息。 在活动存储库的[扩充](enrichment.md)部分中对此进行了详细说明。
 * 利用&#x200B;**[!UICONTROL Edit schema]**&#x200B;活动，可修改架构的结构。 活动存储库的[编辑架构](edit-schema.md)部分中对此进行了详细说明。
 * **[!UICONTROL Change dimension]**&#x200B;活动允许您在目标构建周期中更改定向维度。 在[更改维度](change-dimension.md)部分中有详细介绍。
+

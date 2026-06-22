@@ -13,7 +13,7 @@ subfeature_v2:
   - id: ee25c34b-ea50-427b-9369-ba0a160f7d70
   - id: b5f0aaf4-1e48-400d-95ac-6eb3078cf22f
   - id: d1110311-2ca4-442b-be37-088a6db845ee
-source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
+source-git-commit: c35995a47788db080636c66827a4bd6dc98806cf
 workflow-type: tm+mt
 source-wordcount: 615
 ht-degree: 2%
@@ -89,3 +89,4 @@ ht-degree: 2%
 因此，拆分活动的结果与上次已知创建日期同一天创建的收件人相关。
 
 然后，您可以添加其他活动（如列表更新或投放）以丰富您的工作流。
+
