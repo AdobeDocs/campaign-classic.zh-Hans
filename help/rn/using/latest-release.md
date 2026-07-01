@@ -21,10 +21,10 @@ feature_v2: []
 subfeature_v2:
   - id: e5e477db-ebc7-4368-ab0f-4d8fc2aed405
   - id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
-source-git-commit: a35dcdddded4483beefc126ee3d603bab36bf9c9
+source-git-commit: a9e48513ed4ceb2650d0eeff18563a010a148c80
 workflow-type: tm+mt
-source-wordcount: 415
-ht-degree: 93%
+source-wordcount: 498
+ht-degree: 81%
 
 ---
 
@@ -34,13 +34,37 @@ ht-degree: 93%
 
 ## 7.4.3版 {#release-7-4-3}
 
-### 版本9396 {#build-9396}
+### 版本9397 {#build-9397}
 
 [!BADGE 正式发布版]{type=Positive url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=zh-Hans#rn-statuses" tooltip="正式发布版"}
 
-_2026年6月9日_
+_2026年6月30日_
+
+#### 安全性改进 {#security-7-4-3-9397}
 
 此内部版本包含安全修复。 它是推荐的通用版本，取代之前的Campaign Classic v7版本。
+
+#### 其他变更 {#changes-7-4-3-9397}
+
+默认情况下，webForm.jsp现在会忽略客户端提供的`ctx`参数。 这由默认设置为“true”的`disableCtxInWebForm`参数控制。
+
+如果您的WebForm请求当前在中传递了`ctx`参数，则可以通过将以下内容添加到 &lt;web> 配置元素 — &lt;instance>.xml文件。 计划逐步停用此用法。
+
+```
+<web>
+  ...
+  <jsp disableCtxInWebForm="false" />
+  ...
+</web>
+```
+
+### 版本9396 {#build-9396}
+
+[!BADGE 已弃用]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=zh-Hans#rn-statuses" tooltip="已弃用"}
+
+_2026年6月9日_
+
+此内部版本包含安全修复。
 
 ### 版本9394 {#build-9394}
 
