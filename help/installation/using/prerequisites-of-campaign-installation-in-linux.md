@@ -16,9 +16,9 @@ topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
 feature_v2: []
 subfeature_v2: []
-source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
+source-git-commit: d711ea40185e9860ea20773ae1dfebfc7cc3e4d0
 workflow-type: tm+mt
-source-wordcount: 854
+source-wordcount: 906
 ht-degree: 2%
 
 ---
@@ -56,6 +56,34 @@ ht-degree: 2%
   对于RHEL分发，需要1.0版本的OpenSSL。
 
 * 要使用Adobe Campaign，您需要安装&#x200B;**libicu**&#x200B;库。
+
+* 在RHEL分配上，**xalan-c**&#x200B;是必需的。 通过`epel-release`安装：
+
+  ```
+  dnf install epel-release
+  dnf install xalan-c
+  ```
+
+### PDF报表导出依赖关系 {#pdf-export-dependencies}
+
+将报告导出为PDF格式时使用&#x200B;**wkhtmltopdf**&#x200B;工具。 它需要以下包：
+
+* **libjpeg**
+* **xvfb**
+
+如果未使用PDF报表导出，则无需安装这些软件包。
+
+在RHEL分配中：
+
+```
+dnf install libjpeg xvfb
+```
+
+在Debian上：
+
+```
+apt-get install libjpeg-dev xvfb
+```
 
 ### SELinux {#selinux}
 
