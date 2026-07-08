@@ -9,13 +9,12 @@ content-type: reference
 topic-tags: installing-campaign-in-linux-
 exl-id: f41c7510-5ad7-44f3-9485-01f54994b6cb
 TQID: https://experienceleague.adobe.com/mpN0TwuPILae7Y-jbkyvbBR1zdo4IvtnuzGQObLI0rc
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
 feature_v2: []
 subfeature_v2: []
-source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
+source-git-commit: d711ea40185e9860ea20773ae1dfebfc7cc3e4d0
 workflow-type: tm+mt
-source-wordcount: 1145
+source-wordcount: 1152
 ht-degree: 3%
 
 ---
@@ -42,7 +41,7 @@ Adobe Campaign附带了&#x200B;**nlserver**&#x200B;包，其中包含给定版�
 
 >[!AVAILABILITY]
 >
->从 v7.4.1 开始，Campaign 中不再包含 RPM Linux 包的 XML 库。 您必须安装这些库。
+>从 v7.4.1 开始，Campaign 中不再包含 RPM Linux 包的 XML 库。 您必须安装&#x200B;**xalan-c**（可从`epel-release`获得），这是强制性的。 [了解详情](../../installation/using/prerequisites-of-campaign-installation-in-linux.md#libraries)
 > 
 
 要将Adobe Campaign安装到RPM (RHEL、CentOS)操作系统上，请执行以下步骤：
