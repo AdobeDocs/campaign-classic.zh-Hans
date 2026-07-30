@@ -21,10 +21,10 @@ feature_v2: []
 subfeature_v2:
   - id: e5e477db-ebc7-4368-ab0f-4d8fc2aed405
   - id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
-source-git-commit: a9e48513ed4ceb2650d0eeff18563a010a148c80
-workflow-type: ht
-source-wordcount: 498
-ht-degree: 100%
+source-git-commit: 7aea93eee16cdcdae6c4bf2466ab12a0aaf6052e
+workflow-type: tm+mt
+source-wordcount: 631
+ht-degree: 78%
 
 ---
 
@@ -34,21 +34,33 @@ ht-degree: 100%
 
 ## 版本 7.4.3 {#release-7-4-3}
 
+### 版本9398 {#build-9398}
+
+[!BADGE 有限发布版]{type=Informative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=zh-Hans#rn-statuses" tooltip="有限发布版"}
+
+_2026年7月29日_
+
+#### 安全性改进 {#security-7-4-3-9398}
+
+Adobe已发布了针对Adobe Campaign Classic的安全更新，以解决关键漏洞。 我们鼓励内部部署和混合部署的客户尽快安装更新。 Adobe托管的实例已得到修复，无需客户执行任何操作。 您可以在[安全公告](https://helpx.adobe.com/security/products/campaign/apsb26-114.html){target="_blank"}中找到更多信息。
+
+需要重新启动[Adobe Campaign服务器(nlserver)](../../production/using/usual-commands.md#restart-services)才能加载生成并完成部署。 默认情况下，此修复在重新启动后处于活动状态。
+
 ### 内部版本 9397 {#build-9397}
 
-[!BADGE 正式发布版]{type=Positive url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=zh-Hans#rn-statuses" tooltip="正式发布版"}
+[!BADGE 有限发布版]{type=Informative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=zh-Hans#rn-statuses" tooltip="有限发布版"}
 
 _2026 年 6 月 30 日_
 
 #### 安全性改进 {#security-7-4-3-9397}
 
-此内部版本包含安全修复。它是推荐的通用版本，取代之前的 Campaign Classic v7 内部版本。
+此内部版本包括安全修复并取代之前的Campaign Classic v7内部版本。 内部部署和混合部署现已弃用此内部版本；我们鼓励这些部署模式中的客户升级到[内部版本9398](#build-9398)或更高版本，以尽快安装更新。
 
 #### 其他变更 {#changes-7-4-3-9397}
 
 默认情况下，webForm.jsp 现在会忽略客户端提供的 `ctx` 参数。 这由默认设置为“true”的 `disableCtxInWebForm` 参数控制。
 
-如果您的 WebForm 请求当前在中传递了 `ctx` 参数，则可以通过将以下内容添加到<web> 配置元素<instance>.xml 文件。计划逐步停用此用法。
+如果您的 WebForm 请求当前在中传递了 `ctx` 参数，则可以通过将以下内容添加到 <web> 配置元素<instance>.xml 文件。 计划逐步停用此用法。
 
 ```
 <web>
@@ -84,7 +96,7 @@ _2026 年 3 月 31 日_
 
 >[!NOTE]
 >
-> 以下列出的修复已在后续的 7.4.3 内部版本中逐步推出。 导航到&#x200B;**[!UICONTROL Help > About...]**[&#x200B;菜单](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)以检查您是否拥有最新的 9394@28aaec9 内部版本。 有关更多信息，请与 Adobe 代表联系。
+> 以下列出的修复已在后续的 7.4.3 内部版本中逐步推出。 导航到&#x200B;**[!UICONTROL Help > About...]**&#x200B;[&#x200B;菜单](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)以检查您是否拥有最新的 9394@28aaec9 内部版本。 有关更多信息，请与 Adobe 代表联系。
 
 * 修复了条形码组件允许使用无限制高度参数的问题，该问题可能导致安全漏洞。 (NEO-89984)
 * 修复了通过工作流创建的列表中的枚举字段缺少临时名称属性，导致界面中显示不正确或空白枚举标签的问题。 (NEO-91158)
