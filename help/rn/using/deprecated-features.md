@@ -26,10 +26,10 @@ topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: ht
-source-wordcount: 1767
-ht-degree: 100%
+source-git-commit: c094a1fa9adf80708154b5532ae9fbeb18993b9f
+workflow-type: tm+mt
+source-wordcount: 1792
+ht-degree: 98%
 
 ---
 
@@ -64,9 +64,14 @@ Adobe 不断评估产品功能，以确定应用更现代的功能替换的旧�
    <td><strong>详细信息</strong></td>
   </tr>
   <tr>
+ <td>Netsize SMPP连接器</td>
+ <td><p>Netsize SMPP连接器现已弃用。 我们建议迁移到<strong>扩展通用SMPP</strong>连接器。 有关详细信息，请参见<a href="../../delivery/using/unsupported-connector-migration.md">此页面</a>。</p>
+<p>目标移除日期：2027年1月</p>
+</td>
+</tr>
+<tr>
  <td>Campaign (Neolane) 旧版 SDK</td>
  <td><p>现已弃用适用于移动应用程序的 Campaign (Neolane) SDK。 相反，可通过在“数据收集”UI 中配置 Adobe Campaign 扩展使用 Adobe Experience Platform Mobile SDK。 Adobe Experience Platform Mobile SDK 有助于在移动设备应用程序中支持 Adobe 的 Experience Cloud 解决方案和服务。 SDK 配置通过数据收集 UI 进行管理，以实现灵活配置和基于规则的可扩展集成。 有关如何配置移动应用程序频道，请参阅 <a href="https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/send/push/push-settings">Campaign v8 文档</a>。</p>
-<p>目标移除日期：2025 年 7 月 31 日 </p>
 </td>
 </tr>
 <tr>
@@ -206,11 +211,11 @@ Adobe Campaign Classic 客户端控制台无法再在以下系统上运行，因
 
 * 从 19.1 版本开始，Adobe Campaign 不再与以下操作系统兼容。
 
-   * CentOS 6。 [了解详情](https://wiki.centos.org/Download)
-   * Debian 7。 [了解详情](https://wiki.debian.org/DebianReleases)
-   * RHEL 6.x。 [了解详情](https://access.redhat.com/support/policy/updates/errata)
-   * Windows Server 2008。 [了解详情](https://support.microsoft.com/en-us/lifecycle/search/1163)
-   * SLES 11。 [了解详情](https://www.suse.com/lifecycle)
+  * CentOS 6。 [了解详情](https://wiki.centos.org/Download)
+  * Debian 7。 [了解详情](https://wiki.debian.org/DebianReleases)
+  * RHEL 6.x。 [了解详情](https://access.redhat.com/support/policy/updates/errata)
+  * Windows Server 2008。 [了解详情](https://support.microsoft.com/en-us/lifecycle/search/1163)
+  * SLES 11。 [了解详情](https://www.suse.com/lifecycle)
 
 ### Web 服务器 {#web-server-eol}
 
