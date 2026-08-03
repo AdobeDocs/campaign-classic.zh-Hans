@@ -7,23 +7,16 @@ role: User
 level: Beginner
 exl-id: 7a05fdff-8f9d-4e8d-812e-0f1509db5499
 TQID: https://experienceleague.adobe.com/xs5sqsIqs9u-a9TrKo5EgFIpNTtxhy8y0-YIlDyUxp0
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-level_v2:
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+level_v2: id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: d095671a-1355-40aa-8b5f-06c33c68080b
 feature_v2: []
-subfeature_v2:
-  - id: e5e477db-ebc7-4368-ab0f-4d8fc2aed405
-  - id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
-source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: ht
-source-wordcount: 922
-ht-degree: 100%
+subfeature_v2: id: e5e477db-ebc7-4368-ab0f-4d8fc2aed405id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
+source-git-commit: e71b0658b2458b05799c28e79d871f025348962a
+workflow-type: tm+mt
+source-wordcount: 1045
+ht-degree: 88%
 
 ---
 
@@ -64,7 +57,15 @@ Adobe Campaign 会定期更新。 这种定期更新旨在让您掌握最新、�
 
 这就是为什么&#x200B;**运行稳定的最新版本的** Adobe Campaign 至关重要的原因。 它还可确保您获得更好的支持体验，因为识别、再现和修复较新的内部版本中的问题通常要快得多。 此外，许多您可能会遇到的问题已在最新内部版本中得到修复。
 
+>[!NOTE]
+>
+> 每个内部版本都是累积的：除了自身的更改之外，此内部版本还包含同一版本的早期内部版本中提供的所有功能、改进和修复。 您无需安装每个中间版本即可从以前的修复中获益 — 安装最新版本会使用以前的版本中包含的所有内容保持最新。
+
 作为托管客户，您无需采取任何操作即可通过稳定的最新版本自动从升级中受益。 在[年度升级部分](#yearly-upgrade)中了解详情。 如果您从旧版本进行迁移，Adobe 建议您先升级到此版本。
+
+### 托管环境的安全修补 {#security-patching}
+
+为了保护托管环境的完整性，Adobe保留随时应用关键安全补丁的权利，以便尽快修复漏洞，而无需事先通知。 部署这些修补程序时不会中断服务。 这种做法符合Adobe的安全治理标准，根据该标准，修复严重漏洞的紧迫性高于提前通知。
 
 ## 推荐做法 {#rn-recommendations}
 
