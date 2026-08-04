@@ -21,10 +21,10 @@ feature_v2: []
 subfeature_v2:
   - id: e5e477db-ebc7-4368-ab0f-4d8fc2aed405
   - id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
-source-git-commit: 7aea93eee16cdcdae6c4bf2466ab12a0aaf6052e
+source-git-commit: 5356cd82fdbec264ebbdebadc490bb6f6aa29f07
 workflow-type: tm+mt
-source-wordcount: 631
-ht-degree: 78%
+source-wordcount: 734
+ht-degree: 69%
 
 ---
 
@@ -34,9 +34,21 @@ ht-degree: 78%
 
 ## 版本 7.4.3 {#release-7-4-3}
 
+### 版本9399 {#build-9399}
+
+[!BADGE 正式发布版]{type=Positive url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=zh-Hans#rn-statuses" tooltip="正式发布版"}
+
+_2026年8月3日_
+
+#### 安全性改进 {#security-7-4-3-9399}
+
+Adobe已发布了针对Adobe Campaign Classic的安全更新，以解决关键漏洞。 我们鼓励内部部署和混合部署的客户尽快安装更新。 Adobe托管的实例已得到修复，无需客户执行任何操作。 您可以在[安全公告](https://helpx.adobe.com/security/products/campaign/apsb26-120.html){target="_blank"}中找到更多信息。
+
+需要重新启动[Adobe Campaign服务器(nlserver)](../../production/using/usual-commands.md#restart-services)才能加载生成并完成部署。 默认情况下，此修复在重新启动后处于活动状态。
+
 ### 版本9398 {#build-9398}
 
-[!BADGE 有限发布版]{type=Informative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=zh-Hans#rn-statuses" tooltip="有限发布版"}
+[!BADGE 已弃用]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=zh-Hans#rn-statuses" tooltip="已弃用"}
 
 _2026年7月29日_
 
@@ -48,7 +60,7 @@ Adobe已发布了针对Adobe Campaign Classic的安全更新，以解决关键�
 
 ### 内部版本 9397 {#build-9397}
 
-[!BADGE 有限发布版]{type=Informative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=zh-Hans#rn-statuses" tooltip="有限发布版"}
+[!BADGE 已弃用]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=zh-Hans#rn-statuses" tooltip="已弃用"}
 
 _2026 年 6 月 30 日_
 
