@@ -42,7 +42,7 @@ _2026年8月3日_
 
 #### 安全性改进 {#security-7-4-3-9399}
 
-Adobe已发布了针对Adobe Campaign Classic的安全更新，以解决关键漏洞。 我们鼓励内部部署和混合部署的客户尽快安装更新。 Adobe托管的实例已得到修复，无需客户执行任何操作。 您可以在[安全公告](https://helpx.adobe.com/security/products/campaign/apsb26-120.html){target="_blank"}中找到更多信息。
+Adobe已发布了针对Adobe Campaign Classic的安全更新，以解决关键漏洞。 我们鼓励内部部署和混合部署的客户尽快安装更新。 Adobe托管的实例已得到修复，无需客户执行任何操作。 您可以在[安全公告](https://helpx.adobe.com/cn/security/products/campaign/apsb26-120.html){target="_blank"}中找到更多信息。
 
 需要重新启动[Adobe Campaign服务器(nlserver)](../../production/using/usual-commands.md#restart-services)才能加载生成并完成部署。 默认情况下，此修复在重新启动后处于活动状态。
 
