@@ -22,9 +22,9 @@ subfeature_v2:
   - id: e5e477db-ebc7-4368-ab0f-4d8fc2aed405
   - id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
 source-git-commit: 5356cd82fdbec264ebbdebadc490bb6f6aa29f07
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 734
-ht-degree: 69%
+ht-degree: 100%
 
 ---
 
@@ -34,29 +34,29 @@ ht-degree: 69%
 
 ## 版本 7.4.3 {#release-7-4-3}
 
-### 版本9399 {#build-9399}
+### 内部版本 9399 {#build-9399}
 
 [!BADGE 正式发布版]{type=Positive url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=zh-Hans#rn-statuses" tooltip="正式发布版"}
 
-_2026年8月3日_
+_2026 年 8 月 3 日_
 
 #### 安全性改进 {#security-7-4-3-9399}
 
-Adobe已发布了针对Adobe Campaign Classic的安全更新，以解决关键漏洞。 我们鼓励内部部署和混合部署的客户尽快安装更新。 Adobe托管的实例已得到修复，无需客户执行任何操作。 您可以在[安全公告](https://helpx.adobe.com/cn/security/products/campaign/apsb26-120.html){target="_blank"}中找到更多信息。
+Adobe 已发布了针对 Adobe Campaign Classic 的安全更新，以解决重要漏洞。 我们鼓励内部部署和混合部署的客户尽快安装更新。Adobe 托管的实例已得到修复，无需客户执行任何操作。您可以在[安全公告](https://helpx.adobe.com/cn/security/products/campaign/apsb26-120.html){target="_blank"}中找到更多信息。
 
-需要重新启动[Adobe Campaign服务器(nlserver)](../../production/using/usual-commands.md#restart-services)才能加载生成并完成部署。 默认情况下，此修复在重新启动后处于活动状态。
+需要[重新启动 Adobe Campaign 服务器 (nlserver)](../../production/using/usual-commands.md#restart-services) 才能加载内部版本并完成部署。默认情况下，此修复在重新启动后处于活跃状态。
 
-### 版本9398 {#build-9398}
+### 内部版本 9398 {#build-9398}
 
 [!BADGE 已弃用]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=zh-Hans#rn-statuses" tooltip="已弃用"}
 
-_2026年7月29日_
+_2026 年 7 月 29 日_
 
 #### 安全性改进 {#security-7-4-3-9398}
 
-Adobe已发布了针对Adobe Campaign Classic的安全更新，以解决关键漏洞。 我们鼓励内部部署和混合部署的客户尽快安装更新。 Adobe托管的实例已得到修复，无需客户执行任何操作。 您可以在[安全公告](https://helpx.adobe.com/cn/security/products/campaign/apsb26-114.html){target="_blank"}中找到更多信息。
+Adobe 已发布了针对 Adobe Campaign Classic 的安全更新，以解决重要漏洞。 我们鼓励内部部署和混合部署的客户尽快安装更新。Adobe 托管的实例已得到修复，无需客户执行任何操作。您可以在[安全公告](https://helpx.adobe.com/cn/security/products/campaign/apsb26-114.html){target="_blank"}中找到更多信息。
 
-需要重新启动[Adobe Campaign服务器(nlserver)](../../production/using/usual-commands.md#restart-services)才能加载生成并完成部署。 默认情况下，此修复在重新启动后处于活动状态。
+需要[重新启动 Adobe Campaign 服务器 (nlserver)](../../production/using/usual-commands.md#restart-services) 才能加载内部版本并完成部署。默认情况下，此修复在重新启动后处于活跃状态。
 
 ### 内部版本 9397 {#build-9397}
 
@@ -66,7 +66,7 @@ _2026 年 6 月 30 日_
 
 #### 安全性改进 {#security-7-4-3-9397}
 
-此内部版本包括安全修复并取代之前的Campaign Classic v7内部版本。 内部部署和混合部署现已弃用此内部版本；我们鼓励这些部署模式中的客户升级到[内部版本9398](#build-9398)或更高版本，以尽快安装更新。
+此内部版本包括安全修复并取代之前的 Campaign Classic v7 内部版本。内部部署和混合部署现已弃用此内部版本；我们鼓励这些部署模式中的客户升级到[内部版本 9398](#build-9398) 或更高版本，以尽快安装更新。
 
 #### 其他变更 {#changes-7-4-3-9397}
 
@@ -108,7 +108,7 @@ _2026 年 3 月 31 日_
 
 >[!NOTE]
 >
-> 以下列出的修复已在后续的 7.4.3 内部版本中逐步推出。 导航到&#x200B;**[!UICONTROL Help > About...]**&#x200B;[&#x200B;菜单](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)以检查您是否拥有最新的 9394@28aaec9 内部版本。 有关更多信息，请与 Adobe 代表联系。
+> 以下列出的修复已在后续的 7.4.3 内部版本中逐步推出。 导航到&#x200B;**[!UICONTROL Help > About...]**[&#x200B;菜单](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)以检查您是否拥有最新的 9394@28aaec9 内部版本。 有关更多信息，请与 Adobe 代表联系。
 
 * 修复了条形码组件允许使用无限制高度参数的问题，该问题可能导致安全漏洞。 (NEO-89984)
 * 修复了通过工作流创建的列表中的枚举字段缺少临时名称属性，导致界面中显示不正确或空白枚举标签的问题。 (NEO-91158)

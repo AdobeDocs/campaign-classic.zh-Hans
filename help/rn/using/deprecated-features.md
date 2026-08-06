@@ -27,9 +27,9 @@ topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: d3cdead0-685a-4489-9250-4bb709942f66
 source-git-commit: c094a1fa9adf80708154b5532ae9fbeb18993b9f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 1792
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -64,9 +64,9 @@ Adobe 不断评估产品功能，以确定应用更现代的功能替换的旧�
    <td><strong>详细信息</strong></td>
   </tr>
   <tr>
- <td>Netsize SMPP连接器</td>
- <td><p>Netsize SMPP连接器现已弃用。 我们建议迁移到<strong>扩展通用SMPP</strong>连接器。 有关详细信息，请参见<a href="../../delivery/using/unsupported-connector-migration.md">此页面</a>。</p>
-<p>目标移除日期：2027年1月</p>
+ <td>Netsize SMPP 连接器</td>
+ <td><p>Netsize SMPP 连接器现已弃用。我们建议迁移到<strong>扩展通用 SMPP</strong> 连接器。有关详细信息，请参见<a href="../../delivery/using/unsupported-connector-migration.md">此页面</a>。</p>
+<p>目标移除日期：2027 年 1 月</p>
 </td>
 </tr>
 <tr>
