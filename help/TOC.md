@@ -359,11 +359,11 @@ ht-degree: 99%
     + [配置与  [!DNL Adobe Target] 的集成](integrations/using/configuring-the-integration-with-adobe-target.md)
     + [插入动态图像](integrations/using/inserting-a-dynamic-image.md)
   + ACS 连接器 {#acs-connector}
-    + {hide-from-toc}[ [!DNL ACS Connector]  快速入门 - 隐藏](integrations/using/acs-connector-principles-and-data-cycle.md)
+    + {hide-from-toc}[&#x200B; [!DNL ACS Connector]  快速入门 - 隐藏](integrations/using/acs-connector-principles-and-data-cycle.md)
     + {hide-from-toc}[同步轮廓 - 隐藏](integrations/using/synchronizing-profiles.md)
     + {hide-from-toc}[同步受众 - 隐藏](integrations/using/synchronizing-audiences.md)
     + {hide-from-toc}[同步 Web 应用程序 - 隐藏](integrations/using/synchronizing-web-applications.md)
-    + {hide-from-toc}[ 对  [!DNL ACS Connector]  进行故障排除 - 隐藏](integrations/using/troubleshooting-the-acs-connector.md)
+    + {hide-from-toc}[&#x200B; 对  [!DNL ACS Connector]  进行故障排除 - 隐藏](integrations/using/troubleshooting-the-acs-connector.md)
 + [使用工作流实现自动化](workflow/using/about-workflows.md)
 + 使用工作流实现自动化 {#automating-with-workflows}
   + 工作流入门 {#introduction}
