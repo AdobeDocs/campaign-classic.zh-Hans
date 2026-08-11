@@ -53,8 +53,8 @@ Adobe Analytics 1.4 API的[生命周期即将结束](https://developer.adobe.com
       ```
 
    1. 在SFTP服务器上将Adobe Analytics添加到允许列表，因为再营销导出仅从一组固定的Adobe IP范围启动：
-      * [查找当前的Adobe Analytics数据收集IP地址](https://experienceleague.adobe.com/en/docs/core-services/interface/data-collection/ip-addresses){target="_blank"}，并将其添加到您的SFTP服务器的允许列表。 基于FTP的Analytics导出（包括数据馈送）仅源自伦敦、俄勒冈和新加坡地区的IPv4地址。
-      * [检索Adobe Analytics公共密钥](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-18141){target="_blank"}并将其添加到SFTP服务器上的`authorized_keys`文件中，以便Analytics能够进行身份验证。
+      * [查找当前的Adobe Analytics数据收集IP地址](https://experienceleague.adobe.com/zh-hans/docs/core-services/interface/data-collection/ip-addresses){target="_blank"}，并将其添加到您的SFTP服务器的允许列表。 基于FTP的Analytics导出（包括数据馈送）仅源自伦敦、俄勒冈和新加坡地区的IPv4地址。
+      * [检索Adobe Analytics公共密钥](https://experienceleague.adobe.com/zh-hans/docs/experience-cloud-kcs/kbarticles/ka-18141){target="_blank"}并将其添加到SFTP服务器上的`authorized_keys`文件中，以便Analytics能够进行身份验证。
 1. 通过在Campaign Explorer树中的&#x200B;**[!UICONTROL Administration]> [!UICONTROL Platform] >[!UICONTROL Options]**&#x200B;下创建或将选项的`longvalue`设置为[!UICONTROL xtkOption]中的`1`，在实例上启用`FEATUREFLAG_USE_ANALYTICS_20_API`功能标记。 无论上述哪种用例适用于您，都需要执行此步骤。
 1. 在停用任何旧连接之前，通过实施适用于您的实例的每个用例来验证迁移(发送测试活动，检查指标是否进入Analytics，并确认再营销数据（如果适用）)。
 
@@ -83,7 +83,7 @@ Adobe Analytics 1.4 API的[生命周期即将结束](https://developer.adobe.com
 
 1. 单击 **[!UICONTROL Save]**。
 
-在下一步配置外部帐户时，Campaign将自动搜索此分类集。 有关分类集的详细信息，请参阅[Adobe Analytics文档](https://experienceleague.adobe.com/en/docs/analytics/components/classifications/sets/create-set){target="_blank"}。
+在下一步配置外部帐户时，Campaign将自动搜索此分类集。 有关分类集的详细信息，请参阅[Adobe Analytics文档](https://experienceleague.adobe.com/zh-hans/docs/analytics/components/classifications/sets/create-set){target="_blank"}。
 
 ## 是否需要帮助？ {#need-help}
 
