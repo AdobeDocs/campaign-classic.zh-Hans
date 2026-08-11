@@ -18,10 +18,10 @@ topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 50418c4e818f04008a5d47a982fa5bb0185bd597
-workflow-type: ht
-source-wordcount: 663
-ht-degree: 100%
+source-git-commit: 64661fb2003d66e416aabee2a89fcd990dd05f13
+workflow-type: tm+mt
+source-wordcount: 667
+ht-degree: 96%
 
 ---
 
@@ -36,9 +36,9 @@ ht-degree: 100%
 >[!BEGINTABS]
 
 
->[!TAB 2026 年 6 月版已上线！]
+>[!TAB 2026年8月版本已上线！]
 
-Campaign Classic v7.4.3 - 2026 年 6 月版在上一个版本之上提供了安全更新。
+Campaign Classic v7.4.4 - 2026年8月版提供安全更新，并将Adobe Analytics连接器升级到Analytics 2.0 API。
 
 [![image](assets/do-not-localize/learn-more-button.svg)](rn/using/latest-release.md)
 
@@ -92,34 +92,34 @@ Android Firebase Cloud Messaging (FCM) 服务的一些重要更改将于 2024 �
 <table style="table-layout:auto">
   <tr style="border: 0;">
     <td>
-      
+      <img src="assets/do-not-localize/icon-start.svg" width="35px">
     <br/>
       <strong>快速入门</strong><br/><a href="platform/using/adobe-campaign-workspace.md">用户界面</a> - <a href="platform/using/launching-adobe-campaign.md">连接到 Campaign</a> - <a href="platform/using/get-started-data-import-export.md">导入与导出数据</a> - <a href="platform/using/access-management.md">权限</a>
     </td>
     <td>
-      
+      <img src="assets/do-not-localize/icon-experience.svg" width="35px">
     <br/>
       <strong>客户体验</strong><br/><a href="workflow/using/about-workflows.md">使用工作流实现自动化</a> - <a href="https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=zh-Hans" target="_blank">营销活动</a> - <a href="interaction/using/interaction-and-offer-management.md">互动和产品建议管理</a> - <a href="delivery/using/about-personalization.md">个性化</a> - <a href="reporting/using/about-adobe-campaign-reporting-tools.md">报告</a>
     </td>
     <td>
-      
+      <img src="assets/do-not-localize/icon-send.svg" width="35px">
     <br/>
       <strong>发送消息</strong><br/><a href="delivery/using/communication-channels.md">通信渠道</a> - <a href="delivery/using/steps-about-delivery-creation-steps.md#sending-a-proof">发送校样</a> - <a href="delivery/using/get-started-a-b-testing.md">A/B 测试</a> - <a href="https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/analytics/tracking/tracking" target="_blank">消息跟踪</a> - <a href="delivery/using/about-deliverability.md">可投放性</a> - <a href="message-center/using/about-transactional-messaging.md">事务性消息</a>
     </td>
   </tr>
   <tr style="border: 0;">
     <td>
-      
+      <img src="assets/do-not-localize/icon_profile-audience.svg" width="35px">
       <br/>
       <strong>轮廓和受众</strong><br/> <a href="platform/using/creating-and-managing-lists.md">创建列表</a> - <a href="delivery/using/about-services-and-subscriptions.md">服务和订阅</a> - <a href="platform/using/privacy-management.md">隐私和同意</a>
     </td>
     <td>
-      
+      <img src="assets/do-not-localize/icon-configure.svg" width="35px">
       <br/>
       <strong>架构和配置</strong><br/><a href="production/using/general-architecture.md">架构原理</a> - <a href="production/using/build-upgrade.md">执行内部版本升级</a> - <a href="production/using/configuration.md">配置营销活动</a> - <a href="installation/using/external-accounts.md">连接到外部系统</a>
     </td>
     <td>
-      
+      <img src="assets/do-not-localize/icon-dev.svg" width="35px">
       <br/>
       <strong>开发人员资源</strong><br/><a href="configuration/using/about-data-model.md">数据模型描述</a> - <a href="configuration/using/about-schema-reference.md">架构结构</a> - <a href="configuration/using/editing-forms.md">架构结构</a> - <a href="configuration/using/about-web-services.md">API</a> - <a href="https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=zh-Hans">JSAPI 参考文档</a> - <a href="configuration/using/about-custom-recipient-table.md">自定义收件人表</a>
     </td>
