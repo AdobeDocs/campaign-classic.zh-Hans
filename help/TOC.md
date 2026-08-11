@@ -8,10 +8,10 @@ user-guide-description: Adobe Campaign Classic v7 产品文档。
 sub-product: adobe campaign classic
 type: Documentation
 nudge: false
-source-git-commit: cc6c1969f230f3aac405b9169505a8bb39d41dfd
-workflow-type: ht
-source-wordcount: '2710'
-ht-degree: 100%
+source-git-commit: df5d87ca4fccb927f770957ec1c00157d14e95dc
+workflow-type: tm+mt
+source-wordcount: '2717'
+ht-degree: 99%
 
 ---
 
@@ -813,6 +813,7 @@ ht-degree: 100%
     + {hide-from-toc}[2023 年系统升级](technotes/using/tech-stack-upgrade.md)
     + {hide-from-toc}[IMS 更新](technotes/using/ims-updates.md)
     + {hide-from-toc}[TLS 1.0 和 1.1 支持生命周期终止](technotes/using/eol-tls-support.md)
+    + {hide-from-toc}[迁移到Adobe Analytics 2.0 API](technotes/using/analytics-2-migration.md)
   + 电子邮件和推送通知{#technotes-email}
     + [Apple iOS 上的邮件隐私保护](technotes/using/apple-mail-app-privacy-protection.md)
     + [如何更新错误的硬退回](delivery/using/update-bounce-qualification.md)
