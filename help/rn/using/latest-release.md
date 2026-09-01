@@ -42,7 +42,7 @@ _2026年8月25日_
 
 #### 安全性改进 {#security-7-4-4-9401}
 
-Adobe 已发布了针对 Adobe Campaign Classic 的安全更新，以解决重要漏洞。 我们鼓励内部部署和混合部署的客户尽快安装更新。 Adobe 托管的实例已得到修复，无需客户执行任何操作。 您可以在[安全公告](https://helpx.adobe.com/security/products/campaign/apsb26-134.html){target="_blank"}中找到更多信息。
+Adobe 已发布了针对 Adobe Campaign Classic 的安全更新，以解决重要漏洞。 我们鼓励内部部署和混合部署的客户尽快安装更新。 Adobe 托管的实例已得到修复，无需客户执行任何操作。 您可以在[安全公告](https://helpx.adobe.com/cn/security/products/campaign/apsb26-134.html){target="_blank"}中找到更多信息。
 
 需要重新启动Adobe Campaign服务器(nlserver)才能加载内部版本和完成部署。 默认情况下，此修复在重新启动后处于活跃状态。
 
@@ -56,7 +56,7 @@ _2026年8月11日_
 
 #### 安全性改进 {#security-7-4-4-9400}
 
-Adobe 已发布了针对 Adobe Campaign Classic 的安全更新，以解决重要漏洞。 我们鼓励内部部署和混合部署的客户尽快安装更新。 Adobe 托管的实例已得到修复，无需客户执行任何操作。 您可以在[安全公告](https://helpx.adobe.com/security/products/campaign/apsb26-123.html){target="_blank"}中找到更多信息。
+Adobe 已发布了针对 Adobe Campaign Classic 的安全更新，以解决重要漏洞。 我们鼓励内部部署和混合部署的客户尽快安装更新。 Adobe 托管的实例已得到修复，无需客户执行任何操作。 您可以在[安全公告](https://helpx.adobe.com/cn/security/products/campaign/apsb26-123.html){target="_blank"}中找到更多信息。
 
 需要重新启动Adobe Campaign服务器(nlserver)才能加载内部版本和完成部署。 默认情况下，此修复在重新启动后处于活跃状态。
 
