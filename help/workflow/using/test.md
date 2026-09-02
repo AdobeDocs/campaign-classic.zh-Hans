@@ -30,7 +30,7 @@ ht-degree: 1%
 
 ![](assets/edit_test.png)
 
-有关通过工作流JavaScript访问的应用服务器的所有其他JavaScript函数和SOAP方法的更多信息，请参阅[JSAPI文档](https://experienceleague.adobe.com/en/tools/campaign-api)。
+有关通过工作流JavaScript访问的应用服务器的所有其他JavaScript函数和SOAP方法的更多信息，请参阅[JSAPI文档](https://experienceleague.adobe.com/zh-hans/tools/campaign-api)。
 
 您还可以直接从此编辑器插入变量。 有关如何使用变量的更多信息，请参阅[此章节](javascript-scripts-and-templates.md#variables)。
 

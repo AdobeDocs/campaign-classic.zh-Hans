@@ -28,7 +28,7 @@ ht-degree: 0%
 
 作为专家级用户，您可以在资源管理器树中添加文件夹并对其进行自定义。
 
-请参阅[Adobe Campaign v8 （控制台）文档](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}以了解有关Campaign用户界面的更多信息。
+请参阅[Adobe Campaign v8 （控制台）文档](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}以了解有关Campaign用户界面的更多信息。
 
 导航列表使用的文件夹类型在遵循&#x200B;**xtk:navtree**&#x200B;架构语法的XML文档中进行了说明。
 
@@ -104,7 +104,7 @@ XML文档包含具有&#x200B;**名称**&#x200B;和&#x200B;**命名空间**&#x200
 
 命令分隔符允许您在命令之间显示分隔条。 它由命令标签中包含的&#x200B;**&#39;-&#39;**&#x200B;值标识。
 
-**`<soapcall>`**&#x200B;标记及其输入参数的可选存在性定义了要执行的SOAP方法的调用。 有关SOAP API的更多信息，请参阅[Campaign JSAPI文档](https://experienceleague.adobe.com/en/tools/campaign-api)。
+**`<soapcall>`**&#x200B;标记及其输入参数的可选存在性定义了要执行的SOAP方法的调用。 有关SOAP API的更多信息，请参阅[Campaign JSAPI文档](https://experienceleague.adobe.com/zh-hans/tools/campaign-api)。
 
 初始化时可以从&#x200B;**`<enter>`**&#x200B;标记更新表单上下文。 有关此标记的详细信息，请参阅有关输入表单的文档。
 
@@ -277,7 +277,7 @@ XML文档包含具有&#x200B;**名称**&#x200B;和&#x200B;**命名空间**&#x200
 
 命令分隔符允许您在命令之间显示分隔条。 它由命令标签中包含的&#x200B;**&#39;-&#39;**&#x200B;值标识。
 
-**`<soapcall>`**&#x200B;标记及其输入参数的可选存在性定义了要执行的SOAP方法的调用。 有关SOAP API的更多信息，请参阅[Campaign JSAPI文档](https://experienceleague.adobe.com/en/tools/campaign-api)。
+**`<soapcall>`**&#x200B;标记及其输入参数的可选存在性定义了要执行的SOAP方法的调用。 有关SOAP API的更多信息，请参阅[Campaign JSAPI文档](https://experienceleague.adobe.com/zh-hans/tools/campaign-api)。
 
 初始化时可以通过&#x200B;**`<enter>`**&#x200B;标记更新表单上下文。 有关此标记的详细信息，请参阅输入表单文档。
 

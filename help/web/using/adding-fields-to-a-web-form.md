@@ -379,7 +379,7 @@ ht-degree: 0%
 
 要将上载字段插入表单页面，请选择页面编辑器工具栏中的&#x200B;**[!UICONTROL Advanced controls > File...]**&#x200B;菜单。
 
-默认情况下，上载的文件存储在可通过&#x200B;**[!UICONTROL Resources > Online > Public resources]**&#x200B;菜单访问的资源文件中。 您可以使用脚本更改此行为。 此脚本可以使用[Campaign JSAPI文档](https://experienceleague.adobe.com/en/tools/campaign-api)中定义的函数，包括与文件操作有关的函数。
+默认情况下，上载的文件存储在可通过&#x200B;**[!UICONTROL Resources > Online > Public resources]**&#x200B;菜单访问的资源文件中。 您可以使用脚本更改此行为。 此脚本可以使用[Campaign JSAPI文档](https://experienceleague.adobe.com/zh-hans/tools/campaign-api)中定义的函数，包括与文件操作有关的函数。
 
 可以将指向这些文件的链接存储在本地变量或数据库字段中。 例如，您可以扩展收件人模式以添加指向基于文件的资源的链接。
 

@@ -68,7 +68,7 @@ Adobe Campaign 提供了一个 **API**，您可使用它设置一个自动隐私
 
 ## 从外部调用 API {#invoking-api-externally}
 
-下方是一个示例，说明如何从外部调用 API（通过 API 进行身份验证，并具体说明隐私 API 的详细信息）。 有关隐私 API 的更多信息，请查阅 [API 文档](https://experienceleague.adobe.com/en/tools/campaign-api)。 您还可以查阅 [Web 服务调用文档](../../configuration/using/web-service-calls.md)。
+下方是一个示例，说明如何从外部调用 API（通过 API 进行身份验证，并具体说明隐私 API 的详细信息）。 有关隐私 API 的更多信息，请查阅 [API 文档](https://experienceleague.adobe.com/zh-hans/tools/campaign-api)。 您还可以查阅 [Web 服务调用文档](../../configuration/using/web-service-calls.md)。
 
 首先，您需要通过 API 执行身份验证：
 

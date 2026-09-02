@@ -45,7 +45,7 @@ ht-degree: 2%
 
 >[!IMPORTANT]
 >
->[Campaign JSAPI文档](https://experienceleague.adobe.com/en/tools/campaign-api)包含有关Adobe Campaign中的SOAP调用和使用Javascript的其他信息，以及对该应用程序中使用的所有方法和函数的完整引用。
+>[Campaign JSAPI文档](https://experienceleague.adobe.com/zh-hans/tools/campaign-api)包含有关Adobe Campaign中的SOAP调用和使用Javascript的其他信息，以及对该应用程序中使用的所有方法和函数的完整引用。
 
 ## 订阅(nms:subscription) {#subscribe--nms-subscription-}
 

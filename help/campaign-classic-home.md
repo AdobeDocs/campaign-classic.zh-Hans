@@ -121,7 +121,7 @@ Android Firebase Cloud Messaging (FCM) 服务的一些重要更改将于 2024 �
     <td>
       <img src="assets/do-not-localize/icon-dev.svg" width="35px">
       <br/>
-      <strong>开发人员资源</strong><br/><a href="configuration/using/about-data-model.md">数据模型描述</a> - <a href="configuration/using/about-schema-reference.md">架构结构</a> - <a href="configuration/using/editing-forms.md">架构结构</a> - <a href="configuration/using/about-web-services.md">API</a> - <a href="https://experienceleague.adobe.com/en/tools/campaign-api">JSAPI 参考文档</a> - <a href="configuration/using/about-custom-recipient-table.md">自定义收件人表</a>
+      <strong>开发人员资源</strong><br/><a href="configuration/using/about-data-model.md">数据模型描述</a> - <a href="configuration/using/about-schema-reference.md">架构结构</a> - <a href="configuration/using/editing-forms.md">架构结构</a> - <a href="configuration/using/about-web-services.md">API</a> - <a href="https://experienceleague.adobe.com/zh-hans/tools/campaign-api">JSAPI 参考文档</a> - <a href="configuration/using/about-custom-recipient-table.md">自定义收件人表</a>
     </td>
   </tr>
 </table>

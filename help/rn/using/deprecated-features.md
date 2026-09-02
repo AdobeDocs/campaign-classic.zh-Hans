@@ -145,7 +145,7 @@ Adobe 不断评估产品功能，以确定应用更现代的功能替换的旧�
    </tr>
    <tr>
    <td>Campaign API 文档 - jsapi.chm 文件</td>
-   <td>从 Campaign 19.1 版本开始，Campaign Classic API 在专用页面中提供。 如果您使用的是旧版 jsapi.chm 文件，您现在应该参考 <a href="https://experienceleague.adobe.com/en/tools/campaign-api">新的在线版本</a>。</td>
+   <td>从 Campaign 19.1 版本开始，Campaign Classic API 在专用页面中提供。 如果您使用的是旧版 jsapi.chm 文件，您现在应该参考 <a href="https://experienceleague.adobe.com/zh-hans/tools/campaign-api">新的在线版本</a>。</td>
   </tr> 
   <tr> 
    <td>活动编排 - 预测营销</td>
@@ -162,7 +162,7 @@ Adobe 不断评估产品功能，以确定应用更现代的功能替换的旧�
   <tr> 
    <td>decryptString API</td>
    <td><p>从 Campaign 18.6 版本开始，出于安全原因，<em>decryptString</em> API 在默认情况下不再可用于新安装。</p> 
-   <p>在之后升级到 18.6（及更高版本）的上下文中，此 API 不再激活，并由 <em>decryptPassword</em> 函数替换。 <a href="https://experienceleague.adobe.com/en/tools/campaign-api">了解详情</a></p></td>
+   <p>在之后升级到 18.6（及更高版本）的上下文中，此 API 不再激活，并由 <em>decryptPassword</em> 函数替换。 <a href="https://experienceleague.adobe.com/zh-hans/tools/campaign-api">了解详情</a></p></td>
   </tr> 
    <tr> 
    <td>移动渠道 - MMS 和 WAP 推送消息</td>

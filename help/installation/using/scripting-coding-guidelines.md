@@ -29,7 +29,7 @@ ht-degree: 4%
 
 ## 脚本
 
-有关详细信息，请参阅[Campaign JSAPI文档](https://experienceleague.adobe.com/en/tools/campaign-api)。
+有关详细信息，请参阅[Campaign JSAPI文档](https://experienceleague.adobe.com/zh-hans/tools/campaign-api)。
 
 如果您使用工作流、Web应用程序和jssp编写脚本，请遵循以下最佳实践：
 
@@ -66,7 +66,7 @@ ht-degree: 4%
 >
 >如果您使用的版本低于8140，则&#x200B;**XtkPassUnknownSQLFunctionsToRDBMS**&#x200B;选项可能会设置为“1”。 如果要保护数据库，请删除此选项（或将其设置为“0”）。
 
-如果您使用用户输入在查询或SQL语句中构建过滤器，则始终必须转义它们（请参阅[Campaign JSAPI文档](https://experienceleague.adobe.com/en/tools/campaign-api) — 数据保护：转义函数）。 这些函数包括：
+如果您使用用户输入在查询或SQL语句中构建过滤器，则始终必须转义它们（请参阅[Campaign JSAPI文档](https://experienceleague.adobe.com/zh-hans/tools/campaign-api) — 数据保护：转义函数）。 这些函数包括：
 
 * NL.XML.escape(data)
 * NL.SQL.escape(data)
@@ -128,7 +128,7 @@ ht-degree: 4%
 
 1. 使用&#x200B;**[!UICONTROL Web application]**&#x200B;内容类型并检查&#x200B;**[!UICONTROL Visible in the customization menus]**。
 
-   有关更多信息，请参阅 [Campaign v8 文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html){target="_blank"}。
+   有关更多信息，请参阅 [Campaign v8 文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html?lang=zh-Hans){target="_blank"}。
 
    以下是&#x200B;**营销活动验证码**&#x200B;的示例：
 

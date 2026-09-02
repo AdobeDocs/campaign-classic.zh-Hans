@@ -41,7 +41,7 @@ ht-degree: 2%
 
   >[!NOTE]
   >
-  >在服务器端，脚本可以使用[Campaign JSAPI文档](https://experienceleague.adobe.com/en/tools/campaign-api)中定义的函数。
+  >在服务器端，脚本可以使用[Campaign JSAPI文档](https://experienceleague.adobe.com/zh-hans/tools/campaign-api)中定义的函数。
 
 ## 插入HTML内容 {#inserting-html-content}
 
