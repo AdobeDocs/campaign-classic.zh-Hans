@@ -6,21 +6,15 @@ description: 了解如何配置Campaign Explorer导航树
 role: Developer
 exl-id: c7ae7240-0c12-4420-bbb3-4268c9ade3e7
 TQID: https://experienceleague.adobe.com/K2bUgEoNSbVfc5hs1O-V36yNrjUFKQEO00-clOYc5u4
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2:
-  - id: b12f6872-9271-4369-85e5-86969a0b99a2
-  - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
-subfeature_v2:
-  - id: efa38731-2723-4334-8d8b-a778af834835
-role_v2:
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: b12f6872-9271-4369-85e5-86969a0b99a2id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+subfeature_v2: id: efa38731-2723-4334-8d8b-a778af834835
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: 073ad5eccc52ad63e92829de4a4c6ac6178635e1
 workflow-type: tm+mt
-source-wordcount: 1212
-ht-degree: 1%
+source-wordcount: 1210
+ht-degree: 0%
 
 ---
 
@@ -28,7 +22,7 @@ ht-degree: 1%
 
 作为专家级用户，您可以在资源管理器树中添加文件夹并对其进行自定义。
 
-请参阅[Adobe Campaign v8 （控制台）文档](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}以了解有关Campaign用户界面的更多信息。
+请参阅[Adobe Campaign v8 （控制台）文档](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}以了解有关Campaign用户界面的更多信息。
 
 导航列表使用的文件夹类型在遵循&#x200B;**xtk:navtree**&#x200B;架构语法的XML文档中进行了说明。
 
@@ -104,7 +98,7 @@ XML文档包含具有&#x200B;**名称**&#x200B;和&#x200B;**命名空间**&#x200
 
 命令分隔符允许您在命令之间显示分隔条。 它由命令标签中包含的&#x200B;**&#39;-&#39;**&#x200B;值标识。
 
-**`<soapcall>`**&#x200B;标记及其输入参数的可选存在性定义了要执行的SOAP方法的调用。 有关SOAP API的更多信息，请参阅[Campaign JSAPI文档](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=zh-Hans)。
+**`<soapcall>`**&#x200B;标记及其输入参数的可选存在性定义了要执行的SOAP方法的调用。 有关SOAP API的更多信息，请参阅[Campaign JSAPI文档](https://experienceleague.adobe.com/en/tools/campaign-api)。
 
 初始化时可以从&#x200B;**`<enter>`**&#x200B;标记更新表单上下文。 有关此标记的详细信息，请参阅有关输入表单的文档。
 
@@ -277,7 +271,7 @@ XML文档包含具有&#x200B;**名称**&#x200B;和&#x200B;**命名空间**&#x200
 
 命令分隔符允许您在命令之间显示分隔条。 它由命令标签中包含的&#x200B;**&#39;-&#39;**&#x200B;值标识。
 
-**`<soapcall>`**&#x200B;标记及其输入参数的可选存在性定义了要执行的SOAP方法的调用。 有关SOAP API的更多信息，请参阅[Campaign JSAPI文档](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=zh-Hans)。
+**`<soapcall>`**&#x200B;标记及其输入参数的可选存在性定义了要执行的SOAP方法的调用。 有关SOAP API的更多信息，请参阅[Campaign JSAPI文档](https://experienceleague.adobe.com/en/tools/campaign-api)。
 
 初始化时可以通过&#x200B;**`<enter>`**&#x200B;标记更新表单上下文。 有关此标记的详细信息，请参阅输入表单文档。
 

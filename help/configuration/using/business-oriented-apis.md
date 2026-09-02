@@ -6,17 +6,14 @@ feature: API
 role: Developer
 exl-id: e6638870-3141-4f12-b904-db436127c0d1
 TQID: https://experienceleague.adobe.com/lPAawM33zS2tws0EyHFHW1jD-Vw3ZLDtDcMEd1eJA1c
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2:
-  - id: b12f6872-9271-4369-85e5-86969a0b99a2
-role_v2:
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: b12f6872-9271-4369-85e5-86969a0b99a2
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 subfeature_v2: []
-source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
+source-git-commit: 073ad5eccc52ad63e92829de4a4c6ac6178635e1
 workflow-type: tm+mt
-source-wordcount: 625
-ht-degree: 3%
+source-wordcount: 624
+ht-degree: 2%
 
 ---
 
@@ -26,16 +23,16 @@ ht-degree: 3%
 
 * 投放：
 
-   * 正在创建投放操作，请参阅[SubmitDelivery (nms:delivery)](#submitdelivery--nms-delivery-)，
-   * 发送营销活动（开始、暂停、停止、发送校样），
-   * 恢复投放日志。
+  * 正在创建投放操作，请参阅[SubmitDelivery (nms:delivery)](#submitdelivery--nms-delivery-)，
+  * 发送营销活动（开始、暂停、停止、发送校样），
+  * 恢复投放日志。
 
 * 工作流：
 
-   * 启动工作流，
-   * 验证进程等。
+  * 启动工作流，
+  * 验证进程等。
 
-     请参阅JavaScript[&#128279;](../../configuration/using/soap-methods-in-javascript.md)中的SOAP方法。
+    请参阅JavaScript](../../configuration/using/soap-methods-in-javascript.md)中的[SOAP方法。
 
 * 内容管理
 * 订阅管理，请参阅[订阅(nms:subscription)](#subscribe--nms-subscription-)和[取消订阅(nms:subscription)](#unsubscribe--nms-subscription-)。
@@ -45,7 +42,7 @@ ht-degree: 3%
 
 >[!IMPORTANT]
 >
->[Campaign JSAPI文档](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=zh-Hans)包含有关Adobe Campaign中的SOAP调用和使用Javascript的其他信息，以及对该应用程序中使用的所有方法和函数的完整引用。
+>[Campaign JSAPI文档](https://experienceleague.adobe.com/en/tools/campaign-api)包含有关Adobe Campaign中的SOAP调用和使用Javascript的其他信息，以及对该应用程序中使用的所有方法和函数的完整引用。
 
 ## 订阅(nms:subscription) {#subscribe--nms-subscription-}
 
@@ -70,7 +67,7 @@ ht-degree: 3%
 </method>
 ```
 
-必须通过XML文档的`<recipient>`元素上的_&#x200B;**key**&#x200B;属性输入协调键的定义。 此属性的内容是以逗号分隔的XPath列表。
+必须通过XML文档的`<recipient>`元素上的_**key**&#x200B;属性输入协调键的定义。 此属性的内容是以逗号分隔的XPath列表。
 
 此调用不会返回任何数据，错误除外。
 

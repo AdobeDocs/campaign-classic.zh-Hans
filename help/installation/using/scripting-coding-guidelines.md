@@ -8,18 +8,14 @@ content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: 1f96c3df-0ef2-4f5f-9c36-988cbcc0769f
 TQID: https://experienceleague.adobe.com/daz7TEa76-e6V3DbFHIzggxj07CKsh1pS-ShT6d-Tfo
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-topic_v2:
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+topic_v2: id: d095671a-1355-40aa-8b5f-06c33c68080bid: e0eb8757-182f-49f3-94a4-1587d16f5094id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
 feature_v2: []
 subfeature_v2: []
-source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
+source-git-commit: 073ad5eccc52ad63e92829de4a4c6ac6178635e1
 workflow-type: tm+mt
-source-wordcount: 773
-ht-degree: 6%
+source-wordcount: 771
+ht-degree: 4%
 
 ---
 
@@ -29,7 +25,7 @@ ht-degree: 6%
 
 ## 脚本
 
-有关详细信息，请参阅[Campaign JSAPI文档](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=zh-Hans)。
+有关详细信息，请参阅[Campaign JSAPI文档](https://experienceleague.adobe.com/en/tools/campaign-api)。
 
 如果您使用工作流、Web应用程序和jssp编写脚本，请遵循以下最佳实践：
 
@@ -66,7 +62,7 @@ ht-degree: 6%
 >
 >如果您使用的版本低于8140，则&#x200B;**XtkPassUnknownSQLFunctionsToRDBMS**&#x200B;选项可能会设置为“1”。 如果要保护数据库，请删除此选项（或将其设置为“0”）。
 
-如果您使用用户输入在查询或SQL语句中构建过滤器，则始终必须转义它们（请参阅[Campaign JSAPI文档](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=zh-Hans) — 数据保护：转义函数）。 这些函数包括：
+如果您使用用户输入在查询或SQL语句中构建过滤器，则始终必须转义它们（请参阅[Campaign JSAPI文档](https://experienceleague.adobe.com/en/tools/campaign-api) — 数据保护：转义函数）。 这些函数包括：
 
 * NL.XML.escape(data)
 * NL.SQL.escape(data)
@@ -128,7 +124,7 @@ ht-degree: 6%
 
 1. 使用&#x200B;**[!UICONTROL Web application]**&#x200B;内容类型并检查&#x200B;**[!UICONTROL Visible in the customization menus]**。
 
-   有关更多信息，请参阅 [Campaign v8 文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html?lang=zh-Hans){target="_blank"}。
+   有关更多信息，请参阅 [Campaign v8 文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html){target="_blank"}。
 
    以下是&#x200B;**营销活动验证码**&#x200B;的示例：
 
