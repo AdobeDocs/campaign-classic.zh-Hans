@@ -4,24 +4,14 @@ product: campaign
 title: Adobe Campaign Classic v7 产品文档
 exl-id: 6b3f1689-80de-49fd-b7ee-7a2a1931d157
 TQID: https://experienceleague.adobe.com/Q6Oc24mo-1qDAxCWu2lGT4UvRLXB78Tr5X4sb2kHFw8
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2:
-  - id: a075b2c1-7748-4328-b7f6-343aa314616a
-  - id: a4671286-a59f-47e3-b97b-90627a1977d5
-  - id: b12f6872-9271-4369-85e5-86969a0b99a2
-subfeature_v2:
-  - id: d3b34fea-a110-482f-adb2-aae8d686bac8
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: a075b2c1-7748-4328-b7f6-343aa314616aid: a4671286-a59f-47e3-b97b-90627a1977d5id: b12f6872-9271-4369-85e5-86969a0b99a2
+subfeature_v2: id: d3b34fea-a110-482f-adb2-aae8d686bac8
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: d095671a-1355-40aa-8b5f-06c33c68080bid: e0eb8757-182f-49f3-94a4-1587d16f5094id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
 source-git-commit: 7fd7a9e54183b456f06d8030c3d9425f275eabf5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 657
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -36,9 +26,9 @@ ht-degree: 93%
 >[!BEGINTABS]
 
 
->[!TAB 2026年8月版本已上线！]
+>[!TAB 2026 年 8 月版已上线！]
 
-Campaign Classic v7.4.4 - 2026年8月版提供安全更新，并将Adobe Analytics连接器升级到Analytics 2.0 API。
+Campaign Classic v7.4.4 - 2026 年 8 月版提供安全更新，并将 Adobe Analytics 连接器升级到 Analytics 2.0 API。
 
 [![image](assets/do-not-localize/learn-more-button.svg)](rn/using/latest-release.md)
 
@@ -128,4 +118,4 @@ Android Firebase Cloud Messaging (FCM) 服务的一些重要更改将于 2024 �
 
 ## 其他资源
 
-[Adobe Campaign产品说明](https://helpx.adobe.com/cn/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"} - [兼容性矩阵](rn/using/compatibility-matrix.md) - [教程](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hans){target="_blank"} - [促销活动控制面板](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=zh-Hans){target="_blank"} - [电子邮件跟踪像素和CNIL指南](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/new/cnil-pixel-tracking){target="_blank"}
+[Adobe Campaign 产品描述](https://helpx.adobe.com/cn/legal/product-descriptions/adobe-campaign-managed-cloud-services.html){target="_blank"} - [兼容性矩阵](rn/using/compatibility-matrix.md) - [教程](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hans){target="_blank"} - [Campaign 控制面板](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=zh-Hans){target="_blank"} - [电子邮件跟踪像素和 CNIL 指南](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/new/cnil-pixel-tracking){target="_blank"}
