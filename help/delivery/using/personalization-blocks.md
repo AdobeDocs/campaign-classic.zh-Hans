@@ -138,7 +138,7 @@ HTML源代码会插入到投放内容中。 例如，**[!UICONTROL Greetings]**&
 
 >[!IMPORTANT]
 >
->7.4.4版（内部版本9401）包括对外部URL允许列表的更新。 如果自定义个性化块引用外部URL（例如，外部托管的图像），请确保将域添加到实例的已批准允许列表，以便资源可以持续加载而不会出现中断。 作为Campaign管理员，使用控制面板添加和管理允许列表的URL。 有关步骤，请参阅[添加URL权限](https://experienceleague.adobe.com/en/docs/control-panel/using/instances-settings/url-permissions){target="_blank"}。
+>7.4.4版（内部版本9401）包括对外部URL允许列表的更新。 如果自定义个性化块引用外部URL（例如，外部托管的图像），请确保将域添加到实例的已批准允许列表，以便资源可以持续加载而不会出现中断。 作为Campaign管理员，使用控制面板添加和管理允许列表的URL。 有关步骤，请参阅[添加URL权限](https://experienceleague.adobe.com/zh-hans/docs/control-panel/using/instances-settings/url-permissions){target="_blank"}。
 
 您可以通过&#x200B;**[!UICONTROL Include...]**&#x200B;菜单定义要从个性化字段图标插入的新个性化字段。 这些字段在个性化块中定义。
 

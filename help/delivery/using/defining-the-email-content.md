@@ -82,7 +82,7 @@ ht-degree: 1%
 
 >[!IMPORTANT]
 >
->7.4.4版（内部版本9401）包括对外部URL允许列表的更新。 确保在消息内容中使用的域已添加到实例的已批准允许列表，以便资源可以继续加载而不会中断。 作为Campaign管理员，使用控制面板添加和管理允许列表的URL。 有关步骤，请参阅[添加URL权限](https://experienceleague.adobe.com/en/docs/control-panel/using/instances-settings/url-permissions){target="_blank"}。
+>7.4.4版（内部版本9401）包括对外部URL允许列表的更新。 确保在消息内容中使用的域已添加到实例的已批准允许列表，以便资源可以继续加载而不会中断。 作为Campaign管理员，使用控制面板添加和管理允许列表的URL。 有关步骤，请参阅[添加URL权限](https://experienceleague.adobe.com/zh-hans/docs/control-panel/using/instances-settings/url-permissions){target="_blank"}。
 
 消息的内容在投放配置窗口的下半部分中定义。
 
@@ -135,7 +135,7 @@ ht-degree: 1%
 
 Adobe Campaign允许您尝试新的交互式[AMP for Email](https://amp.dev/about/email/)格式，该格式可用于在特定条件下发送动态电子邮件。
 
-有关详细信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-interactive-content.html){target="_blank"}。
+有关详细信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-interactive-content.html?lang=zh-Hans){target="_blank"}。
 
 ## 使用内容管理 {#using-content-management}
 

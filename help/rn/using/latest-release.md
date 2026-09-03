@@ -50,7 +50,7 @@ Adobe 已发布了针对 Adobe Campaign Classic 的安全更新，以解决重�
 
 此版本包括了对用于投放允许列表和附件的外部URL内容的更新。 确保将您当前引用的所有域添加到实例的已批准允许列表中。
 
-作为Campaign管理员，使用控制面板将当前在投放中使用的外部URL添加到允许列表，并对今后的任何新外部URL遵循相同的过程。 请在2026年9月5日之前完成此活动，以避免对受影响的投放产生影响。 有关步骤，请参阅[添加URL权限](https://experienceleague.adobe.com/en/docs/control-panel/using/instances-settings/url-permissions){target="_blank"}。
+作为Campaign管理员，使用控制面板将当前在投放中使用的外部URL添加到允许列表，并对今后的任何新外部URL遵循相同的过程。 请在2026年9月5日之前完成此活动，以避免对受影响的投放产生影响。 有关步骤，请参阅[添加URL权限](https://experienceleague.adobe.com/zh-hans/docs/control-panel/using/instances-settings/url-permissions){target="_blank"}。
 
 ### 内部版本 9400 {#build-9400}
 

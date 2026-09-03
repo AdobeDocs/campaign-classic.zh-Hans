@@ -40,7 +40,7 @@ Adobe Campaign允许您从LibreOffice或Microsoft Word文档为电子邮件附�
 
 要个性化您的文档，可以使用与电子邮件个性化相同的JavaScript功能。
 
-您需要激活&#x200B;**[!UICONTROL "The content of the file is personalized and converted to PDF during the delivery of each message"]**&#x200B;选项。 将文件附加到投放电子邮件时，此选项可访问。 有关附加计算文件的详细信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/attaching-files.html){target="_blank"}。
+您需要激活&#x200B;**[!UICONTROL "The content of the file is personalized and converted to PDF during the delivery of each message"]**&#x200B;选项。 将文件附加到投放电子邮件时，此选项可访问。 有关附加计算文件的详细信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/attaching-files.html?lang=zh-Hans){target="_blank"}。
 
 发票标头个性化示例：
 
@@ -66,7 +66,7 @@ Adobe Campaign允许您从LibreOffice或Microsoft Word文档为电子邮件附�
 
 >[!IMPORTANT]
 >
->7.4.4版（内部版本9401）包括对外部URL允许列表的更新。 确保在附件中用于外部图像的域已添加到实例的已批准允许列表中，以便资源可以继续加载而不会出现中断。 作为Campaign管理员，使用控制面板添加和管理允许列表的URL。 有关步骤，请参阅[添加URL权限](https://experienceleague.adobe.com/en/docs/control-panel/using/instances-settings/url-permissions){target="_blank"}。
+>7.4.4版（内部版本9401）包括对外部URL允许列表的更新。 确保在附件中用于外部图像的域已添加到实例的已批准允许列表中，以便资源可以继续加载而不会出现中断。 作为Campaign管理员，使用控制面板添加和管理允许列表的URL。 有关步骤，请参阅[添加URL权限](https://experienceleague.adobe.com/zh-hans/docs/control-panel/using/instances-settings/url-permissions){target="_blank"}。
 
 例如，如果您希望使用在收件人字段中输入URL的图像对文档进行个性化，则插入外部图像会很有用。
 
