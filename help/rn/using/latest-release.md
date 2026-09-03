@@ -21,10 +21,10 @@ feature_v2: []
 subfeature_v2:
   - id: e5e477db-ebc7-4368-ab0f-4d8fc2aed405
   - id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
-source-git-commit: d1e083ac90731e9f55d64156fbd6038df3c4d432
+source-git-commit: e615a6fdd6dc78b2c5e80d6aeb92cd9291ccf5e7
 workflow-type: tm+mt
-source-wordcount: 1017
-ht-degree: 100%
+source-wordcount: 1117
+ht-degree: 91%
 
 ---
 
@@ -45,6 +45,12 @@ _2026 年 8 月 25 日_
 Adobe 已发布了针对 Adobe Campaign Classic 的安全更新，以解决重要漏洞。 我们鼓励内部部署和混合部署的客户尽快安装更新。 Adobe 托管的实例已得到修复，无需客户执行任何操作。 您可以在[安全公告](https://helpx.adobe.com/cn/security/products/campaign/apsb26-134.html){target="_blank"}中找到更多信息。
 
 需要重新启动 Adobe Campaign 服务器 (nlserver) 才能加载内部版本并完成部署。 默认情况下，此修复在重新启动后处于活跃状态。
+
+#### 外部URL允许列表更新 {#security-enhancement-url-validation-9401}
+
+此版本包括了对用于投放允许列表和附件的外部URL内容的更新。 确保将您当前引用的所有域添加到实例的已批准允许列表中。
+
+作为Campaign管理员，使用控制面板将当前在投放中使用的外部URL添加到允许列表，并对今后的任何新外部URL遵循相同的过程。 请在2026年9月5日之前完成此活动，以避免对受影响的投放产生影响。 有关步骤，请参阅[添加URL权限](https://experienceleague.adobe.com/zh-hans/docs/control-panel/using/instances-settings/url-permissions){target="_blank"}。
 
 ### 内部版本 9400 {#build-9400}
 
@@ -140,7 +146,7 @@ _2026 年 3 月 31 日_
 
 >[!NOTE]
 >
-> 以下列出的修复已在后续的 7.4.3 内部版本中逐步推出。 导航到&#x200B;**[!UICONTROL Help > About...]**[&#x200B;菜单](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)以检查您是否拥有最新的 9394@28aaec9 内部版本。 有关更多信息，请与 Adobe 代表联系。
+> 以下列出的修复已在后续的 7.4.3 内部版本中逐步推出。 导航到&#x200B;**[!UICONTROL Help > About...]**&#x200B;[&#x200B;菜单](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)以检查您是否拥有最新的 9394@28aaec9 内部版本。 有关更多信息，请与 Adobe 代表联系。
 
 * 修复了条形码组件允许使用无限制高度参数的问题，该问题可能导致安全漏洞。 (NEO-89984)
 * 修复了通过工作流创建的列表中的枚举字段缺少临时名称属性，导致界面中显示不正确或空白枚举标签的问题。 (NEO-91158)

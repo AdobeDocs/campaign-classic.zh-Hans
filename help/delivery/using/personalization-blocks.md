@@ -22,10 +22,10 @@ subfeature_v2:
   - id: c8da4fdd-eb94-4751-a43c-f82733fb2d6e
   - id: d5bbe3da-ba85-4242-817e-54f7c4b943e0
   - id: f4da0e76-df77-451e-ad61-21afb7bd8810
-source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
+source-git-commit: e615a6fdd6dc78b2c5e80d6aeb92cd9291ccf5e7
 workflow-type: tm+mt
-source-wordcount: 894
-ht-degree: 3%
+source-wordcount: 988
+ht-degree: 4%
 
 ---
 
@@ -135,6 +135,10 @@ HTML源代码会插入到投放内容中。 例如，**[!UICONTROL Greetings]**&
 * **[!UICONTROL Offer acceptance URL in unitary mode]** ：插入一个URL，用于设置交互选件为&#x200B;**[!UICONTROL Accepted]**（请参阅[此部分](../../interaction/using/offer-analysis-report.md)）。
 
 ## 定义自定义个性化块 {#defining-custom-personalization-blocks}
+
+>[!IMPORTANT]
+>
+>7.4.4版（内部版本9401）包括对外部URL允许列表的更新。 如果自定义个性化块引用外部URL（例如，外部托管的图像），请确保将域添加到实例的已批准允许列表，以便资源可以持续加载而不会出现中断。 作为Campaign管理员，使用控制面板添加和管理允许列表的URL。 有关步骤，请参阅[添加URL权限](https://experienceleague.adobe.com/zh-hans/docs/control-panel/using/instances-settings/url-permissions){target="_blank"}。
 
 您可以通过&#x200B;**[!UICONTROL Include...]**&#x200B;菜单定义要从个性化字段图标插入的新个性化字段。 这些字段在个性化块中定义。
 

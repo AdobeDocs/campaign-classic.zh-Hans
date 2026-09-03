@@ -23,9 +23,9 @@ subfeature_v2:
   - id: c8da4fdd-eb94-4751-a43c-f82733fb2d6e
   - id: d5bbe3da-ba85-4242-817e-54f7c4b943e0
   - id: f4da0e76-df77-451e-ad61-21afb7bd8810
-source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
+source-git-commit: e615a6fdd6dc78b2c5e80d6aeb92cd9291ccf5e7
 workflow-type: tm+mt
-source-wordcount: 461
+source-wordcount: 533
 ht-degree: 1%
 
 ---
@@ -64,6 +64,10 @@ Adobe Campaign允许您从LibreOffice或Microsoft Word文档为电子邮件附�
 
 ## 插入外部图像 {#inserting-external-images}
 
+>[!IMPORTANT]
+>
+>7.4.4版（内部版本9401）包括对外部URL允许列表的更新。 确保在附件中用于外部图像的域已添加到实例的已批准允许列表中，以便资源可以继续加载而不会出现中断。 作为Campaign管理员，使用控制面板添加和管理允许列表的URL。 有关步骤，请参阅[添加URL权限](https://experienceleague.adobe.com/zh-hans/docs/control-panel/using/instances-settings/url-permissions){target="_blank"}。
+
 例如，如果您希望使用在收件人字段中输入URL的图像对文档进行个性化，则插入外部图像会很有用。
 
 要实现此目的，您需要配置个性化块，然后在附件中包含对个性化块的调用。
@@ -87,8 +91,8 @@ Adobe Campaign允许您从LibreOffice或Microsoft Word文档为电子邮件附�
 
   您需要区分个性化块中的两种类型的声明：
 
-   * 个性化字段的Adobe Campaign代码，其“打开”和“关闭”V形必须替换为转义字符（分别为`&lt;`和`&gt;`）。
-   * 整个OpenOffice XML代码将被复制到OpenOffice文档中。
+  * 个性化字段的Adobe Campaign代码，其“打开”和“关闭”V形必须替换为转义字符（分别为`&lt;`和`&gt;`）。
+  * 整个OpenOffice XML代码将被复制到OpenOffice文档中。
 
 在示例中，个性化块如下所示：
 
