@@ -8,24 +8,15 @@ role: User
 hide: true
 exl-id: 8d155844-d18a-4165-9886-c3b144109f6e
 TQID: https://experienceleague.adobe.com/KfD6zudZg8B6r8ftdINuXjWAqRiHLP9dtGi--H-E6RU
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-feature_v2:
-  - id: b631758a-142d-425f-b9aa-f756d85cb979
-  - id: c858a28b-ea19-49b0-8d48-828717fad89c
-subfeature_v2:
-  - id: e95a583b-fcfa-4524-8666-46a29c828119
-  - id: c8da4fdd-eb94-4751-a43c-f82733fb2d6e
-  - id: d5bbe3da-ba85-4242-817e-54f7c4b943e0
-  - id: f4da0e76-df77-451e-ad61-21afb7bd8810
-source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: e0eb8757-182f-49f3-94a4-1587d16f5094
+feature_v2: id: b631758a-142d-425f-b9aa-f756d85cb979id: c858a28b-ea19-49b0-8d48-828717fad89c
+subfeature_v2: id: e95a583b-fcfa-4524-8666-46a29c828119id: c8da4fdd-eb94-4751-a43c-f82733fb2d6eid: d5bbe3da-ba85-4242-817e-54f7c4b943e0id: f4da0e76-df77-451e-ad61-21afb7bd8810
+source-git-commit: e615a6fdd6dc78b2c5e80d6aeb92cd9291ccf5e7
 workflow-type: tm+mt
-source-wordcount: 894
-ht-degree: 3%
+source-wordcount: 988
+ht-degree: 4%
 
 ---
 
@@ -33,7 +24,7 @@ ht-degree: 3%
 
 个性化块是动态的、个性化的，并包含您可以插入到投放中的特定渲染。 例如，您可以添加徽标、问候语消息或指向镜像页面的链接。 请参阅[插入个性化块](#inserting-personalization-blocks)。
 
-![](assets/do-not-localize/how-to-video.png)在视频[&#128279;](#personalization-blocks-video)中发现此功能
+![](assets/do-not-localize/how-to-video.png)在视频](#personalization-blocks-video)中发现此功能[
 
 通过Adobe Campaign资源管理器的&#x200B;**[!UICONTROL Resources > Campaign Management > Personalization blocks]**&#x200B;节点访问个性化块。 默认情况下，有多个块可用（请参阅[现成的个性化块](#out-of-the-box-personalization-blocks)）。
 
@@ -136,6 +127,10 @@ HTML源代码会插入到投放内容中。 例如，**[!UICONTROL Greetings]**&
 
 ## 定义自定义个性化块 {#defining-custom-personalization-blocks}
 
+>[!IMPORTANT]
+>
+>7.4.4版（内部版本9401）包括对外部URL允许列表的更新。 如果自定义个性化块引用外部URL（例如，外部托管的图像），请确保将域添加到实例的已批准允许列表，以便资源可以持续加载而不会出现中断。 作为Campaign管理员，使用控制面板添加和管理允许列表的URL。 有关步骤，请参阅[添加URL权限](https://experienceleague.adobe.com/en/docs/control-panel/using/instances-settings/url-permissions){target="_blank"}。
+
 您可以通过&#x200B;**[!UICONTROL Include...]**&#x200B;菜单定义要从个性化字段图标插入的新个性化字段。 这些字段在个性化块中定义。
 
 要创建个性化块，请转到资源管理器并应用以下步骤：
@@ -160,6 +155,6 @@ HTML源代码会插入到投放内容中。 例如，**[!UICONTROL Greetings]**&
 
 了解如何创建动态内容块以及如何使用动态内容块将电子邮件投放内容个性化。
 
->[!VIDEO](https://video.tv.adobe.com/v/27462?captions=chi_hans&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/24924?quality=12)
 
 [此处](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hans)提供了其他 Campaign Classic 操作方法视频。

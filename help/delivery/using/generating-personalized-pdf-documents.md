@@ -8,24 +8,14 @@ role: User
 hide: true
 exl-id: e5239d99-256b-412b-be20-f64f822da9c3
 TQID: https://experienceleague.adobe.com/5hETJLlKZ9iWu2k1nW-RMeDlzpSm7wFwfe3QwSEZCa4
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-feature_v2:
-  - id: b631758a-142d-425f-b9aa-f756d85cb979
-  - id: c858a28b-ea19-49b0-8d48-828717fad89c
-subfeature_v2:
-  - id: e95a583b-fcfa-4524-8666-46a29c828119
-  - id: c8da4fdd-eb94-4751-a43c-f82733fb2d6e
-  - id: d5bbe3da-ba85-4242-817e-54f7c4b943e0
-  - id: f4da0e76-df77-451e-ad61-21afb7bd8810
-source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: e0eb8757-182f-49f3-94a4-1587d16f5094
+feature_v2: id: b631758a-142d-425f-b9aa-f756d85cb979id: c858a28b-ea19-49b0-8d48-828717fad89c
+subfeature_v2: id: e95a583b-fcfa-4524-8666-46a29c828119id: c8da4fdd-eb94-4751-a43c-f82733fb2d6eid: d5bbe3da-ba85-4242-817e-54f7c4b943e0id: f4da0e76-df77-451e-ad61-21afb7bd8810
+source-git-commit: e615a6fdd6dc78b2c5e80d6aeb92cd9291ccf5e7
 workflow-type: tm+mt
-source-wordcount: 461
+source-wordcount: 533
 ht-degree: 1%
 
 ---
@@ -40,7 +30,7 @@ Adobe Campaign允许您从LibreOffice或Microsoft Word文档为电子邮件附�
 
 要个性化您的文档，可以使用与电子邮件个性化相同的JavaScript功能。
 
-您需要激活&#x200B;**[!UICONTROL "The content of the file is personalized and converted to PDF during the delivery of each message"]**&#x200B;选项。 将文件附加到投放电子邮件时，此选项可访问。 有关附加计算文件的详细信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/attaching-files.html?lang=zh-Hans){target="_blank"}。
+您需要激活&#x200B;**[!UICONTROL "The content of the file is personalized and converted to PDF during the delivery of each message"]**&#x200B;选项。 将文件附加到投放电子邮件时，此选项可访问。 有关附加计算文件的详细信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/attaching-files.html){target="_blank"}。
 
 发票标头个性化示例：
 
@@ -63,6 +53,10 @@ Adobe Campaign允许您从LibreOffice或Microsoft Word文档为电子邮件附�
   ![](assets/s_ncs_pdf_table.png)
 
 ## 插入外部图像 {#inserting-external-images}
+
+>[!IMPORTANT]
+>
+>7.4.4版（内部版本9401）包括对外部URL允许列表的更新。 确保在附件中用于外部图像的域已添加到实例的已批准允许列表中，以便资源可以继续加载而不会出现中断。 作为Campaign管理员，使用控制面板添加和管理允许列表的URL。 有关步骤，请参阅[添加URL权限](https://experienceleague.adobe.com/en/docs/control-panel/using/instances-settings/url-permissions){target="_blank"}。
 
 例如，如果您希望使用在收件人字段中输入URL的图像对文档进行个性化，则插入外部图像会很有用。
 
@@ -87,8 +81,8 @@ Adobe Campaign允许您从LibreOffice或Microsoft Word文档为电子邮件附�
 
   您需要区分个性化块中的两种类型的声明：
 
-   * 个性化字段的Adobe Campaign代码，其“打开”和“关闭”V形必须替换为转义字符（分别为`&lt;`和`&gt;`）。
-   * 整个OpenOffice XML代码将被复制到OpenOffice文档中。
+  * 个性化字段的Adobe Campaign代码，其“打开”和“关闭”V形必须替换为转义字符（分别为`&lt;`和`&gt;`）。
+  * 整个OpenOffice XML代码将被复制到OpenOffice文档中。
 
 在示例中，个性化块如下所示：
 

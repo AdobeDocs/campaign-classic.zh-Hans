@@ -8,25 +8,14 @@ role: User
 hide: true
 exl-id: 46212929-fd2d-44a2-897e-35f98e88af36
 TQID: https://experienceleague.adobe.com/NWs-NqNfnkyoj0XJfy5-BvKwJofom-V0iSQJI3-F-38
-product_v2:
-  - id: dfc56824-e8b9-499e-85d4-21aedb507314
-feature_v2:
-  - id: a075b2c1-7748-4328-b7f6-343aa314616a
-  - id: b631758a-142d-425f-b9aa-f756d85cb979
-  - id: c858a28b-ea19-49b0-8d48-828717fad89c
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-subfeature_v2:
-  - id: e95a583b-fcfa-4524-8666-46a29c828119
-  - id: c8da4fdd-eb94-4751-a43c-f82733fb2d6e
-  - id: d5bbe3da-ba85-4242-817e-54f7c4b943e0
-  - id: f4da0e76-df77-451e-ad61-21afb7bd8810
-source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
+product_v2: id: dfc56824-e8b9-499e-85d4-21aedb507314
+feature_v2: id: a075b2c1-7748-4328-b7f6-343aa314616aid: b631758a-142d-425f-b9aa-f756d85cb979id: c858a28b-ea19-49b0-8d48-828717fad89c
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: e0eb8757-182f-49f3-94a4-1587d16f5094id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+subfeature_v2: id: e95a583b-fcfa-4524-8666-46a29c828119id: c8da4fdd-eb94-4751-a43c-f82733fb2d6eid: d5bbe3da-ba85-4242-817e-54f7c4b943e0id: f4da0e76-df77-451e-ad61-21afb7bd8810
+source-git-commit: e615a6fdd6dc78b2c5e80d6aeb92cd9291ccf5e7
 workflow-type: tm+mt
-source-wordcount: 1981
+source-wordcount: 2051
 ht-degree: 1%
 
 ---
@@ -80,6 +69,10 @@ ht-degree: 1%
 >
 >出于隐私原因，我们建议对所有外部资源使用HTTPS。
 
+>[!IMPORTANT]
+>
+>7.4.4版（内部版本9401）包括对外部URL允许列表的更新。 确保在消息内容中使用的域已添加到实例的已批准允许列表，以便资源可以继续加载而不会中断。 作为Campaign管理员，使用控制面板添加和管理允许列表的URL。 有关步骤，请参阅[添加URL权限](https://experienceleague.adobe.com/en/docs/control-panel/using/instances-settings/url-permissions){target="_blank"}。
+
 消息的内容在投放配置窗口的下半部分中定义。
 
 默认情况下，根据收件人偏好设置，消息将以HTML或文本格式发送。 我们建议创建两种格式的内容，以确保在任何邮件系统中均可正确显示消息。 有关详情，请参阅[选择消息格式](email-parameters.md#selecting-message-formats)。
@@ -131,7 +124,7 @@ ht-degree: 1%
 
 Adobe Campaign允许您尝试新的交互式[AMP for Email](https://amp.dev/about/email/)格式，该格式可用于在特定条件下发送动态电子邮件。
 
-有关详细信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-interactive-content.html?lang=zh-Hans){target="_blank"}。
+有关详细信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-interactive-content.html){target="_blank"}。
 
 ## 使用内容管理 {#using-content-management}
 
@@ -180,7 +173,7 @@ HTML格式电子邮件投放可以包含图像。 通过投放助手，您可以
 
   可通过Adobe Campaign层次结构的&#x200B;**[!UICONTROL Resources > Online]**&#x200B;节点访问公共资源。 它们分组在库中，可以包含在电子邮件中，但也可以用于营销活动或任务，或者用于内容管理。
 
-* 与Adobe Experience Cloud共享的资源。 请参阅[此小节](../../integrations/using/sharing-assets-with-adobe-experience-cloud.md)。
+* 与Adobe Experience Cloud共享的资产。 请参阅[此小节](../../integrations/using/sharing-assets-with-adobe-experience-cloud.md)。
 
 ### 插入和管理图像 {#manage-images}
 
@@ -194,7 +187,7 @@ HTML格式电子邮件投放可以包含图像。 通过投放助手，您可以
 
 要通过投放助手管理图像，请执行以下操作：
 
-1. 单击工具栏中的&#x200B;**[!UICONTROL Tracking & Images]**&#x200B;图标。
+1. 单击工具栏中的&#x200B;**[!UICONTROL Tracking & Images]**图标。
    ![](assets/s_ncs_user_email_del_img_param.png)
 
 1. 在&#x200B;**[!UICONTROL Images]**&#x200B;选项卡中选择&#x200B;**[!UICONTROL Upload images]**。
