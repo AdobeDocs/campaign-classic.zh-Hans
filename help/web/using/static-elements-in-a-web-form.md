@@ -17,10 +17,10 @@ subfeature_v2:
   - id: f391046b-0cf3-4e76-bd3b-97fe06654506
   - id: ed29abcd-b6a8-4d4b-ab8b-b7e746973281
   - id: d7be2b01-dc9c-40f7-aace-a151707504ed
-source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
+source-git-commit: 073ad5eccc52ad63e92829de4a4c6ac6178635e1
 workflow-type: tm+mt
-source-wordcount: 1049
-ht-degree: 3%
+source-wordcount: 1048
+ht-degree: 2%
 
 ---
 
@@ -41,7 +41,7 @@ ht-degree: 3%
 
   >[!NOTE]
   >
-  >在服务器端，脚本可以使用[Campaign JSAPI文档](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=zh-Hans)中定义的函数。
+  >在服务器端，脚本可以使用[Campaign JSAPI文档](https://experienceleague.adobe.com/zh-hans/tools/campaign-api)中定义的函数。
 
 ## 插入HTML内容 {#inserting-html-content}
 

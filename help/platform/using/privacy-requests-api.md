@@ -19,10 +19,10 @@ subfeature_v2:
   - id: d6330382-c886-4f7a-a4f7-74e3f36c0d9c
   - id: f5293531-9312-4099-bfa3-9e67df6a8750
   - id: efa38731-2723-4334-8d8b-a778af834835
-source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
+source-git-commit: 073ad5eccc52ad63e92829de4a4c6ac6178635e1
 workflow-type: tm+mt
-source-wordcount: 662
-ht-degree: 91%
+source-wordcount: 659
+ht-degree: 90%
 
 ---
 
@@ -68,7 +68,7 @@ Adobe Campaign 提供了一个 **API**，您可使用它设置一个自动隐私
 
 ## 从外部调用 API {#invoking-api-externally}
 
-下方是一个示例，说明如何从外部调用 API（通过 API 进行身份验证，并具体说明隐私 API 的详细信息）。 有关隐私 API 的更多信息，请查阅 [API 文档](https://experienceleague.adobe.com/developer/campaign-api/api/s-nms-privacyRequest.html?lang=zh-Hans)。 您还可以查阅 [Web 服务调用文档](../../configuration/using/web-service-calls.md)。
+下方是一个示例，说明如何从外部调用 API（通过 API 进行身份验证，并具体说明隐私 API 的详细信息）。 有关隐私 API 的更多信息，请查阅 [API 文档](https://experienceleague.adobe.com/zh-hans/tools/campaign-api)。 您还可以查阅 [Web 服务调用文档](../../configuration/using/web-service-calls.md)。
 
 首先，您需要通过 API 执行身份验证：
 

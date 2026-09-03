@@ -13,10 +13,10 @@ feature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 subfeature_v2: []
-source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
+source-git-commit: 073ad5eccc52ad63e92829de4a4c6ac6178635e1
 workflow-type: tm+mt
-source-wordcount: 625
-ht-degree: 3%
+source-wordcount: 624
+ht-degree: 2%
 
 ---
 
@@ -26,16 +26,16 @@ ht-degree: 3%
 
 * 投放：
 
-   * 正在创建投放操作，请参阅[SubmitDelivery (nms:delivery)](#submitdelivery--nms-delivery-)，
-   * 发送营销活动（开始、暂停、停止、发送校样），
-   * 恢复投放日志。
+  * 正在创建投放操作，请参阅[SubmitDelivery (nms:delivery)](#submitdelivery--nms-delivery-)，
+  * 发送营销活动（开始、暂停、停止、发送校样），
+  * 恢复投放日志。
 
 * 工作流：
 
-   * 启动工作流，
-   * 验证进程等。
+  * 启动工作流，
+  * 验证进程等。
 
-     请参阅JavaScript[&#128279;](../../configuration/using/soap-methods-in-javascript.md)中的SOAP方法。
+    请参阅JavaScript[&#128279;](../../configuration/using/soap-methods-in-javascript.md)中的SOAP方法。
 
 * 内容管理
 * 订阅管理，请参阅[订阅(nms:subscription)](#subscribe--nms-subscription-)和[取消订阅(nms:subscription)](#unsubscribe--nms-subscription-)。
@@ -45,7 +45,7 @@ ht-degree: 3%
 
 >[!IMPORTANT]
 >
->[Campaign JSAPI文档](https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=zh-Hans)包含有关Adobe Campaign中的SOAP调用和使用Javascript的其他信息，以及对该应用程序中使用的所有方法和函数的完整引用。
+>[Campaign JSAPI文档](https://experienceleague.adobe.com/zh-hans/tools/campaign-api)包含有关Adobe Campaign中的SOAP调用和使用Javascript的其他信息，以及对该应用程序中使用的所有方法和函数的完整引用。
 
 ## 订阅(nms:subscription) {#subscribe--nms-subscription-}
 

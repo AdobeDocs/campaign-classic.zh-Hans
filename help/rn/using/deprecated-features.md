@@ -26,10 +26,10 @@ topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: c094a1fa9adf80708154b5532ae9fbeb18993b9f
-workflow-type: ht
-source-wordcount: 1792
-ht-degree: 100%
+source-git-commit: 073ad5eccc52ad63e92829de4a4c6ac6178635e1
+workflow-type: tm+mt
+source-wordcount: 1787
+ht-degree: 99%
 
 ---
 
@@ -65,7 +65,7 @@ Adobe 不断评估产品功能，以确定应用更现代的功能替换的旧�
   </tr>
   <tr>
  <td>Netsize SMPP 连接器</td>
- <td><p>Netsize SMPP 连接器现已弃用。我们建议迁移到<strong>扩展通用 SMPP</strong> 连接器。有关详细信息，请参见<a href="../../delivery/using/unsupported-connector-migration.md">此页面</a>。</p>
+ <td><p>Netsize SMPP 连接器现已弃用。 我们建议迁移到<strong>扩展通用 SMPP</strong> 连接器。 有关详细信息，请参见<a href="../../delivery/using/unsupported-connector-migration.md">此页面</a>。</p>
 <p>目标移除日期：2027 年 1 月</p>
 </td>
 </tr>
@@ -108,7 +108,7 @@ Adobe 不断评估产品功能，以确定应用更现代的功能替换的旧�
     <tr>
   <td>技术可投放性监测报告<br></td>
    <td><p>不再提供技术可投放性监测报告。 Campaign 21.1.3 版本已将其弃用。</p>
-   <!--p>If needed, you can receive this report daily by email until the feature removal date. To request it, open a specific <a href="https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html">Support Case</a> and specify the name of the instance and the email address(es) to send the report to.</p--> 
+   <!--p>If needed, you can receive this report daily by email until the feature removal date. To request it, open a specific <a href="https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html">Support Case</a> and specify the name of the instance and the email address(es) to send the report to.</p--> 
   </td>
  </tr>
   <tr>
@@ -145,7 +145,7 @@ Adobe 不断评估产品功能，以确定应用更现代的功能替换的旧�
    </tr>
    <tr>
    <td>Campaign API 文档 - jsapi.chm 文件</td>
-   <td>从 Campaign 19.1 版本开始，Campaign Classic API 在专用页面中提供。 如果您使用的是旧版 jsapi.chm 文件，您现在应该参考 <a href="https://experienceleague.adobe.com/developer/campaign-api/api/index.html?lang=zh-Hans">新的在线版本</a>。</td>
+   <td>从 Campaign 19.1 版本开始，Campaign Classic API 在专用页面中提供。 如果您使用的是旧版 jsapi.chm 文件，您现在应该参考 <a href="https://experienceleague.adobe.com/zh-hans/tools/campaign-api">新的在线版本</a>。</td>
   </tr> 
   <tr> 
    <td>活动编排 - 预测营销</td>
@@ -162,7 +162,7 @@ Adobe 不断评估产品功能，以确定应用更现代的功能替换的旧�
   <tr> 
    <td>decryptString API</td>
    <td><p>从 Campaign 18.6 版本开始，出于安全原因，<em>decryptString</em> API 在默认情况下不再可用于新安装。</p> 
-   <p>在之后升级到 18.6（及更高版本）的上下文中，此 API 不再激活，并由 <em>decryptPassword</em> 函数替换。 <a href="https://experienceleague.adobe.com/developer/campaign-api/api/f-decryptPassword.html?lang=zh-Hans&hl=decrypt">了解详情</a></p></td>
+   <p>在之后升级到 18.6（及更高版本）的上下文中，此 API 不再激活，并由 <em>decryptPassword</em> 函数替换。 <a href="https://experienceleague.adobe.com/zh-hans/tools/campaign-api">了解详情</a></p></td>
   </tr> 
    <tr> 
    <td>移动渠道 - MMS 和 WAP 推送消息</td>
