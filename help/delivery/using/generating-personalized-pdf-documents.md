@@ -2,7 +2,7 @@
 product: campaign
 title: 生成个性化 PDF 文档
 description: 了解如何生成个性化的PDF文档
-badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v8"
+badge-v8: label="Also applies to v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Personalization
 role: User
 hide: true
@@ -10,26 +10,34 @@ exl-id: e5239d99-256b-412b-be20-f64f822da9c3
 TQID: https://experienceleague.adobe.com/5hETJLlKZ9iWu2k1nW-RMeDlzpSm7wFwfe3QwSEZCa4
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
 feature_v2:
   - id: b631758a-142d-425f-b9aa-f756d85cb979
+    internal-label: Campaign Email Designer
   - id: c858a28b-ea19-49b0-8d48-828717fad89c
+    internal-label: Prepare and test messages
 subfeature_v2:
   - id: e95a583b-fcfa-4524-8666-46a29c828119
+    internal-label: Email messaging
   - id: c8da4fdd-eb94-4751-a43c-f82733fb2d6e
+    internal-label: Email design
   - id: d5bbe3da-ba85-4242-817e-54f7c4b943e0
+    internal-label: A/B testing
   - id: f4da0e76-df77-451e-ad61-21afb7bd8810
+    internal-label: Manage deliverability
 source-git-commit: e615a6fdd6dc78b2c5e80d6aeb92cd9291ccf5e7
 workflow-type: tm+mt
-source-wordcount: 533
-ht-degree: 1%
-
+source-wordcount: '524'
+ht-degree: 4%
 ---
-
 # 生成个性化 PDF 文档{#generating-personalized-pdf-documents}
 
 ## 关于可变PDF文档 {#about-variable-pdf-documents}
@@ -66,7 +74,7 @@ Adobe Campaign允许您从LibreOffice或Microsoft Word文档为电子邮件附�
 
 >[!IMPORTANT]
 >
->7.4.4版（内部版本9401）包括对外部URL允许列表的更新。 确保在附件中用于外部图像的域已添加到实例的已批准允许列表中，以便资源可以继续加载而不会出现中断。 作为Campaign管理员，使用控制面板添加和管理允许列表的URL。 有关步骤，请参阅[添加URL权限](https://experienceleague.adobe.com/zh-hans/docs/control-panel/using/instances-settings/url-permissions){target="_blank"}。
+>7.4.4版（内部版本9401）包括对外部URL允许列表的更新。 确保在附件中用于外部图像的域已添加到实例的已批准允许列表中，以便资源可以继续加载而不会出现中断。 作为Campaign管理员，使用控制面板添加和管理允许列表的URL。 有关步骤，请参阅[添加 URL 权限](https://experienceleague.adobe.com/zh-hans/docs/control-panel/using/instances-settings/url-permissions){target="_blank"}。
 
 例如，如果您希望使用在收件人字段中输入URL的图像对文档进行个性化，则插入外部图像会很有用。
 

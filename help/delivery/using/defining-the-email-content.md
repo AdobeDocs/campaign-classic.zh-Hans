@@ -2,7 +2,7 @@
 product: campaign
 title: 在Adobe Campaign Classic中定义电子邮件内容
 description: 了解如何在使用Adobe Campaign时定义电子邮件内容
-badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v8"
+badge-v8: label="Also applies to v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Email Design
 role: User
 hide: true
@@ -10,27 +10,36 @@ exl-id: 46212929-fd2d-44a2-897e-35f98e88af36
 TQID: https://experienceleague.adobe.com/NWs-NqNfnkyoj0XJfy5-BvKwJofom-V0iSQJI3-F-38
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: a075b2c1-7748-4328-b7f6-343aa314616a
+    internal-label: Campaigns
   - id: b631758a-142d-425f-b9aa-f756d85cb979
+    internal-label: Campaign Email Designer
   - id: c858a28b-ea19-49b0-8d48-828717fad89c
+    internal-label: Prepare and test messages
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+    internal-label: Privacy
 subfeature_v2:
   - id: e95a583b-fcfa-4524-8666-46a29c828119
+    internal-label: Email messaging
   - id: c8da4fdd-eb94-4751-a43c-f82733fb2d6e
+    internal-label: Email design
   - id: d5bbe3da-ba85-4242-817e-54f7c4b943e0
+    internal-label: A/B testing
   - id: f4da0e76-df77-451e-ad61-21afb7bd8810
+    internal-label: Manage deliverability
 source-git-commit: e615a6fdd6dc78b2c5e80d6aeb92cd9291ccf5e7
 workflow-type: tm+mt
-source-wordcount: 2051
-ht-degree: 1%
-
+source-wordcount: '2042'
+ht-degree: 2%
 ---
-
 # 定义电子邮件的内容 {#defining-the-email-content}
 
 ## 发件人 {#sender}
@@ -82,7 +91,7 @@ ht-degree: 1%
 
 >[!IMPORTANT]
 >
->7.4.4版（内部版本9401）包括对外部URL允许列表的更新。 确保在消息内容中使用的域已添加到实例的已批准允许列表，以便资源可以继续加载而不会中断。 作为Campaign管理员，使用控制面板添加和管理允许列表的URL。 有关步骤，请参阅[添加URL权限](https://experienceleague.adobe.com/zh-hans/docs/control-panel/using/instances-settings/url-permissions){target="_blank"}。
+>7.4.4版（内部版本9401）包括对外部URL允许列表的更新。 确保在消息内容中使用的域已添加到实例的已批准允许列表，以便资源可以继续加载而不会中断。 作为Campaign管理员，使用控制面板添加和管理允许列表的URL。 有关步骤，请参阅[添加 URL 权限](https://experienceleague.adobe.com/zh-hans/docs/control-panel/using/instances-settings/url-permissions){target="_blank"}。
 
 消息的内容在投放配置窗口的下半部分中定义。
 
