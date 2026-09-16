@@ -9,25 +9,31 @@ exl-id: a9cd08b0-55c2-4405-9fb8-f0c623cd4ccb
 TQID: https://experienceleague.adobe.com/r3qtW9ZsCD85N9qAnN1EOje-VMhDoyPuqea2xZnBWLs
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: b12f6872-9271-4369-85e5-86969a0b99a2
+    internal-label: APIs
   - id: d5ef99fa-df0c-4153-bf94-105ad0724167
+    internal-label: Integrations
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
 subfeature_v2:
   - id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
+    internal-label: Adobe Analytics integration
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 2269
+source-wordcount: '2269'
 ht-degree: 0%
-
 ---
-
 # 迁移到公共云常见问题解答{#dc-faq}
 
 
@@ -36,7 +42,7 @@ Adobe对旧版数据中心不再授权：Campaign Classic实例必须转移到Pu
 
 以下是一组有关此项目的常见问题、对您的Campaign环境的影响以及其他有用资源。
 
-如有任何其他问题，您可以联系[Adobe客户关怀](https://experienceleague.adobe.com/zh-hans?support-solution=Campaign#support)。
+如有任何其他问题，您可以联系[Adobe客户关怀](https://experienceleague.adobe.com/?support-solution=Campaign#support)。
 
 ## 对基础架构的影响
 
@@ -66,7 +72,7 @@ Adobe对旧版数据中心不再授权：Campaign Classic实例必须转移到Pu
 
 * **解决迁移后问题的计划是什么？**
 
-  在迁移生产系统之前，将执行大量测试。 但是，如果出现任何问题，[Adobe客户关怀](https://experienceleague.adobe.com/zh-hans?support-solution=Campaign#support)将继续作为主要联系人。 Adobe已经成立了一个专家团队，在需要时提供高级支持。
+  在迁移生产系统之前，将执行大量测试。 但是，如果出现任何问题，[Adobe客户关怀](https://experienceleague.adobe.com/?support-solution=Campaign#support)将继续作为主要联系人。 Adobe已经成立了一个专家团队，在需要时提供高级支持。
 
 ## 可投放性影响
 
@@ -112,7 +118,7 @@ Adobe对旧版数据中心不再授权：Campaign Classic实例必须转移到Pu
 
   首先，Adobe可交付性将评估平台的可交付性状态，并推荐切换到新IP的计划
 
-  迁移后不需要热身。 可能会出现异常，在这种情况下，[Adobe客户关怀](https://experienceleague.adobe.com/zh-hans?support-solution=Campaign#support)将与客户联系。
+  迁移后不需要热身。 可能会出现异常，在这种情况下，[Adobe客户关怀](https://experienceleague.adobe.com/?support-solution=Campaign#support)将与客户联系。
 
   不过，该计划旨在让这一业务运营变得透明，不同于在上线期间的最初升级。
 
@@ -125,8 +131,8 @@ Adobe对旧版数据中心不再授权：Campaign Classic实例必须转移到Pu
 * **我们用来标记通信品牌的委派子域会有什么影响？**
 
   用于营销通信的子域保持不变。 但是，根据实施，需要在客户端执行操作：
-   * 如果将子域委派给Adobe（默认），则Adobe会处理所有更改并确保无缝过渡。
-   * 如果设置了CNAME（例外），则会请求客户端与Adobe协调实施更改。
+  * 如果将子域委派给Adobe（默认），则Adobe会处理所有更改并确保无缝过渡。
+  * 如果设置了CNAME（例外），则会请求客户端与Adobe协调实施更改。
 
 ## 配置和连接影响
 
@@ -188,7 +194,7 @@ Adobe对旧版数据中心不再授权：Campaign Classic实例必须转移到Pu
 
   它可能会根据新服务器的位置而更改。 但是，客户将能够保留其当前时区。
 
-  在[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/advanced-management/managing-time-zones.html?lang=zh-Hans){target="_blank"}中了解有关时区管理的更多信息。
+  在[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/advanced-management/managing-time-zones.html){target="_blank"}中了解有关时区管理的更多信息。
 
 
 ## 安全性和权限
@@ -250,13 +256,13 @@ Adobe对旧版数据中心不再授权：Campaign Classic实例必须转移到Pu
 
   数据中心之间的数据传输是停机的关键路径。 数据以两种方式存储：
 
-   * 最重要的是，数据库
-   * 应用程序服务器上的文件（数据导入和导出）
+  * 最重要的是，数据库
+  * 应用程序服务器上的文件（数据导入和导出）
 
   减小数据库的大小对于加快数据传输至关重要。 建议：
 
-   * 缩短历史数据（投放日志、跟踪日志等）的保留期
-   * 删除其他表（投放、收件人、自定义表）上的无用记录
+  * 缩短历史数据（投放日志、跟踪日志等）的保留期
+  * 删除其他表（投放、收件人、自定义表）上的无用记录
 
 * **迁移实例的估计停机时间是多少？**
 
@@ -274,11 +280,11 @@ Adobe对旧版数据中心不再授权：Campaign Classic实例必须转移到Pu
 
   环境将按以下顺序迁移：
 
-   1. 开发环境
-   1. 暂存环境
-   1. 生产环境
-   1. RT环境
-   1. 中间源环境
+  1. 开发环境
+  1. 暂存环境
+  1. 生产环境
+  1. RT环境
+  1. 中间源环境
 
 * **什么是回滚计划？**
 

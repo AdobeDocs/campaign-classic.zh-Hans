@@ -8,17 +8,18 @@ exl-id: c166409b-e040-491e-840a-a41310935d75
 TQID: https://experienceleague.adobe.com/1T-VO8AH7Rhk9HAhMufgPSSh4lNIC-D65ldnJIfDFvA
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: a075b2c1-7748-4328-b7f6-343aa314616a
+    internal-label: Campaigns
 subfeature_v2:
   - id: a6187aac-0a00-4394-8937-e8d4c1a40aa4
+    internal-label: Distributed Marketing
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 146
+source-wordcount: '146'
 ht-degree: 3%
-
 ---
-
 # 分布式营销入门{#about-distributed-marketing}
 
 
@@ -33,7 +34,7 @@ Adobe Campaign提供了一个&#x200B;**分布式营销**&#x200B;应用程序，�
 
 >[!NOTE]
 >
->要了解有关Adobe Campaign的分布式营销及其使用方式的更多信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/zh-hans/docs/campaign/automation/distributed-marketing/about-distributed-marketing){target=_blank}。
+>要了解有关Adobe Campaign的分布式营销及其使用方式的更多信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/en/docs/campaign/automation/distributed-marketing/about-distributed-marketing){target=_blank}。
 
 <!--
 ## Terminology {#terminology}

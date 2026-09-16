@@ -9,29 +9,40 @@ exl-id: 6987cb5e-8821-4619-b0e4-f0fad3355bfb
 TQID: https://experienceleague.adobe.com/HJK4w85OgzUx9BPSvExm8c91CQYIecDfw7Uxv3rzrJU
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
 feature_v2:
   - id: b631758a-142d-425f-b9aa-f756d85cb979
+    internal-label: Campaign Email Designer
   - id: c858a28b-ea19-49b0-8d48-828717fad89c
+    internal-label: Prepare and test messages
 subfeature_v2:
   - id: e95a583b-fcfa-4524-8666-46a29c828119
+    internal-label: Email messaging
   - id: c8da4fdd-eb94-4751-a43c-f82733fb2d6e
+    internal-label: Email design
   - id: d5bbe3da-ba85-4242-817e-54f7c4b943e0
+    internal-label: A/B testing
   - id: f4da0e76-df77-451e-ad61-21afb7bd8810
+    internal-label: Manage deliverability
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 1008
+source-wordcount: '1008'
 ht-degree: 11%
-
 ---
-
 # 在中间源基础设施上配置短信渠道 {#setting-up-sms-channel}
 
 要发送到带有中间服务器的手机，您需要：
@@ -116,7 +127,7 @@ ht-degree: 11%
 
    >[!WARNING]
    >
-   >分配&#x200B;**[!UICONTROL Internal name]**&#x200B;时，请确保遵循指定的命名约定：
+   >分配&#x200B;**[!UICONTROL Internal name]**时，请确保遵循指定的命名约定：
    > </br>`SMS Operator Name_Internal Name of the Marketing SMS external account`
 
    ![](assets/mid_external_account_6.png)
@@ -165,7 +176,7 @@ ht-degree: 11%
 
    但是，鉴于某些提供商需要使用“+”前缀，建议您与提供商进行核实，他们将会提供是否有必要启用此选项的建议。
 
-   **[!UICONTROL Enable TLS over SMPP]**&#x200B;复选框允许您加密SMPP通信。 有关详细信息，请参见此 [&#x200B; 页面](sms-protocol.md)。
+   **[!UICONTROL Enable TLS over SMPP]**&#x200B;复选框允许您加密SMPP通信。 有关详细信息，请参见此 [ 页面](sms-protocol.md)。
 
 1. 如果您正在配置&#x200B;**[!UICONTROL Extended generic SMPP]**&#x200B;连接器，则可以设置自动回复。
 
@@ -173,7 +184,7 @@ ht-degree: 11%
 
 ## 更改投放模板 {#changing-the-delivery-template}
 
-Adobe Campaign提供了一个位于&#x200B;**[!UICONTROL Resources > Templates > Delivery templates]**&#x200B;节点中的移动投放模板。 有关更多信息，请参阅 [Campaign v8 文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html?lang=zh-Hans){target="_blank"}。
+Adobe Campaign提供了一个位于&#x200B;**[!UICONTROL Resources > Templates > Delivery templates]**&#x200B;节点中的移动投放模板。 有关更多信息，请参阅 [Campaign v8 文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html){target="_blank"}。
 
 要通过短信渠道发送消息，您必须创建包含渠道连接器引用的模板。
 

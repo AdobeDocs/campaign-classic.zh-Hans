@@ -7,25 +7,33 @@ exl-id: e044b35a-b49f-408a-900d-2afe8ff10212
 TQID: https://experienceleague.adobe.com/i3aMiL43o3Sj7aR1u2KJmlMVe3UiS6j-tLc5augCryk
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: a075b2c1-7748-4328-b7f6-343aa314616a
+    internal-label: Campaigns
   - id: b82389f8-9b5e-4083-8e3b-3cef299fb8b9
+    internal-label: Schemas
 subfeature_v2:
   - id: cfc95e9b-b035-4403-a6a9-b27a8a053a37
+    internal-label: PI
   - id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
+    internal-label: Adobe Analytics integration
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+    internal-label: Privacy
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 2042
+source-wordcount: '2101'
 ht-degree: 1%
-
 ---
-
 # Apple邮件应用程序中的邮件隐私保护
 
 ## 更改了哪些内容？
@@ -59,7 +67,7 @@ Apple的新功能是未来行业在电子邮件隐私保护方面的发展方向
 ### 评估公开利率的当前趋势
 
 确定在iOS设备上使用Apple邮件应用程序的受众比例。
-使用此评估，您可以确定潜在的异常差距及其原因。您可以确定差距是由于Campaign性能问题还是Apple的隐私保护功能所致。阅读[提示和技巧](#measure-ios-footprint)。
+使用此评估，您可以确定潜在的异常差距及其原因。 您可以确定差距是由于Campaign性能问题还是Apple的隐私保护功能所致。 阅读[提示和技巧](#measure-ios-footprint)。
 
 ### 重新评估您的营销活动策略和绩效指标
 
@@ -107,7 +115,7 @@ Apple的新功能是未来行业在电子邮件隐私保护方面的发展方向
 
   ![](assets/identify-email-open-tracking-2.png)
 
-* 您可以使用预定义过滤器。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/create-a-filter.html?lang=zh-Hans){target="_blank"}。
+* 您可以使用预定义过滤器。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/create-a-filter.html){target="_blank"}。
 
   ![](assets/identify-email-open-tracking-3.png)
 
@@ -393,7 +401,7 @@ Apple的新功能是未来行业在电子邮件隐私保护方面的发展方向
 1. 创建以查询开头的工作流。
 
    初始查询用于检索过去三个月的跟踪日志。
-您可以使用增量查询仅提取尚未导出的记录。
+   您可以使用增量查询仅提取尚未导出的记录。
 
    从&#x200B;**[!UICONTROL Additional data]**&#x200B;节点添加所有必需的信息。
 
@@ -438,14 +446,14 @@ Apple的新功能是未来行业在电子邮件隐私保护方面的发展方向
 
 * 第一个示例工作流包含以下活动：
 
-   1. 初始&#x200B;**[!UICONTROL Query]**&#x200B;活动用于选择过去三个月打开的所有电子邮件。
-   1. **[!UICONTROL Split]**&#x200B;活动用于按电子邮件应用程序、浏览器、操作系统和设备拆分选定内容。
+  1. 初始&#x200B;**[!UICONTROL Query]**&#x200B;活动用于选择过去三个月打开的所有电子邮件。
+  1. **[!UICONTROL Split]**&#x200B;活动用于按电子邮件应用程序、浏览器、操作系统和设备拆分选定内容。
 
-   1. 每个&#x200B;**[!UICONTROL Split]**&#x200B;活动后面都有一个&#x200B;**[!UICONTROL Deduplication]**&#x200B;活动。 **[!UICONTROL Deduplication]**&#x200B;活动用于删除重复的电子邮件地址。
+  1. 每个&#x200B;**[!UICONTROL Split]**&#x200B;活动后面都有一个&#x200B;**[!UICONTROL Deduplication]**&#x200B;活动。 **[!UICONTROL Deduplication]**&#x200B;活动用于删除重复的电子邮件地址。
 
-      **[!UICONTROL Deduplication]**&#x200B;活动位于&#x200B;**[!UICONTROL Split]**&#x200B;活动之后，以避免丢失有关使用各种设备的收件人的信息。
+     **[!UICONTROL Deduplication]**&#x200B;活动位于&#x200B;**[!UICONTROL Split]**&#x200B;活动之后，以避免丢失有关使用各种设备的收件人的信息。
 
-   1. 每个&#x200B;**[!UICONTROL Deduplication]**&#x200B;活动后面都有一个&#x200B;**[!UICONTROL End]**&#x200B;活动。
+  1. 每个&#x200B;**[!UICONTROL Deduplication]**&#x200B;活动后面都有一个&#x200B;**[!UICONTROL End]**&#x200B;活动。
 
   如果仅将收件人存储在现成可用的收件人表中以进行定位，则此类工作流非常有用。
 
@@ -453,14 +461,14 @@ Apple的新功能是未来行业在电子邮件隐私保护方面的发展方向
 
 * 第二个示例工作流包含以下活动：
 
-   1. 初始&#x200B;**[!UICONTROL Query]**&#x200B;活动用于选择过去三个月打开的所有电子邮件。
-   1. **[!UICONTROL Deduplication]**&#x200B;活动用于删除重复的电子邮件地址。
-   1. **[!UICONTROL Fork]**&#x200B;活动已使用：
+  1. 初始&#x200B;**[!UICONTROL Query]**&#x200B;活动用于选择过去三个月打开的所有电子邮件。
+  1. **[!UICONTROL Deduplication]**&#x200B;活动用于删除重复的电子邮件地址。
+  1. **[!UICONTROL Fork]**&#x200B;活动已使用：
 
-      * 在一个过渡中，**[!UICONTROL Change dimension]**&#x200B;活动用于查找跟踪日志引用的收件人。
-      * 在另一个过渡中，**[!UICONTROL Split]**&#x200B;活动用于按电子邮件应用程序、浏览器、操作系统和设备拆分选择。
+     * 在一个过渡中，**[!UICONTROL Change dimension]**&#x200B;活动用于查找跟踪日志引用的收件人。
+     * 在另一个过渡中，**[!UICONTROL Split]**&#x200B;活动用于按电子邮件应用程序、浏览器、操作系统和设备拆分选择。
 
-   1. **[!UICONTROL Split]**&#x200B;活动之后的每个过渡都有&#x200B;**[!UICONTROL End]**&#x200B;活动。
+  1. **[!UICONTROL Split]**&#x200B;活动之后的每个过渡都有&#x200B;**[!UICONTROL End]**&#x200B;活动。
 
   如果您将收件人存储在现成收件人表以外的表中，则此类工作流会很有用。
 

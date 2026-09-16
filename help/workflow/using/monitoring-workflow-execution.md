@@ -8,25 +8,33 @@ exl-id: d589180b-8e1d-4149-9b16-3f541018a41f
 TQID: https://experienceleague.adobe.com/PdqoAAfpNfS1GIdnbtMkkm-2sd0GcidR99za2Nxgbfo
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: a658c786-869b-4194-a780-2594d663adda
+    internal-label: Data management
   - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
 subfeature_v2:
   - id: fcb46c0f-76e1-48bc-9dd0-fcf9d97526cf
+    internal-label: Workflows
   - id: ee25c34b-ea50-427b-9369-ba0a160f7d70
+    internal-label: Workflow HeatMap
   - id: b5f0aaf4-1e48-400d-95ac-6eb3078cf22f
+    internal-label: Execution activities
   - id: d1110311-2ca4-442b-be37-088a6db845ee
+    internal-label: Data Management activities
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+    internal-label: Data management
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 2040
+source-wordcount: '2040'
 ht-degree: 2%
-
 ---
-
 # 监测工作流执行 {#monitoring-workflow-execution}
 
 
@@ -93,21 +101,21 @@ ht-degree: 2%
 
   您还可以查看每个活动的执行日志和详细信息。 可通过两种方式来做到这一点：
 
-   1. 选择目标活动并单击&#x200B;**[!UICONTROL Display the tasks and the log]**&#x200B;图标。
+  1. 选择目标活动并单击&#x200B;**[!UICONTROL Display the tasks and the log]**&#x200B;图标。
 
-      ![](assets/s_user_segmentation_show_logs.png)
+     ![](assets/s_user_segmentation_show_logs.png)
 
-      图表的下部分显示两个选项卡：“日志”和“任务”。
+     图表的下部分显示两个选项卡：“日志”和“任务”。
 
-      在图表中选定的活动在日志和任务列表中充当筛选器。
+     在图表中选定的活动在日志和任务列表中充当筛选器。
 
-      ![](assets/s_user_segmentation_logs.png)
+     ![](assets/s_user_segmentation_logs.png)
 
-   1. 右键单击目标活动并选择&#x200B;**[!UICONTROL Display logs]**。
+  1. 右键单击目标活动并选择&#x200B;**[!UICONTROL Display logs]**。
 
-      ![](assets/s_user_segmentation_logs_menu.png)
+     ![](assets/s_user_segmentation_logs_menu.png)
 
-      日志会显示在单独的窗口中。
+     日志会显示在单独的窗口中。
 
 ## 清除日志 {#purging-the-logs}
 
@@ -295,4 +303,4 @@ Campaign Classic界面允许您使用预定义的&#x200B;**视图**&#x200B;监�
 
 ![](assets/workflow-monitoring-filter.png)
 
-有关筛选器的更多信息，请参阅[Campaign v8 （控制台）文档](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/audience/create-filters){target=_blank}。
+有关筛选器的更多信息，请参阅[Campaign v8 （控制台）文档](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-filters){target=_blank}。

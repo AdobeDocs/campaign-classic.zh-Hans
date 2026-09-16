@@ -2,27 +2,31 @@
 product: campaign
 title: 跟踪 Web 应用程序访问
 description: 跟踪 Web 应用程序访问
-badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v8"
+badge-v8: label="Also applies to v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Web Apps, Reporting, Monitoring
 exl-id: 07bd36ce-c701-4998-974f-81fd4fac22a0
 TQID: https://experienceleague.adobe.com/TtUrQKKVdMc4ZttsgFG9ly8hTCdqCnb3bMm2Tn3E6ww
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
 feature_v2:
   - id: a4671286-a59f-47e3-b97b-90627a1977d5
+    internal-label: Communication channels
 subfeature_v2:
   - id: f391046b-0cf3-4e76-bd3b-97fe06654506
+    internal-label: Web Apps
   - id: ed29abcd-b6a8-4d4b-ab8b-b7e746973281
+    internal-label: Web Forms
   - id: d7be2b01-dc9c-40f7-aace-a151707504ed
+    internal-label: Landing pages
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 411
+source-wordcount: '402'
 ht-degree: 4%
-
 ---
-
 # 跟踪 Web 应用程序访问{#tracking-a-web-application}
 
 
@@ -44,9 +48,9 @@ Adobe Campaign允许您通过插入跟踪标记来跟踪和测量Web应用程序
 
   主要指标如下：
 
-   * **转化率**：显示导航路径所有步骤的人数。
-   * **跳出率**：仅显示第一步的人数
-   * **转换funnel**：每一步的丢失率。
+  * **转化率**：显示导航路径所有步骤的人数。
+  * **跳出率**：仅显示第一步的人数
+  * **转换funnel**：每一步的丢失率。
 
   此外，**扇区**&#x200B;类型图表根据源显示群体。
 

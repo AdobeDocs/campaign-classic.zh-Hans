@@ -10,25 +10,31 @@ exl-id: 28490323-41d0-4d61-b309-6892fb826d21
 TQID: https://experienceleague.adobe.com/8QWEJN9tpxBdDZlYqEmY2JIuxWPShtfRxCUf6thXXWA
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: a075b2c1-7748-4328-b7f6-343aa314616a
+    internal-label: Campaigns
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
 subfeature_v2:
   - id: e5e477db-ebc7-4368-ab0f-4d8fc2aed405
+    internal-label: Release notes
   - id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
+    internal-label: Adobe Analytics integration
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
-workflow-type: ht
-source-wordcount: 2151
+workflow-type: tm+mt
+source-wordcount: '2151'
 ht-degree: 100%
-
 ---
-
 # 2022 版{#release-2022}
 
 ## 7.3.1 版 - 内部版本 9352 {#release-7-3-1}
@@ -149,14 +155,14 @@ Adobe Campaign 现在与 Windows Server 2019 兼容。 请参阅 [Campaign 兼�
 
   已对 Microsoft Dynamics Connector Web API 应用了以下重要修复：
 
-   * 修复了在由工作流触发的导入过程中，导致字符串类型字段的 null 值保存为 Null 而不是空值的问题。
-   * 修复了使用 Web API 调用时导致数据导入或导出出现以下错误的问题：“Invalid URI: The URI scheme is too long”。
-   * 修复了从 Microsoft Dynamics 365 导入包含查找字段的数据时出现的各种问题。
+  * 修复了在由工作流触发的导入过程中，导致字符串类型字段的 null 值保存为 Null 而不是空值的问题。
+  * 修复了使用 Web API 调用时导致数据导入或导出出现以下错误的问题：“Invalid URI: The URI scheme is too long”。
+  * 修复了从 Microsoft Dynamics 365 导入包含查找字段的数据时出现的各种问题。
 
 * Google BigQuery FDA 连接器
 
-   * Google BigQuery FDA 连接器现在可用于托管部署。 [了解更多信息](../../installation/using/configure-fda-google-big-query.md)
-   * 增加了对 Google BigQuery FDA 连接器启用代理服务器连接的支持。 所需的代理选项可通过外部帐户配置的选项字段设置。 [了解更多信息](../../installation/using/configure-fda-google-big-query.md#google-external)
+  * Google BigQuery FDA 连接器现在可用于托管部署。 [了解更多信息](../../installation/using/configure-fda-google-big-query.md)
+  * 增加了对 Google BigQuery FDA 连接器启用代理服务器连接的支持。 所需的代理选项可通过外部帐户配置的选项字段设置。 [了解更多信息](../../installation/using/configure-fda-google-big-query.md#google-external)
 
 **其他变更**
 

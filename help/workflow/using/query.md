@@ -8,25 +8,27 @@ exl-id: 20d03627-cd56-46da-bc02-73b48a02a350
 TQID: https://experienceleague.adobe.com/Htrpo3hCrbp9H7cQD4KWTnMbA-rjgM0K1PFHh-Fak1M
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2: []
 subfeature_v2:
   - id: ee25c34b-ea50-427b-9369-ba0a160f7d70
+    internal-label: Workflow HeatMap
   - id: b5f0aaf4-1e48-400d-95ac-6eb3078cf22f
+    internal-label: Execution activities
   - id: d1110311-2ca4-442b-be37-088a6db845ee
+    internal-label: Data Management activities
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 1620
+source-wordcount: '1650'
 ht-degree: 0%
-
 ---
-
 # 查询{#query}
 
 
 
 ## 创建查询 {#creating-a-query}
 
-通过查询，您可以根据条件选择目标。您可以将区段代码关联到查询结果并在其中插入附加数据。
+通过查询，您可以根据条件选择目标。 您可以将区段代码关联到查询结果并在其中插入附加数据。
 有关查询示例的详细信息，请参阅此[此部分](querying-recipient-table.md)。
 
 >[!NOTE]
@@ -195,9 +197,9 @@ ht-degree: 0%
 
   有关更多信息，根据您的Campaign版本，请参阅以下章节：
 
-  ![](assets/do-not-localize/v7.jpeg) [Campaign v7文档](../../configuration/using/database-mapping.md)
+  ![](assets/do-not-localize/v7.jpeg)[Campaign v7文档](../../configuration/using/database-mapping.md)
 
-  ![](assets/do-not-localize/v8.png) [Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/shemas-forms/database-mapping.html)
+  ![](assets/do-not-localize/v8.png)[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/shemas-forms/database-mapping.html)
 
 ### 功能 {#functions}
 
@@ -231,11 +233,11 @@ SQL中过滤维度的等效项是内部联接：
 * 构建开发平台，其卷、参数和架构与生产平台相似。
 * 对开发和生产环境使用相同的值。 请尽量使用相同的方式：
 
-   * 操作系统，
-   * 版本，
-   * 数据，
-   * 应用程序，
-   * 卷。
+  * 操作系统，
+  * 版本，
+  * 数据，
+  * 应用程序，
+  * 卷。
 
   >[!NOTE]
   >

@@ -3,26 +3,30 @@ product: campaign
 title: 什么是描述性分析
 description: 使用描述性分析报告分析人群
 feature: Reporting, Monitoring
-badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v8"
+badge-v8: label="Also applies to v8" type="Positive" tooltip="Also applies to Campaign v8"
 exl-id: 19920058-e8e8-4e17-9cc3-24ddf9f96d04
 TQID: https://experienceleague.adobe.com/I8d1p0gdRknTXRbmHA7mAo1YsalIM5yw6SFD5JFxak8
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
 feature_v2:
   - id: c309ee4e-82e4-4f7e-b608-ef345678c34e
+    internal-label: Dynamic Reporting
 subfeature_v2:
   - id: b3a4149f-2b3a-44d1-894e-e3ac4c77fb47
+    internal-label: Reporting interface
   - id: cfda811a-e413-43a4-adf0-7370888f5cfc
+    internal-label: Customize reports
   - id: afe938ea-bc18-44a4-a3fb-03e1031466cb
+    internal-label: Cubes and multidimensional analysis
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 209
-ht-degree: 3%
-
+source-wordcount: '200'
+ht-degree: 4%
 ---
-
 # 什么是描述性分析 {#about-descriptive-analysis}
 
 为了生成关于数据库中数据的统计数据，请使用专用助理创建描述性分析报告，并根据您的需要调整其内容和演示。

@@ -3,7 +3,7 @@ product: campaign
 title: 解压缩或解密文件
 description: 了解在处理之前如何在Campaign中解压缩或解密文件
 feature: Workflows, Encryption
-badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v8"
+badge-v8: label="Also applies to v8" type="Positive" tooltip="Also applies to Campaign v8"
 audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
@@ -11,23 +11,27 @@ exl-id: 1a79da3b-2abc-4bfc-a0ee-8471c478638d
 TQID: https://experienceleague.adobe.com/bKs1NqCHtMzrqdNZFCYQuj659V6GOHfD-LKClp3aacE
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: afa4204e-6d08-4e29-bc35-26aafb656d48
+    internal-label: Profiles and audiences
 subfeature_v2:
   - id: f529d0bd-1401-4c88-9833-43228cc1d40f
+    internal-label: Profiles
   - id: d6330382-c886-4f7a-a4f7-74e3f36c0d9c
+    internal-label: Audiences
   - id: f5293531-9312-4099-bfa3-9e67df6a8750
+    internal-label: Query Editor
   - id: efa38731-2723-4334-8d8b-a778af834835
+    internal-label: Access management
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 844
+source-wordcount: '835'
 ht-degree: 14%
-
 ---
-
 # 解压缩或解密文件 {#unzipping-or-decrypting-a-file-before-processing}
 
-Adobe Campaign允许您导入压缩或加密文件。 在[数据加载（文件）](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/data-loading-file.html?lang=zh-Hans){target="_blank"})活动中读取这些文件之前，您可以定义一个预处理来解压缩或解密文件。
+Adobe Campaign允许您导入压缩或加密文件。 在[数据加载（文件）](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/data-loading-file.html){target="_blank"})活动中读取这些文件之前，您可以定义一个预处理来解压缩或解密文件。
 
 >[!IMPORTANT]
 >
@@ -35,7 +39,7 @@ Adobe Campaign允许您导入压缩或加密文件。 在[数据加载（文件�
 
 要做到这一点，请执行以下操作：
 
-1. 使用[控制面板](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html?lang=zh-Hans#decrypting-data)生成公钥/私钥对，以允许文件解密。
+1. 使用[控制面板](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html#decrypting-data)生成公钥/私钥对，以允许文件解密。
 
    >[!NOTE]
    >
@@ -60,8 +64,8 @@ Adobe Campaign允许您导入压缩或加密文件。 在[数据加载（文件�
 
 **相关主题：**
 
-* [数据加载（文件）活动](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/data-loading-file.html?lang=zh-Hans){target="_blank"}。
-* [压缩或加密文件](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/extraction-file.html?lang=zh-Hans){target="_blank"}。
+* [数据加载（文件）活动](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/data-loading-file.html){target="_blank"}。
+* [压缩或加密文件](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/extraction-file.html){target="_blank"}。
 
 ## 用例：导入使用控制面板生成的密钥加密的数据 {#use-case-gpg-decrypt}
 
@@ -71,7 +75,7 @@ Adobe Campaign允许您导入压缩或加密文件。 在[数据加载（文件�
 
 执行此用例的步骤如下：
 
-1. 使用控制面板生成密钥对（公共/私有）。 [控制面板文档](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html?lang=zh-Hans#decrypting-data)中提供了详细步骤。
+1. 使用控制面板生成密钥对（公共/私有）。 [控制面板文档](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html#decrypting-data)中提供了详细步骤。
 
    * 公共密钥将与外部系统共享，外部系统将使用它来加密要发送到Campaign的数据。
    * Campaign Classic将使用该私钥对传入的加密数据进行解密。
@@ -91,10 +95,10 @@ Adobe Campaign允许您导入压缩或加密文件。 在[数据加载（文件�
 
    ![](assets/gpg_key_transfer.png)
 
-   有关如何配置活动的全局概念，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html?lang=zh-Hans){target="_blank"}。
+   有关如何配置活动的全局概念，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html){target="_blank"}。
 
 
-1. 打开&#x200B;**[!UICONTROL Data loading (file)]**&#x200B;活动，然后根据需要进行配置。 有关如何配置活动的全局概念，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/data-loading-file.html?lang=zh-Hans){target="_blank"}。
+1. 打开&#x200B;**[!UICONTROL Data loading (file)]**&#x200B;活动，然后根据需要进行配置。 有关如何配置活动的全局概念，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/data-loading-file.html){target="_blank"}。
 
    为活动添加预处理阶段，以便解密传入数据。 为此，请选择&#x200B;**[!UICONTROL Pre-process the file]**&#x200B;选项，然后从&#x200B;**[!UICONTROL Command]**&#x200B;下拉列表中选择&#x200B;**[!UICONTROL Decrypt]**：
 
@@ -116,6 +120,6 @@ Adobe Campaign允许您导入压缩或加密文件。 在[数据加载（文件�
 
 本视频说明如何使用GPG密钥解密数据。
 
->[!VIDEO](https://video.tv.adobe.com/v/41362?captions=chi_hans&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/36482?quality=12)
 
 [此处](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hans)提供了其他 Campaign Classic 操作方法视频。

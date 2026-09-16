@@ -10,17 +10,17 @@ exl-id: bdb5e422-ecfe-42eb-bd15-39fe5ec0ff1d
 TQID: https://experienceleague.adobe.com/1Je4UdKtftgQaeTX77rBrgezn2pIBRlHAG4DPavfE14
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
 feature_v2: []
 subfeature_v2: []
 source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
 workflow-type: tm+mt
-source-wordcount: 534
+source-wordcount: '534'
 ht-degree: 2%
-
 ---
-
 # 配置对Snowflake的访问权限 {#configure-access-to-snowflake}
 
 使用Campaign **联合数据访问** (FDA)选项处理存储在外部数据库中的信息。 按照以下步骤配置对[!DNL Snowflake]的访问权限。
@@ -102,9 +102,9 @@ ht-degree: 2%
 
    * 对于帐户/密码验证，您必须指定：
 
-      * **[!UICONTROL Account]**：用户的名称
+     * **[!UICONTROL Account]**：用户的名称
 
-      * **[!UICONTROL Password]**：用户帐户密码。
+     * **[!UICONTROL Password]**：用户帐户密码。
 
      ![](assets/snowflake.png)
 

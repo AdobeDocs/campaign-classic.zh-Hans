@@ -10,24 +10,31 @@ exl-id: 4d9c5b24-83a2-4495-a56c-5bc376d69703
 TQID: https://experienceleague.adobe.com/qpZM0jaN1ht6QfReQBy1c7jONGdc2PQ0ORepDaVficQ
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
   - id: afa4204e-6d08-4e29-bc35-26aafb656d48
+    internal-label: Profiles and audiences
 subfeature_v2:
   - id: f529d0bd-1401-4c88-9833-43228cc1d40f
+    internal-label: Profiles
   - id: d6330382-c886-4f7a-a4f7-74e3f36c0d9c
+    internal-label: Audiences
   - id: f5293531-9312-4099-bfa3-9e67df6a8750
+    internal-label: Query Editor
   - id: efa38731-2723-4334-8d8b-a778af834835
+    internal-label: Access management
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+    internal-label: Privacy
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 451
+source-wordcount: '451'
 ht-degree: 29%
-
 ---
-
 # 启动 Adobe Campaign {#launching-adobe-campaign}
 
 Campaign客户端控制台是一个富客户端，可让您连接到Campaign应用程序服务器。 在[此页面](../../installation/using/installing-the-client-console.md)中了解如何下载和配置客户端控制台。
@@ -48,11 +55,11 @@ Campaign客户端控制台是一个富客户端，可让您连接到Campaign应�
 
 ### 与您的Adobe ID连接
 
-Campaign 用户使用其 Adobe ID，通过 Adobe 身份管理系统 (IMS) 连接到 Adobe Campaign 控制台。 他们可以在所有 Adobe 解决方案中使用相同的 ID。 将 Adobe Campaign 与其他解决方案配合使用时，可以保存该连接。 在此页面[&#128279;](https://helpx.adobe.com/cn/enterprise/using/identity.html)上了解有关Adobe IMS 的更多信息。
+Campaign 用户使用其 Adobe ID，通过 Adobe 身份管理系统 (IMS) 连接到 Adobe Campaign 控制台。 他们可以在所有 Adobe 解决方案中使用相同的 ID。 将 Adobe Campaign 与其他解决方案配合使用时，可以保存该连接。 在此页面](https://helpx.adobe.com/cn/enterprise/using/identity.html)上了解有关Adobe IMS [的更多信息。
 
 要配置Campaign Classic v7与Adobe Identity Management服务(IMS)的连接，请参阅[此页面](../../integrations/using/about-adobe-id.md)。
 
-配置完成后，请参阅[Campaign v8（控制台）文档](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/new/connect){target=_blank}以了解如何使用Adobe ID连接到Campaign。
+配置完成后，请参阅[Campaign v8（控制台）文档](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/connect){target=_blank}以了解如何使用Adobe ID连接到Campaign。
 
 
 ### 使用登录/密码连接
@@ -77,7 +84,7 @@ Campaign 用户使用其 Adobe ID，通过 Adobe 身份管理系统 (IMS) 连接
 
 ![](assets/s_ncs_user_connections_management.png)
 
-请参阅[Campaign v8 （控制台）文档](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/new/connect#create-your-connection){target=_blank}以了解如何设置连接。
+请参阅[Campaign v8 （控制台）文档](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/connect#create-your-connection){target=_blank}以了解如何设置连接。
 
 ## 操作员和权限 {#operators-and-permissions}
 

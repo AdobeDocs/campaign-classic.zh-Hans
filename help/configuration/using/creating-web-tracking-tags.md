@@ -8,17 +8,17 @@ exl-id: 160df6e1-43e5-4eb9-ad2f-5db444e314ea
 TQID: https://experienceleague.adobe.com/PG8eMBoER5bR4uc9jaQfDX4mm3rhhMxfmF5Wv4brUtg
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 feature_v2: []
 subfeature_v2: []
 source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
 workflow-type: tm+mt
-source-wordcount: 270
+source-wordcount: '270'
 ht-degree: 0%
-
 ---
-
 # 创建Web跟踪标记{#creating-web-tracking-tags}
 
 必须在Adobe Campaign平台中引用要跟踪的网站每个页面。 可以通过两种方式执行此引用：

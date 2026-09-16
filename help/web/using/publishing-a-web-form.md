@@ -2,28 +2,33 @@
 product: campaign
 title: 发布 Web 窗体
 description: 发布 Web 窗体
-badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v8"
+badge-v8: label="Also applies to v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Web Forms
 exl-id: 1c66b8e8-7590-4767-9b2f-a9a509df4508
 TQID: https://experienceleague.adobe.com/2lsNN7oxSizIC1wsv5S5fwkgCcKd3so5qeq-pHr8odY
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 topic_v2:
   - id: cc72dcf1-72e1-48cc-b434-e7c27d62d67c
+    internal-label: Accessibility
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
 feature_v2:
   - id: a4671286-a59f-47e3-b97b-90627a1977d5
+    internal-label: Communication channels
 subfeature_v2:
   - id: f391046b-0cf3-4e76-bd3b-97fe06654506
+    internal-label: Web Apps
   - id: ed29abcd-b6a8-4d4b-ab8b-b7e746973281
+    internal-label: Web Forms
   - id: d7be2b01-dc9c-40f7-aace-a151707504ed
+    internal-label: Landing pages
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 1289
+source-wordcount: '1280'
 ht-degree: 1%
-
 ---
-
 # 发布 Web 窗体{#publishing-a-web-form}
 
 
@@ -148,7 +153,7 @@ ht-degree: 1%
 
 * 单击&#x200B;**[!UICONTROL Personalize the message displayed if the form is closed...]**&#x200B;链接以定义当用户尝试在表单无效时访问表单时显示的错误消息。
 
-  查看表单[&#128279;](defining-web-forms-properties.md#accessibility-of-the-form)的辅助功能。
+  查看表单](defining-web-forms-properties.md#accessibility-of-the-form)的[辅助功能。
 
 ### 通过电子邮件投放表单 {#delivering-a-form-via-email}
 
@@ -192,17 +197,17 @@ ht-degree: 1%
 
 * 如果从第一个实例导出Web窗体时其状态为&#x200B;**[!UICONTROL Pending publication]**&#x200B;或&#x200B;**[!UICONTROL Online]**：
 
-   * 在新实例上导入Web窗体时，该窗体获得&#x200B;**[!UICONTROL Pending publication]**&#x200B;状态。
+  * 在新实例上导入Web窗体时，该窗体获得&#x200B;**[!UICONTROL Pending publication]**&#x200B;状态。
 
-   * 如果新实例上已存在该Web表单，则该表单会被替换为表单的新版本，并具有&#x200B;**[!UICONTROL Pending publication]**&#x200B;状态，即使表单的旧版本为&#x200B;**[!UICONTROL Online]**&#x200B;也是如此。
+  * 如果新实例上已存在该Web表单，则该表单会被替换为表单的新版本，并具有&#x200B;**[!UICONTROL Pending publication]**&#x200B;状态，即使表单的旧版本为&#x200B;**[!UICONTROL Online]**&#x200B;也是如此。
 
-   * 无论该表单是否存在都必须为[已发布](#publishing-a-form)，才能在新实例上变为&#x200B;**[!UICONTROL Online]**，并且可通过浏览器中的Web表单URL访问。
+  * 无论该表单是否存在都必须为[已发布](#publishing-a-form)，才能在新实例上变为&#x200B;**[!UICONTROL Online]**，并且可通过浏览器中的Web表单URL访问。
 
 * 如果Web窗体在导出时状态为&#x200B;**[!UICONTROL Being edited]**：
 
-   * 如果在导入包的实例上新增Web窗体，则Web窗体将获得&#x200B;**[!UICONTROL Being edited]**&#x200B;状态。
+  * 如果在导入包的实例上新增Web窗体，则Web窗体将获得&#x200B;**[!UICONTROL Being edited]**&#x200B;状态。
 
-   * 如果新实例上已存在该Web表单，则这是对现有表单的修改。 如果表单的旧版本为&#x200B;**[!UICONTROL Online]**，则旧版本将保持联机状态，直到表单的新版本在新实例上再次发布为[&#128279;](#publishing-a-form)。
+  * 如果新实例上已存在该Web表单，则这是对现有表单的修改。 如果表单的旧版本为&#x200B;**[!UICONTROL Online]**，则旧版本将保持联机状态，直到表单的新版本在新实例上再次发布为[](#publishing-a-form)。
 
   >[!NOTE]
   >

@@ -10,19 +10,21 @@ exl-id: fc0d3f16-5f62-473d-a1de-aab574eff734
 TQID: https://experienceleague.adobe.com/ylf7sIKiO9ip-yC3M4zqbhu0ITaXqmTMQJ-4KfNQlt8
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 topic_v2:
   - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
+    internal-label: Governance
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+    internal-label: Privacy
 feature_v2: []
 subfeature_v2: []
 source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
 workflow-type: tm+mt
-source-wordcount: 332
+source-wordcount: '332'
 ht-degree: 0%
-
 ---
-
 # Web服务器配置 {#web-server-configuration}
 
 
@@ -35,17 +37,17 @@ ht-degree: 0%
 
   **在Apache**&#x200B;上，编辑/etc/apache2/mods-available/ssl.conf。 示例如下：
 
-   * `SSLProtocol all -SSLv2 -SSLv3 -TLSv1`
-   * `SSLCipherSuite HIGH:MEDIUM:!aNULL:!MD5:!SSLv3:!SSLv2:!TLSv1`
+  * `SSLProtocol all -SSLv2 -SSLv3 -TLSv1`
+  * `SSLCipherSuite HIGH:MEDIUM:!aNULL:!MD5:!SSLv3:!SSLv2:!TLSv1`
 
   **在IIS**&#x200B;上（请参阅[文档](https://support.microsoft.com/en-us/kb/245030)），执行以下配置：
 
-   * 在HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL中添加注册表子项
-   * 要使系统能够使用默认不会协商的协议（如TLS 1.2），请在&#x200B;**Protocols**&#x200B;键下的以下注册表项中将DisabledByDefault值的DWORD值数据更改为0x0：
+  * 在HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL中添加注册表子项
+  * 要使系统能够使用默认不会协商的协议（如TLS 1.2），请在&#x200B;**Protocols**&#x200B;键下的以下注册表项中将DisabledByDefault值的DWORD值数据更改为0x0：
 
-     SCHANNEL\Protocols\TLS 1.2\客户端
+    SCHANNEL\Protocols\TLS 1.2\客户端
 
-     SCHANNEL\Protocols\TLS 1.2\服务器
+    SCHANNEL\Protocols\TLS 1.2\服务器
 
   **禁用SSL x.0**
 
@@ -59,20 +61,20 @@ ht-degree: 0%
 
   **在IIS**&#x200B;上（请参阅[文档](https://www.iis.net/configreference/system.webserver/security/requestfiltering/verbs)），执行以下配置：
 
-   * 确保已安装&#x200B;**请求筛选**&#x200B;角色服务或功能。
-   * 在&#x200B;**请求筛选**&#x200B;窗格中，单击“HTTP动词”选项卡，然后单击“拒绝动词”。 在“操作”窗格中，在打开的对话框中输入TRACE 。
+  * 确保已安装&#x200B;**请求筛选**&#x200B;角色服务或功能。
+  * 在&#x200B;**请求筛选**&#x200B;窗格中，单击“HTTP动词”选项卡，然后单击“拒绝动词”。 在“操作”窗格中，在打开的对话框中输入TRACE 。
 
 * 删除横幅：
 
   **在Apache**&#x200B;上，编辑/etc/apache2/conf.d/security：
 
-   * ServerSignature **关闭**
-   * ServerTokens **产品**
+  * ServerSignature **关闭**
+  * ServerTokens **产品**
 
   **在IIS**&#x200B;上，执行以下配置：
 
-   * 安装&#x200B;**URLcan**。
-   * 编辑&#x200B;**Urlscan.ini**&#x200B;文件以使&#x200B;**RemoveServerHeader=1**
+  * 安装&#x200B;**URLcan**。
+  * 编辑&#x200B;**Urlscan.ini**&#x200B;文件以使&#x200B;**RemoveServerHeader=1**
 
 * 限制查询大小以防止上载重要文件：
 
@@ -90,5 +92,5 @@ ht-degree: 0%
 
 相关主题：
 
-* [Adobe Marketing Cloud合规性概述](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/landing/governance-privacy-security/overview#privacy)
-* [Adobe Campaign安全概述](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/landing/governance-privacy-security/overview#security)
+* [Adobe Marketing Cloud合规性概述](https://experienceleague.adobe.com/en/docs/experience-platform/landing/governance-privacy-security/overview#privacy)
+* [Adobe Campaign安全概述](https://experienceleague.adobe.com/en/docs/experience-platform/landing/governance-privacy-security/overview#security)

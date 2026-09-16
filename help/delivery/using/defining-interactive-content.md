@@ -2,7 +2,7 @@
 product: campaign
 title: 在Adobe Campaign Classic中定义交互式内容
 description: 了解如何在Adobe Campaign中使用AMP定义交互式和动态电子邮件内容
-badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v8"
+badge-v8: label="Also applies to v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Email Design
 role: User
 hide: true
@@ -10,26 +10,34 @@ exl-id: 3110c371-bbf2-4ab2-a701-3f348b5c1e7f
 TQID: https://experienceleague.adobe.com/eJvXKGg578zEWsoERyefkE4AiKgCJkfNLHLKFFzpGEQ
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
 feature_v2:
   - id: b631758a-142d-425f-b9aa-f756d85cb979
+    internal-label: Campaign Email Designer
   - id: c858a28b-ea19-49b0-8d48-828717fad89c
+    internal-label: Prepare and test messages
 subfeature_v2:
   - id: e95a583b-fcfa-4524-8666-46a29c828119
+    internal-label: Email messaging
   - id: c8da4fdd-eb94-4751-a43c-f82733fb2d6e
+    internal-label: Email design
   - id: d5bbe3da-ba85-4242-817e-54f7c4b943e0
+    internal-label: A/B testing
   - id: f4da0e76-df77-451e-ad61-21afb7bd8810
+    internal-label: Manage deliverability
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 1537
+source-wordcount: '1528'
 ht-degree: 3%
-
 ---
-
 # 定义交互式内容{#defining-interactive-content}
 
 Adobe Campaign允许您使用交互式[AMP for Email](https://amp.dev/about/email/)格式，该格式可用于在特定条件下发送动态电子邮件。
@@ -157,7 +165,7 @@ AMP for Email与现有电子邮件兼容。 除了HTML和/或纯文本之外，�
 * AMP MIME部分必须包含[有效的AMP文档](https://amp.dev/documentation/guides-and-tutorials/learn/validation-workflow/validate_emails/?format=email)。
 * AMP MIME部分必须小于100KB。
 
-您还可以查阅Gmail[&#128279;](https://developers.google.com/gmail/ampemail/tips)文档的提示和已知限制。
+您还可以查阅Gmail](https://developers.google.com/gmail/ampemail/tips)文档的[提示和已知限制。
 
 ## 定位AMP电子邮件 {#targeting-amp-email}
 
@@ -165,7 +173,7 @@ AMP for Email与现有电子邮件兼容。 除了HTML和/或纯文本之外，�
 
 1. Adobe Campaign允许您测试向经适当配置的选定电子邮件地址投放AMP支持的动态电子邮件，以验证其内容和行为。 请参阅[测试选定地址的AMP电子邮件投放](#testing-amp-delivery-for-selected-addresses)。
 
-1. 测试后，您可以通过向相关电子邮件提供商注册以将您的发件人域添加到，将投放或促销活动作为AMP for Email计划的一部分发送。 请参阅向电子邮件提供商[&#128279;](#delivering-amp-emails-by-registering)注册以传递AMP电子邮件。
+1. 测试后，您可以通过向相关电子邮件提供商注册以将您的发件人域添加到，将投放或促销活动作为AMP for Email计划的一部分发送。 请参阅向电子邮件提供商](#delivering-amp-emails-by-registering)注册以传递AMP电子邮件[。
 
 ### 测试选定地址的AMP电子邮件投放 {#testing-amp-delivery-for-selected-addresses}
 
@@ -223,6 +231,6 @@ AMP for Email与现有电子邮件兼容。 除了HTML和/或纯文本之外，�
 
 以下视频介绍如何在 Adobe Campaign 中激活 AMP 并展示其用法。
 
->[!VIDEO](https://video.tv.adobe.com/v/33566?captions=chi_hans&quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/29940?quality=12&learn=on)
 
 [此处](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hans)提供了其他Campaign操作方法视频。

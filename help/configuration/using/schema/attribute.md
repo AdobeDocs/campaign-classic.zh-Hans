@@ -10,17 +10,18 @@ exl-id: e4d34f56-b065-4dce-8974-11dc2767873a
 TQID: https://experienceleague.adobe.com/kd15Dm8jY6xE0RpGTImgoL27wDbYmvuuLs-jK4-BwVo
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: b82389f8-9b5e-4083-8e3b-3cef299fb8b9
+    internal-label: Schemas
 subfeature_v2:
   - id: cfc95e9b-b035-4403-a6a9-b27a8a053a37
+    internal-label: PI
 source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
 workflow-type: tm+mt
-source-wordcount: 1573
+source-wordcount: '1573'
 ht-degree: 1%
-
 ---
-
 # attribute element {#attribute--element}
 
 
@@ -58,11 +59,11 @@ _operation (string)、advanced (boolean)、applicableIf (string)、autoIncrement
 
   可访问值包括：
 
-   * “无”：仅和解。 这意味着Adobe Campaign将恢复元素，而不更新它，如果元素不存在则生成错误。
-   * &quot;insertOrUpdate&quot;：使用insertion更新。 这意味着Adobe Campaign将更新元素，如果它不存在，则创建它。
-   * &quot;insert&quot;： insertion. 这意味着Adobe Campaign将插入元素而不检查元素是否存在。
-   * &quot;update&quot;：更新。 这意味着Adobe Campaign将更新元素，如果它不存在，则产生错误。
-   * &quot;delete&quot;：删除。 这意味着Adobe Campaign将恢复和删除元素。
+  * “无”：仅和解。 这意味着Adobe Campaign将恢复元素，而不更新它，如果元素不存在则生成错误。
+  * &quot;insertOrUpdate&quot;：使用insertion更新。 这意味着Adobe Campaign将更新元素，如果它不存在，则创建它。
+  * &quot;insert&quot;： insertion. 这意味着Adobe Campaign将插入元素而不检查元素是否存在。
+  * &quot;update&quot;：更新。 这意味着Adobe Campaign将更新元素，如果它不存在，则产生错误。
+  * &quot;delete&quot;：删除。 这意味着Adobe Campaign将恢复和删除元素。
 
 * **高级（布尔值）**：激活此选项(@advanced=&quot;true&quot;)后，您可以在可用于配置表单列表的可用字段列表中隐藏该属性。
 * **applicableIf （字符串）**：此属性允许您将字段设为可选字段。 当满足约束时更新数据库时将考虑`<attribute>`元素。 &quot;applicableIf&quot;接收XTK表达式。
@@ -70,14 +71,14 @@ _operation (string)、advanced (boolean)、applicableIf (string)、autoIncrement
 * **fallsTo （字符串）**：获取共享该字段的表的名称和命名空间，并填充声明该属性的架构。 （仅在`<schema>`中使用）。
 * **dataPolicy （字符串）**：允许您对SQL或XML字段中允许的值指定批准约束。 此属性的值为：
 
-   * &quot;none&quot;：无值
-   * &quot;smartCase&quot;：第一字母大写
-   * &quot;lowerCase&quot;：全部为小写
-   * &quot;upperCase&quot;：全部大写
-   * &quot;email&quot;：电子邮件地址
-   * &quot;phone&quot;：电话号码
-   * &quot;identifier&quot;：标识符名称
-   * &quot;resIdentifier&quot;：文件名
+  * &quot;none&quot;：无值
+  * &quot;smartCase&quot;：第一字母大写
+  * &quot;lowerCase&quot;：全部为小写
+  * &quot;upperCase&quot;：全部大写
+  * &quot;email&quot;：电子邮件地址
+  * &quot;phone&quot;：电话号码
+  * &quot;identifier&quot;：标识符名称
+  * &quot;resIdentifier&quot;：文件名
 
 * **dbEnum （字符串）**：接收“已关闭”枚举的内部名称。 必须在`<srcschema>`中定义枚举值。
 * **defOnDuplicate （布尔值）**：如果激活此属性，则在复制记录时，默认值（在@default中定义）将自动重新应用于记录。
@@ -88,13 +89,13 @@ _operation (string)、advanced (boolean)、applicableIf (string)、autoIncrement
 * **expr （字符串）**：定义字段预计算表达式。 此属性接收Xpath或XTK表达式。
 * **功能（字符串）**：定义特性字段：这些字段用于扩展现有表中的数据，但存储在附件表中。 接受的值包括：
 
-   * “共享”：根据数据类型将内容存储在共享表中
-   * &quot;dedicated&quot;：内容存储在专用表中
+  * “共享”：根据数据类型将内容存储在共享表中
+  * &quot;dedicated&quot;：内容存储在专用表中
 
   SQL特性表是根据以下特性类型自动构建的：
 
-   * 专用： `Ft_[name_of_the_schema_containing_the_characteristic]_[name_of_the_characteristic]`
-   * 已共享：`Ft_[type_of_key_of_the_schema_containing_the_characteristic]_[type_of_the_characteristic]`
+  * 专用： `Ft_[name_of_the_schema_containing_the_characteristic]_[name_of_the_characteristic]`
+  * 已共享：`Ft_[type_of_key_of_the_schema_containing_the_characteristic]_[type_of_the_characteristic]`
 
   有两种类型的特征字段：简单的oà<sup>1</sup>字段，其中在特征上授权了一个值；以及oà<sup>1</sup>多选字段，其中特征链接到可能包含多个值的集合元素。
 
@@ -109,19 +110,19 @@ _operation (string)、advanced (boolean)、applicableIf (string)、autoIncrement
 
   当架构写入数据库时，Adobe Campaign会自动将前缀添加到字段名称中：
 
-   * &quot;i&quot;：&quot;integer&quot;类型的前缀。
-   * &quot;d&quot;：&quot;double&quot;类型的前缀。
-   * “s”：字符串类型的前缀。
-   * &quot;ts&quot;：&quot;date&quot;类型的前缀。
+  * &quot;i&quot;：&quot;integer&quot;类型的前缀。
+  * &quot;d&quot;：&quot;double&quot;类型的前缀。
+  * “s”：字符串类型的前缀。
+  * &quot;ts&quot;：&quot;date&quot;类型的前缀。
 
   要完全定义表中字段的名称，请在定义属性时使用“@sqlname”选项。
 
 * **notNull （布尔值）**：允许您重新定义Adobe Campaign在数据库中管理NULL记录的行为。 默认情况下，数字字段不为null，字符串和日期类型字段可以为null。
 * **pkgStatus （字符串）**：在导出包期间，将根据“@pkgStatus”的值考虑值：
 
-   * &quot;always&quot;：始终存在
-   * “从不”：从不出现
-   * &quot;default(or nothing)&quot;：导出值，除非它是默认值，或者不是与其他实例不兼容的内部字段。
+  * &quot;always&quot;：始终存在
+  * “从不”：从不出现
+  * &quot;default(or nothing)&quot;：导出值，除非它是默认值，或者不是与其他实例不兼容的内部字段。
 
 * **ref （字符串）**：此属性定义对由多个架构（定义分解）共享的`<attribute>`元素的引用。 该定义将不会复制到当前架构中。
 * **必需（布尔值）**：如果激活此属性(@required=&quot;true&quot;)，则接口中会高亮显示该字段。 字段的标签在表单中将为红色。
@@ -137,32 +138,32 @@ _operation (string)、advanced (boolean)、applicableIf (string)、autoIncrement
 
   可用类型列表：
 
-   * 任何
-   * 纸盒
-   * blob
-   * 布尔值
-   * 字节
-   * CDATA
-   * datetime
-   * datetimetz
-   * 时间戳
-   * 日期
-   * double
-   * 枚举
-   * float
-   * html
-   * int64
-   * 链接
-   * 长
-   * 备忘录
-   * MNTOKEN
-   * 百分比
-   * 主密钥
-   * 短
-   * 字符串
-   * time
-   * timespan
-   * uuid
+  * 任何
+  * 区间
+  * blob
+  * 布尔值
+  * 字节
+  * CDATA
+  * datetime
+  * datetimetz
+  * 时间戳
+  * 日期
+  * double
+  * 枚举
+  * float
+  * html
+  * int64
+  * 链接
+  * 长
+  * 备忘录
+  * MNTOKEN
+  * 百分比
+  * 主密钥
+  * 短
+  * 字符串
+  * time
+  * timespan
+  * uuid
 
   如果“@type”属性留空，默认情况下，Adobe Campaign会将长度为100的字符串（字符串）链接到字段。
 

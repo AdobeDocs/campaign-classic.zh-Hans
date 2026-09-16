@@ -3,7 +3,7 @@ product: campaign
 title: 配置安全区域
 description: 了解如何配置安全区域
 feature: Installation, Instance Settings
-badge-v7-prem: label="仅限内部部署/混合" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hans" tooltip="仅适用于内部部署和混合部署"
+badge-v7-prem: label="On-premise/hybrid only" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hans" tooltip="Applies to on-premise and hybrid deployments only"
 audience: installation
 content-type: reference
 topic-tags: additional-configurations
@@ -11,21 +11,25 @@ exl-id: 67dda58f-97d1-4df5-9648-5f8a1453b814
 TQID: https://experienceleague.adobe.com/eL2iPF1yqueza7P0yRE0KEPdxEezRW81gT4QgRno3Ys
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
 subfeature_v2:
   - id: b5852c32-876b-41ae-92a7-9f588865ae52
+    internal-label: Best practices
   - id: efa38731-2723-4334-8d8b-a778af834835
+    internal-label: Access management
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
 source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
 workflow-type: tm+mt
-source-wordcount: 1511
-ht-degree: 2%
-
+source-wordcount: '1499'
+ht-degree: 3%
 ---
-
 # 定义安全区（内部部署）{#defining-security-zones}
 
 
@@ -239,36 +243,36 @@ ht-degree: 2%
 
 * 最小化sessionTokenOnly=&quot;true&quot;的使用：
 
-   * 警告：如果此属性设置为true，则该运算符可能会遭到&#x200B;**CRSF攻击**。
-   * 此外，sessionToken Cookie未设置httpOnly标记，因此某些客户端JavaScript代码可以读取它。
-   * 但是，多个执行单元格上的Message Center需要sessionTokenOnly：在sessionTokenOnly设置为“true”的情况下创建新的安全区域，并在该区域中仅添加&#x200B;**所需的IP**。
+  * 警告：如果此属性设置为true，则该运算符可能会遭到&#x200B;**CRSF攻击**。
+  * 此外，sessionToken Cookie未设置httpOnly标记，因此某些客户端JavaScript代码可以读取它。
+  * 但是，多个执行单元格上的Message Center需要sessionTokenOnly：在sessionTokenOnly设置为“true”的情况下创建新的安全区域，并在该区域中仅添加&#x200B;**所需的IP**。
 
 * 如果可能，请将所有allowHTTP、showErrors设置为false（不适用于localhost）并检查它们。
 
-   * allowHTTP = &quot;false&quot;：强制运算符使用HTTPS
-   * showErrors = &quot;false&quot;：隐藏技术错误（包括SQL错误）。 它可防止显示过多信息，但会降低营销人员解决错误的能力（无需向管理员请求更多信息）
+  * allowHTTP = &quot;false&quot;：强制运算符使用HTTPS
+  * showErrors = &quot;false&quot;：隐藏技术错误（包括SQL错误）。 它可防止显示过多信息，但会降低营销人员解决错误的能力（无需向管理员请求更多信息）
 
 * 仅当营销用户/管理员使用的IP需要创建（实际上是预览）调查、webApps和报告时，才可将allowDebug设置为true。 此标记允许这些IP显示中继规则并对其进行调试。
 
-   * 当allowDebug设置为false时，输出为：
+  * 当allowDebug设置为false时，输出为：
 
-     ```
-     <redir status='OK' date='...' sourceIP='...'/>
-     ```
+    ```
+    <redir status='OK' date='...' sourceIP='...'/>
+    ```
 
-   * 当allowDebug设置为true时，输出为：
+  * 当allowDebug设置为true时，输出为：
 
-     ```
-     <redir status='OK' date='...' build='...' OR version='...' sha1='...' instance='...' sourceIP='...' host='...' localHost='...'/>
-     ```
+    ```
+    <redir status='OK' date='...' build='...' OR version='...' sha1='...' instance='...' sourceIP='...' host='...' localHost='...'/>
+    ```
 
 * 切勿将allowEmptyPassword、allowUserPassword、allowSQLInjection设置为true。
 
-   * **allowEmptyPassword**&#x200B;允许操作员的密码为空。 如果您遇到这种情况，请通知所有操作员要求他们设置带有截止日期的密码。 超过此截止日期后，将此属性更改为false。
+  * **allowEmptyPassword**&#x200B;允许操作员的密码为空。 如果您遇到这种情况，请通知所有操作员要求他们设置带有截止日期的密码。 超过此截止日期后，将此属性更改为false。
 
-   * **allowUserPassword**&#x200B;允许操作员发送其凭据作为参数（以便由apache/IIS/proxy记录它们）。 此功能以前用于简化API的使用。 您可以签入指南（或规范）中是否某些第三方应用程序使用此功能。 如果是这样，您必须通知他们更改使用我们的API的方式，并尽快删除此功能。
+  * **allowUserPassword**&#x200B;允许操作员发送其凭据作为参数（以便由apache/IIS/proxy记录它们）。 此功能以前用于简化API的使用。 您可以签入指南（或规范）中是否某些第三方应用程序使用此功能。 如果是这样，您必须通知他们更改使用我们的API的方式，并尽快删除此功能。
 
-   * **allowSQLInjection**&#x200B;允许用户使用旧语法执行SQL注入。 此属性应设置为false。 您可以使用/nl/jsp/ping.jsp?zones=true检查安全区域配置。 此页显示当前IP的安全措施（使用这些安全标志计算）的活动状态。
+  * **allowSQLInjection**&#x200B;允许用户使用旧语法执行SQL注入。 此属性应设置为false。 您可以使用/nl/jsp/ping.jsp?zones=true检查安全区域配置。 此页显示当前IP的安全措施（使用这些安全标志计算）的活动状态。
 
 * HttpOnly Cookie/useSecurityToken：请参阅&#x200B;**sessionTokenOnly**&#x200B;标志。
 

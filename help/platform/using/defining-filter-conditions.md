@@ -3,7 +3,7 @@ product: campaign
 title: 定义筛选条件
 description: 定义筛选条件
 feature: Query Editor
-badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v8"
+badge-v8: label="Also applies to v8" type="Positive" tooltip="Also applies to Campaign v8"
 audience: platform
 content-type: reference
 topic-tags: creating-queries
@@ -12,20 +12,24 @@ exl-id: b62e23e5-f1b7-44c4-82d9-95c6b3240352
 TQID: https://experienceleague.adobe.com/QyGgyPI1vfy54m-3nNtEOt5tFr-RqWT9tfOg2GMQRdo
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: afa4204e-6d08-4e29-bc35-26aafb656d48
+    internal-label: Profiles and audiences
 subfeature_v2:
   - id: f529d0bd-1401-4c88-9833-43228cc1d40f
+    internal-label: Profiles
   - id: d6330382-c886-4f7a-a4f7-74e3f36c0d9c
+    internal-label: Audiences
   - id: f5293531-9312-4099-bfa3-9e67df6a8750
+    internal-label: Query Editor
   - id: efa38731-2723-4334-8d8b-a778af834835
+    internal-label: Access management
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 3342
+source-wordcount: '3342'
 ht-degree: 34%
-
 ---
-
 # 定义过滤器条件{#defining-filter-conditions}
 
 
@@ -301,16 +305,16 @@ ht-degree: 34%
 
   可以使用列的源值并为它指定目标值。 此目标值将显示在新输出列中。
 
-  有关添加计算字段类型&#x200B;**[!UICONTROL Enumerations]**&#x200B;的示例，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/adding-enumeration-type-calculated-field.html?lang=zh-Hans){target="_blank"}。
+  有关添加计算字段类型&#x200B;**[!UICONTROL Enumerations]**&#x200B;的示例，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/designing-queries/adding-enumeration-type-calculated-field.html){target="_blank"}。
 
   ![](assets/query_editor_nveau_63.png)
 
   **[!UICONTROL Enumerations]**&#x200B;类型计算字段可以包括4个条件：
 
-   * **[!UICONTROL Keep the source value]**&#x200B;将源值还原到目标而不更改它。
-   * **[!UICONTROL Use the following value]**&#x200B;允许您为未定义的源值输入默认目标值。
-   * **[!UICONTROL Generate a warning and continue]**&#x200B;警告用户无法更改源值。
-   * **[!UICONTROL Generate an error and reject the line]**&#x200B;阻止计算和导入该行。
+  * **[!UICONTROL Keep the source value]**&#x200B;将源值还原到目标而不更改它。
+  * **[!UICONTROL Use the following value]**&#x200B;允许您为未定义的源值输入默认目标值。
+  * **[!UICONTROL Generate a warning and continue]**&#x200B;警告用户无法更改源值。
+  * **[!UICONTROL Generate an error and reject the line]**&#x200B;阻止计算和导入该行。
 
 单击&#x200B;**[!UICONTROL Detail of calculated field]**&#x200B;可查看插入字段的详细信息。
 

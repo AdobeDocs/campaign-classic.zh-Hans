@@ -8,20 +8,23 @@ exl-id: efd2cdfb-2e5f-4672-8be8-a424481b11ed
 TQID: https://experienceleague.adobe.com/a33apxZWE9H0Y3ukmFMQMrep1aY95iswu40y-ZjOd0U
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
 feature_v2: []
 subfeature_v2:
   - id: ee25c34b-ea50-427b-9369-ba0a160f7d70
+    internal-label: Workflow HeatMap
   - id: b5f0aaf4-1e48-400d-95ac-6eb3078cf22f
+    internal-label: Execution activities
   - id: d1110311-2ca4-442b-be37-088a6db845ee
+    internal-label: Data Management activities
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 289
+source-wordcount: '289'
 ht-degree: 14%
-
 ---
-
 # 定期投放{#recurring-delivery}
 
 **[!UICONTROL Recurring delivery]**&#x200B;活动允许您配置特定于营销活动的投放模板发生次数。
@@ -38,7 +41,7 @@ ht-degree: 14%
 
 1. 配置投放模板。
 
-此活动的配置过程与根据可用选项创建投放模板的过程类似。 有关更多信息，请参阅此[&#128279;](../../delivery/using/about-templates.md)章节。
+此活动的配置过程与根据可用选项创建投放模板的过程类似。 有关更多信息，请参阅此](../../delivery/using/about-templates.md)章节[。
 
 >[!CAUTION]
 >
@@ -64,6 +67,6 @@ ht-degree: 14%
 
 此视频介绍如何配置循环投放和调度程序活动。
 
->[!VIDEO](https://video.tv.adobe.com/v/27510?captions=chi_hans&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/25040?quality=12)
 
 [此处](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hans)提供了其他 Campaign Classic 操作方法视频。

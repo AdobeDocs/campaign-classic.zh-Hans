@@ -8,17 +8,17 @@ exl-id: f251eb21-0f3c-4b46-927a-57a3291e705f
 TQID: https://experienceleague.adobe.com/jQ4x9zONaJacdqaNqRL--oeMUAyn53Rk-u3jOvKv-20
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 feature_v2: []
 subfeature_v2: []
 source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
 workflow-type: tm+mt
-source-wordcount: 212
+source-wordcount: '212'
 ht-degree: 5%
-
 ---
-
 # 匿名跟踪{#anonymous-tracking}
 
 通过Adobe Campaign，您可以在收件人匿名浏览您的网站时将收集的Web跟踪信息链接到收件人。 当用户浏览您网站的已标记页面时，将收集此浏览信息，以便当用户点击Adobe Campaign发送的电子邮件时，即会识别出这些页面，并且信息会自动链接到这些页面。

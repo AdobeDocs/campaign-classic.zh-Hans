@@ -7,21 +7,25 @@ exl-id: ca0c33c5-7350-462a-bc65-4cab51e529d9
 TQID: https://experienceleague.adobe.com/qki-Rd3f6TAOiXDXaZ-N4YCxDwg-cc8LZspHtTbYcrE
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: b82389f8-9b5e-4083-8e3b-3cef299fb8b9
+    internal-label: Schemas
 subfeature_v2:
   - id: c03a11ff-bdf9-4e5b-b279-f468b4293464
+    internal-label: Performance Monitoring
   - id: e519a22f-a06a-42fc-9d09-d78a3ab2c434
+    internal-label: Monitoring guidelines
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 835
+source-wordcount: '835'
 ht-degree: 19%
-
 ---
-
 # 监测准则 {#monitoring-guidelines}
 
 
@@ -87,13 +91,13 @@ ht-degree: 19%
 
 **工作流状态监控**
 
-除了热图之外，您还可以创建工作流，用于监视一组工作流的状态并向主管发送定期消息。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/monitoring/workflow-supervision.html?lang=zh-Hans){target="_blank"}。
+除了热图之外，您还可以创建工作流，用于监视一组工作流的状态并向主管发送定期消息。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/monitoring/workflow-supervision.html){target="_blank"}。
 
 **一般准则**
 
 使用工作流时，遵循以下准则和最佳实践有助于提高性能。 有关更多信息，请参阅以下章节：
-* [使用工作流时的最佳实践](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html?lang=zh-Hans){target="_blank"}
-* [监控工作流执行](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html?lang=zh-Hans){target="_blank"}
+* [使用工作流时的最佳实践](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html){target="_blank"}
+* [监控工作流执行](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html){target="_blank"}
 
 ### 监控投放 {#monitoring-deliveries}
 
@@ -105,7 +109,7 @@ SMTP报告按域显示投放统计信息和SMTP错误。 [了解详情](../../pr
 
 **最佳做法**
 
-请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/delivery-best-practices.html?lang=zh-Hans){target="_blank"}，了解投放发送和设计的最佳实践，以提高性能。
+请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/delivery-best-practices.html){target="_blank"}，了解投放发送和设计的最佳实践，以提高性能。
 
 **传递疑难解答**
 遇到投放问题时，可以执行特定操作：

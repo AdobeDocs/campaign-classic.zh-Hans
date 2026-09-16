@@ -3,7 +3,7 @@ product: campaign
 title: SFTP 服务器使用情况
 description: 了解有关SFTP服务器最佳实践和故障排除的更多信息
 feature: Troubleshooting
-badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v8"
+badge-v8: label="Also applies to v8" type="Positive" tooltip="Also applies to Campaign v8"
 audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
@@ -11,23 +11,29 @@ exl-id: d585a5d4-ea33-43c8-aa37-4d892025374a
 TQID: https://experienceleague.adobe.com/RrVBjDmV2i349u1NCfjtDApsuAIEOVwbxalPKnKETI4
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
 feature_v2:
   - id: afa4204e-6d08-4e29-bc35-26aafb656d48
+    internal-label: Profiles and audiences
 subfeature_v2:
   - id: f529d0bd-1401-4c88-9833-43228cc1d40f
+    internal-label: Profiles
   - id: d6330382-c886-4f7a-a4f7-74e3f36c0d9c
+    internal-label: Audiences
   - id: f5293531-9312-4099-bfa3-9e67df6a8750
+    internal-label: Query Editor
   - id: efa38731-2723-4334-8d8b-a778af834835
+    internal-label: Access management
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 1167
-ht-degree: 23%
-
+source-wordcount: '1158'
+ht-degree: 24%
 ---
-
 # SFTP 服务器最佳实践和故障排除 {#sftp-server-usage}
 
 ## SFTP服务器全局推荐 {#global-recommendations}
@@ -36,7 +42,7 @@ ht-degree: 23%
 
 * 使用基于密钥的身份验证而不是密码身份验证，以避免密码过期（密码的有效期为90天）。 此外，基于密钥的身份验证允许您生成多个密钥，例如在管理多个实体时。 相反，密码身份验证要求您与所管理的所有实体共享密码。
 
-  支持的密钥格式为SSH-2 RSA 2048。 为Windows生成SSH密钥的工具是PuTTYgen，为Linux生成ssh-keygen。 您可以通过Campaign控制面板上传公共SSH密钥。 [了解详情](https://experienceleague.adobe.com/zh-hans/docs/control-panel/using/sftp-management/key-management){target="_blank"}
+  支持的密钥格式为SSH-2 RSA 2048。 为Windows生成SSH密钥的工具是PuTTYgen，为Linux生成ssh-keygen。 您可以通过Campaign控制面板上传公共SSH密钥。 [了解详情](https://experienceleague.adobe.com/en/docs/control-panel/using/sftp-management/key-management){target="_blank"}
 
 * 在 SFTP 上传和工作流程中使用批处理。
 
@@ -44,7 +50,7 @@ ht-degree: 23%
 
 * 默认情况下，您创建的所有文件夹仅针对您的标识符处于读/写模式。 创建需要Campaign访问的文件夹时，请确保使用整个组的读/写权限对其进行配置。 否则，出于安全原因，工作流程可能无法创建/删除文件，因为它们在同一组内的不同标识符下运行。
 
-* 您尝试启动SFTP连接的公共IP必须添加到Campaign实例的中。 可通过控制面板添加公共IP。 [了解详情](https://experienceleague.adobe.com/zh-hans/docs/control-panel/using/sftp-management/ip-range-allow-listing){target="_blank"}
+* 您尝试启动SFTP连接的公共IP必须添加到Campaign实例的中。 可通过控制面板添加公共IP。 [了解详情](https://experienceleague.adobe.com/en/docs/control-panel/using/sftp-management/ip-range-allow-listing){target="_blank"}
 
 ## SFTP存储使用最佳实践 {#sftp-server-best-practices}
 
@@ -56,7 +62,7 @@ SFTP服务器旨在作为临时存储空间，您可以在其上控制文件的�
 
 >[!NOTE]
 >
->* 您可以使用Campaign Classic [控制面板](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/sftp-storage-management.html?lang=zh-Hans){target="_blank"}监视SFTP服务器存储。
+>* 您可以使用Campaign Classic [控制面板](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/sftp-storage-management.html){target="_blank"}监视SFTP服务器存储。
 >
 >* 所有管理员用户都可访问控制面板。 [此页面](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=zh-Hans#discover-control-panel){target="_blank"}详细介绍了授予用户管理员访问权限的步骤。
 >
@@ -145,7 +151,7 @@ SFTP服务器旨在作为临时存储空间，您可以在其上控制文件的�
 
 1. **会话日志**&#x200B;疑难解答：
 
-   1. 在工作流中，双击[文件传输](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html?lang=zh-Hans){target="_blank"}活动。
+   1. 在工作流中，双击[文件传输](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html){target="_blank"}活动。
    1. 转到&#x200B;**[!UICONTROL File Transfer]**&#x200B;选项卡，然后单击&#x200B;**[!UICONTROL Advanced Parameters]**。
    1. 勾选 **[!UICONTROL Display the session logs]** 选项。
 

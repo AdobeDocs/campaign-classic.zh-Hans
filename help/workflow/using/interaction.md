@@ -8,9 +8,7 @@ source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
 source-wordcount: '169'
 ht-degree: 2%
-
 ---
-
 
 # 交互{#interaction}
 
@@ -20,9 +18,9 @@ ht-degree: 2%
 
 有关更多信息，根据您的Campaign版本，请参阅以下章节：
 
-![](assets/do-not-localize/v7.jpeg) [Campaign v7文档](../../interaction/using/interaction-and-offer-management.md)
+![](assets/do-not-localize/v7.jpeg)[Campaign v7文档](../../interaction/using/interaction-and-offer-management.md)
 
-![](assets/do-not-localize/v8.png) [Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/interaction/interaction.html)
+![](assets/do-not-localize/v8.png)[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/interaction/interaction.html)
 
 
 <table> 

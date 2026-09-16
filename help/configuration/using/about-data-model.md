@@ -8,22 +8,26 @@ exl-id: 655b5928-b005-442f-b026-2f1b0c1abb99
 TQID: https://experienceleague.adobe.com/jyvz5WCdNhYtusE-HwPRwXNlr9Wh0swcQoOT05lkOYA
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: b12f6872-9271-4369-85e5-86969a0b99a2
+    internal-label: APIs
   - id: b82389f8-9b5e-4083-8e3b-3cef299fb8b9
+    internal-label: Schemas
 subfeature_v2:
   - id: cfc95e9b-b035-4403-a6a9-b27a8a053a37
+    internal-label: PI
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
 source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
 workflow-type: tm+mt
-source-wordcount: 916
+source-wordcount: '989'
 ht-degree: 6%
-
 ---
-
 # 开始使用 Campaign 数据模型{#about-data-model}
 
 Adobe Campaign 数据库的概念数据模型由一组内置表及它们之间的交互组成。 本页中列出了主要表格和概念。
@@ -46,9 +50,9 @@ Adobe Campaign依赖于包含链接在一起的表的关系数据库。 Adobe Ca
 
 数据模型的另一部分允许临时存储与活动执行关联的所有日志。
 
-投放日志是跨所有渠道发送给收件人或设备的所有消息。主投放日志表(**NmsBroadLog**)包含所有收件人的投放日志。
-主跟踪日志表(**NmsTrackingLog**)存储所有收件人的跟踪日志。跟踪日志是指收件人的反应，例如电子邮件打开次数和点击次数。每个反应对应于一个跟踪日志。
-投放日志和跟踪日志会在特定时段后删除，该特定时段在Adobe Campaign中指定并可进行修改。因此，强烈建议定期导出日志。
+投放日志是跨所有渠道发送给收件人或设备的所有消息。 主投放日志表(**NmsBroadLog**)包含所有收件人的投放日志。
+主跟踪日志表(**NmsTrackingLog**)存储所有收件人的跟踪日志。 跟踪日志是指收件人的反应，例如电子邮件打开次数和点击次数。 每个反应对应于一个跟踪日志。
+投放日志和跟踪日志会在特定时段后删除，该特定时段在Adobe Campaign中指定并可进行修改。 因此，强烈建议定期导出日志。
 
 ### 技术表 {#technical-tables}
 

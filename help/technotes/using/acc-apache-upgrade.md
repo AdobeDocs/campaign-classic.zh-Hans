@@ -8,19 +8,21 @@ exl-id: 3d2f5d1d-4b31-4cc6-b6fb-13589856e00c
 TQID: https://experienceleague.adobe.com/iTszfeybA8gTvgRCpTAXNEKQIbTeGHUDx-1plG77NUo
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: a075b2c1-7748-4328-b7f6-343aa314616a
+    internal-label: Campaigns
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
 subfeature_v2:
   - id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
+    internal-label: Adobe Analytics integration
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 549
+source-wordcount: '549'
 ht-degree: 0%
-
 ---
-
 # Adobe Campaign - Apache版本安全更新 {#apache-update}
 
 >[!CAUTION]
@@ -30,11 +32,11 @@ Adobe Campaign可与第三方工具配合使用，并且会定期更新兼容性
 
 Adobe Campaign包括Apache Tomcat，它通过HTTP充当应用程序服务器中的入口点，并与Apache Web Server集成。 Apache Software Foundation已发布Apache HTTP Server 2.4.53。 此版本解决了可能允许远程攻击者控制受影响系统的漏洞。 在[Apache 2.4.53公告](https://downloads.apache.org/httpd/Announcement2.4.html){target="_blank"}中了解详情。
 
-Adobe Campaign团队将在2022年6月15日之前执行Apache版本安全升级活动&#x200B;**&#x200B;**，以缓解此Apache漏洞并提高实例环境的安全。 此升级适用于在易受攻击的Apache HTTP Server版本上运行的所有Campaign Classic v7 Managed Services客户、Campaign v8和Campaign Standard客户。 如果您受到影响，Adobe已联系您，告知您有关此次升级的信息。
+Adobe Campaign团队将在2022年6月15日之前执行Apache版本安全升级活动&#x200B;****，以缓解此Apache漏洞并提高实例环境的安全。 此升级适用于在易受攻击的Apache HTTP Server版本上运行的所有Campaign Classic v7 Managed Services客户、Campaign v8和Campaign Standard客户。 如果您受到影响，Adobe已联系您，告知您有关此次升级的信息。
 
 此升级预计在正常工作时间之外自动运行，以便您能够继续使用Campaign服务而不会造成任何中断。
 
-您的非生产实例将先由Adobe升级，然后再升级您的生产实例。 由于这是一个由Adobe拥有的自动升级过程，因此您无需执行任何操作。 但是，如果您遇到任何问题，请联系[Adobe客户关怀](https://experienceleague.adobe.com/zh-hans?support-solution=Campaign#support)。
+您的非生产实例将先由Adobe升级，然后再升级您的生产实例。 由于这是一个由Adobe拥有的自动升级过程，因此您无需执行任何操作。 但是，如果您遇到任何问题，请联系[Adobe客户关怀](https://experienceleague.adobe.com/?support-solution=Campaign#support)。
 
 
 >[!NOTE]
@@ -65,7 +67,7 @@ Adobe Campaign团队将在2022年6月15日之前执行Apache版本安全升级�
 
 * **客户需要运行哪些验证？**
 
-  此安全升级不需要任何特定测试。 如果发现任何问题，请联系[Adobe客户关怀](https://experienceleague.adobe.com/zh-hans?support-solution=Campaign#support)。
+  此安全升级不需要任何特定测试。 如果发现任何问题，请联系[Adobe客户关怀](https://experienceleague.adobe.com/?support-solution=Campaign#support)。
 
 
 * **我可以请求更改计划的安全升级槽的日期/时间吗？**
@@ -73,4 +75,4 @@ Adobe Campaign团队将在2022年6月15日之前执行Apache版本安全升级�
   由于这是安全修复，因此我们强烈建议您调整到现有计划。
 
 
-如有任何其他问题，您可以联系[Adobe客户关怀](https://experienceleague.adobe.com/zh-hans?support-solution=Campaign#support)。
+如有任何其他问题，您可以联系[Adobe客户关怀](https://experienceleague.adobe.com/?support-solution=Campaign#support)。

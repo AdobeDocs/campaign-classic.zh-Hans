@@ -3,7 +3,7 @@ product: campaign
 title: 内部版本升级入门
 description: 了解升级到新内部版本的关键步骤
 feature: Monitoring, Upgrade
-badge-v7-prem: label="仅限内部部署/混合" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hans" tooltip="仅适用于内部部署和混合部署"
+badge-v7-prem: label="On-premise/hybrid only" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hans" tooltip="Applies to on-premise and hybrid deployments only"
 audience: production
 content-type: reference
 topic-tags: updating-adobe-campaign
@@ -11,23 +11,29 @@ exl-id: c5a9c99a-4078-45d8-847b-6df9047a2fe2
 TQID: https://experienceleague.adobe.com/XC0Q-35cYPjVHM-h2GNE570DqM8vxjSicu4vxnqYuSo
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: b82389f8-9b5e-4083-8e3b-3cef299fb8b9
+    internal-label: Schemas
   - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
 subfeature_v2:
   - id: c03a11ff-bdf9-4e5b-b279-f468b4293464
+    internal-label: Performance Monitoring
   - id: e519a22f-a06a-42fc-9d09-d78a3ab2c434
+    internal-label: Monitoring guidelines
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 2379
+source-wordcount: '2410'
 ht-degree: 4%
-
 ---
-
 # 执行内部版本升级{#performing-a-build-upgrade}
 
 
@@ -51,7 +57,7 @@ ht-degree: 4%
 ![](assets/do-not-localize/icon_planification.png)
 
 在开始内部版本升级之前，必须按照以下所述执行完整准备。
-一旦系统准备好升级，则内部版本升级需要&#x200B;**至少** 2小时。
+一旦系统准备好升级，则内部版本升级需要**至少** 2小时。
 
 内部版本升级过程需要以下资源：
 
@@ -78,14 +84,14 @@ ht-degree: 4%
 * Adobe架构师：对于托管或混合架构，架构师必须与Adobe Campaign客户关怀团队进行协调。
 
 * 项目经理：
-   * 对于内部部署：客户的内部项目负责人负责升级并管理生命周期测试。
+  * 对于内部部署：客户的内部项目负责人负责升级并管理生命周期测试。
 
-   * 对于托管安装：托管团队将与Adobe Campaign客户关怀团队和客户合作，协调所有实例的升级时间线。
+  * 对于托管安装：托管团队将与Adobe Campaign客户关怀团队和客户合作，协调所有实例的升级时间线。
 
 * Adobe Campaign管理员：
-   * 对于内部部署：管理员执行升级。
+  * 对于内部部署：管理员执行升级。
 
-   * 对于托管安装：由托管团队执行升级。
+  * 对于托管安装：由托管团队执行升级。
 
 * Adobe Campaign operator\marketing user：此运算符针对开发、测试和生产实例运行测试。
 

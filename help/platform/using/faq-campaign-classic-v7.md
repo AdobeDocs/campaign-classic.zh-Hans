@@ -10,34 +10,44 @@ exl-id: 89356b5a-d99c-43d1-892b-5a1d003e76cc
 TQID: https://experienceleague.adobe.com/FL-v5m07U-OzscVIiQONAa-RMu323ZpTuBrL29ukMc4
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: d5ef99fa-df0c-4153-bf94-105ad0724167
+    internal-label: Integrations
   - id: afa4204e-6d08-4e29-bc35-26aafb656d48
+    internal-label: Profiles and audiences
 subfeature_v2:
   - id: f529d0bd-1401-4c88-9833-43228cc1d40f
+    internal-label: Profiles
   - id: d6330382-c886-4f7a-a4f7-74e3f36c0d9c
+    internal-label: Audiences
   - id: f5293531-9312-4099-bfa3-9e67df6a8750
+    internal-label: Query Editor
   - id: efa38731-2723-4334-8d8b-a778af834835
+    internal-label: Access management
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+    internal-label: Privacy
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 1517
+source-wordcount: '1517'
 ht-degree: 6%
-
 ---
-
 # Campaign Classic v7常见问题解答 {#campaign-classic-v7-faq}
 
 >[!NOTE]
 >
 >此常见问题解答解答解答了特定于Adobe Campaign Classic v7体系结构、部署模型和特定于v7的功能的问题。
 >
->**有关常见的Campaign问题**（工作流、投放、受众、报表、个性化等）的完整答案，请参阅&#x200B;[**Campaign v8全面常见问题解答**](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/new/campaign-faq-comprehensive){target="_blank"}，其中提供了按主题组织的详细答案。
+>**有关常见的Campaign问题**（工作流、投放、受众、报表、个性化等）的完整答案，请参阅&#x200B;[**Campaign v8全面常见问题解答**](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-faq-comprehensive){target="_blank"}，其中提供了按主题组织的详细答案。
 
 ## Campaign Classic v7架构和部署 {#v7-architecture}
 
@@ -55,7 +65,7 @@ Adobe Campaign Classic v7提供三种部署模型：
 
 [单击此处了解有关](../../installation/using/hosting-models.md)托管模型及其差异的更多信息。
 
-**注意：** Campaign v8仅作为托管云服务提供。 [了解Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/new/whats-new.html?lang=zh-Hans){target="_blank"}。
+**注意：** Campaign v8仅作为托管云服务提供。 [了解Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/new/whats-new.html){target="_blank"}。
 
 +++
 
@@ -86,7 +96,7 @@ Adobe Campaign Classic v7提供了一组模块和选项。 这些模块及其配
 
 **快速入门：**&#x200B;请联系您的Adobe代表以评估您的环境，并使用Adobe Professional Services制定详细的迁移计划。
 
-了解有关[迁移到Managed Services](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic-blogs/migrate-your-adobe-campaign-v7-onprem-hybrid-environment-to/ba-p/681605?profile.language=zh-Hans){target="_blank"}的更多信息。
+了解有关[迁移到Managed Services](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic-blogs/migrate-your-adobe-campaign-v7-onprem-hybrid-environment-to/ba-p/681605){target="_blank"}的更多信息。
 
 +++
 
@@ -112,7 +122,7 @@ Campaign v8是Adobe的战略平台，非常适合需要大量促销活动、现�
 
 了解详情：
 
-* [Campaign v8概述](https://experienceleague.adobe.com/docs/campaign/campaign-v8/new/whats-new.html?lang=zh-Hans){target="_blank"}
+* [Campaign v8概述](https://experienceleague.adobe.com/docs/campaign/campaign-v8/new/whats-new.html){target="_blank"}
 * [从Campaign Classic v7过渡到v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/start/v7-to-v8.html){target="_blank"}
 * [Campaign v8全面常见问题解答](https://experienceleague.adobe.com/docs/campaign/campaign-v8/start/campaign-faq-comprehensive.html){target="_blank"}
 
@@ -216,8 +226,8 @@ Security Zones自助服务界面可用于管理Adobe Campaign Classic v7部署�
    * 首先执行软缓存清除
    * 注销并完全关闭客户端控制台
    * 导航到：
-      * Windows 7/10： `C:\Users\<Username>\AppData\Roaming\Neolane\NL_5\`
-      * Windows XP： `C:\Documents and Settings\<Username>\Application Data\Neolane\NL_5\`
+     * Windows 7/10： `C:\Users\<Username>\AppData\Roaming\Neolane\NL_5\`
+     * Windows XP： `C:\Documents and Settings\<Username>\Application Data\Neolane\NL_5\`
    * 删除所有名为`nlclient-config-<alphanumerical value>.xml`的XML文件和关联的文件夹
    * **重要信息：**&#x200B;不删除`nlclient_cnx.xml`文件
    * 重新启动客户端控制台
@@ -251,7 +261,7 @@ Security Zones自助服务界面可用于管理Adobe Campaign Classic v7部署�
 * [Campaign Classic兼容性矩阵](../../rn/using/compatibility-matrix.md) — 支持的系统和版本
 * [Campaign Classic教程](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hans){target="_blank"} — 视频教程
 
-有关Campaign的常见问题：**&#x200B;**
+有关Campaign的常见问题：****
 
 请参阅&#x200B;[**Campaign v8综合常见问题解答**](https://experienceleague.adobe.com/docs/campaign/campaign-v8/start/campaign-faq-comprehensive.html){target="_blank"}，其中提供了有关以下内容的详细答案：
 
@@ -270,7 +280,7 @@ Security Zones自助服务界面可用于管理Adobe Campaign Classic v7部署�
 
 **社区和支持：**
 
-* [Campaign社区论坛](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community?profile.language=zh-Hans){target="_blank"}
+* [Campaign社区论坛](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community){target="_blank"}
 * [Adobe 支持](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){target="_blank"}
 
 +++

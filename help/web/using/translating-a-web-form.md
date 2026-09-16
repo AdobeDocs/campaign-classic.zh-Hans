@@ -2,28 +2,33 @@
 product: campaign
 title: 解释 Web 窗体
 description: 解释 Web 窗体
-badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v8"
+badge-v8: label="Also applies to v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Web Forms
 exl-id: 72959141-ca18-4512-80c7-239efd31f711
 TQID: https://experienceleague.adobe.com/3oyhvCWX30kK7dtytjLYvO5Xnbu2-I7FGeJPcjcreho
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
   - id: a4671286-a59f-47e3-b97b-90627a1977d5
+    internal-label: Communication channels
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
 subfeature_v2:
   - id: f391046b-0cf3-4e76-bd3b-97fe06654506
+    internal-label: Web Apps
   - id: ed29abcd-b6a8-4d4b-ab8b-b7e746973281
+    internal-label: Web Forms
   - id: d7be2b01-dc9c-40f7-aace-a151707504ed
+    internal-label: Landing pages
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 1592
+source-wordcount: '1583'
 ht-degree: 0%
-
 ---
-
 # 解释 Web 窗体{#translating-a-web-form}
 
 
@@ -64,7 +69,7 @@ Adobe Campaign包含用于翻译和管理多语言翻译的工具。 通过此�
 
 首次打开此选项卡时，它将不包含任何数据。 单击&#x200B;**[!UICONTROL Collect the strings to translate]**&#x200B;链接以更新Web应用程序中的字符串。
 
-Adobe Campaign收集在所有静态元素的&#x200B;**[!UICONTROL Texts]**&#x200B;选项卡中定义的字段和字符串的标签：HTML块、Javascript等。静态元素在Web窗体[&#128279;](static-elements-in-a-web-form.md)的静态元素中详细。
+Adobe Campaign收集在所有静态元素的&#x200B;**[!UICONTROL Texts]**&#x200B;选项卡中定义的字段和字符串的标签：HTML块、Javascript等。静态元素在Web窗体](static-elements-in-a-web-form.md)的[静态元素中详细。
 
 ![](assets/s_ncs_admin_survey_trad_tab.png)
 
@@ -82,7 +87,7 @@ Adobe Campaign收集在所有静态元素的&#x200B;**[!UICONTROL Texts]**&#x200
 
 ### 筛选字符串 {#filtering-strings}
 
-默认情况下，将显示Web应用程序的每种翻译语言。 有两种默认筛选器：语言和状态。 单击&#x200B;**[!UICONTROL Filters]**&#x200B;按钮，然后单击&#x200B;**[!UICONTROL By language or status]**&#x200B;以显示匹配的下拉框。 您还可以创建高级过滤器。 有关筛选器的更多信息，请参阅[Campaign v8 （控制台）文档](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/audience/create-filters){target=_blank}。
+默认情况下，将显示Web应用程序的每种翻译语言。 有两种默认筛选器：语言和状态。 单击&#x200B;**[!UICONTROL Filters]**&#x200B;按钮，然后单击&#x200B;**[!UICONTROL By language or status]**&#x200B;以显示匹配的下拉框。 您还可以创建高级过滤器。 有关筛选器的更多信息，请参阅[Campaign v8 （控制台）文档](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-filters){target=_blank}。
 
 ![](assets/s_ncs_admin_survey_trad_tab_en.png)
 
@@ -181,7 +186,7 @@ Web窗体以Web应用程序属性的&#x200B;**[!UICONTROL Localization]**&#x200B
 &lang=xx
 ```
 
-如果URL中的语言之前还有其他参数。 例如：**https://myserver/webApp/APP34?status=1&lang=en**
+如果URL中的语言之前还有其他参数。 例如：**https://myserver/webApp/APP34?status=1&amp;lang=en**
 
 下面列出了默认提供的翻译语言和词典。
 
@@ -442,7 +447,7 @@ Web窗体以Web应用程序属性的&#x200B;**[!UICONTROL Localization]**&#x200B
 >[!NOTE]
 >
 >如果此Web应用程序已经使用了其他参数，请添加&#x200B;**&amp;lang=**。\
->例如：**https://myserver/webApp/APP34?status=1&lang=en**
+>例如：**https://myserver/webApp/APP34?status=1&amp;lang=en**
 
 ## 高级翻译配置 {#advanced-translation-configuration}
 

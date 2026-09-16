@@ -11,25 +11,32 @@ hide: true
 TQID: https://experienceleague.adobe.com/c4mev5HLxN6XRYRkqNokbrt45a1nImtMaJJ0uEZLGH4
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: afa4204e-6d08-4e29-bc35-26aafb656d48
+    internal-label: Profiles and audiences
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 subfeature_v2:
   - id: f529d0bd-1401-4c88-9833-43228cc1d40f
+    internal-label: Profiles
   - id: d6330382-c886-4f7a-a4f7-74e3f36c0d9c
+    internal-label: Audiences
   - id: f5293531-9312-4099-bfa3-9e67df6a8750
+    internal-label: Query Editor
   - id: efa38731-2723-4334-8d8b-a778af834835
+    internal-label: Access management
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 529
+source-wordcount: '529'
 ht-degree: 4%
-
 ---
-
 # 管理对文件夹的访问{#folder-access-management}
 
 
@@ -49,7 +56,7 @@ Explorer导航树的每个文件夹都具有附加的读、写和删除访问权
 
 ![](assets/s_ncs_user_add_folder_in_tree.png)
 
-可以自定义Explorer导航树。 在本节[&#128279;](adobe-campaign-workspace.md)中了解配置步骤和最佳实践。
+可以自定义Explorer导航树。 在本节](adobe-campaign-workspace.md)中了解配置步骤和最佳实践[。
 
 ### 什么是视图 {#about-views}
 

@@ -10,19 +10,21 @@ exl-id: 4d25d740-db57-4d18-8cae-2dd49c4a786e
 TQID: https://experienceleague.adobe.com/TJ5R6T1pu5JQU5SaGoWRgZLG2m29TWWPVB8nniorRUg
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
 subfeature_v2: []
 source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
 workflow-type: tm+mt
-source-wordcount: 868
+source-wordcount: '868'
 ht-degree: 5%
-
 ---
-
 # 其他配置 {#mc-additional-configurations}
 
 
@@ -96,12 +98,12 @@ Once the control and execution modules are installed on the same instance, you m
 
   可以使用以下事件状态：
 
-   * **[!UICONTROL Pending]** ：事件在队列中。 尚未为其分配消息模板。
-   * **[!UICONTROL Pending delivery]** ：事件处于队列中，已为其分配消息模板且投放正在处理该模板。
-   * **[!UICONTROL Sent]** ：此状态复制于投放日志。 这意味着投放已发送。
-   * **[!UICONTROL Ignored by the delivery]** ：此状态复制于投放日志。 这意味着该投放被忽略。
-   * **[!UICONTROL Delivery failed]** ：此状态复制于投放日志。 这意味着投放失败了。
-   * **[!UICONTROL Event not taken into account]** ：无法将事件链接到消息模板。 将不会处理该事件。
+  * **[!UICONTROL Pending]** ：事件在队列中。 尚未为其分配消息模板。
+  * **[!UICONTROL Pending delivery]** ：事件处于队列中，已为其分配消息模板且投放正在处理该模板。
+  * **[!UICONTROL Sent]** ：此状态复制于投放日志。 这意味着投放已发送。
+  * **[!UICONTROL Ignored by the delivery]** ：此状态复制于投放日志。 这意味着该投放被忽略。
+  * **[!UICONTROL Delivery failed]** ：此状态复制于投放日志。 这意味着投放失败了。
+  * **[!UICONTROL Event not taken into account]** ：无法将事件链接到消息模板。 将不会处理该事件。
 
 ### 存档工作流计划
 
@@ -115,7 +117,7 @@ Once the control and execution modules are installed on the same instance, you m
 
 ### 兼容性说明 {#compatibility-note}
 
-此旧版品牌策略配置与Campaign v8中引入的新[集中式品牌策略](https://experienceleague.adobe.com/docs/campaign-web/v8/conf/branding/branding-gs.html?lang=zh-Hans){target="_blank"}模型不兼容。
+此旧版品牌策略配置与Campaign v8中引入的新[集中式品牌策略](https://experienceleague.adobe.com/docs/campaign-web/v8/conf/branding/branding-gs.html){target="_blank"}模型不兼容。
 
 如果您的现有环境使用此旧版配置，则无法将其直接迁移到新的集中式品牌推广模型。 要采用新系统，必须全面重新实施品牌设置。
 
@@ -186,6 +188,6 @@ Once the control and execution modules are installed on the same instance, you m
 
 1. 为每个品牌创建一个与[执行实例](#execution-instance)上定义的内部名称相同的外部帐户（步骤1）。
 
-1. 为每个品牌创建投放模板。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html?lang=zh-Hans){target="_blank"}。
+1. 为每个品牌创建投放模板。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html){target="_blank"}。
 
 1. 在投放模板的&#x200B;**[!UICONTROL Properties]**&#x200B;中，将路由设置为品牌的外部帐户。

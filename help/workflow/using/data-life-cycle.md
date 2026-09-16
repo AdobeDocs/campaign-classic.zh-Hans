@@ -8,22 +8,27 @@ exl-id: 366acc1e-d769-4053-9fa1-f47182627c07
 TQID: https://experienceleague.adobe.com/eRSi9Eu1u9pMtMiiMZI9kZLjZ1JAWCt5B4HFc4FAm3U
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+    internal-label: Data management
 feature_v2: []
 subfeature_v2:
   - id: ee25c34b-ea50-427b-9369-ba0a160f7d70
+    internal-label: Workflow HeatMap
   - id: b5f0aaf4-1e48-400d-95ac-6eb3078cf22f
+    internal-label: Execution activities
   - id: d1110311-2ca4-442b-be37-088a6db845ee
+    internal-label: Data Management activities
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 527
+source-wordcount: '527'
 ht-degree: 6%
-
 ---
-
 # 数据生命周期 {#data-life-cycle}
 
 
@@ -50,7 +55,7 @@ ht-degree: 6%
 
   利用此菜单，可访问描述性分析助手，该助手可让您生成有关过渡数据的统计和报告。
 
-  有关更多信息，请参阅此[&#128279;](../../reporting/using/using-the-descriptive-analysis-wizard.md)章节。
+  有关更多信息，请参阅此](../../reporting/using/using-the-descriptive-analysis-wizard.md)章节[。
 
 在执行工作流时清除目标数据。 只能访问最后一个工作表。 您可以配置工作流以使所有工作表保持可访问状态：选中工作流属性中的&#x200B;**[!UICONTROL Keep the result of interim populations between two executions]**&#x200B;选项。
 

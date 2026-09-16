@@ -3,7 +3,7 @@ product: campaign
 title: 性能和吞吐量问题
 description: 性能和吞吐量问题
 feature: Monitoring
-badge-v7-prem: label="仅限内部部署/混合" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hans" tooltip="仅适用于内部部署和混合部署"
+badge-v7-prem: label="On-premise/hybrid only" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hans" tooltip="Applies to on-premise and hybrid deployments only"
 audience: production
 content-type: reference
 topic-tags: troubleshooting
@@ -11,22 +11,27 @@ exl-id: fe69efda-a052-4f67-9c13-665f011d0a2b
 TQID: https://experienceleague.adobe.com/THf7A2u5ktNphqdI8K8ePzLNqCdyCmcqWN0OpYJfVh0
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
 feature_v2: []
 subfeature_v2:
   - id: c03a11ff-bdf9-4e5b-b279-f468b4293464
+    internal-label: Performance Monitoring
   - id: e519a22f-a06a-42fc-9d09-d78a3ab2c434
+    internal-label: Monitoring guidelines
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 805
+source-wordcount: '793'
 ht-degree: 9%
-
 ---
-
 # 性能和吞吐量问题{#performance-and-throughput-issues}
 
 首先，您应该检查是否已安装最新版本。 这可确保您拥有最新的功能和错误修复。
@@ -69,7 +74,7 @@ Adobe Campaign还提供了[工具](../../production/using/monitoring-processes.m
   >
   >可交付性团队的参与基于合同，客户应联系其Adobe代表以获取与可交付性参与相关的信息。
 
-* DKIM：为确保DKIM的安全级别，1024b是推荐的最佳实践加密大小。 大多数访问提供商不会将较低级别的DKIM密钥视为有效。 请参见[此页面](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=zh-Hans#authentication)。
+* DKIM：为确保DKIM的安全级别，1024b是推荐的最佳实践加密大小。 大多数访问提供商不会将较低级别的DKIM密钥视为有效。 请参见[此页面](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#authentication)。
 
 ## 可投放性问题 {#deliverability-issues}
 
@@ -83,7 +88,7 @@ Adobe Campaign还提供了[工具](../../production/using/monitoring-processes.m
   >可交付性团队的参与基于合同，客户应联系其Adobe代表以获取与可交付性参与相关的信息。
 
 * IP关联设置：错误的IP关联设置可能会完全停止电子邮件（配置中的运算符/关联名称不正确）或降低吞吐量（关联中的IP数量较少）。 请参见[此页面](../../installation/using/email-deliverability.md#list-of-ip-addresses-to-use)。
-* 电子邮件大小：电子邮件大小在吞吐量中起着重要作用。 建议的最大电子邮件大小为60 KB。 请参见[此页面](https://helpx.adobe.com/cn/legal/product-descriptions/campaign.html)。 在[投放吞吐量](../../reporting/using/global-reports.md#delivery-throughput)报告中，检查按小时传输的字节数。
+* 电子邮件大小：电子邮件大小在吞吐量中起着重要作用。 建议的最大电子邮件大小为60 KB。 请参见[此页面](https://helpx.adobe.com/legal/product-descriptions/campaign.html)。 在[投放吞吐量](../../reporting/using/global-reports.md#delivery-throughput)报告中，检查按小时传输的字节数。
 * 大量无效收件人：当存在大量无效收件人时，可能会影响吞吐量。 MTA不断重试向无效收件人发送电子邮件。 请确保您的数据库得到了妥善维护。
 * 个性化程度：如果投放持续处于“Personalization正在进行中”状态，请检查个性化块中使用的JavaScript 。
 

@@ -10,18 +10,19 @@ exl-id: 424faf25-2fd5-40d1-a2fc-c715fc0b8190
 TQID: https://experienceleague.adobe.com/DkmZBc4Awifbwqo7zqniEu6RlHDc91788XKN2nNg-Pg
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+    internal-label: Privacy
 feature_v2: []
 subfeature_v2: []
 source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
 workflow-type: tm+mt
-source-wordcount: 1264
+source-wordcount: '1264'
 ht-degree: 4%
-
 ---
-
 # 配置电子邮件密送 {#email-archiving}
 
 
@@ -143,7 +144,7 @@ C:\emails\2018-12-02\13h\4012-8040-sent.eml
 <!--
 ## Moving to the new Email BCC {#updated-email-archiving-system--bcc-}
 
-[!BADGE On-premise & Hybrid]{type=Caution url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hans" tooltip="Applies to on-premise and hybrid deployments only"}
+[!BADGE On-premise & Hybrid]{type=Caution url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html" tooltip="Applies to on-premise and hybrid deployments only"}
 
 >[!IMPORTANT]
 >
@@ -163,8 +164,8 @@ Once email BCC is configured, make sure you select the **[!UICONTROL Email BCC]*
 * **密件抄送地址邮箱**：确保它有足够的接收容量来存档MTA发送的所有电子邮件。
 * **MTA池**： BCC存档功能在MTA级别工作。 它允许您复制MTA发送的每个电子邮件。 由于MTA可以跨多个实例（例如开发、测试或生产）甚至跨多个客户（在中间源环境中）进行池，因此设置此功能会影响安全性：
 
-   * 如果您与多个客户端共享MTA，并且其中一个客户端激活了此选项，则此客户端将访问共享同一MTA的其他客户端的所有电子邮件。 要避免出现这种情况，请为每个客户端使用不同的MTA。
-   * 如果您在单个客户端的多个实例（开发、测试、生产）中使用相同的MTA，则从所有三个实例发送的消息都将由dataLogPath选项复制。
+  * 如果您与多个客户端共享MTA，并且其中一个客户端激活了此选项，则此客户端将访问共享同一MTA的其他客户端的所有电子邮件。 要避免出现这种情况，请为每个客户端使用不同的MTA。
+  * 如果您在单个客户端的多个实例（开发、测试、生产）中使用相同的MTA，则从所有三个实例发送的消息都将由dataLogPath选项复制。
 
 * **每个连接的电子邮件**： BCC电子邮件存档操作方法是打开一个连接并尝试通过该连接发送所有电子邮件。 Adobe建议与您的内部技术联系人确认在给定连接上可接受的电子邮件数量。 增加此数量可能会对BCC吞吐量产生重大影响。
 * **BCC发送IP**：当前，不通过普通MTA代理发送密件抄送电子邮件。 而是会打开从MTA服务器到目标电子邮件服务器的直接连接。 这意味着您可能需要向网络上的添加其他IP，具体取决于您的电子邮件服务器配置。

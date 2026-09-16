@@ -10,18 +10,19 @@ exl-id: 59d0277a-7588-4504-94e3-50f87b60da8a
 TQID: https://experienceleague.adobe.com/CogezJk2Xg8Pv7d7upxrVWzOAWMkPS475yPeMJ6Uw-E
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
 feature_v2: []
 subfeature_v2: []
 source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
 workflow-type: tm+mt
-source-wordcount: 854
+source-wordcount: '854'
 ht-degree: 1%
-
 ---
-
 # 配置对Azure Synapse的访问权限 {#configure-access-to-azure-synapse}
 
 
@@ -130,7 +131,7 @@ ht-degree: 1%
    your_language\your_architecture\msodbcsql.msi (i.e: English\X64\msodbcsql.msi)
    ```
 
-1. 安装ODBC驱动程序后，您可以根据需要对其进行测试。 有关详细信息，请参见此 [&#x200B; 页面](https://docs.microsoft.com/en-us/sql/connect/odbc/windows/system-requirements-installation-and-driver-files?view=sql-server-ver15#installing-microsoft-odbc-driver-for-sql-server)。
+1. 安装ODBC驱动程序后，您可以根据需要对其进行测试。 有关详细信息，请参见此 [ 页面](https://docs.microsoft.com/en-us/sql/connect/odbc/windows/system-requirements-installation-and-driver-files?view=sql-server-ver15#installing-microsoft-odbc-driver-for-sql-server)。
 
 1. 然后，您可以在Campaign Classic中配置[!DNL Azure Synapse]外部帐户。 有关如何配置外部帐户的更多信息，请参阅[此部分](#azure-external)。
 
@@ -221,23 +222,23 @@ ht-degree: 1%
 
    * 对于标准身份验证，您必须指定：
 
-      * **[!UICONTROL Server]**： Azure Synapse服务器的URL
+     * **[!UICONTROL Server]**： Azure Synapse服务器的URL
 
-      * **[!UICONTROL Account]**：用户的名称
+     * **[!UICONTROL Account]**：用户的名称
 
-      * **[!UICONTROL Password]**：用户帐户密码
+     * **[!UICONTROL Password]**：用户帐户密码
 
-      * **[!UICONTROL Database]**：数据库的名称
+     * **[!UICONTROL Database]**：数据库的名称
 
      ![](assets/azure_3.png)
 
    * 对于系统分配的托管身份验证，您必须指定：
 
-      * **[!UICONTROL Server]**： Azure Synapse服务器的URL
+     * **[!UICONTROL Server]**： Azure Synapse服务器的URL
 
-      * **[!UICONTROL Database]**：数据库的名称
+     * **[!UICONTROL Database]**：数据库的名称
 
-      * **[!UICONTROL Options]**：添加以下语法`Authentication=ActiveDirectoryMsi`
+     * **[!UICONTROL Options]**：添加以下语法`Authentication=ActiveDirectoryMsi`
 
      ![](assets/azure_4.png)
 

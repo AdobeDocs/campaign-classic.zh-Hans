@@ -10,20 +10,23 @@ exl-id: 70cd6a4b-c839-4bd9-b9a7-5a12e59c0cbf
 TQID: https://experienceleague.adobe.com/BZ4rjzbXYikNoGAVHq4Gy7tY8OugKDgsmVLkKuIB9tw
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: b12f6872-9271-4369-85e5-86969a0b99a2
+    internal-label: APIs
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+    internal-label: Optimization
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
 subfeature_v2: []
 source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
 workflow-type: tm+mt
-source-wordcount: 8061
+source-wordcount: '8113'
 ht-degree: 8%
-
 ---
-
 # 服务器配置文件{#the-server-configuration-file}
 
 Adobe Campaign的整体配置在&#x200B;**serverConf.xml**&#x200B;文件中定义，该文件位于安装目录的&#x200B;**conf**&#x200B;目录中。 此部分列出&#x200B;**serverConf.xml**&#x200B;文件的所有不同节点和参数。
@@ -420,7 +423,7 @@ Adobe Campaign的整体配置在&#x200B;**serverConf.xml**&#x200B;文件中定�
   </tr> 
   <tr> 
    <td> maxCnx<br /> </td> 
-   <td> 拒绝新连接之前允许的连接的最大数目。 查看此<a href="https://helpx.adobe.com/cn/campaign/kb/how-to-increase-the-maximum-number-of-database-connections-from-.html">技术说明</a>.<br /> </td> 
+   <td> 拒绝新连接之前允许的连接的最大数目。 查看此<a href="https://helpx.adobe.com/campaign/kb/how-to-increase-the-maximum-number-of-database-connections-from-.html">技术说明</a>.<br /> </td> 
    <td> 短<br /> </td> 
   </tr> 
   <tr> 
@@ -550,7 +553,11 @@ Adobe Campaign的整体配置在&#x200B;**serverConf.xml**&#x200B;文件中定�
 
 >[!NOTE]
 >
->**nameSevers**&#x200B;上的备注：默认情况下，使用在Windows>中声明的第一个网络接口的network>参数（未在UNIX中定义）。定义MTA用来获取为>域声明的邮件交换器的域名服务器(DNS)>。
+>**nameSevers**上的注释：默认情况下，使用网络
+>在Windows中声明的第一个网络接口的参数
+>未在UNIX中定义。 定义域名服务器(DNS)
+>由MTA用来获取为声明的邮件交换器
+>域。
 >
 >如果未定义此值，MTA将在主机网络配置中查找此信息。 如果可能有多个DNS，则不同的DNS地址必须以逗号分隔（例如： 212.155.207.1，212.155.207.2）。 如果您的投放服务器具有多个网络接口，则MTA使用的DNS列表是第一个。 在这种情况下，我们建议指定&#x200B;**nameServer**&#x200B;参数以避免任何歧义。
 
@@ -1631,10 +1638,10 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
    <td> statServerAddress<br /> </td> 
    <td> 投放统计服务器的地址，以 
     &lt;dns或ip&gt; 
-      <code>&lbrack;</code>： 
+      <code>[</code>: 
      &lt;端口&gt; 
-       <code>&rbrack;</code>。请参阅 
-      <a href="../../installation/using/email-deliverability.md#coordinates-of-the-statistics-server" target="_blank">统计服务器的坐标</a>。 
+       <code>]</code>. 请参阅 
+      统计服务器</a>的<a href="../../installation/using/email-deliverability.md#coordinates-of-the-statistics-server" target="_blank">坐标。 
       <br /> 
      </td> 
    <td> 字符串<br /> </td> 

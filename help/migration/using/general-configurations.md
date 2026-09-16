@@ -10,11 +10,9 @@ hide: true
 exl-id: 7aad0e49-8d9c-40c7-9d6a-42fee0ae5870
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '2546'
+source-wordcount: '2548'
 ht-degree: 1%
-
 ---
-
 # 常规配置{#general-configurations}
 
 本节详细介绍从v5.11或v6.02迁移时，在Adobe Campaign v7中执行的配置。
@@ -30,11 +28,11 @@ ht-degree: 1%
 
 在v6.02中，“多时区”模式仅适用于PostgreSQL数据库引擎。 现在，无论使用哪种类型的数据库引擎，都提供该功能。 我们强烈建议您将“基本时区”转换为“多时区”基本时区。
 
-要使用TIMESTAMP WITH TIMEZONE模式，您还需要将&#x200B;**-userTimestamptz:1**&#x200B;选项添加到升级后命令行。
+要使用TIMESTAMP WITH TIMEZONE模式，您还需要将&#x200B;**-userTimestamptz：1**&#x200B;选项添加到升级后命令行。
 
 >[!IMPORTANT]
 >
->如果&#x200B;**-usetimestamptz:1**&#x200B;参数与不兼容的数据库引擎一起使用，则数据库将损坏，您必须恢复数据库的备份并重新执行上述命令。
+>如果&#x200B;**-usetimestamptz：1**&#x200B;参数与不兼容的数据库引擎一起使用，则数据库将损坏，您必须恢复数据库的备份并重新执行上述命令。
 
 >[!NOTE]
 >
@@ -500,7 +498,7 @@ $(XTK_INSTALL_DIR)/tomcat-X/lib/el-api.jar
 * nms:mobileOfferView
 * nms:paperOfferView
 
-### 选件内容 {#offer-content}
+### 产品建议内容 {#offer-content}
 
 在v7中，已移动选件内容。 在v6.02中，内容位于每个呈现模式(**nms:emailOfferView**)中。 在v7中，内容现在位于选件架构中。 因此，在升级后，该内容在界面中将不可见。 升级后，必须重新创建选件内容，或开发一个脚本，以自动将内容从呈现架构移至选件架构。
 

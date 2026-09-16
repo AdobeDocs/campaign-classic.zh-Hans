@@ -9,29 +9,40 @@ exl-id: c2f4d8d0-f0fe-4d1a-92fd-91edaf9729f3
 TQID: https://experienceleague.adobe.com/iDnlEneRDEJBrD8g9ioJGvKArm7x6qKzNpILDvQC5u8
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: a075b2c1-7748-4328-b7f6-343aa314616a
+    internal-label: Campaigns
   - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
   - id: b631758a-142d-425f-b9aa-f756d85cb979
+    internal-label: Campaign Email Designer
   - id: c858a28b-ea19-49b0-8d48-828717fad89c
+    internal-label: Prepare and test messages
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+    internal-label: Optimization
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
 subfeature_v2:
   - id: e95a583b-fcfa-4524-8666-46a29c828119
+    internal-label: Email messaging
   - id: c8da4fdd-eb94-4751-a43c-f82733fb2d6e
+    internal-label: Email design
   - id: d5bbe3da-ba85-4242-817e-54f7c4b943e0
+    internal-label: A/B testing
   - id: f4da0e76-df77-451e-ad61-21afb7bd8810
+    internal-label: Manage deliverability
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 1658
+source-wordcount: '1658'
 ht-degree: 9%
-
 ---
-
 # 验证投放 {#validating-the-delivery}
 
 创建和配置投放后，您必须先验证该投放，然后再将其发送给主要目标。
@@ -164,7 +175,7 @@ ht-degree: 9%
 1. 开始消息分析。 请参阅[分析投放](steps-validating-the-delivery.md#analyzing-the-delivery)。
 1. 您现在可以发送投放（请参阅[发送投放](steps-sending-the-delivery.md)）。
 
-   发送投放后，验证将显示在投放列表中，并自动创建和编号。 如果要访问其内容和属性，可以对其进行编辑。 有关详细信息，请参见此 [&#x200B; 页面](about-delivery-monitoring.md)。
+   发送投放后，验证将显示在投放列表中，并自动创建和编号。 如果要访问其内容和属性，可以对其进行编辑。 有关详细信息，请参见此 [ 页面](about-delivery-monitoring.md)。
 
    ![](assets/s_ncs_user_delivery_validation_cycle_03a.png)
 

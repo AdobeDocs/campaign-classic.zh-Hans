@@ -9,27 +9,35 @@ exl-id: a06b1365-d487-4df1-8f4a-7268b871a427
 TQID: https://experienceleague.adobe.com/9pZQYt2gLVR94ZWsw21JCv7CL55KDRyiqocvuS54SbM
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: a7760dfc-5c44-4d77-bb68-c50b1e265c93
+    internal-label: Security and privacy
 subfeature_v2:
   - id: ac9c0a9c-8a76-4419-bd64-9c34c5782666
+    internal-label: Privacy
   - id: fb2a841f-c522-491f-9901-a1b939d252df
+    internal-label: Security
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+    internal-label: Optimization
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+    internal-label: Privacy
 source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
 workflow-type: tm+mt
-source-wordcount: 637
+source-wordcount: '637'
 ht-degree: 3%
-
 ---
-
 # 托管模型{#hosting-models}
 
 
@@ -63,12 +71,12 @@ Adobe Campaign可以内部部署：Adobe Campaign的所有组件（包括用户�
 作为内部部署客户，在开始部署Campaign Classic之前，请注意以下先决条件和建议：
 
 * 阅读[兼容性矩阵](../../rn/using/compatibility-matrix.md)，其中列出了Adobe Campaign支持的所有系统和组件版本。
-* 根据您的环境，阅读Windows[&#128279;](../../installation/using/prerequisites-of-campaign-installation-in-windows.md)的[先决条件和Linux](../../installation/using/prerequisites-of-campaign-installation-in-linux.md)的先决条件。
-* 在此部分[&#128279;](../../installation/using/database.md)中了解与数据库引擎相关的建议。
+* 根据您的环境，阅读Windows](../../installation/using/prerequisites-of-campaign-installation-in-windows.md)的[先决条件和Linux](../../installation/using/prerequisites-of-campaign-installation-in-linux.md)的[先决条件。
+* 在此部分](../../installation/using/database.md)中了解与数据库引擎[相关的建议。
 * 检查服务器上是否安装了所需的数据库访问层，以及是否可从Adobe Campaign帐户访问。 [了解详情](../../installation/using/application-server.md)。
 * 根据某些进程需要与其他进程通信或访问LAN和Internet来配置网络。 这意味着这些进程需要打开某些TCP端口。 [了解有关](../../installation/using/network-configuration.md)网络配置要求的更多信息。
 * 阅读[Campaign安全和隐私检查清单](https://helpx.adobe.com/cn/campaign/kb/acc-security.html)。
-* 请参阅本文[&#128279;](https://helpx.adobe.com/cn/campaign/kb/hardware-sizing-guide.html)中有关估算内部部署的硬件要求的一般准则。
+* 请参阅本文](https://helpx.adobe.com/cn/campaign/kb/hardware-sizing-guide.html)中有关估算内部部署[的硬件要求的一般准则。
 
 ## 混合
 

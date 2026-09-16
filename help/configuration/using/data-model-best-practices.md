@@ -7,32 +7,47 @@ exl-id: 9c59b89c-3542-4a17-a46f-3a1e58de0748
 TQID: https://experienceleague.adobe.com/O5LgBFV-0Mw3nzVyD2mxCCPxjZ07Ss9sS4K5MrdYdns
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: a658c786-869b-4194-a780-2594d663adda
+    internal-label: Data management
   - id: b82389f8-9b5e-4083-8e3b-3cef299fb8b9
+    internal-label: Schemas
 subfeature_v2:
   - id: a1681cd8-6b2e-4955-9113-33b5f7a22b8c
+    internal-label: Data model architecture
   - id: af6750fd-3c1b-4ad2-9fe3-99e81510998d
+    internal-label: Data retention
   - id: bec93d13-829e-414d-9c2b-71b3974944a0
+    internal-label: Campaign data model
   - id: cfc95e9b-b035-4403-a6a9-b27a8a053a37
+    internal-label: PI
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+    internal-label: Optimization
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+    internal-label: Data integration
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+    internal-label: Data management
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+    internal-label: Privacy
 source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
 workflow-type: tm+mt
-source-wordcount: 4078
+source-wordcount: '4078'
 ht-degree: 1%
-
 ---
-
 # 数据模型最佳实践{#data-model-best-practices}
 
 本文档概述了设计Adobe Campaign数据模型时的主要建议。
@@ -168,7 +183,7 @@ Adobe Campaign主键是所有现成表自动生成的id，对于自定义表可�
 
 默认情况下，自定义序列的值介于+1,000和+2.1BB之间。 从技术上讲，通过启用负id可以获得整个4BB范围。 应谨慎使用此变量，当从负数转为正数时，将丢失一个id：Adobe Campaign通常会在生成的SQL查询中忽略记录0。
 
-有关序列消耗的详细信息，请观看[此视频](https://helpx.adobe.com/cn/customer-care-office-hours/campaign/sequences-exhaustion-campaign-classic.html)。
+有关序列消耗的详细信息，请观看[此视频](https://helpx.adobe.com/customer-care-office-hours/campaign/sequences-exhaustion-campaign-classic.html)。
 
 ## 索引 {#indexes}
 
@@ -270,7 +285,7 @@ Adobe Campaign既不是Data Warehouse也不是报表工具。 因此，要确保
 
 在[Campaign隐私和安全准则](../../platform/using/privacy-and-recommendations.md)中了解有关数据保留的更多信息。
 
-在本节[&#128279;](../../production/using/database-cleanup-workflow.md)中了解有关Campaign数据库清理工作流的更多信息。
+在本节](../../production/using/database-cleanup-workflow.md)中了解有关Campaign数据库清理工作流[的更多信息。
 
 >[!IMPORTANT]
 >
@@ -321,7 +336,7 @@ Adobe Campaign依赖于第三方数据库引擎。 根据提供商的不同，�
 
 * **小型**&#x200B;表类似于投放表。
 * **中等大小**&#x200B;表与收件人表的大小相同。 每个客户都有一笔记录。
-* **large-size**&#x200B;表类似于Broad日志表。 每个客户都有许多记录。
+* **large-size**表类似于Broad日志表。 每个客户都有许多记录。
 例如，如果数据库包含1000万条收件人，则Broad日志表将包含约1亿到2亿条消息，而Delivery表将包含数千条记录。
 
 在PostgreSQL上，行不应超过8 KB，以避免[TOAST](https://wiki.postgresql.org/wiki/TOAST)机制。 因此，应尽量减少列数和每行大小，以保留系统的最佳性能（内存和CPU）。

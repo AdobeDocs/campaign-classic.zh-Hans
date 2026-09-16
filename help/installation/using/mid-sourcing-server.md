@@ -3,7 +3,7 @@ product: campaign
 title: 在Campaign中安装中间源服务器
 description: 本节详细介绍Campaign中中间源服务器的安装和配置
 feature: Installation, Instance Settings
-badge-v7-prem: label="仅限内部部署/混合" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hans" tooltip="仅适用于内部部署和混合部署"
+badge-v7-prem: label="On-premise/hybrid only" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hans" tooltip="Applies to on-premise and hybrid deployments only"
 audience: installation
 content-type: reference
 topic-tags: additional-configurations
@@ -12,11 +12,9 @@ feature_v2: []
 subfeature_v2: []
 source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
 workflow-type: tm+mt
-source-wordcount: 1084
+source-wordcount: '1072'
 ht-degree: 2%
-
 ---
-
 # 中间源服务器{#mid-sourcing-server}
 
 
@@ -29,7 +27,7 @@ ht-degree: 2%
 
 >[!CAUTION]
 >
->设置中间源服务器并首次运行[同步工作流](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows.html?lang=zh-Hans){target="_blank"}后，请确保不更新中间源外部帐户的内部名称。
+>设置中间源服务器并首次运行[同步工作流](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows.html){target="_blank"}后，请确保不更新中间源外部帐户的内部名称。
 
 ## 安装和配置实例的步骤 {#steps-for-installing-and-configuring-an-instance}
 
@@ -127,7 +125,7 @@ ht-degree: 2%
 
    ![](assets/mid_recette_user_restrictions.png)
 
-1. 使用以下命令重新启动Web模块： **&#x200B; web**。
+1. 使用以下命令重新启动Web模块： ** web**。
 
 您必须更改serverConf.xml文件中的中间源服务器设置。 必须将以下行添加到“使用IP地址管理关联性”部分的现有行下：
 
@@ -141,9 +139,9 @@ ht-degree: 2%
 
 “marketing_account_operator_name”与在中间源实例中声明的中间源帐户的内部名称相关。
 
-“affinity_name”与为关联指定的任意名称相关。 此名称必须是唯一的。 授权字符为`[a-z]` `[A-Z]` `[0-9]`。 目标是声明一组公共IP地址。
+“affinity_name”与为关联指定的任意名称相关。 此名称必须是唯一的。 授权字符为`[a-z]``[A-Z]``[0-9]`。 目标是声明一组公共IP地址。
 
-“affinity_group”与每个投放中使用的目标映射中声明的子关联相关联。 如果没有Sub-affinity，则忽略包含“。”的最后一部分。 授权字符为`[a-z]` `[A-Z]` `[0-9]`。
+“affinity_group”与每个投放中使用的目标映射中声明的子关联相关联。 如果没有Sub-affinity，则忽略包含“。”的最后一部分。 授权字符为`[a-z]``[A-Z]``[0-9]`。
 
 您必须停止然后重新启动服务器，以便考虑修改。
 

@@ -3,7 +3,7 @@ product: campaign
 title: 导入和导出受众
 description: 导入和导出受众
 feature: Audiences
-badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v8"
+badge-v8: label="Also applies to v8" type="Positive" tooltip="Also applies to Campaign v8"
 audience: integrations
 content-type: reference
 topic-tags: audience-sharing
@@ -11,20 +11,24 @@ exl-id: c2293fc5-c9ba-4a73-8f39-fa7cdd06e8dd
 TQID: https://experienceleague.adobe.com/bOM6WFh4gyejeYtHdOSBO3jbY4LFvLB--P5pxN5t5O0
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: d5ef99fa-df0c-4153-bf94-105ad0724167
+    internal-label: Integrations
 subfeature_v2:
   - id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
+    internal-label: Adobe Analytics integration
   - id: df0d6518-6f49-46e2-b46e-3bcc513f553f
+    internal-label: Adobe Experience Manager integration
   - id: eb007b6d-6e57-46ab-9485-3f24d6102304
+    internal-label: Adobe Experience Platform integration
   - id: b1fd1501-3105-4d6b-b4d4-9af53126df75
+    internal-label: Adobe Target integration
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 625
+source-wordcount: '616'
 ht-degree: 3%
-
 ---
-
 # 导入和导出受众{#importing-and-exporting-audiences}
 
 
@@ -38,7 +42,7 @@ ht-degree: 3%
 
    ![](assets/aam_import_audience.png)
 
-1. 在打开的窗口中，单击&#x200B;**[!UICONTROL Select a shared audience]**&#x200B;以转到可从其他Adobe Experience Cloud解决方案访问的共享受众/区段列表。
+1. 在打开的窗口中，单击&#x200B;**[!UICONTROL Select a shared audience]**&#x200B;以转到其他Adobe Experience Cloud解决方案中可用的共享受众/区段列表。
 1. 选择受众并进行确认。 受众的信息会自动填写。
 
    请注意，为了能够导入共享受众，您应该在Admin Console中获得&#x200B;**[!UICONTROL Audience library]**&#x200B;产品，并成为Audience Manager的管理员。 有关详细信息，请参阅[管理控制台文档](https://helpx.adobe.com/cn/enterprise/managing/user-guide.html)。
@@ -59,7 +63,7 @@ ht-degree: 3%
 >
 >如果您要将受众从Adobe Analytics导入到Adobe Campaign，则需要首先在Audience Manager中共享这些受众。 此过程需要12-24小时，必须将其添加到与Campaign的24-36小时同步中。
 >
->在该特定情况下，受众共享时间范围最长可达60小时。 有关在Audience Manager中共享Adobe Analytics受众的更多信息，请参阅[Adobe Analytics文档](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-publish.html?lang=zh-Hans){target="_blank"}。
+>在该特定情况下，受众共享时间范围最长可达60小时。 有关在Audience Manager中共享Adobe Analytics受众的更多信息，请参阅[Adobe Analytics文档](https://experienceleague.adobe.com/docs/analytics/components/segmentation/segmentation-workflow/seg-publish.html){target="_blank"}。
 
 每次同步受众数据时，受众数据都会被完全替换。 只能导入区段。 不支持包含键值对、特征和规则的粒度数据。
 
@@ -89,8 +93,8 @@ ht-degree: 3%
 
 随后将导出受众。 保存受众活动有两个叫客过渡。 主过渡包含已成功导出的收件人。 额外的过渡包含无法映射为访客ID或声明的ID的收件人。
 
-解决方案之间的同步需要24 - 36个小时。 在此时段后，您将能够找到新受众，并在其他Adobe Experience Cloud解决方案中重复使用它。 有关使用Adobe Campaign共享受众的更多信息，请参阅此[文档](https://experienceleague.adobe.com/zh-hans/docs/core-services/interface/services/audiences/create){target="_blank"}。
+解决方案之间的同步需要24 - 36个小时。 在此时段后，您将能够找到新受众并在其他Adobe Experience Cloud解决方案中重复使用它。 有关使用Adobe Campaign共享受众的更多信息，请参阅此[文档](https://experienceleague.adobe.com/en/docs/core-services/interface/services/audiences/create){target="_blank"}。
 
 >[!NOTE]
 >
->为了进行协调，记录必须具有Adobe Experience Cloud ID（“访客ID”或“声明的ID”）。 导出和导入受众时，将忽略没有Adobe Experience Cloud ID的记录。
+>为了进行协调，记录必须具有Adobe Experience Cloud ID（“访客ID”或“声明的ID”）。 导出和导入受众时，会忽略没有Adobe Experience Cloud ID的记录。

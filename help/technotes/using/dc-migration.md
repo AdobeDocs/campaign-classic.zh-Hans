@@ -9,27 +9,35 @@ exl-id: 2b282221-d048-4f6e-b52e-f8e584af2c0e
 TQID: https://experienceleague.adobe.com/aoayco5jy1djmO-FNlofnJFE-inpeMOVE1UBVC-pkFc
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: a075b2c1-7748-4328-b7f6-343aa314616a
+    internal-label: Campaigns
   - id: d5ef99fa-df0c-4153-bf94-105ad0724167
+    internal-label: Integrations
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+    internal-label: Data integration
 subfeature_v2:
   - id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
+    internal-label: Adobe Analytics integration
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 1539
+source-wordcount: '1557'
 ht-degree: 2%
-
 ---
-
 # 概述{#dc-ovv}
 
 
@@ -95,7 +103,7 @@ ht-degree: 2%
 
 要开始此工作，需要此迁移的帐户将收到来自Adobe的电子邮件通信，其中提供了时间表和文档访问权限。 这将通知您计划迁移您的帐户。
 
-可以通过[打开新的客户关怀支持票证](https://experienceleague.adobe.com/zh-hans?support-solution=Campaign#support)来启动迁移。 使用主题行“迁移到AWS”。
+可以通过[打开新的客户关怀支持票证](https://experienceleague.adobe.com/?support-solution=Campaign#support)来启动迁移。 使用主题行“迁移到AWS”。
 
 ### 此迁移是否为强制性的？
 
@@ -145,7 +153,7 @@ Adobe处理大多数操作。 我们需要你确认并签发。
 
 **数据集成IP**
 
-客户端上的数据集成可能会受用于数据集成的IP更改的影响。根据Campaign是充当服务器还是客户端，更改可能会双向影响。
+客户端上的数据集成可能会受用于数据集成的IP更改的影响。 根据Campaign是充当服务器还是客户端，更改可能会双向影响。
 典型案例：
 
 * SFTP，可能是双向的

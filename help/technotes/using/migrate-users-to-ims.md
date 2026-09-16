@@ -5,22 +5,27 @@ exl-id: f01948c7-b523-492d-a4e8-67f4adde5fc5
 TQID: https://experienceleague.adobe.com/drpNkA9cj7Prid--GixHMQ48CO7ZC9qqX4w5fnTiD88
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: b12f6872-9271-4369-85e5-86969a0b99a2
+    internal-label: APIs
   - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
 subfeature_v2:
   - id: efa38731-2723-4334-8d8b-a778af834835
+    internal-label: Access management
   - id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
+    internal-label: Adobe Analytics integration
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 1244
+source-wordcount: '1266'
 ht-degree: 3%
-
 ---
-
 # 将Campaign操作员迁移到Adobe Identity Management System (IMS) {#migrate-users-to-ims}
 
 作为加强安全和身份验证过程的一部分，Adobe Campaign强烈建议将最终用户身份验证模式从登录/密码本机身份验证迁移到Adobe Identity Management System (IMS)。 所有操作员都应实施[Adobe Identity Management System (IMS)](https://helpx.adobe.com/cn/enterprise/using/identity.html){target="_blank"}以连接到Campaign。
@@ -53,7 +58,7 @@ Adobe将支持您完成此迁移工作。 您可以在下面文章中找到详�
 >
 >将用户迁移到IMS后，请注意Adobe Admin Console中的任何产品配置文件在其名称中包含“管理员”一词（如“管理员”、“管理员”、“管理员”、“审批管理员”等） 将自动授予对Campaign控制面板的访问权限。 控制面板是一种自助服务工具，允许对Campaign实例进行重大更改。
 >
->请仔细查看您的产品配置文件命名约定，确保只有授权用户才能访问控制面板。 在[控制面板文档](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=zh-Hans){target="_blank"}中了解有关管理控制面板权限的详细信息。
+>请仔细查看您的产品配置文件命名约定，确保只有授权用户才能访问控制面板。 在[控制面板文档](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html){target="_blank"}中了解有关管理控制面板权限的详细信息。
 
 
 ## 如何迁移托管环境和Managed Services环境？ {#ims-migration-procedure}
@@ -85,7 +90,7 @@ Adobe将支持您完成此迁移工作。 您可以在下面文章中找到详�
 1. 升级后，您仍然可以使用这两种方法创建新用户，即作为本机用户或者使用IMS。
 1. 您的内部Campaign管理员必须配置Adobe IMS，如[此部分](../../integrations/using/configuring-ims.md)中所述。
 1. 然后，将唯一的电子邮件添加到Campaign客户端控制台上的所有本机用户。 此步骤在[此部分](#ims-migration-id)中有详细说明。
-1. 在Adobe Admin Console中创建用户和产品配置文件，如[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/admin/permissions/manage-permissions.html?lang=zh-Hans){target="_blank"}中所述。
+1. 在Adobe Admin Console中创建用户和产品配置文件，如[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/admin/permissions/manage-permissions.html){target="_blank"}中所述。
 1. 为所有操作员启用&#x200B;**与Adobe ID连接**&#x200B;选项。
 1. 如[此页面](../../integrations/using/implementing-ims.md)中所述，为您的连接实施Adobe IMS。
 

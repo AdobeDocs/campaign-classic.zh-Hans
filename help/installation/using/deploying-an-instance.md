@@ -3,7 +3,7 @@ product: campaign
 title: 部署实例
 description: 了解有关Campaign部署向导的更多信息
 feature: Installation, Instance Settings, Deployment
-badge-v7-prem: label="仅限内部部署/混合" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hans" tooltip="仅适用于内部部署和混合部署"
+badge-v7-prem: label="On-premise/hybrid only" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hans" tooltip="Applies to on-premise and hybrid deployments only"
 audience: installation
 content-type: reference
 topic-tags: initial-configuration
@@ -11,23 +11,29 @@ exl-id: 8b07447c-9a86-4b56-8d29-e0b01357a6ec
 TQID: https://experienceleague.adobe.com/M1uqZA6cfopJkJ-pg3m-1R-eBbM55zv7R-FSxOfFUwI
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
 subfeature_v2:
   - id: b5852c32-876b-41ae-92a7-9f588865ae52
+    internal-label: Best practices
   - id: e656c701-3899-4db3-989c-de0980ddfffa
+    internal-label: Installation
   - id: eff19c99-440a-4318-b319-444edc4d8d8f
+    internal-label: Upgrade
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+    internal-label: Privacy
 source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
 workflow-type: tm+mt
-source-wordcount: 3479
+source-wordcount: '3471'
 ht-degree: 2%
-
 ---
-
 # 部署实例{#deploying-an-instance}
 
 >[!NOTE]
@@ -92,12 +98,12 @@ Adobe Campaign提供了一个图形助手（可在Adobe Campaign客户端控制�
 指示以下参数：
 
 * **[!UICONTROL Sender name]** ：输入发件人的名称。
-* **[!UICONTROL Sender address]** ：输入发件人的电子邮件地址。 从Adobe Campaign发送电子邮件时，不会监控&#x200B;**发件人地址**&#x200B;邮箱，因此营销用户无法访问此邮箱。 Adobe Campaign也不提供自动回复或自动转发此邮箱中接收的电子邮件的功能。 请参阅此文档[&#128279;](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/ac-starting-new-platform.html?lang=zh-Hans){_blank}以了解有关可投放性最佳实践的更多信息。
+* **[!UICONTROL Sender address]** ：输入发件人的电子邮件地址。 从Adobe Campaign发送电子邮件时，不会监控&#x200B;**发件人地址**&#x200B;邮箱，因此营销用户无法访问此邮箱。 Adobe Campaign也不提供自动回复或自动转发此邮箱中接收的电子邮件的功能。 请参阅此文档](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/campaign/ac-starting-new-platform.html){_blank}以了解有关可投放性最佳实践的更多信息[。
 
 * **[!UICONTROL Reply address text]** ：输入收件人单击&#x200B;**[!UICONTROL Reply]**&#x200B;按钮时使用的名称。
 * **[!UICONTROL Reply address]** ：输入收件人单击电子邮件客户端软件中的&#x200B;**[!UICONTROL Reply]**&#x200B;按钮时要使用的电子邮件地址。 **回复地址**&#x200B;字段的用途是您希望收件人回复到&#x200B;**发件人地址**&#x200B;以外的其他地址。  此地址必须是有效的电子邮件地址，链接到受监视的邮箱，并由客户托管。  它可以是支持邮箱，例如`customer-care@customer.com`，在其中读取和响应电子邮件。
 
-* **[!UICONTROL Error address]** ：输入包含错误的消息的电子邮件地址。 这是用于处理退回邮件的技术地址，包括Adobe Campaign服务器因目标地址不存在而收到的电子邮件。 此地址必须是有效的电子邮件地址，链接到受监视的邮箱，并由客户托管。 它可能是退回邮箱，例如`errors@customer.com`。 可以从投放/投放模板属性的&#x200B;**SMTP**&#x200B;选项卡，为投放或投放模板更改此地址。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/email-parameters.html?lang=zh-Hans#managing-bounce-emails){target="_blank"}以了解详情。
+* **[!UICONTROL Error address]** ：输入包含错误的消息的电子邮件地址。 这是用于处理退回邮件的技术地址，包括Adobe Campaign服务器因目标地址不存在而收到的电子邮件。 此地址必须是有效的电子邮件地址，链接到受监视的邮箱，并由客户托管。 它可能是退回邮箱，例如`errors@customer.com`。 可以从投放/投放模板属性的&#x200B;**SMTP**&#x200B;选项卡，为投放或投放模板更改此地址。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/email-parameters.html#managing-bounce-emails){target="_blank"}以了解详情。
 
 此外，您还可以为发件人地址和错误地址指定授权的&#x200B;**掩码**。 如有必要，可以使用逗号分隔这些掩码。 此配置是可选的。 输入字段后，Adobe Campaign会在投放时（分析期间，如果地址不包含任何变量）检查地址是否有效。 此操作模式可确保不使用可能触发投放问题的地址。 必须在投放服务器上配置投放地址。
 
@@ -395,7 +401,7 @@ Adobe Campaign允许您区分这三个URL，以将负载分散到多个平台上
 
   每次投放都可以覆盖此值。
 
-* 对于公共资源，URL **https://** server **/res/** instance **&#x200B;**，其中&#x200B;**instance**&#x200B;是跟踪实例的名称。
+* 对于公共资源，URL **https://** server **/res/** instance ****，其中&#x200B;**instance**是跟踪实例的名称。
 
 ### 投放图像检测 {#delivery-image-detection}
 
@@ -407,7 +413,7 @@ Adobe Campaign允许您区分这三个URL，以将负载分散到多个平台上
 
 您可以使用逗号指定多个URL掩码来分隔每个URL掩码。
 
-* 有关在电子邮件中使用和管理图像的信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html?lang=zh-Hans#adding-images){target="_blank"}。
+* 有关在电子邮件中使用和管理图像的信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html#adding-images){target="_blank"}。
 * 在投放助手中，从这些URL调用的图像将具有“已忽略”状态。
 
 ### 发布模式 {#publication-modes}
@@ -442,16 +448,16 @@ Adobe Campaign允许您区分这三个URL，以将负载分散到多个平台上
 
   您可以使用脚本发布图像：
 
-   * 您必须创建此脚本：其内容取决于您的配置。
-   * 该脚本将通过以下命令调用：
+  * 您必须创建此脚本：其内容取决于您的配置。
+  * 该脚本将通过以下命令调用：
 
-     ```
-     [INSTALL]/copyToFrontal.vbs "$(XTK_INSTALL_DIR)\var\<instance>\upload\" "img1,img2,img3"
-     ```
+    ```
+    [INSTALL]/copyToFrontal.vbs "$(XTK_INSTALL_DIR)\var\<instance>\upload\" "img1,img2,img3"
+    ```
 
-     其中，`[INSTALL]`是Adobe Campaign安装文件夹的访问路径。
+    其中，`[INSTALL]`是Adobe Campaign安装文件夹的访问路径。
 
-   * 在Unix中，确保脚本可执行。
+  * 在Unix中，确保脚本可执行。
 
 对于图像，必须将其从通过&#x200B;**NmsDelivery_ImageSubDirectory**&#x200B;选项指定的“图像”文件夹复制到一个或多个前端服务器。 这些服务器将存储图像，以便通过新配置的URL访问它们。
 

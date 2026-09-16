@@ -8,30 +8,42 @@ exl-id: 58cc23f4-9ab0-45c7-9aa2-b08487ec7e91
 TQID: https://experienceleague.adobe.com/d6tF02X7K9j9mDk90wyH-3iXm8iBZzMo1da2PPkYHGs
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: a075b2c1-7748-4328-b7f6-343aa314616a
+    internal-label: Campaigns
   - id: b631758a-142d-425f-b9aa-f756d85cb979
+    internal-label: Campaign Email Designer
   - id: c858a28b-ea19-49b0-8d48-828717fad89c
+    internal-label: Prepare and test messages
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+    internal-label: Optimization
 subfeature_v2:
   - id: e95a583b-fcfa-4524-8666-46a29c828119
+    internal-label: Email messaging
   - id: c8da4fdd-eb94-4751-a43c-f82733fb2d6e
+    internal-label: Email design
   - id: d5bbe3da-ba85-4242-817e-54f7c4b943e0
+    internal-label: A/B testing
   - id: f4da0e76-df77-451e-ad61-21afb7bd8810
+    internal-label: Manage deliverability
 source-git-commit: c8d13469884744554fd504fed8842dd0c9ab5feb
 workflow-type: tm+mt
-source-wordcount: 1393
+source-wordcount: '1428'
 ht-degree: 1%
-
 ---
-
 # 使用增强MTA发送 {#sending-with-enhanced-mta}
 
 **Adobe Campaign Enhanced MTA** （邮件传输代理）提供了一个升级的发送基础结构，从而改进了可投放性、信誉、吞吐量、报告、退回处理、IP提升和连接设置管理。
@@ -156,18 +168,18 @@ Campaign不再使用投放中的重试设置。 软退回重试次数以及它�
 
 ### DKIM-signing
 
-DKIM（域名识别邮件）电子邮件身份验证签名由Enhanced MTA完成。作为增强MTA升级的一部分，本机Campaign MTA的DKIM签名将在域管理表中关闭。
-有关DKIM的更多信息，请参阅[Adobe可投放性最佳实践指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=zh-Hans#authentication)。
+DKIM（域名识别邮件）电子邮件身份验证签名由Enhanced MTA完成。 作为增强MTA升级的一部分，本机Campaign MTA的DKIM签名将在域管理表中关闭。
+有关DKIM的更多信息，请参阅[Adobe可投放性最佳实践指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#authentication)。
 
 ### 投放成功报告
 
-在电子邮件投放[仪表板](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"}的&#x200B;**[!UICONTROL Summary]**&#x200B;视图中，**[!UICONTROL Success]**&#x200B;百分比从100%开始，然后在投放[有效期](communication-channels.md)内逐步下降，因为软退回和硬退回会从Enhanced MTA报告回Campaign。
+在电子邮件投放[仪表板](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"}的&#x200B;**[!UICONTROL Summary]**&#x200B;视图中，**[!UICONTROL Success]**&#x200B;百分比从100%开始，然后在投放[有效期](communication-channels.md)内逐步下降，因为软退回和硬退回会从Enhanced MTA报告回Campaign。
 
-事实上，一旦消息成功地从Campaign中继到增强型MTA，在[发送日志](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/send/monitor/delivery-dashboard#delivery-logs-and-history){target="_blank"}中，所有消息都会显示为&#x200B;**[!UICONTROL Sent]**。 除非或直到该消息的[退回](delivery-failures-quarantine.md#delivery-failure-types-and-reasons)从Enhanced MTA传回Campaign，否则它们将保持该状态。
+事实上，一旦消息成功地从Campaign中继到增强型MTA，在[发送日志](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard#delivery-logs-and-history){target="_blank"}中，所有消息都会显示为&#x200B;**[!UICONTROL Sent]**。 除非或直到该消息的[退回](delivery-failures-quarantine.md#delivery-failure-types-and-reasons)从Enhanced MTA传回Campaign，否则它们将保持该状态。
 
 当从增强型MTA报告硬退回邮件时，其状态从&#x200B;**[!UICONTROL Sent]**&#x200B;更改为&#x200B;**[!UICONTROL Failed]**，**[!UICONTROL Success]**&#x200B;百分比相应减少。
 
-从Enhanced MTA报告软退回邮件时，它们仍显示为&#x200B;**[!UICONTROL Sent]**，并且&#x200B;**[!UICONTROL Success]**&#x200B;百分比尚未更新。 然后，软退回邮件在投放有效期内将重试[&#128279;](delivery-failures-quarantine.md#retries-after-a-delivery-temporary-failure)：
+从Enhanced MTA报告软退回邮件时，它们仍显示为&#x200B;**[!UICONTROL Sent]**，并且&#x200B;**[!UICONTROL Success]**&#x200B;百分比尚未更新。 然后，软退回邮件在投放有效期内将重试[](delivery-failures-quarantine.md#retries-after-a-delivery-temporary-failure)：
 
 * 如果在有效期结束前重试成功，则消息状态将保留为&#x200B;**[!UICONTROL Sent]**，**[!UICONTROL Success]**&#x200B;百分比将保持不变。
 

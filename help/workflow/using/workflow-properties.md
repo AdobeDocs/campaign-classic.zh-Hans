@@ -8,21 +8,25 @@ exl-id: c7bff902-4f5d-4783-aec4-13561fa7d242
 TQID: https://experienceleague.adobe.com/H8Surh-owYlv-qVNN4efyqWctA53oD0GMexLgYaTxgo
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2: []
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
 subfeature_v2:
   - id: ee25c34b-ea50-427b-9369-ba0a160f7d70
+    internal-label: Workflow HeatMap
   - id: b5f0aaf4-1e48-400d-95ac-6eb3078cf22f
+    internal-label: Execution activities
   - id: d1110311-2ca4-442b-be37-088a6db845ee
+    internal-label: Data Management activities
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 554
+source-wordcount: '554'
 ht-degree: 38%
-
 ---
-
 # 工作流属性{#workflow-properties}
 
 
@@ -75,8 +79,8 @@ ht-degree: 38%
 
   此字段可让您定义在工作流任务出错时要执行的操作。 提供了两个可能的选项：
 
-   * **[!UICONTROL Stop the process]**：工作流已自动暂停。 工作流状态更改为&#x200B;**[!UICONTROL Failed]**。 问题解决后，使用&#x200B;**[!UICONTROL Start]**&#x200B;或&#x200B;**[!UICONTROL Restart]**&#x200B;按钮重新启动工作流。
-   * **[!UICONTROL Ignore]**：触发错误的任务状态更改为&#x200B;**[!UICONTROL Failed]**，但工作流保留&#x200B;**[!UICONTROL Started]**&#x200B;状态。 此配置与定期任务相关：如果分支包含调度程序，它将在下次执行工作流时正常启动。
+  * **[!UICONTROL Stop the process]**：工作流已自动暂停。 工作流状态更改为&#x200B;**[!UICONTROL Failed]**。 问题解决后，使用&#x200B;**[!UICONTROL Start]**&#x200B;或&#x200B;**[!UICONTROL Restart]**&#x200B;按钮重新启动工作流。
+  * **[!UICONTROL Ignore]**：触发错误的任务状态更改为&#x200B;**[!UICONTROL Failed]**，但工作流保留&#x200B;**[!UICONTROL Started]**&#x200B;状态。 此配置与定期任务相关：如果分支包含调度程序，它将在下次执行工作流时正常启动。
 
 * **[!UICONTROL Consecutive errors]**
 

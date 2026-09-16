@@ -2,29 +2,35 @@
 product: campaign
 title: 在Apple 2021年中断后更新退回限制条件
 description: 了解如何在Apple 2021年中断后更新退回鉴别
-badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v8"
+badge-v8: label="Also applies to v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Deliverability
 exl-id: 34be23f7-17fa-475e-9663-2e353d76b172
 TQID: https://experienceleague.adobe.com/kn5H0jxM7KKnLGQ3vYdvhQm4nixgSTVhFBO8CAh-1Lg
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 topic_v2:
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+    internal-label: Privacy
 feature_v2:
   - id: b631758a-142d-425f-b9aa-f756d85cb979
+    internal-label: Campaign Email Designer
   - id: c858a28b-ea19-49b0-8d48-828717fad89c
+    internal-label: Prepare and test messages
 subfeature_v2:
   - id: e95a583b-fcfa-4524-8666-46a29c828119
+    internal-label: Email messaging
   - id: c8da4fdd-eb94-4751-a43c-f82733fb2d6e
+    internal-label: Email design
   - id: d5bbe3da-ba85-4242-817e-54f7c4b943e0
+    internal-label: A/B testing
   - id: f4da0e76-df77-451e-ad61-21afb7bd8810
+    internal-label: Manage deliverability
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 457
+source-wordcount: '448'
 ht-degree: 0%
-
 ---
-
 # 在Apple中断后更新不正确的硬退回 {#update-bounce-qualification.md}
 
 ## 上下文
@@ -55,16 +61,16 @@ ht-degree: 0%
 
 * 对于隔离列表的&#x200B;**[!UICONTROL Error text]**&#x200B;字段中包含SMTP退回响应信息的Campaign实例：
 
-   * **错误文本（隔离文本）**&#x200B;包含“用户查找成功但未找到用户记录”以及&#x200B;**错误文本（隔离文本）**&#x200B;包含“support.apple.com”
-   * 上午4/26/2021 07:00:00或之后的&#x200B;**更新状态(@lastModified)**
-   * 下午4/26/2021 01:00:00或之前&#x200B;**更新状态(@lastModified)**
+  * **错误文本（隔离文本）**&#x200B;包含“用户查找成功但未找到用户记录”以及&#x200B;**错误文本（隔离文本）**&#x200B;包含“support.apple.com”
+  * 上午4/26/2021 07:00:00或之后的&#x200B;**更新状态(@lastModified)**
+  * 下午4/26/2021 01:00:00或之前&#x200B;**更新状态(@lastModified)**
 
 * 对于在隔离列表的&#x200B;**[!UICONTROL Error text]**&#x200B;字段中包含入站电子邮件规则信息的Campaign实例：
 
-   * **错误文本（隔离文本）**&#x200B;包含“Momen_Code10_InvalidRecipient”
-   * **电子邮件域(@domain)**&#x200B;等于icloud.com或&#x200B;**电子邮件域(@domain)**&#x200B;等于me.com或&#x200B;**电子邮件域(@domain)**&#x200B;等于mac.com
-   * 上午4/26/2021 07:00:00或之后的&#x200B;**更新状态(@lastModified)**
-   * 下午4/26/2021 01:00:00或之前&#x200B;**更新状态(@lastModified)**
+  * **错误文本（隔离文本）**&#x200B;包含“Momen_Code10_InvalidRecipient”
+  * **电子邮件域(@domain)**&#x200B;等于icloud.com或&#x200B;**电子邮件域(@domain)**&#x200B;等于me.com或&#x200B;**电子邮件域(@domain)**&#x200B;等于mac.com
+  * 上午4/26/2021 07:00:00或之后的&#x200B;**更新状态(@lastModified)**
+  * 下午4/26/2021 01:00:00或之前&#x200B;**更新状态(@lastModified)**
 
 在获得受影响的收件人列表后，您可以将他们的状态设置为&#x200B;**[!UICONTROL Valid]**，以便通过&#x200B;**[!UICONTROL Database cleanup]**&#x200B;工作流将其从隔离列表中删除，或者只是从表中删除他们。
 

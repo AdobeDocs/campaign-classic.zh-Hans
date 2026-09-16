@@ -3,7 +3,7 @@ product: campaign
 title: 插入动态图像
 description: 插入动态图像
 feature: Target Integration
-badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v8"
+badge-v8: label="Also applies to v8" type="Positive" tooltip="Also applies to Campaign v8"
 audience: integrations
 content-type: reference
 topic-tags: adobe-target
@@ -11,23 +11,29 @@ exl-id: 6177f57b-534c-4d86-8f73-d96980c48a77
 TQID: https://experienceleague.adobe.com/ZAYETj1vL8BW-5r9YkP0teEP47bUbfmQ0GqctUrJqxs
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: d5ef99fa-df0c-4153-bf94-105ad0724167
+    internal-label: Integrations
 subfeature_v2:
   - id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
+    internal-label: Adobe Analytics integration
   - id: df0d6518-6f49-46e2-b46e-3bcc513f553f
+    internal-label: Adobe Experience Manager integration
   - id: eb007b6d-6e57-46ab-9485-3f24d6102304
+    internal-label: Adobe Experience Platform integration
   - id: b1fd1501-3105-4d6b-b4d4-9af53126df75
+    internal-label: Adobe Target integration
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 854
+source-wordcount: '845'
 ht-degree: 2%
-
 ---
-
 # 插入Target动态内容 {#inserting-a-dynamic-image}
 
 
@@ -75,7 +81,7 @@ ht-degree: 2%
 * **[!UICONTROL Landing Page]**：如果您希望将默认图像重定向到默认登陆页面。 此URL仅适用于默认图像显示在最终电子邮件中的情况，并且是可选的。
 * **[!UICONTROL Additional decision parameters]**：指定在Adobe Target区段中定义的字段与Adobe Campaign字段之间的映射。 使用的Adobe Campaign字段必须在rawbox中指定。 在我们的示例中，我们添加了“国家/地区”字段。
 
-如果您在Adobe Target的设置中使用企业权限，请在此字段中添加相应的资产。 在[此页面](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/properties-overview.html?lang=zh-Hans)中了解有关Target企业权限的更多信息。
+如果您在Adobe Target的设置中使用企业权限，请在此字段中添加相应的资产。 在[此页面](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/properties-overview.html)中了解有关Target企业权限的更多信息。
 
 ![](assets/target_13.png)
 
@@ -95,7 +101,7 @@ ht-degree: 2%
 
    ![](assets/target_6.png)
 
-1. 对其余重定向选件执行相同的过程。 有关详细信息，请参见此 [&#x200B; 页面](https://experienceleague.adobe.com/docs/target/using/experiences/offers/offer-redirect.html?lang=zh-Hans)。
+1. 对其余重定向选件执行相同的过程。 有关详细信息，请参见此 [ 页面](https://experienceleague.adobe.com/docs/target/using/experiences/offers/offer-redirect.html)。
 
 ## 创建受众 {#audiences-target}
 
@@ -167,7 +173,7 @@ ht-degree: 2%
 
 ## 预览并发送电子邮件 {#preview-send-email}
 
-在Adobe Campaign中，您现在可以预览电子邮件并测试其针对不同收件人的呈现方式。 您会注意到图像会根据创建的不同体验而发生更改。 要了解有关电子邮件创建的更多信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html?lang=zh-Hans){target="_blank"}。
+在Adobe Campaign中，您现在可以预览电子邮件并测试其针对不同收件人的呈现方式。 您会注意到图像会根据创建的不同体验而发生更改。 要了解有关电子邮件创建的更多信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html){target="_blank"}。
 
 您现在可以发送包含Target动态选件的电子邮件。
 

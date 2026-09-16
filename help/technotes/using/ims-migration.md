@@ -7,26 +7,34 @@ exl-id: 1a409daf-57be-43c9-a3d9-b8ab54c88068
 TQID: https://experienceleague.adobe.com/DmKIvFx2JKk1fwVKI90bhQ-CJyWF2NP7ICu9EdPm8VU
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: b12f6872-9271-4369-85e5-86969a0b99a2
+    internal-label: APIs
   - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
   - id: d5ef99fa-df0c-4153-bf94-105ad0724167
+    internal-label: Integrations
 subfeature_v2:
   - id: efa38731-2723-4334-8d8b-a778af834835
+    internal-label: Access management
   - id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
+    internal-label: Adobe Analytics integration
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 1838
+source-wordcount: '1838'
 ht-degree: 0%
-
 ---
-
 # 将Campaign技术操作员迁移到Adobe Developer Console {#migrate-tech-users-to-ims}
 
 从Campaign Classic v7.3.5开始，作为加强安全和身份验证流程工作的一部分，Campaign Classic的身份验证流程正在得到改进。 技术操作员现在应使用[Adobe Identity Management System (IMS)](https://helpx.adobe.com/cn/enterprise/using/identity.html){target="_blank"}连接到Campaign。 在[Adobe Developer Console文档](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/){target="_blank"}中了解有关新服务器到服务器身份验证过程的更多信息。 **Adobe建议在v7中执行此迁移以便能够顺利迁移到Campaign v8。**
@@ -102,7 +110,7 @@ For this migration, you must add below APIs in your project: **I/O Management AP
 
 要将API添加到项目中，请执行以下步骤：
 
-1. 单击&#x200B;**添加API**&#x200B;以选择要添加到项目中的API。
+1. 单击&#x200B;**添加API**以选择要添加到项目中的API。
    ![](assets/do-not-translate/ims-updates-01.png)
 1. 通过勾选Adobe Campaign卡片右上角的框，选择并将Adobe Campaign API添加到您的项目中，在将鼠标悬停在该卡片上时会显示该框
    ![](assets/do-not-translate/ims-updates-02.png)
@@ -472,7 +480,7 @@ response = requests.post(url, headers=headers, data=xml_data)
 
 此步骤是可选的，并且仅在营销实例中可用，不能在任何消息中心实例中使用。 如果已经为技术操作员定义了特定文件夹权限或已命名权限，但未通过分配的操作员组。 现在，您需要在Admin Console中更新新创建的技术帐户用户，以授予所需的文件夹权限或命名权限。
 
-请注意，在对Campaign实例至少进行API调用后（IMS届时将在Campaign中创建用户），技术帐户用户才会存在于Adobe Campaign中。 如果您在Campaign中找不到技术用户，请确保能够成功发送API调用，如步骤7[&#128279;](#ims-migration-step-7)中所述。
+请注意，在对Campaign实例至少进行API调用后（IMS届时将在Campaign中创建用户），技术帐户用户才会存在于Adobe Campaign中。 如果您在Campaign中找不到技术用户，请确保能够成功发送API调用，如步骤7](#ims-migration-step-7)中所述[。
 
 1. 要应用新的技术帐户用户所需的更改，请按照电子邮件地址在Campaign客户端控制台中找到它们。 此电子邮件地址是在上述项目创建和身份验证步骤中创建的。
 

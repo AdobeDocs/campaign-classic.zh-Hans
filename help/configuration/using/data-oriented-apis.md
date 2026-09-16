@@ -8,18 +8,19 @@ exl-id: a392c55e-541a-40b1-a910-4a6dc79abd2d
 TQID: https://experienceleague.adobe.com/57imQDwof4UvPsE4WyQj9-NS3z7i2mEwxObF-WrwH74
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: b12f6872-9271-4369-85e5-86969a0b99a2
+    internal-label: APIs
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 subfeature_v2: []
 source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
 workflow-type: tm+mt
-source-wordcount: 1803
+source-wordcount: '1803'
 ht-degree: 0%
-
 ---
-
 # 面向数据的 API{#data-oriented-apis}
 
 面向数据的API使您能够处理整个数据模型。
@@ -52,7 +53,7 @@ XML文档存储在数据库的MEMO类型字段中。
 
 这使您能够隔离基础SQL。 查询语言不依赖于底层引擎：某些函数将重新映射，这些函数可能会生成多个SELECT SQL顺序。
 
-有关详细信息，请参阅架构“xtk:queryDef”[&#128279;](../../configuration/using/web-service-calls.md#example-on-the--executequery--method-of-schema--xtk-querydef-)的“ExecuteQuery”方法上的示例。
+有关详细信息，请参阅架构“xtk:queryDef”](../../configuration/using/web-service-calls.md#example-on-the--executequery--method-of-schema--xtk-querydef-)的“ExecuteQuery”方法上的[示例。
 
 **ExecuteQuery**&#x200B;方法出现在[ExecuteQuery (xtk:queryDef)](#executequery--xtk-querydef-)中。
 

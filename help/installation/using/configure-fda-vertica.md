@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: 配置对  [!DNL Vertica Analytics] 的访问
-description: 了解如何在FDA中配置对 [!DNL Vertica Analytics] 的访问权限
+title: 配置对[!DNL Vertica Analytics]的访问权限
+description: 了解如何在FDA中配置对[!DNL Vertica Analytics]的访问权限
 feature: Installation, Federated Data Access
 audience: platform
 content-type: reference
@@ -10,17 +10,17 @@ exl-id: 8b2a9c73-807a-4936-9fd6-9d26c805a31f
 TQID: https://experienceleague.adobe.com/R0BzuzvaCahMWtHor24mNcwEiK7LtT97hpRMyOXNljg
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
 feature_v2: []
 subfeature_v2: []
 source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
 workflow-type: tm+mt
-source-wordcount: 380
-ht-degree: 1%
-
+source-wordcount: '386'
+ht-degree: 2%
 ---
-
 # 配置对[!DNL Vertica Analytics]的访问权限 {#configure-fda-vertica}
 
 
@@ -88,7 +88,7 @@ ht-degree: 1%
 
 ## Windows上的[!DNL Vertica Analytics] {#vertica-windows}
 
-1. 下载适用于Windows[&#128279;](https://www.vertica.com/download/vertica/client-drivers/)的ODBC驱动程序。 要安装Windows驱动程序，您需要启用.NET Framework 3.5，否则安装助理将尝试自动启用并下载该驱动程序。
+1. 下载适用于Windows](https://www.vertica.com/download/vertica/client-drivers/)的[ODBC驱动程序。 要安装Windows驱动程序，您需要启用.NET Framework 3.5，否则安装助理将尝试自动启用并下载该驱动程序。
 
 1. 在Windows中配置ODBC驱动程序。 有关详细信息，请参见[此页面](https://www.vertica.com/docs/9.2.x/HTML/Content/Authoring/ConnectingToVertica/ClientODBC/SettingUpADSN.htm)
 

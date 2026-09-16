@@ -8,24 +8,31 @@ exl-id: 0c7f00f3-b16d-41c5-a7b1-f5a59201bf8c
 TQID: https://experienceleague.adobe.com/0NZ2bS4K-X1okyD-snv-pBDekzNqmFV5soF-qUOOVKo
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: c309ee4e-82e4-4f7e-b608-ef345678c34e
+    internal-label: Dynamic Reporting
 subfeature_v2:
   - id: b3a4149f-2b3a-44d1-894e-e3ac4c77fb47
+    internal-label: Reporting interface
   - id: cfda811a-e413-43a4-adf0-7370888f5cfc
+    internal-label: Customize reports
   - id: afe938ea-bc18-44a4-a3fb-03e1031466cb
+    internal-label: Cubes and multidimensional analysis
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+    internal-label: Measurement
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+    internal-label: Data management
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 857
+source-wordcount: '857'
 ht-degree: 6%
-
 ---
-
 # 报告最佳实践{#best-practices-reporting}
 
 
@@ -47,7 +54,7 @@ ht-degree: 6%
    * 浏览数据库中的数据并定义测量。 可在[此小节](../../reporting/using/ac-cubes.md)中了解详情。
    * 向现有报告添加指标。 可在[此小节](../../reporting/using/about-reports-creation-in-campaign.md)中了解详情。
    * 查看数据库中的数据。 可在[此小节](../../reporting/using/about-descriptive-analysis.md)中了解详情。
-   * 创建新的投放报告。 在本节[&#128279;](../../reporting/using/about-reports-creation-in-campaign.md)中了解更多，
+   * 创建新的投放报告。 在本节](../../reporting/using/about-reports-creation-in-campaign.md)中了解更多[，
    * 从Adobe Campaign数据库导出数据(通过工作流，请参阅[此部分](../../workflow/using/about-workflows.md)
    * 创建数据透视表。 可在[此小节](../../reporting/using/creating-a-table.md#creating-a-breakdown-or-pivot-table)中了解详情。
    * 浏览汇总的数据。 可在[此小节](../../reporting/using/ac-cubes.md)中了解详情。

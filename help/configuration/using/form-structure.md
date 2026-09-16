@@ -4,26 +4,29 @@ title: 窗体结构
 description: 窗体结构
 feature: Application Settings
 role: Developer
-badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v8"
+badge-v8: label="Also applies to v8" type="Positive" tooltip="Also applies to Campaign v8"
 exl-id: e61f2b63-06d3-4b8c-867f-1c729176d2da
 TQID: https://experienceleague.adobe.com/zLWHKhH-T-g54pQDAhbOC4v7JvrX-LM-Vn8lCXE-aYI
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
 subfeature_v2: []
 source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
 workflow-type: tm+mt
-source-wordcount: 2407
+source-wordcount: '2402'
 ht-degree: 0%
-
 ---
-
 # 窗体结构{#form-structure}
 
 
@@ -198,7 +201,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->**style=&quot;down|up**（默认情况下）**&quot;**&#x200B;功能强制将选项卡标签垂直定位在控件下方或上方。此功能是可选的。
+>**style=&quot;down|up**（默认情况下）**&quot;**功能强制将选项卡标签垂直定位在控件下方或上方。 此功能为可选项。
 >`<container style="down" type="notebook">  … </container>`
 
 #### 图标列表 {#icon-list}
@@ -315,9 +318,9 @@ ht-degree: 0%
 * **noAutoComplete**：禁用提前键入（值为“true”）
 * **createMode**：如果链接不存在，则即时创建该链接。 可能的值包括：
 
-   * **none**：禁用创建。 如果链接不存在，则显示错误消息
-   * **inline**：创建包含编辑字段中的内容的链接
-   * **edition**：在链接上显示编辑表单。 验证表单后，数据即会保存（默认模式）
+  * **none**：禁用创建。 如果链接不存在，则显示错误消息
+  * **inline**：创建包含编辑字段中的内容的链接
+  * **edition**：在链接上显示编辑表单。 验证表单后，数据即会保存（默认模式）
 
 * **noZoom**：链接上无编辑表单（值为“true”）
 * **表单**：重载目标元素的编辑表单

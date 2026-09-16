@@ -9,14 +9,14 @@ exl-id: 8fd7a66b-cdff-427d-b78f-4becaba51129
 feature_v2: []
 subfeature_v2:
   - id: e5e477db-ebc7-4368-ab0f-4d8fc2aed405
+    internal-label: Release notes
   - id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
+    internal-label: Adobe Analytics integration
 source-git-commit: c372a3d67ec413fa8cf9fdbb4530762a8f2f5177
-workflow-type: ht
-source-wordcount: 890
+workflow-type: tm+mt
+source-wordcount: '890'
 ht-degree: 100%
-
 ---
-
 # 2025 版{#release-2025}
 
 ## 版本 7.4.2  {#release-7-4-2}
@@ -62,13 +62,13 @@ This release comes with the following compatibility updates:
 
 * Google BigQuery 修复：
 
-   * 修复了 BOOLEAN 数据类型的回归
-   * 修复了代理设置问题
-   * 修复了 DATETIME 数据类型的回归
-   * 修复了批量加载稳定性
-   * 改进了 ODBC 版本的内部测试
-   * 修复了连接字符串的特殊字符问题
-   * 移除了 Google BigQuery 查询的默认超时（5 分钟）
+  * 修复了 BOOLEAN 数据类型的回归
+  * 修复了代理设置问题
+  * 修复了 DATETIME 数据类型的回归
+  * 修复了批量加载稳定性
+  * 改进了 ODBC 版本的内部测试
+  * 修复了连接字符串的特殊字符问题
+  * 移除了 Google BigQuery 查询的默认超时（5 分钟）
 
 * 邮件传输代理 (MTA) - 修复了孤立 MTA 子项停留在 **[!UICONTROL Start pending]** 状态。
 

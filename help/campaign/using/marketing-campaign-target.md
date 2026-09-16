@@ -9,23 +9,28 @@ exl-id: 04daa67c-4057-42a7-b993-a6eddf2b883d
 TQID: https://experienceleague.adobe.com/uJW1-zNfhCUn15Nxa9T7bXTzX6nGdZJ1QfuUa38L7HY
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: a075b2c1-7748-4328-b7f6-343aa314616a
+    internal-label: Campaigns
   - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
   - id: afa4204e-6d08-4e29-bc35-26aafb656d48
+    internal-label: Profiles and audiences
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
 subfeature_v2:
   - id: f863efa9-030c-4466-a2b8-a52aea6b722c
+    internal-label: Subscription services
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 1508
+source-wordcount: '1508'
 ht-degree: 2%
-
 ---
-
 # 选择营销活动受众 {#marketing-campaign-deliveries}
 
 在营销活动中，您可以为每个投放定义：
@@ -111,55 +116,55 @@ ht-degree: 2%
 
 * 启动或重新启动
 
-   * 通过&#x200B;**[!UICONTROL Start]**&#x200B;图标，可启动定位工作流。 单击此图标时，将激活所有没有输入过渡的活动（端点跳转除外）。
+  * 通过&#x200B;**[!UICONTROL Start]**&#x200B;图标，可启动定位工作流。 单击此图标时，将激活所有没有输入过渡的活动（端点跳转除外）。
 
-     ![](assets/s_user_segmentation_start.png)
+    ![](assets/s_user_segmentation_start.png)
 
-     服务器会将该请求考虑在内，如其状态所示：
+    服务器会将该请求考虑在内，如其状态所示：
 
-     ![](assets/s_user_segmentation_start_status.png)
+    ![](assets/s_user_segmentation_start_status.png)
 
-     进程状态更改为&#x200B;**[!UICONTROL Started]**。
+    进程状态更改为&#x200B;**[!UICONTROL Started]**。
 
-   * 您可以通过相应的工具栏图标重新启动定位工作流。 如果&#x200B;**[!UICONTROL Start]**&#x200B;图标不可用（例如，正在停止定位工作流），此命令可能很有用。 在这种情况下，请单击&#x200B;**[!UICONTROL Restart]**&#x200B;图标以预期重新启动。 服务器会考虑该请求，因为其状态显示为：
+  * 您可以通过相应的工具栏图标重新启动定位工作流。 如果&#x200B;**[!UICONTROL Start]**&#x200B;图标不可用（例如，正在停止定位工作流），此命令可能很有用。 在这种情况下，请单击&#x200B;**[!UICONTROL Restart]**&#x200B;图标以预期重新启动。 服务器会考虑该请求，因为其状态显示为：
 
-     ![](assets/s_user_segmentation_restart_status.png)
+    ![](assets/s_user_segmentation_restart_status.png)
 
-     然后，该进程进入&#x200B;**[!UICONTROL Started]**&#x200B;状态。
+    然后，该进程进入&#x200B;**[!UICONTROL Started]**&#x200B;状态。
 
 * 停止或暂停
 
-   * 利用工具栏图标，可停止或暂停正在进行的定位工作流。
+  * 利用工具栏图标，可停止或暂停正在进行的定位工作流。
 
-     单击&#x200B;**[!UICONTROL Pause]**&#x200B;后，进行中的操作&#x200B;**[!UICONTROL are not]**&#x200B;已暂停，但在下次重新启动之前不会启动其他活动。
+    单击&#x200B;**[!UICONTROL Pause]**&#x200B;后，进行中的操作&#x200B;**[!UICONTROL are not]**&#x200B;已暂停，但在下次重新启动之前不会启动其他活动。
 
-     ![](assets/s_user_segmentation_pause.png)
+    ![](assets/s_user_segmentation_pause.png)
 
-     服务器会考虑该命令，其状态显示为：
+    服务器会考虑该命令，其状态显示为：
 
-     ![](assets/s_user_segmentation_pause_status.png)
+    ![](assets/s_user_segmentation_pause_status.png)
 
-     当定向工作流执行到特定活动时，您也可以自动暂停定向工作流。 为此，请右键单击要暂停定位工作流的活动，然后选择&#x200B;**[!UICONTROL Enable but do not execute]**。
+    当定向工作流执行到特定活动时，您也可以自动暂停定向工作流。 为此，请右键单击要暂停定位工作流的活动，然后选择&#x200B;**[!UICONTROL Enable but do not execute]**。
 
-     ![](assets/s_user_segmentation_donotexecute.png)
+    ![](assets/s_user_segmentation_donotexecute.png)
 
-     此配置由一个特殊图标显示。
+    此配置由一个特殊图标显示。
 
-     ![](assets/s_user_segmentation_pause_activity.png)
+    ![](assets/s_user_segmentation_pause_activity.png)
 
-     >[!NOTE]
-     >
-     >在高级定位活动设计和测试阶段，此选项非常有用。
+    >[!NOTE]
+    >
+    >在高级定位活动设计和测试阶段，此选项非常有用。
 
-     单击&#x200B;**[!UICONTROL Start]**&#x200B;以继续执行。
+    单击&#x200B;**[!UICONTROL Start]**&#x200B;以继续执行。
 
-   * 单击&#x200B;**[!UICONTROL Stop]**&#x200B;图标可停止正在进行的执行。
+  * 单击&#x200B;**[!UICONTROL Stop]**&#x200B;图标可停止正在进行的执行。
 
-     ![](assets/s_user_segmentation_stop.png)
+    ![](assets/s_user_segmentation_stop.png)
 
-     服务器会考虑该命令，其状态显示为：
+    服务器会考虑该命令，其状态显示为：
 
-     ![](assets/s_user_segmentation_stop_status.png)
+    ![](assets/s_user_segmentation_stop_status.png)
 
   您还可以在执行到达活动时自动停止定向工作流。 为此，请右键单击将停止定位工作流的活动，然后选择&#x200B;**[!UICONTROL Do not activate]**。
 
@@ -258,6 +263,6 @@ ht-degree: 2%
 
 此视频介绍如何在Adobe Campaign中创建活动和电子邮件。
 
->[!VIDEO](https://video.tv.adobe.com/v/27491?captions=chi_hans&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/25604?quality=12)
 
 [此处](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hans)提供了其他Campaign操作方法视频。
