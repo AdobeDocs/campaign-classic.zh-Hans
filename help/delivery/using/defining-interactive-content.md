@@ -231,6 +231,6 @@ AMP for Email与现有电子邮件兼容。 除了HTML和/或纯文本之外，�
 
 以下视频介绍如何在 Adobe Campaign 中激活 AMP 并展示其用法。
 
->[!VIDEO](https://video.tv.adobe.com/v/29940?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/33566?captions=chi_hans&quality=12&learn=on)
 
 [此处](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hans)提供了其他Campaign操作方法视频。

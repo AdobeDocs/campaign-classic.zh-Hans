@@ -203,4 +203,4 @@ Web访问界面与控制台界面类似。 在浏览器中，您可以使用与�
 
 本视频介绍Campaign Classic工作区。
 
->[!VIDEO](https://video.tv.adobe.com/v/35130?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/39534?captions=chi_hans&quality=12)
