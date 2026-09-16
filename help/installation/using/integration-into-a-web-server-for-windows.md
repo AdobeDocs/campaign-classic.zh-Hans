@@ -3,7 +3,7 @@ product: campaign
 title: 集成到Windows版Web服务器
 description: 集成到Windows版Web服务器
 feature: Installation, Instance Settings
-badge-v7-prem: label="仅限内部部署/混合" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hans" tooltip="仅适用于内部部署和混合部署"
+badge-v7-prem: label="On-premise/hybrid only" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hans" tooltip="Applies to on-premise and hybrid deployments only"
 audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-windows-
@@ -11,20 +11,23 @@ exl-id: 041c4431-baae-4e64-9e9a-0daa5123bd8a
 TQID: https://experienceleague.adobe.com/dCUzCZnR5K2T2EPtqmazqAS69Zg40MaltxCVtoDN48I
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
 subfeature_v2:
   - id: e656c701-3899-4db3-989c-de0980ddfffa
+    internal-label: Installation
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
 source-git-commit: 8f9e8344b77e50bd2823cc7fa3922466e515327f
 workflow-type: tm+mt
-source-wordcount: 753
+source-wordcount: '741'
 ht-degree: 4%
-
 ---
-
 # 集成到Windows版Web服务器 {#integration-into-a-web-server-for-windows}
 
 Adobe Campaign包括Apache Tomcat，后者通过HTTP（和SOAP）充当应用程序服务器中的入口点。
@@ -34,7 +37,7 @@ Adobe Campaign包括Apache Tomcat，后者通过HTTP（和SOAP）充当应用程
 在本例中：
 
 * 默认侦听端口为8080。 要更改它，请参阅[此部分](../../installation/using/configure-tomcat.md)。
-* 然后，客户端控制台使用URL（如`https://` `<computer>` `:8080`）进行连接。
+* 然后，客户端控制台使用URL（如`https://`&#x200B;`<computer>`&#x200B;`:8080`）进行连接。
 
 但是，出于安全和管理原因，当运行Adobe Campaign的计算机在Internet上公开并且您希望打开访问网络外部的控制台时，我们建议使用专用的Web服务器作为HTTP流量的主要入口点。
 

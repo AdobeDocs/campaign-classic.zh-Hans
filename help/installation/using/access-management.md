@@ -7,20 +7,23 @@ exl-id: af88e4e7-0ee3-48b4-9db4-7dd390d9d46a
 TQID: https://experienceleague.adobe.com/dbC74X04V5SFr7fWOl1b0-Br-x-jjHFNvMSX9Y6M-JQ
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+    internal-label: Privacy
 feature_v2: []
 subfeature_v2: []
 source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
 workflow-type: tm+mt
-source-wordcount: 377
+source-wordcount: '377'
 ht-degree: 8%
-
 ---
-
 # 访问管理 {#access-management}
 
 
@@ -35,11 +38,11 @@ webApp操作员是开箱即用的管理员。 要提高安全性，请遵循以�
 
 * 如果使用多品牌（或多地域）实例，您可能希望将Web应用程序访问权限拆分到不同的收件人文件夹。 为实现此操作，请执行以下步骤：
 
-   1. 复制webApp运算符
+  1. 复制webApp运算符
 
-   1. 为每个重复项输入一个名称。 例如：webapp_brand、webapp_brand2等。
+  1. 为每个重复项输入一个名称。 例如：webapp_brand、webapp_brand2等。
 
-   1. 复制Web应用程序模板以让每个品牌拥有一个模板，并通过选择“使用特定帐户”来编辑属性以更改运算符。  请参阅[此页面](../../web/using/defining-web-forms-properties.md)以了解详情。
+  1. 复制Web应用程序模板以让每个品牌拥有一个模板，并通过选择“使用特定帐户”来编辑属性以更改运算符。  请参阅[此页面](../../web/using/defining-web-forms-properties.md)以了解详情。
 
 ## 安全组和管理员操作员
 

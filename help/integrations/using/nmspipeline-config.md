@@ -3,16 +3,14 @@ product: campaign
 title: 管道选项NmsPipeline_Config
 description: 管道选项NmsPipeline_Config
 feature: Triggers
-badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v8"
+badge-v8: label="Also applies to v8" type="Positive" tooltip="Also applies to Campaign v8"
 audience: integrations
 content-type: reference
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '381'
+source-wordcount: '373'
 ht-degree: 0%
-
 ---
-
 
 # 管道选项NmsPipeline_Config {#nmspipeline_config}
 

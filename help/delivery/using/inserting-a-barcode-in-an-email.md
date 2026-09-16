@@ -2,16 +2,14 @@
 product: campaign
 title: 在电子邮件中插入条形码
 description: 在电子邮件中插入条形码
-badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v8"
+badge-v8: label="Also applies to v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Email Design
 role: User
 source-git-commit: e34718caefdf5db4ddd61db601420274be77054e
 workflow-type: tm+mt
-source-wordcount: '533'
+source-wordcount: '524'
 ht-degree: 0%
-
 ---
-
 # 在电子邮件中插入条形码{#insert-a-barcode-in-an-email}
 
 条形码生成模块允许您创建符合许多常见标准的多种条形码，包括2D条形码。

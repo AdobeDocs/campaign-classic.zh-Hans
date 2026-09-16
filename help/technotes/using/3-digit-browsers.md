@@ -8,9 +8,7 @@ source-git-commit: 3a9b21d626b60754789c3f594ba798309f62a553
 workflow-type: tm+mt
 source-wordcount: '653'
 ht-degree: 0%
-
 ---
-
 # 3位数浏览器版本对Campaign Web组件的影响 {#version-100}
 
 Google和Mozilla警告说，Chrome和Firefox可能因其即将推出的3位数版本而破坏某些网站。

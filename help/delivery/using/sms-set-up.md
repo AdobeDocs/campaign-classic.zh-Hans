@@ -9,30 +9,42 @@ exl-id: a2783a5e-6d38-41a1-b5c6-24ab489116f8
 TQID: https://experienceleague.adobe.com/quIMssNONhvwEBVIEic9Dhe2x4-E0H5U8nIEruSUhtg
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
 feature_v2:
   - id: b631758a-142d-425f-b9aa-f756d85cb979
+    internal-label: Campaign Email Designer
   - id: c858a28b-ea19-49b0-8d48-828717fad89c
+    internal-label: Prepare and test messages
 subfeature_v2:
   - id: e95a583b-fcfa-4524-8666-46a29c828119
+    internal-label: Email messaging
   - id: c8da4fdd-eb94-4751-a43c-f82733fb2d6e
+    internal-label: Email design
   - id: d5bbe3da-ba85-4242-817e-54f7c4b943e0
+    internal-label: A/B testing
   - id: f4da0e76-df77-451e-ad61-21afb7bd8810
+    internal-label: Manage deliverability
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 1699
-ht-degree: 31%
-
+source-wordcount: '1742'
+ht-degree: 30%
 ---
-
 # 在独立实例上配置短信渠道 {#setting-up-sms-channel}
 
 要发送到手机，您需要：
@@ -326,8 +338,8 @@ CR：回车
 
 * 未定义编码映射时，连接器会采取常规行为：
 
-   * 它会尝试将 GSM 编码用于分配值 **data_coding = 0**。
-   * 如果 GSM 编码失败，则会将 **UCS2** 编码用于分配值 **data_coding = 8**。
+  * 它会尝试将 GSM 编码用于分配值 **data_coding = 0**。
+  * 如果 GSM 编码失败，则会将 **UCS2** 编码用于分配值 **data_coding = 8**。
 
 * 当您定义要使用的编码以及链接的&#x200B;**[!UICONTROL data_coding]**&#x200B;字段值时，Adobe Campaign将尝试使用列表中的第一种编码，如果第一种编码被证实不可用，则使用下面的编码。
 
@@ -361,7 +373,7 @@ CR：回车
 * 无论关键字是什么，要发送相同的回复，请将&#x200B;**[!UICONTROL Keyword]**&#x200B;列留空。
 * 要执行操作而不发送响应，请将&#x200B;**[!UICONTROL Response]**&#x200B;列留空。 例如，这允许您从隔离中删除回复消息不是“STOP”的用户。
 
-如果您有多个外部帐户使用具有同一提供商帐户的扩展通用SMPP连接器，则可能会发生以下问题：在发送对短代码的回复时，可能会通过任何外部帐户连接收到该回复。因此，发送的自动回复不能是预期的消息。
+如果您有多个外部帐户使用具有同一提供商帐户的扩展通用SMPP连接器，则可能会发生以下问题：在发送对短代码的回复时，可能会通过任何外部帐户连接收到该回复。 因此，发送的自动回复不能是预期的消息。
 要避免这种情况，请根据您使用的提供商，应用以下解决方案之一：
 
 * 为每个外部帐户创建一个提供程序帐户。

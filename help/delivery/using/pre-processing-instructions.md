@@ -2,25 +2,27 @@
 product: campaign
 title: 用于跟踪URL的预处理指令
 description: 了解更多有关用于编写电子邮件URL脚本并且仍对其进行跟踪的预处理指令
-badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v8"
+badge-v8: label="Also applies to v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Monitoring
 role: User, Developer
 exl-id: 9d3f5c74-377a-4e24-81e5-bb605f69cf8a
 TQID: https://experienceleague.adobe.com/cDB7CFuf6Gv0eyik3yEyJh4auo97LkazDSahUNPFtec
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
 source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
 workflow-type: tm+mt
-source-wordcount: 664
+source-wordcount: '655'
 ht-degree: 1%
-
 ---
-
 # 预处理指令 {#pre-processing-instructions}
 
 您可以在投放内容中使用特定语法来添加说明，并为跟踪电子邮件的URL编写脚本。 &lt;%@说明不是JavaScript：此语法特定于Adobe Campaign。
@@ -81,10 +83,10 @@ ht-degree: 1%
 
 * **[!DNL object]**：对象的名称（例如：投放、提供程序等）。
 对象可以是：
-   * **[!DNL delivery]**：当前投放（请参阅以下子部分中的详细信息和限制）。
-   * **[!DNL provider]**：用于当前传递提供程序/路由(nms:externalAccount)。
-   * 额外的脚本对象：如果对象是通过&#x200B;**属性** > **Personalization** > **在执行上下文中添加对象**&#x200B;加载到上下文中的。
-   * foreach循环的项：请参阅下面的[Foreach](#foreach)部分。
+  * **[!DNL delivery]**：当前投放（请参阅以下子部分中的详细信息和限制）。
+  * **[!DNL provider]**：用于当前传递提供程序/路由(nms:externalAccount)。
+  * 额外的脚本对象：如果对象是通过&#x200B;**属性** > **Personalization** > **在执行上下文中添加对象**&#x200B;加载到上下文中的。
+  * foreach循环的项：请参阅下面的[Foreach](#foreach)部分。
 * **[!DNL xpath]**：字段的xpath。
 * **[!DNL index]** （可选）：如果&#x200B;**[!DNL object]**&#x200B;是一个数组（用于额外的脚本对象），则数组中的项索引（从0开始）。
 

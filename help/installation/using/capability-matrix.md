@@ -7,15 +7,14 @@ exl-id: a2c425a8-9bde-4259-9140-5ada5397ed5f
 TQID: https://experienceleague.adobe.com/kHWVPyk02eyH47xBzGgik3fq6BSHGKpDXPMrEuVaYM8
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2: []
 subfeature_v2: []
 source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
 workflow-type: tm+mt
-source-wordcount: 323
-ht-degree: 27%
-
+source-wordcount: '323'
+ht-degree: 38%
 ---
-
 # 每个模型的功能矩阵{#capability-matrix-per-model}
 
 
@@ -30,17 +29,17 @@ Adobe Campaign Classic 随附了一组模块和选项。 这些模块的可用�
 
 | 功能 | 托管 | 混合 | 内部部署 | 详细信息 |
 |-----------------------------------------------|------------------|-----------|---------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 配置Campaign服务器 | On-demand | 可用 | 可用 | [了解详情](../../installation/using/the-server-configuration-file.md) |
-| 电子邮件密件抄送 | On-demand | On-demand | 可用 | [了解详情](../../installation/using/email-archiving.md) |
-| 管理消息中心执行实例 | On-demand | On-demand | 可用 | [了解详情](../../message-center/using/about-transactional-messaging.md) |
-| 管理中间源平台 | On-demand | On-demand | 可用 | [了解详情](../../installation/using/mid-sourcing-server.md) |
-| 通过Litmus呈现收件箱 | On-demand | On-demand | 可用 | [了解详情](../../delivery/using/inbox-rendering.md) |
-| 与IMS集成(Adobe ID) | On-demand | On-demand | On-demand | [了解详情](../../integrations/using/about-adobe-id.md) |
-| 加密/解密用于文件传输的数据 | On-demand | 可用 | 可用 | [了解详情](../../platform/using/unzip-decrypt.md) |
-| 压缩/解压缩文件 | On-demand | 可用 | 可用 | [了解详情](../../platform/using/unzip-decrypt.md) |
-| 域名委派 | On-demand | On-demand | 不可用 | [了解详情](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/setting-up-new-subdomain.html?lang=zh-Hans) |
-| 安装SpamAssassin | On-demand | 可用 | 可用 | [了解详情](../../delivery/using/spamassassin.md) |
-| 访问可投放性报告 | 可用 | On-demand | 可用 | [了解详情](../../delivery/using/about-delivery-monitoring.md#deliverability-monitoring) |
+| 配置Campaign服务器 | 按需 | 可用 | 可用 | [了解详情](../../installation/using/the-server-configuration-file.md) |
+| 电子邮件密件抄送 | 按需 | 按需 | 可用 | [了解详情](../../installation/using/email-archiving.md) |
+| 管理消息中心执行实例 | 按需 | 按需 | 可用 | [了解详情](../../message-center/using/about-transactional-messaging.md) |
+| 管理中间源平台 | 按需 | 按需 | 可用 | [了解详情](../../installation/using/mid-sourcing-server.md) |
+| 通过Litmus呈现收件箱 | 按需 | 按需 | 可用 | [了解详情](../../delivery/using/inbox-rendering.md) |
+| 与IMS集成(Adobe ID) | 按需 | 按需 | 按需 | [了解详情](../../integrations/using/about-adobe-id.md) |
+| 加密/解密用于文件传输的数据 | 按需 | 可用 | 可用 | [了解详情](../../platform/using/unzip-decrypt.md) |
+| 压缩/解压缩文件 | 按需 | 可用 | 可用 | [了解详情](../../platform/using/unzip-decrypt.md) |
+| 域名委派 | 按需 | 按需 | 不可用 | [了解详情](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/setting-up-new-subdomain.html?lang=zh-Hans) |
+| 安装SpamAssassin | 按需 | 可用 | 可用 | [了解详情](../../delivery/using/spamassassin.md) |
+| 访问可投放性报告 | 可用 | 按需 | 可用 | [了解详情](../../delivery/using/about-delivery-monitoring.md#deliverability-monitoring) |
 | 配置LDAP身份验证 | 不可用 | 可用 | 可用 | [了解详情](../../installation/using/connecting-through-ldap.md) |
 
 

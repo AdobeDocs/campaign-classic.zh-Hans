@@ -8,26 +8,34 @@ exl-id: 841f0c2f-90ef-4db0-860a-75fc7c48804a
 TQID: https://experienceleague.adobe.com/h0vsbqdwW-21Ay-v8v8eUQzHyDkCVZoxXWHx5m1Qd7g
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
 feature_v2:
   - id: b631758a-142d-425f-b9aa-f756d85cb979
+    internal-label: Campaign Email Designer
   - id: c858a28b-ea19-49b0-8d48-828717fad89c
+    internal-label: Prepare and test messages
 subfeature_v2:
   - id: e95a583b-fcfa-4524-8666-46a29c828119
+    internal-label: Email messaging
   - id: c8da4fdd-eb94-4751-a43c-f82733fb2d6e
+    internal-label: Email design
   - id: d5bbe3da-ba85-4242-817e-54f7c4b943e0
+    internal-label: A/B testing
   - id: f4da0e76-df77-451e-ad61-21afb7bd8810
+    internal-label: Manage deliverability
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 2904
+source-wordcount: '3088'
 ht-degree: 0%
-
 ---
-
 # 短信疑难解答 {#troubleshooting-sms}
 
 ## 不同外部帐户之间的冲突 {#external-account-conflict}
@@ -54,14 +62,14 @@ Adobe Campaign将外部帐户视为不相关的实体。
 
   帐户之间存在冲突。 如前所述，Adobe Campaign单独处理帐户，但提供商可能会将其视为单个帐户。
 
-   * 您在所有帐户之间使用不同的登录/密码组合。
-您必须联系提供程序以诊断其一方的潜在冲突。
+  * 您在所有帐户之间使用不同的登录/密码组合。
+    您必须联系提供程序以诊断其一方的潜在冲突。
 
-   * 某些外部帐户共享相同的登录/密码组合。
-提供程序无法辨别`BIND PDU`来自哪个外部帐户，因此他们将来自多个帐户的所有连接视为单个连接。他们可能已将MO和SR随机路由到两个帐户，从而导致出现问题。
-如果提供程序支持同一登录/密码组合使用多个短代码，则必须询问他们将短代码放在`BIND PDU`中的什么位置。请注意，此信息必须放在`BIND PDU`中，而不是放在`SUBMIT_SM`中，因为`BIND PDU`是唯一允许正确路由MO的位置。
-请参阅上面各种PDU[&#128279;](sms-protocol.md#information-pdu)部分中的信息以了解`BIND PDU`中提供了哪个字段，通常您在`address_range`中添加短代码，但这需要提供商的特殊支持。联系他们，了解他们希望如何独立路由多个短代码。
-Adobe Campaign支持在同一外部帐户上处理多个短代码。
+  * 某些外部帐户共享相同的登录/密码组合。
+    提供程序无法辨别`BIND PDU`来自哪个外部帐户，因此他们将来自多个帐户的所有连接视为单个连接。 他们可能已将MO和SR随机路由到两个帐户，从而导致出现问题。
+    如果提供程序支持同一登录/密码组合使用多个短代码，则必须询问他们将短代码放在`BIND PDU`中的什么位置。 请注意，此信息必须放在`BIND PDU`中，而不是放在`SUBMIT_SM`中，因为`BIND PDU`是唯一允许正确路由MO的位置。
+    请参阅上面各种PDU[&#128279;](sms-protocol.md#information-pdu)部分中的信息以了解`BIND PDU`中可用的字段，通常是在`address_range`中添加短代码，但这需要提供程序的特别支持。 联系他们，了解他们希望如何独立路由多个短代码。
+    Adobe Campaign支持在同一外部帐户上处理多个短代码。
 
 ## 外部帐户一般问题 {#external-account-issues}
 

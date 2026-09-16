@@ -8,17 +8,17 @@ exl-id: e05dcd81-bbca-4767-8da3-ea064f7f6c8e
 TQID: https://experienceleague.adobe.com/0kiRwyal2yxHRjRNkPCNY2zsulDvbC3FWcJZ49Ynmkw
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 feature_v2: []
 subfeature_v2: []
 source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
 workflow-type: tm+mt
-source-wordcount: 932
+source-wordcount: '935'
 ht-degree: 2%
-
 ---
-
 # 链接管理 {#links--relation-between-tables}
 
 链接描述一个表与另一个表之间的关联。
@@ -58,23 +58,23 @@ ht-degree: 2%
 
 * 在&#x200B;**链接**&#x200B;类型&#x200B;**`<element>`**&#x200B;上输入的链接定义具有以下属性：
 
-   * **name**：来自源表的链接的名称
-   * **target**：目标架构的名称
-   * **标签**：链接标签
-   * **revLink**（可选）：来自目标架构的反向链接的名称（默认自动推导）
-   * **完整性**（可选）：源表的出现项与目标表的出现项之间的引用完整性。
-可能的值包括：
+  * **name**：来自源表的链接的名称
+  * **target**：目标架构的名称
+  * **标签**：链接标签
+  * **revLink**（可选）：来自目标架构的反向链接的名称（默认自动推导）
+  * **完整性**（可选）：源表的出现项与目标表的出现项之间的引用完整性。
+    可能的值包括：
 
-      * **定义**：如果源实例不再由目标实例引用，则可以删除该源实例
-      * **normal**：删除源具体值将初始化指向目标具体值的链接的键（默认模式），此类型的完整性将初始化所有外键
-      * **拥有**：删除源具体值会导致目标具体值被删除
-      * **owncopy**：与&#x200B;**own**&#x200B;相同（如果删除），或重复发生次数（如果重复）
-      * **neutral**：无特定行为
+    * **定义**：如果源实例不再由目标实例引用，则可以删除该源实例
+    * **normal**：删除源具体值将初始化指向目标具体值的链接的键（默认模式），此类型的完整性将初始化所有外键
+    * **拥有**：删除源具体值会导致目标具体值被删除
+    * **owncopy**：与&#x200B;**own**&#x200B;相同（如果删除），或重复发生次数（如果重复）
+    * **neutral**：无特定行为
 
-   * **revIntegrity**（可选）：目标架构上的完整性（可选，默认为“正常”）
-   * **revCardinality**（可选）：值为“single”时，将填充类型为1-1 （默认为1-N）的基数
-   * **externalJoin**（可选）：强制外部联接
-   * **revExternalJoin**（可选）：强制反向链接上的外部连接
+  * **revIntegrity**（可选）：目标架构上的完整性（可选，默认为“正常”）
+  * **revCardinality**（可选）：值为“single”时，将填充类型为1-1 （默认为1-N）的基数
+  * **externalJoin**（可选）：强制外部联接
+  * **revExternalJoin**（可选）：强制反向链接上的外部连接
 
 * 链接从源表向目标表引用一个或多个字段。 无需填充构成连接（`<join>`元素）的字段，因为默认情况下，这些字段是使用目标架构的内部键自动推导的。
 * 索引会自动添加到扩展模式中链接的外键中。

@@ -9,22 +9,26 @@ exl-id: a8fce21f-ffe3-4819-87ca-ac0ad9f21e41
 TQID: https://experienceleague.adobe.com/5gH9cUkeJNozk9f14AAn6C3wUTt48329f-OIa4EVV0g
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: a075b2c1-7748-4328-b7f6-343aa314616a
+    internal-label: Campaigns
   - id: afa4204e-6d08-4e29-bc35-26aafb656d48
+    internal-label: Profiles and audiences
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
 subfeature_v2:
   - id: f863efa9-030c-4466-a2b8-a52aea6b722c
+    internal-label: Subscription services
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 1259
+source-wordcount: '1259'
 ht-degree: 6%
-
 ---
-
 # 营销活动入门{#setting-up-marketing-campaigns}
 
 活动包括操作（投放）和流程（导入或提取文件）以及资源（营销文档、投放概要）。 它们用于营销活动。 活动是项目的一部分，项目包含在活动计划中。

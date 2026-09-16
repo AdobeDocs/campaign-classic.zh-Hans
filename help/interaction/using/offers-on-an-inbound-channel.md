@@ -3,7 +3,7 @@ product: campaign
 title: 入站渠道产品建议
 description: 入站渠道产品建议
 feature: Interaction, Offers
-badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v8"
+badge-v8: label="Also applies to v8" type="Positive" tooltip="Also applies to Campaign v8"
 audience: interaction
 content-type: reference
 topic-tags: case-study
@@ -11,18 +11,19 @@ exl-id: 90afced3-465d-4370-8a33-51a7e4356135
 TQID: https://experienceleague.adobe.com/HkXtRV9hn2hZSZyxx86o2muGafhdhWuLp-uYBe4xTaU
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
 feature_v2:
   - id: b6fcaf36-3bc4-4604-94f3-81b5d3f41ecf
+    internal-label: Offer Management
 subfeature_v2: []
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 2102
+source-wordcount: '2093'
 ht-degree: 1%
-
 ---
-
 # 入站渠道产品建议{#offers-on-an-inbound-channel}
 
 
@@ -187,21 +188,21 @@ Neobank公司希望为两个不同的目标创建营销选件。 它希望为其
 
 * 使用以下步骤创建特定于匿名入站交互的优惠目录：
 
-   1. [为匿名联系人创建环境](#creating-an-environment-for-anonymous-contacts)
-   1. [为匿名环境配置优惠空间](#configuring-offer-spaces-for-the-anonymous-environment)
-   1. [在匿名环境中创建优惠类别](#creating-offer-categories-in-an-anonymous-environment)
-   1. [创建匿名访客优惠](#creating-offers-for-anonymous-visitors)
+  1. [为匿名联系人创建环境](#creating-an-environment-for-anonymous-contacts)
+  1. [为匿名环境配置优惠空间](#configuring-offer-spaces-for-the-anonymous-environment)
+  1. [在匿名环境中创建优惠类别](#creating-offer-categories-in-an-anonymous-environment)
+  1. [创建匿名访客优惠](#creating-offers-for-anonymous-visitors)
 
 * 使用以下步骤创建特定于已识别集客交互的优惠目录：
 
-   1. [在标识的环境中配置优惠空间](#configure-the-offer-spaces-in-the-identified-environment)
-   1. [在已识别的环境中创建优惠类别](#creating-offer-categories-in-an-identified-environment)
-   1. [创建个性化优惠](#creating-personalized-offers)
+  1. [在标识的环境中配置优惠空间](#configure-the-offer-spaces-in-the-identified-environment)
+  1. [在已识别的环境中创建优惠类别](#creating-offer-categories-in-an-identified-environment)
+  1. [创建个性化优惠](#creating-personalized-offers)
 
 * 配置对优惠引擎的调用：
 
-   1. [在网页上配置优惠空间](#configuring-offer-spaces-on-the-web-page)
-   1. [指定已标识的选件空间的高级设置](#specifying-the-advanced-settings-of-the-identified-offer-spaces)
+  1. [在网页上配置优惠空间](#configuring-offer-spaces-on-the-web-page)
+  1. [指定已标识的选件空间的高级设置](#specifying-the-advanced-settings-of-the-identified-offer-spaces)
 
 ### 为匿名联系人创建环境 {#creating-an-environment-for-anonymous-contacts}
 

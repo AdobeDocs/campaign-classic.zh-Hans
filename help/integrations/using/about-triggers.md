@@ -3,7 +3,7 @@ product: campaign
 title: 关于 Adobe Experience Cloud 触发器
 description: Adobe Experience Cloud Triggers实施入门
 feature: Triggers
-badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v8"
+badge-v8: label="Also applies to v8" type="Positive" tooltip="Also applies to Campaign v8"
 audience: integrations
 content-type: reference
 level: Intermediate, Experienced
@@ -11,25 +11,32 @@ exl-id: 0e337620-a49f-4e14-8c67-9279d74736f1
 TQID: https://experienceleague.adobe.com/gWgUCcgsqeMw-mzVdhVodcp91lgTCCL7XGWp0f2ItKo
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: d5ef99fa-df0c-4153-bf94-105ad0724167
+    internal-label: Integrations
 subfeature_v2:
   - id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
+    internal-label: Adobe Analytics integration
   - id: df0d6518-6f49-46e2-b46e-3bcc513f553f
+    internal-label: Adobe Experience Manager integration
   - id: eb007b6d-6e57-46ab-9485-3f24d6102304
+    internal-label: Adobe Experience Platform integration
   - id: b1fd1501-3105-4d6b-b4d4-9af53126df75
+    internal-label: Adobe Target integration
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 392
-ht-degree: 9%
-
+source-wordcount: '411'
+ht-degree: 8%
 ---
-
 # 使用Campaign和Experience Cloud触发器{#about-adobe-experience-triggers}
 
 [!DNL Triggers]是使用管道的Adobe Campaign和Adobe Analytics之间的集成。 管道从您的网站检索用户的操作或触发器。 放弃购物车就是一个触发器示例。 在Adobe Campaign中处理触发器，以近乎实时地发送电子邮件。
@@ -41,7 +48,7 @@ ht-degree: 9%
 [!DNL Triggers]在用户操作后的短时间内运行营销操作。 典型响应时间不到一小时。
 
 由于配置很少且没有第三方参与，因此它允许更敏捷的集成。
-它还支持高流量而不影响营销活动的性能。例如，集成每小时可处理100万个触发器。
+它还支持高流量而不影响营销活动的性能。 例如，集成每小时可处理100万个触发器。
 
 ![](assets/do-not-localize/book.png)了解如何[创建Experience Cloud触发器](https://experienceleague.adobe.com/docs/experience-cloud/triggers/create.html?lang=zh-Hans)，识别、定义并监视关键客户行为。
 
@@ -62,7 +69,7 @@ ht-degree: 9%
 
 ## 实施步骤 {#implement}
 
-要实施Campaign和Experience Cloud Triggers，请执行以下步骤：
+要实施Campaign和Experience Cloud触发器，请执行以下步骤：
 
 1. 创建OAuth项目。 [了解详情](oauth-technical-account.md#oauth-service)
 

@@ -2,7 +2,7 @@
 product: campaign
 title: 优化消息投放
 description: 了解如何优化消息投放
-badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v8"
+badge-v8: label="Also applies to v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Deliverability
 role: User
 hide: true
@@ -10,27 +10,36 @@ exl-id: 24b2ee47-bec7-43ce-81b3-0b2d1a5cebae
 TQID: https://experienceleague.adobe.com/XiK0I9mZTlGWACRL-TTdDO5pByzBg-6oFdfcTNfhX44
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: b4dd41a7-ccf8-4e9d-918e-acaab534a307
+    internal-label: Data quality
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
 feature_v2:
   - id: b631758a-142d-425f-b9aa-f756d85cb979
+    internal-label: Campaign Email Designer
   - id: c858a28b-ea19-49b0-8d48-828717fad89c
+    internal-label: Prepare and test messages
 subfeature_v2:
   - id: e95a583b-fcfa-4524-8666-46a29c828119
+    internal-label: Email messaging
   - id: c8da4fdd-eb94-4751-a43c-f82733fb2d6e
+    internal-label: Email design
   - id: d5bbe3da-ba85-4242-817e-54f7c4b943e0
+    internal-label: A/B testing
   - id: f4da0e76-df77-451e-ad61-21afb7bd8810
+    internal-label: Manage deliverability
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 758
+source-wordcount: '749'
 ht-degree: 9%
-
 ---
-
 # 优化投放 {#optimize-delivery}
 
 在开始创建投放之前，您可以采取多种操作来保护和优化上游发送流程。
@@ -63,9 +72,9 @@ ht-degree: 9%
 
 * 什么是可投放性？
 
-   * 它是指电子邮件中的因素，这些因素决定了其被收件人服务器接受的能力。 ISP（Internet服务提供商）会过滤掉标识为垃圾邮件的电子邮件，或阻止下载图像。 如果他们确定某个域发送的电子邮件过多，则会限制将接受来自该发件人的电子邮件数量。
+  * 它是指电子邮件中的因素，这些因素决定了其被收件人服务器接受的能力。 ISP（Internet服务提供商）会过滤掉标识为垃圾邮件的电子邮件，或阻止下载图像。 如果他们确定某个域发送的电子邮件过多，则会限制将接受来自该发件人的电子邮件数量。
 
-   * 在检查电子邮件的可投放性时，您需要重点关注四个主要类别：数据质量、邮件和内容、发送基础架构和信誉。 有关此主题的更深入探讨，请参阅[此部分](about-deliverability.md)。
+  * 在检查电子邮件的可投放性时，您需要重点关注四个主要类别：数据质量、邮件和内容、发送基础架构和信誉。 有关此主题的更深入探讨，请参阅[此部分](about-deliverability.md)。
 
 * 应用此文档[&#128279;](about-deliverability.md)中详细的建议。
 

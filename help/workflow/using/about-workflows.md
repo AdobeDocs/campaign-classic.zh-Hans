@@ -7,15 +7,16 @@ exl-id: 024a7344-9376-4ff3-926a-003148229f9f
 feature_v2: []
 subfeature_v2:
   - id: ee25c34b-ea50-427b-9369-ba0a160f7d70
+    internal-label: Workflow HeatMap
   - id: b5f0aaf4-1e48-400d-95ac-6eb3078cf22f
+    internal-label: Execution activities
   - id: d1110311-2ca4-442b-be37-088a6db845ee
+    internal-label: Data Management activities
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 298
+source-wordcount: '298'
 ht-degree: 18%
-
 ---
-
 # 使用工作流实现自动化 {#gs-workflows}
 
 通过Adobe Campaign的工作流，您的团队可以简化和自动化整个平台的端到端业务流程。 借助直观的图形界面，您可以在一个位置设计和管理可协调任务（例如数据分段、活动执行、文件处理，甚至用户批准）的工作流。

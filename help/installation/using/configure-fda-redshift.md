@@ -10,17 +10,17 @@ exl-id: ef2b98bd-441e-4e59-bb41-4e835e250663
 TQID: https://experienceleague.adobe.com/j-ZDe68d2AlmSqJsNTn8TAqN8Dq5jrB--lq5Ef4xJZY
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
 feature_v2: []
 subfeature_v2: []
 source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
 workflow-type: tm+mt
-source-wordcount: 253
+source-wordcount: '253'
 ht-degree: 1%
-
 ---
-
 # 配置对Amazon Redshift的访问权限 {#configure-access-to-redshift}
 
 使用Campaign **联合数据访问** (FDA)选项处理存储在外部数据库中的信息。 执行以下步骤以配置对Amazon Redshift的访问权限。

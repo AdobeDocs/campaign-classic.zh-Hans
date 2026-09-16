@@ -3,7 +3,7 @@ product: campaign
 title: 配置对Assets的访问权限
 description: 配置对Assets的访问权限
 feature: Asset Sharing
-badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v8"
+badge-v8: label="Also applies to v8" type="Positive" tooltip="Also applies to Campaign v8"
 audience: integrations
 content-type: reference
 topic-tags: asset-sharing
@@ -11,20 +11,24 @@ exl-id: f3897a40-b080-47e5-9e31-4d861c1bacd5
 TQID: https://experienceleague.adobe.com/JU5h5wyP-DrlIlFFNClNinQYIcqvg13Z93bF4ykliB4
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: d5ef99fa-df0c-4153-bf94-105ad0724167
+    internal-label: Integrations
 subfeature_v2:
   - id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
+    internal-label: Adobe Analytics integration
   - id: df0d6518-6f49-46e2-b46e-3bcc513f553f
+    internal-label: Adobe Experience Manager integration
   - id: eb007b6d-6e57-46ab-9485-3f24d6102304
+    internal-label: Adobe Experience Platform integration
   - id: b1fd1501-3105-4d6b-b4d4-9af53126df75
+    internal-label: Adobe Target integration
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 522
+source-wordcount: '513'
 ht-degree: 2%
-
 ---
-
 # 配置对Assets的访问权限 {#configuring-access-to-assets}
 
 此部分详细介绍Adobe Campaign中的必要配置步骤，以便能够将集成功能与Assets或Adobe Experience Manager Assets (AEM Assets)库一起使用。
@@ -38,7 +42,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->如果已安装两个包（**[!UICONTROL AEM Integration]**&#x200B;和&#x200B;**[!UICONTROL Integration with the Adobe Experience Cloud]** ），则只能使用Adobe Experience Cloud库中的可用资源。
+>如果已安装两个包（**[!UICONTROL AEM Integration]**&#x200B;和&#x200B;**[!UICONTROL Integration with the Adobe Experience Cloud]** ），则只能使用Adobe Experience Cloud库中可用的资产。
 
 ## 与Experience Cloud Assets集成 {#integrating-with-experience-cloud-assets}
 
@@ -83,4 +87,4 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->如果&#x200B;**[!UICONTROL Integration with the Adobe Experience Cloud]**&#x200B;包也安装在您的Adobe Campaign实例上，则您只能使用Adobe Experience Cloud库中可用的资源。 要同时访问AEM Assets库中的资源，必须同步AEM Assets和Adobe Experience Cloud。 随后，AEM Assets中的资源也将在Adobe Experience Cloud库中可用。 在这种情况下，您无需创建特定的投放模板。
+>如果&#x200B;**[!UICONTROL Integration with the Adobe Experience Cloud]**&#x200B;包也安装在您的Adobe Campaign实例上，则您只能使用Adobe Experience Cloud库中可用的资源。 要同时访问AEM Assets库中的资源，您必须将AEM Assets与Adobe Experience Cloud同步。 随后，AEM Assets中的资源也将在Adobe Experience Cloud库中可用。 在这种情况下，您无需创建特定的投放模板。

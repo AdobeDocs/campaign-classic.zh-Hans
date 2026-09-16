@@ -3,7 +3,7 @@ product: campaign
 title: 工作流执行
 description: 工作流执行
 feature: Monitoring, Workflows
-badge-v7-prem: label="仅限内部部署/混合" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hans" tooltip="仅适用于内部部署和混合部署"
+badge-v7-prem: label="On-premise/hybrid only" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hans" tooltip="Applies to on-premise and hybrid deployments only"
 audience: production
 content-type: reference
 topic-tags: troubleshooting
@@ -11,21 +11,25 @@ exl-id: b5aa5663-1902-4f50-9202-783e73a28838
 TQID: https://experienceleague.adobe.com/rLTECFw79UslNFzXs7WArBoo0YmqHjAWojkXCgQOmuk
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: a075b2c1-7748-4328-b7f6-343aa314616a
+    internal-label: Campaigns
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
 subfeature_v2:
   - id: c03a11ff-bdf9-4e5b-b279-f468b4293464
+    internal-label: Performance Monitoring
   - id: e519a22f-a06a-42fc-9d09-d78a3ab2c434
+    internal-label: Monitoring guidelines
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 744
+source-wordcount: '750'
 ht-degree: 11%
-
 ---
-
 # 工作流执行{#workflow-execution}
 
 
@@ -45,7 +49,7 @@ ht-degree: 11%
 
 此问题可能由多种原因引起，请按照以下步骤解决该问题：
 
-1. 检查&#x200B;[**[!UICONTROL operationMgt]**](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows.html?lang=zh-Hans){target="_blank"}技术工作流状态。 此工作流用于管理营销活动中的作业或工作流。 如果失败，这将导致工作流无法启动/停止。 重新启动工作流可继续运行活动工作流。
+1. 检查&#x200B;[**[!UICONTROL operationMgt]**](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows.html){target="_blank"}技术工作流状态。 此工作流用于管理营销活动中的作业或工作流。 如果失败，这将导致工作流无法启动/停止。 重新启动工作流可继续运行活动工作流。
 
    有关技术工作流监视的详细信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-technical-workflows.html?lang=zh-Hans){target="_blank"}。
 
@@ -75,7 +79,7 @@ ht-degree: 11%
 
    >[!NOTE]
    >
-   >将&#x200B;**`<instance-name>`**&#x200B;替换为您的实例名称（生产、开发等）。实例名称通过配置文件进行标识：
+   >将&#x200B;**`<instance-name>`**&#x200B;替换为您的实例名称（生产、开发等）。 实例名称通过配置文件进行标识：
    >`[path of application]nl6/conf/config-<instance-name>.xml`
 
    有关如何重新启动模块的详细信息，请参阅[此部分](../../production/using/usual-commands.md#module-launch-commands)。
@@ -120,7 +124,7 @@ ht-degree: 11%
 
    >[!NOTE]
    >
-   >将&#x200B;**`<instance-name>`**&#x200B;替换为您的实例名称（生产、开发等）。实例名称通过配置文件进行标识：
+   >将&#x200B;**`<instance-name>`**&#x200B;替换为您的实例名称（生产、开发等）。 实例名称通过配置文件进行标识：
    >`[path of application]nl6/conf/config-<instance-name>.xml`
 
    有关如何重新启动模块的详细信息，请参阅[此部分](../../production/using/usual-commands.md#module-launch-commands)。

@@ -11,26 +11,35 @@ exl-id: 4693dca1-ee55-43f0-b3dc-62a5b67a8058
 TQID: https://experienceleague.adobe.com/hqQ4rSZpOoCMn9sA0yu2VsHFxTGEnwGwOMi6cu6e-1Q
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
   - id: d5ef99fa-df0c-4153-bf94-105ad0724167
+    internal-label: Integrations
 subfeature_v2:
   - id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
+    internal-label: Adobe Analytics integration
   - id: df0d6518-6f49-46e2-b46e-3bcc513f553f
+    internal-label: Adobe Experience Manager integration
   - id: eb007b6d-6e57-46ab-9485-3f24d6102304
+    internal-label: Adobe Experience Platform integration
   - id: b1fd1501-3105-4d6b-b4d4-9af53126df75
+    internal-label: Adobe Target integration
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 870
+source-wordcount: '870'
 ht-degree: 0%
-
 ---
-
 # ACS连接器故障排除{#troubleshooting-the-acs-connector}
 
 
@@ -84,9 +93,9 @@ ht-degree: 0%
 
   发生此情况的原因可能有所不同：
 
-   * 刚刚在Campaign v7中创建或更新了收件人。 同步每15分钟触发一次。 这意味着在下次同步后，更新的或新创建的收件人将在Campaign Standard中可见。
-   * 您的实施可以设置为仅同步特定文件夹中的收件人。 来自其他文件夹的收件人不同步。
-   * 收件人可以同步，但在Campaign Standard中不可见。 检查文件夹权限映射。
+  * 刚刚在Campaign v7中创建或更新了收件人。 同步每15分钟触发一次。 这意味着在下次同步后，更新的或新创建的收件人将在Campaign Standard中可见。
+  * 您的实施可以设置为仅同步特定文件夹中的收件人。 来自其他文件夹的收件人不同步。
+  * 收件人可以同步，但在Campaign Standard中不可见。 检查文件夹权限映射。
 
 * **我在Campaign Standard中找不到查询所基于的用户档案字段。**
 
@@ -120,8 +129,8 @@ ht-degree: 0%
 
   通过测试连接检查Campaign Standard和Campaign v7中的外部帐户配置：
 
-   * Campaign Standard中的&#x200B;**[!UICONTROL acsDefaultRelayAccount]**。
-   * Campaign v7中的&#x200B;**[!UICONTROL acsDefaultAccount]**。
+  * Campaign Standard中的&#x200B;**[!UICONTROL acsDefaultRelayAccount]**。
+  * Campaign v7中的&#x200B;**[!UICONTROL acsDefaultAccount]**。
 
 * **在Campaign v7和Campaign Standard之间映射文件夹时，**&#x200B;我没有可用的安全组。
 

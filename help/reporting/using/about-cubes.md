@@ -3,16 +3,14 @@ product: campaign
 title: 关于多维数据集
 description: 多维数据集入门
 feature: Reporting, Monitoring
-badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v8"
+badge-v8: label="Also applies to v8" type="Positive" tooltip="Also applies to Campaign v8"
 hide: true
 exl-id: ade4c857-9233-4bc8-9ba1-2fec84b7c3e6
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '406'
+source-wordcount: '397'
 ht-degree: 2%
-
 ---
-
 # 多维数据集入门{#about-cubes}
 
 

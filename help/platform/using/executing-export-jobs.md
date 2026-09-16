@@ -3,7 +3,7 @@ product: campaign
 title: 配置导出作业
 description: 了解如何在Campaign中配置和执行导出作业
 feature: Overview
-badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v8"
+badge-v8: label="Also applies to v8" type="Positive" tooltip="Also applies to Campaign v8"
 audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
@@ -11,20 +11,24 @@ exl-id: 94fc473a-dc49-41e8-b572-51c162b09996
 TQID: https://experienceleague.adobe.com/YkFgnO67JZr1NK1OuVeVSNT4343nji7QDwFh-B4Z5q0
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: afa4204e-6d08-4e29-bc35-26aafb656d48
+    internal-label: Profiles and audiences
 subfeature_v2:
   - id: f529d0bd-1401-4c88-9833-43228cc1d40f
+    internal-label: Profiles
   - id: d6330382-c886-4f7a-a4f7-74e3f36c0d9c
+    internal-label: Audiences
   - id: f5293531-9312-4099-bfa3-9e67df6a8750
+    internal-label: Query Editor
   - id: efa38731-2723-4334-8d8b-a778af834835
+    internal-label: Access management
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 963
-ht-degree: 28%
-
+source-wordcount: '954'
+ht-degree: 29%
 ---
-
 # 配置导出作业 {#executing-export-jobs}
 
 
@@ -117,9 +121,9 @@ ht-degree: 28%
 * 要更改字段的标签，请单击&#x200B;**[!UICONTROL Label]**&#x200B;列中与要修改的字段匹配的单元格，然后输入新标签。 按键盘上的Enter进行确认。
 * 要将案例转换应用于字段的内容，请从&#x200B;**[!UICONTROL Transformation]**&#x200B;列中选择它。 您可以选择：
 
-   * 切换到小写
-   * 切换到大写
-   * 首字母大写
+  * 切换到小写
+  * 切换到大写
+  * 首字母大写
 
   ![](assets/s_ncs_user_export_wizard06.png)
 

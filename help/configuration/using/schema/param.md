@@ -7,15 +7,14 @@ exl-id: d8960a2e-6900-4346-9f06-e7dd9d7b5139
 TQID: https://experienceleague.adobe.com/fiMkJtGU90FP-G6BJhTnIrgBJ39uIJaakqKD49EhXS0
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2: []
 subfeature_v2: []
 source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
 workflow-type: tm+mt
-source-wordcount: 177
+source-wordcount: '177'
 ht-degree: 12%
-
 ---
-
 # 参数元素 {#param--element}
 
 
@@ -58,34 +57,34 @@ param：==help
 
   可用类型列表：
 
-   * 任何
-   * 纸盒
-   * blob
-   * 布尔值
-   * 字节
-   * CDATA
-   * datetime
-   * datetimetz
-   * 时间戳
-   * 日期
-   * DOMDocument
-   * 圆顶元素
-   * double
-   * 枚举
-   * float
-   * html
-   * int64
-   * 链接
-   * 长
-   * 备忘录
-   * MNTOKEN
-   * 百分比
-   * 主密钥
-   * 短
-   * 字符串
-   * time
-   * timespan
-   * uuid
+  * 任何
+  * 区间
+  * blob
+  * 布尔值
+  * 字节
+  * CDATA
+  * datetime
+  * datetimetz
+  * 时间戳
+  * 日期
+  * DOMDocument
+  * 圆顶元素
+  * double
+  * 枚举
+  * float
+  * html
+  * int64
+  * 链接
+  * 长
+  * 备忘录
+  * MNTOKEN
+  * 百分比
+  * 主密钥
+  * 短
+  * 字符串
+  * time
+  * timespan
+  * uuid
 
 ## 示例 {#examples-9}
 

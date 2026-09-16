@@ -7,15 +7,14 @@ exl-id: d7d1e427-12e0-4f07-9e01-d184dbe2ebf1
 TQID: https://experienceleague.adobe.com/VWv-F5lUufsXeurPt0GMUICNvrp7cKi-AJWxFzA6wRE
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2: []
 subfeature_v2: []
 source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
 workflow-type: tm+mt
-source-wordcount: 341
+source-wordcount: '341'
 ht-degree: 1%
-
 ---
-
 # dbindex元素 {#dbindex--element}
 
 
@@ -59,11 +58,11 @@ dbindex：==keyfield
 
   可访问值包括：
 
-   * “无”：仅和解。 这意味着Adobe Campaign将恢复元素，而不更新它，如果元素不存在则生成错误。
-   * &quot;insertOrUpdate&quot;：使用insertion更新。 这意味着Adobe Campaign将更新元素，如果它不存在，则创建它。
-   * &quot;insert&quot;： insertion. 这意味着Adobe Campaign将插入元素而不检查元素是否存在。
-   * &quot;update&quot;：更新。 这意味着Adobe Campaign将更新元素，如果它不存在，则产生错误。
-   * &quot;delete&quot;：删除。 这意味着Adobe Campaign将恢复和删除元素。
+  * “无”：仅和解。 这意味着Adobe Campaign将恢复元素，而不更新它，如果元素不存在则生成错误。
+  * &quot;insertOrUpdate&quot;：使用insertion更新。 这意味着Adobe Campaign将更新元素，如果它不存在，则创建它。
+  * &quot;insert&quot;： insertion. 这意味着Adobe Campaign将插入元素而不检查元素是否存在。
+  * &quot;update&quot;：更新。 这意味着Adobe Campaign将更新元素，如果它不存在，则产生错误。
+  * &quot;delete&quot;：删除。 这意味着Adobe Campaign将恢复和删除元素。
 
 * **applicableIf （字符串）**：考虑索引的条件 — 接收XTK表达式。
 * **标签（字符串）**：索引标签。

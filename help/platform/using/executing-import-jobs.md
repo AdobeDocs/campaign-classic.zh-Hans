@@ -3,7 +3,7 @@ product: campaign
 title: 配置导入作业
 description: 了解如何在Campaign中配置和执行导入作业
 feature: Overview
-badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v8"
+badge-v8: label="Also applies to v8" type="Positive" tooltip="Also applies to Campaign v8"
 audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
@@ -11,20 +11,24 @@ exl-id: 05909ea6-2c93-42ff-9142-1dd14fa6fdec
 TQID: https://experienceleague.adobe.com/OeRVFm6L-3N6yoIAKyTImaQb6d411UE8-NZ2jHu5VCc
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: afa4204e-6d08-4e29-bc35-26aafb656d48
+    internal-label: Profiles and audiences
 subfeature_v2:
   - id: f529d0bd-1401-4c88-9833-43228cc1d40f
+    internal-label: Profiles
   - id: d6330382-c886-4f7a-a4f7-74e3f36c0d9c
+    internal-label: Audiences
   - id: f5293531-9312-4099-bfa3-9e67df6a8750
+    internal-label: Query Editor
   - id: efa38731-2723-4334-8d8b-a778af834835
+    internal-label: Access management
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 3009
+source-wordcount: '3000'
 ht-degree: 31%
-
 ---
-
 # 配置导入作业 {#executing-import-jobs}
 
 
@@ -83,21 +87,21 @@ Adobe Campaign允许您以文本、CSV、TAB或XML格式将数据从一个或多
 
 * **[!UICONTROL General]**&#x200B;选项卡
 
-   * **[!UICONTROL Stop execution if there are too many rejects]**
+  * **[!UICONTROL Stop execution if there are too many rejects]**
 
-     默认情况下，该选项处于选中状态。 如果要继续执行导入，而不考虑拒绝的次数，则可以取消选择它。 默认情况下，如果拒绝前 100 行，则停止执行。
+    默认情况下，该选项处于选中状态。 如果要继续执行导入，而不考虑拒绝的次数，则可以取消选择它。 默认情况下，如果拒绝前 100 行，则停止执行。
 
-   * **[!UICONTROL Trace mode]**
+  * **[!UICONTROL Trace mode]**
 
-     选择此选项可追踪每行的导入执行情况。
+    选择此选项可追踪每行的导入执行情况。
 
-   * **[!UICONTROL Start the job in a detached process]**
+  * **[!UICONTROL Start the job in a detached process]**
 
-     默认情况下，该选项处于选中状态。 它允许您分离导入的执行，使其不会影响数据库中正在进行的其他作业。
+    默认情况下，该选项处于选中状态。 它允许您分离导入的执行，使其不会影响数据库中正在进行的其他作业。
 
-   * **[!UICONTROL Do not update enumerations]**
+  * **[!UICONTROL Do not update enumerations]**
 
-     选择此选项可避免扩充数据库中的枚举值列表。 在[Adobe Campaign v8 （控制台）文档](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}中了解如何&#x200B;**使用枚举**。
+    选择此选项可避免扩充数据库中的枚举值列表。 在[Adobe Campaign v8 （控制台）文档](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}中了解如何&#x200B;**使用枚举**。
 
 
 * **[!UICONTROL Variables]**&#x200B;选项卡
@@ -298,45 +302,45 @@ Adobe Campaign允许您以文本、CSV、TAB或XML格式将数据从一个或多
 
 * 单击&#x200B;**[!UICONTROL Edit]**&#x200B;链接以选择要与收件人关联或订阅的文件夹、列表或服务。
 
-   1. 导入到文件夹中
+  1. 导入到文件夹中
 
-      **[!UICONTROL Import into a folder]**&#x200B;部分的&#x200B;**[!UICONTROL Edit...]**&#x200B;链接允许您选择或创建收件人将导入到的文件夹。 默认情况下，如果未定义分区，则会将数据导入到操作员的预设文件夹中。
+     **[!UICONTROL Import into a folder]**&#x200B;部分的&#x200B;**[!UICONTROL Edit...]**&#x200B;链接允许您选择或创建收件人将导入到的文件夹。 默认情况下，如果未定义分区，则会将数据导入到操作员的预设文件夹中。
 
-      >[!NOTE]
-      >
-      >运算符的默认文件夹是运算符具有写入权限的第一个文件夹。 在[文件夹访问管理](../../platform/using/access-management-folders.md)中了解详情。
+     >[!NOTE]
+     >
+     >运算符的默认文件夹是运算符具有写入权限的第一个文件夹。 在[文件夹访问管理](../../platform/using/access-management-folders.md)中了解详情。
 
-      要选择导入文件夹，请单击&#x200B;**[!UICONTROL Folder]**&#x200B;字段右侧的箭头，然后选择相关的文件夹。 您还可以使用&#x200B;**[!UICONTROL Select link]**&#x200B;图标在新窗口中显示树或创建新文件夹。
+     要选择导入文件夹，请单击&#x200B;**[!UICONTROL Folder]**&#x200B;字段右侧的箭头，然后选择相关的文件夹。 您还可以使用&#x200B;**[!UICONTROL Select link]**&#x200B;图标在新窗口中显示树或创建新文件夹。
 
-      ![](assets/s_ncs_user_import_wizard05_2.png)
+     ![](assets/s_ncs_user_import_wizard05_2.png)
 
-      要创建新文件夹，请选择要从中添加文件夹的节点，然后右键单击。 选择 **[!UICONTROL Create a new 'Recipients' folder]**。
+     要创建新文件夹，请选择要从中添加文件夹的节点，然后右键单击。 选择 **[!UICONTROL Create a new 'Recipients' folder]**。
 
-      ![](assets/s_ncs_user_import_wizard05_3.png)
+     ![](assets/s_ncs_user_import_wizard05_3.png)
 
-      该文件夹将添加到当前节点的下方。 输入新文件夹的名称，按Enter进行确认，然后单击&#x200B;**[!UICONTROL OK]**。
+     该文件夹将添加到当前节点的下方。 输入新文件夹的名称，按Enter进行确认，然后单击&#x200B;**[!UICONTROL OK]**。
 
-      ![](assets/s_ncs_user_import_wizard05_4.png)
+     ![](assets/s_ncs_user_import_wizard05_4.png)
 
-   1. 与清单相关联
+  1. 与清单相关联
 
-      **[!UICONTROL Add recipients to a list]**&#x200B;部分中的&#x200B;**[!UICONTROL Edit...]**&#x200B;链接允许您选择或创建收件人将导入到的列表。
+     **[!UICONTROL Add recipients to a list]**&#x200B;部分中的&#x200B;**[!UICONTROL Edit...]**&#x200B;链接允许您选择或创建收件人将导入到的列表。
 
-      ![](assets/s_ncs_user_import_wizard05_5.png)
+     ![](assets/s_ncs_user_import_wizard05_5.png)
 
-      您可以单击&#x200B;**[!UICONTROL Select link]**，然后单击&#x200B;**[!UICONTROL Create]**&#x200B;为这些收件人创建新列表。 列表的创建和管理在[此部分](../../platform/using/creating-and-managing-lists.md)中介绍。
+     您可以单击&#x200B;**[!UICONTROL Select link]**，然后单击&#x200B;**[!UICONTROL Create]**&#x200B;为这些收件人创建新列表。 列表的创建和管理在[此部分](../../platform/using/creating-and-managing-lists.md)中介绍。
 
-      ![](assets/s_ncs_user_import_wizard05_6.png)
+     ![](assets/s_ncs_user_import_wizard05_6.png)
 
-      您可以决定将收件人添加到列表中已存在的收件人，或者使用新收件人重新创建列表。 在这种情况下，如果清单已包含收件人，则它们将被删除并被导入的收件人替换。
+     您可以决定将收件人添加到列表中已存在的收件人，或者使用新收件人重新创建列表。 在这种情况下，如果清单已包含收件人，则它们将被删除并被导入的收件人替换。
 
-   1. 订阅服务
+  1. 订阅服务
 
-      若要为所有导入的收件人订阅信息服务，请单击&#x200B;**[!UICONTROL Subscribe recipients to a service]**&#x200B;部分的&#x200B;**[!UICONTROL Edit...]**&#x200B;链接，以选择或创建收件人将订阅的信息服务。 您可以选择&#x200B;**[!UICONTROL Send a confirmation message]**&#x200B;选项：此消息的内容在与订阅服务关联的投放模板中定义。
+     若要为所有导入的收件人订阅信息服务，请单击&#x200B;**[!UICONTROL Subscribe recipients to a service]**&#x200B;部分的&#x200B;**[!UICONTROL Edit...]**&#x200B;链接，以选择或创建收件人将订阅的信息服务。 您可以选择&#x200B;**[!UICONTROL Send a confirmation message]**&#x200B;选项：此消息的内容在与订阅服务关联的投放模板中定义。
 
-      ![](assets/s_ncs_user_import_wizard05_7.png)
+     ![](assets/s_ncs_user_import_wizard05_7.png)
 
-      您可以通过单击&#x200B;**[!UICONTROL Select link]**，然后单击&#x200B;**[!UICONTROL Create]**&#x200B;图标为这些收件人创建新服务。 [这部分](../../delivery/using/managing-subscriptions.md)介绍了信息服务的管理。
+     您可以通过单击&#x200B;**[!UICONTROL Select link]**，然后单击&#x200B;**[!UICONTROL Create]**&#x200B;图标为这些收件人创建新服务。 [这部分](../../delivery/using/managing-subscriptions.md)介绍了信息服务的管理。
 
 * 使用&#x200B;**[!UICONTROL Origin]**&#x200B;字段将有关收件人来源的信息添加到其用户档案。 此信息在多次导入的框架内特别有用。
 

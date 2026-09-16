@@ -10,31 +10,43 @@ exl-id: 81f207a0-bb72-450b-abe4-0b229b6b1f3a
 TQID: https://experienceleague.adobe.com/e9S6zCJjh4LKzlKKy-tqz8KOR1hScKbMuzuppbVUuGI
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: b82389f8-9b5e-4083-8e3b-3cef299fb8b9
+    internal-label: Schemas
   - id: afa4204e-6d08-4e29-bc35-26aafb656d48
+    internal-label: Profiles and audiences
 subfeature_v2:
   - id: f529d0bd-1401-4c88-9833-43228cc1d40f
+    internal-label: Profiles
   - id: d6330382-c886-4f7a-a4f7-74e3f36c0d9c
+    internal-label: Audiences
   - id: f5293531-9312-4099-bfa3-9e67df6a8750
+    internal-label: Query Editor
   - id: efa38731-2723-4334-8d8b-a778af834835
+    internal-label: Access management
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+    internal-label: Optimization
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 6632
-ht-degree: 4%
-
+source-wordcount: '6654'
+ht-degree: 5%
 ---
-
 # Adobe Campaign术语表{#ac-glossary}
 
 以下是Adobe Campaign中关键术语和概念的定义，以及指向相关文档的链接。 单击术语以显示其定义。
@@ -244,7 +256,7 @@ Learn more about [Transactional Messaging](../../message-center/using/about-tran
 
 投放日志包含发送消息时生成的信息。 这些日志显示发送的详细信息，其中消息已准备、忽略、发送或失败。 可直接从投放仪表板访问它们。
 
-了解有关[投放日志](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/send/monitor/delivery-dashboard#delivery-logs-and-history){target="_blank"}的更多信息。
+了解有关[投放日志](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard#delivery-logs-and-history){target="_blank"}的更多信息。
 +++
 
 <!--
@@ -300,7 +312,7 @@ Learn more about [Deliverability](../../delivery/using/about-deliverability.md).
 
 +++**域委派**
 
-子域配置允许您配置域的子部分（技术上称为“DNS区域”）以与Adobe Campaign一起使用。
+子域委派允许您委派域的子部分（技术上称为“DNS 区域”）以与 Adobe Campaign 配合使用。
 域委派使Adobe能够控制和维护发送、渲染和跟踪电子邮件营销活动所需的DNS的各个方面。
 
 了解有关[域委派](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/setting-up-new-subdomain.html?lang=zh-Hans)的更多信息
@@ -417,7 +429,7 @@ An engine call is a server call that starts real-time processing on server side 
 
 筛选维度是包含数据或属性的架构，查询使用这些数据或属性来筛选所需的行。 筛选维度架构必须直接链接到定义的定向维度，以便Adobe Campaign能够跨数据库联接并返回响应行。
 
-请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/targeting-workflows.html?lang=zh-Hans#targeting-and-filtering-dimensions){target="_blank"}以了解有关筛选维度的更多信息。
+请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/targeting-workflows.html#targeting-and-filtering-dimensions){target="_blank"}以了解有关筛选维度的更多信息。
 +++
 
 +++**文件夹**
@@ -944,7 +956,7 @@ Adobe Campaign允许您创建和管理新闻稿或产品更新等信息服务，
 
 利用订阅服务工作流活动，可以为过渡中指定的群体创建或删除对信息服务的订阅。
 
-请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/subscription-services.html?lang=zh-Hans){target="_blank"}以了解有关订阅服务活动的更多信息。
+请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/subscription-services.html){target="_blank"}以了解有关订阅服务活动的更多信息。
 +++
 
 +++**目标审批**
@@ -960,7 +972,7 @@ Adobe Campaign允许您创建和管理新闻稿或产品更新等信息服务，
 
 目标数据是存储在工作流的工作台（过渡）中的数据。 此数据可在投放内部使用，用于个性化投放内容或定义投放动态元素的逻辑。
 
-请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/use-workflow-data.html?lang=zh-Hans#target-data){target="_blank"}以了解有关目标数据的更多信息。
+请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/use-workflow-data.html#target-data){target="_blank"}以了解有关目标数据的更多信息。
 +++
 
 +++**目标映射**
@@ -1048,7 +1060,7 @@ Learn more about [Total database storage](../../workflow/using/about-workflows.m
 
 触发的活动是在工作流中收到API请求时执行的活动。 API调用由启动工作流执行的工作流中的信号活动使用。
 
-请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/flow-control-activities/external-signal.html?lang=zh-Hans){target="_blank"}以了解有关触发式营销活动的更多信息。
+请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/flow-control-activities/external-signal.html){target="_blank"}以了解有关触发式营销活动的更多信息。
 +++
 
 <!--
@@ -1108,7 +1120,7 @@ Web应用程序是由Campaign实例托管的动态和交互式应用程序页面
 
 工作流日志是工作流的逐步执行日志。 它包含工作流的所有历史记录或审核跟踪。 它用于开发、故障诊断或调试。
 
-在[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html?lang=zh-Hans){target="_blank"}中了解有关工作流日志的更多信息。
+在[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html){target="_blank"}中了解有关工作流日志的更多信息。
 +++
 
 +++**工作表**

@@ -8,17 +8,17 @@ exl-id: 5745fc60-9df3-4ad0-bbeb-f6ae8c86a5aa
 TQID: https://experienceleague.adobe.com/M8NNQbT-Kt4wYQhIVeq0sceBctFGvHjrfT7qe-X-u0U
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 feature_v2: []
 subfeature_v2: []
 source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
 workflow-type: tm+mt
-source-wordcount: 89
+source-wordcount: '89'
 ht-degree: 21%
-
 ---
-
 # 架构引用 {#schema-reference}
 
 编辑架构时，基于源架构(xtk:srcSchema)的审批系统可用。 使用“数据库结构更新……”更新数据库时也会发现一些错误 助理。
@@ -34,7 +34,7 @@ ht-degree: 21%
 * [元素](schema/element.md)
 * [明细列表](schema/enumeration.md)
 * [帮助](schema/help.md)
-* [加入](schema/join.md)
+* [连接](schema/join.md)
 * [键](schema/key.md)
 * [Keyfield](schema/keyfield.md)
 * [方法](schema/method.md)

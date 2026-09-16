@@ -10,27 +10,37 @@ exl-id: 85e2135d-a1a3-44f0-a4f9-de38db5c8726
 TQID: https://experienceleague.adobe.com/ivE0WuT3rnpH0ro0cBHgJXxXRiRELmJLwHrYVi-Md6Y
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: d5ef99fa-df0c-4153-bf94-105ad0724167
+    internal-label: Integrations
   - id: afa4204e-6d08-4e29-bc35-26aafb656d48
+    internal-label: Profiles and audiences
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+    internal-label: Privacy
 subfeature_v2:
   - id: f529d0bd-1401-4c88-9833-43228cc1d40f
+    internal-label: Profiles
   - id: d6330382-c886-4f7a-a4f7-74e3f36c0d9c
+    internal-label: Audiences
   - id: f5293531-9312-4099-bfa3-9e67df6a8750
+    internal-label: Query Editor
   - id: efa38731-2723-4334-8d8b-a778af834835
+    internal-label: Access management
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 2093
+source-wordcount: '2105'
 ht-degree: 2%
-
 ---
-
 # 内部版本升级常见问题解答 {#build-upgrade-faq}
 
 此常见问题解答解答解答了有关Campaign Classic v7内部版本升级的问题，尤其是对于内部部署和混合部署的问题。
@@ -221,18 +231,18 @@ Adobe将在进行任何更改之前备份您的系统。 但是，如果您的�
 一个测试收件人、验证个性化、取消子链接、镜像页面均可正常工作。
 * 您的所有关键路径工作流都在运行吗？ 检查工作流，打开工作流日志，验证
 没有错误。
-* 您的所有文件夹是否都存在、可见且可访问？浏览不同的文件夹并选中。
+* 您的所有文件夹是否都存在、可见且可访问？ 浏览不同的文件夹并选中。
 将显示并显示所有内容。
 * 您的投放是否使用正确的时区进行？
 
-   * 使用时间戳和时区验证创建日期和修改日期
-   * 验证调度程序的执行是否可以在指定的时间在工作流中工作
-   * 获取处于“已暂停”和“失败”状态的工作流列表。 启动并监视它们
-   * 针对一种方案运行AB Testing
-   * 测试推送通知及其对深层链接的跟踪功能
-   * 测试发送短信
-   * 如果您连接了任何外部FDA，请测试数据是否以两种方式发送
-   * 如果您使用Adobe Campaign-Adobe Experience Manager、Adobe Campaign-Adobe Analytics等集成，请测试它们是否仍像以前一样工作
+  * 使用时间戳和时区验证创建日期和修改日期
+  * 验证调度程序的执行是否可以在指定的时间在工作流中工作
+  * 获取处于“已暂停”和“失败”状态的工作流列表。 启动并监视它们
+  * 针对一种方案运行AB Testing
+  * 测试推送通知及其对深层链接的跟踪功能
+  * 测试发送短信
+  * 如果您连接了任何外部FDA，请测试数据是否以两种方式发送
+  * 如果您使用Adobe Campaign-Adobe Experience Manager、Adobe Campaign-Adobe Analytics等集成，请测试它们是否仍像以前一样工作
 
 **另请参阅**
 

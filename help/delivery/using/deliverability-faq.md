@@ -8,27 +8,36 @@ exl-id: f94897c1-b44c-4100-ac50-a89b13fa6f2f
 TQID: https://experienceleague.adobe.com/ZRai7Bd-IRaWUQQmkuUYwXhNXp2BI-B4k-4cGq1k6uk
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
   - id: b631758a-142d-425f-b9aa-f756d85cb979
+    internal-label: Campaign Email Designer
   - id: c858a28b-ea19-49b0-8d48-828717fad89c
+    internal-label: Prepare and test messages
 subfeature_v2:
   - id: e95a583b-fcfa-4524-8666-46a29c828119
+    internal-label: Email messaging
   - id: c8da4fdd-eb94-4751-a43c-f82733fb2d6e
+    internal-label: Email design
   - id: d5bbe3da-ba85-4242-817e-54f7c4b943e0
+    internal-label: A/B testing
   - id: f4da0e76-df77-451e-ad61-21afb7bd8810
+    internal-label: Manage deliverability
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 660
+source-wordcount: '660'
 ht-degree: 2%
-
 ---
-
 # 可投放性故障排除{#deliverability-faq}
 
 您是否遇到过可投放性问题？ 您可以在此处找到解决方案。
@@ -62,9 +71,9 @@ ht-degree: 2%
 
 * **阻止列表的电子邮件地址与隔离的电子邮件地址有何区别？**
 
-   * 状态&#x200B;**[!UICONTROL Denylisted]**&#x200B;是反馈循环（当某人报告邮件为垃圾邮件时）的结果。
+  * 状态&#x200B;**[!UICONTROL Denylisted]**&#x200B;是反馈循环（当某人报告邮件为垃圾邮件时）的结果。
 
-   * 状态&#x200B;**[!UICONTROL Quarantined]**&#x200B;是软退回或硬退回的结果。
+  * 状态&#x200B;**[!UICONTROL Quarantined]**&#x200B;是软退回或硬退回的结果。
 
   有关更多信息，请参阅[此小节](delivery-failures-quarantine.md#quarantine-vs-denylist)。
 
@@ -78,15 +87,15 @@ ht-degree: 2%
 
 * **我的一名收件人被错误地添加到阻止列表。 如何将其从阻止列表中移除，以便可以重新向他们发送消息？**
 
-   * 转到&#x200B;**[!UICONTROL Administration > Campaign Management > Non deliverables Management > Non deliverables and addresses]**。
-   * 在对应的记录的详细信息中，将&#x200B;**[!UICONTROL Status]**&#x200B;字段的值设置为&#x200B;**[!UICONTROL Valid]**。
-   * 保存记录。
+  * 转到&#x200B;**[!UICONTROL Administration > Campaign Management > Non deliverables Management > Non deliverables and addresses]**。
+  * 在对应的记录的详细信息中，将&#x200B;**[!UICONTROL Status]**&#x200B;字段的值设置为&#x200B;**[!UICONTROL Valid]**。
+  * 保存记录。
 
 * **如何确定我的IP是否位于上？ 如何从阻止列表中删除我的IP？**
 
   要检查您的IP地址是否位于阻止列表上，您可以使用各种网站对其进行验证，例如：
-   * [MX Toolbox](https://mxtoolbox.com/)
-   * [我的IP地址是什么](https://whatismyipaddress.com)
+  * [MX Toolbox](https://mxtoolbox.com/)
+  * [我的IP地址是什么](https://whatismyipaddress.com)
 
   通常，IP地址检查的结果将返回一个列表，其中包含IP地址的详细信息，以及拒绝IP地址的网站的名称。
 

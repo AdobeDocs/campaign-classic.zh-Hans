@@ -9,24 +9,29 @@ exl-id: 7a05fdff-8f9d-4e8d-812e-0f1509db5499
 TQID: https://experienceleague.adobe.com/xs5sqsIqs9u-a9TrKo5EgFIpNTtxhy8y0-YIlDyUxp0
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
 feature_v2: []
 subfeature_v2:
   - id: e5e477db-ebc7-4368-ab0f-4d8fc2aed405
+    internal-label: Release notes
   - id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
+    internal-label: Adobe Analytics integration
 source-git-commit: e71b0658b2458b05799c28e79d871f025348962a
-workflow-type: ht
-source-wordcount: 1046
+workflow-type: tm+mt
+source-wordcount: '1045'
 ht-degree: 100%
-
 ---
-
 # 版本更新 {#rn-overview}
 
 Adobe Campaign Classic 会定期发布产品更新，这些更新包括新增功能、错误修复、性能改进、安全性提升及可用性增强。 这些更新会作为&#x200B;**产品内部版本**&#x200B;发布。 有关每个新的内部版本的详细信息，请参阅[发行说明](latest-release.md)。
@@ -66,13 +71,13 @@ Adobe Campaign 会定期更新。 这种定期更新旨在让您掌握最新、�
 
 >[!NOTE]
 >
-> 每个版本都是累积的：除了自身的变更之外，此内部版本还包含同一版本的早期内部版本中提供的所有功能、改进和修复。您无需安装每个中间版本即可从以前的修复中获益 — 安装最新版本会使用以前的版本中包含的所有内容保持最新。
+> 每个版本都是累积的：除了自身的变更之外，此内部版本还包含同一版本的早期内部版本中提供的所有功能、改进和修复。 您无需安装每个中间版本即可从以前的修复中获益 — 安装最新版本会使用以前的版本中包含的所有内容保持最新。
 
 作为托管客户，您无需采取任何操作即可通过稳定的最新版本自动从升级中受益。 在[年度升级部分](#yearly-upgrade)中了解详情。 如果您从旧版本进行迁移，Adobe 建议您先升级到此版本。
 
 ### 托管环境的安全修补 {#security-patching}
 
-为了保护托管环境的完整性，Adobe 保留随时应用重要安全修补程序的权利，以便尽快修复漏洞，而无需事先通知。部署这些修补程序时不会中断服务。这种做法符合 Adobe 的安全治理标准，根据该标准，修复重要漏洞的紧迫性高于提前通知。
+为了保护托管环境的完整性，Adobe 保留随时应用重要安全修补程序的权利，以便尽快修复漏洞，而无需事先通知。 部署这些修补程序时不会中断服务。 这种做法符合 Adobe 的安全治理标准，根据该标准，修复重要漏洞的紧迫性高于提前通知。
 
 ## 推荐做法 {#rn-recommendations}
 

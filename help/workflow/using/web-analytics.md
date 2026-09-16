@@ -8,9 +8,7 @@ source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
 source-wordcount: '183'
 ht-degree: 3%
-
 ---
-
 
 # 网站分析{#web-analytics}
 
@@ -28,7 +26,7 @@ ht-degree: 3%
   <tr> 
    <td> <span class="uicontrol">发送指标和营销活动属性</span> <br /> </td> 
    <td> <span class="uicontrol">webAnalyticsSendMetrics</span> <br /> </td> 
-   <td> 此工作流可让您通过® Analytics连接器，将电子邮件营销活动指标从Adobe Campaign发送到Adobe Experience Cloud Suite。 相关指标如下： <strong>已发送</strong> (iSent)、<strong>打开总计数</strong> (iTotalRecipientOpen)、<strong>点击的收件人总数</strong> (iTotalRecipientClick)、<strong>错误</strong> (iError)、<strong>选择退出</strong> （选择退出） (iOptOut)。<br /> </td> 
+   <td> 此工作流可让您通过® Analytics连接器，将电子邮件营销活动指标从Adobe Campaign发送到Adobe Experience Cloud套件。 相关指标如下： <strong>已发送</strong> (iSent)、<strong>打开总计数</strong> (iTotalRecipientOpen)、<strong>点击的收件人总数</strong> (iTotalRecipientClick)、<strong>错误</strong> (iError)、<strong>选择退出</strong> （选择退出） (iOptOut)。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">已转换联系人的标识</span> <br /> </td> 

@@ -8,9 +8,7 @@ source-git-commit: 64460d51b002a7821bba9c2998d9ccccab3046ad
 workflow-type: tm+mt
 source-wordcount: '874'
 ht-degree: 1%
-
 ---
-
 # 迁移到Adobe Analytics 2.0 API {#analytics-2-migration}
 
 Adobe Analytics 1.4 API的[生命周期即将结束](https://developer.adobe.com/analytics-apis/docs/1.4/guides/eol){target="_blank"}。 将Campaign实例链接到Adobe Analytics的[Web Analytics连接器](../../integrations/using/gs-aa.md)依赖于这些API，因此您需要升级到使用新Analytics 2.0 API的版本以保持集成运行。

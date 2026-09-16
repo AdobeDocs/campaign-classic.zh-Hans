@@ -7,17 +7,18 @@ exl-id: 60f15ae5-b2bd-48f9-aa45-8f795a3071aa
 TQID: https://experienceleague.adobe.com/MbBmc-H9eZfmqWy-vZb6dd-m-l0G-UxtY-HAboNURjc
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: b82389f8-9b5e-4083-8e3b-3cef299fb8b9
+    internal-label: Schemas
 subfeature_v2:
   - id: cfc95e9b-b035-4403-a6a9-b27a8a053a37
+    internal-label: PI
 source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
 workflow-type: tm+mt
-source-wordcount: 2035
+source-wordcount: '2035'
 ht-degree: 1%
-
 ---
-
 # 元素元素 {#element--element}
 
 
@@ -65,11 +66,11 @@ Adobe Campaign中有四种类型的`<element>`元素：
 
   可访问值包括：
 
-   * “无”：仅和解。 这意味着Adobe Campaign将恢复元素，而不更新它，如果元素不存在则生成错误。
-   * &quot;insertOrUpdate&quot;：使用insertion更新。 这意味着Adobe Campaign将更新元素，如果它不存在，则创建它。
-   * &quot;insert&quot;： insertion. 这意味着Adobe Campaign将插入元素而不检查元素是否存在。
-   * &quot;update&quot;：更新。 这意味着Adobe Campaign将更新元素，如果它不存在，则产生错误。
-   * &quot;delete&quot;：删除。 这意味着Adobe Campaign将恢复和删除元素。
+  * “无”：仅和解。 这意味着Adobe Campaign将恢复元素，而不更新它，如果元素不存在则生成错误。
+  * &quot;insertOrUpdate&quot;：使用insertion更新。 这意味着Adobe Campaign将更新元素，如果它不存在，则创建它。
+  * &quot;insert&quot;： insertion. 这意味着Adobe Campaign将插入元素而不检查元素是否存在。
+  * &quot;update&quot;：更新。 这意味着Adobe Campaign将更新元素，如果它不存在，则产生错误。
+  * &quot;delete&quot;：删除。 这意味着Adobe Campaign将恢复和删除元素。
 
 * **高级（布尔值）**：激活此选项(@advanced=&quot;true&quot;)后，您可以在可用于配置表单列表的可用字段列表中隐藏该属性。
 * **聚合（字符串）**：允许您通过其他架构复制`<element>`的定义。 此属性接收格式为“namespace:name”的架构声明。
@@ -77,14 +78,14 @@ Adobe Campaign中有四种类型的`<element>`元素：
 * **autopk （布尔值）**：如果激活此选项(autopk=&quot;true&quot;)，将自动定义唯一键。 此选项只能用于架构的主元素。 警告，Adobe Campaign仅保证生成的键是唯一的。 不能保证键值是连续和增量的。
 * **dataPolicy （字符串）**：允许您对SQL字段中允许的值指定批准约束。 此属性的值为：
 
-   * &quot;none&quot;：无值
-   * &quot;smartCase&quot;：第一字母大写
-   * &quot;lowerCase&quot;：全部为小写
-   * &quot;upperCase&quot;：全部大写
-   * &quot;email&quot;：电子邮件地址
-   * &quot;phone&quot;：电话号码
-   * &quot;identifier&quot;：标识符名称
-   * &quot;resIdentifier&quot;：文件名
+  * &quot;none&quot;：无值
+  * &quot;smartCase&quot;：第一字母大写
+  * &quot;lowerCase&quot;：全部为小写
+  * &quot;upperCase&quot;：全部大写
+  * &quot;email&quot;：电子邮件地址
+  * &quot;phone&quot;：电话号码
+  * &quot;identifier&quot;：标识符名称
+  * &quot;resIdentifier&quot;：文件名
 
 * **dbEnum （字符串）**：接收“已关闭”枚举的内部名称。 必须在`<srcschema>`中定义枚举值。
 * **defOnDuplicate （布尔值）**：如果激活此属性，则在复制记录时，默认值（在@default中定义）将自动重新应用于记录。
@@ -97,13 +98,13 @@ Adobe Campaign中有四种类型的`<element>`元素：
 * **externalJoin （布尔值）**： “link”类型元素中的外部联接。
 * **功能（字符串）**：定义特性字段：这些字段用于扩展现有表中的数据，但存储在附件表中。 接受的值包括：
 
-   * “共享”：根据数据类型将内容存储在共享表中
-   * &quot;dedicated&quot;：内容存储在专用表中
+  * “共享”：根据数据类型将内容存储在共享表中
+  * &quot;dedicated&quot;：内容存储在专用表中
 
   SQL特性表是根据以下特性类型自动构建的：
 
-   * 专用： `Ft_[name_of_the_schema_containing_the_characteristic]_[name_of_the_characteristic]`
-   * 已共享：`Ft_[type_of_key_of_the_schema_containing_the_characteristic]_[type_of_the_characteristic]`
+  * 专用： `Ft_[name_of_the_schema_containing_the_characteristic]_[name_of_the_characteristic]`
+  * 已共享：`Ft_[type_of_key_of_the_schema_containing_the_characteristic]_[type_of_the_characteristic]`
 
   有两种类型的特性字段：简单字段，其中在特性上授权单个值；以及多选字段，其中特性链接到可能包含多个值的收集要素。
 
@@ -120,11 +121,11 @@ Adobe Campaign中有四种类型的`<element>`元素：
 
   可访问值包括：
 
-   * &quot;define&quot;：如果实体是通过链接引用的，Adobe Campaign不会删除该实体
-   * &quot;normal&quot;：删除源具体值会在目标具体值（默认模式）上初始化链接的键，这种类型的完整性会初始化所有外键
-   * &quot;own&quot;：删除源具体值触发目标具体值的删除
-   * &quot;owncopy&quot;：与&quot;own&quot;（如果删除）类似或重复发生次数（如果重复）
-   * “中立”：不执行任何操作
+  * &quot;define&quot;：如果实体是通过链接引用的，Adobe Campaign不会删除该实体
+  * &quot;normal&quot;：删除源具体值会在目标具体值（默认模式）上初始化链接的键，这种类型的完整性会初始化所有外键
+  * &quot;own&quot;：删除源具体值触发目标具体值的删除
+  * &quot;owncopy&quot;：与&quot;own&quot;（如果删除）类似或重复发生次数（如果重复）
+  * “中立”：不执行任何操作
 
 * **标签（字符串）**：元素标签。
 * **labelSingular （字符串）**：在界面的某些部分中使用的元素的标签（奇异形式）。
@@ -134,10 +135,10 @@ Adobe Campaign中有四种类型的`<element>`元素：
 
   当架构写入数据库时，Adobe Campaign会自动将前缀添加到字段名称中。
 
-   * &quot;i&quot;：&quot;integer&quot;类型的前缀。
-   * &quot;d&quot;：&quot;double&quot;类型的前缀。
-   * “s”：字符串类型的前缀。
-   * &quot;ts&quot;：&quot;date&quot;类型的前缀。
+  * &quot;i&quot;：&quot;integer&quot;类型的前缀。
+  * &quot;d&quot;：&quot;double&quot;类型的前缀。
+  * “s”：字符串类型的前缀。
+  * &quot;ts&quot;：&quot;date&quot;类型的前缀。
 
   要以自主方式定义表的名称，您需要在主架构元素的定义中使用“@sqltable”属性。
 
@@ -146,9 +147,9 @@ Adobe Campaign中有四种类型的`<element>`元素：
 * **pkSequence （字符串）**：接收用于计算自动增量键的序列的名称。 仅当在架构的根元素上定义了自动增量键时，才能使用此属性。
 * **pkgStatus （字符串）**：在导出包期间，将考虑值作为此属性值的函数：
 
-   * &quot;always&quot;：元素将始终存在
-   * &quot;never&quot;：元素将永远不存在
-   * &quot;default(or nothing)&quot;：除非元素是默认元素，或者不是内部字段并且与其他实例不兼容，否则将导出元素
+  * &quot;always&quot;：元素将始终存在
+  * &quot;never&quot;：元素将永远不存在
+  * &quot;default(or nothing)&quot;：除非元素是默认元素，或者不是内部字段并且与其他实例不兼容，否则将导出元素
 
 * **ref （字符串）**：此属性定义对由多个架构共享的>element>元素的引用（定义分解）。 该定义将不会复制到当前架构中。
 * **必需（布尔值）**：如果激活此属性(@required=&quot;true&quot;)，则接口中会高亮显示该字段。 字段的标签在表单中将为红色。
@@ -157,8 +158,8 @@ Adobe Campaign中有四种类型的`<element>`元素：
 
   可能的值包括：
 
-   * &quot;single&quot; ：简单的1-1类型链接
-   * &quot;unbound&quot;： 1-N类型收藏集链接
+  * &quot;single&quot; ：简单的1-1类型链接
+  * &quot;unbound&quot;： 1-N类型收藏集链接
 
   默认情况下，如果在创建链接期间未指定属性，则基数将为1-N。
 
@@ -181,32 +182,32 @@ Adobe Campaign中有四种类型的`<element>`元素：
 
   可用类型列表：
 
-   * 任何
-   * 纸盒
-   * blob
-   * 布尔值
-   * 字节
-   * CDATA
-   * datetime
-   * datetimetz
-   * 时间戳
-   * 日期
-   * double
-   * 枚举
-   * float
-   * html
-   * int64
-   * 链接
-   * 长
-   * 备忘录
-   * MNTOKEN
-   * 百分比
-   * 主密钥
-   * 短
-   * 字符串
-   * time
-   * timespan
-   * uuid
+  * 任何
+  * 区间
+  * blob
+  * 布尔值
+  * 字节
+  * CDATA
+  * datetime
+  * datetimetz
+  * 时间戳
+  * 日期
+  * double
+  * 枚举
+  * float
+  * html
+  * int64
+  * 链接
+  * 长
+  * 备忘录
+  * MNTOKEN
+  * 百分比
+  * 主密钥
+  * 短
+  * 字符串
+  * time
+  * timespan
+  * uuid
 
 * **未绑定（布尔值）**：如果激活了属性(unbound=&quot;true&quot;)，则该链接将声明为1-N基数的集合元素。
 * **userEnum （字符串）**：接收“open”枚举的内部名称。 枚举值可由用户在界面中定义。

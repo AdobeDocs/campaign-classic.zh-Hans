@@ -11,17 +11,18 @@ exl-id: d666bc0b-596a-4908-9364-7df5bb8d68d0
 TQID: https://experienceleague.adobe.com/FBbSwRfACqdgT1S9aXlDvR4tqqBOuv1BnMYqASi4OoQ
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
 subfeature_v2:
   - id: eff19c99-440a-4318-b319-444edc4d8d8f
+    internal-label: Upgrade
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 323
+source-wordcount: '323'
 ht-degree: 2%
-
 ---
-
 # 先决条件{#before-starting-migration}
 
 
@@ -43,16 +44,16 @@ ht-degree: 2%
 * 在&#x200B;**独立平台**（单机模式）的情况下，将迁移整个应用程序。
 * 对于&#x200B;**标准平台** （企业），迁移步骤如下：
 
-   1. 迁移营销服务器。
-   1. 迁移邮件服务器(mta)。
-   1. 迁移重定向和跟踪服务器(Apache / IIS)。
+  1. 迁移营销服务器。
+  1. 迁移邮件服务器(mta)。
+  1. 迁移重定向和跟踪服务器(Apache / IIS)。
 
 * 在&#x200B;**Cloud Messaging平台**&#x200B;中，执行服务器托管在Adobe Campaign。 请联系Adobe Campaign以协调不同服务器之间的迁移。
 * 对于&#x200B;**Power Booster或Power Cluster平台**，迁移步骤如下：
 
-   1. 迁移重定向和跟踪服务器(Apache / IIS)。
-   1. 迁移Power Booster/Cluster服务器
-   1. 迁移营销服务器。
+  1. 迁移重定向和跟踪服务器(Apache / IIS)。
+  1. 迁移Power Booster/Cluster服务器
+  1. 迁移营销服务器。
 
 ## 用户密码 {#user-passwords}
 

@@ -10,17 +10,17 @@ exl-id: 3d85866a-6339-458c-807a-b267cce772b8
 TQID: https://experienceleague.adobe.com/pex7wiGCNMdY86-Ug7dyLxE3RRT-ejlgz8eH7zVmZc4
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
 feature_v2: []
 subfeature_v2: []
 source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
 workflow-type: tm+mt
-source-wordcount: 708
+source-wordcount: '708'
 ht-degree: 3%
-
 ---
-
 # 事件处理 {#about-event-processing}
 
 
@@ -92,8 +92,8 @@ ht-degree: 3%
 
 * **挂起**：事件可以是：
 
-   * 刚刚收集且尚未处理的事件。 **[!UICONTROL Number of errors]**&#x200B;列显示值0。 尚未链接电子邮件模板。
-   * 事件已处理，但其确认有误。 **[!UICONTROL Number of errors]**&#x200B;列显示的值不是0。 要了解何时再次处理此事件，请参阅&#x200B;**[!UICONTROL Process requested on]**&#x200B;列。
+  * 刚刚收集且尚未处理的事件。 **[!UICONTROL Number of errors]**&#x200B;列显示值0。 尚未链接电子邮件模板。
+  * 事件已处理，但其确认有误。 **[!UICONTROL Number of errors]**&#x200B;列显示的值不是0。 要了解何时再次处理此事件，请参阅&#x200B;**[!UICONTROL Process requested on]**&#x200B;列。
 
 * **待处理投放**：事件已处理，并且投放模板已链接。 电子邮件正在等待投放，并且已应用经典投放流程。 有关详细信息，您可以打开投放。
 * **已发送**、**已忽略**&#x200B;和&#x200B;**传递错误**：这些传递状态是通过&#x200B;**updateEventsStatus**&#x200B;工作流恢复的。 有关详细信息，您可以打开相关的投放。

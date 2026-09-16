@@ -7,15 +7,14 @@ exl-id: 4cd67278-2623-4508-9a9f-9007c6a5f8ac
 TQID: https://experienceleague.adobe.com/w8b-2HEtYRMOd9yHFLtvS0vS2tdLDzuIakLfrqImsGo
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2: []
 subfeature_v2: []
 source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
 workflow-type: tm+mt
-source-wordcount: 198
+source-wordcount: '198'
 ht-degree: 11%
-
 ---
-
 # 枚举元素 {#enumeration--element}
 
 
@@ -55,34 +54,34 @@ ht-degree: 11%
 
   可用类型列表：
 
-   * 任何
-   * 纸盒
-   * blob
-   * 布尔值
-   * 字节
-   * CDATA
-   * datetime
-   * datetimetz
-   * 时间戳
-   * 日期
-   * DOMDocument
-   * 圆顶元素
-   * double
-   * 枚举
-   * float
-   * html
-   * int64
-   * 链接
-   * 长
-   * 备忘录
-   * MNTOKEN
-   * 百分比
-   * 主密钥
-   * 短
-   * 字符串
-   * time
-   * timespan
-   * uuid
+  * 任何
+  * 区间
+  * blob
+  * 布尔值
+  * 字节
+  * CDATA
+  * datetime
+  * datetimetz
+  * 时间戳
+  * 日期
+  * DOMDocument
+  * 圆顶元素
+  * double
+  * 枚举
+  * float
+  * html
+  * int64
+  * 链接
+  * 长
+  * 备忘录
+  * MNTOKEN
+  * 百分比
+  * 主密钥
+  * 短
+  * 字符串
+  * time
+  * timespan
+  * uuid
 
 * **默认值（字符串）**：默认值。 默认值也可以是枚举中定义的值之一。
 * **desc （字符串）**：枚举描述。

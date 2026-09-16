@@ -8,24 +8,31 @@ exl-id: 9aed2665-cd4b-419c-b9f2-ea04fc1d8f01
 TQID: https://experienceleague.adobe.com/XyvGCXDK-0pAX09kPyfGkZFTITlQRuMN0N-Yee-06EM
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
 subfeature_v2:
   - id: e3988c18-3cfa-4f16-b812-ac2d2b1056fa
+    internal-label: Permissions
   - id: ee25c34b-ea50-427b-9369-ba0a160f7d70
+    internal-label: Workflow HeatMap
   - id: b5f0aaf4-1e48-400d-95ac-6eb3078cf22f
+    internal-label: Execution activities
   - id: d1110311-2ca4-442b-be37-088a6db845ee
+    internal-label: Data Management activities
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+    internal-label: Privacy
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 1723
+source-wordcount: '1723'
 ht-degree: 2%
-
 ---
-
 # 技术工作流{#about-technical-workflows}
 
 
@@ -66,7 +73,7 @@ ht-degree: 2%
 | **预测** （预测） | 投放 | 此工作流会分析保存在临时日历中的投放（创建临时日志）。 默认情况下，此工作流于每日凌晨1点触发。 |
 | **完全聚合计算（propositionrcp多维数据集）** (agg_nmspropositionrcp_full) | 优惠引擎（交互） | 此工作流可更新优惠建议多维数据集的完全聚合。 默认情况下，此工作流于每日早上6点触发。 此聚合可捕获以下维度：渠道、投放、营销选件和日期。 然后，使用优惠建议多维数据集根据优惠生成报表。 您可以在[本节](../../reporting/using/ac-cubes.md)中了解多维数据集的更多信息。 |
 | **已转换联系人的标识** (webAnalyticsFindConverted) | 网站分析连接器 | 此工作流对再营销活动后完成购买的网站访客编制索引。 可以在再营销效率报表中访问通过此工作流恢复的数据（请参阅此页面）。 |
-| **从Adobe Experience Cloud导入受众** (importSharedAudience) | 与Adobe Experience Cloud集成 | 利用此工作流，可将不同Adobe Experience Cloud解决方案的受众/区段导入Adobe Campaign。 |
+| **从Adobe Experience Cloud导入受众** (importSharedAudience) | 与Adobe Experience Cloud集成 | 利用此工作流，可将来自不同Adobe Experience Cloud解决方案的受众/区段导入Adobe Campaign。 |
 | 营销活动中的投放&#x200B;**作业** (deliveryMgt) | 营销活动（营销活动） | 此工作流会触发批准的投放，并开始后处理外部投放的服务提供程序。 它还会发送批准通知和提醒。 |
 | 服务提供者上的&#x200B;**作业** (supplierMgt) | 营销活动（营销活动） | 在投放获得批准后，此工作流将开始处理提供程序（通过电子邮件发送到路由器并进行后处理）。 |
 | **LINE V2访问令牌更新** (updateLineV2AccessToken) | LINE渠道 — 仅限Campaign v7 | 此工作流将刷新对LINE V2的访问令牌。 |
@@ -85,7 +92,7 @@ ht-degree: 2%
 | **建议同步** (propositionSynch) | 使用执行实例控制优惠引擎 | 此工作流在营销实例和用于交互的执行实例之间同步建议。 |
 | **恢复Web事件** (webAnalyticsGetWebEvents) | 网站分析连接器 | 每小时，此工作流会下载给定网站上的Internet用户行为区段，将它们放入Adobe Campaign数据库并启动再营销工作流。 |
 | **报告聚合** (reportingAggregates) | 投放 | 此工作流可更新报告中使用的聚合。 默认情况下，此工作流于每日凌晨2点触发。 |
-| **发送指标和营销活动属性** (webAnalyticsSendMetrics) | 网站分析连接器 | 此工作流可让您通过® Analytics连接器，将电子邮件营销活动指标从Adobe Campaign发送到Adobe Experience Cloud Suite。 相关指示器如下所示： Sent (iSent)、打开总数(iTotalRecipientOpen)、点击的收件人总数(iTotalRecipientClick)、错误(iError)、选择退出（选择退出）(iOptOut)。 |
+| **发送指标和营销活动属性** (webAnalyticsSendMetrics) | 网站分析连接器 | 此工作流可让您通过® Analytics连接器，将电子邮件营销活动指标从Adobe Campaign发送到Adobe Experience Cloud套件。 相关指示器如下所示： Sent (iSent)、打开总数(iTotalRecipientOpen)、点击的收件人总数(iTotalRecipientClick)、错误(iError)、选择退出（选择退出）(iOptOut)。 |
 | **Stock：订单和警报** (stockMgt) | 营销活动（营销活动） | 此工作流可启动订单行上的库存计算，并管理警告警报阈值。 |
 | **正在同步Facebook粉丝** (syncFacebookFans) | 社交网络（社交营销） — 仅限Campaign v7 | 此工作流可在每天早上7点将Facebook粉丝导入Adobe Campaign。 |
 | **同步Facebook页面** (syncFacebook) | 社交网络（社交营销） — 仅限Campaign v7 | 此工作流可在每天早上7点将Facebook页面与Adobe Campaign同步。 |

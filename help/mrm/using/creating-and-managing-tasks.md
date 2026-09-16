@@ -11,19 +11,21 @@ exl-id: cc1200fa-f6d8-4f41-aed1-d1a7f229447a
 TQID: https://experienceleague.adobe.com/Mv-2GGcnP%2D%2D%2D%2DL-D2h5DDz3StnT5rH4TlnQdxn9bdnY
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: a075b2c1-7748-4328-b7f6-343aa314616a
+    internal-label: Campaigns
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
 subfeature_v2:
   - id: a6eada7c-dc79-4b66-a7d3-206cf47dc9d8
+    internal-label: Marketing Resource Management
 source-git-commit: 48d000a7ceada7e027f27f436ef643b321a7695c
 workflow-type: tm+mt
-source-wordcount: 3750
+source-wordcount: '3752'
 ht-degree: 0%
-
 ---
-
 # 创建和管理任务{#creating-and-managing-tasks}
 
 
@@ -320,8 +322,8 @@ Adobe Campaign允许您直接在应用程序中创建任务并管理其完整的
 
   您可以使用一系列链接的任务来定义完整的审批周期。 仅对最后一个任务选中&#x200B;**[!UICONTROL Publish the marketing resource]**&#x200B;选项：所有任务都需要完成才能发布资源。 此外，在创建子营销资源任务时，将在子任务中自动选择资源。
 
-   * **通过资源**：如果您提交资源以供审批或批准，则这些操作不会影响任务。
-   * **通过任务**：如果任务中选中了&#x200B;**[!UICONTROL Publish the marketing resource]**&#x200B;选项，则资源会在任务完成后自动批准和发布（请参阅上文）。 如果未选中该选项，则任务和资源不会进行交互：对一个任务执行操作不会影响另一个任务。
+  * **通过资源**：如果您提交资源以供审批或批准，则这些操作不会影响任务。
+  * **通过任务**：如果任务中选中了&#x200B;**[!UICONTROL Publish the marketing resource]**&#x200B;选项，则资源会在任务完成后自动批准和发布（请参阅上文）。 如果未选中该选项，则任务和资源不会进行交互：对一个任务执行操作不会影响另一个任务。
 
 #### 配置营销资源创建任务 {#configuring-a-marketing-resource-creation-task}
 
@@ -417,7 +419,7 @@ Adobe Campaign允许您直接在应用程序中创建任务并管理其完整的
 
 ![](assets/s_ncs_user_task_dependencies_from_board.png)
 
-对于分组任务，Adobe Campaign会自动将父任务的结束日期作为开始日期分配给子任务。 例如，如果&#x200B;**创建邀请**&#x200B;任务于10月15日3:30PM结束，则&#x200B;**发送邀请电子邮件**&#x200B;子任务将于10月15日3:30PM开始。
+对于分组任务，Adobe Campaign会自动将父任务的结束日期作为开始日期分配给子任务。 例如，如果&#x200B;**创建邀请**&#x200B;任务于10月15日下午3:30结束，则&#x200B;**发送邀请电子邮件**&#x200B;子任务将于10月15日下午3:30开始。
 
 此外，如果延迟父任务的结束，其某些子任务可能会受到影响：这些是状态为&#x200B;**[!UICONTROL Scheduled]**&#x200B;且开始日期早于父任务的新结束日期的子任务。 任务的持续时间保持不变。 如果子任务的开始日期晚于父任务的新结束日期，则子任务不会受到影响。
 

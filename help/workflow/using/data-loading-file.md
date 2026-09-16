@@ -8,21 +8,25 @@ exl-id: a380e486-a40c-4bf6-b7f4-7dcd76c34085
 TQID: https://experienceleague.adobe.com/PJrUzETTVGOlfnNcnYgUxOSEhZatGBfcDST49uwUVwM
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: a658c786-869b-4194-a780-2594d663adda
+    internal-label: Data management
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+    internal-label: Data management
 subfeature_v2:
   - id: ee25c34b-ea50-427b-9369-ba0a160f7d70
+    internal-label: Workflow HeatMap
   - id: b5f0aaf4-1e48-400d-95ac-6eb3078cf22f
+    internal-label: Execution activities
   - id: d1110311-2ca4-442b-be37-088a6db845ee
+    internal-label: Data Management activities
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 1150
+source-wordcount: '1150'
 ht-degree: 14%
-
 ---
-
 # 数据加载（文件）{#data-loading-file}
 
 ## 使用 {#use}
@@ -73,27 +77,27 @@ ht-degree: 14%
 * **[!UICONTROL Data type]**：指定每个列所需的数据类型。
 * **[!UICONTROL Allow NULLs]**：指定如何管理空值。
 
-   * **[!UICONTROL Adobe Campaign default]**：仅为数字字段生成错误，否则插入 NULL 值。
-   * **[!UICONTROL Empty value allowed]**：授权空值。 因此，会插入 NULL 值。
-   * **[!UICONTROL Always populated]**：如果值为空，则生成错误。
+  * **[!UICONTROL Adobe Campaign default]**：仅为数字字段生成错误，否则插入 NULL 值。
+  * **[!UICONTROL Empty value allowed]**：授权空值。 因此，会插入 NULL 值。
+  * **[!UICONTROL Always populated]**：如果值为空，则生成错误。
 
 * **[!UICONTROL Length]**：指定&#x200B;**字符串**&#x200B;数据类型的最大字符数。
 * **[!UICONTROL Format]**：定义时间和日期格式。
 * **[!UICONTROL Data transformation]**：定义是否需要对&#x200B;**字符串**&#x200B;应用字符大小写处理。
 
-   * **[!UICONTROL None]**：未修改导入的字符串。
-   * **[!UICONTROL First letter in upper case]**：字符串中每个单词的第一个字母以大写开头。
-   * **[!UICONTROL Upper case]**：字符串中的所有字符都使用大写。
-   * **[!UICONTROL Lower case]**：字符串中的所有字符都使用小写。
+  * **[!UICONTROL None]**：未修改导入的字符串。
+  * **[!UICONTROL First letter in upper case]**：字符串中每个单词的第一个字母以大写开头。
+  * **[!UICONTROL Upper case]**：字符串中的所有字符都使用大写。
+  * **[!UICONTROL Lower case]**：字符串中的所有字符都使用小写。
 
 * **[!UICONTROL White space management]**：指定字符串中是否需要忽略某些空格。 **[!UICONTROL Ignore spaces]**&#x200B;值只允许忽略字符串开头和结尾的空格。
 * **[!UICONTROL Error processings]**：定义遇到错误时的行为。
 
-   * **[!UICONTROL Ignore the value]**：忽略值。 工作流执行日志中会生成警告。
-   * **[!UICONTROL Reject line]**：不处理整个行。
-   * **[!UICONTROL Use a default value in case of error]**：将导致错误的值替换为在 **[!UICONTROL Default value]** 字段中定义的默认值。
-   * **[!UICONTROL Reject the line when there is no remapping value]**：除非为错误值定义了映射，否则不会处理整行（请参阅下面的&#x200B;**[!UICONTROL Mapping]**&#x200B;选项）。
-   * **[!UICONTROL Use a default value in case the value is not remapped]**：将在&#x200B;**[!UICONTROL Default value]**&#x200B;字段中定义的默认值替换导致错误的值，除非已为该错误值定义了映射（请参阅下面的&#x200B;**[!UICONTROL Mapping]**&#x200B;选项）。
+  * **[!UICONTROL Ignore the value]**：忽略值。 工作流执行日志中会生成警告。
+  * **[!UICONTROL Reject line]**：不处理整个行。
+  * **[!UICONTROL Use a default value in case of error]**：将导致错误的值替换为在 **[!UICONTROL Default value]** 字段中定义的默认值。
+  * **[!UICONTROL Reject the line when there is no remapping value]**：除非为错误值定义了映射，否则不会处理整行（请参阅下面的&#x200B;**[!UICONTROL Mapping]**&#x200B;选项）。
+  * **[!UICONTROL Use a default value in case the value is not remapped]**：将在&#x200B;**[!UICONTROL Default value]**&#x200B;字段中定义的默认值替换导致错误的值，除非已为该错误值定义了映射（请参阅下面的&#x200B;**[!UICONTROL Mapping]**&#x200B;选项）。
 
 * **[!UICONTROL Default value]**：根据所选的错误处理指定默认值。
 * **[!UICONTROL Mapping]**：此字段仅在列详细信息配置（通过双击或通过列列表右侧的选项访问）中可用。 这会在导入特定值时对其进行转换。 例如，您可以将“three”转换为“3”。

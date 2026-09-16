@@ -8,20 +8,22 @@ exl-id: 04b0a0e5-d6df-447c-ac67-66adb1bdf717
 TQID: https://experienceleague.adobe.com/HRym19p3YGAa3PEPgFBfU3ka39l5348CkdQaWcHZOJk
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
 feature_v2: []
 subfeature_v2: []
 source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
 workflow-type: tm+mt
-source-wordcount: 1037
+source-wordcount: '1037'
 ht-degree: 0%
-
 ---
-
 # 定义其他SQL函数{#adding-additional-sql-functions}
 
 Adobe Campaign允许用户定义&#x200B;**他们自己的函数**，这些函数可以访问SQL函数，既包括数据库提供的函数，也包括控制台中尚未提供的函数。 这对聚合函数(average、maximum、sum)非常有用，例如，只能在服务器上计算聚合函数，或者在数据库提供实现某些函数的更简单方法时，才可以计算聚合函数，而不是在控制台中“手动”写入表达式（例如日期管理）。
@@ -131,8 +133,8 @@ Adobe Campaign允许用户定义&#x200B;**他们自己的函数**，这些函数
 * **@minArgs**&#x200B;和&#x200B;**maxArgs**&#x200B;为参数指定参数数（最小值和最大值）。 例如，对于带2个参数的函数，minArgs和maxArgs将分别为2和2。 对于3个参数加上1个可选参数，它们将分别为3个和4个。
 * 最后，**providerPart**&#x200B;元素提供函数实现。
 
-   * **provider**&#x200B;属性是必需的，它指定提供实现的数据库系统。 如示例所示，当表达式语法或基础函数不同时，可以根据数据库提供替代实现。
-   * **@body**&#x200B;属性包含函数实现。 请注意：此实现必须是数据库语言中的表达式（不是代码块）。 根据数据库的不同，表达式可以是子查询(“（从表中选择列，其中……）”) 仅返回单个值。 例如，Oracle中就是这种情况（查询必须用方括号编写）。
+  * **provider**&#x200B;属性是必需的，它指定提供实现的数据库系统。 如示例所示，当表达式语法或基础函数不同时，可以根据数据库提供替代实现。
+  * **@body**&#x200B;属性包含函数实现。 请注意：此实现必须是数据库语言中的表达式（不是代码块）。 根据数据库的不同，表达式可以是子查询(“（从表中选择列，其中……）”) 仅返回单个值。 例如，Oracle中就是这种情况（查询必须用方括号编写）。
 
   >[!NOTE]
   >

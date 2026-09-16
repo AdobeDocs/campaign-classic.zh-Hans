@@ -2,16 +2,14 @@
 product: campaign
 title: 用例：显示在线调查的答案报告
 description: 用例：显示在线调查的答案报告
-badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v8"
+badge-v8: label="Also applies to v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Reporting, Monitoring, Surveys
 exl-id: 6be12518-86d1-4a13-bbc2-b2ec5141b505
 source-git-commit: 0d8cef312371192ee97f88eb33276df9d7fb11f6
 workflow-type: tm+mt
-source-wordcount: '489'
-ht-degree: 5%
-
+source-wordcount: '480'
+ht-degree: 6%
 ---
-
 # 用例：显示在线调查的答案报告{#use-case-displaying-report-on-answers-to-an-online-survey}
 
 

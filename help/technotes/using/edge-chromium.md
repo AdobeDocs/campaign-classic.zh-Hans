@@ -7,18 +7,19 @@ exl-id: 22f4cbaf-ca37-47b9-b7dd-1ee73d5b348d
 TQID: https://experienceleague.adobe.com/6CrzuBxAxGlXi08NxwdnigO2bNu700luLxnz-3KzZ18
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 topic_v2:
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+    internal-label: Privacy
 feature_v2: []
 subfeature_v2:
   - id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
+    internal-label: Adobe Analytics integration
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 274
+source-wordcount: '274'
 ht-degree: 10%
-
 ---
-
 # 如何在您的环境中启用Microsoft Edge Chromium {#edge-conf}
 
 ## 更改了哪些内容？
@@ -45,25 +46,25 @@ ht-degree: 10%
 
   要执行此操作，请在所有环境(MKT、MID、RT)中应用以下步骤：
 
-   1. 编辑Campaign服务器配置文件(`serverConf.xml`)
-   1. 在`<web>`模块中，设置`webView2Mode = "1"`
-   1. 运行以下命令以重新加载服务器配置：
+  1. 编辑Campaign服务器配置文件(`serverConf.xml`)
+  1. 在`<web>`模块中，设置`webView2Mode = "1"`
+  1. 运行以下命令以重新加载服务器配置：
 
-      ```
-      nlserver config -reload
-      ```
+     ```
+     nlserver config -reload
+     ```
 
-   1. 运行以下命令以重新启动Web服务器：
+  1. 运行以下命令以重新启动Web服务器：
 
-      ```
-      nlserver restart web
-      ```
+     ```
+     nlserver restart web
+     ```
 
-   1. 如果您的环境使用Apache作为Web服务器，请运行以下命令以重新启动Apache：
+  1. 如果您的环境使用Apache作为Web服务器，请运行以下命令以重新启动Apache：
 
-      ```
-      /etc/init.d/apache2 restart
-      ```
+     ```
+     /etc/init.d/apache2 restart
+     ```
 
 
 >[!NOTE]

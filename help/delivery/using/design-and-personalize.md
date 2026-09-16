@@ -2,7 +2,7 @@
 product: campaign
 title: 生成个性化内容
 description: 了解如何在Adobe Campaign投放中构建个性化内容
-badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v8"
+badge-v8: label="Also applies to v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Email Design, Personalization
 role: User
 hide: true
@@ -10,26 +10,34 @@ exl-id: 5bf727d2-83b1-4a99-be25-041eee8d234c
 TQID: https://experienceleague.adobe.com/CYWaDn4S5zkM1QXQg08zHZW53nOqAv-aXDvo-Hw-v-E
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: a075b2c1-7748-4328-b7f6-343aa314616a
+    internal-label: Campaigns
   - id: b631758a-142d-425f-b9aa-f756d85cb979
+    internal-label: Campaign Email Designer
   - id: c858a28b-ea19-49b0-8d48-828717fad89c
+    internal-label: Prepare and test messages
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
 subfeature_v2:
   - id: e95a583b-fcfa-4524-8666-46a29c828119
+    internal-label: Email messaging
   - id: c8da4fdd-eb94-4751-a43c-f82733fb2d6e
+    internal-label: Email design
   - id: d5bbe3da-ba85-4242-817e-54f7c4b943e0
+    internal-label: A/B testing
   - id: f4da0e76-df77-451e-ad61-21afb7bd8810
+    internal-label: Manage deliverability
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 1341
-ht-degree: 4%
-
+source-wordcount: '1389'
+ht-degree: 6%
 ---
-
 # 生成个性化内容 {#build-personalized-content}
 
 在设计消息内容时，请尽量避免可能会阻止您执行投放的常见问题。 大多数时候，可能的错误与[个性化](about-personalization.md)、[格式化](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html?lang=zh-Hans#message-content){target="_blank"}和[图像](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html?lang=zh-Hans#adding-images){target="_blank"}有关。
@@ -113,8 +121,8 @@ ht-degree: 4%
 
 默认情况下，短信的字符数应符合 GSM（全球移动通信系统）标准。 使用 GSM 编码的短信消息长度上限为 160 个字符，而对于分段发送的消息，每段短信的长度上限为 153 个字符。
 
-音译指的是，如果GSM标准无法识别某个短信字符，则会用另一个字符替换该字符。请注意，将个性化字段插入短信消息内容，可能会引入GSM编码无法识别的字符。您可以通过选中对应&#x200B;**[!UICONTROL External account]**&#x200B;的SMPP渠道设置选项卡中的对应框来授权字符音译。
-在本节[&#128279;](sms-set-up.md#creating-an-smpp-external-account)中了解详情。
+音译指的是，如果 GSM 标准无法识别某个短信字符，则会用另一个字符替换该字符。 请注意，将个性化字段插入短信消息内容，可能会引入GSM编码无法识别的字符。 您可以通过选中对应&#x200B;**[!UICONTROL External account]**&#x200B;的SMPP渠道设置选项卡中的对应框来授权字符音译。
+在本节[&#128279;](sms-set-up.md#creating-an-smpp-external-account)中了解更多。
 
 **提示**：
 

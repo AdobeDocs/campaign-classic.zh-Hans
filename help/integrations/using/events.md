@@ -3,7 +3,7 @@ product: campaign
 title: 配置事件
 description: 了解如何为自定义实施配置事件
 feature: Triggers
-badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v8"
+badge-v8: label="Also applies to v8" type="Positive" tooltip="Also applies to Campaign v8"
 audience: integrations
 content-type: reference
 level: Intermediate, Experienced
@@ -11,25 +11,32 @@ exl-id: 13717b3b-d34a-40bc-9c9e-dcf578fc516e
 TQID: https://experienceleague.adobe.com/zoNgRb4L1EWAtQsLDNs6YNlakXeRXMn6DE2McoCemGU
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: b12f6872-9271-4369-85e5-86969a0b99a2
+    internal-label: APIs
   - id: d5ef99fa-df0c-4153-bf94-105ad0724167
+    internal-label: Integrations
 subfeature_v2:
   - id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
+    internal-label: Adobe Analytics integration
   - id: df0d6518-6f49-46e2-b46e-3bcc513f553f
+    internal-label: Adobe Experience Manager integration
   - id: eb007b6d-6e57-46ab-9485-3f24d6102304
+    internal-label: Adobe Experience Platform integration
   - id: b1fd1501-3105-4d6b-b4d4-9af53126df75
+    internal-label: Adobe Target integration
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 1009
-ht-degree: 2%
-
+source-wordcount: '1204'
+ht-degree: 1%
 ---
-
 # 为自定义实施配置事件 {#events}
 
 
@@ -139,7 +146,7 @@ function processPipelineMessage(xmlTrigger) {}
 
 ### 日志记录和错误处理 {#logging-error-handling}
 
-诸如logInfo()之类的日志被定向到[!DNL pipelined]日志。诸如logError()之类的错误将写入[!DNL pipelined]日志，并导致该事件被放入重试队列。在这种情况下，您应该检查管道化日志。
+诸如logInfo()之类的日志被定向到[!DNL pipelined]日志。 诸如logError()之类的错误已写入[!DNL pipelined]日志，并导致该事件被放入重试队列。 在这种情况下，您应该检查管道化日志。
 在[!DNL pipelined]选项中设置的持续时间内，错误消息会重试多次。
 
 出于调试和监控目的，完整的触发器数据以XML格式写入“数据”字段的触发器表中。 或者，包含触发器数据的logInfo()也可达到相同目的。
@@ -166,7 +173,7 @@ function processPipelineMessage(xmlTrigger)
 ```
 
 解析时要小心，以免出现错误。
-由于此代码用于所有触发器，因此大部分数据不是必需的。因此，当不存在时，可以将其留空。
+由于此代码用于所有触发器，因此大部分数据不是必需的。 因此，当不存在时，可以将其留空。
 
 ### 存储触发器 {#storing-triggers-js}
 
@@ -212,7 +219,7 @@ function processPipelineMessage(xmlTrigger)
 
 ### 管道事件架构 {#pipeline-event-schema}
 
-事件存储在数据库表中。营销活动使用该功能来定位客户，并通过触发器丰富电子邮件。
+事件存储在数据库表中。 营销活动使用该功能来定位客户，并通过触发器丰富电子邮件。
 虽然每个触发器可以具有独特的数据结构，但所有触发器都可以保存在单个表中。
 triggerType字段标识数据来源的触发器。
 
@@ -246,7 +253,7 @@ triggerType字段标识数据来源的触发器。
 协调是将客户从Adobe Analytics匹配到Adobe Campaign数据库的过程。 例如，匹配的条件可以是shopper_id。
 
 出于性能原因，必须通过工作流以批处理模式进行匹配。
-频率必须设置为15分钟以优化工作负载。因此，在Adobe Campaign中接收事件到营销工作流处理该事件之间的延迟最长为15分钟。
+频率必须设置为15分钟以优化工作负载。 因此，在Adobe Campaign中接收事件到营销工作流处理该事件之间的延迟最长为15分钟。
 
 ### JavaScript中用于单元协调的选项 {#options-unit-reconciliation}
 
@@ -261,4 +268,4 @@ triggerType字段标识数据来源的触发器。
 ### 活动工作流 {#campaign-workflow}
 
 触发活动工作流通常与其他已使用的定期活动类似。
-例如，它可以从对触发器的查询开始，在最后一天查找特定事件。该目标用于发送电子邮件。“扩充”或“数据”可能来自触发器。营销人员可以安全地使用它，因为它不需要进行配置。
+例如，它可以从对触发器的查询开始，在最后一天查找特定事件。 该目标用于发送电子邮件。 “扩充”或“数据”可能来自触发器。 营销人员可以安全地使用它，因为它不需要进行配置。

@@ -9,25 +9,31 @@ exl-id: a9cd08b0-55c2-4405-9fb8-f0c623cd4ccb
 TQID: https://experienceleague.adobe.com/r3qtW9ZsCD85N9qAnN1EOje-VMhDoyPuqea2xZnBWLs
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: b12f6872-9271-4369-85e5-86969a0b99a2
+    internal-label: APIs
   - id: d5ef99fa-df0c-4153-bf94-105ad0724167
+    internal-label: Integrations
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
 subfeature_v2:
   - id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
+    internal-label: Adobe Analytics integration
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 2269
+source-wordcount: '2269'
 ht-degree: 0%
-
 ---
-
 # 迁移到公共云常见问题解答{#dc-faq}
 
 
@@ -125,8 +131,8 @@ Adobe对旧版数据中心不再授权：Campaign Classic实例必须转移到Pu
 * **我们用来标记通信品牌的委派子域会有什么影响？**
 
   用于营销通信的子域保持不变。 但是，根据实施，需要在客户端执行操作：
-   * 如果将子域委派给Adobe（默认），则Adobe会处理所有更改并确保无缝过渡。
-   * 如果设置了CNAME（例外），则会请求客户端与Adobe协调实施更改。
+  * 如果将子域委派给Adobe（默认），则Adobe会处理所有更改并确保无缝过渡。
+  * 如果设置了CNAME（例外），则会请求客户端与Adobe协调实施更改。
 
 ## 配置和连接影响
 
@@ -250,13 +256,13 @@ Adobe对旧版数据中心不再授权：Campaign Classic实例必须转移到Pu
 
   数据中心之间的数据传输是停机的关键路径。 数据以两种方式存储：
 
-   * 最重要的是，数据库
-   * 应用程序服务器上的文件（数据导入和导出）
+  * 最重要的是，数据库
+  * 应用程序服务器上的文件（数据导入和导出）
 
   减小数据库的大小对于加快数据传输至关重要。 建议：
 
-   * 缩短历史数据（投放日志、跟踪日志等）的保留期
-   * 删除其他表（投放、收件人、自定义表）上的无用记录
+  * 缩短历史数据（投放日志、跟踪日志等）的保留期
+  * 删除其他表（投放、收件人、自定义表）上的无用记录
 
 * **迁移实例的估计停机时间是多少？**
 
@@ -274,11 +280,11 @@ Adobe对旧版数据中心不再授权：Campaign Classic实例必须转移到Pu
 
   环境将按以下顺序迁移：
 
-   1. 开发环境
-   1. 暂存环境
-   1. 生产环境
-   1. RT环境
-   1. 中间源环境
+  1. 开发环境
+  1. 暂存环境
+  1. 生产环境
+  1. RT环境
+  1. 中间源环境
 
 * **什么是回滚计划？**
 

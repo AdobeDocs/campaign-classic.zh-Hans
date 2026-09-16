@@ -8,28 +8,38 @@ exl-id: fded088a-11a2-4b87-a368-7b197334aca4
 TQID: https://experienceleague.adobe.com/-e39I2kK3veYtZTufN0ZZrnZPAAco47dU8HFlCtlIxY
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
 feature_v2:
   - id: b631758a-142d-425f-b9aa-f756d85cb979
+    internal-label: Campaign Email Designer
   - id: c858a28b-ea19-49b0-8d48-828717fad89c
+    internal-label: Prepare and test messages
 subfeature_v2:
   - id: e95a583b-fcfa-4524-8666-46a29c828119
+    internal-label: Email messaging
   - id: c8da4fdd-eb94-4751-a43c-f82733fb2d6e
+    internal-label: Email design
   - id: d5bbe3da-ba85-4242-817e-54f7c4b943e0
+    internal-label: A/B testing
   - id: f4da0e76-df77-451e-ad61-21afb7bd8810
+    internal-label: Manage deliverability
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 8283
+source-wordcount: '8527'
 ht-degree: 1%
-
 ---
-
 # 短信连接器协议和设置 {#sms-connector-protocol}
 
 >[!NOTE]
@@ -44,7 +54,7 @@ SMS可能仅限于发送无格式的短文本消息，但其简单性使其成�
 发送短信有两种主要方式：
 
 * 通过电话手动发送，这是人们直接沟通的常用方式。
-* 通过Adobe Campaign发送消息的方式从互联网发送。为此，您需要一个SMS服务提供商来将Internet连接到移动网络。
+* 通过Adobe Campaign发送消息的方式从互联网发送。 为此，您需要一个SMS服务提供商来将Internet连接到移动网络。
 Adobe Campaign使用SMPP协议向服务提供商发送短信。
 
 本文档将指导您逐步完成Adobe Campaign与SMPP提供商之间的连接设置。
@@ -95,8 +105,8 @@ SMS服务提供商端的网络设备通常称为SMSC。
 
 ### SMPP连接 {#smpp-connections}
 
-Adobe Campaign通过TCP连接到SMS服务提供商的网络设备。SMPP协议设置从Adobe Campaign到提供程序的永久TCP连接。TCP连接始终由Adobe Campaign启动，即使接收消息也是如此。
-SMPP会打开1或2个TCP连接，具体取决于其模式。所有连接始终由Adobe Campaign启动。
+Adobe Campaign通过TCP连接到SMS服务提供商的网络设备。 SMPP协议设置从Adobe Campaign到提供程序的永久TCP连接。 TCP连接始终由Adobe Campaign启动，即使接收消息也是如此。
+SMPP会打开1或2个TCP连接，具体取决于其模式。 所有连接始终由Adobe Campaign启动。
 
 SMPP协议可以两种模式工作：
 
@@ -530,9 +540,9 @@ TON（号码类型）和NPI（编号计划指示器）在[SMPP 3.4规范](https:
 
 ![](assets/do-not-localize/sms_protocol_2.png)
 
-当网络链路具有高等待时间时，该窗口有助于提高吞吐量。 窗口的值必须至少是SMS数乘以链路延迟
+当网络链路具有高等待时间时，该窗口有助于提高吞吐量。  窗口的值必须至少是SMS数乘以链路延迟
 以秒为单位，连接器绝不会等待`SUBMIT_SM_RESP`才发送下一封邮件。
-如果窗口太大，您可以在出现连接问题时发送更多重复消息。此外，大多数提供商对窗口都有非常严格的限制，并拒绝超出限制的消息。
+如果窗口太大，您可以在出现连接问题时发送更多重复消息。 此外，大多数提供商对窗口都有非常严格的限制，并拒绝超出限制的消息。
 
 如何计算最佳发送窗口公式：
 
@@ -855,13 +865,13 @@ SMS进程仅处理SR，它连接到提供商并保持连接打开。 该进程�
 * **发送包含各种字符的短信**
 如果您需要发送非GSM或非ASCII字符的短信，请尝试发送尽可能多多种字符的消息。 如果设置自定义字符映射表，请为所有可能的`data_coding`值至少发送一个SMS。
 
-* **检查SR是否正确处理**
-在投放日志中，短信应标记为已接收。投放日志应该成功，并且应该如下所示：
+* **检查SR是否已正确处理**
+在投放日志中，短信应标记为已接收。 投放日志应该成功，并且应该如下所示：
   `SR yourProvider stat=DELIVRD err=000|#MESSAGE`
-检查您是否更改了投放提供商名称。 在生产环境中，投放日志绝不应该包含&#x200B;**SR Generic**。
+  检查您是否更改了投放提供商名称。 在生产环境中，投放日志绝不应该包含&#x200B;**SR Generic**。
 
 * **检查是否已处理MO**
-如果需要处理MO（自动回复、将MO存储在数据库中等），请尝试进行一些测试。为所有自动回复关键字发送几条短信，并检查回复是否足够快，不超过几秒。
+如果需要处理MO（自动回复、将MO存储在数据库中等）， 试着做些测试。 为所有自动回复关键字发送几条短信，并检查回复是否足够快，不超过几秒。
 在日志中检查Adobe Campaign是否成功回复了`DELIVER_SM_RESP` (command_status=0)。
 
 ### 检查PDU {#check-pdus}

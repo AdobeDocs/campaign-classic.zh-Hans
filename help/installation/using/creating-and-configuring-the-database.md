@@ -3,7 +3,7 @@ product: campaign
 title: 创建和配置数据库
 description: 创建和配置数据库
 feature: Installation, Instance Settings
-badge-v7-prem: label="仅限内部部署/混合" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hans" tooltip="仅适用于内部部署和混合部署"
+badge-v7-prem: label="On-premise/hybrid only" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hans" tooltip="Applies to on-premise and hybrid deployments only"
 audience: installation
 content-type: reference
 topic-tags: initial-configuration
@@ -11,22 +11,27 @@ exl-id: f40bab8c-5064-40d9-beed-101a9f22c094
 TQID: https://experienceleague.adobe.com/wu8xP0ls5jakl0XYtBV5Ktag7hCBFwl4o0EiqNrUMnc
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: b82389f8-9b5e-4083-8e3b-3cef299fb8b9
+    internal-label: Schemas
   - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
 subfeature_v2:
   - id: cfc95e9b-b035-4403-a6a9-b27a8a053a37
+    internal-label: PI
   - id: e656c701-3899-4db3-989c-de0980ddfffa
+    internal-label: Installation
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
 source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
 workflow-type: tm+mt
-source-wordcount: 1329
+source-wordcount: '1317'
 ht-degree: 2%
-
 ---
-
 # 创建和配置数据库{#creating-and-configuring-the-database}
 
 在创建数据库时，Adobe Campaign提供两种不同的选项：
@@ -133,10 +138,10 @@ Campaign [兼容性矩阵](../../rn/using/compatibility-matrix.md)中列出了�
 
   这些参数将收到准确的表空间名称（警告：区分大小写）。 它们分别存储在以下选项的&#x200B;**[!UICONTROL Administration > Platform > Options]**&#x200B;节点中（请参阅[此部分](../../installation/using/configuring-campaign-options.md#database)）：
 
-   * **WdbcOptions_TableSpaceUser**：基于架构的用户表
-   * **WdbcOptions_TableSpaceIndex**：基于架构的用户表的索引
-   * **WdbcOptions_TableSpaceWork**：没有架构的工作表
-   * **WdbcOptions_TableSpaceWorkIndex**：没有架构的工作表索引
+  * **WdbcOptions_TableSpaceUser**：基于架构的用户表
+  * **WdbcOptions_TableSpaceIndex**：基于架构的用户表的索引
+  * **WdbcOptions_TableSpaceWork**：没有架构的工作表
+  * **WdbcOptions_TableSpaceWorkIndex**：没有架构的工作表索引
 
 * 对于Oracle数据库，Adobe Campaign用户必须有权访问Oracle库，通常作为&#x200B;**oinstall**&#x200B;组的成员。
 * **[!UICONTROL Set or change the administrator password]**&#x200B;选项允许您输入链接到Adobe Campaign操作员的密码，该操作员具有管理员权限。
@@ -191,10 +196,10 @@ Campaign [兼容性矩阵](../../rn/using/compatibility-matrix.md)中列出了�
 * 对于&#x200B;**PostgreSQL**&#x200B;引擎，必须指定在应用程序服务器上定义的DNS名称（或IP地址）以访问数据库服务器。
 * 对于&#x200B;**Microsoft SQL Server**&#x200B;引擎，您必须定义：
 
-   1. 在应用程序服务器上定义用于访问数据库服务器的DNS名称（或IP地址），
-   1. 用于访问Microsoft SQL Server的安全方法： **[!UICONTROL SQL Server authentication]**&#x200B;或&#x200B;**[!UICONTROL Windows NT authentication]**。
+  1. 在应用程序服务器上定义用于访问数据库服务器的DNS名称（或IP地址），
+  1. 用于访问Microsoft SQL Server的安全方法： **[!UICONTROL SQL Server authentication]**&#x200B;或&#x200B;**[!UICONTROL Windows NT authentication]**。
 
-      ![](assets/s_ncs_install_db_mssql_exists_01.png)
+     ![](assets/s_ncs_install_db_mssql_exists_01.png)
 
 ### 步骤2 — 数据库连接设置 {#step-2---database-connection-settings}
 

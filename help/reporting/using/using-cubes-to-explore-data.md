@@ -2,17 +2,15 @@
 product: campaign
 title: 使用多维数据集浏览数据
 description: 使用多维数据集浏览数据
-badge-v8: label="也适用于v8" type="Positive" tooltip="也适用于Campaign v8"
+badge-v8: label="Also applies to v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Reporting, Monitoring
 hide: true
 exl-id: 32696bbf-1415-4214-837f-5437fdb8b4d4
 source-git-commit: 720a5f4edf534788f7fd143a476c25e58a6f1586
 workflow-type: tm+mt
-source-wordcount: '977'
+source-wordcount: '968'
 ht-degree: 2%
-
 ---
-
 # 使用多维数据集浏览数据{#using-cubes-to-explore-data}
 
 

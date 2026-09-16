@@ -8,28 +8,38 @@ exl-id: 9ce11da0-e37b-459e-8ec7-d2bddf59bdf7
 TQID: https://experienceleague.adobe.com/IRAgAQvquHFcfGDRU9Sof8NpSn3khyRRPOdpIRKUOzg
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: b4dd41a7-ccf8-4e9d-918e-acaab534a307
+    internal-label: Data quality
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
 feature_v2:
   - id: b631758a-142d-425f-b9aa-f756d85cb979
+    internal-label: Campaign Email Designer
   - id: c858a28b-ea19-49b0-8d48-828717fad89c
+    internal-label: Prepare and test messages
 subfeature_v2:
   - id: e95a583b-fcfa-4524-8666-46a29c828119
+    internal-label: Email messaging
   - id: c8da4fdd-eb94-4751-a43c-f82733fb2d6e
+    internal-label: Email design
   - id: d5bbe3da-ba85-4242-817e-54f7c4b943e0
+    internal-label: A/B testing
   - id: f4da0e76-df77-451e-ad61-21afb7bd8810
+    internal-label: Manage deliverability
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 885
-ht-degree: 2%
-
+source-wordcount: '948'
+ht-degree: 4%
 ---
-
 # 投放监测入门 {#about-delivery-monitoring}
 
 >[!IMPORTANT]
@@ -46,11 +56,11 @@ ht-degree: 2%
 
 如果未发送投放且其状态仍为&#x200B;**待处理**，该怎么办？
 
-* 执行过程正在等待某些资源的可用性。MTA可能尚未启动。
-检查您的mta@instance模块是否已在MTA服务器上启动，并根据需要启动MTA模块。[了解更多](../../production/using/administration.md)。
+* 执行过程正在等待某些资源的可用性。 MTA可能尚未启动。
+检查您的mta@instance模块是否已在MTA服务器上启动，并根据需要启动MTA模块。 [了解详情](../../production/using/administration.md)。
 
 * 投放可能使用未在发送实例上配置的关联性。
-提示：检查流量管理（IP关联）的配置。有关详细信息，请参阅控制传出SMTP流量。
+提示：检查流量管理（IP关联）的配置。 有关详细信息，请参阅控制传出SMTP流量。
 
 >[!NOTE]
 >
@@ -81,8 +91,8 @@ ht-degree: 2%
 
 * **[!UICONTROL Delivery throughput]**&#x200B;报告提供给定时段内整个平台的吞吐量概览。 有关更多信息，请参阅[此小节](../../reporting/using/global-reports.md#delivery-throughput)。
 * 每个投放为不同的Internet服务提供商(ISP)生成广播统计报告。 其中显示了一些可能会影响您的可投放性的数据质量和信誉指标，包括以下数字：
-   * **[!UICONTROL Hard bounces]**&#x200B;指示数据质量。 此数字应小于2%。
-   * **[!UICONTROL Soft bounces]**&#x200B;指示信誉。 对于任何给定的ISP，此数字不应大于10%。
+  * **[!UICONTROL Hard bounces]**&#x200B;指示数据质量。 此数字应小于2%。
+  * **[!UICONTROL Soft bounces]**&#x200B;指示信誉。 对于任何给定的ISP，此数字不应大于10%。
 
   有关详细信息，请参阅[投放统计信息](../../reporting/using/global-reports.md#delivery-statistics)部分。
 

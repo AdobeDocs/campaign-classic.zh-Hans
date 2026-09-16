@@ -10,18 +10,19 @@ exl-id: e1aff73a-54fb-444e-b183-df11c9b3df31
 TQID: https://experienceleague.adobe.com/geVW1WFvlnZJmiLeaI01ww-TsQvEN3-zpr57jmz2Miw
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+    internal-label: Privacy
 feature_v2: []
 subfeature_v2: []
 source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
 workflow-type: tm+mt
-source-wordcount: 630
-ht-degree: 2%
-
+source-wordcount: '630'
+ht-degree: 4%
 ---
-
 # 服务器安全设置 {#server-configuration}
 
 ## 文件上传保护
@@ -49,9 +50,9 @@ Adobe Campaign不限制文件大小。 但您可以通过配置IIS/Apache来实�
 
 如果您使用不同的主机名（一个公用，另一个用于操作员），您还可以阻止操作员通过公用DNS名称中继某些所需的资源。
 
-## 外连接保护
+## 出站连接保护
 
-可由JavaScript代码（工作流等）调用的默认URL列表 受限。 若要允许新URL，管理员需要在[serverConf.xml文件](../../installation/using/the-server-configuration-file.md)中引用它。
+Campaign 实例可以通过 JavaScript 代码（工作流等） 受限。 若要允许新URL，管理员需要在[serverConf.xml文件](../../installation/using/the-server-configuration-file.md)中引用它。
 
 存在三种连接保护模式：
 

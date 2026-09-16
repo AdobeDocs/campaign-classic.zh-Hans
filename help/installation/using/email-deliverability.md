@@ -3,7 +3,7 @@ product: campaign
 title: 技术电子邮件配置
 description: 了解如何配置Campaign以在投放电子邮件时控制实例的输出
 feature: Installation, Deliverability
-badge-v7-prem: label="仅限内部部署/混合" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hans" tooltip="仅适用于内部部署和混合部署"
+badge-v7-prem: label="On-premise/hybrid only" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hans" tooltip="Applies to on-premise and hybrid deployments only"
 audience: installation
 content-type: reference
 topic-tags: additional-configurations
@@ -11,23 +11,29 @@ exl-id: 515adad2-6129-450a-bb9e-fc80127835af
 TQID: https://experienceleague.adobe.com/JRN8-kfrbG-UDAJz8wShf-0vi-LyqrUBxNBa3wn83cc
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
 subfeature_v2:
   - id: b5852c32-876b-41ae-92a7-9f588865ae52
+    internal-label: Best practices
   - id: e656c701-3899-4db3-989c-de0980ddfffa
+    internal-label: Installation
   - id: eff19c99-440a-4318-b319-444edc4d8d8f
+    internal-label: Upgrade
 topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+    internal-label: Optimization
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
 source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
 workflow-type: tm+mt
-source-wordcount: 3163
+source-wordcount: '3151'
 ht-degree: 2%
-
 ---
-
 # 技术电子邮件配置{#email-deliverability}
 
 
@@ -258,14 +264,14 @@ user:~ user$ host -t a mta6.am0.yahoodns.net
 
   例如，以下地址：
 
-   * a.mx.yahoo.com
-   * b.mx.yahoo.com
-   * c.mx.yahoo.com
+  * a.mx.yahoo.com
+  * b.mx.yahoo.com
+  * c.mx.yahoo.com
 
   与以下掩码兼容：
 
-   * &#42;.yahoo.com
-   * ？.mx.yahoo.com
+  * &#42;.yahoo.com
+  * ？.mx.yahoo.com
 
   例如，电子邮件地址foobar@gmail.com的域为gmail.com ，MX记录为：
 
@@ -281,8 +287,8 @@ user:~ user$ host -t a mta6.am0.yahoodns.net
 
 * **[!UICONTROL Range of identifiers]**：通过此选项可指示规则适用的标识符(publicID)范围。 您可以指定：
 
-   * 数字：该规则将仅适用于此publicId，
-   * 数字范围(**number1-number2**)：规则将应用于这两个数字之间的所有publicId。
+  * 数字：该规则将仅适用于此publicId，
+  * 数字范围(**number1-number2**)：规则将应用于这两个数字之间的所有publicId。
 
   >[!NOTE]
   >
@@ -306,14 +312,14 @@ user:~ user$ host -t a mta6.am0.yahoodns.net
 * **[!UICONTROL Timeout]**：与SMTP服务器进行其他交换的最长等待时间。
 * **[!UICONTROL TLS]**：允许您加密电子邮件投放的TLS协议可以选择性地启用。 对于每个MX掩码，可使用以下选项：
 
-   * **[!UICONTROL Default configuration]**：这是所应用的serverConf.xml配置文件中指定的常规配置。
+  * **[!UICONTROL Default configuration]**：这是所应用的serverConf.xml配置文件中指定的常规配置。
 
-     >[!IMPORTANT]
-     >
-     >建议不要修改默认配置。
+    >[!IMPORTANT]
+    >
+    >建议不要修改默认配置。
 
-   * **[!UICONTROL Disabled]** ：邮件将系统地发送，而不进行加密。
-   * **[!UICONTROL Opportunistic]** ：如果接收服务器(SMTP)可以生成TLS协议，则对邮件投放进行加密。
+  * **[!UICONTROL Disabled]** ：邮件将系统地发送，而不进行加密。
+  * **[!UICONTROL Opportunistic]** ：如果接收服务器(SMTP)可以生成TLS协议，则对邮件投放进行加密。
 
 配置示例：
 

@@ -10,16 +10,16 @@ exl-id: 9e199b7c-9307-4797-bf86-7940388555bc
 TQID: https://experienceleague.adobe.com/d6fevvmNur-4TC1KFM-09o68GnPFEM6S6SaFICwyCsw
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: b6fcaf36-3bc4-4604-94f3-81b5d3f41ecf
+    internal-label: Offer Management
 subfeature_v2: []
 source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
 workflow-type: tm+mt
-source-wordcount: 1109
+source-wordcount: '1109'
 ht-degree: 0%
-
 ---
-
 # Campaign集成术语表{#i-glossary}
 
 
@@ -28,8 +28,8 @@ ht-degree: 0%
 
 * **环境**：包含优惠目录和挂钩（优惠空间）的集。 您需要通过定向维度创建一个环境。 有两种类型的环境：
 
-   * **设计环境**：在其中创建选件和/或定义类型规则的环境（将决定要呈现或不呈现给目标人员的选件的规则）。 此中还定义了优惠将定位的个人表以及用于存储所有优惠建议的表。 **[!UICONTROL Design environment]**&#x200B;节点包含优惠空间子文件夹、预定义筛选器和优惠类别。 对于每个&#x200B;**[!UICONTROL Design environment]**，都有一个对应的只读&#x200B;**[!UICONTROL Live environment]**，它是从同一&#x200B;**[!UICONTROL Design environment]**&#x200B;生成的。
-   * **实时环境**：链接到&#x200B;**[!UICONTROL Design environment]**&#x200B;的环境。 它包含只读选件，其内容和资格已通过&#x200B;**[!UICONTROL Design environment]**&#x200B;批准。 它们将被选择在网站上展示或插入消息中。
+  * **设计环境**：在其中创建选件和/或定义类型规则的环境（将决定要呈现或不呈现给目标人员的选件的规则）。 此中还定义了优惠将定位的个人表以及用于存储所有优惠建议的表。 **[!UICONTROL Design environment]**&#x200B;节点包含优惠空间子文件夹、预定义筛选器和优惠类别。 对于每个&#x200B;**[!UICONTROL Design environment]**，都有一个对应的只读&#x200B;**[!UICONTROL Live environment]**，它是从同一&#x200B;**[!UICONTROL Design environment]**&#x200B;生成的。
+  * **实时环境**：链接到&#x200B;**[!UICONTROL Design environment]**&#x200B;的环境。 它包含只读选件，其内容和资格已通过&#x200B;**[!UICONTROL Design environment]**&#x200B;批准。 它们将被选择在网站上展示或插入消息中。
 
 * **优惠空间**：定义优惠公开位置的文件夹。 通过定义空间，您可以指定使用的渠道、指定是否可以在单一模式下使用它（默认情况下：仅在批处理模式下）、使用渲染函数构建选件的内容，以及指定所呈现选件的选件。 空间是渠道和优惠引擎之间的接口。
 
@@ -58,12 +58,12 @@ ht-degree: 0%
 * **套利**：选择将在环境中显示的优惠（符合条件的优惠）。 套利原则根据类别、优惠和上下文优惠中定义的标准，按优先级对优惠进行排名。
 * **联系人**：来自入站交互的联系人。 在引擎调用处理期间，联系人与定位维度相关联。 有两种类型的联系人：
 
-   * **[!UICONTROL Identified contact]** ：已在渠道中自愿识别的联系人。 在叫客交互中，会自动识别联系人。
-   * **[!UICONTROL Anonymous contact]** ：未通过渠道自愿订阅，但可通过Cookie隐式识别的联系人。 此术语仅用于传入交互。
+  * **[!UICONTROL Identified contact]** ：已在渠道中自愿识别的联系人。 在叫客交互中，会自动识别联系人。
+  * **[!UICONTROL Anonymous contact]** ：未通过渠道自愿订阅，但可通过Cookie隐式识别的联系人。 此术语仅用于传入交互。
 
-     >[!NOTE]
-     >
-     >未识别的匿名联系人将归因于访客定向维度。
+    >[!NOTE]
+    >
+    >未识别的匿名联系人将归因于访客定向维度。
 
 * **出站交互**：从联系人列表调用交互引擎（用于传递电子邮件、直邮等）。 相同的规则和流程将应用于每个联系人。 此类交互通常以批处理模式处理。
 * **入站交互**：由渠道上联系人的操作生成的来话呼叫之后的交互。 此类交互通常在单一模式下处理。
@@ -71,9 +71,9 @@ ht-degree: 0%
 * **单一模式**：一次处理单个联系人。 此模式通常用于入站交互和事务性消息。
 * **识别模式**：引用联系人的状态。
 
-   * **[!UICONTROL explicit]** ：联系人登录渠道界面后进行标识。
-   * **[!UICONTROL implicit]** ：联系人已由Cookie（永久或会话）识别。 它可以作为匿名联系人或识别联系人处理。
-   * **[!UICONTROL anonymous]** ：无法识别联系人。
+  * **[!UICONTROL explicit]** ：联系人登录渠道界面后进行标识。
+  * **[!UICONTROL implicit]** ：联系人已由Cookie（永久或会话）识别。 它可以作为匿名联系人或识别联系人处理。
+  * **[!UICONTROL anonymous]** ：无法识别联系人。
 
 * **合格优惠**：优惠符合上游定义的可一致提供给目标的约束。
 * **演示规则**：优惠环境中引用的类型规则，该规则允许您通过考虑建议历史记录排除某些优惠。

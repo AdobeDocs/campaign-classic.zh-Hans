@@ -8,18 +8,20 @@ exl-id: d345ba62-c2fb-43df-a2a1-e9e4292d301a
 TQID: https://experienceleague.adobe.com/dCnvgLZ-5ST-VJqWLXZ2c5XxXqXUxO1G78WnrCFyIqA
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2: []
 subfeature_v2:
   - id: ee25c34b-ea50-427b-9369-ba0a160f7d70
+    internal-label: Workflow HeatMap
   - id: b5f0aaf4-1e48-400d-95ac-6eb3078cf22f
+    internal-label: Execution activities
   - id: d1110311-2ca4-442b-be37-088a6db845ee
+    internal-label: Data Management activities
 source-git-commit: c35995a47788db080636c66827a4bd6dc98806cf
 workflow-type: tm+mt
-source-wordcount: 1187
+source-wordcount: '1187'
 ht-degree: 1%
-
 ---
-
 # 开始工作流 {#starting-a-workflow}
 
 
@@ -75,14 +77,14 @@ ht-degree: 1%
   **[!UICONTROL Start / Pause / Stop / Restart]**&#x200B;操作也可通过工具栏中的执行图标使用。 有关更多信息，请参阅此[&#128279;](../../campaign/using/marketing-campaign-deliveries.md#creating-a-targeting-workflow)章节。
 
   请注意，**重新启动**&#x200B;操作不会清除与&#x200B;**执行**、**停止**&#x200B;和&#x200B;**启动**&#x200B;操作（实例变量在启动操作时正在清除）相比较的工作流实例变量。 重新启动工作流时，实例变量仍可用于保留值。 要清除它们，您可以：
-   * 执行&#x200B;**停止**&#x200B;和&#x200B;**启动**&#x200B;操作。
-   * 在工作流执行结束时，添加以下javascript代码：
+  * 执行&#x200B;**停止**&#x200B;和&#x200B;**启动**&#x200B;操作。
+  * 在工作流执行结束时，添加以下javascript代码：
 
-     ```
-     var wkf = xtk.workflow.load(instance.id)
-     wkf.variables='<variables/>'
-     wkf.save()
-     ```
+    ```
+    var wkf = xtk.workflow.load(instance.id)
+    wkf.variables='<variables/>'
+    wkf.save()
+    ```
 
 * **[!UICONTROL Purge history]**
 

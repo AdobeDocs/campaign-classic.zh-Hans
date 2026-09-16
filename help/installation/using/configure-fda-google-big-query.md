@@ -10,18 +10,19 @@ exl-id: ebaad59f-0607-4090-92d0-e457fbf9a348
 TQID: https://experienceleague.adobe.com/jmeyOWDTkOmCKOVGlNAdYzNHfaK1QeSxnIjDDnl8yj0
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
 feature_v2:
   - id: b12f6872-9271-4369-85e5-86969a0b99a2
+    internal-label: APIs
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
 subfeature_v2: []
 source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
 workflow-type: tm+mt
-source-wordcount: 1042
+source-wordcount: '1051'
 ht-degree: 2%
-
 ---
-
 # 配置对Google BigQuery的访问权限 {#configure-fda-google-big-query}
 
 
@@ -200,9 +201,9 @@ ht-degree: 2%
    * **[!UICONTROL Project]**： **[!UICONTROL Project]**&#x200B;的名称。 有关详细信息，请参阅[Google Cloud文档](https://cloud.google.com/resource-manager/docs/creating-managing-projects)。
 
    * **[!UICONTROL Key file Path]**:
-      * **[!UICONTROL Upload key file to the server]**：如果您选择通过Adobe Campaign Classic上传密钥，请选择&#x200B;**[!UICONTROL Click here to upload]**。
+     * **[!UICONTROL Upload key file to the server]**：如果您选择通过Adobe Campaign Classic上传密钥，请选择&#x200B;**[!UICONTROL Click here to upload]**。
 
-      * **[!UICONTROL Enter manually the key file path]**：如果您选择使用预先存在的密钥，请在此字段中复制/粘贴您的绝对路径。
+     * **[!UICONTROL Enter manually the key file path]**：如果您选择使用预先存在的密钥，请在此字段中复制/粘贴您的绝对路径。
 
    * **[!UICONTROL Dataset]**： **[!UICONTROL Dataset]**&#x200B;的名称。 有关详细信息，请参阅[Google Cloud文档](https://cloud.google.com/bigquery/docs/datasets-intro)。
 
