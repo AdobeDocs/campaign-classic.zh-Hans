@@ -55,7 +55,7 @@ Campaign客户端控制台是一个富客户端，可让您连接到Campaign应�
 
 ### 与您的Adobe ID连接
 
-Campaign 用户使用其 Adobe ID，通过 Adobe 身份管理系统 (IMS) 连接到 Adobe Campaign 控制台。 他们可以在所有 Adobe 解决方案中使用相同的 ID。 将 Adobe Campaign 与其他解决方案配合使用时，可以保存该连接。 在此页面](https://helpx.adobe.com/cn/enterprise/using/identity.html)上了解有关Adobe IMS [的更多信息。
+Campaign 用户使用其 Adobe ID，通过 Adobe 身份管理系统 (IMS) 连接到 Adobe Campaign 控制台。 他们可以在所有 Adobe 解决方案中使用相同的 ID。 将 Adobe Campaign 与其他解决方案配合使用时，可以保存该连接。 在此页面[&#128279;](https://helpx.adobe.com/cn/enterprise/using/identity.html)上了解有关Adobe IMS 的更多信息。
 
 要配置Campaign Classic v7与Adobe Identity Management服务(IMS)的连接，请参阅[此页面](../../integrations/using/about-adobe-id.md)。
 

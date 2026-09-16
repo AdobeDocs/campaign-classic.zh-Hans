@@ -37,7 +37,7 @@ Adobe Campaign包括Apache Tomcat，后者通过HTTP（和SOAP）充当应用程
 在本例中：
 
 * 默认侦听端口为8080。 要更改它，请参阅[此部分](../../installation/using/configure-tomcat.md)。
-* 然后，客户端控制台使用URL（如`https://``<computer>``:8080`）进行连接。
+* 然后，客户端控制台使用URL（如`https://`&#x200B;`<computer>`&#x200B;`:8080`）进行连接。
 
 但是，出于安全和管理原因，当运行Adobe Campaign的计算机在Internet上公开并且您希望打开访问网络外部的控制台时，我们建议使用专用的Web服务器作为HTTP流量的主要入口点。
 
