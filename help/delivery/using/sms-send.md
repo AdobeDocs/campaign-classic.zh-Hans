@@ -191,6 +191,6 @@ InSMS模式包含与传入的短信相关的信息。 这些字段的描述可�
 
 >[!IMPORTANT]
 >
->这种自动消息不会留下历史。 因此，它们不会显示在投放仪表板中。 [了解详情](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"}。
+>这种自动消息不会留下历史。 因此，它们不会显示在投放仪表板中。 [了解详情](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"}。
 >
->商业压力规则不考虑这些报文。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/campaign-optimization/pressure-rules.html){target="_blank"}。
+>商业压力规则不考虑这些报文。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/campaign-optimization/pressure-rules.html?lang=zh-Hans){target="_blank"}。

@@ -55,7 +55,7 @@ Adobe Campaign 为数据控制者提供两种执行隐私访问和删除请求�
 >[!NOTE]
 >
 >* 有关个人数据以及管理数据的不同实体（数据控制者、数据处理方和数据主体）的更多信息，请参阅[个人数据和角色](privacy-and-recommendations.md#personal-data)。
->* 要了解有关隐私请求的更多信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/privacy/privacy){target=_blank}。
+>* 要了解有关隐私请求的更多信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/privacy/privacy){target=_blank}。
 
 <!--
 ## Prerequisites {#prerequesites}

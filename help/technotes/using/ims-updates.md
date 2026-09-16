@@ -29,7 +29,7 @@ ht-degree: 9%
 
 ## 更改了哪些内容？
 
-Adobe Identity Management服务(IMS)已于2021年6月30日&#x200B;**停止支持旧Internet Explorer版本**。 [了解详情](https://helpx.adobe.com/x-productkb/global/update-operating-system-and-browser.html)。
+Adobe Identity Management服务(IMS)已于2021年6月30日&#x200B;**停止支持旧Internet Explorer版本**。 [了解详情](https://helpx.adobe.com/cn/x-productkb/global/update-operating-system-and-browser.html)。
 
 Adobe希望在2021年6月30日之后为所有客户保留IMS功能。 IMS是安全框架的一部分，该框架允许用户登录到客户端控制台，即Adobe Campaign。
 
@@ -86,7 +86,7 @@ Adobe希望在2021年6月30日之后为所有客户保留IMS功能。 IMS是安�
 
 ![](../../integrations/using/assets/do-not-localize/errorMsg.png)
 
-如果看到此类警告，请确保安装正在使用的操作系统的最新更新。 [了解详情](https://helpx.adobe.com/x-productkb/global/update-operating-system-and-browser.html)
+如果看到此类警告，请确保安装正在使用的操作系统的最新更新。 [了解详情](https://helpx.adobe.com/cn/x-productkb/global/update-operating-system-and-browser.html)
 
 如果未更新Internet Explorer版本，则会看到以下消息，并且无法再连接到Adobe Campaign：
 

@@ -91,13 +91,13 @@ ht-degree: 19%
 
 **工作流状态监控**
 
-除了热图之外，您还可以创建工作流，用于监视一组工作流的状态并向主管发送定期消息。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/monitoring/workflow-supervision.html){target="_blank"}。
+除了热图之外，您还可以创建工作流，用于监视一组工作流的状态并向主管发送定期消息。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/monitoring/workflow-supervision.html?lang=zh-Hans){target="_blank"}。
 
 **一般准则**
 
 使用工作流时，遵循以下准则和最佳实践有助于提高性能。 有关更多信息，请参阅以下章节：
-* [使用工作流时的最佳实践](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html){target="_blank"}
-* [监控工作流执行](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html){target="_blank"}
+* [使用工作流时的最佳实践](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html?lang=zh-Hans){target="_blank"}
+* [监控工作流执行](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html?lang=zh-Hans){target="_blank"}
 
 ### 监控投放 {#monitoring-deliveries}
 

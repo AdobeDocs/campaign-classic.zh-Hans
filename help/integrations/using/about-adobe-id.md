@@ -69,6 +69,6 @@ Campaign用户可以使用其Adobe ID连接到Adobe Campaign控制台，而不�
 
 | 有用页面 | 其他资源 |
 |---|---|
-| [配置IMS](../../integrations/using/configuring-ims.md) | [Experience Cloud常见问题解答](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/faq.html) |
+| [配置IMS](../../integrations/using/configuring-ims.md) | [Experience Cloud常见问题解答](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/faq.html?lang=zh-Hans) |
 | [正在实施IMS](../../integrations/using/implementing-ims.md) | [访问管理](../../platform/using/access-management.md) |
 | [IMS疑难解答](../../integrations/using/ims-troubleshooting.md) | [正在安装Campaign包](../../installation/using/installing-campaign-standard-packages.md) |

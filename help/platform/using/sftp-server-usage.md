@@ -50,7 +50,7 @@ ht-degree: 24%
 
 * 默认情况下，您创建的所有文件夹仅针对您的标识符处于读/写模式。 创建需要Campaign访问的文件夹时，请确保使用整个组的读/写权限对其进行配置。 否则，出于安全原因，工作流程可能无法创建/删除文件，因为它们在同一组内的不同标识符下运行。
 
-* 您尝试启动SFTP连接的公共IP必须添加到Campaign实例的中。 可通过控制面板添加公共IP。 [了解详情](https://experienceleague.adobe.com/en/docs/control-panel/using/sftp-management/ip-range-allow-listing){target="_blank"}
+* 您尝试启动SFTP连接的公共IP必须添加到Campaign实例的中。 可通过控制面板添加公共IP。 [了解详情](https://experienceleague.adobe.com/zh-hans/docs/control-panel/using/sftp-management/ip-range-allow-listing){target="_blank"}
 
 ## SFTP存储使用最佳实践 {#sftp-server-best-practices}
 
@@ -151,7 +151,7 @@ SFTP服务器旨在作为临时存储空间，您可以在其上控制文件的�
 
 1. **会话日志**&#x200B;疑难解答：
 
-   1. 在工作流中，双击[文件传输](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html){target="_blank"}活动。
+   1. 在工作流中，双击[文件传输](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/event-activities/file-transfer.html?lang=zh-Hans){target="_blank"}活动。
    1. 转到&#x200B;**[!UICONTROL File Transfer]**&#x200B;选项卡，然后单击&#x200B;**[!UICONTROL Advanced Parameters]**。
    1. 勾选 **[!UICONTROL Display the session logs]** 选项。
 

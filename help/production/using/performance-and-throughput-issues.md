@@ -74,7 +74,7 @@ Adobe Campaign还提供了[工具](../../production/using/monitoring-processes.m
   >
   >可交付性团队的参与基于合同，客户应联系其Adobe代表以获取与可交付性参与相关的信息。
 
-* DKIM：为确保DKIM的安全级别，1024b是推荐的最佳实践加密大小。 大多数访问提供商不会将较低级别的DKIM密钥视为有效。 请参见[此页面](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#authentication)。
+* DKIM：为确保DKIM的安全级别，1024b是推荐的最佳实践加密大小。 大多数访问提供商不会将较低级别的DKIM密钥视为有效。 请参见[此页面](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=zh-Hans#authentication)。
 
 ## 可投放性问题 {#deliverability-issues}
 
