@@ -42,7 +42,7 @@ ht-degree: 24%
 
 * 使用基于密钥的身份验证而不是密码身份验证，以避免密码过期（密码的有效期为90天）。 此外，基于密钥的身份验证允许您生成多个密钥，例如在管理多个实体时。 相反，密码身份验证要求您与所管理的所有实体共享密码。
 
-  支持的密钥格式为SSH-2 RSA 2048。 为Windows生成SSH密钥的工具是PuTTYgen，为Linux生成ssh-keygen。 您可以通过Campaign控制面板上传公共SSH密钥。 [了解详情](https://experienceleague.adobe.com/en/docs/control-panel/using/sftp-management/key-management){target="_blank"}
+  支持的密钥格式为SSH-2 RSA 2048。 为Windows生成SSH密钥的工具是PuTTYgen，为Linux生成ssh-keygen。 您可以通过Campaign控制面板上传公共SSH密钥。 [了解详情](https://experienceleague.adobe.com/zh-hans/docs/control-panel/using/sftp-management/key-management){target="_blank"}
 
 * 在 SFTP 上传和工作流程中使用批处理。
 
@@ -62,7 +62,7 @@ SFTP服务器旨在作为临时存储空间，您可以在其上控制文件的�
 
 >[!NOTE]
 >
->* 您可以使用Campaign Classic [控制面板](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/sftp-storage-management.html){target="_blank"}监视SFTP服务器存储。
+>* 您可以使用Campaign Classic [控制面板](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/sftp-storage-management.html?lang=zh-Hans){target="_blank"}监视SFTP服务器存储。
 >
 >* 所有管理员用户都可访问控制面板。 [此页面](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=zh-Hans#discover-control-panel){target="_blank"}详细介绍了授予用户管理员访问权限的步骤。
 >
