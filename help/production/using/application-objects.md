@@ -65,7 +65,7 @@ Adobe Campaign使用的ID序列必须相应地使用： **xtkNewId**。 如果�
 
 ## 事务性数据和日志 {#transactional-data-and-logs}
 
-每个将数据导入Adobe Campaign的工作流都会导致数据库大小增加。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/use-workflow-data.html){target="_blank"}。
+每个将数据导入Adobe Campaign的工作流都会导致数据库大小增加。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/use-workflow-data.html?lang=zh-Hans){target="_blank"}。
 
 检查清理或清除工作流是否正在运行，并是否有效地清除记录。 必须清除所有事务性数据和日志。 清理任务仅清除标准表：跟踪和广泛日志。 特定表必须由特定工作流清除。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html?lang=zh-Hans){target="_blank"}。
 

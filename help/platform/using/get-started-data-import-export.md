@@ -46,7 +46,7 @@ Adobe Campaign Classic提供数据管理功能，允许您导入和导出数据�
 
 >[!NOTE]
 >
->要了解有关如何将数据导入和导出到Campaign的更多信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/data/import){target=_blank}。
+>要了解有关如何将数据导入和导出到Campaign的更多信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/data/import){target=_blank}。
 
 
 <!--

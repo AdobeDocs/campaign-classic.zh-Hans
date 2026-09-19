@@ -65,7 +65,7 @@ Adobe Campaign允许您导入压缩或加密文件。 在[数据加载（文件�
 **相关主题：**
 
 * [数据加载（文件）活动](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/data-loading-file.html?lang=zh-Hans){target="_blank"}。
-* [压缩或加密文件](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/extraction-file.html){target="_blank"}。
+* [压缩或加密文件](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/extraction-file.html?lang=zh-Hans){target="_blank"}。
 
 ## 用例：导入使用控制面板生成的密钥加密的数据 {#use-case-gpg-decrypt}
 
