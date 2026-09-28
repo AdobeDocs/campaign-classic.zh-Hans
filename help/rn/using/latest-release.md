@@ -29,10 +29,10 @@ subfeature_v2:
     internal-label: Release notes
   - id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
     internal-label: Adobe Analytics integration
-source-git-commit: e615a6fdd6dc78b2c5e80d6aeb92cd9291ccf5e7
+source-git-commit: 92ed76435fca32fc4ad96aa6a5a4c1fed0b3ca08
 workflow-type: tm+mt
-source-wordcount: '1117'
-ht-degree: 100%
+source-wordcount: '1223'
+ht-degree: 98%
 ---
 # 最新版本 {#latest-release}
 
@@ -40,9 +40,21 @@ ht-degree: 100%
 
 ## 7.4.4 版 {#release-7-4-4}
 
-### 内部版本 9401 {#build-9401}
+### 版本9402 {#build-9402}
 
 [!BADGE 正式发布版]{type=Positive url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=zh-Hans#rn-statuses" tooltip="正式发布版"}
+
+_2026年9月11日_
+
+#### 安全性改进 {#security-7-4-4-9402}
+
+Adobe 已发布了针对 Adobe Campaign Classic 的安全更新，以解决重要漏洞。 我们鼓励内部部署和混合部署的客户尽快安装更新。 Adobe 托管的实例已得到修复，无需客户执行任何操作。 您可以在[安全公告](https://helpx.adobe.com/au/security/products/campaign/apsb26-142.html){target="_blank"}中找到更多信息。
+
+需要重新启动 Adobe Campaign 服务器 (nlserver) 才能加载内部版本并完成部署。 此修复在重新启动后默认生效。
+
+### 内部版本 9401 {#build-9401}
+
+[!BADGE 已弃用]{type=negative url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=zh-Hans#rn-statuses" tooltip="已弃用"}
 
 _2026 年 8 月 25 日_
 
@@ -152,7 +164,7 @@ _2026 年 3 月 31 日_
 
 >[!NOTE]
 >
-> 以下列出的修复已在后续的 7.4.3 内部版本中逐步推出。 导航到&#x200B;**[!UICONTROL Help > About...]**[&#x200B;菜单](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)以检查您是否拥有最新的 9394@28aaec9 内部版本。 有关更多信息，请与 Adobe 代表联系。
+> 以下列出的修复已在后续的 7.4.3 内部版本中逐步推出。 导航到&#x200B;**[!UICONTROL Help > About...]**&#x200B;[&#x200B;菜单](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)以检查您是否拥有最新的 9394@28aaec9 内部版本。 有关更多信息，请与 Adobe 代表联系。
 
 * 修复了条形码组件允许使用无限制高度参数的问题，该问题可能导致安全漏洞。 (NEO-89984)
 * 修复了通过工作流创建的列表中的枚举字段缺少临时名称属性，导致界面中显示不正确或空白枚举标签的问题。 (NEO-91158)
