@@ -23,7 +23,7 @@ subfeature_v2:
     internal-label: Performance Monitoring
   - id: e519a22f-a06a-42fc-9d09-d78a3ab2c434
     internal-label: Monitoring guidelines
-source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
+source-git-commit: 72ba334fe01dfcf701438e8550ae14abae7bd323
 workflow-type: tm+mt
 source-wordcount: '437'
 ht-degree: 5%
@@ -46,9 +46,9 @@ Adobe Campaign模块（**web**、**mta**、**wfserver**&#x200B;等）的自动�
   * **/etc/init.d/nlserver6启动**
   * **/etc/init.d/nlserver6停止**
 
->[!NOTE]
->
->从20.1开始，我们建议改用以下命令（对于Linux）： **systemctl start nlserver** / **systemctl stop nlserver**
+  >[!NOTE]
+  >
+  >从20.1开始，我们建议改用以下命令（对于Linux）： **systemctl start nlserver** / **systemctl stop nlserver**
 
 以下是在Linux中可访问的常用管理命令列表（如&#x200B;**Adobe Campaign**）：
 

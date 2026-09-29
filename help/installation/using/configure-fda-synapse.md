@@ -18,7 +18,7 @@ topic_v2:
     internal-label: Administration
 feature_v2: []
 subfeature_v2: []
-source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
+source-git-commit: 72ba334fe01dfcf701438e8550ae14abae7bd323
 workflow-type: tm+mt
 source-wordcount: '854'
 ht-degree: 1%
@@ -131,7 +131,7 @@ ht-degree: 1%
    your_language\your_architecture\msodbcsql.msi (i.e: English\X64\msodbcsql.msi)
    ```
 
-1. 安装ODBC驱动程序后，您可以根据需要对其进行测试。 有关详细信息，请参见此 [&#x200B; 页面](https://docs.microsoft.com/en-us/sql/connect/odbc/windows/system-requirements-installation-and-driver-files?view=sql-server-ver15#installing-microsoft-odbc-driver-for-sql-server)。
+1. 安装ODBC驱动程序后，您可以根据需要对其进行测试。 有关详细信息，请参见此 [ 页面](https://docs.microsoft.com/en-us/sql/connect/odbc/windows/system-requirements-installation-and-driver-files?view=sql-server-ver15#installing-microsoft-odbc-driver-for-sql-server)。
 
 1. 然后，您可以在Campaign Classic中配置[!DNL Azure Synapse]外部帐户。 有关如何配置外部帐户的更多信息，请参阅[此部分](#azure-external)。
 

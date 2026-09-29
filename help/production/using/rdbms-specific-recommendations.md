@@ -21,7 +21,7 @@ subfeature_v2:
     internal-label: Performance Monitoring
   - id: e519a22f-a06a-42fc-9d09-d78a3ab2c434
     internal-label: Monitoring guidelines
-source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
+source-git-commit: 72ba334fe01dfcf701438e8550ae14abae7bd323
 workflow-type: tm+mt
 source-wordcount: '1255'
 ht-degree: 2%
@@ -168,7 +168,7 @@ PostgreSQL不提供执行联机表重建的简单方法，因为VACUUM FULL语�
 
 以下是使用特定函数生成必要的DDL的表碎片整理示例。 以下SQL允许您创建两个新函数：**GenRebuildTablePart1**&#x200B;和&#x200B;**GenRebuildTablePart2**，它们可用于生成重建表所需的DDL。
 
-* 第一个函数允许您创建工作表（**_tmp**&#x200B;此处），它是原始表格的副本。
+* 第一个函数允许您创建工作表（**_tmp**此处），它是原始表格的副本。
 * 然后第二个函数删除原始表并重命名工作表及其索引。
 * 使用两个函数而不是一个函数意味着，如果第一个函数失败，则不会产生删除原始表格的风险。
 
