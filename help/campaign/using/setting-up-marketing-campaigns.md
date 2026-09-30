@@ -24,7 +24,7 @@ topic_v2:
 subfeature_v2:
   - id: f863efa9-030c-4466-a2b8-a52aea6b722c
     internal-label: Subscription services
-source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
+source-git-commit: 72ba334fe01dfcf701438e8550ae14abae7bd323
 workflow-type: tm+mt
 source-wordcount: '1259'
 ht-degree: 6%
@@ -137,15 +137,15 @@ ht-degree: 6%
 
 1. 对于此类型的营销活动，添加了&#x200B;**[!UICONTROL Schedule]**&#x200B;选项卡以创建模板执行计划。
 
-在此选项卡中，根据此模板指定营销活动的计划执行日期。
+   在此选项卡中，根据此模板指定营销活动的计划执行日期。
 
-![](assets/s_ncs_user_op_template_recur_planning.png)
+   ![](assets/s_ncs_user_op_template_recur_planning.png)
 
-执行计划的配置模式与工作流的&#x200B;**[!UICONTROL Scheduler]**&#x200B;对象一致。 如需详细信息，请参阅[此小节](../../workflow/using/architecture.md)。
+   执行计划的配置模式与工作流的&#x200B;**[!UICONTROL Scheduler]**&#x200B;对象一致。 如需详细信息，请参阅[此小节](../../workflow/using/architecture.md)。
 
->[!IMPORTANT]
->
->必须仔细执行执行计划配置，以避免数据库过载。 定期活动会根据指定的计划复制其模板的工作流。 过于频繁的工作流创建的实现会阻碍数据库的操作。
+   >[!IMPORTANT]
+   >
+   >必须仔细执行执行计划配置，以避免数据库过载。 定期活动会根据指定的计划复制其模板的工作流。 过于频繁的工作流创建的实现会阻碍数据库的操作。
 
 1. 在&#x200B;**[!UICONTROL Create in advance for]**&#x200B;字段中指定一个值，以创建指定期间的相应工作流。
 1. 创建要在基于此模板的营销活动中使用的工作流模板，以及定位参数和一个或多个通用投放。

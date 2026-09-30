@@ -33,7 +33,7 @@ role_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
+source-git-commit: 72ba334fe01dfcf701438e8550ae14abae7bd323
 workflow-type: tm+mt
 source-wordcount: '552'
 ht-degree: 2%
@@ -117,9 +117,9 @@ ht-degree: 2%
 
    ![](assets/start-database-update.png)
 
->[!NOTE]
->
->成功更新数据库的物理结构后，需要断开并重新连接，以便考虑所做的修改。
+   >[!NOTE]
+   >
+   >成功更新数据库的物理结构后，需要断开并重新连接，以便考虑所做的修改。
 
 ### 步骤3：验证修改
 
