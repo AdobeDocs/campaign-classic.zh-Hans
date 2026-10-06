@@ -7,16 +7,26 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 8b2a9c73-807a-4936-9fd6-9d26c805a31f
-TQID: https://experienceleague.adobe.com/R0BzuzvaCahMWtHor24mNcwEiK7LtT97hpRMyOXNljg
+TQID: 'https://experienceleague.adobe.com/R0BzuzvaCahMWtHor24mNcwEiK7LtT97hpRMyOXNljg'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
     internal-label: Campaign
+  - id: fd6e6e36-54e4-4f1a-96fc-1a750e400d50
+    internal-label: Campaign Classic v7
+feature_v2:
+  - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
+  - id: a658c786-869b-4194-a780-2594d663adda
+    internal-label: Data management
+subfeature_v2:
+  - id: e656c701-3899-4db3-989c-de0980ddfffa
+    internal-label: Installation
+  - id: ee3dfd63-9a21-4961-9f24-ea3385284a21
+    internal-label: Federated Data Access
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-feature_v2: []
-subfeature_v2: []
-source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
+source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
 workflow-type: tm+mt
 source-wordcount: '386'
 ht-degree: 2%
@@ -88,7 +98,7 @@ ht-degree: 2%
 
 ## Windows上的[!DNL Vertica Analytics] {#vertica-windows}
 
-1. 下载适用于Windows[&#128279;](https://www.vertica.com/download/vertica/client-drivers/)的ODBC驱动程序。 要安装Windows驱动程序，您需要启用.NET Framework 3.5，否则安装助理将尝试自动启用并下载该驱动程序。
+1. 下载适用于Windows](https://www.vertica.com/download/vertica/client-drivers/)的[ODBC驱动程序。 要安装Windows驱动程序，您需要启用.NET Framework 3.5，否则安装助理将尝试自动启用并下载该驱动程序。
 
 1. 在Windows中配置ODBC驱动程序。 有关详细信息，请参见[此页面](https://www.vertica.com/docs/9.2.x/HTML/Content/Authoring/ConnectingToVertica/ClientODBC/SettingUpADSN.htm)
 

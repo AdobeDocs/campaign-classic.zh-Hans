@@ -4,15 +4,21 @@ title: 不支持的短信连接器迁移
 description: 将不支持的SMS连接器迁移到扩展通用SMPP连接器
 feature: SMS, Upgrade
 exl-id: 60acf80c-8506-410b-ab2c-4f67a5677b43
-TQID: https://experienceleague.adobe.com/D8kf1pCamwi5BLeP4-7dirW0831g5q0LOVeZuNMBi2o
+TQID: 'https://experienceleague.adobe.com/D8kf1pCamwi5BLeP4-7dirW0831g5q0LOVeZuNMBi2o'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
     internal-label: Campaign
+  - id: fd6e6e36-54e4-4f1a-96fc-1a750e400d50
+    internal-label: Campaign Classic v7
 feature_v2:
   - id: b631758a-142d-425f-b9aa-f756d85cb979
     internal-label: Campaign Email Designer
   - id: c858a28b-ea19-49b0-8d48-828717fad89c
     internal-label: Prepare and test messages
+  - id: a4671286-a59f-47e3-b97b-90627a1977d5
+    internal-label: Communication channels
+  - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
 subfeature_v2:
   - id: e95a583b-fcfa-4524-8666-46a29c828119
     internal-label: Email messaging
@@ -22,7 +28,11 @@ subfeature_v2:
     internal-label: A/B testing
   - id: f4da0e76-df77-451e-ad61-21afb7bd8810
     internal-label: Manage deliverability
-source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
+  - id: b1bd1421-1927-4c59-9bc6-ce292360e43b
+    internal-label: SMS Messaging
+  - id: eff19c99-440a-4318-b319-444edc4d8d8f
+    internal-label: Upgrade
+source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
 workflow-type: tm+mt
 source-wordcount: '457'
 ht-degree: 1%
@@ -58,7 +68,7 @@ ht-degree: 1%
 
 >[!CAUTION]
 >
->即使您可以转换参数，配置&#x200B;**[!UICONTROL Extended Generic SMPP]**&#x200B;连接器也需要与提供商联系，提供商将为您提供填写其余参数所需的信息。 有关详细信息，请参见此 [&#x200B; 页面](sms-protocol.md)。
+>即使您可以转换参数，配置&#x200B;**[!UICONTROL Extended Generic SMPP]**&#x200B;连接器也需要与提供商联系，提供商将为您提供填写其余参数所需的信息。 有关详细信息，请参见此 [ 页面](sms-protocol.md)。
 
 首先，您需要创建一个新的&#x200B;**[!UICONTROL Extended Generic SMPP]**&#x200B;外部帐户，然后您可能能够转置某些参数。 您可以在此[页面](sms-set-up.md#creating-an-smpp-external-account)中找到详细步骤。
 

@@ -6,11 +6,22 @@ feature: Triggers
 audience: integrations
 content-type: reference
 index: true
-internal: n
-snippet: y
+internal: 'n'
+snippet: 'y'
 exl-id: ab30f697-3022-4a29-bbdb-14ca12ec9c3e
 hide: true
-source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
+product_v2:
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: fd6e6e36-54e4-4f1a-96fc-1a750e400d50
+    internal-label: Campaign Classic v7
+feature_v2:
+  - id: d5ef99fa-df0c-4153-bf94-105ad0724167
+    internal-label: Integrations
+subfeature_v2:
+  - id: c3bf7e1e-1db5-4c72-9293-e2f0b1ab73d0
+    internal-label: Triggers
+source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
 workflow-type: tm+mt
 source-wordcount: '344'
 ht-degree: 3%
@@ -35,7 +46,7 @@ This integration only applies starting **Campaign Classic 20.2.4 and above, 19.1
 在开始此实施之前，请检查您是否拥有：
 
 * 有效的&#x200B;**组织标识符**：组织ID是Adobe Experience Cloud中的唯一标识符，用于VisitorID服务和IMS单点登录(SSO)。 [了解详情](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=zh-Hans)
-* 您组织的&#x200B;**开发人员访问权限**。 组织的系统管理员需要遵循此页面[&#128279;](https://helpx.adobe.com/cn/enterprise/using/manage-developers.html)中详细的的&#x200B;**将开发人员添加到单个产品配置文件**&#x200B;过程，以便为与触发器关联的Adobe Analytics产品的`Analytics - {tenantID}`产品配置文件提供开发人员访问权限。
+* 您组织的&#x200B;**开发人员访问权限**。 组织的系统管理员需要遵循此页面](https://helpx.adobe.com/enterprise/using/manage-developers.html)中详细的[的&#x200B;**将开发人员添加到单个产品配置文件**&#x200B;过程，以便为与触发器关联的Adobe Analytics产品的`Analytics - {tenantID}`产品配置文件提供开发人员访问权限。
 
 ## 步骤1：创建/更新OAuth项目 {#creating-adobe-io-project}
 

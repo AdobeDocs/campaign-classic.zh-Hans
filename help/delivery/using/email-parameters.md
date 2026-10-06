@@ -6,23 +6,19 @@ feature: Email
 role: User, Developer
 hide: true
 exl-id: 1bb36e71-9f1a-4553-b266-eca3f48688e2
-TQID: https://experienceleague.adobe.com/MmKuHkMyqQizW9agSWTlcNOzrzG12TkBXcHVHjGvhxA
+TQID: 'https://experienceleague.adobe.com/MmKuHkMyqQizW9agSWTlcNOzrzG12TkBXcHVHjGvhxA'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
     internal-label: Campaign
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-    internal-label: User
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-    internal-label: Developer
-topic_v2:
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-    internal-label: Personalization
+  - id: fd6e6e36-54e4-4f1a-96fc-1a750e400d50
+    internal-label: Campaign Classic v7
 feature_v2:
   - id: b631758a-142d-425f-b9aa-f756d85cb979
     internal-label: Campaign Email Designer
   - id: c858a28b-ea19-49b0-8d48-828717fad89c
     internal-label: Prepare and test messages
+  - id: 50d1fd2e-0fc9-5627-bbc9-02dbc9d15e08
+    internal-label: Email
 subfeature_v2:
   - id: e95a583b-fcfa-4524-8666-46a29c828119
     internal-label: Email messaging
@@ -32,7 +28,15 @@ subfeature_v2:
     internal-label: A/B testing
   - id: f4da0e76-df77-451e-ad61-21afb7bd8810
     internal-label: Manage deliverability
-source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+topic_v2:
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
+source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
 workflow-type: tm+mt
 source-wordcount: '920'
 ht-degree: 12%
@@ -105,7 +109,7 @@ ht-degree: 12%
 
 镜像页面是可通过 Web 浏览器在线访问的 HTML 页面。 其内容与电子邮件的内容相同。
 
-默认情况下，如果将链接插入到邮件内容中，则会生成镜像页面。 有关个性化块插入的更多信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html?lang=zh-Hans){target="_blank"}。
+默认情况下，如果将链接插入到邮件内容中，则会生成镜像页面。 有关个性化块插入的更多信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html){target="_blank"}。
 
 在投放属性中，**[!UICONTROL Validity]**&#x200B;选项卡的&#x200B;**[!UICONTROL Mode]**&#x200B;字段允许您修改此页面的生成模式。
 
@@ -139,7 +143,7 @@ ht-degree: 12%
 
 投放参数的&#x200B;**[!UICONTROL SMTP]**&#x200B;选项卡允许您配置退回邮件的管理。
 
-默认情况下，平台[&#128279;](../../installation/using/deploying-an-instance.md#parameters-for-delivered-emails-parameters-for-delivered-emails)的默认错误框中会收到退回的电子邮件，但您可以为投放定义特定的错误地址。
+默认情况下，平台](../../installation/using/deploying-an-instance.md#parameters-for-delivered-emails-parameters-for-delivered-emails)的[默认错误框中会收到退回的电子邮件，但您可以为投放定义特定的错误地址。
 
 您还可以从此屏幕定义特定地址，以便调查应用程序无法自动限定这些邮件时退回邮件的原因。 对于每个字段，**添加个性化字段**&#x200B;图标允许您添加个性化参数。
 

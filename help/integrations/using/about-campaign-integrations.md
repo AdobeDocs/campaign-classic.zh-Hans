@@ -9,29 +9,37 @@ content-type: reference
 level: Intermediate, Experienced
 topic-tags: campaign-integrations
 exl-id: ceb584da-bc97-4b71-9499-59df5e6d10c3
-TQID: https://experienceleague.adobe.com/PUFoWjnwax8oHM3dH-FJDH7b26p4qNBMaJfm2qWGNz0
+TQID: 'https://experienceleague.adobe.com/PUFoWjnwax8oHM3dH-FJDH7b26p4qNBMaJfm2qWGNz0'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
     internal-label: Campaign
+  - id: fd6e6e36-54e4-4f1a-96fc-1a750e400d50
+    internal-label: Campaign Classic v7
 feature_v2:
   - id: d5ef99fa-df0c-4153-bf94-105ad0724167
     internal-label: Integrations
+  - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
 subfeature_v2:
   - id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
-    internal-label: Adobe Analytics integration
+    internal-label: Analytics integration
   - id: df0d6518-6f49-46e2-b46e-3bcc513f553f
-    internal-label: Adobe Experience Manager integration
+    internal-label: Experience Manager integration
   - id: eb007b6d-6e57-46ab-9485-3f24d6102304
-    internal-label: Adobe Experience Platform integration
+    internal-label: Experience Platform integration
   - id: b1fd1501-3105-4d6b-b4d4-9af53126df75
-    internal-label: Adobe Target integration
+    internal-label: Target integration
+  - id: e8d937ec-9046-41b5-834b-d22a624e0d37
+    internal-label: Campaign overview
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
     internal-label: Intermediate
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
+source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
 workflow-type: tm+mt
 source-wordcount: '731'
 ht-degree: 5%
@@ -40,7 +48,7 @@ ht-degree: 5%
 
 Adobe Experience Cloud是一套业内最佳的综合性集成解决方案，它基于常用的数据平台而构建，提供了一组功能强大的通用解决方案和应用程序。
 
-在[此页面](https://experienceleague.adobe.com/zh-hans/docs/core-services/interface/administration/integrations){_blank}中进一步了解Adobe Campaign与Adobe Experience Cloud解决方案之间可用的功能集成。
+在[此页面](https://experienceleague.adobe.com/en/docs/core-services/interface/administration/integrations){_blank}中进一步了解Adobe Campaign与Adobe Experience Cloud解决方案之间可用的功能集成。
 
 [此部分](#experience-cloud-integrations)中提供了可与Adobe集成的Adobe Campaign解决方案和应用程序服务的完整列表以及相关文档。
 
@@ -53,17 +61,17 @@ Adobe Experience Cloud是一套业内最佳的综合性集成解决方案，它�
 
 可以将多个解决方案链接到Adobe Experience Cloud。 **组织**&#x200B;是一个客户实体，它允许管理员配置组和用户，并控制Adobe Experience Cloud中的单点登录(SSO)。 组织的作用类似于一个衔接所有Experience Cloud产品和解决方案的登录公司。 大多数情况下，组织是您的公司名称。 但是，公司可以有许多组织。
 
-[Adobe Experience Cloud帮助门户](https://experienceleague.adobe.com/zh-hans/docs/core-services/interface/administration/organizations){_blank}中详细介绍了组织管理和关联Adobe Experience Cloud帐户的相关信息。
+[Adobe Experience Cloud帮助门户](https://experienceleague.adobe.com/en/docs/core-services/interface/administration/organizations){_blank}中详细介绍了组织管理和关联Adobe Experience Cloud帐户的相关信息。
 
 ## 身份和Cookie管理 {#id-and-cookies}
 
-在安装Adobe Campaign或将现有安装与Adobe Experience Cloud集成时，将启用[Adobe Experience Cloud Identity Service](https://experienceleague.adobe.com/zh-hans/docs/id-service/using/home){_blank}。 此服务取代了Adobe Campaign首先用于跟踪功能的永久Cookie。
+在安装Adobe Campaign或将现有安装与Adobe Experience Cloud集成时，将启用[Adobe Experience Cloud Identity Service](https://experienceleague.adobe.com/en/docs/id-service/using/home){_blank}。 此服务取代了Adobe Campaign首先用于跟踪功能的永久Cookie。
 
 Adobe Experience Cloud Identity服务（ID服务）提供了一个通用的永久性ID，用于在Experience Cloud的所有解决方案中标识您的访客。
 
 独特访客ID将分配给生成跟踪日志的收件人。 此ID将保存在&#x200B;**[!UICONTROL nms:trackingLogRcp]**&#x200B;表的&#x200B;**[!UICONTROL Requester UUID (@sourceID)]**&#x200B;字段中。 **在实施访客ID服务之前存在的收件人的跟踪数据将不再可用**。
 
-随后，其他Adobe Experience Cloud解决方案将使用相同的CNAME来识别该ID。 [了解详情](https://experienceleague.adobe.com/zh-hans/docs/id-service/using/reference/analytics-reference/cname){_blank}。
+随后，其他Adobe Experience Cloud解决方案将使用相同的CNAME来识别该ID。 [了解详情](https://experienceleague.adobe.com/en/docs/id-service/using/reference/analytics-reference/cname){_blank}。
 
 ## Experience Cloud 集成 {#experience-cloud-integrations}
 

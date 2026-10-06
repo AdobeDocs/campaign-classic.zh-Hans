@@ -5,19 +5,31 @@ description: 关于定位活动
 feature: Workflows, Audiences, Targeting Activity
 hide: true
 exl-id: 5028ad4c-e427-4e78-962d-c5ea54390db5
-TQID: https://experienceleague.adobe.com/gwDuL3a9gnCKW07SnGjZ113cvwbxmOMIp6-Zy-HveRo
+TQID: 'https://experienceleague.adobe.com/gwDuL3a9gnCKW07SnGjZ113cvwbxmOMIp6-Zy-HveRo'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
     internal-label: Campaign
-feature_v2: []
+  - id: fd6e6e36-54e4-4f1a-96fc-1a750e400d50
+    internal-label: Campaign Classic v7
+feature_v2:
+  - id: a658c786-869b-4194-a780-2594d663adda
+    internal-label: Data management
+  - id: afa4204e-6d08-4e29-bc35-26aafb656d48
+    internal-label: Profiles and audiences
 subfeature_v2:
   - id: ee25c34b-ea50-427b-9369-ba0a160f7d70
-    internal-label: Workflow HeatMap
+    internal-label: HeatMap
   - id: b5f0aaf4-1e48-400d-95ac-6eb3078cf22f
     internal-label: Execution activities
   - id: d1110311-2ca4-442b-be37-088a6db845ee
     internal-label: Data Management activities
-source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
+  - id: fcb46c0f-76e1-48bc-9dd0-fcf9d97526cf
+    internal-label: Workflows
+  - id: d6330382-c886-4f7a-a4f7-74e3f36c0d9c
+    internal-label: Audiences
+  - id: ff84ab2f-a7c2-4ced-a3c8-5113f4348d99
+    internal-label: Targeting Activity
+source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
 workflow-type: tm+mt
 source-wordcount: '438'
 ht-degree: 8%
@@ -37,7 +49,7 @@ ht-degree: 8%
 * **拆分**：用于将目标拆分为多个子集。 请参阅[拆分](split.md)部分。
 * **单元格**：以数据列的形式提供各种子集的视图，当存在许多子集时，这些子集便于操作。 有关详细信息，请参阅[单元格](cells.md)部分。
 * **按单元格列出的选件**：允许您将不同的选件链接到群体的每个子集。 请参阅[按单元格](offers-by-cell.md)列出的选件。
-* **调查答案**：用于恢复调查期间收集的信息。 有关更多信息，请参阅此[&#128279;](../../surveys/using/getting-started-with-surveys.md)章节。
+* **调查答案**：用于恢复调查期间收集的信息。 有关更多信息，请参阅此](../../surveys/using/getting-started-with-surveys.md)章节[。
 * **投放概要**：允许您添加投放概要。 请参阅[投放概要](../../workflow/using/delivery-outline.md)部分。
 * **扩充**：允许您将列添加到工作表或工作流。 请参阅[扩充](../../workflow/using/enrichment.md)部分。
 * **编辑架构**：允许您转换、标准化数据，并在必要时扩充数据。 有关详细信息，请参阅[编辑架构](../../workflow/using/edit-schema.md)部分。

@@ -8,31 +8,37 @@ audience: integrations
 content-type: reference
 level: Intermediate, Experienced
 exl-id: 0e337620-a49f-4e14-8c67-9279d74736f1
-TQID: https://experienceleague.adobe.com/gWgUCcgsqeMw-mzVdhVodcp91lgTCCL7XGWp0f2ItKo
+TQID: 'https://experienceleague.adobe.com/gWgUCcgsqeMw-mzVdhVodcp91lgTCCL7XGWp0f2ItKo'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
     internal-label: Campaign
+  - id: fd6e6e36-54e4-4f1a-96fc-1a750e400d50
+    internal-label: Campaign Classic v7
 feature_v2:
   - id: d5ef99fa-df0c-4153-bf94-105ad0724167
     internal-label: Integrations
 subfeature_v2:
   - id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
-    internal-label: Adobe Analytics integration
+    internal-label: Analytics integration
   - id: df0d6518-6f49-46e2-b46e-3bcc513f553f
-    internal-label: Adobe Experience Manager integration
+    internal-label: Experience Manager integration
   - id: eb007b6d-6e57-46ab-9485-3f24d6102304
-    internal-label: Adobe Experience Platform integration
+    internal-label: Experience Platform integration
   - id: b1fd1501-3105-4d6b-b4d4-9af53126df75
-    internal-label: Adobe Target integration
+    internal-label: Target integration
+  - id: c3bf7e1e-1db5-4c72-9293-e2f0b1ab73d0
+    internal-label: Triggers
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
     internal-label: Intermediate
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
     internal-label: Implementation
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
+source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
 workflow-type: tm+mt
 source-wordcount: '411'
 ht-degree: 8%
@@ -50,7 +56,7 @@ ht-degree: 8%
 由于配置很少且没有第三方参与，因此它允许更敏捷的集成。
 它还支持高流量而不影响营销活动的性能。 例如，集成每小时可处理100万个触发器。
 
-![](assets/do-not-localize/book.png)了解如何[创建Experience Cloud触发器](https://experienceleague.adobe.com/docs/experience-cloud/triggers/create.html?lang=zh-Hans)，识别、定义并监视关键客户行为。
+![](assets/do-not-localize/book.png)了解如何[创建Experience Cloud触发器](https://experienceleague.adobe.com/docs/experience-cloud/triggers/create.html)，识别、定义并监视关键客户行为。
 
 ## [!DNL Triggers]架构 {#triggers-architecture}
 
@@ -65,7 +71,7 @@ ht-degree: 8%
 在开始此实施之前，请检查您是否拥有：
 
 * 有效的&#x200B;**组织标识符**：组织ID是Adobe Experience Cloud中的唯一标识符，用于VisitorID服务和IMS单点登录(SSO)。 [了解详情](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=zh-Hans)
-* 您组织的&#x200B;**开发人员访问权限**。 组织的系统管理员需要遵循此页面[&#128279;](https://helpx.adobe.com/cn/enterprise/using/manage-developers.html)中详细的的&#x200B;**将开发人员添加到单个产品配置文件**&#x200B;过程，以便为与触发器关联的Adobe Analytics产品的`Analytics - {tenantID}`产品配置文件提供开发人员访问权限。
+* 您组织的&#x200B;**开发人员访问权限**。 组织的系统管理员需要遵循此页面](https://helpx.adobe.com/enterprise/using/manage-developers.html)中详细的[的&#x200B;**将开发人员添加到单个产品配置文件**&#x200B;过程，以便为与触发器关联的Adobe Analytics产品的`Analytics - {tenantID}`产品配置文件提供开发人员访问权限。
 
 ## 实施步骤 {#implement}
 

@@ -7,10 +7,12 @@ feature: Deliverability
 role: User
 hide: true
 exl-id: 50d326b0-3c23-4dbf-9df6-d32b48e30f69
-TQID: https://experienceleague.adobe.com/ngnYPos--1A5p7WN-fJnxaLt-yHG50lWHid4wbbyVZw
+TQID: 'https://experienceleague.adobe.com/ngnYPos--1A5p7WN-fJnxaLt-yHG50lWHid4wbbyVZw'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
     internal-label: Campaign
+  - id: fd6e6e36-54e4-4f1a-96fc-1a750e400d50
+    internal-label: Campaign Classic v7
 feature_v2:
   - id: a075b2c1-7748-4328-b7f6-343aa314616a
     internal-label: Campaigns
@@ -18,6 +20,17 @@ feature_v2:
     internal-label: Campaign Email Designer
   - id: c858a28b-ea19-49b0-8d48-828717fad89c
     internal-label: Prepare and test messages
+  - id: 63876777-85c3-57e1-a2da-81f02956c63c
+    internal-label: Deliverability
+subfeature_v2:
+  - id: e95a583b-fcfa-4524-8666-46a29c828119
+    internal-label: Email messaging
+  - id: c8da4fdd-eb94-4751-a43c-f82733fb2d6e
+    internal-label: Email design
+  - id: d5bbe3da-ba85-4242-817e-54f7c4b943e0
+    internal-label: A/B testing
+  - id: f4da0e76-df77-451e-ad61-21afb7bd8810
+    internal-label: Manage deliverability
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
@@ -28,16 +41,7 @@ topic_v2:
     internal-label: Security
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-subfeature_v2:
-  - id: e95a583b-fcfa-4524-8666-46a29c828119
-    internal-label: Email messaging
-  - id: c8da4fdd-eb94-4751-a43c-f82733fb2d6e
-    internal-label: Email design
-  - id: d5bbe3da-ba85-4242-817e-54f7c4b943e0
-    internal-label: A/B testing
-  - id: f4da0e76-df77-451e-ad61-21afb7bd8810
-    internal-label: Manage deliverability
-source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
+source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
 workflow-type: tm+mt
 source-wordcount: '895'
 ht-degree: 2%
@@ -54,7 +58,7 @@ ht-degree: 2%
 
 此步骤允许您检测可能的错误，并在将其交付到主目标之前修复它们。
 
-本节[&#128279;](steps-validating-the-delivery.md)中介绍了验证投放的步骤。
+本节](steps-validating-the-delivery.md)中介绍了验证投放的步骤[。
 
 ## 收件箱呈现 {#inbox-and-email-rendering}
 
@@ -66,13 +70,13 @@ ht-degree: 2%
 
 * 收件箱呈现功能对于确定电子邮件促销活动是否成功超越主要ISP（Internet服务提供商）和Web邮件服务的过滤器至关重要。 此类工具会将电子邮件的预检副本发送到测试收件箱网络，以便您了解消息在这些服务中的显示或呈现方式。 它们可能还包括报表和代码更正选项，帮助您快速识别并进行修复以改善可投放性。
 
-在本节[&#128279;](inbox-rendering.md)中了解更多。
+在本节](inbox-rendering.md)中了解更多[。
 
 ## 验证消息 {#proof-messages}
 
 通过发送校样，可检查选择退出链接、镜像页面和任何其他链接、验证消息、验证是否显示图像、检测可能存在的错误等。您可能还希望检查您的设计和在不同设备上的渲染。
 
-在本节[&#128279;](steps-validating-the-delivery.md#sending-a-proof)中了解更多。
+在本节](steps-validating-the-delivery.md#sending-a-proof)中了解更多[。
 
 ## 设置A/B测试投放 {#a-b-testing-deliveries}
 
@@ -84,7 +88,7 @@ ht-degree: 2%
 
 * 选择成功率最高的项目并将其发送到目标的其余部分
 
-在本节[&#128279;](get-started-a-b-testing.md)中了解更多。
+在本节](get-started-a-b-testing.md)中了解更多[。
 
 ## 确保您的消息已投放 {#make-sure-your-message-is-delivered}
 
@@ -92,11 +96,11 @@ ht-degree: 2%
 
 ### 进行验证过程
 
-您可以定义涉及Adobe Campaign操作员和组的完整验证流程，以验证目标和消息内容。 这将确保全面监测和控制营销活动的各个流程：定位、内容、预算、提取和发送证明。 根据用户的权限，用户将收到通知、接收校样并能够验证或拒绝消息。 在本节[&#128279;](../../campaign/using/marketing-campaign-approval.md)中了解更多。
+您可以定义涉及Adobe Campaign操作员和组的完整验证流程，以验证目标和消息内容。 这将确保全面监测和控制营销活动的各个流程：定位、内容、预算、提取和发送证明。 根据用户的权限，用户将收到通知、接收校样并能够验证或拒绝消息。 在本节](../../campaign/using/marketing-campaign-approval.md)中了解更多[。
 
 ### 使用批次
 
-您可以逐步增加使用批次发送的数量。 这将避免您的邮件被标记为垃圾邮件或您想要限制每天的邮件数。 利用批次，您可以将投放分为多个批次，而不是同时发送大量消息。 在本节[&#128279;](steps-sending-the-delivery.md#sending-using-multiple-waves)中了解更多。
+您可以逐步增加使用批次发送的数量。 这将避免您的邮件被标记为垃圾邮件或您想要限制每天的邮件数。 利用批次，您可以将投放分为多个批次，而不是同时发送大量消息。 在本节](steps-sending-the-delivery.md#sending-using-multiple-waves)中了解更多[。
 
 ### 排定消息优先级
 
@@ -132,7 +136,7 @@ ht-degree: 2%
 
 ### 使用分类
 
-您可以使用分类规则根据特定条件排除部分目标。 这可确保在遵守公司通信政策的同时，发送最符合客户需求及期望的邮件。 例如，您可以筛选新闻稿目标中的未成年收件人。 在此示例[&#128279;](../../campaign-opt/using/filtering-rules.md)中了解更多。
+您可以使用分类规则根据特定条件排除部分目标。 这可确保在遵守公司通信政策的同时，发送最符合客户需求及期望的邮件。 例如，您可以筛选新闻稿目标中的未成年收件人。 在此示例](../../campaign-opt/using/filtering-rules.md)中了解更多[。
 
 ### 避免使用附件
 

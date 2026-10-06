@@ -4,16 +4,26 @@ title: 事务性消息传递架构
 description: 此部分介绍Adobe Campaign Classic事务性消息架构以及投放事务性消息的可用渠道
 feature: Transactional Messaging, Message Center, Architecture
 exl-id: 0a059397-b037-405b-b9c1-94a4a072674d
-TQID: https://experienceleague.adobe.com/37Nw8x5SwRELOeJd8BXvE-tcN66Kb1vraEgkkzeaKI8
+TQID: 'https://experienceleague.adobe.com/37Nw8x5SwRELOeJd8BXvE-tcN66Kb1vraEgkkzeaKI8'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
     internal-label: Campaign
+  - id: fd6e6e36-54e4-4f1a-96fc-1a750e400d50
+    internal-label: Campaign Classic v7
+feature_v2:
+  - id: 6d358f27-4f3c-5ddf-9159-05192e672ba7
+    internal-label: Message Center
+  - id: bae31391-3416-5fbd-bc4b-2cdcae2922db
+    internal-label: Architecture
+  - id: a4671286-a59f-47e3-b97b-90627a1977d5
+    internal-label: Communication channels
+subfeature_v2:
+  - id: d3b34fea-a110-482f-adb2-aae8d686bac8
+    internal-label: Transactional messaging
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-feature_v2: []
-subfeature_v2: []
-source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
+source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
 workflow-type: tm+mt
 source-wordcount: '1104'
 ht-degree: 1%
@@ -93,7 +103,7 @@ Adobe建议您在安装事务型消息包&#x200B;**之前**&#x200B;始终添加�
 >此过程仅适用于使用安装在同一台计算机上的Windows NLServer的客户。
 
 1. 使用包导入助手(**[!UICONTROL Tools > Advanced > Import package... > Adobe Campaign Package]**)安装所需的频道，例如&#x200B;**Mobile频道**。
-1. 执行文件导入(**[!UICONTROL Tools > Advanced > Import package... > File]**)，并选择&#x200B;**datakitnms &#x200B;**`[Your language]`**packagemessageCenter.xml**&#x200B;文件。
+1. 执行文件导入(**[!UICONTROL Tools > Advanced > Import package... > File]**)，并选择&#x200B;**datakitnms **`[Your language]`**packagemessageCenter.xml**&#x200B;文件。
 1. 在&#x200B;**[!UICONTROL XML content of the data to import]**&#x200B;中，仅保留与所添加渠道对应的投放模板。 例如，如果您添加了&#x200B;**移动渠道**，则仅保留与&#x200B;**[!UICONTROL Mobile transactional message]** (smsTriggerMessage)相对应的&#x200B;**实体**&#x200B;元素。 如果您已添加&#x200B;**移动应用程序渠道**，请仅保留&#x200B;**iOS事务型消息** (iosTriggerMessage)和&#x200B;**Android事务型消息** (androidTriggerMessage)。
 
    ![](assets/messagecenter_install_channel.png)

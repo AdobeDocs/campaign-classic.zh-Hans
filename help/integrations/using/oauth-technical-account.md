@@ -5,10 +5,12 @@ description: 详细了解如何创建Adobe API帐户
 role: User, Admin
 level: Intermediate, Experienced
 exl-id: 5d830ea0-a0a3-4b35-8dc4-e955380431fb
-TQID: https://experienceleague.adobe.com/cZi5LdGtTnT8wMtI8nmg3Ue5LPfTkn3OKFZkxxdg3F0
+TQID: 'https://experienceleague.adobe.com/cZi5LdGtTnT8wMtI8nmg3Ue5LPfTkn3OKFZkxxdg3F0'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
     internal-label: Campaign
+  - id: fd6e6e36-54e4-4f1a-96fc-1a750e400d50
+    internal-label: Campaign Classic v7
 feature_v2:
   - id: b12f6872-9271-4369-85e5-86969a0b99a2
     internal-label: APIs
@@ -16,13 +18,13 @@ feature_v2:
     internal-label: Integrations
 subfeature_v2:
   - id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
-    internal-label: Adobe Analytics integration
+    internal-label: Analytics integration
   - id: df0d6518-6f49-46e2-b46e-3bcc513f553f
-    internal-label: Adobe Experience Manager integration
+    internal-label: Experience Manager integration
   - id: eb007b6d-6e57-46ab-9485-3f24d6102304
-    internal-label: Adobe Experience Platform integration
+    internal-label: Experience Platform integration
   - id: b1fd1501-3105-4d6b-b4d4-9af53126df75
-    internal-label: Adobe Target integration
+    internal-label: Target integration
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
@@ -31,7 +33,9 @@ role_v2:
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
     internal-label: Intermediate
-source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
 workflow-type: tm+mt
 source-wordcount: '366'
 ht-degree: 2%
@@ -44,7 +48,7 @@ ht-degree: 2%
 
 Adobe将弃用服务帐户(JWT)凭据。 Campaign与Adobe解决方案和应用程序的集成现在必须依赖OAuth服务器到服务器凭据。
 
-如果您在2024年6月之前实施了Campaign入站或出站集成，则必须将Campaign环境升级到v7.4.1，并将技术帐户迁移到oAuth，如本文档[&#128279;](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration){target="_blank"}中所述。 现有服务帐户(JWT)凭据将继续工作，直到&#x200B;**2025年6月30日**。
+如果您在2024年6月之前实施了Campaign入站或出站集成，则必须将Campaign环境升级到v7.4.1，并将技术帐户迁移到oAuth，如本文档](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration){target="_blank"}中所述。 [现有服务帐户(JWT)凭据将继续工作，直到&#x200B;**2025年6月30日**。
 
 迁移完成后，您必须按照[此部分](#add-credentials)中的说明将新凭据关联到Campaign。
 
@@ -54,7 +58,7 @@ Adobe将弃用服务帐户(JWT)凭据。 Campaign与Adobe解决方案和应用�
 
 1. 访问Adobe Developer控制台并以您组织的&#x200B;**系统管理员**&#x200B;身份登录。
 
-   有关管理员角色的更多信息，请参阅此[页面](https://helpx.adobe.com/cn/enterprise/using/admin-roles.html)。
+   有关管理员角色的更多信息，请参阅此[页面](https://helpx.adobe.com/enterprise/using/admin-roles.html)。
 
 1. 单击 **[!UICONTROL Create a new project]**。
 
@@ -72,7 +76,7 @@ Adobe将弃用服务帐户(JWT)凭据。 Campaign与Adobe解决方案和应用�
 
 1. 选择项目的&#x200B;**[!UICONTROL Product profile]**&#x200B;链接。
 
-   如果需要，您可以创建新插件。 [了解详情](https://helpx.adobe.com/cn/enterprise/using/manage-product-profiles.html)
+   如果需要，您可以创建新插件。 [了解详情](https://helpx.adobe.com/enterprise/using/manage-product-profiles.html)
 
 1. 然后，单击&#x200B;**[!UICONTROL Save Configured API]**。
 

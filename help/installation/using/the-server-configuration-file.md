@@ -7,13 +7,22 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 exl-id: 70cd6a4b-c839-4bd9-b9a7-5a12e59c0cbf
-TQID: https://experienceleague.adobe.com/BZ4rjzbXYikNoGAVHq4Gy7tY8OugKDgsmVLkKuIB9tw
+TQID: 'https://experienceleague.adobe.com/BZ4rjzbXYikNoGAVHq4Gy7tY8OugKDgsmVLkKuIB9tw'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
     internal-label: Campaign
+  - id: fd6e6e36-54e4-4f1a-96fc-1a750e400d50
+    internal-label: Campaign Classic v7
 feature_v2:
   - id: b12f6872-9271-4369-85e5-86969a0b99a2
     internal-label: APIs
+  - id: 7f0a1ee5-eeb8-5478-a9cd-b1896f033118
+    internal-label: Instance Settings
+  - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
+subfeature_v2:
+  - id: e656c701-3899-4db3-989c-de0980ddfffa
+    internal-label: Installation
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
     internal-label: Reporting
@@ -21,8 +30,7 @@ topic_v2:
     internal-label: Optimization
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
     internal-label: Security
-subfeature_v2: []
-source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
+source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
 workflow-type: tm+mt
 source-wordcount: '8113'
 ht-degree: 8%
@@ -423,7 +431,7 @@ Adobe Campaign的整体配置在&#x200B;**serverConf.xml**&#x200B;文件中定�
   </tr> 
   <tr> 
    <td> maxCnx<br /> </td> 
-   <td> 拒绝新连接之前允许的连接的最大数目。 查看此<a href="https://helpx.adobe.com/cn/campaign/kb/how-to-increase-the-maximum-number-of-database-connections-from-.html">技术说明</a>.<br /> </td> 
+   <td> 拒绝新连接之前允许的连接的最大数目。 查看此<a href="https://helpx.adobe.com/campaign/kb/how-to-increase-the-maximum-number-of-database-connections-from-.html">技术说明</a>.<br /> </td> 
    <td> 短<br /> </td> 
   </tr> 
   <tr> 
@@ -553,7 +561,7 @@ Adobe Campaign的整体配置在&#x200B;**serverConf.xml**&#x200B;文件中定�
 
 >[!NOTE]
 >
->**nameSevers**&#x200B;上的注释：默认情况下，使用网络
+>**nameSevers**上的注释：默认情况下，使用网络
 >在Windows中声明的第一个网络接口的参数
 >未在UNIX中定义。 定义域名服务器(DNS)
 >由MTA用来获取为声明的邮件交换器
@@ -1638,9 +1646,9 @@ dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.&#42;&quot;
    <td> statServerAddress<br /> </td> 
    <td> 投放统计服务器的地址，以 
     &lt;dns或ip&gt; 
-      <code>&lbrack;</code>: 
+      <code>[</code>: 
      &lt;端口&gt; 
-       <code>&rbrack;</code>. 请参阅 
+       <code>]</code>. 请参阅 
       统计服务器</a>的<a href="../../installation/using/email-deliverability.md#coordinates-of-the-statistics-server" target="_blank">坐标。 
       <br /> 
      </td> 

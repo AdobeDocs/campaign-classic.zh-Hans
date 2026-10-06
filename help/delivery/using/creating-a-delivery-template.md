@@ -6,21 +6,19 @@ feature: Delivery Templates
 hide: true
 role: User
 exl-id: 40a03e04-56c7-48c0-95b8-aa7bf1121048
-TQID: https://experienceleague.adobe.com/5rlrthjXAnU8yfU1z67u-7uD0Z-pRfm0-Or5q7PBs-Q
+TQID: 'https://experienceleague.adobe.com/5rlrthjXAnU8yfU1z67u-7uD0Z-pRfm0-Or5q7PBs-Q'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
     internal-label: Campaign
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-    internal-label: User
-topic_v2:
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-    internal-label: Personalization
+  - id: fd6e6e36-54e4-4f1a-96fc-1a750e400d50
+    internal-label: Campaign Classic v7
 feature_v2:
   - id: b631758a-142d-425f-b9aa-f756d85cb979
     internal-label: Campaign Email Designer
   - id: c858a28b-ea19-49b0-8d48-828717fad89c
     internal-label: Prepare and test messages
+  - id: fc09322a-8f3d-5905-be3d-96adfa806a40
+    internal-label: Delivery Templates
 subfeature_v2:
   - id: e95a583b-fcfa-4524-8666-46a29c828119
     internal-label: Email messaging
@@ -30,7 +28,13 @@ subfeature_v2:
     internal-label: A/B testing
   - id: f4da0e76-df77-451e-ad61-21afb7bd8810
     internal-label: Manage deliverability
-source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+topic_v2:
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
+source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
 workflow-type: tm+mt
 source-wordcount: '391'
 ht-degree: 11%
@@ -95,18 +99,18 @@ ht-degree: 11%
 
 以下视频演示了如何为临时投放配置模板。
 
->[!VIDEO](https://video.tv.adobe.com/v/40849?captions=chi_hans&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/24066?quality=12)
 
 ### 如何设置投放模板属性
 
 以下视频介绍了如何设置投放模板属性，并详细说明每个属性。
 
->[!VIDEO](https://video.tv.adobe.com/v/38011?captions=chi_hans&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/24067?quality=12)
 
 ### 如何部署临时投放模板
 
 此视频介绍了如何部署临时电子邮件投放模板，并说明了电子邮件投放与投放工作流之间的区别。
 
->[!VIDEO](https://video.tv.adobe.com/v/27452?captions=chi_hans&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/24065?quality=12)
 
 [此处](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hans)提供了其他 Campaign Classic 操作方法视频。

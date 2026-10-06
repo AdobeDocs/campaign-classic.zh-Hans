@@ -8,9 +8,20 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 3e55d7f5-2858-4390-bba9-8fb5be0c3d98
-feature_v2: []
-subfeature_v2: []
-source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
+product_v2:
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: fd6e6e36-54e4-4f1a-96fc-1a750e400d50
+    internal-label: Campaign Classic v7
+feature_v2:
+  - id: 7f0a1ee5-eeb8-5478-a9cd-b1896f033118
+    internal-label: Instance Settings
+  - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
+subfeature_v2:
+  - id: e656c701-3899-4db3-989c-de0980ddfffa
+    internal-label: Installation
+source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
 workflow-type: tm+mt
 source-wordcount: '1072'
 ht-degree: 2%
@@ -27,7 +38,7 @@ ht-degree: 2%
 
 >[!CAUTION]
 >
->设置中间源服务器并首次运行[同步工作流](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows.html?lang=zh-Hans){target="_blank"}后，请确保不更新中间源外部帐户的内部名称。
+>设置中间源服务器并首次运行[同步工作流](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows.html){target="_blank"}后，请确保不更新中间源外部帐户的内部名称。
 
 ## 安装和配置实例的步骤 {#steps-for-installing-and-configuring-an-instance}
 
@@ -125,7 +136,7 @@ ht-degree: 2%
 
    ![](assets/mid_recette_user_restrictions.png)
 
-1. 使用以下命令重新启动Web模块： **&#x200B; web**。
+1. 使用以下命令重新启动Web模块： ** web**。
 
 您必须更改serverConf.xml文件中的中间源服务器设置。 必须将以下行添加到“使用IP地址管理关联性”部分的现有行下：
 
@@ -139,9 +150,9 @@ ht-degree: 2%
 
 “marketing_account_operator_name”与在中间源实例中声明的中间源帐户的内部名称相关。
 
-“affinity_name”与为关联指定的任意名称相关。 此名称必须是唯一的。 授权字符为`[a-z]`&#x200B;`[A-Z]`&#x200B;`[0-9]`。 目标是声明一组公共IP地址。
+“affinity_name”与为关联指定的任意名称相关。 此名称必须是唯一的。 授权字符为`[a-z]``[A-Z]``[0-9]`。 目标是声明一组公共IP地址。
 
-“affinity_group”与每个投放中使用的目标映射中声明的子关联相关联。 如果没有Sub-affinity，则忽略包含“。”的最后一部分。 授权字符为`[a-z]`&#x200B;`[A-Z]`&#x200B;`[0-9]`。
+“affinity_group”与每个投放中使用的目标映射中声明的子关联相关联。 如果没有Sub-affinity，则忽略包含“。”的最后一部分。 授权字符为`[a-z]``[A-Z]``[0-9]`。
 
 您必须停止然后重新启动服务器，以便考虑修改。
 

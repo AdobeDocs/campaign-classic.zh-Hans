@@ -7,10 +7,12 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 exl-id: a979cd99-afa7-4ce6-ba0f-9495089cba08
-TQID: https://experienceleague.adobe.com/ZyGxEznt4l0SbCiUySGjKwJwqSUCKJ-TjwGHltVWIzE
+TQID: 'https://experienceleague.adobe.com/ZyGxEznt4l0SbCiUySGjKwJwqSUCKJ-TjwGHltVWIzE'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
     internal-label: Campaign
+  - id: fd6e6e36-54e4-4f1a-96fc-1a750e400d50
+    internal-label: Campaign Classic v7
 feature_v2:
   - id: b82389f8-9b5e-4083-8e3b-3cef299fb8b9
     internal-label: Schemas
@@ -23,6 +25,10 @@ subfeature_v2:
     internal-label: PI
   - id: eff19c99-440a-4318-b319-444edc4d8d8f
     internal-label: Upgrade
+  - id: e656c701-3899-4db3-989c-de0980ddfffa
+    internal-label: Installation
+  - id: ca3c1dd6-bdd2-41a9-bc5a-e35f5cca9e63
+    internal-label: Application settings
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
     internal-label: Implementation
@@ -32,7 +38,7 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 4c295c0dabae8aba298390a3da2422a3fa1219f9
+source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
 workflow-type: tm+mt
 source-wordcount: '3898'
 ht-degree: 1%
@@ -44,7 +50,7 @@ ht-degree: 1%
 
 >[!CAUTION]
 >
->* 此页面中未列出的选项仅供内部使用，不能修改&#x200B;**&#x200B;**。
+>* 此页面中未列出的选项仅供内部使用，不能修改&#x200B;****。
 >
 >* 修改或更新Adobe Campaign选项只能由专家用户执行。
 
@@ -80,7 +86,7 @@ ht-degree: 1%
   </tr>
   <tr> 
    <td> <span class="uicontrol">NMS_ActivateOwnerConfirmation</span> <br /> </td> 
-   <td><p> 允许您允许负责投放的操作员确认发送，如果指定了特定操作员或操作员组来在投放的属性中开始投放。</p><p> 要执行此操作，请通过输入“1”作为值激活选项。 要停用此选项，请输入“0”。</p><p> 然后，发送确认流程将默认运行：只有投放属性中为发送指定的操作员或操作员组（或管理员）才能确认并执行发送。 请参阅<a href="https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-deliveries.html?lang=zh-Hans#start-a-delivery" target="_blank">此小节</a>。</p> </td>
+   <td><p> 允许您允许负责投放的操作员确认发送，如果指定了特定操作员或操作员组来在投放的属性中开始投放。</p><p> 要执行此操作，请通过输入“1”作为值激活选项。 要停用此选项，请输入“0”。</p><p> 然后，发送确认流程将默认运行：只有投放属性中为发送指定的操作员或操作员组（或管理员）才能确认并执行发送。 请参阅<a href="https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-deliveries.html#start-a-delivery" target="_blank">此小节</a>。</p> </td>
 
 <tr> 
    <td> <span class="uicontrol">Nms_DefaultRcpSchema</span> <br /> </td> 
@@ -232,7 +238,7 @@ ht-degree: 1%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsOperation_DeliveryPreparationWindow</span> <br /> </td> 
-   <td><p>此选项由<span class="uicontrol"><a href="https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows.html?lang=zh-Hans" target="_blank">operationMgt</a></span>技术工作流在计数正在运行的投放数量时使用。</p>利用此功能，可定义天数，超过该天数后，状态不一致的投放将从运行的投放计数中排除。</p><p>默认情况下，该值设置为“7”，这意味着将排除超过7天的不一致投放。</p></td> 
+   <td><p>此选项由<span class="uicontrol"><a href="https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows.html" target="_blank">operationMgt</a></span>技术工作流在计数正在运行的投放数量时使用。</p>利用此功能，可定义天数，超过该天数后，状态不一致的投放将从运行的投放计数中排除。</p><p>默认情况下，该值设置为“7”，这意味着将排除超过7天的不一致投放。</p></td> 
   </tr>
   <tr> 
    <td> <span class="uicontrol">NmsPaper_SenderLine1</span> <br /> </td> 
@@ -389,7 +395,7 @@ ht-degree: 1%
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsOperation_OperationMgtDebug</span> <br /> </td> 
-   <td> 允许您监视<a href="https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows.html?lang=zh-Hans" target="_blank">operationMgt</a>技术工作流的执行。 激活后（值为“1”），执行信息将记录在工作流审核日志中。<br /> </td> 
+   <td> 允许您监视<a href="https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows.html" target="_blank">operationMgt</a>技术工作流的执行。 激活后（值为“1”），执行信息将记录在工作流审核日志中。<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsOperation_TimeRange</span> <br /> </td> 

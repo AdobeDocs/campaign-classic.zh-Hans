@@ -5,12 +5,20 @@ description: 了解如何安装Campaign内置软件包
 feature: Installation, Application Settings
 badge-v7-prem: label="On-premise/hybrid only" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hans" tooltip="Applies to on-premise and hybrid deployments only"
 exl-id: 2bc077c4-ed65-4157-bfc9-df5d0442f476
-TQID: https://experienceleague.adobe.com/o-8uf081NQCy3ZB8mmLk0Gm8J9Pu--Zh4znqn3HUjr0
+TQID: 'https://experienceleague.adobe.com/o-8uf081NQCy3ZB8mmLk0Gm8J9Pu--Zh4znqn3HUjr0'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
     internal-label: Campaign
-feature_v2: []
-subfeature_v2: []
+  - id: fd6e6e36-54e4-4f1a-96fc-1a750e400d50
+    internal-label: Campaign Classic v7
+feature_v2:
+  - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
+subfeature_v2:
+  - id: e656c701-3899-4db3-989c-de0980ddfffa
+    internal-label: Installation
+  - id: ca3c1dd6-bdd2-41a9-bc5a-e35f5cca9e63
+    internal-label: Application settings
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
     internal-label: Reporting
@@ -18,7 +26,7 @@ topic_v2:
     internal-label: Optimization
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: bb41e9407ab5853b0194bb325bbf3f17bc3ea232
+source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
 workflow-type: tm+mt
 source-wordcount: '1369'
 ht-degree: 7%
@@ -77,7 +85,7 @@ ht-degree: 7%
   </tr> 
   <tr> 
    <td> 营销活动（营销活动）<br /> </td> 
-   <td> 定义、优化、执行和分析通信和营销活动。 <a href="https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html?lang=zh-Hans" target="_blank">了解更多</a><br /> </td> 
+   <td> 定义、优化、执行和分析通信和营销活动。 <a href="https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html" target="_blank">了解更多</a><br /> </td> 
    <td> 营销</td>
   </tr> 
   <tr> 
@@ -170,7 +178,7 @@ ht-degree: 7%
   </tr> 
   <tr> 
    <td> 访问外部数据（联合数据访问）<br /> </td> 
-   <td> 提供联合数据访问(FDA)选项，以处理存储在一个或多个外部数据库中的信息，以便您能够访问外部数据而不改变Adobe Campaign数据的结构。  可选。 <a href="https://experienceleague.adobe.com/docs/campaign/automation/workflows/advanced-management/accessing-an-external-database-fda.html?lang=zh-Hans" target="_blank">了解更多</a> <br /> </td> 
+   <td> 提供联合数据访问(FDA)选项，以处理存储在一个或多个外部数据库中的信息，以便您能够访问外部数据而不改变Adobe Campaign数据的结构。  可选。 <a href="https://experienceleague.adobe.com/docs/campaign/automation/workflows/advanced-management/accessing-an-external-database-fda.html" target="_blank">了解更多</a> <br /> </td> 
    <td> 所有<br /> </td> 
   </tr> 
   <tr> 
@@ -185,7 +193,7 @@ ht-degree: 7%
   </tr> 
   <tr> 
    <td> 优惠券管理<br /> </td> 
-   <td> 创建一组优惠券以添加到即将推出的营销优惠中。 可选。 <a href="https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalized-coupons.html?lang=zh-Hans" target="_blank">了解更多</a> <br /> </td> 
+   <td> 创建一组优惠券以添加到即将推出的营销优惠中。 可选。 <a href="https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalized-coupons.html" target="_blank">了解更多</a> <br /> </td> 
    <td> 营销<br /> </td> 
   </tr> 
   <tr> 
@@ -240,7 +248,7 @@ ht-degree: 7%
   </tr> 
   <tr> 
    <td> AMP支持<br /> </td> 
-   <td> 使您能够使用新的交互式AMP作为电子邮件格式，并发送动态电子邮件。 可选。 <a href="https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-interactive-content.html?lang=zh-Hans" target="_blank">了解更多</a> <br /> </td> 
+   <td> 使您能够使用新的交互式AMP作为电子邮件格式，并发送动态电子邮件。 可选。 <a href="https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-interactive-content.html" target="_blank">了解更多</a> <br /> </td> 
    <td> 全部 </td> 
   </tr> 
   <tr> 

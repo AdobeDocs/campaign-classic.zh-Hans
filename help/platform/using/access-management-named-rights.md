@@ -6,10 +6,12 @@ feature: Access Management, Permissions
 role: User, Admin
 level: Beginner
 exl-id: 07470a91-d8d2-4c41-9555-05522c8068f0
-TQID: https://experienceleague.adobe.com/GApH-ZtovMX--PzISD-Pvafo3pfcbG-OqHzp5kCvcNQ
+TQID: 'https://experienceleague.adobe.com/GApH-ZtovMX--PzISD-Pvafo3pfcbG-OqHzp5kCvcNQ'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
     internal-label: Campaign
+  - id: fd6e6e36-54e4-4f1a-96fc-1a750e400d50
+    internal-label: Campaign Classic v7
 feature_v2:
   - id: a658c786-869b-4194-a780-2594d663adda
     internal-label: Data management
@@ -26,6 +28,8 @@ subfeature_v2:
     internal-label: Query Editor
   - id: efa38731-2723-4334-8d8b-a778af834835
     internal-label: Access management
+  - id: e3988c18-3cfa-4f16-b812-ac2d2b1056fa
+    internal-label: Permissions
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
@@ -41,7 +45,7 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
+source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
 workflow-type: tm+mt
 source-wordcount: '652'
 ht-degree: 4%
@@ -58,13 +62,13 @@ ht-degree: 4%
 
   >[!IMPORTANT]
   >
-  >**迁移到IMS后：**&#x200B;迁移到Adobe Identity Management System (IMS)后，任何产品配置文件或命名权限在其名称中包含“管理员”一词（如“管理员”、“管理员”、“管理员”等） 将自动授予对Campaign控制面板的访问权限。 我们建议避免在命名权限或角色名称中使用“admin”，除非您希望这些用户具有控制面板访问权限。 了解有关[IMS迁移](../../technotes/using/migrate-users-to-ims.md)和[管理控制面板访问权限](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=zh-Hans){target="_blank"}的更多信息。
+  >**迁移到IMS后：**&#x200B;迁移到Adobe Identity Management System (IMS)后，任何产品配置文件或命名权限在其名称中包含“管理员”一词（如“管理员”、“管理员”、“管理员”等） 将自动授予对Campaign控制面板的访问权限。 我们建议避免在命名权限或角色名称中使用“admin”，除非您希望这些用户具有控制面板访问权限。 了解有关[IMS迁移](../../technotes/using/migrate-users-to-ims.md)和[管理控制面板访问权限](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html){target="_blank"}的更多信息。
 
 * **[!UICONTROL APPROVAL ADMINISTRATION]**：您可以在工作流和投放中设置多个批准步骤，以确保当前状态已由分配的操作员或组批准。 具有&#x200B;**[!UICONTROL APPROVAL ADMINISTRATION]**&#x200B;权限的用户可以设置批准步骤，还可以分配应批准这些步骤的操作员或操作员组。
 
   >[!IMPORTANT]
   >
-  >**迁移到IMS后：**&#x200B;产品配置文件或包含“管理员”一词的已命名权限（如“审批管理员”）将授予对Campaign控制面板的访问权限。 了解有关[IMS迁移](../../technotes/using/migrate-users-to-ims.md)和[管理控制面板访问权限](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=zh-Hans){target="_blank"}的更多信息。
+  >**迁移到IMS后：**&#x200B;产品配置文件或包含“管理员”一词的已命名权限（如“审批管理员”）将授予对Campaign控制面板的访问权限。 了解有关[IMS迁移](../../technotes/using/migrate-users-to-ims.md)和[管理控制面板访问权限](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html){target="_blank"}的更多信息。
 
 * **[!UICONTROL CENTRAL]**：集中管理（分布式营销）权限。
 
@@ -86,7 +90,7 @@ ht-degree: 4%
 
 * **[!UICONTROL PREPARE DELIVERIES]**：有权创建、编辑和保存投放。 具有&#x200B;**[!UICONTROL PREPARE DELIVERIES]**&#x200B;权限的用户也可以启动投放分析流程。
 
-* **[!UICONTROL PRIVACY DATA RIGHT]**：有权收集和删除隐私数据。 有关详细信息，请参见此 [&#x200B; 页面](https://helpx.adobe.com/cn/campaign/kb/acc-privacy.html)。
+* **[!UICONTROL PRIVACY DATA RIGHT]**：有权收集和删除隐私数据。 有关详细信息，请参见此 [ 页面](https://helpx.adobe.com/cn/campaign/kb/acc-privacy.html)。
 
 * **[!UICONTROL PROGRAM EXECUTION]**：有权执行各种编程语言的命令。
 
@@ -96,7 +100,7 @@ ht-degree: 4%
 
 * **[!UICONTROL START DELIVERIES]**：有权批准以前分析的投放。 投放分析后，投放将在各种审批步骤暂停，并且需要获得审批才能恢复。 允许具有&#x200B;**[!UICONTROL START DELIVERIES]**&#x200B;权限的用户批准投放。
 
-* **[!UICONTROL USE SQL DATA MANAGEMENT ACTIVITY]**：有权使用SQL数据管理活动编写您自己的SQL脚本，以便创建和填充工作表。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/sql-data-management.html?lang=zh-Hans){target="_blank"}。
+* **[!UICONTROL USE SQL DATA MANAGEMENT ACTIVITY]**：有权使用SQL数据管理活动编写您自己的SQL脚本，以便创建和填充工作表。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/sql-data-management.html){target="_blank"}。
 
 * **[!UICONTROL WORKFLOW]**：有权执行工作流。 如果没有此权限，用户将无法启动、停止或重新启动工作流。
 
@@ -112,4 +116,4 @@ ht-degree: 4%
 
 [此处](/help/platform/using/assets/access-rights-matrix.pdf)提供Adobe Campaign访问权限矩阵。
 
-[![image](assets/do-not-localize/user_management.png)](https://experienceleague.adobe.com/docs/campaign-classic/assets/access-rights-matrix.pdf?lang=zh-Hans)
+[![image](assets/do-not-localize/user_management.png)](https://experienceleague.adobe.com/docs/campaign-classic/assets/access-rights-matrix.pdf)

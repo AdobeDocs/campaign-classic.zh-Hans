@@ -4,22 +4,30 @@ description: 了解有关更改数据源活动的更多信息
 feature: Workflows, Data Management, Federated Data Access
 hide: true
 exl-id: d7bf9d62-6f9e-415f-8160-446210f6392e
-TQID: https://experienceleague.adobe.com/VhOrIcFK-BbCuzPTC6Y8Px8u-VY0-4O86F8z8muZIHM
+TQID: 'https://experienceleague.adobe.com/VhOrIcFK-BbCuzPTC6Y8Px8u-VY0-4O86F8z8muZIHM'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
     internal-label: Campaign
-topic_v2:
-  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+  - id: fd6e6e36-54e4-4f1a-96fc-1a750e400d50
+    internal-label: Campaign Classic v7
+feature_v2:
+  - id: a658c786-869b-4194-a780-2594d663adda
     internal-label: Data management
-feature_v2: []
 subfeature_v2:
   - id: ee25c34b-ea50-427b-9369-ba0a160f7d70
-    internal-label: Workflow HeatMap
+    internal-label: HeatMap
   - id: b5f0aaf4-1e48-400d-95ac-6eb3078cf22f
     internal-label: Execution activities
   - id: d1110311-2ca4-442b-be37-088a6db845ee
     internal-label: Data Management activities
-source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
+  - id: fcb46c0f-76e1-48bc-9dd0-fcf9d97526cf
+    internal-label: Workflows
+  - id: ee3dfd63-9a21-4961-9f24-ea3385284a21
+    internal-label: Federated Data Access
+topic_v2:
+  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+    internal-label: Data management
+source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
 workflow-type: tm+mt
 source-wordcount: '280'
 ht-degree: 3%
@@ -32,11 +40,11 @@ ht-degree: 3%
 
 **[!UICONTROL Change data source]**&#x200B;活动允许您更改工作流&#x200B;**[!UICONTROL Working table]**&#x200B;的数据源。 这为跨不同数据源（如FDA、FFDA和本地数据库）管理数据提供了更大的灵活性。
 
-**[!UICONTROL Working table]**&#x200B;允许Adobe Campaign Classic工作流处理数据并与工作流活动共享数据。
+**[!UICONTROL Working table]**允许Adobe Campaign Classic工作流处理数据并与工作流活动共享数据。
 默认情况下，**[!UICONTROL Working table]**&#x200B;与我们查询的数据源在同一数据库中创建。
 
 例如，在查询存储在云数据库上的&#x200B;**[!UICONTROL Profiles]**&#x200B;表时，您将在同一云数据库上创建&#x200B;**[!UICONTROL Working table]**。
-若要更改此设置，您可以添加&#x200B;**[!UICONTROL Change Data Source]**&#x200B;活动以为&#x200B;**[!UICONTROL Working table]**&#x200B;选择其他数据源。
+若要更改此设置，您可以添加**[!UICONTROL Change Data Source]**&#x200B;活动以为&#x200B;**[!UICONTROL Working table]**&#x200B;选择其他数据源。
 
 请注意，在使用&#x200B;**[!UICONTROL Change Data Source]**&#x200B;活动时，您需要切换回云数据库以继续执行工作流。
 

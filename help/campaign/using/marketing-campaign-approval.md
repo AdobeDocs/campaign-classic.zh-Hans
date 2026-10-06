@@ -7,10 +7,12 @@ role: User
 feature: Approvals, Campaigns
 hide: true
 exl-id: 8cbb2445-f5e4-4a25-ba7e-56e39ca9d3ce
-TQID: https://experienceleague.adobe.com/xRSXwdwAWrtY5l-khF8ewhOZR9IUvTl3aWLO3eb-6cw
+TQID: 'https://experienceleague.adobe.com/xRSXwdwAWrtY5l-khF8ewhOZR9IUvTl3aWLO3eb-6cw'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
     internal-label: Campaign
+  - id: fd6e6e36-54e4-4f1a-96fc-1a750e400d50
+    internal-label: Campaign Classic v7
 feature_v2:
   - id: a075b2c1-7748-4328-b7f6-343aa314616a
     internal-label: Campaigns
@@ -18,11 +20,15 @@ feature_v2:
     internal-label: Administration
   - id: afa4204e-6d08-4e29-bc35-26aafb656d48
     internal-label: Profiles and audiences
+  - id: a658c786-869b-4194-a780-2594d663adda
+    internal-label: Data management
 subfeature_v2:
   - id: e3988c18-3cfa-4f16-b812-ac2d2b1056fa
     internal-label: Permissions
   - id: f863efa9-030c-4466-a2b8-a52aea6b722c
     internal-label: Subscription services
+  - id: ce296ecd-3d06-45ab-83c3-37214e8ce31c
+    internal-label: Approvals
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
@@ -33,7 +39,7 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: c35995a47788db080636c66827a4bd6dc98806cf
+source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
 workflow-type: tm+mt
 source-wordcount: '2672'
 ht-degree: 0%
@@ -73,7 +79,7 @@ ht-degree: 0%
 
 可以为营销活动模板、单独为每个营销活动或投放启用批准。
 
-在营销活动模板（**[!UICONTROL Properties]** > **[!UICONTROL Advanced campaign settings...]** > **[!UICONTROL Approvals]**&#x200B;选项卡）中选择了所有需要审批的作业。 除非禁用此选项，否则还将选择负责审批的操作员并接收通知。 有关详细信息，请参阅批准投放[&#128279;](#approving-processes)的步骤。
+在营销活动模板（**[!UICONTROL Properties]** > **[!UICONTROL Advanced campaign settings...]** > **[!UICONTROL Approvals]**&#x200B;选项卡）中选择了所有需要审批的作业。 除非禁用此选项，否则还将选择负责审批的操作员并接收通知。 有关详细信息，请参阅批准投放](#approving-processes)的[步骤。
 
 可以覆盖使用此模板创建的每个营销活动的这些设置，也可以覆盖每个营销活动投放的这些设置：单击&#x200B;**[!UICONTROL Properties]**&#x200B;按钮，然后单击&#x200B;**[!UICONTROL Approvals]**&#x200B;选项卡。
 

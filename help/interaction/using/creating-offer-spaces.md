@@ -7,15 +7,20 @@ audience: interaction
 content-type: reference
 topic-tags: managing-environments
 exl-id: bdda98f7-a083-4f3b-b691-c28ec79af780
-TQID: https://experienceleague.adobe.com/sfD2AC1pBRsuvD-SScCQRjB1oL5ok55ZOEaoGuLhzmQ
+TQID: 'https://experienceleague.adobe.com/sfD2AC1pBRsuvD-SScCQRjB1oL5ok55ZOEaoGuLhzmQ'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
     internal-label: Campaign
+  - id: fd6e6e36-54e4-4f1a-96fc-1a750e400d50
+    internal-label: Campaign Classic v7
 feature_v2:
   - id: b6fcaf36-3bc4-4604-94f3-81b5d3f41ecf
     internal-label: Offer Management
-subfeature_v2: []
-source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
+  - id: 65702805-0026-5ca1-843a-144fa79f0883
+    internal-label: Interaction
+  - id: ea08db70-4682-59a2-9408-9aedd9548e07
+    internal-label: Offers
+source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
 workflow-type: tm+mt
 source-wordcount: '999'
 ht-degree: 2%
@@ -135,7 +140,7 @@ HTML或XML渲染是通过渲染函数创建的。 渲染函数中定义的字段
 <BASE_URL>?a=UpdateStatus&p=<PRIMARY_KEY_OF_THE_PROPOSITION>&st=<NEW_STATUS_OF_THE_PROPOSITION>&r=<REDIRECT_URL>
 ```
 
-例如，与&#x200B;**Neobank400045&rbrace;网站上显示的**&#x200B;家庭保险&#x200B;**优惠匹配的建议（标识符**&#x200B;**）包含以下URL：**
+例如，与&#x200B;**Neobank400045}网站上显示的**&#x200B;家庭保险&#x200B;**优惠匹配的建议（标识符****）包含以下URL：**
 
 ```
 <BASE_URL>?a=UpdateStatus&p=<40004>&st=<3>&r=<"http://www.neobank.com/insurance/subscribe.html">

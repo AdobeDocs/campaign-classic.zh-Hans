@@ -4,7 +4,20 @@ title: 迁移到Adobe Analytics 2.0 API
 description: Campaign Classic - Adobe Analytics 2.0 API迁移指南
 feature: Technote, Analytics Integration
 hide: true
-source-git-commit: 64460d51b002a7821bba9c2998d9ccccab3046ad
+product_v2:
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: fd6e6e36-54e4-4f1a-96fc-1a750e400d50
+    internal-label: Campaign Classic v7
+feature_v2:
+  - id: ab81f6c3-9317-564f-af92-6670a8784294
+    internal-label: Technote
+  - id: d5ef99fa-df0c-4153-bf94-105ad0724167
+    internal-label: Integrations
+subfeature_v2:
+  - id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
+    internal-label: Analytics integration
+source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
 workflow-type: tm+mt
 source-wordcount: '874'
 ht-degree: 1%
@@ -51,8 +64,8 @@ Adobe Analytics 1.4 API的[生命周期即将结束](https://developer.adobe.com
       ```
 
    1. 在SFTP服务器上将Adobe Analytics添加到允许列表，因为再营销导出仅从一组固定的Adobe IP范围启动：
-      * [查找当前的Adobe Analytics数据收集IP地址](https://experienceleague.adobe.com/zh-hans/docs/core-services/interface/data-collection/ip-addresses){target="_blank"}，并将其添加到您的SFTP服务器的允许列表。 基于FTP的Analytics导出（包括数据馈送）仅源自伦敦、俄勒冈和新加坡地区的IPv4地址。
-      * [检索Adobe Analytics公共密钥](https://experienceleague.adobe.com/zh-hans/docs/experience-cloud-kcs/kbarticles/ka-18141){target="_blank"}并将其添加到SFTP服务器上的`authorized_keys`文件中，以便Analytics能够进行身份验证。
+      * [查找当前的Adobe Analytics数据收集IP地址](https://experienceleague.adobe.com/en/docs/core-services/interface/data-collection/ip-addresses){target="_blank"}，并将其添加到您的SFTP服务器的允许列表。 基于FTP的Analytics导出（包括数据馈送）仅源自伦敦、俄勒冈和新加坡地区的IPv4地址。
+      * [检索Adobe Analytics公共密钥](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-18141){target="_blank"}并将其添加到SFTP服务器上的`authorized_keys`文件中，以便Analytics能够进行身份验证。
 1. 通过在Campaign Explorer树中的&#x200B;**[!UICONTROL Administration]> [!UICONTROL Platform] >[!UICONTROL Options]**&#x200B;下创建或将选项的`longvalue`设置为[!UICONTROL xtkOption]中的`1`，在实例上启用`FEATUREFLAG_USE_ANALYTICS_20_API`功能标记。 无论上述哪种用例适用于您，都需要执行此步骤。
 1. 在停用任何旧连接之前，通过实施适用于您的实例的每个用例来验证迁移(发送测试活动，检查指标是否进入Analytics，并确认再营销数据（如果适用）)。
 
@@ -81,7 +94,7 @@ Adobe Analytics 1.4 API的[生命周期即将结束](https://developer.adobe.com
 
 1. 单击 **[!UICONTROL Save]**。
 
-在下一步配置外部帐户时，Campaign将自动搜索此分类集。 有关分类集的详细信息，请参阅[Adobe Analytics文档](https://experienceleague.adobe.com/zh-hans/docs/analytics/components/classifications/sets/create-set){target="_blank"}。
+在下一步配置外部帐户时，Campaign将自动搜索此分类集。 有关分类集的详细信息，请参阅[Adobe Analytics文档](https://experienceleague.adobe.com/en/docs/analytics/components/classifications/sets/create-set){target="_blank"}。
 
 ## 是否需要帮助？ {#need-help}
 

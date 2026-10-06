@@ -8,20 +8,24 @@ audience: production
 content-type: reference
 topic-tags: database-maintenance
 exl-id: a586d70b-1b7f-47c2-a821-635098a70e45
-TQID: https://experienceleague.adobe.com/WmadkiwNNUMeQSnm8O4NJjnv1GQHvO6hZ9kqtoGBySA
+TQID: 'https://experienceleague.adobe.com/WmadkiwNNUMeQSnm8O4NJjnv1GQHvO6hZ9kqtoGBySA'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
     internal-label: Campaign
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-    internal-label: Implementation
-feature_v2: []
+  - id: fd6e6e36-54e4-4f1a-96fc-1a750e400d50
+    internal-label: Campaign Classic v7
+feature_v2:
+  - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
 subfeature_v2:
   - id: c03a11ff-bdf9-4e5b-b279-f468b4293464
     internal-label: Performance Monitoring
   - id: e519a22f-a06a-42fc-9d09-d78a3ab2c434
     internal-label: Monitoring guidelines
-source-git-commit: 72ba334fe01dfcf701438e8550ae14abae7bd323
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
+source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
 workflow-type: tm+mt
 source-wordcount: '1255'
 ht-degree: 2%
@@ -168,7 +172,7 @@ PostgreSQL不提供执行联机表重建的简单方法，因为VACUUM FULL语�
 
 以下是使用特定函数生成必要的DDL的表碎片整理示例。 以下SQL允许您创建两个新函数：**GenRebuildTablePart1**&#x200B;和&#x200B;**GenRebuildTablePart2**，它们可用于生成重建表所需的DDL。
 
-* 第一个函数允许您创建工作表（**_tmp**&#x200B;此处），它是原始表格的副本。
+* 第一个函数允许您创建工作表（**_tmp**此处），它是原始表格的副本。
 * 然后第二个函数删除原始表并重命名工作表及其索引。
 * 使用两个函数而不是一个函数意味着，如果第一个函数失败，则不会产生删除原始表格的风险。
 

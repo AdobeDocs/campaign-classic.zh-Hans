@@ -7,23 +7,19 @@ role: User, Developer
 level: Intermediate, Experienced
 hide: true
 exl-id: 95bc07cc-8837-4511-81bc-05fad28191c9
-TQID: https://experienceleague.adobe.com/cJ0deoAKq2ac-04v87YFRvwx-mqhrHyzQYxGmkvgKiY
+TQID: 'https://experienceleague.adobe.com/cJ0deoAKq2ac-04v87YFRvwx-mqhrHyzQYxGmkvgKiY'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
     internal-label: Campaign
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-    internal-label: User
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-    internal-label: Developer
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-    internal-label: Intermediate
+  - id: fd6e6e36-54e4-4f1a-96fc-1a750e400d50
+    internal-label: Campaign Classic v7
 feature_v2:
   - id: b631758a-142d-425f-b9aa-f756d85cb979
     internal-label: Campaign Email Designer
   - id: c858a28b-ea19-49b0-8d48-828717fad89c
     internal-label: Prepare and test messages
+  - id: a4671286-a59f-47e3-b97b-90627a1977d5
+    internal-label: Communication channels
 subfeature_v2:
   - id: e95a583b-fcfa-4524-8666-46a29c828119
     internal-label: Email messaging
@@ -33,7 +29,19 @@ subfeature_v2:
     internal-label: A/B testing
   - id: f4da0e76-df77-451e-ad61-21afb7bd8810
     internal-label: Manage deliverability
-source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
+  - id: a4657621-810c-498b-8a27-7ced9c176dda
+    internal-label: Push notifications
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
 workflow-type: tm+mt
 source-wordcount: '334'
 ht-degree: 13%
@@ -46,7 +54,7 @@ ht-degree: 13%
 
 要在Adobe Campaign中发送推送通知，您需要：
 
-* 为Neotrips移动应用程序创建&#x200B;**[!UICONTROL Mobile application]**&#x200B;类型信息服务。 请参阅iOS[&#128279;](configuring-the-mobile-application.md#configuring-ios-service)的此部分。 和[Android](configuring-the-mobile-application-android.md#configuring-android-service)的此分区。
+* 为Neotrips移动应用程序创建&#x200B;**[!UICONTROL Mobile application]**&#x200B;类型信息服务。 请参阅iOS](configuring-the-mobile-application.md#configuring-ios-service)的[此部分。 和[Android](configuring-the-mobile-application-android.md#configuring-android-service)的此分区。
 * 将应用程序的iOS和Android版本添加到此服务。
 * 为[iOS](create-notifications-ios.md)和[Android](create-notifications-android.md)创建投放。
 
@@ -60,7 +68,7 @@ ht-degree: 13%
 
 [!BADGE 内部部署和混合]{type=Caution url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hans" tooltip="仅适用于内部部署和混合部署"}
 
-![](assets/do-not-localize/how-to-video.png) [在视频中了解如何安装移动应用包](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/sending-messages/push-channel/installing-the-mobile-app-channel.html?lang=zh-Hans#sending-messages)
+![](assets/do-not-localize/how-to-video.png) [在视频中了解如何安装移动应用包](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/sending-messages/push-channel/installing-the-mobile-app-channel.html#sending-messages)
 
 作为混合/托管客户，请联系[Adobe客户关怀](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)团队以访问Campaign中的推送通知渠道。
 

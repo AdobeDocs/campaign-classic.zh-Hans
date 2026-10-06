@@ -8,17 +8,26 @@ audience: integrations
 content-type: reference
 topic-tags: connecting-via-an-adobe-id
 exl-id: b70ca220-1c81-4b23-b07a-a2cd694877fe
-feature_v2: []
+product_v2:
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: fd6e6e36-54e4-4f1a-96fc-1a750e400d50
+    internal-label: Campaign Classic v7
+feature_v2:
+  - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
 subfeature_v2:
   - id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
-    internal-label: Adobe Analytics integration
+    internal-label: Analytics integration
   - id: df0d6518-6f49-46e2-b46e-3bcc513f553f
-    internal-label: Adobe Experience Manager integration
+    internal-label: Experience Manager integration
   - id: eb007b6d-6e57-46ab-9485-3f24d6102304
-    internal-label: Adobe Experience Platform integration
+    internal-label: Experience Platform integration
   - id: b1fd1501-3105-4d6b-b4d4-9af53126df75
-    internal-label: Adobe Target integration
-source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
+    internal-label: Target integration
+  - id: a14877cc-63b1-41d9-bf0b-5f97cadd0417
+    internal-label: Configuration guidelines
+source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
 workflow-type: tm+mt
 source-wordcount: '368'
 ht-degree: 12%
@@ -33,7 +42,7 @@ ht-degree: 12%
 ## 先决条件 {#prerequisites}
 
 * 您必须具有Adobe Experience Cloud组织名称和ID。 要查找您的组织ID，请参阅[此页面](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=zh-Hans){_blank}。
-* 您必须在Experience Cloud中添加用户。 有关详细信息，请参见[此页面](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html?lang=zh-Hans){_blank}。
+* 您必须在Experience Cloud中添加用户。 有关详细信息，请参见[此页面](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html){_blank}。
 
 >[!NOTE]
 >
@@ -57,7 +66,7 @@ ht-degree: 12%
 
 输入以下信息：
 
-* 使用的IMS服务器的连接信息（ID和密码）。 此信息由Adobe客户关怀团队提供。 有关详细信息，请参阅[Adobe Experience Cloud管理员常见问题解答](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/faq.html?lang=zh-Hans)。
+* 使用的IMS服务器的连接信息（ID和密码）。 此信息由Adobe客户关怀团队提供。 有关详细信息，请参阅[Adobe Experience Cloud管理员常见问题解答](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/faq.html)。
 
   必须在&#x200B;**https**&#x200B;中指定&#x200B;**[!UICONTROL Callback server]**&#x200B;地址。 此字段对应于Adobe Campaign实例的访问URL。
 

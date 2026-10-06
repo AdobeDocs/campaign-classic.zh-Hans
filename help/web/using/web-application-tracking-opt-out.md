@@ -5,10 +5,12 @@ description: 选择退出 Web 应用程序跟踪
 badge-v8: label="Also applies to v8" type="Positive" tooltip="Also applies to Campaign v8"
 feature: Web Apps
 exl-id: 4bff6b55-3335-433e-a2ff-5d8c83e8f0d3
-TQID: https://experienceleague.adobe.com/-5Bp8qdxH8DTEJ0-NASuorQrjwDMUmvuhBNbW1alqyc
+TQID: 'https://experienceleague.adobe.com/-5Bp8qdxH8DTEJ0-NASuorQrjwDMUmvuhBNbW1alqyc'
 product_v2:
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
     internal-label: Campaign
+  - id: fd6e6e36-54e4-4f1a-96fc-1a750e400d50
+    internal-label: Campaign Classic v7
 feature_v2:
   - id: a7760dfc-5c44-4d77-bb68-c50b1e265c93
     internal-label: Security and privacy
@@ -30,7 +32,7 @@ topic_v2:
     internal-label: Personalization
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
+source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
 workflow-type: tm+mt
 source-wordcount: '710'
 ht-degree: 2%
@@ -45,13 +47,13 @@ Adobe Campaign允许您停止跟踪通过Cookie或Web信标选择退出行为跟
 
 >[!NOTE]
 >
->当脚本编写始终遵循[安全和隐私核对清单](https://helpx.adobe.com/cn/campaign/kb/acc-security.html#dev)中所述的准则时。
+>当脚本编写始终遵循[安全和隐私核对清单](https://helpx.adobe.com/campaign/kb/acc-security.html#dev)中所述的准则时。
 
 ## 配置横幅 {#configuring-the-banner-}
 
 要在Web应用程序或登陆页面中显示，需要配置横幅。
 
-Adobe Campaign附带一个横幅示例，您必须根据自己的需求进行调整。 此横幅版本在内容模型文件夹中显示为个性化块。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html?lang=zh-Hans){target="_blank"}。
+Adobe Campaign附带一个横幅示例，您必须根据自己的需求进行调整。 此横幅版本在内容模型文件夹中显示为个性化块。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html){target="_blank"}。
 
 >[!IMPORTANT]
 >
