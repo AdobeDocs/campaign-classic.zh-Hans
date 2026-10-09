@@ -22,6 +22,8 @@ feature_v2:
     internal-label: Prepare and test messages
   - id: 13af5358-448e-5a4a-850b-0db592bb0f8f
     internal-label: Personalization
+  - id: a4671286-a59f-47e3-b97b-90627a1977d5
+    internal-label: Communication channels
 subfeature_v2:
   - id: e95a583b-fcfa-4524-8666-46a29c828119
     internal-label: Email messaging
@@ -37,14 +39,14 @@ role_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
 workflow-type: tm+mt
 source-wordcount: '1389'
 ht-degree: 6%
 ---
 # 生成个性化内容 {#build-personalized-content}
 
-在设计消息内容时，请尽量避免可能会阻止您执行投放的常见问题。 大多数时候，可能的错误与[个性化](about-personalization.md)、[格式化](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html?lang=zh-Hans#message-content){target="_blank"}和[图像](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html?lang=zh-Hans#adding-images){target="_blank"}有关。
+在设计消息内容时，请尽量避免可能会阻止您执行投放的常见问题。 大多数时候，可能的错误与[个性化](about-personalization.md)、[格式化](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html#message-content){target="_blank"}和[图像](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html#adding-images){target="_blank"}有关。
 
 ## 优化个性化 {#optimize-personalization}
 
@@ -87,7 +89,7 @@ ht-degree: 6%
 
 ### 主题行
 
-了解[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html?lang=zh-Hans#sender){target="_blank"}中的主题行以提高打开率：
+了解[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html#sender){target="_blank"}中的主题行以提高打开率：
 
 * 避免使用过长的主题。 最多使用50个字符
 
@@ -105,7 +107,7 @@ ht-degree: 6%
 
 **提示**：由于人为错误始终存在，因此请在每次发送前检查选择退出链接是否正常工作。 例如，在发送校样时，确保链接有效，表单处于联机状态且“不再联系此收件人”字段已更改为“是”。
 
-了解如何在此部分[&#128279;](personalization-blocks.md#personalization-blocks-example)中插入选择退出链接。
+了解如何在此部分](personalization-blocks.md#personalization-blocks-example)中插入选择退出链接[。
 
 ### 电子邮件大小
 
@@ -125,8 +127,8 @@ ht-degree: 6%
 
 默认情况下，短信的字符数应符合 GSM（全球移动通信系统）标准。 使用 GSM 编码的短信消息长度上限为 160 个字符，而对于分段发送的消息，每段短信的长度上限为 153 个字符。
 
-音译指的是，如果 GSM 标准无法识别某个短信字符，则会用另一个字符替换该字符。 请注意，将个性化字段插入短信消息内容，可能会引入GSM编码无法识别的字符。 您可以通过选中对应&#x200B;**[!UICONTROL External account]**&#x200B;的SMPP渠道设置选项卡中的对应框来授权字符音译。
-在本节[&#128279;](sms-set-up.md#creating-an-smpp-external-account)中了解更多。
+音译指的是，如果 GSM 标准无法识别某个短信字符，则会用另一个字符替换该字符。 请注意，将个性化字段插入短信消息内容，可能会引入GSM编码无法识别的字符。 您可以通过选中对应&#x200B;**[!UICONTROL External account]**的SMPP渠道设置选项卡中的对应框来授权字符音译。
+在本节](sms-set-up.md#creating-an-smpp-external-account)中了解更多[。
 
 **提示**：
 
@@ -134,7 +136,7 @@ ht-degree: 6%
 
 * 但是，如果短信消息包含许多GSM标准无法识别的字符，请启用音译以限制发送消息的成本。
 
-在本节[&#128279;](sms-set-up.md#about-character-transliteration)中了解更多。
+在本节](sms-set-up.md#about-character-transliteration)中了解更多[。
 
 ## 处理格式设置 {#formatting}
 
@@ -142,9 +144,9 @@ ht-degree: 6%
 
 * 更正&#x200B;**日期格式**： Adobe Campaign为JavaScript模板和XSL样式表提供了日期格式功能。 [了解详情](formatting.md#date-display)
 
-* 在电子邮件中使用&#x200B;**授权字符**：电子邮件地址的有效字符列表在“XtkEmail_Characters”选项中定义。 在本节[&#128279;](../../installation/using/configuring-campaign-options.md)中了解如何访问Campaign选项。 要正确处理特殊字符，需要使用Unicode安装Adobe Campaign。
+* 在电子邮件中使用&#x200B;**授权字符**：电子邮件地址的有效字符列表在“XtkEmail_Characters”选项中定义。 在本节](../../installation/using/configuring-campaign-options.md)中了解如何访问Campaign选项[。 要正确处理特殊字符，需要使用Unicode安装Adobe Campaign。
 
-* **电子邮件身份验证**&#x200B;的配置：确保电子邮件标头包含DKIM签名。 通过DKIM (Domain Keys Identified Mail)身份验证，接收电子邮件服务器可以验证邮件是否确实由它声明发送该邮件的人员或实体发送，以及邮件内容在最初发送时间（和DKIM“签名”）与接收时间之间是否进行了更改。 此标准通常使用发件人或发件人标头中的域。 有关详细信息，请参阅[Adobe可投放性最佳实践指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=zh-Hans#authentication)。
+* **电子邮件身份验证**&#x200B;的配置：确保电子邮件标头包含DKIM签名。 通过DKIM (Domain Keys Identified Mail)身份验证，接收电子邮件服务器可以验证邮件是否确实由它声明发送该邮件的人员或实体发送，以及邮件内容在最初发送时间（和DKIM“签名”）与接收时间之间是否进行了更改。 此标准通常使用发件人或发件人标头中的域。 有关详细信息，请参阅[Adobe可投放性最佳实践指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#authentication)。
 
 ### 响应式电子邮件设计
 
@@ -180,7 +182,7 @@ ht-degree: 6%
 
 * 您可以检查实例配置是否启用公共资源管理。 [了解详情](../../installation/using/deploying-an-instance.md#managing-public-resources)
 
-* 通过投放助手，您可以导入包含图像的HTML页面，或直接使用HTML编辑器通过&#x200B;**[!UICONTROL Image]**&#x200B;图标插入图像。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html?lang=zh-Hans#adding-images){target="_blank"}以了解详情。
+* 通过投放助手，您可以导入包含图像的HTML页面，或直接使用HTML编辑器通过&#x200B;**[!UICONTROL Image]**&#x200B;图标插入图像。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html#adding-images){target="_blank"}以了解详情。
 
 * 如果未显示图像，请检查图像在服务器上是否可用。 为此，请单击投放中的Source选项卡。 在Web浏览器中查找图像并复制粘贴每个图像的URL。 如果未显示图像，请联系您的IT管理员或提供投放内容的第三方供应商。
 
@@ -188,6 +190,6 @@ ht-degree: 6%
 
 Adobe建议预览您的消息以检查其个性化设置以及收件人如何看到您的投放。
 
-* 在投放助手中，**[!UICONTROL Preview]**&#x200B;子选项卡允许您查看收件人的每个内容的呈现。 将内容的个性化字段和条件元素替换为所选用户档案的相应信息。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html?lang=zh-Hans#message-content){target="_blank"}以了解详情。
+* 在投放助手中，**[!UICONTROL Preview]**&#x200B;子选项卡允许您查看收件人的每个内容的呈现。 将内容的个性化字段和条件元素替换为所选用户档案的相应信息。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html#message-content){target="_blank"}以了解详情。
 
 * 在每次预览期间执行自动反垃圾邮件检查。 在&#x200B;**[!UICONTROL Preview]**&#x200B;子选项卡中，检查[SpamAssassin](spamassassin.md)垃圾邮件评分。  单击&#x200B;**[!UICONTROL More...]**&#x200B;了解有关警告的详细信息。  在执行此操作之前，请确保已在Adobe Campaign应用程序服务器上正确安装和配置SpamAssassin。 [了解详情](../../installation/using/configuring-spamassassin.md)

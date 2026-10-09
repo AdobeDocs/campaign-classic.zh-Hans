@@ -19,6 +19,8 @@ feature_v2:
     internal-label: Prepare and test messages
   - id: fc09322a-8f3d-5905-be3d-96adfa806a40
     internal-label: Delivery Templates
+  - id: a4671286-a59f-47e3-b97b-90627a1977d5
+    internal-label: Communication channels
 subfeature_v2:
   - id: e95a583b-fcfa-4524-8666-46a29c828119
     internal-label: Email messaging
@@ -31,7 +33,7 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
 workflow-type: tm+mt
 source-wordcount: '200'
 ht-degree: 4%
@@ -49,4 +51,4 @@ ht-degree: 4%
 1. 预定义投放模板 — Adobe Campaign管理员可以创建新投放模板。 操作员（拥有适当访问权限的用户）可重复使用这些变量，服务器进程也可自动使用这些变量。 例如，您可以配置电子邮件投放模板，当用户使用此模板创建投放时，他们只需输入文本或HTML内容即可投放；管理员已定义其他选项。
 
 
-请参阅[Campaign v8文档](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/send/create-templates){target="_blank"}以了解如何创建和使用投放模板。
+请参阅[Campaign v8文档](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/create-templates){target="_blank"}以了解如何创建和使用投放模板。

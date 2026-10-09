@@ -14,6 +14,8 @@ product_v2:
 feature_v2:
   - id: a658c786-869b-4194-a780-2594d663adda
     internal-label: Data management
+  - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
 subfeature_v2:
   - id: ee25c34b-ea50-427b-9369-ba0a160f7d70
     internal-label: HeatMap
@@ -25,7 +27,7 @@ subfeature_v2:
     internal-label: Workflows
   - id: bce277d1-7efa-48d8-9a1b-b588bb45ba1c
     internal-label: Channels Activity
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
 workflow-type: tm+mt
 source-wordcount: '367'
 ht-degree: 14%
@@ -81,6 +83,6 @@ ht-degree: 14%
 
 本视频演示了如何使用增量查询配置连续投放。
 
->[!VIDEO](https://video.tv.adobe.com/v/27515?captions=chi_hans&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/25039?quality=12)
 
 [此处](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hans)提供了其他 Campaign Classic 操作方法视频。

@@ -19,6 +19,8 @@ feature_v2:
     internal-label: Profiles and audiences
   - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
     internal-label: Administration
+  - id: a658c786-869b-4194-a780-2594d663adda
+    internal-label: Data management
 subfeature_v2:
   - id: f529d0bd-1401-4c88-9833-43228cc1d40f
     internal-label: Profiles
@@ -40,7 +42,7 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
 workflow-type: tm+mt
 source-wordcount: '529'
 ht-degree: 4%
@@ -64,7 +66,7 @@ Explorer导航树的每个文件夹都具有附加的读、写和删除访问权
 
 ![](assets/s_ncs_user_add_folder_in_tree.png)
 
-可以自定义Explorer导航树。 在本节[&#128279;](adobe-campaign-workspace.md)中了解配置步骤和最佳实践。
+可以自定义Explorer导航树。 在本节](adobe-campaign-workspace.md)中了解配置步骤和最佳实践[。
 
 ### 什么是视图 {#about-views}
 

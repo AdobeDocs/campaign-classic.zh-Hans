@@ -14,6 +14,8 @@ product_v2:
 feature_v2:
   - id: a658c786-869b-4194-a780-2594d663adda
     internal-label: Data management
+  - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
 subfeature_v2:
   - id: ee25c34b-ea50-427b-9369-ba0a160f7d70
     internal-label: HeatMap
@@ -28,7 +30,7 @@ subfeature_v2:
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
 workflow-type: tm+mt
 source-wordcount: '1150'
 ht-degree: 14%
@@ -141,7 +143,7 @@ ht-degree: 14%
    * 第一列包含与事件一致的代码：购买（多或少于3,000欧元）、一次或多次购买不购买或退款。
    * 以下四列包含客户端的名字、姓氏、电子邮件和帐号。
 
-   要加载的文件的格式配置与Adobe Campaign中数据导入期间定义的配置一致。 有关更多信息，请参阅此[&#128279;](../../platform/using/executing-import-jobs.md#step-2---source-file-selection)章节。
+   要加载的文件的格式配置与Adobe Campaign中数据导入期间定义的配置一致。 有关更多信息，请参阅此](../../platform/using/executing-import-jobs.md#step-2---source-file-selection)章节[。
 
 1. 在拆分活动中，根据&#x200B;**Event**&#x200B;列值指定要创建的子集。
 

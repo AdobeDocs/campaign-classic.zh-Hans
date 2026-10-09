@@ -19,6 +19,8 @@ feature_v2:
     internal-label: Prepare and test messages
   - id: 50d1fd2e-0fc9-5627-bbc9-02dbc9d15e08
     internal-label: Email
+  - id: a4671286-a59f-47e3-b97b-90627a1977d5
+    internal-label: Communication channels
 subfeature_v2:
   - id: e95a583b-fcfa-4524-8666-46a29c828119
     internal-label: Email messaging
@@ -31,7 +33,7 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
 workflow-type: tm+mt
 source-wordcount: '126'
 ht-degree: 13%
@@ -49,5 +51,5 @@ ht-degree: 13%
 
    ![](assets/s_ncs_user_wizard_email01_1.png)
 
-1. 使用标签、代码和描述标识投放。 有关详细信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=zh-Hans#create-the-delivery){target="_blank"}中的此部分。
+1. 使用标签、代码和描述标识投放。 有关详细信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#create-the-delivery){target="_blank"}中的此部分。
 1. 单击&#x200B;**继续**&#x200B;以确认此信息并显示消息配置窗口。

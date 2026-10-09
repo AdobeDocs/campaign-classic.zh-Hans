@@ -14,6 +14,8 @@ product_v2:
 feature_v2:
   - id: a658c786-869b-4194-a780-2594d663adda
     internal-label: Data management
+  - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
 subfeature_v2:
   - id: ee25c34b-ea50-427b-9369-ba0a160f7d70
     internal-label: HeatMap
@@ -23,7 +25,7 @@ subfeature_v2:
     internal-label: Data Management activities
   - id: fcb46c0f-76e1-48bc-9dd0-fcf9d97526cf
     internal-label: Workflows
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
 workflow-type: tm+mt
 source-wordcount: '1187'
 ht-degree: 1%
@@ -80,7 +82,7 @@ ht-degree: 1%
 
   此操作将停止，然后重新启动工作流。 在大多数情况下，它可以更快地重新启动。 当停止需要一定时间时，自动重新启动也很有用：这是因为在工作流停止时，“Stop”命令不可用。
 
-  **[!UICONTROL Start / Pause / Stop / Restart]**&#x200B;操作也可通过工具栏中的执行图标使用。 有关更多信息，请参阅此[&#128279;](../../campaign/using/marketing-campaign-deliveries.md#creating-a-targeting-workflow)章节。
+  **[!UICONTROL Start / Pause / Stop / Restart]**&#x200B;操作也可通过工具栏中的执行图标使用。 有关更多信息，请参阅此](../../campaign/using/marketing-campaign-deliveries.md#creating-a-targeting-workflow)章节[。
 
   请注意，**重新启动**&#x200B;操作不会清除与&#x200B;**执行**、**停止**&#x200B;和&#x200B;**启动**&#x200B;操作（实例变量在启动操作时正在清除）相比较的工作流实例变量。 重新启动工作流时，实例变量仍可用于保留值。 要清除它们，您可以：
   * 执行&#x200B;**停止**&#x200B;和&#x200B;**启动**&#x200B;操作。
@@ -108,7 +110,7 @@ ht-degree: 1%
 
   此操作基于所选工作流创建新的工作流模板。 您需要指定保存该文件的文件夹（在&#x200B;**[!UICONTROL Folder]**&#x200B;字段中）。
 
-  **[!UICONTROL Mass update of selected lines]**&#x200B;和&#x200B;**[!UICONTROL Merge selected lines]**&#x200B;选项是所有&#x200B;**[!UICONTROL Actions]**&#x200B;菜单中均可用的通用平台选项。 有关更多信息，请参阅此[&#128279;](../../platform/using/updating-data.md)章节。
+  **[!UICONTROL Mass update of selected lines]**&#x200B;和&#x200B;**[!UICONTROL Merge selected lines]**&#x200B;选项是所有&#x200B;**[!UICONTROL Actions]**&#x200B;菜单中均可用的通用平台选项。 有关更多信息，请参阅此](../../platform/using/updating-data.md)章节[。
 
 
 ## 工作流执行最佳实践 {#workflow-execution-best-practices}

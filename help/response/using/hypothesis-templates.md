@@ -19,6 +19,8 @@ feature_v2:
     internal-label: Campaigns
   - id: baf8e746-117b-5e73-b179-0a83edc0295f
     internal-label: Templates
+  - id: c309ee4e-82e4-4f7e-b608-ef345678c34e
+    internal-label: Dynamic reporting
 subfeature_v2:
   - id: d72afaa0-c842-48c8-9a3c-51b7911edc1b
     internal-label: Response Management
@@ -27,7 +29,7 @@ topic_v2:
     internal-label: Reporting
   - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
     internal-label: Measurement
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
 workflow-type: tm+mt
 source-wordcount: '1401'
 ht-degree: 2%
@@ -82,7 +84,7 @@ ht-degree: 2%
   >
   >如果模板配置为考虑对照组，但在假设涉及的投放中未定义组，则结果将仅基于目标收件人。
 
-  有关定义和配置控制组的详细信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-target.html?lang=zh-Hans#add-a-control-group){target=_blank}。
+  有关定义和配置控制组的详细信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/marketing-campaign-target.html#add-a-control-group){target=_blank}。
 
 * **[!UICONTROL Channel]**：您可以通过选择下拉列表中的&#x200B;**[!UICONTROL All channels]**，选择特定的渠道或使假设验证模板可用于Adobe Campaign控制台中的所有渠道。 如果您为特定渠道配置模板，则可以在创建假设验证时，自动筛选每个渠道的投放。 [了解详情](creating-hypotheses.md)
 

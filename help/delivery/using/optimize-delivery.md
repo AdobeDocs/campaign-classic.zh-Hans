@@ -20,6 +20,8 @@ feature_v2:
     internal-label: Prepare and test messages
   - id: 63876777-85c3-57e1-a2da-81f02956c63c
     internal-label: Deliverability
+  - id: a4671286-a59f-47e3-b97b-90627a1977d5
+    internal-label: Communication channels
 subfeature_v2:
   - id: e95a583b-fcfa-4524-8666-46a29c828119
     internal-label: Email messaging
@@ -39,7 +41,7 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
 workflow-type: tm+mt
 source-wordcount: '749'
 ht-degree: 9%
@@ -60,7 +62,7 @@ ht-degree: 9%
 
   **提示** — 要避免这种情况，请与团队的其他成员协调投放计划，以确保最佳性能。
 
-* 工作流执行：监测工作流对于避免平台性能问题至关重要。 遵循本文档[&#128279;](../../workflow/using/workflow-best-practices.md#execution-and-performance)中列出的准则。
+* 工作流执行：监测工作流对于避免平台性能问题至关重要。 遵循本文档](../../workflow/using/workflow-best-practices.md#execution-and-performance)中列出的准则[。
 
 * 如果您符合条件，则可以利用[Campaign控制面板功能](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=zh-Hans)，通过[性能监控](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/about-performance-monitoring.html?lang=zh-Hans)功能来监控您的平台。
 
@@ -80,7 +82,7 @@ ht-degree: 9%
 
   * 在检查电子邮件的可投放性时，您需要重点关注四个主要类别：数据质量、邮件和内容、发送基础架构和信誉。 有关此主题的更深入探讨，请参阅[此部分](about-deliverability.md)。
 
-* 应用此文档[&#128279;](about-deliverability.md)中详细的建议。
+* 应用此文档](about-deliverability.md)中详细[的建议。
 
 * 请联系您的Adobe代表寻求帮助。
 

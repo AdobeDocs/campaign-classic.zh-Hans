@@ -18,6 +18,10 @@ feature_v2:
     internal-label: Profiles and audiences
   - id: a7760dfc-5c44-4d77-bb68-c50b1e265c93
     internal-label: Security and privacy
+  - id: a658c786-869b-4194-a780-2594d663adda
+    internal-label: Data management
+  - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
 subfeature_v2:
   - id: f529d0bd-1401-4c88-9833-43228cc1d40f
     internal-label: Profiles
@@ -34,7 +38,7 @@ subfeature_v2:
 topic_v2:
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
 workflow-type: tm+mt
 source-wordcount: '659'
 ht-degree: 91%
@@ -45,7 +49,7 @@ ht-degree: 91%
 
 Adobe Campaign 提供了一个 **API**，您可使用它设置一个自动隐私请求流程。
 
-使用 API 时，一般隐私处理流程与[使用 &#x200B;](privacy-requests-ui.md) 界面的流程相同。 唯一的区别是创建隐私请求。 会向 Campaign 发送包含请求信息的 POST，而不是在 Adobe Campaign 中创建请求。 对于每个请求，将在 **[!UICONTROL Privacy Requests]** 屏幕中添加一个新条目。 然后，隐私技术工作流会处理该请求，与处理使用界面添加的请求的方式相同。
+使用 API 时，一般隐私处理流程与[使用 ](privacy-requests-ui.md) 界面的流程相同。 唯一的区别是创建隐私请求。 会向 Campaign 发送包含请求信息的 POST，而不是在 Adobe Campaign 中创建请求。 对于每个请求，将在 **[!UICONTROL Privacy Requests]** 屏幕中添加一个新条目。 然后，隐私技术工作流会处理该请求，与处理使用界面添加的请求的方式相同。
 
 如果您使用 API 提交隐私请求，我们建议您在第一次删除请求时，使&#x200B;**两步流程**&#x200B;保持激活状态，以便测试返回的数据。 测试完成后，您可以取消激活两步流程，以便自动运行删除请求进程。
 

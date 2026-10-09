@@ -21,6 +21,8 @@ feature_v2:
     internal-label: Profiles and audiences
   - id: a7760dfc-5c44-4d77-bb68-c50b1e265c93
     internal-label: Security and privacy
+  - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
 subfeature_v2:
   - id: f529d0bd-1401-4c88-9833-43228cc1d40f
     internal-label: Profiles
@@ -35,7 +37,7 @@ subfeature_v2:
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
 workflow-type: tm+mt
 source-wordcount: '102'
 ht-degree: 13%
@@ -52,7 +54,7 @@ Adobe Campaign Classic提供数据管理功能，允许您导入和导出数据�
 
 >[!NOTE]
 >
->要了解有关如何将数据导入和导出到Campaign的更多信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/data/import){target=_blank}。
+>要了解有关如何将数据导入和导出到Campaign的更多信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/data/import){target=_blank}。
 
 
 <!--

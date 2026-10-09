@@ -14,6 +14,8 @@ product_v2:
 feature_v2:
   - id: a658c786-869b-4194-a780-2594d663adda
     internal-label: Data management
+  - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
 subfeature_v2:
   - id: ee25c34b-ea50-427b-9369-ba0a160f7d70
     internal-label: HeatMap
@@ -26,7 +28,7 @@ subfeature_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
 workflow-type: tm+mt
 source-wordcount: '1399'
 ht-degree: 13%
@@ -61,7 +63,7 @@ JavaScript方法&#x200B;**[!UICONTROL logInfo()]**&#x200B;非常适合用于调�
 
   此选项在工作流属性的&#x200B;**[!UICONTROL Execution]**&#x200B;选项卡中可用，它将记录该工具从不同活动生成的所有SQL查询。 这是查看平台实际执行操作的好方法。 但是，此选项应仅在开发期间临时使用，而不在生产环境中激活。
 
-在不再需要日志时清除日志。 系统不会自动清除工作流历史记录：默认情况下会保留所有消息。 可通过&#x200B;**[!UICONTROL File > Actions]**&#x200B;菜单或单击位于列表上方工具栏中的“操作”按钮清除历史记录。 选择清除历史记录。
+在不再需要日志时清除日志。 系统不会自动清除工作流历史记录：默认情况下会保留所有消息。 可通过&#x200B;**[!UICONTROL File > Actions]**菜单或单击位于列表上方工具栏中的“操作”按钮清除历史记录。 选择清除历史记录。
 要了解如何清除日志，请参阅此[文档](starting-a-workflow.md)。
 
 ### 工作流规划 {#workflow-planning}

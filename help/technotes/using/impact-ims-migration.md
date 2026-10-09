@@ -11,6 +11,8 @@ product_v2:
 feature_v2:
   - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
     internal-label: Administration
+  - id: d5ef99fa-df0c-4153-bf94-105ad0724167
+    internal-label: Integrations
 subfeature_v2:
   - id: a39dbcf0-89cb-4765-9bcb-cf9dfbe2875f
     internal-label: Troubleshooting
@@ -21,14 +23,14 @@ topic_v2:
     internal-label: Troubleshooting
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
 workflow-type: tm+mt
 source-wordcount: '463'
 ht-degree: 1%
 ---
 # 在IMS迁移后更新Campaign界面 {#impact-ims-migration}
 
-在将Campaign技术操作员[迁移到Developer Console](ims-migration.md)并过渡到IMS以进行最终用户身份验证[&#128279;](migrate-users-to-ims.md)后，最后一步是启用用户界面和API限制，以删除特定于本机身份验证的选项和功能。 从Campaign v7.4.1开始提供此更新。
+在将Campaign技术操作员[迁移到Developer Console](ims-migration.md)并过渡到IMS以进行最终用户身份验证](migrate-users-to-ims.md)后，最后一步是启用用户界面和API限制，以删除特定于本机身份验证的选项和功能。 [从Campaign v7.4.1开始提供此更新。
 
 ## 启用IMS限制 {#ims-restrictions}
 
@@ -111,7 +113,7 @@ ht-degree: 1%
 
 因此，客户端控制台中已禁用这些操作。
 
-操作员的管理集中在Adobe Admin Console中，以下任务现在只能通过此控制台进行管理。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/admin/permissions/manage-permissions){target="_blank"}以了解如何创建用户和分配权限。
+操作员的管理集中在Adobe Admin Console中，以下任务现在只能通过此控制台进行管理。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/admin/permissions/manage-permissions){target="_blank"}以了解如何创建用户和分配权限。
 
 ### 不可用选项 {#unavailable-migration}
 

@@ -17,6 +17,8 @@ feature_v2:
     internal-label: Campaign Email Designer
   - id: c858a28b-ea19-49b0-8d48-828717fad89c
     internal-label: Prepare and test messages
+  - id: a4671286-a59f-47e3-b97b-90627a1977d5
+    internal-label: Communication channels
 subfeature_v2:
   - id: e95a583b-fcfa-4524-8666-46a29c828119
     internal-label: Email messaging
@@ -29,7 +31,7 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
 workflow-type: tm+mt
 source-wordcount: '251'
 ht-degree: 3%
@@ -38,9 +40,9 @@ ht-degree: 3%
 
 本节详细介绍如何构建工作流以执行A/B测试。
 
-1. 创建新工作流，然后配置查询活动以定向所需群体。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html?lang=zh-Hans){target="_blank"}。
+1. 创建新工作流，然后配置查询活动以定向所需群体。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html){target="_blank"}。
 
-1. 添加拆分活动以将目标群体划分为多个子集。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/split.html?lang=zh-Hans){target="_blank"}。
+1. 添加拆分活动以将目标群体划分为多个子集。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/split.html){target="_blank"}。
 
 1. 打开活动，然后根据需要配置每个子集。 有关如何配置&#x200B;**[!UICONTROL Split]**&#x200B;活动的详细信息，请参阅[此部分](../../workflow/using/split.md)。
 
