@@ -24,9 +24,9 @@ feature_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 323ff901668895588a6e9587fa2a8b7804cf2fb4
 workflow-type: tm+mt
-source-wordcount: '2093'
+source-wordcount: '2146'
 ht-degree: 1%
 ---
 # 入站渠道产品建议{#offers-on-an-inbound-channel}
@@ -47,7 +47,7 @@ Neobank网站希望在其网站上显示选件，以定向浏览页面的未识�
 
 ### 创建匿名环境 {#creating-an-anonymous-environment}
 
-按照[创建优惠环境](../../interaction/using/live-design-environments.md#creating-an-offer-environment)中详述的过程创建基于&#x200B;**访客**&#39;维度的匿名环境。
+按照[创建优惠环境](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/offers/interaction-settings/interaction-env#create-an-offer-environment){target="_blank"}（Campaign v8文档）中详述的过程创建基于&#x200B;**访客**&#x200B;维度的匿名环境。
 
 您将获得一个包含新环境的树结构：
 
@@ -147,7 +147,7 @@ Neobank网站希望在其网站上显示选件，以定向浏览页面的未识�
 
 ### 在网站上配置Web选件空间 {#configure-the-web-offer-space-on-the-website}
 
-要使您刚刚配置的选件在网站上可见，请将JavaScript代码插入网站的HTML页面，以调用交互引擎（有关更多信息，请参阅[关于入站渠道](../../interaction/using/about-inbound-channels.md)）。
+要使您刚刚配置的选件在网站上可见，请将JavaScript代码插入网站的HTML页面，以调用交互引擎(有关更多信息，请参阅[关于入站渠道](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/offers/inbound/interaction-present-offers){target="_blank"}（Campaign v8文档）)。
 
 1. 转到HTML页面并插入一个@id属性，该属性的值与之前创建的匿名优惠空间的内部名称匹配（请参阅[创建匿名优惠空间](#creating-anonymous-offer-spaces)），前面有&#x200B;**i_**。
 
@@ -211,7 +211,7 @@ Neobank公司希望为两个不同的目标创建营销选件。 它希望为其
 
 ### 为匿名联系人创建环境 {#creating-an-environment-for-anonymous-contacts}
 
-1. 通过投放映射助手（**访客**&#x200B;映射）为匿名入站交互创建优惠环境。 有关详细信息，请参阅[创建优惠环境](../../interaction/using/live-design-environments.md#creating-an-offer-environment)。
+1. 通过投放映射助手（**访客**&#x200B;映射）为匿名入站交互创建优惠环境。 有关更多信息，请参阅[创建选件环境](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/offers/interaction-settings/interaction-env#create-an-offer-environment){target="_blank"}（Campaign v8文档）。
 
    ![](assets/offer_env_anonymous_003.png)
 

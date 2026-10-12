@@ -22,100 +22,18 @@ subfeature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: a97306b73a2b577841e6f24536c62b2526e9fda9
 workflow-type: tm+mt
-source-wordcount: '527'
-ht-degree: 3%
+source-wordcount: '256'
+ht-degree: 6%
 ---
 # 数据库映射{#database-mapping}
 
-此页面[&#128279;](schema-structure.md)中描述的示例架构的SQL映射生成以下XML文档：
+此页介绍如何在方案的字段中声明索引。
 
-```sql
-<schema mappingType="sql" name="recipient" namespace="cus" xtkschema="xtk:schema">
-  <enumeration basetype="byte" name="gender">    
-    <value label="Not specified" name="unknown" value="0"/>    
-    <value label="Male" name="male" value="1"/>    
-    <value label="Female" name="female" value="2"/> 
-  </enumeration>  
+作为从Campaign v7过渡到v8的一部分，Campaign Classic文档集已得到简化和重新组织。 现在，Campaign v8文档集中专门提供了常用功能。 要了解有关架构的SQL映射的更多信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/database-mapping){target=_blank}。
 
-  <element name="recipient" sqltable="CusRecipient">    
-    <attribute desc="Recipient email address" label="Email" length="80" name="email" sqlname="sEmail" type="string"/>    
-    <attribute default="GetDate()" label="Date of creation" name="created" sqlname="tsCreated" type="datetime"/>    
-    <attribute enum="gender" label="Gender" name="gender" sqlname="iGender" type="byte"/>    
-    <element label="Location" name="location">      
-      <attribute label="City" length="50" name="city" sqlname="sCity" type="string" userEnum="city"/>    
-    </element>  
-  </element>
-</schema>
-```
-
-架构的根元素更改为&#x200B;**`<srcschema>`**&#x200B;至&#x200B;**`<schema>`**。
-
-此其他类型的文档自动从源架构生成，简称为架构。
-
-SQL名称是根据元素名称和类型自动确定的。
-
-SQL命名规则如下：
-
-* **表**：架构命名空间和名称的连接
-
-  在我们的示例中，表的名称是通过&#x200B;**sqltable**&#x200B;属性中架构的主元素输入的：
-
-  ```sql
-  <element name="recipient" sqltable="CusRecipient">
-  ```
-
-* **字段**：前面有根据类型定义的前缀的元素名称：“i”表示整数，“d”表示双精度，“s”表示字符串，“ts”表示日期等。
-
-  字段名称通过每个键入的&#x200B;**`<attribute>`**&#x200B;和&#x200B;**`<element>`**&#x200B;的&#x200B;**sqlname**&#x200B;属性输入：
-
-  ```sql
-  <attribute desc="Email address of recipient" label="Email" length="80" name="email" sqlname="sEmail" type="string"/> 
-  ```
-
->[!NOTE]
->
->可以从源架构重载SQL名称。 为此，请在相关元素中填充“sqltable”或“sqlname”属性。
-
-用于创建从扩展模式生成的表的SQL脚本如下所示：
-
-```sql
-CREATE TABLE CusRecipient(
-  iGender NUMERIC(3) NOT NULL Default 0,   
-  sCity VARCHAR(50),   
-  sEmail VARCHAR(80),
-  tsCreated TIMESTAMP Default NULL);
-```
-
-SQL字段约束如下：
-
-* 数字和日期字段中没有空值
-* 数值字段已初始化为0
-
-## XML字段 {#xml-fields}
-
-默认情况下，任何&#x200B;**`<attribute>`**&#x200B;和&#x200B;**`<element>`**&#x200B;类型元素均映射到数据架构表的SQL字段。 但是，您可以用XML而不是SQL引用此字段，这意味着数据存储在包含所有XML字段值的表的备注字段(“mData”)中。 这些数据的存储是一个观察模式结构的XML文档。
-
-要在XML中填充字段，您必须将值为“true”的&#x200B;**xml**&#x200B;特性添加到相关元素。
-
-**示例**：以下是两个XML字段用法示例。
-
-* 多行评论字段：
-
-  ```sql
-  <element name="comment" xml="true" type="memo" label="Comment"/>
-  ```
-
-* HTML格式的数据描述：
-
-  ```sql
-  <element name="description" xml="true" type="html" label="Description"/>
-  ```
-
-  “html”类型允许您将HTML内容存储在CDATA标记中，并在HTML客户端界面中显示特殊的Adobe Campaign编辑检查。
-
-使用XML字段添加新字段，而无需修改数据库的物理结构。 另一个优点是，您使用的资源较少（分配给SQL字段的大小、每个表的字段数限制等）。 但是，请注意，不能索引或过滤XML字段。
+[![image](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/database-mapping){target=_blank}
 
 ## 索引字段 {#indexed-fields}
 
@@ -189,5 +107,4 @@ SQL字段约束如下：
 * [架构入门](about-schema-reference.md)
 * [架构结构](schema-structure.md)
 * [密钥管理](database-keys.md)
-* [链接管理](database-links.md)
-* [Campaign 数据模型](about-data-model.md)
+* [链接管理](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/database-links){target="_blank"}（Campaign v8文档）

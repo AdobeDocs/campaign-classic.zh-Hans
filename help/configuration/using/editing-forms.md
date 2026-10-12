@@ -30,10 +30,10 @@ role_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: a97306b73a2b577841e6f24536c62b2526e9fda9
 workflow-type: tm+mt
-source-wordcount: '1712'
-ht-degree: 2%
+source-wordcount: '1904'
+ht-degree: 1%
 ---
 # 编辑表单{#editing-forms}
 
@@ -46,7 +46,7 @@ ht-degree: 2%
 * 您可以修改默认提供的出厂输入表单。 工厂输入表单基于工厂数据架构。
 * 您可以根据定义的数据架构创建自定义输入表单。
 
-Forms是`xtk:form`类型的实体。 您可以在`xtk:form`架构中查看输入表单结构。 要查看此架构，请从菜单中选择&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Configuration]** > **[!UICONTROL Data schemas]**。 阅读有关[窗体结构](form-structure.md)的更多信息。
+Forms是`xtk:form`类型的实体。 您可以在`xtk:form`架构中查看输入表单结构。 要查看此架构，请从菜单中选择&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Configuration]** > **[!UICONTROL Data schemas]**。 阅读有关[表单结构](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/forms){target="_blank"}的更多信息（Campaign v8文档）。
 
 要访问输入表单，请从菜单中选择&#x200B;**[!UICONTROL Administration]> [!UICONTROL Configuration] >[!UICONTROL Input forms]**：
 
@@ -56,7 +56,7 @@ Forms是`xtk:form`类型的实体。 您可以在`xtk:form`架构中查看输入
 
 ![](assets/d_ncs_integration_form_edit.png)
 
-[了解更多信息](form-structure.md#formatting)。
+[了解更多](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/forms#formatting){target="_blank"}（Campaign v8文档）。
 
 要预览表单，请单击&#x200B;**[!UICONTROL Preview]**&#x200B;选项卡：
 
@@ -80,7 +80,7 @@ Forms是`xtk:form`类型的实体。 您可以在`xtk:form`架构中查看输入
 
 * 助理
 
-  此形式包括按特定顺序排序的多个浮动屏幕。 用户从一个屏幕导航到下一个屏幕。 [了解更多信息](form-structure.md#wizards)。
+  此形式包括按特定顺序排序的多个浮动屏幕。 用户从一个屏幕导航到下一个屏幕。 [了解更多](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/forms#wizards){target="_blank"}（Campaign v8文档）。
 
 * 图标框
 
@@ -110,7 +110,7 @@ Forms是`xtk:form`类型的实体。 您可以在`xtk:form`架构中查看输入
 * 定义对输入字段的访问权限
 * 在其他表单中嵌套表单
 
-[了解更多信息](form-structure.md#containers)。
+[了解更多](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/forms#containers){target="_blank"}（Campaign v8文档）。
 
 ### 组织内容
 
@@ -119,7 +119,7 @@ Forms是`xtk:form`类型的实体。 您可以在`xtk:form`架构中查看输入
 * 您可以将字段分组为多个部分。
 * 您可以将页面添加到多页面表单。
 
-要插入容器，请使用`<container>`元素。 [了解更多信息](form-structure.md#containers)。
+要插入容器，请使用`<container>`元素。 [了解更多](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/forms#containers){target="_blank"}（Campaign v8文档）。
 
 #### 组字段
 
@@ -232,7 +232,7 @@ Forms是`xtk:form`类型的实体。 您可以在`xtk:form`架构中查看输入
 
 1. 插入表单元素。
 
-   例如，要插入输入字段，请使用`<input>`元素。 将字段引用的`xpath`属性设置为XPath表达式。 [了解更多信息](schema-structure.md#referencing-with-xpath)。
+   例如，要插入输入字段，请使用`<input>`元素。 将字段引用的`xpath`属性设置为XPath表达式。 [了解更多](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/schema-structure#reference-with-xpath){target="_blank"}（Campaign v8文档）。
 
    此示例显示基于`nms:recipient`架构的输入字段。
 
@@ -265,7 +265,7 @@ Forms是`xtk:form`类型的实体。 您可以在`xtk:form`架构中查看输入
    | 复选框 | `type="checkbox"` |
    | 编辑树 | `type="tree"` |
 
-   阅读有关[内存列表控件](form-structure.md#memory-list-controls)的详细信息。
+   阅读有关[内存列表控件](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/forms#memory-list-controls){target="_blank"}的更多信息（Campaign v8文档）。
 
 1. （可选）定义对字段的访问权限：
 
@@ -482,7 +482,7 @@ Forms是`xtk:form`类型的实体。 您可以在`xtk:form`架构中查看输入
 
 ### 授予对字段的只读访问权限
 
-要授予对字段的只读访问权限，请使用`readOnly="true"`属性。 例如，您可能希望显示记录的主键，但具有只读访问权限。 [了解更多信息](form-structure.md#non-editable-fields)。
+要授予对字段的只读访问权限，请使用`readOnly="true"`属性。 例如，您可能希望显示记录的主键，但具有只读访问权限。 [了解更多](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/forms#non-editable-fields){target="_blank"}（Campaign v8文档）。
 
 在此示例中，`nms:recipient`架构的主键(`iRecipientId`)以只读访问权限显示：
 
@@ -508,11 +508,11 @@ Forms是`xtk:form`类型的实体。 您可以在`xtk:form`架构中查看输入
 </leave>
 ```
 
-阅读有关[表达式字段](form-structure.md#expression-field)和[表单上下文](form-structure.md#context-of-forms)的更多信息。
+有关[表达式字段](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/forms#expression-field){target="_blank"} （Campaign v8文档）和[表单上下文](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/forms#context-of-forms){target="_blank"} （Campaign v8文档）的更多信息。
 
 ### 验证值
 
-您可以使用JavaScript SOAP调用从控制台验证表单数据。 使用这些调用进行复杂验证，例如，根据授权值列表检查值。 [了解更多信息](form-structure.md#soap-methods)。
+您可以使用JavaScript SOAP调用从控制台验证表单数据。 使用这些调用进行复杂验证，例如，根据授权值列表检查值。 [了解更多](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/forms#soap-methods){target="_blank"}（Campaign v8文档）。
 
 1. 在JS文件中创建验证函数。
 
@@ -569,4 +569,4 @@ Forms是`xtk:form`类型的实体。 您可以在`xtk:form`架构中查看输入
 </enter>
 ```
 
-在此示例中，输入是一个ID，它是一个主键。 当用户填写此ID的表单时，将会使用此ID作为输入参数进行SOAP调用。 输出是写入此字段的布尔值： `/tmp/@count`。 您可以在表单内使用此布尔值。 阅读有关[表单上下文](form-structure.md#context-of-forms)的更多信息。
+在此示例中，输入是一个ID，它是一个主键。 当用户填写此ID的表单时，将会使用此ID作为输入参数进行SOAP调用。 输出是写入此字段的布尔值： `/tmp/@count`。 您可以在表单内使用此布尔值。 阅读有关[表单上下文](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/forms#context-of-forms){target="_blank"}的更多信息（Campaign v8文档）。

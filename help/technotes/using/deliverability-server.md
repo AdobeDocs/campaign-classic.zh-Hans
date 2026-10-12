@@ -36,16 +36,16 @@ topic_v2:
     internal-label: Security
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 86e1df82ff7fe9142b0ba75b697d3262e8d7a9d5
 workflow-type: tm+mt
-source-wordcount: '1054'
+source-wordcount: '1071'
 ht-degree: 4%
 ---
 # 更新到新的可投放性服务器 {#acc-deliverability}
 
 从[v7.2.2版本](../../rn/using/latest-release.md#release-7-2-2)开始，Adobe Campaign依赖新的可投放性服务器，该服务器可提供高可用性并解决安全性合规性问题。 Campaign Classic现在会将可投放性规则、broadlog和禁止地址从和同步到新的可投放性服务器。 旧的可交付性服务器将于2022年8月31日停用。
 
-作为Campaign Classic客户，您必须在2022年8月31日之前实施新的可投放性服务器&#x200B;**&#x200B;**。
+作为Campaign Classic客户，您必须在2022年8月31日之前实施新的可投放性服务器&#x200B;****。
 
 >[!NOTE]
 >
@@ -100,10 +100,10 @@ ht-degree: 4%
 作为内部部署客户，您还必须检查营销活动&#x200B;**[!UICONTROL Product profile]**&#x200B;是否可用于您的组织。 要执行此操作，请按照以下步骤进行：
 
 1. 作为管理员，连接到[Adobe Admin Console](https://adminconsole.adobe.com/){_blank}。
-1. 访问&#x200B;**产品和服务**&#x200B;部分，并检查&#x200B;**Adobe Campaign**&#x200B;是否已列出。
-如果您看不到&#x200B;**Adobe Campaign**，请联系[Adobe客户关怀](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){_blank}添加该产品。
-1. 单击&#x200B;**Adobe Campaign**&#x200B;并选择您的组织。
-   **警告**：如果您有多个组织，请确保选择正确的组织。 在此页面[&#128279;](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=zh-Hans#ims-org-id){_blank}中了解有关组织的更多信息。
+1. 访问&#x200B;**产品和服务**&#x200B;部分，并检查&#x200B;**Adobe Campaign**是否已列出。
+如果您看不到**Adobe Campaign**，请联系[Adobe客户关怀](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){_blank}添加该产品。
+1. 单击&#x200B;**Adobe Campaign**并选择您的组织。
+   **警告**：如果您有多个组织，请确保选择正确的组织。 在此页面](https://experienceleague.adobe.com/docs/control-panel/using/faq.html#ims-org-id){_blank}中了解有关组织[的更多信息。
 
 1. 检查&#x200B;**[!UICONTROL Product profile]**&#x200B;是否存在。 如果没有，请创建它。 此&#x200B;**[!UICONTROL Product profile]**&#x200B;不需要权限。
 
@@ -150,4 +150,4 @@ ht-degree: 4%
 
 如果不升级环境，则将停止同步电子邮件设置（ MX管理规则、入站电子邮件规则、域管理规则和退回鉴别规则）。 这可能会随着时间的推移影响您的可投放性。 如果对这些规则进行了重大更改，则必须从此刻手动应用这些规则。
 
-对于MKT实例，只有[全局禁止显示列表](../../campaign-opt/using/filtering-rules.md#default-deliverability-exclusion-rules)受到影响。
+对于MKT实例，只有[全局禁止列表](https://experienceleague.adobe.com/en/docs/campaign/automation/campaign-optimization/filtering-rules#default-deliverability-exclusion-rules){target="_blank"} （Campaign v8文档）受影响。

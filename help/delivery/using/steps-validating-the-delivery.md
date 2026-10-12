@@ -48,9 +48,9 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: 86e1df82ff7fe9142b0ba75b697d3262e8d7a9d5
 workflow-type: tm+mt
-source-wordcount: '1658'
+source-wordcount: '1685'
 ht-degree: 9%
 ---
 # 验证投放 {#validating-the-delivery}
@@ -185,7 +185,7 @@ ht-degree: 9%
 1. 开始消息分析。 请参阅[分析投放](steps-validating-the-delivery.md#analyzing-the-delivery)。
 1. 您现在可以发送投放（请参阅[发送投放](steps-sending-the-delivery.md)）。
 
-   发送投放后，验证将显示在投放列表中，并自动创建和编号。 如果要访问其内容和属性，可以对其进行编辑。 有关详细信息，请参见此 [&#x200B; 页面](about-delivery-monitoring.md)。
+   发送投放后，验证将显示在投放列表中，并自动创建和编号。 如果要访问其内容和属性，可以对其进行编辑。 有关详细信息，请参见此 [ 页面](about-delivery-monitoring.md)。
 
    ![](assets/s_ncs_user_delivery_validation_cycle_03a.png)
 
@@ -232,7 +232,7 @@ ht-degree: 9%
 
 您可以从此节点创建新规则并定义新分类。 但是，这些任务是为熟悉JavaScript的专家用户保留的。
 
-有关分类规则的更多信息，请参阅[此页面](../../campaign-opt/using/about-campaign-typologies.md)。
+有关类型规则的更多信息，请参阅[此页面](https://experienceleague.adobe.com/en/docs/campaign/automation/campaign-optimization/campaign-typologies){target="_blank"}（Campaign v8文档）。
 
 要编辑当前的分类，请单击&#x200B;**[!UICONTROL Typology]**&#x200B;字段右侧的&#x200B;**[!UICONTROL Edit link]**&#x200B;图标。
 
@@ -244,7 +244,7 @@ ht-degree: 9%
 
 >[!NOTE]
 >
->在销售压力管理框架中使用&#x200B;**[!UICONTROL Arbitration]**&#x200B;类型分类。 如需详细信息，请参阅[此小节](../../mrm/using/about-marketing-resource-management.md)。
+>在销售压力管理框架中使用&#x200B;**[!UICONTROL Arbitration]**&#x200B;类型分类。 有关更多信息，请参阅[此章节](https://experienceleague.adobe.com/en/docs/campaign/automation/mrm/about-marketing-resource-management){target="_blank"}（Campaign v8文档）。
 
 ## 更改审批模式 {#changing-the-approval-mode}
 

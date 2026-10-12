@@ -33,10 +33,10 @@ subfeature_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: a97306b73a2b577841e6f24536c62b2526e9fda9
 workflow-type: tm+mt
-source-wordcount: '124'
-ht-degree: 54%
+source-wordcount: '138'
+ht-degree: 44%
 ---
 # 编辑轮廓{#editing-a-profile}
 
@@ -56,11 +56,11 @@ ht-degree: 54%
 >
 >通过Adobe Campaign树的&#x200B;**[!UICONTROL Administration > Configuration > Data schemas]**&#x200B;节点访问XML架构和与配置文件表中的字段有关的表单。 只有专家用户才能改变这些模式。
 >
->如需详细信息，请参阅[此页面](../../configuration/using/about-schema-edition.md)。
+>有关详细信息，请参阅[此页面](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/schemas){target="_blank"}（Campaign v8文档）。
 
 >[!NOTE]
 >
->要了解有关如何编辑配置文件以及访问这些配置文件的更多信息，请参阅有关[Campaign v8文档](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/audience/view-profiles){target=_blank}的详细文档。
+>要了解有关如何编辑配置文件以及访问这些配置文件的更多信息，请参阅有关[Campaign v8文档](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/view-profiles){target=_blank}的详细文档。
 
 
 
@@ -129,6 +129,6 @@ The list is configurable, and usually contains: the URL clicked, date and time o
 
 >[!NOTE]
 >
->For more on tracking functionality, please refer to [this page](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"}.
+>For more on tracking functionality, please refer to [this page](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"}.
 
 -->

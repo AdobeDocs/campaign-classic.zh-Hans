@@ -32,9 +32,9 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: a97306b73a2b577841e6f24536c62b2526e9fda9
 workflow-type: tm+mt
-source-wordcount: '1183'
+source-wordcount: '1211'
 ht-degree: 0%
 ---
 # 用例：创建内容管理{#use-case-creating-content-management}
@@ -82,7 +82,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->有关在Adobe Campaign中创建和配置数据架构的更多信息，请参阅[此部分](../../configuration/using/about-schema-edition.md)。
+>有关在Adobe Campaign中创建和配置数据架构的更多信息，请参阅[此部分](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/schemas){target="_blank"}（Campaign v8文档）。
 >
 >在[数据架构](data-schemas.md)中详细列出了特定于内容管理的配置元素。
 
@@ -194,7 +194,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->有关在Adobe Campaign中创建和配置表单的更多信息，请参阅[此章节](../../configuration/using/identifying-a-form.md)。
+>有关在Adobe Campaign中创建和配置表单的更多信息，请参阅[此章节](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/forms){target="_blank"}（Campaign v8文档）。
 >
 >在[输入表单](input-forms.md)中详细列出了特定于内容管理的配置元素。
 

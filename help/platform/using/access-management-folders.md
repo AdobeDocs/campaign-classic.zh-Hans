@@ -42,9 +42,9 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: 617db6f51887118c965b8938b2b9f14335293875
 workflow-type: tm+mt
-source-wordcount: '529'
+source-wordcount: '547'
 ht-degree: 4%
 ---
 # 管理对文件夹的访问{#folder-access-management}
@@ -66,7 +66,7 @@ Explorer导航树的每个文件夹都具有附加的读、写和删除访问权
 
 ![](assets/s_ncs_user_add_folder_in_tree.png)
 
-可以自定义Explorer导航树。 在本节[&#128279;](adobe-campaign-workspace.md)中了解配置步骤和最佳实践。
+可以自定义Explorer导航树。 在本节](adobe-campaign-workspace.md)中了解配置步骤和最佳实践[。
 
 ### 什么是视图 {#about-views}
 
@@ -120,7 +120,7 @@ Explorer导航树的每个文件夹都具有附加的读、写和删除访问权
 
 >[!NOTE]
 >
->管理[事务性消息传递](../../message-center/using/about-transactional-messaging.md)事件时，**[!UICONTROL Real time events]**&#x200B;或&#x200B;**[!UICONTROL Batch events]**&#x200B;文件夹不能设置为执行实例上的视图，因为这会导致访问权限问题。 有关事件集合的详细信息，请参阅[此部分](../../message-center/using/about-event-processing.md#event-collection)。
+>管理[事务性消息传递](../../message-center/using/about-transactional-messaging.md)事件时，**[!UICONTROL Real time events]**&#x200B;或&#x200B;**[!UICONTROL Batch events]**&#x200B;文件夹不能设置为执行实例上的视图，因为这会导致访问权限问题。 有关事件集合的更多信息，请参阅[此部分](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/real-time/event/event-processing#event-collection){target="_blank"}（Campaign v8文档）。
 
 <!--
 ## Permissions on a folder

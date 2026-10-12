@@ -17,9 +17,9 @@ feature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: a97306b73a2b577841e6f24536c62b2526e9fda9
 workflow-type: tm+mt
-source-wordcount: '1803'
+source-wordcount: '1818'
 ht-degree: 0%
 ---
 # 面向数据的 API{#data-oriented-apis}
@@ -54,7 +54,7 @@ XML文档存储在数据库的MEMO类型字段中。
 
 这使您能够隔离基础SQL。 查询语言不依赖于底层引擎：某些函数将重新映射，这些函数可能会生成多个SELECT SQL顺序。
 
-有关详细信息，请参阅架构“xtk:queryDef”[&#128279;](../../configuration/using/web-service-calls.md#example-on-the--executequery--method-of-schema--xtk-querydef-)的“ExecuteQuery”方法上的示例。
+有关详细信息，请参阅架构“xtk:queryDef”](../../configuration/using/web-service-calls.md#example-on-the--executequery--method-of-schema--xtk-querydef-)的“ExecuteQuery”方法上的[示例。
 
 **ExecuteQuery**&#x200B;方法出现在[ExecuteQuery (xtk:queryDef)](#executequery--xtk-querydef-)中。
 
@@ -147,7 +147,7 @@ Write方法在[Write / WriteCollection (xtk:session)](#write---writecollection--
 * **select**：创建光标以返回多个记录，如果没有数据，则返回空文档，
 * **count**：返回数据计数。
 
-**XPath**&#x200B;语法用于根据输入架构查找数据。 有关XPath的详细信息，请参阅[数据架构](../../configuration/using/data-schemas.md)。
+**XPath**&#x200B;语法用于根据输入架构查找数据。 有关XPath的详细信息，请参阅[数据架构](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/create-schema){target="_blank"}（Campaign v8文档）。
 
 #### “获取”操作的示例 {#example-with-the--get--operation}
 

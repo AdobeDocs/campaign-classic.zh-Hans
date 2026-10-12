@@ -30,9 +30,9 @@ subfeature_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: a97306b73a2b577841e6f24536c62b2526e9fda9
 workflow-type: tm+mt
-source-wordcount: '644'
+source-wordcount: '658'
 ht-degree: 1%
 ---
 # 连接到数据库 {#connecting-to-the-database}
@@ -55,7 +55,7 @@ ht-degree: 1%
 1. 单击&#x200B;**[!UICONTROL New]**&#x200B;按钮并选择&#x200B;**[!UICONTROL External database]**&#x200B;类型。
 1. 定义外部数据库的&#x200B;**[!UICONTROL Connection]**&#x200B;参数。
 
-   对于与&#x200B;**ODBC**&#x200B;类型数据库的连接，**[!UICONTROL Server]**&#x200B;字段必须包含ODBC数据源的名称，而不是服务器名称。 此外，根据所使用的数据库，可能还需要某些其他配置。 请参阅按数据库类型[&#128279;](../../installation/using/configure-fda.md)列出的特定配置部分。
+   对于与&#x200B;**ODBC**&#x200B;类型数据库的连接，**[!UICONTROL Server]**&#x200B;字段必须包含ODBC数据源的名称，而不是服务器名称。 此外，根据所使用的数据库，可能还需要某些其他配置。 请参阅按数据库类型](../../installation/using/configure-fda.md)列出的[特定配置部分。
 
 1. 输入参数后，单击&#x200B;**[!UICONTROL Test the connection]**&#x200B;按钮以批准它们。
 
@@ -126,4 +126,4 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->有关在Adobe Campaign中创建架构和定义新数据映射的更多信息，请参阅[此页面](../../configuration/using/about-schema-edition.md)。
+>有关在Adobe Campaign中创建架构和定义新数据映射的更多信息，请参阅[此页面](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/schemas){target="_blank"}（Campaign v8文档）。

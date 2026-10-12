@@ -37,16 +37,16 @@ role_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: 323ff901668895588a6e9587fa2a8b7804cf2fb4
 workflow-type: tm+mt
-source-wordcount: '979'
+source-wordcount: '992'
 ht-degree: 6%
 ---
 # 个性化块{#personalization-blocks}
 
 个性化块是动态的、个性化的，并包含您可以插入到投放中的特定渲染。 例如，您可以添加徽标、问候语消息或指向镜像页面的链接。 请参阅[插入个性化块](#inserting-personalization-blocks)。
 
-![](assets/do-not-localize/how-to-video.png)在视频[&#128279;](#personalization-blocks-video)中发现此功能
+![](assets/do-not-localize/how-to-video.png)在视频](#personalization-blocks-video)中发现此功能[
 
 通过Adobe Campaign资源管理器的&#x200B;**[!UICONTROL Resources > Campaign Management > Personalization blocks]**&#x200B;节点访问个性化块。 默认情况下，有多个块可用（请参阅[现成的个性化块](#out-of-the-box-personalization-blocks)）。
 
@@ -145,7 +145,7 @@ HTML源代码会插入到投放内容中。 例如，**[!UICONTROL Greetings]**&
 * **[!UICONTROL Registration confirmation]** ：插入用于确认订阅的链接。
 * **[!UICONTROL Social network sharing links]** ：插入一些按钮，这些按钮允许收件人与电子邮件客户端、Facebook、X（以前称为Twitter）和LinkedIn共享指向镜像页面内容的链接（请参阅[病毒式营销：转发给朋友](viral-and-social-marketing.md#viral-marketing--forward-to-a-friend)）。
 * **[!UICONTROL Style of content emails]**&#x200B;和&#x200B;**[!UICONTROL Notification style]** ：生成使用预定义的HTML样式设置电子邮件格式的代码。 这些块必须插入投放的源代码（在&#x200B;**[!UICONTROL ...]**&#x200B;部分中）的&#x200B;**`<style>...</style>`**&#x200B;标记中。
-* **[!UICONTROL Offer acceptance URL in unitary mode]** ：插入一个URL，用于设置交互选件为&#x200B;**[!UICONTROL Accepted]**（请参阅[此部分](../../interaction/using/offer-analysis-report.md)）。
+* **[!UICONTROL Offer acceptance URL in unitary mode]** ：插入一个URL，用于将“交互”选件设置为&#x200B;**[!UICONTROL Accepted]**(请参阅[此章节](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/offers/interaction-tracking){target="_blank"}（Campaign v8文档）)。
 
 ## 定义自定义个性化块 {#defining-custom-personalization-blocks}
 
@@ -177,6 +177,6 @@ HTML源代码会插入到投放内容中。 例如，**[!UICONTROL Greetings]**&
 
 了解如何创建动态内容块以及如何使用动态内容块将电子邮件投放内容个性化。
 
->[!VIDEO](https://video.tv.adobe.com/v/27462?captions=chi_hans&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/24924?quality=12)
 
 [此处](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hans)提供了其他 Campaign Classic 操作方法视频。

@@ -24,9 +24,9 @@ subfeature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: a97306b73a2b577841e6f24536c62b2526e9fda9
 workflow-type: tm+mt
-source-wordcount: '131'
+source-wordcount: '146'
 ht-degree: 2%
 ---
 # 重新生成架构{#regenerating-schemas}
@@ -37,7 +37,7 @@ ht-degree: 2%
 1. 右键单击并选择&#x200B;**[!UICONTROL Actions > Regenerate selected schemas...]** 。
 1. 单击&#x200B;**[!UICONTROL OK]**&#x200B;确认并启动进程。
 
-然后，您可以在“预览”和“文档”选项卡中检查生成的架构的结构。 有关详细信息，请参阅[原则](../../configuration/using/data-schemas.md#principles)部分。
+然后，您可以在“预览”和“文档”选项卡中检查生成的架构的结构。 有关更多信息，请参阅[原则](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/create-schema){target="_blank"}（Campaign v8文档）一节。
 
 >[!NOTE]
 >

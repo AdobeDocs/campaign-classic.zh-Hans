@@ -43,9 +43,9 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: a97306b73a2b577841e6f24536c62b2526e9fda9
 workflow-type: tm+mt
-source-wordcount: '913'
+source-wordcount: '927'
 ht-degree: 1%
 ---
 # 个性化产品建议券{#personalized-coupons}
@@ -185,9 +185,9 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->默认情况下，优惠券管理模块使用&#x200B;**nms:recipient**&#x200B;表。 [了解详情](../../configuration/using/about-data-model.md#default-recipient-table)。
+>默认情况下，优惠券管理模块使用&#x200B;**nms:recipient**&#x200B;表。 [了解详情](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/datamodel#ootb-profiles){target="_blank"}（Campaign v8文档）。
 >
->在此页面[&#128279;](../../configuration/using/about-custom-recipient-table.md)中了解如何使用自定义收件人表。
+>在此页面](../../configuration/using/about-custom-recipient-table.md)中了解如何使用自定义收件人表[。
 
 ## 管理优惠券不足 {#managing-insufficient-coupons}
 

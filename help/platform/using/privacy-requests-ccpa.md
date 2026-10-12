@@ -41,10 +41,10 @@ subfeature_v2:
 topic_v2:
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: a97306b73a2b577841e6f24536c62b2526e9fda9
 workflow-type: tm+mt
-source-wordcount: '582'
-ht-degree: 94%
+source-wordcount: '610'
+ht-degree: 86%
 ---
 # 个人数据销售的选择退出 (CCPA) {#sale-of-personal-information-ccpa}
 
@@ -70,7 +70,7 @@ ht-degree: 94%
 
 如果您使用自定义收件人表，也需要执行此操作。
 
-有关如何创建新字段的更多详细信息，请参阅[架构版文档](../../configuration/using/about-schema-edition.md)。
+有关如何创建新字段的更多详细信息，请参阅[架构版文档](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/schemas){target="_blank"}（Campaign v8文档）。
 
 >[!IMPORTANT]
 >
@@ -88,7 +88,7 @@ ht-degree: 94%
 
    ![](assets/privacy-ccpa-3.png)
 
-1. 单击探索工具的 **[!UICONTROL Configuration]** > **[!UICONTROL Input forms]** 节点。 在“通用包” **[!UICONTROL Recipient (nms)]** 下，添加一个 `<input>` 元素，并使用步骤 2 中定义的相对路径作为 xpath 值。 有关识别表单的更多信息，请参阅[此小节](../../configuration/using/identifying-a-form.md)。
+1. 单击探索工具的 **[!UICONTROL Configuration]** > **[!UICONTROL Input forms]** 节点。 在“通用包” **[!UICONTROL Recipient (nms)]** 下，添加一个 `<input>` 元素，并使用步骤 2 中定义的相对路径作为 xpath 值。 有关识别表单的更多信息，请参阅[此部分](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/forms){target="_blank"}（Campaign v8文档）。
 
    ```
    <input  colspan="2" type="checkbox" xpath="@OPTOUTCCPA"/>
@@ -118,7 +118,7 @@ ht-degree: 94%
 
    ![](assets/privacy-ccpa-6.png)
 
-1. 您可以单击该列，以根据选择退出信息对收件人进行排序。 您还可以创建一个筛选器以仅显示已选择退出的收件人。 有关筛选器的更多信息，请参阅[Campaign v8 （控制台）文档](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/audience/create-filters){target=_blank}。
+1. 您可以单击该列，以根据选择退出信息对收件人进行排序。 您还可以创建一个筛选器以仅显示已选择退出的收件人。 有关筛选器的更多信息，请参阅[Campaign v8 （控制台）文档](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-filters){target=_blank}。
 
 
    ![](assets/privacy-ccpa-7.png)

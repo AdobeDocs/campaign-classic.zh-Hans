@@ -45,9 +45,9 @@ topic_v2:
     internal-label: Implementation
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
     internal-label: Optimization
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: 586c6688e2abd3b6e55389bd1fa219d2c596d07d
 workflow-type: tm+mt
-source-wordcount: '1428'
+source-wordcount: '1446'
 ht-degree: 1%
 ---
 # 使用增强MTA发送 {#sending-with-enhanced-mta}
@@ -154,7 +154,7 @@ Campaign **[!UICONTROL Delivery log qualification]**&#x200B;表中的退回限�
 
 Campaign投放吞吐量图表将不再向电子邮件收件人显示吞吐量。 该图表现在将显示消息从Campaign中继到Enhanced MTA的吞吐量速度。
 
-有关投放吞吐量的详细信息，请参阅[此部分](../../reporting/using/global-reports.md#delivery-throughput)。
+有关投放吞吐量的详细信息，请参阅[此部分](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/reports/ac-reports/global-reports#delivery-throughput){target="_blank"}（Campaign v8文档）。
 
 ### 重试
 
@@ -175,17 +175,17 @@ Campaign不再使用投放中的重试设置。 软退回重试次数以及它�
 ### DKIM-signing
 
 DKIM（域名识别邮件）电子邮件身份验证签名由Enhanced MTA完成。 作为增强MTA升级的一部分，本机Campaign MTA的DKIM签名将在域管理表中关闭。
-有关DKIM的更多信息，请参阅[Adobe可投放性最佳实践指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=zh-Hans#authentication)。
+有关DKIM的更多信息，请参阅[Adobe可投放性最佳实践指南](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#authentication)。
 
 ### 投放成功报告
 
-在电子邮件投放[仪表板](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"}的&#x200B;**[!UICONTROL Summary]**&#x200B;视图中，**[!UICONTROL Success]**&#x200B;百分比从100%开始，然后在投放[有效期](communication-channels.md)内逐步下降，因为软退回和硬退回会从Enhanced MTA报告回Campaign。
+在电子邮件投放[仪表板](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"}的&#x200B;**[!UICONTROL Summary]**&#x200B;视图中，**[!UICONTROL Success]**&#x200B;百分比从100%开始，然后在投放[有效期](communication-channels.md)内逐步下降，因为软退回和硬退回会从Enhanced MTA报告回Campaign。
 
-事实上，一旦消息成功地从Campaign中继到增强型MTA，在[发送日志](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/send/monitor/delivery-dashboard#delivery-logs-and-history){target="_blank"}中，所有消息都会显示为&#x200B;**[!UICONTROL Sent]**。 除非或直到该消息的[退回](delivery-failures-quarantine.md#delivery-failure-types-and-reasons)从Enhanced MTA传回Campaign，否则它们将保持该状态。
+事实上，一旦消息成功地从Campaign中继到增强型MTA，在[发送日志](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard#delivery-logs-and-history){target="_blank"}中，所有消息都会显示为&#x200B;**[!UICONTROL Sent]**。 除非或直到该消息的[退回](delivery-failures-quarantine.md#delivery-failure-types-and-reasons)从Enhanced MTA传回Campaign，否则它们将保持该状态。
 
 当从增强型MTA报告硬退回邮件时，其状态从&#x200B;**[!UICONTROL Sent]**&#x200B;更改为&#x200B;**[!UICONTROL Failed]**，**[!UICONTROL Success]**&#x200B;百分比相应减少。
 
-从Enhanced MTA报告软退回邮件时，它们仍显示为&#x200B;**[!UICONTROL Sent]**，并且&#x200B;**[!UICONTROL Success]**&#x200B;百分比尚未更新。 然后，软退回邮件在投放有效期内将重试[&#128279;](delivery-failures-quarantine.md#retries-after-a-delivery-temporary-failure)：
+从Enhanced MTA报告软退回邮件时，它们仍显示为&#x200B;**[!UICONTROL Sent]**，并且&#x200B;**[!UICONTROL Success]**&#x200B;百分比尚未更新。 然后，软退回邮件在投放有效期内将重试[](delivery-failures-quarantine.md#retries-after-a-delivery-temporary-failure)：
 
 * 如果在有效期结束前重试成功，则消息状态将保留为&#x200B;**[!UICONTROL Sent]**，**[!UICONTROL Success]**&#x200B;百分比将保持不变。
 

@@ -20,9 +20,9 @@ feature_v2:
     internal-label: Interaction
   - id: ea08db70-4682-59a2-9408-9aedd9548e07
     internal-label: Offers
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 323ff901668895588a6e9587fa2a8b7804cf2fb4
 workflow-type: tm+mt
-source-wordcount: '125'
+source-wordcount: '144'
 ht-degree: 0%
 ---
 # 创建测试环境{#creating-a-test-environment}
@@ -33,7 +33,7 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->仅将此环境创建方法用于测试环境。 在所有其他情况下，均使用目标映射助手。 有关详细信息，请参阅[创建优惠环境](../../interaction/using/live-design-environments.md#creating-an-offer-environment)。
+>仅将此环境创建方法用于测试环境。 在所有其他情况下，均使用目标映射助手。 有关更多信息，请参阅[创建选件环境](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/offers/interaction-settings/interaction-env#create-an-offer-environment){target="_blank"}（Campaign v8文档）。
 
 1. 启动Adobe Campaign资源管理器，然后转到实例根。
 1. 右键单击并使用下拉菜单添加&#x200B;**[!UICONTROL Generic folder]**。
