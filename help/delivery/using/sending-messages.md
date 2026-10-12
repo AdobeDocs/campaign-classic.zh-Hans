@@ -58,8 +58,8 @@ ht-degree: 3%
 
 以下部分详细介绍专门用于投放电子邮件的设置和配置：
 <!--
-* [Generating the mirror page](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/emails/mirror-page){target="_blank"} (Campaign v8 documentation)
-* [Email BCC](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/emails/email-bcc){target="_blank"} (Campaign v8 documentation)
+* [Generating the mirror page](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/send/emails/mirror-page){target="_blank"} (Campaign v8 documentation)
+* [Email BCC](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/send/emails/email-bcc){target="_blank"} (Campaign v8 documentation)
 -->
 * [电子邮件参数](email-parameters.md)
 * [使用增强MTA发送电子邮件](sending-with-enhanced-mta.md)
