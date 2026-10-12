@@ -93,7 +93,7 @@ ht-degree: 4%
 * **[!UICONTROL Distribution context]** ：显式。
 * **[!UICONTROL Data distribution]** ：本地实体分发。
 
-必须创建&#x200B;**本地实体分发**&#x200B;类型数据分发。 使用数据分发模板，您可以限制分组值列表中的记录数。 在&#x200B;**[!UICONTROL Resources > Campaign management > Data distribution]**&#x200B;中，单击&#x200B;**[!UICONTROL New]**&#x200B;图标以创建新的&#x200B;**[!UICONTROL Data distribution]**。 有关数据分发的更多信息，请参阅[工作流](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/use-cases/deliveries/local-approval-activity#step-1--creating-the-data-distribution-template-){target="_blank"}（Campaign v8文档）指南。
+必须创建&#x200B;**本地实体分发**&#x200B;类型数据分发。 使用数据分发模板，您可以限制分组值列表中的记录数。 在&#x200B;**[!UICONTROL Resources > Campaign management > Data distribution]**&#x200B;中，单击&#x200B;**[!UICONTROL New]**&#x200B;图标以创建新的&#x200B;**[!UICONTROL Data distribution]**。 有关数据分发的更多信息，请参阅[工作流](https://experienceleague.adobe.com/zh-hans/docs/campaign/automation/workflows/use-cases/deliveries/local-approval-activity#step-1--creating-the-data-distribution-template-){target="_blank"}（Campaign v8文档）指南。
 
 ![](assets/mkg_dist_data_distribution.png)
 

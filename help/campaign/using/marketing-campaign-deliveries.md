@@ -83,7 +83,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->与Campaign包相关的技术工作流显示在[技术工作流列表](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows){target="_blank"}中（Campaign v8文档）。
+>与Campaign包相关的技术工作流显示在[技术工作流列表](https://experienceleague.adobe.com/zh-hans/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows){target="_blank"}中（Campaign v8文档）。
 
 **步骤1 — 文件审批**
 

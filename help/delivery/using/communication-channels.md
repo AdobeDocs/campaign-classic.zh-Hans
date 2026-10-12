@@ -64,20 +64,20 @@ ht-degree: 15%
 
 >[!TAB 通信渠道文档]
 
-要了解有关通信渠道的更多信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/gs-message.html){target=_blank}。
+要了解有关通信渠道的更多信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/gs-message.html?lang=zh-Hans){target=_blank}。
 
 
-[![image](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/gs-message.html){target=_blank}
+[![image](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/gs-message.html?lang=zh-Hans){target=_blank}
 
 
 >[!TAB 投放内容和受众]
 
 请参阅Campaign v8文档&#x200B;**以了解与投放创建、内容和受众**&#x200B;相关的关键步骤：
 
-* [创建投放](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#create-the-delivery){target="_blank"}：了解如何创建一次性投放。
-* [定义内容](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#content-of-the-delivery){target="_blank"}：配置特定于每个渠道的投放内容。
+* [创建投放](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=zh-Hans#create-the-delivery){target="_blank"}：了解如何创建一次性投放。
+* [定义内容](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=zh-Hans#content-of-the-delivery){target="_blank"}：配置特定于每个渠道的投放内容。
 * [指定受众](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=zh-Hans#target-population){target="_blank"}：定义几种类型的目标：主受众、验证目标、种子地址和对照组。
-* [使用投放模板](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html){target="_blank"}：了解如何定义模板以便于创建投放。
+* [使用投放模板](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html?lang=zh-Hans){target="_blank"}：了解如何定义模板以便于创建投放。
 
 
 
@@ -87,13 +87,13 @@ ht-degree: 15%
 
 请参阅这些页面，以在Campaign v8文档&#x200B;**中了解投放验证、发送和最佳实践**：
 
-* [验证投放](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#validate-the-delivery){target="_blank"}：了解如何在将投放发送到主目标之前验证投放。
-* [发送投放](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#configuring-and-sending-the-delivery){target="_blank"}：配置投放设置并定义发送消息的方式。
-* [投放最佳实践](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/delivery-best-practices.html){target="_blank"}：查阅与Campaign投放功能相关的最佳实践。
+* [验证投放](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=zh-Hans#validate-the-delivery){target="_blank"}：了解如何在将投放发送到主目标之前验证投放。
+* [发送投放](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=zh-Hans#configuring-and-sending-the-delivery){target="_blank"}：配置投放设置并定义发送消息的方式。
+* [投放最佳实践](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/delivery-best-practices.html?lang=zh-Hans){target="_blank"}：查阅与Campaign投放功能相关的最佳实践。
 
 >[!ENDTABS]
 
-以下设置特定于Campaign Classic。 有关其他投放设置，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/gs-message.html){target="_blank"}。
+以下设置特定于Campaign Classic。 有关其他投放设置，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/gs-message.html?lang=zh-Hans){target="_blank"}。
 
 +++ **投放分析**
 
@@ -168,13 +168,13 @@ ht-degree: 15%
 
    Learn how to create a one-shot single delivery. You can create other types of deliveries to build your use cases. 
 
-For more information about the different types of deliveries and how to create them, refer to the [Campaign v8 documentation](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html){target="_blank"}. 
+For more information about the different types of deliveries and how to create them, refer to the [Campaign v8 documentation](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=zh-Hans){target="_blank"}. 
 
 >[!NOTE]
 >
 >Adobe Campaign offers a set of tools to monitor your deliverability and optimize email sending. Learn more in [this section](about-deliverability.md).
 
-Delivery sending can be automated by preparing a delivery and/or sending it in the process of a workflow. For more on delivery-type activities in workflows, refer to [this section](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/action-activities/action-activities){target="_blank"} (Campaign v8 documentation).
+Delivery sending can be automated by preparing a delivery and/or sending it in the process of a workflow. For more on delivery-type activities in workflows, refer to [this section](https://experienceleague.adobe.com/zh-hans/docs/campaign/automation/workflows/wf-activities/action-activities/action-activities){target="_blank"} (Campaign v8 documentation).
 
 Adobe Campaign offers the following delivery channels:
 
@@ -205,7 +205,7 @@ The [Email channel](about-email-channel.md) is one of the core channels in Adobe
 You can send different types of emails:
 
 * Single-send emails: emails that you can send once to a defined target. They are usually used to promote a specific content that would be prepared and sent only once (newsletter, promotional email, etc.).
-* Recurring emails: in a campaign, send the same email regularly and aggregate each send and its reports on a periodic basis. The same email is sent, but usually to a different target, based on the eligible target for the day of the send. A common example is a birthday email. For more on this, refer to [Recurring deliveries](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/action-activities/recurring-delivery){target="_blank"} (Campaign v8 documentation).
+* Recurring emails: in a campaign, send the same email regularly and aggregate each send and its reports on a periodic basis. The same email is sent, but usually to a different target, based on the eligible target for the day of the send. A common example is a birthday email. For more on this, refer to [Recurring deliveries](https://experienceleague.adobe.com/zh-hans/docs/campaign/automation/workflows/wf-activities/action-activities/recurring-delivery){target="_blank"} (Campaign v8 documentation).
 * Transactional emails: unitary emails that are triggered based on your customers' behavior. Refer to [Transactional messaging](../../message-center/using/about-transactional-messaging.md).
 
 To learn about delivery usage and recommendations, consult Campaign [Delivery best practices](delivery-best-practices.md).
@@ -257,9 +257,9 @@ There are three types of delivery objects in Campaign:
 
 A **delivery** is a standalone delivery object that is executed once. It can be duplicated, prepared again, but as long as it is in its final state (canceled, stopped, finished), it cannot be reused.
 
-Deliveries can be created either from the list of deliveries, or within a workflow via a [Delivery](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/action-activities/delivery){target="_blank"} (Campaign v8 documentation) activity.
+Deliveries can be created either from the list of deliveries, or within a workflow via a [Delivery](https://experienceleague.adobe.com/zh-hans/docs/campaign/automation/workflows/wf-activities/action-activities/delivery){target="_blank"} (Campaign v8 documentation) activity.
 
-Workflows also provide specific delivery activities according to the type of channel you want to use. For more on these activities, refer to [this section](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/action-activities/cross-channel-deliveries){target="_blank"} (Campaign v8 documentation).
+Workflows also provide specific delivery activities according to the type of channel you want to use. For more on these activities, refer to [this section](https://experienceleague.adobe.com/zh-hans/docs/campaign/automation/workflows/wf-activities/action-activities/cross-channel-deliveries){target="_blank"} (Campaign v8 documentation).
 
 ### Recurring delivery {#recurring-delivery}
 
@@ -267,7 +267,7 @@ A **recurring delivery** lets you create a new delivery each time the activity i
 
 As an example, if you run this type of activity once a month, you will end up with 12 deliveries after a year.
 
-Recurring deliveries are created within workflows via the [Recurring delivery activity](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/action-activities/recurring-delivery){target="_blank"} (Campaign v8 documentation). An example of this activity being used is presented in this section: [Creating a recurring delivery in a targeting workflow](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/use-cases/deliveries/send-a-birthday-email#creating-a-recurring-delivery-in-a-targeting-workflow){target="_blank"} (Campaign v8 documentation).
+Recurring deliveries are created within workflows via the [Recurring delivery activity](https://experienceleague.adobe.com/zh-hans/docs/campaign/automation/workflows/wf-activities/action-activities/recurring-delivery){target="_blank"} (Campaign v8 documentation). An example of this activity being used is presented in this section: [Creating a recurring delivery in a targeting workflow](https://experienceleague.adobe.com/zh-hans/docs/campaign/automation/workflows/use-cases/deliveries/send-a-birthday-email#creating-a-recurring-delivery-in-a-targeting-workflow){target="_blank"} (Campaign v8 documentation).
 
 ### Continuous delivery {#continuous-delivery}
 
@@ -277,6 +277,6 @@ If an information in the delivery changes (content, name, etc.), a new delivery 
 
 As an example, if you run this type of activity once a month, you will end up with a single delivery after a year (provided you did not make any change to the delivery).
 
-Continuous deliveries are created within workflows via the [Continuous delivery activity](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/action-activities/continuous-delivery){target="_blank"} (Campaign v8 documentation).
+Continuous deliveries are created within workflows via the [Continuous delivery activity](https://experienceleague.adobe.com/zh-hans/docs/campaign/automation/workflows/wf-activities/action-activities/continuous-delivery){target="_blank"} (Campaign v8 documentation).
 
 -->

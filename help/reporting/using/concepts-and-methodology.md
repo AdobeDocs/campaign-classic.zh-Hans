@@ -162,7 +162,7 @@ Adobe Campaign还提供了域枚举，用于显示数据库中按ISP重组的所
 
    ![](assets/s_advuser_cube_agregate_04.png)
 
-   * **[!UICONTROL Scheduler]**&#x200B;活动允许您定义计算更新的频率。 [此部分](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/flow-control-activities/scheduler){target="_blank"}中详细介绍了调度程序（Campaign v8文档）。
+   * **[!UICONTROL Scheduler]**&#x200B;活动允许您定义计算更新的频率。 [此部分](https://experienceleague.adobe.com/zh-hans/docs/campaign/automation/workflows/wf-activities/flow-control-activities/scheduler){target="_blank"}中详细介绍了调度程序（Campaign v8文档）。
    * **[!UICONTROL Aggregate update]**&#x200B;活动允许您选择要应用的更新模式：全部或部分。
 
      默认情况下，在每次计算期间都会执行完全更新。 要启用部分更新，请选择相关选项并定义更新条件。

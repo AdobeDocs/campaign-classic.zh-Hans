@@ -147,7 +147,7 @@ ht-degree: 5%
 
    ![](assets/s_ncs_user_op_template_recur_planning.png)
 
-   执行计划的配置模式与工作流的&#x200B;**[!UICONTROL Scheduler]**&#x200B;对象一致。 有关更多信息，请参阅[此章节](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/flow-control-activities/scheduler){target="_blank"}（Campaign v8文档）。
+   执行计划的配置模式与工作流的&#x200B;**[!UICONTROL Scheduler]**&#x200B;对象一致。 有关更多信息，请参阅[此章节](https://experienceleague.adobe.com/zh-hans/docs/campaign/automation/workflows/wf-activities/flow-control-activities/scheduler){target="_blank"}（Campaign v8文档）。
 
    >[!IMPORTANT]
    >

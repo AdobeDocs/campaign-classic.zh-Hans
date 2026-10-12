@@ -45,7 +45,7 @@ ht-degree: 1%
 
 
 
-Adobe Campaign与CRM之间的数据同步是通过专用工作流活动执行的： [CRM连接器](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/targeting-activities/crm-connector){target="_blank"}（Campaign v8文档）。
+Adobe Campaign与CRM之间的数据同步是通过专用工作流活动执行的： [CRM连接器](https://experienceleague.adobe.com/zh-hans/docs/campaign/automation/workflows/wf-activities/targeting-activities/crm-connector){target="_blank"}（Campaign v8文档）。
 
 例如，要将Microsoft Dynamics数据导入Adobe Campaign，请创建以下类型的工作流：
 

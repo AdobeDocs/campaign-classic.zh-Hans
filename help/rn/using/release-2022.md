@@ -172,10 +172,10 @@ Adobe Campaign 现在与 Windows Server 2019 兼容。 请参阅 [Campaign 兼�
 
 **其他变更**
 
-* 弃用后，已从界面中移除 Microsoft CRM、Salesforce、Oracle CRM On Demand 操作活动。 要配置 Adobe Campaign 与 CRM 系统之间的数据同步，您可以使用 CRM 连接器活动。 [了解更多](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/targeting-activities/crm-connector){target="_blank"}（Campaign v8文档）
+* 弃用后，已从界面中移除 Microsoft CRM、Salesforce、Oracle CRM On Demand 操作活动。 要配置 Adobe Campaign 与 CRM 系统之间的数据同步，您可以使用 CRM 连接器活动。 [了解更多](https://experienceleague.adobe.com/zh-hans/docs/campaign/automation/workflows/wf-activities/targeting-activities/crm-connector){target="_blank"}（Campaign v8文档）
 * **[!UICONTROL Encrypted identifier]** 字段已添加至访客架构 (nms:visitor)。 会计算该字段并将其用于 Web 应用程序。 这适用于在中间源实例上配置 Line 渠道的情况。
 * CRM 数据源现在可以与&#x200B;**更改数据源**&#x200B;活动一起使用。
-* 在工作流活动的 **Error management** 属性中新增了一个选项：**Abort on error** 选项会自动停止工作流。 之后您将无法重新启动它 (NEO-29661)。 [了解更多](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/advanced-management/advanced-parameters#in-case-of-errors){target="_blank"}（Campaign v8文档）
+* 在工作流活动的 **Error management** 属性中新增了一个选项：**Abort on error** 选项会自动停止工作流。 之后您将无法重新启动它 (NEO-29661)。 [了解更多](https://experienceleague.adobe.com/zh-hans/docs/campaign/automation/workflows/advanced-management/advanced-parameters#in-case-of-errors){target="_blank"}（Campaign v8文档）
 * 现在，会使用专用序列来生成 nmsGroup 表的主键，该表格用于创建收件人的统计组。 以前，使用的是 xtknewId 序列。 (NEO-30832)
 * 增加了对使用 CRM 连接器活动进行批量更新操作的支持。
 * 改进了事务性消息传递的性能，缩短了处理时间。 (NEO-40370)

@@ -100,8 +100,8 @@ ht-degree: 1%
 >
 >Campaign v8文档中记录了适用于Campaign Classic v7和Campaign v8用户的有关投放故障排除的综合指南：
 >
->* 常见投放失败和解决方案： [了解投放失败](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"}
->* 缓慢投放诊断：[在Campaign UI中监视投放](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"}
+>* 常见投放失败和解决方案： [了解投放失败](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"}
+>* 缓慢投放诊断：[在Campaign UI中监视投放](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"}
 >* 传递最佳实践：[传递最佳实践](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/start/delivery-best-practices){target="_blank"}
 >
 >此部分记录针对混合部署和内部部署的特定于&#x200B;**Campaign Classic v7的疑难解答**。
@@ -124,7 +124,7 @@ Error during the call of method 'AppendDeliveryPart' on the mid sourcing server:
 
 **对于内部部署安装**，请对数据库执行真空和重新索引。 有关数据库维护的详细信息，请参阅[本节](../../production/using/recommendations.md)。
 
-您还应该重新启动所有具有计划活动的工作流，以及所有处于失败状态的工作流。 请参阅[此章节](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/flow-control-activities/scheduler){target="_blank"}（Campaign v8文档）。
+您还应该重新启动所有具有计划活动的工作流，以及所有处于失败状态的工作流。 请参阅[此章节](https://experienceleague.adobe.com/zh-hans/docs/campaign/automation/workflows/wf-activities/flow-control-activities/scheduler){target="_blank"}（Campaign v8文档）。
 
 ### 技术工作流监测
 
@@ -140,13 +140,13 @@ Error during the call of method 'AppendDeliveryPart' on the mid sourcing server:
 
 >[!NOTE]
 >
->对于Campaign v8托管云服务用户，技术工作流和基础架构监控由Adobe管理。 如[Campaign v8文档](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"}中所述，重点关注投放内容和定位。
+>对于Campaign v8托管云服务用户，技术工作流和基础架构监控由Adobe管理。 如[Campaign v8文档](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"}中所述，重点关注投放内容和定位。
 
 ## 相关主题
 
-* [了解投放失败](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"}（Campaign v8文档）
+* [了解投放失败](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"}（Campaign v8文档）
 * [投放最佳实践](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/start/delivery-best-practices){target="_blank"}（Campaign v8文档）
-* [在Campaign UI中监视投放](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"}（Campaign v8文档）
+* [在Campaign UI中监视投放](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"}（Campaign v8文档）
 * [数据库维护](../../production/using/recommendations.md) （v7混合/内部部署）
 * [电子邮件可投放性](../../installation/using/email-deliverability.md)（v7混合/内部部署）
 * [数据库性能](../../production/using/database-performances.md) （v7混合/内部部署）

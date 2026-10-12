@@ -182,7 +182,7 @@ nlserver.exe config -postupgrade -check -instance:<instance-name>
    <td> CRM v1(mscrmWorkflow/sfdcWorkflow)<br /> </td> 
    <td> PU-0008<br /> </td> 
    <td> 错误<br /> </td> 
-   <td> Microsoft CRM、Salesforce、Oracle CRM On Demand操作活动不再可用。 要配置Adobe Campaign与CRM系统之间的数据同步，您需要使用<a href="https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/targeting-activities/crm-connector" target="_blank">CRM连接器</a>（Campaign v8文档）定位活动。<br /> </td>
+   <td> Microsoft CRM、Salesforce、Oracle CRM On Demand操作活动不再可用。 要配置Adobe Campaign与CRM系统之间的数据同步，您需要使用<a href="https://experienceleague.adobe.com/zh-hans/docs/campaign/automation/workflows/wf-activities/targeting-activities/crm-connector" target="_blank">CRM连接器</a>（Campaign v8文档）定位活动。<br /> </td>
   </tr> 
  </tbody> 
 </table>

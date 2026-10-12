@@ -59,7 +59,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->有关调度程序的详细信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/flow-control-activities/scheduler.html){target="_blank"}。
+>有关调度程序的详细信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/flow-control-activities/scheduler.html?lang=zh-Hans){target="_blank"}。
 
 默认情况下，**[!UICONTROL Database cleanup]**&#x200B;工作流配置为每天凌晨4点启动。 调度程序允许您更改工作流触发频率。 可以使用以下频率：
 
@@ -349,7 +349,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->在&#x200B;**History in days**&#x200B;字段中为每个工作流指定历史记录的清除频率（默认值为30天）。 可在工作流属性的&#x200B;**执行**&#x200B;选项卡中找到此字段。 有关更多信息，请参阅[此章节](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/advanced-management/workflow-properties#execution){target="_blank"}（Campaign v8文档）。
+>在&#x200B;**History in days**&#x200B;字段中为每个工作流指定历史记录的清除频率（默认值为30天）。 可在工作流属性的&#x200B;**执行**&#x200B;选项卡中找到此字段。 有关更多信息，请参阅[此章节](https://experienceleague.adobe.com/zh-hans/docs/campaign/automation/workflows/advanced-management/workflow-properties#execution){target="_blank"}（Campaign v8文档）。
 
 1. 要恢复要删除的工作流列表，请使用以下查询：
 

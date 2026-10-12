@@ -62,7 +62,7 @@ ht-degree: 9%
 
   **提示** — 要避免这种情况，请与团队的其他成员协调投放计划，以确保最佳性能。
 
-* 工作流执行：监测工作流对于避免平台性能问题至关重要。 遵循此文档[&#128279;](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/introduction/workflow-best-practices#execution-and-performance){target="_blank"}中列出的准则（Campaign v8文档）。
+* 工作流执行：监测工作流对于避免平台性能问题至关重要。 遵循此文档[&#128279;](https://experienceleague.adobe.com/zh-hans/docs/campaign/automation/workflows/introduction/workflow-best-practices#execution-and-performance){target="_blank"}中列出的准则（Campaign v8文档）。
 
 * 如果您符合条件，则可以利用[Campaign控制面板功能](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=zh-Hans)，通过[性能监控](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/about-performance-monitoring.html?lang=zh-Hans)功能来监控您的平台。
 

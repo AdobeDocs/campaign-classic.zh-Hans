@@ -40,11 +40,11 @@ ht-degree: 3%
 
 本节详细介绍如何构建工作流以执行A/B测试。
 
-1. 创建新工作流，然后配置查询活动以定向所需群体。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html){target="_blank"}。
+1. 创建新工作流，然后配置查询活动以定向所需群体。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html?lang=zh-Hans){target="_blank"}。
 
-1. 添加拆分活动以将目标群体划分为多个子集。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/split.html){target="_blank"}。
+1. 添加拆分活动以将目标群体划分为多个子集。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/split.html?lang=zh-Hans){target="_blank"}。
 
-1. 打开活动，然后根据需要配置每个子集。 有关如何配置&#x200B;**[!UICONTROL Split]**&#x200B;活动的更多信息，请参阅[此章节](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/targeting-activities/split){target="_blank"}（Campaign v8文档）。
+1. 打开活动，然后根据需要配置每个子集。 有关如何配置&#x200B;**[!UICONTROL Split]**&#x200B;活动的更多信息，请参阅[此章节](https://experienceleague.adobe.com/zh-hans/docs/campaign/automation/workflows/wf-activities/targeting-activities/split){target="_blank"}（Campaign v8文档）。
 
    在本例中，我们希望通过向10%的目标群体展示新闻稿中的每一个，来测试2个新主题。
 

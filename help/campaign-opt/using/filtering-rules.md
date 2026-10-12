@@ -77,7 +77,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->可在工作流的&#x200B;**[!UICONTROL Delivery outline]**&#x200B;活动中使用分类和筛选规则。 有关更多信息，请参阅[此章节](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/targeting-activities/delivery-outline){target="_blank"}（Campaign v8文档）。
+>可在工作流的&#x200B;**[!UICONTROL Delivery outline]**&#x200B;活动中使用分类和筛选规则。 有关更多信息，请参阅[此章节](https://experienceleague.adobe.com/zh-hans/docs/campaign/automation/workflows/wf-activities/targeting-activities/delivery-outline){target="_blank"}（Campaign v8文档）。
 
 ## 创建和使用过滤类型 {#creating-and-using-a-filtering-typology}
 

@@ -71,7 +71,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->有关扩充活动的详细信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/enrichment.html){target="_blank"}。
+>有关扩充活动的详细信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/enrichment.html?lang=zh-Hans){target="_blank"}。
 
 例如，您可以在投放之前扩充收件人查询的数据。
 
@@ -84,7 +84,7 @@ ht-degree: 1%
 
 ### 指定优惠或调用优惠引擎 {#specifying-an-offer-or-a-call-to-the-offer-engine}
 
-配置查询后（请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html){target="_blank"}）：
+配置查询后（请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html?lang=zh-Hans){target="_blank"}）：
 
 1. 添加并打开扩充活动。
 1. 在&#x200B;**[!UICONTROL Enrichment]**&#x200B;选项卡中，选择&#x200B;**[!UICONTROL Add data]**。
@@ -162,7 +162,7 @@ ht-degree: 1%
 
 ![](assets/int_offerengine_activity2.png)
 
-配置查询后(请参阅[工作流指南](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/targeting-activities/query){target="_blank"} （Campaign v8文档）：
+配置查询后(请参阅[工作流指南](https://experienceleague.adobe.com/zh-hans/docs/campaign/automation/workflows/wf-activities/targeting-activities/query){target="_blank"} （Campaign v8文档）：
 
 1. 添加并打开&#x200B;**[!UICONTROL Offer engine]**&#x200B;活动。
 1. 填写各种可用字段以指定调用选件引擎参数（选件空间、类别或主题、联系日期、要保留的选件数）。 引擎将根据这些参数自动计算要添加的选件。

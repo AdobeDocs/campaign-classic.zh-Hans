@@ -65,15 +65,15 @@ ht-degree: 88%
 
 更新了“发行说明”部分，其中包含 7.4.1 改进、兼容性更新和修补程序。 [了解更多信息](latest-release.md)
 
-添加了说明在重新启动工作流时如何清除实例变量的注释。 [了解更多](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/executing-a-workflow/start-a-workflow){target="_blank"}（Campaign v8文档）
+添加了说明在重新启动工作流时如何清除实例变量的注释。 [了解更多](https://experienceleague.adobe.com/zh-hans/docs/campaign/automation/workflows/executing-a-workflow/start-a-workflow){target="_blank"}（Campaign v8文档）
 
 ### 2024 年 4 月 {#apr-2024}
 
 添加了有关使用 Adobe Identity Management System (IMS) 创建用户的警告说明。 [了解更多信息](../../platform/using/access-management.md)
 
-添加了与“Web 下载”工作流活动有关的缺失选项。 [了解更多](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/event-activities/web-download){target="_blank"}（Campaign v8文档）
+添加了与“Web 下载”工作流活动有关的缺失选项。 [了解更多](https://experienceleague.adobe.com/zh-hans/docs/campaign/automation/workflows/wf-activities/event-activities/web-download){target="_blank"}（Campaign v8文档）
 
-向&#x200B;**更改维度**&#x200B;和&#x200B;**更改数据源**&#x200B;活动添加了有关其在工作流中的使用情况的警告说明。 [了解更多](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/targeting-activities/change-data-source){target="_blank"}（Campaign v8文档）
+向&#x200B;**更改维度**&#x200B;和&#x200B;**更改数据源**&#x200B;活动添加了有关其在工作流中的使用情况的警告说明。 [了解更多](https://experienceleague.adobe.com/zh-hans/docs/campaign/automation/workflows/wf-activities/targeting-activities/change-data-source){target="_blank"}（Campaign v8文档）
 
 ### 2024 年 3 月 {#mar-2024}
 
