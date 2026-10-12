@@ -51,7 +51,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->有关工作流、投放、受众等常见Campaign问题的全面答案，请参阅[Campaign v8全面常见问题解答](https://experienceleague.adobe.com/docs/campaign/campaign-v8/start/campaign-faq-comprehensive.html){target="_blank"}。
+>有关工作流、投放、受众等常见Campaign问题的全面答案，请参阅[Campaign v8全面常见问题解答](https://experienceleague.adobe.com/docs/campaign/campaign-v8/start/campaign-faq-comprehensive.html?lang=zh-Hans){target="_blank"}。
 
 Adobe Campaign 会定期更新。 如果您熟悉我们发布的[发行说明](../../rn/using/rn-overview.md)，您可能会意识到每年平均会发布2/3个包含新功能、改进和修复的次要版本。 此外，我们还定期发布仅包含累积修复的内部版本。 这种定期更新的目的是为了让您掌握最新、最充分的信息，保持环境的完全安全，并明显改善您对我们产品的体验。
 

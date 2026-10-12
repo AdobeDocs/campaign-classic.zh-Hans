@@ -62,7 +62,7 @@ Adobe将支持您完成此迁移工作。 您可以在下面文章中找到详�
 >
 >将用户迁移到IMS后，请注意Adobe Admin Console中的任何产品配置文件在其名称中包含“管理员”一词（如“管理员”、“管理员”、“管理员”、“审批管理员”等） 将自动授予对Campaign控制面板的访问权限。 控制面板是一种自助服务工具，允许对Campaign实例进行重大更改。
 >
->请仔细查看您的产品配置文件命名约定，确保只有授权用户才能访问控制面板。 在[控制面板文档](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html){target="_blank"}中了解有关管理控制面板权限的详细信息。
+>请仔细查看您的产品配置文件命名约定，确保只有授权用户才能访问控制面板。 在[控制面板文档](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=zh-Hans){target="_blank"}中了解有关管理控制面板权限的详细信息。
 
 
 ## 如何迁移混合和内部部署环境？ {#ims-migration-procedure-on-prem}
@@ -72,8 +72,8 @@ Adobe将支持您完成此迁移工作。 您可以在下面文章中找到详�
 1. 将您的环境升级到Campaign v7.4.1（或与[IMS迁移兼容的版本](#ims-versions)）。
 1. 升级后，您仍然可以使用这两种方法创建新用户，即作为本机用户或者使用IMS。
 1. 您的内部Campaign管理员必须配置Adobe IMS，如[此部分](../../integrations/using/configuring-ims.md)中所述。
-1. 然后，将唯一的电子邮件添加到Campaign客户端控制台上的所有本机用户。 此步骤在[此部分](https://experienceleague.adobe.com/en/docs/campaign/technotes-ac/tn-new/migrate-users-to-ims#ims-migration-id){target="_blank"}中详述（Campaign v8文档）。
-1. 在Adobe Admin Console中创建用户和产品配置文件，如[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/admin/permissions/manage-permissions.html){target="_blank"}中所述。
+1. 然后，将唯一的电子邮件添加到Campaign客户端控制台上的所有本机用户。 此步骤在[此部分](https://experienceleague.adobe.com/zh-hans/docs/campaign/technotes-ac/tn-new/migrate-users-to-ims#ims-migration-id){target="_blank"}中详述（Campaign v8文档）。
+1. 在Adobe Admin Console中创建用户和产品配置文件，如[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/admin/permissions/manage-permissions.html?lang=zh-Hans){target="_blank"}中所述。
 1. 为所有操作员启用&#x200B;**与Adobe ID连接**&#x200B;选项。
 1. 如[此页面](../../integrations/using/implementing-ims.md)中所述，为您的连接实施Adobe IMS。
 
@@ -81,7 +81,7 @@ Adobe将支持您完成此迁移工作。 您可以在下面文章中找到详�
 
 ## 常见问题解答 {#ims-migration-faq}
 
-有关迁移的常见问题解答（迁移后创建用户、为本机用户添加电子邮件、通过IMS登录、停机、已使用IMS的组织、查看操作员的身份验证类型），请参阅[Campaign v8技术说明](https://experienceleague.adobe.com/en/docs/campaign/technotes-ac/tn-new/migrate-users-to-ims#ims-migration-faq){target=_blank}（Campaign v8文档）。
+有关迁移的常见问题解答（迁移后创建用户、为本机用户添加电子邮件、通过IMS登录、停机、已使用IMS的组织、查看操作员的身份验证类型），请参阅[Campaign v8技术说明](https://experienceleague.adobe.com/zh-hans/docs/campaign/technotes-ac/tn-new/migrate-users-to-ims#ims-migration-faq){target=_blank}（Campaign v8文档）。
 
 >[!MORELIKETHIS]
 >
