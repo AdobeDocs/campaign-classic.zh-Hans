@@ -8,9 +8,9 @@ user-guide-description: Adobe Campaign Classic v7 产品文档。
 sub-product: adobe campaign classic
 type: Documentation
 nudge: false
-source-git-commit: df5d87ca4fccb927f770957ec1c00157d14e95dc
+source-git-commit: 9c678f353d367115bc188da80f07e018c44e2612
 workflow-type: tm+mt
-source-wordcount: '2717'
+source-wordcount: '2298'
 ht-degree: 100%
 ---
 
@@ -363,124 +363,6 @@ ht-degree: 100%
     + {hide-from-toc}[同步 Web 应用程序 - 隐藏](integrations/using/synchronizing-web-applications.md)
     + {hide-from-toc}[ 对  [!DNL ACS Connector]  进行故障排除 - 隐藏](integrations/using/troubleshooting-the-acs-connector.md)
 + [使用工作流实现自动化](workflow/using/about-workflows.md)
-+ 使用工作流实现自动化 {#automating-with-workflows}
-  + 工作流入门 {#introduction}
-    + {hide-from-toc}[关于活动 - 隐藏](workflow/using/about-activities.md)
-    + {hide-from-toc}[构建工作流 - 隐藏](workflow/using/building-a-workflow.md)
-    + {hide-from-toc}[目标数据 - 隐藏](workflow/using/targeting-data.md)
-    + {hide-from-toc}[使用工作流数据 - 隐藏](workflow/using/how-to-use-workflow-data.md)
-    + {hide-from-toc}[工作流最佳实践 - 隐藏](workflow/using/workflow-best-practices.md)
-  + 执行工作流 {#executing-a-workflow}
-    + {hide-from-toc}[开始工作流 - 隐藏](workflow/using/starting-a-workflow.md)
-    + {hide-from-toc}[工作流生命周期 - 隐藏](workflow/using/workflow-life-cycle.md)
-    + {hide-from-toc}[数据生命周期 - 隐藏](workflow/using/data-life-cycle.md)
-    + {hide-from-toc}[定义审批 - 隐藏](workflow/using/defining-approvals.md)
-    + {hide-from-toc}[架构 - 隐藏](workflow/using/architecture.md)
-  + 目标选择活动 {#targeting-activities}
-    + {hide-from-toc}[关于目标选择活动 - 隐藏](workflow/using/about-targeting-activities.md)
-    + {hide-from-toc}[查询 - 隐藏](workflow/using/query.md)
-    + {hide-from-toc}[增量查询 - 隐藏](workflow/using/incremental-query.md)
-    + {hide-from-toc}[读取列表 - 隐藏](workflow/using/read-list.md)
-    + {hide-from-toc}[并集 - 隐藏](workflow/using/union.md)
-    + {hide-from-toc}[交集 - 隐藏](workflow/using/intersection.md)
-    + {hide-from-toc}[排除 - 隐藏](workflow/using/exclusion.md)
-    + {hide-from-toc}[拆分 - 隐藏](workflow/using/split.md)
-    + {hide-from-toc}[单元格 - 隐藏](workflow/using/cells.md)
-    + {hide-from-toc}[单元格产品建议 - 隐藏](workflow/using/offers-by-cell.md)
-    + {hide-from-toc}[投放概要 - 隐藏](workflow/using/delivery-outline.md)
-    + {hide-from-toc}[扩充 - 隐藏](workflow/using/enrichment.md)
-    + {hide-from-toc}[编辑架构 - 隐藏](workflow/using/edit-schema.md)
-    + {hide-from-toc}[产品建议引擎 - 隐藏](workflow/using/offer-engine.md)
-    + {hide-from-toc}[重复数据删除 - 隐藏](workflow/using/deduplication.md)
-    + {hide-from-toc}[更改维度 - 隐藏](workflow/using/change-dimension.md)
-    + {hide-from-toc}[列表更新 - 隐藏](workflow/using/list-update.md)
-    + {hide-from-toc}[订阅服务 - 隐藏](workflow/using/subscription-services.md)
-    + {hide-from-toc}[更新数据 - 隐藏](workflow/using/update-data.md)
-    + {hide-from-toc}[CRM 连接器 - 隐藏](workflow/using/crm-connector.md)
-    + {hide-from-toc}[更改数据源 - 隐藏](workflow/using/change-data-source.md)
-  + 流量控制活动 {#flow-control-activities}
-    + {hide-from-toc}[关于流量控制活动 - 隐藏](workflow/using/about-flow-control-activities.md)
-    + {hide-from-toc}[开始和结束 - 隐藏](workflow/using/start-and-end.md)
-    + {hide-from-toc}[分支 - 隐藏](workflow/using/fork.md)
-    + {hide-from-toc}[和连接 - 隐藏](workflow/using/and-join.md)
-    + {hide-from-toc}[调度程序 - 隐藏](workflow/using/scheduler.md)
-    + {hide-from-toc}[测试 - 隐藏](workflow/using/test.md)
-    + {hide-from-toc}[等待 - 隐藏](workflow/using/wait.md)
-    + {hide-from-toc}[时间限制 - 隐藏](workflow/using/time-constraint.md)
-    + {hide-from-toc}[子工作流 - 隐藏](workflow/using/sub-workflow.md)
-    + {hide-from-toc}[跳转（开始点和结束点 - 隐藏）](workflow/using/jump-start-point-and-end-point.md)
-    + {hide-from-toc}[外部信号 - 隐藏](workflow/using/external-signal.md)
-    + {hide-from-toc}[审批 - 隐藏](workflow/using/approval.md)
-    + {hide-from-toc}[警报 - 隐藏](workflow/using/alert.md)
-    + {hide-from-toc}[任务 - 隐藏](workflow/using/task.md)
-  + 操作活动 {#action-activities}
-    + {hide-from-toc}[关于操作活动 - 隐藏](workflow/using/about-action-activities.md)
-    + {hide-from-toc}[投放 - 隐藏](workflow/using/delivery.md)
-    + {hide-from-toc}[投放控制 - 隐藏](workflow/using/delivery-control.md)
-    + {hide-from-toc}[连续投放 - 隐藏](workflow/using/continuous-delivery.md)
-    + {hide-from-toc}[定期投放 - 隐藏](workflow/using/recurring-delivery.md)
-    + {hide-from-toc}[跨渠道投放 - 隐藏](workflow/using/cross-channel-deliveries.md)
-    + {hide-from-toc}[本地审批 - 隐藏](workflow/using/local-approval.md)
-    + {hide-from-toc}[数据加载 (RDBMS) - 隐藏](workflow/using/data-loading-rdbms.md)
-    + {hide-from-toc}[正在加载 (SOAP) - 隐藏](workflow/using/loading-soap.md)
-    + {hide-from-toc}[正在加载数据（文件）- 隐藏](workflow/using/data-loading-file.md)
-    + {hide-from-toc}[内容管理 - 隐藏](workflow/using/content-management.md)
-    + {hide-from-toc}[数据提取（文件）- 隐藏](workflow/using/extraction-file.md)
-    + {hide-from-toc}[SQL 代码和 JavaScript 代码 - 隐藏](workflow/using/sql-code-and-javascript-code.md)
-    + {hide-from-toc}[SDL 数据管理 - 隐藏](workflow/using/sql-data-management.md)
-    + {hide-from-toc}[Nlserver 模块 - 隐藏](workflow/using/nlserver-module.md)
-    + {hide-from-toc}[更新总计 - 隐藏](workflow/using/update-aggregate.md)
-  + 事件活动 {#event-activities}
-    + {hide-from-toc}[关于事件活动 - 隐藏](workflow/using/about-event-activities.md)
-    + {hide-from-toc}[文件收集器 - 隐藏](workflow/using/file-collector.md)
-    + {hide-from-toc}[文件传输 - 隐藏](workflow/using/file-transfer.md)
-    + {hide-from-toc}[Web 下载 - 隐藏](workflow/using/web-download.md)
-    + {hide-from-toc}[入站电子邮件 - 隐藏](workflow/using/inbound-emails.md)
-    + {hide-from-toc}[入站短信 - 隐藏](workflow/using/inbound-sms.md)
-  + 用例 {#use-cases}
-    + {hide-from-toc}[关于工作流用例 - 隐藏](workflow/using/about-workflow-use-cases.md)
-    + 投放 {#deliveries}
-      + {hide-from-toc}[使用本地审批活动 - 隐藏](workflow/using/using-the-local-approval-activity.md)
-      + {hide-from-toc}[发送生日电子邮件 - 隐藏](workflow/using/sending-a-birthday-email.md)
-      + {hide-from-toc}[加载投放内容 - 隐藏](workflow/using/loading-delivery-content.md)
-      + {hide-from-toc}[跨渠道投放工作流 - 隐藏](workflow/using/cross-channel-delivery-workflow.md)
-      + {hide-from-toc}[具有自定义日期字段的电子邮件扩充 - 隐藏](workflow/using/email-enrichment-with-custom-date-fields.md)
-  + 监控 {#monitoring}
-    + {hide-from-toc}[向列表发送报告 - 隐藏](workflow/using/sending-a-report-to-a-list.md)
-    + {hide-from-toc}[监督工作流 - 隐藏](workflow/using/supervising-workflows.md)
-    + {hide-from-toc}[向操作员发送个性化提醒 - 隐藏](workflow/using/sending-personalized-alerts-to-operators.md)
-  + 数据管理 {#data-management}
-    + {hide-from-toc}[协调数据更新 - 隐藏](workflow/using/coordinating-data-updates.md)
-    + {hide-from-toc}[创建摘要列表 - 隐藏](workflow/using/creating-a-summary-list.md)
-    + {hide-from-toc}[扩充数据 - 隐藏](workflow/using/enriching-data.md)
-    + {hide-from-toc}[使用总计 - 隐藏](workflow/using/using-aggregates.md)
-    + {hide-from-toc}[使用重复数据删除活动的合并功能 - 隐藏](workflow/using/deduplication-merge.md)
-    + {hide-from-toc}[设置定期导入工作流 - 隐藏](workflow/using/recurring-import-workflow.md)
-  + 设计查询 {#designing-queries}
-    + {hide-from-toc}[使用增量查询每季度更新列表 - 隐藏](workflow/using/quarterly-list-update.md)
-  + 查询和筛选 {#query-and-filter-hidden}
-    + {hide-from-toc}[查询收件人表 - 隐藏](workflow/using/querying-recipient-table.md)
-    + {hide-from-toc}[查询投放信息 - 隐藏](workflow/using/querying-delivery-information.md)
-    + {hide-from-toc}[执行总计计算 - 隐藏](workflow/using/performing-aggregate-computing.md)
-    + {hide-from-toc}[使用分组管理进行查询 - 隐藏](workflow/using/querying-using-grouping-management.md)
-    + {hide-from-toc}[使用多对多关系进行查询 - 隐藏](workflow/using/querying-using-many-to-many-relationship.md)
-    + {hide-from-toc}[添加明细列表类型计算字段 - 隐藏](workflow/using/adding-enumeration-type-calculated-field.md)
-    + {hide-from-toc}[创建筛选条件 - 隐藏](workflow/using/creating-a-filter.md)
-    + {hide-from-toc}[筛选重复的收件人 - 隐藏](workflow/using/filtering-duplicated-recipients.md)
-  + 监测工作流 {#monitoring-workflows}
-    + {hide-from-toc}[监测工作流执行 - 隐藏](workflow/using/monitoring-workflow-execution.md)
-    + {hide-from-toc}[监测技术工作流 - 隐藏](workflow/using/monitoring-technical-workflows.md)
-    + {hide-from-toc}[工作流热图 - 隐藏](workflow/using/heatmap.md)
-  + 高级管理 {#advanced-management}
-    + {hide-from-toc}[工作流属性 - 隐藏](workflow/using/workflow-properties.md)
-    + {hide-from-toc}[高级参数 - 隐藏](workflow/using/advanced-parameters.md)
-    + {hide-from-toc}[JavaScript 脚本和模板 - 隐藏](workflow/using/javascript-scripts-and-templates.md)
-    + {hide-from-toc}[工作流中的 JavaScript 代码示例 - 隐藏](workflow/using/javascript-in-workflows.md)
-    + {hide-from-toc}[访问外部数据库 - 隐藏](workflow/using/accessing-an-external-database-fda.md)
-    + {hide-from-toc}[管理权限 - 隐藏](workflow/using/managing-rights.md)
-    + {hide-from-toc}[更改活动图像 - 隐藏](workflow/using/managing-activity-images.md)
-    + {hide-from-toc}[管理时区 - 隐藏](workflow/using/managing-time-zones.md)
-    + {hide-from-toc}[技术工作流 - 隐藏](workflow/using/about-technical-workflows.md)
 + 管理产品建议 {#managing-offers}
   + 互动快速入门 {#interaction-overview}
     + [互动和产品建议管理](interaction/using/interaction-and-offer-management.md)

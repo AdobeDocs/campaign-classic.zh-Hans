@@ -34,9 +34,9 @@ topic_v2:
     internal-label: Optimization
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 9c678f353d367115bc188da80f07e018c44e2612
 workflow-type: tm+mt
-source-wordcount: '3362'
+source-wordcount: '3392'
 ht-degree: 6%
 ---
 # 压力规则{#pressure-rules}
@@ -364,8 +364,8 @@ ht-degree: 6%
 现在，为要应用压力规则的每个投放创建和配置工作流。
 
 1. 创建营销策划。 如需详细信息，请参阅[此小节](../../campaign/using/setting-up-marketing-campaigns.md#creating-a-campaign)。
-1. 在营销活动的&#x200B;**[!UICONTROL Targeting and workflows]**&#x200B;选项卡中，将&#x200B;**查询**&#x200B;活动添加到您的工作流。 有关使用此活动的详细信息，请参阅[此部分](../../workflow/using/query.md)。
-1. 将&#x200B;**[!UICONTROL Email delivery]**&#x200B;活动添加到工作流并打开它。 有关使用此活动的详细信息，请参阅[此部分](../../workflow/using/delivery.md)。
+1. 在营销活动的&#x200B;**[!UICONTROL Targeting and workflows]**&#x200B;选项卡中，将&#x200B;**查询**&#x200B;活动添加到您的工作流。 有关使用此活动的更多信息，请参阅[此章节](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/targeting-activities/query){target="_blank"}（Campaign v8文档）。
+1. 将&#x200B;**[!UICONTROL Email delivery]**&#x200B;活动添加到工作流并打开它。 有关使用此活动的更多信息，请参阅[此章节](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/action-activities/delivery){target="_blank"}（Campaign v8文档）。
 1. 转到&#x200B;**[!UICONTROL Delivery properties]**&#x200B;的&#x200B;**[!UICONTROL Approvals]**&#x200B;选项卡并禁用所有审批。
 
    ![](assets/campaign_opt_pressure_example_2.png)

@@ -21,9 +21,9 @@ subfeature_v2:
     internal-label: Reporting interface
   - id: e519a22f-a06a-42fc-9d09-d78a3ab2c434
     internal-label: Monitoring guidelines
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 9c678f353d367115bc188da80f07e018c44e2612
 workflow-type: tm+mt
-source-wordcount: '1510'
+source-wordcount: '1526'
 ht-degree: 1%
 ---
 # 多维数据集的最佳实践{#concepts-and-methodology}
@@ -162,7 +162,7 @@ Adobe Campaign还提供了域枚举，用于显示数据库中按ISP重组的所
 
    ![](assets/s_advuser_cube_agregate_04.png)
 
-   * **[!UICONTROL Scheduler]**&#x200B;活动允许您定义计算更新的频率。 计划程序在[此部分](../../workflow/using/scheduler.md)中有详细说明。
+   * **[!UICONTROL Scheduler]**&#x200B;活动允许您定义计算更新的频率。 [此部分](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/flow-control-activities/scheduler){target="_blank"}中详细介绍了调度程序（Campaign v8文档）。
    * **[!UICONTROL Aggregate update]**&#x200B;活动允许您选择要应用的更新模式：全部或部分。
 
      默认情况下，在每次计算期间都会执行完全更新。 要启用部分更新，请选择相关选项并定义更新条件。

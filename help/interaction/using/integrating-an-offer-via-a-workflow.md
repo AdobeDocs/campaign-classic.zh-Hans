@@ -25,9 +25,9 @@ feature_v2:
 subfeature_v2:
   - id: fcb46c0f-76e1-48bc-9dd0-fcf9d97526cf
     internal-label: Workflows
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 9c678f353d367115bc188da80f07e018c44e2612
 workflow-type: tm+mt
-source-wordcount: '1077'
+source-wordcount: '1092'
 ht-degree: 1%
 ---
 # 通过工作流集成优惠{#integrating-an-offer-via-a-workflow}
@@ -71,7 +71,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->有关扩充活动的详细信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/enrichment.html?lang=zh-Hans){target="_blank"}。
+>有关扩充活动的详细信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/enrichment.html){target="_blank"}。
 
 例如，您可以在投放之前扩充收件人查询的数据。
 
@@ -84,7 +84,7 @@ ht-degree: 1%
 
 ### 指定优惠或调用优惠引擎 {#specifying-an-offer-or-a-call-to-the-offer-engine}
 
-配置查询后（请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html?lang=zh-Hans){target="_blank"}）：
+配置查询后（请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html){target="_blank"}）：
 
 1. 添加并打开扩充活动。
 1. 在&#x200B;**[!UICONTROL Enrichment]**&#x200B;选项卡中，选择&#x200B;**[!UICONTROL Add data]**。
@@ -162,7 +162,7 @@ ht-degree: 1%
 
 ![](assets/int_offerengine_activity2.png)
 
-配置查询后（请参阅[工作流指南](../../workflow/using/query.md)）：
+配置查询后(请参阅[工作流指南](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/targeting-activities/query){target="_blank"} （Campaign v8文档）：
 
 1. 添加并打开&#x200B;**[!UICONTROL Offer engine]**&#x200B;活动。
 1. 填写各种可用字段以指定调用选件引擎参数（选件空间、类别或主题、联系日期、要保留的选件数）。 引擎将根据这些参数自动计算要添加的选件。

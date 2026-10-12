@@ -28,10 +28,10 @@ role_v2:
 topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
     internal-label: Optimization
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 9c678f353d367115bc188da80f07e018c44e2612
 workflow-type: tm+mt
-source-wordcount: '509'
-ht-degree: 2%
+source-wordcount: '525'
+ht-degree: 0%
 ---
 # 筛选规则{#filtering-rules}
 
@@ -77,7 +77,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->可在工作流的&#x200B;**[!UICONTROL Delivery outline]**&#x200B;活动中使用分类和筛选规则。 如需详细信息，请参阅[此小节](../../workflow/using/delivery-outline.md)。
+>可在工作流的&#x200B;**[!UICONTROL Delivery outline]**&#x200B;活动中使用分类和筛选规则。 有关更多信息，请参阅[此章节](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/targeting-activities/delivery-outline){target="_blank"}（Campaign v8文档）。
 
 ## 创建和使用过滤类型 {#creating-and-using-a-filtering-typology}
 

@@ -20,9 +20,9 @@ topic_v2:
 subfeature_v2:
   - id: a6187aac-0a00-4394-8937-e8d4c1a40aa4
     internal-label: Distributed Marketing
-source-git-commit: 38eab6b8da73163e4476e91c0ef73f25c3f57546
+source-git-commit: 9c678f353d367115bc188da80f07e018c44e2612
 workflow-type: tm+mt
-source-wordcount: '920'
+source-wordcount: '943'
 ht-degree: 4%
 ---
 # 创建协作活动{#creating-a-collaborative-campaign-intro}
@@ -93,7 +93,7 @@ ht-degree: 4%
 * **[!UICONTROL Distribution context]** ：显式。
 * **[!UICONTROL Data distribution]** ：本地实体分发。
 
-必须创建&#x200B;**本地实体分发**&#x200B;类型数据分发。 使用数据分发模板，您可以限制分组值列表中的记录数。 在&#x200B;**[!UICONTROL Resources > Campaign management > Data distribution]**&#x200B;中，单击&#x200B;**[!UICONTROL New]**&#x200B;图标以创建新的&#x200B;**[!UICONTROL Data distribution]**。 有关数据分发的详细信息，请参阅[工作流](../../workflow/using/using-the-local-approval-activity.md#step-1--creating-the-data-distribution-template-)指南。
+必须创建&#x200B;**本地实体分发**&#x200B;类型数据分发。 使用数据分发模板，您可以限制分组值列表中的记录数。 在&#x200B;**[!UICONTROL Resources > Campaign management > Data distribution]**&#x200B;中，单击&#x200B;**[!UICONTROL New]**&#x200B;图标以创建新的&#x200B;**[!UICONTROL Data distribution]**。 有关数据分发的更多信息，请参阅[工作流](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/use-cases/deliveries/local-approval-activity#step-1--creating-the-data-distribution-template-){target="_blank"}（Campaign v8文档）指南。
 
 ![](assets/mkg_dist_data_distribution.png)
 

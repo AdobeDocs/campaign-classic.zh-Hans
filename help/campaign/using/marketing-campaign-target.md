@@ -30,9 +30,9 @@ role_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 9c678f353d367115bc188da80f07e018c44e2612
 workflow-type: tm+mt
-source-wordcount: '1508'
+source-wordcount: '1581'
 ht-degree: 2%
 ---
 # 选择营销活动受众 {#marketing-campaign-deliveries}
@@ -75,7 +75,7 @@ ht-degree: 2%
 
 ![](assets/s_ncs_user_edit_op_wf_link.png)
 
-通过放置在工作流中的一个或多个查询，从Adobe Campaign数据库中提取目标群体。 要了解如何构建查询，请参阅[此部分](../../workflow/using/query.md)。
+通过放置在工作流中的一个或多个查询，从Adobe Campaign数据库中提取目标群体。 要了解如何构建查询，请参阅[此章节](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/targeting-activities/query){target="_blank"}（Campaign v8文档）。
 
 您可以通过并集、交集、共享、排除等框启动查询并共享群体。
 
@@ -87,7 +87,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->[此部分](../../workflow/using/query.md)中介绍了定义查询的示例和过程。
+>有关定义查询的示例和过程，请参见[此部分](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/targeting-activities/query){target="_blank"}（Campaign v8文档）。
 
 编辑器的左侧部分包含一个表示活动的图形对象库。 第一个选项卡包含定向活动，第二个选项卡包含流量控制活动，这些活动有时用于协调定向活动。
 
@@ -97,7 +97,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->有关可用于构建图表的活动以及所有显示和布局功能的详情，请参阅[使用工作流实现自动化](../../workflow/using/architecture.md)指南。
+>有关可用于构建图表的活动以及所有显示和布局功能的详情，请参阅[使用工作流实现自动化](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/activities){target="_blank"}（Campaign v8文档）指南。
 
 您可以为单个营销策划创建多个定位工作流。 要添加工作流，请执行以下操作：
 
@@ -250,7 +250,7 @@ ht-degree: 2%
 
 ![](assets/s_ncs_user_edit_op_target_param.png)
 
-此配置等同于工作流中的共享活动，可让您将目标划分为子集。 控制组是上述子组之一。 有关详细信息，请参阅[此部分](../../workflow/using/architecture.md)。
+此配置等同于工作流中的共享活动，可让您将目标划分为子集。 控制组是上述子组之一。 有关详细信息，请参阅[此部分](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/targeting-activities/split){target="_blank"}（Campaign v8文档）。
 
 ### 使用新群体作为对照组 {#adding-a-population}
 
@@ -260,13 +260,13 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->Adobe Campaign查询编辑器出现在[此部分](../../workflow/using/query.md)中。
+>Adobe Campaign查询编辑器存在于[此部分](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/targeting-activities/query){target="_blank"}中（Campaign v8文档）。
 
 
 #### 教程视频 {#create-email-video}
 
 此视频介绍如何在Adobe Campaign中创建活动和电子邮件。
 
->[!VIDEO](https://video.tv.adobe.com/v/27491?captions=chi_hans&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/25604?quality=12)
 
 [此处](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hans)提供了其他Campaign操作方法视频。

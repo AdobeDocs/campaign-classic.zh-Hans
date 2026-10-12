@@ -36,10 +36,10 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: 9c678f353d367115bc188da80f07e018c44e2612
 workflow-type: tm+mt
-source-wordcount: '545'
-ht-degree: 7%
+source-wordcount: '576'
+ht-degree: 6%
 ---
 # 定义正确的受众 {#define-the-right-audience}
 
@@ -59,26 +59,26 @@ ht-degree: 7%
 
 例如，您可以向通过社交网络收集用户档案的访客或订阅了信息服务的访客投放。
 
-这些映射显示在[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/audience/add-profiles/target-mappings.html?lang=zh-Hans){target="_blank"}中。
+这些映射显示在[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/audience/add-profiles/target-mappings.html){target="_blank"}中。
 
 您还可以创建和使用自定义的目标映射。 如需详细信息，请参阅[此小节](../../configuration/using/target-mapping.md)。
 
 ## 外部收件人 {#external-recipients}
 
-您可以向存储在外部文件中而不是数据库中保存的收件人投放。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=zh-Hans#selecting-external-recipients){target="_blank"}以了解详情。
+您可以向存储在外部文件中而不是数据库中保存的收件人投放。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#selecting-external-recipients){target="_blank"}以了解详情。
 
 ## 发送给订阅者 {#send-to-subscribers}
 
-要向新闻稿的订阅者发送消息，可以直接将订阅者定位到相应的信息服务。 在本节[&#128279;](managing-subscriptions.md#delivering-to-the-subscribers-of-a-service)中了解更多。
+要向新闻稿的订阅者发送消息，可以直接将订阅者定位到相应的信息服务。 在本节](managing-subscriptions.md#delivering-to-the-subscribers-of-a-service)中了解更多[。
 
 
 ## 测试收件人和种子地址 {#test-recipients-seed-addresses}
 
 要测试您的投放，请在发送到主目标之前使用验证。
 
-确保选择适当的校样收件人，因为他们验证消息的表单和内容。 有关定义校样收件人的步骤，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=zh-Hans#select-the-proof-target){target="_blank"}。
+确保选择适当的校样收件人，因为他们验证消息的表单和内容。 有关定义校样收件人的步骤，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html#select-the-proof-target){target="_blank"}。
 
-种子地址用于定向不符合所定义目标标准的收件人，以便在发送到主目标之前测试投放。 它们在本节[&#128279;](about-seed-addresses.md)中为呈现。
+种子地址用于定向不符合所定义目标标准的收件人，以便在发送到主目标之前测试投放。 它们在本节](about-seed-addresses.md)中为[呈现。
 
 ## 删除重复地址 {#deduplicate-addresses}
 
@@ -92,11 +92,11 @@ ht-degree: 7%
 
 **相关主题：**
 
-* [重复数据删除活动](../../workflow/using/deduplication.md)。
-* [用例：使用外部重复数据删除活动的合并功能](../../workflow/using/deduplication-merge.md)
+* [重复数据删除活动](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/targeting-activities/deduplication){target="_blank"}（Campaign v8文档）。
+* [用例：使用重复数据删除活动的合并功能](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/use-cases/data-management/deduplication-merge){target="_blank"}（Campaign v8文档）
 
 ## 为电子邮件地址编制索引 {#index-addresses}
 
 为了优化应用程序中使用的SQL查询的性能，可以从数据架构的主元素声明索引。
 
-向电子邮件地址添加索引的步骤在本节[&#128279;](../../configuration/using/database-mapping.md#indexed-fields)中介绍。
+向电子邮件地址添加索引的步骤在本节](../../configuration/using/database-mapping.md#indexed-fields)中介绍[。

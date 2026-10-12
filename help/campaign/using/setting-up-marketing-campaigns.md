@@ -30,16 +30,16 @@ role_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
     internal-label: Implementation
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 9c678f353d367115bc188da80f07e018c44e2612
 workflow-type: tm+mt
-source-wordcount: '1259'
-ht-degree: 6%
+source-wordcount: '1275'
+ht-degree: 5%
 ---
 # 营销活动入门{#setting-up-marketing-campaigns}
 
 活动包括操作（投放）和流程（导入或提取文件）以及资源（营销文档、投放概要）。 它们用于营销活动。 活动是项目的一部分，项目包含在活动计划中。
 
-![](assets/do-not-localize/how-to-video.png)在视频[&#128279;](#video)中了解如何创建营销计划、项目和营销活动
+![](assets/do-not-localize/how-to-video.png)在视频](#video)中了解如何创建营销计划、项目和营销活动[
 
 要创建营销活动，请执行以下操作：
 
@@ -147,7 +147,7 @@ ht-degree: 6%
 
    ![](assets/s_ncs_user_op_template_recur_planning.png)
 
-   执行计划的配置模式与工作流的&#x200B;**[!UICONTROL Scheduler]**&#x200B;对象一致。 如需详细信息，请参阅[此小节](../../workflow/using/architecture.md)。
+   执行计划的配置模式与工作流的&#x200B;**[!UICONTROL Scheduler]**&#x200B;对象一致。 有关更多信息，请参阅[此章节](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/flow-control-activities/scheduler){target="_blank"}（Campaign v8文档）。
 
    >[!IMPORTANT]
    >
@@ -245,6 +245,6 @@ ht-degree: 6%
 
 本视频说明如何创建营销计划、项目和营销活动。
 
->[!VIDEO](https://video.tv.adobe.com/v/326559?captions=chi_hans&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/35132?quality=12)
 
 [此处](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hans)提供了其他Campaign操作方法视频。

@@ -42,9 +42,9 @@ topic_v2:
     internal-label: Data management
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 9c678f353d367115bc188da80f07e018c44e2612
 workflow-type: tm+mt
-source-wordcount: '1161'
+source-wordcount: '1178'
 ht-degree: 1%
 ---
 # 同步受众{#synchronizing-audiences}
@@ -89,7 +89,7 @@ ht-degree: 1%
 
    ![](assets/acs_connect_query1.png)
 
-1. 从查询中添加其他数据。 有关详细信息，请参阅[添加数据](../../workflow/using/query.md#adding-data)部分。
+1. 从查询中添加其他数据。 有关更多信息，请参阅[添加数据](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/targeting-activities/query#adding-data){target="_blank"}（Campaign v8文档）一节。
 
    此示例说明如何添加聚合以计算收件人在一年内接收的投放数量。
 
@@ -157,7 +157,7 @@ ht-degree: 1%
 
    此活动用于检索所选受众的数据。 如果需要，您还可以使用此活动的相应选项卡应用额外的&#x200B;**[!UICONTROL Source Filtering]**。
 
-1. 添加&#x200B;**[!UICONTROL Email delivery]**&#x200B;活动，并将其配置为任何其他[电子邮件投放活动](https://experienceleague.adobe.com/docs/campaign-standard/using/managing-processes-and-data/channel-activities/email-delivery.html?lang=zh-Hans)。
+1. 添加&#x200B;**[!UICONTROL Email delivery]**&#x200B;活动，并将其配置为任何其他[电子邮件投放活动](https://experienceleague.adobe.com/docs/campaign-standard/using/managing-processes-and-data/channel-activities/email-delivery.html)。
 1. 打开投放内容。
 1. 添加个性化字段。 从弹出窗口中，找到&#x200B;**[!UICONTROL Additional data (targetData)]**&#x200B;节点。 此节点包含在初始定位工作流中计算的受众附加数据。 您可以像使用任何其他个性化字段一样使用它们。
 
@@ -179,9 +179,9 @@ ht-degree: 1%
 1. 在投放仪表板中，手动确认可以发送投放。
 1. 监测投放的报告和日志：
 
-   * 在Campaign Standard **中**：与任何投放一样，访问与该投放相关的[报告](https://experienceleague.adobe.com/docs/campaign-standard/using/reporting/about-reporting/about-dynamic-reports.html?lang=zh-Hans)和[日志](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/monitoring-a-delivery.html?lang=zh-Hans)。
-   * Campaign v7和Campaign Standard中的&#x200B;**&#x200B;**：投放ID、电子邮件广泛日志和电子邮件跟踪日志已同步到Campaign v7。 然后，您可以从Campaign v7全面了解营销活动。
+   * 在Campaign Standard **中**：与任何投放一样，访问与该投放相关的[报告](https://experienceleague.adobe.com/docs/campaign-standard/using/reporting/about-reporting/about-dynamic-reports.html)和[日志](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/monitoring-a-delivery.html)。
+   * Campaign v7和Campaign Standard中的&#x200B;****：投放ID、电子邮件广泛日志和电子邮件跟踪日志已同步到Campaign v7。 然后，您可以从Campaign v7全面了解营销活动。
 
      隔离会自动同步回Campaign v7。 这允许将无法投放的信息考虑在内，以便在Campaign v7中执行下一个定位。
 
-     您可以在[此部分](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-quarantine-management.html?lang=zh-Hans)中找到有关Campaign Standard中隔离管理的更多信息。
+     您可以在[此部分](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-quarantine-management.html)中找到有关Campaign Standard中隔离管理的更多信息。

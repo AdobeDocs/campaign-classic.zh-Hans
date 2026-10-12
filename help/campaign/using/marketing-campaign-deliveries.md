@@ -34,9 +34,9 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 9c678f353d367115bc188da80f07e018c44e2612
 workflow-type: tm+mt
-source-wordcount: '1511'
+source-wordcount: '1526'
 ht-degree: 1%
 ---
 # 营销活动投放 {#marketing-campaign-deliveries}
@@ -45,7 +45,7 @@ ht-degree: 1%
 
 从营销活动创建投放后，这些投放将链接到此营销活动，并在营销活动级别合并。
 
-![](assets/do-not-localize/how-to-video.png) [在视频中发现此功能](#create-email-video)
+![](assets/do-not-localize/how-to-video.png)[在视频中发现此功能](#create-email-video)
 
 ## 创建投放 {#creating-deliveries}
 
@@ -83,7 +83,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->与营销活动包相关的技术工作流显示在[技术工作流列表](../../workflow/using/about-technical-workflows.md)中。
+>与Campaign包相关的技术工作流显示在[技术工作流列表](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows){target="_blank"}中（Campaign v8文档）。
 
 **步骤1 — 文件审批**
 
@@ -142,7 +142,7 @@ ht-degree: 1%
 
 ## 管理关联文档 {#managing-associated-documents}
 
-您可以将各种文档与活动关联：报表、照片、网页、图表等。这些文档可以是任何格式（Microsoft Word、PowerPoint、PNG、JPG、Acrobat PDF等）。 在本节[&#128279;](../../campaign/using/marketing-campaign-assets.md)中了解如何将文档与促销活动关联。
+您可以将各种文档与活动关联：报表、照片、网页、图表等。这些文档可以是任何格式（Microsoft Word、PowerPoint、PNG、JPG、Acrobat PDF等）。 在本节](../../campaign/using/marketing-campaign-assets.md)中了解如何将文档与促销活动[关联。
 
 >[!IMPORTANT]
 >
@@ -263,7 +263,7 @@ ht-degree: 1%
 
 此视频介绍如何在Adobe Campaign中创建活动和电子邮件。
 
->[!VIDEO](https://video.tv.adobe.com/v/27491?captions=chi_hans&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/25604?quality=12)
 
 [此处](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=zh-Hans)提供了其他Campaign操作方法视频。
 
