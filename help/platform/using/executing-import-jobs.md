@@ -32,7 +32,7 @@ subfeature_v2:
     internal-label: Access management
   - id: e8d937ec-9046-41b5-834b-d22a624e0d37
     internal-label: Campaign overview
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: 75d65377f93a40be104f7ec817e6a7609cccaf93
 workflow-type: tm+mt
 source-wordcount: '3000'
 ht-degree: 31%
@@ -45,7 +45,7 @@ Adobe Campaign允许您以文本、CSV、TAB或XML格式将数据从一个或多
 
 >[!NOTE]
 >
->您可以使用&#x200B;**[!UICONTROL Import a list]**&#x200B;函数导入数据，而无需将其与数据库数据进行映射。 然后，可以通过&#x200B;**[!UICONTROL Read list]**&#x200B;对象在工作流中专门使用该数据。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/read-list.html?lang=zh-Hans){target="_blank"}。
+>您可以使用&#x200B;**[!UICONTROL Import a list]**&#x200B;函数导入数据，而无需将其与数据库数据进行映射。 然后，可以通过&#x200B;**[!UICONTROL Read list]**&#x200B;对象在工作流中专门使用该数据。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/read-list.html){target="_blank"}。
 
 导入助手允许您配置导入、定义其选项（如数据转换）并启动执行。 它是一系列屏幕，其内容取决于导入类型（简单或多个）和操作员权限。
 
@@ -109,7 +109,7 @@ Adobe Campaign允许您以文本、CSV、TAB或XML格式将数据从一个或多
 
   * **[!UICONTROL Do not update enumerations]**
 
-    选择此选项可避免扩充数据库中的枚举值列表。 在[Adobe Campaign v8 （控制台）文档](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}中了解如何&#x200B;**使用枚举**。
+    选择此选项可避免扩充数据库中的枚举值列表。 在[Adobe Campaign v8 （控制台）文档](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/enumerations){target=_blank}中了解如何&#x200B;**使用枚举**。
 
 
 * **[!UICONTROL Variables]**&#x200B;选项卡
@@ -316,7 +316,7 @@ Adobe Campaign允许您以文本、CSV、TAB或XML格式将数据从一个或多
 
      >[!NOTE]
      >
-     >运算符的默认文件夹是运算符具有写入权限的第一个文件夹。 在[文件夹访问管理](../../platform/using/access-management-folders.md)中了解详情。
+     >运算符的默认文件夹是运算符具有写入权限的第一个文件夹。 在[文件夹访问管理](access-management.md)中了解详情。
 
      要选择导入文件夹，请单击&#x200B;**[!UICONTROL Folder]**&#x200B;字段右侧的箭头，然后选择相关的文件夹。 您还可以使用&#x200B;**[!UICONTROL Select link]**&#x200B;图标在新窗口中显示树或创建新文件夹。
 

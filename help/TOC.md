@@ -8,9 +8,9 @@ user-guide-description: Adobe Campaign Classic v7 产品文档。
 sub-product: adobe campaign classic
 type: Documentation
 nudge: false
-source-git-commit: 4bc1e76d129c6a6aa15b7e3915232043bd6f4286
+source-git-commit: 75d65377f93a40be104f7ec817e6a7609cccaf93
 workflow-type: tm+mt
-source-wordcount: '1992'
+source-wordcount: '1953'
 ht-degree: 100%
 ---
 
@@ -51,11 +51,7 @@ ht-degree: 100%
     + [选择禁用个人信息销售](platform/using/privacy-requests-ccpa.md)
   + 轮廓管理 {#profile-management}
     + [关于轮廓](platform/using/about-profiles.md)
-    + {hide-from-toc}[编辑轮廓 - 隐藏](platform/using/editing-a-profile.md)
-    + {hide-from-toc}[添加轮廓 - 隐藏](platform/using/adding-profiles.md)
-    + {hide-from-toc}[管理轮廓 - 隐藏](platform/using/managing-profiles.md)
     + [更新数据](platform/using/updating-data.md)
-    + {hide-from-toc}[导入和导出轮廓 - 隐藏](platform/using/exporting-and-importing-profiles.md)
     + [创建和管理列表](platform/using/creating-and-managing-lists.md)
   + 导入和导出数据 {#importing-and-exporting-data}
     + [数据导入和导出入门](platform/using/get-started-data-import-export.md)
@@ -75,9 +71,7 @@ ht-degree: 100%
       + [导入和导出最佳实践](platform/using/import-export-best-practices.md)
       + [SFTP 服务器最佳实践和故障排除](platform/using/sftp-server-usage.md)
   + 筛选数据 {#filtering-data}
-    + {hide-from-toc}[筛选选项 - 隐藏](platform/using/filtering-options.md)
     + {hide-from-toc}[创建筛选 - 隐藏](platform/using/creating-filters.md)
-    + {hide-from-toc}[用例 - 隐藏](platform/using/use-case.md)
   + {hide-from-toc}[创建查询的步骤 - 隐藏](platform/using/steps-to-create-a-query.md)
   + {hide-from-toc}[定义筛选条件 - 隐藏](platform/using/defining-filter-conditions.md)
   + 权限 {#permissions}
@@ -86,12 +80,8 @@ ht-degree: 100%
       + [创建和管理操作员](platform/using/access-management-operators.md)
       + [创建和管理组](platform/using/access-management-groups.md)
     + [使用已命名权限设置权限](platform/using/access-management-named-rights.md)
-    + {hide-from-toc}[管理对文件夹的访问 - 隐藏](platform/using/access-management-folders.md)
   + CRM 连接器 {#connectors}
     + [CRM 连接器入门](platform/using/crm-connectors.md)
-    + {hide-from-toc}[与 Microsoft Dynamics 365 连接](platform/using/crm-ms-dynamics.md)
-    + {hide-from-toc}[与 Salesforce.com 连接](platform/using/crm-sfdc.md)
-    + {hide-from-toc}[与 CRM 同步数据](platform/using/crm-data-sync.md)
 + 创建和发送消息 {#sending-messages}
   + [开始使用消息功能](delivery/using/communication-channels.md)
   + {hide-from-toc}[投放设置 - 隐藏](delivery/using/delivery-settings.md)
