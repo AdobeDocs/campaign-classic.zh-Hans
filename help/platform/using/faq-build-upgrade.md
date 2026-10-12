@@ -40,7 +40,7 @@ topic_v2:
     internal-label: Personalization
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: 4bc1e76d129c6a6aa15b7e3915232043bd6f4286
 workflow-type: tm+mt
 source-wordcount: '2105'
 ht-degree: 2%
@@ -63,7 +63,7 @@ Adobe Campaign 会定期更新。 如果您熟悉我们发布的[发行说明](.
 
 当将Adobe Campaign Classic软件更新到最新的安全内部版本号，但保持相同的主/次内部版本级别时，即进行内部版本升级。 例如：Campaign Classic v7内部版本9026到Campaign v7内部版本9032。
 
-在本节[&#128279;](../../rn/using/rn-overview.md)中了解更多。
+在本节](../../rn/using/rn-overview.md)中了解更多[。
 
 ## Adobe Campaign Classic的最新版本是什么？
 
@@ -73,13 +73,13 @@ Adobe Campaign 会定期更新。 如果您熟悉我们发布的[发行说明](.
 
 从Adobe Campaign客户端控制台的&#x200B;**[!UICONTROL Help > About...]**&#x200B;菜单检查您的版本。 **[!UICONTROL About]**&#x200B;框包含有关控制台和服务器正在运行的版本和内部版本的详细信息。
 
-在本节[&#128279;](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)中了解更多。
+在本节](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)中了解更多[。
 
 ## 构建状态表示什么？
 
 从Campaign Classic 19.2开始，状态与每个内部版本关联。
 
-在本节[&#128279;](../../rn/using/rn-overview.md)中了解更多。
+在本节](../../rn/using/rn-overview.md)中了解更多[。
 
 ## 内部版本升级与版本升级是否相同？
 
@@ -212,7 +212,7 @@ Adobe将在进行任何更改之前备份您的系统。 但是，如果您的�
 
 如果您在版本升级后遇到问题，请联系[Adobe客户关怀团队](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。 客户关怀团队会安排构建日期并打开与构建升级相关的票证。
 
-在Campaign Classic的[帮助和支持选项中了解详情](../../support.md)
+在Campaign Classic的[帮助和支持选项中了解详情](../../campaign-classic-home.md)
 
 ## 构建升级核对清单 {#check-list}
 
@@ -252,5 +252,5 @@ Adobe将在进行任何更改之前备份您的系统。 但是，如果您的�
 
 * [执行内部版本升级](../../production/using/build-upgrade.md)
 * [Campaign Classic发行说明](../../rn/using/rn-overview.md)
-* [Campaign Classic的帮助和支持选项](../../support.md)
+* [Campaign Classic的帮助和支持选项](../../campaign-classic-home.md)
 * [年度升级计划](../../rn/using/rn-overview.md#yearly-upgrade)

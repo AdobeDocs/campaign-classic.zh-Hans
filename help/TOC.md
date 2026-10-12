@@ -8,9 +8,9 @@ user-guide-description: Adobe Campaign Classic v7 产品文档。
 sub-product: adobe campaign classic
 type: Documentation
 nudge: false
-source-git-commit: 9c678f353d367115bc188da80f07e018c44e2612
+source-git-commit: 4bc1e76d129c6a6aa15b7e3915232043bd6f4286
 workflow-type: tm+mt
-source-wordcount: '2298'
+source-wordcount: '1992'
 ht-degree: 100%
 ---
 
@@ -29,7 +29,6 @@ ht-degree: 100%
     + {hide-from-toc}[[!DNL Gold Standard - HIDDEN]](rn/using/gold-standard.md)
   + [已弃用的功能](rn/using/deprecated-features.md)
   + [兼容性矩阵](rn/using/compatibility-matrix.md)
-  + {hide-from-toc}[文档更新 - 隐藏](rn/using/documentation-updates.md)
 + 快速入门 {#getting-started}
   + [Adobe Campaign Classic 入门](platform/using/about-adobe-campaign-classic.md)
   + [启动 Adobe Campaign](platform/using/launching-adobe-campaign.md)
@@ -93,7 +92,6 @@ ht-degree: 100%
     + {hide-from-toc}[与 Microsoft Dynamics 365 连接](platform/using/crm-ms-dynamics.md)
     + {hide-from-toc}[与 Salesforce.com 连接](platform/using/crm-sfdc.md)
     + {hide-from-toc}[与 CRM 同步数据](platform/using/crm-data-sync.md)
-  + {hide-from-toc}[帮助和支持选项 - 隐藏](support.md)
 + 创建和发送消息 {#sending-messages}
   + [开始使用消息功能](delivery/using/communication-channels.md)
   + {hide-from-toc}[投放设置 - 隐藏](delivery/using/delivery-settings.md)
@@ -208,42 +206,6 @@ ht-degree: 100%
     + [丰富内容](delivery/using/enriching-content.md)
     + [通过工作流实现自动化](delivery/using/automating-via-workflows.md)
 + [编排营销活动](campaign/using/about-marketing-campaigns.md)
-+ 编排营销活动 {#orchestrating-campaigns}
-  + {hide-from-toc}[关于活动优化 - 隐藏](campaign-opt/using/about-campaign-optimization.md)
-  + 关于营销活动 {#about-marketing-campaigns}
-    + {hide-from-toc}[设计营销活动 - 隐藏](campaign/using/designing-marketing-campaigns.md)
-    + {hide-from-toc}[访问营销活动 - 隐藏](campaign/using/accessing-marketing-campaigns.md)
-  + 编排营销活动 {#orchestrate-campaigns}
-    + {hide-from-toc}[营销活动快速入门 - 隐藏](campaign/using/setting-up-marketing-campaigns.md)
-    + {hide-from-toc}[创建和配置模板 - 隐藏](campaign/using/marketing-campaign-templates.md)
-    + {hide-from-toc}[添加投放 - 隐藏](campaign/using/marketing-campaign-deliveries.md)
-    + {hide-from-toc}[选择受众 - 隐藏](campaign/using/marketing-campaign-target.md)
-    + {hide-from-toc}[管理文档和资产 - 隐藏](campaign/using/marketing-campaign-assets.md)
-    + {hide-from-toc}[设置和管理审批 - 隐藏](campaign/using/marketing-campaign-approval.md)
-    + {hide-from-toc}[监测活动 - 隐藏](campaign/using/marketing-campaign-monitoring.md)
-    + {hide-from-toc}[供应商、库存和预算 - 隐藏](campaign/using/providers-stocks-and-budgets.md)
-  + 活动优化 {#campaign-optimization}
-    + {hide-from-toc}[关于活动类型 - 隐藏](campaign-opt/using/about-campaign-typologies.md)
-    + {hide-from-toc}[压力规则 - 隐藏](campaign-opt/using/pressure-rules.md)
-    + {hide-from-toc}[一致性规则 - 隐藏](campaign-opt/using/consistency-rules.md)
-    + {hide-from-toc}[控制规则 - 隐藏](campaign-opt/using/control-rules.md)
-    + {hide-from-toc}[筛选规则 - 隐藏](campaign-opt/using/filtering-rules.md)
-    + {hide-from-toc}[应用规则 - 隐藏](campaign-opt/using/applying-rules.md)
-    + {hide-from-toc}[活动模拟 - 隐藏](campaign-opt/using/campaign-simulations.md)
-+ 营销资源管理 {#mrm}
-  + {hide-from-toc}[关于营销资源管理 - 隐藏](mrm/using/about-marketing-resource-management.md)
-  + {hide-from-toc}[创建和管理任务 - 隐藏](mrm/using/creating-and-managing-tasks.md)
-  + {hide-from-toc}[控制成本 - 隐藏](mrm/using/controlling-costs.md)
-  + {hide-from-toc}[管理营销资源 - 隐藏](mrm/using/managing-marketing-resources.md)
-  + {hide-from-toc}[论坛 - 隐藏](mrm/using/discussion-forums.md)
-+ 分布式营销 {#distributed-marketing}
-  + {hide-from-toc}[关于分布式营销 - 隐藏](distributed/using/about-distributed-marketing.md)
-  + {hide-from-toc}[创建本地活动 - 隐藏](distributed/using/creating-a-local-campaign.md)
-  + {hide-from-toc}[创建协作活动 - 隐藏](distributed/using/creating-a-collaborative-campaign.md)
-  + {hide-from-toc}[发布营销活动包 - 隐藏](distributed/using/publishing-the-campaign-package.md)
-  + {hide-from-toc}[访问活动 - 隐藏](distributed/using/accessing-campaigns.md)
-  + {hide-from-toc}[跟踪活动 - 隐藏](distributed/using/tracking-a-campaign.md)
-  + {hide-from-toc}[用例 - 隐藏](distributed/using/examples.md)
 + 响应管理器 {#response-manager}
   + [响应管理器入门](response/using/about-response-manager.md)
   + [配置](response/using/configuration.md)
@@ -252,18 +214,12 @@ ht-degree: 100%
   + [假设验证跟踪](response/using/hypothesis-tracking.md)
 + 设计和共享报告 {#reporting}
   + 报告快速入门 {#reporting-in-adobe-campaign}
-    + [报告工具](reporting/using/about-adobe-campaign-reporting-tools.md)
     + [报告最佳实践](reporting/using/best-practices.md)
   + 访问内置报告 {#accessing-built-in-reports}
     + [关于内置报告](reporting/using/about-campaign-built-in-reports.md)
     + [报告列表](reporting/using/list-of-reports.md)
   + 投放报告{#reports-on-deliveries}
-    + [关于投放报告](reporting/using/reports-on-deliveries.md)
-    + [全局报告](reporting/using/global-reports.md)
-    + [投放报告](reporting/using/delivery-reports.md)
-    + [累积报告](reporting/using/cumulative-reports.md)
     + [指标计算](reporting/using/indicator-calculation.md)
-    + [人员和收件人](reporting/using/person-people-recipients.md)
   + 分析人群 {#analyzing-populations}
     + [什么是描述性分析](reporting/using/about-descriptive-analysis.md)
     + [创建第一个描述性分析报告](reporting/using/using-the-descriptive-analysis-wizard.md)
@@ -366,22 +322,7 @@ ht-degree: 100%
 + 管理产品建议 {#managing-offers}
   + 互动快速入门 {#interaction-overview}
     + [互动和产品建议管理](interaction/using/interaction-and-offer-management.md)
-    + [词汇表](interaction/using/i-glossary.md)
-    + [互动最佳实践](interaction/using/interaction-best-practices.md)
-  + 一般操作 {#general-operation}
-    + [实施步骤](interaction/using/implementation-steps.md)
-    + [基本原则](interaction/using/fundamental-principles.md)
-  + 管理环境 {#managing-environments}
-    + [环境概述](interaction/using/environments-overview.md)
-    + [操作员轮廓](interaction/using/operator-profiles.md)
-    + [实时/设计环境](interaction/using/live-design-environments.md)
-    + [创建产品建议空间](interaction/using/creating-offer-spaces.md)
-    + [创建预定义过滤器](interaction/using/creating-predefined-filters.md)
   + 管理产品建议目录 {#managing-an-offer-catalog}
-    + [产品建议目录概述](interaction/using/offer-catalog-overview.md)
-    + [创建产品建议类别](interaction/using/creating-offer-categories.md)
-    + [推荐类别](interaction/using/recommending-a-category.md)
-    + [创建产品建议](interaction/using/creating-an-offer.md)
     + [批准和激活产品建议](interaction/using/approving-and-activating-an-offer.md)
     + [管理产品建议模板](interaction/using/managing-offer-templates.md)
     + [管理产品建议演示](interaction/using/managing-offer-presentation.md)
@@ -390,18 +331,6 @@ ht-degree: 100%
     + [执行设置](interaction/using/execution-settings.md)
     + [模拟范围](interaction/using/simulation-scope.md)
     + [模拟跟踪](interaction/using/simulation-tracking.md)
-  + 投放产品建议 {#delivering-an-offer}
-    + [关于出站渠道](interaction/using/about-outbound-channels.md)
-    + [通过助手集成产品建议](interaction/using/integrating-an-offer-via-the-wizard.md)
-    + [通过工作流集成产品建议](interaction/using/integrating-an-offer-via-a-workflow.md)
-  + 单一互动 {#unitary-interactions}
-    + [关于入站渠道](interaction/using/about-inbound-channels.md)
-    + [通过 JavaScript 集成（客户端）](interaction/using/integration-via-javascript-client-side.md)
-    + [通过 SOAP（服务器端）进行集成](interaction/using/integration-via-soap-server-side.md)
-    + [匿名互动](interaction/using/anonymous-interactions.md)
-  + 跟踪产品建议 {#tracking-offers}
-    + [产品建议提议历史](interaction/using/offer-proposition-history.md)
-    + [产品建议分析报告](interaction/using/offer-analysis-report.md)
   + 高级参数 {#advanced-parameters}
     + [使用高级参数](interaction/using/using-advanced-parameters.md)
     + [其他数据](interaction/using/additional-data.md)
@@ -421,19 +350,7 @@ ht-degree: 100%
     + [配置实例](message-center/using/configuring-instances.md)
     + [其他配置](message-center/using/additional-configurations.md)
   + 消息模板 {#message-templates}
-    + [创建事件类型](message-center/using/creating-event-types.md)
-    + [设计消息模板](message-center/using/creating-the-message-template.md)
     + [测试消息模板](message-center/using/testing-message-templates.md)
-    + [发布消息模板](message-center/using/publishing-message-templates.md)
-  + 事务性事件处理 {#processing}
-    + [事件描述](message-center/using/event-description.md)
-    + [事件处理](message-center/using/about-event-processing.md)
-    + [投放执行](message-center/using/delivery-execution.md)
-  + 报告 {#reports}
-    + [访问事务性消息传递报告](message-center/using/about-transactional-messaging-reports.md)
-    + [消息中心事件的历史](message-center/using/history-of-message-center-events.md)
-    + [消息中心服务级别](message-center/using/message-center-service-level.md)
-    + [消息中心处理时间](message-center/using/message-center-processing-time.md)
   + [用例](message-center/using/transactional-email-with-attachments.md)
 + 与社交媒体集成 {#integrating-with-social-media}
   + [关于社交媒体营销](social/using/about-social-marketing.md)
@@ -591,7 +508,6 @@ ht-degree: 100%
 + 开发者指南 {#configuring-campaign-classic}
   + [数据包](platform/using/working-with-data-packages.md)
   + 数据模型 {#data-model}
-    + [关于数据模型](configuration/using/about-data-model.md)
     + [数据模型描述](configuration/using/data-model-description.md)
     + [最佳实践](configuration/using/data-model-best-practices.md)
   + 使用架构 {#schema-reference}
@@ -599,7 +515,6 @@ ht-degree: 100%
     + [架构结构](configuration/using/schema-structure.md)
     + [数据库映射](configuration/using/database-mapping.md)
     + [密钥管理](configuration/using/database-keys.md)
-    + [链接管理](configuration/using/database-links.md)
     + 元素和属性 {#elements-attributes}
       + [简介](configuration/using/schema-introduction.md)
       + [属性](configuration/using/schema/attribute.md)
@@ -620,21 +535,15 @@ ht-degree: 100%
       + [Sysfilter](configuration/using/schema/sysfilter.md)
       + [值](configuration/using/schema/value.md)
   + 编辑架构 {#editing-schemas}
-    + [关于架构版本](configuration/using/about-schema-edition.md)
-    + [数据架构](configuration/using/data-schemas.md)
     + [现有表的架构](configuration/using/schema-of-an-existing-table.md)
     + [扩展架构](configuration/using/extending-a-schema.md)
-    + [筛选架构](configuration/using/filtering-schemas.md)
-    + [限制 PII 视图](configuration/using/restricting-pii-view.md)
     + [更新数据库结构](configuration/using/updating-the-database-structure.md)
     + [新建字段助手](configuration/using/new-field-wizard.md)
     + [数据架构的结构](configuration/using/structure-of-a-data-schema.md)
     + [重新生成架构](configuration/using/regenerating-schemas.md)
     + [架构版本示例](configuration/using/examples-of-schemas-edition.md)
   + 输入表单 {#input-forms}
-    + [识别表单](configuration/using/identifying-a-form.md)
     + [编辑表单](configuration/using/editing-forms.md)
-    + [窗体结构](configuration/using/form-structure.md)
   + API {#api}
     + [关于 Web 服务](configuration/using/about-web-services.md)
     + [Web 服务调用](configuration/using/web-service-calls.md)
@@ -686,13 +595,11 @@ ht-degree: 100%
     + [将技术操作员迁移到 Developer Console](technotes/using/ims-migration.md)
     + [IMS 迁移后的界面影响](technotes/using/impact-ims-migration.md)
   + 升级和兼容性{#technote-migration}
-    + {hide-from-toc}[技术说明](technotes/using/technote.md)
     + [启用 Microsoft Edge Chromium](technotes/using/edge-chromium.md)
     + {hide-from-toc}[新的可投放性服务器](technotes/using/deliverability-server.md)
     + {hide-from-toc}[Apache 安全升级](technotes/using/acc-apache-upgrade.md)
     + {hide-from-toc}[2023 年系统升级](technotes/using/tech-stack-upgrade.md)
     + {hide-from-toc}[IMS 更新](technotes/using/ims-updates.md)
-    + {hide-from-toc}[TLS 1.0 和 1.1 支持生命周期终止](technotes/using/eol-tls-support.md)
     + {hide-from-toc}[迁移到 Adobe Analytics 2.0 API](technotes/using/analytics-2-migration.md)
   + 电子邮件和推送通知{#technotes-email}
     + [Apple iOS 上的邮件隐私保护](technotes/using/apple-mail-app-privacy-protection.md)
