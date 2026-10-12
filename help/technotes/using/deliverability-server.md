@@ -103,7 +103,7 @@ ht-degree: 4%
 1. 访问&#x200B;**产品和服务**&#x200B;部分，并检查&#x200B;**Adobe Campaign**&#x200B;是否已列出。
 如果您看不到&#x200B;**Adobe Campaign**，请联系[Adobe客户关怀](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html){_blank}添加该产品。
 1. 单击&#x200B;**Adobe Campaign**&#x200B;并选择您的组织。
-   **警告**：如果您有多个组织，请确保选择正确的组织。 在此页面[&#128279;](https://experienceleague.adobe.com/docs/control-panel/using/faq.html#ims-org-id){_blank}中了解有关组织的更多信息。
+   **警告**：如果您有多个组织，请确保选择正确的组织。 在此页面[&#128279;](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=zh-Hans#ims-org-id){_blank}中了解有关组织的更多信息。
 
 1. 检查&#x200B;**[!UICONTROL Product profile]**&#x200B;是否存在。 如果没有，请创建它。 此&#x200B;**[!UICONTROL Product profile]**&#x200B;不需要权限。
 
@@ -150,4 +150,4 @@ ht-degree: 4%
 
 如果不升级环境，则将停止同步电子邮件设置（ MX管理规则、入站电子邮件规则、域管理规则和退回鉴别规则）。 这可能会随着时间的推移影响您的可投放性。 如果对这些规则进行了重大更改，则必须从此刻手动应用这些规则。
 
-对于MKT实例，只有[全局禁止列表](https://experienceleague.adobe.com/en/docs/campaign/automation/campaign-optimization/filtering-rules#default-deliverability-exclusion-rules){target="_blank"} （Campaign v8文档）受影响。
+对于MKT实例，只有[全局禁止列表](https://experienceleague.adobe.com/zh-hans/docs/campaign/automation/campaign-optimization/filtering-rules#default-deliverability-exclusion-rules){target="_blank"} （Campaign v8文档）受影响。

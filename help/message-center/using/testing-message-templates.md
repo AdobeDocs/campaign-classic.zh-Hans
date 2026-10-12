@@ -33,11 +33,11 @@ ht-degree: 1%
 ---
 # 测试事务性消息模板 {#testing-message-templates}
 
-准备好您的[消息模板](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/real-time/transactional-template){target="_blank"}（Campaign v8文档）后，请按照以下步骤预览和测试该模板。
+准备好您的[消息模板](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/send/real-time/transactional-template){target="_blank"}（Campaign v8文档）后，请按照以下步骤预览和测试该模板。
 
-作为从Campaign v7过渡到v8的一部分，Campaign Classic文档集已得到简化和重新组织。 现在，Campaign v8文档集中专门提供了常用功能。 要了解如何添加种子地址、预览事务型消息以及发送校样，请参阅[Campaign v8文档](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/real-time/transactional-template#test-message-template){target=_blank}。
+作为从Campaign v7过渡到v8的一部分，Campaign Classic文档集已得到简化和重新组织。 现在，Campaign v8文档集中专门提供了常用功能。 要了解如何添加种子地址、预览事务型消息以及发送校样，请参阅[Campaign v8文档](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/send/real-time/transactional-template#test-message-template){target=_blank}。
 
-[![image](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/real-time/transactional-template#test-message-template){target=_blank}
+[![image](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/send/real-time/transactional-template#test-message-template){target=_blank}
 
 ## 个性化数据 {#personalization-data}
 
@@ -47,7 +47,7 @@ ht-degree: 1%
 
 ![](assets/messagecenter_create_custo_006.png)
 
-此信息允许您使用个性化标记个性化消息内容(有关更多信息，请参阅[创建消息内容](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/real-time/transactional-template#create-message-content){target="_blank"}（Campaign v8文档）。
+此信息允许您使用个性化标记个性化消息内容(有关更多信息，请参阅[创建消息内容](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/send/real-time/transactional-template#create-message-content){target="_blank"}（Campaign v8文档）。
 
 1. 选择事务型消息模板。
 

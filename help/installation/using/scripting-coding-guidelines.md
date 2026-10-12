@@ -96,7 +96,7 @@ ht-degree: 5%
 
 除了基于文件夹的安全模型之外，您还可以使用已命名权限来限制操作员操作：
 
-* 您可以添加一些系统筛选器(sysFilter)，以防止读取/写入您的数据(请参阅[此页面](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/filter-schema){target="_blank"}（Campaign v8文档）)。
+* 您可以添加一些系统筛选器(sysFilter)，以防止读取/写入您的数据(请参阅[此页面](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/developer/schemas-forms/filter-schema){target="_blank"}（Campaign v8文档）)。
 
   ```
   <sysFilter name="writeAccess">    
@@ -138,7 +138,7 @@ ht-degree: 5%
 
 1. 使用&#x200B;**[!UICONTROL Web application]**&#x200B;内容类型并检查&#x200B;**[!UICONTROL Visible in the customization menus]**。
 
-   有关更多信息，请参阅 [Campaign v8 文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html){target="_blank"}。
+   有关更多信息，请参阅 [Campaign v8 文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html?lang=zh-Hans){target="_blank"}。
 
    以下是&#x200B;**营销活动验证码**&#x200B;的示例：
 

@@ -126,4 +126,4 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->有关在Adobe Campaign中创建架构和定义新数据映射的更多信息，请参阅[此页面](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/schemas){target="_blank"}（Campaign v8文档）。
+>有关在Adobe Campaign中创建架构和定义新数据映射的更多信息，请参阅[此页面](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/developer/schemas-forms/schemas){target="_blank"}（Campaign v8文档）。

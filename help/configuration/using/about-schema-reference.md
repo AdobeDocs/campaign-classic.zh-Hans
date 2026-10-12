@@ -39,7 +39,7 @@ ht-degree: 3%
 
 本章介绍如何配置扩展模式以扩展Adobe Campaign数据库的概念数据模型。
 
-要更好地了解Campaign内置表及其交互，请参阅[Campaign Classic数据模型](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/datamodel){target="_blank"}（Campaign v8文档）。
+要更好地了解Campaign内置表及其交互，请参阅[Campaign Classic数据模型](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/developer/datamodel){target="_blank"}（Campaign v8文档）。
 
 在Adobe Campaign中，应用程序中所承载数据的物理和逻辑结构以XML形式进行描述。 **架构**&#x200B;是与数据库表关联的XML文档。 它定义数据结构并描述表的SQL定义：
 
@@ -62,6 +62,6 @@ ht-degree: 3%
 
 ![](assets/reference_schema_intro.png)
 
-作为从Campaign v7过渡到v8的一部分，Campaign Classic文档集已得到简化和重新组织。 现在，Campaign v8文档集中专门提供了常用功能。 要了解架构的语法和标识，请参阅[Campaign v8文档](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/schemas){target=_blank}。
+作为从Campaign v7过渡到v8的一部分，Campaign Classic文档集已得到简化和重新组织。 现在，Campaign v8文档集中专门提供了常用功能。 要了解架构的语法和标识，请参阅[Campaign v8文档](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/developer/schemas-forms/schemas){target=_blank}。
 
-[![image](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/schemas){target=_blank}
+[![image](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/developer/schemas-forms/schemas){target=_blank}

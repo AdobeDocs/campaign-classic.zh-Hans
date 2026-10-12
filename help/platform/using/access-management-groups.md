@@ -135,7 +135,7 @@ ht-degree: 3%
 
 1. **[!UICONTROL Offer managers]**
 
-   此组中的操作员可以创建和维护选件。 有关详细信息，请参阅此[页面](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/offers/interaction-settings/interaction-operators){target="_blank"}（Campaign v8文档）。
+   此组中的操作员可以创建和维护选件。 有关详细信息，请参阅此[页面](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/offers/interaction-settings/interaction-operators){target="_blank"}（Campaign v8文档）。
    此组包含以下已命名权限：
 
    * **[!UICONTROL INSERT FOLDERS]**：有权将文件夹插入到Adobe Campaign树中（前提是您对有关分支具有编辑权限），

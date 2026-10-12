@@ -82,7 +82,7 @@ ht-degree: 1%
 
 ### 设置对照组
 
-发送投放后，您可以将排除的收件人的行为与接收投放的收件人的行为进行比较。 然后，您可以衡量营销活动的效率。 了解有关控制组的更多信息[本节](https://experienceleague.adobe.com/en/docs/campaign/automation/campaign-orchestration/marketing-campaign-target#add-a-control-group){target="_blank"}（Campaign v8文档）。
+发送投放后，您可以将排除的收件人的行为与接收投放的收件人的行为进行比较。 然后，您可以衡量营销活动的效率。 了解有关控制组的更多信息[本节](https://experienceleague.adobe.com/zh-hans/docs/campaign/automation/campaign-orchestration/marketing-campaign-target#add-a-control-group){target="_blank"}（Campaign v8文档）。
 
 要设置控制组，请单击&#x200B;**[!UICONTROL To]**&#x200B;链接。 在&#x200B;**[!UICONTROL Select target]**&#x200B;窗口中，选择&#x200B;**[!UICONTROL Control group]**&#x200B;选项卡。 您可以提取目标的一部分，例如5%随机抽样。
 
@@ -96,4 +96,4 @@ ht-degree: 1%
 
 例如，为了更好地控制出站流量，您可以通过定义每个子域的一个关联并为每个关联创建一个类型来定义可以使用的IP地址。 相关性在实例的配置文件中定义。 联系Adobe Campaign管理员。
 
-有关类型的更多信息，请参阅[此章节](https://experienceleague.adobe.com/en/docs/campaign/automation/campaign-optimization/campaign-typologies){target="_blank"}（Campaign v8文档）。
+有关类型的更多信息，请参阅[此章节](https://experienceleague.adobe.com/zh-hans/docs/campaign/automation/campaign-optimization/campaign-typologies){target="_blank"}（Campaign v8文档）。

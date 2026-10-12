@@ -49,14 +49,14 @@ Adobe Campaign提供了多种类型的报表，可通过客户控制台或Intern
 
 可以使用以下类型的报表：
 
-* 有关整个平台的报告，请参阅[全局报告](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/reports/ac-reports/global-reports){target="_blank"}（Campaign v8文档）。
-* 投放报告，请参阅[投放报告](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/reports/ac-reports/delivery-reports){target="_blank"}（Campaign v8文档）。
-* 累积报告，请参阅[累积报告](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/reports/ac-reports/delivery-reports){target="_blank"}（Campaign v8文档）。
+* 有关整个平台的报告，请参阅[全局报告](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/analytics/reports/ac-reports/global-reports){target="_blank"}（Campaign v8文档）。
+* 投放报告，请参阅[投放报告](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/analytics/reports/ac-reports/delivery-reports){target="_blank"}（Campaign v8文档）。
+* 累积报告，请参阅[累积报告](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/analytics/reports/ac-reports/delivery-reports){target="_blank"}（Campaign v8文档）。
 
 您可以从客户端控制台主页、报告仪表板或投放列表访问报告。 报告的显示模式取决于其上下文。 主报告的列表可在主页上找到，并允许您快速访问投放数据。 此列表可以根据您的需求进行更改。 有关详细信息，请参阅[此部分](../../reporting/using/about-reports-creation-in-campaign.md)。
 
-作为从Campaign v7过渡到v8的一部分，Campaign Classic文档集已得到简化和重新组织。 现在，Campaign v8文档集中专门提供了常用功能。 要了解如何访问和使用内置报告，请参阅[Campaign v8文档](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/reports/ac-reports/built-in-reports){target=_blank}。
+作为从Campaign v7过渡到v8的一部分，Campaign Classic文档集已得到简化和重新组织。 现在，Campaign v8文档集中专门提供了常用功能。 要了解如何访问和使用内置报告，请参阅[Campaign v8文档](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/analytics/reports/ac-reports/built-in-reports){target=_blank}。
 
-[![image](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/reports/ac-reports/built-in-reports){target=_blank}
+[![image](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/analytics/reports/ac-reports/built-in-reports){target=_blank}
 
 有关对正在编辑的报告的其他可能操作，请参见[此页面](../../reporting/using/actions-on-reports.md)。

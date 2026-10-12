@@ -37,7 +37,7 @@ ht-degree: 2%
 1. 右键单击并选择&#x200B;**[!UICONTROL Actions > Regenerate selected schemas...]** 。
 1. 单击&#x200B;**[!UICONTROL OK]**&#x200B;确认并启动进程。
 
-然后，您可以在“预览”和“文档”选项卡中检查生成的架构的结构。 有关更多信息，请参阅[原则](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/create-schema){target="_blank"}（Campaign v8文档）一节。
+然后，您可以在“预览”和“文档”选项卡中检查生成的架构的结构。 有关更多信息，请参阅[原则](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/developer/schemas-forms/create-schema){target="_blank"}（Campaign v8文档）一节。
 
 >[!NOTE]
 >

@@ -147,7 +147,7 @@ Write方法在[Write / WriteCollection (xtk:session)](#write---writecollection--
 * **select**：创建光标以返回多个记录，如果没有数据，则返回空文档，
 * **count**：返回数据计数。
 
-**XPath**&#x200B;语法用于根据输入架构查找数据。 有关XPath的详细信息，请参阅[数据架构](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/create-schema){target="_blank"}（Campaign v8文档）。
+**XPath**&#x200B;语法用于根据输入架构查找数据。 有关XPath的详细信息，请参阅[数据架构](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/developer/schemas-forms/create-schema){target="_blank"}（Campaign v8文档）。
 
 #### “获取”操作的示例 {#example-with-the--get--operation}
 

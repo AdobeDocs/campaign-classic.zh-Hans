@@ -33,7 +33,7 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->仅将此环境创建方法用于测试环境。 在所有其他情况下，均使用目标映射助手。 有关更多信息，请参阅[创建选件环境](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/offers/interaction-settings/interaction-env#create-an-offer-environment){target="_blank"}（Campaign v8文档）。
+>仅将此环境创建方法用于测试环境。 在所有其他情况下，均使用目标映射助手。 有关更多信息，请参阅[创建选件环境](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/offers/interaction-settings/interaction-env#create-an-offer-environment){target="_blank"}（Campaign v8文档）。
 
 1. 启动Adobe Campaign资源管理器，然后转到实例根。
 1. 右键单击并使用下拉菜单添加&#x200B;**[!UICONTROL Generic folder]**。

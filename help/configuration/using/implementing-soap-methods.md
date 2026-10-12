@@ -53,7 +53,7 @@ ht-degree: 3%
 
 ### 声明 {#declaration}
 
-首先，在架构中声明方法(有关如何创建和编辑架构的更多信息，请参阅[此章节](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/schemas){target="_blank"}（Campaign v8文档）。
+首先，在架构中声明方法(有关如何创建和编辑架构的更多信息，请参阅[此章节](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/developer/schemas-forms/schemas){target="_blank"}（Campaign v8文档）。
 
 它们的声明与本机方法的声明类似，不同之处在于，您需要添加“library”属性来指定定义所在的方法库的名称。
 

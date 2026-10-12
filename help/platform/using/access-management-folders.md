@@ -120,7 +120,7 @@ Explorer导航树的每个文件夹都具有附加的读、写和删除访问权
 
 >[!NOTE]
 >
->管理[事务性消息传递](../../message-center/using/about-transactional-messaging.md)事件时，**[!UICONTROL Real time events]**&#x200B;或&#x200B;**[!UICONTROL Batch events]**&#x200B;文件夹不能设置为执行实例上的视图，因为这会导致访问权限问题。 有关事件集合的更多信息，请参阅[此部分](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/real-time/event/event-processing#event-collection){target="_blank"}（Campaign v8文档）。
+>管理[事务性消息传递](../../message-center/using/about-transactional-messaging.md)事件时，**[!UICONTROL Real time events]**&#x200B;或&#x200B;**[!UICONTROL Batch events]**&#x200B;文件夹不能设置为执行实例上的视图，因为这会导致访问权限问题。 有关事件集合的更多信息，请参阅[此部分](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/send/real-time/event/event-processing#event-collection){target="_blank"}（Campaign v8文档）。
 
 <!--
 ## Permissions on a folder

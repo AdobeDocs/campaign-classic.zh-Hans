@@ -57,7 +57,7 @@ Adobe Campaign使用“Nms_DefaultRcpSchema”全局变量与默认收件人数�
 
    >[!NOTE]
    >
-   >要了解有关&#x200B;**表单**&#x200B;类型文件的更多信息，请参阅[此页面](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/forms){target="_blank"}（Campaign v8文档）。
+   >要了解有关&#x200B;**表单**&#x200B;类型文件的更多信息，请参阅[此页面](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/developer/schemas-forms/forms){target="_blank"}（Campaign v8文档）。
 
    在我们的当前示例中，**form**&#x200B;文件必须基于&#x200B;**cus:individual**&#x200B;架构，因此具有以下布局：
 

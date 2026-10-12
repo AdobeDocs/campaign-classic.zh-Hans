@@ -31,9 +31,9 @@ ht-degree: 8%
 
 **事务性消息传递** （消息中心）是一个Campaign模块，用于管理从外部信息系统发送的事件生成的自定义触发器通知。
 
-作为从Campaign v7过渡到v8的一部分，Campaign Classic文档集已得到简化和重新组织。 现在，Campaign v8文档集中专门提供了常用功能。 要了解有关事务型消息传递的更多信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/real-time/transactional){target=_blank}。
+作为从Campaign v7过渡到v8的一部分，Campaign Classic文档集已得到简化和重新组织。 现在，Campaign v8文档集中专门提供了常用功能。 要了解有关事务型消息传递的更多信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/send/real-time/transactional){target=_blank}。
 
-[![image](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/real-time/transactional){target=_blank}
+[![image](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/send/real-time/transactional){target=_blank}
 
 本节介绍了特定于内部部署和混合部署的事务性消息架构以及控制实例和执行实例的配置。
 
@@ -65,10 +65,10 @@ Adobe Campaign事务性消息传递模块集成到一个信息系统中，该信
 
 在&#x200B;**控件实例**&#x200B;上，必须执行以下操作：
 
-1. [创建事件类型](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/real-time/transactional){target="_blank"}（Campaign v8文档）。
-1. [创建并设计消息模板](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/real-time/transactional-template){target="_blank"}（Campaign v8文档）。 在此步骤中，必须将事件链接到消息。
+1. [创建事件类型](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/send/real-time/transactional){target="_blank"}（Campaign v8文档）。
+1. [创建并设计消息模板](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/send/real-time/transactional-template){target="_blank"}（Campaign v8文档）。 在此步骤中，必须将事件链接到消息。
 1. [测试邮件](../../message-center/using/testing-message-templates.md)。
-1. [发布消息模板](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/real-time/transactional-template){target="_blank"}（Campaign v8文档）。
+1. [发布消息模板](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/send/real-time/transactional-template){target="_blank"}（Campaign v8文档）。
 
 >[!NOTE]
 >
@@ -78,13 +78,13 @@ Adobe Campaign事务性消息传递模块集成到一个信息系统中，该信
 
 设计和发布事务性消息模板后，如果触发了相应的事件，则会对&#x200B;**执行实例**&#x200B;执行以下主要步骤：
 
-1. 当外部信息系统生成事件时，相关数据将通过&#x200B;**PushEvent**&#x200B;和&#x200B;**PushEvents**&#x200B;方法发送到Campaign。 请参阅[事件集合](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/real-time/event/event-processing#event-collection){target="_blank"}（Campaign v8文档）。
-1. 该事件已链接到相应的消息模板。 请参阅[路由到模板](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/real-time/event/event-processing#event-to-template){target="_blank"}（Campaign v8文档）。
-1. 扩充阶段完成后，将发送投放。 请参阅[投放执行](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/real-time/event/delivery-execution){target="_blank"}（Campaign v8文档）。 每个定向收件人都会收到一条个性化消息。
+1. 当外部信息系统生成事件时，相关数据将通过&#x200B;**PushEvent**&#x200B;和&#x200B;**PushEvents**&#x200B;方法发送到Campaign。 请参阅[事件集合](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/send/real-time/event/event-processing#event-collection){target="_blank"}（Campaign v8文档）。
+1. 该事件已链接到相应的消息模板。 请参阅[路由到模板](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/send/real-time/event/event-processing#event-to-template){target="_blank"}（Campaign v8文档）。
+1. 扩充阶段完成后，将发送投放。 请参阅[投放执行](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/send/real-time/event/delivery-execution){target="_blank"}（Campaign v8文档）。 每个定向收件人都会收到一条个性化消息。
 
 ## 相关主题 {#related-topics}
 
 * [通信渠道入门](../../delivery/using/communication-channels.md)
 * [投放创建关键步骤](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-message.html?lang=zh-Hans){target="_blank"}
 * [事务性消息传递架构](../../message-center/using/transactional-messaging-architecture.md)
-* [访问事务性消息报告](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/real-time/event/delivery-execution){target="_blank"}（Campaign v8文档）
+* [访问事务性消息报告](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/send/real-time/event/delivery-execution){target="_blank"}（Campaign v8文档）

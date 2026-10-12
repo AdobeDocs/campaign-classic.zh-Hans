@@ -46,7 +46,7 @@ ht-degree: 11%
 
 ## 权限{#delivery-permissions}
 
-只有投放所有者才能开始投放。 对于能够开始投放的其他操作员（或操作员组），请在&#x200B;**[!UICONTROL Delivery start:]**&#x200B;字段中添加他们作为审阅人。 [了解详情](https://experienceleague.adobe.com/en/docs/campaign/automation/campaign-orchestration/marketing-campaign-approval#select-reviewers){target="_blank"}（Campaign v8文档）。
+只有投放所有者才能开始投放。 对于能够开始投放的其他操作员（或操作员组），请在&#x200B;**[!UICONTROL Delivery start:]**&#x200B;字段中添加他们作为审阅人。 [了解详情](https://experienceleague.adobe.com/zh-hans/docs/campaign/automation/campaign-orchestration/marketing-campaign-approval#select-reviewers){target="_blank"}（Campaign v8文档）。
 
 ## 投放其他参数 {#delivery-additiona-parameters}
 
@@ -171,7 +171,7 @@ ht-degree: 11%
    >
    >在配置最后批次时，还必须留出足够的时间进行重试。 请参阅[此小节](steps-sending-the-delivery.md#configuring-retries)。
 
-1. 要监控您的发送，请转到投放日志。 请参阅[此页](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard#delivery-logs-and-history){target="_blank"}。
+1. 要监控您的发送，请转到投放日志。 请参阅[此页](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/send/monitor/delivery-dashboard#delivery-logs-and-history){target="_blank"}。
 
    您可以看到已在已处理批次中发送的投放（**[!UICONTROL Sent]**&#x200B;状态）以及将在剩余批次中发送的投放（**[!UICONTROL Pending]**&#x200B;状态）。
 

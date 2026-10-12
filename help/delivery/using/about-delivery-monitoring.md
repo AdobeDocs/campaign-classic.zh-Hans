@@ -99,24 +99,24 @@ ht-degree: 3%
 
 **对于内部部署**，您可以使用以下监视工具：
 
-* **[!UICONTROL Delivery throughput]**&#x200B;报告提供给定时段内整个平台的吞吐量概览。 有关详细信息，请参阅[此部分](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/reports/ac-reports/global-reports#delivery-throughput){target="_blank"}（Campaign v8文档）。
+* **[!UICONTROL Delivery throughput]**&#x200B;报告提供给定时段内整个平台的吞吐量概览。 有关详细信息，请参阅[此部分](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/analytics/reports/ac-reports/global-reports#delivery-throughput){target="_blank"}（Campaign v8文档）。
 * 每个投放为不同的Internet服务提供商(ISP)生成广播统计报告。 其中显示了一些可能会影响您的可投放性的数据质量和信誉指标，包括以下数字：
   * **[!UICONTROL Hard bounces]**&#x200B;指示数据质量。 此数字应小于2%。
   * **[!UICONTROL Soft bounces]**&#x200B;指示信誉。 对于任何给定的ISP，此数字不应大于10%。
 
-  有关详细信息，请参阅[投放统计信息](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/reports/ac-reports/global-reports#delivery-statistics){target="_blank"} （Campaign v8文档）部分。
+  有关详细信息，请参阅[投放统计信息](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/analytics/reports/ac-reports/global-reports#delivery-statistics){target="_blank"} （Campaign v8文档）部分。
 
 #### 监测准则 {#monitoring-guidelines}
 
 **对于内部部署安装**，以下是有关可投放性监视的其他准则：
 
-* 定期检查整个平台的[投放吞吐量](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/reports/ac-reports/global-reports#delivery-throughput){target="_blank"}（Campaign v8文档），以验证它是否与原始设置一致。
+* 定期检查整个平台的[投放吞吐量](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/analytics/reports/ac-reports/global-reports#delivery-throughput){target="_blank"}（Campaign v8文档），以验证它是否与原始设置一致。
 * 检查投放模板中是否正确设置了[重试](delivery-failures-quarantine.md#retries-after-a-delivery-temporary-failure)（重试期间为30分钟，重试次数超过20次）。
 * 定期验证[退回](delivery-failures-quarantine.md#bounce-mail-management)邮箱是否可访问，以及帐户是否即将过期。
-* 检查可从[投放仪表板](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"}访问的每个投放吞吐量，以确保其与投放内容的有效性一致（例如，“闪速销售”应以分钟而不是天投放）。
+* 检查可从[投放仪表板](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"}访问的每个投放吞吐量，以确保其与投放内容的有效性一致（例如，“闪速销售”应以分钟而不是天投放）。
 * 使用波次时，请确保在触发下一个波次之前，每个波次都有足够的时间完成。
 * 检查错误数和新的[隔离](delivery-failures-quarantine.md)与其他投放是否一致。
-* 请仔细查阅[投放日志](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard#delivery-logs-and-history){target="_blank"}以详细检查突出显示的错误类型（、DNS问题、反垃圾邮件规则等）。
+* 请仔细查阅[投放日志](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/send/monitor/delivery-dashboard#delivery-logs-and-history){target="_blank"}以详细检查突出显示的错误类型（、DNS问题、反垃圾邮件规则等）。
 
 ### 故障排除 {#delivery-troubleshooting}
 
@@ -135,8 +135,8 @@ ht-degree: 3%
 
 了解如何访问投放列表并使用投放仪表板监控发送活动：
 
-* [在Campaign UI中监视投放](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"} （Campaign v8文档 — 适用于v7和v8）
-* [投放状态](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-statuses){target="_blank"}（Campaign v8文档）
+* [在Campaign UI中监视投放](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"} （Campaign v8文档 — 适用于v7和v8）
+* [投放状态](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/send/monitor/delivery-statuses){target="_blank"}（Campaign v8文档）
 * [高级：自定义投放日志](customize-delivery-logs.md)（仅限v7混合/内部部署 — 架构扩展）
 
 ### 跟踪消息交互
@@ -144,20 +144,20 @@ ht-degree: 3%
 跟踪投放的打开次数、点击次数和收件人交互情况：
 
 * [邮件跟踪文档](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/analytics/tracking/tracking){target="_blank"}（Campaign v8文档 — 适用于v7和v8）
-* [配置跟踪的链接](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/tracking/tracked-links){target="_blank"}（Campaign v8文档）
-* [访问跟踪日志](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/tracking/tracking-logs){target="_blank"}（Campaign v8文档）
+* [配置跟踪的链接](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/analytics/tracking/tracked-links){target="_blank"}（Campaign v8文档）
+* [访问跟踪日志](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/analytics/tracking/tracking-logs){target="_blank"}（Campaign v8文档）
 
 ### 优化投放性能
 
 投放性能问题的最佳实践和疑难解答：
 
-* [投放最佳实践](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/start/delivery-best-practices){target="_blank"}（Campaign v8文档 — 适用于v7和v8）
+* [投放最佳实践](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/start/delivery-best-practices){target="_blank"}（Campaign v8文档 — 适用于v7和v8）
 * [投放性能和故障排除](delivery-performance-troubleshooting.md)（v7混合/内部部署特定配置）
 
 ### 了解失败和隔离
 
 管理投放失败、退回邮件和隔离地址：
 
-* [了解投放失败](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"}（Campaign v8文档 — v7和v8的综合指南）
-* [隔离管理](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/quarantines){target="_blank"}（Campaign v8文档 — v7和v8的综合指南）
+* [了解投放失败](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"}（Campaign v8文档 — v7和v8的综合指南）
+* [隔离管理](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/send/monitor/quarantines){target="_blank"}（Campaign v8文档 — v7和v8的综合指南）
 * [投放失败和隔离配置](delivery-failures-quarantine.md)（v7混合/内部部署特定的配置）

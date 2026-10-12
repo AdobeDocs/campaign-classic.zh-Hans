@@ -48,7 +48,7 @@ ht-degree: 1%
 
 以下是有关在Adobe Campaign中使用数据架构的一些一般原则。
 
-有关在Adobe Campaign中创建和配置数据架构的更多信息，请参阅[此章节](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/schemas){target="_blank"}（Campaign v8文档）。
+有关在Adobe Campaign中创建和配置数据架构的更多信息，请参阅[此章节](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/developer/schemas-forms/schemas){target="_blank"}（Campaign v8文档）。
 
 ## 架构结构 {#schema-structure}
 

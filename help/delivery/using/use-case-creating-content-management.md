@@ -82,7 +82,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->有关在Adobe Campaign中创建和配置数据架构的更多信息，请参阅[此部分](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/schemas){target="_blank"}（Campaign v8文档）。
+>有关在Adobe Campaign中创建和配置数据架构的更多信息，请参阅[此部分](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/developer/schemas-forms/schemas){target="_blank"}（Campaign v8文档）。
 >
 >在[数据架构](data-schemas.md)中详细列出了特定于内容管理的配置元素。
 
@@ -194,7 +194,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->有关在Adobe Campaign中创建和配置表单的更多信息，请参阅[此章节](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/forms){target="_blank"}（Campaign v8文档）。
+>有关在Adobe Campaign中创建和配置表单的更多信息，请参阅[此章节](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/developer/schemas-forms/forms){target="_blank"}（Campaign v8文档）。
 >
 >在[输入表单](input-forms.md)中详细列出了特定于内容管理的配置元素。
 

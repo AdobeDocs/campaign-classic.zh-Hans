@@ -49,4 +49,4 @@ ht-degree: 3%
 
   ![](assets/s_ncs_configuration_offer_context.png)
 
-* 配置SOAP调用时，插入&#x200B;**上下文** XML元素以引用在交互架构中添加的上下文信息。 有关详细信息，请参阅[通过SOAP集成（服务器端）](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/offers/inbound/interaction-integration){target="_blank"}（Campaign v8文档）。
+* 配置SOAP调用时，插入&#x200B;**上下文** XML元素以引用在交互架构中添加的上下文信息。 有关详细信息，请参阅[通过SOAP集成（服务器端）](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/offers/inbound/interaction-integration){target="_blank"}（Campaign v8文档）。

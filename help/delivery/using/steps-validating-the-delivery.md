@@ -232,7 +232,7 @@ ht-degree: 9%
 
 您可以从此节点创建新规则并定义新分类。 但是，这些任务是为熟悉JavaScript的专家用户保留的。
 
-有关类型规则的更多信息，请参阅[此页面](https://experienceleague.adobe.com/en/docs/campaign/automation/campaign-optimization/campaign-typologies){target="_blank"}（Campaign v8文档）。
+有关类型规则的更多信息，请参阅[此页面](https://experienceleague.adobe.com/zh-hans/docs/campaign/automation/campaign-optimization/campaign-typologies){target="_blank"}（Campaign v8文档）。
 
 要编辑当前的分类，请单击&#x200B;**[!UICONTROL Typology]**&#x200B;字段右侧的&#x200B;**[!UICONTROL Edit link]**&#x200B;图标。
 
@@ -244,7 +244,7 @@ ht-degree: 9%
 
 >[!NOTE]
 >
->在销售压力管理框架中使用&#x200B;**[!UICONTROL Arbitration]**&#x200B;类型分类。 有关更多信息，请参阅[此章节](https://experienceleague.adobe.com/en/docs/campaign/automation/mrm/about-marketing-resource-management){target="_blank"}（Campaign v8文档）。
+>在销售压力管理框架中使用&#x200B;**[!UICONTROL Arbitration]**&#x200B;类型分类。 有关更多信息，请参阅[此章节](https://experienceleague.adobe.com/zh-hans/docs/campaign/automation/mrm/about-marketing-resource-management){target="_blank"}（Campaign v8文档）。
 
 ## 更改审批模式 {#changing-the-approval-mode}
 
