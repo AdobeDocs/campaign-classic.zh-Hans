@@ -45,10 +45,10 @@ topic_v2:
     internal-label: Troubleshooting
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: 586c6688e2abd3b6e55389bd1fa219d2c596d07d
 workflow-type: tm+mt
-source-wordcount: '948'
-ht-degree: 4%
+source-wordcount: '1002'
+ht-degree: 3%
 ---
 # 投放监测入门 {#about-delivery-monitoring}
 
@@ -99,18 +99,18 @@ ht-degree: 4%
 
 **对于内部部署**，您可以使用以下监视工具：
 
-* **[!UICONTROL Delivery throughput]**&#x200B;报告提供给定时段内整个平台的吞吐量概览。 有关更多信息，请参阅[此小节](../../reporting/using/global-reports.md#delivery-throughput)。
+* **[!UICONTROL Delivery throughput]**&#x200B;报告提供给定时段内整个平台的吞吐量概览。 有关详细信息，请参阅[此部分](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/analytics/reports/ac-reports/global-reports#delivery-throughput){target="_blank"}（Campaign v8文档）。
 * 每个投放为不同的Internet服务提供商(ISP)生成广播统计报告。 其中显示了一些可能会影响您的可投放性的数据质量和信誉指标，包括以下数字：
   * **[!UICONTROL Hard bounces]**&#x200B;指示数据质量。 此数字应小于2%。
   * **[!UICONTROL Soft bounces]**&#x200B;指示信誉。 对于任何给定的ISP，此数字不应大于10%。
 
-  有关详细信息，请参阅[投放统计信息](../../reporting/using/global-reports.md#delivery-statistics)部分。
+  有关详细信息，请参阅[投放统计信息](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/analytics/reports/ac-reports/global-reports#delivery-statistics){target="_blank"} （Campaign v8文档）部分。
 
 #### 监测准则 {#monitoring-guidelines}
 
 **对于内部部署安装**，以下是有关可投放性监视的其他准则：
 
-* 定期检查整个平台的[投放吞吐量](../../reporting/using/global-reports.md#delivery-throughput)，以验证它是否与原始设置一致。
+* 定期检查整个平台的[投放吞吐量](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/analytics/reports/ac-reports/global-reports#delivery-throughput){target="_blank"}（Campaign v8文档），以验证它是否与原始设置一致。
 * 检查投放模板中是否正确设置了[重试](delivery-failures-quarantine.md#retries-after-a-delivery-temporary-failure)（重试期间为30分钟，重试次数超过20次）。
 * 定期验证[退回](delivery-failures-quarantine.md#bounce-mail-management)邮箱是否可访问，以及帐户是否即将过期。
 * 检查可从[投放仪表板](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"}访问的每个投放吞吐量，以确保其与投放内容的有效性一致（例如，“闪速销售”应以分钟而不是天投放）。
@@ -151,7 +151,7 @@ ht-degree: 4%
 
 投放性能问题的最佳实践和疑难解答：
 
-* [投放最佳实践](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/start/delivery-best-practices){target="_blank"}（Campaign v8文档 — 适用于v7和v8）
+* [投放最佳实践](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/start/delivery-best-practices){target="_blank"}（Campaign v8文档 — 适用于v7和v8）
 * [投放性能和故障排除](delivery-performance-troubleshooting.md)（v7混合/内部部署特定配置）
 
 ### 了解失败和隔离

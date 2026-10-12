@@ -28,9 +28,9 @@ topic_v2:
     internal-label: Implementation
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 617db6f51887118c965b8938b2b9f14335293875
 workflow-type: tm+mt
-source-wordcount: '868'
+source-wordcount: '884'
 ht-degree: 5%
 ---
 # 其他配置 {#mc-additional-configurations}
@@ -39,7 +39,7 @@ ht-degree: 5%
 
 ## 监测阈值 {#monitoring-thresholds}
 
-您可以配置在&#x200B;**消息中心服务级别**&#x200B;和&#x200B;**消息中心处理时间**&#x200B;报告中出现的指示器的警告阈值（橙色）和警报阈值（红色）（请参阅[访问事务性消息报告](../../message-center/using/about-transactional-messaging-reports.md)）。
+您可以配置在&#x200B;**消息中心服务级别**&#x200B;和&#x200B;**消息中心处理时间**&#x200B;报告中出现的指示器的警告阈值（橙色）和警报阈值（红色）(请参阅[访问事务性消息报告](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/send/real-time/event/delivery-execution){target="_blank"}（Campaign v8文档）)。
 
 为此请执行以下操作步骤：
 

@@ -31,9 +31,9 @@ topic_v2:
     internal-label: Security
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 586c6688e2abd3b6e55389bd1fa219d2c596d07d
 workflow-type: tm+mt
-source-wordcount: '793'
+source-wordcount: '811'
 ht-degree: 9%
 ---
 # 性能和吞吐量问题{#performance-and-throughput-issues}
@@ -92,7 +92,7 @@ Adobe Campaign还提供了[工具](../../production/using/monitoring-processes.m
   >可交付性团队的参与基于合同，客户应联系其Adobe代表以获取与可交付性参与相关的信息。
 
 * IP关联设置：错误的IP关联设置可能会完全停止电子邮件（配置中的运算符/关联名称不正确）或降低吞吐量（关联中的IP数量较少）。 请参见[此页面](../../installation/using/email-deliverability.md#list-of-ip-addresses-to-use)。
-* 电子邮件大小：电子邮件大小在吞吐量中起着重要作用。 建议的最大电子邮件大小为60 KB。 请参见[此页面](https://helpx.adobe.com/cn/legal/product-descriptions/campaign.html)。 在[投放吞吐量](../../reporting/using/global-reports.md#delivery-throughput)报告中，检查按小时传输的字节数。
+* 电子邮件大小：电子邮件大小在吞吐量中起着重要作用。 建议的最大电子邮件大小为60 KB。 请参见[此页面](https://helpx.adobe.com/cn/legal/product-descriptions/campaign.html)。 在[投放吞吐量](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/analytics/reports/ac-reports/global-reports#delivery-throughput){target="_blank"}（Campaign v8文档）报告中，检查按小时传输的字节数。
 * 大量无效收件人：当存在大量无效收件人时，可能会影响吞吐量。 MTA不断重试向无效收件人发送电子邮件。 请确保您的数据库得到了妥善维护。
 * 个性化程度：如果投放持续处于“Personalization正在进行中”状态，请检查个性化块中使用的JavaScript 。
 

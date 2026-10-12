@@ -41,10 +41,10 @@ topic_v2:
     internal-label: Security
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: 75d65377f93a40be104f7ec817e6a7609cccaf93
 workflow-type: tm+mt
-source-wordcount: '2670'
-ht-degree: 100%
+source-wordcount: '2702'
+ht-degree: 98%
 ---
 # 2021 版{#release-2021}
 
@@ -87,7 +87,7 @@ _2021 年 9 月 7 日_
 **其他变更**
 
 * 修复了 21.1.3 中引入的与计费工作流新护栏有关的回归问题。 计费工作流在错误实例上执行，并在尝试发送未生成的计费报告时崩溃。 您需要手动重启工作流以便应用此修补程序。
-* 之前弃用的 Microsoft CRM 连接器（Office 365 和内部部署）已从界面中删除。 [阅读更多](../../platform/using/crm-ms-dynamics.md#configure-acc-for-microsoft)
+* 之前弃用的 Microsoft CRM 连接器（Office 365 和内部部署）已从界面中删除。 [阅读更多](../../platform/using/crm-connectors.md)
 * 迁移到 Tomcat 8 后，更新了 IIS 设置脚本以修复 IIS 集成问题。 (NEO-31019)
 * 在工作流过渡的 **View population** 窗口的“data”和“schema”选项卡中，数据源标识已得到改进。
 * 已将缺少的数据库索引添加到以下架构中，以防止出现数据库更新问题：xtk:rights、nms:dlvExclusion、nms:seedMember、nms:trackingUrl
@@ -124,7 +124,7 @@ _2021 年 6 月 5 日_
 <td>
 <p>全新的<b>更改数据源</b>工作流活动允许您更改工作流工作表的数据源。 这提高了跨不同数据源（FDA 和本地数据库）管理数据的灵活性。</p>
 <p>在 Adobe Campaign 工作流中，使用工作（或临时）表管理数据。 工作流执行时，工作表会在工作流活动之间共享数据。 默认情况下，工作表会在与我们查询的数据源相同的数据库中创建。</p>
-<p>有关更多信息，请参阅<a href="../../workflow/using/change-data-source.md">详细文档</a>。</p>
+<p>有关详细信息，请参阅<a href="https://experienceleague.adobe.com/zh-hans/docs/campaign/automation/workflows/wf-activities/targeting-activities/change-data-source" target="_blank">详细文档</a>（Campaign v8文档）。</p>
 </td>
 </tr>
 </tbody>
@@ -226,7 +226,7 @@ Campaign 现在支持以下系统：
 **改进**
 
 * 在保存工作流时添加了额外的检查，以确保活动名称是唯一的，且过渡后始终跟随有活动。
-* **计费 (billing)** 技术工作流现在包括原来由&#x200B;**活跃计费轮廓数** (billingActiveContactCount) 工作流执行的任务，后者已被删除。 工作流每月发送的电子邮件报表现在将提供关于实例上活跃轮廓数的信息。 [阅读更多](../../workflow/using/about-technical-workflows.md)。
+* **计费 (billing)** 技术工作流现在包括原来由&#x200B;**活跃计费轮廓数** (billingActiveContactCount) 工作流执行的任务，后者已被删除。 工作流每月发送的电子邮件报表现在将提供关于实例上活跃轮廓数的信息。 [了解更多](https://experienceleague.adobe.com/zh-hans/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows){target="_blank"}（Campaign v8文档）。
 * 添加了新的 **_keyOnMData** 属性，以便能够使用密钥对备忘数据进行操作。
 
 **其他变更**
@@ -243,7 +243,7 @@ Campaign 现在支持以下系统：
 * 修复了向电子邮件添加链接时，显示带有 Adobe Campaign Classic 标题的电子邮件文本版本的错误。 (NEO-29211
 * 使用 FDA 通过 HTTPs 连接时，**中间源（投放日志）** (defaultMidSourcingLog) 工作流在 **NmsMidSourcing_LogsPeriodHour** 选项设置的时间范围内停滞。 这将导致无法使用发生在这个设定的时间范围之后的数据更新记录。 (NEO-30833)
 * 修复了执行消息中心同步工作流后出现的问题。 每次将投放对象文件夹移动到自定义文件夹时，工作流都会将投放移回通用的&#x200B;**事务性消息历史记录**&#x200B;文件夹。 (NEO-27445)
-* 修复了在尝试显示&#x200B;**广播统计信息**、跟踪指标&#x200B;****&#x200B;和共享活动统计信息&#x200B;****&#x200B;报表时显示错误消息的问题。
+* 修复了在尝试显示&#x200B;**广播统计信息**、跟踪指标&#x200B;**&#x200B;**&#x200B;和共享活动统计信息&#x200B;**&#x200B;**&#x200B;报表时显示错误消息的问题。
 * **Oracle On Demand** 工作流活动已在弃用 OracleCRM 连接器后从界面中删除。
 * 修复了在每日重新启动工作流服务器 (wfserver) 模块后停止执行处理工作流的问题。 (NEO-30047)
 * 修复了导致 MX 管理文档无法更新的问题，该问题可能会对 IP 声誉造成负面影响。 (NEO-29897)

@@ -43,9 +43,9 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: a97306b73a2b577841e6f24536c62b2526e9fda9
 workflow-type: tm+mt
-source-wordcount: '913'
+source-wordcount: '927'
 ht-degree: 1%
 ---
 # 个性化产品建议券{#personalized-coupons}
@@ -54,7 +54,7 @@ ht-degree: 1%
 
 >[!AVAILABILITY]
 >
->优惠券管理在Campaign v8的企业(FFDA)部署上下文中不可用。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/architecture/ffda/enterprise-deployment){target="_blank"}以了解详情。
+>优惠券管理在Campaign v8的企业(FFDA)部署上下文中不可用。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/config/architecture/ffda/enterprise-deployment){target="_blank"}以了解详情。
 
 优惠券管理依赖于必须安装的包。 要确认您拥有优惠券管理，请选中&#x200B;**[!UICONTROL Administration > Configuration > Package management > Installed packages.]**
 
@@ -185,7 +185,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->默认情况下，优惠券管理模块使用&#x200B;**nms:recipient**&#x200B;表。 [了解详情](../../configuration/using/about-data-model.md#default-recipient-table)。
+>默认情况下，优惠券管理模块使用&#x200B;**nms:recipient**&#x200B;表。 [了解详情](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/developer/datamodel#ootb-profiles){target="_blank"}（Campaign v8文档）。
 >
 >在此页面[&#128279;](../../configuration/using/about-custom-recipient-table.md)中了解如何使用自定义收件人表。
 

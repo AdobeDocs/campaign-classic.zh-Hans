@@ -37,16 +37,16 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: 86e1df82ff7fe9142b0ba75b697d3262e8d7a9d5
 workflow-type: tm+mt
-source-wordcount: '1551'
+source-wordcount: '1567'
 ht-degree: 11%
 ---
 # 配置和发送投放 {#configuring-and-sending-the-delivery}
 
 ## 权限{#delivery-permissions}
 
-只有投放所有者才能开始投放。 对于能够开始投放的其他操作员（或操作员组），请在&#x200B;**[!UICONTROL Delivery start:]**&#x200B;字段中添加他们作为审阅人。 [了解详情](../../campaign/using/marketing-campaign-approval.md#selecting-reviewers)。
+只有投放所有者才能开始投放。 对于能够开始投放的其他操作员（或操作员组），请在&#x200B;**[!UICONTROL Delivery start:]**&#x200B;字段中添加他们作为审阅人。 [了解详情](https://experienceleague.adobe.com/zh-hans/docs/campaign/automation/campaign-orchestration/marketing-campaign-approval#select-reviewers){target="_blank"}（Campaign v8文档）。
 
 ## 投放其他参数 {#delivery-additiona-parameters}
 

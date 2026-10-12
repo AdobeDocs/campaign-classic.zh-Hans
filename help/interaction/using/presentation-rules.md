@@ -24,9 +24,9 @@ feature_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 323ff901668895588a6e9587fa2a8b7804cf2fb4
 workflow-type: tm+mt
-source-wordcount: '451'
+source-wordcount: '465'
 ht-degree: 1%
 ---
 # 呈现规则{#presentation-rules}
@@ -113,7 +113,7 @@ ht-degree: 1%
 
    ![](assets/offer_typology_example_016.png)
 
-1. 在消息正文中插入优惠并发送投放。 有关详情，请参阅[关于出站频道](../../interaction/using/about-outbound-channels.md)。
+1. 在消息正文中插入优惠并发送投放。 有关更多信息，请参阅[关于出站渠道](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/offers/interaction-send-offers){target="_blank"}（Campaign v8文档）。
 
    收件人已收到他们符合条件的优惠。
 

@@ -50,10 +50,10 @@ topic_v2:
     internal-label: Optimization
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: a97306b73a2b577841e6f24536c62b2526e9fda9
 workflow-type: tm+mt
-source-wordcount: '6654'
-ht-degree: 5%
+source-wordcount: '6917'
+ht-degree: 4%
 ---
 # Adobe Campaign术语表{#ac-glossary}
 
@@ -127,7 +127,7 @@ Learn more about [ACS Connector](../../integrations/using/acs-connector-principl
 
 Campaigns that run on a schedule, such as for targeting recipients who have a birthday or an anniversary. Can also be used to execute look-ahead and look-back logic, such as who purchased yesterday or who has a payment due tomorrow.
 
-Learn more about [Campaigns](../../campaign/using/designing-marketing-campaigns.md).
+Learn more about [Campaigns](https://experienceleague.adobe.com/zh-hans/docs/campaign/automation/campaign-orchestration/set-up-campaigns){target="_blank"} (Campaign v8 documentation).
 +++
 -->
 
@@ -208,14 +208,14 @@ Campaign客户端控制台是一个富客户端，可让您连接到Campaign应�
 
 Adobe Campaign附带预定义数据模型，其中数据类型通过安装各种包来定义。 运算符可以通过扩展资源以添加自定义字段或自定义表（如交易表或产品表）来扩充提供的数据模型。
 
-了解有关[自定义资源](../../configuration/using/about-schema-edition.md)的详细信息。
+了解有关[自定义资源](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/developer/schemas-forms/schemas){target="_blank"}的更多信息（Campaign v8文档）。
 +++
 
 +++**数据模型**
 
 Campaign数据模型是一组架构，用于定义数据类型及其关系（链接）。 数据模型是一个抽象定义，使用包含实际数据的数据库进行物理实现。
 
-了解有关[数据模型](../../configuration/using/about-data-model.md)的更多信息。
+了解有关[数据模型](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/developer/datamodel){target="_blank"}的更多信息（Campaign v8文档）。
 +++
 
 +++**数据库清理工作流**
@@ -430,7 +430,7 @@ An engine call is a server call that starts real-time processing on server side 
 
 文件提取审批是一个过程，在提取文件发送给外部供应商（如直邮投放）之前，由单独的操作员或操作员组审批提取文件的内容和配置。
 
-请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/direct-mail.html#validating){target="_blank"}以了解有关文件提取审批的更多信息。
+请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/direct-mail.html?lang=zh-Hans#validating){target="_blank"}以了解有关文件提取审批的更多信息。
 +++
 
 +++**正在筛选维度**
@@ -459,7 +459,7 @@ An engine call is a server call that starts real-time processing on server side 
 
 Forms为特定架构类型定义界面表示。 Forms是一种用于在产品中轻松创建和编辑数据元素的方法，例如收件人、投放和营销活动。 Adobe Campaign中的所有界面元素都是使用Forms在产品本身中创建的。 请注意，表单是可选的，并非所有架构都有表单。
 
-了解有关[Forms](../../configuration/using/identifying-a-form.md)的更多信息。
+了解有关[Forms](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/developer/schemas-forms/forms){target="_blank"}的更多信息（Campaign v8文档）。
 +++
 
 <!--
@@ -519,7 +519,7 @@ Learn more about [Image serving](../../delivery/using/defining-the-email-content
 
 入站交互是指在渠道（例如网络、呼叫中心或移动设备）中联系人操作生成的来话呼叫之后进行的交互。 此类交互通常以单一模式（即每个收件人）处理。
 
-了解有关[入站交互](../../interaction/using/about-inbound-channels.md)的详细信息。
+了解有关[入站交互](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/offers/inbound/interaction-present-offers){target="_blank"}的更多信息（Campaign v8文档）。
 +++
 
 +++**收件箱呈现**
@@ -588,7 +588,7 @@ This template type is used to manage multilingual messages.  It is available for
 
 命名空间是一个分区，可将客户数据类型与Adobe Campaign在数据模型中的本机数据类型分隔开。 还用于促进定义从一个实例迁移到另一个实例，例如将架构或模板从开发实例移动到生产实例。
 
-了解有关[命名空间](../../configuration/using/about-schema-reference.md#identification-of-a-schema)的详细信息。
+了解有关[命名空间](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/developer/schemas-forms/schemas#identification-of-a-schema){target="_blank"}的更多信息（Campaign v8文档）。
 +++
 
 <!--
@@ -624,7 +624,7 @@ Learn more about [Navigation Bar](../../platform/using/adobe-campaign-workspace.
 
 优惠目录是在Adobe Campaign中定义的一组优惠，可在交互期间选择。 目录按层级进行组织，每个节点对应于一个类别。
 
-了解有关[优惠目录](../../interaction/using/offer-catalog-overview.md)的详细信息。
+了解有关[优惠目录](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/offers/interaction-offer-catalog){target="_blank"}的更多信息（Campaign v8文档）。
 +++
 
 +++**优惠联系人**
@@ -645,7 +645,7 @@ Learn more about [Navigation Bar](../../platform/using/adobe-campaign-workspace.
 
 选件&#x200B;**设计环境**&#x200B;是操作员在其中创建选件、定义类型规则并选择选件将定位的架构的环境。 用于存储所生成的选件建议的表也由环境定义。 默认情况下，交互加载项附带一个&#x200B;**设计**&#x200B;环境以及与其关联的&#x200B;**实时**&#x200B;环境。 这两个环境都已预配置为定位内置的收件人表。
 
-了解有关[优惠设计环境](../../interaction/using/fundamental-principles.md)的更多信息。
+了解有关[选件设计环境](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/offers/interaction-architecture){target="_blank"}的更多信息（Campaign v8文档）。
 +++
 
 +++**优惠引擎套利**
@@ -672,7 +672,7 @@ Learn more about [Navigation Bar](../../platform/using/adobe-campaign-workspace.
 
 优惠环境是根文件夹，用于定义优惠目录、其可用空间和环境的预定义过滤器。 操作员需要为每个定向维度创建一个环境。 有两种类型的选件环境：“设计”和“实时”。
 
-了解有关[优惠环境](../../interaction/using/fundamental-principles.md)的更多信息。
+了解有关[优惠环境](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/offers/interaction-architecture){target="_blank"}的更多信息（Campaign v8文档）。
 +++
 
 +++**提供实时环境**
@@ -681,7 +681,7 @@ Learn more about [Navigation Bar](../../platform/using/adobe-campaign-workspace.
 
 选件实时环境已链接到营销活动&#x200B;**设计环境**。 它包含只读选件，其内容和资格已通过&#x200B;**设计环境**&#x200B;批准。 可以选择将它们显示在网站上，或将其插入到出站消息中。
 
-了解有关[提供实时环境](../../interaction/using/fundamental-principles.md)的更多信息。
+了解有关[提供实时环境](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/offers/interaction-architecture){target="_blank"}的更多信息（Campaign v8文档）。
 +++
 
 +++**优惠呈现规则**
@@ -699,7 +699,7 @@ Learn more about [Navigation Bar](../../platform/using/adobe-campaign-workspace.
 
 这是选件在其文件夹中显示的预览。 可从优惠预览选项卡或联系人配置文件访问。
 
-了解有关[优惠预览](../../interaction/using/creating-an-offer.md#previewing-the-offer)的详细信息。
+了解有关[优惠预览](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/offers/interaction-offer#previewing-the-offer){target="_blank"}的更多信息（Campaign v8文档）。
 +++
 
 +++**优惠建议**
@@ -708,7 +708,7 @@ Learn more about [Navigation Bar](../../platform/using/adobe-campaign-workspace.
 
 优惠建议是操作的结果，该操作包括在给定优惠空间中向联系人展示优惠，例如网站上的横幅、电子邮件或短信内容。 此结果存储在优惠建议表中，该表定义了优惠、收件人和时间戳，提供了收件人已收到的所有优惠的记录。
 
-了解有关[优惠建议](../../interaction/using/creating-offer-spaces.md#offer-proposition-statuses)的更多信息。
+了解有关[优惠建议](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/offers/interaction-settings/interaction-offer-spaces#offer-proposition-statuses){target="_blank"}的更多信息（Campaign v8文档）。
 +++
 
 +++**优惠呈现**
@@ -735,7 +735,7 @@ Learn more about [Navigation Bar](../../platform/using/adobe-campaign-workspace.
 
 优惠空间是一个文件夹，用于定义优惠的公开位置。 通过定义空间，您可以指定使用的渠道、构建选件的内容以及指定显示的选件。 优惠空间是渠道和优惠引擎之间的界面。
 
-了解有关[优惠空间](../../interaction/using/creating-offer-spaces.md)的详细信息。
+了解有关[优惠空间](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/offers/interaction-settings/interaction-offer-spaces){target="_blank"}的更多信息（Campaign v8文档）。
 +++
 
 +++**优惠主题**
@@ -744,7 +744,7 @@ Learn more about [Navigation Bar](../../platform/using/adobe-campaign-workspace.
 
 选件主题是在类别中定义的关键字，它允许操作员在显示选件时筛选选件。 主题允许从目录结构中对优惠进行非分层选择。
 
-详细了解[优惠主题](../../interaction/using/integrating-an-offer-via-the-wizard.md)。
+了解有关[优惠主题](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/offers/interaction-send-offers){target="_blank"}的更多信息（Campaign v8文档）。
 +++
 
 +++**优惠权重**
@@ -753,7 +753,7 @@ Learn more about [Navigation Bar](../../platform/using/adobe-campaign-workspace.
 
 优惠权重基于公式，这些公式精确定义了优惠的相关性，以允许引擎选择最相关的优惠。 权重在优惠中定义，乘数在类别中定义。 符合条件的优惠会在降低权重顺序时考虑在内。
 
-了解有关[优惠权重](../../interaction/using/creating-an-offer.md#offer-weight)的更多信息。
+了解有关[优惠权重](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/offers/interaction-offer#offer-weight){target="_blank"}的更多信息（Campaign v8文档）。
 +++
 
 +++**操作员**
@@ -783,7 +783,7 @@ Learn more about [Navigation Bar](../../platform/using/adobe-campaign-workspace.
 
 出站交互是指从联系人列表（用于投放电子邮件、直邮等）对交互引擎的调用。 相同的规则和流程将应用于每个联系人。 此类交互通常以批处理模式处理。
 
-了解有关[出站交互](../../interaction/using/about-outbound-channels.md)的详细信息。
+了解有关[出站交互](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/offers/interaction-send-offers){target="_blank"}的更多信息（Campaign v8文档）。
 +++
 
 +++**包导出/导入**
@@ -895,7 +895,7 @@ Adobe Campaign中的公共资源文件夹包含由应用程序服务器托管的
 
 在Adobe Campaign中，收件人是发送投放内容（电子邮件、短信等）所定位的默认用户档案 给您的客户。 通过存储在数据库中的收件人数据，可筛选目标并添加个性化数据。 通常，这些信息包括个人、联系人、人口统计和事务性信息，但也可以是支持营销和分析的任何类型的信息。
 
-了解有关[收件人](../../configuration/using/about-data-model.md)的更多信息。
+了解有关[收件人](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/developer/datamodel){target="_blank"}的更多信息（Campaign v8文档）。
 +++
 
 +++**渲染函数**
@@ -904,7 +904,7 @@ Adobe Campaign中的公共资源文件夹包含由应用程序服务器托管的
 
 渲染函数在选件空间中定义。 它用于根据优惠中定义的属性构建其优惠表示形式。 渲染功能模式有三种：HTML、XML和文本。
 
-了解有关[渲染函数](../../interaction/using/creating-offer-spaces.md)的详细信息。
+了解有关[渲染函数](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/offers/interaction-settings/interaction-offer-spaces){target="_blank"}的更多信息（Campaign v8文档）。
 +++
 
 <!--
@@ -1053,7 +1053,7 @@ Learn more about [Total database storage](../../workflow/using/about-workflows.m
 
 在发送投放并激活跟踪后，跟踪技术工作流会检索跟踪数据。 此数据可在投放的“跟踪”选项卡中找到。 您可以查找有关打开数的信息，以及电子邮件或其他与收件人所收到邮件交互的点击数。
 
-了解有关Campaign v8[&#128279;](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/tracking-logs){target="_blank"}中跟踪日志的更多信息。
+了解有关Campaign v8[&#128279;](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/send/tracking-logs){target="_blank"}中跟踪日志的更多信息。
 +++
 
 +++**交易型消息传递**
@@ -1107,7 +1107,7 @@ Learn more about [Triggers](../../workflow/using/about-workflows.md).
 
 在单一模式下，选件引擎会在运行时处理单个联系人。 此模式通常用于入站交互和事务性消息。
 
-了解有关[单一模式](../../interaction/using/about-inbound-channels.md)的更多信息。
+了解有关[单一模式](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/offers/inbound/interaction-present-offers){target="_blank"}的更多信息（Campaign v8文档）。
 +++
 
 +++**Web应用程序**

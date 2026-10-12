@@ -43,10 +43,10 @@ topic_v2:
     internal-label: Security
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: 86e1df82ff7fe9142b0ba75b697d3262e8d7a9d5
 workflow-type: tm+mt
-source-wordcount: '895'
-ht-degree: 2%
+source-wordcount: '952'
+ht-degree: 1%
 ---
 # 发送前执行所有检查 {#perform-all-checks}
 
@@ -98,7 +98,7 @@ ht-degree: 2%
 
 ### 进行验证过程
 
-您可以定义涉及Adobe Campaign操作员和组的完整验证流程，以验证目标和消息内容。 这将确保全面监测和控制营销活动的各个流程：定位、内容、预算、提取和发送证明。 根据用户的权限，用户将收到通知、接收校样并能够验证或拒绝消息。 在本节[&#128279;](../../campaign/using/marketing-campaign-approval.md)中了解更多。
+您可以定义涉及Adobe Campaign操作员和组的完整验证流程，以验证目标和消息内容。 这将确保全面监测和控制营销活动的各个流程：定位、内容、预算、提取和发送证明。 根据用户的权限，用户将收到通知、接收校样并能够验证或拒绝消息。 在此部分[&#128279;](https://experienceleague.adobe.com/zh-hans/docs/campaign/automation/campaign-orchestration/marketing-campaign-approval){target="_blank"}中了解详情（Campaign v8文档）。
 
 ### 使用批次
 
@@ -126,7 +126,7 @@ ht-degree: 2%
 
 * 对于每个IPAffinity元素，声明可以使用的IP地址。 [了解详情](../../installation/using/email-deliverability.md#list-of-ip-addresses-to-use)
 
-* 在您选择的[类型](../../campaign-opt/using/about-campaign-typologies.md)中，使用&#x200B;**[!UICONTROL Managing affinities with IP addresses]**&#x200B;字段将投放链接到管理该关联的投放服务器(MTA)。 [了解详情](../../campaign-opt/using/applying-rules.md#control-outgoing-smtp-traffic)。
+* 在您选择的[类型](https://experienceleague.adobe.com/zh-hans/docs/campaign/automation/campaign-optimization/campaign-typologies){target="_blank"}（Campaign v8文档）中，使用&#x200B;**[!UICONTROL Managing affinities with IP addresses]**&#x200B;字段将投放链接到管理所述关联的投放服务器(MTA)。 [了解详情](https://experienceleague.adobe.com/zh-hans/docs/campaign/automation/campaign-optimization/apply-rules#control-outgoing-smtp-traffic){target="_blank"}（Campaign v8文档）。
 
 * 发送电子邮件后，检查标头以验证发送投放的IP地址。 您的电子邮件管理员应帮助您获取标头信息。
 
@@ -138,7 +138,7 @@ ht-degree: 2%
 
 ### 使用分类
 
-您可以使用分类规则根据特定条件排除部分目标。 这可确保在遵守公司通信政策的同时，发送最符合客户需求及期望的邮件。 例如，您可以筛选新闻稿目标中的未成年收件人。 在此示例[&#128279;](../../campaign-opt/using/filtering-rules.md)中了解更多。
+您可以使用分类规则根据特定条件排除部分目标。 这可确保在遵守公司通信政策的同时，发送最符合客户需求及期望的邮件。 例如，您可以筛选新闻稿目标中的未成年收件人。 在此示例[&#128279;](https://experienceleague.adobe.com/zh-hans/docs/campaign/automation/campaign-optimization/filtering-rules){target="_blank"}中了解详情（Campaign v8文档）。
 
 ### 避免使用附件
 

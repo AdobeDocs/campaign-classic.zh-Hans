@@ -41,10 +41,10 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: 586c6688e2abd3b6e55389bd1fa219d2c596d07d
 workflow-type: tm+mt
-source-wordcount: '2101'
-ht-degree: 1%
+source-wordcount: '2138'
+ht-degree: 0%
 ---
 # Apple邮件应用程序中的邮件隐私保护
 
@@ -95,7 +95,7 @@ Apple的新功能是未来行业在电子邮件隐私保护方面的发展方向
 
 * **[!UICONTROL Operating Systems]**&#x200B;报告
 
-  要确定每个操作系统和每个版本的访客比例，请使用此报表。 [了解更多信息](../../reporting/using/global-reports.md#operating-systems)。
+  要确定每个操作系统和每个版本的访客比例，请使用此报表。 [了解更多](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/analytics/reports/ac-reports/global-reports#operating-systems){target="_blank"}（Campaign v8文档）。
 
   您可以查看每个操作系统的访客相对于访客总数的细分情况。
 
@@ -107,7 +107,7 @@ Apple的新功能是未来行业在电子邮件隐私保护方面的发展方向
 
 * **[!UICONTROL Breakdown of opens]**&#x200B;报告
 
-  要确定每个操作系统的电子邮件打开比例，请使用此报表。 [了解更多信息](../../reporting/using/global-reports.md#breakdown-of-opens)。
+  要确定每个操作系统的电子邮件打开比例，请使用此报表。 [了解更多](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/analytics/reports/ac-reports/global-reports#breakdown-of-opens){target="_blank"}（Campaign v8文档）。
 
   ![](../../reporting/using/assets/dlv_useragent_report.png)
 

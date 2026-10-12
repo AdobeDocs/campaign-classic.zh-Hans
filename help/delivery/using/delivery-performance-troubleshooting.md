@@ -47,10 +47,10 @@ topic_v2:
     internal-label: Optimization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: 9c678f353d367115bc188da80f07e018c44e2612
 workflow-type: tm+mt
-source-wordcount: '791'
-ht-degree: 2%
+source-wordcount: '807'
+ht-degree: 1%
 ---
 # 投放效果和故障排除 {#delivery-performance-troubleshooting}
 
@@ -124,7 +124,7 @@ Error during the call of method 'AppendDeliveryPart' on the mid sourcing server:
 
 **对于内部部署安装**，请对数据库执行真空和重新索引。 有关数据库维护的详细信息，请参阅[本节](../../production/using/recommendations.md)。
 
-您还应该重新启动所有具有计划活动的工作流，以及所有处于失败状态的工作流。 请参阅[此小节](../../workflow/using/scheduler.md)。
+您还应该重新启动所有具有计划活动的工作流，以及所有处于失败状态的工作流。 请参阅[此章节](https://experienceleague.adobe.com/zh-hans/docs/campaign/automation/workflows/wf-activities/flow-control-activities/scheduler){target="_blank"}（Campaign v8文档）。
 
 ### 技术工作流监测
 

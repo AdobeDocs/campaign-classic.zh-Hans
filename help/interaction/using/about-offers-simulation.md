@@ -22,9 +22,9 @@ topic_v2:
     internal-label: Reporting
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
     internal-label: Customer experience
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 323ff901668895588a6e9587fa2a8b7804cf2fb4
 workflow-type: tm+mt
-source-wordcount: '264'
+source-wordcount: '278'
 ht-degree: 3%
 ---
 # 关于产品建议模拟{#about-offers-simulation}
@@ -33,7 +33,7 @@ ht-degree: 3%
 
 使用&#x200B;**Simulation**&#x200B;模块，您可以在向收件人发送建议之前测试属于某个类别或某个环境的选件分布。
 
-模拟会考虑先前应用于优惠的上下文和资格规则（请参阅[优惠目录概述](../../interaction/using/offer-catalog-overview.md)）及其呈现规则（请参阅[管理优惠呈现](../../interaction/using/managing-offer-presentation.md)）。 这样，您就可以测试和优化各种版本的优惠建议，而无需实际使用优惠或过度/缺征询目标，因为模拟对目标收件人没有影响。
+模拟会考虑以前应用于优惠的上下文和资格规则(请参阅[优惠目录概述](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/offers/interaction-offer-catalog){target="_blank"} （Campaign v8文档）)及其呈现规则（请参阅[管理优惠呈现](../../interaction/using/managing-offer-presentation.md)）。 这样，您就可以测试和优化各种版本的优惠建议，而无需实际使用优惠或过度/缺征询目标，因为模拟对目标收件人没有影响。
 
 要了解如何模拟优惠，请阅读以下步骤。
 

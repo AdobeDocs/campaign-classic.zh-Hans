@@ -52,10 +52,10 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: a97306b73a2b577841e6f24536c62b2526e9fda9
 workflow-type: tm+mt
-source-wordcount: '932'
-ht-degree: 12%
+source-wordcount: '946'
+ht-degree: 11%
 ---
 # Android 配置步骤
 
@@ -195,7 +195,7 @@ ht-degree: 12%
 
 您需要扩展&#x200B;**appsubscriptionRcp**，以定义新的附加字段来将应用程序中的参数存储在Campaign数据库中。 例如，这些字段用于个性化。 操作步骤：
 
-1. 创建&#x200B;**[!UICONTROL Subscriber applications (nms:appsubscriptionRcp)]**&#x200B;架构的扩展并定义新字段。 在[此页面](../../configuration/using/about-schema-edition.md)中了解有关架构扩展的更多信息
+1. 创建&#x200B;**[!UICONTROL Subscriber applications (nms:appsubscriptionRcp)]**&#x200B;架构的扩展并定义新字段。 在[此页面](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/developer/schemas-forms/schemas){target="_blank"}中了解有关架构扩展的更多信息（Campaign v8文档）
 
 1. 在&#x200B;**[!UICONTROL Subscription parameters]**&#x200B;选项卡中定义映射。
 

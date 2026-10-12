@@ -45,9 +45,9 @@ topic_v2:
     internal-label: Implementation
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
     internal-label: Optimization
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: 586c6688e2abd3b6e55389bd1fa219d2c596d07d
 workflow-type: tm+mt
-source-wordcount: '1428'
+source-wordcount: '1446'
 ht-degree: 1%
 ---
 # 使用增强MTA发送 {#sending-with-enhanced-mta}
@@ -154,7 +154,7 @@ Campaign **[!UICONTROL Delivery log qualification]**&#x200B;表中的退回限�
 
 Campaign投放吞吐量图表将不再向电子邮件收件人显示吞吐量。 该图表现在将显示消息从Campaign中继到Enhanced MTA的吞吐量速度。
 
-有关投放吞吐量的详细信息，请参阅[此部分](../../reporting/using/global-reports.md#delivery-throughput)。
+有关投放吞吐量的详细信息，请参阅[此部分](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/analytics/reports/ac-reports/global-reports#delivery-throughput){target="_blank"}（Campaign v8文档）。
 
 ### 重试
 

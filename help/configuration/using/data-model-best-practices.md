@@ -45,18 +45,18 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: a97306b73a2b577841e6f24536c62b2526e9fda9
 workflow-type: tm+mt
-source-wordcount: '4078'
+source-wordcount: '4118'
 ht-degree: 1%
 ---
 # 数据模型最佳实践{#data-model-best-practices}
 
 本文档概述了设计Adobe Campaign数据模型时的主要建议。
 
-要更好地了解Campaign内置表及其交互，请参阅[此部分](../../configuration/using/about-data-model.md)部分。
+要更好地了解Campaign内置表及其交互，请参阅[此部分](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/developer/datamodel){target="_blank"}（Campaign v8文档）部分。
 
-阅读[此文档](../../configuration/using/about-schema-reference.md)以开始使用Campaign架构。 在[本文档](../../configuration/using/about-schema-edition.md)中了解如何配置扩展模式以扩展Adobe Campaign数据库的概念数据模型。
+阅读[此文档](../../configuration/using/about-schema-reference.md)以开始使用Campaign架构。 在[本文档](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/developer/schemas-forms/schemas){target="_blank"}（Campaign v8文档）中了解如何配置扩展架构以扩展Adobe Campaign数据库的概念数据模型。
 
 ## 概述 {#overview}
 
@@ -82,7 +82,7 @@ Adobe Campaign默认数据模型在[此文档](../../configuration/using/data-mo
 
 >[!NOTE]
 >
->Adobe Campaign Classic允许构建自定义客户表。 但是，在大多数情况下，建议利用标准[收件人表](../../configuration/using/about-data-model.md#default-recipient-table)，该表已预建了附加表和功能。
+>Adobe Campaign Classic允许构建自定义客户表。 但是，在大多数情况下，建议利用标准[收件人表](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/developer/datamodel#ootb-profiles){target="_blank"}（Campaign v8文档），该表已预建其他表和功能。
 
 ### Adobe Campaign的数据 {#data-for-campaign}
 

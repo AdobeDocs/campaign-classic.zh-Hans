@@ -38,16 +38,16 @@ role_v2:
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: a97306b73a2b577841e6f24536c62b2526e9fda9
 workflow-type: tm+mt
-source-wordcount: '834'
-ht-degree: 2%
+source-wordcount: '892'
+ht-degree: 1%
 ---
 # 输入表单{#input-forms}
 
 以下是有关在Adobe Campaign中使用输入表单的一些一般原则。
 
-在[此部分](../../configuration/using/identifying-a-form.md)中详细介绍了Forms。
+[此部分](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/developer/schemas-forms/forms){target="_blank"}中详细介绍了Forms（Campaign v8文档）。
 
 ## 窗体结构 {#form-structure}
 
@@ -105,7 +105,7 @@ XPath是一种语法，允许您在XML文档的树中查找节点。
 
 控件彼此相对的排列方式类似于HTML表格中使用的排列方式，可以将控件划分为若干列、交错元素或指定可用空间的占用。 但是，请记住，格式设置仅授权分配比例；您不能为对象指定固定维度。
 
-如需详细信息，请参阅[此小节](../../configuration/using/form-structure.md#formatting)。
+有关更多信息，请参阅[此章节](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/developer/schemas-forms/forms#formatting){target="_blank"}（Campaign v8文档）。
 
 ## 列表类型控件 {#list-type-controls}
 
@@ -214,7 +214,7 @@ XPath是一种语法，允许您在XML文档的树中查找节点。
 
 容器允许您对一组控件进行分组。 它们通过&#x200B;**`<container>`**&#x200B;元素存在。 它们已用于格式化多个列中的控件以及选项卡列表的控件。
 
-有关容器以及如何在输入表单中使用这些容器的详细信息，请参阅[此部分](../../configuration/using/form-structure.md#containers)。
+有关容器以及如何在输入表单中使用这些容器的更多信息，请参阅[此章节](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/developer/schemas-forms/forms#containers){target="_blank"}（Campaign v8文档）。
 
 ## 编辑窗体 {#editing-forms}
 
@@ -226,4 +226,4 @@ XPath是一种语法，允许您在XML文档的树中查找节点。
 
 ![](assets/d_ncs_content_form13.png)
 
-阅读有关[编辑表单](../../configuration/using/editing-forms.md)和[表单结构](../../configuration/using/form-structure.md)的更多信息。
+阅读有关[编辑表单](../../configuration/using/editing-forms.md)和[表单结构](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/developer/schemas-forms/forms){target="_blank"}的更多信息（Campaign v8文档）。

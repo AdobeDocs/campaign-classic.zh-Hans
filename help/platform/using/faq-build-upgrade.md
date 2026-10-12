@@ -40,7 +40,7 @@ topic_v2:
     internal-label: Personalization
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: 4bc1e76d129c6a6aa15b7e3915232043bd6f4286
 workflow-type: tm+mt
 source-wordcount: '2105'
 ht-degree: 2%
@@ -51,7 +51,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->有关工作流、投放、受众等常见Campaign问题的全面答案，请参阅[Campaign v8全面常见问题解答](https://experienceleague.adobe.com/docs/campaign/campaign-v8/start/campaign-faq-comprehensive.html){target="_blank"}。
+>有关工作流、投放、受众等常见Campaign问题的全面答案，请参阅[Campaign v8全面常见问题解答](https://experienceleague.adobe.com/docs/campaign/campaign-v8/start/campaign-faq-comprehensive.html?lang=zh-Hans){target="_blank"}。
 
 Adobe Campaign 会定期更新。 如果您熟悉我们发布的[发行说明](../../rn/using/rn-overview.md)，您可能会意识到每年平均会发布2/3个包含新功能、改进和修复的次要版本。 此外，我们还定期发布仅包含累积修复的内部版本。 这种定期更新的目的是为了让您掌握最新、最充分的信息，保持环境的完全安全，并明显改善您对我们产品的体验。
 
@@ -212,7 +212,7 @@ Adobe将在进行任何更改之前备份您的系统。 但是，如果您的�
 
 如果您在版本升级后遇到问题，请联系[Adobe客户关怀团队](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。 客户关怀团队会安排构建日期并打开与构建升级相关的票证。
 
-在Campaign Classic的[帮助和支持选项中了解详情](../../support.md)
+在Campaign Classic的[帮助和支持选项中了解详情](../../campaign-classic-home.md)
 
 ## 构建升级核对清单 {#check-list}
 
@@ -252,5 +252,5 @@ Adobe将在进行任何更改之前备份您的系统。 但是，如果您的�
 
 * [执行内部版本升级](../../production/using/build-upgrade.md)
 * [Campaign Classic发行说明](../../rn/using/rn-overview.md)
-* [Campaign Classic的帮助和支持选项](../../support.md)
+* [Campaign Classic的帮助和支持选项](../../campaign-classic-home.md)
 * [年度升级计划](../../rn/using/rn-overview.md#yearly-upgrade)

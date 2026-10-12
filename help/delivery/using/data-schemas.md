@@ -39,16 +39,16 @@ role_v2:
     internal-label: User
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: a97306b73a2b577841e6f24536c62b2526e9fda9
 workflow-type: tm+mt
-source-wordcount: '557'
+source-wordcount: '571'
 ht-degree: 1%
 ---
 # 在Campaign中使用数据架构{#data-schemas}
 
 以下是有关在Adobe Campaign中使用数据架构的一些一般原则。
 
-有关在Adobe Campaign中创建和配置数据架构的更多信息，请参阅[此部分](../../configuration/using/about-schema-edition.md)。
+有关在Adobe Campaign中创建和配置数据架构的更多信息，请参阅[此章节](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/developer/schemas-forms/schemas){target="_blank"}（Campaign v8文档）。
 
 ## 架构结构 {#schema-structure}
 

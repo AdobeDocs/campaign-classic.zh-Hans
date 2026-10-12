@@ -20,35 +20,19 @@ subfeature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: a97306b73a2b577841e6f24536c62b2526e9fda9
 workflow-type: tm+mt
-source-wordcount: '137'
+source-wordcount: '156'
 ht-degree: 8%
 ---
 # 更新数据库结构{#updating-the-database-structure}
 
-
-
-要应用对架构所做的修改，请启动数据库更新助手。 可以通过&#x200B;**[!UICONTROL Tools > Advanced > Update database structure]**&#x200B;访问此助手。 它检查数据库的物理结构是否与其逻辑描述匹配，并执行SQL更新脚本。
-
-![](assets/d_ncs_integration_schema_update.png)
-
-数据库中的模块将自动填充和激活。
-
-![](assets/d_ncs_integration_schema_update_select.png)
+要应用对架构所做的修改，请启动可通过&#x200B;**[!UICONTROL Tools > Advanced > Update database structure]**&#x200B;使用的数据库更新助手。 在Campaign Classic v7中，该助手还提供以下选项：
 
 **[!UICONTROL Add stored procedures]**&#x200B;和&#x200B;**[!UICONTROL Import initialization data]**&#x200B;选项用于启动初始SQL脚本以及在创建数据库时执行的数据包。
 
 您可以从外部数据包导入一组数据。 为此，请选择&#x200B;**[!UICONTROL Import a package]**&#x200B;并输入包的XML文件。
 
-按照以下步骤操作并查看数据库更新SQL脚本：
+作为从Campaign v7过渡到v8的一部分，Campaign Classic文档集已得到简化和重新组织。 现在，Campaign v8文档集中专门提供了常用功能。 要了解有关数据库更新助手的详细信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/developer/schemas-forms/update-database-structure){target=_blank}。
 
-![](assets/d_ncs_integration_schema_update2.png)
-
->[!NOTE]
->
->此代码位于编辑字段中，可以修改以删除或添加SQL代码。
-
-接下来，启动数据库更新：
-
-![](assets/d_ncs_integration_schema_update3.png)
+[![image](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/developer/schemas-forms/update-database-structure){target=_blank}

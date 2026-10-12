@@ -23,9 +23,9 @@ topic_v2:
     internal-label: Implementation
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
     internal-label: Security
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 617db6f51887118c965b8938b2b9f14335293875
 workflow-type: tm+mt
-source-wordcount: '684'
+source-wordcount: '700'
 ht-degree: 1%
 ---
 # 用例：发送带有附件的事务性电子邮件 {#transactional-email-with-attachments}
@@ -87,7 +87,7 @@ Adobe还建议限制附加文件的大小和数量。 默认情况下，您只�
 
 1. 您可以通过SOAP消息触发器发送电子邮件。 在SOAP调用中，有一个URL参数(attachmentURL)。
 
-   有关SOAP请求的更多信息，请参阅[事件描述](../../message-center/using/event-description.md)。
+   有关SOAP请求的更多信息，请参阅[事件描述](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/send/real-time/event/event-description){target="_blank"}（Campaign v8文档）。
 
 1. 设计电子邮件时，单击&#x200B;**[!UICONTROL Attachment]**。
 

@@ -28,10 +28,10 @@ level_v2:
     internal-label: Intermediate
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: a97306b73a2b577841e6f24536c62b2526e9fda9
 workflow-type: tm+mt
-source-wordcount: '372'
-ht-degree: 2%
+source-wordcount: '264'
+ht-degree: 3%
 ---
 # 架构入门 {#about-schema-reference}
 
@@ -39,7 +39,7 @@ ht-degree: 2%
 
 本章介绍如何配置扩展模式以扩展Adobe Campaign数据库的概念数据模型。
 
-要更好地了解Campaign内置表及其交互，请参阅[Campaign Classic数据模型](about-data-model.md)。
+要更好地了解Campaign内置表及其交互，请参阅[Campaign Classic数据模型](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/developer/datamodel){target="_blank"}（Campaign v8文档）。
 
 在Adobe Campaign中，应用程序中所承载数据的物理和逻辑结构以XML形式进行描述。 **架构**&#x200B;是与数据库表关联的XML文档。 它定义数据结构并描述表的SQL定义：
 
@@ -62,45 +62,6 @@ ht-degree: 2%
 
 ![](assets/reference_schema_intro.png)
 
-## 架构的语法 {#syntax-of-schemas}
+作为从Campaign v7过渡到v8的一部分，Campaign Classic文档集已得到简化和重新组织。 现在，Campaign v8文档集中专门提供了常用功能。 要了解架构的语法和标识，请参阅[Campaign v8文档](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/developer/schemas-forms/schemas){target=_blank}。
 
-架构的根元素为&#x200B;**`<srcschema>`**。 它包含&#x200B;**`<element>`**&#x200B;和&#x200B;**`<attribute>`**&#x200B;子元素。
-
-第一个&#x200B;**`<element>`**&#x200B;子元素与实体的根一致。
-
-```
-<srcSchema name="recipient" namespace="cus">
-  <element name="recipient">  
-    <attribute name="lastName"/>
-    <attribute name="email"/>
-    <element name="location">
-      <attribute name="city"/>
-   </element>
-  </element>
-</srcSchema>
-```
-
->[!NOTE]
->
->实体的根元素与架构具有相同的名称。
-
-![](assets/s_ncs_configuration_schema_and_entity.png)
-
-**`<element>`**&#x200B;标记定义实体元素的名称。 架构的&#x200B;**`<attribute>`**&#x200B;标记定义&#x200B;**`<element>`**&#x200B;标记中已链接到的属性的名称。
-
-## 架构的标识 {#identification-of-a-schema}
-
-数据架构由其名称和命名空间来标识。
-
-命名空间允许您按感兴趣的区域对一组架构进行分组。 例如，**cus**&#x200B;命名空间用于特定于客户的配置（**客户**）。
-
-架构的标识键是使用命名空间和用冒号分隔的名称构建的字符串；例如： **cus:recipient**。
-
->[!IMPORTANT]
->
->* 命名空间的名称必须简洁，并且根据XML命名规则只能包含授权字符。
->
->* 标识符不能以数字字符开头。
->
->* 以下命名空间是为Adobe Campaign应用程序操作所需的系统实体描述而保留的，不得使用： **xtk**、**nl**、**nms**、**ncm**、**temp**、**ncl**、**crm**、**xxl**。
->
+[![image](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/developer/schemas-forms/schemas){target=_blank}

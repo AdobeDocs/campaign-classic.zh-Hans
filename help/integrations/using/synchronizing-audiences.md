@@ -42,9 +42,9 @@ topic_v2:
     internal-label: Data management
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 9c678f353d367115bc188da80f07e018c44e2612
 workflow-type: tm+mt
-source-wordcount: '1161'
+source-wordcount: '1178'
 ht-degree: 1%
 ---
 # 同步受众{#synchronizing-audiences}
@@ -89,7 +89,7 @@ ht-degree: 1%
 
    ![](assets/acs_connect_query1.png)
 
-1. 从查询中添加其他数据。 有关详细信息，请参阅[添加数据](../../workflow/using/query.md#adding-data)部分。
+1. 从查询中添加其他数据。 有关更多信息，请参阅[添加数据](https://experienceleague.adobe.com/zh-hans/docs/campaign/automation/workflows/wf-activities/targeting-activities/query#adding-data){target="_blank"}（Campaign v8文档）一节。
 
    此示例说明如何添加聚合以计算收件人在一年内接收的投放数量。
 

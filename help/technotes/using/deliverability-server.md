@@ -36,9 +36,9 @@ topic_v2:
     internal-label: Security
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 86e1df82ff7fe9142b0ba75b697d3262e8d7a9d5
 workflow-type: tm+mt
-source-wordcount: '1054'
+source-wordcount: '1071'
 ht-degree: 4%
 ---
 # 更新到新的可投放性服务器 {#acc-deliverability}
@@ -150,4 +150,4 @@ ht-degree: 4%
 
 如果不升级环境，则将停止同步电子邮件设置（ MX管理规则、入站电子邮件规则、域管理规则和退回鉴别规则）。 这可能会随着时间的推移影响您的可投放性。 如果对这些规则进行了重大更改，则必须从此刻手动应用这些规则。
 
-对于MKT实例，只有[全局禁止显示列表](../../campaign-opt/using/filtering-rules.md#default-deliverability-exclusion-rules)受到影响。
+对于MKT实例，只有[全局禁止列表](https://experienceleague.adobe.com/zh-hans/docs/campaign/automation/campaign-optimization/filtering-rules#default-deliverability-exclusion-rules){target="_blank"} （Campaign v8文档）受影响。

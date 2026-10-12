@@ -34,9 +34,9 @@ topic_v2:
     internal-label: Data collection
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 617db6f51887118c965b8938b2b9f14335293875
 workflow-type: tm+mt
-source-wordcount: '1256'
+source-wordcount: '1274'
 ht-degree: 2%
 ---
 # 配置实例 {#creating-a-shared-connection}
@@ -61,7 +61,7 @@ ht-degree: 2%
 
 ## 配置控制实例 {#control-instance}
 
-若要连接控制实例和执行实例，您首先需要在控制实例&#x200B;**上创建和配置&#x200B;**&#x200B;[!UICONTROL Execution instance]&#x200B;**类型的外部帐户**。 因此，一旦[发布](../../message-center/using/publishing-message-templates.md#template-publication)，事务性消息模板就可以部署到执行实例。
+若要连接控制实例和执行实例，您首先需要在控制实例&#x200B;**上创建和配置&#x200B;**&#x200B;[!UICONTROL Execution instance]&#x200B;**类型的外部帐户**。 因此，一旦[发布](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/send/real-time/transactional-template#publish-message-template){target="_blank"}（Campaign v8文档），即可将事务性消息模板部署到执行实例。
 
 如果您使用多个执行实例，则必须创建与执行实例相同数量的外部帐户。
 

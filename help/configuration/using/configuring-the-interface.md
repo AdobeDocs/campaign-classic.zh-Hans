@@ -24,9 +24,9 @@ role_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: a97306b73a2b577841e6f24536c62b2526e9fda9
 workflow-type: tm+mt
-source-wordcount: '288'
+source-wordcount: '302'
 ht-degree: 0%
 ---
 # 配置接口{#configuring-the-interface}
@@ -57,7 +57,7 @@ Adobe Campaign使用“Nms_DefaultRcpSchema”全局变量与默认收件人数�
 
    >[!NOTE]
    >
-   >要了解有关&#x200B;**表单**&#x200B;类型文件的详细信息，请参阅[此页面](../../configuration/using/identifying-a-form.md)。
+   >要了解有关&#x200B;**表单**&#x200B;类型文件的更多信息，请参阅[此页面](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/developer/schemas-forms/forms){target="_blank"}（Campaign v8文档）。
 
    在我们的当前示例中，**form**&#x200B;文件必须基于&#x200B;**cus:individual**&#x200B;架构，因此具有以下布局：
 

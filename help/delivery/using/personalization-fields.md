@@ -41,10 +41,10 @@ topic_v2:
     internal-label: Optimization
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: 9c678f353d367115bc188da80f07e018c44e2612
 workflow-type: tm+mt
-source-wordcount: '1038'
-ht-degree: 10%
+source-wordcount: '1082'
+ht-degree: 9%
 ---
 # 个性化字段{#personalization-fields}
 
@@ -104,7 +104,7 @@ ht-degree: 10%
 
    >[!NOTE]
    >
-   >当投放属于工作流的一部分时，您可以使用临时工作流表中的数据。 此数据在&#x200B;**[!UICONTROL Target extension]**&#x200B;菜单中分组。 如需详细信息，请参阅[此小节](../../workflow/using/data-life-cycle.md#target-data)。
+   >当投放属于工作流的一部分时，您可以使用临时工作流表中的数据。 此数据在&#x200B;**[!UICONTROL Target extension]**&#x200B;菜单中分组。 有关更多信息，请参阅[此章节](https://experienceleague.adobe.com/zh-hans/docs/campaign/automation/workflows/introduction/use-workflow-data){target="_blank"}（Campaign v8文档）。
 
 ## 优化个性化 {#optimizing-personalization}
 
@@ -119,8 +119,8 @@ ht-degree: 10%
 要使用此选项，请执行以下步骤：
 
 1. 创建营销策划。 有关更多信息，请参阅 [Campaign v8 文档](https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=zh-Hans){target=_blank}。
-1. 在营销活动的&#x200B;**[!UICONTROL Targeting and workflows]**&#x200B;选项卡中，将&#x200B;**查询**&#x200B;活动添加到您的工作流。 有关使用此活动的详细信息，请参阅[此部分](../../workflow/using/query.md)。
-1. 将&#x200B;**[!UICONTROL Email delivery]**&#x200B;活动添加到工作流并打开它。 有关使用此活动的详细信息，请参阅[此部分](../../workflow/using/delivery.md)。
+1. 在营销活动的&#x200B;**[!UICONTROL Targeting and workflows]**&#x200B;选项卡中，将&#x200B;**查询**&#x200B;活动添加到您的工作流。 有关使用此活动的更多信息，请参阅[此章节](https://experienceleague.adobe.com/zh-hans/docs/campaign/automation/workflows/wf-activities/targeting-activities/query){target="_blank"}（Campaign v8文档）。
+1. 将&#x200B;**[!UICONTROL Email delivery]**&#x200B;活动添加到工作流并打开它。 有关使用此活动的更多信息，请参阅[此章节](https://experienceleague.adobe.com/zh-hans/docs/campaign/automation/workflows/wf-activities/action-activities/delivery){target="_blank"}（Campaign v8文档）。
 1. 转到&#x200B;**[!UICONTROL Delivery properties]**&#x200B;的&#x200B;**[!UICONTROL Analysis]**&#x200B;选项卡并选择&#x200B;**[!UICONTROL Prepare the personalization data with a workflow]**&#x200B;选项。
 
    ![](assets/perso_optimization.png)

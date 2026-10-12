@@ -39,10 +39,10 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: 86e1df82ff7fe9142b0ba75b697d3262e8d7a9d5
 workflow-type: tm+mt
-source-wordcount: '1773'
-ht-degree: 25%
+source-wordcount: '1791'
+ht-degree: 24%
 ---
 # 定义目标群体 {#defining-the-target-population}
 
@@ -51,7 +51,7 @@ ht-degree: 25%
 * **主要受众**：将接收消息的用户档案。 [了解详情](steps-defining-the-target-population.md#selecting-the-main-target)
 * **验证**：验证周期中涉及的验证消息的收件人。 [了解详情](steps-defining-the-target-population.md#defining-a-specific-proof-target)
 * **种子地址**：不在投放目标但将接收投放的收件人（仅在营销活动上下文中）。 [了解详情](about-seed-addresses.md)
-* **对照组**：不会接收投放的群体，用于跟踪行为和营销活动影响（仅在营销活动上下文中）。 [了解详情](../../campaign/using/marketing-campaign-target.md#defining-a-control-group)。
+* **对照组**：不会接收投放的群体，用于跟踪行为和营销活动影响（仅在营销活动上下文中）。 [了解详情](https://experienceleague.adobe.com/zh-hans/docs/campaign/automation/campaign-orchestration/marketing-campaign-target#add-a-control-group){target="_blank"}（Campaign v8文档）。
 
 ## 选择投放的主要收件人 {#selecting-the-main-target}
 

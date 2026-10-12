@@ -44,10 +44,10 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: 323ff901668895588a6e9587fa2a8b7804cf2fb4
 workflow-type: tm+mt
-source-wordcount: '589'
-ht-degree: 4%
+source-wordcount: '604'
+ht-degree: 3%
 ---
 # 创建和管理操作员组 {#operator-groups}
 
@@ -135,7 +135,7 @@ ht-degree: 4%
 
 1. **[!UICONTROL Offer managers]**
 
-   此组中的操作员可以创建和维护选件。 有关此内容的详细信息，请参阅此[页面](../../interaction/using/operator-profiles.md)。
+   此组中的操作员可以创建和维护选件。 有关详细信息，请参阅此[页面](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/offers/interaction-settings/interaction-operators){target="_blank"}（Campaign v8文档）。
    此组包含以下已命名权限：
 
    * **[!UICONTROL INSERT FOLDERS]**：有权将文件夹插入到Adobe Campaign树中（前提是您对有关分支具有编辑权限），

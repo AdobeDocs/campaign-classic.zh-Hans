@@ -29,9 +29,9 @@ role_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
     internal-label: Implementation
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: a97306b73a2b577841e6f24536c62b2526e9fda9
 workflow-type: tm+mt
-source-wordcount: '418'
+source-wordcount: '432'
 ht-degree: 3%
 ---
 # 实施SOAP方法{#implementing-soap-methods}
@@ -53,7 +53,7 @@ ht-degree: 3%
 
 ### 声明 {#declaration}
 
-首先，声明架构中的方法（有关如何创建和编辑架构的详细信息，请参阅[此部分](../../configuration/using/about-schema-edition.md)）。
+首先，在架构中声明方法(有关如何创建和编辑架构的更多信息，请参阅[此章节](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/developer/schemas-forms/schemas){target="_blank"}（Campaign v8文档）。
 
 它们的声明与本机方法的声明类似，不同之处在于，您需要添加“library”属性来指定定义所在的方法库的名称。
 

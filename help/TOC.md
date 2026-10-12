@@ -8,9 +8,9 @@ user-guide-description: Adobe Campaign Classic v7 产品文档。
 sub-product: adobe campaign classic
 type: Documentation
 nudge: false
-source-git-commit: df5d87ca4fccb927f770957ec1c00157d14e95dc
+source-git-commit: 75d65377f93a40be104f7ec817e6a7609cccaf93
 workflow-type: tm+mt
-source-wordcount: '2717'
+source-wordcount: '1953'
 ht-degree: 100%
 ---
 
@@ -29,7 +29,6 @@ ht-degree: 100%
     + {hide-from-toc}[[!DNL Gold Standard - HIDDEN]](rn/using/gold-standard.md)
   + [已弃用的功能](rn/using/deprecated-features.md)
   + [兼容性矩阵](rn/using/compatibility-matrix.md)
-  + {hide-from-toc}[文档更新 - 隐藏](rn/using/documentation-updates.md)
 + 快速入门 {#getting-started}
   + [Adobe Campaign Classic 入门](platform/using/about-adobe-campaign-classic.md)
   + [启动 Adobe Campaign](platform/using/launching-adobe-campaign.md)
@@ -52,11 +51,7 @@ ht-degree: 100%
     + [选择禁用个人信息销售](platform/using/privacy-requests-ccpa.md)
   + 轮廓管理 {#profile-management}
     + [关于轮廓](platform/using/about-profiles.md)
-    + {hide-from-toc}[编辑轮廓 - 隐藏](platform/using/editing-a-profile.md)
-    + {hide-from-toc}[添加轮廓 - 隐藏](platform/using/adding-profiles.md)
-    + {hide-from-toc}[管理轮廓 - 隐藏](platform/using/managing-profiles.md)
     + [更新数据](platform/using/updating-data.md)
-    + {hide-from-toc}[导入和导出轮廓 - 隐藏](platform/using/exporting-and-importing-profiles.md)
     + [创建和管理列表](platform/using/creating-and-managing-lists.md)
   + 导入和导出数据 {#importing-and-exporting-data}
     + [数据导入和导出入门](platform/using/get-started-data-import-export.md)
@@ -76,9 +71,7 @@ ht-degree: 100%
       + [导入和导出最佳实践](platform/using/import-export-best-practices.md)
       + [SFTP 服务器最佳实践和故障排除](platform/using/sftp-server-usage.md)
   + 筛选数据 {#filtering-data}
-    + {hide-from-toc}[筛选选项 - 隐藏](platform/using/filtering-options.md)
     + {hide-from-toc}[创建筛选 - 隐藏](platform/using/creating-filters.md)
-    + {hide-from-toc}[用例 - 隐藏](platform/using/use-case.md)
   + {hide-from-toc}[创建查询的步骤 - 隐藏](platform/using/steps-to-create-a-query.md)
   + {hide-from-toc}[定义筛选条件 - 隐藏](platform/using/defining-filter-conditions.md)
   + 权限 {#permissions}
@@ -87,13 +80,8 @@ ht-degree: 100%
       + [创建和管理操作员](platform/using/access-management-operators.md)
       + [创建和管理组](platform/using/access-management-groups.md)
     + [使用已命名权限设置权限](platform/using/access-management-named-rights.md)
-    + {hide-from-toc}[管理对文件夹的访问 - 隐藏](platform/using/access-management-folders.md)
   + CRM 连接器 {#connectors}
     + [CRM 连接器入门](platform/using/crm-connectors.md)
-    + {hide-from-toc}[与 Microsoft Dynamics 365 连接](platform/using/crm-ms-dynamics.md)
-    + {hide-from-toc}[与 Salesforce.com 连接](platform/using/crm-sfdc.md)
-    + {hide-from-toc}[与 CRM 同步数据](platform/using/crm-data-sync.md)
-  + {hide-from-toc}[帮助和支持选项 - 隐藏](support.md)
 + 创建和发送消息 {#sending-messages}
   + [开始使用消息功能](delivery/using/communication-channels.md)
   + {hide-from-toc}[投放设置 - 隐藏](delivery/using/delivery-settings.md)
@@ -208,42 +196,6 @@ ht-degree: 100%
     + [丰富内容](delivery/using/enriching-content.md)
     + [通过工作流实现自动化](delivery/using/automating-via-workflows.md)
 + [编排营销活动](campaign/using/about-marketing-campaigns.md)
-+ 编排营销活动 {#orchestrating-campaigns}
-  + {hide-from-toc}[关于活动优化 - 隐藏](campaign-opt/using/about-campaign-optimization.md)
-  + 关于营销活动 {#about-marketing-campaigns}
-    + {hide-from-toc}[设计营销活动 - 隐藏](campaign/using/designing-marketing-campaigns.md)
-    + {hide-from-toc}[访问营销活动 - 隐藏](campaign/using/accessing-marketing-campaigns.md)
-  + 编排营销活动 {#orchestrate-campaigns}
-    + {hide-from-toc}[营销活动快速入门 - 隐藏](campaign/using/setting-up-marketing-campaigns.md)
-    + {hide-from-toc}[创建和配置模板 - 隐藏](campaign/using/marketing-campaign-templates.md)
-    + {hide-from-toc}[添加投放 - 隐藏](campaign/using/marketing-campaign-deliveries.md)
-    + {hide-from-toc}[选择受众 - 隐藏](campaign/using/marketing-campaign-target.md)
-    + {hide-from-toc}[管理文档和资产 - 隐藏](campaign/using/marketing-campaign-assets.md)
-    + {hide-from-toc}[设置和管理审批 - 隐藏](campaign/using/marketing-campaign-approval.md)
-    + {hide-from-toc}[监测活动 - 隐藏](campaign/using/marketing-campaign-monitoring.md)
-    + {hide-from-toc}[供应商、库存和预算 - 隐藏](campaign/using/providers-stocks-and-budgets.md)
-  + 活动优化 {#campaign-optimization}
-    + {hide-from-toc}[关于活动类型 - 隐藏](campaign-opt/using/about-campaign-typologies.md)
-    + {hide-from-toc}[压力规则 - 隐藏](campaign-opt/using/pressure-rules.md)
-    + {hide-from-toc}[一致性规则 - 隐藏](campaign-opt/using/consistency-rules.md)
-    + {hide-from-toc}[控制规则 - 隐藏](campaign-opt/using/control-rules.md)
-    + {hide-from-toc}[筛选规则 - 隐藏](campaign-opt/using/filtering-rules.md)
-    + {hide-from-toc}[应用规则 - 隐藏](campaign-opt/using/applying-rules.md)
-    + {hide-from-toc}[活动模拟 - 隐藏](campaign-opt/using/campaign-simulations.md)
-+ 营销资源管理 {#mrm}
-  + {hide-from-toc}[关于营销资源管理 - 隐藏](mrm/using/about-marketing-resource-management.md)
-  + {hide-from-toc}[创建和管理任务 - 隐藏](mrm/using/creating-and-managing-tasks.md)
-  + {hide-from-toc}[控制成本 - 隐藏](mrm/using/controlling-costs.md)
-  + {hide-from-toc}[管理营销资源 - 隐藏](mrm/using/managing-marketing-resources.md)
-  + {hide-from-toc}[论坛 - 隐藏](mrm/using/discussion-forums.md)
-+ 分布式营销 {#distributed-marketing}
-  + {hide-from-toc}[关于分布式营销 - 隐藏](distributed/using/about-distributed-marketing.md)
-  + {hide-from-toc}[创建本地活动 - 隐藏](distributed/using/creating-a-local-campaign.md)
-  + {hide-from-toc}[创建协作活动 - 隐藏](distributed/using/creating-a-collaborative-campaign.md)
-  + {hide-from-toc}[发布营销活动包 - 隐藏](distributed/using/publishing-the-campaign-package.md)
-  + {hide-from-toc}[访问活动 - 隐藏](distributed/using/accessing-campaigns.md)
-  + {hide-from-toc}[跟踪活动 - 隐藏](distributed/using/tracking-a-campaign.md)
-  + {hide-from-toc}[用例 - 隐藏](distributed/using/examples.md)
 + 响应管理器 {#response-manager}
   + [响应管理器入门](response/using/about-response-manager.md)
   + [配置](response/using/configuration.md)
@@ -252,18 +204,12 @@ ht-degree: 100%
   + [假设验证跟踪](response/using/hypothesis-tracking.md)
 + 设计和共享报告 {#reporting}
   + 报告快速入门 {#reporting-in-adobe-campaign}
-    + [报告工具](reporting/using/about-adobe-campaign-reporting-tools.md)
     + [报告最佳实践](reporting/using/best-practices.md)
   + 访问内置报告 {#accessing-built-in-reports}
     + [关于内置报告](reporting/using/about-campaign-built-in-reports.md)
     + [报告列表](reporting/using/list-of-reports.md)
   + 投放报告{#reports-on-deliveries}
-    + [关于投放报告](reporting/using/reports-on-deliveries.md)
-    + [全局报告](reporting/using/global-reports.md)
-    + [投放报告](reporting/using/delivery-reports.md)
-    + [累积报告](reporting/using/cumulative-reports.md)
     + [指标计算](reporting/using/indicator-calculation.md)
-    + [人员和收件人](reporting/using/person-people-recipients.md)
   + 分析人群 {#analyzing-populations}
     + [什么是描述性分析](reporting/using/about-descriptive-analysis.md)
     + [创建第一个描述性分析报告](reporting/using/using-the-descriptive-analysis-wizard.md)
@@ -363,143 +309,10 @@ ht-degree: 100%
     + {hide-from-toc}[同步 Web 应用程序 - 隐藏](integrations/using/synchronizing-web-applications.md)
     + {hide-from-toc}[ 对  [!DNL ACS Connector]  进行故障排除 - 隐藏](integrations/using/troubleshooting-the-acs-connector.md)
 + [使用工作流实现自动化](workflow/using/about-workflows.md)
-+ 使用工作流实现自动化 {#automating-with-workflows}
-  + 工作流入门 {#introduction}
-    + {hide-from-toc}[关于活动 - 隐藏](workflow/using/about-activities.md)
-    + {hide-from-toc}[构建工作流 - 隐藏](workflow/using/building-a-workflow.md)
-    + {hide-from-toc}[目标数据 - 隐藏](workflow/using/targeting-data.md)
-    + {hide-from-toc}[使用工作流数据 - 隐藏](workflow/using/how-to-use-workflow-data.md)
-    + {hide-from-toc}[工作流最佳实践 - 隐藏](workflow/using/workflow-best-practices.md)
-  + 执行工作流 {#executing-a-workflow}
-    + {hide-from-toc}[开始工作流 - 隐藏](workflow/using/starting-a-workflow.md)
-    + {hide-from-toc}[工作流生命周期 - 隐藏](workflow/using/workflow-life-cycle.md)
-    + {hide-from-toc}[数据生命周期 - 隐藏](workflow/using/data-life-cycle.md)
-    + {hide-from-toc}[定义审批 - 隐藏](workflow/using/defining-approvals.md)
-    + {hide-from-toc}[架构 - 隐藏](workflow/using/architecture.md)
-  + 目标选择活动 {#targeting-activities}
-    + {hide-from-toc}[关于目标选择活动 - 隐藏](workflow/using/about-targeting-activities.md)
-    + {hide-from-toc}[查询 - 隐藏](workflow/using/query.md)
-    + {hide-from-toc}[增量查询 - 隐藏](workflow/using/incremental-query.md)
-    + {hide-from-toc}[读取列表 - 隐藏](workflow/using/read-list.md)
-    + {hide-from-toc}[并集 - 隐藏](workflow/using/union.md)
-    + {hide-from-toc}[交集 - 隐藏](workflow/using/intersection.md)
-    + {hide-from-toc}[排除 - 隐藏](workflow/using/exclusion.md)
-    + {hide-from-toc}[拆分 - 隐藏](workflow/using/split.md)
-    + {hide-from-toc}[单元格 - 隐藏](workflow/using/cells.md)
-    + {hide-from-toc}[单元格产品建议 - 隐藏](workflow/using/offers-by-cell.md)
-    + {hide-from-toc}[投放概要 - 隐藏](workflow/using/delivery-outline.md)
-    + {hide-from-toc}[扩充 - 隐藏](workflow/using/enrichment.md)
-    + {hide-from-toc}[编辑架构 - 隐藏](workflow/using/edit-schema.md)
-    + {hide-from-toc}[产品建议引擎 - 隐藏](workflow/using/offer-engine.md)
-    + {hide-from-toc}[重复数据删除 - 隐藏](workflow/using/deduplication.md)
-    + {hide-from-toc}[更改维度 - 隐藏](workflow/using/change-dimension.md)
-    + {hide-from-toc}[列表更新 - 隐藏](workflow/using/list-update.md)
-    + {hide-from-toc}[订阅服务 - 隐藏](workflow/using/subscription-services.md)
-    + {hide-from-toc}[更新数据 - 隐藏](workflow/using/update-data.md)
-    + {hide-from-toc}[CRM 连接器 - 隐藏](workflow/using/crm-connector.md)
-    + {hide-from-toc}[更改数据源 - 隐藏](workflow/using/change-data-source.md)
-  + 流量控制活动 {#flow-control-activities}
-    + {hide-from-toc}[关于流量控制活动 - 隐藏](workflow/using/about-flow-control-activities.md)
-    + {hide-from-toc}[开始和结束 - 隐藏](workflow/using/start-and-end.md)
-    + {hide-from-toc}[分支 - 隐藏](workflow/using/fork.md)
-    + {hide-from-toc}[和连接 - 隐藏](workflow/using/and-join.md)
-    + {hide-from-toc}[调度程序 - 隐藏](workflow/using/scheduler.md)
-    + {hide-from-toc}[测试 - 隐藏](workflow/using/test.md)
-    + {hide-from-toc}[等待 - 隐藏](workflow/using/wait.md)
-    + {hide-from-toc}[时间限制 - 隐藏](workflow/using/time-constraint.md)
-    + {hide-from-toc}[子工作流 - 隐藏](workflow/using/sub-workflow.md)
-    + {hide-from-toc}[跳转（开始点和结束点 - 隐藏）](workflow/using/jump-start-point-and-end-point.md)
-    + {hide-from-toc}[外部信号 - 隐藏](workflow/using/external-signal.md)
-    + {hide-from-toc}[审批 - 隐藏](workflow/using/approval.md)
-    + {hide-from-toc}[警报 - 隐藏](workflow/using/alert.md)
-    + {hide-from-toc}[任务 - 隐藏](workflow/using/task.md)
-  + 操作活动 {#action-activities}
-    + {hide-from-toc}[关于操作活动 - 隐藏](workflow/using/about-action-activities.md)
-    + {hide-from-toc}[投放 - 隐藏](workflow/using/delivery.md)
-    + {hide-from-toc}[投放控制 - 隐藏](workflow/using/delivery-control.md)
-    + {hide-from-toc}[连续投放 - 隐藏](workflow/using/continuous-delivery.md)
-    + {hide-from-toc}[定期投放 - 隐藏](workflow/using/recurring-delivery.md)
-    + {hide-from-toc}[跨渠道投放 - 隐藏](workflow/using/cross-channel-deliveries.md)
-    + {hide-from-toc}[本地审批 - 隐藏](workflow/using/local-approval.md)
-    + {hide-from-toc}[数据加载 (RDBMS) - 隐藏](workflow/using/data-loading-rdbms.md)
-    + {hide-from-toc}[正在加载 (SOAP) - 隐藏](workflow/using/loading-soap.md)
-    + {hide-from-toc}[正在加载数据（文件）- 隐藏](workflow/using/data-loading-file.md)
-    + {hide-from-toc}[内容管理 - 隐藏](workflow/using/content-management.md)
-    + {hide-from-toc}[数据提取（文件）- 隐藏](workflow/using/extraction-file.md)
-    + {hide-from-toc}[SQL 代码和 JavaScript 代码 - 隐藏](workflow/using/sql-code-and-javascript-code.md)
-    + {hide-from-toc}[SDL 数据管理 - 隐藏](workflow/using/sql-data-management.md)
-    + {hide-from-toc}[Nlserver 模块 - 隐藏](workflow/using/nlserver-module.md)
-    + {hide-from-toc}[更新总计 - 隐藏](workflow/using/update-aggregate.md)
-  + 事件活动 {#event-activities}
-    + {hide-from-toc}[关于事件活动 - 隐藏](workflow/using/about-event-activities.md)
-    + {hide-from-toc}[文件收集器 - 隐藏](workflow/using/file-collector.md)
-    + {hide-from-toc}[文件传输 - 隐藏](workflow/using/file-transfer.md)
-    + {hide-from-toc}[Web 下载 - 隐藏](workflow/using/web-download.md)
-    + {hide-from-toc}[入站电子邮件 - 隐藏](workflow/using/inbound-emails.md)
-    + {hide-from-toc}[入站短信 - 隐藏](workflow/using/inbound-sms.md)
-  + 用例 {#use-cases}
-    + {hide-from-toc}[关于工作流用例 - 隐藏](workflow/using/about-workflow-use-cases.md)
-    + 投放 {#deliveries}
-      + {hide-from-toc}[使用本地审批活动 - 隐藏](workflow/using/using-the-local-approval-activity.md)
-      + {hide-from-toc}[发送生日电子邮件 - 隐藏](workflow/using/sending-a-birthday-email.md)
-      + {hide-from-toc}[加载投放内容 - 隐藏](workflow/using/loading-delivery-content.md)
-      + {hide-from-toc}[跨渠道投放工作流 - 隐藏](workflow/using/cross-channel-delivery-workflow.md)
-      + {hide-from-toc}[具有自定义日期字段的电子邮件扩充 - 隐藏](workflow/using/email-enrichment-with-custom-date-fields.md)
-  + 监控 {#monitoring}
-    + {hide-from-toc}[向列表发送报告 - 隐藏](workflow/using/sending-a-report-to-a-list.md)
-    + {hide-from-toc}[监督工作流 - 隐藏](workflow/using/supervising-workflows.md)
-    + {hide-from-toc}[向操作员发送个性化提醒 - 隐藏](workflow/using/sending-personalized-alerts-to-operators.md)
-  + 数据管理 {#data-management}
-    + {hide-from-toc}[协调数据更新 - 隐藏](workflow/using/coordinating-data-updates.md)
-    + {hide-from-toc}[创建摘要列表 - 隐藏](workflow/using/creating-a-summary-list.md)
-    + {hide-from-toc}[扩充数据 - 隐藏](workflow/using/enriching-data.md)
-    + {hide-from-toc}[使用总计 - 隐藏](workflow/using/using-aggregates.md)
-    + {hide-from-toc}[使用重复数据删除活动的合并功能 - 隐藏](workflow/using/deduplication-merge.md)
-    + {hide-from-toc}[设置定期导入工作流 - 隐藏](workflow/using/recurring-import-workflow.md)
-  + 设计查询 {#designing-queries}
-    + {hide-from-toc}[使用增量查询每季度更新列表 - 隐藏](workflow/using/quarterly-list-update.md)
-  + 查询和筛选 {#query-and-filter-hidden}
-    + {hide-from-toc}[查询收件人表 - 隐藏](workflow/using/querying-recipient-table.md)
-    + {hide-from-toc}[查询投放信息 - 隐藏](workflow/using/querying-delivery-information.md)
-    + {hide-from-toc}[执行总计计算 - 隐藏](workflow/using/performing-aggregate-computing.md)
-    + {hide-from-toc}[使用分组管理进行查询 - 隐藏](workflow/using/querying-using-grouping-management.md)
-    + {hide-from-toc}[使用多对多关系进行查询 - 隐藏](workflow/using/querying-using-many-to-many-relationship.md)
-    + {hide-from-toc}[添加明细列表类型计算字段 - 隐藏](workflow/using/adding-enumeration-type-calculated-field.md)
-    + {hide-from-toc}[创建筛选条件 - 隐藏](workflow/using/creating-a-filter.md)
-    + {hide-from-toc}[筛选重复的收件人 - 隐藏](workflow/using/filtering-duplicated-recipients.md)
-  + 监测工作流 {#monitoring-workflows}
-    + {hide-from-toc}[监测工作流执行 - 隐藏](workflow/using/monitoring-workflow-execution.md)
-    + {hide-from-toc}[监测技术工作流 - 隐藏](workflow/using/monitoring-technical-workflows.md)
-    + {hide-from-toc}[工作流热图 - 隐藏](workflow/using/heatmap.md)
-  + 高级管理 {#advanced-management}
-    + {hide-from-toc}[工作流属性 - 隐藏](workflow/using/workflow-properties.md)
-    + {hide-from-toc}[高级参数 - 隐藏](workflow/using/advanced-parameters.md)
-    + {hide-from-toc}[JavaScript 脚本和模板 - 隐藏](workflow/using/javascript-scripts-and-templates.md)
-    + {hide-from-toc}[工作流中的 JavaScript 代码示例 - 隐藏](workflow/using/javascript-in-workflows.md)
-    + {hide-from-toc}[访问外部数据库 - 隐藏](workflow/using/accessing-an-external-database-fda.md)
-    + {hide-from-toc}[管理权限 - 隐藏](workflow/using/managing-rights.md)
-    + {hide-from-toc}[更改活动图像 - 隐藏](workflow/using/managing-activity-images.md)
-    + {hide-from-toc}[管理时区 - 隐藏](workflow/using/managing-time-zones.md)
-    + {hide-from-toc}[技术工作流 - 隐藏](workflow/using/about-technical-workflows.md)
 + 管理产品建议 {#managing-offers}
   + 互动快速入门 {#interaction-overview}
     + [互动和产品建议管理](interaction/using/interaction-and-offer-management.md)
-    + [词汇表](interaction/using/i-glossary.md)
-    + [互动最佳实践](interaction/using/interaction-best-practices.md)
-  + 一般操作 {#general-operation}
-    + [实施步骤](interaction/using/implementation-steps.md)
-    + [基本原则](interaction/using/fundamental-principles.md)
-  + 管理环境 {#managing-environments}
-    + [环境概述](interaction/using/environments-overview.md)
-    + [操作员轮廓](interaction/using/operator-profiles.md)
-    + [实时/设计环境](interaction/using/live-design-environments.md)
-    + [创建产品建议空间](interaction/using/creating-offer-spaces.md)
-    + [创建预定义过滤器](interaction/using/creating-predefined-filters.md)
   + 管理产品建议目录 {#managing-an-offer-catalog}
-    + [产品建议目录概述](interaction/using/offer-catalog-overview.md)
-    + [创建产品建议类别](interaction/using/creating-offer-categories.md)
-    + [推荐类别](interaction/using/recommending-a-category.md)
-    + [创建产品建议](interaction/using/creating-an-offer.md)
     + [批准和激活产品建议](interaction/using/approving-and-activating-an-offer.md)
     + [管理产品建议模板](interaction/using/managing-offer-templates.md)
     + [管理产品建议演示](interaction/using/managing-offer-presentation.md)
@@ -508,18 +321,6 @@ ht-degree: 100%
     + [执行设置](interaction/using/execution-settings.md)
     + [模拟范围](interaction/using/simulation-scope.md)
     + [模拟跟踪](interaction/using/simulation-tracking.md)
-  + 投放产品建议 {#delivering-an-offer}
-    + [关于出站渠道](interaction/using/about-outbound-channels.md)
-    + [通过助手集成产品建议](interaction/using/integrating-an-offer-via-the-wizard.md)
-    + [通过工作流集成产品建议](interaction/using/integrating-an-offer-via-a-workflow.md)
-  + 单一互动 {#unitary-interactions}
-    + [关于入站渠道](interaction/using/about-inbound-channels.md)
-    + [通过 JavaScript 集成（客户端）](interaction/using/integration-via-javascript-client-side.md)
-    + [通过 SOAP（服务器端）进行集成](interaction/using/integration-via-soap-server-side.md)
-    + [匿名互动](interaction/using/anonymous-interactions.md)
-  + 跟踪产品建议 {#tracking-offers}
-    + [产品建议提议历史](interaction/using/offer-proposition-history.md)
-    + [产品建议分析报告](interaction/using/offer-analysis-report.md)
   + 高级参数 {#advanced-parameters}
     + [使用高级参数](interaction/using/using-advanced-parameters.md)
     + [其他数据](interaction/using/additional-data.md)
@@ -539,19 +340,7 @@ ht-degree: 100%
     + [配置实例](message-center/using/configuring-instances.md)
     + [其他配置](message-center/using/additional-configurations.md)
   + 消息模板 {#message-templates}
-    + [创建事件类型](message-center/using/creating-event-types.md)
-    + [设计消息模板](message-center/using/creating-the-message-template.md)
     + [测试消息模板](message-center/using/testing-message-templates.md)
-    + [发布消息模板](message-center/using/publishing-message-templates.md)
-  + 事务性事件处理 {#processing}
-    + [事件描述](message-center/using/event-description.md)
-    + [事件处理](message-center/using/about-event-processing.md)
-    + [投放执行](message-center/using/delivery-execution.md)
-  + 报告 {#reports}
-    + [访问事务性消息传递报告](message-center/using/about-transactional-messaging-reports.md)
-    + [消息中心事件的历史](message-center/using/history-of-message-center-events.md)
-    + [消息中心服务级别](message-center/using/message-center-service-level.md)
-    + [消息中心处理时间](message-center/using/message-center-processing-time.md)
   + [用例](message-center/using/transactional-email-with-attachments.md)
 + 与社交媒体集成 {#integrating-with-social-media}
   + [关于社交媒体营销](social/using/about-social-marketing.md)
@@ -709,7 +498,6 @@ ht-degree: 100%
 + 开发者指南 {#configuring-campaign-classic}
   + [数据包](platform/using/working-with-data-packages.md)
   + 数据模型 {#data-model}
-    + [关于数据模型](configuration/using/about-data-model.md)
     + [数据模型描述](configuration/using/data-model-description.md)
     + [最佳实践](configuration/using/data-model-best-practices.md)
   + 使用架构 {#schema-reference}
@@ -717,7 +505,6 @@ ht-degree: 100%
     + [架构结构](configuration/using/schema-structure.md)
     + [数据库映射](configuration/using/database-mapping.md)
     + [密钥管理](configuration/using/database-keys.md)
-    + [链接管理](configuration/using/database-links.md)
     + 元素和属性 {#elements-attributes}
       + [简介](configuration/using/schema-introduction.md)
       + [属性](configuration/using/schema/attribute.md)
@@ -738,21 +525,15 @@ ht-degree: 100%
       + [Sysfilter](configuration/using/schema/sysfilter.md)
       + [值](configuration/using/schema/value.md)
   + 编辑架构 {#editing-schemas}
-    + [关于架构版本](configuration/using/about-schema-edition.md)
-    + [数据架构](configuration/using/data-schemas.md)
     + [现有表的架构](configuration/using/schema-of-an-existing-table.md)
     + [扩展架构](configuration/using/extending-a-schema.md)
-    + [筛选架构](configuration/using/filtering-schemas.md)
-    + [限制 PII 视图](configuration/using/restricting-pii-view.md)
     + [更新数据库结构](configuration/using/updating-the-database-structure.md)
     + [新建字段助手](configuration/using/new-field-wizard.md)
     + [数据架构的结构](configuration/using/structure-of-a-data-schema.md)
     + [重新生成架构](configuration/using/regenerating-schemas.md)
     + [架构版本示例](configuration/using/examples-of-schemas-edition.md)
   + 输入表单 {#input-forms}
-    + [识别表单](configuration/using/identifying-a-form.md)
     + [编辑表单](configuration/using/editing-forms.md)
-    + [窗体结构](configuration/using/form-structure.md)
   + API {#api}
     + [关于 Web 服务](configuration/using/about-web-services.md)
     + [Web 服务调用](configuration/using/web-service-calls.md)
@@ -804,13 +585,11 @@ ht-degree: 100%
     + [将技术操作员迁移到 Developer Console](technotes/using/ims-migration.md)
     + [IMS 迁移后的界面影响](technotes/using/impact-ims-migration.md)
   + 升级和兼容性{#technote-migration}
-    + {hide-from-toc}[技术说明](technotes/using/technote.md)
     + [启用 Microsoft Edge Chromium](technotes/using/edge-chromium.md)
     + {hide-from-toc}[新的可投放性服务器](technotes/using/deliverability-server.md)
     + {hide-from-toc}[Apache 安全升级](technotes/using/acc-apache-upgrade.md)
     + {hide-from-toc}[2023 年系统升级](technotes/using/tech-stack-upgrade.md)
     + {hide-from-toc}[IMS 更新](technotes/using/ims-updates.md)
-    + {hide-from-toc}[TLS 1.0 和 1.1 支持生命周期终止](technotes/using/eol-tls-support.md)
     + {hide-from-toc}[迁移到 Adobe Analytics 2.0 API](technotes/using/analytics-2-migration.md)
   + 电子邮件和推送通知{#technotes-email}
     + [Apple iOS 上的邮件隐私保护](technotes/using/apple-mail-app-privacy-protection.md)

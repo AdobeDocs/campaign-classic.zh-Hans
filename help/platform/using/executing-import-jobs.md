@@ -32,7 +32,7 @@ subfeature_v2:
     internal-label: Access management
   - id: e8d937ec-9046-41b5-834b-d22a624e0d37
     internal-label: Campaign overview
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: 75d65377f93a40be104f7ec817e6a7609cccaf93
 workflow-type: tm+mt
 source-wordcount: '3000'
 ht-degree: 31%
@@ -316,7 +316,7 @@ Adobe Campaign允许您以文本、CSV、TAB或XML格式将数据从一个或多
 
      >[!NOTE]
      >
-     >运算符的默认文件夹是运算符具有写入权限的第一个文件夹。 在[文件夹访问管理](../../platform/using/access-management-folders.md)中了解详情。
+     >运算符的默认文件夹是运算符具有写入权限的第一个文件夹。 在[文件夹访问管理](access-management.md)中了解详情。
 
      要选择导入文件夹，请单击&#x200B;**[!UICONTROL Folder]**&#x200B;字段右侧的箭头，然后选择相关的文件夹。 您还可以使用&#x200B;**[!UICONTROL Select link]**&#x200B;图标在新窗口中显示树或创建新文件夹。
 

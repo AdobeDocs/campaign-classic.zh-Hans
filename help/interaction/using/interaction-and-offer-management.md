@@ -22,10 +22,10 @@ topic_v2:
     internal-label: Implementation
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
     internal-label: Customer experience
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 323ff901668895588a6e9587fa2a8b7804cf2fb4
 workflow-type: tm+mt
-source-wordcount: '293'
-ht-degree: 6%
+source-wordcount: '439'
+ht-degree: 3%
 ---
 # 互动和产品建议管理{#interaction-and-offer-management}
 
@@ -39,6 +39,12 @@ ht-degree: 6%
 
 通过互动，您可以创建和管理优惠目录，并配置资格规则和与其关联的应用程序主题。 根据所选的渠道，可以借助各种渲染功能对优惠内容进行个性化。 最后，您可以使用模拟模块计算优惠呈现方式的影响。
 
+作为从Campaign v7过渡到v8的一部分，Campaign Classic文档集已得到简化和重新组织。 现在，Campaign v8文档集中专门提供了常用功能。 要了解有关交互的详细信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/offers/interaction){target=_blank}。
+
+[![image](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/offers/interaction){target=_blank}
+
+此部分仅涵盖Campaign v8文档中未描述的交互功能：[优惠模拟](about-offers-simulation.md)、[优惠演示](managing-offer-presentation.md)、[优惠审批](approving-and-activating-an-offer.md)、[优惠模板](managing-offer-templates.md)和[高级设置](using-advanced-parameters.md)。
+
 ![](assets/Offermgt2.png)
 
 ![](assets/do-not-localize/how-to-video.png)要熟悉Campaign交互中使用的交互功能和术语，请观看[此视频](https://helpx.adobe.com/campaign/classic/how-to/acs-overview.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/digital-marketers/explevel/intermediate/applaunch/get-started/collection.ccx.js&ref=helpx.adobe.com)。
@@ -47,6 +53,6 @@ ht-degree: 6%
 
 | 有用页面 | 其他资源 |
 |---|---|
-| [交互实施步骤](../../interaction/using/implementation-steps.md) | [正在测试选件分发](../../interaction/using/about-offers-simulation.md) |
-| [实时/设计环境](../../interaction/using/live-design-environments.md) | [在电子邮件中添加选件](../../interaction/using/integrating-an-offer-via-the-wizard.md) |
-| [创建产品建议空间](../../interaction/using/creating-offer-spaces.md) | [用例：在网站中添加选件](../../interaction/using/offers-on-an-inbound-channel.md) |
+| [交互实施步骤](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/offers/interaction){target="_blank"}（Campaign v8文档） | [正在测试选件分发](../../interaction/using/about-offers-simulation.md) |
+| [实时/设计环境](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/offers/interaction-settings/interaction-env){target="_blank"}（Campaign v8文档） | [在电子邮件中添加选件](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/offers/interaction-send-offers){target="_blank"}（Campaign v8文档） |
+| [创建优惠空间](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/offers/interaction-settings/interaction-offer-spaces){target="_blank"}（Campaign v8文档） | [用例：在网站中添加选件](../../interaction/using/offers-on-an-inbound-channel.md) |

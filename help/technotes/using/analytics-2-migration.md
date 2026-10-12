@@ -17,9 +17,9 @@ feature_v2:
 subfeature_v2:
   - id: cbcf4d90-26be-46e2-b16a-aebc529dc41e
     internal-label: Analytics integration
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 9c678f353d367115bc188da80f07e018c44e2612
 workflow-type: tm+mt
-source-wordcount: '874'
+source-wordcount: '889'
 ht-degree: 1%
 ---
 # 迁移到Adobe Analytics 2.0 API {#analytics-2-migration}
@@ -28,7 +28,7 @@ Adobe Analytics 1.4 API的[生命周期即将结束](https://developer.adobe.com
 
 >[!CAUTION]
 >
->升级时会重新导入两个为连接器[!UICONTROL webAnalyticsSendMetrics]和[!UICONTROL webAnalyticsGetWebEvents]提供支持的内置技术工作流（请参阅[Web Analytics工作流参考](../../workflow/using/web-analytics.md)，了解每个工作流的用途）。 重新导入会覆盖您在这些工作流之上所做的任何自定义设置。 避免直接修改这些内置工作流 — 请改为在单独的自定义工作流中构建自定义项，以免将来升级时覆盖自定义项。 此升级还会更新内置Analytics JavaScript文件：如果您的任何自定义工作流引用这些文件，则这些文件将中断，需要适应新代码。
+>升级时会重新导入两个为连接器提供支持的内置技术工作流[!UICONTROL webAnalyticsSendMetrics]和[!UICONTROL webAnalyticsGetWebEvents]&#x200B;(有关每个工作流的功能，请参阅[Web Analytics工作流参考](https://experienceleague.adobe.com/zh-hans/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows){target="_blank"}（Campaign v8文档）)。 重新导入会覆盖您在这些工作流之上所做的任何自定义设置。 避免直接修改这些内置工作流 — 请改为在单独的自定义工作流中构建自定义项，以免将来升级时覆盖自定义项。 此升级还会更新内置Analytics JavaScript文件：如果您的任何自定义工作流引用这些文件，则这些文件将中断，需要适应新代码。
 
 ## 您是否受影响？ {#are-you-impacted}
 

@@ -36,10 +36,10 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: 9c678f353d367115bc188da80f07e018c44e2612
 workflow-type: tm+mt
-source-wordcount: '545'
-ht-degree: 7%
+source-wordcount: '576'
+ht-degree: 6%
 ---
 # 定义正确的受众 {#define-the-right-audience}
 
@@ -92,8 +92,8 @@ ht-degree: 7%
 
 **相关主题：**
 
-* [重复数据删除活动](../../workflow/using/deduplication.md)。
-* [用例：使用外部重复数据删除活动的合并功能](../../workflow/using/deduplication-merge.md)
+* [重复数据删除活动](https://experienceleague.adobe.com/zh-hans/docs/campaign/automation/workflows/wf-activities/targeting-activities/deduplication){target="_blank"}（Campaign v8文档）。
+* [用例：使用重复数据删除活动的合并功能](https://experienceleague.adobe.com/zh-hans/docs/campaign/automation/workflows/use-cases/data-management/deduplication-merge){target="_blank"}（Campaign v8文档）
 
 ## 为电子邮件地址编制索引 {#index-addresses}
 

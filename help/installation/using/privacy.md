@@ -41,10 +41,10 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: a97306b73a2b577841e6f24536c62b2526e9fda9
 workflow-type: tm+mt
-source-wordcount: '896'
-ht-degree: 4%
+source-wordcount: '912'
+ht-degree: 3%
 ---
 # 个性化和隐私 {#privacy}
 
@@ -117,7 +117,7 @@ ht-degree: 4%
 
 您必须确保低权限验证用户无法访问加密密码。 为此，应限制仅访问密码字段，或访问整个实体（需要build >= 8770）。
 
-此限制允许您删除密码字段，但允许所有用户从界面访问外部帐户。 [了解详情](../../configuration/using/restricting-pii-view.md)。
+此限制允许您删除密码字段，但允许所有用户从界面访问外部帐户。 [了解详情](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/developer/schemas-forms/restrict-pi-view){target="_blank"}（Campaign v8文档）。
 
 要执行此操作，请按照以下步骤进行：
 

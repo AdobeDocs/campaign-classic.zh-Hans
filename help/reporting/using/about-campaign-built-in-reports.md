@@ -28,9 +28,9 @@ subfeature_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
     internal-label: Reporting
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 586c6688e2abd3b6e55389bd1fa219d2c596d07d
 workflow-type: tm+mt
-source-wordcount: '274'
+source-wordcount: '322'
 ht-degree: 0%
 ---
 # 关于Campaign内置报告{#about-campaign-built-in-reports}
@@ -49,34 +49,14 @@ Adobe Campaign提供了多种类型的报表，可通过客户控制台或Intern
 
 可以使用以下类型的报表：
 
-* 有关整个平台的报告，请参阅[全局报告](../../reporting/using/global-reports.md)。
-* 传递报告，请参阅[传递报告](../../reporting/using/delivery-reports.md)。
-* 累积报告，请参阅[累积报告](../../reporting/using/cumulative-reports.md)。
+* 有关整个平台的报告，请参阅[全局报告](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/analytics/reports/ac-reports/global-reports){target="_blank"}（Campaign v8文档）。
+* 投放报告，请参阅[投放报告](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/analytics/reports/ac-reports/delivery-reports){target="_blank"}（Campaign v8文档）。
+* 累积报告，请参阅[累积报告](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/analytics/reports/ac-reports/delivery-reports){target="_blank"}（Campaign v8文档）。
 
 您可以从客户端控制台主页、报告仪表板或投放列表访问报告。 报告的显示模式取决于其上下文。 主报告的列表可在主页上找到，并允许您快速访问投放数据。 此列表可以根据您的需求进行更改。 有关详细信息，请参阅[此部分](../../reporting/using/about-reports-creation-in-campaign.md)。
 
-要访问Campaign内置报告，请执行以下操作：
+作为从Campaign v7过渡到v8的一部分，Campaign Classic文档集已得到简化和重新组织。 现在，Campaign v8文档集中专门提供了常用功能。 要了解如何访问和使用内置报告，请参阅[Campaign v8文档](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/analytics/reports/ac-reports/built-in-reports){target=_blank}。
 
-1. 选择Adobe Campaign界面的&#x200B;**[!UICONTROL Reports]**&#x200B;选项卡。
-
-   ![](assets/reporting_access_from_home.png)
-
-1. 使用搜索字段筛选显示的报表。
-
-1. 然后，单击要显示的报表。
-
-   ![](assets/reporting_edit_a_report.png)
-
-1. 单击屏幕顶部的&#x200B;**[!UICONTROL Back]**&#x200B;链接可返回到报告列表。
-
-   ![](assets/reporting_back_button.png)
+[![image](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/analytics/reports/ac-reports/built-in-reports){target=_blank}
 
 有关对正在编辑的报告的其他可能操作，请参见[此页面](../../reporting/using/actions-on-reports.md)。
-
-特定于活动或投放的报告可通过其各自的仪表板访问。
-
-![](assets/reporting_on_a_delivery.png)
-
-列表、服务、选件等的原理相同，如下所示：
-
-![](assets/reporting_on_an_offer.png)

@@ -31,9 +31,9 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: 9c678f353d367115bc188da80f07e018c44e2612
 workflow-type: tm+mt
-source-wordcount: '251'
+source-wordcount: '266'
 ht-degree: 3%
 ---
 # 配置 A/B 测试 {#configuring-a-b-testing}
@@ -44,7 +44,7 @@ ht-degree: 3%
 
 1. 添加拆分活动以将目标群体划分为多个子集。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/split.html?lang=zh-Hans){target="_blank"}。
 
-1. 打开活动，然后根据需要配置每个子集。 有关如何配置&#x200B;**[!UICONTROL Split]**&#x200B;活动的详细信息，请参阅[此部分](../../workflow/using/split.md)。
+1. 打开活动，然后根据需要配置每个子集。 有关如何配置&#x200B;**[!UICONTROL Split]**&#x200B;活动的更多信息，请参阅[此章节](https://experienceleague.adobe.com/zh-hans/docs/campaign/automation/workflows/wf-activities/targeting-activities/split){target="_blank"}（Campaign v8文档）。
 
    在本例中，我们希望通过向10%的目标群体展示新闻稿中的每一个，来测试2个新主题。
 
