@@ -35,14 +35,18 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: 7b7f6d2ad5e5d09880f05c7e99ea8ede770532ab
 workflow-type: tm+mt
-source-wordcount: '719'
-ht-degree: 12%
+source-wordcount: '718'
+ht-degree: 7%
 ---
 # 投放设置 {#about-delivery-settings}
 
 以下设置特定于Campaign Classic。 有关其他投放设置，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/gs-message.html?lang=zh-Hans){target="_blank"}。
+
+作为从Campaign v7过渡到v8的一部分，Campaign Classic文档集已得到简化和重新组织。 现在，Campaign v8文档集中专门提供了常用功能。 要了解有关投放设置的更多信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/send/validate/configure-and-send){target=_blank}。
+
+[![image](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/send/validate/configure-and-send){target=_blank}
 
 ## 投放分析 {#delivery-analysis}
 
@@ -79,8 +83,6 @@ ht-degree: 12%
 
 ### 配置重试 {#configuring-retries}
 
-由于&#x200B;**Soft**&#x200B;或&#x200B;**Ignored**&#x200B;错误而临时取消传递的邮件将会自动重试。 此[部分](delivery-failures-quarantine.md#delivery-failure-types-and-reasons)中介绍了投放失败类型和原因。
-
 >[!IMPORTANT]
 >
 >对于托管或混合安装，如果您已升级到[Enhanced MTA](sending-with-enhanced-mta.md)，Campaign将不再使用投放中的重试设置。 软退回重试次数以及它们之间的时间长度由Enhanced MTA根据从消息的电子邮件域返回的退回响应的类型和严重性确定。
@@ -98,8 +100,6 @@ ht-degree: 12%
 ![](assets/s_ncs_user_email_del_valid_period.png)
 
 * **[!UICONTROL Delivery duration]**&#x200B;字段允许您输入全局投放重试限制。 这意味着，Adobe Campaign 从开始日期开始发送消息，然后对于仅返回错误的消息，将执行定期、可配置的重试，直至达到有效期限。
-
-  您也可以选择指定日期。 为此，请选择&#x200B;**[!UICONTROL Explicitly set validity dates]**。 在此情况下，也可以使用投放和有效期限日期指定时间。 默认情况下使用当前时间，但您可以直接在输入字段中修改此项。
 
   >[!IMPORTANT]
   >

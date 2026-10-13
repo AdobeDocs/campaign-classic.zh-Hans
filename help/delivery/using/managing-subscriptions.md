@@ -38,10 +38,10 @@ role_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: 59d78c785d8984861fd537c2f64f82a7d2d77fbf
 workflow-type: tm+mt
-source-wordcount: '1113'
-ht-degree: 2%
+source-wordcount: '1125'
+ht-degree: 1%
 ---
 # 管理订阅{#managing-subscriptions}
 
@@ -156,7 +156,7 @@ ht-degree: 2%
 * 自动为一组收件人订阅此服务。 收件人列表可以来自筛选操作、组、文件夹、导入或使用鼠标直接选择。 要订阅这些收件人，请选择用户档案并右键单击。 选择&#x200B;**[!UICONTROL Actions > Subscribe selection to a service...]**，选择相关的服务，然后启动操作。
 * 导入收件人并自动为其订阅信息服务。 为此，请在导入助理的最后一步中选择相关的服务。
 
-  如需详细信息，请参阅[此小节](../../platform/using/executing-import-jobs.md)。
+  有关更多信息，请参阅[此章节](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/data/import){target="_blank"}（Campaign v8文档）。
 
 * 使用Web窗体，以便收件人可以订阅服务。
 

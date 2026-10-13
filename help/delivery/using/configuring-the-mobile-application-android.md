@@ -52,9 +52,9 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: a97306b73a2b577841e6f24536c62b2526e9fda9
+source-git-commit: d7e5f68c0d2e0b94fd5cfdf2981bed29f33d9f62
 workflow-type: tm+mt
-source-wordcount: '946'
+source-wordcount: '963'
 ht-degree: 11%
 ---
 # Android 配置步骤
@@ -68,7 +68,7 @@ ht-degree: 11%
 1. [在Campaign中创建移动应用程序](#creating-android-app)
 1. [使用其他数据扩展应用程序架构](#extend-subscription-schema)
 
-然后，您就可以[创建Android富通知](create-notifications-android.md)。
+然后，您就可以[创建Android富通知](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/send/push/rich-push/rich-push-android){target="_blank"}（Campaign v8文档）。
 
 >[!IMPORTANT]
 >
@@ -135,7 +135,7 @@ ht-degree: 11%
 
    ![](assets/nmac_android.png)
 
-1. 确保通过SDK在Adobe Campaign和应用程序代码中定义了相同的&#x200B;**[!UICONTROL Integration key]**。<!--For more on this, refer to [this section](integrating-campaign-sdk-into-the-mobile-application.md).-->
+1. 确保通过SDK在Adobe Campaign和应用程序代码中定义了相同的&#x200B;**[!UICONTROL Integration key]**。<!--For more on this, refer to [this section](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/config/settings/push-config){target="_blank"} (Campaign v8 documentation).-->
 
    >[!NOTE]
    >
@@ -201,4 +201,4 @@ ht-degree: 11%
 
    >[!CAUTION]
    >
-   >确保&#x200B;**[!UICONTROL Subscription parameters]**&#x200B;选项卡中的配置名称与移动应用程序代码中的配置名称相同。<!--Refer to [this section](integrating-campaign-sdk-into-the-mobile-application.md).-->
+   >确保&#x200B;**[!UICONTROL Subscription parameters]**&#x200B;选项卡中的配置名称与移动应用程序代码中的配置名称相同。<!--Refer to [this section](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/config/settings/push-config){target="_blank"} (Campaign v8 documentation).-->

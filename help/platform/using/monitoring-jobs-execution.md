@@ -32,10 +32,10 @@ subfeature_v2:
     internal-label: Access management
   - id: e519a22f-a06a-42fc-9d09-d78a3ab2c434
     internal-label: Monitoring guidelines
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: 59d78c785d8984861fd537c2f64f82a7d2d77fbf
 workflow-type: tm+mt
-source-wordcount: '184'
-ht-degree: 36%
+source-wordcount: '203'
+ht-degree: 31%
 ---
 # 监测作业执行 {#monitoring-job-execution}
 
@@ -46,7 +46,7 @@ ht-degree: 36%
 ![](assets/s_ncs_user_export_list_and_details.png)
 
 * **[!UICONTROL Journal]**&#x200B;选项卡允许您查看有关执行的日志消息。
-* **[!UICONTROL Rejects]**&#x200B;选项卡包含被拒绝的记录。 请参阅[此小节](../../platform/using/executing-import-jobs.md#behavior-in-the-event-of-an-error)。
+* **[!UICONTROL Rejects]**&#x200B;选项卡包含被拒绝的记录。 请参阅[此部分](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/data/import#behavior-in-the-event-of-an-error){target="_blank"}（Campaign v8文档）。
 
 在&#x200B;**[!UICONTROL General]**&#x200B;选项卡中，**[!UICONTROL Status]**&#x200B;字段表示作业的当前状态。
 

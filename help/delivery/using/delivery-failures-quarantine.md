@@ -41,10 +41,10 @@ topic_v2:
     internal-label: Troubleshooting
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: d7e5f68c0d2e0b94fd5cfdf2981bed29f33d9f62
 workflow-type: tm+mt
-source-wordcount: '1695'
-ht-degree: 3%
+source-wordcount: '1721'
+ht-degree: 2%
 ---
 # 投放故障和隔离管理 {#delivery-failures-quarantine}
 
@@ -105,7 +105,7 @@ Adobe Campaign过滤此消息以删除变量内容（如ID、日期、电子邮�
 
 >[!NOTE]
 >
->如果ISP发生中断，通过Campaign发送的电子邮件将被错误地标记为退回。 要更正此问题，您需要更新退回鉴别。 有关更多信息，请参阅[此页面](update-bounce-qualification.md)。
+>如果ISP发生中断，通过Campaign发送的电子邮件将被错误地标记为退回。 要更正此问题，您需要更新退回鉴别。 有关详细信息，请参阅[此页面](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/send/monitor/quarantines){target="_blank"}（Campaign v8文档）。
 
 ### 电子邮件管理规则配置 {#email-management-rules}
 
@@ -241,11 +241,11 @@ SMS隔离机制会因所使用的连接器而异：
 
 * [了解投放失败](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/send/monitor/delivery-failures){target="_blank"}（Campaign v8文档）
 * [隔离管理](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/send/monitor/quarantines){target="_blank"}（Campaign v8文档）
-* [投放最佳实践](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/start/delivery-best-practices){target="_blank"}（Campaign v8文档）
+* [投放最佳实践](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/start/delivery-best-practices){target="_blank"}（Campaign v8文档）
 * [投放状态](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/send/monitor/delivery-statuses){target="_blank"}（Campaign v8文档）
 * [数据库清理工作流](../../production/using/database-cleanup-workflow.md) （v7混合/内部部署）
 * [配置投放重试](communication-channels.md) （v7混合/内部部署）
-* [更新退回资格](update-bounce-qualification.md)（v7混合/内部部署）
+* [更新退回鉴别](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/send/monitor/quarantines){target="_blank"}（Campaign v8文档）（v7混合/内部部署）
 * [电子邮件可投放性配置](../../installation/using/email-deliverability.md)（v7混合/内部部署）
 * [正在部署实例](../../installation/using/deploying-an-instance.md#managing-bounced-emails)（v7混合/内部部署）
 

@@ -17,9 +17,9 @@ feature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: a97306b73a2b577841e6f24536c62b2526e9fda9
+source-git-commit: 7b7f6d2ad5e5d09880f05c7e99ea8ede770532ab
 workflow-type: tm+mt
-source-wordcount: '1818'
+source-wordcount: '1821'
 ht-degree: 0%
 ---
 # 面向数据的 API{#data-oriented-apis}
@@ -147,7 +147,7 @@ Write方法在[Write / WriteCollection (xtk:session)](#write---writecollection--
 * **select**：创建光标以返回多个记录，如果没有数据，则返回空文档，
 * **count**：返回数据计数。
 
-**XPath**&#x200B;语法用于根据输入架构查找数据。 有关XPath的详细信息，请参阅[数据架构](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/developer/schemas-forms/create-schema){target="_blank"}（Campaign v8文档）。
+**XPath**&#x200B;语法用于根据输入架构查找数据。 有关XPath的详细信息，请参阅[数据架构](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/developer/schemas-forms/schema-structure#reference-with-xpath){target="_blank"}（Campaign v8文档）。
 
 #### “获取”操作的示例 {#example-with-the--get--operation}
 

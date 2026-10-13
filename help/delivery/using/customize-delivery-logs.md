@@ -41,9 +41,9 @@ role_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: 59d78c785d8984861fd537c2f64f82a7d2d77fbf
 workflow-type: tm+mt
-source-wordcount: '552'
+source-wordcount: '565'
 ht-degree: 2%
 ---
 # 高级：自定义投放日志 {#customize-delivery-logs}
@@ -139,7 +139,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->要了解如何在Campaign Classic界面中配置列表，请参阅[此页面](../../platform/using/adobe-campaign-workspace.md)。
+>要了解如何在Campaign Classic界面中配置列表，请参阅[此页面](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/new/campaign-ui){target="_blank"}（Campaign v8文档）。
 
 以下是修改后您应在&#x200B;**[!UICONTROL Delivery]**&#x200B;选项卡中看到的内容：
 

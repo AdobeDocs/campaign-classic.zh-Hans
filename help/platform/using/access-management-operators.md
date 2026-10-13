@@ -46,9 +46,9 @@ topic_v2:
     internal-label: Security
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: 59d78c785d8984861fd537c2f64f82a7d2d77fbf
 workflow-type: tm+mt
-source-wordcount: '1274'
+source-wordcount: '1289'
 ht-degree: 5%
 ---
 # 创建和管理操作员 {#operators}
@@ -151,7 +151,7 @@ ht-degree: 5%
   >
   >即使其帐户被禁用，操作员仍可以从Campaign接收警报或通知。 要停止向此运营商发送Campaign通知，Adobe建议您从其用户档案中删除电子邮件地址。
 
-* 通过&#x200B;**[!UICONTROL Forbid access from the rich client]**&#x200B;选项，您可以将Adobe Campaign的使用限制为[Web访问](../../platform/using/adobe-campaign-workspace.md#console-and-web-access)，或者通过API使用：无法再访问Adobe Campaign客户端控制台。
+* 通过&#x200B;**[!UICONTROL Forbid access from the rich client]**&#x200B;选项，您可以将Adobe Campaign的使用限制为[Web访问](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/new/campaign-ui#ui-access){target="_blank"} （Campaign v8文档），或者通过API使用：无法再访问Adobe Campaign客户端控制台。
 * 可以将安全区链接到操作员。 有关详细信息，请参见[此页面](../../installation/using/security-zones.md)。
 * 您还可以使用相应的链接定义受信任的IP掩码。
 

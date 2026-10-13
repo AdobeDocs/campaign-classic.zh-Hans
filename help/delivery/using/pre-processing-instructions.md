@@ -26,9 +26,9 @@ role_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: d7e5f68c0d2e0b94fd5cfdf2981bed29f33d9f62
 workflow-type: tm+mt
-source-wordcount: '655'
+source-wordcount: '651'
 ht-degree: 1%
 ---
 # 预处理指令 {#pre-processing-instructions}
@@ -44,6 +44,10 @@ ht-degree: 1%
 * **[!DNL foreach]**：循环作为自定义对象加载的数组。 [了解详情](#foreach)
 
 可以直接从投放助手中进行测试。 它们适用于内容预览以及单击跟踪按钮查看URL列表时。
+
+作为从Campaign v7过渡到v8的一部分，Campaign Classic文档集已得到简化和重新组织。 现在，Campaign v8文档集中专门提供了常用功能。 要了解有关预处理指令的更多信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/analytics/tracking/personalized-links#pre-processing-instructions){target=_blank}。
+
+[![image](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/analytics/tracking/personalized-links#pre-processing-instructions){target=_blank}
 
 ## [!DNL include] {#include}
 
@@ -150,19 +154,6 @@ ht-degree: 1%
 ## [!DNL foreach] {#foreach}
 
 此指令允许对投放中加载的对象数组进行迭代，以跟踪与对象相关的各个链接。
-
-语法：
-
-```
-<%@ foreach object="myObject" xpath="myLink" index="3" item="myItem" %> <%@ end %>
-```
-
-其中：
-
-* **[!DNL object]**：开始对象的名称，通常是额外的脚本对象，但也可以是投放。
-* **[!DNL xpath]** （可选）：要循环的集合的xpath。 默认值为“。”，这意味着对象是要循环处理的数组。
-* **[!DNL index]** （可选）：如果xpath不是“。” 而对象本身是一个数组，即对象的项索引（从0开始）。
-* **[!DNL item]** （可选）：可通过foreach循环中的&lt;%@值访问的新对象的名称。 在架构中具有链接名称的默认值。
 
 示例：
 

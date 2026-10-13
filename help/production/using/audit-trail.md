@@ -29,9 +29,9 @@ subfeature_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: a97306b73a2b577841e6f24536c62b2526e9fda9
+source-git-commit: 7b7f6d2ad5e5d09880f05c7e99ea8ede770532ab
 workflow-type: tm+mt
-source-wordcount: '459'
+source-wordcount: '458'
 ht-degree: 2%
 ---
 # 审核记录{#audit-trail}
@@ -55,7 +55,7 @@ ht-degree: 2%
 
 * **架构审核跟踪**：允许您浏览对架构所做的更改，并识别进行这些修改的人员和时间。
 
-  有关架构的详细信息，请参阅此[页面](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/developer/schemas-forms/create-schema){target="_blank"}（Campaign v8文档）。
+  有关架构的详细信息，请参阅此[页面](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/developer/schemas-forms/schemas){target="_blank"}（Campaign v8文档）。
 
 * **工作流审核跟踪**&#x200B;跟踪与您的工作流相关的所有操作，包括：
 

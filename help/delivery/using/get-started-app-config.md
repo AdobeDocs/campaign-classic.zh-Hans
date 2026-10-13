@@ -41,10 +41,10 @@ level_v2:
     internal-label: Intermediate
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: d7e5f68c0d2e0b94fd5cfdf2981bed29f33d9f62
 workflow-type: tm+mt
-source-wordcount: '334'
-ht-degree: 13%
+source-wordcount: '368'
+ht-degree: 11%
 ---
 # 应用程序配置入门
 
@@ -56,7 +56,7 @@ ht-degree: 13%
 
 * 为Neotrips移动应用程序创建&#x200B;**[!UICONTROL Mobile application]**&#x200B;类型信息服务。 请参阅iOS[&#128279;](configuring-the-mobile-application.md#configuring-ios-service)的此部分。 和[Android](configuring-the-mobile-application-android.md#configuring-android-service)的此分区。
 * 将应用程序的iOS和Android版本添加到此服务。
-* 为[iOS](create-notifications-ios.md)和[Android](create-notifications-android.md)创建投放。
+* 为[iOS](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/send/push/rich-push/rich-push-ios){target="_blank"}（Campaign v8文档）和[Android](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/send/push/rich-push/rich-push-android){target="_blank"}（Campaign v8文档）创建投放。
 
 ![](assets/nmac_service_diagram.png)
 

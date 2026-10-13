@@ -36,10 +36,10 @@ topic_v2:
     internal-label: Security
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 9c678f353d367115bc188da80f07e018c44e2612
+source-git-commit: d7e5f68c0d2e0b94fd5cfdf2981bed29f33d9f62
 workflow-type: tm+mt
-source-wordcount: '2185'
-ht-degree: 98%
+source-wordcount: '2202'
+ht-degree: 97%
 ---
 # 2022 版{#release-2022}
 
@@ -60,7 +60,7 @@ _2022 年 7 月 1 日_
 <tbody> 
 <tr> 
 <td> <p>在 iOS 15 中，Apple 新增了“即时通知”的概念，当通知具有时效性并且需要实时联系用户时，该概念让应用程序开发人员可以控制对“专注”模式的绕过。</p>
-<p>请参阅<a href="../../delivery/using/create-notifications-ios.md">详细文档</a>以了解如何创建时效性通知。</p>
+<p>请参阅<a href="https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/send/push/rich-push/rich-push-ios" target="_blank">详细文档</a>（Campaign v8文档）以了解如何创建敏感通知。</p>
 </td> 
 </tr> 
 </tbody> 

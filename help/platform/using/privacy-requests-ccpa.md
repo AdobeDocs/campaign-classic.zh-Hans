@@ -41,10 +41,10 @@ subfeature_v2:
 topic_v2:
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: a97306b73a2b577841e6f24536c62b2526e9fda9
+source-git-commit: 59d78c785d8984861fd537c2f64f82a7d2d77fbf
 workflow-type: tm+mt
-source-wordcount: '610'
-ht-degree: 86%
+source-wordcount: '626'
+ht-degree: 82%
 ---
 # 个人数据销售的选择退出 (CCPA) {#sale-of-personal-information-ccpa}
 
@@ -114,7 +114,7 @@ ht-degree: 86%
 
    ![](assets/privacy-ccpa-5.png)
 
-1. 配置收件人列表以显示选择退出列。 要了解如何配置列表，请参阅[有详细说明的文档](../../platform/using/adobe-campaign-ui-lists.md#configuring-lists)。
+1. 配置收件人列表以显示选择退出列。 要了解如何配置列表，请参阅[详细文档](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/config/settings/ui-settings#customize-lists){target="_blank"}（Campaign v8文档）。
 
    ![](assets/privacy-ccpa-6.png)
 

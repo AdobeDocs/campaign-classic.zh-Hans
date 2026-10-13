@@ -41,9 +41,9 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 586c6688e2abd3b6e55389bd1fa219d2c596d07d
+source-git-commit: 59d78c785d8984861fd537c2f64f82a7d2d77fbf
 workflow-type: tm+mt
-source-wordcount: '2138'
+source-wordcount: '2150'
 ht-degree: 0%
 ---
 # Apple邮件应用程序中的邮件隐私保护
@@ -369,7 +369,7 @@ Apple的新功能是未来行业在电子邮件隐私保护方面的发展方向
 
 #### 如何保留跟踪数据？
 
-要保留跟踪数据，必须将其从Adobe Campaign导出到您的信息系统。 [了解更多信息](../../platform/using/get-started-data-import-export.md)。
+要保留跟踪数据，必须将其从Adobe Campaign导出到您的信息系统。 [了解更多](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/data/import){target="_blank"}（Campaign v8文档）。
 
 >[!IMPORTANT]
 >

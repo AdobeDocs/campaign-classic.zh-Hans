@@ -26,9 +26,9 @@ topic_v2:
     internal-label: Optimization
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: d7e5f68c0d2e0b94fd5cfdf2981bed29f33d9f62
 workflow-type: tm+mt
-source-wordcount: '1369'
+source-wordcount: '1413'
 ht-degree: 7%
 ---
 # 安装Campaign Classic内置软件包{#installing-campaign-standard-packages}
@@ -133,7 +133,7 @@ ht-degree: 7%
   </tr> 
   <tr> 
    <td> LINE频道<br /> </td> 
-   <td> 在Adobe Campaign中使用LINE渠道发送投放。 可选。 事务性消息传递（消息中心包）是必需的。 <a href="../../delivery/using/line-channel.md">了解更多</a> <br /> </td> 
+   <td> 在Adobe Campaign中使用LINE渠道发送投放。 可选。 事务性消息传递（消息中心包）是必需的。 <a href="https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/send/other-channels/line" target="_blank">了解更多</a>（Campaign v8文档）<br /> </td> 
    <td> 所有<br /> </td> 
   </tr> 
   <tr> 
@@ -143,7 +143,7 @@ ht-degree: 7%
   </tr> 
   <tr> 
    <td> 移动渠道（短信）<br /> </td> 
-   <td> 使用带有Adobe Campaign的移动/短信渠道发送投放。 可选。 <a href="../../delivery/using/sms-channel.md">了解更多</a> <br /> </td> 
+   <td> 使用带有Adobe Campaign的移动/短信渠道发送投放。 可选。 <a href="https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/send/sms/sms" target="_blank">了解更多</a>（Campaign v8文档）<br /> </td> 
    <td> 所有<br /> </td> 
   </tr> 
    <tr> 
@@ -283,7 +283,7 @@ ht-degree: 7%
 
 * 在营销和MID实例上安装[!DNL LINE]包
 
-* 在mkt实例上设置[!DNL LINE]外部帐户，以通过更改传递模式指向mid实例。 [了解详情](../../delivery/using/line-channel.md#configure-line-external)
+* 在mkt实例上设置[!DNL LINE]外部帐户，以通过更改传递模式指向mid实例。 [了解详情](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/send/other-channels/line#configure-line-external){target="_blank"}（Campaign v8文档）
 
 * 在MID实例的外部帐户中设置[!DNL LINE]凭据。
 

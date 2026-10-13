@@ -41,7 +41,7 @@ topic_v2:
     internal-label: Reporting
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: d7e5f68c0d2e0b94fd5cfdf2981bed29f33d9f62
 workflow-type: tm+mt
 source-wordcount: '3088'
 ht-degree: 0%
@@ -148,7 +148,7 @@ Adobe Campaign将外部帐户视为不相关的实体。
 
 ## 发送MT（发送给最终用户的常规短信）时出现问题{#issue-MT}
 
-* 检查连接是否稳定。 除Adobe Campaign Classic上的发射器外，SMPP连接应持续保持至少1小时。 查看部分[连接不稳定的问题](sms-protocol.md#issues-unstable-connection)。
+* 检查连接是否稳定。 除Adobe Campaign Classic上的发射器外，SMPP连接应持续保持至少1小时。 查看部分[连接不稳定的问题](#issues-unstable-connection)。
 
 * 如果重新启动MTA后一小段时间内仍可再次发送MT，则连接不稳定可能会造成限制。 查看部分[连接不稳定的问题](troubleshooting-sms.md#issues-unstable-connection)。
 

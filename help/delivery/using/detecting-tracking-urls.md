@@ -29,30 +29,18 @@ topic_v2:
     internal-label: Personalization
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: d7e5f68c0d2e0b94fd5cfdf2981bed29f33d9f62
 workflow-type: tm+mt
-source-wordcount: '298'
-ht-degree: 2%
+source-wordcount: '247'
+ht-degree: 3%
 ---
 # 检测跟踪 URL
 
-## 非检测示例
+Adobe Campaign会在投放分析期间检测要跟踪内容的URL。
 
-`<%= getURL("http://mynewsletter.com") %>`工作，并通过电子邮件将网页的实际内容发送给收件人。 但这些链接都未被跟踪。 原因是MTA在发送之前对每个电子邮件执行`"<%=getURL(..."`。 由于每个收件人的名称可能不同，因此Adobe Campaign无法知道用于跟踪的URL并为他们分配标记ID。
+作为从Campaign v7过渡到v8的一部分，Campaign Classic文档集已得到简化和重新组织。 现在，Campaign v8文档集中专门提供了常用功能。 要了解如何检测URL以及要使用哪些模式，请参阅[Campaign v8文档](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/analytics/tracking/personalized-links#url-detection){target=_blank}。
 
-当所有收件人的下载页面都相同时，最佳实践是执行以下操作：
-
-`<%@ include url="http://mynewsletter.com" %>`
-
-在这种情况下，页面将在分析期间以及跟踪检测之前下载。 它允许Adobe Campaign发现链接、分配标记ID并跟踪它们。
-
-## 推荐的模式
-
-在处理`<%@`指令后，要跟踪的URL具有以下语法： `<a href="http://myurl.com/a.php?param1=aaa&param2=<%=escapeUrl(recipient.xxx)%>&param3=<%=escapeUrl(recipient.xxx)%>">`
-
->[!IMPORTANT]
->
->所有其他模式均不受Adobe支持，应避免使用，以防止潜在的安全漏洞。
+[![image](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/analytics/tracking/personalized-links#url-detection){target=_blank}
 
 ## 不安全的模式
 

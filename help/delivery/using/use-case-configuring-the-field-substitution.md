@@ -30,9 +30,9 @@ subfeature_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: d7e5f68c0d2e0b94fd5cfdf2981bed29f33d9f62
 workflow-type: tm+mt
-source-wordcount: '456'
+source-wordcount: '469'
 ht-degree: 5%
 ---
 # 用例：配置字段替换{#use-case-configuring-the-field-substitution}
@@ -85,7 +85,7 @@ ht-degree: 5%
 
    ![](assets/dlv_seeds_usecase_25.png)
 
-1. 配置投放列表和种子地址。 请参阅[识别目标群体](steps-defining-the-target-population.md)。
+1. 配置投放列表和种子地址。 请参阅[识别目标群体](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/send/create-message){target="_blank"}（Campaign v8文档）。
 
    在此示例中，用户选择其&#x200B;**最喜爱的文学流派**&#x200B;是科幻小说的用户作为主要目标群体。
 

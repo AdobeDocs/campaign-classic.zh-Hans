@@ -41,10 +41,10 @@ topic_v2:
     internal-label: Security
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 75d65377f93a40be104f7ec817e6a7609cccaf93
+source-git-commit: d7e5f68c0d2e0b94fd5cfdf2981bed29f33d9f62
 workflow-type: tm+mt
-source-wordcount: '2702'
-ht-degree: 98%
+source-wordcount: '2716'
+ht-degree: 97%
 ---
 # 2021 版{#release-2021}
 
@@ -162,7 +162,7 @@ _2021 年 6 月 5 日_
 <li><p>支持 LINE 合作伙伴注册 API</p></li>
 <li><p>支持在出现 LINE 服务器端错误或网络超时的情况下重试消息发送</p></li>
 </ul>
-<p>有关更多信息，请参阅<a href="../../delivery/using/line-channel.md">有详细介绍的文档</a>。</p>
+<p>有关详细信息，请参阅<a href="https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/send/other-channels/line" target="_blank">详细文档</a>（Campaign v8文档）。</p>
 </td> 
 </tr> 
 </tbody> 

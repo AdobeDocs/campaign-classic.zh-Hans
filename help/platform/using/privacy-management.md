@@ -43,10 +43,10 @@ topic_v2:
     internal-label: Implementation
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: 59d78c785d8984861fd537c2f64f82a7d2d77fbf
 workflow-type: tm+mt
-source-wordcount: '907'
-ht-degree: 80%
+source-wordcount: '919'
+ht-degree: 77%
 ---
 # 隐私管理 {#privacy-management}
 
@@ -97,7 +97,7 @@ Adobe Campaign 功能帮助您遵守以下法规：
 
 * **被遗忘权**（删除请求）也称为数据擦除，允许数据主体通过数据控制者擦除其个人数据，停止进一步传播数据，并可能使第三方停止处理数据。
 
-要了解如何创建&#x200B;**访问**&#x200B;和&#x200B;**删除**&#x200B;请求以及 Adobe Campaign 如何处理这些请求，请参阅[实施步骤](../../platform/using/privacy-requests.md)。
+要了解如何创建&#x200B;**访问**&#x200B;和&#x200B;**删除**&#x200B;请求以及Adobe Campaign如何处理这些请求，请参阅[实施步骤](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/privacy/privacy){target="_blank"}（Campaign v8文档）。
 
 <!--
 Tutorials on Privacy management in Campaign Standard are also available [here](https://experienceleague.adobe.com/docs/campaign-standard-learn/tutorials/privacy/privacy-overview.html?lang=zh-Hans).
@@ -123,7 +123,7 @@ Adobe Campaign 的核心自始至终便是用于帮助管理同意的某些方�
 
 有关同意管理的更多信息，请参阅[有详细说明的文档](../../delivery/using/managing-subscriptions.md)。
 
-除了 Adobe Campaign 提供的同意管理工具外，您还可以跟踪消费者是否已选择退出个人信息销售。 请参阅[此小节](../../platform/using/privacy-requests.md#sale-of-personal-information-ccpa)。
+除了 Adobe Campaign 提供的同意管理工具外，您还可以跟踪消费者是否已选择退出个人信息销售。 请参阅[此小节](privacy-requests-ccpa.md)。
 
 ### 数据保留 {#data-retention}
 

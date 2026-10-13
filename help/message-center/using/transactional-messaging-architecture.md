@@ -23,9 +23,9 @@ subfeature_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 617db6f51887118c965b8938b2b9f14335293875
+source-git-commit: d7e5f68c0d2e0b94fd5cfdf2981bed29f33d9f62
 workflow-type: tm+mt
-source-wordcount: '1119'
+source-wordcount: '1137'
 ht-degree: 1%
 ---
 # 事务性消息传递架构 {#transactional-messaging-architecture}
@@ -201,7 +201,7 @@ You also have to enable the unitary mode on your offer spaces. For more on this,
 
 * 在两个实例上安装&#x200B;**[!UICONTROL LINE Connect]**&#x200B;包。
 * 在营销实例上安装&#x200B;**[!UICONTROL Transactional message control]**&#x200B;包，在执行实例上安装&#x200B;**[!UICONTROL Transactional message execution]**&#x200B;包。
-* 在两个实例上创建LINE **外部帐户**&#x200B;和&#x200B;**服务**，并使用相同的命名将它们同步。 有关如何创建LINE外部帐户和服务的详细信息，请参阅[此部分](../../delivery/using/line-channel.md#setting-up-line-channel)。
+* 在两个实例上创建LINE **外部帐户**&#x200B;和&#x200B;**服务**，并使用相同的命名将它们同步。 有关如何创建LINE外部帐户和服务的更多信息，请参阅[此章节](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/send/other-channels/line#setting-up-line-channel){target="_blank"}（Campaign v8文档）。
 
 然后，从&#x200B;**[!UICONTROL Explorer]**，在&#x200B;**[!UICONTROL Platform]** > **[!UICONTROL External account]**&#x200B;中，您需要在两个实例上配置不同的外部帐户：
 

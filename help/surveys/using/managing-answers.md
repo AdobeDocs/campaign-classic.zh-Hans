@@ -19,9 +19,9 @@ feature_v2:
 subfeature_v2:
   - id: ed29abcd-b6a8-4d4b-ab8b-b7e746973281
     internal-label: Web Forms
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 59d78c785d8984861fd537c2f64f82a7d2d77fbf
 workflow-type: tm+mt
-source-wordcount: '844'
+source-wordcount: '858'
 ht-degree: 1%
 ---
 # 管理答案{#managing-answers}
@@ -108,7 +108,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->对于其他类型的字段，语法在[此部分](../../platform/using/adobe-campaign-workspace.md#about-queries-in-campaign)中有详细说明。
+>对于其他类型的字段，语法在[此部分](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/data/query/query-editor){target="_blank"}中有详细说明（Campaign v8文档）。
 
 ### 存储设置 {#storage-settings}
 
