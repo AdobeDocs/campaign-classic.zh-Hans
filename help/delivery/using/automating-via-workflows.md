@@ -37,71 +37,18 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: d7e5f68c0d2e0b94fd5cfdf2981bed29f33d9f62
 workflow-type: tm+mt
-source-wordcount: '1220'
+source-wordcount: '915'
 ht-degree: 0%
 ---
 # 使用工作流实现自动化{#automating-via-workflows}
 
-## 内容管理活动 {#content-management-activity}
+可以使用工作流自动创建、编辑和发布内容管理内容。
 
-可以使用通过Adobe Campaign客户端界面配置的工作流，自动创建、编辑和发布内容。
+作为从Campaign v7过渡到v8的一部分，Campaign Classic文档集已得到简化和重新组织。 现在，Campaign v8文档集中专门提供了常用功能。 要了解如何配置&#x200B;**内容管理**&#x200B;活动，请参阅[Campaign v8文档](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/action-activities/content-management){target=_blank}。
 
-通过工作流图的&#x200B;**[!UICONTROL Tools]**&#x200B;工具栏访问&#x200B;**内容管理**&#x200B;活动。
-
-活动属性分为四个步骤：
-
-* **[!UICONTROL Content]** ：允许您输入现有内容或创建内容，
-* **[!UICONTROL Update content]** ：允许您修改内容的主题或通过XML数据流量更新内容，
-* **[!UICONTROL Action to execute]** ：用于保存或生成内容，
-* **[!UICONTROL Transition]** ：用于选择是否生成输出过渡并为其命名。
-
-![](assets/d_ncs_content_wf.png)
-
-### 内容 {#content}
-
-* **由过渡指定**
-
-  要使用的内容是以前创建的。 进程将涉及由传入事件传播的内容实例。 通过事件的“contentId”变量访问内容标识符。
-
-* **显式**
-
-  允许您选择之前创建的内容。
-
-* **由脚本计算**
-
-  基于JavaScript模板选择内容实例。 要计算的代码允许您检索内容标识符。
-
-* **新建，通过发布模板创建**
-
-  通过发布模板创建新内容。 内容实例将保存在填充的“String”文件夹中。
-
-### 更新内容 {#update-the-content}
-
-* **主题**
-
-  允许您在发布时修改投放操作的主题。
-
-* **从XML馈送访问数据**
-
-  内容是从外部源的XML馈送中更新的。 必须输入URL才能进行数据下载。
-
-  XSL样式表可用于转换传入的XML数据。
-
-### 要执行的操作 {#action-to-execute}
-
-* **保存**
-
-  保存创建或修改的内容。 保存内容的标识符会在传出事件的“contentId”变量中传播。
-
-* **生成**
-
-  为具有“文件”类型发布的每个转换模板生成输出文件。 对于每个生成的文件，将使用以下参数激活传出过渡：“contentId”变量中保存内容的标识符和“filename”变量中的文件名。
-
-### 过渡 {#transition}
-
-通过&#x200B;**生成输出过渡**&#x200B;选项，可将输出过渡添加到&#x200B;**[!UICONTROL Content management]**&#x200B;活动，以将新活动链接到工作流执行。 选中此选项后，输入过渡的标签。
+[![image](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/action-activities/content-management){target=_blank}
 
 ## 示例 {#examples}
 
@@ -241,14 +188,9 @@ ht-degree: 0%
 
 活动的最终操作是准备和启动投放。
 
-### 从FTP导入内容 {#importing-content-from-ftp}
-
-如果您的交付内容位于FTP或SFTP服务器上的HTML文件中，则可以轻松地将此内容加载到Adobe Campaign交付中。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/load-delivery-content.html?lang=zh-Hans){target="_blank"}。
-
-
 ### 从Amazon Simple Storage Service (S3)连接器导入内容 {#importing-content-from-amazon-simple-storage-service--s3--connector}
 
-如果您的投放内容位于Amazon Simple Storage Service (S3)存储桶中，则可以轻松地将此内容加载到Adobe Campaign投放中。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/load-delivery-content.html?lang=zh-Hans){target="_blank"}。
+如果您的投放内容位于Amazon Simple Storage Service (S3)存储桶中，则可以轻松地将此内容加载到Adobe Campaign投放中。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/deliveries/load-delivery-content.html){target="_blank"}。
 
 
 ## 半自动更新 {#semi-automatic-update}

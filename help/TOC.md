@@ -8,9 +8,9 @@ user-guide-description: Adobe Campaign Classic v7 产品文档。
 sub-product: adobe campaign classic
 type: Documentation
 nudge: false
-source-git-commit: 75d65377f93a40be104f7ec817e6a7609cccaf93
+source-git-commit: d7e5f68c0d2e0b94fd5cfdf2981bed29f33d9f62
 workflow-type: tm+mt
-source-wordcount: '1953'
+source-wordcount: '1739'
 ht-degree: 100%
 ---
 
@@ -86,73 +86,27 @@ ht-degree: 100%
   + [开始使用消息功能](delivery/using/communication-channels.md)
   + {hide-from-toc}[投放设置 - 隐藏](delivery/using/delivery-settings.md)
   + 快速入门 {#key-steps-when-creating-a-delivery}
-    + {hide-from-toc}[投放快速入门 - 隐藏](delivery/using/steps-about-delivery-creation-steps.md)
-    + {hide-from-toc}[创建和识别投放 - 隐藏](delivery/using/steps-create-and-identify-the-delivery.md)
-    + {hide-from-toc}[定义受众 - 隐藏](delivery/using/steps-defining-the-target-population.md)
-    + {hide-from-toc}[验证投放 - 隐藏](delivery/using/steps-validating-the-delivery.md)
     + {hide-from-toc}[发送投放 - 隐藏](delivery/using/steps-sending-the-delivery.md)
-    + {hide-from-toc}[投放最佳实践 - 隐藏](delivery/using/delivery-best-practices.md)
-  + 投放最佳实践 {#delivery-bestpractices}
-    + {hide-from-toc}[优化投放 - 隐藏](delivery/using/optimize-delivery.md)
-    + {hide-from-toc}[使用模板 - 隐藏](delivery/using/use-templates.md)
-    + {hide-from-toc}[生成个性化内容 - 隐藏](delivery/using/design-and-personalize.md)
-    + {hide-from-toc}[定义正确的受众 - 隐藏](delivery/using/define-the-right-audience.md)
-    + {hide-from-toc}[发送前检查 - 隐藏](delivery/using/check-before-sending.md)
   + [发送电子邮件](delivery/using/about-email-channel.md)
-  + 发送电子邮件 {#sending-emails}
-    + {hide-from-toc}[创建电子邮件投放 - 隐藏](delivery/using/creating-an-email-delivery.md)
-    + {hide-from-toc}[定义电子邮件的内容 - 隐藏](delivery/using/defining-the-email-content.md)
-    + {hide-from-toc}[定义交互式内容 - 隐藏](delivery/using/defining-interactive-content.md)
-    + 发送电子邮件投放 {#sending-an-email}
-      + {hide-from-toc}[发送电子邮件的主要步骤 - 隐藏](delivery/using/sending-messages.md)
-      + {hide-from-toc}[电子邮件参数 - 隐藏](delivery/using/email-parameters.md)
-      + {hide-from-toc}[使用日本手机发送 - 隐藏](delivery/using/sending-emails-on-japanese-mobiles.md)
-    + {hide-from-toc}[附加文件 - 隐藏](delivery/using/attaching-files.md)
   + 发送短信 {#sending-messages-on-mobiles}
-    + [短信入门](delivery/using/sms-channel.md)
     + 配置短信渠道 {#sms-set-up}
       + [在独立实例上配置短信](delivery/using/sms-set-up.md)
       + [在中间源基础结构上配置短信](delivery/using/sms-set-up-mid.md)
       + [短信连接器协议和设置](delivery/using/sms-protocol.md)
       + [其他配置](delivery/using/sms-send.md)
       + [短信故障排除](delivery/using/troubleshooting-sms.md)
-    + {hide-from-toc}[创建短信 - 隐藏](delivery/using/sms-create.md)
     + {hide-from-toc}[迁移到扩展通用 SMPP 连接器](delivery/using/unsupported-connector-migration.md)
-  + [发送 LINE 消息](delivery/using/line-channel.md)
   + [发送推送通知](delivery/using/about-mobile-app-channel.md)
   + 发送推送通知 {#sending-push-notifications}
-    + {hide-from-toc}[将 Campaign SDK 集成到移动应用程序](delivery/using/integrating-campaign-sdk-into-the-mobile-application.md)
     + 配置移动应用程序{#configure-the-mobile-app}
       + {hide-from-toc}[应用程序配置快速入门 - 隐藏](delivery/using/get-started-app-config.md)
       + {hide-from-toc}[iOS 配置步骤 - 隐藏](delivery/using/configuring-the-mobile-application.md)
       + {hide-from-toc}[Android 配置步骤 - 隐藏](delivery/using/configuring-the-mobile-application-android.md)
-    + 创建推送通知{#create-a-push-msg}
-      + {hide-from-toc}[创建 iOS 推送消息 - 隐藏](delivery/using/create-notifications-ios.md)
-      + {hide-from-toc}[创建 Android 推送消息 - 隐藏](delivery/using/create-notifications-android.md)
     + {hide-from-toc}[疑难解答 - 隐藏](delivery/using/troubleshooting.md)
   + [发送直邮](delivery/using/about-direct-mail-channel.md)
-  + 发送直邮 {#sending-direct-mail}
-    + {hide-from-toc}[创建直邮投放 - 隐藏](delivery/using/creating-a-direct-mail-delivery.md)
-    + {hide-from-toc}[定义直邮内容 - 隐藏](delivery/using/defining-the-direct-mail-content.md)
-    + {hide-from-toc}[验证 - 隐藏](delivery/using/validating.md)
-  + 使用投放模板 {#using-delivery-templates}
-    + {hide-from-toc}[使用投放模板 - 隐藏](delivery/using/about-templates.md)
-    + {hide-from-toc}[创建投放模板 - 隐藏](delivery/using/creating-a-delivery-template.md)
-    + {hide-from-toc}[选择目标映射 - 隐藏](delivery/using/selecting-a-target-mapping.md)
-    + {hide-from-toc}[从模板创建投放 - 隐藏](delivery/using/creating-a-delivery-from-a-template.md)
   + 个性化投放 {#personalizing-deliveries}
     + [关于个性化](delivery/using/about-personalization.md)
-    + {hide-from-toc}[个性化字段 - 隐藏](delivery/using/personalization-fields.md)
-    + {hide-from-toc}[个性化块 - 隐藏](delivery/using/personalization-blocks.md)
-    + {hide-from-toc}[条件内容 - 隐藏](delivery/using/conditional-content.md)
-    + {hide-from-toc}[个性化优惠券 - 隐藏](delivery/using/personalized-coupons.md)
-    + {hide-from-toc}[生成个性化 PDF 文档 - 隐藏](delivery/using/generating-personalized-pdf-documents.md)
-    + {hide-from-toc}[自定义表情符号列表](delivery/using/customizing-emoticon-list.md)
   + 使用种子地址 {#using-seed-addresses}
-    + [关于种子地址](delivery/using/about-seed-addresses.md)
-    + [创建种子地址](delivery/using/creating-seed-addresses.md)
-    + [添加种子地址](delivery/using/adding-seed-addresses.md)
-    + [使用外部收件人表](delivery/using/using-an-external-recipient-table.md)
     + [用例：根据条件选择种子地址](delivery/using/use-case-selecting-seed-addresses-on-criteria.md)
     + [用例：配置字段替换](delivery/using/use-case-configuring-the-field-substitution.md)
   + A/B 测试 {#a-b-testing}
@@ -180,9 +134,7 @@ ht-degree: 100%
     + [高级：自定义投放日志](delivery/using/customize-delivery-logs.md)
   + 可投放性管理 {#deliverability-management}
     + [什么是可投放性](delivery/using/about-deliverability.md)
-    + [控制消息内容](delivery/using/control-message-content.md)
     + [收件箱呈现](delivery/using/inbox-rendering.md)
-    + [SpamAssassin](delivery/using/spamassassin.md)
     + [故障排除](delivery/using/deliverability-faq.md)
   + 内容管理模块 {#content-management}
     + [关于内容管理](delivery/using/about-content-management.md)
@@ -593,8 +545,6 @@ ht-degree: 100%
     + {hide-from-toc}[迁移到 Adobe Analytics 2.0 API](technotes/using/analytics-2-migration.md)
   + 电子邮件和推送通知{#technotes-email}
     + [Apple iOS 上的邮件隐私保护](technotes/using/apple-mail-app-privacy-protection.md)
-    + [如何更新错误的硬退回](delivery/using/update-bounce-qualification.md)
-    + {hide-from-toc}[ISP 中断后更新错误的硬退回](delivery/using/update-bounces.md)
     + [iOS 证书更新](technotes/using/ios-certificate-update.md)
     + {hide-from-toc}[跟踪的 URL 更新](technotes/using/tracked-urls.md)
   + 迁移到 Adobe Managed Services{#dc-migration}

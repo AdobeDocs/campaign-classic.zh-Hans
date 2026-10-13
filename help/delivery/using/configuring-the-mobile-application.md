@@ -46,9 +46,9 @@ level_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: d7e5f68c0d2e0b94fd5cfdf2981bed29f33d9f62
 workflow-type: tm+mt
-source-wordcount: '600'
+source-wordcount: '617'
 ht-degree: 4%
 ---
 # iOS 配置步骤 {#configuring-the-mobile-application-in-adobe-campaign-ios}
@@ -61,7 +61,7 @@ ht-degree: 4%
 1. [配置iOS服务](#configuring-ios-service)
 1. [在Campaign中集成iOS移动应用程序](#creating-ios-app)
 
-然后，您将能够[为iOS设备](create-notifications-ios.md)创建推送通知。
+然后，您将能够[为iOS设备](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/push/rich-push/rich-push-ios){target="_blank"}创建推送通知（Campaign v8文档）。
 
 ## 配置iOS外部帐户 {#configuring-external-account-ios}
 
@@ -104,7 +104,7 @@ ht-degree: 4%
 
    ![](assets/nmac_service_2.png)
 
-1. 创建iOS开发和生产应用程序。 有关更多信息，请参阅此[&#128279;](configuring-the-mobile-application.md#creating-ios-app)章节。
+1. 创建iOS开发和生产应用程序。 有关更多信息，请参阅此](configuring-the-mobile-application.md#creating-ios-app)章节[。
 
 ## 创建iOS移动应用程序 {#creating-ios-app}
 
@@ -118,8 +118,8 @@ ht-degree: 4%
 
    ![](assets/nmac_ios_2.png)
 
-1. 作为一个选项，您可以根据需要使用大约&#x200B;**[!UICONTROL Application variables]**&#x200B;扩充推送消息内容。 这些都是完全可自定义的，并且是发送到移动设备的消息有效负载的一部分。
-在以下示例中，我们添加&#x200B;**mediaURl**&#x200B;和&#x200B;**mediaExt**&#x200B;以创建富推送通知，然后为应用程序提供要在通知中显示的图像。
+1. 作为一个选项，您可以根据需要使用大约&#x200B;**[!UICONTROL Application variables]**扩充推送消息内容。 这些都是完全可自定义的，并且是发送到移动设备的消息有效负载的一部分。
+在以下示例中，我们添加**mediaURl**&#x200B;和&#x200B;**mediaExt**&#x200B;以创建富推送通知，然后为应用程序提供要在通知中显示的图像。
 
    ![](assets/nmac_ios_3.png)
 
@@ -133,7 +133,7 @@ ht-degree: 4%
 
 1. 单击&#x200B;**[!UICONTROL Next]**&#x200B;开始配置开发应用程序。
 
-1. 确保通过SDK在Adobe Campaign和应用程序代码中定义了相同的&#x200B;**[!UICONTROL Integration key]**。<!--For more on this, refer to [this page](integrating-campaign-sdk-into-the-mobile-application.md).--> 此集成键特定于每个应用程序，允许您将移动应用程序链接到Adobe Campaign平台。
+1. 确保通过SDK在Adobe Campaign和应用程序代码中定义了相同的&#x200B;**[!UICONTROL Integration key]**。<!--For more on this, refer to [this page](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/push-config){target="_blank"} (Campaign v8 documentation).--> 此集成键特定于每个应用程序，允许您将移动应用程序链接到Adobe Campaign平台。
 
    >[!NOTE]
    >

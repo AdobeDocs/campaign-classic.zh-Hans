@@ -39,12 +39,16 @@ topic_v2:
     internal-label: Troubleshooting
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
     internal-label: Optimization
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: d7e5f68c0d2e0b94fd5cfdf2981bed29f33d9f62
 workflow-type: tm+mt
-source-wordcount: '906'
+source-wordcount: '907'
 ht-degree: 2%
 ---
 # 其他配置{#sms-properties}
+
+作为从Campaign v7过渡到v8的一部分，Campaign Classic文档集已得到简化和重新组织。 现在，Campaign v8文档集中专门提供了常用功能。 要了解有关短信投放设置的更多信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/sms/config-sms/sms-delivery-settings){target=_blank}。
+
+[![image](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/sms/config-sms/sms-delivery-settings){target=_blank}
 
 <!--
 ## Send SMS messages {#sending-sms-messages}
@@ -53,7 +57,7 @@ To approve your message and send it to the recipients of the delivery being crea
 
 The detailed process when validating and sending a delivery is presented in the sections below:
 
-* [Validate the delivery](steps-validating-the-delivery.md)
+* [Validate the delivery](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/validate/delivery-analysis){target="_blank"} (Campaign v8 documentation)
 * [Send the delivery](steps-sending-the-delivery.md)
 -->
 
@@ -73,7 +77,6 @@ The detailed process when validating and sending a delivery is presented in the 
   >
   >查看您所在国家/地区有关编辑发件人姓名的法律。 您还应与操作员确认他们是否提供此功能。
 
-* **传输模式**：通过短信传输消息。
 * **优先级**：分配给消息的重要性级别。 默认情况下已选择&#x200B;**[!UICONTROL Normal]**&#x200B;优先级。 询问您的服务提供商有关按&#x200B;**[!UICONTROL High]**&#x200B;优先级发送的短信的成本。
 * **应用程序类型**：选择要分配给短信投放的应用程序。 默认情况下已选中&#x200B;**[!UICONTROL Direct Marketing]**&#x200B;选项，该选项是最常用的选项。
 
@@ -82,12 +85,6 @@ The detailed process when validating and sending a delivery is presented in the 
 ![](assets/s_user_mobile_sms_adv_netsize.png)
 
 * **为单个消息使用多个短信**：这允许您通过多个短信消息发送长度超过160个字符的消息。
-
-**特定于SMPP连接器的参数**
-
-![](assets/s_user_mobile_sms_adv_smpp.png)
-
-* **每条消息的最大短信数**：此选项允许您设置用于发送消息的短信数。 如果数字设置为0，则可以使用短信传递消息。 例如，如果短信数量设置为1或2，而消息超过此阈值，则不会发送该消息。
 
 <!--
 ## Monitor and track SMS {#monitoring-and-tracking-sms-deliveries}
@@ -197,6 +194,6 @@ InSMS模式包含与传入的短信相关的信息。 这些字段的描述可�
 
 >[!IMPORTANT]
 >
->这种自动消息不会留下历史。 因此，它们不会显示在投放仪表板中。 [了解详情](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"}。
+>这种自动消息不会留下历史。 因此，它们不会显示在投放仪表板中。 [了解详情](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/monitor/delivery-dashboard){target="_blank"}。
 >
->商业压力规则不考虑这些报文。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/campaign-optimization/pressure-rules.html?lang=zh-Hans){target="_blank"}。
+>商业压力规则不考虑这些报文。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/campaign-optimization/pressure-rules.html){target="_blank"}。

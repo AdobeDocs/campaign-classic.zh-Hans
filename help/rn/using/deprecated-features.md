@@ -43,10 +43,10 @@ topic_v2:
     internal-label: Security
   - id: d3cdead0-685a-4489-9250-4bb709942f66
     internal-label: Data collection
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: d7e5f68c0d2e0b94fd5cfdf2981bed29f33d9f62
 workflow-type: tm+mt
-source-wordcount: '1787'
-ht-degree: 100%
+source-wordcount: '1814'
+ht-degree: 97%
 ---
 # 已弃用和已移除的功能 {#deprecated-and-removed-features}
 
@@ -181,11 +181,11 @@ Adobe 不断评估产品功能，以确定应用更现代的功能替换的旧�
   </tr> 
    <tr> 
    <td>移动渠道 - MMS 和 WAP 推送消息</td>
-   <td>从 Campaign 18.4 版本开始，不再提供 MMS 和 Wap Push 渠道。 作为替代，您可以利用 <a href="../../delivery/using/sms-channel.md">短信 (SMS) </a>和<a href="../../delivery/using/about-mobile-app-channel.md">推送</a>来发送投放。</td>
+   <td>从 Campaign 18.4 版本开始，不再提供 MMS 和 Wap Push 渠道。 作为替代，您可以利用<a href="https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/sms/sms" target="_blank">短信</a>（Campaign v8文档）和<a href="../../delivery/using/about-mobile-app-channel.md">推送</a>投放。</td>
   </tr> 
    <tr> 
    <td>移动手机渠道 - LINE v1</td>
-   <td>从 Campaign 18.4 版本开始，LINE Connect 包不再可用。 Adobe 建议使用新的 LINE 渠道包作为替换。 <a href="../../delivery/using/line-channel.md">了解详情</a></td>
+   <td>从 Campaign 18.4 版本开始，LINE Connect 包不再可用。 Adobe 建议使用新的 LINE 渠道包作为替换。 <a href="https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/other-channels/line" target="_blank">了解详情</a>（Campaign v8文档）</td>
   </tr>
  </tbody> 
 </table>

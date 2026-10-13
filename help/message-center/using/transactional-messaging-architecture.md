@@ -23,9 +23,9 @@ subfeature_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 617db6f51887118c965b8938b2b9f14335293875
+source-git-commit: d7e5f68c0d2e0b94fd5cfdf2981bed29f33d9f62
 workflow-type: tm+mt
-source-wordcount: '1119'
+source-wordcount: '1137'
 ht-degree: 1%
 ---
 # 事务性消息传递架构 {#transactional-messaging-architecture}
@@ -103,7 +103,7 @@ Adobe建议您在安装事务型消息包&#x200B;**之前**&#x200B;始终添加�
 >此过程仅适用于使用安装在同一台计算机上的Windows NLServer的客户。
 
 1. 使用包导入助手(**[!UICONTROL Tools > Advanced > Import package... > Adobe Campaign Package]**)安装所需的频道，例如&#x200B;**Mobile频道**。
-1. 执行文件导入(**[!UICONTROL Tools > Advanced > Import package... > File]**)，并选择&#x200B;**datakitnms &#x200B;**`[Your language]`**packagemessageCenter.xml**&#x200B;文件。
+1. 执行文件导入(**[!UICONTROL Tools > Advanced > Import package... > File]**)，并选择&#x200B;**datakitnms **`[Your language]`**packagemessageCenter.xml**&#x200B;文件。
 1. 在&#x200B;**[!UICONTROL XML content of the data to import]**&#x200B;中，仅保留与所添加渠道对应的投放模板。 例如，如果您添加了&#x200B;**移动渠道**，则仅保留与&#x200B;**[!UICONTROL Mobile transactional message]** (smsTriggerMessage)相对应的&#x200B;**实体**&#x200B;元素。 如果您已添加&#x200B;**移动应用程序渠道**，请仅保留&#x200B;**iOS事务型消息** (iosTriggerMessage)和&#x200B;**Android事务型消息** (androidTriggerMessage)。
 
    ![](assets/messagecenter_install_channel.png)
@@ -142,7 +142,7 @@ Create your delivery templates the way you would for an email campaign:
 * Add the offer to your transactional message template.
 * Check the preview, send a proof and publish the template.
 
-You also have to enable the unitary mode on your offer spaces. For more on this, refer to [this section](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/offers/interaction-settings/interaction-offer-spaces){target="_blank"} (Campaign v8 documentation).
+You also have to enable the unitary mode on your offer spaces. For more on this, refer to [this section](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/offers/interaction-settings/interaction-offer-spaces){target="_blank"} (Campaign v8 documentation).
 
 -->
 
@@ -201,7 +201,7 @@ You also have to enable the unitary mode on your offer spaces. For more on this,
 
 * 在两个实例上安装&#x200B;**[!UICONTROL LINE Connect]**&#x200B;包。
 * 在营销实例上安装&#x200B;**[!UICONTROL Transactional message control]**&#x200B;包，在执行实例上安装&#x200B;**[!UICONTROL Transactional message execution]**&#x200B;包。
-* 在两个实例上创建LINE **外部帐户**&#x200B;和&#x200B;**服务**，并使用相同的命名将它们同步。 有关如何创建LINE外部帐户和服务的详细信息，请参阅[此部分](../../delivery/using/line-channel.md#setting-up-line-channel)。
+* 在两个实例上创建LINE **外部帐户**&#x200B;和&#x200B;**服务**，并使用相同的命名将它们同步。 有关如何创建LINE外部帐户和服务的更多信息，请参阅[此章节](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/other-channels/line#setting-up-line-channel){target="_blank"}（Campaign v8文档）。
 
 然后，从&#x200B;**[!UICONTROL Explorer]**，在&#x200B;**[!UICONTROL Platform]** > **[!UICONTROL External account]**&#x200B;中，您需要在两个实例上配置不同的外部帐户：
 
@@ -264,4 +264,4 @@ You also have to enable the unitary mode on your offer spaces. For more on this,
    * 单击 **[!UICONTROL Create the archiving workflow]** 按钮。
    * 单击&#x200B;**[!UICONTROL Create data synchronization workflow]**&#x200B;按钮以创建LINE数据同步工作流。
 
-1. 您现在可以开始[创建事务型消息](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/send/real-time/transactional-template){target="_blank"}（Campaign v8文档）。
+1. 您现在可以开始[创建事务型消息](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/real-time/transactional-template){target="_blank"}（Campaign v8文档）。

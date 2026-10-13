@@ -36,10 +36,10 @@ topic_v2:
     internal-label: Security
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 9c678f353d367115bc188da80f07e018c44e2612
+source-git-commit: d7e5f68c0d2e0b94fd5cfdf2981bed29f33d9f62
 workflow-type: tm+mt
-source-wordcount: '2185'
-ht-degree: 98%
+source-wordcount: '2202'
+ht-degree: 97%
 ---
 # 2022 版{#release-2022}
 
@@ -60,7 +60,7 @@ _2022 年 7 月 1 日_
 <tbody> 
 <tr> 
 <td> <p>在 iOS 15 中，Apple 新增了“即时通知”的概念，当通知具有时效性并且需要实时联系用户时，该概念让应用程序开发人员可以控制对“专注”模式的绕过。</p>
-<p>请参阅<a href="../../delivery/using/create-notifications-ios.md">详细文档</a>以了解如何创建时效性通知。</p>
+<p>请参阅<a href="https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/push/rich-push/rich-push-ios" target="_blank">详细文档</a>（Campaign v8文档）以了解如何创建敏感通知。</p>
 </td> 
 </tr> 
 </tbody> 
@@ -172,10 +172,10 @@ Adobe Campaign 现在与 Windows Server 2019 兼容。 请参阅 [Campaign 兼�
 
 **其他变更**
 
-* 弃用后，已从界面中移除 Microsoft CRM、Salesforce、Oracle CRM On Demand 操作活动。 要配置 Adobe Campaign 与 CRM 系统之间的数据同步，您可以使用 CRM 连接器活动。 [了解更多](https://experienceleague.adobe.com/zh-hans/docs/campaign/automation/workflows/wf-activities/targeting-activities/crm-connector){target="_blank"}（Campaign v8文档）
+* 弃用后，已从界面中移除 Microsoft CRM、Salesforce、Oracle CRM On Demand 操作活动。 要配置 Adobe Campaign 与 CRM 系统之间的数据同步，您可以使用 CRM 连接器活动。 [了解更多](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/targeting-activities/crm-connector){target="_blank"}（Campaign v8文档）
 * **[!UICONTROL Encrypted identifier]** 字段已添加至访客架构 (nms:visitor)。 会计算该字段并将其用于 Web 应用程序。 这适用于在中间源实例上配置 Line 渠道的情况。
 * CRM 数据源现在可以与&#x200B;**更改数据源**&#x200B;活动一起使用。
-* 在工作流活动的 **Error management** 属性中新增了一个选项：**Abort on error** 选项会自动停止工作流。 之后您将无法重新启动它 (NEO-29661)。 [了解更多](https://experienceleague.adobe.com/zh-hans/docs/campaign/automation/workflows/advanced-management/advanced-parameters#in-case-of-errors){target="_blank"}（Campaign v8文档）
+* 在工作流活动的 **Error management** 属性中新增了一个选项：**Abort on error** 选项会自动停止工作流。 之后您将无法重新启动它 (NEO-29661)。 [了解更多](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/advanced-management/advanced-parameters#in-case-of-errors){target="_blank"}（Campaign v8文档）
 * 现在，会使用专用序列来生成 nmsGroup 表的主键，该表格用于创建收件人的统计组。 以前，使用的是 xtknewId 序列。 (NEO-30832)
 * 增加了对使用 CRM 连接器活动进行批量更新操作的支持。
 * 改进了事务性消息传递的性能，缩短了处理时间。 (NEO-40370)
