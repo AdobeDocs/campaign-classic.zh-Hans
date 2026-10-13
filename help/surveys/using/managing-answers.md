@@ -108,7 +108,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->对于其他类型的字段，语法在[此部分](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/data/query/query-editor){target="_blank"}中有详细说明（Campaign v8文档）。
+>对于其他类型的字段，语法在[此部分](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/data/query/query-editor){target="_blank"}中有详细说明（Campaign v8文档）。
 
 ### 存储设置 {#storage-settings}
 

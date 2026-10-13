@@ -47,7 +47,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->[此页面](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/data/query/query-editor){target="_blank"}上提供了高级表达式编辑（Campaign v8文档）。
+>[此页面](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/data/query/query-editor){target="_blank"}上提供了高级表达式编辑（Campaign v8文档）。
 
 ![](assets/dce_popup_visibilitycondition.png)
 
@@ -280,4 +280,4 @@ ht-degree: 0%
 
 插入后，个性化块名称将显示在编辑器中，并以黄色突出显示。 当生成个性化时，它自动适应收件人用户档案。
 
-有关内置个性化块以及如何定义自定义个性化块的更多信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html){target="_blank"}。
+有关内置个性化块以及如何定义自定义个性化块的更多信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html?lang=zh-Hans){target="_blank"}。

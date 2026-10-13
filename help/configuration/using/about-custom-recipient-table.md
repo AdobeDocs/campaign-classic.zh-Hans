@@ -84,7 +84,7 @@ ht-degree: 2%
 
 * 您不能在列表中手动添加用户档案。
 
-  因此，如果没有其他配置，[此部分](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-audiences/create-audiences){target="_blank"}（Campaign v8文档）中详述的过程将不适用。
+  因此，如果没有其他配置，[此部分](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/audience/create-audiences/create-audiences){target="_blank"}（Campaign v8文档）中详述的过程将不适用。
 
   >[!NOTE]
   >

@@ -56,7 +56,7 @@ ht-degree: 2%
 
 请勿假定传入的数据是一致和正确的，或者IT部门或Adobe Campaign主管会处理此数据。 在项目进行期间，请牢记数据清理。 在导入数据时执行重复数据删除、协调和维护一致性。
 
-有关为导入数据而设计的通用工作流模板的示例，请参阅[示例：用于导入数据的工作流模板](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/data/import){target="_blank"} （Campaign v8文档）部分。
+有关为导入数据而设计的通用工作流模板的示例，请参阅[示例：用于导入数据的工作流模板](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/data/import){target="_blank"} （Campaign v8文档）部分。
 
 ## 使用平面文件格式 {#using-flat-file-formats}
 
@@ -85,8 +85,8 @@ Durance;Allison;15/12/1978;allison.durance@example.com;120987
 
 **相关主题：**
 
-* [数据加载（文件）活动](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/data-loading-file.html){target="_blank"}
-* [数据提取（文件）活动](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/extraction-file.html){target="_blank"}。
+* [数据加载（文件）活动](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/data-loading-file.html?lang=zh-Hans){target="_blank"}
+* [数据提取（文件）活动](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/action-activities/extraction-file.html?lang=zh-Hans){target="_blank"}。
 
 ## 在增量模式下导入 {#importing-in-delta-mode}
 

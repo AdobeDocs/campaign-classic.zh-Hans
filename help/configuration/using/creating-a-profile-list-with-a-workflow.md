@@ -35,9 +35,9 @@ ht-degree: 7%
 
 要基于新的收件人表创建&#x200B;**[!UICONTROL List]**&#x200B;类型列表，您需要创建将生成该列表的定向工作流。
 
-有关Campaign中列表的详细信息，请参阅[此部分](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-audiences/create-audiences#create-a-list-of-contacts){target="_blank"}（Campaign v8文档）。
+有关Campaign中列表的详细信息，请参阅[此部分](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/audience/create-audiences/create-audiences#create-a-list-of-contacts){target="_blank"}（Campaign v8文档）。
 
-![](assets/do-not-localize/how-to-video.png) [在视频中发现此功能](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-audiences/create-audiences#create-a-list-wf){target="_blank"}（Campaign v8文档）
+![](assets/do-not-localize/how-to-video.png) [在视频中发现此功能](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/audience/create-audiences/create-audiences#create-a-list-wf){target="_blank"}（Campaign v8文档）
 
 要在自定义收件人表中创建定位工作流并更新收件人，请执行以下步骤：
 

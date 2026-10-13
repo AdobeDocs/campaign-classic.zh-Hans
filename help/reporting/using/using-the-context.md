@@ -55,7 +55,7 @@ ht-degree: 1%
 
 在以下示例中，我们希望图表仅显示生活在法国以及年内购买产品的收件人用户档案。
 
-要定义此筛选器，请将页面放入图表并对其进行编辑。 单击&#x200B;**[!UICONTROL Filter data]**&#x200B;链接并创建与要显示的数据匹配的过滤器。 有关在Adobe Campaign中构建查询的更多信息，请参阅[此章节](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/data/query/query-editor){target="_blank"}（Campaign v8文档）。
+要定义此筛选器，请将页面放入图表并对其进行编辑。 单击&#x200B;**[!UICONTROL Filter data]**&#x200B;链接并创建与要显示的数据匹配的过滤器。 有关在Adobe Campaign中构建查询的更多信息，请参阅[此章节](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/data/query/query-editor){target="_blank"}（Campaign v8文档）。
 
 ![](assets/s_ncs_advuser_report_wizard_029.png)
 

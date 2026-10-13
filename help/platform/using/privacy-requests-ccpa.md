@@ -70,7 +70,7 @@ ht-degree: 82%
 
 如果您使用自定义收件人表，也需要执行此操作。
 
-有关如何创建新字段的更多详细信息，请参阅[架构版文档](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/schemas){target="_blank"}（Campaign v8文档）。
+有关如何创建新字段的更多详细信息，请参阅[架构版文档](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/developer/schemas-forms/schemas){target="_blank"}（Campaign v8文档）。
 
 >[!IMPORTANT]
 >
@@ -88,7 +88,7 @@ ht-degree: 82%
 
    ![](assets/privacy-ccpa-3.png)
 
-1. 单击探索工具的 **[!UICONTROL Configuration]** > **[!UICONTROL Input forms]** 节点。 在“通用包” **[!UICONTROL Recipient (nms)]** 下，添加一个 `<input>` 元素，并使用步骤 2 中定义的相对路径作为 xpath 值。 有关识别表单的更多信息，请参阅[此部分](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/forms){target="_blank"}（Campaign v8文档）。
+1. 单击探索工具的 **[!UICONTROL Configuration]** > **[!UICONTROL Input forms]** 节点。 在“通用包” **[!UICONTROL Recipient (nms)]** 下，添加一个 `<input>` 元素，并使用步骤 2 中定义的相对路径作为 xpath 值。 有关识别表单的更多信息，请参阅[此部分](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/developer/schemas-forms/forms){target="_blank"}（Campaign v8文档）。
 
    ```
    <input  colspan="2" type="checkbox" xpath="@OPTOUTCCPA"/>
@@ -114,11 +114,11 @@ ht-degree: 82%
 
    ![](assets/privacy-ccpa-5.png)
 
-1. 配置收件人列表以显示选择退出列。 要了解如何配置列表，请参阅[详细文档](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/ui-settings#customize-lists){target="_blank"}（Campaign v8文档）。
+1. 配置收件人列表以显示选择退出列。 要了解如何配置列表，请参阅[详细文档](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/config/settings/ui-settings#customize-lists){target="_blank"}（Campaign v8文档）。
 
    ![](assets/privacy-ccpa-6.png)
 
-1. 您可以单击该列，以根据选择退出信息对收件人进行排序。 您还可以创建一个筛选器以仅显示已选择退出的收件人。 有关筛选器的更多信息，请参阅[Campaign v8 （控制台）文档](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-filters){target=_blank}。
+1. 您可以单击该列，以根据选择退出信息对收件人进行排序。 您还可以创建一个筛选器以仅显示已选择退出的收件人。 有关筛选器的更多信息，请参阅[Campaign v8 （控制台）文档](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/audience/create-filters){target=_blank}。
 
 
    ![](assets/privacy-ccpa-7.png)

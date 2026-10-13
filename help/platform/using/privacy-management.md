@@ -97,12 +97,12 @@ Adobe Campaign 功能帮助您遵守以下法规：
 
 * **被遗忘权**（删除请求）也称为数据擦除，允许数据主体通过数据控制者擦除其个人数据，停止进一步传播数据，并可能使第三方停止处理数据。
 
-要了解如何创建&#x200B;**访问**&#x200B;和&#x200B;**删除**&#x200B;请求以及Adobe Campaign如何处理这些请求，请参阅[实施步骤](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/privacy/privacy){target="_blank"}（Campaign v8文档）。
+要了解如何创建&#x200B;**访问**&#x200B;和&#x200B;**删除**&#x200B;请求以及Adobe Campaign如何处理这些请求，请参阅[实施步骤](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/privacy/privacy){target="_blank"}（Campaign v8文档）。
 
 <!--
-Tutorials on Privacy management in Campaign Standard are also available [here](https://experienceleague.adobe.com/docs/campaign-standard-learn/tutorials/privacy/privacy-overview.html).
+Tutorials on Privacy management in Campaign Standard are also available [here](https://experienceleague.adobe.com/docs/campaign-standard-learn/tutorials/privacy/privacy-overview.html?lang=zh-Hans).
 
-https://experienceleague.adobe.com/docs/campaign-standard-learn/tutorials/privacy/privacy-overview.html
+https://experienceleague.adobe.com/docs/campaign-standard-learn/tutorials/privacy/privacy-overview.html?lang=zh-Hans
 -->
 
 ## 同意、保留和角色 {#consent-retention-roles}

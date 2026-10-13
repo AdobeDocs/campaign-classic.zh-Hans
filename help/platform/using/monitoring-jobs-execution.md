@@ -46,7 +46,7 @@ ht-degree: 31%
 ![](assets/s_ncs_user_export_list_and_details.png)
 
 * **[!UICONTROL Journal]**&#x200B;选项卡允许您查看有关执行的日志消息。
-* **[!UICONTROL Rejects]**&#x200B;选项卡包含被拒绝的记录。 请参阅[此部分](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/data/import#behavior-in-the-event-of-an-error){target="_blank"}（Campaign v8文档）。
+* **[!UICONTROL Rejects]**&#x200B;选项卡包含被拒绝的记录。 请参阅[此部分](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/data/import#behavior-in-the-event-of-an-error){target="_blank"}（Campaign v8文档）。
 
 在&#x200B;**[!UICONTROL General]**&#x200B;选项卡中，**[!UICONTROL Status]**&#x200B;字段表示作业的当前状态。
 

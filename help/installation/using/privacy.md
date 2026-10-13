@@ -60,11 +60,11 @@ ht-degree: 3%
 
 ### 推荐
 
-要验证并确保未使用上述功能，请通过[Campaign通用查询编辑器](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/data/query/query-editor){target="_blank"}（Campaign v8文档）对跟踪URL表运行查询，或在查询活动中创建具有筛选条件的工作流。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html){target="_blank"}。
+要验证并确保未使用上述功能，请通过[Campaign通用查询编辑器](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/data/query/query-editor){target="_blank"}（Campaign v8文档）对跟踪URL表运行查询，或在查询活动中创建具有筛选条件的工作流。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html?lang=zh-Hans){target="_blank"}。
 
 示例：
 
-1. 创建工作流并添加&#x200B;**查询**&#x200B;活动。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html){target="_blank"}。
+1. 创建工作流并添加&#x200B;**查询**&#x200B;活动。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html?lang=zh-Hans){target="_blank"}。
 
 1. 打开&#x200B;**查询**&#x200B;活动并在`nmsTrackingUrl`表上创建筛选器，如下所示：
 
@@ -117,7 +117,7 @@ ht-degree: 3%
 
 您必须确保低权限验证用户无法访问加密密码。 为此，应限制仅访问密码字段，或访问整个实体（需要build >= 8770）。
 
-此限制允许您删除密码字段，但允许所有用户从界面访问外部帐户。 [了解详情](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/restrict-pi-view){target="_blank"}（Campaign v8文档）。
+此限制允许您删除密码字段，但允许所有用户从界面访问外部帐户。 [了解详情](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/developer/schemas-forms/restrict-pi-view){target="_blank"}（Campaign v8文档）。
 
 要执行此操作，请按照以下步骤进行：
 
