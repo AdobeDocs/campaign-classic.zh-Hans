@@ -54,7 +54,7 @@ ht-degree: 11%
 
 要在Adobe Campaign中发送推送通知，您需要：
 
-* 为Neotrips移动应用程序创建&#x200B;**[!UICONTROL Mobile application]**&#x200B;类型信息服务。 请参阅iOS](configuring-the-mobile-application.md#configuring-ios-service)的[此部分。 和[Android](configuring-the-mobile-application-android.md#configuring-android-service)的此分区。
+* 为Neotrips移动应用程序创建&#x200B;**[!UICONTROL Mobile application]**&#x200B;类型信息服务。 请参阅iOS[&#128279;](configuring-the-mobile-application.md#configuring-ios-service)的此部分。 和[Android](configuring-the-mobile-application-android.md#configuring-android-service)的此分区。
 * 将应用程序的iOS和Android版本添加到此服务。
 * 为[iOS](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/push/rich-push/rich-push-ios){target="_blank"}（Campaign v8文档）和[Android](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/push/rich-push/rich-push-android){target="_blank"}（Campaign v8文档）创建投放。
 
