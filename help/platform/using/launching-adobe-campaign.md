@@ -36,10 +36,10 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: 59d78c785d8984861fd537c2f64f82a7d2d77fbf
 workflow-type: tm+mt
-source-wordcount: '451'
-ht-degree: 29%
+source-wordcount: '464'
+ht-degree: 27%
 ---
 # 启动 Adobe Campaign {#launching-adobe-campaign}
 
@@ -61,11 +61,11 @@ Campaign客户端控制台是一个富客户端，可让您连接到Campaign应�
 
 ### 与您的Adobe ID连接
 
-Campaign 用户使用其 Adobe ID，通过 Adobe 身份管理系统 (IMS) 连接到 Adobe Campaign 控制台。 他们可以在所有 Adobe 解决方案中使用相同的 ID。 将 Adobe Campaign 与其他解决方案配合使用时，可以保存该连接。 在此页面[&#128279;](https://helpx.adobe.com/cn/enterprise/using/identity.html)上了解有关Adobe IMS 的更多信息。
+Campaign 用户使用其 Adobe ID，通过 Adobe 身份管理系统 (IMS) 连接到 Adobe Campaign 控制台。 他们可以在所有 Adobe 解决方案中使用相同的 ID。 将 Adobe Campaign 与其他解决方案配合使用时，可以保存该连接。 在此页面](https://helpx.adobe.com/cn/enterprise/using/identity.html)上了解有关Adobe IMS [的更多信息。
 
 要配置Campaign Classic v7与Adobe Identity Management服务(IMS)的连接，请参阅[此页面](../../integrations/using/about-adobe-id.md)。
 
-配置完成后，请参阅[Campaign v8（控制台）文档](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/new/connect){target=_blank}以了解如何使用Adobe ID连接到Campaign。
+配置完成后，请参阅[Campaign v8（控制台）文档](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/connect){target=_blank}以了解如何使用Adobe ID连接到Campaign。
 
 
 ### 使用登录/密码连接
@@ -82,7 +82,7 @@ Campaign 用户使用其 Adobe ID，通过 Adobe 身份管理系统 (IMS) 连接
 
 1. 单击 **[!UICONTROL LOG IN]** 确认。
 
-现在可以访问 [Adobe Campaign 工作区](../../platform/using/adobe-campaign-workspace.md)了。
+您现在可以访问[Adobe Campaign工作区](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui){target="_blank"}（Campaign v8文档）。
 
 ## 设置连接 {#setting-up-connections}
 
@@ -90,7 +90,7 @@ Campaign 用户使用其 Adobe ID，通过 Adobe 身份管理系统 (IMS) 连接
 
 ![](assets/s_ncs_user_connections_management.png)
 
-请参阅[Campaign v8 （控制台）文档](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/new/connect#create-your-connection){target=_blank}以了解如何设置连接。
+请参阅[Campaign v8 （控制台）文档](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/connect#create-your-connection){target=_blank}以了解如何设置连接。
 
 ## 操作员和权限 {#operators-and-permissions}
 

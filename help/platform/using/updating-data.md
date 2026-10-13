@@ -32,9 +32,9 @@ subfeature_v2:
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: 59d78c785d8984861fd537c2f64f82a7d2d77fbf
 workflow-type: tm+mt
-source-wordcount: '738'
+source-wordcount: '750'
 ht-degree: 23%
 ---
 # 更新数据{#updating-data}
@@ -47,7 +47,7 @@ ht-degree: 23%
 
 ## 设置自动更新 {#setting-up-an-automatic-update}
 
-可以通过工作流配置自动更新。 有关更多信息，请参阅 [Campaign v8 文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/update-data.html?lang=zh-Hans){target="_blank"}。
+可以通过工作流配置自动更新。 有关更多信息，请参阅 [Campaign v8 文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/update-data.html){target="_blank"}。
 
 ## 执行批量更新 {#performing-a-mass-update}
 
@@ -118,7 +118,7 @@ ht-degree: 23%
 
    ![](assets/s_ncs_user_export_list_start.png)
 
-   有关如何配置导出助理的详细信息，请参阅[此部分](../../platform/using/executing-export-jobs.md)。
+   有关如何配置导出助理的详细信息，请参阅[此部分](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/data/import){target="_blank"}（Campaign v8文档）。
 
 ## 订阅服务 {#subscribing-to-a-service}
 

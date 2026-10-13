@@ -30,7 +30,7 @@ subfeature_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: a97306b73a2b577841e6f24536c62b2526e9fda9
+source-git-commit: 7b7f6d2ad5e5d09880f05c7e99ea8ede770532ab
 workflow-type: tm+mt
 source-wordcount: '866'
 ht-degree: 3%
@@ -53,7 +53,7 @@ ht-degree: 3%
 
 ## 步骤1 — 创建投放 {#step-1---creating-a-delivery}
 
-有关创建投放的详细步骤，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/email.html?lang=zh-Hans){target="_blank"}。
+有关创建投放的详细步骤，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/email.html){target="_blank"}。
 
 在本例中，投放经理已创建新闻稿并选择收件人。
 
@@ -65,7 +65,7 @@ ht-degree: 3%
 
 ### 扩展数据架构 {#extending-the-data-schema}
 
-有关架构扩展的详细信息，请参阅[此部分](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/developer/schemas-forms/create-schema){target="_blank"}（Campaign v8文档）。
+有关架构扩展的详细信息，请参阅[此部分](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/extend-schema){target="_blank"}（Campaign v8文档）。
 
 1. 在&#x200B;**[!UICONTROL Administration > Configuration > Data schemas]**&#x200B;节点中，单击&#x200B;**[!UICONTROL New]**&#x200B;图标。
 1. 在&#x200B;**[!UICONTROL Creation of a data schema]**&#x200B;窗口中，选择&#x200B;**[!UICONTROL Extension of a schema]**&#x200B;选项并单击&#x200B;**[!UICONTROL Next]**。

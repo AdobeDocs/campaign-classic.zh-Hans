@@ -25,19 +25,19 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 59d78c785d8984861fd537c2f64f82a7d2d77fbf
 workflow-type: tm+mt
-source-wordcount: '185'
-ht-degree: 11%
+source-wordcount: '224'
+ht-degree: 7%
 ---
 # 使用工作流创建轮廓列表{#creating-a-profile-list-with-a-workflow}
 
 
 要基于新的收件人表创建&#x200B;**[!UICONTROL List]**&#x200B;类型列表，您需要创建将生成该列表的定向工作流。
 
-有关Campaign中列表的详细信息，请参阅[此部分](../../platform/using/creating-and-managing-lists.md#about-lists-in-adobe-campaign)。
+有关Campaign中列表的详细信息，请参阅[此部分](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-audiences/create-audiences#create-a-list-of-contacts){target="_blank"}（Campaign v8文档）。
 
-![](assets/do-not-localize/how-to-video.png) [通过观看视频了解此功能](../../platform/using/creating-and-managing-lists.md#create-list-in-a-wf-video)
+![](assets/do-not-localize/how-to-video.png) [在视频中发现此功能](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-audiences/create-audiences#create-a-list-wf){target="_blank"}（Campaign v8文档）
 
 要在自定义收件人表中创建定位工作流并更新收件人，请执行以下步骤：
 

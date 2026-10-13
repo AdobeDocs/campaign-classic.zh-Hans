@@ -30,10 +30,10 @@ topic_v2:
     internal-label: Personalization
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: d7e5f68c0d2e0b94fd5cfdf2981bed29f33d9f62
+source-git-commit: 59d78c785d8984861fd537c2f64f82a7d2d77fbf
 workflow-type: tm+mt
-source-wordcount: '679'
-ht-degree: 69%
+source-wordcount: '707'
+ht-degree: 54%
 ---
 # Campaign Classic v7 文档 {#campaign-classic-documentation}
 
@@ -104,24 +104,24 @@ Android Firebase Cloud Messaging (FCM) 服务的一些重要更改将于 2024 �
     <td>
       <img src="assets/do-not-localize/icon-start.svg" width="35px">
     <br/>
-      <strong>快速入门</strong><br/><a href="platform/using/adobe-campaign-workspace.md">用户界面</a> - <a href="platform/using/launching-adobe-campaign.md">连接到 Campaign</a> - <a href="platform/using/get-started-data-import-export.md">导入与导出数据</a> - <a href="platform/using/access-management.md">权限</a>
+      <strong>开始</strong><br/><a href="https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui" target="_blank">用户界面</a> （Campaign v8文档） - <a href="platform/using/launching-adobe-campaign.md">连接到Campaign</a> - <a href="https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/data/import" target="_blank">导入和导出数据</a> （Campaign v8文档） - <a href="platform/using/access-management.md">权限</a>
     </td>
     <td>
       <img src="assets/do-not-localize/icon-experience.svg" width="35px">
     <br/>
-      <strong>客户体验</strong><br/><a href="workflow/using/about-workflows.md">工作流自动化</a> - <a href="https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=zh-Hans" target="_blank">营销活动</a> - <a href="interaction/using/interaction-and-offer-management.md">互动和优惠管理</a> - <a href="delivery/using/about-personalization.md">Personalization</a> - <a href="https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/analytics/reports/gs-reporting" target="_blank">报表</a>（Campaign v8文档）
+      <strong>客户体验</strong><br/><a href="workflow/using/about-workflows.md">工作流自动化</a> - <a href="https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=zh-Hans" target="_blank">营销活动</a> - <a href="interaction/using/interaction-and-offer-management.md">互动和优惠管理</a> - <a href="delivery/using/about-personalization.md">Personalization</a> - <a href="https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/reports/gs-reporting" target="_blank">报表</a>（Campaign v8文档）
     </td>
     <td>
       <img src="assets/do-not-localize/icon-send.svg" width="35px">
     <br/>
-      <strong>发送消息</strong><br/><a href="delivery/using/communication-channels.md">通信渠道</a> - <a href="https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/send/create-message" target="_blank">发送校样</a>（Campaign v8文档） - <a href="delivery/using/get-started-a-b-testing.md">A/B测试</a> - <a href="https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/analytics/tracking/tracking" target="_blank">消息跟踪</a> - <a href="delivery/using/about-deliverability.md">可投放性</a> - <a href="message-center/using/about-transactional-messaging.md">事务性消息</a>
+      <strong>发送消息</strong><br/><a href="delivery/using/communication-channels.md">通信渠道</a> - <a href="https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/create-message" target="_blank">发送校样</a>（Campaign v8文档） - <a href="delivery/using/get-started-a-b-testing.md">A/B测试</a> - <a href="https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/analytics/tracking/tracking" target="_blank">消息跟踪</a> - <a href="delivery/using/about-deliverability.md">可投放性</a> - <a href="message-center/using/about-transactional-messaging.md">事务性消息</a>
     </td>
   </tr>
   <tr style="border: 0;">
     <td>
       <img src="assets/do-not-localize/icon_profile-audience.svg" width="35px">
       <br/>
-      <strong>轮廓和受众</strong><br/> <a href="platform/using/creating-and-managing-lists.md">创建列表</a> - <a href="delivery/using/about-services-and-subscriptions.md">服务和订阅</a> - <a href="platform/using/privacy-management.md">隐私和同意</a>
+      <strong>用户档案和受众</strong><br/> <a href="https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-audiences/create-audiences" target="_blank">创建列表</a>（Campaign v8文档） - <a href="delivery/using/about-services-and-subscriptions.md">服务和订阅</a> - <a href="platform/using/privacy-management.md">隐私和同意</a>
     </td>
     <td>
       <img src="assets/do-not-localize/icon-configure.svg" width="35px">
@@ -131,7 +131,7 @@ Android Firebase Cloud Messaging (FCM) 服务的一些重要更改将于 2024 �
     <td>
       <img src="assets/do-not-localize/icon-dev.svg" width="35px">
       <br/>
-      <strong>开发人员资源</strong><br/><a href="https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/developer/datamodel" target="_blank">数据模型描述</a>（Campaign v8文档） - <a href="configuration/using/about-schema-reference.md">架构结构</a> - <a href="configuration/using/editing-forms.md">架构结构</a> - <a href="configuration/using/about-web-services.md">API</a> - <a href="https://experienceleague.adobe.com/zh-hans/tools/campaign-api">JSAPI参考文档</a> - <a href="configuration/using/about-custom-recipient-table.md">自定义收件人表</a>
+      <strong>开发人员资源</strong><br/><a href="https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/datamodel" target="_blank">数据模型描述</a>（Campaign v8文档） - <a href="configuration/using/about-schema-reference.md">架构结构</a> - <a href="configuration/using/editing-forms.md">架构结构</a> - <a href="configuration/using/about-web-services.md">API</a> - <a href="https://experienceleague.adobe.com/zh-hans/tools/campaign-api">JSAPI参考文档</a> - <a href="configuration/using/about-custom-recipient-table.md">自定义收件人表</a>
     </td>
   </tr>
 </table>

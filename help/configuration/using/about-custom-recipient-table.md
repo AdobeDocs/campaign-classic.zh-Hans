@@ -34,9 +34,9 @@ role_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 59d78c785d8984861fd537c2f64f82a7d2d77fbf
 workflow-type: tm+mt
-source-wordcount: '683'
+source-wordcount: '698'
 ht-degree: 2%
 ---
 # 使用自定义收件人表格{#about-custom-recipient-table}
@@ -84,7 +84,7 @@ ht-degree: 2%
 
 * 您不能在列表中手动添加用户档案。
 
-  因此，如果没有其他配置，[此部分](../../platform/using/creating-and-managing-lists.md)中详述的过程将不适用。
+  因此，如果没有其他配置，[此部分](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-audiences/create-audiences){target="_blank"}（Campaign v8文档）中详述的过程将不适用。
 
   >[!NOTE]
   >

@@ -46,9 +46,9 @@ topic_v2:
     internal-label: Security
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: 59d78c785d8984861fd537c2f64f82a7d2d77fbf
 workflow-type: tm+mt
-source-wordcount: '1274'
+source-wordcount: '1289'
 ht-degree: 5%
 ---
 # 创建和管理操作员 {#operators}
@@ -63,7 +63,7 @@ ht-degree: 5%
 
 >[!NOTE]
 >
->这些步骤仅适用于使用本机身份验证连接到Campaign的操作员。 有关Adobe IMS身份验证，请参阅[此文档](https://helpx.adobe.com/cn/enterprise/using/manage-users-individually.html#_blank)。
+>这些步骤仅适用于使用本机身份验证连接到Campaign的操作员。 有关Adobe IMS身份验证，请参阅[此文档](https://helpx.adobe.com/enterprise/using/manage-users-individually.html#_blank)。
 
 操作员是具有登录和执行操作权限的Adobe Campaign用户。
 
@@ -81,7 +81,7 @@ ht-degree: 5%
 >
 >操作员需要链接到安全区域才能登录到实例。 有关Adobe Campaign中安全区域的详细信息，请参阅[此页面](../../installation/using/security-zones.md)。
 
-用户还可以使用其Adobe ID直接连接到Adobe Campaign。 有关详细信息，请参见此 [&#x200B; 页面](../../integrations/using/about-adobe-id.md)。
+用户还可以使用其Adobe ID直接连接到Adobe Campaign。 有关详细信息，请参见此 [ 页面](../../integrations/using/about-adobe-id.md)。
 
 ## 创建运算符 {#creating-an-operator}
 
@@ -151,7 +151,7 @@ ht-degree: 5%
   >
   >即使其帐户被禁用，操作员仍可以从Campaign接收警报或通知。 要停止向此运营商发送Campaign通知，Adobe建议您从其用户档案中删除电子邮件地址。
 
-* 通过&#x200B;**[!UICONTROL Forbid access from the rich client]**&#x200B;选项，您可以将Adobe Campaign的使用限制为[Web访问](../../platform/using/adobe-campaign-workspace.md#console-and-web-access)，或者通过API使用：无法再访问Adobe Campaign客户端控制台。
+* 通过&#x200B;**[!UICONTROL Forbid access from the rich client]**&#x200B;选项，您可以将Adobe Campaign的使用限制为[Web访问](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui#ui-access){target="_blank"} （Campaign v8文档），或者通过API使用：无法再访问Adobe Campaign客户端控制台。
 * 可以将安全区链接到操作员。 有关详细信息，请参见[此页面](../../installation/using/security-zones.md)。
 * 您还可以使用相应的链接定义受信任的IP掩码。
 

@@ -8,9 +8,9 @@ user-guide-description: Adobe Campaign Classic v7 产品文档。
 sub-product: adobe campaign classic
 type: Documentation
 nudge: false
-source-git-commit: d7e5f68c0d2e0b94fd5cfdf2981bed29f33d9f62
+source-git-commit: 59d78c785d8984861fd537c2f64f82a7d2d77fbf
 workflow-type: tm+mt
-source-wordcount: '1739'
+source-wordcount: '1657'
 ht-degree: 100%
 ---
 
@@ -32,36 +32,22 @@ ht-degree: 100%
 + 快速入门 {#getting-started}
   + [Adobe Campaign Classic 入门](platform/using/about-adobe-campaign-classic.md)
   + [启动 Adobe Campaign](platform/using/launching-adobe-campaign.md)
-  + [了解 Campaign UI](platform/using/adobe-campaign-workspace.md)
-  + {hide-from-toc}[使用 Campaign 资源管理器 - 隐藏](platform/using/adobe-campaign-explorer.md)
-  + {hide-from-toc}[浏览和自定义列表 - 隐藏](platform/using/adobe-campaign-ui-lists.md)
-  + {hide-from-toc}[枚举 - 隐藏](platform/using/managing-enumerations.md)
   + [Campaign 连接器](platform/using/about-connectors.md)
   + 常见问题解答 {#faq}
     + [Campaign Classic 常见问题](platform/using/faq-campaign-classic-v7.md)
     + [版本升级](platform/using/faq-build-upgrade.md)
-  + {hide-from-toc}[术语表 - 隐藏](platform/using/ac-glossary.md)
   + 隐私 {#privacy}
     + [隐私和同意](platform/using/privacy-and-recommendations.md)
     + [隐私管理](platform/using/privacy-management.md)
     + 隐私请求 {#privacy-requests}
-      + [关于隐私请求](platform/using/privacy-requests.md)
       + [创建和管理隐私请求](platform/using/privacy-requests-ui.md)
       + [自动隐私请求流程](platform/using/privacy-requests-api.md)
     + [选择禁用个人信息销售](platform/using/privacy-requests-ccpa.md)
   + 轮廓管理 {#profile-management}
     + [关于轮廓](platform/using/about-profiles.md)
     + [更新数据](platform/using/updating-data.md)
-    + [创建和管理列表](platform/using/creating-and-managing-lists.md)
   + 导入和导出数据 {#importing-and-exporting-data}
-    + [数据导入和导出入门](platform/using/get-started-data-import-export.md)
-    + [使用工作流导入和导出数据](platform/using/import-export-workflows.md)
     + 创建通用导入和导出 {#generic-imports-exports}
-      + [通用导入和导出入门](platform/using/about-generic-imports-exports.md)
-      + [创建导入和导出模板](platform/using/creating-import-export-templates.md)
-      + [创建导入和导出作业](platform/using/creating-import-export-jobs.md)
-      + [配置导入作业](platform/using/executing-import-jobs.md)
-      + [配置导出作业](platform/using/executing-export-jobs.md)
       + [监测作业执行](platform/using/monitoring-jobs-execution.md)
       + [通用导入范例](platform/using/import-operations-samples.md)
     + 管理数据加密和压缩 {#managing-data-encryption-compression}
@@ -70,16 +56,11 @@ ht-degree: 100%
     + 最佳实践和故障排除 {#best-practices}
       + [导入和导出最佳实践](platform/using/import-export-best-practices.md)
       + [SFTP 服务器最佳实践和故障排除](platform/using/sftp-server-usage.md)
-  + 筛选数据 {#filtering-data}
-    + {hide-from-toc}[创建筛选 - 隐藏](platform/using/creating-filters.md)
-  + {hide-from-toc}[创建查询的步骤 - 隐藏](platform/using/steps-to-create-a-query.md)
-  + {hide-from-toc}[定义筛选条件 - 隐藏](platform/using/defining-filter-conditions.md)
   + 权限 {#permissions}
     + [权限快速入门](platform/using/access-management.md)
     + 本机身份验证（旧版） {#native}
       + [创建和管理操作员](platform/using/access-management-operators.md)
       + [创建和管理组](platform/using/access-management-groups.md)
-    + [使用已命名权限设置权限](platform/using/access-management-named-rights.md)
   + CRM 连接器 {#connectors}
     + [CRM 连接器入门](platform/using/crm-connectors.md)
 + 创建和发送消息 {#sending-messages}

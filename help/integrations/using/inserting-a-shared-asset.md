@@ -27,9 +27,9 @@ subfeature_v2:
     internal-label: Target integration
   - id: 2e08b477-1993-5928-975d-5f4cabe8fbe0
     internal-label: Asset Sharing
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 59d78c785d8984861fd537c2f64f82a7d2d77fbf
 workflow-type: tm+mt
-source-wordcount: '233'
+source-wordcount: '248'
 ht-degree: 1%
 ---
 # 插入共享资源{#inserting-a-shared-asset}
@@ -44,7 +44,7 @@ ht-degree: 1%
 
 1. 在编辑窗口中，选择要添加图像的选项：
 
-   * 如果您使用[标准编辑模式](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html?lang=zh-Hans#adding-images){target="_blank"}，请选择&#x200B;**[!UICONTROL Image]** > **[!UICONTROL Select a shared asset]**。
+   * 如果您使用[标准编辑模式](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html#adding-images){target="_blank"}，请选择&#x200B;**[!UICONTROL Image]** > **[!UICONTROL Select a shared asset]**。
 
      ![](assets/dam_insert_image_standard.png)
 
@@ -54,7 +54,7 @@ ht-degree: 1%
 
      >[!NOTE]
      >
-     >使用DCE时，无法在[Web访问](../../platform/using/adobe-campaign-workspace.md#console-and-web-access)中插入来自Adobe Campaign的共享图像。
+     >使用DCE时，无法在[Web访问](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui#ui-access){target="_blank"}（Campaign v8文档）中插入来自Adobe Campaign的共享图像。
 
 1. 在打开的选择窗口中，选择一个图像，然后进行确认。
 
