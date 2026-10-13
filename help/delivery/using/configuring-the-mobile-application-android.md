@@ -68,7 +68,7 @@ ht-degree: 11%
 1. [在Campaign中创建移动应用程序](#creating-android-app)
 1. [使用其他数据扩展应用程序架构](#extend-subscription-schema)
 
-然后，您就可以[创建Android富通知](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/push/rich-push/rich-push-android){target="_blank"}（Campaign v8文档）。
+然后，您就可以[创建Android富通知](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/send/push/rich-push/rich-push-android){target="_blank"}（Campaign v8文档）。
 
 >[!IMPORTANT]
 >
@@ -102,7 +102,7 @@ ht-degree: 11%
 
 ## 配置Android服务 {#configuring-android-service}
 
-![](assets/do-not-localize/how-to-video.png) [了解如何在视频](https://experienceleague.adobe.com/docs/campaign-classic-learn/getting-started-with-push-notifications-for-android/configuring-an-android-service-in-campaign.html#configuring-an-android-service-and-creating-an-android-mobile-application-in-campaign){target="_blank"}中配置Android服务。
+![](assets/do-not-localize/how-to-video.png) [了解如何在视频](https://experienceleague.adobe.com/docs/campaign-classic-learn/getting-started-with-push-notifications-for-android/configuring-an-android-service-in-campaign.html?lang=zh-Hans#configuring-an-android-service-and-creating-an-android-mobile-application-in-campaign){target="_blank"}中配置Android服务。
 
 1. 转到&#x200B;**[!UICONTROL Profiles and Targets > Services and subscriptions]**&#x200B;节点并单击&#x200B;**[!UICONTROL New]**。
 
@@ -135,7 +135,7 @@ ht-degree: 11%
 
    ![](assets/nmac_android.png)
 
-1. 确保通过SDK在Adobe Campaign和应用程序代码中定义了相同的&#x200B;**[!UICONTROL Integration key]**。<!--For more on this, refer to [this section](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/push-config){target="_blank"} (Campaign v8 documentation).-->
+1. 确保通过SDK在Adobe Campaign和应用程序代码中定义了相同的&#x200B;**[!UICONTROL Integration key]**。<!--For more on this, refer to [this section](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/config/settings/push-config){target="_blank"} (Campaign v8 documentation).-->
 
    >[!NOTE]
    >
@@ -191,14 +191,14 @@ ht-degree: 11%
 
 ## 扩展appsubscriptionRcp架构 {#extend-subscription-schema}
 
-![](assets/do-not-localize/how-to-video.png) [了解如何在视频中扩展appsubscriptionRcp架构](https://experienceleague.adobe.com/docs/campaign-classic-learn/getting-started-with-push-notifications-for-android/extending-the-app-subscription-schema.html#extending-the-app-subscription-schema-to-personalize-push-notifications)
+![](assets/do-not-localize/how-to-video.png) [了解如何在视频中扩展appsubscriptionRcp架构](https://experienceleague.adobe.com/docs/campaign-classic-learn/getting-started-with-push-notifications-for-android/extending-the-app-subscription-schema.html?lang=zh-Hans#extending-the-app-subscription-schema-to-personalize-push-notifications)
 
 您需要扩展&#x200B;**appsubscriptionRcp**，以定义新的附加字段来将应用程序中的参数存储在Campaign数据库中。 例如，这些字段用于个性化。 操作步骤：
 
-1. 创建&#x200B;**[!UICONTROL Subscriber applications (nms:appsubscriptionRcp)]**&#x200B;架构的扩展并定义新字段。 在[此页面](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/schemas){target="_blank"}中了解有关架构扩展的更多信息（Campaign v8文档）
+1. 创建&#x200B;**[!UICONTROL Subscriber applications (nms:appsubscriptionRcp)]**&#x200B;架构的扩展并定义新字段。 在[此页面](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/developer/schemas-forms/schemas){target="_blank"}中了解有关架构扩展的更多信息（Campaign v8文档）
 
 1. 在&#x200B;**[!UICONTROL Subscription parameters]**&#x200B;选项卡中定义映射。
 
    >[!CAUTION]
    >
-   >确保&#x200B;**[!UICONTROL Subscription parameters]**&#x200B;选项卡中的配置名称与移动应用程序代码中的配置名称相同。<!--Refer to [this section](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/push-config){target="_blank"} (Campaign v8 documentation).-->
+   >确保&#x200B;**[!UICONTROL Subscription parameters]**&#x200B;选项卡中的配置名称与移动应用程序代码中的配置名称相同。<!--Refer to [this section](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/config/settings/push-config){target="_blank"} (Campaign v8 documentation).-->

@@ -474,7 +474,7 @@ Microsoft Edge WebView2 运行时最新版本是 Campaign 客户端控制台的�
 
 可以通过在“数据收集”UI 中配置 Adobe Campaign 扩展，使用 Campaign 通过 Adobe Experience Platform Mobile SDK [发送推送通知](../../delivery/using/about-mobile-app-channel.md)。
 
-从 Campaign v7.4 开始，Campaign SDK 被[弃用](deprecated-features.md)。 要确保现有实施平稳过渡到 AEP Mobile SDK，您仍然可以在下面列出的操作系统上使用它<!--, using the associated [mobile SDK](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/push-config){target="_blank"} (Campaign v8 documentation)-->。
+从 Campaign v7.4 开始，Campaign SDK 被[弃用](deprecated-features.md)。 要确保现有实施平稳过渡到 AEP Mobile SDK，您仍然可以在下面列出的操作系统上使用它<!--, using the associated [mobile SDK](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/config/settings/push-config){target="_blank"} (Campaign v8 documentation)-->。
 
 
 <table>

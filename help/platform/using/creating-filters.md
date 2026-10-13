@@ -37,7 +37,7 @@ ht-degree: 4%
 
 在Adobe Campaign树中导航（从主页的&#x200B;**[!UICONTROL Explorer]**&#x200B;菜单）时，数据库中包含的数据将显示在列表中。 可以将这些列表配置为仅显示运算符所需的数据。 然后，可以对过滤的数据启动操作。 筛选器配置允许您从列表&#x200B;**[!UICONTROL dynamically]**&#x200B;中选择数据。 如果修改了数据，则更新过滤的数据。
 
-在[Campaign v8 （控制台）文档](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/audience/create-audiences/create-filters){target=_blank}中了解有关&#x200B;**筛选器及其使用方式的更多信息**。
+在[Campaign v8 （控制台）文档](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/audience/create-audiences/create-filters){target=_blank}中了解有关&#x200B;**筛选器及其使用方式的更多信息**。
 
 
 <!--
@@ -213,7 +213,7 @@ Advanced filters can use functions; **filters with functions** are created via a
 
       >[!NOTE]
       >
-      >For an example of filter creation based on an expression, refer to [this section](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/use-cases/deliveries/send-a-birthday-email#identifying-recipients-whose-birthday-it-is){target="_blank"} (Campaign v8 documentation).
+      >For an example of filter creation based on an expression, refer to [this section](https://experienceleague.adobe.com/zh-hans/docs/campaign/automation/workflows/use-cases/deliveries/send-a-birthday-email#identifying-recipients-whose-birthday-it-is){target="_blank"} (Campaign v8 documentation).
 
 ## Save a filter {#saving-a-filter}
 
@@ -221,7 +221,7 @@ Filters are specific to each operator and are re-initialized each time the opera
 
 You can create an **application filter** by saving an advanced filter: it can be re-used by right-clicking in any list or via the **[!UICONTROL Filters]** button located above the lists.
 
-These filters can also be accessed directly via the delivery assistant, in the target selection stage (refer to [this section](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/emails/email){target="_blank"} (Campaign v8 documentation) for more on creating deliveries). To create the application filter, you can:
+These filters can also be accessed directly via the delivery assistant, in the target selection stage (refer to [this section](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/send/emails/email){target="_blank"} (Campaign v8 documentation) for more on creating deliveries). To create the application filter, you can:
 
 * Convert an advanced filter to an application filter. To do this, click **[!UICONTROL Save]** before closing the advanced filter editor.
 

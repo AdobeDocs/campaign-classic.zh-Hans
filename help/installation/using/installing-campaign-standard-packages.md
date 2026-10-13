@@ -85,7 +85,7 @@ ht-degree: 7%
   </tr> 
   <tr> 
    <td> 营销活动（营销活动）<br /> </td> 
-   <td> 定义、优化、执行和分析通信和营销活动。 <a href="https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html" target="_blank">了解更多</a><br /> </td> 
+   <td> 定义、优化、执行和分析通信和营销活动。 <a href="https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html?lang=zh-Hans" target="_blank">了解更多</a><br /> </td> 
    <td> 营销</td>
   </tr> 
   <tr> 
@@ -133,7 +133,7 @@ ht-degree: 7%
   </tr> 
   <tr> 
    <td> LINE频道<br /> </td> 
-   <td> 在Adobe Campaign中使用LINE渠道发送投放。 可选。 事务性消息传递（消息中心包）是必需的。 <a href="https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/other-channels/line" target="_blank">了解更多</a>（Campaign v8文档）<br /> </td> 
+   <td> 在Adobe Campaign中使用LINE渠道发送投放。 可选。 事务性消息传递（消息中心包）是必需的。 <a href="https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/send/other-channels/line" target="_blank">了解更多</a>（Campaign v8文档）<br /> </td> 
    <td> 所有<br /> </td> 
   </tr> 
   <tr> 
@@ -143,7 +143,7 @@ ht-degree: 7%
   </tr> 
   <tr> 
    <td> 移动渠道（短信）<br /> </td> 
-   <td> 使用带有Adobe Campaign的移动/短信渠道发送投放。 可选。 <a href="https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/sms/sms" target="_blank">了解更多</a>（Campaign v8文档）<br /> </td> 
+   <td> 使用带有Adobe Campaign的移动/短信渠道发送投放。 可选。 <a href="https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/send/sms/sms" target="_blank">了解更多</a>（Campaign v8文档）<br /> </td> 
    <td> 所有<br /> </td> 
   </tr> 
    <tr> 
@@ -178,7 +178,7 @@ ht-degree: 7%
   </tr> 
   <tr> 
    <td> 访问外部数据（联合数据访问）<br /> </td> 
-   <td> 提供联合数据访问(FDA)选项，以处理存储在一个或多个外部数据库中的信息，以便您能够访问外部数据而不改变Adobe Campaign数据的结构。  可选。 <a href="https://experienceleague.adobe.com/docs/campaign/automation/workflows/advanced-management/accessing-an-external-database-fda.html" target="_blank">了解更多</a> <br /> </td> 
+   <td> 提供联合数据访问(FDA)选项，以处理存储在一个或多个外部数据库中的信息，以便您能够访问外部数据而不改变Adobe Campaign数据的结构。  可选。 <a href="https://experienceleague.adobe.com/docs/campaign/automation/workflows/advanced-management/accessing-an-external-database-fda.html?lang=zh-Hans" target="_blank">了解更多</a> <br /> </td> 
    <td> 所有<br /> </td> 
   </tr> 
   <tr> 
@@ -193,7 +193,7 @@ ht-degree: 7%
   </tr> 
   <tr> 
    <td> 优惠券管理<br /> </td> 
-   <td> 创建一组优惠券以添加到即将推出的营销优惠中。 可选。 <a href="https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalized-coupons.html" target="_blank">了解更多</a> <br /> </td> 
+   <td> 创建一组优惠券以添加到即将推出的营销优惠中。 可选。 <a href="https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalized-coupons.html?lang=zh-Hans" target="_blank">了解更多</a> <br /> </td> 
    <td> 营销<br /> </td> 
   </tr> 
   <tr> 
@@ -248,7 +248,7 @@ ht-degree: 7%
   </tr> 
   <tr> 
    <td> AMP支持<br /> </td> 
-   <td> 使您能够使用新的交互式AMP作为电子邮件格式，并发送动态电子邮件。 可选。 <a href="https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-interactive-content.html" target="_blank">了解更多</a> <br /> </td> 
+   <td> 使您能够使用新的交互式AMP作为电子邮件格式，并发送动态电子邮件。 可选。 <a href="https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-interactive-content.html?lang=zh-Hans" target="_blank">了解更多</a> <br /> </td> 
    <td> 全部 </td> 
   </tr> 
   <tr> 
@@ -283,7 +283,7 @@ ht-degree: 7%
 
 * 在营销和MID实例上安装[!DNL LINE]包
 
-* 在mkt实例上设置[!DNL LINE]外部帐户，以通过更改传递模式指向mid实例。 [了解详情](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/other-channels/line#configure-line-external){target="_blank"}（Campaign v8文档）
+* 在mkt实例上设置[!DNL LINE]外部帐户，以通过更改传递模式指向mid实例。 [了解详情](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/send/other-channels/line#configure-line-external){target="_blank"}（Campaign v8文档）
 
 * 在MID实例的外部帐户中设置[!DNL LINE]凭据。
 

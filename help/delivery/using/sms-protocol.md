@@ -53,9 +53,9 @@ ht-degree: 1%
 >通过此文档，所有对协议、字段名称和值详细信息的引用都引用[SMPP 3.4规范](https://smpp.org/SMPP_v3_4_Issue1_2.pdf)。
 >
 
-作为从Campaign v7过渡到v8的一部分，Campaign Classic文档集已得到简化和重新组织。 现在，Campaign v8文档集中专门提供了常用功能。 要了解有关SMS连接器设置的更多信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/sms/config-sms/smpp-external-account){target=_blank}。
+作为从Campaign v7过渡到v8的一部分，Campaign Classic文档集已得到简化和重新组织。 现在，Campaign v8文档集中专门提供了常用功能。 要了解有关SMS连接器设置的更多信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/send/sms/config-sms/smpp-external-account){target=_blank}。
 
-[![image](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/sms/config-sms/smpp-external-account){target=_blank}
+[![image](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/send/sms/config-sms/smpp-external-account){target=_blank}
 
 ## 概述 {#overview}
 
@@ -181,7 +181,7 @@ PDU可以有可选字段。 此处只介绍最常见的字段。 有关详细信
 
 * **registered_delivery**：告知是否请求了SR。 Adobe Campaign始终设置此标记，但自动回复除外。 对于多部分消息，只为第一部分设置标志。 所有版本都具有相同的行为。
 
-* **data_coding**：指示文本字段中使用的编码。 有关详细信息，请参阅[短信文本编码](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/sms/sms-channel#sms-text-encoding){target="_blank"}（Campaign v8文档）部分。
+* **data_coding**：指示文本字段中使用的编码。 有关详细信息，请参阅[短信文本编码](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/send/sms/sms-channel#sms-text-encoding){target="_blank"}（Campaign v8文档）部分。
 
 * **short_message**：消息的文本。 如果使用UDH，则其中还包含UHD标头。
 
@@ -243,7 +243,7 @@ Adobe Campaign能够通过某些配置读取`receipted_message_id`可选字段�
 
 大多数提供商都要求为每个SMPP连接设置吞吐量限制。 通过在外部帐户中设置大量短信即可实现此目的。 请注意，吞吐量限制发生在每个连接上，总有效吞吐量是每个连接的限制乘以连接总数。 [同时连接](sms-protocol.md#connection-settings)部分中对此进行了详细说明。
 
-要达到最大可能的吞吐量，您需要微调最大发送窗口。 发送窗口是无需等待`SUBMIT_SM_RESP`即可发送的`SUBMIT_SM PDU`数。 有关更多详细信息，请参阅[发送窗口设置](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/sms/config-sms/smpp-external-account#smpp-delays){target="_blank"}（Campaign v8文档）部分。
+要达到最大可能的吞吐量，您需要微调最大发送窗口。 发送窗口是无需等待`SUBMIT_SM_RESP`即可发送的`SUBMIT_SM PDU`数。 有关更多详细信息，请参阅[发送窗口设置](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/send/sms/config-sms/smpp-external-account#smpp-delays){target="_blank"}（Campaign v8文档）部分。
 
 ### 服务请求和错误管理（“附录B”） {#sr-error-management}
 

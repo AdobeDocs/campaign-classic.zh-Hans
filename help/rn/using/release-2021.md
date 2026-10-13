@@ -124,7 +124,7 @@ _2021 年 6 月 5 日_
 <td>
 <p>全新的<b>更改数据源</b>工作流活动允许您更改工作流工作表的数据源。 这提高了跨不同数据源（FDA 和本地数据库）管理数据的灵活性。</p>
 <p>在 Adobe Campaign 工作流中，使用工作（或临时）表管理数据。 工作流执行时，工作表会在工作流活动之间共享数据。 默认情况下，工作表会在与我们查询的数据源相同的数据库中创建。</p>
-<p>有关详细信息，请参阅<a href="https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/wf-activities/targeting-activities/change-data-source" target="_blank">详细文档</a>（Campaign v8文档）。</p>
+<p>有关详细信息，请参阅<a href="https://experienceleague.adobe.com/zh-hans/docs/campaign/automation/workflows/wf-activities/targeting-activities/change-data-source" target="_blank">详细文档</a>（Campaign v8文档）。</p>
 </td>
 </tr>
 </tbody>
@@ -162,7 +162,7 @@ _2021 年 6 月 5 日_
 <li><p>支持 LINE 合作伙伴注册 API</p></li>
 <li><p>支持在出现 LINE 服务器端错误或网络超时的情况下重试消息发送</p></li>
 </ul>
-<p>有关详细信息，请参阅<a href="https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/other-channels/line" target="_blank">详细文档</a>（Campaign v8文档）。</p>
+<p>有关详细信息，请参阅<a href="https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/send/other-channels/line" target="_blank">详细文档</a>（Campaign v8文档）。</p>
 </td> 
 </tr> 
 </tbody> 
@@ -226,7 +226,7 @@ Campaign 现在支持以下系统：
 **改进**
 
 * 在保存工作流时添加了额外的检查，以确保活动名称是唯一的，且过渡后始终跟随有活动。
-* **计费 (billing)** 技术工作流现在包括原来由&#x200B;**活跃计费轮廓数** (billingActiveContactCount) 工作流执行的任务，后者已被删除。 工作流每月发送的电子邮件报表现在将提供关于实例上活跃轮廓数的信息。 [了解更多](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows){target="_blank"}（Campaign v8文档）。
+* **计费 (billing)** 技术工作流现在包括原来由&#x200B;**活跃计费轮廓数** (billingActiveContactCount) 工作流执行的任务，后者已被删除。 工作流每月发送的电子邮件报表现在将提供关于实例上活跃轮廓数的信息。 [了解更多](https://experienceleague.adobe.com/zh-hans/docs/campaign/automation/workflows/introduction/wf-type/technical-workflows){target="_blank"}（Campaign v8文档）。
 * 添加了新的 **_keyOnMData** 属性，以便能够使用密钥对备忘数据进行操作。
 
 **其他变更**

@@ -46,7 +46,7 @@ Adobe Campaign Classic 随附了一组模块和选项。 这些模块的可用�
 | 加密/解密用于文件传输的数据 | 按需 | 可用 | 可用 | [了解详情](../../platform/using/unzip-decrypt.md) |
 | 压缩/解压缩文件 | 按需 | 可用 | 可用 | [了解详情](../../platform/using/unzip-decrypt.md) |
 | 域名委派 | 按需 | 按需 | 不可用 | [了解详情](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/setting-up-new-subdomain.html?lang=zh-Hans) |
-| 安装SpamAssassin | 按需 | 可用 | 可用 | [了解详情](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/deliverability-management/spamassassin){target="_blank"}（Campaign v8文档） |
+| 安装SpamAssassin | 按需 | 可用 | 可用 | [了解详情](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/send/deliverability-management/spamassassin){target="_blank"}（Campaign v8文档） |
 | 访问可投放性报告 | 可用 | 按需 | 可用 | [了解详情](../../delivery/using/about-delivery-monitoring.md#deliverability-monitoring) |
 | 配置LDAP身份验证 | 不可用 | 可用 | 可用 | [了解详情](../../installation/using/connecting-through-ldap.md) |
 

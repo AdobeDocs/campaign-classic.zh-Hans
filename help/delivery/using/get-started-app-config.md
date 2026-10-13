@@ -56,7 +56,7 @@ ht-degree: 11%
 
 * 为Neotrips移动应用程序创建&#x200B;**[!UICONTROL Mobile application]**&#x200B;类型信息服务。 请参阅iOS[&#128279;](configuring-the-mobile-application.md#configuring-ios-service)的此部分。 和[Android](configuring-the-mobile-application-android.md#configuring-android-service)的此分区。
 * 将应用程序的iOS和Android版本添加到此服务。
-* 为[iOS](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/push/rich-push/rich-push-ios){target="_blank"}（Campaign v8文档）和[Android](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/push/rich-push/rich-push-android){target="_blank"}（Campaign v8文档）创建投放。
+* 为[iOS](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/send/push/rich-push/rich-push-ios){target="_blank"}（Campaign v8文档）和[Android](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/send/push/rich-push/rich-push-android){target="_blank"}（Campaign v8文档）创建投放。
 
 ![](assets/nmac_service_diagram.png)
 
@@ -68,7 +68,7 @@ ht-degree: 11%
 
 [!BADGE 内部部署和混合]{type=Caution url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hans" tooltip="仅适用于内部部署和混合部署"}
 
-![](assets/do-not-localize/how-to-video.png) [在视频中了解如何安装移动应用包](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/sending-messages/push-channel/installing-the-mobile-app-channel.html#sending-messages)
+![](assets/do-not-localize/how-to-video.png) [在视频中了解如何安装移动应用包](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/sending-messages/push-channel/installing-the-mobile-app-channel.html?lang=zh-Hans#sending-messages)
 
 作为混合/托管客户，请联系[Adobe客户关怀](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)团队以访问Campaign中的推送通知渠道。
 

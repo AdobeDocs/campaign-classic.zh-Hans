@@ -56,7 +56,7 @@ ht-degree: 5%
 
 ## 创建投放 {#step-1---creating-a-delivery}
 
-有关创建投放的详细步骤，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/email.html){target="_blank"}。
+有关创建投放的详细步骤，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/email.html?lang=zh-Hans){target="_blank"}。
 
 在本例中，投放经理已创建了新闻稿。
 
@@ -85,7 +85,7 @@ ht-degree: 5%
 
    ![](assets/dlv_seeds_usecase_25.png)
 
-1. 配置投放列表和种子地址。 请参阅[识别目标群体](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/create-message){target="_blank"}（Campaign v8文档）。
+1. 配置投放列表和种子地址。 请参阅[识别目标群体](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/send/create-message){target="_blank"}（Campaign v8文档）。
 
    在此示例中，用户选择其&#x200B;**最喜爱的文学流派**&#x200B;是科幻小说的用户作为主要目标群体。
 

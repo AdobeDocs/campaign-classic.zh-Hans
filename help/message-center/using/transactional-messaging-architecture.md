@@ -142,7 +142,7 @@ Create your delivery templates the way you would for an email campaign:
 * Add the offer to your transactional message template.
 * Check the preview, send a proof and publish the template.
 
-You also have to enable the unitary mode on your offer spaces. For more on this, refer to [this section](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/offers/interaction-settings/interaction-offer-spaces){target="_blank"} (Campaign v8 documentation).
+You also have to enable the unitary mode on your offer spaces. For more on this, refer to [this section](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/offers/interaction-settings/interaction-offer-spaces){target="_blank"} (Campaign v8 documentation).
 
 -->
 
@@ -201,7 +201,7 @@ You also have to enable the unitary mode on your offer spaces. For more on this,
 
 * 在两个实例上安装&#x200B;**[!UICONTROL LINE Connect]**&#x200B;包。
 * 在营销实例上安装&#x200B;**[!UICONTROL Transactional message control]**&#x200B;包，在执行实例上安装&#x200B;**[!UICONTROL Transactional message execution]**&#x200B;包。
-* 在两个实例上创建LINE **外部帐户**&#x200B;和&#x200B;**服务**，并使用相同的命名将它们同步。 有关如何创建LINE外部帐户和服务的更多信息，请参阅[此章节](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/other-channels/line#setting-up-line-channel){target="_blank"}（Campaign v8文档）。
+* 在两个实例上创建LINE **外部帐户**&#x200B;和&#x200B;**服务**，并使用相同的命名将它们同步。 有关如何创建LINE外部帐户和服务的更多信息，请参阅[此章节](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/send/other-channels/line#setting-up-line-channel){target="_blank"}（Campaign v8文档）。
 
 然后，从&#x200B;**[!UICONTROL Explorer]**，在&#x200B;**[!UICONTROL Platform]** > **[!UICONTROL External account]**&#x200B;中，您需要在两个实例上配置不同的外部帐户：
 
@@ -264,4 +264,4 @@ You also have to enable the unitary mode on your offer spaces. For more on this,
    * 单击 **[!UICONTROL Create the archiving workflow]** 按钮。
    * 单击&#x200B;**[!UICONTROL Create data synchronization workflow]**&#x200B;按钮以创建LINE数据同步工作流。
 
-1. 您现在可以开始[创建事务型消息](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/real-time/transactional-template){target="_blank"}（Campaign v8文档）。
+1. 您现在可以开始[创建事务型消息](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/send/real-time/transactional-template){target="_blank"}（Campaign v8文档）。

@@ -61,7 +61,7 @@ ht-degree: 4%
 1. [配置iOS服务](#configuring-ios-service)
 1. [在Campaign中集成iOS移动应用程序](#creating-ios-app)
 
-然后，您将能够[为iOS设备](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/push/rich-push/rich-push-ios){target="_blank"}创建推送通知（Campaign v8文档）。
+然后，您将能够[为iOS设备](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/send/push/rich-push/rich-push-ios){target="_blank"}创建推送通知（Campaign v8文档）。
 
 ## 配置iOS外部帐户 {#configuring-external-account-ios}
 
@@ -133,7 +133,7 @@ ht-degree: 4%
 
 1. 单击&#x200B;**[!UICONTROL Next]**&#x200B;开始配置开发应用程序。
 
-1. 确保通过SDK在Adobe Campaign和应用程序代码中定义了相同的&#x200B;**[!UICONTROL Integration key]**。<!--For more on this, refer to [this page](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/push-config){target="_blank"} (Campaign v8 documentation).--> 此集成键特定于每个应用程序，允许您将移动应用程序链接到Adobe Campaign平台。
+1. 确保通过SDK在Adobe Campaign和应用程序代码中定义了相同的&#x200B;**[!UICONTROL Integration key]**。<!--For more on this, refer to [this page](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/config/settings/push-config){target="_blank"} (Campaign v8 documentation).--> 此集成键特定于每个应用程序，允许您将移动应用程序链接到Adobe Campaign平台。
 
    >[!NOTE]
    >
