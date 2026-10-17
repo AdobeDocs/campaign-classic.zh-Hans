@@ -133,10 +133,10 @@ Campaign v8是Adobe的战略平台，非常适合需要大量促销活动、现�
 了解详情：
 
 * [Campaign v8概述](https://experienceleague.adobe.com/docs/campaign/campaign-v8/new/whats-new.html?lang=zh-Hans){target="_blank"}
-* [从Campaign Classic v7过渡到v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/start/v7-to-v8.html){target="_blank"}
-* [Campaign v8全面常见问题解答](https://experienceleague.adobe.com/docs/campaign/campaign-v8/start/campaign-faq-comprehensive.html){target="_blank"}
+* [从Campaign Classic v7过渡到v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/start/v7-to-v8.html?lang=zh-Hans){target="_blank"}
+* [Campaign v8全面常见问题解答](https://experienceleague.adobe.com/docs/campaign/campaign-v8/start/campaign-faq-comprehensive.html?lang=zh-Hans){target="_blank"}
 
-**有关工作流、投放、受众、报表、个性化等常见营销活动问题的详细答案**，请访问[Campaign v8全面常见问题解答](https://experienceleague.adobe.com/docs/campaign/campaign-v8/start/campaign-faq-comprehensive.html){target="_blank"}。
+**有关工作流、投放、受众、报表、个性化等常见营销活动问题的详细答案**，请访问[Campaign v8全面常见问题解答](https://experienceleague.adobe.com/docs/campaign/campaign-v8/start/campaign-faq-comprehensive.html?lang=zh-Hans){target="_blank"}。
 
 +++
 
@@ -158,7 +158,7 @@ Adobe Campaign v7用户界面提供4种语言版本：英语、法语、德语�
 
 [在此章节中了解详情](../../installation/using/creating-an-instance-and-logging-on.md)。
 
-**注意：** Campaign v8 Web UI允许用户单独更改其界面语言。 [了解详情](https://experienceleague.adobe.com/docs/campaign/campaign-v8/start/connect.html#language-pref){target="_blank"}。
+**注意：** Campaign v8 Web UI允许用户单独更改其界面语言。 [了解详情](https://experienceleague.adobe.com/docs/campaign/campaign-v8/start/connect.html?lang=zh-Hans#language-pref){target="_blank"}。
 
 +++
 
@@ -273,7 +273,7 @@ Security Zones自助服务界面可用于管理Adobe Campaign Classic v7部署�
 
 有关Campaign的常见问题：**&#x200B;**
 
-请参阅&#x200B;[**Campaign v8综合常见问题解答**](https://experienceleague.adobe.com/docs/campaign/campaign-v8/start/campaign-faq-comprehensive.html){target="_blank"}，其中提供了有关以下内容的详细答案：
+请参阅&#x200B;[**Campaign v8综合常见问题解答**](https://experienceleague.adobe.com/docs/campaign/campaign-v8/start/campaign-faq-comprehensive.html?lang=zh-Hans){target="_blank"}，其中提供了有关以下内容的详细答案：
 
 * Campaign快速入门
 * 轮廓和受众

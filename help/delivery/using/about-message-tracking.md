@@ -60,8 +60,8 @@ ht-degree: 3%
 >* [配置 URL 跟踪选项](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/analytics/tracking/url-tracking){target="_blank"}
 >* [跟踪个性化链接](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/analytics/tracking/personalized-links){target="_blank"}
 >* [访问跟踪日志](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/analytics/tracking/tracking-logs){target="_blank"}
->* [测试跟踪](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/testing-tracking){target="_blank"}
->* [跟踪报告](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/reporting/delivery-reports#tracking-indicators){target="_blank"}
+>* [测试跟踪](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/send/testing-tracking){target="_blank"}
+>* [跟踪报告](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/reporting/delivery-reports#tracking-indicators){target="_blank"}
 >
 >**此页面仅记录特定于Campaign Classic v7的跟踪功能**，主要用于混合部署和内部部署。
 
