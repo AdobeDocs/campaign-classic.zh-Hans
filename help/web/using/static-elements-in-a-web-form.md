@@ -77,7 +77,7 @@ ht-degree: 3%
 ![](assets/s_ncs_admin_survey_add_link.png)
 
 * **[!UICONTROL Label]**&#x200B;是超文本链接的内容，因为它将显示在表单页面上。
-* **[!UICONTROL URL]**&#x200B;是所需的地址，例如： [https://www.adobe.com](https://www.adobe.com)网站，或[info@adobe.com](mailto:info@adobe.com)发送消息。
+* **[!UICONTROL URL]**&#x200B;是所需的地址，例如： [https://www.adobe.com/cn](https://www.adobe.com/cn)网站，或[info@adobe.com](mailto:info@adobe.com)发送消息。
 * **[!UICONTROL Window]**&#x200B;字段允许您在站点中选择链接的显示模式。 您可以决定在新窗口、当前窗口或其他窗口中打开链接。
 * 您可以添加工具提示，如下所示：
 
