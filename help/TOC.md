@@ -9,7 +9,7 @@ sub-product: adobe campaign classic
 type: Documentation
 nudge: false
 source-git-commit: 59d78c785d8984861fd537c2f64f82a7d2d77fbf
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1657'
 ht-degree: 100%
 ---
@@ -67,7 +67,7 @@ ht-degree: 100%
   + [开始使用消息功能](delivery/using/communication-channels.md)
   + {hide-from-toc}[投放设置 - 隐藏](delivery/using/delivery-settings.md)
   + 快速入门 {#key-steps-when-creating-a-delivery}
-    + {hide-from-toc}[发送投放 - 隐藏](delivery/using/steps-sending-the-delivery.md)
+    + {hide-from-toc}[发送投放 – 隐藏](delivery/using/steps-sending-the-delivery.md)
   + [发送电子邮件](delivery/using/about-email-channel.md)
   + 发送短信 {#sending-messages-on-mobiles}
     + 配置短信渠道 {#sms-set-up}
@@ -115,7 +115,7 @@ ht-degree: 100%
     + [高级：自定义投放日志](delivery/using/customize-delivery-logs.md)
   + 可投放性管理 {#deliverability-management}
     + [什么是可投放性](delivery/using/about-deliverability.md)
-    + [收件箱呈现](delivery/using/inbox-rendering.md)
+    + [收件箱渲染](delivery/using/inbox-rendering.md)
     + [故障排除](delivery/using/deliverability-faq.md)
   + 内容管理模块 {#content-management}
     + [关于内容管理](delivery/using/about-content-management.md)
