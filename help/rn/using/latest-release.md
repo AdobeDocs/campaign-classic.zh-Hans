@@ -36,38 +36,38 @@ topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
 source-git-commit: 63ece0ce7bfca75468776da84e2eac8b34b13af8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1449'
-ht-degree: 91%
+ht-degree: 100%
 ---
 # 最新版本 {#latest-release}
 
 此页面列出了 **Campaign v7 最新版本**&#x200B;中的新增功能、改进和修复。 每个新的内部版本都带有一个以颜色突出显示的状态。 在[此页面](rn-overview.md)中了解有关 Campaign Classic v7 内部版本状态的更多信息。
 
-## 7.4.5版 {#release-7-4-5}
+## 版本 7.4.5 {#release-7-4-5}
 
-### 版本9420 {#build-9420}
+### 内部版本 9420 {#build-9420}
 
 [!BADGE 正式发布版]{type=Positive url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=zh-Hans#rn-statuses" tooltip="正式发布版"}
 
-_2026年10月15日_
+_2026 年 10 月 15 日_
 
 #### 修复 {#fixes-7-4-5}
 
-* 修复了Analytics外部帐户可能失败并出现“Gone”(410)错误的问题。 (NEO-99019)
-* 修复了即使成功发送了相应的消息，某些投放仍可能卡在个性化待处理状态的问题。 (NEO-94471)
-* 修复了内部锁定机制可能进入重试循环并导致服务器上高CPU使用率的问题。 (NEO-94845)
-* 修复了数据模型更新可能间歇性失败的问题。 （NEO-84347和NEO-84824）
-* 修复了在创建或编辑投放时可能错误地显示“垃圾邮件检查失败”错误的问题。 (NEO-53888)
-* 修复了在定期软退回后，收件人未按预期隔离的问题。 (NEO-94422)
+* 修复了 Analytics 外部帐户可能失败并出现“Gone”(410) 错误的问题。(NEO-99019)
+* 修复了部分投放即使对应消息已成功发送，仍可能卡在“个性化待处理”状态的问题。(NEO-94471)
+* 修复了内部锁定机制可能进入重试循环并导致服务器 CPU 占用过高的问题。(NEO-94845)
+* 修复了数据模型更新可能间歇性失败的问题。(NEO-84347, NEO-84824)
+* 修复了在创建或编辑投放时可能错误地显示“垃圾邮件检查失败”错误的问题。(NEO-53888)
+* 修复了在反复发生软退回后收件人未按预期隔离的问题。(NEO-94422)
 
-## 7.4.4 版 {#release-7-4-4}
+## 版本 7.4.4 {#release-7-4-4}
 
-### 版本9403 {#build-9403}
+### 内部版本 9403 {#build-9403}
 
 [!BADGE 正式发布版]{type=Positive url="https://experienceleague.adobe.com/docs/campaign-classic/using/release-notes/rn-overview.html?lang=zh-Hans#rn-statuses" tooltip="正式发布版"}
 
-_2026年10月15日_
+_2026 年 10 月 15 日_
 
 #### 安全性改进 {#security-7-4-4-9403}
 
@@ -200,7 +200,7 @@ _2026 年 3 月 31 日_
 
 >[!NOTE]
 >
-> 以下列出的修复已在后续的 7.4.3 内部版本中逐步推出。 导航到&#x200B;**[!UICONTROL Help > About...]**&#x200B;[&#x200B;菜单](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)以检查您是否拥有最新的 9394@28aaec9 内部版本。 有关更多信息，请与 Adobe 代表联系。
+> 以下列出的修复已在后续的 7.4.3 内部版本中逐步推出。 导航到&#x200B;**[!UICONTROL Help > About...]**[&#x200B;菜单](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)以检查您是否拥有最新的 9394@28aaec9 内部版本。 有关更多信息，请与 Adobe 代表联系。
 
 * 修复了条形码组件允许使用无限制高度参数的问题，该问题可能导致安全漏洞。 (NEO-89984)
 * 修复了通过工作流创建的列表中的枚举字段缺少临时名称属性，导致界面中显示不正确或空白枚举标签的问题。 (NEO-91158)
