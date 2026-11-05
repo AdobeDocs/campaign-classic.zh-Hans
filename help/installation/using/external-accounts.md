@@ -28,9 +28,9 @@ topic_v2:
     internal-label: Security
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 75d65377f93a40be104f7ec817e6a7609cccaf93
+source-git-commit: a119d402631c5d2dd3ab8d6d11dfd0cdba0d662f
 workflow-type: tm+mt
-source-wordcount: '1959'
+source-wordcount: '2010'
 ht-degree: 7%
 ---
 # 外部帐户{#external-accounts}
@@ -484,3 +484,7 @@ Amazon Simple Storage Service (S3)连接器可用于将数据导入或导出Adob
 * **[!UICONTROL Access key]**
 
   若要了解在何处查找您的&#x200B;**[!UICONTROL Access key]**，请参阅此[页面](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage?tabs=azure-portal)。
+
+  >[!NOTE]
+  >
+  >Azure Blob存储按名称前缀（而不是模式）过滤文件。 已删除文件掩码中的尾随星号(`*`)，因此`TEST_EXPORT_AZURE_*`与以`TEST_EXPORT_AZURE_`开头的所有文件匹配。 不支持星号后的字符，如`TEST_EXPORT_AZURE_*.csv`中的字符。 [请参阅Microsoft文档以了解详情](https://learn.microsoft.com/en-us/rest/api/storageservices/list-blobs){target="_blank"}。
