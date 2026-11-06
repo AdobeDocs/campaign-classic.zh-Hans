@@ -37,13 +37,13 @@ ht-degree: 4%
 
 本页介绍Campaign Classic v7上事务性消息传递的其他配置。
 
-作为从Campaign v7过渡到v8的一部分，Campaign Classic文档集已得到简化和重新组织。 现在，Campaign v8文档集中专门提供了常用功能。 要了解有关事务性消息事件清除和技术工作流的更多信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/transactional-msg-settings){target=_blank}。
+作为从Campaign v7过渡到v8的一部分，Campaign Classic文档集已得到简化和重新组织。 现在，Campaign v8文档集中专门提供了常用功能。 要了解有关事务性消息事件清除和技术工作流的更多信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/config/settings/transactional-msg-settings){target=_blank}。
 
-[![image](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/transactional-msg-settings){target=_blank}
+[![image](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/config/settings/transactional-msg-settings){target=_blank}
 
 ## 监测阈值 {#monitoring-thresholds}
 
-您可以配置在&#x200B;**消息中心服务级别**&#x200B;和&#x200B;**消息中心处理时间**&#x200B;报告中出现的指示器的警告阈值（橙色）和警报阈值（红色）(请参阅[访问事务性消息报告](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/real-time/event/delivery-execution){target="_blank"}（Campaign v8文档）)。
+您可以配置在&#x200B;**消息中心服务级别**&#x200B;和&#x200B;**消息中心处理时间**&#x200B;报告中出现的指示器的警告阈值（橙色）和警报阈值（红色）(请参阅[访问事务性消息报告](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/send/real-time/event/delivery-execution){target="_blank"}（Campaign v8文档）)。
 
 为此请执行以下操作步骤：
 
@@ -75,7 +75,7 @@ ht-degree: 4%
 
 ### 兼容性说明 {#compatibility-note}
 
-此旧版品牌策略配置与Campaign v8中引入的新[集中式品牌策略](https://experienceleague.adobe.com/docs/campaign-web/v8/conf/branding/branding-gs.html){target="_blank"}模型不兼容。
+此旧版品牌策略配置与Campaign v8中引入的新[集中式品牌策略](https://experienceleague.adobe.com/docs/campaign-web/v8/conf/branding/branding-gs.html?lang=zh-Hans){target="_blank"}模型不兼容。
 
 如果您的现有环境使用此旧版配置，则无法将其直接迁移到新的集中式品牌推广模型。 要采用新系统，必须全面重新实施品牌设置。
 
@@ -146,6 +146,6 @@ ht-degree: 4%
 
 1. 为每个品牌创建一个与[执行实例](#execution-instance)上定义的内部名称相同的外部帐户（步骤1）。
 
-1. 为每个品牌创建投放模板。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html){target="_blank"}。
+1. 为每个品牌创建投放模板。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html?lang=zh-Hans){target="_blank"}。
 
 1. 在投放模板的&#x200B;**[!UICONTROL Properties]**&#x200B;中，将路由设置为品牌的外部帐户。

@@ -45,9 +45,9 @@ ht-degree: 20%
 
 Campaign客户端控制台是一个富客户端，可让您连接到Campaign应用程序服务器。 在[此页面](../../installation/using/installing-the-client-console.md)中了解如何下载和配置客户端控制台。
 
-作为从Campaign v7过渡到v8的一部分，Campaign Classic文档集已得到简化和重新组织。 现在，Campaign v8文档集中专门提供了常用功能。 要了解有关连接到Campaign的更多信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/connect){target=_blank}。
+作为从Campaign v7过渡到v8的一部分，Campaign Classic文档集已得到简化和重新组织。 现在，Campaign v8文档集中专门提供了常用功能。 要了解有关连接到Campaign的更多信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/new/connect){target=_blank}。
 
-[![image](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/connect){target=_blank}
+[![image](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/new/connect){target=_blank}
 
 >[!CAUTION]
 >

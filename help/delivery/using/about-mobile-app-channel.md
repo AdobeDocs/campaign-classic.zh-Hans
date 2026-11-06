@@ -46,15 +46,15 @@ ht-degree: 6%
 
 使用Adobe Campaign创建推送通知投放，以向您的移动应用程序用户发送个性化消息。
 
-作为从Campaign v7过渡到v8的一部分，Campaign Classic文档集已得到简化和重新组织。 现在，Campaign v8文档集中专门提供了常用功能。 要了解有关推送通知渠道的更多信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/push/push){target=_blank}。
+作为从Campaign v7过渡到v8的一部分，Campaign Classic文档集已得到简化和重新组织。 现在，Campaign v8文档集中专门提供了常用功能。 要了解有关推送通知渠道的更多信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/send/push/push){target=_blank}。
 
-[![image](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/push/push){target=_blank}
+[![image](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/send/push/push){target=_blank}
 
 以下信息特定于Campaign Classic。
 
 +++ **包安装**
 
-![](assets/do-not-localize/how-to-video.png) [在视频中了解如何安装移动应用包](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/sending-messages/push-channel/installing-the-mobile-app-channel.html#sending-messages)
+![](assets/do-not-localize/how-to-video.png) [在视频中了解如何安装移动应用包](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/sending-messages/push-channel/installing-the-mobile-app-channel.html?lang=zh-Hans#sending-messages)
 
 作为混合/托管客户，请联系[Adobe客户关怀](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)团队以访问Campaign中的推送通知渠道。
 
@@ -84,7 +84,7 @@ ht-degree: 6%
 
 1. **[!UICONTROL Close]**&#x200B;安装窗口。
 
-完成此步骤后，您可以配置Android和iOS应用程序。 请参阅Campaign v8 [文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push.html){target="_blank"}。
+完成此步骤后，您可以配置Android和iOS应用程序。 请参阅Campaign v8 [文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push.html?lang=zh-Hans){target="_blank"}。
 
 +++
 
@@ -103,6 +103,6 @@ HTTP/2连接器：必须允许与以下服务器之间的通信：
 
 >[!NOTE]
 >
->有关这两个连接器的更多信息，请参阅Campaign v8 [文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push-settings.html){target="_blank"}。
+>有关这两个连接器的更多信息，请参阅Campaign v8 [文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push-settings.html?lang=zh-Hans){target="_blank"}。
 
 +++

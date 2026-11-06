@@ -50,9 +50,9 @@ ht-degree: 3%
 
 本页介绍URL个性化、URL签名以及保护包含个人信息的页面。
 
-作为从Campaign v7过渡到v8的一部分，Campaign Classic文档集已得到简化和重新组织。 现在，Campaign v8文档集中专门提供了常用功能。 要了解有关数据限制和隐私请求的更多信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/privacy/security#data-restriction){target=_blank}。
+作为从Campaign v7过渡到v8的一部分，Campaign Classic文档集已得到简化和重新组织。 现在，Campaign v8文档集中专门提供了常用功能。 要了解有关数据限制和隐私请求的更多信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/privacy/security#data-restriction){target=_blank}。
 
-[![image](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/privacy/security#data-restriction){target=_blank}
+[![image](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/privacy/security#data-restriction){target=_blank}
 
 在Campaign Classic v7中，限制对整个实体的访问需要内部版本8770或更高版本。
 
@@ -68,11 +68,11 @@ ht-degree: 3%
 
 ### 推荐
 
-要验证并确保未使用上述功能，请通过[Campaign通用查询编辑器](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/data/query/query-editor){target="_blank"}（Campaign v8文档）对跟踪URL表运行查询，或在查询活动中创建具有筛选条件的工作流。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html){target="_blank"}。
+要验证并确保未使用上述功能，请通过[Campaign通用查询编辑器](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/data/query/query-editor){target="_blank"}（Campaign v8文档）对跟踪URL表运行查询，或在查询活动中创建具有筛选条件的工作流。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html?lang=zh-Hans){target="_blank"}。
 
 示例：
 
-1. 创建工作流并添加&#x200B;**查询**&#x200B;活动。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html){target="_blank"}。
+1. 创建工作流并添加&#x200B;**查询**&#x200B;活动。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/wf-activities/targeting-activities/query.html?lang=zh-Hans){target="_blank"}。
 
 1. 打开&#x200B;**查询**&#x200B;活动并在`nmsTrackingUrl`表上创建筛选器，如下所示：
 

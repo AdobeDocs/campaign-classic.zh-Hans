@@ -42,6 +42,6 @@ ht-degree: 4%
 
 因此，工作流中使用的所有活动将使用您的自定义表，而无需任何其他手动配置。
 
-有关工作流的详细信息，请参阅[此章节](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/introduction/about-workflows){target="_blank"}（Campaign v8文档）。
+有关工作流的详细信息，请参阅[此章节](https://experienceleague.adobe.com/zh-hans/docs/campaign/automation/workflows/introduction/about-workflows){target="_blank"}（Campaign v8文档）。
 
 ![](assets/cfg_external_table_workflow.png)
