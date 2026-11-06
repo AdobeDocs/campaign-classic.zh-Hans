@@ -24,7 +24,7 @@ subfeature_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
     internal-label: Implementation
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: fbeb3bb6f89cd0b03d1fb4551496f96eda0cbf10
 workflow-type: tm+mt
 source-wordcount: '408'
 ht-degree: 4%
@@ -57,7 +57,7 @@ Adobe Campaign提供了响应管理附加功能，可让您衡量营销活动的
 
 ## 实施步骤 {#method}
 
-在开始使用响应管理器之前，请参阅[配置](configuration.md)并执行必要的配置。
+在开始使用响应管理器之前，请参阅[配置](configure-response-manager.md)并执行必要的配置。
 
 为了针对投放或优惠启动假设验证，您需要在模板中定义其上下文，该模板将用于您创建的每个假设验证。
 

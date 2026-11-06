@@ -8,10 +8,10 @@ user-guide-description: Adobe Campaign Classic v7 产品文档。
 sub-product: adobe campaign classic
 type: Documentation
 nudge: false
-source-git-commit: 186021e65b592522f3c491fb518594b5bac5d003
+source-git-commit: fbeb3bb6f89cd0b03d1fb4551496f96eda0cbf10
 workflow-type: tm+mt
-source-wordcount: '1563'
-ht-degree: 98%
+source-wordcount: '1577'
+ht-degree: 97%
 ---
 
 # Adobe Campaign Classic v7 文档 {#using}
@@ -75,7 +75,7 @@ ht-degree: 98%
   + 安全和隐私设置 {#security-privacy}
     + [安全和隐私检查清单](installation/using/get-started-security-privacy.md)
     + [个性化和隐私](installation/using/privacy.md)
-    + [安全访问管理](installation/using/access-management.md)
+    + [安全访问管理](installation/using/secure-access-management.md)
     + [脚本和编码准则](installation/using/scripting-coding-guidelines.md)
     + [网络、数据库和 SSL/TLS](installation/using/network-database.md)
     + [服务器安全设置](installation/using/server-configuration.md)
@@ -166,13 +166,13 @@ ht-degree: 98%
 + 操作和监视 {#monitoring-campaign-classic}
   + 简介 {#introduction}
     + [前言](production/using/foreword.md)
-    + [一般架构](production/using/general-architecture.md)
+    + [架构和开放端口](production/using/architecture-and-open-ports.md)
     + [监测准则](production/using/monitoring-guidelines.md)
   + 生产流程 {#production-procedures}
     + [配置原则](production/using/configuration-principle.md)
     + [操作原则](production/using/operating-principle.md)
     + [管理](production/using/administration.md)
-    + [配置](production/using/configuration.md)
+    + [Syslogd端口和安全区域](production/using/syslogd-port-and-security-zones.md)
     + [日志文件](production/using/log-files.md)
     + [监测进程](production/using/monitoring-processes.md)
     + [常用命令](production/using/usual-commands.md)
@@ -182,7 +182,7 @@ ht-degree: 98%
     + [复制环境](production/using/duplicating-environments.md)
     + [数据库清理工作流](production/using/database-cleanup-workflow.md)
   + 更新 Adobe Campaign {#updating-adobe-campaign}
-    + [简介](production/using/introduction.md)
+    + [关于更新营销活动](production/using/introduction.md)
     + [执行内部版本升级](production/using/build-upgrade.md)
     + [升级流程（内部部署）](production/using/upgrading.md)
     + [切换到 Unicode](production/using/switching-to-unicode.md)
@@ -229,7 +229,7 @@ ht-degree: 98%
     + [数据库映射](configuration/using/database-mapping.md)
     + [密钥管理](configuration/using/database-keys.md)
     + 元素和属性 {#elements-attributes}
-      + [简介](configuration/using/schema-introduction.md)
+      + [元素和属性简介](configuration/using/schema-introduction.md)
       + [属性](configuration/using/schema/attribute.md)
       + [计算字符串](configuration/using/schema/compute-string.md)
       + [条件](configuration/using/schema/condition.md)
@@ -301,7 +301,7 @@ ht-degree: 98%
       + [短信故障排除](delivery/using/troubleshooting-sms.md)
   + [发送推送通知](delivery/using/about-mobile-app-channel.md)
   + 发送推送通知 {#sending-push-notifications}
-    + {hide-from-toc}[疑难解答 - 隐藏](delivery/using/troubleshooting.md)
+    + {hide-from-toc}[疑难解答 - 隐藏](delivery/using/push-troubleshooting.md)
   + [发送直邮](delivery/using/about-direct-mail-channel.md)
   + 个性化投放 {#personalizing-deliveries}
     + [关于个性化](delivery/using/about-personalization.md)
@@ -420,7 +420,7 @@ ht-degree: 98%
     + [出站渠道产品建议](interaction/using/offers-on-an-outbound-channel.md)
 + 响应管理器 {#response-manager}
   + [响应管理器入门](response/using/about-response-manager.md)
-  + [配置](response/using/configuration.md)
+  + [配置响应管理器](response/using/configure-response-manager.md)
   + [假设验证模板](response/using/hypothesis-templates.md)
   + [创建假设验证](response/using/creating-hypotheses.md)
   + [假设验证跟踪](response/using/hypothesis-tracking.md)
@@ -468,7 +468,7 @@ ht-degree: 98%
     + [与  [!DNL Adobe Experience Cloud] 共享受众](integrations/using/sharing-audiences-with-adobe-experience-cloud.md)
     + [向 Adobe 提交请求](integrations/using/submitting-request-to-adobe.md)
     + [在  [!DNL Adobe Campaign] 中配置共享受众集成](integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md)
-    + {hide-from-toc}[故障排除](integrations/using/troubleshooting.md)
+    + {hide-from-toc}[故障排除](integrations/using/integrations-troubleshooting.md)
     + [导入和导出受众](integrations/using/importing-and-exporting-audiences.md)
   + 资源共享 {#asset-sharing}
     + [与  [!DNL Adobe Experience Cloud] 共享资源](integrations/using/sharing-assets-with-adobe-experience-cloud.md)

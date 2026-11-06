@@ -25,7 +25,7 @@ topic_v2:
     internal-label: Troubleshooting
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: a26a9642d4b60f0f095596584929ba5e98c3180a
+source-git-commit: fbeb3bb6f89cd0b03d1fb4551496f96eda0cbf10
 workflow-type: tm+mt
 source-wordcount: '861'
 ht-degree: 18%
@@ -65,7 +65,7 @@ ht-degree: 18%
 
 **审核记录**
 
-审计追踪允许您可视化与实例中的选项、工作流和架构相关的更改的完整历史记录。 [单击此处](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/analytics/audit-trail){target="_blank"}（Campaign v8文档）以了解更多信息。
+审计追踪允许您可视化与实例中的选项、工作流和架构相关的更改的完整历史记录。 [单击此处](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/audit-trail){target="_blank"}（Campaign v8文档）以了解更多信息。
 
 **控制面板**
 
@@ -87,7 +87,7 @@ ht-degree: 18%
 
 **审核记录**
 
-利用审核跟踪，可可视化在工作流中所做的所有修改及其当前状态。 [单击此处](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/analytics/audit-trail){target="_blank"}（Campaign v8文档）。
+利用审核跟踪，可可视化在工作流中所做的所有修改及其当前状态。 [单击此处](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/analytics/audit-trail){target="_blank"}（Campaign v8文档）。
 
 **工作流疑难解答**
 
@@ -95,13 +95,13 @@ ht-degree: 18%
 
 **工作流状态监控**
 
-除了热图之外，您还可以创建工作流，用于监视一组工作流的状态并向主管发送定期消息。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/monitoring/workflow-supervision.html?lang=zh-Hans){target="_blank"}。
+除了热图之外，您还可以创建工作流，用于监视一组工作流的状态并向主管发送定期消息。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/automation/workflows/use-cases/monitoring/workflow-supervision.html){target="_blank"}。
 
 **一般准则**
 
 使用工作流时，遵循以下准则和最佳实践有助于提高性能。 有关更多信息，请参阅以下章节：
-* [使用工作流时的最佳实践](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html?lang=zh-Hans){target="_blank"}
-* [监控工作流执行](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html?lang=zh-Hans){target="_blank"}
+* [使用工作流时的最佳实践](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html){target="_blank"}
+* [监控工作流执行](https://experienceleague.adobe.com/docs/campaign/automation/workflows/monitoring-workflows/monitor-workflow-execution.html){target="_blank"}
 
 ### 监控投放 {#monitoring-deliveries}
 
@@ -113,7 +113,7 @@ SMTP报告按域显示投放统计信息和SMTP错误。 [了解详情](../../pr
 
 **最佳做法**
 
-请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/delivery-best-practices.html?lang=zh-Hans){target="_blank"}，了解投放发送和设计的最佳实践，以提高性能。
+请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/delivery-best-practices.html){target="_blank"}，了解投放发送和设计的最佳实践，以提高性能。
 
 **传递疑难解答**
 遇到投放问题时，可以执行特定操作：
@@ -166,7 +166,7 @@ Campaign Classic文档中提供了技术资源。 我们建议您先熟悉这些
 
 **一般原则**
 
-* [Campaign Classic架构](../../production/using/general-architecture.md)
+* [Campaign Classic架构](../../production/using/architecture-and-open-ports.md)
 * [Campaign Classic模块](../../production/using/operating-principle.md)
 * [Campaign Classic选项](../../installation/using/configuring-campaign-options.md)
 * [如何设置模块的自动启动](../../production/using/administration.md)

@@ -1,0 +1,68 @@
+---
+product: campaign
+title: Syslogd端口和安全区域
+description: 配置
+feature: Monitoring, Configuration
+badge-v7-prem: label="On-premise/hybrid only" type="Caution" url="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/architecture-and-hosting-models/hosting-models-lp/hosting-models.html?lang=zh-Hans" tooltip="Applies to on-premise and hybrid deployments only"
+exl-id: 80d388fd-873c-4a08-b8b6-697988f2a18c
+TQID: 'https://experienceleague.adobe.com/gzcQquM9q71NIOt8mScgRpLtwffxvopslrrpLxxIang'
+product_v2:
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: fd6e6e36-54e4-4f1a-96fc-1a750e400d50
+    internal-label: Campaign Classic v7
+feature_v2:
+  - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
+subfeature_v2:
+  - id: efa38731-2723-4334-8d8b-a778af834835
+    internal-label: Access management
+  - id: c03a11ff-bdf9-4e5b-b279-f468b4293464
+    internal-label: Performance Monitoring
+  - id: e519a22f-a06a-42fc-9d09-d78a3ab2c434
+    internal-label: Monitoring guidelines
+  - id: a14877cc-63b1-41d9-bf0b-5f97cadd0417
+    internal-label: Configuration guidelines
+topic_v2:
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
+source-git-commit: fbeb3bb6f89cd0b03d1fb4551496f96eda0cbf10
+workflow-type: tm+mt
+source-wordcount: '189'
+ht-degree: 10%
+---
+# Syslogd端口和安全区域{#configuration}
+
+
+
+## 更改syslogd侦听端口 {#changing-the-syslogd-listening-port}
+
+默认情况下，**syslogd**&#x200B;侦听端口为666 (udp)。 您可以根据需要使用环境变量对其进行更改。
+
+配置此变量后，所有Adobe Campaign模块都会考虑该变量。
+
+### 在Linux中 {#in-linux}
+
+编辑&#x200B;**customer.sh**&#x200B;文件并添加以下行：
+
+```sql
+export TRACE_ADDR=localhost:<listening port>
+```
+
+### 在Windows中 {#in-windows}
+
+您需要创建具有&#x200B;**localhost**&#x200B;值&#x200B;**`<listening port="" />`**&#x200B;的&#x200B;**TRACE_ADDR**&#x200B;环境变量。
+
+>[!IMPORTANT]
+>
+>我们建议您在创建此环境变量后，运行一些测试以确保您的平台可以正常工作。
+
+## 配置安全区域 {#configuring-security-zones}
+
+每个运算符都需要链接到区域才能登录到实例，并且运算符IP必须包含在安全区域中定义的地址或地址集中。 技术区域配置在Adobe Campaign服务器的配置文件中执行。 必须在控制台（**[!UICONTROL Administration > Access management > Operators]**&#x200B;节点）中定义运算符到安全区域的链接。
+
+>[!NOTE]
+>
+>有关配置安全区域的详细信息，请参阅[本节](../../installation/using/security-zones.md)。

@@ -1,0 +1,73 @@
+---
+product: campaign
+title: 架构和开放端口
+description: 架构和开放端口
+feature: Monitoring, Architecture
+audience: production
+content-type: reference
+topic-tags: introduction
+exl-id: 3bfb5448-6996-4080-bf9a-434f1207637e
+TQID: 'https://experienceleague.adobe.com/n-ppeL-j1SdCPTXFo8Mw4GEWcSD4L7LnDxg9K9klU3U'
+product_v2:
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
+  - id: fd6e6e36-54e4-4f1a-96fc-1a750e400d50
+    internal-label: Campaign Classic v7
+feature_v2:
+  - id: bae31391-3416-5fbd-bc4b-2cdcae2922db
+    internal-label: Architecture
+  - id: c5474392-5419-4296-9e41-f6f4ce4f6e9b
+    internal-label: Administration
+subfeature_v2:
+  - id: c03a11ff-bdf9-4e5b-b279-f468b4293464
+    internal-label: Performance Monitoring
+  - id: e519a22f-a06a-42fc-9d09-d78a3ab2c434
+    internal-label: Monitoring guidelines
+source-git-commit: fbeb3bb6f89cd0b03d1fb4551496f96eda0cbf10
+workflow-type: tm+mt
+source-wordcount: '192'
+ht-degree: 0%
+---
+# 架构和开放端口{#general-architecture}
+
+
+
+## 最低架构 {#minimum-architecture}
+
+在最低配置下，Adobe Campaign通过以下方式运行：
+
+* Adobe Campaign应用程序服务器，
+* 数据库。
+
+  ![](assets/formation_exploitation.png)
+
+此图显示最低架构上下文中涉及的唯一流量是：
+
+1. 通过Internet发送到Adobe Campaign服务器的HTTP协议流量，
+1. 通过Internet与Adobe Campaign服务器之间的SMTP协议流量。
+
+## 分布式架构 {#distributed-architecture}
+
+Adobe Campaign由多个模块组成，这些模块可以在多台计算机上进行划分。 这种工作模式具有以下几个优点：
+
+* 负载平衡，
+* 设置模块冗余，
+* 构建按多个服务提供商划分的架构（提供的服务细分）。
+
+![](assets/architecturerepartie.png)
+
+模块分布在多台机器上，提供了很大的使用灵活性和改进的适应性。
+
+>[!NOTE]
+>
+>有关各种体系结构的详细信息，请参阅[此章节](../../installation/using/general-architecture.md)。
+
+## 打开的端口列表 {#list-of-open-ports}
+
+| 端口号 | 涉及Adobe Campaign模块或应用程序 | 可配置 |
+|---|---|---|
+| 443/tcp或80/tcp | Web服务器(Apache/IIS) | 是 |
+| 6666/udp（本地） | Adobe Campaign： Syslogd | 是 |
+| 8005/tcp（本地） | Adobe Campaign： web模块 | 是 |
+| 8080/tcp | Adobe Campaign： web module (tomcat) | 是 |
+| 7777 | 统计服务器（stat服务器） | 是 |
