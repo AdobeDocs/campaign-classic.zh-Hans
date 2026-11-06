@@ -49,7 +49,7 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 4ae19a379120bb39444c3e81392a7dbb0b6da3ba
 workflow-type: tm+mt
 source-wordcount: '1742'
 ht-degree: 30%
@@ -91,7 +91,7 @@ ht-degree: 30%
 
    >[!CAUTION]
    >
-   > 从版本20.2开始，旧版连接器已弃用，并且不受支持。 我们建议使用&#x200B;**[!UICONTROL Extended generic SMPP]**&#x200B;连接器。 有关如何迁移到推荐连接器的更多信息，请参阅此[页面](unsupported-connector-migration.md)。
+   > 从版本20.2开始，旧版连接器已弃用，并且不受支持。 我们建议使用&#x200B;**[!UICONTROL Extended generic SMPP]**&#x200B;连接器。 有关如何迁移到推荐连接器的更多信息，请参阅此[页面](sms-set-up.md)。
 
 1. 使用&#x200B;**[!UICONTROL Enable verbose SMPP traces in the log file]**&#x200B;选项可将所有SMPP通信转储到日志文件中。 必须启用此选项才能对连接器进行故障诊断，并与提供商的通信记录进行对比。
 
@@ -129,7 +129,7 @@ ht-degree: 30%
 
    但是，鉴于某些提供商需要使用“+”前缀，建议您与提供商进行核实，他们将会提供是否有必要启用此选项的建议。
 
-   **[!UICONTROL Enable TLS over SMPP]**&#x200B;复选框允许您加密SMPP通信。 有关详细信息，请参见此 [&#x200B; 页面](sms-protocol.md)。
+   **[!UICONTROL Enable TLS over SMPP]**&#x200B;复选框允许您加密SMPP通信。 有关详细信息，请参见此 [ 页面](sms-protocol.md)。
 
 1. 如果您正在配置&#x200B;**[!UICONTROL Extended generic SMPP]**&#x200B;连接器，则可以设置自动回复。
 
@@ -394,7 +394,7 @@ CR：回车
 
 ## 更改投放模板 {#changing-the-delivery-template}
 
-Adobe Campaign为您提供了一个用于向移动设备交付内容的模板。 此模板在&#x200B;**[!UICONTROL Resources > Templates > Delivery templates]**&#x200B;节点中可用。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html?lang=zh-Hans){target="_blank"}。
+Adobe Campaign为您提供了一个用于向移动设备交付内容的模板。 此模板在&#x200B;**[!UICONTROL Resources > Templates > Delivery templates]**&#x200B;节点中可用。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html){target="_blank"}。
 
 要通过短信渠道进行投放，您必须创建引用渠道连接器的模板。
 

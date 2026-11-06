@@ -18,10 +18,10 @@ feature_v2:
 subfeature_v2:
   - id: e656c701-3899-4db3-989c-de0980ddfffa
     internal-label: Installation
-source-git-commit: d7e5f68c0d2e0b94fd5cfdf2981bed29f33d9f62
+source-git-commit: 4ae19a379120bb39444c3e81392a7dbb0b6da3ba
 workflow-type: tm+mt
 source-wordcount: '337'
-ht-degree: 36%
+ht-degree: 37%
 ---
 # 每个模型的功能矩阵{#capability-matrix-per-model}
 
@@ -31,7 +31,7 @@ Adobe Campaign Classic 随附了一组模块和选项。 这些模块的可用�
 
 本页显示托管(Managed Services)部署与内部部署之间的主要差异。 混合部署的具体情况取决于Adobe托管并在您的场所中托管的元素。
 
-在此部分[&#128279;](../../installation/using/hosting-models.md)中引入了不同的托管模型。
+在此部分](../../installation/using/hosting-models.md)中引入了不同的托管模型[。
 
 ## 每个部署模型的可用性 {#capability-matrix}
 
@@ -46,7 +46,7 @@ Adobe Campaign Classic 随附了一组模块和选项。 这些模块的可用�
 | 加密/解密用于文件传输的数据 | 按需 | 可用 | 可用 | [了解详情](../../platform/using/unzip-decrypt.md) |
 | 压缩/解压缩文件 | 按需 | 可用 | 可用 | [了解详情](../../platform/using/unzip-decrypt.md) |
 | 域名委派 | 按需 | 按需 | 不可用 | [了解详情](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/setting-up-new-subdomain.html?lang=zh-Hans) |
-| 安装SpamAssassin | 按需 | 可用 | 可用 | [了解详情](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/send/deliverability-management/spamassassin){target="_blank"}（Campaign v8文档） |
+| 安装SpamAssassin | 按需 | 可用 | 可用 | [了解详情](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/deliverability-management/spamassassin){target="_blank"}（Campaign v8 文档） |
 | 访问可投放性报告 | 可用 | 按需 | 可用 | [了解详情](../../delivery/using/about-delivery-monitoring.md#deliverability-monitoring) |
 | 配置LDAP身份验证 | 不可用 | 可用 | 可用 | [了解详情](../../installation/using/connecting-through-ldap.md) |
 
@@ -66,4 +66,4 @@ Adobe Campaign提供了&#x200B;**联合数据访问** (FDA)选项，以便处理
 * [发行说明](../../rn/using/latest-release.md)
 * [Campaign Classic升级](../../rn/using/rn-overview.md)
 * [已弃用和已移除的功能](../../rn/using/deprecated-features.md)
-* [[!DNL Gold Standard] 版](../../rn/using/gold-standard.md)
+* [[!DNL Gold Standard] 版](../../rn/using/rn-overview.md)
