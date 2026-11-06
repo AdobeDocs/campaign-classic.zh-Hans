@@ -41,12 +41,20 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 59d78c785d8984861fd537c2f64f82a7d2d77fbf
+source-git-commit: 9753491edbeba9df2c0a9dcf53b3bd5ea87c32ca
 workflow-type: tm+mt
-source-wordcount: '926'
+source-wordcount: '848'
 ht-degree: 3%
 ---
 # 个性化和隐私 {#privacy}
+
+本页介绍URL个性化、URL签名以及保护包含个人信息的页面。
+
+作为从Campaign v7过渡到v8的一部分，Campaign Classic文档集已得到简化和重新组织。 现在，Campaign v8文档集中专门提供了常用功能。 要了解有关数据限制和隐私请求的更多信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/privacy/security#data-restriction){target=_blank}。
+
+[![image](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/privacy/security#data-restriction){target=_blank}
+
+在Campaign Classic v7中，限制对整个实体的访问需要内部版本8770或更高版本。
 
 ## URL PERSONALIZATION {#url-personalization}
 
@@ -113,79 +121,6 @@ ht-degree: 3%
 1. 重新启动&#x200B;**nlserver**&#x200B;服务。
 1. 在`tracking`服务器上，重新启动`web`服务器（Debian上的apache2、CentOS/RedHat上的httpd、Windows上的IIS）。
 
-## 数据限制
-
-您必须确保低权限验证用户无法访问加密密码。 为此，应限制仅访问密码字段，或访问整个实体（需要build >= 8770）。
-
-此限制允许您删除密码字段，但允许所有用户从界面访问外部帐户。 [了解详情](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/developer/schemas-forms/restrict-pi-view){target="_blank"}（Campaign v8文档）。
-
-要执行此操作，请按照以下步骤进行：
-
-1. 浏览到Campaign资源管理器的&#x200B;**[!UICONTROL Administration]** > **[!UICONTROL Configuration]** > **[!UICONTROL Data schemas]**&#x200B;文件夹。
-
-1. 创建数据架构，作为&#x200B;**[!UICONTROL Extension of a schema]**。
-
-   ![](assets/privacy-data-restriction.png)
-
-1. 选择&#x200B;**[!UICONTROL External Account]** (extAccount)。
-
-1. 在最后一个助手屏幕中，编辑新的“srcSchema”以限制对所有密码字段的访问：
-
-   您可以通过以下方式替换主元素(`<element name="extAccount" ... >`)：
-
-   ```sql
-   <element name="extAccount">
-       <attribute accessibleIf="$(loginId) = 0 or $(login) = 'admin'" name="password"/>
-       <attribute accessibleIf="$(loginId) = 0 or $(login) = 'admin'" name="clientSecret"/>
-   
-       <element name="s3Account">
-           <attribute accessibleIf="$(loginId) = 0 or $(login) = 'admin'" name="awsSecret"/>
-       </element>
-       <element name="wapPush">
-           <attribute accessibleIf="$(loginId) = 0 or $(login) = 'admin'" name="password"/>
-           <attribute accessibleIf="$(loginId) = 0 or $(login) = 'admin'" name="clientSecret"/>
-       </element>
-       <element name="mms">
-           <attribute accessibleIf="$(loginId) = 0 or $(login) = 'admin'" name="password"/>
-           <attribute accessibleIf="$(loginId) = 0 or $(login) = 'admin'" name="clientSecret"/>
-       </element>
-   </element>
-   ```
-
-   因此，您的扩展srcSchema可能如下所示：
-
-   ```sql
-   <srcSchema _cs="External Accounts (cus)" created="2017-05-12 07:53:49.691Z" createdBy-id="0"
-               desc="Definition of external accounts (Email, SMS...) used by the modules"
-               entitySchema="xtk:srcSchema" extendedSchema="nms:extAccount" img="" label="External Accounts"
-               labelSingular="External account" lastModified="2017-05-12 08:33:49.365Z"
-               mappingType="sql" md5="E9BB0CD6A4375F500027C86EA854E101" modifiedBy-id="0"
-               name="extAccount" namespace="cus" xtkschema="xtk:srcSchema">
-       <createdBy _cs="Administrator (admin)"/>
-       <modifiedBy _cs="Administrator (admin)"/>
-       <element name="extAccount">
-           <attribute accessibleIf="$(loginId) = 0 or $(login) = 'admin'" name="password"/>
-           <attribute accessibleIf="$(loginId) = 0 or $(login) = 'admin'" name="clientSecret"/>
-   
-           <element name="s3Account">
-               <attribute accessibleIf="$(loginId) = 0 or $(login) = 'admin'" name="awsSecret"/>
-           </element>
-           <element name="wapPush">
-               <attribute accessibleIf="$(loginId) = 0 or $(login) = 'admin'" name="password"/>
-               <attribute accessibleIf="$(loginId) = 0 or $(login) = 'admin'" name="clientSecret"/>
-           </element>
-           <element name="mms">
-               <attribute accessibleIf="$(loginId) = 0 or $(login) = 'admin'" name="password"/>
-               <attribute accessibleIf="$(loginId) = 0 or $(login) = 'admin'" name="clientSecret"/>
-           </element>
-       </element>
-   </srcSchema>    
-   ```
-
-   >[!NOTE]
-   >
-   >您可以将`$(loginId) = 0 or $(login) = 'admin'`替换为`hasNamedRight('admin')`，以允许所有具有管理员权限的用户查看这些密码。
-
 ## 使用PI保护页面
 
 我们强烈建议内部部署客户保护可能包含个人信息(PI)的页面，如镜像页面、Web应用程序等。
@@ -214,8 +149,3 @@ ht-degree: 3%
    除了&#x200B;**robots.txt**&#x200B;文件外，还建议添加&#x200B;**X-Robots-Tag**&#x200B;标头。 您可以在Apache或IIS以及&#x200B;**serverConf.xml**&#x200B;配置文件中执行该操作。
 
    有关详细信息，请参阅[本文](https://developers.google.com/search/reference/robots_meta_tag)。
-
-
-## 隐私请求
-
-请参阅[此页面](../../platform/using/privacy-management.md)，了解有关隐私管理概念以及Adobe Campaign中实施步骤的一般信息。 您还可以找到最佳实践以及用户流程和角色的概述。

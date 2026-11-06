@@ -49,7 +49,7 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 4ae19a379120bb39444c3e81392a7dbb0b6da3ba
 workflow-type: tm+mt
 source-wordcount: '1742'
 ht-degree: 30%
@@ -91,7 +91,7 @@ ht-degree: 30%
 
    >[!CAUTION]
    >
-   > 从版本20.2开始，旧版连接器已弃用，并且不受支持。 我们建议使用&#x200B;**[!UICONTROL Extended generic SMPP]**&#x200B;连接器。 有关如何迁移到推荐连接器的更多信息，请参阅此[页面](unsupported-connector-migration.md)。
+   > 从版本20.2开始，旧版连接器已弃用，并且不受支持。 我们建议使用&#x200B;**[!UICONTROL Extended generic SMPP]**&#x200B;连接器。 有关如何迁移到推荐连接器的更多信息，请参阅此[页面](sms-set-up.md)。
 
 1. 使用&#x200B;**[!UICONTROL Enable verbose SMPP traces in the log file]**&#x200B;选项可将所有SMPP通信转储到日志文件中。 必须启用此选项才能对连接器进行故障诊断，并与提供商的通信记录进行对比。
 

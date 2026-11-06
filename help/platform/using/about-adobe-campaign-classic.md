@@ -41,10 +41,10 @@ topic_v2:
     internal-label: Customer engagement
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
     internal-label: Customer journeys
-source-git-commit: 7b7f6d2ad5e5d09880f05c7e99ea8ede770532ab
+source-git-commit: b2b42bcbab0d09197126d140da3ecb1f4aa0d869
 workflow-type: tm+mt
 source-wordcount: '241'
-ht-degree: 44%
+ht-degree: 56%
 ---
 # Campaign Classic入门{#about-adobe-campaign-classic}
 
@@ -57,9 +57,9 @@ ht-degree: 44%
 
 >[!TAB Campaign 快速入门]
 
-要了解如何开始使用Adobe Campaign客户端控制台及其用户界面，请参阅[Campaign v8文档](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}。
+要了解如何开始使用Adobe Campaign客户端控制台及其用户界面，请参阅[Campaign v8文档](https://experienceleague.adobe.com/zh-Hans/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}。
 
-[![image](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}
+[![image](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/zh-Hans/docs/campaign/campaign-v8/new/campaign-ui){target=_blank}
 
 >[!TAB 启动促销活动]
 
@@ -69,7 +69,7 @@ ht-degree: 44%
 
 >[!TAB 浏览Campaign UI]
 
-* 在此页面[&#128279;](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/new/campaign-ui){target="_blank"}上发现Adobe Campaign用户界面（Campaign v8文档）。
+* 在此页面[&#128279;](https://experienceleague.adobe.com/zh-Hans/docs/campaign/campaign-v8/new/campaign-ui){target="_blank"}上发现Adobe Campaign用户界面（Campaign v8文档）。
 
 * 了解如何使用[Campaign Explorer](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/new/campaign-ui#ac-explorer-ui){target="_blank"}（Campaign v8文档）。
 
@@ -127,7 +127,7 @@ The following capabilities are available. Depending on your license agreement, s
 * [Interaction](../../interaction/using/interaction-and-offer-management.md) - managing offers with Campaign,
 * [Message Center](../../message-center/using/about-transactional-messaging.md) - send transactional messages by email, SMS or on mobile app,
 * [Social Marketing](../../social/using/about-social-marketing.md) - communicate on social media: Facebook, X (formerly known as Twitter),
-* [Workflow](../../workflow/using/about-workflows.md) / Data Management - automate processes and manage data with workflows,
+* [Workflow](https://experienceleague.adobe.com/zh-hans/docs/campaign/automation/workflows/introduction/about-workflows){target="_blank"} (Campaign v8 documentation) / Data Management - automate processes and manage data with workflows,
 * [Web applications](../../web/using/about-web-applications.md) - create web pages and forms,
 * [Survey Manager](../../surveys/using/about-surveys.md) - create online surveys and polls,
 * [Content Manager](../../delivery/using/about-content-management.md) - manage email content,

@@ -25,10 +25,10 @@ topic_v2:
     internal-label: Troubleshooting
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: a26a9642d4b60f0f095596584929ba5e98c3180a
 workflow-type: tm+mt
-source-wordcount: '835'
-ht-degree: 19%
+source-wordcount: '861'
+ht-degree: 18%
 ---
 # 监测准则 {#monitoring-guidelines}
 
@@ -65,7 +65,7 @@ ht-degree: 19%
 
 **审核记录**
 
-审计追踪允许您可视化与实例中的选项、工作流和架构相关的更改的完整历史记录。 [单击此处](../../production/using/audit-trail.md)以了解更多信息。
+审计追踪允许您可视化与实例中的选项、工作流和架构相关的更改的完整历史记录。 [单击此处](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/analytics/audit-trail){target="_blank"}（Campaign v8文档）以了解更多信息。
 
 **控制面板**
 
@@ -87,7 +87,7 @@ ht-degree: 19%
 
 **审核记录**
 
-利用审核跟踪，可可视化在工作流中所做的所有修改及其当前状态。 [单击此处](../../production/using/audit-trail.md)。
+利用审核跟踪，可可视化在工作流中所做的所有修改及其当前状态。 [单击此处](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/analytics/audit-trail){target="_blank"}（Campaign v8文档）。
 
 **工作流疑难解答**
 

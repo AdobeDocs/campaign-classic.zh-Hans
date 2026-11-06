@@ -43,8 +43,8 @@ topic_v2:
     internal-label: Security
   - id: d3cdead0-685a-4489-9250-4bb709942f66
     internal-label: Data collection
-source-git-commit: d7e5f68c0d2e0b94fd5cfdf2981bed29f33d9f62
-workflow-type: ht
+source-git-commit: 4ae19a379120bb39444c3e81392a7dbb0b6da3ba
+workflow-type: tm+mt
 source-wordcount: '1814'
 ht-degree: 100%
 ---
@@ -80,7 +80,7 @@ Adobe 不断评估产品功能，以确定应用更现代的功能替换的旧�
   </tr>
   <tr>
  <td>Netsize SMPP 连接器</td>
- <td><p>Netsize SMPP 连接器现已弃用。 我们建议迁移到<strong>扩展通用 SMPP</strong> 连接器。 有关详细信息，请参见<a href="../../delivery/using/unsupported-connector-migration.md">此页面</a>。</p>
+ <td><p>Netsize SMPP 连接器现已弃用。 我们建议迁移到<strong>扩展通用 SMPP</strong> 连接器。 有关详细信息，请参见<a href="../../delivery/using/sms-set-up.md">此页面</a>。</p>
 <p>目标移除日期：2027 年 1 月</p>
 </td>
 </tr>
@@ -181,7 +181,7 @@ Adobe 不断评估产品功能，以确定应用更现代的功能替换的旧�
   </tr> 
    <tr> 
    <td>移动渠道 - MMS 和 WAP 推送消息</td>
-   <td>从 Campaign 18.4 版本开始，不再提供 MMS 和 Wap Push 渠道。作为替代，您可以利用<a href="https://experienceleague.adobe.com/zh-Hans/docs/campaign/campaign-v8/send/sms/sms" target="_blank">短信</a>（Campaign v8 文档）和<a href="../../delivery/using/about-mobile-app-channel.md">推送</a>投放。</td>
+   <td>从 Campaign 18.4 版本开始，不再提供 MMS 和 Wap Push 渠道。 作为替代，您可以利用<a href="https://experienceleague.adobe.com/zh-Hans/docs/campaign/campaign-v8/send/sms/sms" target="_blank">短信</a>（Campaign v8 文档）和<a href="../../delivery/using/about-mobile-app-channel.md">推送</a>投放。</td>
   </tr> 
    <tr> 
    <td>移动渠道 – LINE v1</td>

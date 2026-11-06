@@ -34,10 +34,10 @@ topic_v2:
     internal-label: Troubleshooting
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
     internal-label: Security
-source-git-commit: 59d78c785d8984861fd537c2f64f82a7d2d77fbf
+source-git-commit: 9753491edbeba9df2c0a9dcf53b3bd5ea87c32ca
 workflow-type: tm+mt
-source-wordcount: '315'
-ht-degree: 21%
+source-wordcount: '311'
+ht-degree: 14%
 ---
 # 权限快速入门{#access-management}
 
@@ -57,32 +57,15 @@ Adobe Campaign 允许您定义和管理分配给各种操作员的权限。 这�
 * 访问特定记录，
 * 创建、修改和/或删除记录（操作、联系人、营销活动、组等）。
 
->[!BEGINTABS]
+作为从Campaign v7过渡到v8的一部分，Campaign Classic文档集已得到简化和重新组织。 现在，Campaign v8文档集中专门提供了常用功能。 要了解有关权限的更多信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/permissions/gs-permissions){target=_blank}。
 
->[!TAB 权限文档]
+[![image](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/permissions/gs-permissions){target=_blank}
 
-若要了解有关Adobe Campaign **中**&#x200B;权限的更多信息，请参阅&#x200B;**[Campaign v8 （控制台）文档](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/admin/permissions/gs-permissions?lang=en#_blank){target=_blank}**。
-
-[![image](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/admin/permissions/gs-permissions?lang=en#_blank){target=_blank}
-
-
->[!TAB 管理文件夹权限]
-
-要了解如何定义文件夹&#x200B;**的**&#x200B;权限，请参阅&#x200B;**[Campaign v8 （控制台）文档](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/admin/permissions/folder-permissions){target=_blank}**。
-
-[![image](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/admin/permissions/folder-permissions){target=_blank}
-
-
->[!TAB 本机身份验证]
+要了解如何定义文件夹权限，请参阅[Campaign v8文档](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/permissions/folder-permissions){target=_blank}。
 
 在Campaign v7中仍可以使用登录/密码进行本机身份验证，但为了增强安全和身份验证过程，Adobe Campaign强烈建议将[最终用户身份验证模式](../../technotes/using/ac-ims.md)从本机身份验证迁移到Adobe Identity Management System (IMS)。 请注意，在Campaign v8中，不允许使用本机身份验证连接。
 
 [![图像](../../assets/do-not-localize/learn-more-button.svg)](../../technotes/using/ac-ims.md)
-
-
->[!ENDTABS]
-
-
 
 <!--
 The permissions apply to operator profiles or operator groups.

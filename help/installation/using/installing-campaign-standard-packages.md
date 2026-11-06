@@ -26,10 +26,10 @@ topic_v2:
     internal-label: Optimization
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: d7e5f68c0d2e0b94fd5cfdf2981bed29f33d9f62
+source-git-commit: 2e00628a95aa333698f11233e851b54423f11f29
 workflow-type: tm+mt
-source-wordcount: '1413'
-ht-degree: 7%
+source-wordcount: '1426'
+ht-degree: 9%
 ---
 # 安装Campaign Classic内置软件包{#installing-campaign-standard-packages}
 
@@ -143,7 +143,7 @@ ht-degree: 7%
   </tr> 
   <tr> 
    <td> 移动渠道（短信）<br /> </td> 
-   <td> 使用带有Adobe Campaign的移动/短信渠道发送投放。 可选。 <a href="https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/send/sms/sms" target="_blank">了解更多</a>（Campaign v8文档）<br /> </td> 
+   <td> 使用带有Adobe Campaign的移动/短信渠道发送投放。 可选。 <a href="https://experienceleague.adobe.com/zh-Hans/docs/campaign/campaign-v8/send/sms/sms" target="_blank">了解更多</a>（Campaign v8文档）<br /> </td> 
    <td> 所有<br /> </td> 
   </tr> 
    <tr> 
@@ -218,7 +218,7 @@ ht-degree: 7%
   </tr> 
   <tr> 
    <td> AEM集成<br /> </td> 
-   <td> 允许您直接在Adobe Experience Manager中管理电子邮件投放的内容以及表单，以便从AEM的内容编辑功能以及Adobe Campaign的投放功能中受益。 <a href="../../integrations/using/about-adobe-experience-manager.md">了解更多</a> <br /> </td> 
+   <td> 允许您直接在Adobe Experience Manager中管理电子邮件投放的内容以及表单，以便从AEM的内容编辑功能以及Adobe Campaign的投放功能中受益。 <a href="https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/connect/ac-aem" target="_blank">了解更多</a>（Campaign v8文档）<br /> </td> 
    <td> 营销</td> 
   </tr> 
   <tr> 
@@ -283,7 +283,7 @@ ht-degree: 7%
 
 * 在营销和MID实例上安装[!DNL LINE]包
 
-* 在mkt实例上设置[!DNL LINE]外部帐户，以通过更改传递模式指向mid实例。 [了解详情](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/send/other-channels/line#configure-line-external){target="_blank"}（Campaign v8文档）
+* 在mkt实例上设置[!DNL LINE]外部帐户，以通过更改传递模式指向mid实例。 [了解详情](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/send/other-channels/line#configure-line-external){target="_blank"}（Campaign v8 文档）
 
 * 在MID实例的外部帐户中设置[!DNL LINE]凭据。
 

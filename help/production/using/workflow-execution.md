@@ -33,9 +33,9 @@ topic_v2:
     internal-label: Troubleshooting
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: cce1f22c34cbd13d063850a7ca636a3b0dfc62f6
 workflow-type: tm+mt
-source-wordcount: '750'
+source-wordcount: '763'
 ht-degree: 11%
 ---
 # 工作流执行{#workflow-execution}
@@ -46,7 +46,7 @@ ht-degree: 11%
 
 有关工作流的详细信息，请参阅以下章节：
 
-* [关于工作流](../../workflow/using/about-workflows.md)
+* [关于工作流](https://experienceleague.adobe.com/zh-hans/docs/campaign/automation/workflows/introduction/about-workflows){target="_blank"}（Campaign v8文档）
 * [正在启动工作流](https://experienceleague.adobe.com/docs/campaign/automation/workflows/executing-a-workflow/start-a-workflow.html?lang=zh-Hans){target="_blank"}。
 * [工作流生命周期](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/build-a-workflow.html?lang=zh-Hans){target="_blank"}。
 * [使用工作流时的最佳实践](https://experienceleague.adobe.com/docs/campaign/automation/workflows/introduction/workflow-best-practices.html?lang=zh-Hans){target="_blank"}。

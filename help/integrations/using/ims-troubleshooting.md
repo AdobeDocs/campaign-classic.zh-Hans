@@ -33,15 +33,19 @@ subfeature_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 2e00628a95aa333698f11233e851b54423f11f29
 workflow-type: tm+mt
-source-wordcount: '489'
+source-wordcount: '492'
 ht-degree: 5%
 ---
 # IMS 故障排除{#ims-troubleshooting}
 
 
 以下疑难解答提示将帮助&#x200B;**内部部署**&#x200B;和&#x200B;**混合**&#x200B;客户解决使用IMS集成时最常见的问题。 对于&#x200B;**托管**&#x200B;客户，请联系Adobe。
+
+作为从Campaign v7过渡到v8的一部分，Campaign Classic文档集已得到简化和重新组织。 现在，Campaign v8文档集中专门提供了常用功能。 要了解有关使用Adobe ID登录和解决登录问题的更多信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/new/connect){target=_blank}。
+
+[![image](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/new/connect){target=_blank}
 
 **外部帐户**
 
@@ -106,16 +110,3 @@ Campaign外部帐户与IMS设置的外部帐户之间的客户端ID匹配。
 * 用户无法访问Adobe ID登录页面：
 
   请参阅前面的步骤以检查作用域配置。
-
-**WebView2缓存问题**
-
-如果您在使用Adobe ID登录到&#x200B;**[!UICONTROL Client Console]**&#x200B;时遇到问题，请尝试清除本地WebView2缓存。 在大多数情况下，这可以解决问题。 按照下面的步骤进行操作：
-
-1. 关闭&#x200B;**[!UICONTROL Client Console]**&#x200B;并停止任何正在运行的`nlclient`进程。
-
-1. 从以下位置删除所有`webview2`和`webview2Cache`文件夹：
-
-   * `C:\ProgramData\Neolane\NL_5\nlclient\`
-   * `C:\Users\<username>\AppData\Roaming\Neolane\NL_5\nlclient\`
-
-1. 重新启动&#x200B;**[!UICONTROL Client Console]**&#x200B;并使用您的Adobe ID登录。 下次启动时将自动重新创建缓存文件夹。

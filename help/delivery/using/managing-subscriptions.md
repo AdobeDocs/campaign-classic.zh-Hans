@@ -38,10 +38,10 @@ role_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 59d78c785d8984861fd537c2f64f82a7d2d77fbf
+source-git-commit: cce1f22c34cbd13d063850a7ca636a3b0dfc62f6
 workflow-type: tm+mt
-source-wordcount: '1125'
-ht-degree: 1%
+source-wordcount: '1138'
+ht-degree: 2%
 ---
 # 管理订阅{#managing-subscriptions}
 
@@ -156,7 +156,7 @@ ht-degree: 1%
 * 自动为一组收件人订阅此服务。 收件人列表可以来自筛选操作、组、文件夹、导入或使用鼠标直接选择。 要订阅这些收件人，请选择用户档案并右键单击。 选择&#x200B;**[!UICONTROL Actions > Subscribe selection to a service...]**，选择相关的服务，然后启动操作。
 * 导入收件人并自动为其订阅信息服务。 为此，请在导入助理的最后一步中选择相关的服务。
 
-  有关更多信息，请参阅[此章节](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/data/import){target="_blank"}（Campaign v8文档）。
+  有关更多信息，请参阅[此章节](https://experienceleague.adobe.com/zh-Hans/docs/campaign/campaign-v8/data/import){target="_blank"}（Campaign v8文档）。
 
 * 使用Web窗体，以便收件人可以订阅服务。
 
@@ -166,7 +166,7 @@ ht-degree: 1%
 
   ![](assets/s_ncs_user_subscribe_from_wf.png)
 
-  [本节](../../workflow/using/about-workflows.md)中详细介绍了工作流及其使用方法。
+  [此部分](https://experienceleague.adobe.com/zh-hans/docs/campaign/automation/workflows/introduction/about-workflows){target="_blank"}详细介绍了工作流及其使用方法（Campaign v8文档）。
 
 ### 从服务取消订阅收件人 {#unsubscribing-a-recipient-from-a-service}
 

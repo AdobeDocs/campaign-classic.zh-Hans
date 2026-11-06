@@ -40,16 +40,18 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: 9753491edbeba9df2c0a9dcf53b3bd5ea87c32ca
 workflow-type: tm+mt
-source-wordcount: '781'
-ht-degree: 100%
+source-wordcount: '718'
+ht-degree: 89%
 ---
 # 创建和管理隐私请求 {#privacy-request-ui}
 
-
-
 此部分说明如何创建访问和删除请求，以及 Adobe Campaign 如何处理这些请求。
+
+作为从Campaign v7过渡到v8的一部分，Campaign Classic文档集已得到简化和重新组织。 现在，Campaign v8文档集中专门提供了常用功能。 要了解有关处理隐私请求时搜索的表的更多信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/privacy/privacy#list-of-tables){target=_blank}。
+
+[![image](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/privacy/privacy#list-of-tables){target=_blank}
 
 ## 创建隐私请求 {#create-privacy-request-ui}
 
@@ -74,24 +76,7 @@ ht-degree: 100%
 
 ![](assets/privacy-request-download.png)
 
-## 表格列表 {#list-of-tables}
-
-执行删除或访问隐私请求时，Adobe Campaign 会根据所有具有指向收件人表（自有类型）链接的表中的 **[!UICONTROL Reconciliation value]** 搜索所有数据主体数据。
-
-以下是执行隐私请求时考虑的现成表列表：
-
-* 收件人 (recipient)
-* 收件人投放日志 (broadLogRcp)
-* 收件人跟踪日志 (trackingLogRcp)
-* 归档的事件投放日志 (broadLogEventHisto)
-* 收件人列表内容 (rcpGrpRel)
-* 访客产品建议提议 (propositionVisitor)
-* 访客 (visitor)
-* 订阅历史记录 (subHisto)
-* 订阅 (subscription)
-* 收件人产品建议提议 (propositionRcp)
-
-如果您创建的自定义表单具有指向收件人表（自有类型）的链接，则也会考虑这些资源。 例如，如果您具有链接到收件人表的事务表和链接到该事务表的事务详细信息表，则这两个表都将被考虑在内。
+## 通过工作流批量请求
 
 >[!IMPORTANT]
 >

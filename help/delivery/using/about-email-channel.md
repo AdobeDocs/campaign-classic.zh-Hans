@@ -32,9 +32,9 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: d7e5f68c0d2e0b94fd5cfdf2981bed29f33d9f62
+source-git-commit: d679815c3415f1d7603ae5fe87e1c587208b6a8f
 workflow-type: tm+mt
-source-wordcount: '453'
+source-wordcount: '454'
 ht-degree: 0%
 ---
 # 电子邮件渠道入门{#about-email-channel}
@@ -71,7 +71,7 @@ ht-degree: 0%
 请参阅Campaign v8文档&#x200B;**中的这些页面以了解电子邮件参数**：
 
 * [链接到镜像页面](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/mirror-page.html?lang=zh-Hans){target="_blank"}：配置镜像页面以确保您的客户端始终获得最佳的渲染体验。
-* [添加密件抄送地址](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/email-bcc.html?lang=zh-Hans){target="_blank"}：配置Adobe Campaign以保留从您的平台发送的电子邮件副本。
+* [添加密件抄送地址](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/send/emails/email-bcc){target="_blank"}：配置Adobe Campaign以保留从您的平台发送的电子邮件副本。
 * [定义其他电子邮件参数](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/email-parameters.html?lang=zh-Hans){target="_blank"}：了解有关投放属性中可用的选项和参数的更多信息。
 
 另请参阅此[页面](sending-with-enhanced-mta.md)以了解有关增强型MTA的信息。

@@ -34,9 +34,9 @@ topic_v2:
     internal-label: Data collection
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 617db6f51887118c965b8938b2b9f14335293875
+source-git-commit: 9753491edbeba9df2c0a9dcf53b3bd5ea87c32ca
 workflow-type: tm+mt
-source-wordcount: '1274'
+source-wordcount: '1291'
 ht-degree: 2%
 ---
 # 配置实例 {#creating-a-shared-connection}
@@ -49,7 +49,7 @@ ht-degree: 2%
 
 >[!IMPORTANT]
 >
->架构扩展影响了[消息中心技术工作流](../../message-center/using/additional-configurations.md#technical-workflows)在事务性消息传递模块使用的其他实例上需要复制控制实例或执行实例上使用的资源。
+>架构扩展影响了[消息中心技术工作流](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/config/settings/transactional-msg-settings#technical-workflows){target="_blank"}（Campaign v8文档）使用的资源，其中控件或执行实例需要与事务性消息传递模块使用的其他实例重复。
 
 您还需要指定执行实例并将其连接到控制实例。
 

@@ -45,24 +45,22 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: a97306b73a2b577841e6f24536c62b2526e9fda9
+source-git-commit: cce1f22c34cbd13d063850a7ca636a3b0dfc62f6
 workflow-type: tm+mt
-source-wordcount: '4118'
+source-wordcount: '3891'
 ht-degree: 1%
 ---
 # 数据模型最佳实践{#data-model-best-practices}
 
 本文档概述了设计Adobe Campaign数据模型时的主要建议。
 
-要更好地了解Campaign内置表及其交互，请参阅[此部分](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/developer/datamodel){target="_blank"}（Campaign v8文档）部分。
+作为从Campaign v7过渡到v8的一部分，Campaign Classic文档集已得到简化和重新组织。 现在，Campaign v8文档集中专门提供了常用功能。 要了解有关数据模型最佳实践的更多信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/config/implement/datamodel-best-practices){target=_blank}。
+
+[![image](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/config/implement/datamodel-best-practices){target=_blank}
+
+要更好地了解Campaign内置表及其交互，请参阅[此部分](https://experienceleague.adobe.com/zh-Hans/docs/campaign/campaign-v8/developer/datamodel){target="_blank"}（Campaign v8文档）部分。
 
 阅读[此文档](../../configuration/using/about-schema-reference.md)以开始使用Campaign架构。 在[本文档](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/developer/schemas-forms/schemas){target="_blank"}（Campaign v8文档）中了解如何配置扩展架构以扩展Adobe Campaign数据库的概念数据模型。
-
-## 概述 {#overview}
-
-Adobe Campaign系统非常灵活，可以在初始实施之后扩展。 但是，尽管可能性是无限的，但做出明智决策并奠定坚实的基础来开始设计数据模型至关重要。
-
-本文档提供了常见用例和最佳实践，以了解如何正确构建Adobe Campaign工具。
 
 ## 数据模型架构 {#data-model-architecture}
 
@@ -83,22 +81,6 @@ Adobe Campaign默认数据模型在[此文档](../../configuration/using/data-mo
 >[!NOTE]
 >
 >Adobe Campaign Classic允许构建自定义客户表。 但是，在大多数情况下，建议利用标准[收件人表](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/developer/datamodel#ootb-profiles){target="_blank"}（Campaign v8文档），该表已预建其他表和功能。
-
-### Adobe Campaign的数据 {#data-for-campaign}
-
-应将哪些数据发送到Adobe Campaign？ 确定营销活动所需的数据至关重要。
-
->[!NOTE]
->
->Adobe Campaign既不是Data Warehouse也不是报表工具。 因此，请勿尝试将所有可能的客户及其关联信息导入Adobe Campaign，或导入仅用于构建报表的数据。
-
-要决定是否需要在Adobe Campaign中使用某个属性，请问自己该属性是否属于以下类别之一：
-
-* 用于&#x200B;**分段**&#x200B;的属性
-* 用于&#x200B;**数据管理进程**&#x200B;的属性（例如，聚合计算）
-* 用于&#x200B;**个性化**&#x200B;的属性
-
-如果不属于上述任何一种，您很可能不会在Adobe Campaign中需要此属性。
 
 ### 数据类型选择 {#data-types}
 
@@ -313,12 +295,6 @@ Adobe Campaign既不是Data Warehouse也不是报表工具。 因此，要确保
 * 确保在导入流程期间或执行任何手动流程时，不会运行任何每日营销活动。
 * 使用一个或多个引用表，而不是在每行中复制字段。 使用键/值对时，最好选择数字键。
 * 短字符串仍可接受。 如果引用表已在外部系统中，则重用它有助于将数据与Adobe Campaign集成。
-
-### 一对多关系 {#one-to-many-relationships}
-
-* 数据设计会影响可用性和功能。 如果您设计的数据模型具有大量一对多关系，则会使用户更难以在应用程序中构建有意义的逻辑。 对于非技术性营销人员，可能很难正确构建和理解一对多过滤器逻辑。
-* 将所有重要字段放在一个表中很好，因为这样用户更容易构建查询。 有时，如果可以避免联接，则跨表复制某些字段对性能也有好处。
-* 某些内置功能无法引用一对多关系，例如优惠权重公式和投放。
 
 ## 大型表 {#large-tables}
 

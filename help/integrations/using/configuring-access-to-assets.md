@@ -28,9 +28,9 @@ subfeature_v2:
     internal-label: Target integration
   - id: 2e08b477-1993-5928-975d-5f4cabe8fbe0
     internal-label: Asset Sharing
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 2e00628a95aa333698f11233e851b54423f11f29
 workflow-type: tm+mt
-source-wordcount: '513'
+source-wordcount: '526'
 ht-degree: 2%
 ---
 # 配置对Assets的访问权限 {#configuring-access-to-assets}
@@ -76,7 +76,7 @@ ht-degree: 2%
 * 正在安装&#x200B;**[!UICONTROL AEM Integration]**&#x200B;内置包
 * 配置特定于Adobe Experience Manager的外部帐户
 
-请参阅[详细文档](../../integrations/using/about-adobe-experience-manager.md)以了解如何集成Adobe Campaign和Adobe Experience Manager。
+请参阅[详细文档](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/connect/ac-aem){target="_blank"}（Campaign v8文档）以了解如何集成Adobe Campaign和Adobe Experience Manager。
 
 设置此集成后，您可以在Adobe Campaign中配置新的投放模板以使用AEM Assets库。 为此请执行以下操作步骤：
 

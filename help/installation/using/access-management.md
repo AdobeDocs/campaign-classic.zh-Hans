@@ -29,9 +29,9 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 9753491edbeba9df2c0a9dcf53b3bd5ea87c32ca
 workflow-type: tm+mt
-source-wordcount: '377'
+source-wordcount: '393'
 ht-degree: 8%
 ---
 # 访问管理 {#access-management}
@@ -62,7 +62,7 @@ webApp操作员是开箱即用的管理员。 要提高安全性，请遵循以�
 
 避免在管理员组中添加过多操作员（或具有管理员命名权限）。 它们是功能非常强大的运算符（它们可以执行所有SQL语句，在服务器上执行命令等）。
 
-Adobe Campaign通过[已命名权限](../../platform/using/access-management.md#named-rights)提供三个高级别权限：
+Adobe Campaign通过[已命名权限](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/permissions/manage-permissions#use-named-rights){target="_blank"}提供三个高级别权限（Campaign v8文档）：
 
 * **管理** （管理员）：提供对所有内容的访问权限并允许执行所有操作，绕过所有命名的权限检查，因此它包括PROGRAM EXECUTION (createProcess)和SQL命名权限
 

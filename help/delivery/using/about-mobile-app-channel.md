@@ -37,49 +37,18 @@ topic_v2:
     internal-label: Troubleshooting
   - id: d3cdead0-685a-4489-9250-4bb709942f66
     internal-label: Data collection
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: cce1f22c34cbd13d063850a7ca636a3b0dfc62f6
 workflow-type: tm+mt
-source-wordcount: '733'
-ht-degree: 3%
+source-wordcount: '390'
+ht-degree: 6%
 ---
 # 移动应用程序渠道入门{#about-mobile-app-channel}
 
 使用Adobe Campaign创建推送通知投放，以向您的移动应用程序用户发送个性化消息。
 
-推送通知允许您实时吸引iOS和Android上的用户。 无论发送更新、公告还是促销活动，您都可以控制内容、时间和定位。 请参阅[Adobe Campaign v8文档](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/send/emails/email){target=_blank}以了解如何设置和使用推送渠道、管理订阅、与APN和FCM集成以及个性化消息。
+作为从Campaign v7过渡到v8的一部分，Campaign Classic文档集已得到简化和重新组织。 现在，Campaign v8文档集中专门提供了常用功能。 要了解有关推送通知渠道的更多信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/send/push/push){target=_blank}。
 
-作为从Campaign v7过渡到v8的一部分，Campaign Classic文档集已得到简化和重新组织。 现在，Campaign v8文档集中专门提供了常用功能。
-
->[!BEGINTABS]
-
->[!TAB 推送渠道文档]
-
-要了解有关推送通知渠道的更多信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push.html?lang=zh-Hans){target=_blank}。
-
-[![image](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push.html?lang=zh-Hans){target=_blank}
-
-
->[!TAB 推送投放创建]
-
-请参阅Campaign v8文档&#x200B;**以了解与推送投放创建**&#x200B;相关的关键步骤：
-
-* [创建推送通知](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push.html?lang=zh-Hans#push-create){target="_blank"}：了解创建推送投放所需的不同步骤。
-* [发送并监视推送通知](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push.html?lang=zh-Hans#push-test){target="_blank"}：了解如何验证、发送和跟踪您的投放。
-* [设计Android富推送投放](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/rich-push/rich-push-android.html?lang=zh-Hans){target="_blank"}：了解如何为Android设备创建和配置富推送通知。
-* [设计iOS富推送投放](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/rich-push/rich-push-ios.html?lang=zh-Hans){target="_blank"}：了解如何在Adobe Campaign v8中为iOS设备设计和配置富推送通知。
-
-
->[!TAB 推送参数]
-
-请参阅Campaign v8文档&#x200B;**中的这些页面以了解推送参数**：
-
-* [配置先决条件](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push-settings.html?lang=zh-Hans#before-starting){target="_blank"}：了解如何设置权限并配置您的应用程序。
-* [配置Launch属性](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push-settings.html?lang=zh-Hans#launch-property){target="_blank"}：了解如何在Adobe Experience Platform数据收集中设置移动标记属性以启用推送通知。
-* [配置推送服务Mobile Services](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push-settings.html?lang=zh-Hans#push-service){target="_blank"}：在Adobe中设置iOS和Android推送服务，以便为移动设备应用程序用户启用有针对性的推送通知。
-* [在移动资产中配置扩展](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/push/push-settings.html?lang=zh-Hans#configure-extension){target="_blank"}：将Campaign扩展集成到移动资产中，以启用推送通知并有效管理用户交互。
-
->[!ENDTABS]
-
+[![image](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/send/push/push){target=_blank}
 
 以下信息特定于Campaign Classic。
 

@@ -34,9 +34,9 @@ topic_v2:
     internal-label: Security
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: cce1f22c34cbd13d063850a7ca636a3b0dfc62f6
 workflow-type: tm+mt
-source-wordcount: '857'
+source-wordcount: '870'
 ht-degree: 6%
 ---
 # 报告最佳实践{#best-practices-reporting}
@@ -61,7 +61,7 @@ ht-degree: 6%
    * 向现有报告添加指标。 可在[此小节](../../reporting/using/about-reports-creation-in-campaign.md)中了解详情。
    * 查看数据库中的数据。 可在[此小节](../../reporting/using/about-descriptive-analysis.md)中了解详情。
    * 创建新的投放报告。 在本节[&#128279;](../../reporting/using/about-reports-creation-in-campaign.md)中了解更多，
-   * 从Adobe Campaign数据库导出数据(通过工作流，请参阅[此部分](../../workflow/using/about-workflows.md)
+   * 从Adobe Campaign数据库导出数据(通过工作流，请参阅[此章节](https://experienceleague.adobe.com/zh-hans/docs/campaign/automation/workflows/introduction/about-workflows){target="_blank"}（Campaign v8文档）
    * 创建数据透视表。 可在[此小节](../../reporting/using/creating-a-table.md#creating-a-breakdown-or-pivot-table)中了解详情。
    * 浏览汇总的数据。 可在[此小节](../../reporting/using/ac-cubes.md)中了解详情。
    * 使用助理分析数据。 可在[此小节](../../reporting/using/about-descriptive-analysis.md)中了解详情。
