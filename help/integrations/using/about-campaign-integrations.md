@@ -39,18 +39,22 @@ level_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 2e00628a95aa333698f11233e851b54423f11f29
 workflow-type: tm+mt
-source-wordcount: '731'
+source-wordcount: '823'
 ht-degree: 5%
 ---
 # Adobe Campaign集成快速入门 {#about-campaign-integrations}
 
 Adobe Experience Cloud是一套业内最佳的综合性集成解决方案，它基于常用的数据平台而构建，提供了一组功能强大的通用解决方案和应用程序。
 
-在[此页面](https://experienceleague.adobe.com/zh-hans/docs/core-services/interface/administration/integrations){_blank}中进一步了解Adobe Campaign与Adobe Experience Cloud解决方案之间可用的功能集成。
+在[此页面](https://experienceleague.adobe.com/en/docs/core-services/interface/administration/integrations){_blank}中进一步了解Adobe Campaign与Adobe Experience Cloud解决方案之间可用的功能集成。
 
 [此部分](#experience-cloud-integrations)中提供了可与Adobe集成的Adobe Campaign解决方案和应用程序服务的完整列表以及相关文档。
+
+作为从Campaign v7过渡到v8的一部分，Campaign Classic文档集已得到简化和重新组织。 现在，Campaign v8文档集中专门提供了常用功能。 要了解有关将Campaign与您的解决方案连接的更多信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/connect/integration){target=_blank}。
+
+[![image](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/connect/integration){target=_blank}
 
 >[!CAUTION]
 >
@@ -61,17 +65,17 @@ Adobe Experience Cloud是一套业内最佳的综合性集成解决方案，它�
 
 可以将多个解决方案链接到Adobe Experience Cloud。 **组织**&#x200B;是一个客户实体，它允许管理员配置组和用户，并控制Adobe Experience Cloud中的单点登录(SSO)。 组织的作用类似于一个衔接所有Experience Cloud产品和解决方案的登录公司。 大多数情况下，组织是您的公司名称。 但是，公司可以有许多组织。
 
-[Adobe Experience Cloud帮助门户](https://experienceleague.adobe.com/zh-hans/docs/core-services/interface/administration/organizations){_blank}中详细介绍了组织管理和关联Adobe Experience Cloud帐户的相关信息。
+[Adobe Experience Cloud帮助门户](https://experienceleague.adobe.com/en/docs/core-services/interface/administration/organizations){_blank}中详细介绍了组织管理和关联Adobe Experience Cloud帐户的相关信息。
 
 ## 身份和Cookie管理 {#id-and-cookies}
 
-在安装Adobe Campaign或将现有安装与Adobe Experience Cloud集成时，将启用[Adobe Experience Cloud Identity Service](https://experienceleague.adobe.com/zh-hans/docs/id-service/using/home){_blank}。 此服务取代了Adobe Campaign首先用于跟踪功能的永久Cookie。
+在安装Adobe Campaign或将现有安装与Adobe Experience Cloud集成时，将启用[Adobe Experience Cloud Identity Service](https://experienceleague.adobe.com/en/docs/id-service/using/home){_blank}。 此服务取代了Adobe Campaign首先用于跟踪功能的永久Cookie。
 
 Adobe Experience Cloud Identity服务（ID服务）提供了一个通用的永久性ID，用于在Experience Cloud的所有解决方案中标识您的访客。
 
 独特访客ID将分配给生成跟踪日志的收件人。 此ID将保存在&#x200B;**[!UICONTROL nms:trackingLogRcp]**&#x200B;表的&#x200B;**[!UICONTROL Requester UUID (@sourceID)]**&#x200B;字段中。 **在实施访客ID服务之前存在的收件人的跟踪数据将不再可用**。
 
-随后，其他Adobe Experience Cloud解决方案将使用相同的CNAME来识别该ID。 [了解详情](https://experienceleague.adobe.com/zh-hans/docs/id-service/using/reference/analytics-reference/cname){_blank}。
+随后，其他Adobe Experience Cloud解决方案将使用相同的CNAME来识别该ID。 [了解详情](https://experienceleague.adobe.com/en/docs/id-service/using/reference/analytics-reference/cname){_blank}。
 
 ## Experience Cloud 集成 {#experience-cloud-integrations}
 
@@ -95,11 +99,11 @@ Adobe Experience Cloud Identity服务（ID服务）提供了一个通用的永�
   </tr> 
   <tr> 
    <td> <strong>Adobe Experience Manager</strong><br /> </td> 
-   <td> 配置此集成以直接在<strong>Adobe Experience Manager</strong>.<br />中创建映射到Adobe Campaign数据库的电子邮件内容或表单 <p><a href="../../integrations/using/about-adobe-experience-manager.md">了解有关Adobe Campaign - Adobe Experience Manager集成的更多信息</a>。</p><br /> </td> 
+   <td> 配置此集成以直接在<strong>Adobe Experience Manager</strong>.<br />中创建映射到Adobe Campaign数据库的电子邮件内容或表单 <p><a href="https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/connect/ac-aem" target="_blank">了解有关Adobe Campaign - Adobe Experience Manager集成的更多信息</a>（Campaign v8文档）。</p><br /> </td> 
   </tr> 
   <tr> 
    <td> <strong>Adobe Target</strong><br /> </td> 
-   <td> 配置此集成，以便在打开由Adobe Target创建和发送的电子邮件时插入由<strong>Adobe Campaign</strong>动态计算的图像。<br /> <p><a href="../../integrations/using/integrating-with-adobe-target.md">了解有关Adobe Campaign - Adobe Target集成的更多信息</a>。</p><br /> </td> 
+   <td> 配置此集成，以便在打开由Adobe Target创建和发送的电子邮件时插入由<strong>Adobe Campaign</strong>动态计算的图像。<br /> <p><a href="https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/connect/ac-at" target="_blank">了解有关Adobe Campaign - Adobe Target集成的更多信息</a>（Campaign v8文档）。</p><br /> </td> 
   </tr> 
   <tr> 
    <td><strong>Adobe Audience Manager</strong><br /> </td> 

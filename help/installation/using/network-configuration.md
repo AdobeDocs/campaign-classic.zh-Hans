@@ -22,9 +22,9 @@ feature_v2:
 subfeature_v2:
   - id: e656c701-3899-4db3-989c-de0980ddfffa
     internal-label: Installation
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 2e00628a95aa333698f11233e851b54423f11f29
 workflow-type: tm+mt
-source-wordcount: '713'
+source-wordcount: '726'
 ht-degree: 4%
 ---
 # 网络配置{#network-configuration}
@@ -236,7 +236,7 @@ ht-degree: 4%
 
 ## 与Adobe Experience Manager集成 {#integration-with-adobe-experience-manager}
 
-如果安装是“内部部署”的，则Adobe Campaign与Adobe Experience Manager之间的集成需要打开多个端口。 有关配置此集成的更多信息，请参阅[详细文档](../../integrations/using/about-adobe-experience-manager.md)。
+如果安装是“内部部署”的，则Adobe Campaign与Adobe Experience Manager之间的集成需要打开多个端口。 有关配置此集成的更多信息，请参阅[详细文档](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/connect/ac-aem){target="_blank"}（Campaign v8文档）。
 
 <table> 
  <tbody> 
