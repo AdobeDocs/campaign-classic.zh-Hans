@@ -28,18 +28,22 @@ topic_v2:
     internal-label: Implementation
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 617db6f51887118c965b8938b2b9f14335293875
+source-git-commit: cce1f22c34cbd13d063850a7ca636a3b0dfc62f6
 workflow-type: tm+mt
-source-wordcount: '884'
-ht-degree: 5%
+source-wordcount: '612'
+ht-degree: 4%
 ---
 # 其他配置 {#mc-additional-configurations}
 
+本页介绍Campaign Classic v7上事务性消息传递的其他配置。
 
+作为从Campaign v7过渡到v8的一部分，Campaign Classic文档集已得到简化和重新组织。 现在，Campaign v8文档集中专门提供了常用功能。 要了解有关事务性消息事件清除和技术工作流的更多信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/transactional-msg-settings){target=_blank}。
+
+[![image](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/settings/transactional-msg-settings){target=_blank}
 
 ## 监测阈值 {#monitoring-thresholds}
 
-您可以配置在&#x200B;**消息中心服务级别**&#x200B;和&#x200B;**消息中心处理时间**&#x200B;报告中出现的指示器的警告阈值（橙色）和警报阈值（红色）(请参阅[访问事务性消息报告](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/send/real-time/event/delivery-execution){target="_blank"}（Campaign v8文档）)。
+您可以配置在&#x200B;**消息中心服务级别**&#x200B;和&#x200B;**消息中心处理时间**&#x200B;报告中出现的指示器的警告阈值（橙色）和警报阈值（红色）(请参阅[访问事务性消息报告](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/real-time/event/delivery-execution){target="_blank"}（Campaign v8文档）)。
 
 为此请执行以下操作步骤：
 
@@ -55,63 +59,9 @@ ht-degree: 5%
 >
 >队列中待处理的事件数显示在Adobe Campaign进程监视页面的[系统指示器](../../production/using/monitoring-processes.md#system-indicators)部分中。 有关部署向导的详细信息，请参阅[此部分](../../installation/using/deploying-an-instance.md#deployment-assistant)。
 
-## 清除事件 {#purging-events}
-
-您可以使用[部署向导](../../production/using/database-cleanup-workflow.md#deployment-assistant)配置数据在数据库中存储的时长。
-
-事件清除由[数据库清理工作流](../../production/using/database-cleanup-workflow.md)自动执行。 此工作流会清除在执行实例上接收并存储的事件，以及在控制实例上存档的事件。
-
-根据需要使用箭头来更改清除设置。
-
-控制实例上的事件清除设置：
-
-![](assets/messagecenter_delete_events_001.png)
-
-执行实例上的事件清除设置：
-
-![](assets/messagecenter_delete_events_002.png)
-
-有关数据库清理工作流的详细信息，请参阅[此部分](../../production/using/database-cleanup-workflow.md)。
-
-
 ## 技术工作流 {#technical-workflows}
 
 您必须确保在部署任何事务性消息模板之前确实已创建并启动控制实例上的技术工作流和不同的执行实例。
-
-与事务性消息传递（消息中心）相关的各种技术工作流在控制实例和执行实例之间细分。
-
-### 控制实例工作流 {#control-instance-workflows}
-
-在控制实例上，无论您注册了一个还是多个执行实例，都必须为每个&#x200B;**[!UICONTROL Message Center execution instance]**&#x200B;外部帐户创建一个存档工作流。 单击&#x200B;**[!UICONTROL Create the archiving workflow]**&#x200B;按钮以创建并启动工作流。
-
-![](assets/messagecenter_archiving_002.png)
-
-然后，可以从&#x200B;**管理>生产>消息中心**&#x200B;文件夹访问这些工作流。 创建后，存档工作流将自动启动。
-
-<!--
-**Minimal architecture**
-
-Once the control and execution modules are installed on the same instance, you must create the archiving workflow using the deployment wizard. Click the **[!UICONTROL Create the archiving workflow]** button to create and start the workflow.
-
-![](assets/messagecenter_archiving_001.png)
--->
-
-### 执行实例工作流 {#execution-instance-workflows}
-
-在执行实例上，可以从&#x200B;**管理>生产>消息中心**&#x200B;文件夹访问事务性消息传递的技术工作流。 你只要启动它们就行了。 列表中的工作流包括：
-
-* **[!UICONTROL Processing batch events]** （内部名称： **[!UICONTROL batchEventsProcessing]** ）：利用此工作流，可在批次事件链接到消息模板之前划分队列中的批次事件。
-* **[!UICONTROL Processing real time events]** （内部名称： **[!UICONTROL rtEventsProcessing]** ）：利用此工作流，可在将队列中的实时事件链接到消息模板之前对其进行划分。
-* **[!UICONTROL Update event status]** （内部名称： **[!UICONTROL updateEventStatus]** ）：此工作流允许您将状态归因于事件。
-
-  可以使用以下事件状态：
-
-  * **[!UICONTROL Pending]** ：事件在队列中。 尚未为其分配消息模板。
-  * **[!UICONTROL Pending delivery]** ：事件处于队列中，已为其分配消息模板且投放正在处理该模板。
-  * **[!UICONTROL Sent]** ：此状态复制于投放日志。 这意味着投放已发送。
-  * **[!UICONTROL Ignored by the delivery]** ：此状态复制于投放日志。 这意味着该投放被忽略。
-  * **[!UICONTROL Delivery failed]** ：此状态复制于投放日志。 这意味着投放失败了。
-  * **[!UICONTROL Event not taken into account]** ：无法将事件链接到消息模板。 将不会处理该事件。
 
 ### 存档工作流计划
 
@@ -125,7 +75,7 @@ Once the control and execution modules are installed on the same instance, you m
 
 ### 兼容性说明 {#compatibility-note}
 
-此旧版品牌策略配置与Campaign v8中引入的新[集中式品牌策略](https://experienceleague.adobe.com/docs/campaign-web/v8/conf/branding/branding-gs.html?lang=zh-Hans){target="_blank"}模型不兼容。
+此旧版品牌策略配置与Campaign v8中引入的新[集中式品牌策略](https://experienceleague.adobe.com/docs/campaign-web/v8/conf/branding/branding-gs.html){target="_blank"}模型不兼容。
 
 如果您的现有环境使用此旧版配置，则无法将其直接迁移到新的集中式品牌推广模型。 要采用新系统，必须全面重新实施品牌设置。
 
@@ -196,6 +146,6 @@ Once the control and execution modules are installed on the same instance, you m
 
 1. 为每个品牌创建一个与[执行实例](#execution-instance)上定义的内部名称相同的外部帐户（步骤1）。
 
-1. 为每个品牌创建投放模板。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html?lang=zh-Hans){target="_blank"}。
+1. 为每个品牌创建投放模板。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/create-templates.html){target="_blank"}。
 
 1. 在投放模板的&#x200B;**[!UICONTROL Properties]**&#x200B;中，将路由设置为品牌的外部帐户。

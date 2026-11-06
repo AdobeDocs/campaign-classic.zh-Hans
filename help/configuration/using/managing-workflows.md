@@ -25,10 +25,10 @@ subfeature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: cce1f22c34cbd13d063850a7ca636a3b0dfc62f6
 workflow-type: tm+mt
-source-wordcount: '133'
-ht-degree: 11%
+source-wordcount: '146'
+ht-degree: 4%
 ---
 # 管理工作流{#managing-workflows}
 
@@ -42,6 +42,6 @@ ht-degree: 11%
 
 因此，工作流中使用的所有活动将使用您的自定义表，而无需任何其他手动配置。
 
-如需有关此工作流的详细信息，请参阅[本章节](../../workflow/using/about-workflows.md)。
+有关工作流的详细信息，请参阅[此章节](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/introduction/about-workflows){target="_blank"}（Campaign v8文档）。
 
 ![](assets/cfg_external_table_workflow.png)

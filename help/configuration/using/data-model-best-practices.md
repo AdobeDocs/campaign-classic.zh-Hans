@@ -45,24 +45,22 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: a97306b73a2b577841e6f24536c62b2526e9fda9
+source-git-commit: cce1f22c34cbd13d063850a7ca636a3b0dfc62f6
 workflow-type: tm+mt
-source-wordcount: '4118'
+source-wordcount: '3891'
 ht-degree: 1%
 ---
 # 数据模型最佳实践{#data-model-best-practices}
 
 本文档概述了设计Adobe Campaign数据模型时的主要建议。
 
-要更好地了解Campaign内置表及其交互，请参阅[此部分](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/developer/datamodel){target="_blank"}（Campaign v8文档）部分。
+作为从Campaign v7过渡到v8的一部分，Campaign Classic文档集已得到简化和重新组织。 现在，Campaign v8文档集中专门提供了常用功能。 要了解有关数据模型最佳实践的更多信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/implement/datamodel-best-practices){target=_blank}。
 
-阅读[此文档](../../configuration/using/about-schema-reference.md)以开始使用Campaign架构。 在[本文档](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/developer/schemas-forms/schemas){target="_blank"}（Campaign v8文档）中了解如何配置扩展架构以扩展Adobe Campaign数据库的概念数据模型。
+[![image](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/implement/datamodel-best-practices){target=_blank}
 
-## 概述 {#overview}
+要更好地了解Campaign内置表及其交互，请参阅[此部分](https://experienceleague.adobe.com/zh-Hans/docs/campaign/campaign-v8/developer/datamodel){target="_blank"}（Campaign v8文档）部分。
 
-Adobe Campaign系统非常灵活，可以在初始实施之后扩展。 但是，尽管可能性是无限的，但做出明智决策并奠定坚实的基础来开始设计数据模型至关重要。
-
-本文档提供了常见用例和最佳实践，以了解如何正确构建Adobe Campaign工具。
+阅读[此文档](../../configuration/using/about-schema-reference.md)以开始使用Campaign架构。 在[本文档](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/schemas){target="_blank"}（Campaign v8文档）中了解如何配置扩展架构以扩展Adobe Campaign数据库的概念数据模型。
 
 ## 数据模型架构 {#data-model-architecture}
 
@@ -82,23 +80,7 @@ Adobe Campaign默认数据模型在[此文档](../../configuration/using/data-mo
 
 >[!NOTE]
 >
->Adobe Campaign Classic允许构建自定义客户表。 但是，在大多数情况下，建议利用标准[收件人表](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/developer/datamodel#ootb-profiles){target="_blank"}（Campaign v8文档），该表已预建其他表和功能。
-
-### Adobe Campaign的数据 {#data-for-campaign}
-
-应将哪些数据发送到Adobe Campaign？ 确定营销活动所需的数据至关重要。
-
->[!NOTE]
->
->Adobe Campaign既不是Data Warehouse也不是报表工具。 因此，请勿尝试将所有可能的客户及其关联信息导入Adobe Campaign，或导入仅用于构建报表的数据。
-
-要决定是否需要在Adobe Campaign中使用某个属性，请问自己该属性是否属于以下类别之一：
-
-* 用于&#x200B;**分段**&#x200B;的属性
-* 用于&#x200B;**数据管理进程**&#x200B;的属性（例如，聚合计算）
-* 用于&#x200B;**个性化**&#x200B;的属性
-
-如果不属于上述任何一种，您很可能不会在Adobe Campaign中需要此属性。
+>Adobe Campaign Classic允许构建自定义客户表。 但是，在大多数情况下，建议利用标准[收件人表](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/datamodel#ootb-profiles){target="_blank"}（Campaign v8文档），该表已预建其他表和功能。
 
 ### 数据类型选择 {#data-types}
 
@@ -185,7 +167,7 @@ Adobe Campaign主键是所有现成表自动生成的id，对于自定义表可�
 
 默认情况下，自定义序列的值介于+1,000和+2.1BB之间。 从技术上讲，通过启用负id可以获得整个4BB范围。 应谨慎使用此变量，当从负数转为正数时，将丢失一个id：Adobe Campaign通常会在生成的SQL查询中忽略记录0。
 
-有关序列消耗的详细信息，请观看[此视频](https://helpx.adobe.com/cn/customer-care-office-hours/campaign/sequences-exhaustion-campaign-classic.html)。
+有关序列消耗的详细信息，请观看[此视频](https://helpx.adobe.com/customer-care-office-hours/campaign/sequences-exhaustion-campaign-classic.html)。
 
 ## 索引 {#indexes}
 
@@ -287,7 +269,7 @@ Adobe Campaign既不是Data Warehouse也不是报表工具。 因此，要确保
 
 在[Campaign隐私和安全准则](../../platform/using/privacy-and-recommendations.md)中了解有关数据保留的更多信息。
 
-在本节[&#128279;](../../production/using/database-cleanup-workflow.md)中了解有关Campaign数据库清理工作流的更多信息。
+在本节](../../production/using/database-cleanup-workflow.md)中了解有关Campaign数据库清理工作流[的更多信息。
 
 >[!IMPORTANT]
 >
@@ -314,12 +296,6 @@ Adobe Campaign既不是Data Warehouse也不是报表工具。 因此，要确保
 * 使用一个或多个引用表，而不是在每行中复制字段。 使用键/值对时，最好选择数字键。
 * 短字符串仍可接受。 如果引用表已在外部系统中，则重用它有助于将数据与Adobe Campaign集成。
 
-### 一对多关系 {#one-to-many-relationships}
-
-* 数据设计会影响可用性和功能。 如果您设计的数据模型具有大量一对多关系，则会使用户更难以在应用程序中构建有意义的逻辑。 对于非技术性营销人员，可能很难正确构建和理解一对多过滤器逻辑。
-* 将所有重要字段放在一个表中很好，因为这样用户更容易构建查询。 有时，如果可以避免联接，则跨表复制某些字段对性能也有好处。
-* 某些内置功能无法引用一对多关系，例如优惠权重公式和投放。
-
 ## 大型表 {#large-tables}
 
 Adobe Campaign依赖于第三方数据库引擎。 根据提供商的不同，为较大的表优化性能可能需要特定的设计。
@@ -338,7 +314,7 @@ Adobe Campaign依赖于第三方数据库引擎。 根据提供商的不同，�
 
 * **小型**&#x200B;表类似于投放表。
 * **中等大小**&#x200B;表与收件人表的大小相同。 每个客户都有一笔记录。
-* **large-size**&#x200B;表类似于Broad日志表。 每个客户都有许多记录。
+* **large-size**表类似于Broad日志表。 每个客户都有许多记录。
 例如，如果数据库包含1000万条收件人，则Broad日志表将包含约1亿到2亿条消息，而Delivery表将包含数千条记录。
 
 在PostgreSQL上，行不应超过8 KB，以避免[TOAST](https://wiki.postgresql.org/wiki/TOAST)机制。 因此，应尽量减少列数和每行大小，以保留系统的最佳性能（内存和CPU）。

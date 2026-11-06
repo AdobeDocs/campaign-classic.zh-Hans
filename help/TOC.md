@@ -8,9 +8,9 @@ user-guide-description: Adobe Campaign Classic v7 产品文档。
 sub-product: adobe campaign classic
 type: Documentation
 nudge: false
-source-git-commit: 59d78c785d8984861fd537c2f64f82a7d2d77fbf
-workflow-type: ht
-source-wordcount: '1657'
+source-git-commit: b2b42bcbab0d09197126d140da3ecb1f4aa0d869
+workflow-type: tm+mt
+source-wordcount: '1560'
 ht-degree: 100%
 ---
 
@@ -23,10 +23,6 @@ ht-degree: 100%
   + 之前版本 {#previous-releases}
     + [2025](rn/using/release-2025.md)
     + [2024](rn/using/release-2024.md)
-    + {hide-from-toc}[2023 - 隐藏](rn/using/release-2023.md)
-    + {hide-from-toc}[2022 - 隐藏](rn/using/release-2022.md)
-    + {hide-from-toc}[2021 - 隐藏](rn/using/release-2021.md)
-    + {hide-from-toc}[[!DNL Gold Standard - HIDDEN]](rn/using/gold-standard.md)
   + [已弃用的功能](rn/using/deprecated-features.md)
   + [兼容性矩阵](rn/using/compatibility-matrix.md)
 + 快速入门 {#getting-started}
@@ -66,8 +62,6 @@ ht-degree: 100%
 + 创建和发送消息 {#sending-messages}
   + [开始使用消息功能](delivery/using/communication-channels.md)
   + {hide-from-toc}[投放设置 - 隐藏](delivery/using/delivery-settings.md)
-  + 快速入门 {#key-steps-when-creating-a-delivery}
-    + {hide-from-toc}[发送投放 – 隐藏](delivery/using/steps-sending-the-delivery.md)
   + [发送电子邮件](delivery/using/about-email-channel.md)
   + 发送短信 {#sending-messages-on-mobiles}
     + 配置短信渠道 {#sms-set-up}
@@ -76,13 +70,8 @@ ht-degree: 100%
       + [短信连接器协议和设置](delivery/using/sms-protocol.md)
       + [其他配置](delivery/using/sms-send.md)
       + [短信故障排除](delivery/using/troubleshooting-sms.md)
-    + {hide-from-toc}[迁移到扩展通用 SMPP 连接器](delivery/using/unsupported-connector-migration.md)
   + [发送推送通知](delivery/using/about-mobile-app-channel.md)
   + 发送推送通知 {#sending-push-notifications}
-    + 配置移动应用程序{#configure-the-mobile-app}
-      + {hide-from-toc}[应用程序配置快速入门 - 隐藏](delivery/using/get-started-app-config.md)
-      + {hide-from-toc}[iOS 配置步骤 - 隐藏](delivery/using/configuring-the-mobile-application.md)
-      + {hide-from-toc}[Android 配置步骤 - 隐藏](delivery/using/configuring-the-mobile-application-android.md)
     + {hide-from-toc}[疑难解答 - 隐藏](delivery/using/troubleshooting.md)
   + [发送直邮](delivery/using/about-direct-mail-channel.md)
   + 个性化投放 {#personalizing-deliveries}
@@ -128,7 +117,6 @@ ht-degree: 100%
     + [使用内容模板](delivery/using/using-a-content-template.md)
     + [丰富内容](delivery/using/enriching-content.md)
     + [通过工作流实现自动化](delivery/using/automating-via-workflows.md)
-+ [编排营销活动](campaign/using/about-marketing-campaigns.md)
 + 响应管理器 {#response-manager}
   + [响应管理器入门](response/using/about-response-manager.md)
   + [配置](response/using/configuration.md)
@@ -140,9 +128,6 @@ ht-degree: 100%
     + [报告最佳实践](reporting/using/best-practices.md)
   + 访问内置报告 {#accessing-built-in-reports}
     + [关于内置报告](reporting/using/about-campaign-built-in-reports.md)
-    + [报告列表](reporting/using/list-of-reports.md)
-  + 投放报告{#reports-on-deliveries}
-    + [指标计算](reporting/using/indicator-calculation.md)
   + 分析人群 {#analyzing-populations}
     + [什么是描述性分析](reporting/using/about-descriptive-analysis.md)
     + [创建第一个描述性分析报告](reporting/using/using-the-descriptive-analysis-wizard.md)
@@ -228,20 +213,9 @@ ht-degree: 100%
     + [配置对  [!DNL Assets] 的访问](integrations/using/configuring-access-to-assets.md)
     + [插入共享资源](integrations/using/inserting-a-shared-asset.md)
   + Adobe Experience Manager {#adobe-experience-manager}
-    + [使用  [!DNL Adobe Experience Manager]](integrations/using/about-adobe-experience-manager.md)
     + [配置集成](integrations/using/configuring-the-integration.md)
-    + [创建  [!DNL Experience Manager]  新闻稿](integrations/using/creating-an-experience-manager-newsletter.md)
   + Adobe Target {#adobe-target}
-    + [使用  [!DNL Adobe Target]](integrations/using/integrating-with-adobe-target.md)
     + [配置与  [!DNL Adobe Target] 的集成](integrations/using/configuring-the-integration-with-adobe-target.md)
-    + [插入动态图像](integrations/using/inserting-a-dynamic-image.md)
-  + ACS 连接器 {#acs-connector}
-    + {hide-from-toc}[ [!DNL ACS Connector]  快速入门 - 隐藏](integrations/using/acs-connector-principles-and-data-cycle.md)
-    + {hide-from-toc}[同步轮廓 - 隐藏](integrations/using/synchronizing-profiles.md)
-    + {hide-from-toc}[同步受众 - 隐藏](integrations/using/synchronizing-audiences.md)
-    + {hide-from-toc}[同步 Web 应用程序 - 隐藏](integrations/using/synchronizing-web-applications.md)
-    + {hide-from-toc}[ 对  [!DNL ACS Connector]  进行故障排除 - 隐藏](integrations/using/troubleshooting-the-acs-connector.md)
-+ [使用工作流实现自动化](workflow/using/about-workflows.md)
 + 管理产品建议 {#managing-offers}
   + 互动快速入门 {#interaction-overview}
     + [互动和产品建议管理](interaction/using/interaction-and-offer-management.md)
@@ -344,7 +318,6 @@ ht-degree: 100%
     + [配置外部帐户](installation/using/external-accounts.md)
     + 配置联合数据访问{#configure-fda}
       + [联合数据访问入门](installation/using/about-fda.md)
-      + [最佳实践和限制](installation/using/fda-best-practices.md)
       + 配置准则 {#config-databases}
         + [配置步骤](installation/using/configure-fda.md)
         + [配置 Amazon Redshift](installation/using/configure-fda-redshift.md)
@@ -385,7 +358,6 @@ ht-degree: 100%
     + [日志文件](production/using/log-files.md)
     + [监测进程](production/using/monitoring-processes.md)
     + [常用命令](production/using/usual-commands.md)
-    + [审核跟踪](production/using/audit-trail.md)
   + 数据处理 {#data-processing}
     + [备份](production/using/backup.md)
     + [恢复](production/using/restoration.md)
@@ -519,15 +491,12 @@ ht-degree: 100%
     + [IMS 迁移后的界面影响](technotes/using/impact-ims-migration.md)
   + 升级和兼容性{#technote-migration}
     + [启用 Microsoft Edge Chromium](technotes/using/edge-chromium.md)
-    + {hide-from-toc}[新的可投放性服务器](technotes/using/deliverability-server.md)
     + {hide-from-toc}[Apache 安全升级](technotes/using/acc-apache-upgrade.md)
     + {hide-from-toc}[2023 年系统升级](technotes/using/tech-stack-upgrade.md)
-    + {hide-from-toc}[IMS 更新](technotes/using/ims-updates.md)
     + {hide-from-toc}[迁移到 Adobe Analytics 2.0 API](technotes/using/analytics-2-migration.md)
   + 电子邮件和推送通知{#technotes-email}
     + [Apple iOS 上的邮件隐私保护](technotes/using/apple-mail-app-privacy-protection.md)
     + [iOS 证书更新](technotes/using/ios-certificate-update.md)
-    + {hide-from-toc}[跟踪的 URL 更新](technotes/using/tracked-urls.md)
   + 迁移到 Adobe Managed Services{#dc-migration}
     + [迁移到公共云](technotes/using/dc-migration.md)
     + [常见问题解答](technotes/using/dc-migration-faq.md)
