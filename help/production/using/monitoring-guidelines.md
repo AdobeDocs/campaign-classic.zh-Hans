@@ -25,7 +25,7 @@ topic_v2:
     internal-label: Troubleshooting
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: a26a9642d4b60f0f095596584929ba5e98c3180a
+source-git-commit: fbeb3bb6f89cd0b03d1fb4551496f96eda0cbf10
 workflow-type: tm+mt
 source-wordcount: '861'
 ht-degree: 18%
@@ -166,7 +166,7 @@ Campaign Classic文档中提供了技术资源。 我们建议您先熟悉这些
 
 **一般原则**
 
-* [Campaign Classic架构](../../production/using/general-architecture.md)
+* [Campaign Classic架构](../../production/using/architecture-and-open-ports.md)
 * [Campaign Classic模块](../../production/using/operating-principle.md)
 * [Campaign Classic选项](../../installation/using/configuring-campaign-options.md)
 * [如何设置模块的自动启动](../../production/using/administration.md)

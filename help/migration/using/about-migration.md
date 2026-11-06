@@ -23,12 +23,16 @@ subfeature_v2:
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
     internal-label: Security
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: ca8baf1913cbc7f91cd34019dcaa5e499079e9e7
 workflow-type: tm+mt
-source-wordcount: '460'
+source-wordcount: '500'
 ht-degree: 4%
 ---
 # 迁移入门{#about-migration}
+
+>[!NOTE]
+>
+>本指南介绍从Campaign Classic v5和v6到v7的迁移。 它不再进行维护，仅供参考。 若要将v7平台更新为新内部版本，请参阅[升级到新内部版本](../../production/using/upgrading.md)。
 
 
 

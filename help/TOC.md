@@ -8,16 +8,16 @@ user-guide-description: Adobe Campaign Classic v7 产品文档。
 sub-product: adobe campaign classic
 type: Documentation
 nudge: false
-source-git-commit: b2b42bcbab0d09197126d140da3ecb1f4aa0d869
+source-git-commit: fbeb3bb6f89cd0b03d1fb4551496f96eda0cbf10
 workflow-type: tm+mt
-source-wordcount: '1560'
-ht-degree: 100%
+source-wordcount: '1577'
+ht-degree: 97%
 ---
 
 # Adobe Campaign Classic v7 文档 {#using}
 
 + [Campaign v7 文档](campaign-classic-home.md)
-+ 发行说明 {#release-notes}
++ 发行说明和兼容性 {#release-notes}
   + [升级入门](rn/using/rn-overview.md)
   + [最新版本](rn/using/latest-release.md)
   + 之前版本 {#previous-releases}
@@ -59,199 +59,7 @@ ht-degree: 100%
       + [创建和管理组](platform/using/access-management-groups.md)
   + CRM 连接器 {#connectors}
     + [CRM 连接器入门](platform/using/crm-connectors.md)
-+ 创建和发送消息 {#sending-messages}
-  + [开始使用消息功能](delivery/using/communication-channels.md)
-  + {hide-from-toc}[投放设置 - 隐藏](delivery/using/delivery-settings.md)
-  + [发送电子邮件](delivery/using/about-email-channel.md)
-  + 发送短信 {#sending-messages-on-mobiles}
-    + 配置短信渠道 {#sms-set-up}
-      + [在独立实例上配置短信](delivery/using/sms-set-up.md)
-      + [在中间源基础结构上配置短信](delivery/using/sms-set-up-mid.md)
-      + [短信连接器协议和设置](delivery/using/sms-protocol.md)
-      + [其他配置](delivery/using/sms-send.md)
-      + [短信故障排除](delivery/using/troubleshooting-sms.md)
-  + [发送推送通知](delivery/using/about-mobile-app-channel.md)
-  + 发送推送通知 {#sending-push-notifications}
-    + {hide-from-toc}[疑难解答 - 隐藏](delivery/using/troubleshooting.md)
-  + [发送直邮](delivery/using/about-direct-mail-channel.md)
-  + 个性化投放 {#personalizing-deliveries}
-    + [关于个性化](delivery/using/about-personalization.md)
-  + 使用种子地址 {#using-seed-addresses}
-    + [用例：根据条件选择种子地址](delivery/using/use-case-selecting-seed-addresses-on-criteria.md)
-    + [用例：配置字段替换](delivery/using/use-case-configuring-the-field-substitution.md)
-  + A/B 测试 {#a-b-testing}
-    + [A/B 测试入门](delivery/using/get-started-a-b-testing.md)
-    + [配置 A/B 测试](delivery/using/configuring-a-b-testing.md)
-    + 用例 {#use-case}
-      + [关于此用例](delivery/using/a-b-testing-use-case.md)
-      + [创建定位工作流](delivery/using/a-b-testing-uc-targeting-workflow.md)
-      + [配置人群样本](delivery/using/a-b-testing-uc-population-samples.md)
-      + [创建投放模板](delivery/using/a-b-testing-uc-delivery-templates.md)
-      + [配置投放](delivery/using/a-b-testing-uc-configuring-deliveries.md)
-      + [创建脚本](delivery/using/a-b-testing-uc-script.md)
-      + [定义最终投放](delivery/using/a-b-testing-uc-final-delivery.md)
-      + [启动工作流](delivery/using/a-b-testing-uc-start-workflow.md)
-      + [分析结果](delivery/using/a-b-testing-uc-analyzing.md)
-  + 服务和订阅 {#subscriptions-and-referrals}
-    + [关于服务和订阅](delivery/using/about-services-and-subscriptions.md)
-    + [管理订阅](delivery/using/managing-subscriptions.md)
-    + [病毒式营销和社交媒体营销](delivery/using/viral-and-social-marketing.md)
-  + 监测投放 {#monitoring-deliveries}
-    + [监控投放效果](delivery/using/about-delivery-monitoring.md)
-    + [跟踪消息](delivery/using/about-message-tracking.md)
-    + [投放效果和故障排除](delivery/using/delivery-performance-troubleshooting.md)
-    + [投放故障和隔离管理](delivery/using/delivery-failures-quarantine.md)
-    + [高级：自定义投放日志](delivery/using/customize-delivery-logs.md)
-  + 可投放性管理 {#deliverability-management}
-    + [什么是可投放性](delivery/using/about-deliverability.md)
-    + [收件箱渲染](delivery/using/inbox-rendering.md)
-    + [故障排除](delivery/using/deliverability-faq.md)
-  + 内容管理模块 {#content-management}
-    + [关于内容管理](delivery/using/about-content-management.md)
-    + [内容管理者资源和原则](delivery/using/content-manager-resources-and-principles.md)
-    + [用例：创建内容管理](delivery/using/use-case-creating-content-management.md)
-    + [数据架构](delivery/using/data-schemas.md)
-    + [输入表单](delivery/using/input-forms.md)
-    + [格式化](delivery/using/formatting.md)
-    + [发布模板](delivery/using/publication-templates.md)
-    + [使用内容模板](delivery/using/using-a-content-template.md)
-    + [丰富内容](delivery/using/enriching-content.md)
-    + [通过工作流实现自动化](delivery/using/automating-via-workflows.md)
-+ 响应管理器 {#response-manager}
-  + [响应管理器入门](response/using/about-response-manager.md)
-  + [配置](response/using/configuration.md)
-  + [假设验证模板](response/using/hypothesis-templates.md)
-  + [创建假设验证](response/using/creating-hypotheses.md)
-  + [假设验证跟踪](response/using/hypothesis-tracking.md)
-+ 设计和共享报告 {#reporting}
-  + 报告快速入门 {#reporting-in-adobe-campaign}
-    + [报告最佳实践](reporting/using/best-practices.md)
-  + 访问内置报告 {#accessing-built-in-reports}
-    + [关于内置报告](reporting/using/about-campaign-built-in-reports.md)
-  + 分析人群 {#analyzing-populations}
-    + [什么是描述性分析](reporting/using/about-descriptive-analysis.md)
-    + [创建第一个描述性分析报告](reporting/using/using-the-descriptive-analysis-wizard.md)
-    + [管理和配置分析报告](reporting/using/processing-a-report.md)
-    + [分析报告用例](reporting/using/use-cases.md)
-  + 创建新报告 {#creating-new-reports}
-    + [设计报告的关键步骤](reporting/using/about-reports-creation-in-campaign.md)
-    + [创建新报告](reporting/using/creating-a-new-report.md)
-    + [收集数据进行分析](reporting/using/collecting-data-to-analyze.md)
-    + [使用上下文](reporting/using/using-the-context.md)
-    + [创建表](reporting/using/creating-a-table.md)
-    + [创建图表](reporting/using/creating-a-chart.md)
-    + [元素布局](reporting/using/element-layout.md)
-    + [定义条件内容](reporting/using/defining-a-conditional-content.md)
-    + [高级功能](reporting/using/advanced-functionalities.md)
-    + [报告的属性](reporting/using/properties-of-the-report.md)
-    + [配置对报告的访问权限](reporting/using/configuring-access-to-the-report.md)
-    + [对报告执行操作](reporting/using/actions-on-reports.md)
-  + [设计包含多维数据集的报告](reporting/using/ac-cubes.md)
-+ 设计 Web 内容 {#designing-content}
-  + Web 应用程序 {#web-applications}
-    + [Web 应用程序入门](web/using/about-web-applications.md)
-    + [创建新 Web 应用程序](web/using/creating-a-new-web-application.md)
-    + [设计 Web 应用程序](web/using/designing-a-web-application.md)
-    + [用例：创建概述](web/using/use-cases-creating-overviews.md)
-    + [解释 Web 应用程序](web/using/translating-a-web-application.md)
-    + [跟踪 Web 应用程序访问](web/using/tracking-a-web-application.md)
-    + [选择退出 Web 应用程序跟踪](web/using/web-application-tracking-opt-out.md)
-  + 编辑 HTML 内容 {#editing-html-content}
-    + [HTML 编辑器入门](web/using/about-campaign-html-editor.md)
-    + [模板管理](web/using/template-management.md)
-    + [内容编辑器界面](web/using/content-editor-interface.md)
-    + [编辑内容](web/using/editing-content.md)
-    + [内容编辑最佳实践](web/using/content-editing-best-practices.md)
-    + [创建登陆页面](web/using/creating-a-landing-page.md)
-    + [用例：创建电子邮件投放](web/using/use-case-creating-an-email-delivery.md)
-  + Web 窗体 {#web-forms}
-    + [Web 窗体入门](web/using/about-web-forms.md)
-    + [使用 Web 窗体模板](web/using/using-a-web-form-template.md)
-    + [向 Web 窗体添加字段](web/using/adding-fields-to-a-web-form.md)
-    + [Web 窗体中的静态元素](web/using/static-elements-in-a-web-form.md)
-    + [定义 Web 窗体布局](web/using/defining-web-forms-layout.md)
-    + [窗体渲染](web/using/form-rendering.md)
-    + [定义页面排序](web/using/defining-web-forms-page-sequencing.md)
-    + [保存 Web 窗体答案](web/using/web-forms-answers.md)
-    + [发布 Web 窗体](web/using/publishing-a-web-form.md)
-    + [定义 Web 窗体属性](web/using/defining-web-forms-properties.md)
-    + [解释 Web 窗体](web/using/translating-a-web-form.md)
-    + [用例：Web 窗体](web/using/use-cases-web-forms.md)
-+ 创建在线调查 {#online-surveys}
-  + [调查入门](surveys/using/about-surveys.md)
-  + [创建调查的关键步骤](surveys/using/getting-started-with-surveys.md)
-  + [设计调查](surveys/using/building-a-survey.md)
-  + [管理答案](surveys/using/managing-answers.md)
-  + [发布、跟踪和使用收集的数据](surveys/using/publish-track-and-use-collected-data.md)
-  + [配置调查](surveys/using/configuring-surveys.md)
-  + [用例：创建引用窗体](surveys/using/use-case-creating-a-refer-a-friend-form.md)
-  + [用例：显示在线调查的答案报告](surveys/using/use-case-displaying-report-on-answers-to-an-online-survey.md)
-+ 与 Adobe Experience Cloud 集成 {#integrating-with-adobe-experience-cloud}
-  + [Campaign 集成入门](integrations/using/about-campaign-integrations.md)
-  + [创建您的 Adobe 技术帐户](integrations/using/oauth-technical-account.md)
-  + Adobe Experience Cloud Triggers {#experience-triggers}
-    + [使用  [!DNL Experience Cloud Triggers]](integrations/using/about-triggers.md)
-    + [配置管道](integrations/using/configuring-pipeline.md)
-    + [为自定义实施配置事件](integrations/using/events.md)
-    + [管道监测](integrations/using/pipeline-monitoring.md)
-    + [管道故障排除](integrations/using/pipeline-troubleshooting.md)
-  + Adobe Experience Platform Sources 与 Destinations {#aep-sources-destinations}
-    + [使用源和目标](integrations/using/get-started-sources-destinations.md)
-    + [将 Adobe Experience Platform 受众引入 Campaign](integrations/using/ingest-aep-data.md)
-    + [将数据从 Campaign 导出到 Adobe Experience Platform](integrations/using/export-campaign-data.md)
-  + Adobe Analytics Connector{#analytics-connector}
-    + [Adobe Analytics Connector 入门](integrations/using/gs-aa.md)
-    + [Adobe Analytics Connector 配置](integrations/using/adobe-analytics-provisioning.md)
-  + 受众共享 {#audience-sharing}
-    + [与  [!DNL Adobe Experience Cloud] 共享受众](integrations/using/sharing-audiences-with-adobe-experience-cloud.md)
-    + [向 Adobe 提交请求](integrations/using/submitting-request-to-adobe.md)
-    + [在  [!DNL Adobe Campaign] 中配置共享受众集成](integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md)
-    + {hide-from-toc}[故障排除](integrations/using/troubleshooting.md)
-    + [导入和导出受众](integrations/using/importing-and-exporting-audiences.md)
-  + 资源共享 {#asset-sharing}
-    + [与  [!DNL Adobe Experience Cloud] 共享资源](integrations/using/sharing-assets-with-adobe-experience-cloud.md)
-    + [配置对  [!DNL Assets] 的访问](integrations/using/configuring-access-to-assets.md)
-    + [插入共享资源](integrations/using/inserting-a-shared-asset.md)
-  + Adobe Experience Manager {#adobe-experience-manager}
-    + [配置集成](integrations/using/configuring-the-integration.md)
-  + Adobe Target {#adobe-target}
-    + [配置与  [!DNL Adobe Target] 的集成](integrations/using/configuring-the-integration-with-adobe-target.md)
-+ 管理产品建议 {#managing-offers}
-  + 互动快速入门 {#interaction-overview}
-    + [互动和产品建议管理](interaction/using/interaction-and-offer-management.md)
-  + 管理产品建议目录 {#managing-an-offer-catalog}
-    + [批准和激活产品建议](interaction/using/approving-and-activating-an-offer.md)
-    + [管理产品建议模板](interaction/using/managing-offer-templates.md)
-    + [管理产品建议演示](interaction/using/managing-offer-presentation.md)
-  + 产品建议模拟{#simulating-offers}
-    + [关于产品建议模拟](interaction/using/about-offers-simulation.md)
-    + [执行设置](interaction/using/execution-settings.md)
-    + [模拟范围](interaction/using/simulation-scope.md)
-    + [模拟跟踪](interaction/using/simulation-tracking.md)
-  + 高级参数 {#advanced-parameters}
-    + [使用高级参数](interaction/using/using-advanced-parameters.md)
-    + [其他数据](interaction/using/additional-data.md)
-    + [扩展示例](interaction/using/extension-example.md)
-    + [创建测试环境](interaction/using/creating-a-test-environment.md)
-    + [修改标准引擎行为](interaction/using/hooks.md)
-    + [分布式架构](interaction/using/distributed-architectures.md)
-    + [数据缓冲区配置](installation/using/interaction-data-buffer.md)
-  + 用例 {#case-study}
-    + [呈现规则](interaction/using/presentation-rules.md)
-    + [入站渠道产品建议](interaction/using/offers-on-an-inbound-channel.md)
-    + [出站渠道产品建议](interaction/using/offers-on-an-outbound-channel.md)
-+ 事务性消息 {#transactional-messaging}
-  + [事务性消息传递快速入门](message-center/using/about-transactional-messaging.md)
-  + 配置事务性消息传递 {#configure-transactional-messaging}
-    + [事务性消息传递架构](message-center/using/transactional-messaging-architecture.md)
-    + [配置实例](message-center/using/configuring-instances.md)
-    + [其他配置](message-center/using/additional-configurations.md)
-  + 消息模板 {#message-templates}
-    + [测试消息模板](message-center/using/testing-message-templates.md)
-  + [用例](message-center/using/transactional-email-with-attachments.md)
-+ 与社交媒体集成 {#integrating-with-social-media}
-  + [关于社交媒体营销](social/using/about-social-marketing.md)
-+ 安装和配置指南 {#installing-campaign-classic}
++ 安装和配置 {#installing-campaign-classic}
   + 架构原理 {#architecture-and-hosting-models}
     + [一般架构](installation/using/general-architecture.md)
     + 托管模型{#hosting-models-lp}
@@ -267,7 +75,7 @@ ht-degree: 100%
   + 安全和隐私设置 {#security-privacy}
     + [安全和隐私检查清单](installation/using/get-started-security-privacy.md)
     + [个性化和隐私](installation/using/privacy.md)
-    + [安全访问管理](installation/using/access-management.md)
+    + [安全访问管理](installation/using/secure-access-management.md)
     + [脚本和编码准则](installation/using/scripting-coding-guidelines.md)
     + [网络、数据库和 SSL/TLS](installation/using/network-database.md)
     + [服务器安全设置](installation/using/server-configuration.md)
@@ -345,16 +153,26 @@ ht-degree: 100%
     + [Campaign 选项列表](installation/using/configuring-campaign-options.md)
     + {hide-from-toc}[卸载 Campaign](installation/using/uninstalling-campaign.md)
     + [安装新字体](installation/using/install-fonts.md)
-+ 监控指南 {#monitoring-campaign-classic}
++ 迁移指南 {#migrating-to-a-new-version}
+  + {hide-from-toc}[迁移到 Adobe Campaign v7](migration/using/about-migration.md)
+  + 迁移过程 {#migration-procedure}
+    + {hide-from-toc}[先决条件](migration/using/before-starting-migration.md)
+    + {hide-from-toc}[关于迁移测试](migration/using/testing-the-migration.md)
+    + {hide-from-toc}[调整配置](migration/using/configuring-your-platform.md)
+  + 开始迁移 {#migrating-to-adobe-campaign-7}
+    + {hide-from-toc}[迁移 Microsoft Windows 平台](migration/using/migrating-in-windows-for-adobe-campaign-7.md)
+    + {hide-from-toc}[迁移 Linux 平台](migration/using/migrating-in-linux-for-adobe-campaign-v7.md)
+  + {hide-from-toc}[回滚过程](migration/using/about-rollback.md)
++ 操作和监视 {#monitoring-campaign-classic}
   + 简介 {#introduction}
     + [前言](production/using/foreword.md)
-    + [一般架构](production/using/general-architecture.md)
+    + [架构和开放端口](production/using/architecture-and-open-ports.md)
     + [监测准则](production/using/monitoring-guidelines.md)
   + 生产流程 {#production-procedures}
     + [配置原则](production/using/configuration-principle.md)
     + [操作原则](production/using/operating-principle.md)
     + [管理](production/using/administration.md)
-    + [配置](production/using/configuration.md)
+    + [Syslogd端口和安全区域](production/using/syslogd-port-and-security-zones.md)
     + [日志文件](production/using/log-files.md)
     + [监测进程](production/using/monitoring-processes.md)
     + [常用命令](production/using/usual-commands.md)
@@ -364,7 +182,7 @@ ht-degree: 100%
     + [复制环境](production/using/duplicating-environments.md)
     + [数据库清理工作流](production/using/database-cleanup-workflow.md)
   + 更新 Adobe Campaign {#updating-adobe-campaign}
-    + [简介](production/using/introduction.md)
+    + [关于更新营销活动](production/using/introduction.md)
     + [执行内部版本升级](production/using/build-upgrade.md)
     + [升级流程（内部部署）](production/using/upgrading.md)
     + [切换到 Unicode](production/using/switching-to-unicode.md)
@@ -400,7 +218,7 @@ ht-degree: 100%
       + [Linux 中的堆栈跟踪](production/using/stack-trace-in-linux.md)
       + [JSP 行为](production/using/jsp-behavior.md)
       + [查找 Tomcat 版本](production/using/locate-tomcat-version.md)
-+ 开发者指南 {#configuring-campaign-classic}
++ 开发和扩展 {#configuring-campaign-classic}
   + [数据包](platform/using/working-with-data-packages.md)
   + 数据模型 {#data-model}
     + [数据模型描述](configuration/using/data-model-description.md)
@@ -411,7 +229,7 @@ ht-degree: 100%
     + [数据库映射](configuration/using/database-mapping.md)
     + [密钥管理](configuration/using/database-keys.md)
     + 元素和属性 {#elements-attributes}
-      + [简介](configuration/using/schema-introduction.md)
+      + [元素和属性简介](configuration/using/schema-introduction.md)
       + [属性](configuration/using/schema/attribute.md)
       + [计算字符串](configuration/using/schema/compute-string.md)
       + [条件](configuration/using/schema/condition.md)
@@ -470,16 +288,198 @@ ht-degree: 100%
     + [在站点中插入标记](configuration/using/inserting-tags-in-your-site.md)
     + [收集所有访问](configuration/using/collecting-all-visits.md)
     + [匿名跟踪](configuration/using/anonymous-tracking.md)
-+ 迁移指南 {#migrating-to-a-new-version}
-  + {hide-from-toc}[迁移到 Adobe Campaign v7](migration/using/about-migration.md)
-  + 迁移过程 {#migration-procedure}
-    + {hide-from-toc}[先决条件](migration/using/before-starting-migration.md)
-    + {hide-from-toc}[关于迁移测试](migration/using/testing-the-migration.md)
-    + {hide-from-toc}[调整配置](migration/using/configuring-your-platform.md)
-  + 开始迁移 {#migrating-to-adobe-campaign-7}
-    + {hide-from-toc}[迁移 Microsoft Windows 平台](migration/using/migrating-in-windows-for-adobe-campaign-7.md)
-    + {hide-from-toc}[迁移 Linux 平台](migration/using/migrating-in-linux-for-adobe-campaign-v7.md)
-  + {hide-from-toc}[回滚过程](migration/using/about-rollback.md)
++ 创建和发送消息 {#sending-messages}
+  + [开始使用消息功能](delivery/using/communication-channels.md)
+  + {hide-from-toc}[投放设置 - 隐藏](delivery/using/delivery-settings.md)
+  + [发送电子邮件](delivery/using/about-email-channel.md)
+  + 发送短信 {#sending-messages-on-mobiles}
+    + 配置短信渠道 {#sms-set-up}
+      + [在独立实例上配置短信](delivery/using/sms-set-up.md)
+      + [在中间源基础结构上配置短信](delivery/using/sms-set-up-mid.md)
+      + [短信连接器协议和设置](delivery/using/sms-protocol.md)
+      + [其他配置](delivery/using/sms-send.md)
+      + [短信故障排除](delivery/using/troubleshooting-sms.md)
+  + [发送推送通知](delivery/using/about-mobile-app-channel.md)
+  + 发送推送通知 {#sending-push-notifications}
+    + {hide-from-toc}[疑难解答 - 隐藏](delivery/using/push-troubleshooting.md)
+  + [发送直邮](delivery/using/about-direct-mail-channel.md)
+  + 个性化投放 {#personalizing-deliveries}
+    + [关于个性化](delivery/using/about-personalization.md)
+  + 使用种子地址 {#using-seed-addresses}
+    + [用例：根据条件选择种子地址](delivery/using/use-case-selecting-seed-addresses-on-criteria.md)
+    + [用例：配置字段替换](delivery/using/use-case-configuring-the-field-substitution.md)
+  + A/B 测试 {#a-b-testing}
+    + [A/B 测试入门](delivery/using/get-started-a-b-testing.md)
+    + [配置 A/B 测试](delivery/using/configuring-a-b-testing.md)
+    + 用例 {#use-case}
+      + [关于此用例](delivery/using/a-b-testing-use-case.md)
+      + [创建定位工作流](delivery/using/a-b-testing-uc-targeting-workflow.md)
+      + [配置人群样本](delivery/using/a-b-testing-uc-population-samples.md)
+      + [创建投放模板](delivery/using/a-b-testing-uc-delivery-templates.md)
+      + [配置投放](delivery/using/a-b-testing-uc-configuring-deliveries.md)
+      + [创建脚本](delivery/using/a-b-testing-uc-script.md)
+      + [定义最终投放](delivery/using/a-b-testing-uc-final-delivery.md)
+      + [启动工作流](delivery/using/a-b-testing-uc-start-workflow.md)
+      + [分析结果](delivery/using/a-b-testing-uc-analyzing.md)
+  + 服务和订阅 {#subscriptions-and-referrals}
+    + [关于服务和订阅](delivery/using/about-services-and-subscriptions.md)
+    + [管理订阅](delivery/using/managing-subscriptions.md)
+    + [病毒式营销和社交媒体营销](delivery/using/viral-and-social-marketing.md)
+  + 监测投放 {#monitoring-deliveries}
+    + [监控投放效果](delivery/using/about-delivery-monitoring.md)
+    + [跟踪消息](delivery/using/about-message-tracking.md)
+    + [投放效果和故障排除](delivery/using/delivery-performance-troubleshooting.md)
+    + [投放故障和隔离管理](delivery/using/delivery-failures-quarantine.md)
+    + [高级：自定义投放日志](delivery/using/customize-delivery-logs.md)
+  + 可投放性管理 {#deliverability-management}
+    + [什么是可投放性](delivery/using/about-deliverability.md)
+    + [收件箱渲染](delivery/using/inbox-rendering.md)
+    + [故障排除](delivery/using/deliverability-faq.md)
+  + 内容管理模块 {#content-management}
+    + [关于内容管理](delivery/using/about-content-management.md)
+    + [内容管理者资源和原则](delivery/using/content-manager-resources-and-principles.md)
+    + [用例：创建内容管理](delivery/using/use-case-creating-content-management.md)
+    + [数据架构](delivery/using/data-schemas.md)
+    + [输入表单](delivery/using/input-forms.md)
+    + [格式化](delivery/using/formatting.md)
+    + [发布模板](delivery/using/publication-templates.md)
+    + [使用内容模板](delivery/using/using-a-content-template.md)
+    + [丰富内容](delivery/using/enriching-content.md)
+    + [通过工作流实现自动化](delivery/using/automating-via-workflows.md)
++ 事务性消息 {#transactional-messaging}
+  + [事务性消息传递快速入门](message-center/using/about-transactional-messaging.md)
+  + 配置事务性消息传递 {#configure-transactional-messaging}
+    + [事务性消息传递架构](message-center/using/transactional-messaging-architecture.md)
+    + [配置实例](message-center/using/configuring-instances.md)
+    + [其他配置](message-center/using/additional-configurations.md)
+  + 消息模板 {#message-templates}
+    + [测试消息模板](message-center/using/testing-message-templates.md)
+  + [用例](message-center/using/transactional-email-with-attachments.md)
++ 设计 Web 内容 {#designing-content}
+  + Web 应用程序 {#web-applications}
+    + [Web 应用程序入门](web/using/about-web-applications.md)
+    + [创建新 Web 应用程序](web/using/creating-a-new-web-application.md)
+    + [设计 Web 应用程序](web/using/designing-a-web-application.md)
+    + [用例：创建概述](web/using/use-cases-creating-overviews.md)
+    + [解释 Web 应用程序](web/using/translating-a-web-application.md)
+    + [跟踪 Web 应用程序访问](web/using/tracking-a-web-application.md)
+    + [选择退出 Web 应用程序跟踪](web/using/web-application-tracking-opt-out.md)
+  + 编辑 HTML 内容 {#editing-html-content}
+    + [HTML 编辑器入门](web/using/about-campaign-html-editor.md)
+    + [模板管理](web/using/template-management.md)
+    + [内容编辑器界面](web/using/content-editor-interface.md)
+    + [编辑内容](web/using/editing-content.md)
+    + [内容编辑最佳实践](web/using/content-editing-best-practices.md)
+    + [创建登陆页面](web/using/creating-a-landing-page.md)
+    + [用例：创建电子邮件投放](web/using/use-case-creating-an-email-delivery.md)
+  + Web 窗体 {#web-forms}
+    + [Web 窗体入门](web/using/about-web-forms.md)
+    + [使用 Web 窗体模板](web/using/using-a-web-form-template.md)
+    + [向 Web 窗体添加字段](web/using/adding-fields-to-a-web-form.md)
+    + [Web 窗体中的静态元素](web/using/static-elements-in-a-web-form.md)
+    + [定义 Web 窗体布局](web/using/defining-web-forms-layout.md)
+    + [窗体渲染](web/using/form-rendering.md)
+    + [定义页面排序](web/using/defining-web-forms-page-sequencing.md)
+    + [保存 Web 窗体答案](web/using/web-forms-answers.md)
+    + [发布 Web 窗体](web/using/publishing-a-web-form.md)
+    + [定义 Web 窗体属性](web/using/defining-web-forms-properties.md)
+    + [解释 Web 窗体](web/using/translating-a-web-form.md)
+    + [用例：Web 窗体](web/using/use-cases-web-forms.md)
++ 创建在线调查 {#online-surveys}
+  + [调查入门](surveys/using/about-surveys.md)
+  + [创建调查的关键步骤](surveys/using/getting-started-with-surveys.md)
+  + [设计调查](surveys/using/building-a-survey.md)
+  + [管理答案](surveys/using/managing-answers.md)
+  + [发布、跟踪和使用收集的数据](surveys/using/publish-track-and-use-collected-data.md)
+  + [配置调查](surveys/using/configuring-surveys.md)
+  + [用例：创建引用窗体](surveys/using/use-case-creating-a-refer-a-friend-form.md)
+  + [用例：显示在线调查的答案报告](surveys/using/use-case-displaying-report-on-answers-to-an-online-survey.md)
++ 管理产品建议 {#managing-offers}
+  + 互动快速入门 {#interaction-overview}
+    + [互动和产品建议管理](interaction/using/interaction-and-offer-management.md)
+  + 管理产品建议目录 {#managing-an-offer-catalog}
+    + [批准和激活产品建议](interaction/using/approving-and-activating-an-offer.md)
+    + [管理产品建议模板](interaction/using/managing-offer-templates.md)
+    + [管理产品建议演示](interaction/using/managing-offer-presentation.md)
+  + 产品建议模拟{#simulating-offers}
+    + [关于产品建议模拟](interaction/using/about-offers-simulation.md)
+    + [执行设置](interaction/using/execution-settings.md)
+    + [模拟范围](interaction/using/simulation-scope.md)
+    + [模拟跟踪](interaction/using/simulation-tracking.md)
+  + 高级参数 {#advanced-parameters}
+    + [使用高级参数](interaction/using/using-advanced-parameters.md)
+    + [其他数据](interaction/using/additional-data.md)
+    + [扩展示例](interaction/using/extension-example.md)
+    + [创建测试环境](interaction/using/creating-a-test-environment.md)
+    + [修改标准引擎行为](interaction/using/hooks.md)
+    + [分布式架构](interaction/using/distributed-architectures.md)
+    + [数据缓冲区配置](installation/using/interaction-data-buffer.md)
+  + 用例 {#case-study}
+    + [呈现规则](interaction/using/presentation-rules.md)
+    + [入站渠道产品建议](interaction/using/offers-on-an-inbound-channel.md)
+    + [出站渠道产品建议](interaction/using/offers-on-an-outbound-channel.md)
++ 响应管理器 {#response-manager}
+  + [响应管理器入门](response/using/about-response-manager.md)
+  + [配置响应管理器](response/using/configure-response-manager.md)
+  + [假设验证模板](response/using/hypothesis-templates.md)
+  + [创建假设验证](response/using/creating-hypotheses.md)
+  + [假设验证跟踪](response/using/hypothesis-tracking.md)
++ 设计和共享报告 {#reporting}
+  + 报告快速入门 {#reporting-in-adobe-campaign}
+    + [报告最佳实践](reporting/using/best-practices.md)
+  + 访问内置报告 {#accessing-built-in-reports}
+    + [关于内置报告](reporting/using/about-campaign-built-in-reports.md)
+  + 分析人群 {#analyzing-populations}
+    + [什么是描述性分析](reporting/using/about-descriptive-analysis.md)
+    + [创建第一个描述性分析报告](reporting/using/using-the-descriptive-analysis-wizard.md)
+    + [管理和配置分析报告](reporting/using/processing-a-report.md)
+    + [分析报告用例](reporting/using/use-cases.md)
+  + 创建新报告 {#creating-new-reports}
+    + [设计报告的关键步骤](reporting/using/about-reports-creation-in-campaign.md)
+    + [创建新报告](reporting/using/creating-a-new-report.md)
+    + [收集数据进行分析](reporting/using/collecting-data-to-analyze.md)
+    + [使用上下文](reporting/using/using-the-context.md)
+    + [创建表](reporting/using/creating-a-table.md)
+    + [创建图表](reporting/using/creating-a-chart.md)
+    + [元素布局](reporting/using/element-layout.md)
+    + [定义条件内容](reporting/using/defining-a-conditional-content.md)
+    + [高级功能](reporting/using/advanced-functionalities.md)
+    + [报告的属性](reporting/using/properties-of-the-report.md)
+    + [配置对报告的访问权限](reporting/using/configuring-access-to-the-report.md)
+    + [对报告执行操作](reporting/using/actions-on-reports.md)
+  + [设计包含多维数据集的报告](reporting/using/ac-cubes.md)
++ 与 Adobe Experience Cloud 集成 {#integrating-with-adobe-experience-cloud}
+  + [Campaign 集成入门](integrations/using/about-campaign-integrations.md)
+  + [创建您的 Adobe 技术帐户](integrations/using/oauth-technical-account.md)
+  + Adobe Experience Cloud Triggers {#experience-triggers}
+    + [使用  [!DNL Experience Cloud Triggers]](integrations/using/about-triggers.md)
+    + [配置管道](integrations/using/configuring-pipeline.md)
+    + [为自定义实施配置事件](integrations/using/events.md)
+    + [管道监测](integrations/using/pipeline-monitoring.md)
+    + [管道故障排除](integrations/using/pipeline-troubleshooting.md)
+  + Adobe Experience Platform Sources 与 Destinations {#aep-sources-destinations}
+    + [使用源和目标](integrations/using/get-started-sources-destinations.md)
+    + [将 Adobe Experience Platform 受众引入 Campaign](integrations/using/ingest-aep-data.md)
+    + [将数据从 Campaign 导出到 Adobe Experience Platform](integrations/using/export-campaign-data.md)
+  + Adobe Analytics Connector{#analytics-connector}
+    + [Adobe Analytics Connector 入门](integrations/using/gs-aa.md)
+    + [Adobe Analytics Connector 配置](integrations/using/adobe-analytics-provisioning.md)
+  + 受众共享 {#audience-sharing}
+    + [与  [!DNL Adobe Experience Cloud] 共享受众](integrations/using/sharing-audiences-with-adobe-experience-cloud.md)
+    + [向 Adobe 提交请求](integrations/using/submitting-request-to-adobe.md)
+    + [在  [!DNL Adobe Campaign] 中配置共享受众集成](integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md)
+    + {hide-from-toc}[故障排除](integrations/using/integrations-troubleshooting.md)
+    + [导入和导出受众](integrations/using/importing-and-exporting-audiences.md)
+  + 资源共享 {#asset-sharing}
+    + [与  [!DNL Adobe Experience Cloud] 共享资源](integrations/using/sharing-assets-with-adobe-experience-cloud.md)
+    + [配置对  [!DNL Assets] 的访问](integrations/using/configuring-access-to-assets.md)
+    + [插入共享资源](integrations/using/inserting-a-shared-asset.md)
+  + Adobe Experience Manager {#adobe-experience-manager}
+    + [配置集成](integrations/using/configuring-the-integration.md)
+  + Adobe Target {#adobe-target}
+    + [配置与  [!DNL Adobe Target] 的集成](integrations/using/configuring-the-integration-with-adobe-target.md)
++ 与社交媒体集成 {#integrating-with-social-media}
+  + [关于社交媒体营销](social/using/about-social-marketing.md)
 + 技术说明 {#technotes}
   + [硬件大小调整建议](technotes/using/hardware-sizing.md)
   + [使用增强 MTA 发送](delivery/using/sending-with-enhanced-mta.md)
@@ -498,7 +498,7 @@ ht-degree: 100%
     + [Apple iOS 上的邮件隐私保护](technotes/using/apple-mail-app-privacy-protection.md)
     + [iOS 证书更新](technotes/using/ios-certificate-update.md)
   + 迁移到 Adobe Managed Services{#dc-migration}
-    + [迁移到公共云](technotes/using/dc-migration.md)
-    + [常见问题解答](technotes/using/dc-migration-faq.md)
+    + {hide-from-toc}[迁移到公共云](technotes/using/dc-migration.md)
+    + {hide-from-toc}[常见问题解答](technotes/using/dc-migration-faq.md)
   + [基于 GCM 的函数](technotes/using/gcm-functions.md)
 + [Campaign 控制面板](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=zh-Hans)
