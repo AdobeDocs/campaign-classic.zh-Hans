@@ -30,10 +30,10 @@ topic_v2:
     internal-label: Personalization
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: c1f8b6661065c8d5c75e38d80f6986e0c6fbdfa8
+source-git-commit: 186021e65b592522f3c491fb518594b5bac5d003
 workflow-type: tm+mt
-source-wordcount: '940'
-ht-degree: 59%
+source-wordcount: '924'
+ht-degree: 40%
 ---
 # Campaign Classic v7 文档 {#campaign-classic-documentation}
 
@@ -76,7 +76,7 @@ Campaign Classic v7.4.5 - 2026年10月版（内部版本9420）修复了Analytic
     <div><strong>添加和管理轮廓</strong><br/>探索如何轻松地在 Adobe Campaign v7 数据库中进行轮廓管理。 手动或通过导入添加轮廓，轻松优化客户数据和自定义营销活动。</div>
     </td>
     <td>
-    <a href="https://experienceleague.adobe.com/zh-hans/docs/campaign/automation/workflows/introduction/about-workflows" target="_blank"><img src="assets/do-not-localize/start-workflows.jpeg"></a>
+    <a href="https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/introduction/about-workflows" target="_blank"><img src="assets/do-not-localize/start-workflows.jpeg"></a>
     <div><strong>使用工作流实现自动化</strong><br/>了解如何利用工作流设计流程，包括分段、活动执行、文件处理、人员参与等。
     </div></td>
     <td>
@@ -87,7 +87,7 @@ Campaign Classic v7.4.5 - 2026年10月版（内部版本9420）修复了Analytic
   <tr style="border: 0;">
     <td align="center"><a href="platform/using/launching-adobe-campaign.md"><img src="assets/do-not-localize/learn-more-button.svg"></a></td>
     <td align="center"><a href="platform/using/about-profiles.md"><img src="assets/do-not-localize/learn-more-button.svg"></a></td>
-    <td align="center"><a href="https://experienceleague.adobe.com/zh-hans/docs/campaign/automation/workflows/introduction/about-workflows" target="_blank"><img src="assets/do-not-localize/learn-more-button.svg"></a></td>
+    <td align="center"><a href="https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/introduction/about-workflows" target="_blank"><img src="assets/do-not-localize/learn-more-button.svg"></a></td>
     <td align="center"><a href="delivery/using/communication-channels.md"><img src="assets/do-not-localize/learn-more-button.svg"></a></td>
     </tr>
 </table>
@@ -97,36 +97,19 @@ Campaign Classic v7.4.5 - 2026年10月版（内部版本9420）修复了Analytic
 <table style="table-layout:auto">
   <tr style="border: 0;">
     <td>
-      <img src="assets/do-not-localize/icon-start.svg" width="35px">
-    <br/>
-      <strong>入门</strong><br/><a href="https://experienceleague.adobe.com/zh-Hans/docs/campaign/campaign-v8/new/campaign-ui" target="_blank">用户界面</a>（Campaign v8 文档）– <a href="platform/using/launching-adobe-campaign.md">连接到 Campaign</a> – <a href="https://experienceleague.adobe.com/zh-Hans/docs/campaign/campaign-v8/data/import" target="_blank">导入和导出数据</a>（Campaign v8 文档）– <a href="platform/using/access-management.md">权限</a>
-    </td>
-    <td>
-      <img src="assets/do-not-localize/icon-experience.svg" width="35px">
-    <br/>
-      <strong>客户体验</strong><br/><a href="https://experienceleague.adobe.com/zh-hans/docs/campaign/automation/workflows/introduction/about-workflows" target="_blank">工作流自动化</a>（Campaign v8文档） - <a href="https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=zh-Hans" target="_blank">营销活动</a> - <a href="interaction/using/interaction-and-offer-management.md">互动和优惠管理</a> - <a href="delivery/using/about-personalization.md">Personalization</a> - <a href="https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/analytics/reports/gs-reporting" target="_blank">报表</a>（Campaign v8文档）
+      <img src="assets/do-not-localize/icon-configure.svg" width="35px">
+      <br/>
+      <strong>管理员</strong><br/><a href="production/using/general-architecture.md">架构原则</a> - <a href="production/using/configuration.md">配置Campaign</a> - <a href="platform/using/launching-adobe-campaign.md">连接到Campaign</a> - <a href="installation/using/external-accounts.md">连接到外部系统</a> - <a href="platform/using/access-management.md">权限</a> - <a href="platform/using/privacy-management.md">隐私和同意</a> - <a href="production/using/build-upgrade.md">执行内部版本升级</a> - <a href="delivery/using/about-deliverability.md">可投放性</a>
     </td>
     <td>
       <img src="assets/do-not-localize/icon-send.svg" width="35px">
-    <br/>
-      <strong>发送消息</strong><br/><a href="delivery/using/communication-channels.md">通信渠道</a> – <a href="https://experienceleague.adobe.com/zh-Hans/docs/campaign/campaign-v8/send/create-message" target="_blank">发送校样</a>（Campaign v8 文档）– <a href="delivery/using/get-started-a-b-testing.md">A/B 测试</a> – <a href="https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/analytics/tracking/tracking" target="_blank">消息跟踪</a> – <a href="delivery/using/about-deliverability.md">可投放性</a> – <a href="message-center/using/about-transactional-messaging.md">事务性消息</a>
-    </td>
-  </tr>
-  <tr style="border: 0;">
-    <td>
-      <img src="assets/do-not-localize/icon_profile-audience.svg" width="35px">
       <br/>
-      <strong>轮廓和受众</strong><br/> <a href="https://experienceleague.adobe.com/zh-Hans/docs/campaign/campaign-v8/audience/create-audiences/create-audiences" target="_blank">创建列表</a>（Campaign v8 文档）– <a href="delivery/using/about-services-and-subscriptions.md">服务和订阅</a> – <a href="platform/using/privacy-management.md">隐私和同意</a>
-    </td>
-    <td>
-      <img src="assets/do-not-localize/icon-configure.svg" width="35px">
-      <br/>
-      <strong>架构和配置</strong><br/><a href="production/using/general-architecture.md">架构原理</a> – <a href="production/using/build-upgrade.md">执行内部版本升级</a> – <a href="production/using/configuration.md">配置营销活动</a> – <a href="installation/using/external-accounts.md">连接到外部系统</a>
+      <strong>营销人员</strong><br/><a href="https://experienceleague.adobe.com/zh-Hans/docs/campaign/campaign-v8/new/campaign-ui" target="_blank">用户界面</a> （Campaign v8文档） - <a href="https://experienceleague.adobe.com/zh-Hans/docs/campaign/campaign-v8/data/import" target="_blank">导入和导出数据</a> （Campaign v8文档） - <a href="https://experienceleague.adobe.com/zh-Hans/docs/campaign/campaign-v8/audience/create-audiences/create-audiences" target="_blank">创建列表</a> （Campaign v8文档） - <a href="delivery/using/about-services-and-subscriptions.md">服务和订阅</a> - <a href="delivery/using/communication-channels.md">通信渠道</a> - <a href="delivery/using/about-personalization.md">Personalization</a> - <a href="https://experienceleague.adobe.com/zh-Hans/docs/campaign/campaign-v8/send/create-message" target="_blank">发送校样</a> （Campaign v8文档） - <a href="delivery/using/get-started-a-b-testing.md">A/B测试</a> - <a href="message-center/using/about-transactional-messaging.md">事务性消息传递</a> - <a href="interaction/using/interaction-and-offer-management.md">交互和优惠管理</a> - <a href="https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/introduction/about-workflows" target="_blank">使用工作流实现自动化</a>（Campaign v8文档） - <a href="https://experienceleague.adobe.com/docs/campaign/automation/campaign-orchestration/set-up-campaigns.html?lang=zh-Hans" target="_blank">营销活动</a> - <a href="https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/analytics/tracking/tracking" target="_blank">消息跟踪</a>（Campaign v8文档） - <a href="https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/analytics/reports/gs-reporting" target="_blank">报表</a>（Campaign v8文档）
     </td>
     <td>
       <img src="assets/do-not-localize/icon-dev.svg" width="35px">
       <br/>
-      <strong>开发人员资源</strong><br/><a href="https://experienceleague.adobe.com/zh-Hans/docs/campaign/campaign-v8/developer/datamodel" target="_blank">数据模型描述</a>（Campaign v8文档） - <a href="configuration/using/about-schema-reference.md">架构结构</a> - <a href="configuration/using/editing-forms.md">输入表单</a> - <a href="configuration/using/about-web-services.md">API</a> - <a href="https://experienceleague.adobe.com/zh-hans/tools/campaign-api">JSAPI参考文档</a> - <a href="configuration/using/about-custom-recipient-table.md">自定义收件人表</a>
+      <strong>开发人员</strong><br/><a href="https://experienceleague.adobe.com/zh-Hans/docs/campaign/campaign-v8/developer/datamodel" target="_blank">数据模型描述</a>（Campaign v8文档） - <a href="configuration/using/about-schema-reference.md">架构结构</a> - <a href="configuration/using/editing-forms.md">输入表单</a> - <a href="configuration/using/about-web-services.md">API</a> - <a href="https://experienceleague.adobe.com/zh-hans/tools/campaign-api" target="_blank">JSAPI参考文档</a> - <a href="configuration/using/about-custom-recipient-table.md">自定义收件人表</a>
     </td>
   </tr>
 </table>
@@ -139,12 +122,12 @@ Campaign v8文档中记录的内容已从v7文档中删除。 使用此表查找
 | --- | --- |
 | 用户界面 | [发现用户界面](https://experienceleague.adobe.com/zh-Hans/docs/campaign/campaign-v8/new/campaign-ui){target="_blank"} |
 | 用户档案、列表、导入和导出 | [导入用户档案和数据](https://experienceleague.adobe.com/zh-Hans/docs/campaign/campaign-v8/data/import){target="_blank"} |
-| 工作流 | [关于工作流](https://experienceleague.adobe.com/zh-hans/docs/campaign/automation/workflows/introduction/about-workflows){target="_blank"} |
-| 营销活动 | [开始使用营销活动](https://experienceleague.adobe.com/zh-hans/docs/campaign/automation/campaign-orchestration/set-up-campaigns){target="_blank"} |
+| 工作流 | [关于工作流](https://experienceleague.adobe.com/en/docs/campaign/automation/workflows/introduction/about-workflows){target="_blank"} |
+| 营销活动 | [开始使用营销活动](https://experienceleague.adobe.com/en/docs/campaign/automation/campaign-orchestration/set-up-campaigns){target="_blank"} |
 | 创建和发送投放 | [创建消息](https://experienceleague.adobe.com/zh-Hans/docs/campaign/campaign-v8/send/create-message){target="_blank"} |
 | 内置报告 | [开始使用报告](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/analytics/reports/gs-reporting){target="_blank"} |
-| 权限 | [开始使用权限](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/permissions/gs-permissions){target="_blank"} |
-| 输入表单 | [开始使用输入表单](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/developer/schemas-forms/forms){target="_blank"} |
+| 权限 | [开始使用权限](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/permissions/gs-permissions){target="_blank"} |
+| 输入表单 | [开始使用输入表单](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/forms){target="_blank"} |
 
 ## 其他资源
 
