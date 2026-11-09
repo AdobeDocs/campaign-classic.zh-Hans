@@ -30,9 +30,9 @@ topic_v2:
     internal-label: Reporting
   - id: cc72dcf1-72e1-48cc-b434-e7c27d62d67c
     internal-label: Accessibility
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 00c9aab788ae3d4fb600d08b9ab9604e3a14d7af
 workflow-type: tm+mt
-source-wordcount: '431'
+source-wordcount: '448'
 ht-degree: 3%
 ---
 # 报告的属性{#properties-of-the-report}
@@ -43,7 +43,7 @@ ht-degree: 3%
 
 ![](assets/s_ncs_advuser_report_properties_01.png)
 
-常规属性如下所述。 此部分[&#128279;](../../reporting/using/advanced-functionalities.md)中介绍了&#x200B;**[!UICONTROL Parameters]**、**[!UICONTROL Variables]**&#x200B;和&#x200B;**[!UICONTROL Scripts]**&#x200B;选项卡中配置的高级功能。
+常规属性如下所述。 此部分](../../reporting/using/advanced-functionalities.md)中介绍了&#x200B;**[!UICONTROL Parameters]**、**[!UICONTROL Variables]**&#x200B;和&#x200B;**[!UICONTROL Scripts]**&#x200B;选项卡中配置的高级功能[。
 
 ## 常规属性 {#overall-properties}
 
@@ -69,7 +69,7 @@ ht-degree: 3%
 
 * **[!UICONTROL Anonymous access]**：此选项启用对报告的无限制访问。 但是，操作是不可能的。
 
-  “webapp”技术操作员的权限用于显示报表元素。 在本节[&#128279;](../../platform/using/access-management-operators.md)中了解更多。
+  “webapp”技术操作员的权限用于显示报表元素。 在本节](../../platform/using/access-management-operators.md)中了解更多[。
 
 * **[!UICONTROL Access control]**：此选项允许Adobe Campaign操作员在登录后访问它。
 * **[!UICONTROL Specific account]**：此选项允许您使用在&#x200B;**[!UICONTROL Operator]**&#x200B;字段中选择的操作员的权限执行报告。
@@ -86,7 +86,7 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->有关Campaign中网页本地化的详细信息，请参阅[此部分](../../web/using/translating-a-web-form.md)。
+>有关Campaign中网页本地化的详细信息，请参阅[此部分](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/web-forms/translating-a-web-form){target="_blank"}（Campaign v8文档）。
 
 ## 个性化HTML呈现 {#personalizing-html-rendering}
 

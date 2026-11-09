@@ -28,9 +28,9 @@ subfeature_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
     internal-label: Reporting
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 00c9aab788ae3d4fb600d08b9ab9604e3a14d7af
 workflow-type: tm+mt
-source-wordcount: '761'
+source-wordcount: '777'
 ht-degree: 2%
 ---
 # 配置对报告的访问权限{#configuring-access-to-the-report}
@@ -141,7 +141,7 @@ ht-degree: 2%
 
 通过特定设置，您可以控制错误。 在报告的URL中找到&#x200B;**_uuid**&#x200B;设置。 您可以将&#x200B;**&amp;_preview**&#x200B;或&#x200B;**&amp;_debug**&#x200B;设置添加到其中。
 
-要了解有关这些设置的更多信息，请参阅[Web窗体](../../web/using/about-web-forms.md)章节的&#x200B;**定义Web窗体属性**&#x200B;部分。
+要了解有关这些设置的更多信息，请参阅[Web窗体](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/web-forms/about-web-forms){target="_blank"}（Campaign v8文档）章节的&#x200B;**定义Web窗体属性**&#x200B;部分。
 
 ## 发布报告 {#publishing-the-report}
 

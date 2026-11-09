@@ -30,10 +30,10 @@ topic_v2:
     internal-label: Reporting
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
     internal-label: Security
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 00c9aab788ae3d4fb600d08b9ab9604e3a14d7af
 workflow-type: tm+mt
-source-wordcount: '600'
-ht-degree: 4%
+source-wordcount: '616'
+ht-degree: 3%
 ---
 # 高级功能{#advanced-functionalities}
 
@@ -67,7 +67,7 @@ ht-degree: 4%
 
    ![](assets/reporting_custom_js.png)
 
-要在客户端正常执行，引用的脚本必须使用JavaScript编写，并且需要与常用浏览器兼容。 如需详细信息，请参阅[此小节](../../web/using/web-forms-answers.md)。
+要在客户端正常执行，引用的脚本必须使用JavaScript编写，并且需要与常用浏览器兼容。 有关更多信息，请参阅[此章节](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/web-forms/web-forms-answers){target="_blank"}（Campaign v8文档）。
 
 ### 添加脚本活动 {#script-activity}
 

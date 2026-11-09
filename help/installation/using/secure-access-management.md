@@ -29,10 +29,10 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: fbeb3bb6f89cd0b03d1fb4551496f96eda0cbf10
+source-git-commit: 00c9aab788ae3d4fb600d08b9ab9604e3a14d7af
 workflow-type: tm+mt
-source-wordcount: '393'
-ht-degree: 8%
+source-wordcount: '410'
+ht-degree: 6%
 ---
 # 访问管理 {#access-management}
 
@@ -52,7 +52,7 @@ webApp操作员是开箱即用的管理员。 要提高安全性，请遵循以�
 
   1. 为每个重复项输入一个名称。 例如：webapp_brand、webapp_brand2等。
 
-  1. 复制Web应用程序模板以让每个品牌拥有一个模板，并通过选择“使用特定帐户”来编辑属性以更改运算符。  请参阅[此页面](../../web/using/defining-web-forms-properties.md)以了解详情。
+  1. 复制Web应用程序模板以让每个品牌拥有一个模板，并通过选择“使用特定帐户”来编辑属性以更改运算符。  请参阅[此页面](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/web-forms/defining-web-forms-properties){target="_blank"}以了解详情（Campaign v8文档）。
 
 ## 安全组和管理员操作员
 
@@ -62,7 +62,7 @@ webApp操作员是开箱即用的管理员。 要提高安全性，请遵循以�
 
 避免在管理员组中添加过多操作员（或具有管理员命名权限）。 它们是功能非常强大的运算符（它们可以执行所有SQL语句，在服务器上执行命令等）。
 
-Adobe Campaign通过[已命名权限](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/permissions/manage-permissions#use-named-rights){target="_blank"}提供三个高级别权限（Campaign v8文档）：
+Adobe Campaign通过[已命名权限](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/permissions/manage-permissions#use-named-rights){target="_blank"}提供三个高级别权限（Campaign v8文档）：
 
 * **管理** （管理员）：提供对所有内容的访问权限并允许执行所有操作，绕过所有命名的权限检查，因此它包括PROGRAM EXECUTION (createProcess)和SQL命名权限
 
