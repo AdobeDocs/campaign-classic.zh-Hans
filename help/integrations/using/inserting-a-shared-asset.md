@@ -44,7 +44,7 @@ ht-degree: 0%
 
 1. 在编辑窗口中，选择要添加图像的选项：
 
-   * 如果您使用[标准编辑模式](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html#adding-images){target="_blank"}，请选择&#x200B;**[!UICONTROL Image]** > **[!UICONTROL Select a shared asset]**。
+   * 如果您使用[标准编辑模式](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-the-email-content.html?lang=zh-Hans#adding-images){target="_blank"}，请选择&#x200B;**[!UICONTROL Image]** > **[!UICONTROL Select a shared asset]**。
 
      ![](assets/dam_insert_image_standard.png)
 
@@ -54,7 +54,7 @@ ht-degree: 0%
 
      >[!NOTE]
      >
-     >使用DCE时，无法在[Web访问](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/campaign-ui#ui-access){target="_blank"}（Campaign v8文档）中插入来自Adobe Campaign的共享图像。
+     >使用DCE时，无法在[Web访问](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/new/campaign-ui#ui-access){target="_blank"}（Campaign v8文档）中插入来自Adobe Campaign的共享图像。
 
 1. 在打开的选择窗口中，选择一个图像，然后进行确认。
 
@@ -64,4 +64,4 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->如果与Adobe Target集成，则可以将共享图像用作默认图像。 请参阅[此页面](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/connect/ac-at){target="_blank"}（Campaign v8文档）。
+>如果与Adobe Target集成，则可以将共享图像用作默认图像。 请参阅[此页面](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/connect/ac-at){target="_blank"}（Campaign v8文档）。
