@@ -163,7 +163,7 @@ ht-degree: 9%
   </tr> 
   <tr> 
    <td> 在线调查（调查管理器）<br /> </td> 
-   <td> 创建和管理在线表单，以添加或修改用户档案信息、订阅、取消订阅或竞争登录表单。 可选。 <a href="https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/surveys/about-surveys" target="_blank">了解更多</a>（Campaign v8文档）<br /> </td> 
+   <td> 创建和管理在线表单，以添加或修改用户档案信息、订阅、取消订阅或竞争登录表单。 可选。 <a href="https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/content/surveys/about-surveys" target="_blank">了解更多</a>（Campaign v8文档）<br /> </td> 
    <td> 营销<br /> </td> 
   </tr> 
   <tr> 
@@ -173,7 +173,7 @@ ht-degree: 9%
   </tr> 
   <tr> 
    <td> 响应管理器<br /> </td> 
-   <td> 衡量营销活动的成功性和盈利能力，或为所有通信渠道提供建议。  可选。 <a href="https://experienceleague.adobe.com/en/docs/campaign/automation/response-manager/about-response-manager" target="_blank">了解更多</a>（Campaign v8文档）<br /> </td> 
+   <td> 衡量营销活动的成功性和盈利能力，或为所有通信渠道提供建议。  可选。 <a href="https://experienceleague.adobe.com/zh-hans/docs/campaign/automation/response-manager/about-response-manager" target="_blank">了解更多</a>（Campaign v8文档）<br /> </td> 
    <td> 营销<br /> </td> 
   </tr> 
   <tr> 

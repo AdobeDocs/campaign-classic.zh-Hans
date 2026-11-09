@@ -162,7 +162,7 @@ NmsRcpGrpRel关系表仅包含与iRecipientId和iGroupId链接表的标识符对
 
 ## 响应管理 {#response-management}
 
-这组表链接到&#x200B;**响应管理器**&#x200B;模块，该模块允许衡量营销活动的成功性和盈利能力，或为所有通信渠道提供建议。 有关此内容的详细信息，请参阅[关于响应管理器](https://experienceleague.adobe.com/en/docs/campaign/automation/response-manager/about-response-manager){target="_blank"}（Campaign v8文档）。
+这组表链接到&#x200B;**响应管理器**&#x200B;模块，该模块允许衡量营销活动的成功性和盈利能力，或为所有通信渠道提供建议。 有关此内容的详细信息，请参阅[关于响应管理器](https://experienceleague.adobe.com/zh-hans/docs/campaign/automation/response-manager/about-response-manager){target="_blank"}（Campaign v8文档）。
 
 ![](assets/data-model_response.png)
 
@@ -222,7 +222,7 @@ NmsRcpGrpRel关系表仅包含与iRecipientId和iGroupId链接表的标识符对
 
 ## 模拟和投放 {#simulation-and-delivery}
 
-这组表链接到&#x200B;**Simulation**&#x200B;模块，该模块允许在将您的建议发送给收件人之前测试属于某个类别或环境的选件分发。 有关此内容的更多信息，请参阅[关于优惠模拟](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/offers/simulating-offers/about-offers-simulation){target="_blank"}（Campaign v8文档）。
+这组表链接到&#x200B;**Simulation**&#x200B;模块，该模块允许在将您的建议发送给收件人之前测试属于某个类别或环境的选件分发。 有关此内容的更多信息，请参阅[关于优惠模拟](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/offers/simulating-offers/about-offers-simulation){target="_blank"}（Campaign v8文档）。
 
 ![](assets/data-model_simulation.png)
 
@@ -261,7 +261,7 @@ NmsRcpGrpRel关系表仅包含与iRecipientId和iGroupId链接表的标识符对
 <!--
 ## Microsites Module {#microsites-module}
 
-This set of tables is linked to the **Web applications** functionality, which allows to create and publish dynamic and interactive web applications with data from the database and content adapted to the rights of the connected user. For more on this, see [About web applications](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/web-applications/about-web-applications){target="_blank"} (Campaign v8 documentation).
+This set of tables is linked to the **Web applications** functionality, which allows to create and publish dynamic and interactive web applications with data from the database and content adapted to the rights of the connected user. For more on this, see [About web applications](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/content/web-applications/about-web-applications){target="_blank"} (Campaign v8 documentation).
 
 ![](assets/data-model_microsites.png)
 

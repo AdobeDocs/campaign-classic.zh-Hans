@@ -143,7 +143,7 @@ Adobe Campaign提供各种类型的图形表示。 详情见下文。
 
 您可以定义用户单击图表时的操作。 打开&#x200B;**[!UICONTROL Interaction events]**&#x200B;窗口并选择要执行的操作。
 
-[此部分](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/web-forms/static-elements-in-a-web-form#inserting-html-content){target="_blank"}中详细介绍了可能的交互类型及其配置（Campaign v8文档）。
+[此部分](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/content/web-forms/static-elements-in-a-web-form#inserting-html-content){target="_blank"}中详细介绍了可能的交互类型及其配置（Campaign v8文档）。
 
 ![](assets/s_ncs_advuser_report_wizard_017.png)
 
