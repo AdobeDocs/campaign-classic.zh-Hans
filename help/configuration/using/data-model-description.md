@@ -73,7 +73,7 @@ iFolderId字段是将收件人链接到其执行文件夹的外键。 有关此�
 
 sCountryCode字段是与收件人关联的国家/地区3166-1 Alpha 2 ISO代码（2个字符）。 此字段实际上是国家/地区参考表(NmsCountry)上的外键，包含国家/地区标签和其他国家/地区代码数据。 如果未填充国家/地区，则存储“XX”值（并用它来代替零ID记录）。
 
-有关收件人表的详细信息，请参阅[此部分](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/datamodel#ootb-profiles){target="_blank"}（Campaign v8文档）。
+有关收件人表的详细信息，请参阅[此部分](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/developer/datamodel#ootb-profiles){target="_blank"}（Campaign v8文档）。
 
 ### NmsGroup {#NmsGroup}
 
@@ -133,7 +133,7 @@ NmsRcpGrpRel关系表仅包含与iRecipientId和iGroupId链接表的标识符对
 
 ## 营销活动管理 {#campaign-management}
 
-这组表链接到&#x200B;**营销活动**&#x200B;模块，该模块允许定义、优化、执行和分析通信和营销活动。 有关更多信息，请参阅 [Campaign v8 文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html){target=_blank}。
+这组表链接到&#x200B;**营销活动**&#x200B;模块，该模块允许定义、优化、执行和分析通信和营销活动。 有关更多信息，请参阅 [Campaign v8 文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html?lang=zh-Hans){target=_blank}。
 
 ![](assets/data-model_campaign.png)
 
