@@ -27,9 +27,9 @@ topic_v2:
     internal-label: Optimization
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: aeb8e44e8183cad6557fe2f27565cad0343777e5
+source-git-commit: 77efa1dcdb82a478e93565e84099d568f6a5f5fe
 workflow-type: tm+mt
-source-wordcount: '2404'
+source-wordcount: '2420'
 ht-degree: 2%
 ---
 # Campaign数据模型说明{#data-model-description}
@@ -73,7 +73,7 @@ iFolderId字段是将收件人链接到其执行文件夹的外键。 有关此�
 
 sCountryCode字段是与收件人关联的国家/地区3166-1 Alpha 2 ISO代码（2个字符）。 此字段实际上是国家/地区参考表(NmsCountry)上的外键，包含国家/地区标签和其他国家/地区代码数据。 如果未填充国家/地区，则存储“XX”值（并用它来代替零ID记录）。
 
-有关收件人表的详细信息，请参阅[此部分](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/developer/datamodel#ootb-profiles){target="_blank"}（Campaign v8文档）。
+有关收件人表的详细信息，请参阅[此部分](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/datamodel#ootb-profiles){target="_blank"}（Campaign v8文档）。
 
 ### NmsGroup {#NmsGroup}
 
@@ -133,7 +133,7 @@ NmsRcpGrpRel关系表仅包含与iRecipientId和iGroupId链接表的标识符对
 
 ## 营销活动管理 {#campaign-management}
 
-这组表链接到&#x200B;**营销活动**&#x200B;模块，该模块允许定义、优化、执行和分析通信和营销活动。 有关更多信息，请参阅 [Campaign v8 文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html?lang=zh-Hans){target=_blank}。
+这组表链接到&#x200B;**营销活动**&#x200B;模块，该模块允许定义、优化、执行和分析通信和营销活动。 有关更多信息，请参阅 [Campaign v8 文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html){target=_blank}。
 
 ![](assets/data-model_campaign.png)
 
@@ -222,7 +222,7 @@ NmsRcpGrpRel关系表仅包含与iRecipientId和iGroupId链接表的标识符对
 
 ## 模拟和投放 {#simulation-and-delivery}
 
-这组表链接到&#x200B;**Simulation**&#x200B;模块，该模块允许在将您的建议发送给收件人之前测试属于某个类别或环境的选件分发。 有关此内容的详细信息，请参阅[关于优惠模拟](../../interaction/using/about-offers-simulation.md)。
+这组表链接到&#x200B;**Simulation**&#x200B;模块，该模块允许在将您的建议发送给收件人之前测试属于某个类别或环境的选件分发。 有关此内容的更多信息，请参阅[关于优惠模拟](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/offers/simulating-offers/about-offers-simulation){target="_blank"}（Campaign v8文档）。
 
 ![](assets/data-model_simulation.png)
 
@@ -261,7 +261,7 @@ NmsRcpGrpRel关系表仅包含与iRecipientId和iGroupId链接表的标识符对
 <!--
 ## Microsites Module {#microsites-module}
 
-This set of tables is linked to the **Web applications** functionality, which allows to create and publish dynamic and interactive web applications with data from the database and content adapted to the rights of the connected user. For more on this, see [About web applications](../../web/using/about-web-applications.md).
+This set of tables is linked to the **Web applications** functionality, which allows to create and publish dynamic and interactive web applications with data from the database and content adapted to the rights of the connected user. For more on this, see [About web applications](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/web-applications/about-web-applications){target="_blank"} (Campaign v8 documentation).
 
 ![](assets/data-model_microsites.png)
 
