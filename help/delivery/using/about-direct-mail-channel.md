@@ -37,7 +37,7 @@ role_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 0fdce84d7da1ff42a406ace8f1a180f6a426646a
 workflow-type: tm+mt
 source-wordcount: '388'
 ht-degree: 3%
@@ -48,7 +48,9 @@ ht-degree: 3%
 
 直邮仍然是与客户建立切实联系的强大渠道，非常适合于提供打印的优惠、目录、忠诚度消息或个性化信件，以强化数字接触点之外的品牌存在感。 请参阅[Adobe Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/direct-mail.html?lang=zh-Hans){target=_blank}，了解如何有效配置和管理直邮营销活动，从为路由合作伙伴准备数据和生成文件到跟踪投放结果。
 
-作为从Campaign v7过渡到v8的一部分，Campaign Classic文档集已得到简化和重新组织。 现在，Campaign v8文档集中专门提供了常用功能。
+>[!NOTE]
+>
+>作为从Campaign v7过渡到v8的一部分，Campaign Classic文档集已得到简化和重新组织。 现在，Campaign v8文档集中专门提供了常用功能。
 
 >[!BEGINTABS]
 
@@ -57,7 +59,7 @@ ht-degree: 3%
 要了解有关直邮渠道的更多信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/direct-mail.html?lang=zh-Hans){target=_blank}。
 
 
-[![image](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/direct-mail.html?lang=zh-Hans){target=_blank}
+[![image](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/direct-mail.html?lang=zh-Hans){target="_blank"}
 
 
 >[!TAB 直邮投放创建]

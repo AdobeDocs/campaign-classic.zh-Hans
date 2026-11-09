@@ -45,9 +45,9 @@ topic_v2:
     internal-label: Troubleshooting
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: 00c9aab788ae3d4fb600d08b9ab9604e3a14d7af
 workflow-type: tm+mt
-source-wordcount: '1364'
+source-wordcount: '1399'
 ht-degree: 3%
 ---
 # 消息跟踪入门 {#get-started-tracking}
@@ -108,11 +108,11 @@ ht-degree: 3%
 
 **跟踪 Web 应用程序**
 
-您还可以跟踪和测量带有跟踪标记的Web应用程序页面上的访问次数。 此功能可用于所有Web应用程序类型，例如表单和登陆页面。 [了解详情](../../web/using/tracking-a-web-application.md)
+您还可以跟踪和测量带有跟踪标记的Web应用程序页面上的访问次数。 此功能可用于所有Web应用程序类型，例如表单和登陆页面。 [了解详情](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/web-applications/tracking-a-web-application){target="_blank"}（Campaign v8 文档）
 
 **选择退出 Web 应用程序跟踪**
 
-通过选择退出Web应用程序跟踪，您可以停止跟踪选择退出行为跟踪的最终用户的Web行为。 您可以包括在Web应用程序或登陆页中显示横幅的功能，以允许用户选择退出。 [了解详情](../../web/using/web-application-tracking-opt-out.md)
+通过选择退出Web应用程序跟踪，您可以停止跟踪选择退出行为跟踪的最终用户的Web行为。 您可以包括在Web应用程序或登陆页中显示横幅的功能，以允许用户选择退出。 [了解详情](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/web-applications/web-application-tracking-opt-out){target="_blank"}（Campaign v8 文档）
 
 ## 跟踪故障排除 {#tracking-troubleshooting}
 

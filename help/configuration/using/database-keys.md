@@ -28,18 +28,20 @@ subfeature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: a97306b73a2b577841e6f24536c62b2526e9fda9
+source-git-commit: 0fdce84d7da1ff42a406ace8f1a180f6a426646a
 workflow-type: tm+mt
 source-wordcount: '591'
-ht-degree: 1%
+ht-degree: 3%
 ---
 # 架构中的密钥管理 {#management-of-keys}
 
 与数据模式相关联的每个表必须具有至少一个用于标识表中记录的键。 本页介绍在Campaign Classic v7表中使用的自动增量键。
 
-作为从Campaign v7过渡到v8的一部分，Campaign Classic文档集已得到简化和重新组织。 现在，Campaign v8文档集中专门提供了常用功能。 要了解有关密钥管理的更多信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/developer/schemas-forms/database-keys){target=_blank}。
-
-[![image](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/developer/schemas-forms/database-keys){target=_blank}
+>[!NOTE]
+>
+>作为从Campaign v7过渡到v8的一部分，Campaign Classic文档集已得到简化和重新组织。 现在，Campaign v8文档集中专门提供了常用功能。 要了解有关密钥管理的更多信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/developer/schemas-forms/database-keys){target=_blank}。
+>
+>[![image](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/developer/schemas-forms/database-keys){target="_blank"}
 
 ## 自动增量键 {#auto-incremental-key}
 
@@ -104,4 +106,4 @@ ht-degree: 1%
 * [架构结构](schema-structure.md)
 * [数据库映射](database-mapping.md)
 * [链接管理](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/developer/schemas-forms/database-links){target="_blank"}（Campaign v8文档）
-* [Campaign数据模型](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/developer/datamodel){target="_blank"}（Campaign v8文档）
+* [Campaign数据模型](https://experienceleague.adobe.com/zh-Hans/docs/campaign/campaign-v8/developer/datamodel){target="_blank"}（Campaign v8文档）

@@ -28,7 +28,7 @@ topic_v2:
     internal-label: Security
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 3d6f0751869871f811046dd52bab59dbcf587350
+source-git-commit: 0fdce84d7da1ff42a406ace8f1a180f6a426646a
 workflow-type: tm+mt
 source-wordcount: '1897'
 ht-degree: 6%
@@ -37,9 +37,11 @@ ht-degree: 6%
 
 Adobe Campaign 提供了一组预定义的外部帐户。 要设置与外部系统的连接，您可以创建新的外部帐户。
 
-作为从Campaign v7过渡到v8的一部分，Campaign Classic文档集已得到简化和重新组织。 现在，Campaign v8文档集中专门提供了常用功能。 要了解有关外部帐户的更多信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/config/settings/external-accounts){target=_blank}。
-
-[![image](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/config/settings/external-accounts){target=_blank}
+>[!NOTE]
+>
+>作为从Campaign v7过渡到v8的一部分，Campaign Classic文档集已得到简化和重新组织。 现在，Campaign v8文档集中专门提供了常用功能。 要了解有关外部帐户的更多信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/config/settings/external-accounts){target=_blank}。
+>
+>[![image](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/config/settings/external-accounts){target="_blank"}
 
 技术工作流或营销策划工作流等技术流程，会使用外部帐户。 例如，在工作流中设置文件传输或与任何其他应用程序（Adobe Target、Experience Manager等）进行数据交换时，您需要选择外部帐户。
 

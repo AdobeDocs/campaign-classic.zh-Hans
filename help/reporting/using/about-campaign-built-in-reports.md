@@ -28,7 +28,7 @@ subfeature_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
     internal-label: Reporting
-source-git-commit: 586c6688e2abd3b6e55389bd1fa219d2c596d07d
+source-git-commit: 0fdce84d7da1ff42a406ace8f1a180f6a426646a
 workflow-type: tm+mt
 source-wordcount: '322'
 ht-degree: 0%
@@ -55,8 +55,10 @@ Adobe Campaign提供了多种类型的报表，可通过客户控制台或Intern
 
 您可以从客户端控制台主页、报告仪表板或投放列表访问报告。 报告的显示模式取决于其上下文。 主报告的列表可在主页上找到，并允许您快速访问投放数据。 此列表可以根据您的需求进行更改。 有关详细信息，请参阅[此部分](../../reporting/using/about-reports-creation-in-campaign.md)。
 
-作为从Campaign v7过渡到v8的一部分，Campaign Classic文档集已得到简化和重新组织。 现在，Campaign v8文档集中专门提供了常用功能。 要了解如何访问和使用内置报告，请参阅[Campaign v8文档](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/analytics/reports/ac-reports/built-in-reports){target=_blank}。
-
-[![image](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/analytics/reports/ac-reports/built-in-reports){target=_blank}
+>[!NOTE]
+>
+>作为从Campaign v7过渡到v8的一部分，Campaign Classic文档集已得到简化和重新组织。 现在，Campaign v8文档集中专门提供了常用功能。 要了解如何访问和使用内置报告，请参阅[Campaign v8文档](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/analytics/reports/ac-reports/built-in-reports){target=_blank}。
+>
+>[![image](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/analytics/reports/ac-reports/built-in-reports){target="_blank"}
 
 有关对正在编辑的报告的其他可能操作，请参见[此页面](../../reporting/using/actions-on-reports.md)。

@@ -28,9 +28,9 @@ topic_v2:
     internal-label: Personalization
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: a97306b73a2b577841e6f24536c62b2526e9fda9
+source-git-commit: 00c9aab788ae3d4fb600d08b9ab9604e3a14d7af
 workflow-type: tm+mt
-source-wordcount: '786'
+source-wordcount: '802'
 ht-degree: 5%
 ---
 # 脚本和编码准则 {#scripting-coding-guidelines}
@@ -187,7 +187,7 @@ ht-degree: 5%
 
 1. 编辑&#x200B;**[!UICONTROL Script]**&#x200B;活动。 内容将取决于所选的验证码引擎。
 
-1. 最后，您可以在页面中添加个性化块：请参阅[此页面](../../web/using/editing-content.md)。
+1. 最后，您可以在页面中添加个性化块：请参阅[此页面](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/editing-html-content/editing-content){target="_blank"}（Campaign v8文档）。
 
    ![](assets/scripting-captcha4.png)
 

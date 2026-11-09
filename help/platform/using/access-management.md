@@ -2,7 +2,6 @@
 product: campaign
 title: 权限快速入门
 description: 了解如何授予对Campaign功能的访问权限
-badge: label="v7" type="Informative" tooltip="仅适用于 Campaign Classic v7"
 feature: Access Management, Permissions
 exl-id: 9b616715-33cd-43ba-8548-8d96a179408e
 TQID: 'https://experienceleague.adobe.com/03hVUeg0dRIFz0J20RfxH4EdSmAhe9h2c9BfKB-qJUs'
@@ -34,22 +33,12 @@ topic_v2:
     internal-label: Troubleshooting
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
     internal-label: Security
-source-git-commit: 9753491edbeba9df2c0a9dcf53b3bd5ea87c32ca
+source-git-commit: 0fdce84d7da1ff42a406ace8f1a180f6a426646a
 workflow-type: tm+mt
-source-wordcount: '311'
-ht-degree: 14%
+source-wordcount: '282'
+ht-degree: 9%
 ---
 # 权限快速入门{#access-management}
-
-
->[!CAUTION]
->
->从Campaign Classic v7.3.1开始，所有操作员都应使用[Adobe Identity Management System (IMS)](https://helpx.adobe.com/cn/enterprise/using/identity.html){target="_blank"}连接到Campaign。
->
->作为加强安全和身份验证过程的一部分，Adobe Campaign强烈建议将所有现有的操作员身份验证模式从登录/密码本机身份验证迁移到Adobe Identity Management System (IMS)。 在[此页面](../../technotes/using/migrate-users-to-ims.md)中了解如何迁移操作员。
-> 
->进行此迁移后，请注意，以下部分不再适用。  请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/admin/permissions/gs-permissions.html?lang=zh-Hans){target="_blank"}以了解如何使用Adobe IMS设置权限。
-
 
 Adobe Campaign 允许您定义和管理分配给各种操作员的权限。 这些权限是一组授权或拒绝的权限和限制：
 
@@ -57,15 +46,28 @@ Adobe Campaign 允许您定义和管理分配给各种操作员的权限。 这�
 * 访问特定记录，
 * 创建、修改和/或删除记录（操作、联系人、营销活动、组等）。
 
-作为从Campaign v7过渡到v8的一部分，Campaign Classic文档集已得到简化和重新组织。 现在，Campaign v8文档集中专门提供了常用功能。 要了解有关权限的更多信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/permissions/gs-permissions){target=_blank}。
+>[!NOTE]
+>
+>作为从Campaign v7过渡到v8的一部分，Campaign Classic文档集已得到简化和重新组织。 现在，Campaign v8文档集中专门提供了常用功能。 要了解有关权限以及如何定义文件夹权限的更多信息，请参阅Campaign v8文档：
+>
+>* [开始使用权限](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/permissions/gs-permissions){target="_blank"}
+>* [添加文件夹权限](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/permissions/folder-permissions){target="_blank"}
+>
+>[![image](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/permissions/gs-permissions){target="_blank"}
 
-[![image](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/permissions/gs-permissions){target=_blank}
+## 身份验证模式 {#authentication-mode}
 
-要了解如何定义文件夹权限，请参阅[Campaign v8文档](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/permissions/folder-permissions){target=_blank}。
+>[!CAUTION]
+>
+>从Campaign Classic v7.3.1开始，所有操作员都应使用[Adobe Identity Management System (IMS)](https://helpx.adobe.com/cn/enterprise/using/identity.html){target="_blank"}连接到Campaign。
+>
+>在Campaign v7中，仍可以使用登录/密码进行本机身份验证。 但是，为了增强安全性和身份验证过程，Adobe Campaign强烈建议您将所有现有操作员从本机身份验证迁移到Adobe IMS。 请注意，在Campaign v8中，不允许使用本机身份验证连接。
 
-在Campaign v7中仍可以使用登录/密码进行本机身份验证，但为了增强安全和身份验证过程，Adobe Campaign强烈建议将[最终用户身份验证模式](../../technotes/using/ac-ims.md)从本机身份验证迁移到Adobe Identity Management System (IMS)。 请注意，在Campaign v8中，不允许使用本机身份验证连接。
+* 要迁移操作员，请参阅[将用户迁移到IMS](../../technotes/using/migrate-users-to-ims.md)。
+* 若要迁移最终用户的身份验证模式，请参阅[迁移最终用户身份验证模式](../../technotes/using/ac-ims.md)。
 
-[![图像](../../assets/do-not-localize/learn-more-button.svg)](../../technotes/using/ac-ims.md)
+此迁移后，权限通过Adobe IMS进行管理。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/permissions/gs-permissions){target="_blank"}以了解如何设置它们。
+
 
 <!--
 The permissions apply to operator profiles or operator groups.

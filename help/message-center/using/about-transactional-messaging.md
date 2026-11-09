@@ -18,7 +18,7 @@ feature_v2:
 subfeature_v2:
   - id: d3b34fea-a110-482f-adb2-aae8d686bac8
     internal-label: Transactional messaging
-source-git-commit: 617db6f51887118c965b8938b2b9f14335293875
+source-git-commit: 0fdce84d7da1ff42a406ace8f1a180f6a426646a
 workflow-type: tm+mt
 source-wordcount: '606'
 ht-degree: 8%
@@ -31,9 +31,11 @@ ht-degree: 8%
 
 **事务性消息传递** （消息中心）是一个Campaign模块，用于管理从外部信息系统发送的事件生成的自定义触发器通知。
 
-作为从Campaign v7过渡到v8的一部分，Campaign Classic文档集已得到简化和重新组织。 现在，Campaign v8文档集中专门提供了常用功能。 要了解有关事务型消息传递的更多信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/send/real-time/transactional){target=_blank}。
-
-[![image](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/send/real-time/transactional){target=_blank}
+>[!NOTE]
+>
+>作为从Campaign v7过渡到v8的一部分，Campaign Classic文档集已得到简化和重新组织。 现在，Campaign v8文档集中专门提供了常用功能。 要了解有关事务型消息传递的更多信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/send/real-time/transactional){target=_blank}。
+>
+>[![image](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/send/real-time/transactional){target="_blank"}
 
 本节介绍了特定于内部部署和混合部署的事务性消息架构以及控制实例和执行实例的配置。
 

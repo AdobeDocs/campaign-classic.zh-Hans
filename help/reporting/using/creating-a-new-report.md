@@ -29,9 +29,9 @@ topic_v2:
     internal-label: Reporting
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 00c9aab788ae3d4fb600d08b9ab9604e3a14d7af
 workflow-type: tm+mt
-source-wordcount: '929'
+source-wordcount: '983'
 ht-degree: 1%
 ---
 # 创建新报告{#creating-a-new-report}
@@ -142,7 +142,7 @@ ht-degree: 1%
 * 值、链接、HTML、图像等。**[!UICONTROL Static elements]**。
 * 允许您控制组件布局的&#x200B;**[!UICONTROL Containers]**。
 
-[此部分](../../web/using/about-web-forms.md)详细介绍了页面及其组件的配置模式。
+[此部分](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/web-forms/about-web-forms){target="_blank"}中详细介绍了页面及其组件的配置模式（Campaign v8文档）。
 
 利用工具栏，您可以添加或删除控件，并组织它们在报表页面中的顺序。
 
@@ -150,7 +150,7 @@ ht-degree: 1%
 
 ### 静态元素 {#static-elements}
 
-您可以使用静态元素在报表中显示用户不会与之交互的信息，如图形元素或脚本。 有关详细信息，请参阅[此部分](../../web/using/static-elements-in-a-web-form.md#inserting-html-content)。
+您可以使用静态元素在报表中显示用户不会与之交互的信息，如图形元素或脚本。 有关详细信息，请参阅[此部分](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/web-forms/static-elements-in-a-web-form#inserting-html-content){target="_blank"}（Campaign v8文档）。
 
 ![](assets/s_advuser_report_page_activity_03.png)
 
@@ -158,7 +158,7 @@ ht-degree: 1%
 
 使用输入和选择控件，可以筛选报表中显示的信息。 有关实现此类筛选的详细信息，请参阅查询中的[筛选选项](../../reporting/using/collecting-data-to-analyze.md#filtering-options-in-the-queries)。
 
-要了解有关创建和配置输入字段和选择字段的更多信息，请参阅[此章节](../../web/using/about-web-forms.md)。
+要了解有关创建和配置输入字段和选择字段的更多信息，请参阅[此章节](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/web-forms/about-web-forms){target="_blank"}（Campaign v8文档）。
 
 您可以将一个或多个输入控件集成到报表中。 通过此类控件，可根据输入的值筛选显示的信息。
 

@@ -8,9 +8,9 @@ user-guide-description: Adobe Campaign Classic v7 产品文档。
 sub-product: adobe campaign classic
 type: Documentation
 nudge: false
-source-git-commit: fbeb3bb6f89cd0b03d1fb4551496f96eda0cbf10
+source-git-commit: 77efa1dcdb82a478e93565e84099d568f6a5f5fe
 workflow-type: tm+mt
-source-wordcount: '1577'
+source-wordcount: '1353'
 ht-degree: 97%
 ---
 
@@ -152,7 +152,6 @@ ht-degree: 97%
     + [创建新实例](installation/using/creating-new-instances.md)
     + [Campaign 选项列表](installation/using/configuring-campaign-options.md)
     + {hide-from-toc}[卸载 Campaign](installation/using/uninstalling-campaign.md)
-    + [安装新字体](installation/using/install-fonts.md)
 + 迁移指南 {#migrating-to-a-new-version}
   + {hide-from-toc}[迁移到 Adobe Campaign v7](migration/using/about-migration.md)
   + 迁移过程 {#migration-procedure}
@@ -355,75 +354,16 @@ ht-degree: 97%
   + 消息模板 {#message-templates}
     + [测试消息模板](message-center/using/testing-message-templates.md)
   + [用例](message-center/using/transactional-email-with-attachments.md)
-+ 设计 Web 内容 {#designing-content}
-  + Web 应用程序 {#web-applications}
-    + [Web 应用程序入门](web/using/about-web-applications.md)
-    + [创建新 Web 应用程序](web/using/creating-a-new-web-application.md)
-    + [设计 Web 应用程序](web/using/designing-a-web-application.md)
-    + [用例：创建概述](web/using/use-cases-creating-overviews.md)
-    + [解释 Web 应用程序](web/using/translating-a-web-application.md)
-    + [跟踪 Web 应用程序访问](web/using/tracking-a-web-application.md)
-    + [选择退出 Web 应用程序跟踪](web/using/web-application-tracking-opt-out.md)
-  + 编辑 HTML 内容 {#editing-html-content}
-    + [HTML 编辑器入门](web/using/about-campaign-html-editor.md)
-    + [模板管理](web/using/template-management.md)
-    + [内容编辑器界面](web/using/content-editor-interface.md)
-    + [编辑内容](web/using/editing-content.md)
-    + [内容编辑最佳实践](web/using/content-editing-best-practices.md)
-    + [创建登陆页面](web/using/creating-a-landing-page.md)
-    + [用例：创建电子邮件投放](web/using/use-case-creating-an-email-delivery.md)
-  + Web 窗体 {#web-forms}
-    + [Web 窗体入门](web/using/about-web-forms.md)
-    + [使用 Web 窗体模板](web/using/using-a-web-form-template.md)
-    + [向 Web 窗体添加字段](web/using/adding-fields-to-a-web-form.md)
-    + [Web 窗体中的静态元素](web/using/static-elements-in-a-web-form.md)
-    + [定义 Web 窗体布局](web/using/defining-web-forms-layout.md)
-    + [窗体渲染](web/using/form-rendering.md)
-    + [定义页面排序](web/using/defining-web-forms-page-sequencing.md)
-    + [保存 Web 窗体答案](web/using/web-forms-answers.md)
-    + [发布 Web 窗体](web/using/publishing-a-web-form.md)
-    + [定义 Web 窗体属性](web/using/defining-web-forms-properties.md)
-    + [解释 Web 窗体](web/using/translating-a-web-form.md)
-    + [用例：Web 窗体](web/using/use-cases-web-forms.md)
-+ 创建在线调查 {#online-surveys}
-  + [调查入门](surveys/using/about-surveys.md)
-  + [创建调查的关键步骤](surveys/using/getting-started-with-surveys.md)
-  + [设计调查](surveys/using/building-a-survey.md)
-  + [管理答案](surveys/using/managing-answers.md)
-  + [发布、跟踪和使用收集的数据](surveys/using/publish-track-and-use-collected-data.md)
-  + [配置调查](surveys/using/configuring-surveys.md)
-  + [用例：创建引用窗体](surveys/using/use-case-creating-a-refer-a-friend-form.md)
-  + [用例：显示在线调查的答案报告](surveys/using/use-case-displaying-report-on-answers-to-an-online-survey.md)
 + 管理产品建议 {#managing-offers}
   + 互动快速入门 {#interaction-overview}
     + [互动和产品建议管理](interaction/using/interaction-and-offer-management.md)
-  + 管理产品建议目录 {#managing-an-offer-catalog}
-    + [批准和激活产品建议](interaction/using/approving-and-activating-an-offer.md)
-    + [管理产品建议模板](interaction/using/managing-offer-templates.md)
-    + [管理产品建议演示](interaction/using/managing-offer-presentation.md)
-  + 产品建议模拟{#simulating-offers}
-    + [关于产品建议模拟](interaction/using/about-offers-simulation.md)
-    + [执行设置](interaction/using/execution-settings.md)
-    + [模拟范围](interaction/using/simulation-scope.md)
-    + [模拟跟踪](interaction/using/simulation-tracking.md)
   + 高级参数 {#advanced-parameters}
     + [使用高级参数](interaction/using/using-advanced-parameters.md)
     + [其他数据](interaction/using/additional-data.md)
-    + [扩展示例](interaction/using/extension-example.md)
     + [创建测试环境](interaction/using/creating-a-test-environment.md)
     + [修改标准引擎行为](interaction/using/hooks.md)
     + [分布式架构](interaction/using/distributed-architectures.md)
     + [数据缓冲区配置](installation/using/interaction-data-buffer.md)
-  + 用例 {#case-study}
-    + [呈现规则](interaction/using/presentation-rules.md)
-    + [入站渠道产品建议](interaction/using/offers-on-an-inbound-channel.md)
-    + [出站渠道产品建议](interaction/using/offers-on-an-outbound-channel.md)
-+ 响应管理器 {#response-manager}
-  + [响应管理器入门](response/using/about-response-manager.md)
-  + [配置响应管理器](response/using/configure-response-manager.md)
-  + [假设验证模板](response/using/hypothesis-templates.md)
-  + [创建假设验证](response/using/creating-hypotheses.md)
-  + [假设验证跟踪](response/using/hypothesis-tracking.md)
 + 设计和共享报告 {#reporting}
   + 报告快速入门 {#reporting-in-adobe-campaign}
     + [报告最佳实践](reporting/using/best-practices.md)

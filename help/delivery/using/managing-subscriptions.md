@@ -38,10 +38,10 @@ role_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: cce1f22c34cbd13d063850a7ca636a3b0dfc62f6
+source-git-commit: 00c9aab788ae3d4fb600d08b9ab9604e3a14d7af
 workflow-type: tm+mt
-source-wordcount: '1138'
-ht-degree: 2%
+source-wordcount: '1200'
+ht-degree: 1%
 ---
 # 管理订阅{#managing-subscriptions}
 
@@ -66,7 +66,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->[此部分](../../web/using/use-cases-web-forms.md#create-a-subscription--form-with-double-opt-in)中详细描述了使用双重选择加入创建订阅表单的示例。
+>[此部分](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/web-forms/use-cases-web-forms#create-a-subscription--form-with-double-opt-in){target="_blank"}中详细描述了使用双重选择加入创建订阅表单的示例（Campaign v8文档）。
 
 ## 创建信息服务 {#creating-an-information-service}
 
@@ -160,7 +160,7 @@ ht-degree: 2%
 
 * 使用Web窗体，以便收件人可以订阅服务。
 
-  如需详细信息，请参阅[此小节](../../web/using/about-web-applications.md)。
+  有关更多信息，请参阅[此章节](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/web-applications/about-web-applications){target="_blank"}（Campaign v8文档）。
 
 * 创建定位工作流并使用&#x200B;**[!UICONTROL Subscription service]**&#x200B;框。
 
@@ -176,7 +176,7 @@ ht-degree: 2%
 
 默认退订链接通过投放助理中提供的内容编辑器工具栏中的最后一个按钮插入（请参阅[关于个性化](about-personalization.md)）。 当收件人单击此链接时，会将用户档案添加到（选择退出）阻止列表，这意味着任何投放操作都将不再以该收件人为目标。
 
-但是，收件人可以选择取消订阅服务而不取消订阅所有服务。 要允许此操作，您可以使用Web窗体（请参阅[此章节](../../web/using/adding-fields-to-a-web-form.md#subscription-checkboxes)）或插入个性化的取消订阅链接。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html?lang=zh-Hans){target="_blank"}。
+但是，收件人可以选择取消订阅服务而不取消订阅所有服务。 要允许此操作，您可以使用Web表单(请参阅[此章节](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/web-forms/adding-fields-to-a-web-form#subscription-checkboxes){target="_blank"}（Campaign v8文档）)或插入个性化的取消订阅链接。 请参阅[Campaign v8文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalization-blocks.html?lang=zh-Hans){target="_blank"}。
 
 您还可以从收件人用户档案手动取消订阅收件人。 为此，请单击相关收件人的&#x200B;**[!UICONTROL Subscriptions]**&#x200B;选项卡，选择相关信息服务，然后单击&#x200B;**[!UICONTROL Delete]**。
 

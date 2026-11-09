@@ -32,7 +32,7 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: d679815c3415f1d7603ae5fe87e1c587208b6a8f
+source-git-commit: 0fdce84d7da1ff42a406ace8f1a180f6a426646a
 workflow-type: tm+mt
 source-wordcount: '454'
 ht-degree: 0%
@@ -43,7 +43,9 @@ ht-degree: 0%
 
 电子邮件仍然是除应用程序或网站之外用于与用户互动的最强大和最灵活的渠道之一。 无论您是提供个性化内容、公告还是促销消息，电子邮件都能让您完全控制消息和受众。 在[Adobe Campaign v8文档](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/send/emails/email){target=_blank}中了解如何最充分地配置和使用电子邮件渠道 — 自定义内容、定位特定用户区段以及结合丰富的多媒体元素以最大限度地提高影响和参与度。
 
-作为从Campaign v7过渡到v8的一部分，Campaign Classic文档集已得到简化和重新组织。 现在，Campaign v8文档集中专门提供了常用功能。
+>[!NOTE]
+>
+>作为从Campaign v7过渡到v8的一部分，Campaign Classic文档集已得到简化和重新组织。 现在，Campaign v8文档集中专门提供了常用功能。
 
 >[!BEGINTABS]
 
@@ -52,7 +54,7 @@ ht-degree: 0%
 要了解有关电子邮件渠道的更多信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/send/emails/email){target=_blank}。
 
 
-[![image](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/send/emails/email){target=_blank}
+[![image](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/send/emails/email){target="_blank"}
 
 
 >[!TAB 电子邮件投放创建]

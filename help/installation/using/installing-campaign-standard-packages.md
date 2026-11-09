@@ -26,9 +26,9 @@ topic_v2:
     internal-label: Optimization
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 2e00628a95aa333698f11233e851b54423f11f29
+source-git-commit: aeb8e44e8183cad6557fe2f27565cad0343777e5
 workflow-type: tm+mt
-source-wordcount: '1426'
+source-wordcount: '1440'
 ht-degree: 9%
 ---
 # 安装Campaign Classic内置软件包{#installing-campaign-standard-packages}
@@ -173,7 +173,7 @@ ht-degree: 9%
   </tr> 
   <tr> 
    <td> 响应管理器<br /> </td> 
-   <td> 衡量营销活动的成功性和盈利能力，或为所有通信渠道提供建议。  可选。 <a href="../../response/using/about-response-manager.md">了解更多</a> <br /> </td> 
+   <td> 衡量营销活动的成功性和盈利能力，或为所有通信渠道提供建议。  可选。 <a href="https://experienceleague.adobe.com/en/docs/campaign/automation/response-manager/about-response-manager" target="_blank">了解更多</a>（Campaign v8文档）<br /> </td> 
    <td> 营销<br /> </td> 
   </tr> 
   <tr> 
