@@ -45,7 +45,7 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: cce1f22c34cbd13d063850a7ca636a3b0dfc62f6
+source-git-commit: 758d5159759b19f7ef32e8cc8f6237547599e727
 workflow-type: tm+mt
 source-wordcount: '3891'
 ht-degree: 1%
@@ -54,13 +54,15 @@ ht-degree: 1%
 
 本文档概述了设计Adobe Campaign数据模型时的主要建议。
 
-作为从Campaign v7过渡到v8的一部分，Campaign Classic文档集已得到简化和重新组织。 现在，Campaign v8文档集中专门提供了常用功能。 要了解有关数据模型最佳实践的更多信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/config/implement/datamodel-best-practices){target=_blank}。
-
-[![image](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/config/implement/datamodel-best-practices){target=_blank}
+>[!NOTE]
+>
+>作为从Campaign v7过渡到v8的一部分，Campaign Classic文档集已得到简化和重新组织。 现在，Campaign v8文档集中专门提供了常用功能。 要了解有关数据模型最佳实践的更多信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/implement/datamodel-best-practices){target=_blank}。
+>
+>[![image](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/config/implement/datamodel-best-practices){target=_blank}
 
 要更好地了解Campaign内置表及其交互，请参阅[此部分](https://experienceleague.adobe.com/zh-Hans/docs/campaign/campaign-v8/developer/datamodel){target="_blank"}（Campaign v8文档）部分。
 
-阅读[此文档](../../configuration/using/about-schema-reference.md)以开始使用Campaign架构。 在[本文档](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/developer/schemas-forms/schemas){target="_blank"}（Campaign v8文档）中了解如何配置扩展架构以扩展Adobe Campaign数据库的概念数据模型。
+阅读[此文档](../../configuration/using/about-schema-reference.md)以开始使用Campaign架构。 在[本文档](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/schemas-forms/schemas){target="_blank"}（Campaign v8文档）中了解如何配置扩展架构以扩展Adobe Campaign数据库的概念数据模型。
 
 ## 数据模型架构 {#data-model-architecture}
 
@@ -80,7 +82,7 @@ Adobe Campaign默认数据模型在[此文档](../../configuration/using/data-mo
 
 >[!NOTE]
 >
->Adobe Campaign Classic允许构建自定义客户表。 但是，在大多数情况下，建议利用标准[收件人表](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/developer/datamodel#ootb-profiles){target="_blank"}（Campaign v8文档），该表已预建其他表和功能。
+>Adobe Campaign Classic允许构建自定义客户表。 但是，在大多数情况下，建议利用标准[收件人表](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/datamodel#ootb-profiles){target="_blank"}（Campaign v8文档），该表已预建其他表和功能。
 
 ### 数据类型选择 {#data-types}
 
@@ -167,7 +169,7 @@ Adobe Campaign主键是所有现成表自动生成的id，对于自定义表可�
 
 默认情况下，自定义序列的值介于+1,000和+2.1BB之间。 从技术上讲，通过启用负id可以获得整个4BB范围。 应谨慎使用此变量，当从负数转为正数时，将丢失一个id：Adobe Campaign通常会在生成的SQL查询中忽略记录0。
 
-有关序列消耗的详细信息，请观看[此视频](https://helpx.adobe.com/cn/customer-care-office-hours/campaign/sequences-exhaustion-campaign-classic.html)。
+有关序列消耗的详细信息，请观看[此视频](https://helpx.adobe.com/customer-care-office-hours/campaign/sequences-exhaustion-campaign-classic.html)。
 
 ## 索引 {#indexes}
 
@@ -269,7 +271,7 @@ Adobe Campaign既不是Data Warehouse也不是报表工具。 因此，要确保
 
 在[Campaign隐私和安全准则](../../platform/using/privacy-and-recommendations.md)中了解有关数据保留的更多信息。
 
-在本节[&#128279;](../../production/using/database-cleanup-workflow.md)中了解有关Campaign数据库清理工作流的更多信息。
+在本节](../../production/using/database-cleanup-workflow.md)中了解有关Campaign数据库清理工作流[的更多信息。
 
 >[!IMPORTANT]
 >
@@ -314,7 +316,7 @@ Adobe Campaign依赖于第三方数据库引擎。 根据提供商的不同，�
 
 * **小型**&#x200B;表类似于投放表。
 * **中等大小**&#x200B;表与收件人表的大小相同。 每个客户都有一笔记录。
-* **large-size**&#x200B;表类似于Broad日志表。 每个客户都有许多记录。
+* **large-size**表类似于Broad日志表。 每个客户都有许多记录。
 例如，如果数据库包含1000万条收件人，则Broad日志表将包含约1亿到2亿条消息，而Delivery表将包含数千条记录。
 
 在PostgreSQL上，行不应超过8 KB，以避免[TOAST](https://wiki.postgresql.org/wiki/TOAST)机制。 因此，应尽量减少列数和每行大小，以保留系统的最佳性能（内存和CPU）。
