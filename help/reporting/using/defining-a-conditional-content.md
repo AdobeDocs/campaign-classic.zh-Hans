@@ -49,7 +49,7 @@ ht-degree: 4%
 
 可见性条件可能取决于操作员状态、在报告页面中选择或输入的项目。
 
-[此部分](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/web-forms/form-rendering#defining-fields-conditional-display){target="_blank"}（Campaign v8文档）中提供了显示页面上项目的条件显示的示例。
+[此部分](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/content/web-forms/form-rendering#defining-fields-conditional-display){target="_blank"}（Campaign v8文档）中提供了显示页面上项目的条件显示的示例。
 
 在以下示例中，显示条件取决于语言：
 
@@ -72,6 +72,6 @@ ht-degree: 4%
 
 1. 选择&#x200B;**[!UICONTROL Enable default transition]**&#x200B;以添加过渡，以防不满足其中一个配置的条件。
 
-   有关更多信息，请参阅[此章节](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/web-forms/defining-web-forms-page-sequencing#conditional-page-display){target="_blank"}（Campaign v8文档）。
+   有关更多信息，请参阅[此章节](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/content/web-forms/defining-web-forms-page-sequencing#conditional-page-display){target="_blank"}（Campaign v8文档）。
 
 可以将&#x200B;**[!UICONTROL Test]**&#x200B;活动放在图表的开头处，以根据实例的上下文或操作员配置文件对显示进行条件。

@@ -36,7 +36,7 @@ ht-degree: 0%
 >以下章节面向&#x200B;**技术管理员**。
 
 * 您可以使用其他上下文数据。 请参阅[附加数据](../../interaction/using/additional-data.md)部分。
-* 您可以通过传入渠道扩充建议优惠的应用程序上下文。 为此，必须扩展&#x200B;**nms:interaction**&#x200B;交互架构。 有关完整过程，请参阅[扩展示例](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/offers/advanced-parameters/extension-example){target="_blank"}（Campaign v8文档）一节。
+* 您可以通过传入渠道扩充建议优惠的应用程序上下文。 为此，必须扩展&#x200B;**nms:interaction**&#x200B;交互架构。 有关完整过程，请参阅[扩展示例](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/offers/advanced-parameters/extension-example){target="_blank"}（Campaign v8文档）一节。
 * 有关创建测试环境的详情，请参阅[创建测试环境](../../interaction/using/creating-a-test-environment.md)一节。
 * 您可以使用挂接修改标准引擎行为。 有关更多信息，请参阅[挂钩](../../interaction/using/hooks.md)部分
 * 最后，在[分布式架构](../../interaction/using/distributed-architectures.md)部分中对使用与分布式架构的交互进行了详细介绍。

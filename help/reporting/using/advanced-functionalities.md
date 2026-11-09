@@ -67,7 +67,7 @@ ht-degree: 3%
 
    ![](assets/reporting_custom_js.png)
 
-要在客户端正常执行，引用的脚本必须使用JavaScript编写，并且需要与常用浏览器兼容。 有关更多信息，请参阅[此章节](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/web-forms/web-forms-answers){target="_blank"}（Campaign v8文档）。
+要在客户端正常执行，引用的脚本必须使用JavaScript编写，并且需要与常用浏览器兼容。 有关更多信息，请参阅[此章节](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/content/web-forms/web-forms-answers){target="_blank"}（Campaign v8文档）。
 
 ### 添加脚本活动 {#script-activity}
 

@@ -39,7 +39,7 @@ ht-degree: 1%
 
 除了详细介绍[此处](../../reporting/using/creating-a-chart.md#chart-types-and-variants)的各种图表之外，您还可以调整显示并将元素添加到报告页面。
 
-您可以使用容器：利用这些容器可以链接页面的多个元素，并在列和/或单元格中配置其布局。 [本节](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/web-forms/defining-web-forms-layout#creating-containers){target="_blank"}中详细介绍了这些组件的使用方法（Campaign v8文档）。
+您可以使用容器：利用这些容器可以链接页面的多个元素，并在列和/或单元格中配置其布局。 [本节](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/content/web-forms/defining-web-forms-layout#creating-containers){target="_blank"}中详细介绍了这些组件的使用方法（Campaign v8文档）。
 
 您可以在树的根目录下配置报告布局，并重载每个容器。 页面按列排序。 容器还会按列排序。 只有静态项和图形项会被分类为单元格。
 
@@ -53,7 +53,7 @@ ht-degree: 1%
 
 利用&#x200B;**[!UICONTROL Title]**&#x200B;字段，可将报告页面标题中的标签个性化。 可以通过报告的&#x200B;**[!UICONTROL Properties]**&#x200B;窗口配置窗口的标题。 有关详情，请参阅[添加页眉和页脚](#adding-a-header-and-a-footer)。
 
-通过&#x200B;**[!UICONTROL Display settings]**&#x200B;选项，可选择报告页面中控制标题的位置，并定义页面上的列数。 有关页面布局的更多信息，请参阅[此章节](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/web-forms/defining-web-forms-layout#positioning-the-fields-on-the-page){target="_blank"}的&#x200B;**项目布局**&#x200B;章节（Campaign v8文档）。
+通过&#x200B;**[!UICONTROL Display settings]**&#x200B;选项，可选择报告页面中控制标题的位置，并定义页面上的列数。 有关页面布局的更多信息，请参阅[此章节](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/content/web-forms/defining-web-forms-layout#positioning-the-fields-on-the-page){target="_blank"}的&#x200B;**项目布局**&#x200B;章节（Campaign v8文档）。
 
 选择&#x200B;**[!UICONTROL Browse]**&#x200B;部分中的各种选项以授权从一个报表页面浏览到另一个报表页面。 如果选择了&#x200B;**[!UICONTROL Disable next page]**&#x200B;或&#x200B;**[!UICONTROL Disable previous page]**&#x200B;选项，**[!UICONTROL Next]**&#x200B;和&#x200B;**[!UICONTROL Previous]**&#x200B;按钮从报表页面中消失。
 

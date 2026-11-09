@@ -52,7 +52,7 @@ webApp操作员是开箱即用的管理员。 要提高安全性，请遵循以�
 
   1. 为每个重复项输入一个名称。 例如：webapp_brand、webapp_brand2等。
 
-  1. 复制Web应用程序模板以让每个品牌拥有一个模板，并通过选择“使用特定帐户”来编辑属性以更改运算符。  请参阅[此页面](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/web-forms/defining-web-forms-properties){target="_blank"}以了解详情（Campaign v8文档）。
+  1. 复制Web应用程序模板以让每个品牌拥有一个模板，并通过选择“使用特定帐户”来编辑属性以更改运算符。  请参阅[此页面](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/content/web-forms/defining-web-forms-properties){target="_blank"}以了解详情（Campaign v8文档）。
 
 ## 安全组和管理员操作员
 

@@ -26,9 +26,9 @@ topic_v2:
     internal-label: Optimization
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: aeb8e44e8183cad6557fe2f27565cad0343777e5
+source-git-commit: 5e2aa587f61d79eab6d356ea5f91bc4e0f1b24c6
 workflow-type: tm+mt
-source-wordcount: '1440'
+source-wordcount: '1454'
 ht-degree: 9%
 ---
 # 安装Campaign Classic内置软件包{#installing-campaign-standard-packages}
@@ -163,7 +163,7 @@ ht-degree: 9%
   </tr> 
   <tr> 
    <td> 在线调查（调查管理器）<br /> </td> 
-   <td> 创建和管理在线表单，以添加或修改用户档案信息、订阅、取消订阅或竞争登录表单。 可选。 <a href="../../surveys/using/about-surveys.md">了解更多</a> <br /> </td> 
+   <td> 创建和管理在线表单，以添加或修改用户档案信息、订阅、取消订阅或竞争登录表单。 可选。 <a href="https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/content/surveys/about-surveys" target="_blank">了解更多</a>（Campaign v8文档）<br /> </td> 
    <td> 营销<br /> </td> 
   </tr> 
   <tr> 
@@ -173,7 +173,7 @@ ht-degree: 9%
   </tr> 
   <tr> 
    <td> 响应管理器<br /> </td> 
-   <td> 衡量营销活动的成功性和盈利能力，或为所有通信渠道提供建议。  可选。 <a href="https://experienceleague.adobe.com/en/docs/campaign/automation/response-manager/about-response-manager" target="_blank">了解更多</a>（Campaign v8文档）<br /> </td> 
+   <td> 衡量营销活动的成功性和盈利能力，或为所有通信渠道提供建议。  可选。 <a href="https://experienceleague.adobe.com/zh-hans/docs/campaign/automation/response-manager/about-response-manager" target="_blank">了解更多</a>（Campaign v8文档）<br /> </td> 
    <td> 营销<br /> </td> 
   </tr> 
   <tr> 

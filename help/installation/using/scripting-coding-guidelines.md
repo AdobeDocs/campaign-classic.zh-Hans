@@ -187,7 +187,7 @@ ht-degree: 5%
 
 1. 编辑&#x200B;**[!UICONTROL Script]**&#x200B;活动。 内容将取决于所选的验证码引擎。
 
-1. 最后，您可以在页面中添加个性化块：请参阅[此页面](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/content/editing-html-content/editing-content){target="_blank"}（Campaign v8文档）。
+1. 最后，您可以在页面中添加个性化块：请参阅[此页面](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/content/editing-html-content/editing-content){target="_blank"}（Campaign v8文档）。
 
    ![](assets/scripting-captcha4.png)
 
