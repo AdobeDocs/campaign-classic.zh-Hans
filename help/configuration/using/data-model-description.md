@@ -27,9 +27,9 @@ topic_v2:
     internal-label: Optimization
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: a97306b73a2b577841e6f24536c62b2526e9fda9
+source-git-commit: aeb8e44e8183cad6557fe2f27565cad0343777e5
 workflow-type: tm+mt
-source-wordcount: '2390'
+source-wordcount: '2404'
 ht-degree: 2%
 ---
 # Campaign数据模型说明{#data-model-description}
@@ -73,7 +73,7 @@ iFolderId字段是将收件人链接到其执行文件夹的外键。 有关此�
 
 sCountryCode字段是与收件人关联的国家/地区3166-1 Alpha 2 ISO代码（2个字符）。 此字段实际上是国家/地区参考表(NmsCountry)上的外键，包含国家/地区标签和其他国家/地区代码数据。 如果未填充国家/地区，则存储“XX”值（并用它来代替零ID记录）。
 
-有关收件人表的详细信息，请参阅[此部分](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/developer/datamodel#ootb-profiles){target="_blank"}（Campaign v8文档）。
+有关收件人表的详细信息，请参阅[此部分](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/datamodel#ootb-profiles){target="_blank"}（Campaign v8文档）。
 
 ### NmsGroup {#NmsGroup}
 
@@ -133,7 +133,7 @@ NmsRcpGrpRel关系表仅包含与iRecipientId和iGroupId链接表的标识符对
 
 ## 营销活动管理 {#campaign-management}
 
-这组表链接到&#x200B;**营销活动**&#x200B;模块，该模块允许定义、优化、执行和分析通信和营销活动。 有关更多信息，请参阅 [Campaign v8 文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html?lang=zh-Hans){target=_blank}。
+这组表链接到&#x200B;**营销活动**&#x200B;模块，该模块允许定义、优化、执行和分析通信和营销活动。 有关更多信息，请参阅 [Campaign v8 文档](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html){target=_blank}。
 
 ![](assets/data-model_campaign.png)
 
@@ -162,7 +162,7 @@ NmsRcpGrpRel关系表仅包含与iRecipientId和iGroupId链接表的标识符对
 
 ## 响应管理 {#response-management}
 
-这组表链接到&#x200B;**响应管理器**&#x200B;模块，该模块允许衡量营销活动的成功性和盈利能力，或为所有通信渠道提供建议。 有关此内容的详细信息，请参阅[关于响应管理器](../../response/using/about-response-manager.md)。
+这组表链接到&#x200B;**响应管理器**&#x200B;模块，该模块允许衡量营销活动的成功性和盈利能力，或为所有通信渠道提供建议。 有关此内容的详细信息，请参阅[关于响应管理器](https://experienceleague.adobe.com/en/docs/campaign/automation/response-manager/about-response-manager){target="_blank"}（Campaign v8文档）。
 
 ![](assets/data-model_response.png)
 

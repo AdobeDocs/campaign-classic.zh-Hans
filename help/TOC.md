@@ -8,9 +8,9 @@ user-guide-description: Adobe Campaign Classic v7 产品文档。
 sub-product: adobe campaign classic
 type: Documentation
 nudge: false
-source-git-commit: d5aff6b318cea324297eb7e2e887a67fb18cd504
+source-git-commit: aeb8e44e8183cad6557fe2f27565cad0343777e5
 workflow-type: tm+mt
-source-wordcount: '1574'
+source-wordcount: '1558'
 ht-degree: 97%
 ---
 
@@ -417,12 +417,6 @@ ht-degree: 97%
     + [呈现规则](interaction/using/presentation-rules.md)
     + [入站渠道产品建议](interaction/using/offers-on-an-inbound-channel.md)
     + [出站渠道产品建议](interaction/using/offers-on-an-outbound-channel.md)
-+ 响应管理器 {#response-manager}
-  + [响应管理器入门](response/using/about-response-manager.md)
-  + [配置响应管理器](response/using/configure-response-manager.md)
-  + [假设验证模板](response/using/hypothesis-templates.md)
-  + [创建假设验证](response/using/creating-hypotheses.md)
-  + [假设验证跟踪](response/using/hypothesis-tracking.md)
 + 设计和共享报告 {#reporting}
   + 报告快速入门 {#reporting-in-adobe-campaign}
     + [报告最佳实践](reporting/using/best-practices.md)

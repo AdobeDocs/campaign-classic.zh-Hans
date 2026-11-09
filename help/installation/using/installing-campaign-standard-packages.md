@@ -26,9 +26,9 @@ topic_v2:
     internal-label: Optimization
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 2e00628a95aa333698f11233e851b54423f11f29
+source-git-commit: aeb8e44e8183cad6557fe2f27565cad0343777e5
 workflow-type: tm+mt
-source-wordcount: '1426'
+source-wordcount: '1440'
 ht-degree: 9%
 ---
 # 安装Campaign Classic内置软件包{#installing-campaign-standard-packages}
@@ -85,7 +85,7 @@ ht-degree: 9%
   </tr> 
   <tr> 
    <td> 营销活动（营销活动）<br /> </td> 
-   <td> 定义、优化、执行和分析通信和营销活动。 <a href="https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html?lang=zh-Hans" target="_blank">了解更多</a><br /> </td> 
+   <td> 定义、优化、执行和分析通信和营销活动。 <a href="https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaigns/campaigns.html" target="_blank">了解更多</a><br /> </td> 
    <td> 营销</td>
   </tr> 
   <tr> 
@@ -173,12 +173,12 @@ ht-degree: 9%
   </tr> 
   <tr> 
    <td> 响应管理器<br /> </td> 
-   <td> 衡量营销活动的成功性和盈利能力，或为所有通信渠道提供建议。  可选。 <a href="../../response/using/about-response-manager.md">了解更多</a> <br /> </td> 
+   <td> 衡量营销活动的成功性和盈利能力，或为所有通信渠道提供建议。  可选。 <a href="https://experienceleague.adobe.com/en/docs/campaign/automation/response-manager/about-response-manager" target="_blank">了解更多</a>（Campaign v8文档）<br /> </td> 
    <td> 营销<br /> </td> 
   </tr> 
   <tr> 
    <td> 访问外部数据（联合数据访问）<br /> </td> 
-   <td> 提供联合数据访问(FDA)选项，以处理存储在一个或多个外部数据库中的信息，以便您能够访问外部数据而不改变Adobe Campaign数据的结构。  可选。 <a href="https://experienceleague.adobe.com/docs/campaign/automation/workflows/advanced-management/accessing-an-external-database-fda.html?lang=zh-Hans" target="_blank">了解更多</a> <br /> </td> 
+   <td> 提供联合数据访问(FDA)选项，以处理存储在一个或多个外部数据库中的信息，以便您能够访问外部数据而不改变Adobe Campaign数据的结构。  可选。 <a href="https://experienceleague.adobe.com/docs/campaign/automation/workflows/advanced-management/accessing-an-external-database-fda.html" target="_blank">了解更多</a> <br /> </td> 
    <td> 所有<br /> </td> 
   </tr> 
   <tr> 
@@ -193,7 +193,7 @@ ht-degree: 9%
   </tr> 
   <tr> 
    <td> 优惠券管理<br /> </td> 
-   <td> 创建一组优惠券以添加到即将推出的营销优惠中。 可选。 <a href="https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalized-coupons.html?lang=zh-Hans" target="_blank">了解更多</a> <br /> </td> 
+   <td> 创建一组优惠券以添加到即将推出的营销优惠中。 可选。 <a href="https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/personalize/personalized-coupons.html" target="_blank">了解更多</a> <br /> </td> 
    <td> 营销<br /> </td> 
   </tr> 
   <tr> 
@@ -218,7 +218,7 @@ ht-degree: 9%
   </tr> 
   <tr> 
    <td> AEM集成<br /> </td> 
-   <td> 允许您直接在Adobe Experience Manager中管理电子邮件投放的内容以及表单，以便从AEM的内容编辑功能以及Adobe Campaign的投放功能中受益。 <a href="https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/connect/ac-aem" target="_blank">了解更多</a>（Campaign v8文档）<br /> </td> 
+   <td> 允许您直接在Adobe Experience Manager中管理电子邮件投放的内容以及表单，以便从AEM的内容编辑功能以及Adobe Campaign的投放功能中受益。 <a href="https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/connect/ac-aem" target="_blank">了解更多</a>（Campaign v8文档）<br /> </td> 
    <td> 营销</td> 
   </tr> 
   <tr> 
@@ -248,7 +248,7 @@ ht-degree: 9%
   </tr> 
   <tr> 
    <td> AMP支持<br /> </td> 
-   <td> 使您能够使用新的交互式AMP作为电子邮件格式，并发送动态电子邮件。 可选。 <a href="https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-interactive-content.html?lang=zh-Hans" target="_blank">了解更多</a> <br /> </td> 
+   <td> 使您能够使用新的交互式AMP作为电子邮件格式，并发送动态电子邮件。 可选。 <a href="https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/emails/defining-interactive-content.html" target="_blank">了解更多</a> <br /> </td> 
    <td> 全部 </td> 
   </tr> 
   <tr> 
@@ -283,7 +283,7 @@ ht-degree: 9%
 
 * 在营销和MID实例上安装[!DNL LINE]包
 
-* 在mkt实例上设置[!DNL LINE]外部帐户，以通过更改传递模式指向mid实例。 [了解详情](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/send/other-channels/line#configure-line-external){target="_blank"}（Campaign v8 文档）
+* 在mkt实例上设置[!DNL LINE]外部帐户，以通过更改传递模式指向mid实例。 [了解详情](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/other-channels/line#configure-line-external){target="_blank"}（Campaign v8 文档）
 
 * 在MID实例的外部帐户中设置[!DNL LINE]凭据。
 
