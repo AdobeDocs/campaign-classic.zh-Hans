@@ -41,10 +41,10 @@ topic_v2:
     internal-label: Personalization
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 59d78c785d8984861fd537c2f64f82a7d2d77fbf
+source-git-commit: 6a23919f31f7e55d1ae45effeb7a5e958b53226f
 workflow-type: tm+mt
 source-wordcount: '436'
-ht-degree: 20%
+ht-degree: 22%
 ---
 # 开始使用轮廓{#about-profiles}
 
@@ -68,7 +68,7 @@ ht-degree: 20%
 
 要了解有关用户档案以及如何创建和编辑它们的更多信息，请参阅有关&#x200B;**[Campaign v8文档](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/audience/gs-audiences){target=_blank}**&#x200B;的详细文档。
 
-[![image](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/audience/gs-audiences){target=_blank}
+[![image](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/audience/gs-audiences){target="_blank"}
 
 >[!TAB 创建和编辑用户档案]
 
@@ -83,7 +83,7 @@ ht-degree: 20%
 请参阅&#x200B;**Campaign v8文档**&#x200B;以了解如何导入和导出用户档案和数据：
 
 * [导入用户档案](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/audience/add-profiles/import-profiles){target=_blank}：您可以使用工作流导入用户档案。
-* [导入/导出数据](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/data/import){target=_blank}：了解如何使用通用导入/导出功能导入或导出数据和配置文件。
+* [导入/导出数据](https://experienceleague.adobe.com/zh-Hans/docs/campaign/campaign-v8/data/import){target=_blank}：了解如何使用通用导入/导出功能导入或导出数据和配置文件。
 
 >[!ENDTABS]
 
@@ -122,7 +122,7 @@ It also gives you access to:
 
 * lists - [Learn more](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/audience/create-audiences/create-audiences){target="_blank"} (Campaign v8 documentation)
 * subscription services - [Learn more](../../delivery/using/managing-subscriptions.md)
-* web applications - [Learn more](../../web/using/about-web-applications.md)
+* web applications - [Learn more](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/content/web-applications/about-web-applications){target="_blank"} (Campaign v8 documentation)
 * imports and exports (jobs) - [Learn more](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/data/import){target="_blank"} (Campaign v8 documentation)
 * targeting workflows - [Learn more](https://experienceleague.adobe.com/zh-hans/docs/campaign/automation/workflows/introduction/build-a-workflow){target="_blank"} (Campaign v8 documentation)
 
