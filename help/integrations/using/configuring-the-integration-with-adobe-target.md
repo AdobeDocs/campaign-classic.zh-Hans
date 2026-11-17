@@ -30,9 +30,9 @@ subfeature_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 1b8805ac952da110858c88fc2c252aece69ad2bf
 workflow-type: tm+mt
-source-wordcount: '198'
+source-wordcount: '195'
 ht-degree: 2%
 ---
 # 配置与Adobe Target的集成{#configuring-the-integration-with-adobe-target}
@@ -46,7 +46,7 @@ ht-degree: 2%
 
 此集成需要：
 
-* Adobe Experience Cloud和Adobe Target组织
+* [!DNL Adobe CX Enterprise]和Adobe Target组织
 * 为与Adobe Campaign建立连接而指定的Adobe Target rawbox
 
 要在Adobe Campaign中配置此集成，请执行以下步骤：

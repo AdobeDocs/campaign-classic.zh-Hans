@@ -33,9 +33,9 @@ subfeature_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
-source-git-commit: 0fdce84d7da1ff42a406ace8f1a180f6a426646a
+source-git-commit: 368b67eeb68b0944be5db674fd6a18914dea86ad
 workflow-type: tm+mt
-source-wordcount: '492'
+source-wordcount: '486'
 ht-degree: 5%
 ---
 # IMS 故障排除{#ims-troubleshooting}
@@ -45,9 +45,9 @@ ht-degree: 5%
 
 >[!NOTE]
 >
->作为从Campaign v7过渡到v8的一部分，Campaign Classic文档集已得到简化和重新组织。 现在，Campaign v8文档集中专门提供了常用功能。 要了解有关使用Adobe ID登录和解决登录问题的更多信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/new/connect){target=_blank}。
+>作为从Campaign v7过渡到v8的一部分，Campaign Classic文档集已得到简化和重新组织。 现在，Campaign v8文档集中专门提供了常用功能。 要了解有关使用Adobe ID登录和解决登录问题的更多信息，请参阅[Campaign v8文档](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/connect){target=_blank}。
 >
->[![image](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/new/connect){target="_blank"}
+>[![image](../../assets/do-not-localize/learn-more-button.svg)](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/new/connect){target="_blank"}
 
 **外部帐户**
 
@@ -62,9 +62,9 @@ ht-degree: 5%
 
 如果外部帐户具有&#x200B;**产品上下文**&#x200B;字段，请检查其值是否设置为： **dma_campaign_classic**
 
-确保Campaign和Experience Cloud的产品上下文相同。
+确保Campaign和[!DNL Adobe CX Enterprise]的产品上下文相同。
 
-例如，如果未显示&#x200B;**产品上下文**，则Campaign和Experience Cloud中的默认产品上下文都应是&#x200B;**dma_campaign**。 如果出现&#x200B;**产品上下文**&#x200B;字段，则Campaign和Experience Cloud中的默认产品上下文都应是&#x200B;**dma_campaign_classic**。
+例如，如果未显示&#x200B;**产品上下文**，则促销活动和[!DNL CX Enterprise]中的默认产品上下文都应是&#x200B;**dma_campaign**。 如果出现&#x200B;**产品上下文**&#x200B;字段，则在Campaign和[!DNL CX Enterprise]中的默认产品上下文都应是&#x200B;**dma_campaign_classic**。
 
 **[!UICONTROL IMS Server URL]**
 

@@ -43,10 +43,10 @@ topic_v2:
     internal-label: Security
   - id: d3cdead0-685a-4489-9250-4bb709942f66
     internal-label: Data collection
-source-git-commit: 4ae19a379120bb39444c3e81392a7dbb0b6da3ba
+source-git-commit: 1b8805ac952da110858c88fc2c252aece69ad2bf
 workflow-type: tm+mt
-source-wordcount: '1814'
-ht-degree: 100%
+source-wordcount: '1813'
+ht-degree: 97%
 ---
 # 已弃用和已移除的功能 {#deprecated-and-removed-features}
 
@@ -86,7 +86,7 @@ Adobe 不断评估产品功能，以确定应用更现代的功能替换的旧�
 </tr>
 <tr>
  <td>Campaign (Neolane) 旧版 SDK</td>
- <td><p>现已弃用适用于移动应用程序的 Campaign (Neolane) SDK。 相反，可通过在“数据收集”UI 中配置 Adobe Campaign 扩展使用 Adobe Experience Platform Mobile SDK。 Adobe Experience Platform Mobile SDK 有助于在移动设备应用程序中支持 Adobe 的 Experience Cloud 解决方案和服务。 SDK 配置通过数据收集 UI 进行管理，以实现灵活配置和基于规则的可扩展集成。 有关如何配置移动应用程序频道，请参阅 <a href="https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/send/push/push-settings">Campaign v8 文档</a>。</p>
+ <td><p>现已弃用适用于移动应用程序的 Campaign (Neolane) SDK。 相反，可通过在“数据收集”UI 中配置 Adobe Campaign 扩展使用 Adobe Experience Platform Mobile SDK。 Adobe Experience Platform Mobile SDK有助于在您的移动应用程序中支持Adobe CX Enterprise解决方案和服务。 SDK 配置通过数据收集 UI 进行管理，以实现灵活配置和基于规则的可扩展集成。 有关如何配置移动应用程序频道，请参阅 <a href="https://experienceleague.adobe.com/zh-hans/docs/campaign/campaign-v8/send/push/push-settings">Campaign v8 文档</a>。</p>
 </td>
 </tr>
 <tr>
@@ -143,7 +143,7 @@ Adobe 不断评估产品功能，以确定应用更现代的功能替换的旧�
   </tr>
   <tr>
   <td>Demdex 域<br></td>
-  <td><p> 从 Campaign 21.1.3 版本开始，不再使用用于将受众导入和导出到 Adobe Experience Cloud 的 demdex 域。 <a href="../../integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md">了解详情</a></p> 
+  <td><p> 从Campaign 21.1.3版本开始，不再使用用于将受众导入和导出到Adobe CX Enterprise的demdex域。 <a href="../../integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md">了解详情</a></p> 
   </td>
   </tr>
    <tr> 

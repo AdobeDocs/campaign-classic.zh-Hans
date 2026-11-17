@@ -30,27 +30,27 @@ subfeature_v2:
     internal-label: Target integration
   - id: d6330382-c886-4f7a-a4f7-74e3f36c0d9c
     internal-label: Audiences
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 1b8805ac952da110858c88fc2c252aece69ad2bf
 workflow-type: tm+mt
-source-wordcount: '244'
-ht-degree: 51%
+source-wordcount: '226'
+ht-degree: 38%
 ---
-# 与Adobe Experience Cloud共享受众 {#sharing-audiences-with-adobe-experience-cloud}
+# 与[!DNL Adobe CX Enterprise]共享受众 {#sharing-audiences-with-adobe-experience-cloud}
 
 
 >[!CAUTION]
 >
->要与Adobe Experience Cloud解决方案共享受众，您需要实施Adobe Identity Management System。 [了解有关IMS的更多信息](../../integrations/using/about-adobe-id.md)。
+>要与[!DNL CX Enterprise]解决方案共享受众，您需要实施Adobe Identity Management System。 [了解有关IMS的更多信息](../../integrations/using/about-adobe-id.md)。
 
-通过Adobe Campaign，您可以与Adobe Experience Cloud服务共享受众和区段。 提供了两个选项：
+通过Adobe Campaign，您可以与[!DNL CX Enterprise]服务共享受众和区段。 提供了两个选项：
 
-1. 将Adobe Experience Platform区段数据发送到Adobe Campaign。 要实施此集成，您需要将Real-Time Customer Data Platform连接到Campaign (RTCDP)。 [在此章节中了解详情](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/email-marketing/adobe-campaign.html?lang=zh-Hans){target="_blank"}。
+1. 将Adobe Experience Platform区段数据发送到Adobe Campaign。 要实施此集成，您需要将Real-Time Customer Data Platform连接到Campaign (RTCDP)。 [在此章节中了解详情](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/email-marketing/adobe-campaign.html){target="_blank"}。
 
 1. 将&#x200B;**Adobe Campaign**&#x200B;与&#x200B;**Experience Cloud受众**&#x200B;或&#x200B;**Adobe Audience Manager**&#x200B;集成。 然后，您将能够：
 
-   * 从不同的 Adobe Experience Cloud 解决方案导入共享受众/区段到 Adobe Campaign 中。 可通过 Adobe Campaign 中的列表导入受众。
+   * 从其他[!DNL CX Enterprise]解决方案导入共享受众/区段到Adobe Campaign。 可通过 Adobe Campaign 中的列表导入受众。
 
-   * 以 Adobe Experience Cloud 共享受众的形式导出列表。 您可在所用的不同 Adobe Experience Cloud 解决方案中使用这些受众。 在工作流中完成定位后，可使用专门的 **[!UICONTROL Update shared audience]** 活动导出受众。
+   * 以[!DNL CX Enterprise]共享受众的形式导出列表。 这些受众可在您使用的其他[!DNL CX Enterprise]解决方案中使用。 在工作流中完成定位后，可使用专门的 **[!UICONTROL Update shared audience]** 活动导出受众。
 
 此集成支持两种类型的 Adobe Experience Cloud ID：
 

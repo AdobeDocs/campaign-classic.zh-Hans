@@ -38,9 +38,9 @@ topic_v2:
     internal-label: Implementation
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 1b8805ac952da110858c88fc2c252aece69ad2bf
 workflow-type: tm+mt
-source-wordcount: '845'
+source-wordcount: '842'
 ht-degree: 1%
 ---
 # 配置管道 {#configuring-pipeline}
@@ -56,11 +56,11 @@ ht-degree: 1%
 在开始此配置之前，请检查您是否拥有：
 
 * Adobe Developer项目
-* 有效的组织ID — 要查找您的组织ID，请参阅[此页面](https://experienceleague.adobe.com/zh-hans/docs/core-services/interface/administration/organizations#concept_EA8AEE5B02CF46ACBDAD6A8508646255){_blank}
+* 有效的组织ID — 要查找您的组织ID，请参阅[此页面](https://experienceleague.adobe.com/en/docs/core-services/interface/administration/organizations#concept_EA8AEE5B02CF46ACBDAD6A8508646255){_blank}
 * 具有组织访问权限的开发人员
 * Adobe Analytics中的有效触发器配置
 
-由于管道托管在Adobe Experience Cloud中，因此需要进行身份验证。 它使用通过Adobe Developer项目支持的身份验证。
+由于管道托管在[!DNL Adobe CX Enterprise]中，因此需要进行身份验证。 它使用通过Adobe Developer项目支持的身份验证。
 
 ## 步骤1：创建/更新您的Adobe Developer项目 {#creating-adobe-io-project}
 

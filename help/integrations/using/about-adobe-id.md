@@ -34,10 +34,10 @@ topic_v2:
     internal-label: Implementation
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
-source-git-commit: 4ae19a379120bb39444c3e81392a7dbb0b6da3ba
+source-git-commit: 1b8805ac952da110858c88fc2c252aece69ad2bf
 workflow-type: tm+mt
-source-wordcount: '194'
-ht-degree: 16%
+source-wordcount: '192'
+ht-degree: 10%
 ---
 # 关于Adobe ID {#about-adobe-id}
 
@@ -45,7 +45,7 @@ Adobe Identity Management System (IMS)可帮助管理员创建和管理用户对
 
 Campaign用户可以使用其Adobe ID连接到Adobe Campaign控制台，而不是[本机用户/密码身份验证](../../platform/using/access-management-operators.md)。 此实施具有以下优势：
 
-* 所有 Experience Cloud 解决方案都可以使用相同的 ID。
+* 同一ID可用于所有[!DNL Adobe CX Enterprise]解决方案。
 * 使用具有不同集成的Adobe Campaign时，将保留连接。
 * 密码管理策略比本机登录/密码更安全。
 * 使用联合 ID 帐户（外部 ID 提供商）。
@@ -75,6 +75,6 @@ Campaign用户可以使用其Adobe ID连接到Adobe Campaign控制台，而不�
 
 | 有用页面 | 其他资源 |
 |---|---|
-| [配置IMS](../../integrations/using/configuring-ims.md) | [Experience Cloud常见问题解答](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/faq.html?lang=zh-Hans) |
+| [配置IMS](../../integrations/using/configuring-ims.md) | [Experience Cloud常见问题解答](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/faq.html) |
 | [正在实施IMS](../../integrations/using/implementing-ims.md) | [访问管理](../../platform/using/access-management.md) |
 | [IMS疑难解答](../../integrations/using/ims-troubleshooting.md) | [正在安装Campaign包](../../installation/using/installing-campaign-standard-packages.md) |

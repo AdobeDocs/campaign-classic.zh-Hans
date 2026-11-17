@@ -33,10 +33,10 @@ topic_v2:
     internal-label: Implementation
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
     internal-label: Security
-source-git-commit: f079b19ac78b331499a6f3cf5fcc21e55827998c
-workflow-type: ht
-source-wordcount: '1204'
-ht-degree: 100%
+source-git-commit: 1b8805ac952da110858c88fc2c252aece69ad2bf
+workflow-type: tm+mt
+source-wordcount: '1202'
+ht-degree: 98%
 ---
 # 版本更新 {#rn-overview}
 
@@ -83,11 +83,11 @@ Adobe Campaign 会定期更新。 这种定期更新旨在让您掌握最新、�
 
 ## 热修复 {#hotflixes}
 
-在特殊情况下，Adobe 可能会提供针对特定客户的热修复，以在标准版本提供修复之前解决问题。热修复请求会逐案进行评估，且不属于标准发布周期。
+在特殊情况下，Adobe 可能会提供针对特定客户的热修复，以在标准版本提供修复之前解决问题。 热修复请求会逐案进行评估，且不属于标准发布周期。
 
-应通过 Adobe 客户关怀部门提出热修复请求。如果获得批准，将为受影响的客户和产品构建准备热修复。热修复不是面向所有客户的通用版本；Adobe 在审阅后可能会批准与其他受影响的客户共享它。
+应通过 Adobe 客户关怀部门提出热修复请求。 如果获得批准，将为受影响的客户和产品构建准备热修复。 热修复不是面向所有客户的通用版本；Adobe 在审阅后可能会批准与其他受影响的客户共享它。
 
-交付热修复时，公开发行说明中可能不包含热修复的详细信息。Adobe 随后可能会在适用版本的标准版本中包含热修复。不保证纳入及具体时间。有关每个标准版本中包含的更改，请参阅发行说明。
+交付热修复时，公开发行说明中可能不包含热修复的详细信息。 Adobe 随后可能会在适用版本的标准版本中包含热修复。 不保证纳入及具体时间。 有关每个标准版本中包含的更改，请参阅发行说明。
 
 此针对特定客户的热修复流程独立于上文所述的重要安全修补程序策略，根据该策略，Adobe 可以在不事先通知的情况下将重要安全修补程序应用于托管环境。
 
@@ -198,4 +198,4 @@ Adobe 团队将引导和指导您的组织完成这一过程。
 * [已弃用和已移除的功能](../../rn/using/deprecated-features.md)
 * [内部版本升级常见问题解答](../../platform/using/faq-build-upgrade.md)
 
-要获悉新的 Experience Cloud 解决方案版本，请订阅 [Adobe 优先产品更新](https://www.adobe.com/cn/subscription/priority-product-update.html)。
+若要获悉新的[!DNL Adobe CX Enterprise]解决方案版本，请订阅[Adobe优先产品更新](https://www.adobe.com/cn/subscription/priority-product-update.html)。

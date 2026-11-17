@@ -29,9 +29,9 @@ subfeature_v2:
     internal-label: Target integration
   - id: a14877cc-63b1-41d9-bf0b-5f97cadd0417
     internal-label: Configuration guidelines
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: 1b8805ac952da110858c88fc2c252aece69ad2bf
 workflow-type: tm+mt
-source-wordcount: '368'
+source-wordcount: '360'
 ht-degree: 12%
 ---
 # 配置IMS{#configuring-ims}
@@ -43,12 +43,12 @@ ht-degree: 12%
 
 ## 先决条件 {#prerequisites}
 
-* 您必须具有Adobe Experience Cloud组织名称和ID。 要查找您的组织ID，请参阅[此页面](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=zh-Hans){_blank}。
-* 您必须在Experience Cloud中添加用户。 有关详细信息，请参见[此页面](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html?lang=zh-Hans){_blank}。
+* 您必须具有[!DNL Adobe CX Enterprise]组织名称和ID。 要查找您的组织ID，请参阅[此页面](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=zh-Hans){_blank}。
+* 您必须在[!DNL CX Enterprise]中添加用户。 有关详细信息，请参见[此页面](https://experienceleague.adobe.com/docs/core-services/interface/administration/admin-getting-started.html){_blank}。
 
 >[!NOTE]
 >
->确保您的用户已链接到将与Adobe Campaign同步的Adobe Experience Cloud组。 [了解详情](#configuring-the-external-account)。
+>确保您的用户已链接到将与Adobe Campaign同步的[!DNL CX Enterprise]组。 [了解详情](#configuring-the-external-account)。
 
 ## 更新控制台 {#updating-the-console}
 
@@ -68,7 +68,7 @@ ht-degree: 12%
 
 输入以下信息：
 
-* 使用的IMS服务器的连接信息（ID和密码）。 此信息由Adobe客户关怀团队提供。 有关详细信息，请参阅[Adobe Experience Cloud管理员常见问题解答](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/faq.html?lang=zh-Hans)。
+* 使用的IMS服务器的连接信息（ID和密码）。 此信息由Adobe客户关怀团队提供。 有关详细信息，请参阅[Adobe Experience Cloud管理员常见问题解答](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/faq.html)。
 
   必须在&#x200B;**https**&#x200B;中指定&#x200B;**[!UICONTROL Callback server]**&#x200B;地址。 此字段对应于Adobe Campaign实例的访问URL。
 
