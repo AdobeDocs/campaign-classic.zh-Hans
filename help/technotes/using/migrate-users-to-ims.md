@@ -25,9 +25,9 @@ topic_v2:
     internal-label: Security
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 4bc1e76d129c6a6aa15b7e3915232043bd6f4286
+source-git-commit: 1b8805ac952da110858c88fc2c252aece69ad2bf
 workflow-type: tm+mt
-source-wordcount: '676'
+source-wordcount: '673'
 ht-degree: 2%
 ---
 # 将Campaign操作员迁移到Adobe Identity Management System (IMS) {#migrate-users-to-ims}
@@ -52,7 +52,7 @@ Adobe将支持您完成此迁移工作。 您可以在下面文章中找到详�
 
 如果贵组织中的操作员正在使用其登录/密码（也称为）连接到Campaign客户端控制台。 会受到影响，您应该将这些运算符迁移到Adobe IMS，如下所述。
 
-迁移到[Adobe Identity Management System (IMS)](https://helpx.adobe.com/cn/enterprise/using/identity.html){target="_blank"}是确保环境安全和标准化的安全要求，因为大多数其他Adobe Experience Cloud解决方案和应用程序已在IMS上。
+迁移到[Adobe Identity Management System (IMS)](https://helpx.adobe.com/cn/enterprise/using/identity.html){target="_blank"}是确保环境安全和标准化的安全要求，因为大多数其他[!DNL Adobe CX Enterprise]解决方案和应用程序已在IMS上。
 
 此更改适用于从Campaign Classic v7.4.1（和最新的[IMS迁移兼容版本](ac-ims.md#ims-versions)）开始，并且是&#x200B;**强制性的**，必须将其迁移到Adobe Campaign v8。
 

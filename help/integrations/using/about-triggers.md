@@ -38,9 +38,9 @@ topic_v2:
     internal-label: Implementation
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 1b8805ac952da110858c88fc2c252aece69ad2bf
 workflow-type: tm+mt
-source-wordcount: '411'
+source-wordcount: '406'
 ht-degree: 8%
 ---
 # 使用Campaign和Experience Cloud触发器{#about-adobe-experience-triggers}
@@ -64,13 +64,13 @@ ht-degree: 8%
 
 ![](assets/triggers_2.png)
 
-[!DNL pipelined]进程使用身份验证服务登录到Experience Cloud并发送私钥。 身份验证服务返回一个令牌。 令牌用于在检索事件时进行身份验证。
+[!DNL pipelined]进程使用身份验证服务登录到[!DNL Adobe CX Enterprise]并发送私钥。 身份验证服务返回一个令牌。 令牌用于在检索事件时进行身份验证。
 
 ## 先决条件 {#adobe-io-prerequisites}
 
 在开始此实施之前，请检查您是否拥有：
 
-* 有效的&#x200B;**组织标识符**：组织ID是Adobe Experience Cloud中的唯一标识符，用于VisitorID服务和IMS单点登录(SSO)。 [了解详情](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=zh-Hans)
+* 有效的&#x200B;**组织标识符**：组织ID是[!DNL CX Enterprise]中的唯一标识符，用于VisitorID服务和IMS单点登录(SSO)。 [了解详情](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=zh-Hans)
 * 您组织的&#x200B;**开发人员访问权限**。 组织的系统管理员需要遵循此页面[&#128279;](https://helpx.adobe.com/cn/enterprise/using/manage-developers.html)中详细的的&#x200B;**将开发人员添加到单个产品配置文件**&#x200B;过程，以便为与触发器关联的Adobe Analytics产品的`Analytics - {tenantID}`产品配置文件提供开发人员访问权限。
 
 ## 实施步骤 {#implement}

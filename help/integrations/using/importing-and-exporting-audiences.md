@@ -30,9 +30,9 @@ subfeature_v2:
     internal-label: Target integration
   - id: d6330382-c886-4f7a-a4f7-74e3f36c0d9c
     internal-label: Audiences
-source-git-commit: a43e591a565a18d79f583d975e3e812c5435b0c0
+source-git-commit: 1b8805ac952da110858c88fc2c252aece69ad2bf
 workflow-type: tm+mt
-source-wordcount: '616'
+source-wordcount: '610'
 ht-degree: 3%
 ---
 # 导入和导出受众{#importing-and-exporting-audiences}
@@ -48,7 +48,7 @@ ht-degree: 3%
 
    ![](assets/aam_import_audience.png)
 
-1. 在打开的窗口中，单击&#x200B;**[!UICONTROL Select a shared audience]**&#x200B;以转到其他Adobe Experience Cloud解决方案中可用的共享受众/区段列表。
+1. 在打开的窗口中，单击&#x200B;**[!UICONTROL Select a shared audience]**&#x200B;以转到其他[!DNL Adobe CX Enterprise]解决方案中可用的共享受众/区段列表。
 1. 选择受众并进行确认。 受众的信息会自动填写。
 
    请注意，为了能够导入共享受众，您应该在Admin Console中获得&#x200B;**[!UICONTROL Audience library]**&#x200B;产品，并成为Audience Manager的管理员。 有关详细信息，请参阅[管理控制台文档](https://helpx.adobe.com/cn/enterprise/managing/user-guide.html)。
@@ -99,7 +99,7 @@ ht-degree: 3%
 
 随后将导出受众。 保存受众活动有两个叫客过渡。 主过渡包含已成功导出的收件人。 额外的过渡包含无法映射为访客ID或声明的ID的收件人。
 
-解决方案之间的同步需要24 - 36个小时。 在此时段后，您将能够找到新受众并在其他Adobe Experience Cloud解决方案中重复使用它。 有关使用Adobe Campaign共享受众的更多信息，请参阅此[文档](https://experienceleague.adobe.com/zh-hans/docs/core-services/interface/services/audiences/create){target="_blank"}。
+解决方案之间的同步需要24 - 36个小时。 在此时段后，您将能够找到新受众并在其他[!DNL CX Enterprise]解决方案中重复使用它。 有关使用Adobe Campaign共享受众的更多信息，请参阅此[文档](https://experienceleague.adobe.com/zh-hans/docs/core-services/interface/services/audiences/create){target="_blank"}。
 
 >[!NOTE]
 >

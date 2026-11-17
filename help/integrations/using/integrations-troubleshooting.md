@@ -42,10 +42,10 @@ topic_v2:
     internal-label: Troubleshooting
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: fbeb3bb6f89cd0b03d1fb4551496f96eda0cbf10
+source-git-commit: 1b8805ac952da110858c88fc2c252aece69ad2bf
 workflow-type: tm+mt
-source-wordcount: '127'
-ht-degree: 3%
+source-wordcount: '124'
+ht-degree: 4%
 ---
 # 故障排除{#troubleshooting}
 
@@ -55,7 +55,7 @@ ht-degree: 3%
 
 * **外部帐户**
 
-  在&#x200B;**[!UICONTROL Administration > Platform > External accounts]**&#x200B;中，确保正确配置了以下外部SFTP帐户。 提及的SFTP服务器应由您的顾问在Adobe Experience Cloud中进行配置。
+  在&#x200B;**[!UICONTROL Administration > Platform > External accounts]**&#x200B;中，确保正确配置了以下外部SFTP帐户。 您顾问应在[!DNL Adobe CX Enterprise]中配置提及的SFTP服务器。
 
   * **[!UICONTROL importSharedAudience]** ：专门用于导入受众的SFTP帐户。
   * **[!UICONTROL exportSharedAudience]** ：专门用于导出受众的SFTP帐户。

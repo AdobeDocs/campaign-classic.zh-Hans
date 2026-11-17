@@ -8,9 +8,9 @@ user-guide-description: Adobe Campaign Classic v7 产品文档。
 sub-product: adobe campaign classic
 type: Documentation
 nudge: false
-source-git-commit: 77efa1dcdb82a478e93565e84099d568f6a5f5fe
+source-git-commit: 368b67eeb68b0944be5db674fd6a18914dea86ad
 workflow-type: tm+mt
-source-wordcount: '1353'
+source-wordcount: '1350'
 ht-degree: 97%
 ---
 
@@ -388,7 +388,7 @@ ht-degree: 97%
     + [配置对报告的访问权限](reporting/using/configuring-access-to-the-report.md)
     + [对报告执行操作](reporting/using/actions-on-reports.md)
   + [设计包含多维数据集的报告](reporting/using/ac-cubes.md)
-+ 与 Adobe Experience Cloud 集成 {#integrating-with-adobe-experience-cloud}
++ 与[!DNL Adobe CX Enterprise]集成 {#integrating-with-adobe-experience-cloud}
   + [Campaign 集成入门](integrations/using/about-campaign-integrations.md)
   + [创建您的 Adobe 技术帐户](integrations/using/oauth-technical-account.md)
   + Adobe Experience Cloud Triggers {#experience-triggers}
@@ -405,13 +405,13 @@ ht-degree: 97%
     + [Adobe Analytics Connector 入门](integrations/using/gs-aa.md)
     + [Adobe Analytics Connector 配置](integrations/using/adobe-analytics-provisioning.md)
   + 受众共享 {#audience-sharing}
-    + [与  [!DNL Adobe Experience Cloud] 共享受众](integrations/using/sharing-audiences-with-adobe-experience-cloud.md)
+    + [与  [!DNL Adobe CX Enterprise] 共享受众](integrations/using/sharing-audiences-with-adobe-experience-cloud.md)
     + [向 Adobe 提交请求](integrations/using/submitting-request-to-adobe.md)
     + [在  [!DNL Adobe Campaign] 中配置共享受众集成](integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md)
     + {hide-from-toc}[故障排除](integrations/using/integrations-troubleshooting.md)
     + [导入和导出受众](integrations/using/importing-and-exporting-audiences.md)
   + 资源共享 {#asset-sharing}
-    + [与  [!DNL Adobe Experience Cloud] 共享资源](integrations/using/sharing-assets-with-adobe-experience-cloud.md)
+    + [与  [!DNL Adobe CX Enterprise] 共享资源](integrations/using/sharing-assets-with-adobe-experience-cloud.md)
     + [配置对  [!DNL Assets] 的访问](integrations/using/configuring-access-to-assets.md)
     + [插入共享资源](integrations/using/inserting-a-shared-asset.md)
   + Adobe Experience Manager {#adobe-experience-manager}

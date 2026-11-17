@@ -40,10 +40,10 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: 1b8805ac952da110858c88fc2c252aece69ad2bf
 workflow-type: tm+mt
-source-wordcount: '202'
-ht-degree: 7%
+source-wordcount: '196'
+ht-degree: 8%
 ---
 # Campaign 连接器 {#about-connectors}
 
@@ -57,8 +57,8 @@ Adobe Campaign提供了多个连接器，可让您与外部应用程序通信、
 
 您还可以将Campaign与多个其他系统集成，例如：
 
-* Adobe Experience Cloud解决方案：Adobe Experience Manager、Adobe Target、Adobe Audience Manager、Experience Cloud触发器等。[了解详情](../../integrations/using/about-campaign-integrations.md)
-* 用于单点登录(SSO)的Adobe Identity Management System (IMS)可保护对Campaign实例的访问，并使用与其他Adobe Campaign解决方案相同的Adobe ID连接到Adobe Experience Cloud。 [了解详情](../../integrations/using/about-adobe-id.md)。
+* [!DNL Adobe CX Enterprise]解决方案：Adobe Experience Manager、Adobe Target、Adobe Audience Manager、Experience Cloud触发器等。[了解详情](../../integrations/using/about-campaign-integrations.md)
+* 适用于单点登录(SSO)的Adobe Identity Management System (IMS)，用于保护对Campaign实例的访问，并使用与其他[!DNL CX Enterprise]解决方案相同的Adobe ID连接到Adobe Campaign。 [了解详情](../../integrations/using/about-adobe-id.md)。
 * LDAP目录，统一访问管理。 [了解详情](../../installation/using/connecting-through-ldap.md)。
 
 >[!NOTE]

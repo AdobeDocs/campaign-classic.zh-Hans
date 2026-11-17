@@ -19,9 +19,9 @@ subfeature_v2:
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
     internal-label: Security
-source-git-commit: 3e213ecc670d5a3cb8299c092ccbb5303858327d
+source-git-commit: 1b8805ac952da110858c88fc2c252aece69ad2bf
 workflow-type: tm+mt
-source-wordcount: '479'
+source-wordcount: '476'
 ht-degree: 6%
 ---
 # 迁移到Adobe Identity Management System (IMS) {#migrate-to-ims}
@@ -37,7 +37,7 @@ ht-degree: 6%
 
 ## 迁移步骤 {#ims-steps}
 
-迁移到[Adobe Identity Management System (IMS)](https://helpx.adobe.com/cn/enterprise/using/identity.html){target="_blank"}是确保环境安全和标准化的安全要求，因为大多数其他Adobe Experience Cloud解决方案和应用程序已在IMS上。
+迁移到[Adobe Identity Management System (IMS)](https://helpx.adobe.com/cn/enterprise/using/identity.html){target="_blank"}是确保环境安全和标准化的安全要求，因为大多数其他[!DNL Adobe CX Enterprise]解决方案和应用程序已在IMS上。
 
 Adobe将支持您完成此迁移工作。 您可以在以下文章中找到详细的上下文和分步指南：
 
