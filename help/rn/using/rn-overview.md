@@ -33,7 +33,7 @@ topic_v2:
     internal-label: Implementation
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
     internal-label: Security
-source-git-commit: 1b8805ac952da110858c88fc2c252aece69ad2bf
+source-git-commit: e737155048b50f18207ab7d2f3dfd4a4b0d48557
 workflow-type: tm+mt
 source-wordcount: '1202'
 ht-degree: 98%
@@ -81,7 +81,7 @@ Adobe Campaign 会定期更新。 这种定期更新旨在让您掌握最新、�
 
 作为托管客户，您无需采取任何操作即可通过稳定的最新版本自动从升级中受益。 在[年度升级部分](#yearly-upgrade)中了解详情。 如果您从旧版本进行迁移，Adobe 建议您先升级到此版本。
 
-## 热修复 {#hotflixes}
+## 修补程序 {#hotfixes}
 
 在特殊情况下，Adobe 可能会提供针对特定客户的热修复，以在标准版本提供修复之前解决问题。 热修复请求会逐案进行评估，且不属于标准发布周期。
 
